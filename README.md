@@ -1,6 +1,6 @@
 # MTASA Wiki Dump
 
-Parsed via 
+Parsed and generated via 
 [wiki-parser-python](https://gitlab.toliak.ru/mtasa/typescript/wiki-parser-python)
 
 Contains data about MTASA Server, Client and Shared Functions.
