@@ -5,6 +5,11 @@ Parsed via
 
 Contains data about MTASA Server, Client and Shared Functions.
 
+Used for generation TypeScript type definitions in 
+[wiki-parser](https://gitlab.toliak.ru/mtasa/typescript/wiki-parser-python).
+
+**Please, minimize manual dump editing. Changes can be overwritten by code-generation**
+
 ## File Structure
 
 `client.py` contains list of client functions
@@ -45,3 +50,8 @@ Every file contains list of commands. Sorted by categories (like on [MTASA Wiki]
   - Target `field` if exists, otherwise `None`
   
 - `FunctionUrl` contains information about the function URL in MTASA Wiki
+
+## How to use
+
+To import dataset use `from dump.shared import DATA as SHARED_DATA`. 
+The import is useless without [wiki-parser](https://gitlab.toliak.ru/mtasa/typescript/wiki-parser-python), because all types definitions are defined there.
