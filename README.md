@@ -1,12 +1,12 @@
 # MTASA Wiki Dump
 
 Parsed and generated via 
-[wiki-parser-python](https://gitlab.toliak.ru/mtasa/typescript/wiki-parser-python)
+[wiki-parser-python](https://github.com/mtasa-typescript/mtasa-wiki-parser)
 
 Contains data about MTASA Server, Client and Shared Functions.
 
 Used for generation TypeScript type definitions in 
-[wiki-parser](https://gitlab.toliak.ru/mtasa/typescript/wiki-parser-python).
+[wiki-parser](https://github.com/mtasa-typescript/mtasa-wiki-parser).
 
 **Please, minimize manual dump editing. Changes can be overwritten by code-generation**
 
@@ -54,4 +54,4 @@ Every file contains list of commands. Sorted by categories (like on [MTASA Wiki]
 ## How to use
 
 To import dataset use `from dump.shared import DATA as SHARED_DATA`. 
-The import is useless without [wiki-parser](https://gitlab.toliak.ru/mtasa/typescript/wiki-parser-python), because all types definitions are defined there.
+The import is useless without [wiki-parser](https://github.com/mtasa-typescript/mtasa-wiki-parser), because all types definitions are defined there.
