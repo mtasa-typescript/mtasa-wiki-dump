@@ -3944,13 +3944,6 @@ Default mode is allow_binds. """,
                                 ),
                                 default_value=None,
                             )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
-                                default_value=None,
-                            )
                         ]
                     ],
                     variable_length=True,

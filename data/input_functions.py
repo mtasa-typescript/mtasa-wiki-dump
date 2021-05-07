@@ -215,13 +215,6 @@ This can be triggered from the players console or directly from the chat box by 
                                 ),
                                 default_value=None,
                             )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
-                                default_value=None,
-                            )
                         ]
                     ],
                     variable_length=True,
@@ -298,13 +291,6 @@ This can be triggered from the players console or directly from the chat box by 
                                     names=['var'],
                                     is_optional=True,
                                 ),
-                                default_value=None,
-                            )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
                                 default_value=None,
                             )
                         ]

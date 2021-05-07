@@ -596,13 +596,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                                 ),
                                 default_value=None,
                             )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
-                                default_value=None,
-                            )
                         ]
                     ],
                     variable_length=True,
@@ -723,13 +716,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                                     names=['float'],
                                     is_optional=False,
                                 ),
-                                default_value=None,
-                            )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
                                 default_value=None,
                             )
                         ]

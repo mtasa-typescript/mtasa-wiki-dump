@@ -1489,13 +1489,6 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                                 ),
                                 default_value=None,
                             )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
-                                default_value=None,
-                            )
                         ]
                     ],
                     variable_length=True,
@@ -1579,13 +1572,6 @@ Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px...}} 
                                     names=['table'],
                                     is_optional=True,
                                 ),
-                                default_value=None,
-                            )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
                                 default_value=None,
                             )
                         ]
@@ -1889,13 +1875,6 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                                 ),
                                 default_value=None,
                             )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
-                                default_value=None,
-                            )
                         ]
                     ],
                     variable_length=True,
@@ -1987,13 +1966,6 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                                     names=['table'],
                                     is_optional=True,
                                 ),
-                                default_value=None,
-                            )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
                                 default_value=None,
                             )
                         ]

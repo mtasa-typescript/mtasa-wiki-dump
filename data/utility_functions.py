@@ -340,13 +340,6 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                                 ),
                                 default_value=None,
                             )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
-                                default_value=None,
-                            )
                         ]
                     ],
                     variable_length=True,
@@ -395,13 +388,6 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                                 ),
                                 default_value=None,
                             )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
-                                default_value=None,
-                            )
                         ]
                     ],
                     variable_length=True,
@@ -958,13 +944,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                                 ),
                                 default_value=None,
                             )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
-                                default_value=None,
-                            )
                         ]
                     ],
                     variable_length=True,
@@ -1013,13 +992,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                                 ),
                                 default_value=None,
                             )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
-                                default_value=None,
-                            )
                         ]
                     ],
                     variable_length=True,
@@ -1418,13 +1390,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                                 ),
                                 default_value=None,
                             )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
-                                default_value=None,
-                            )
                         ]
                     ],
                     variable_length=True,
@@ -1471,13 +1436,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                                     names=['uint'],
                                     is_optional=False,
                                 ),
-                                default_value=None,
-                            )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
                                 default_value=None,
                             )
                         ]
@@ -1530,13 +1488,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                                 ),
                                 default_value=None,
                             )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
-                                default_value=None,
-                            )
                         ]
                     ],
                     variable_length=True,
@@ -1583,13 +1534,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                                     names=['uint'],
                                     is_optional=False,
                                 ),
-                                default_value=None,
-                            )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
                                 default_value=None,
                             )
                         ]

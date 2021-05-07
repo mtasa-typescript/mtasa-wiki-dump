@@ -1010,13 +1010,6 @@ Keep in mind the bandwidth issues when using events - dont pass a large list of 
                                 ),
                                 default_value=None,
                             )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
-                                default_value=None,
-                            )
                         ]
                     ],
                     variable_length=True,
@@ -1079,13 +1072,6 @@ You can use the value returned from this function to determine if the event was 
                                     names=['var'],
                                     is_optional=True,
                                 ),
-                                default_value=None,
-                            )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='None',
-                                argument_type=None,
                                 default_value=None,
                             )
                         ]
