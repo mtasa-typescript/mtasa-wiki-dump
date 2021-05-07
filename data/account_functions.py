@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addAccount',
                 return_types=FunctionReturnTypes(
@@ -76,11 +77,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='addAccount',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='copyAccountData',
                 return_types=FunctionReturnTypes(
@@ -134,11 +139,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='copyAccountData',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAccount',
                 return_types=FunctionReturnTypes(
@@ -204,11 +213,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='getAccount',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAccountByID',
                 return_types=FunctionReturnTypes(
@@ -245,11 +258,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getAccountByID',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAccountData',
                 return_types=FunctionReturnTypes(
@@ -303,11 +320,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getAccountData',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAccountID',
                 return_types=FunctionReturnTypes(
@@ -350,11 +371,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getAccountID',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAccountIP',
                 return_types=FunctionReturnTypes(
@@ -397,11 +422,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getAccountIP',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAccountName',
                 return_types=FunctionReturnTypes(
@@ -444,11 +473,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getAccountName',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAccountPlayer',
                 return_types=FunctionReturnTypes(
@@ -491,11 +524,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getAccountPlayer',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAccounts',
                 return_types=FunctionReturnTypes(
@@ -529,11 +566,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='getAccounts',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAccountsByData',
                 return_types=FunctionReturnTypes(
@@ -587,11 +628,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='getAccountsByData',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAccountsByIP',
                 return_types=FunctionReturnTypes(
@@ -634,11 +679,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='getAccountsByIP',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAccountsBySerial',
                 return_types=FunctionReturnTypes(
@@ -681,11 +730,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='getAccountsBySerial',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAccountSerial',
                 return_types=FunctionReturnTypes(
@@ -728,11 +781,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getAccountSerial',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAllAccountData',
                 return_types=FunctionReturnTypes(
@@ -775,11 +832,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getAllAccountData',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerAccount',
                 return_types=FunctionReturnTypes(
@@ -822,11 +883,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getPlayerAccount',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isGuestAccount',
                 return_types=FunctionReturnTypes(
@@ -869,11 +934,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='isGuestAccount',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='logIn',
                 return_types=FunctionReturnTypes(
@@ -938,11 +1007,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='logIn',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='logOut',
                 return_types=FunctionReturnTypes(
@@ -985,11 +1058,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='logOut',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeAccount',
                 return_types=FunctionReturnTypes(
@@ -1032,11 +1109,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='removeAccount',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setAccountData',
                 return_types=FunctionReturnTypes(
@@ -1101,11 +1182,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setAccountData',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setAccountName',
                 return_types=FunctionReturnTypes(
@@ -1170,11 +1255,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setAccountName',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setAccountPassword',
                 return_types=FunctionReturnTypes(
@@ -1228,7 +1317,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setAccountPassword',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     )
 ]

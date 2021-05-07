@@ -11,8 +11,11 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineApplyShaderToWorldTexture',
                 return_types=FunctionReturnTypes(
@@ -93,11 +96,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='engineApplyShaderToWorldTexture',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineFreeModel',
                 return_types=FunctionReturnTypes(
@@ -134,11 +141,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='engineFreeModel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineGetModelIDFromName',
                 return_types=FunctionReturnTypes(
@@ -181,11 +192,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='engineGetModelIDFromName',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineGetModelLODDistance',
                 return_types=FunctionReturnTypes(
@@ -228,11 +243,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='engineGetModelLODDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineGetModelNameFromID',
                 return_types=FunctionReturnTypes(
@@ -275,11 +294,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='engineGetModelNameFromID',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineGetModelPhysicalPropertiesGroup',
                 return_types=FunctionReturnTypes(
@@ -316,11 +339,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='engineGetModelPhysicalPropertiesGroup',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineGetModelTextureNames',
                 return_types=FunctionReturnTypes(
@@ -363,11 +390,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='engineGetModelTextureNames',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineGetModelTextures',
                 return_types=FunctionReturnTypes(
@@ -415,11 +446,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='engineGetModelTextures',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineGetModelVisibleTime',
                 return_types=FunctionReturnTypes(
@@ -460,11 +495,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='engineGetModelVisibleTime',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineGetObjectGroupPhysicalProperty',
                 return_types=FunctionReturnTypes(
@@ -512,11 +551,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='engineGetObjectGroupPhysicalProperty',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineGetSurfaceProperties',
                 return_types=FunctionReturnTypes(
@@ -564,11 +607,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='engineGetSurfaceProperties',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineGetVisibleTextureNames',
                 return_types=FunctionReturnTypes(
@@ -622,11 +669,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='engineGetVisibleTextureNames',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineImportTXD',
                 return_types=FunctionReturnTypes(
@@ -682,11 +733,15 @@ See here for Optimize_Custom_TXD|tips on reducing the size of TXD files.
                 is_static=False,
             ),
             name='engineImportTXD',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineLoadCOL',
                 return_types=FunctionReturnTypes(
@@ -739,11 +794,15 @@ This is a client side function. Be sure to transfer your COL file by including i
                 is_static=True,
             ),
             name='engineLoadCOL',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineLoadDFF',
                 return_types=FunctionReturnTypes(
@@ -797,11 +856,15 @@ The returned DFF element is an element in the element tree, just like vehicles a
                 is_static=True,
             ),
             name='engineLoadDFF',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineLoadIFP',
                 return_types=FunctionReturnTypes(
@@ -858,11 +921,15 @@ If you wish to replace a GTA internal animation with a custom one, you can use E
             ),
             oop=None,
             name='engineLoadIFP',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineLoadTXD',
                 return_types=FunctionReturnTypes(
@@ -925,11 +992,15 @@ This is a client side function. Be sure to transfer your TXD file by including i
                 is_static=True,
             ),
             name='engineLoadTXD',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineRemoveShaderFromWorldTexture',
                 return_types=FunctionReturnTypes(
@@ -994,11 +1065,15 @@ This is a client side function. Be sure to transfer your TXD file by including i
                 is_static=False,
             ),
             name='engineRemoveShaderFromWorldTexture',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineReplaceAnimation',
                 return_types=FunctionReturnTypes(
@@ -1081,11 +1156,15 @@ It should be noted that partial animations are not supported, you can still repl
             ),
             oop=None,
             name='engineReplaceAnimation',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineReplaceCOL',
                 return_types=FunctionReturnTypes(
@@ -1139,11 +1218,15 @@ It should be noted that partial animations are not supported, you can still repl
                 is_static=False,
             ),
             name='engineReplaceCOL',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineReplaceModel',
                 return_types=FunctionReturnTypes(
@@ -1210,11 +1293,15 @@ To replace weapon models you must use their object IDs, not weapon IDs. There is
                 is_static=False,
             ),
             name='engineReplaceModel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineRequestModel',
                 return_types=FunctionReturnTypes(
@@ -1262,11 +1349,15 @@ To replace weapon models you must use their object IDs, not weapon IDs. There is
             ),
             oop=None,
             name='engineRequestModel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineResetModelLODDistance',
                 return_types=FunctionReturnTypes(
@@ -1309,11 +1400,15 @@ To replace weapon models you must use their object IDs, not weapon IDs. There is
                 is_static=True,
             ),
             name='engineResetModelLODDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineResetSurfaceProperties',
                 return_types=FunctionReturnTypes(
@@ -1350,11 +1445,15 @@ To replace weapon models you must use their object IDs, not weapon IDs. There is
             ),
             oop=None,
             name='engineResetSurfaceProperties',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineRestoreAnimation',
                 return_types=FunctionReturnTypes(
@@ -1416,11 +1515,15 @@ If 3rd parameter (animation name) is provided, then only that specific animation
             ),
             oop=None,
             name='engineRestoreAnimation',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineRestoreCOL',
                 return_types=FunctionReturnTypes(
@@ -1463,11 +1566,15 @@ If 3rd parameter (animation name) is provided, then only that specific animation
                 is_static=True,
             ),
             name='engineRestoreCOL',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineRestoreModel',
                 return_types=FunctionReturnTypes(
@@ -1510,11 +1617,15 @@ If 3rd parameter (animation name) is provided, then only that specific animation
                 is_static=True,
             ),
             name='engineRestoreModel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineRestoreModelPhysicalPropertiesGroup',
                 return_types=FunctionReturnTypes(
@@ -1551,11 +1662,15 @@ If 3rd parameter (animation name) is provided, then only that specific animation
             ),
             oop=None,
             name='engineRestoreModelPhysicalPropertiesGroup',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineRestoreObjectGroupPhysicalProperties',
                 return_types=FunctionReturnTypes(
@@ -1603,11 +1718,15 @@ If 3rd parameter (animation name) is provided, then only that specific animation
             ),
             oop=None,
             name='engineRestoreObjectGroupPhysicalProperties',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineRestreamWorld',
                 return_types=FunctionReturnTypes(
@@ -1635,11 +1754,15 @@ If 3rd parameter (animation name) is provided, then only that specific animation
             ),
             oop=None,
             name='engineRestreamWorld',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineSetAsynchronousLoading',
                 return_types=FunctionReturnTypes(
@@ -1693,11 +1816,15 @@ If 3rd parameter (animation name) is provided, then only that specific animation
                 is_static=True,
             ),
             name='engineSetAsynchronousLoading',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineSetModelLODDistance',
                 return_types=FunctionReturnTypes(
@@ -1761,11 +1888,15 @@ For low LOD elements, engineSetModelLODDistance still has a limit of 300 units, 
                 is_static=True,
             ),
             name='engineSetModelLODDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineSetModelPhysicalPropertiesGroup',
                 return_types=FunctionReturnTypes(
@@ -1813,11 +1944,15 @@ For low LOD elements, engineSetModelLODDistance still has a limit of 300 units, 
             ),
             oop=None,
             name='engineSetModelPhysicalPropertiesGroup',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineSetModelVisibleTime',
                 return_types=FunctionReturnTypes(
@@ -1876,11 +2011,15 @@ For low LOD elements, engineSetModelLODDistance still has a limit of 300 units, 
             ),
             oop=None,
             name='engineSetModelVisibleTime',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineSetObjectGroupPhysicalProperty',
                 return_types=FunctionReturnTypes(
@@ -1939,11 +2078,15 @@ For low LOD elements, engineSetModelLODDistance still has a limit of 300 units, 
             ),
             oop=None,
             name='engineSetObjectGroupPhysicalProperty',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='engineSetSurfaceProperties',
                 return_types=FunctionReturnTypes(
@@ -2002,6 +2145,7 @@ For low LOD elements, engineSetModelLODDistance still has a limit of 300 units, 
             ),
             oop=None,
             name='engineSetSurfaceProperties',
-        ),
+        )
+        ],
     )
 ]

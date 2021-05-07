@@ -11,8 +11,11 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRadioChannel',
                 return_types=FunctionReturnTypes(
@@ -40,11 +43,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getRadioChannel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRadioChannelName',
                 return_types=FunctionReturnTypes(
@@ -81,11 +88,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getRadioChannelName',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSFXStatus',
                 return_types=FunctionReturnTypes(
@@ -123,11 +134,15 @@ In case of these invalid audio files, this function returns false.|true}} """,
             ),
             oop=None,
             name='getSFXStatus',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSoundBPM',
                 return_types=FunctionReturnTypes(
@@ -171,11 +186,15 @@ setTimer to do this.}} """,
                 is_static=False,
             ),
             name='getSoundBPM',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSoundBufferLength',
                 return_types=FunctionReturnTypes(
@@ -220,11 +239,15 @@ setTimer to do this.}} """,
                 is_static=False,
             ),
             name='getSoundBufferLength',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSoundEffects',
                 return_types=FunctionReturnTypes(
@@ -268,11 +291,15 @@ sound effect names: """,
                 is_static=False,
             ),
             name='getSoundEffects',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSoundFFTData',
                 return_types=FunctionReturnTypes(
@@ -343,11 +370,15 @@ case of streams. """,
                 is_static=False,
             ),
             name='getSoundFFTData',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSoundLength',
                 return_types=FunctionReturnTypes(
@@ -391,11 +422,15 @@ If the element is a player, this function will use the players voice. """,
                 is_static=False,
             ),
             name='getSoundLength',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSoundLevelData',
                 return_types=FunctionReturnTypes(
@@ -443,11 +478,15 @@ If the element is a player, this function will use the players voice. """,
                 is_static=False,
             ),
             name='getSoundLevelData',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSoundMaxDistance',
                 return_types=FunctionReturnTypes(
@@ -490,11 +529,15 @@ If the element is a player, this function will use the players voice. """,
                 is_static=False,
             ),
             name='getSoundMaxDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSoundMetaTags',
                 return_types=FunctionReturnTypes(
@@ -549,11 +592,15 @@ If the element is a player, this function will use the players voice. """,
                 is_static=False,
             ),
             name='getSoundMetaTags',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSoundMinDistance',
                 return_types=FunctionReturnTypes(
@@ -596,11 +643,15 @@ If the element is a player, this function will use the players voice. """,
                 is_static=False,
             ),
             name='getSoundMinDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSoundPan',
                 return_types=FunctionReturnTypes(
@@ -643,11 +694,15 @@ If the element is a player, this function will use the players voice. """,
                 is_static=False,
             ),
             name='getSoundPan',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSoundPosition',
                 return_types=FunctionReturnTypes(
@@ -691,11 +746,15 @@ If the element is a player, this function will use the players voice. """,
                 is_static=False,
             ),
             name='getSoundPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSoundProperties',
                 return_types=FunctionReturnTypes(
@@ -751,11 +810,15 @@ the first float is the sounds http://en.wikipedia.org/wiki/sampling_rate sample 
                 is_static=False,
             ),
             name='getSoundProperties',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSoundSpeed',
                 return_types=FunctionReturnTypes(
@@ -798,11 +861,15 @@ the first float is the sounds http://en.wikipedia.org/wiki/sampling_rate sample 
                 is_static=False,
             ),
             name='getSoundSpeed',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSoundVolume',
                 return_types=FunctionReturnTypes(
@@ -846,11 +913,15 @@ If the element is a player, this function will use the players voice. """,
                 is_static=False,
             ),
             name='getSoundVolume',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSoundWaveData',
                 return_types=FunctionReturnTypes(
@@ -908,11 +979,15 @@ case of streams. """,
                 is_static=False,
             ),
             name='getSoundWaveData',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isSoundLooped',
                 return_types=FunctionReturnTypes(
@@ -955,11 +1030,15 @@ case of streams. """,
                 is_static=False,
             ),
             name='isSoundLooped',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isSoundPanningEnabled',
                 return_types=FunctionReturnTypes(
@@ -1002,11 +1081,15 @@ case of streams. """,
                 is_static=False,
             ),
             name='isSoundPanningEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isSoundPaused',
                 return_types=FunctionReturnTypes(
@@ -1050,11 +1133,15 @@ If the element is a player, this function will use the players voice. """,
                 is_static=False,
             ),
             name='isSoundPaused',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='playSFX',
                 return_types=FunctionReturnTypes(
@@ -1134,11 +1221,15 @@ returns a sound element if the sound was successfully created, false otherwise. 
             ),
             oop=None,
             name='playSFX',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='playSFX3D',
                 return_types=FunctionReturnTypes(
@@ -1254,11 +1345,15 @@ returns a sound element if the sound was successfully created, false otherwise. 
             ),
             oop=None,
             name='playSFX3D',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='playSound',
                 return_types=FunctionReturnTypes(
@@ -1327,11 +1422,15 @@ returns a sound element if the sound was successfully created, false otherwise. 
                 is_static=True,
             ),
             name='playSound',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='playSound3D',
                 return_types=FunctionReturnTypes(
@@ -1424,10 +1523,12 @@ returns a sound element if the sound was successfully created, false otherwise. 
                 is_static=True,
             ),
             name='playSound3D',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='playSoundFrontEnd',
                 return_types=FunctionReturnTypes(
@@ -1481,8 +1582,10 @@ returns a sound element if the sound was successfully created, false otherwise. 
                 is_static=False,
             ),
             name='playSoundFrontEnd',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='playSoundFrontEnd',
                 return_types=FunctionReturnTypes(
@@ -1525,11 +1628,15 @@ returns a sound element if the sound was successfully created, false otherwise. 
                 is_static=True,
             ),
             name='playSoundFrontEnd',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setRadioChannel',
                 return_types=FunctionReturnTypes(
@@ -1566,11 +1673,15 @@ returns a sound element if the sound was successfully created, false otherwise. 
             ),
             oop=None,
             name='setRadioChannel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSoundEffectEnabled',
                 return_types=FunctionReturnTypes(
@@ -1636,11 +1747,15 @@ Use a player element to control a players voice with this function. """,
                 is_static=False,
             ),
             name='setSoundEffectEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSoundLooped',
                 return_types=FunctionReturnTypes(
@@ -1700,11 +1815,15 @@ end)
                 is_static=False,
             ),
             name='setSoundLooped',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSoundMaxDistance',
                 return_types=FunctionReturnTypes(
@@ -1758,11 +1877,15 @@ end)
                 is_static=False,
             ),
             name='setSoundMaxDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSoundMinDistance',
                 return_types=FunctionReturnTypes(
@@ -1816,11 +1939,15 @@ end)
                 is_static=False,
             ),
             name='setSoundMinDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSoundPan',
                 return_types=FunctionReturnTypes(
@@ -1874,11 +2001,15 @@ end)
                 is_static=False,
             ),
             name='setSoundPan',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSoundPanningEnabled',
                 return_types=FunctionReturnTypes(
@@ -1933,11 +2064,15 @@ if the sound is not 3d, this function will return true as well, but issoundpanni
                 is_static=False,
             ),
             name='setSoundPanningEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSoundPaused',
                 return_types=FunctionReturnTypes(
@@ -1992,11 +2127,15 @@ Use a player element to control a players voice with this function. """,
                 is_static=False,
             ),
             name='setSoundPaused',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSoundPosition',
                 return_types=FunctionReturnTypes(
@@ -2052,11 +2191,15 @@ Use a player element to control a players voice with this function.
                 is_static=False,
             ),
             name='setSoundPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSoundProperties',
                 return_types=FunctionReturnTypes(
@@ -2143,11 +2286,15 @@ Use a player element to control a players voice with this function.
                 is_static=False,
             ),
             name='setSoundProperties',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSoundSpeed',
                 return_types=FunctionReturnTypes(
@@ -2201,11 +2348,15 @@ Use a player element to control a players voice with this function.
                 is_static=False,
             ),
             name='setSoundSpeed',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSoundVolume',
                 return_types=FunctionReturnTypes(
@@ -2260,11 +2411,15 @@ Use a player element to control a players voice with this function. """,
                 is_static=False,
             ),
             name='setSoundVolume',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='stopSound',
                 return_types=FunctionReturnTypes(
@@ -2307,6 +2462,7 @@ Use a player element to control a players voice with this function. """,
                 is_static=False,
             ),
             name='stopSound',
-        ),
+        )
+        ],
     )
 ]

@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addDebugHook',
                 return_types=FunctionReturnTypes(
@@ -79,8 +80,10 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
             ),
             oop=None,
             name='addDebugHook',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addDebugHook',
                 return_types=FunctionReturnTypes(
@@ -148,10 +151,12 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
             ),
             oop=None,
             name='addDebugHook',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='base64Decode',
                 return_types=FunctionReturnTypes(
@@ -188,8 +193,10 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
             ),
             oop=None,
             name='base64Decode',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='base64Decode',
                 return_types=FunctionReturnTypes(
@@ -226,10 +233,12 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
             ),
             oop=None,
             name='base64Decode',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='base64Encode',
                 return_types=FunctionReturnTypes(
@@ -266,8 +275,10 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
             ),
             oop=None,
             name='base64Encode',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='base64Encode',
                 return_types=FunctionReturnTypes(
@@ -304,10 +315,12 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
             ),
             oop=None,
             name='base64Encode',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitAnd',
                 return_types=FunctionReturnTypes(
@@ -354,8 +367,10 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
             ),
             oop=None,
             name='bitAnd',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitAnd',
                 return_types=FunctionReturnTypes(
@@ -402,10 +417,12 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
             ),
             oop=None,
             name='bitAnd',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitArShift',
                 return_types=FunctionReturnTypes(
@@ -454,8 +471,10 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise ope
             ),
             oop=None,
             name='bitArShift',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitArShift',
                 return_types=FunctionReturnTypes(
@@ -504,10 +523,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise ope
             ),
             oop=None,
             name='bitArShift',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitExtract',
                 return_types=FunctionReturnTypes(
@@ -566,8 +587,10 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise ope
             ),
             oop=None,
             name='bitExtract',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitExtract',
                 return_types=FunctionReturnTypes(
@@ -626,10 +649,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise ope
             ),
             oop=None,
             name='bitExtract',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitLRotate',
                 return_types=FunctionReturnTypes(
@@ -678,8 +703,10 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise oper
             ),
             oop=None,
             name='bitLRotate',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitLRotate',
                 return_types=FunctionReturnTypes(
@@ -728,10 +755,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise oper
             ),
             oop=None,
             name='bitLRotate',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitLShift',
                 return_types=FunctionReturnTypes(
@@ -780,8 +809,10 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='bitLShift',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitLShift',
                 return_types=FunctionReturnTypes(
@@ -830,10 +861,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='bitLShift',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitNot',
                 return_types=FunctionReturnTypes(
@@ -870,8 +903,10 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='bitNot',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitNot',
                 return_types=FunctionReturnTypes(
@@ -908,10 +943,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='bitNot',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitOr',
                 return_types=FunctionReturnTypes(
@@ -958,8 +995,10 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='bitOr',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitOr',
                 return_types=FunctionReturnTypes(
@@ -1006,10 +1045,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='bitOr',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitReplace',
                 return_types=FunctionReturnTypes(
@@ -1079,8 +1120,10 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='bitReplace',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitReplace',
                 return_types=FunctionReturnTypes(
@@ -1150,10 +1193,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='bitReplace',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitRRotate',
                 return_types=FunctionReturnTypes(
@@ -1202,8 +1247,10 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise oper
             ),
             oop=None,
             name='bitRRotate',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitRRotate',
                 return_types=FunctionReturnTypes(
@@ -1252,10 +1299,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise oper
             ),
             oop=None,
             name='bitRRotate',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitRShift',
                 return_types=FunctionReturnTypes(
@@ -1304,8 +1353,10 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='bitRShift',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitRShift',
                 return_types=FunctionReturnTypes(
@@ -1354,10 +1405,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='bitRShift',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitTest',
                 return_types=FunctionReturnTypes(
@@ -1404,8 +1457,10 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='bitTest',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitTest',
                 return_types=FunctionReturnTypes(
@@ -1452,10 +1507,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='bitTest',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitXor',
                 return_types=FunctionReturnTypes(
@@ -1502,8 +1559,10 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='bitXor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bitXor',
                 return_types=FunctionReturnTypes(
@@ -1550,11 +1609,15 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='bitXor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createTrayNotification',
                 return_types=FunctionReturnTypes(
@@ -1613,10 +1676,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='createTrayNotification',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='debugSleep',
                 return_types=FunctionReturnTypes(
@@ -1653,8 +1718,10 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='debugSleep',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='debugSleep',
                 return_types=FunctionReturnTypes(
@@ -1691,10 +1758,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='debugSleep',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='decodeString',
                 return_types=FunctionReturnTypes(
@@ -1764,8 +1833,10 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='decodeString',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='decodeString',
                 return_types=FunctionReturnTypes(
@@ -1835,10 +1906,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='decodeString',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='deref',
                 return_types=FunctionReturnTypes(
@@ -1875,8 +1948,10 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='deref',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='deref',
                 return_types=FunctionReturnTypes(
@@ -1913,11 +1988,15 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='deref',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='downloadFile',
                 return_types=FunctionReturnTypes(
@@ -1954,10 +2033,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='downloadFile',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='encodeString',
                 return_types=FunctionReturnTypes(
@@ -2027,8 +2108,10 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='encodeString',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='encodeString',
                 return_types=FunctionReturnTypes(
@@ -2098,10 +2181,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
             ),
             oop=None,
             name='encodeString',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fromJSON',
                 return_types=FunctionReturnTypes(
@@ -2139,8 +2224,10 @@ note: indices of a json object such as 1: cat are being returned as string, not 
             ),
             oop=None,
             name='fromJSON',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fromJSON',
                 return_types=FunctionReturnTypes(
@@ -2178,10 +2265,12 @@ note: indices of a json object such as 1: cat are being returned as string, not 
             ),
             oop=None,
             name='fromJSON',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getColorFromString',
                 return_types=FunctionReturnTypes(
@@ -2240,8 +2329,10 @@ All colors used must begin with a # sign. """
             ),
             oop=None,
             name='getColorFromString',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getColorFromString',
                 return_types=FunctionReturnTypes(
@@ -2300,10 +2391,12 @@ All colors used must begin with a # sign. """
             ),
             oop=None,
             name='getColorFromString',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getDevelopmentMode',
                 return_types=FunctionReturnTypes(
@@ -2331,8 +2424,10 @@ All colors used must begin with a # sign. """
             ),
             oop=None,
             name='getDevelopmentMode',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getDevelopmentMode',
                 return_types=FunctionReturnTypes(
@@ -2360,10 +2455,12 @@ All colors used must begin with a # sign. """
             ),
             oop=None,
             name='getDevelopmentMode',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getDistanceBetweenPoints2D',
                 return_types=FunctionReturnTypes(
@@ -2433,8 +2530,10 @@ All colors used must begin with a # sign. """
             ),
             oop=None,
             name='getDistanceBetweenPoints2D',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getDistanceBetweenPoints2D',
                 return_types=FunctionReturnTypes(
@@ -2504,10 +2603,12 @@ All colors used must begin with a # sign. """
             ),
             oop=None,
             name='getDistanceBetweenPoints2D',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getDistanceBetweenPoints3D',
                 return_types=FunctionReturnTypes(
@@ -2599,8 +2700,10 @@ All colors used must begin with a # sign. """
             ),
             oop=None,
             name='getDistanceBetweenPoints3D',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getDistanceBetweenPoints3D',
                 return_types=FunctionReturnTypes(
@@ -2692,10 +2795,12 @@ All colors used must begin with a # sign. """
             ),
             oop=None,
             name='getDistanceBetweenPoints3D',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getEasingValue',
                 return_types=FunctionReturnTypes(
@@ -2777,8 +2882,10 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
             ),
             oop=None,
             name='getEasingValue',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getEasingValue',
                 return_types=FunctionReturnTypes(
@@ -2860,10 +2967,12 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
             ),
             oop=None,
             name='getEasingValue',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getFPSLimit',
                 return_types=FunctionReturnTypes(
@@ -2891,8 +3000,10 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
             ),
             oop=None,
             name='getFPSLimit',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getFPSLimit',
                 return_types=FunctionReturnTypes(
@@ -2920,11 +3031,15 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
             ),
             oop=None,
             name='getFPSLimit',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getKeyboardLayout',
                 return_types=FunctionReturnTypes(
@@ -2968,11 +3083,15 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
             ),
             oop=None,
             name='getKeyboardLayout',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getLocalization',
                 return_types=FunctionReturnTypes(
@@ -3002,10 +3121,12 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
             ),
             oop=None,
             name='getLocalization',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getNetworkStats',
                 return_types=FunctionReturnTypes(
@@ -3042,8 +3163,10 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
             ),
             oop=None,
             name='getNetworkStats',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getNetworkStats',
                 return_types=FunctionReturnTypes(
@@ -3071,10 +3194,12 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
             ),
             oop=None,
             name='getNetworkStats',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getNetworkUsageData',
                 return_types=FunctionReturnTypes(
@@ -3102,8 +3227,10 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
             ),
             oop=None,
             name='getNetworkUsageData',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getNetworkUsageData',
                 return_types=FunctionReturnTypes(
@@ -3131,10 +3258,12 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
             ),
             oop=None,
             name='getNetworkUsageData',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPerformanceStats',
                 return_types=FunctionReturnTypes(
@@ -3197,8 +3326,10 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
             ),
             oop=None,
             name='getPerformanceStats',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPerformanceStats',
                 return_types=FunctionReturnTypes(
@@ -3261,10 +3392,12 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
             ),
             oop=None,
             name='getPerformanceStats',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRealTime',
                 return_types=FunctionReturnTypes(
@@ -3356,8 +3489,10 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
             ),
             oop=None,
             name='getRealTime',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRealTime',
                 return_types=FunctionReturnTypes(
@@ -3449,10 +3584,12 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
             ),
             oop=None,
             name='getRealTime',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getServerConfigSetting',
                 return_types=FunctionReturnTypes(
@@ -3491,11 +3628,15 @@ if the setting name is serverip, may return the string auto on local servers. ""
             ),
             oop=None,
             name='getServerConfigSetting',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTickCount',
                 return_types=FunctionReturnTypes(
@@ -3523,8 +3664,10 @@ if the setting name is serverip, may return the string auto on local servers. ""
             ),
             oop=None,
             name='getTickCount',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTickCount',
                 return_types=FunctionReturnTypes(
@@ -3552,10 +3695,12 @@ if the setting name is serverip, may return the string auto on local servers. ""
             ),
             oop=None,
             name='getTickCount',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTimerDetails',
                 return_types=FunctionReturnTypes(
@@ -3609,8 +3754,10 @@ if the setting name is serverip, may return the string auto on local servers. ""
                 is_static=False,
             ),
             name='getTimerDetails',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTimerDetails',
                 return_types=FunctionReturnTypes(
@@ -3664,10 +3811,12 @@ if the setting name is serverip, may return the string auto on local servers. ""
                 is_static=False,
             ),
             name='getTimerDetails',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTimers',
                 return_types=FunctionReturnTypes(
@@ -3704,8 +3853,10 @@ if the setting name is serverip, may return the string auto on local servers. ""
             ),
             oop=None,
             name='getTimers',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTimers',
                 return_types=FunctionReturnTypes(
@@ -3742,10 +3893,12 @@ if the setting name is serverip, may return the string auto on local servers. ""
             ),
             oop=None,
             name='getTimers',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='gettok',
                 return_types=FunctionReturnTypes(
@@ -3804,8 +3957,10 @@ if the setting name is serverip, may return the string auto on local servers. ""
             ),
             oop=None,
             name='gettok',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='gettok',
                 return_types=FunctionReturnTypes(
@@ -3864,10 +4019,12 @@ if the setting name is serverip, may return the string auto on local servers. ""
             ),
             oop=None,
             name='gettok',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getUserdataType',
                 return_types=FunctionReturnTypes(
@@ -3923,8 +4080,10 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
             ),
             oop=None,
             name='getUserdataType',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getUserdataType',
                 return_types=FunctionReturnTypes(
@@ -3980,10 +4139,12 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
             ),
             oop=None,
             name='getUserdataType',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVersion',
                 return_types=FunctionReturnTypes(
@@ -4022,8 +4183,10 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
             ),
             oop=None,
             name='getVersion',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVersion',
                 return_types=FunctionReturnTypes(
@@ -4062,10 +4225,12 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
             ),
             oop=None,
             name='getVersion',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='hash',
                 return_types=FunctionReturnTypes(
@@ -4113,8 +4278,10 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
             ),
             oop=None,
             name='hash',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='hash',
                 return_types=FunctionReturnTypes(
@@ -4162,10 +4329,12 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
             ),
             oop=None,
             name='hash',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='inspect',
                 return_types=FunctionReturnTypes(
@@ -4213,8 +4382,10 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
             ),
             oop=None,
             name='inspect',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='inspect',
                 return_types=FunctionReturnTypes(
@@ -4262,10 +4433,12 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
             ),
             oop=None,
             name='inspect',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='interpolateBetween',
                 return_types=FunctionReturnTypes(
@@ -4418,8 +4591,10 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='interpolateBetween',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='interpolateBetween',
                 return_types=FunctionReturnTypes(
@@ -4572,10 +4747,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='interpolateBetween',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='iprint',
                 return_types=FunctionReturnTypes(
@@ -4633,8 +4810,10 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='iprint',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='iprint',
                 return_types=FunctionReturnTypes(
@@ -4692,10 +4871,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='iprint',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isOOPEnabled',
                 return_types=FunctionReturnTypes(
@@ -4723,8 +4904,10 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='isOOPEnabled',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isOOPEnabled',
                 return_types=FunctionReturnTypes(
@@ -4752,10 +4935,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='isOOPEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isTimer',
                 return_types=FunctionReturnTypes(
@@ -4798,8 +4983,10 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 is_static=False,
             ),
             name='isTimer',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isTimer',
                 return_types=FunctionReturnTypes(
@@ -4842,11 +5029,15 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 is_static=False,
             ),
             name='isTimer',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isTrayNotificationEnabled',
                 return_types=FunctionReturnTypes(
@@ -4874,10 +5065,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='isTrayNotificationEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='killTimer',
                 return_types=FunctionReturnTypes(
@@ -4920,8 +5113,10 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 is_static=False,
             ),
             name='killTimer',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='killTimer',
                 return_types=FunctionReturnTypes(
@@ -4964,10 +5159,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 is_static=False,
             ),
             name='killTimer',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='md5',
                 return_types=FunctionReturnTypes(
@@ -5004,8 +5201,10 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='md5',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='md5',
                 return_types=FunctionReturnTypes(
@@ -5042,10 +5241,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='md5',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='passwordHash',
                 return_types=FunctionReturnTypes(
@@ -5116,8 +5317,10 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='passwordHash',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='passwordHash',
                 return_types=FunctionReturnTypes(
@@ -5188,10 +5391,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='passwordHash',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='passwordVerify',
                 return_types=FunctionReturnTypes(
@@ -5262,8 +5467,10 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='passwordVerify',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='passwordVerify',
                 return_types=FunctionReturnTypes(
@@ -5334,10 +5541,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='passwordVerify',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='pregFind',
                 return_types=FunctionReturnTypes(
@@ -5396,8 +5605,10 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='pregFind',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='pregFind',
                 return_types=FunctionReturnTypes(
@@ -5456,10 +5667,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='pregFind',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='pregMatch',
                 return_types=FunctionReturnTypes(
@@ -5529,8 +5742,10 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='pregMatch',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='pregMatch',
                 return_types=FunctionReturnTypes(
@@ -5600,10 +5815,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='pregMatch',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='pregReplace',
                 return_types=FunctionReturnTypes(
@@ -5673,8 +5890,10 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='pregReplace',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='pregReplace',
                 return_types=FunctionReturnTypes(
@@ -5744,10 +5963,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='pregReplace',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='ref',
                 return_types=FunctionReturnTypes(
@@ -5784,8 +6005,10 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='ref',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='ref',
                 return_types=FunctionReturnTypes(
@@ -5822,10 +6045,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='ref',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeDebugHook',
                 return_types=FunctionReturnTypes(
@@ -5877,8 +6102,10 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='removeDebugHook',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeDebugHook',
                 return_types=FunctionReturnTypes(
@@ -5930,10 +6157,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='removeDebugHook',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetTimer',
                 return_types=FunctionReturnTypes(
@@ -5976,8 +6205,10 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 is_static=False,
             ),
             name='resetTimer',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetTimer',
                 return_types=FunctionReturnTypes(
@@ -6020,11 +6251,15 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 is_static=False,
             ),
             name='resetTimer',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setClipboard',
                 return_types=FunctionReturnTypes(
@@ -6061,10 +6296,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
             ),
             oop=None,
             name='setClipboard',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setDevelopmentMode',
                 return_types=FunctionReturnTypes(
@@ -6117,8 +6354,10 @@ Shared development mode functions:
             ),
             oop=None,
             name='setDevelopmentMode',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setDevelopmentMode',
                 return_types=FunctionReturnTypes(
@@ -6171,10 +6410,12 @@ Shared development mode functions:
             ),
             oop=None,
             name='setDevelopmentMode',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setFPSLimit',
                 return_types=FunctionReturnTypes(
@@ -6211,8 +6452,10 @@ Shared development mode functions:
             ),
             oop=None,
             name='setFPSLimit',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setFPSLimit',
                 return_types=FunctionReturnTypes(
@@ -6249,10 +6492,12 @@ Shared development mode functions:
             ),
             oop=None,
             name='setFPSLimit',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setServerConfigSetting',
                 return_types=FunctionReturnTypes(
@@ -6325,11 +6570,15 @@ Shared development mode functions:
             ),
             oop=None,
             name='setServerConfigSetting',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTimer',
                 return_types=FunctionReturnTypes(
@@ -6408,8 +6657,10 @@ Multi Theft Auto guarantees that the timer will be triggered after at least the 
                 is_static=True,
             ),
             name='setTimer',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTimer',
                 return_types=FunctionReturnTypes(
@@ -6488,11 +6739,15 @@ Multi Theft Auto guarantees that the timer will be triggered after at least the 
                 is_static=True,
             ),
             name='setTimer',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWindowFlashing',
                 return_types=FunctionReturnTypes(
@@ -6543,10 +6798,12 @@ returns true otherwise """,
             ),
             oop=None,
             name='setWindowFlashing',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='sha256',
                 return_types=FunctionReturnTypes(
@@ -6585,8 +6842,10 @@ Calculates the sha256 hash of the specified string. """,
             ),
             oop=None,
             name='sha256',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='sha256',
                 return_types=FunctionReturnTypes(
@@ -6625,10 +6884,12 @@ Calculates the sha256 hash of the specified string. """,
             ),
             oop=None,
             name='sha256',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='split',
                 return_types=FunctionReturnTypes(
@@ -6677,8 +6938,10 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='split',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='split',
                 return_types=FunctionReturnTypes(
@@ -6727,10 +6990,12 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='split',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='teaDecode',
                 return_types=FunctionReturnTypes(
@@ -6778,8 +7043,10 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='teaDecode',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='teaDecode',
                 return_types=FunctionReturnTypes(
@@ -6827,10 +7094,12 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='teaDecode',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='teaEncode',
                 return_types=FunctionReturnTypes(
@@ -6878,8 +7147,10 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='teaEncode',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='teaEncode',
                 return_types=FunctionReturnTypes(
@@ -6927,10 +7198,12 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='teaEncode',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='tocolor',
                 return_types=FunctionReturnTypes(
@@ -7000,8 +7273,10 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='tocolor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='tocolor',
                 return_types=FunctionReturnTypes(
@@ -7071,10 +7346,12 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='tocolor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='toJSON',
                 return_types=FunctionReturnTypes(
@@ -7135,8 +7412,10 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='toJSON',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='toJSON',
                 return_types=FunctionReturnTypes(
@@ -7197,10 +7476,12 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='toJSON',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utfChar',
                 return_types=FunctionReturnTypes(
@@ -7237,8 +7518,10 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='utfChar',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utfChar',
                 return_types=FunctionReturnTypes(
@@ -7275,10 +7558,12 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='utfChar',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utfCode',
                 return_types=FunctionReturnTypes(
@@ -7315,8 +7600,10 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='utfCode',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utfCode',
                 return_types=FunctionReturnTypes(
@@ -7353,10 +7640,12 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='utfCode',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utfLen',
                 return_types=FunctionReturnTypes(
@@ -7393,8 +7682,10 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='utfLen',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utfLen',
                 return_types=FunctionReturnTypes(
@@ -7431,10 +7722,12 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='utfLen',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utfSeek',
                 return_types=FunctionReturnTypes(
@@ -7482,8 +7775,10 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='utfSeek',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utfSeek',
                 return_types=FunctionReturnTypes(
@@ -7531,10 +7826,12 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='utfSeek',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utfSub',
                 return_types=FunctionReturnTypes(
@@ -7593,8 +7890,10 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='utfSub',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utfSub',
                 return_types=FunctionReturnTypes(
@@ -7653,6 +7952,7 @@ Note: You can use the function gettok to retrieve a single token from the string
             ),
             oop=None,
             name='utfSub',
-        ),
+        )
+        ],
     )
 ]

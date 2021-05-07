@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.byte',
                 return_types=FunctionReturnTypes(
@@ -70,8 +71,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.byte',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.byte',
                 return_types=FunctionReturnTypes(
@@ -130,10 +133,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.byte',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.char',
                 return_types=FunctionReturnTypes(
@@ -170,8 +175,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.char',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.char',
                 return_types=FunctionReturnTypes(
@@ -208,10 +215,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.char',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.charpos',
                 return_types=FunctionReturnTypes(
@@ -274,8 +283,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.charpos',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.charpos',
                 return_types=FunctionReturnTypes(
@@ -338,10 +349,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.charpos',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.escape',
                 return_types=FunctionReturnTypes(
@@ -378,8 +391,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.escape',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.escape',
                 return_types=FunctionReturnTypes(
@@ -416,10 +431,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.escape',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.find',
                 return_types=FunctionReturnTypes(
@@ -493,8 +510,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.find',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.find',
                 return_types=FunctionReturnTypes(
@@ -568,10 +587,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.find',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.fold',
                 return_types=FunctionReturnTypes(
@@ -608,8 +629,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.fold',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.fold',
                 return_types=FunctionReturnTypes(
@@ -646,10 +669,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.fold',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.gmatch',
                 return_types=FunctionReturnTypes(
@@ -697,8 +722,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.gmatch',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.gmatch',
                 return_types=FunctionReturnTypes(
@@ -746,10 +773,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.gmatch',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.gsub',
                 return_types=FunctionReturnTypes(
@@ -819,8 +848,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.gsub',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.gsub',
                 return_types=FunctionReturnTypes(
@@ -890,10 +921,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.gsub',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.insert',
                 return_types=FunctionReturnTypes(
@@ -952,8 +985,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.insert',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.insert',
                 return_types=FunctionReturnTypes(
@@ -1012,10 +1047,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.insert',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.len',
                 return_types=FunctionReturnTypes(
@@ -1074,8 +1111,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.len',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.len',
                 return_types=FunctionReturnTypes(
@@ -1134,10 +1173,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.len',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.match',
                 return_types=FunctionReturnTypes(
@@ -1196,8 +1237,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.match',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.match',
                 return_types=FunctionReturnTypes(
@@ -1256,10 +1299,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.match',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.ncasecmp',
                 return_types=FunctionReturnTypes(
@@ -1307,8 +1352,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.ncasecmp',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.ncasecmp',
                 return_types=FunctionReturnTypes(
@@ -1356,10 +1403,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.ncasecmp',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.next',
                 return_types=FunctionReturnTypes(
@@ -1422,8 +1471,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.next',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.next',
                 return_types=FunctionReturnTypes(
@@ -1486,10 +1537,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.next',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.remove',
                 return_types=FunctionReturnTypes(
@@ -1548,8 +1601,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.remove',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.remove',
                 return_types=FunctionReturnTypes(
@@ -1608,10 +1663,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.remove',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.reverse',
                 return_types=FunctionReturnTypes(
@@ -1648,8 +1705,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.reverse',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.reverse',
                 return_types=FunctionReturnTypes(
@@ -1686,10 +1745,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.reverse',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.sub',
                 return_types=FunctionReturnTypes(
@@ -1748,8 +1809,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.sub',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.sub',
                 return_types=FunctionReturnTypes(
@@ -1808,10 +1871,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.sub',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.title',
                 return_types=FunctionReturnTypes(
@@ -1848,8 +1913,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.title',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.title',
                 return_types=FunctionReturnTypes(
@@ -1886,10 +1953,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.title',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.width',
                 return_types=FunctionReturnTypes(
@@ -1948,8 +2017,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.width',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.width',
                 return_types=FunctionReturnTypes(
@@ -2008,10 +2079,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.width',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.widthindex',
                 return_types=FunctionReturnTypes(
@@ -2088,8 +2161,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.widthindex',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='utf8.widthindex',
                 return_types=FunctionReturnTypes(
@@ -2166,6 +2241,7 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='utf8.widthindex',
-        ),
+        )
+        ],
     )
 ]

@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createMarker',
                 return_types=FunctionReturnTypes(
@@ -158,8 +159,10 @@ You are able to create as many markers as you wish (memory and element limit per
                 is_static=True,
             ),
             name='createMarker',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createMarker',
                 return_types=FunctionReturnTypes(
@@ -295,10 +298,12 @@ You are able to create as many markers as you wish (memory and element limit per
                 is_static=True,
             ),
             name='createMarker',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMarkerColor',
                 return_types=FunctionReturnTypes(
@@ -353,8 +358,10 @@ You are able to create as many markers as you wish (memory and element limit per
                 is_static=False,
             ),
             name='getMarkerColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMarkerColor',
                 return_types=FunctionReturnTypes(
@@ -409,10 +416,12 @@ You are able to create as many markers as you wish (memory and element limit per
                 is_static=False,
             ),
             name='getMarkerColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMarkerCount',
                 return_types=FunctionReturnTypes(
@@ -440,8 +449,10 @@ You are able to create as many markers as you wish (memory and element limit per
             ),
             oop=None,
             name='getMarkerCount',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMarkerCount',
                 return_types=FunctionReturnTypes(
@@ -469,10 +480,12 @@ You are able to create as many markers as you wish (memory and element limit per
             ),
             oop=None,
             name='getMarkerCount',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMarkerIcon',
                 return_types=FunctionReturnTypes(
@@ -518,8 +531,10 @@ You are able to create as many markers as you wish (memory and element limit per
                 is_static=False,
             ),
             name='getMarkerIcon',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMarkerIcon',
                 return_types=FunctionReturnTypes(
@@ -565,10 +580,12 @@ You are able to create as many markers as you wish (memory and element limit per
                 is_static=False,
             ),
             name='getMarkerIcon',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMarkerSize',
                 return_types=FunctionReturnTypes(
@@ -611,8 +628,10 @@ You are able to create as many markers as you wish (memory and element limit per
                 is_static=False,
             ),
             name='getMarkerSize',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMarkerSize',
                 return_types=FunctionReturnTypes(
@@ -655,10 +674,12 @@ You are able to create as many markers as you wish (memory and element limit per
                 is_static=False,
             ),
             name='getMarkerSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMarkerTarget',
                 return_types=FunctionReturnTypes(
@@ -709,8 +730,10 @@ You are able to create as many markers as you wish (memory and element limit per
                 is_static=False,
             ),
             name='getMarkerTarget',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMarkerTarget',
                 return_types=FunctionReturnTypes(
@@ -761,10 +784,12 @@ You are able to create as many markers as you wish (memory and element limit per
                 is_static=False,
             ),
             name='getMarkerTarget',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMarkerType',
                 return_types=FunctionReturnTypes(
@@ -808,8 +833,10 @@ if an invalid marker is specified, false is returned. """,
                 is_static=False,
             ),
             name='getMarkerType',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMarkerType',
                 return_types=FunctionReturnTypes(
@@ -853,10 +880,12 @@ if an invalid marker is specified, false is returned. """,
                 is_static=False,
             ),
             name='getMarkerType',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setMarkerColor',
                 return_types=FunctionReturnTypes(
@@ -943,8 +972,10 @@ if an invalid marker is specified, false is returned. """,
                 is_static=False,
             ),
             name='setMarkerColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setMarkerColor',
                 return_types=FunctionReturnTypes(
@@ -1031,10 +1062,12 @@ if an invalid marker is specified, false is returned. """,
                 is_static=False,
             ),
             name='setMarkerColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setMarkerIcon',
                 return_types=FunctionReturnTypes(
@@ -1091,8 +1124,10 @@ if an invalid marker is specified, false is returned. """,
                 is_static=False,
             ),
             name='setMarkerIcon',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setMarkerIcon',
                 return_types=FunctionReturnTypes(
@@ -1149,10 +1184,12 @@ if an invalid marker is specified, false is returned. """,
                 is_static=False,
             ),
             name='setMarkerIcon',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setMarkerSize',
                 return_types=FunctionReturnTypes(
@@ -1211,8 +1248,10 @@ Setting negative value will flip the marker, do nothing or make it invisible:
                 is_static=False,
             ),
             name='setMarkerSize',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setMarkerSize',
                 return_types=FunctionReturnTypes(
@@ -1271,10 +1310,12 @@ Setting negative value will flip the marker, do nothing or make it invisible:
                 is_static=False,
             ),
             name='setMarkerSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setMarkerTarget',
                 return_types=FunctionReturnTypes(
@@ -1354,8 +1395,10 @@ This function is most useful for setting up markers for races, where each marker
                 is_static=False,
             ),
             name='setMarkerTarget',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setMarkerTarget',
                 return_types=FunctionReturnTypes(
@@ -1435,10 +1478,12 @@ This function is most useful for setting up markers for races, where each marker
                 is_static=False,
             ),
             name='setMarkerTarget',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setMarkerType',
                 return_types=FunctionReturnTypes(
@@ -1492,8 +1537,10 @@ This function is most useful for setting up markers for races, where each marker
                 is_static=False,
             ),
             name='setMarkerType',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setMarkerType',
                 return_types=FunctionReturnTypes(
@@ -1547,6 +1594,7 @@ This function is most useful for setting up markers for races, where each marker
                 is_static=False,
             ),
             name='setMarkerType',
-        ),
+        )
+        ],
     )
 ]

@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileClose',
                 return_types=FunctionReturnTypes(
@@ -54,8 +55,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fileClose',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileClose',
                 return_types=FunctionReturnTypes(
@@ -98,10 +101,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fileClose',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileCopy',
                 return_types=FunctionReturnTypes(
@@ -166,8 +171,10 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fileCopy',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileCopy',
                 return_types=FunctionReturnTypes(
@@ -232,10 +239,12 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fileCopy',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileCreate',
                 return_types=FunctionReturnTypes(
@@ -280,8 +289,10 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fileCreate',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileCreate',
                 return_types=FunctionReturnTypes(
@@ -326,10 +337,12 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fileCreate',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileDelete',
                 return_types=FunctionReturnTypes(
@@ -374,8 +387,10 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fileDelete',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileDelete',
                 return_types=FunctionReturnTypes(
@@ -420,10 +435,12 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fileDelete',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileExists',
                 return_types=FunctionReturnTypes(
@@ -468,8 +485,10 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fileExists',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileExists',
                 return_types=FunctionReturnTypes(
@@ -514,10 +533,12 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fileExists',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileFlush',
                 return_types=FunctionReturnTypes(
@@ -560,8 +581,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fileFlush',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileFlush',
                 return_types=FunctionReturnTypes(
@@ -604,10 +627,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fileFlush',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileGetPath',
                 return_types=FunctionReturnTypes(
@@ -644,8 +669,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='fileGetPath',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileGetPath',
                 return_types=FunctionReturnTypes(
@@ -682,10 +709,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='fileGetPath',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileGetPos',
                 return_types=FunctionReturnTypes(
@@ -728,8 +757,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fileGetPos',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileGetPos',
                 return_types=FunctionReturnTypes(
@@ -772,10 +803,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fileGetPos',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileGetSize',
                 return_types=FunctionReturnTypes(
@@ -818,8 +851,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fileGetSize',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileGetSize',
                 return_types=FunctionReturnTypes(
@@ -862,10 +897,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fileGetSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileIsEOF',
                 return_types=FunctionReturnTypes(
@@ -908,8 +945,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fileIsEOF',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileIsEOF',
                 return_types=FunctionReturnTypes(
@@ -952,10 +991,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fileIsEOF',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileOpen',
                 return_types=FunctionReturnTypes(
@@ -1011,8 +1052,10 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fileOpen',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileOpen',
                 return_types=FunctionReturnTypes(
@@ -1068,10 +1111,12 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fileOpen',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileRead',
                 return_types=FunctionReturnTypes(
@@ -1125,8 +1170,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fileRead',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileRead',
                 return_types=FunctionReturnTypes(
@@ -1180,10 +1227,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fileRead',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileRename',
                 return_types=FunctionReturnTypes(
@@ -1237,8 +1286,10 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fileRename',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileRename',
                 return_types=FunctionReturnTypes(
@@ -1292,10 +1343,12 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fileRename',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileSetPos',
                 return_types=FunctionReturnTypes(
@@ -1349,8 +1402,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fileSetPos',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileSetPos',
                 return_types=FunctionReturnTypes(
@@ -1404,10 +1459,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fileSetPos',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileWrite',
                 return_types=FunctionReturnTypes(
@@ -1481,8 +1538,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fileWrite',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fileWrite',
                 return_types=FunctionReturnTypes(
@@ -1556,6 +1615,7 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fileWrite',
-        ),
+        )
+        ],
     )
 ]

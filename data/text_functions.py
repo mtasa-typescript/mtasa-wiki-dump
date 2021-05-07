@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textCreateDisplay',
                 return_types=FunctionReturnTypes(
@@ -39,11 +40,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textCreateDisplay',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textCreateTextItem',
                 return_types=FunctionReturnTypes(
@@ -201,11 +206,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textCreateTextItem',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textDestroyDisplay',
                 return_types=FunctionReturnTypes(
@@ -242,11 +251,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textDestroyDisplay',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textDestroyTextItem',
                 return_types=FunctionReturnTypes(
@@ -283,11 +296,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textDestroyTextItem',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textDisplayAddObserver',
                 return_types=FunctionReturnTypes(
@@ -335,11 +352,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textDisplayAddObserver',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textDisplayAddText',
                 return_types=FunctionReturnTypes(
@@ -387,11 +408,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textDisplayAddText',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textDisplayGetObservers',
                 return_types=FunctionReturnTypes(
@@ -428,11 +453,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textDisplayGetObservers',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textDisplayIsObserver',
                 return_types=FunctionReturnTypes(
@@ -480,11 +509,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textDisplayIsObserver',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textDisplayRemoveObserver',
                 return_types=FunctionReturnTypes(
@@ -532,11 +565,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textDisplayRemoveObserver',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textDisplayRemoveText',
                 return_types=FunctionReturnTypes(
@@ -584,11 +621,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textDisplayRemoveText',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textItemGetColor',
                 return_types=FunctionReturnTypes(
@@ -637,11 +678,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textItemGetColor',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textItemGetPosition',
                 return_types=FunctionReturnTypes(
@@ -682,11 +727,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textItemGetPosition',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textItemGetPriority',
                 return_types=FunctionReturnTypes(
@@ -723,11 +772,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textItemGetPriority',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textItemGetScale',
                 return_types=FunctionReturnTypes(
@@ -764,11 +817,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textItemGetScale',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textItemGetText',
                 return_types=FunctionReturnTypes(
@@ -805,11 +862,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textItemGetText',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textItemSetColor',
                 return_types=FunctionReturnTypes(
@@ -890,11 +951,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textItemSetColor',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textItemSetPosition',
                 return_types=FunctionReturnTypes(
@@ -953,11 +1018,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textItemSetPosition',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textItemSetPriority',
                 return_types=FunctionReturnTypes(
@@ -1005,11 +1074,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textItemSetPriority',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textItemSetScale',
                 return_types=FunctionReturnTypes(
@@ -1057,11 +1130,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textItemSetScale',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='textItemSetText',
                 return_types=FunctionReturnTypes(
@@ -1109,7 +1186,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='textItemSetText',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     )
 ]

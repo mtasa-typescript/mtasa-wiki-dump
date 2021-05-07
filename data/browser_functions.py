@@ -11,8 +11,11 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='canBrowserNavigateBack',
                 return_types=FunctionReturnTypes(
@@ -49,11 +52,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='canBrowserNavigateBack',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='canBrowserNavigateForward',
                 return_types=FunctionReturnTypes(
@@ -90,11 +97,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='canBrowserNavigateForward',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createBrowser',
                 return_types=FunctionReturnTypes(
@@ -170,11 +181,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='createBrowser',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='executeBrowserJavascript',
                 return_types=FunctionReturnTypes(
@@ -228,11 +243,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='executeBrowserJavascript',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='focusBrowser',
                 return_types=FunctionReturnTypes(
@@ -275,11 +294,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='focusBrowser',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBrowserProperty',
                 return_types=FunctionReturnTypes(
@@ -334,11 +357,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getBrowserProperty',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBrowserSettings',
                 return_types=FunctionReturnTypes(
@@ -375,11 +402,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='getBrowserSettings',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBrowserSource',
                 return_types=FunctionReturnTypes(
@@ -436,11 +467,15 @@ function ( string code )
                 is_static=False,
             ),
             name='getBrowserSource',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBrowserTitle',
                 return_types=FunctionReturnTypes(
@@ -483,11 +518,15 @@ function ( string code )
                 is_static=False,
             ),
             name='getBrowserTitle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBrowserURL',
                 return_types=FunctionReturnTypes(
@@ -530,11 +569,15 @@ function ( string code )
                 is_static=False,
             ),
             name='getBrowserURL',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='injectBrowserMouseDown',
                 return_types=FunctionReturnTypes(
@@ -588,11 +631,15 @@ function ( string code )
                 is_static=False,
             ),
             name='injectBrowserMouseDown',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='injectBrowserMouseMove',
                 return_types=FunctionReturnTypes(
@@ -657,11 +704,15 @@ function ( string code )
                 is_static=False,
             ),
             name='injectBrowserMouseMove',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='injectBrowserMouseUp',
                 return_types=FunctionReturnTypes(
@@ -715,11 +766,15 @@ function ( string code )
                 is_static=False,
             ),
             name='injectBrowserMouseUp',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='injectBrowserMouseWheel',
                 return_types=FunctionReturnTypes(
@@ -784,11 +839,15 @@ function ( string code )
                 is_static=False,
             ),
             name='injectBrowserMouseWheel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isBrowserDomainBlocked',
                 return_types=FunctionReturnTypes(
@@ -842,11 +901,15 @@ function ( string code )
                 is_static=True,
             ),
             name='isBrowserDomainBlocked',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isBrowserFocused',
                 return_types=FunctionReturnTypes(
@@ -889,11 +952,15 @@ function ( string code )
                 is_static=False,
             ),
             name='isBrowserFocused',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isBrowserLoading',
                 return_types=FunctionReturnTypes(
@@ -936,11 +1003,15 @@ function ( string code )
                 is_static=False,
             ),
             name='isBrowserLoading',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='loadBrowserURL',
                 return_types=FunctionReturnTypes(
@@ -1016,11 +1087,15 @@ function ( string code )
                 is_static=False,
             ),
             name='loadBrowserURL',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='navigateBrowserBack',
                 return_types=FunctionReturnTypes(
@@ -1057,11 +1132,15 @@ function ( string code )
             ),
             oop=None,
             name='navigateBrowserBack',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='navigateBrowserForward',
                 return_types=FunctionReturnTypes(
@@ -1098,11 +1177,15 @@ function ( string code )
             ),
             oop=None,
             name='navigateBrowserForward',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='reloadBrowserPage',
                 return_types=FunctionReturnTypes(
@@ -1139,11 +1222,15 @@ function ( string code )
             ),
             oop=None,
             name='reloadBrowserPage',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='requestBrowserDomains',
                 return_types=FunctionReturnTypes(
@@ -1210,11 +1297,15 @@ Syntax:
                 is_static=True,
             ),
             name='requestBrowserDomains',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resizeBrowser',
                 return_types=FunctionReturnTypes(
@@ -1273,11 +1364,15 @@ Syntax:
             ),
             oop=None,
             name='resizeBrowser',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBrowserAjaxHandler',
                 return_types=FunctionReturnTypes(
@@ -1342,11 +1437,15 @@ Syntax:
                 is_static=False,
             ),
             name='setBrowserAjaxHandler',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBrowserProperty',
                 return_types=FunctionReturnTypes(
@@ -1412,11 +1511,15 @@ Syntax:
                 is_static=False,
             ),
             name='setBrowserProperty',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBrowserRenderingPaused',
                 return_types=FunctionReturnTypes(
@@ -1470,11 +1573,15 @@ Syntax:
                 is_static=False,
             ),
             name='setBrowserRenderingPaused',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBrowserVolume',
                 return_types=FunctionReturnTypes(
@@ -1528,11 +1635,15 @@ Syntax:
                 is_static=False,
             ),
             name='setBrowserVolume',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='toggleBrowserDevTools',
                 return_types=FunctionReturnTypes(
@@ -1586,6 +1697,7 @@ Syntax:
                 is_static=False,
             ),
             name='toggleBrowserDevTools',
-        ),
+        )
+        ],
     )
 ]

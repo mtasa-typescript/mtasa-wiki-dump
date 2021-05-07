@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='abortRemoteRequest',
                 return_types=FunctionReturnTypes(
@@ -48,8 +49,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='abortRemoteRequest',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='abortRemoteRequest',
                 return_types=FunctionReturnTypes(
@@ -86,10 +89,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='abortRemoteRequest',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addResourceConfig',
                 return_types=FunctionReturnTypes(
@@ -139,11 +144,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='addResourceConfig',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addResourceMap',
                 return_types=FunctionReturnTypes(
@@ -193,11 +202,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='addResourceMap',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='call',
                 return_types=FunctionReturnTypes(
@@ -286,8 +299,10 @@ returns anything that the designated function has returned, if the function has 
                 is_static=False,
             ),
             name='call',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='call',
                 return_types=FunctionReturnTypes(
@@ -376,10 +391,12 @@ returns anything that the designated function has returned, if the function has 
                 is_static=False,
             ),
             name='call',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='callRemote',
                 return_types=FunctionReturnTypes(
@@ -495,11 +512,15 @@ In the case when the call fails, a string containing ERROR followed by an intege
             ),
             oop=None,
             name='callRemote',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='copyResource',
                 return_types=FunctionReturnTypes(
@@ -564,11 +585,15 @@ In the case when the call fails, a string containing ERROR followed by an intege
                 is_static=False,
             ),
             name='copyResource',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createResource',
                 return_types=FunctionReturnTypes(
@@ -622,11 +647,15 @@ In the case when the call fails, a string containing ERROR followed by an intege
                 is_static=True,
             ),
             name='createResource',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='deleteResource',
                 return_types=FunctionReturnTypes(
@@ -669,11 +698,15 @@ In the case when the call fails, a string containing ERROR followed by an intege
                 is_static=True,
             ),
             name='deleteResource',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fetchRemote',
                 return_types=FunctionReturnTypes(
@@ -800,8 +833,10 @@ If you are using fetchRemote to connect to a PHP script, you can use file_get_co
             ),
             oop=None,
             name='fetchRemote',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fetchRemote',
                 return_types=FunctionReturnTypes(
@@ -928,10 +963,12 @@ If you are using fetchRemote to connect to a PHP script, you can use file_get_co
             ),
             oop=None,
             name='fetchRemote',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRemoteRequestInfo',
                 return_types=FunctionReturnTypes(
@@ -1001,8 +1038,10 @@ the table contains:
             ),
             oop=None,
             name='getRemoteRequestInfo',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRemoteRequestInfo',
                 return_types=FunctionReturnTypes(
@@ -1072,10 +1111,12 @@ the table contains:
             ),
             oop=None,
             name='getRemoteRequestInfo',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRemoteRequests',
                 return_types=FunctionReturnTypes(
@@ -1112,8 +1153,10 @@ the table contains:
             ),
             oop=None,
             name='getRemoteRequests',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRemoteRequests',
                 return_types=FunctionReturnTypes(
@@ -1150,10 +1193,12 @@ the table contains:
             ),
             oop=None,
             name='getRemoteRequests',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceACLRequests',
                 return_types=FunctionReturnTypes(
@@ -1190,11 +1235,15 @@ the table contains:
             ),
             oop=None,
             name='getResourceACLRequests',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceConfig',
                 return_types=FunctionReturnTypes(
@@ -1233,8 +1282,10 @@ the table contains:
             ),
             oop=None,
             name='getResourceConfig',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceConfig',
                 return_types=FunctionReturnTypes(
@@ -1273,10 +1324,12 @@ the table contains:
             ),
             oop=None,
             name='getResourceConfig',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceDynamicElementRoot',
                 return_types=FunctionReturnTypes(
@@ -1313,8 +1366,10 @@ the table contains:
             ),
             oop=None,
             name='getResourceDynamicElementRoot',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceDynamicElementRoot',
                 return_types=FunctionReturnTypes(
@@ -1351,10 +1406,12 @@ the table contains:
             ),
             oop=None,
             name='getResourceDynamicElementRoot',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceExportedFunctions',
                 return_types=FunctionReturnTypes(
@@ -1391,8 +1448,10 @@ the table contains:
             ),
             oop=None,
             name='getResourceExportedFunctions',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceExportedFunctions',
                 return_types=FunctionReturnTypes(
@@ -1429,10 +1488,12 @@ the table contains:
             ),
             oop=None,
             name='getResourceExportedFunctions',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceFromName',
                 return_types=FunctionReturnTypes(
@@ -1475,8 +1536,10 @@ the table contains:
                 is_static=True,
             ),
             name='getResourceFromName',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceFromName',
                 return_types=FunctionReturnTypes(
@@ -1519,11 +1582,15 @@ the table contains:
                 is_static=True,
             ),
             name='getResourceFromName',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceGUIElement',
                 return_types=FunctionReturnTypes(
@@ -1560,10 +1627,12 @@ the table contains:
             ),
             oop=None,
             name='getResourceGUIElement',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceInfo',
                 return_types=FunctionReturnTypes(
@@ -1617,11 +1686,15 @@ the table contains:
                 is_static=False,
             ),
             name='getResourceInfo',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceLastStartTime',
                 return_types=FunctionReturnTypes(
@@ -1659,11 +1732,15 @@ returns a string with the time and date, or false if the resource does not exist
             ),
             oop=None,
             name='getResourceLastStartTime',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceLoadFailureReason',
                 return_types=FunctionReturnTypes(
@@ -1700,11 +1777,15 @@ returns a string with the time and date, or false if the resource does not exist
             ),
             oop=None,
             name='getResourceLoadFailureReason',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceLoadTime',
                 return_types=FunctionReturnTypes(
@@ -1743,11 +1824,15 @@ an example string is fri mar 28 13:51:04 2008. """,
             ),
             oop=None,
             name='getResourceLoadTime',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceMapRootElement',
                 return_types=FunctionReturnTypes(
@@ -1801,11 +1886,15 @@ an example string is fri mar 28 13:51:04 2008. """,
                 is_static=False,
             ),
             name='getResourceMapRootElement',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceName',
                 return_types=FunctionReturnTypes(
@@ -1848,8 +1937,10 @@ an example string is fri mar 28 13:51:04 2008. """,
                 is_static=False,
             ),
             name='getResourceName',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceName',
                 return_types=FunctionReturnTypes(
@@ -1892,10 +1983,12 @@ an example string is fri mar 28 13:51:04 2008. """,
                 is_static=False,
             ),
             name='getResourceName',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceOrganizationalPath',
                 return_types=FunctionReturnTypes(
@@ -1938,11 +2031,15 @@ an example string is fri mar 28 13:51:04 2008. """,
                 is_static=False,
             ),
             name='getResourceOrganizationalPath',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceRootElement',
                 return_types=FunctionReturnTypes(
@@ -1986,8 +2083,10 @@ Note: every resource has a Predefined_variables_list|predefined global variable 
                 is_static=False,
             ),
             name='getResourceRootElement',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceRootElement',
                 return_types=FunctionReturnTypes(
@@ -2031,10 +2130,12 @@ Note: every resource has a Predefined_variables_list|predefined global variable 
                 is_static=False,
             ),
             name='getResourceRootElement',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResources',
                 return_types=FunctionReturnTypes(
@@ -2068,11 +2169,15 @@ Note: every resource has a Predefined_variables_list|predefined global variable 
                 is_static=True,
             ),
             name='getResources',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceState',
                 return_types=FunctionReturnTypes(
@@ -2115,8 +2220,10 @@ the state can be one of:
             ),
             oop=None,
             name='getResourceState',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getResourceState',
                 return_types=FunctionReturnTypes(
@@ -2159,10 +2266,12 @@ the state can be one of:
             ),
             oop=None,
             name='getResourceState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getThisResource',
                 return_types=FunctionReturnTypes(
@@ -2190,8 +2299,10 @@ the state can be one of:
             ),
             oop=None,
             name='getThisResource',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getThisResource',
                 return_types=FunctionReturnTypes(
@@ -2219,10 +2330,12 @@ the state can be one of:
             ),
             oop=None,
             name='getThisResource',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isResourceArchived',
                 return_types=FunctionReturnTypes(
@@ -2265,11 +2378,15 @@ the state can be one of:
                 is_static=False,
             ),
             name='isResourceArchived',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isResourceProtected',
                 return_types=FunctionReturnTypes(
@@ -2312,11 +2429,15 @@ the state can be one of:
                 is_static=False,
             ),
             name='isResourceProtected',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='refreshResources',
                 return_types=FunctionReturnTypes(
@@ -2365,11 +2486,15 @@ the state can be one of:
             ),
             oop=None,
             name='refreshResources',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeResourceFile',
                 return_types=FunctionReturnTypes(
@@ -2423,11 +2548,15 @@ the state can be one of:
                 is_static=False,
             ),
             name='removeResourceFile',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='renameResource',
                 return_types=FunctionReturnTypes(
@@ -2492,11 +2621,15 @@ the state can be one of:
                 is_static=False,
             ),
             name='renameResource',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='restartResource',
                 return_types=FunctionReturnTypes(
@@ -2629,11 +2762,15 @@ the state can be one of:
                 is_static=False,
             ),
             name='restartResource',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setResourceInfo',
                 return_types=FunctionReturnTypes(
@@ -2698,11 +2835,15 @@ the state can be one of:
                 is_static=False,
             ),
             name='setResourceInfo',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='startResource',
                 return_types=FunctionReturnTypes(
@@ -2845,11 +2986,15 @@ The function also allows you to specify a number of boolean options. These allow
                 is_static=False,
             ),
             name='startResource',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='stopResource',
                 return_types=FunctionReturnTypes(
@@ -2892,11 +3037,15 @@ The function also allows you to specify a number of boolean options. These allow
                 is_static=False,
             ),
             name='stopResource',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='updateResourceACLRequest',
                 return_types=FunctionReturnTypes(
@@ -2966,7 +3115,10 @@ The function also allows you to specify a number of boolean options. These allow
             ),
             oop=None,
             name='updateResourceACLRequest',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     )
 ]

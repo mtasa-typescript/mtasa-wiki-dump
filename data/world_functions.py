@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='areTrafficLightsLocked',
                 return_types=FunctionReturnTypes(
@@ -39,8 +40,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='areTrafficLightsLocked',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='areTrafficLightsLocked',
                 return_types=FunctionReturnTypes(
@@ -68,11 +71,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='areTrafficLightsLocked',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createSWATRope',
                 return_types=FunctionReturnTypes(
@@ -140,10 +147,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='createSWATRope',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAircraftMaxHeight',
                 return_types=FunctionReturnTypes(
@@ -171,8 +180,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getAircraftMaxHeight',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAircraftMaxHeight',
                 return_types=FunctionReturnTypes(
@@ -200,10 +211,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getAircraftMaxHeight',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAircraftMaxVelocity',
                 return_types=FunctionReturnTypes(
@@ -231,8 +244,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getAircraftMaxVelocity',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAircraftMaxVelocity',
                 return_types=FunctionReturnTypes(
@@ -260,11 +275,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getAircraftMaxVelocity',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBirdsEnabled',
                 return_types=FunctionReturnTypes(
@@ -292,10 +311,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getBirdsEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCloudsEnabled',
                 return_types=FunctionReturnTypes(
@@ -323,8 +344,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getCloudsEnabled',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCloudsEnabled',
                 return_types=FunctionReturnTypes(
@@ -352,10 +375,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getCloudsEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getFarClipDistance',
                 return_types=FunctionReturnTypes(
@@ -383,8 +408,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getFarClipDistance',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getFarClipDistance',
                 return_types=FunctionReturnTypes(
@@ -412,10 +439,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getFarClipDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getFogDistance',
                 return_types=FunctionReturnTypes(
@@ -443,8 +472,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getFogDistance',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getFogDistance',
                 return_types=FunctionReturnTypes(
@@ -472,10 +503,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getFogDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getGameSpeed',
                 return_types=FunctionReturnTypes(
@@ -503,8 +536,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getGameSpeed',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getGameSpeed',
                 return_types=FunctionReturnTypes(
@@ -532,11 +567,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getGameSpeed',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getGarageBoundingBox',
                 return_types=FunctionReturnTypes(
@@ -586,11 +625,15 @@ western x position, eastern x position, southern y position, northern y position
             ),
             oop=None,
             name='getGarageBoundingBox',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getGaragePosition',
                 return_types=FunctionReturnTypes(
@@ -635,11 +678,15 @@ western x position, eastern x position, southern y position, northern y position
             ),
             oop=None,
             name='getGaragePosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getGarageSize',
                 return_types=FunctionReturnTypes(
@@ -684,10 +731,12 @@ western x position, eastern x position, southern y position, northern y position
             ),
             oop=None,
             name='getGarageSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getGravity',
                 return_types=FunctionReturnTypes(
@@ -715,8 +764,10 @@ western x position, eastern x position, southern y position, northern y position
             ),
             oop=None,
             name='getGravity',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getGravity',
                 return_types=FunctionReturnTypes(
@@ -744,11 +795,15 @@ western x position, eastern x position, southern y position, northern y position
             ),
             oop=None,
             name='getGravity',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getGroundPosition',
                 return_types=FunctionReturnTypes(
@@ -808,10 +863,12 @@ It is required that the point is near enough to the local player so that its wit
             ),
             oop=None,
             name='getGroundPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getHeatHaze',
                 return_types=FunctionReturnTypes(
@@ -872,8 +929,10 @@ Note: The server can only return the heat haze settings if it has actually been 
             ),
             oop=None,
             name='getHeatHaze',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getHeatHaze',
                 return_types=FunctionReturnTypes(
@@ -934,11 +993,15 @@ Note: The server can only return the heat haze settings if it has actually been 
             ),
             oop=None,
             name='getHeatHaze',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getInteriorFurnitureEnabled',
                 return_types=FunctionReturnTypes(
@@ -975,11 +1038,15 @@ Note: The server can only return the heat haze settings if it has actually been 
             ),
             oop=None,
             name='getInteriorFurnitureEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getInteriorSoundsEnabled',
                 return_types=FunctionReturnTypes(
@@ -1007,10 +1074,12 @@ Note: The server can only return the heat haze settings if it has actually been 
             ),
             oop=None,
             name='getInteriorSoundsEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getJetpackMaxHeight',
                 return_types=FunctionReturnTypes(
@@ -1038,8 +1107,10 @@ Note: The server can only return the heat haze settings if it has actually been 
             ),
             oop=None,
             name='getJetpackMaxHeight',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getJetpackMaxHeight',
                 return_types=FunctionReturnTypes(
@@ -1067,10 +1138,12 @@ Note: The server can only return the heat haze settings if it has actually been 
             ),
             oop=None,
             name='getJetpackMaxHeight',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getJetpackWeaponEnabled',
                 return_types=FunctionReturnTypes(
@@ -1107,11 +1180,15 @@ Note: The server can only return the heat haze settings if it has actually been 
             ),
             oop=None,
             name='getJetpackWeaponEnabled',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMinuteDuration',
                 return_types=FunctionReturnTypes(
@@ -1139,8 +1216,10 @@ Note: The server can only return the heat haze settings if it has actually been 
             ),
             oop=None,
             name='getMinuteDuration',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMinuteDuration',
                 return_types=FunctionReturnTypes(
@@ -1168,10 +1247,12 @@ Note: The server can only return the heat haze settings if it has actually been 
             ),
             oop=None,
             name='getMinuteDuration',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMoonSize',
                 return_types=FunctionReturnTypes(
@@ -1199,8 +1280,10 @@ Note: The server can only return the heat haze settings if it has actually been 
             ),
             oop=None,
             name='getMoonSize',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMoonSize',
                 return_types=FunctionReturnTypes(
@@ -1228,11 +1311,15 @@ Note: The server can only return the heat haze settings if it has actually been 
             ),
             oop=None,
             name='getMoonSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getNearClipDistance',
                 return_types=FunctionReturnTypes(
@@ -1260,10 +1347,12 @@ Note: The server can only return the heat haze settings if it has actually been 
             ),
             oop=None,
             name='getNearClipDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getOcclusionsEnabled',
                 return_types=FunctionReturnTypes(
@@ -1291,8 +1380,10 @@ Note: The server can only return the heat haze settings if it has actually been 
             ),
             oop=None,
             name='getOcclusionsEnabled',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getOcclusionsEnabled',
                 return_types=FunctionReturnTypes(
@@ -1320,11 +1411,15 @@ Note: The server can only return the heat haze settings if it has actually been 
             ),
             oop=None,
             name='getOcclusionsEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedsLODDistance',
                 return_types=FunctionReturnTypes(
@@ -1352,10 +1447,12 @@ Note: The server can only return the heat haze settings if it has actually been 
             ),
             oop=None,
             name='getPedsLODDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRainLevel',
                 return_types=FunctionReturnTypes(
@@ -1383,8 +1480,10 @@ Note: The server can only return the heat haze settings if it has actually been 
             ),
             oop=None,
             name='getRainLevel',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRainLevel',
                 return_types=FunctionReturnTypes(
@@ -1412,11 +1511,15 @@ Note: The server can only return the heat haze settings if it has actually been 
             ),
             oop=None,
             name='getRainLevel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRoofPosition',
                 return_types=FunctionReturnTypes(
@@ -1476,11 +1579,15 @@ It is required that the point is near enough to the local player so that its wit
             ),
             oop=None,
             name='getRoofPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getScreenFromWorldPosition',
                 return_types=FunctionReturnTypes(
@@ -1569,10 +1676,12 @@ It is required that the point is near enough to the local player so that its wit
             ),
             oop=None,
             name='getScreenFromWorldPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSkyGradient',
                 return_types=FunctionReturnTypes(
@@ -1621,8 +1730,10 @@ Note: The server can only return the sky color if it has actually been set by sc
             ),
             oop=None,
             name='getSkyGradient',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSkyGradient',
                 return_types=FunctionReturnTypes(
@@ -1671,10 +1782,12 @@ Note: The server can only return the sky color if it has actually been set by sc
             ),
             oop=None,
             name='getSkyGradient',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSunColor',
                 return_types=FunctionReturnTypes(
@@ -1722,8 +1835,10 @@ Note: The server can only return the sky color if it has actually been set by sc
             ),
             oop=None,
             name='getSunColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSunColor',
                 return_types=FunctionReturnTypes(
@@ -1771,10 +1886,12 @@ Note: The server can only return the sky color if it has actually been set by sc
             ),
             oop=None,
             name='getSunColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSunSize',
                 return_types=FunctionReturnTypes(
@@ -1802,8 +1919,10 @@ Note: The server can only return the sky color if it has actually been set by sc
             ),
             oop=None,
             name='getSunSize',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSunSize',
                 return_types=FunctionReturnTypes(
@@ -1831,10 +1950,12 @@ Note: The server can only return the sky color if it has actually been set by sc
             ),
             oop=None,
             name='getSunSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTime',
                 return_types=FunctionReturnTypes(
@@ -1866,8 +1987,10 @@ Note: The server can only return the sky color if it has actually been set by sc
             ),
             oop=None,
             name='getTime',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTime',
                 return_types=FunctionReturnTypes(
@@ -1899,10 +2022,12 @@ Note: The server can only return the sky color if it has actually been set by sc
             ),
             oop=None,
             name='getTime',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTrafficLightState',
                 return_types=FunctionReturnTypes(
@@ -1930,8 +2055,10 @@ Note: The server can only return the sky color if it has actually been set by sc
             ),
             oop=None,
             name='getTrafficLightState',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTrafficLightState',
                 return_types=FunctionReturnTypes(
@@ -1959,11 +2086,15 @@ Note: The server can only return the sky color if it has actually been set by sc
             ),
             oop=None,
             name='getTrafficLightState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehiclesLODDistance',
                 return_types=FunctionReturnTypes(
@@ -1996,10 +2127,12 @@ Note: The server can only return the sky color if it has actually been set by sc
             ),
             oop=None,
             name='getVehiclesLODDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWeather',
                 return_types=FunctionReturnTypes(
@@ -2031,8 +2164,10 @@ Note: The server can only return the sky color if it has actually been set by sc
             ),
             oop=None,
             name='getWeather',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWeather',
                 return_types=FunctionReturnTypes(
@@ -2064,10 +2199,12 @@ Note: The server can only return the sky color if it has actually been set by sc
             ),
             oop=None,
             name='getWeather',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWindVelocity',
                 return_types=FunctionReturnTypes(
@@ -2105,8 +2242,10 @@ Note: The server can only return the sky color if it has actually been set by sc
             ),
             oop=None,
             name='getWindVelocity',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWindVelocity',
                 return_types=FunctionReturnTypes(
@@ -2144,11 +2283,15 @@ Note: The server can only return the sky color if it has actually been set by sc
             ),
             oop=None,
             name='getWindVelocity',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWorldFromScreenPosition',
                 return_types=FunctionReturnTypes(
@@ -2217,10 +2360,12 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
             ),
             oop=None,
             name='getWorldFromScreenPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getZoneName',
                 return_types=FunctionReturnTypes(
@@ -2298,8 +2443,10 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
             ),
             oop=None,
             name='getZoneName',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getZoneName',
                 return_types=FunctionReturnTypes(
@@ -2377,11 +2524,15 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
             ),
             oop=None,
             name='getZoneName',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isAmbientSoundEnabled',
                 return_types=FunctionReturnTypes(
@@ -2418,10 +2569,12 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
             ),
             oop=None,
             name='isAmbientSoundEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isGarageOpen',
                 return_types=FunctionReturnTypes(
@@ -2458,8 +2611,10 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
             ),
             oop=None,
             name='isGarageOpen',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isGarageOpen',
                 return_types=FunctionReturnTypes(
@@ -2496,11 +2651,15 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
             ),
             oop=None,
             name='isGarageOpen',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isLineOfSightClear',
                 return_types=FunctionReturnTypes(
@@ -2680,11 +2839,15 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
             ),
             oop=None,
             name='isLineOfSightClear',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isWorldSoundEnabled',
                 return_types=FunctionReturnTypes(
@@ -2732,11 +2895,15 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
             ),
             oop=None,
             name='isWorldSoundEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isWorldSpecialPropertyEnabled',
                 return_types=FunctionReturnTypes(
@@ -2779,11 +2946,15 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 is_static=None,
             ),
             name='isWorldSpecialPropertyEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='processLineOfSight',
                 return_types=FunctionReturnTypes(
@@ -3083,10 +3254,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='processLineOfSight',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeWorldModel',
                 return_types=FunctionReturnTypes(
@@ -3178,8 +3351,10 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='removeWorldModel',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeWorldModel',
                 return_types=FunctionReturnTypes(
@@ -3271,11 +3446,15 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='removeWorldModel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetAmbientSounds',
                 return_types=FunctionReturnTypes(
@@ -3303,11 +3482,15 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetAmbientSounds',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetBlurLevel',
                 return_types=FunctionReturnTypes(
@@ -3335,11 +3518,15 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetBlurLevel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetColorFilter',
                 return_types=FunctionReturnTypes(
@@ -3367,10 +3554,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetColorFilter',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetFarClipDistance',
                 return_types=FunctionReturnTypes(
@@ -3398,8 +3587,10 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetFarClipDistance',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetFarClipDistance',
                 return_types=FunctionReturnTypes(
@@ -3427,10 +3618,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetFarClipDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetFogDistance',
                 return_types=FunctionReturnTypes(
@@ -3458,8 +3651,10 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetFogDistance',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetFogDistance',
                 return_types=FunctionReturnTypes(
@@ -3487,10 +3682,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetFogDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetHeatHaze',
                 return_types=FunctionReturnTypes(
@@ -3518,8 +3715,10 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetHeatHaze',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetHeatHaze',
                 return_types=FunctionReturnTypes(
@@ -3547,10 +3746,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetHeatHaze',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetMoonSize',
                 return_types=FunctionReturnTypes(
@@ -3578,8 +3779,10 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetMoonSize',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetMoonSize',
                 return_types=FunctionReturnTypes(
@@ -3607,11 +3810,15 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetMoonSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetNearClipDistance',
                 return_types=FunctionReturnTypes(
@@ -3639,11 +3846,15 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetNearClipDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetPedsLODDistance',
                 return_types=FunctionReturnTypes(
@@ -3671,10 +3882,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetPedsLODDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetRainLevel',
                 return_types=FunctionReturnTypes(
@@ -3702,8 +3915,10 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetRainLevel',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetRainLevel',
                 return_types=FunctionReturnTypes(
@@ -3731,10 +3946,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetRainLevel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetSkyGradient',
                 return_types=FunctionReturnTypes(
@@ -3762,8 +3979,10 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetSkyGradient',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetSkyGradient',
                 return_types=FunctionReturnTypes(
@@ -3791,10 +4010,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetSkyGradient',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetSunColor',
                 return_types=FunctionReturnTypes(
@@ -3822,8 +4043,10 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetSunColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetSunColor',
                 return_types=FunctionReturnTypes(
@@ -3851,10 +4074,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetSunColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetSunSize',
                 return_types=FunctionReturnTypes(
@@ -3882,8 +4107,10 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetSunSize',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetSunSize',
                 return_types=FunctionReturnTypes(
@@ -3911,11 +4138,15 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetSunSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetVehiclesLODDistance',
                 return_types=FunctionReturnTypes(
@@ -3943,10 +4174,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetVehiclesLODDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetWindVelocity',
                 return_types=FunctionReturnTypes(
@@ -3974,8 +4207,10 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetWindVelocity',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetWindVelocity',
                 return_types=FunctionReturnTypes(
@@ -4003,11 +4238,15 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetWindVelocity',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetWorldSounds',
                 return_types=FunctionReturnTypes(
@@ -4035,10 +4274,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='resetWorldSounds',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='restoreAllWorldModels',
                 return_types=FunctionReturnTypes(
@@ -4066,8 +4307,10 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='restoreAllWorldModels',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='restoreAllWorldModels',
                 return_types=FunctionReturnTypes(
@@ -4095,10 +4338,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='restoreAllWorldModels',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='restoreWorldModel',
                 return_types=FunctionReturnTypes(
@@ -4190,8 +4435,10 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='restoreWorldModel',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='restoreWorldModel',
                 return_types=FunctionReturnTypes(
@@ -4283,10 +4530,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='restoreWorldModel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setAircraftMaxHeight',
                 return_types=FunctionReturnTypes(
@@ -4323,8 +4572,10 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='setAircraftMaxHeight',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setAircraftMaxHeight',
                 return_types=FunctionReturnTypes(
@@ -4361,10 +4612,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='setAircraftMaxHeight',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setAircraftMaxVelocity',
                 return_types=FunctionReturnTypes(
@@ -4401,8 +4654,10 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='setAircraftMaxVelocity',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setAircraftMaxVelocity',
                 return_types=FunctionReturnTypes(
@@ -4439,11 +4694,15 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='setAircraftMaxVelocity',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setAmbientSoundEnabled',
                 return_types=FunctionReturnTypes(
@@ -4491,11 +4750,15 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='setAmbientSoundEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBirdsEnabled',
                 return_types=FunctionReturnTypes(
@@ -4532,10 +4795,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='setBirdsEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setCloudsEnabled',
                 return_types=FunctionReturnTypes(
@@ -4572,8 +4837,10 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='setCloudsEnabled',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setCloudsEnabled',
                 return_types=FunctionReturnTypes(
@@ -4610,11 +4877,15 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='setCloudsEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setColorFilter',
                 return_types=FunctionReturnTypes(
@@ -4728,10 +4999,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='setColorFilter',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setFarClipDistance',
                 return_types=FunctionReturnTypes(
@@ -4768,8 +5041,10 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='setFarClipDistance',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setFarClipDistance',
                 return_types=FunctionReturnTypes(
@@ -4806,10 +5081,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='setFarClipDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setFogDistance',
                 return_types=FunctionReturnTypes(
@@ -4846,8 +5123,10 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='setFogDistance',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setFogDistance',
                 return_types=FunctionReturnTypes(
@@ -4884,10 +5163,12 @@ the other values are only filled if there is a collision, they contain nil other
             ),
             oop=None,
             name='setFogDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setGameSpeed',
                 return_types=FunctionReturnTypes(
@@ -4925,8 +5206,10 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setGameSpeed',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setGameSpeed',
                 return_types=FunctionReturnTypes(
@@ -4964,10 +5247,12 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setGameSpeed',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setGarageOpen',
                 return_types=FunctionReturnTypes(
@@ -5015,8 +5300,10 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setGarageOpen',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setGarageOpen',
                 return_types=FunctionReturnTypes(
@@ -5064,10 +5351,12 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setGarageOpen',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setGravity',
                 return_types=FunctionReturnTypes(
@@ -5106,8 +5395,10 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setGravity',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setGravity',
                 return_types=FunctionReturnTypes(
@@ -5146,10 +5437,12 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setGravity',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setHeatHaze',
                 return_types=FunctionReturnTypes(
@@ -5266,8 +5559,10 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setHeatHaze',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setHeatHaze',
                 return_types=FunctionReturnTypes(
@@ -5384,11 +5679,15 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setHeatHaze',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setInteriorFurnitureEnabled',
                 return_types=FunctionReturnTypes(
@@ -5441,10 +5740,12 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setInteriorFurnitureEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setInteriorSoundsEnabled',
                 return_types=FunctionReturnTypes(
@@ -5481,8 +5782,10 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setInteriorSoundsEnabled',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setInteriorSoundsEnabled',
                 return_types=FunctionReturnTypes(
@@ -5519,10 +5822,12 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setInteriorSoundsEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setJetpackMaxHeight',
                 return_types=FunctionReturnTypes(
@@ -5559,8 +5864,10 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setJetpackMaxHeight',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setJetpackMaxHeight',
                 return_types=FunctionReturnTypes(
@@ -5597,10 +5904,12 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setJetpackMaxHeight',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setJetpackWeaponEnabled',
                 return_types=FunctionReturnTypes(
@@ -5648,11 +5957,15 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setJetpackWeaponEnabled',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setMinuteDuration',
                 return_types=FunctionReturnTypes(
@@ -5689,8 +6002,10 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setMinuteDuration',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setMinuteDuration',
                 return_types=FunctionReturnTypes(
@@ -5727,10 +6042,12 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setMinuteDuration',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setMoonSize',
                 return_types=FunctionReturnTypes(
@@ -5767,8 +6084,10 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setMoonSize',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setMoonSize',
                 return_types=FunctionReturnTypes(
@@ -5805,11 +6124,15 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setMoonSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setNearClipDistance',
                 return_types=FunctionReturnTypes(
@@ -5846,10 +6169,12 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setNearClipDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setOcclusionsEnabled',
                 return_types=FunctionReturnTypes(
@@ -5886,8 +6211,10 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setOcclusionsEnabled',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setOcclusionsEnabled',
                 return_types=FunctionReturnTypes(
@@ -5924,11 +6251,15 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setOcclusionsEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedsLODDistance',
                 return_types=FunctionReturnTypes(
@@ -5965,10 +6296,12 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setPedsLODDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setRainLevel',
                 return_types=FunctionReturnTypes(
@@ -6006,8 +6339,10 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setRainLevel',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setRainLevel',
                 return_types=FunctionReturnTypes(
@@ -6045,10 +6380,12 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setRainLevel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSkyGradient',
                 return_types=FunctionReturnTypes(
@@ -6140,8 +6477,10 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setSkyGradient',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSkyGradient',
                 return_types=FunctionReturnTypes(
@@ -6233,10 +6572,12 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setSkyGradient',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSunColor',
                 return_types=FunctionReturnTypes(
@@ -6328,8 +6669,10 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setSunColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSunColor',
                 return_types=FunctionReturnTypes(
@@ -6421,10 +6764,12 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setSunColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSunSize',
                 return_types=FunctionReturnTypes(
@@ -6461,8 +6806,10 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setSunSize',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSunSize',
                 return_types=FunctionReturnTypes(
@@ -6499,10 +6846,12 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setSunSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTime',
                 return_types=FunctionReturnTypes(
@@ -6550,8 +6899,10 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setTime',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTime',
                 return_types=FunctionReturnTypes(
@@ -6599,10 +6950,12 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setTime',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTrafficLightsLocked',
                 return_types=FunctionReturnTypes(
@@ -6639,8 +6992,10 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setTrafficLightsLocked',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTrafficLightsLocked',
                 return_types=FunctionReturnTypes(
@@ -6677,10 +7032,12 @@ the normal game speed is 1. """,
             ),
             oop=None,
             name='setTrafficLightsLocked',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTrafficLightState',
                 return_types=FunctionReturnTypes(
@@ -6723,8 +7080,10 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
             ),
             oop=None,
             name='setTrafficLightState',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTrafficLightState',
                 return_types=FunctionReturnTypes(
@@ -6767,11 +7126,15 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
             ),
             oop=None,
             name='setTrafficLightState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehiclesLODDistance',
                 return_types=FunctionReturnTypes(
@@ -6819,10 +7182,12 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
             ),
             oop=None,
             name='setVehiclesLODDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWeather',
                 return_types=FunctionReturnTypes(
@@ -6859,8 +7224,10 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
             ),
             oop=None,
             name='setWeather',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWeather',
                 return_types=FunctionReturnTypes(
@@ -6897,10 +7264,12 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
             ),
             oop=None,
             name='setWeather',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWeatherBlended',
                 return_types=FunctionReturnTypes(
@@ -6937,8 +7306,10 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
             ),
             oop=None,
             name='setWeatherBlended',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWeatherBlended',
                 return_types=FunctionReturnTypes(
@@ -6975,10 +7346,12 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
             ),
             oop=None,
             name='setWeatherBlended',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWindVelocity',
                 return_types=FunctionReturnTypes(
@@ -7037,8 +7410,10 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
             ),
             oop=None,
             name='setWindVelocity',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWindVelocity',
                 return_types=FunctionReturnTypes(
@@ -7097,11 +7472,15 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
             ),
             oop=None,
             name='setWindVelocity',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWorldSoundEnabled',
                 return_types=FunctionReturnTypes(
@@ -7174,11 +7553,15 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
             ),
             oop=None,
             name='setWorldSoundEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWorldSpecialPropertyEnabled',
                 return_types=FunctionReturnTypes(
@@ -7240,11 +7623,15 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 is_static=None,
             ),
             name='setWorldSpecialPropertyEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='testLineAgainstWater',
                 return_types=FunctionReturnTypes(
@@ -7344,6 +7731,7 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
             ),
             oop=None,
             name='testLineAgainstWater',
-        ),
+        )
+        ],
     )
 ]

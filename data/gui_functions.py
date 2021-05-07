@@ -11,8 +11,11 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getChatboxLayout',
                 return_types=FunctionReturnTypes(
@@ -74,11 +77,15 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
             ),
             oop=None,
             name='getChatboxLayout',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiBlur',
                 return_types=FunctionReturnTypes(
@@ -121,11 +128,15 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 is_static=False,
             ),
             name='guiBlur',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiBringToFront',
                 return_types=FunctionReturnTypes(
@@ -168,11 +179,15 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 is_static=False,
             ),
             name='guiBringToFront',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCheckBoxGetSelected',
                 return_types=FunctionReturnTypes(
@@ -215,11 +230,15 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 is_static=False,
             ),
             name='guiCheckBoxGetSelected',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCheckBoxSetSelected',
                 return_types=FunctionReturnTypes(
@@ -273,11 +292,15 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 is_static=False,
             ),
             name='guiCheckBoxSetSelected',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiComboBoxAddItem',
                 return_types=FunctionReturnTypes(
@@ -331,11 +354,15 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 is_static=False,
             ),
             name='guiComboBoxAddItem',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiComboBoxClear',
                 return_types=FunctionReturnTypes(
@@ -378,11 +405,15 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 is_static=False,
             ),
             name='guiComboBoxClear',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiComboBoxGetItemCount',
                 return_types=FunctionReturnTypes(
@@ -419,11 +450,15 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
             ),
             oop=None,
             name='guiComboBoxGetItemCount',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiComboBoxGetItemText',
                 return_types=FunctionReturnTypes(
@@ -477,11 +512,15 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 is_static=False,
             ),
             name='guiComboBoxGetItemText',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiComboBoxGetSelected',
                 return_types=FunctionReturnTypes(
@@ -524,11 +563,15 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 is_static=False,
             ),
             name='guiComboBoxGetSelected',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiComboBoxIsOpen',
                 return_types=FunctionReturnTypes(
@@ -571,11 +614,15 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 is_static=False,
             ),
             name='guiComboBoxIsOpen',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiComboBoxRemoveItem',
                 return_types=FunctionReturnTypes(
@@ -629,11 +676,15 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 is_static=False,
             ),
             name='guiComboBoxRemoveItem',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiComboBoxSetItemText',
                 return_types=FunctionReturnTypes(
@@ -698,11 +749,15 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 is_static=False,
             ),
             name='guiComboBoxSetItemText',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiComboBoxSetOpen',
                 return_types=FunctionReturnTypes(
@@ -756,11 +811,15 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 is_static=False,
             ),
             name='guiComboBoxSetOpen',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiComboBoxSetSelected',
                 return_types=FunctionReturnTypes(
@@ -814,11 +873,15 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 is_static=False,
             ),
             name='guiComboBoxSetSelected',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCreateBrowser',
                 return_types=FunctionReturnTypes(
@@ -940,11 +1003,15 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                 is_static=True,
             ),
             name='guiCreateBrowser',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCreateButton',
                 return_types=FunctionReturnTypes(
@@ -1053,11 +1120,15 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                 is_static=True,
             ),
             name='guiCreateButton',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCreateCheckBox',
                 return_types=FunctionReturnTypes(
@@ -1177,11 +1248,15 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                 is_static=True,
             ),
             name='guiCreateCheckBox',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCreateComboBox',
                 return_types=FunctionReturnTypes(
@@ -1290,11 +1365,15 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                 is_static=True,
             ),
             name='guiCreateComboBox',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCreateEdit',
                 return_types=FunctionReturnTypes(
@@ -1403,11 +1482,15 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                 is_static=True,
             ),
             name='guiCreateEdit',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCreateFont',
                 return_types=FunctionReturnTypes(
@@ -1463,11 +1546,15 @@ you should always check to see if this function has returned false. """,
                 is_static=True,
             ),
             name='guiCreateFont',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCreateGridList',
                 return_types=FunctionReturnTypes(
@@ -1565,11 +1652,15 @@ you should always check to see if this function has returned false. """,
                 is_static=True,
             ),
             name='guiCreateGridList',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCreateLabel',
                 return_types=FunctionReturnTypes(
@@ -1680,11 +1771,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=True,
             ),
             name='guiCreateLabel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCreateMemo',
                 return_types=FunctionReturnTypes(
@@ -1787,11 +1882,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
             ),
             oop=None,
             name='guiCreateMemo',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCreateProgressBar',
                 return_types=FunctionReturnTypes(
@@ -1883,11 +1982,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
             ),
             oop=None,
             name='guiCreateProgressBar',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCreateRadioButton',
                 return_types=FunctionReturnTypes(
@@ -1991,11 +2094,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
             ),
             oop=None,
             name='guiCreateRadioButton',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCreateScrollBar',
                 return_types=FunctionReturnTypes(
@@ -2098,11 +2205,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
             ),
             oop=None,
             name='guiCreateScrollBar',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCreateScrollPane',
                 return_types=FunctionReturnTypes(
@@ -2194,11 +2305,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
             ),
             oop=None,
             name='guiCreateScrollPane',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCreateStaticImage',
                 return_types=FunctionReturnTypes(
@@ -2307,11 +2422,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=True,
             ),
             name='guiCreateStaticImage',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCreateTab',
                 return_types=FunctionReturnTypes(
@@ -2365,11 +2484,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=True,
             ),
             name='guiCreateTab',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCreateTabPanel',
                 return_types=FunctionReturnTypes(
@@ -2467,11 +2590,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=True,
             ),
             name='guiCreateTabPanel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiCreateWindow',
                 return_types=FunctionReturnTypes(
@@ -2569,11 +2696,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=True,
             ),
             name='guiCreateWindow',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiDeleteTab',
                 return_types=FunctionReturnTypes(
@@ -2627,11 +2758,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=False,
             ),
             name='guiDeleteTab',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiEditGetCaretIndex',
                 return_types=FunctionReturnTypes(
@@ -2674,11 +2809,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=False,
             ),
             name='guiEditGetCaretIndex',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiEditGetMaxLength',
                 return_types=FunctionReturnTypes(
@@ -2721,11 +2860,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=False,
             ),
             name='guiEditGetMaxLength',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiEditIsMasked',
                 return_types=FunctionReturnTypes(
@@ -2768,11 +2911,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=None,
             ),
             name='guiEditIsMasked',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiEditIsReadOnly',
                 return_types=FunctionReturnTypes(
@@ -2815,11 +2962,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=None,
             ),
             name='guiEditIsReadOnly',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiEditSetCaretIndex',
                 return_types=FunctionReturnTypes(
@@ -2873,11 +3024,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=False,
             ),
             name='guiEditSetCaretIndex',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiEditSetMasked',
                 return_types=FunctionReturnTypes(
@@ -2931,11 +3086,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=False,
             ),
             name='guiEditSetMasked',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiEditSetMaxLength',
                 return_types=FunctionReturnTypes(
@@ -2989,11 +3148,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=False,
             ),
             name='guiEditSetMaxLength',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiEditSetReadOnly',
                 return_types=FunctionReturnTypes(
@@ -3047,11 +3210,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=False,
             ),
             name='guiEditSetReadOnly',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiFocus',
                 return_types=FunctionReturnTypes(
@@ -3094,11 +3261,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=False,
             ),
             name='guiFocus',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGetAlpha',
                 return_types=FunctionReturnTypes(
@@ -3141,11 +3312,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=False,
             ),
             name='guiGetAlpha',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGetBrowser',
                 return_types=FunctionReturnTypes(
@@ -3188,11 +3363,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=False,
             ),
             name='guiGetBrowser',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGetCursorType',
                 return_types=FunctionReturnTypes(
@@ -3237,11 +3416,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=True,
             ),
             name='guiGetCursorType',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGetEnabled',
                 return_types=FunctionReturnTypes(
@@ -3284,11 +3467,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=False,
             ),
             name='guiGetEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGetFont',
                 return_types=FunctionReturnTypes(
@@ -3336,11 +3523,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=False,
             ),
             name='guiGetFont',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGetInputEnabled',
                 return_types=FunctionReturnTypes(
@@ -3374,11 +3565,15 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 is_static=True,
             ),
             name='guiGetInputEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGetInputMode',
                 return_types=FunctionReturnTypes(
@@ -3416,11 +3611,15 @@ Default mode is allow_binds. """,
                 is_static=True,
             ),
             name='guiGetInputMode',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGetPosition',
                 return_types=FunctionReturnTypes(
@@ -3478,11 +3677,15 @@ Default mode is allow_binds. """,
                 is_static=False,
             ),
             name='guiGetPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGetProperties',
                 return_types=FunctionReturnTypes(
@@ -3525,11 +3728,15 @@ Default mode is allow_binds. """,
                 is_static=False,
             ),
             name='guiGetProperties',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGetProperty',
                 return_types=FunctionReturnTypes(
@@ -3583,11 +3790,15 @@ Default mode is allow_binds. """,
                 is_static=False,
             ),
             name='guiGetProperty',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGetScreenSize',
                 return_types=FunctionReturnTypes(
@@ -3625,11 +3836,15 @@ Default mode is allow_binds. """,
                 is_static=True,
             ),
             name='guiGetScreenSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGetSelectedTab',
                 return_types=FunctionReturnTypes(
@@ -3672,11 +3887,15 @@ Default mode is allow_binds. """,
                 is_static=False,
             ),
             name='guiGetSelectedTab',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGetSize',
                 return_types=FunctionReturnTypes(
@@ -3734,11 +3953,15 @@ Default mode is allow_binds. """,
                 is_static=False,
             ),
             name='guiGetSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGetText',
                 return_types=FunctionReturnTypes(
@@ -3781,11 +4004,15 @@ Default mode is allow_binds. """,
                 is_static=False,
             ),
             name='guiGetText',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGetVisible',
                 return_types=FunctionReturnTypes(
@@ -3828,11 +4055,15 @@ Default mode is allow_binds. """,
                 is_static=False,
             ),
             name='guiGetVisible',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListAddColumn',
                 return_types=FunctionReturnTypes(
@@ -3897,11 +4128,15 @@ Default mode is allow_binds. """,
                 is_static=False,
             ),
             name='guiGridListAddColumn',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListAddRow',
                 return_types=FunctionReturnTypes(
@@ -3969,11 +4204,15 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 is_static=False,
             ),
             name='guiGridListAddRow',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListAutoSizeColumn',
                 return_types=FunctionReturnTypes(
@@ -4027,11 +4266,15 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 is_static=False,
             ),
             name='guiGridListAutoSizeColumn',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListClear',
                 return_types=FunctionReturnTypes(
@@ -4074,11 +4317,15 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 is_static=False,
             ),
             name='guiGridListClear',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListGetColumnCount',
                 return_types=FunctionReturnTypes(
@@ -4121,11 +4368,15 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 is_static=False,
             ),
             name='guiGridListGetColumnCount',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListGetColumnTitle',
                 return_types=FunctionReturnTypes(
@@ -4179,11 +4430,15 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 is_static=False,
             ),
             name='guiGridListGetColumnTitle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListGetColumnWidth',
                 return_types=FunctionReturnTypes(
@@ -4248,11 +4503,15 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 is_static=False,
             ),
             name='guiGridListGetColumnWidth',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListGetHorizontalScrollPosition',
                 return_types=FunctionReturnTypes(
@@ -4295,11 +4554,15 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 is_static=False,
             ),
             name='guiGridListGetHorizontalScrollPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListGetItemColor',
                 return_types=FunctionReturnTypes(
@@ -4376,11 +4639,15 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 is_static=False,
             ),
             name='guiGridListGetItemColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListGetItemData',
                 return_types=FunctionReturnTypes(
@@ -4446,11 +4713,15 @@ Note: This function will only work after you set the items text using guiGridLis
                 is_static=False,
             ),
             name='guiGridListGetItemData',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListGetItemText',
                 return_types=FunctionReturnTypes(
@@ -4515,11 +4786,15 @@ Note: This function will only work after you set the items text using guiGridLis
                 is_static=False,
             ),
             name='guiGridListGetItemText',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListGetRowCount',
                 return_types=FunctionReturnTypes(
@@ -4562,11 +4837,15 @@ Note: This function will only work after you set the items text using guiGridLis
                 is_static=False,
             ),
             name='guiGridListGetRowCount',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListGetSelectedCount',
                 return_types=FunctionReturnTypes(
@@ -4609,11 +4888,15 @@ Note: This function will only work after you set the items text using guiGridLis
                 is_static=False,
             ),
             name='guiGridListGetSelectedCount',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListGetSelectedItem',
                 return_types=FunctionReturnTypes(
@@ -4660,11 +4943,15 @@ Note: This function will only work after you set the items text using guiGridLis
                 is_static=False,
             ),
             name='guiGridListGetSelectedItem',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListGetSelectedItems',
                 return_types=FunctionReturnTypes(
@@ -4722,11 +5009,15 @@ if everything was successful or false if invalid arguments were passed. """,
                 is_static=False,
             ),
             name='guiGridListGetSelectedItems',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListGetSelectionMode',
                 return_types=FunctionReturnTypes(
@@ -4769,11 +5060,15 @@ if everything was successful or false if invalid arguments were passed. """,
                 is_static=False,
             ),
             name='guiGridListGetSelectionMode',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListGetVerticalScrollPosition',
                 return_types=FunctionReturnTypes(
@@ -4816,11 +5111,15 @@ if everything was successful or false if invalid arguments were passed. """,
                 is_static=False,
             ),
             name='guiGridListGetVerticalScrollPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListInsertRowAfter',
                 return_types=FunctionReturnTypes(
@@ -4877,11 +5176,15 @@ if everything was successful or false if invalid arguments were passed. """,
                 is_static=False,
             ),
             name='guiGridListInsertRowAfter',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListIsSortingEnabled',
                 return_types=FunctionReturnTypes(
@@ -4924,11 +5227,15 @@ if everything was successful or false if invalid arguments were passed. """,
                 is_static=False,
             ),
             name='guiGridListIsSortingEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListRemoveColumn',
                 return_types=FunctionReturnTypes(
@@ -4982,11 +5289,15 @@ if everything was successful or false if invalid arguments were passed. """,
                 is_static=False,
             ),
             name='guiGridListRemoveColumn',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListRemoveRow',
                 return_types=FunctionReturnTypes(
@@ -5040,11 +5351,15 @@ if everything was successful or false if invalid arguments were passed. """,
                 is_static=False,
             ),
             name='guiGridListRemoveRow',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListSetColumnTitle',
                 return_types=FunctionReturnTypes(
@@ -5109,11 +5424,15 @@ if everything was successful or false if invalid arguments were passed. """,
                 is_static=False,
             ),
             name='guiGridListSetColumnTitle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListSetColumnWidth',
                 return_types=FunctionReturnTypes(
@@ -5189,11 +5508,15 @@ if everything was successful or false if invalid arguments were passed. """,
                 is_static=False,
             ),
             name='guiGridListSetColumnWidth',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListSetHorizontalScrollPosition',
                 return_types=FunctionReturnTypes(
@@ -5247,11 +5570,15 @@ if everything was successful or false if invalid arguments were passed. """,
                 is_static=False,
             ),
             name='guiGridListSetHorizontalScrollPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListSetItemColor',
                 return_types=FunctionReturnTypes(
@@ -5360,11 +5687,15 @@ if everything was successful or false if invalid arguments were passed. """,
                 is_static=False,
             ),
             name='guiGridListSetItemColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListSetItemData',
                 return_types=FunctionReturnTypes(
@@ -5441,11 +5772,15 @@ Note: This function will only work after you set the items text using guiGridLis
                 is_static=False,
             ),
             name='guiGridListSetItemData',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListSetItemText',
                 return_types=FunctionReturnTypes(
@@ -5544,11 +5879,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 is_static=False,
             ),
             name='guiGridListSetItemText',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListSetScrollBars',
                 return_types=FunctionReturnTypes(
@@ -5613,11 +5952,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 is_static=False,
             ),
             name='guiGridListSetScrollBars',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListSetSelectedItem',
                 return_types=FunctionReturnTypes(
@@ -5693,11 +6036,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 is_static=False,
             ),
             name='guiGridListSetSelectedItem',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListSetSelectionMode',
                 return_types=FunctionReturnTypes(
@@ -5761,11 +6108,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 is_static=False,
             ),
             name='guiGridListSetSelectionMode',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListSetSortingEnabled',
                 return_types=FunctionReturnTypes(
@@ -5819,11 +6170,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 is_static=False,
             ),
             name='guiGridListSetSortingEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiGridListSetVerticalScrollPosition',
                 return_types=FunctionReturnTypes(
@@ -5877,11 +6232,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 is_static=False,
             ),
             name='guiGridListSetVerticalScrollPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiLabelGetColor',
                 return_types=FunctionReturnTypes(
@@ -5932,11 +6291,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 is_static=False,
             ),
             name='guiLabelGetColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiLabelGetFontHeight',
                 return_types=FunctionReturnTypes(
@@ -5979,11 +6342,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 is_static=False,
             ),
             name='guiLabelGetFontHeight',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiLabelGetTextExtent',
                 return_types=FunctionReturnTypes(
@@ -6026,11 +6393,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 is_static=False,
             ),
             name='guiLabelGetTextExtent',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiLabelSetColor',
                 return_types=FunctionReturnTypes(
@@ -6106,11 +6477,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 is_static=False,
             ),
             name='guiLabelSetColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiLabelSetHorizontalAlign',
                 return_types=FunctionReturnTypes(
@@ -6178,11 +6553,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 is_static=False,
             ),
             name='guiLabelSetHorizontalAlign',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiLabelSetVerticalAlign',
                 return_types=FunctionReturnTypes(
@@ -6239,11 +6618,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 is_static=False,
             ),
             name='guiLabelSetVerticalAlign',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiMemoGetCaretIndex',
                 return_types=FunctionReturnTypes(
@@ -6280,11 +6663,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
             ),
             oop=None,
             name='guiMemoGetCaretIndex',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiMemoGetVerticalScrollPosition',
                 return_types=FunctionReturnTypes(
@@ -6321,11 +6708,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
             ),
             oop=None,
             name='guiMemoGetVerticalScrollPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiMemoIsReadOnly',
                 return_types=FunctionReturnTypes(
@@ -6362,11 +6753,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
             ),
             oop=None,
             name='guiMemoIsReadOnly',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiMemoSetCaretIndex',
                 return_types=FunctionReturnTypes(
@@ -6414,11 +6809,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
             ),
             oop=None,
             name='guiMemoSetCaretIndex',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiMemoSetReadOnly',
                 return_types=FunctionReturnTypes(
@@ -6472,11 +6871,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 is_static=False,
             ),
             name='guiMemoSetReadOnly',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiMemoSetVerticalScrollPosition',
                 return_types=FunctionReturnTypes(
@@ -6524,11 +6927,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
             ),
             oop=None,
             name='guiMemoSetVerticalScrollPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiMoveToBack',
                 return_types=FunctionReturnTypes(
@@ -6571,11 +6978,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 is_static=False,
             ),
             name='guiMoveToBack',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiProgressBarGetProgress',
                 return_types=FunctionReturnTypes(
@@ -6612,11 +7023,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
             ),
             oop=None,
             name='guiProgressBarGetProgress',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiProgressBarSetProgress',
                 return_types=FunctionReturnTypes(
@@ -6664,11 +7079,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
             ),
             oop=None,
             name='guiProgressBarSetProgress',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiRadioButtonGetSelected',
                 return_types=FunctionReturnTypes(
@@ -6705,11 +7124,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
             ),
             oop=None,
             name='guiRadioButtonGetSelected',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiRadioButtonSetSelected',
                 return_types=FunctionReturnTypes(
@@ -6757,11 +7180,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
             ),
             oop=None,
             name='guiRadioButtonSetSelected',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiScrollBarGetScrollPosition',
                 return_types=FunctionReturnTypes(
@@ -6798,11 +7225,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
             ),
             oop=None,
             name='guiScrollBarGetScrollPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiScrollBarSetScrollPosition',
                 return_types=FunctionReturnTypes(
@@ -6850,11 +7281,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
             ),
             oop=None,
             name='guiScrollBarSetScrollPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiScrollPaneGetHorizontalScrollPosition',
                 return_types=FunctionReturnTypes(
@@ -6891,11 +7326,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
             ),
             oop=None,
             name='guiScrollPaneGetHorizontalScrollPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiScrollPaneGetVerticalScrollPosition',
                 return_types=FunctionReturnTypes(
@@ -6932,11 +7371,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
             ),
             oop=None,
             name='guiScrollPaneGetVerticalScrollPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiScrollPaneSetHorizontalScrollPosition',
                 return_types=FunctionReturnTypes(
@@ -6984,11 +7427,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
             ),
             oop=None,
             name='guiScrollPaneSetHorizontalScrollPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiScrollPaneSetScrollBars',
                 return_types=FunctionReturnTypes(
@@ -7047,11 +7494,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
             ),
             oop=None,
             name='guiScrollPaneSetScrollBars',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiScrollPaneSetVerticalScrollPosition',
                 return_types=FunctionReturnTypes(
@@ -7099,11 +7550,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
             ),
             oop=None,
             name='guiScrollPaneSetVerticalScrollPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiSetAlpha',
                 return_types=FunctionReturnTypes(
@@ -7157,11 +7612,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 is_static=False,
             ),
             name='guiSetAlpha',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiSetEnabled',
                 return_types=FunctionReturnTypes(
@@ -7215,11 +7674,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 is_static=False,
             ),
             name='guiSetEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiSetFont',
                 return_types=FunctionReturnTypes(
@@ -7273,11 +7736,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 is_static=False,
             ),
             name='guiSetFont',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiSetInputEnabled',
                 return_types=FunctionReturnTypes(
@@ -7321,11 +7788,15 @@ guiSetInputMode can be used as an extended version of guiSetInputEnabled since i
                 is_static=True,
             ),
             name='guiSetInputEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiSetInputMode',
                 return_types=FunctionReturnTypes(
@@ -7375,11 +7846,15 @@ The binds can be either:
                 is_static=True,
             ),
             name='guiSetInputMode',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiSetPosition',
                 return_types=FunctionReturnTypes(
@@ -7455,11 +7930,15 @@ The binds can be either:
                 is_static=False,
             ),
             name='guiSetPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiSetProperty',
                 return_types=FunctionReturnTypes(
@@ -7524,11 +8003,15 @@ The binds can be either:
                 is_static=False,
             ),
             name='guiSetProperty',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiSetSelectedTab',
                 return_types=FunctionReturnTypes(
@@ -7576,11 +8059,15 @@ The binds can be either:
             ),
             oop=None,
             name='guiSetSelectedTab',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiSetSize',
                 return_types=FunctionReturnTypes(
@@ -7656,11 +8143,15 @@ The binds can be either:
                 is_static=False,
             ),
             name='guiSetSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiSetText',
                 return_types=FunctionReturnTypes(
@@ -7714,11 +8205,15 @@ The binds can be either:
                 is_static=False,
             ),
             name='guiSetText',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiSetVisible',
                 return_types=FunctionReturnTypes(
@@ -7772,11 +8267,15 @@ The binds can be either:
                 is_static=False,
             ),
             name='guiSetVisible',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiStaticImageGetNativeSize',
                 return_types=FunctionReturnTypes(
@@ -7817,11 +8316,15 @@ The binds can be either:
             ),
             oop=None,
             name='guiStaticImageGetNativeSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiStaticImageLoadImage',
                 return_types=FunctionReturnTypes(
@@ -7875,11 +8378,15 @@ The binds can be either:
                 is_static=False,
             ),
             name='guiStaticImageLoadImage',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiWindowIsMovable',
                 return_types=FunctionReturnTypes(
@@ -7922,11 +8429,15 @@ The binds can be either:
                 is_static=None,
             ),
             name='guiWindowIsMovable',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiWindowIsSizable',
                 return_types=FunctionReturnTypes(
@@ -7969,11 +8480,15 @@ The binds can be either:
                 is_static=None,
             ),
             name='guiWindowIsSizable',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiWindowSetMovable',
                 return_types=FunctionReturnTypes(
@@ -8027,11 +8542,15 @@ The binds can be either:
                 is_static=False,
             ),
             name='guiWindowSetMovable',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='guiWindowSetSizable',
                 return_types=FunctionReturnTypes(
@@ -8085,11 +8604,15 @@ The binds can be either:
                 is_static=False,
             ),
             name='guiWindowSetSizable',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isChatBoxInputActive',
                 return_types=FunctionReturnTypes(
@@ -8123,11 +8646,15 @@ The binds can be either:
                 is_static=True,
             ),
             name='isChatBoxInputActive',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isConsoleActive',
                 return_types=FunctionReturnTypes(
@@ -8161,11 +8688,15 @@ The binds can be either:
                 is_static=False,
             ),
             name='isConsoleActive',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isDebugViewActive',
                 return_types=FunctionReturnTypes(
@@ -8199,11 +8730,15 @@ The binds can be either:
                 is_static=True,
             ),
             name='isDebugViewActive',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isMainMenuActive',
                 return_types=FunctionReturnTypes(
@@ -8237,11 +8772,15 @@ The binds can be either:
                 is_static=True,
             ),
             name='isMainMenuActive',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isMTAWindowActive',
                 return_types=FunctionReturnTypes(
@@ -8280,11 +8819,15 @@ To get the status of the debug view, see isDebugViewActive. """,
                 is_static=True,
             ),
             name='isMTAWindowActive',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isTransferBoxActive',
                 return_types=FunctionReturnTypes(
@@ -8319,11 +8862,15 @@ Its important to note that resources arent started on the client until theyre co
                 is_static=True,
             ),
             name='isTransferBoxActive',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setDebugViewActive',
                 return_types=FunctionReturnTypes(
@@ -8366,6 +8913,7 @@ Its important to note that resources arent started on the client until theyre co
                 is_static=True,
             ),
             name='setDebugViewActive',
-        ),
+        )
+        ],
     )
 ]

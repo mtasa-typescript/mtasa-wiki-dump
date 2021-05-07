@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createPickup',
                 return_types=FunctionReturnTypes(
@@ -151,8 +152,10 @@ Other ID Object """,
                 is_static=True,
             ),
             name='createPickup',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createPickup',
                 return_types=FunctionReturnTypes(
@@ -292,10 +295,12 @@ Other ID Object """,
                 is_static=True,
             ),
             name='createPickup',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPickupAmmo',
                 return_types=FunctionReturnTypes(
@@ -332,8 +337,10 @@ Other ID Object """,
             ),
             oop=None,
             name='getPickupAmmo',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPickupAmmo',
                 return_types=FunctionReturnTypes(
@@ -370,10 +377,12 @@ Other ID Object """,
             ),
             oop=None,
             name='getPickupAmmo',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPickupAmount',
                 return_types=FunctionReturnTypes(
@@ -410,8 +419,10 @@ Other ID Object """,
             ),
             oop=None,
             name='getPickupAmount',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPickupAmount',
                 return_types=FunctionReturnTypes(
@@ -448,10 +459,12 @@ Other ID Object """,
             ),
             oop=None,
             name='getPickupAmount',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPickupRespawnInterval',
                 return_types=FunctionReturnTypes(
@@ -488,11 +501,15 @@ Other ID Object """,
             ),
             oop=None,
             name='getPickupRespawnInterval',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPickupType',
                 return_types=FunctionReturnTypes(
@@ -533,8 +550,10 @@ Other ID Object """,
             ),
             oop=None,
             name='getPickupType',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPickupType',
                 return_types=FunctionReturnTypes(
@@ -575,10 +594,12 @@ Other ID Object """,
             ),
             oop=None,
             name='getPickupType',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPickupWeapon',
                 return_types=FunctionReturnTypes(
@@ -615,8 +636,10 @@ Other ID Object """,
             ),
             oop=None,
             name='getPickupWeapon',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPickupWeapon',
                 return_types=FunctionReturnTypes(
@@ -653,10 +676,12 @@ Other ID Object """,
             ),
             oop=None,
             name='getPickupWeapon',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPickupSpawned',
                 return_types=FunctionReturnTypes(
@@ -693,11 +718,15 @@ Other ID Object """,
             ),
             oop=None,
             name='isPickupSpawned',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPickupRespawnInterval',
                 return_types=FunctionReturnTypes(
@@ -745,11 +774,15 @@ Other ID Object """,
             ),
             oop=None,
             name='setPickupRespawnInterval',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPickupType',
                 return_types=FunctionReturnTypes(
@@ -834,8 +867,10 @@ Other ID Object """,
             ),
             oop=None,
             name='setPickupType',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPickupType',
                 return_types=FunctionReturnTypes(
@@ -920,10 +955,12 @@ Other ID Object """,
             ),
             oop=None,
             name='setPickupType',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='usePickup',
                 return_types=FunctionReturnTypes(
@@ -971,8 +1008,10 @@ Other ID Object """,
             ),
             oop=None,
             name='usePickup',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='usePickup',
                 return_types=FunctionReturnTypes(
@@ -1020,6 +1059,7 @@ Other ID Object """,
             ),
             oop=None,
             name='usePickup',
-        ),
+        )
+        ],
     )
 ]

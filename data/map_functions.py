@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='loadMapData',
                 return_types=FunctionReturnTypes(
@@ -59,11 +60,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='loadMapData',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetMapInfo',
                 return_types=FunctionReturnTypes(
@@ -100,11 +105,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='resetMapInfo',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='saveMapData',
                 return_types=FunctionReturnTypes(
@@ -163,7 +172,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='saveMapData',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     )
 ]

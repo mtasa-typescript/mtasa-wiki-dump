@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getOriginalWeaponProperty',
                 return_types=FunctionReturnTypes(
@@ -82,8 +83,10 @@ bool: false if the passed arguments were invalid """,
             ),
             oop=None,
             name='getOriginalWeaponProperty',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getOriginalWeaponProperty',
                 return_types=FunctionReturnTypes(
@@ -154,10 +157,12 @@ bool: false if the passed arguments were invalid """,
             ),
             oop=None,
             name='getOriginalWeaponProperty',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSlotFromWeapon',
                 return_types=FunctionReturnTypes(
@@ -194,8 +199,10 @@ bool: false if the passed arguments were invalid """,
             ),
             oop=None,
             name='getSlotFromWeapon',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSlotFromWeapon',
                 return_types=FunctionReturnTypes(
@@ -232,10 +239,12 @@ bool: false if the passed arguments were invalid """,
             ),
             oop=None,
             name='getSlotFromWeapon',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWeaponIDFromName',
                 return_types=FunctionReturnTypes(
@@ -272,8 +281,10 @@ bool: false if the passed arguments were invalid """,
             ),
             oop=None,
             name='getWeaponIDFromName',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWeaponIDFromName',
                 return_types=FunctionReturnTypes(
@@ -310,10 +321,12 @@ bool: false if the passed arguments were invalid """,
             ),
             oop=None,
             name='getWeaponIDFromName',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWeaponNameFromID',
                 return_types=FunctionReturnTypes(
@@ -350,8 +363,10 @@ bool: false if the passed arguments were invalid """,
             ),
             oop=None,
             name='getWeaponNameFromID',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWeaponNameFromID',
                 return_types=FunctionReturnTypes(
@@ -388,10 +403,12 @@ bool: false if the passed arguments were invalid """,
             ),
             oop=None,
             name='getWeaponNameFromID',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWeaponProperty',
                 return_types=FunctionReturnTypes(
@@ -468,8 +485,10 @@ bool: false if the passed arguments were invalid """,
                 is_static=False,
             ),
             name='getWeaponProperty',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWeaponProperty',
                 return_types=FunctionReturnTypes(
@@ -546,10 +565,12 @@ bool: false if the passed arguments were invalid """,
                 is_static=False,
             ),
             name='getWeaponProperty',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='giveWeapon',
                 return_types=FunctionReturnTypes(
@@ -622,11 +643,15 @@ bool: false if the passed arguments were invalid """,
             ),
             oop=None,
             name='giveWeapon',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWeaponAmmo',
                 return_types=FunctionReturnTypes(
@@ -697,8 +722,10 @@ Sets the ammo to a certain amount for a specified weapon (if they already have i
             ),
             oop=None,
             name='setWeaponAmmo',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWeaponAmmo',
                 return_types=FunctionReturnTypes(
@@ -769,10 +796,12 @@ Sets the ammo to a certain amount for a specified weapon (if they already have i
             ),
             oop=None,
             name='setWeaponAmmo',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWeaponProperty',
                 return_types=FunctionReturnTypes(
@@ -872,8 +901,10 @@ bool: returns false if the weapon property was unable to be set """,
             ),
             oop=None,
             name='setWeaponProperty',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWeaponProperty',
                 return_types=FunctionReturnTypes(
@@ -957,10 +988,12 @@ Returns true if the property was set.
                 is_static=False,
             ),
             name='setWeaponProperty',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='takeAllWeapons',
                 return_types=FunctionReturnTypes(
@@ -997,11 +1030,15 @@ Returns true if the property was set.
             ),
             oop=None,
             name='takeAllWeapons',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='takeWeapon',
                 return_types=FunctionReturnTypes(
@@ -1060,7 +1097,10 @@ Returns true if the property was set.
             ),
             oop=None,
             name='takeWeapon',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     )
 ]

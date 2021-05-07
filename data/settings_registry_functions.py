@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='get',
                 return_types=FunctionReturnTypes(
@@ -52,11 +53,15 @@ it returns false if the specified setting or settings group doesnt exist, or if 
             ),
             oop=None,
             name='get',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='set',
                 return_types=FunctionReturnTypes(
@@ -105,7 +110,10 @@ Its important to note that set always writes to the settings.xml file, even if g
             ),
             oop=None,
             name='set',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     )
 ]

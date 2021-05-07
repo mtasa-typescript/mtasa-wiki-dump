@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addPedClothes',
                 return_types=FunctionReturnTypes(
@@ -87,8 +88,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='addPedClothes',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addPedClothes',
                 return_types=FunctionReturnTypes(
@@ -164,11 +167,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='addPedClothes',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='canPedBeKnockedOffBike',
                 return_types=FunctionReturnTypes(
@@ -211,10 +218,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='canPedBeKnockedOffBike',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createPed',
                 return_types=FunctionReturnTypes(
@@ -306,8 +315,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='createPed',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createPed',
                 return_types=FunctionReturnTypes(
@@ -388,10 +399,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='createPed',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedAmmoInClip',
                 return_types=FunctionReturnTypes(
@@ -445,8 +458,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getPedAmmoInClip',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedAmmoInClip',
                 return_types=FunctionReturnTypes(
@@ -500,11 +515,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getPedAmmoInClip',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedAnalogControlState',
                 return_types=FunctionReturnTypes(
@@ -584,11 +603,15 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
             ),
             oop=None,
             name='getPedAnalogControlState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedAnimation',
                 return_types=FunctionReturnTypes(
@@ -635,10 +658,12 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                 is_static=False,
             ),
             name='getPedAnimation',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedArmor',
                 return_types=FunctionReturnTypes(
@@ -681,8 +706,10 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                 is_static=False,
             ),
             name='getPedArmor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedArmor',
                 return_types=FunctionReturnTypes(
@@ -725,11 +752,15 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                 is_static=False,
             ),
             name='getPedArmor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedBonePosition',
                 return_types=FunctionReturnTypes(
@@ -821,11 +852,15 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                 is_static=False,
             ),
             name='getPedBonePosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedCameraRotation',
                 return_types=FunctionReturnTypes(
@@ -868,10 +903,12 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                 is_static=False,
             ),
             name='getPedCameraRotation',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedClothes',
                 return_types=FunctionReturnTypes(
@@ -929,8 +966,10 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                 is_static=False,
             ),
             name='getPedClothes',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedClothes',
                 return_types=FunctionReturnTypes(
@@ -988,10 +1027,12 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                 is_static=False,
             ),
             name='getPedClothes',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedContactElement',
                 return_types=FunctionReturnTypes(
@@ -1034,8 +1075,10 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                 is_static=False,
             ),
             name='getPedContactElement',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedContactElement',
                 return_types=FunctionReturnTypes(
@@ -1078,11 +1121,15 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                 is_static=False,
             ),
             name='getPedContactElement',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedControlState',
                 return_types=FunctionReturnTypes(
@@ -1136,10 +1183,12 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                 is_static=False,
             ),
             name='getPedControlState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedFightingStyle',
                 return_types=FunctionReturnTypes(
@@ -1182,8 +1231,10 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                 is_static=False,
             ),
             name='getPedFightingStyle',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedFightingStyle',
                 return_types=FunctionReturnTypes(
@@ -1226,10 +1277,12 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                 is_static=False,
             ),
             name='getPedFightingStyle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedGravity',
                 return_types=FunctionReturnTypes(
@@ -1272,12 +1325,18 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                 is_static=False,
             ),
             name='getPedGravity',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedMoveState',
                 return_types=FunctionReturnTypes(
@@ -1314,10 +1373,12 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
             ),
             oop=None,
             name='getPedMoveState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedOccupiedVehicle',
                 return_types=FunctionReturnTypes(
@@ -1360,8 +1421,10 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                 is_static=False,
             ),
             name='getPedOccupiedVehicle',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedOccupiedVehicle',
                 return_types=FunctionReturnTypes(
@@ -1404,10 +1467,12 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                 is_static=False,
             ),
             name='getPedOccupiedVehicle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedOccupiedVehicleSeat',
                 return_types=FunctionReturnTypes(
@@ -1455,8 +1520,10 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                 is_static=False,
             ),
             name='getPedOccupiedVehicleSeat',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedOccupiedVehicleSeat',
                 return_types=FunctionReturnTypes(
@@ -1504,11 +1571,15 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                 is_static=False,
             ),
             name='getPedOccupiedVehicleSeat',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedOxygenLevel',
                 return_types=FunctionReturnTypes(
@@ -1551,11 +1622,15 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                 is_static=False,
             ),
             name='getPedOxygenLevel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedSimplestTask',
                 return_types=FunctionReturnTypes(
@@ -1592,10 +1667,12 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
             ),
             oop=None,
             name='getPedSimplestTask',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedStat',
                 return_types=FunctionReturnTypes(
@@ -1649,8 +1726,10 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                 is_static=False,
             ),
             name='getPedStat',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedStat',
                 return_types=FunctionReturnTypes(
@@ -1704,10 +1783,12 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                 is_static=False,
             ),
             name='getPedStat',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedTarget',
                 return_types=FunctionReturnTypes(
@@ -1755,8 +1836,10 @@ this is only effective on physical gta elements, namely:
                 is_static=False,
             ),
             name='getPedTarget',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedTarget',
                 return_types=FunctionReturnTypes(
@@ -1804,11 +1887,15 @@ this is only effective on physical gta elements, namely:
                 is_static=False,
             ),
             name='getPedTarget',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedTargetCollision',
                 return_types=FunctionReturnTypes(
@@ -1853,11 +1940,15 @@ this is only effective on physical gta elements, namely:
             ),
             oop=None,
             name='getPedTargetCollision',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedTargetEnd',
                 return_types=FunctionReturnTypes(
@@ -1908,11 +1999,15 @@ this is only effective on physical gta elements, namely:
                 is_static=False,
             ),
             name='getPedTargetEnd',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedTargetStart',
                 return_types=FunctionReturnTypes(
@@ -1957,11 +2052,15 @@ this is only effective on physical gta elements, namely:
             ),
             oop=None,
             name='getPedTargetStart',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedTask',
                 return_types=FunctionReturnTypes(
@@ -2049,10 +2148,12 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                 is_static=False,
             ),
             name='getPedTask',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedTotalAmmo',
                 return_types=FunctionReturnTypes(
@@ -2106,8 +2207,10 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                 is_static=False,
             ),
             name='getPedTotalAmmo',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedTotalAmmo',
                 return_types=FunctionReturnTypes(
@@ -2161,11 +2264,15 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                 is_static=False,
             ),
             name='getPedTotalAmmo',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedVoice',
                 return_types=FunctionReturnTypes(
@@ -2206,10 +2313,12 @@ returns between 1 and 4 strings. the first string contains the name of the most 
             ),
             oop=None,
             name='getPedVoice',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedWalkingStyle',
                 return_types=FunctionReturnTypes(
@@ -2252,8 +2361,10 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                 is_static=False,
             ),
             name='getPedWalkingStyle',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedWalkingStyle',
                 return_types=FunctionReturnTypes(
@@ -2296,10 +2407,12 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                 is_static=False,
             ),
             name='getPedWalkingStyle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedWeapon',
                 return_types=FunctionReturnTypes(
@@ -2354,8 +2467,10 @@ it should be noted that if a ped runs out of ammo for a weapon, it will still re
                 is_static=False,
             ),
             name='getPedWeapon',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedWeapon',
                 return_types=FunctionReturnTypes(
@@ -2410,11 +2525,15 @@ it should be noted that if a ped runs out of ammo for a weapon, it will still re
                 is_static=False,
             ),
             name='getPedWeapon',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedWeaponMuzzlePosition',
                 return_types=FunctionReturnTypes(
@@ -2460,10 +2579,12 @@ The position may not be accurate if the ped is off screen. """,
             ),
             oop=None,
             name='getPedWeaponMuzzlePosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedWeaponSlot',
                 return_types=FunctionReturnTypes(
@@ -2506,8 +2627,10 @@ The position may not be accurate if the ped is off screen. """,
                 is_static=False,
             ),
             name='getPedWeaponSlot',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPedWeaponSlot',
                 return_types=FunctionReturnTypes(
@@ -2550,10 +2673,12 @@ The position may not be accurate if the ped is off screen. """,
                 is_static=False,
             ),
             name='getPedWeaponSlot',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getValidPedModels',
                 return_types=FunctionReturnTypes(
@@ -2581,8 +2706,10 @@ The position may not be accurate if the ped is off screen. """,
             ),
             oop=None,
             name='getValidPedModels',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getValidPedModels',
                 return_types=FunctionReturnTypes(
@@ -2610,11 +2737,15 @@ The position may not be accurate if the ped is off screen. """,
             ),
             oop=None,
             name='getValidPedModels',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='givePedWeapon',
                 return_types=FunctionReturnTypes(
@@ -2689,10 +2820,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
             ),
             oop=None,
             name='givePedWeapon',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedChoking',
                 return_types=FunctionReturnTypes(
@@ -2735,8 +2868,10 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 is_static=False,
             ),
             name='isPedChoking',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedChoking',
                 return_types=FunctionReturnTypes(
@@ -2779,10 +2914,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 is_static=False,
             ),
             name='isPedChoking',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedDead',
                 return_types=FunctionReturnTypes(
@@ -2825,8 +2962,10 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 is_static=False,
             ),
             name='isPedDead',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedDead',
                 return_types=FunctionReturnTypes(
@@ -2869,10 +3008,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 is_static=False,
             ),
             name='isPedDead',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedDoingGangDriveby',
                 return_types=FunctionReturnTypes(
@@ -2915,8 +3056,10 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 is_static=False,
             ),
             name='isPedDoingGangDriveby',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedDoingGangDriveby',
                 return_types=FunctionReturnTypes(
@@ -2959,11 +3102,15 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 is_static=False,
             ),
             name='isPedDoingGangDriveby',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedDoingTask',
                 return_types=FunctionReturnTypes(
@@ -3011,10 +3158,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
             ),
             oop=None,
             name='isPedDoingTask',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedDucked',
                 return_types=FunctionReturnTypes(
@@ -3057,8 +3206,10 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 is_static=False,
             ),
             name='isPedDucked',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedDucked',
                 return_types=FunctionReturnTypes(
@@ -3101,11 +3252,15 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 is_static=False,
             ),
             name='isPedDucked',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedFootBloodEnabled',
                 return_types=FunctionReturnTypes(
@@ -3142,10 +3297,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
             ),
             oop=None,
             name='isPedFootBloodEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedHeadless',
                 return_types=FunctionReturnTypes(
@@ -3182,8 +3339,10 @@ There is an optional argument to specify ammunition and whether to set as the cu
             ),
             oop=None,
             name='isPedHeadless',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedHeadless',
                 return_types=FunctionReturnTypes(
@@ -3220,10 +3379,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
             ),
             oop=None,
             name='isPedHeadless',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedInVehicle',
                 return_types=FunctionReturnTypes(
@@ -3266,8 +3427,10 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 is_static=False,
             ),
             name='isPedInVehicle',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedInVehicle',
                 return_types=FunctionReturnTypes(
@@ -3310,10 +3473,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 is_static=False,
             ),
             name='isPedInVehicle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedOnFire',
                 return_types=FunctionReturnTypes(
@@ -3356,8 +3521,10 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 is_static=False,
             ),
             name='isPedOnFire',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedOnFire',
                 return_types=FunctionReturnTypes(
@@ -3400,10 +3567,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 is_static=False,
             ),
             name='isPedOnFire',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedOnGround',
                 return_types=FunctionReturnTypes(
@@ -3446,8 +3615,10 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 is_static=False,
             ),
             name='isPedOnGround',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedOnGround',
                 return_types=FunctionReturnTypes(
@@ -3490,11 +3661,15 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 is_static=False,
             ),
             name='isPedOnGround',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedReloadingWeapon',
                 return_types=FunctionReturnTypes(
@@ -3537,11 +3712,15 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 is_static=False,
             ),
             name='isPedReloadingWeapon',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedTargetingMarkerEnabled',
                 return_types=FunctionReturnTypes(
@@ -3569,10 +3748,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
             ),
             oop=None,
             name='isPedTargetingMarkerEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedWearingJetpack',
                 return_types=FunctionReturnTypes(
@@ -3615,8 +3796,10 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 is_static=False,
             ),
             name='isPedWearingJetpack',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPedWearingJetpack',
                 return_types=FunctionReturnTypes(
@@ -3659,10 +3842,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 is_static=False,
             ),
             name='isPedWearingJetpack',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='killPed',
                 return_types=FunctionReturnTypes(
@@ -3750,8 +3935,10 @@ From v1.5.3 onwards this function is now available client side. Only works on cl
                 is_static=False,
             ),
             name='killPed',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='killPed',
                 return_types=FunctionReturnTypes(
@@ -3839,10 +4026,12 @@ From v1.5.3 onwards this function is now available client side. Only works on cl
                 is_static=False,
             ),
             name='killPed',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='reloadPedWeapon',
                 return_types=FunctionReturnTypes(
@@ -3892,11 +4081,15 @@ due to these circumstances causing problems with this function """,
                 is_static=False,
             ),
             name='reloadPedWeapon',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removePedClothes',
                 return_types=FunctionReturnTypes(
@@ -3972,8 +4165,10 @@ due to these circumstances causing problems with this function """,
                 is_static=False,
             ),
             name='removePedClothes',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removePedClothes',
                 return_types=FunctionReturnTypes(
@@ -4049,10 +4244,12 @@ due to these circumstances causing problems with this function """,
                 is_static=False,
             ),
             name='removePedClothes',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removePedFromVehicle',
                 return_types=FunctionReturnTypes(
@@ -4096,8 +4293,10 @@ Available client side from 1.3.1 (It will only work with client side vehicles an
                 is_static=False,
             ),
             name='removePedFromVehicle',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removePedFromVehicle',
                 return_types=FunctionReturnTypes(
@@ -4141,11 +4340,15 @@ Available client side from 1.3.1 (It will only work with client side vehicles an
                 is_static=False,
             ),
             name='removePedFromVehicle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setAnalogControlState',
                 return_types=FunctionReturnTypes(
@@ -4207,11 +4410,15 @@ To change the analog controls for a ped, please use setPedAnalogControlState. ""
             ),
             oop=None,
             name='setAnalogControlState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedAimTarget',
                 return_types=FunctionReturnTypes(
@@ -4282,11 +4489,15 @@ Note: If you wish to make a ped shoot you must use this in conjunction with an e
             ),
             oop=None,
             name='setPedAimTarget',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedAnalogControlState',
                 return_types=FunctionReturnTypes(
@@ -4346,10 +4557,12 @@ This function only works on peds, to change the analog control state for a playe
             ),
             oop=None,
             name='setPedAnalogControlState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedAnimation',
                 return_types=FunctionReturnTypes(
@@ -4492,8 +4705,10 @@ This function only works on peds, to change the analog control state for a playe
                 is_static=False,
             ),
             name='setPedAnimation',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedAnimation',
                 return_types=FunctionReturnTypes(
@@ -4636,10 +4851,12 @@ This function only works on peds, to change the analog control state for a playe
                 is_static=False,
             ),
             name='setPedAnimation',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedAnimationProgress',
                 return_types=FunctionReturnTypes(
@@ -4704,8 +4921,10 @@ This function only works on peds, to change the analog control state for a playe
                 is_static=False,
             ),
             name='setPedAnimationProgress',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedAnimationProgress',
                 return_types=FunctionReturnTypes(
@@ -4770,10 +4989,12 @@ This function only works on peds, to change the analog control state for a playe
                 is_static=False,
             ),
             name='setPedAnimationProgress',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedAnimationSpeed',
                 return_types=FunctionReturnTypes(
@@ -4838,8 +5059,10 @@ This function only works on peds, to change the analog control state for a playe
                 is_static=False,
             ),
             name='setPedAnimationSpeed',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedAnimationSpeed',
                 return_types=FunctionReturnTypes(
@@ -4904,10 +5127,12 @@ This function only works on peds, to change the analog control state for a playe
                 is_static=False,
             ),
             name='setPedAnimationSpeed',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedArmor',
                 return_types=FunctionReturnTypes(
@@ -4961,8 +5186,10 @@ This function only works on peds, to change the analog control state for a playe
                 is_static=False,
             ),
             name='setPedArmor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedArmor',
                 return_types=FunctionReturnTypes(
@@ -5016,11 +5243,15 @@ This function only works on peds, to change the analog control state for a playe
                 is_static=False,
             ),
             name='setPedArmor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedCameraRotation',
                 return_types=FunctionReturnTypes(
@@ -5074,11 +5305,15 @@ This function only works on peds, to change the analog control state for a playe
                 is_static=False,
             ),
             name='setPedCameraRotation',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedCanBeKnockedOffBike',
                 return_types=FunctionReturnTypes(
@@ -5132,10 +5367,12 @@ This function only works on peds, to change the analog control state for a playe
                 is_static=False,
             ),
             name='setPedCanBeKnockedOffBike',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedChoking',
                 return_types=FunctionReturnTypes(
@@ -5189,12 +5426,18 @@ This function only works on peds, to change the analog control state for a playe
                 is_static=False,
             ),
             name='setPedChoking',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedControlState',
                 return_types=FunctionReturnTypes(
@@ -5259,10 +5502,12 @@ This function only works on peds, to change the analog control state for a playe
                 is_static=False,
             ),
             name='setPedControlState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedDoingGangDriveby',
                 return_types=FunctionReturnTypes(
@@ -5310,8 +5555,10 @@ This function only works on peds, to change the analog control state for a playe
             ),
             oop=None,
             name='setPedDoingGangDriveby',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedDoingGangDriveby',
                 return_types=FunctionReturnTypes(
@@ -5359,11 +5606,15 @@ This function only works on peds, to change the analog control state for a playe
             ),
             oop=None,
             name='setPedDoingGangDriveby',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedEnterVehicle',
                 return_types=FunctionReturnTypes(
@@ -5446,11 +5697,15 @@ this function returns false in the following cases
             ),
             oop=None,
             name='setPedEnterVehicle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedExitVehicle',
                 return_types=FunctionReturnTypes(
@@ -5494,10 +5749,12 @@ this function returns false in the following cases
             ),
             oop=None,
             name='setPedExitVehicle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedFightingStyle',
                 return_types=FunctionReturnTypes(
@@ -5545,8 +5802,10 @@ this function returns false in the following cases
             ),
             oop=None,
             name='setPedFightingStyle',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedFightingStyle',
                 return_types=FunctionReturnTypes(
@@ -5594,11 +5853,15 @@ this function returns false in the following cases
             ),
             oop=None,
             name='setPedFightingStyle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedFootBloodEnabled',
                 return_types=FunctionReturnTypes(
@@ -5646,10 +5909,12 @@ this function returns false in the following cases
             ),
             oop=None,
             name='setPedFootBloodEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedGravity',
                 return_types=FunctionReturnTypes(
@@ -5703,11 +5968,15 @@ this function returns false in the following cases
                 is_static=False,
             ),
             name='setPedGravity',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedHeadless',
                 return_types=FunctionReturnTypes(
@@ -5761,8 +6030,10 @@ this function returns false in the following cases
                 is_static=False,
             ),
             name='setPedHeadless',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedHeadless',
                 return_types=FunctionReturnTypes(
@@ -5816,11 +6087,15 @@ this function returns false in the following cases
                 is_static=False,
             ),
             name='setPedHeadless',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedLookAt',
                 return_types=FunctionReturnTypes(
@@ -5923,10 +6198,12 @@ this function returns false in the following cases
             ),
             oop=None,
             name='setPedLookAt',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedOnFire',
                 return_types=FunctionReturnTypes(
@@ -5980,8 +6257,10 @@ this function returns false in the following cases
                 is_static=False,
             ),
             name='setPedOnFire',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedOnFire',
                 return_types=FunctionReturnTypes(
@@ -6035,11 +6314,15 @@ this function returns false in the following cases
                 is_static=False,
             ),
             name='setPedOnFire',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedOxygenLevel',
                 return_types=FunctionReturnTypes(
@@ -6093,10 +6376,12 @@ this function returns false in the following cases
                 is_static=False,
             ),
             name='setPedOxygenLevel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedStat',
                 return_types=FunctionReturnTypes(
@@ -6157,8 +6442,10 @@ When this function is used client side, it can only be used on client side creat
             ),
             oop=None,
             name='setPedStat',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedStat',
                 return_types=FunctionReturnTypes(
@@ -6219,11 +6506,15 @@ When this function is used client side, it can only be used on client side creat
             ),
             oop=None,
             name='setPedStat',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedTargetingMarkerEnabled',
                 return_types=FunctionReturnTypes(
@@ -6260,11 +6551,15 @@ When this function is used client side, it can only be used on client side creat
             ),
             oop=None,
             name='setPedTargetingMarkerEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedVoice',
                 return_types=FunctionReturnTypes(
@@ -6329,10 +6624,12 @@ When this function is used client side, it can only be used on client side creat
                 is_static=False,
             ),
             name='setPedVoice',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedWalkingStyle',
                 return_types=FunctionReturnTypes(
@@ -6387,8 +6684,10 @@ The possible walking styles are: """
                 is_static=False,
             ),
             name='setPedWalkingStyle',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedWalkingStyle',
                 return_types=FunctionReturnTypes(
@@ -6443,10 +6742,12 @@ The possible walking styles are: """
                 is_static=False,
             ),
             name='setPedWalkingStyle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedWeaponSlot',
                 return_types=FunctionReturnTypes(
@@ -6500,8 +6801,10 @@ The possible walking styles are: """
                 is_static=False,
             ),
             name='setPedWeaponSlot',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedWeaponSlot',
                 return_types=FunctionReturnTypes(
@@ -6555,10 +6858,12 @@ The possible walking styles are: """
                 is_static=False,
             ),
             name='setPedWeaponSlot',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPedWearingJetpack',
                 return_types=FunctionReturnTypes(
@@ -6613,11 +6918,15 @@ As such, you should either expect it to fail sometimes, or repeatedly try to giv
                 is_static=False,
             ),
             name='setPedWearingJetpack',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='warpPedIntoVehicle',
                 return_types=FunctionReturnTypes(
@@ -6687,8 +6996,10 @@ Available client side from 1.3.1 (It will only work with client side vehicles an
                 is_static=False,
             ),
             name='warpPedIntoVehicle',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='warpPedIntoVehicle',
                 return_types=FunctionReturnTypes(
@@ -6758,6 +7069,7 @@ Available client side from 1.3.1 (It will only work with client side vehicles an
                 is_static=False,
             ),
             name='warpPedIntoVehicle',
-        ),
+        )
+        ],
     )
 ]

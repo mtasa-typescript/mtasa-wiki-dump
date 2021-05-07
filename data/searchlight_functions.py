@@ -11,8 +11,11 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createSearchLight',
                 return_types=FunctionReturnTypes(
@@ -143,11 +146,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='createSearchLight',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSearchLightEndPosition',
                 return_types=FunctionReturnTypes(
@@ -198,11 +205,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getSearchLightEndPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSearchLightEndRadius',
                 return_types=FunctionReturnTypes(
@@ -245,11 +256,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getSearchLightEndRadius',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSearchLightStartPosition',
                 return_types=FunctionReturnTypes(
@@ -300,11 +315,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getSearchLightStartPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getSearchLightStartRadius',
                 return_types=FunctionReturnTypes(
@@ -347,11 +366,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getSearchLightStartRadius',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSearchLightEndPosition',
                 return_types=FunctionReturnTypes(
@@ -427,11 +450,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setSearchLightEndPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSearchLightEndRadius',
                 return_types=FunctionReturnTypes(
@@ -485,11 +512,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setSearchLightEndRadius',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSearchLightStartPosition',
                 return_types=FunctionReturnTypes(
@@ -565,11 +596,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setSearchLightStartPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setSearchLightStartRadius',
                 return_types=FunctionReturnTypes(
@@ -623,6 +658,7 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setSearchLightStartRadius',
-        ),
+        )
+        ],
     )
 ]

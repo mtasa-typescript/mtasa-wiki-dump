@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addColPolygonPoint',
                 return_types=FunctionReturnTypes(
@@ -88,8 +89,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='addColPolygonPoint',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addColPolygonPoint',
                 return_types=FunctionReturnTypes(
@@ -166,10 +169,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='addColPolygonPoint',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createColCircle',
                 return_types=FunctionReturnTypes(
@@ -234,8 +239,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=True,
             ),
             name='createColCircle',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createColCircle',
                 return_types=FunctionReturnTypes(
@@ -300,10 +307,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=True,
             ),
             name='createColCircle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createColCuboid',
                 return_types=FunctionReturnTypes(
@@ -401,8 +410,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=True,
             ),
             name='createColCuboid',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createColCuboid',
                 return_types=FunctionReturnTypes(
@@ -500,10 +511,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=True,
             ),
             name='createColCuboid',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createColPolygon',
                 return_types=FunctionReturnTypes(
@@ -624,8 +637,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=True,
             ),
             name='createColPolygon',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createColPolygon',
                 return_types=FunctionReturnTypes(
@@ -746,10 +761,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=True,
             ),
             name='createColPolygon',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createColRectangle',
                 return_types=FunctionReturnTypes(
@@ -825,8 +842,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=True,
             ),
             name='createColRectangle',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createColRectangle',
                 return_types=FunctionReturnTypes(
@@ -902,10 +921,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=True,
             ),
             name='createColRectangle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createColSphere',
                 return_types=FunctionReturnTypes(
@@ -981,8 +1002,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=True,
             ),
             name='createColSphere',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createColSphere',
                 return_types=FunctionReturnTypes(
@@ -1058,10 +1081,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=True,
             ),
             name='createColSphere',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createColTube',
                 return_types=FunctionReturnTypes(
@@ -1148,8 +1173,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=True,
             ),
             name='createColTube',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createColTube',
                 return_types=FunctionReturnTypes(
@@ -1236,10 +1263,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=True,
             ),
             name='createColTube',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getColPolygonHeight',
                 return_types=FunctionReturnTypes(
@@ -1286,8 +1315,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='getColPolygonHeight',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getColPolygonHeight',
                 return_types=FunctionReturnTypes(
@@ -1334,10 +1365,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='getColPolygonHeight',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getColPolygonPointPosition',
                 return_types=FunctionReturnTypes(
@@ -1395,8 +1428,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='getColPolygonPointPosition',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getColPolygonPointPosition',
                 return_types=FunctionReturnTypes(
@@ -1454,10 +1489,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='getColPolygonPointPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getColPolygonPoints',
                 return_types=FunctionReturnTypes(
@@ -1500,8 +1537,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='getColPolygonPoints',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getColPolygonPoints',
                 return_types=FunctionReturnTypes(
@@ -1544,10 +1583,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='getColPolygonPoints',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getColShapeRadius',
                 return_types=FunctionReturnTypes(
@@ -1590,8 +1631,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='getColShapeRadius',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getColShapeRadius',
                 return_types=FunctionReturnTypes(
@@ -1634,10 +1677,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='getColShapeRadius',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getColShapeSize',
                 return_types=FunctionReturnTypes(
@@ -1691,8 +1736,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='getColShapeSize',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getColShapeSize',
                 return_types=FunctionReturnTypes(
@@ -1746,10 +1793,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='getColShapeSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getColShapeType',
                 return_types=FunctionReturnTypes(
@@ -1798,8 +1847,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='getColShapeType',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getColShapeType',
                 return_types=FunctionReturnTypes(
@@ -1848,10 +1899,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='getColShapeType',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isInsideColShape',
                 return_types=FunctionReturnTypes(
@@ -1927,8 +1980,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='isInsideColShape',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isInsideColShape',
                 return_types=FunctionReturnTypes(
@@ -2004,10 +2059,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='isInsideColShape',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeColPolygonPoint',
                 return_types=FunctionReturnTypes(
@@ -2061,8 +2118,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='removeColPolygonPoint',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeColPolygonPoint',
                 return_types=FunctionReturnTypes(
@@ -2116,10 +2175,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='removeColPolygonPoint',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setColPolygonHeight',
                 return_types=FunctionReturnTypes(
@@ -2184,8 +2245,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='setColPolygonHeight',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setColPolygonHeight',
                 return_types=FunctionReturnTypes(
@@ -2250,10 +2313,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='setColPolygonHeight',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setColPolygonPointPosition',
                 return_types=FunctionReturnTypes(
@@ -2329,8 +2394,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='setColPolygonPointPosition',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setColPolygonPointPosition',
                 return_types=FunctionReturnTypes(
@@ -2406,10 +2473,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='setColPolygonPointPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setColShapeRadius',
                 return_types=FunctionReturnTypes(
@@ -2463,8 +2532,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='setColShapeRadius',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setColShapeRadius',
                 return_types=FunctionReturnTypes(
@@ -2518,10 +2589,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='setColShapeRadius',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setColShapeSize',
                 return_types=FunctionReturnTypes(
@@ -2597,8 +2670,10 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='setColShapeSize',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setColShapeSize',
                 return_types=FunctionReturnTypes(
@@ -2674,6 +2749,7 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 is_static=False,
             ),
             name='setColShapeSize',
-        ),
+        )
+        ],
     )
 ]

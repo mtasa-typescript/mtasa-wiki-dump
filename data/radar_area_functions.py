@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createRadarArea',
                 return_types=FunctionReturnTypes(
@@ -142,8 +143,10 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='createRadarArea',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createRadarArea',
                 return_types=FunctionReturnTypes(
@@ -274,10 +277,12 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='createRadarArea',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRadarAreaColor',
                 return_types=FunctionReturnTypes(
@@ -332,8 +337,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getRadarAreaColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRadarAreaColor',
                 return_types=FunctionReturnTypes(
@@ -388,10 +395,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getRadarAreaColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRadarAreaSize',
                 return_types=FunctionReturnTypes(
@@ -438,8 +447,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getRadarAreaSize',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRadarAreaSize',
                 return_types=FunctionReturnTypes(
@@ -486,10 +497,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getRadarAreaSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isInsideRadarArea',
                 return_types=FunctionReturnTypes(
@@ -554,8 +567,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='isInsideRadarArea',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isInsideRadarArea',
                 return_types=FunctionReturnTypes(
@@ -620,10 +635,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='isInsideRadarArea',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isRadarAreaFlashing',
                 return_types=FunctionReturnTypes(
@@ -666,8 +683,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='isRadarAreaFlashing',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isRadarAreaFlashing',
                 return_types=FunctionReturnTypes(
@@ -710,10 +729,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='isRadarAreaFlashing',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setRadarAreaColor',
                 return_types=FunctionReturnTypes(
@@ -800,8 +821,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setRadarAreaColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setRadarAreaColor',
                 return_types=FunctionReturnTypes(
@@ -888,10 +911,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setRadarAreaColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setRadarAreaFlashing',
                 return_types=FunctionReturnTypes(
@@ -945,8 +970,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setRadarAreaFlashing',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setRadarAreaFlashing',
                 return_types=FunctionReturnTypes(
@@ -1000,10 +1027,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setRadarAreaFlashing',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setRadarAreaSize',
                 return_types=FunctionReturnTypes(
@@ -1068,8 +1097,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setRadarAreaSize',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setRadarAreaSize',
                 return_types=FunctionReturnTypes(
@@ -1134,6 +1165,7 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setRadarAreaSize',
-        ),
+        )
+        ],
     )
 ]

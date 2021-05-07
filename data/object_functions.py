@@ -11,8 +11,11 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='breakObject',
                 return_types=FunctionReturnTypes(
@@ -56,10 +59,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='breakObject',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createObject',
                 return_types=FunctionReturnTypes(
@@ -179,8 +184,10 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='createObject',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createObject',
                 return_types=FunctionReturnTypes(
@@ -300,11 +307,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='createObject',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getObjectMass',
                 return_types=FunctionReturnTypes(
@@ -349,11 +360,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getObjectMass',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getObjectProperty',
                 return_types=FunctionReturnTypes(
@@ -411,10 +426,12 @@ on failure: false """,
                 is_static=False,
             ),
             name='getObjectProperty',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getObjectScale',
                 return_types=FunctionReturnTypes(
@@ -465,8 +482,10 @@ on failure: false """,
                 is_static=False,
             ),
             name='getObjectScale',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getObjectScale',
                 return_types=FunctionReturnTypes(
@@ -517,11 +536,15 @@ on failure: false """,
                 is_static=False,
             ),
             name='getObjectScale',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isObjectBreakable',
                 return_types=FunctionReturnTypes(
@@ -573,11 +596,15 @@ on failure: false """,
                 is_static=False,
             ),
             name='isObjectBreakable',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isObjectMoving',
                 return_types=FunctionReturnTypes(
@@ -615,10 +642,12 @@ on failure: false """,
             ),
             oop=None,
             name='isObjectMoving',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='moveObject',
                 return_types=FunctionReturnTypes(
@@ -783,8 +812,10 @@ on failure: false """,
                 is_static=False,
             ),
             name='moveObject',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='moveObject',
                 return_types=FunctionReturnTypes(
@@ -949,11 +980,15 @@ on failure: false """,
                 is_static=False,
             ),
             name='moveObject',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='respawnObject',
                 return_types=FunctionReturnTypes(
@@ -997,11 +1032,15 @@ on failure: false """,
                 is_static=False,
             ),
             name='respawnObject',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setObjectBreakable',
                 return_types=FunctionReturnTypes(
@@ -1056,11 +1095,15 @@ on failure: false """,
                 is_static=False,
             ),
             name='setObjectBreakable',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setObjectMass',
                 return_types=FunctionReturnTypes(
@@ -1115,11 +1158,15 @@ on failure: false """,
                 is_static=False,
             ),
             name='setObjectMass',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setObjectProperty',
                 return_types=FunctionReturnTypes(
@@ -1184,10 +1231,12 @@ on failure: false """,
                 is_static=False,
             ),
             name='setObjectProperty',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setObjectScale',
                 return_types=FunctionReturnTypes(
@@ -1264,8 +1313,10 @@ on failure: false """,
                 is_static=False,
             ),
             name='setObjectScale',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setObjectScale',
                 return_types=FunctionReturnTypes(
@@ -1342,10 +1393,12 @@ on failure: false """,
                 is_static=False,
             ),
             name='setObjectScale',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='stopObject',
                 return_types=FunctionReturnTypes(
@@ -1389,8 +1442,10 @@ on failure: false """,
                 is_static=False,
             ),
             name='stopObject',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='stopObject',
                 return_types=FunctionReturnTypes(
@@ -1434,11 +1489,15 @@ on failure: false """,
                 is_static=False,
             ),
             name='stopObject',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='toggleObjectRespawn',
                 return_types=FunctionReturnTypes(
@@ -1493,6 +1552,7 @@ on failure: false """,
                 is_static=False,
             ),
             name='toggleObjectRespawn',
-        ),
+        )
+        ],
     )
 ]

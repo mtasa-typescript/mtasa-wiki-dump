@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addElementDataSubscriber',
                 return_types=FunctionReturnTypes(
@@ -76,11 +77,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='addElementDataSubscriber',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='attachElements',
                 return_types=FunctionReturnTypes(
@@ -215,8 +220,10 @@ This is not compatible with all elements.  The following elements are compatible
                 is_static=False,
             ),
             name='attachElements',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='attachElements',
                 return_types=FunctionReturnTypes(
@@ -351,10 +358,12 @@ This is not compatible with all elements.  The following elements are compatible
                 is_static=False,
             ),
             name='attachElements',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='clearElementVisibleTo',
                 return_types=FunctionReturnTypes(
@@ -397,11 +406,15 @@ This is not compatible with all elements.  The following elements are compatible
                 is_static=False,
             ),
             name='clearElementVisibleTo',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='cloneElement',
                 return_types=FunctionReturnTypes(
@@ -491,11 +504,15 @@ The cloned element will be placed on the element tree as a child of the same par
                 is_static=False,
             ),
             name='cloneElement',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createElement',
                 return_types=FunctionReturnTypes(
@@ -550,8 +567,10 @@ Elements created using this function are placed in the element tree with their p
                 is_static=True,
             ),
             name='createElement',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createElement',
                 return_types=FunctionReturnTypes(
@@ -606,10 +625,12 @@ Elements created using this function are placed in the element tree with their p
                 is_static=True,
             ),
             name='createElement',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='destroyElement',
                 return_types=FunctionReturnTypes(
@@ -653,8 +674,10 @@ Players are not the only elements that cannot be deleted. This list also include
                 is_static=False,
             ),
             name='destroyElement',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='destroyElement',
                 return_types=FunctionReturnTypes(
@@ -698,10 +721,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 is_static=False,
             ),
             name='destroyElement',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='detachElements',
                 return_types=FunctionReturnTypes(
@@ -755,8 +780,10 @@ Players are not the only elements that cannot be deleted. This list also include
                 is_static=False,
             ),
             name='detachElements',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='detachElements',
                 return_types=FunctionReturnTypes(
@@ -810,10 +837,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 is_static=False,
             ),
             name='detachElements',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAllElementData',
                 return_types=FunctionReturnTypes(
@@ -856,11 +885,15 @@ Players are not the only elements that cannot be deleted. This list also include
                 is_static=False,
             ),
             name='getAllElementData',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAttachedElements',
                 return_types=FunctionReturnTypes(
@@ -903,8 +936,10 @@ Players are not the only elements that cannot be deleted. This list also include
                 is_static=False,
             ),
             name='getAttachedElements',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAttachedElements',
                 return_types=FunctionReturnTypes(
@@ -947,10 +982,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 is_static=False,
             ),
             name='getAttachedElements',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementAlpha',
                 return_types=FunctionReturnTypes(
@@ -993,8 +1030,10 @@ Players are not the only elements that cannot be deleted. This list also include
                 is_static=False,
             ),
             name='getElementAlpha',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementAlpha',
                 return_types=FunctionReturnTypes(
@@ -1037,10 +1076,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 is_static=False,
             ),
             name='getElementAlpha',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementAngularVelocity',
                 return_types=FunctionReturnTypes(
@@ -1091,8 +1132,10 @@ Players are not the only elements that cannot be deleted. This list also include
                 is_static=False,
             ),
             name='getElementAngularVelocity',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementAngularVelocity',
                 return_types=FunctionReturnTypes(
@@ -1143,10 +1186,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 is_static=False,
             ),
             name='getElementAngularVelocity',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementAttachedOffsets',
                 return_types=FunctionReturnTypes(
@@ -1209,8 +1254,10 @@ Players are not the only elements that cannot be deleted. This list also include
                 is_static=False,
             ),
             name='getElementAttachedOffsets',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementAttachedOffsets',
                 return_types=FunctionReturnTypes(
@@ -1273,10 +1320,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 is_static=False,
             ),
             name='getElementAttachedOffsets',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementAttachedTo',
                 return_types=FunctionReturnTypes(
@@ -1319,8 +1368,10 @@ Players are not the only elements that cannot be deleted. This list also include
                 is_static=False,
             ),
             name='getElementAttachedTo',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementAttachedTo',
                 return_types=FunctionReturnTypes(
@@ -1363,11 +1414,15 @@ Players are not the only elements that cannot be deleted. This list also include
                 is_static=False,
             ),
             name='getElementAttachedTo',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementBoneMatrix',
                 return_types=FunctionReturnTypes(
@@ -1416,11 +1471,15 @@ Players are not the only elements that cannot be deleted. This list also include
             ),
             oop=None,
             name='getElementBoneMatrix',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementBonePosition',
                 return_types=FunctionReturnTypes(
@@ -1477,11 +1536,15 @@ Players are not the only elements that cannot be deleted. This list also include
             ),
             oop=None,
             name='getElementBonePosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementBoneRotation',
                 return_types=FunctionReturnTypes(
@@ -1538,11 +1601,15 @@ Players are not the only elements that cannot be deleted. This list also include
             ),
             oop=None,
             name='getElementBoneRotation',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementBoundingBox',
                 return_types=FunctionReturnTypes(
@@ -1606,10 +1673,12 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementBoundingBox',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementByID',
                 return_types=FunctionReturnTypes(
@@ -1663,8 +1732,10 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=True,
             ),
             name='getElementByID',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementByID',
                 return_types=FunctionReturnTypes(
@@ -1718,10 +1789,12 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=True,
             ),
             name='getElementByID',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementByIndex',
                 return_types=FunctionReturnTypes(
@@ -1775,11 +1848,15 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=True,
             ),
             name='getElementByIndex',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementChild',
                 return_types=FunctionReturnTypes(
@@ -1833,8 +1910,10 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementChild',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementChild',
                 return_types=FunctionReturnTypes(
@@ -1888,10 +1967,12 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementChild',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementChildren',
                 return_types=FunctionReturnTypes(
@@ -1960,8 +2041,10 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementChildren',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementChildren',
                 return_types=FunctionReturnTypes(
@@ -2030,10 +2113,12 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementChildren',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementChildrenCount',
                 return_types=FunctionReturnTypes(
@@ -2076,8 +2161,10 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementChildrenCount',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementChildrenCount',
                 return_types=FunctionReturnTypes(
@@ -2120,10 +2207,12 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementChildrenCount',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementCollisionsEnabled',
                 return_types=FunctionReturnTypes(
@@ -2166,8 +2255,10 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementCollisionsEnabled',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementCollisionsEnabled',
                 return_types=FunctionReturnTypes(
@@ -2210,10 +2301,12 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementCollisionsEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementColShape',
                 return_types=FunctionReturnTypes(
@@ -2256,8 +2349,10 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementColShape',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementColShape',
                 return_types=FunctionReturnTypes(
@@ -2300,10 +2395,12 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementColShape',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementData',
                 return_types=FunctionReturnTypes(
@@ -2368,8 +2465,10 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementData',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementData',
                 return_types=FunctionReturnTypes(
@@ -2434,10 +2533,12 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementData',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementDimension',
                 return_types=FunctionReturnTypes(
@@ -2480,8 +2581,10 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementDimension',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementDimension',
                 return_types=FunctionReturnTypes(
@@ -2524,11 +2627,15 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementDimension',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementDistanceFromCentreOfMassToBaseOfModel',
                 return_types=FunctionReturnTypes(
@@ -2571,10 +2678,12 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementDistanceFromCentreOfMassToBaseOfModel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementHealth',
                 return_types=FunctionReturnTypes(
@@ -2617,8 +2726,10 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementHealth',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementHealth',
                 return_types=FunctionReturnTypes(
@@ -2661,10 +2772,12 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementHealth',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementID',
                 return_types=FunctionReturnTypes(
@@ -2707,8 +2820,10 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementID',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementID',
                 return_types=FunctionReturnTypes(
@@ -2751,10 +2866,12 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementID',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementInterior',
                 return_types=FunctionReturnTypes(
@@ -2797,8 +2914,10 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementInterior',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementInterior',
                 return_types=FunctionReturnTypes(
@@ -2841,10 +2960,12 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementInterior',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementMatrix',
                 return_types=FunctionReturnTypes(
@@ -2898,8 +3019,10 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementMatrix',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementMatrix',
                 return_types=FunctionReturnTypes(
@@ -2953,10 +3076,12 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementMatrix',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementModel',
                 return_types=FunctionReturnTypes(
@@ -3002,8 +3127,10 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementModel',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementModel',
                 return_types=FunctionReturnTypes(
@@ -3049,10 +3176,12 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementModel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementParent',
                 return_types=FunctionReturnTypes(
@@ -3095,8 +3224,10 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementParent',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementParent',
                 return_types=FunctionReturnTypes(
@@ -3139,10 +3270,12 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementParent',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementPosition',
                 return_types=FunctionReturnTypes(
@@ -3201,8 +3334,10 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementPosition',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementPosition',
                 return_types=FunctionReturnTypes(
@@ -3261,11 +3396,15 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementRadius',
                 return_types=FunctionReturnTypes(
@@ -3312,10 +3451,12 @@ It should be noted that the values returned are relative to the position of the 
                 is_static=False,
             ),
             name='getElementRadius',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementRotation',
                 return_types=FunctionReturnTypes(
@@ -3382,8 +3523,10 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 is_static=False,
             ),
             name='getElementRotation',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementRotation',
                 return_types=FunctionReturnTypes(
@@ -3450,10 +3593,12 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 is_static=False,
             ),
             name='getElementRotation',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementsByType',
                 return_types=FunctionReturnTypes(
@@ -3500,8 +3645,10 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
             ),
             oop=None,
             name='getElementsByType',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementsByType',
                 return_types=FunctionReturnTypes(
@@ -3558,10 +3705,12 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
             ),
             oop=None,
             name='getElementsByType',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementsWithinColShape',
                 return_types=FunctionReturnTypes(
@@ -3624,8 +3773,10 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 is_static=False,
             ),
             name='getElementsWithinColShape',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementsWithinColShape',
                 return_types=FunctionReturnTypes(
@@ -3688,10 +3839,12 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 is_static=False,
             ),
             name='getElementsWithinColShape',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementsWithinRange',
                 return_types=FunctionReturnTypes(
@@ -3808,8 +3961,10 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 is_static=True,
             ),
             name='getElementsWithinRange',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementsWithinRange',
                 return_types=FunctionReturnTypes(
@@ -3926,10 +4081,12 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 is_static=True,
             ),
             name='getElementsWithinRange',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementSyncer',
                 return_types=FunctionReturnTypes(
@@ -3972,11 +4129,15 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 is_static=False,
             ),
             name='getElementSyncer',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementType',
                 return_types=FunctionReturnTypes(
@@ -4019,8 +4180,10 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 is_static=False,
             ),
             name='getElementType',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementType',
                 return_types=FunctionReturnTypes(
@@ -4063,10 +4226,12 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 is_static=False,
             ),
             name='getElementType',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementVelocity',
                 return_types=FunctionReturnTypes(
@@ -4118,8 +4283,10 @@ the returned values are expressed in gta units per 1/50th of a secondhttp://foru
                 is_static=False,
             ),
             name='getElementVelocity',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementVelocity',
                 return_types=FunctionReturnTypes(
@@ -4171,10 +4338,12 @@ the returned values are expressed in gta units per 1/50th of a secondhttp://foru
                 is_static=False,
             ),
             name='getElementVelocity',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getElementZoneName',
                 return_types=FunctionReturnTypes(
@@ -4229,11 +4398,15 @@ The same can be achieved client side by getting element coordinates and using Ge
                 is_static=False,
             ),
             name='getElementZoneName',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getLowLODElement',
                 return_types=FunctionReturnTypes(
@@ -4276,8 +4449,10 @@ The same can be achieved client side by getting element coordinates and using Ge
                 is_static=False,
             ),
             name='getLowLODElement',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getLowLODElement',
                 return_types=FunctionReturnTypes(
@@ -4320,10 +4495,12 @@ The same can be achieved client side by getting element coordinates and using Ge
                 is_static=False,
             ),
             name='getLowLODElement',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRootElement',
                 return_types=FunctionReturnTypes(
@@ -4352,8 +4529,10 @@ It is often used to attach handler functions to events triggered for any element
             ),
             oop=None,
             name='getRootElement',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRootElement',
                 return_types=FunctionReturnTypes(
@@ -4382,10 +4561,12 @@ It is often used to attach handler functions to events triggered for any element
             ),
             oop=None,
             name='getRootElement',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='hasElementData',
                 return_types=FunctionReturnTypes(
@@ -4450,8 +4631,10 @@ It is often used to attach handler functions to events triggered for any element
                 is_static=False,
             ),
             name='hasElementData',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='hasElementData',
                 return_types=FunctionReturnTypes(
@@ -4516,10 +4699,12 @@ It is often used to attach handler functions to events triggered for any element
                 is_static=False,
             ),
             name='hasElementData',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='hasElementDataSubscriber',
                 return_types=FunctionReturnTypes(
@@ -4584,11 +4769,15 @@ It is often used to attach handler functions to events triggered for any element
                 is_static=False,
             ),
             name='hasElementDataSubscriber',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElement',
                 return_types=FunctionReturnTypes(
@@ -4625,8 +4814,10 @@ It is often used to attach handler functions to events triggered for any element
             ),
             oop=None,
             name='isElement',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElement',
                 return_types=FunctionReturnTypes(
@@ -4663,10 +4854,12 @@ It is often used to attach handler functions to events triggered for any element
             ),
             oop=None,
             name='isElement',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementAttached',
                 return_types=FunctionReturnTypes(
@@ -4709,8 +4902,10 @@ It is often used to attach handler functions to events triggered for any element
                 is_static=False,
             ),
             name='isElementAttached',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementAttached',
                 return_types=FunctionReturnTypes(
@@ -4753,10 +4948,12 @@ It is often used to attach handler functions to events triggered for any element
                 is_static=False,
             ),
             name='isElementAttached',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementCallPropagationEnabled',
                 return_types=FunctionReturnTypes(
@@ -4799,8 +4996,10 @@ It is often used to attach handler functions to events triggered for any element
                 is_static=False,
             ),
             name='isElementCallPropagationEnabled',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementCallPropagationEnabled',
                 return_types=FunctionReturnTypes(
@@ -4843,11 +5042,15 @@ It is often used to attach handler functions to events triggered for any element
                 is_static=False,
             ),
             name='isElementCallPropagationEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementCollidableWith',
                 return_types=FunctionReturnTypes(
@@ -4906,10 +5109,12 @@ Note: You can only use this function with the element types listed below.
                 is_static=False,
             ),
             name='isElementCollidableWith',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementDoubleSided',
                 return_types=FunctionReturnTypes(
@@ -4952,8 +5157,10 @@ Note: You can only use this function with the element types listed below.
                 is_static=False,
             ),
             name='isElementDoubleSided',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementDoubleSided',
                 return_types=FunctionReturnTypes(
@@ -4996,10 +5203,12 @@ Note: You can only use this function with the element types listed below.
                 is_static=False,
             ),
             name='isElementDoubleSided',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementFrozen',
                 return_types=FunctionReturnTypes(
@@ -5042,8 +5251,10 @@ Note: You can only use this function with the element types listed below.
                 is_static=False,
             ),
             name='isElementFrozen',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementFrozen',
                 return_types=FunctionReturnTypes(
@@ -5086,10 +5297,12 @@ Note: You can only use this function with the element types listed below.
                 is_static=False,
             ),
             name='isElementFrozen',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementInWater',
                 return_types=FunctionReturnTypes(
@@ -5132,8 +5345,10 @@ Note: You can only use this function with the element types listed below.
                 is_static=False,
             ),
             name='isElementInWater',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementInWater',
                 return_types=FunctionReturnTypes(
@@ -5176,11 +5391,15 @@ Note: You can only use this function with the element types listed below.
                 is_static=False,
             ),
             name='isElementInWater',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementLocal',
                 return_types=FunctionReturnTypes(
@@ -5223,10 +5442,12 @@ Note: You can only use this function with the element types listed below.
                 is_static=False,
             ),
             name='isElementLocal',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementLowLOD',
                 return_types=FunctionReturnTypes(
@@ -5269,8 +5490,10 @@ Note: You can only use this function with the element types listed below.
                 is_static=False,
             ),
             name='isElementLowLOD',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementLowLOD',
                 return_types=FunctionReturnTypes(
@@ -5313,11 +5536,15 @@ Note: You can only use this function with the element types listed below.
                 is_static=False,
             ),
             name='isElementLowLOD',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementOnScreen',
                 return_types=FunctionReturnTypes(
@@ -5361,11 +5588,15 @@ This function is particularly useful for detecting if dynamic objects are in des
                 is_static=False,
             ),
             name='isElementOnScreen',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementStreamable',
                 return_types=FunctionReturnTypes(
@@ -5408,11 +5639,15 @@ This function is particularly useful for detecting if dynamic objects are in des
                 is_static=False,
             ),
             name='isElementStreamable',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementStreamedIn',
                 return_types=FunctionReturnTypes(
@@ -5450,11 +5685,15 @@ DP2 can return true even if this element is not fully streamed in. This can happ
             ),
             oop=None,
             name='isElementStreamedIn',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementSyncer',
                 return_types=FunctionReturnTypes(
@@ -5497,10 +5736,12 @@ DP2 can return true even if this element is not fully streamed in. This can happ
                 is_static=False,
             ),
             name='isElementSyncer',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementVisibleTo',
                 return_types=FunctionReturnTypes(
@@ -5554,12 +5795,18 @@ DP2 can return true even if this element is not fully streamed in. This can happ
                 is_static=False,
             ),
             name='isElementVisibleTo',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementWaitingForGroundToLoad',
                 return_types=FunctionReturnTypes(
@@ -5602,10 +5849,12 @@ DP2 can return true even if this element is not fully streamed in. This can happ
                 is_static=False,
             ),
             name='isElementWaitingForGroundToLoad',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementWithinColShape',
                 return_types=FunctionReturnTypes(
@@ -5660,8 +5909,10 @@ Please note that this function doesnt verify whether element is in the same dime
                 is_static=False,
             ),
             name='isElementWithinColShape',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementWithinColShape',
                 return_types=FunctionReturnTypes(
@@ -5716,10 +5967,12 @@ Please note that this function doesnt verify whether element is in the same dime
                 is_static=False,
             ),
             name='isElementWithinColShape',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementWithinMarker',
                 return_types=FunctionReturnTypes(
@@ -5773,8 +6026,10 @@ Please note that this function doesnt verify whether element is in the same dime
                 is_static=False,
             ),
             name='isElementWithinMarker',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isElementWithinMarker',
                 return_types=FunctionReturnTypes(
@@ -5828,10 +6083,12 @@ Please note that this function doesnt verify whether element is in the same dime
                 is_static=False,
             ),
             name='isElementWithinMarker',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeElementData',
                 return_types=FunctionReturnTypes(
@@ -5885,11 +6142,15 @@ Please note that this function doesnt verify whether element is in the same dime
                 is_static=False,
             ),
             name='removeElementData',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeElementDataSubscriber',
                 return_types=FunctionReturnTypes(
@@ -5954,11 +6215,15 @@ Please note that this function doesnt verify whether element is in the same dime
                 is_static=False,
             ),
             name='removeElementDataSubscriber',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementAlpha',
                 return_types=FunctionReturnTypes(
@@ -6013,8 +6278,10 @@ Please note that this function doesnt verify whether element is in the same dime
                 is_static=False,
             ),
             name='setElementAlpha',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementAlpha',
                 return_types=FunctionReturnTypes(
@@ -6069,10 +6336,12 @@ Please note that this function doesnt verify whether element is in the same dime
                 is_static=False,
             ),
             name='setElementAlpha',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementAngularVelocity',
                 return_types=FunctionReturnTypes(
@@ -6148,8 +6417,10 @@ Please note that this function doesnt verify whether element is in the same dime
                 is_static=False,
             ),
             name='setElementAngularVelocity',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementAngularVelocity',
                 return_types=FunctionReturnTypes(
@@ -6225,10 +6496,12 @@ Please note that this function doesnt verify whether element is in the same dime
                 is_static=False,
             ),
             name='setElementAngularVelocity',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementAttachedOffsets',
                 return_types=FunctionReturnTypes(
@@ -6337,8 +6610,10 @@ Please note that this function doesnt verify whether element is in the same dime
                 is_static=False,
             ),
             name='setElementAttachedOffsets',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementAttachedOffsets',
                 return_types=FunctionReturnTypes(
@@ -6447,11 +6722,15 @@ Please note that this function doesnt verify whether element is in the same dime
                 is_static=False,
             ),
             name='setElementAttachedOffsets',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementBoneMatrix',
                 return_types=FunctionReturnTypes(
@@ -6511,11 +6790,15 @@ Please note that this function doesnt verify whether element is in the same dime
             ),
             oop=None,
             name='setElementBoneMatrix',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementBonePosition',
                 return_types=FunctionReturnTypes(
@@ -6597,11 +6880,15 @@ Please note that this function doesnt verify whether element is in the same dime
             ),
             oop=None,
             name='setElementBonePosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementBoneRotation',
                 return_types=FunctionReturnTypes(
@@ -6684,10 +6971,12 @@ note: updateelementrphanim must be called after this function to apply bone rota
             ),
             oop=None,
             name='setElementBoneRotation',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementCallPropagationEnabled',
                 return_types=FunctionReturnTypes(
@@ -6741,8 +7030,10 @@ note: updateelementrphanim must be called after this function to apply bone rota
                 is_static=False,
             ),
             name='setElementCallPropagationEnabled',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementCallPropagationEnabled',
                 return_types=FunctionReturnTypes(
@@ -6796,11 +7087,15 @@ note: updateelementrphanim must be called after this function to apply bone rota
                 is_static=False,
             ),
             name='setElementCallPropagationEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementCollidableWith',
                 return_types=FunctionReturnTypes(
@@ -6870,10 +7165,12 @@ Note: You can only use this function with the element types listed below.
                 is_static=False,
             ),
             name='setElementCollidableWith',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementCollisionsEnabled',
                 return_types=FunctionReturnTypes(
@@ -6927,8 +7224,10 @@ Note: You can only use this function with the element types listed below.
                 is_static=False,
             ),
             name='setElementCollisionsEnabled',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementCollisionsEnabled',
                 return_types=FunctionReturnTypes(
@@ -6982,10 +7281,12 @@ Note: You can only use this function with the element types listed below.
                 is_static=False,
             ),
             name='setElementCollisionsEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementData',
                 return_types=FunctionReturnTypes(
@@ -7067,8 +7368,10 @@ Note this mode only works when setting element data serverside. Setting data cli
                 is_static=False,
             ),
             name='setElementData',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementData',
                 return_types=FunctionReturnTypes(
@@ -7147,10 +7450,12 @@ Note this mode only works when setting element data serverside. Setting data cli
                 is_static=False,
             ),
             name='setElementData',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementDimension',
                 return_types=FunctionReturnTypes(
@@ -7205,8 +7510,10 @@ also returns false if theelement is a player and its not alive. """,
                 is_static=False,
             ),
             name='setElementDimension',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementDimension',
                 return_types=FunctionReturnTypes(
@@ -7261,10 +7568,12 @@ also returns false if theelement is a player and its not alive. """,
                 is_static=False,
             ),
             name='setElementDimension',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementDoubleSided',
                 return_types=FunctionReturnTypes(
@@ -7319,8 +7628,10 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 is_static=False,
             ),
             name='setElementDoubleSided',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementDoubleSided',
                 return_types=FunctionReturnTypes(
@@ -7375,10 +7686,12 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 is_static=False,
             ),
             name='setElementDoubleSided',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementFrozen',
                 return_types=FunctionReturnTypes(
@@ -7432,8 +7745,10 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 is_static=False,
             ),
             name='setElementFrozen',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementFrozen',
                 return_types=FunctionReturnTypes(
@@ -7487,10 +7802,12 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 is_static=False,
             ),
             name='setElementFrozen',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementHealth',
                 return_types=FunctionReturnTypes(
@@ -7548,8 +7865,10 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 is_static=False,
             ),
             name='setElementHealth',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementHealth',
                 return_types=FunctionReturnTypes(
@@ -7607,10 +7926,12 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 is_static=False,
             ),
             name='setElementHealth',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementID',
                 return_types=FunctionReturnTypes(
@@ -7665,8 +7986,10 @@ You can only change the ID of an element clientside if that element has been cre
                 is_static=False,
             ),
             name='setElementID',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementID',
                 return_types=FunctionReturnTypes(
@@ -7721,10 +8044,12 @@ You can only change the ID of an element clientside if that element has been cre
                 is_static=False,
             ),
             name='setElementID',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementInterior',
                 return_types=FunctionReturnTypes(
@@ -7811,8 +8136,10 @@ You can only change the ID of an element clientside if that element has been cre
                 is_static=False,
             ),
             name='setElementInterior',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementInterior',
                 return_types=FunctionReturnTypes(
@@ -7899,10 +8226,12 @@ You can only change the ID of an element clientside if that element has been cre
                 is_static=False,
             ),
             name='setElementInterior',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementMatrix',
                 return_types=FunctionReturnTypes(
@@ -7956,8 +8285,10 @@ You can only change the ID of an element clientside if that element has been cre
                 is_static=False,
             ),
             name='setElementMatrix',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementMatrix',
                 return_types=FunctionReturnTypes(
@@ -8011,10 +8342,12 @@ You can only change the ID of an element clientside if that element has been cre
                 is_static=False,
             ),
             name='setElementMatrix',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementModel',
                 return_types=FunctionReturnTypes(
@@ -8071,8 +8404,10 @@ You can only change the ID of an element clientside if that element has been cre
                 is_static=False,
             ),
             name='setElementModel',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementModel',
                 return_types=FunctionReturnTypes(
@@ -8129,10 +8464,12 @@ You can only change the ID of an element clientside if that element has been cre
                 is_static=False,
             ),
             name='setElementModel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementParent',
                 return_types=FunctionReturnTypes(
@@ -8186,8 +8523,10 @@ You can only change the ID of an element clientside if that element has been cre
                 is_static=False,
             ),
             name='setElementParent',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementParent',
                 return_types=FunctionReturnTypes(
@@ -8241,10 +8580,12 @@ You can only change the ID of an element clientside if that element has been cre
                 is_static=False,
             ),
             name='setElementParent',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementPosition',
                 return_types=FunctionReturnTypes(
@@ -8331,8 +8672,10 @@ You can only change the ID of an element clientside if that element has been cre
                 is_static=False,
             ),
             name='setElementPosition',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementPosition',
                 return_types=FunctionReturnTypes(
@@ -8419,10 +8762,12 @@ You can only change the ID of an element clientside if that element has been cre
                 is_static=False,
             ),
             name='setElementPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementRotation',
                 return_types=FunctionReturnTypes(
@@ -8525,8 +8870,10 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                 is_static=False,
             ),
             name='setElementRotation',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementRotation',
                 return_types=FunctionReturnTypes(
@@ -8629,11 +8976,15 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                 is_static=False,
             ),
             name='setElementRotation',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementStreamable',
                 return_types=FunctionReturnTypes(
@@ -8689,10 +9040,12 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                 is_static=False,
             ),
             name='setElementStreamable',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementSyncer',
                 return_types=FunctionReturnTypes(
@@ -8750,11 +9103,15 @@ It should also be noted that certain network changes to an element do not requir
                 is_static=False,
             ),
             name='setElementSyncer',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementVelocity',
                 return_types=FunctionReturnTypes(
@@ -8836,8 +9193,10 @@ Objects and projectiles velocity can only be set clientside.}} """,
                 is_static=False,
             ),
             name='setElementVelocity',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementVelocity',
                 return_types=FunctionReturnTypes(
@@ -8919,10 +9278,12 @@ Objects and projectiles velocity can only be set clientside.}} """,
                 is_static=False,
             ),
             name='setElementVelocity',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setElementVisibleTo',
                 return_types=FunctionReturnTypes(
@@ -8991,11 +9352,15 @@ If you want to clear all visibility settings of an object, try clearElementVisib
                 is_static=False,
             ),
             name='setElementVisibleTo',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setLowLODElement',
                 return_types=FunctionReturnTypes(
@@ -9049,8 +9414,10 @@ If you want to clear all visibility settings of an object, try clearElementVisib
                 is_static=False,
             ),
             name='setLowLODElement',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setLowLODElement',
                 return_types=FunctionReturnTypes(
@@ -9104,11 +9471,15 @@ If you want to clear all visibility settings of an object, try clearElementVisib
                 is_static=False,
             ),
             name='setLowLODElement',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='updateElementRpHAnim',
                 return_types=FunctionReturnTypes(
@@ -9147,6 +9518,7 @@ This function must be called after setElementBoneRotation for changes to take ef
             ),
             oop=None,
             name='updateElementRpHAnim',
-        ),
+        )
+        ],
     )
 ]

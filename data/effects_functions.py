@@ -11,8 +11,11 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createEffect',
                 return_types=FunctionReturnTypes(
@@ -143,11 +146,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='createEffect',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fxAddBlood',
                 return_types=FunctionReturnTypes(
@@ -263,11 +270,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fxAddBlood',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fxAddBulletImpact',
                 return_types=FunctionReturnTypes(
@@ -394,11 +405,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fxAddBulletImpact',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fxAddBulletSplash',
                 return_types=FunctionReturnTypes(
@@ -463,11 +478,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fxAddBulletSplash',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fxAddDebris',
                 return_types=FunctionReturnTypes(
@@ -593,11 +612,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fxAddDebris',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fxAddFootSplash',
                 return_types=FunctionReturnTypes(
@@ -662,11 +685,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fxAddFootSplash',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fxAddGlass',
                 return_types=FunctionReturnTypes(
@@ -794,11 +821,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fxAddGlass',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fxAddGunshot',
                 return_types=FunctionReturnTypes(
@@ -903,11 +934,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fxAddGunshot',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fxAddPunchImpact',
                 return_types=FunctionReturnTypes(
@@ -1001,11 +1036,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fxAddPunchImpact',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fxAddSparks',
                 return_types=FunctionReturnTypes(
@@ -1185,11 +1224,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fxAddSparks',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fxAddTankFire',
                 return_types=FunctionReturnTypes(
@@ -1283,11 +1326,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fxAddTankFire',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fxAddTyreBurst',
                 return_types=FunctionReturnTypes(
@@ -1381,11 +1428,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fxAddTyreBurst',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fxAddWaterHydrant',
                 return_types=FunctionReturnTypes(
@@ -1450,11 +1501,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fxAddWaterHydrant',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fxAddWaterSplash',
                 return_types=FunctionReturnTypes(
@@ -1519,11 +1574,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fxAddWaterSplash',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fxAddWood',
                 return_types=FunctionReturnTypes(
@@ -1639,11 +1698,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fxAddWood',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getEffectDensity',
                 return_types=FunctionReturnTypes(
@@ -1686,11 +1749,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getEffectDensity',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getEffectSpeed',
                 return_types=FunctionReturnTypes(
@@ -1733,11 +1800,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getEffectSpeed',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setEffectDensity',
                 return_types=FunctionReturnTypes(
@@ -1792,11 +1863,15 @@ The limit is 1 for Low, 1.5 for Medium, and 2 for High/Very high.|true}} """,
                 is_static=False,
             ),
             name='setEffectDensity',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setEffectSpeed',
                 return_types=FunctionReturnTypes(
@@ -1850,6 +1925,7 @@ The limit is 1 for Low, 1.5 for Medium, and 2 for High/Very high.|true}} """,
                 is_static=False,
             ),
             name='setEffectSpeed',
-        ),
+        )
+        ],
     )
 ]

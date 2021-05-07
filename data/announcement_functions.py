@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getGameType',
                 return_types=FunctionReturnTypes(
@@ -39,11 +40,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getGameType',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMapName',
                 return_types=FunctionReturnTypes(
@@ -71,11 +76,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getMapName',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRuleValue',
                 return_types=FunctionReturnTypes(
@@ -112,11 +121,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getRuleValue',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeRuleValue',
                 return_types=FunctionReturnTypes(
@@ -153,11 +166,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='removeRuleValue',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setGameType',
                 return_types=FunctionReturnTypes(
@@ -195,11 +212,15 @@ It should be noted that mapmanager handles this automatically for gamemodes that
             ),
             oop=None,
             name='setGameType',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setMapName',
                 return_types=FunctionReturnTypes(
@@ -236,11 +257,15 @@ It should be noted that mapmanager handles this automatically for gamemodes that
             ),
             oop=None,
             name='setMapName',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setRuleValue',
                 return_types=FunctionReturnTypes(
@@ -288,7 +313,10 @@ It should be noted that mapmanager handles this automatically for gamemodes that
             ),
             oop=None,
             name='setRuleValue',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     )
 ]

@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fadeCamera',
                 return_types=FunctionReturnTypes(
@@ -109,8 +110,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fadeCamera',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fadeCamera',
                 return_types=FunctionReturnTypes(
@@ -197,11 +200,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='fadeCamera',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCamera',
                 return_types=FunctionReturnTypes(
@@ -229,11 +236,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getCamera',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCameraClip',
                 return_types=FunctionReturnTypes(
@@ -272,11 +283,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='getCameraClip',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCameraFieldOfView',
                 return_types=FunctionReturnTypes(
@@ -322,11 +337,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='getCameraFieldOfView',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCameraGoggleEffect',
                 return_types=FunctionReturnTypes(
@@ -360,10 +379,12 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='getCameraGoggleEffect',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCameraInterior',
                 return_types=FunctionReturnTypes(
@@ -406,8 +427,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getCameraInterior',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCameraInterior',
                 return_types=FunctionReturnTypes(
@@ -441,10 +464,12 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='getCameraInterior',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCameraMatrix',
                 return_types=FunctionReturnTypes(
@@ -515,8 +540,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getCameraMatrix',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCameraMatrix',
                 return_types=FunctionReturnTypes(
@@ -578,11 +605,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='getCameraMatrix',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCameraShakeLevel',
                 return_types=FunctionReturnTypes(
@@ -610,10 +641,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getCameraShakeLevel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCameraTarget',
                 return_types=FunctionReturnTypes(
@@ -656,8 +689,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getCameraTarget',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCameraTarget',
                 return_types=FunctionReturnTypes(
@@ -685,11 +720,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getCameraTarget',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCameraViewMode',
                 return_types=FunctionReturnTypes(
@@ -727,11 +766,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='getCameraViewMode',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setCameraClip',
                 return_types=FunctionReturnTypes(
@@ -785,11 +828,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='setCameraClip',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setCameraFieldOfView',
                 return_types=FunctionReturnTypes(
@@ -846,11 +893,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='setCameraFieldOfView',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setCameraGoggleEffect',
                 return_types=FunctionReturnTypes(
@@ -905,10 +956,12 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='setCameraGoggleEffect',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setCameraInterior',
                 return_types=FunctionReturnTypes(
@@ -962,8 +1015,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setCameraInterior',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setCameraInterior',
                 return_types=FunctionReturnTypes(
@@ -1006,10 +1061,12 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='setCameraInterior',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setCameraMatrix',
                 return_types=FunctionReturnTypes(
@@ -1141,8 +1198,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setCameraMatrix',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setCameraMatrix',
                 return_types=FunctionReturnTypes(
@@ -1263,11 +1322,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='setCameraMatrix',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setCameraShakeLevel',
                 return_types=FunctionReturnTypes(
@@ -1304,10 +1367,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='setCameraShakeLevel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setCameraTarget',
                 return_types=FunctionReturnTypes(
@@ -1362,8 +1427,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setCameraTarget',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setCameraTarget',
                 return_types=FunctionReturnTypes(
@@ -1401,11 +1468,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='setCameraTarget',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setCameraViewMode',
                 return_types=FunctionReturnTypes(
@@ -1459,6 +1530,7 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='setCameraViewMode',
-        ),
+        )
+        ],
     )
 ]

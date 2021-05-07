@@ -11,8 +11,11 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createLight',
                 return_types=FunctionReturnTypes(
@@ -178,11 +181,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='createLight',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getLightColor',
                 return_types=FunctionReturnTypes(
@@ -233,11 +240,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getLightColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getLightDirection',
                 return_types=FunctionReturnTypes(
@@ -288,11 +299,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getLightDirection',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getLightRadius',
                 return_types=FunctionReturnTypes(
@@ -335,11 +350,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getLightRadius',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getLightType',
                 return_types=FunctionReturnTypes(
@@ -382,11 +401,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getLightType',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setLightColor',
                 return_types=FunctionReturnTypes(
@@ -459,11 +482,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setLightColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setLightDirection',
                 return_types=FunctionReturnTypes(
@@ -536,11 +563,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setLightDirection',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setLightRadius',
                 return_types=FunctionReturnTypes(
@@ -593,6 +624,7 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setLightRadius',
-        ),
+        )
+        ],
     )
 ]

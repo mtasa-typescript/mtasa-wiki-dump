@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getLoadedModules',
                 return_types=FunctionReturnTypes(
@@ -39,11 +40,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getLoadedModules',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getModuleInfo',
                 return_types=FunctionReturnTypes(
@@ -84,7 +89,10 @@ if invalid name for module is passed, it will return false. """,
             ),
             oop=None,
             name='getModuleInfo',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     )
 ]

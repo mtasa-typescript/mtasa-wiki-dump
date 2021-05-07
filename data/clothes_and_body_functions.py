@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBodyPartName',
                 return_types=FunctionReturnTypes(
@@ -48,8 +49,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getBodyPartName',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBodyPartName',
                 return_types=FunctionReturnTypes(
@@ -86,10 +89,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getBodyPartName',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getClothesByTypeIndex',
                 return_types=FunctionReturnTypes(
@@ -142,8 +147,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getClothesByTypeIndex',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getClothesByTypeIndex',
                 return_types=FunctionReturnTypes(
@@ -196,10 +203,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getClothesByTypeIndex',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getClothesTypeName',
                 return_types=FunctionReturnTypes(
@@ -236,8 +245,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getClothesTypeName',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getClothesTypeName',
                 return_types=FunctionReturnTypes(
@@ -274,10 +285,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getClothesTypeName',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTypeIndexFromClothes',
                 return_types=FunctionReturnTypes(
@@ -330,8 +343,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getTypeIndexFromClothes',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTypeIndexFromClothes',
                 return_types=FunctionReturnTypes(
@@ -384,6 +399,7 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getTypeIndexFromClothes',
-        ),
+        )
+        ],
     )
 ]

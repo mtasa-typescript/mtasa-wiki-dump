@@ -11,8 +11,11 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCursorAlpha',
                 return_types=FunctionReturnTypes(
@@ -40,11 +43,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getCursorAlpha',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCursorPosition',
                 return_types=FunctionReturnTypes(
@@ -88,10 +95,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getCursorPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isCursorShowing',
                 return_types=FunctionReturnTypes(
@@ -128,8 +137,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='isCursorShowing',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isCursorShowing',
                 return_types=FunctionReturnTypes(
@@ -157,11 +168,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='isCursorShowing',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setCursorAlpha',
                 return_types=FunctionReturnTypes(
@@ -198,11 +213,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='setCursorAlpha',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setCursorPosition',
                 return_types=FunctionReturnTypes(
@@ -250,10 +269,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='setCursorPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='showCursor',
                 return_types=FunctionReturnTypes(
@@ -312,8 +333,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='showCursor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='showCursor',
                 return_types=FunctionReturnTypes(
@@ -361,6 +384,7 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='showCursor',
-        ),
+        )
+        ],
     )
 ]

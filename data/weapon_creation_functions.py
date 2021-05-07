@@ -11,8 +11,11 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createWeapon',
                 return_types=FunctionReturnTypes(
@@ -88,11 +91,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='createWeapon',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fireWeapon',
                 return_types=FunctionReturnTypes(
@@ -135,11 +142,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='fireWeapon',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWeaponAmmo',
                 return_types=FunctionReturnTypes(
@@ -182,11 +193,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getWeaponAmmo',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWeaponClipAmmo',
                 return_types=FunctionReturnTypes(
@@ -229,11 +244,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getWeaponClipAmmo',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWeaponFiringRate',
                 return_types=FunctionReturnTypes(
@@ -276,11 +295,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getWeaponFiringRate',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWeaponFlags',
                 return_types=FunctionReturnTypes(
@@ -347,11 +370,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getWeaponFlags',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWeaponOwner',
                 return_types=FunctionReturnTypes(
@@ -394,11 +421,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getWeaponOwner',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWeaponState',
                 return_types=FunctionReturnTypes(
@@ -445,11 +476,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getWeaponState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWeaponTarget',
                 return_types=FunctionReturnTypes(
@@ -496,11 +531,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getWeaponTarget',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetWeaponFiringRate',
                 return_types=FunctionReturnTypes(
@@ -543,11 +582,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='resetWeaponFiringRate',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWeaponClipAmmo',
                 return_types=FunctionReturnTypes(
@@ -601,11 +644,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setWeaponClipAmmo',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWeaponFiringRate',
                 return_types=FunctionReturnTypes(
@@ -659,11 +706,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setWeaponFiringRate',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWeaponFlags',
                 return_types=FunctionReturnTypes(
@@ -741,11 +792,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setWeaponFlags',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWeaponState',
                 return_types=FunctionReturnTypes(
@@ -802,11 +857,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setWeaponState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWeaponTarget',
                 return_types=FunctionReturnTypes(
@@ -902,6 +961,7 @@ returns true on success, false otherwise. """,
             ),
             oop=None,
             name='setWeaponTarget',
-        ),
+        )
+        ],
     )
 ]

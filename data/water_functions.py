@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createWater',
                 return_types=FunctionReturnTypes(
@@ -181,8 +182,10 @@ You are able to give the water a shallow water effect, which practically changes
                 is_static=True,
             ),
             name='createWater',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createWater',
                 return_types=FunctionReturnTypes(
@@ -352,10 +355,12 @@ You are able to give the water a shallow water effect, which practically changes
                 is_static=True,
             ),
             name='createWater',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWaterColor',
                 return_types=FunctionReturnTypes(
@@ -402,8 +407,10 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=False,
             ),
             name='getWaterColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWaterColor',
                 return_types=FunctionReturnTypes(
@@ -450,11 +457,15 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=False,
             ),
             name='getWaterColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWaterLevel',
                 return_types=FunctionReturnTypes(
@@ -526,10 +537,12 @@ Note: The server can only return the water color, if it has actually been set by
             ),
             oop=None,
             name='getWaterLevel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWaterVertexPosition',
                 return_types=FunctionReturnTypes(
@@ -591,8 +604,10 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=False,
             ),
             name='getWaterVertexPosition',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWaterVertexPosition',
                 return_types=FunctionReturnTypes(
@@ -654,10 +669,12 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=False,
             ),
             name='getWaterVertexPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWaveHeight',
                 return_types=FunctionReturnTypes(
@@ -691,8 +708,10 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=True,
             ),
             name='getWaveHeight',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getWaveHeight',
                 return_types=FunctionReturnTypes(
@@ -726,11 +745,15 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=True,
             ),
             name='getWaveHeight',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isWaterDrawnLast',
                 return_types=FunctionReturnTypes(
@@ -758,10 +781,12 @@ Note: The server can only return the water color, if it has actually been set by
             ),
             oop=None,
             name='isWaterDrawnLast',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetWaterColor',
                 return_types=FunctionReturnTypes(
@@ -795,8 +820,10 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=True,
             ),
             name='resetWaterColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetWaterColor',
                 return_types=FunctionReturnTypes(
@@ -830,10 +857,12 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=True,
             ),
             name='resetWaterColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetWaterLevel',
                 return_types=FunctionReturnTypes(
@@ -867,8 +896,10 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=True,
             ),
             name='resetWaterLevel',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetWaterLevel',
                 return_types=FunctionReturnTypes(
@@ -902,10 +933,12 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=True,
             ),
             name='resetWaterLevel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWaterColor',
                 return_types=FunctionReturnTypes(
@@ -981,8 +1014,10 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=False,
             ),
             name='setWaterColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWaterColor',
                 return_types=FunctionReturnTypes(
@@ -1058,11 +1093,15 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=False,
             ),
             name='setWaterColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWaterDrawnLast',
                 return_types=FunctionReturnTypes(
@@ -1099,10 +1138,12 @@ Note: The server can only return the water color, if it has actually been set by
             ),
             oop=None,
             name='setWaterDrawnLast',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWaterLevel',
                 return_types=FunctionReturnTypes(
@@ -1161,8 +1202,10 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=False,
             ),
             name='setWaterLevel',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWaterLevel',
                 return_types=FunctionReturnTypes(
@@ -1221,10 +1264,12 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=False,
             ),
             name='setWaterLevel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWaterVertexPosition',
                 return_types=FunctionReturnTypes(
@@ -1311,8 +1356,10 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=False,
             ),
             name='setWaterVertexPosition',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWaterVertexPosition',
                 return_types=FunctionReturnTypes(
@@ -1399,10 +1446,12 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=False,
             ),
             name='setWaterVertexPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWaveHeight',
                 return_types=FunctionReturnTypes(
@@ -1445,8 +1494,10 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=True,
             ),
             name='setWaveHeight',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setWaveHeight',
                 return_types=FunctionReturnTypes(
@@ -1489,6 +1540,7 @@ Note: The server can only return the water color, if it has actually been set by
                 is_static=True,
             ),
             name='setWaveHeight',
-        ),
+        )
+        ],
     )
 ]

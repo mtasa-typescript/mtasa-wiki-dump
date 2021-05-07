@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addCommandHandler',
                 return_types=FunctionReturnTypes(
@@ -85,8 +86,10 @@ This can be triggered from the players console or directly from the chat box by 
             ),
             oop=None,
             name='addCommandHandler',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addCommandHandler',
                 return_types=FunctionReturnTypes(
@@ -149,10 +152,12 @@ This can be triggered from the players console or directly from the chat box by 
             ),
             oop=None,
             name='addCommandHandler',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bindKey',
                 return_types=FunctionReturnTypes(
@@ -239,8 +244,10 @@ This can be triggered from the players console or directly from the chat box by 
             ),
             oop=None,
             name='bindKey',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='bindKey',
                 return_types=FunctionReturnTypes(
@@ -315,10 +322,12 @@ This can be triggered from the players console or directly from the chat box by 
             ),
             oop=None,
             name='bindKey',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='executeCommandHandler',
                 return_types=FunctionReturnTypes(
@@ -377,8 +386,10 @@ This can be triggered from the players console or directly from the chat box by 
             ),
             oop=None,
             name='executeCommandHandler',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='executeCommandHandler',
                 return_types=FunctionReturnTypes(
@@ -426,11 +437,15 @@ This can be triggered from the players console or directly from the chat box by 
             ),
             oop=None,
             name='executeCommandHandler',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAnalogControlState',
                 return_types=FunctionReturnTypes(
@@ -479,11 +494,15 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
             ),
             oop=None,
             name='getAnalogControlState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBoundKeys',
                 return_types=FunctionReturnTypes(
@@ -520,10 +539,12 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
             ),
             oop=None,
             name='getBoundKeys',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCommandHandlers',
                 return_types=FunctionReturnTypes(
@@ -560,8 +581,10 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
             ),
             oop=None,
             name='getCommandHandlers',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCommandHandlers',
                 return_types=FunctionReturnTypes(
@@ -598,11 +621,15 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
             ),
             oop=None,
             name='getCommandHandlers',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCommandsBoundToKey',
                 return_types=FunctionReturnTypes(
@@ -653,10 +680,12 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
             ),
             oop=None,
             name='getCommandsBoundToKey',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getControlState',
                 return_types=FunctionReturnTypes(
@@ -725,11 +754,15 @@ Note: Not all control states are sent to the server at all times, as such their 
             ),
             oop=None,
             name='getControlState',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getFunctionsBoundToKey',
                 return_types=FunctionReturnTypes(
@@ -791,8 +824,10 @@ Note: Not all control states are sent to the server at all times, as such their 
             ),
             oop=None,
             name='getFunctionsBoundToKey',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getFunctionsBoundToKey',
                 return_types=FunctionReturnTypes(
@@ -843,11 +878,15 @@ Note: Not all control states are sent to the server at all times, as such their 
             ),
             oop=None,
             name='getFunctionsBoundToKey',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getKeyBoundToCommand',
                 return_types=FunctionReturnTypes(
@@ -884,10 +923,12 @@ Note: Not all control states are sent to the server at all times, as such their 
             ),
             oop=None,
             name='getKeyBoundToCommand',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getKeyBoundToFunction',
                 return_types=FunctionReturnTypes(
@@ -935,8 +976,10 @@ Note: Not all control states are sent to the server at all times, as such their 
             ),
             oop=None,
             name='getKeyBoundToFunction',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getKeyBoundToFunction',
                 return_types=FunctionReturnTypes(
@@ -973,11 +1016,15 @@ Note: Not all control states are sent to the server at all times, as such their 
             ),
             oop=None,
             name='getKeyBoundToFunction',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getKeyState',
                 return_types=FunctionReturnTypes(
@@ -1015,10 +1062,12 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
             ),
             oop=None,
             name='getKeyState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isControlEnabled',
                 return_types=FunctionReturnTypes(
@@ -1066,8 +1115,10 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
             ),
             oop=None,
             name='isControlEnabled',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isControlEnabled',
                 return_types=FunctionReturnTypes(
@@ -1104,10 +1155,12 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
             ),
             oop=None,
             name='isControlEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isKeyBound',
                 return_types=FunctionReturnTypes(
@@ -1179,11 +1232,15 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
             ),
             oop=None,
             name='isKeyBound',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeCommandHandler',
                 return_types=FunctionReturnTypes(
@@ -1231,8 +1288,10 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
             ),
             oop=None,
             name='removeCommandHandler',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeCommandHandler',
                 return_types=FunctionReturnTypes(
@@ -1280,10 +1339,12 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
             ),
             oop=None,
             name='removeCommandHandler',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setControlState',
                 return_types=FunctionReturnTypes(
@@ -1342,11 +1403,15 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
             ),
             oop=None,
             name='setControlState',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='toggleAllControls',
                 return_types=FunctionReturnTypes(
@@ -1416,8 +1481,10 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
             ),
             oop=None,
             name='toggleAllControls',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='toggleAllControls',
                 return_types=FunctionReturnTypes(
@@ -1476,10 +1543,12 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
             ),
             oop=None,
             name='toggleAllControls',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='toggleControl',
                 return_types=FunctionReturnTypes(
@@ -1538,8 +1607,10 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
             ),
             oop=None,
             name='toggleControl',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='toggleControl',
                 return_types=FunctionReturnTypes(
@@ -1587,10 +1658,12 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
             ),
             oop=None,
             name='toggleControl',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='unbindKey',
                 return_types=FunctionReturnTypes(
@@ -1665,8 +1738,10 @@ Note: If you do not specify ''handler'', any instances of ''key'' being bound wi
             ),
             oop=None,
             name='unbindKey',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='unbindKey',
                 return_types=FunctionReturnTypes(
@@ -1730,6 +1805,7 @@ Note: If you do not specify ''handler'', any instances of ''key'' being bound wi
             ),
             oop=None,
             name='unbindKey',
-        ),
+        )
+        ],
     )
 ]

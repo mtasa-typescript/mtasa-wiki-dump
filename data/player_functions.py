@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='forcePlayerMap',
                 return_types=FunctionReturnTypes(
@@ -65,8 +66,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='forcePlayerMap',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='forcePlayerMap',
                 return_types=FunctionReturnTypes(
@@ -109,10 +112,12 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='forcePlayerMap',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getAlivePlayers',
                 return_types=FunctionReturnTypes(
@@ -146,11 +151,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='getAlivePlayers',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getDeadPlayers',
                 return_types=FunctionReturnTypes(
@@ -184,12 +193,18 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='getDeadPlayers',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getLocalPlayer',
                 return_types=FunctionReturnTypes(
@@ -218,10 +233,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
             ),
             oop=None,
             name='getLocalPlayer',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerACInfo',
                 return_types=FunctionReturnTypes(
@@ -268,11 +285,15 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=False,
             ),
             name='getPlayerACInfo',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerAnnounceValue',
                 return_types=FunctionReturnTypes(
@@ -326,11 +347,15 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=False,
             ),
             name='getPlayerAnnounceValue',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerBlurLevel',
                 return_types=FunctionReturnTypes(
@@ -373,8 +398,10 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=False,
             ),
             name='getPlayerBlurLevel',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBlurLevel',
                 return_types=FunctionReturnTypes(
@@ -408,10 +435,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=True,
             ),
             name='getPlayerBlurLevel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerCount',
                 return_types=FunctionReturnTypes(
@@ -445,11 +474,15 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=True,
             ),
             name='getPlayerCount',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerFromName',
                 return_types=FunctionReturnTypes(
@@ -492,8 +525,10 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=True,
             ),
             name='getPlayerFromName',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerFromName',
                 return_types=FunctionReturnTypes(
@@ -536,10 +571,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=True,
             ),
             name='getPlayerFromName',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerIdleTime',
                 return_types=FunctionReturnTypes(
@@ -582,11 +619,15 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=False,
             ),
             name='getPlayerIdleTime',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerIP',
                 return_types=FunctionReturnTypes(
@@ -629,12 +670,18 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=False,
             ),
             name='getPlayerIP',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerMapBoundingBox',
                 return_types=FunctionReturnTypes(
@@ -678,10 +725,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
             ),
             oop=None,
             name='getPlayerMapBoundingBox',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerMoney',
                 return_types=FunctionReturnTypes(
@@ -724,8 +773,10 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=False,
             ),
             name='getPlayerMoney',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerMoney',
                 return_types=FunctionReturnTypes(
@@ -759,10 +810,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=True,
             ),
             name='getPlayerMoney',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerName',
                 return_types=FunctionReturnTypes(
@@ -805,8 +858,10 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=False,
             ),
             name='getPlayerName',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerName',
                 return_types=FunctionReturnTypes(
@@ -849,10 +904,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=False,
             ),
             name='getPlayerName',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerNametagColor',
                 return_types=FunctionReturnTypes(
@@ -903,8 +960,10 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=False,
             ),
             name='getPlayerNametagColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerNametagColor',
                 return_types=FunctionReturnTypes(
@@ -955,10 +1014,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=False,
             ),
             name='getPlayerNametagColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerNametagText',
                 return_types=FunctionReturnTypes(
@@ -1001,8 +1062,10 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=False,
             ),
             name='getPlayerNametagText',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerNametagText',
                 return_types=FunctionReturnTypes(
@@ -1045,10 +1108,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=False,
             ),
             name='getPlayerNametagText',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerPing',
                 return_types=FunctionReturnTypes(
@@ -1091,8 +1156,10 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=False,
             ),
             name='getPlayerPing',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerPing',
                 return_types=FunctionReturnTypes(
@@ -1135,10 +1202,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=False,
             ),
             name='getPlayerPing',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerScriptDebugLevel',
                 return_types=FunctionReturnTypes(
@@ -1181,11 +1250,15 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=False,
             ),
             name='getPlayerScriptDebugLevel',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerSerial',
                 return_types=FunctionReturnTypes(
@@ -1228,11 +1301,15 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 is_static=False,
             ),
             name='getPlayerSerial',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerVersion',
                 return_types=FunctionReturnTypes(
@@ -1290,11 +1367,15 @@ And the fifth and sixth numbers represent the build number. """,
                 is_static=False,
             ),
             name='getPlayerVersion',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerWantedLevel',
                 return_types=FunctionReturnTypes(
@@ -1337,8 +1418,10 @@ And the fifth and sixth numbers represent the build number. """,
                 is_static=False,
             ),
             name='getPlayerWantedLevel',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerWantedLevel',
                 return_types=FunctionReturnTypes(
@@ -1372,10 +1455,12 @@ And the fifth and sixth numbers represent the build number. """,
                 is_static=True,
             ),
             name='getPlayerWantedLevel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getRandomPlayer',
                 return_types=FunctionReturnTypes(
@@ -1409,11 +1494,15 @@ And the fifth and sixth numbers represent the build number. """,
                 is_static=True,
             ),
             name='getRandomPlayer',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='givePlayerMoney',
                 return_types=FunctionReturnTypes(
@@ -1467,8 +1556,10 @@ And the fifth and sixth numbers represent the build number. """,
                 is_static=False,
             ),
             name='givePlayerMoney',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='givePlayerMoney',
                 return_types=FunctionReturnTypes(
@@ -1511,11 +1602,15 @@ And the fifth and sixth numbers represent the build number. """,
                 is_static=True,
             ),
             name='givePlayerMoney',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPlayerHudComponentVisible',
                 return_types=FunctionReturnTypes(
@@ -1565,10 +1660,12 @@ And the fifth and sixth numbers represent the build number. """,
             ),
             oop=None,
             name='isPlayerHudComponentVisible',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPlayerMapForced',
                 return_types=FunctionReturnTypes(
@@ -1611,8 +1708,10 @@ And the fifth and sixth numbers represent the build number. """,
                 is_static=False,
             ),
             name='isPlayerMapForced',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPlayerMapForced',
                 return_types=FunctionReturnTypes(
@@ -1646,11 +1745,15 @@ And the fifth and sixth numbers represent the build number. """,
                 is_static=True,
             ),
             name='isPlayerMapForced',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPlayerMapVisible',
                 return_types=FunctionReturnTypes(
@@ -1678,10 +1781,12 @@ And the fifth and sixth numbers represent the build number. """,
             ),
             oop=None,
             name='isPlayerMapVisible',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPlayerMuted',
                 return_types=FunctionReturnTypes(
@@ -1724,11 +1829,15 @@ And the fifth and sixth numbers represent the build number. """,
                 is_static=False,
             ),
             name='isPlayerMuted',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPlayerNametagShowing',
                 return_types=FunctionReturnTypes(
@@ -1771,8 +1880,10 @@ And the fifth and sixth numbers represent the build number. """,
                 is_static=False,
             ),
             name='isPlayerNametagShowing',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isPlayerNametagShowing',
                 return_types=FunctionReturnTypes(
@@ -1815,10 +1926,12 @@ And the fifth and sixth numbers represent the build number. """,
                 is_static=False,
             ),
             name='isPlayerNametagShowing',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVoiceEnabled',
                 return_types=FunctionReturnTypes(
@@ -1853,8 +1966,10 @@ This function allows you to make the server reveal whether or not voice is curre
                 is_static=True,
             ),
             name='isVoiceEnabled',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVoiceEnabled',
                 return_types=FunctionReturnTypes(
@@ -1889,10 +2004,12 @@ This function allows you to make the server reveal whether or not voice is curre
                 is_static=True,
             ),
             name='isVoiceEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='redirectPlayer',
                 return_types=FunctionReturnTypes(
@@ -1968,11 +2085,15 @@ This function allows you to make the server reveal whether or not voice is curre
                 is_static=False,
             ),
             name='redirectPlayer',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resendPlayerACInfo',
                 return_types=FunctionReturnTypes(
@@ -2009,11 +2130,15 @@ This function allows you to make the server reveal whether or not voice is curre
             ),
             oop=None,
             name='resendPlayerACInfo',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resendPlayerModInfo',
                 return_types=FunctionReturnTypes(
@@ -2056,11 +2181,15 @@ This function allows you to make the server reveal whether or not voice is curre
                 is_static=False,
             ),
             name='resendPlayerModInfo',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerAnnounceValue',
                 return_types=FunctionReturnTypes(
@@ -2127,11 +2256,15 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='setPlayerAnnounceValue',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerBlurLevel',
                 return_types=FunctionReturnTypes(
@@ -2185,8 +2318,10 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='setPlayerBlurLevel',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBlurLevel',
                 return_types=FunctionReturnTypes(
@@ -2229,10 +2364,12 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=True,
             ),
             name='setPlayerBlurLevel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerHudComponentVisible',
                 return_types=FunctionReturnTypes(
@@ -2311,8 +2448,10 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='setPlayerHudComponentVisible',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerHudComponentVisible',
                 return_types=FunctionReturnTypes(
@@ -2374,10 +2513,12 @@ For server-wide changes you can use setRuleValue! """,
             ),
             oop=None,
             name='setPlayerHudComponentVisible',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerMoney',
                 return_types=FunctionReturnTypes(
@@ -2442,8 +2583,10 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='setPlayerMoney',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerMoney',
                 return_types=FunctionReturnTypes(
@@ -2497,10 +2640,12 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=True,
             ),
             name='setPlayerMoney',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerMuted',
                 return_types=FunctionReturnTypes(
@@ -2554,11 +2699,15 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='setPlayerMuted',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerName',
                 return_types=FunctionReturnTypes(
@@ -2612,11 +2761,15 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='setPlayerName',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerNametagColor',
                 return_types=FunctionReturnTypes(
@@ -2693,8 +2846,10 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='setPlayerNametagColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerNametagColor',
                 return_types=FunctionReturnTypes(
@@ -2771,10 +2926,12 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='setPlayerNametagColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerNametagShowing',
                 return_types=FunctionReturnTypes(
@@ -2828,8 +2985,10 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='setPlayerNametagShowing',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerNametagShowing',
                 return_types=FunctionReturnTypes(
@@ -2883,10 +3042,12 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='setPlayerNametagShowing',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerNametagText',
                 return_types=FunctionReturnTypes(
@@ -2940,8 +3101,10 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='setPlayerNametagText',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerNametagText',
                 return_types=FunctionReturnTypes(
@@ -2995,10 +3158,12 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='setPlayerNametagText',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerScriptDebugLevel',
                 return_types=FunctionReturnTypes(
@@ -3052,11 +3217,15 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='setPlayerScriptDebugLevel',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerVoiceBroadcastTo',
                 return_types=FunctionReturnTypes(
@@ -3110,11 +3279,15 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='setPlayerVoiceBroadcastTo',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerVoiceIgnoreFrom',
                 return_types=FunctionReturnTypes(
@@ -3168,11 +3341,15 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='setPlayerVoiceIgnoreFrom',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerWantedLevel',
                 return_types=FunctionReturnTypes(
@@ -3226,11 +3403,15 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='setPlayerWantedLevel',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='spawnPlayer',
                 return_types=FunctionReturnTypes(
@@ -3361,11 +3542,15 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='spawnPlayer',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='takePlayerMoney',
                 return_types=FunctionReturnTypes(
@@ -3419,8 +3604,10 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='takePlayerMoney',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='takePlayerMoney',
                 return_types=FunctionReturnTypes(
@@ -3463,10 +3650,12 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=True,
             ),
             name='takePlayerMoney',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='takePlayerScreenShot',
                 return_types=FunctionReturnTypes(
@@ -3575,7 +3764,10 @@ For server-wide changes you can use setRuleValue! """,
                 is_static=False,
             ),
             name='takePlayerScreenShot',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     )
 ]

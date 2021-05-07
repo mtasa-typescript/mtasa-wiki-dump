@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='clearChatBox',
                 return_types=FunctionReturnTypes(
@@ -48,8 +49,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='clearChatBox',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='clearChatBox',
                 return_types=FunctionReturnTypes(
@@ -77,11 +80,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='clearChatBox',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isChatVisible',
                 return_types=FunctionReturnTypes(
@@ -109,10 +116,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='isChatVisible',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='outputChatBox',
                 return_types=FunctionReturnTypes(
@@ -216,8 +225,10 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 is_static=False,
             ),
             name='outputChatBox',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='outputChatBox',
                 return_types=FunctionReturnTypes(
@@ -304,10 +315,12 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
             ),
             oop=None,
             name='outputChatBox',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='outputConsole',
                 return_types=FunctionReturnTypes(
@@ -355,8 +368,10 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
             ),
             oop=None,
             name='outputConsole',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='outputConsole',
                 return_types=FunctionReturnTypes(
@@ -393,10 +408,12 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
             ),
             oop=None,
             name='outputConsole',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='outputDebugString',
                 return_types=FunctionReturnTypes(
@@ -482,8 +499,10 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
             ),
             oop=None,
             name='outputDebugString',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='outputDebugString',
                 return_types=FunctionReturnTypes(
@@ -569,10 +588,12 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
             ),
             oop=None,
             name='outputDebugString',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='outputServerLog',
                 return_types=FunctionReturnTypes(
@@ -609,11 +630,15 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
             ),
             oop=None,
             name='outputServerLog',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='showChat',
                 return_types=FunctionReturnTypes(
@@ -661,8 +686,10 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
             ),
             oop=None,
             name='showChat',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='showChat',
                 return_types=FunctionReturnTypes(
@@ -699,6 +726,7 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
             ),
             oop=None,
             name='showChat',
-        ),
+        )
+        ],
     )
 ]

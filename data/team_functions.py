@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='countPlayersInTeam',
                 return_types=FunctionReturnTypes(
@@ -54,8 +55,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='countPlayersInTeam',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='countPlayersInTeam',
                 return_types=FunctionReturnTypes(
@@ -98,10 +101,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='countPlayersInTeam',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createTeam',
                 return_types=FunctionReturnTypes(
@@ -177,11 +182,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='createTeam',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayersInTeam',
                 return_types=FunctionReturnTypes(
@@ -224,8 +233,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getPlayersInTeam',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayersInTeam',
                 return_types=FunctionReturnTypes(
@@ -268,10 +279,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getPlayersInTeam',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerTeam',
                 return_types=FunctionReturnTypes(
@@ -314,8 +327,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getPlayerTeam',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getPlayerTeam',
                 return_types=FunctionReturnTypes(
@@ -358,10 +373,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getPlayerTeam',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTeamColor',
                 return_types=FunctionReturnTypes(
@@ -412,8 +429,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getTeamColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTeamColor',
                 return_types=FunctionReturnTypes(
@@ -464,10 +483,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getTeamColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTeamFriendlyFire',
                 return_types=FunctionReturnTypes(
@@ -510,8 +531,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getTeamFriendlyFire',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTeamFriendlyFire',
                 return_types=FunctionReturnTypes(
@@ -554,10 +577,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getTeamFriendlyFire',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTeamFromName',
                 return_types=FunctionReturnTypes(
@@ -600,8 +625,10 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='getTeamFromName',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTeamFromName',
                 return_types=FunctionReturnTypes(
@@ -644,10 +671,12 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='getTeamFromName',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTeamName',
                 return_types=FunctionReturnTypes(
@@ -690,8 +719,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getTeamName',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTeamName',
                 return_types=FunctionReturnTypes(
@@ -734,10 +765,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getTeamName',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setPlayerTeam',
                 return_types=FunctionReturnTypes(
@@ -791,11 +824,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setPlayerTeam',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTeamColor',
                 return_types=FunctionReturnTypes(
@@ -871,11 +908,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setTeamColor',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTeamFriendlyFire',
                 return_types=FunctionReturnTypes(
@@ -929,11 +970,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setTeamFriendlyFire',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTeamName',
                 return_types=FunctionReturnTypes(
@@ -987,7 +1032,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setTeamName',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     )
 ]

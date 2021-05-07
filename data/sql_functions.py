@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dbConnect',
                 return_types=FunctionReturnTypes(
@@ -110,11 +111,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='dbConnect',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dbExec',
                 return_types=FunctionReturnTypes(
@@ -190,11 +195,15 @@ String parameters are automatically quoted and escaped as required. (If you do n
                 is_static=False,
             ),
             name='dbExec',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dbFree',
                 return_types=FunctionReturnTypes(
@@ -237,11 +246,15 @@ String parameters are automatically quoted and escaped as required. (If you do n
                 is_static=False,
             ),
             name='dbFree',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dbPoll',
                 return_types=FunctionReturnTypes(
@@ -324,11 +337,15 @@ a subsequent table represents the next row. """,
                 is_static=False,
             ),
             name='dbPoll',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dbPrepareString',
                 return_types=FunctionReturnTypes(
@@ -404,11 +421,15 @@ String parameters are automatically quoted and escaped as required. (If you do n
                 is_static=False,
             ),
             name='dbPrepareString',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dbQuery',
                 return_types=FunctionReturnTypes(
@@ -506,11 +527,15 @@ String parameters are automatically quoted and escaped as required. (If you do n
                 is_static=False,
             ),
             name='dbQuery',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='executeSQLQuery',
                 return_types=FunctionReturnTypes(
@@ -577,7 +602,10 @@ a subsequent table represents the next row. """,
             ),
             oop=None,
             name='executeSQLQuery',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     )
 ]

@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlCopyFile',
                 return_types=FunctionReturnTypes(
@@ -68,8 +69,10 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 is_static=False,
             ),
             name='xmlCopyFile',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlCopyFile',
                 return_types=FunctionReturnTypes(
@@ -126,10 +129,12 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 is_static=False,
             ),
             name='xmlCopyFile',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlCreateChild',
                 return_types=FunctionReturnTypes(
@@ -183,8 +188,10 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 is_static=False,
             ),
             name='xmlCreateChild',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlCreateChild',
                 return_types=FunctionReturnTypes(
@@ -238,10 +245,12 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 is_static=False,
             ),
             name='xmlCreateChild',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlCreateFile',
                 return_types=FunctionReturnTypes(
@@ -298,8 +307,10 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 is_static=True,
             ),
             name='xmlCreateFile',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlCreateFile',
                 return_types=FunctionReturnTypes(
@@ -356,10 +367,12 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 is_static=True,
             ),
             name='xmlCreateFile',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlDestroyNode',
                 return_types=FunctionReturnTypes(
@@ -402,8 +415,10 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 is_static=False,
             ),
             name='xmlDestroyNode',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlDestroyNode',
                 return_types=FunctionReturnTypes(
@@ -446,10 +461,12 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 is_static=False,
             ),
             name='xmlDestroyNode',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlFindChild',
                 return_types=FunctionReturnTypes(
@@ -514,8 +531,10 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 is_static=False,
             ),
             name='xmlFindChild',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlFindChild',
                 return_types=FunctionReturnTypes(
@@ -580,10 +599,12 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 is_static=False,
             ),
             name='xmlFindChild',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlLoadFile',
                 return_types=FunctionReturnTypes(
@@ -642,8 +663,10 @@ print error if something wrong with xml.
                 is_static=True,
             ),
             name='xmlLoadFile',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlLoadFile',
                 return_types=FunctionReturnTypes(
@@ -702,10 +725,12 @@ print error if something wrong with xml.
                 is_static=True,
             ),
             name='xmlLoadFile',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlLoadString',
                 return_types=FunctionReturnTypes(
@@ -748,8 +773,10 @@ print error if something wrong with xml.
                 is_static=True,
             ),
             name='xmlLoadString',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlLoadString',
                 return_types=FunctionReturnTypes(
@@ -792,10 +819,12 @@ print error if something wrong with xml.
                 is_static=True,
             ),
             name='xmlLoadString',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeGetAttribute',
                 return_types=FunctionReturnTypes(
@@ -849,8 +878,10 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeGetAttribute',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeGetAttribute',
                 return_types=FunctionReturnTypes(
@@ -904,10 +935,12 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeGetAttribute',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeGetAttributes',
                 return_types=FunctionReturnTypes(
@@ -950,8 +983,10 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeGetAttributes',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeGetAttributes',
                 return_types=FunctionReturnTypes(
@@ -994,10 +1029,12 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeGetAttributes',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeGetChildren',
                 return_types=FunctionReturnTypes(
@@ -1051,8 +1088,10 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeGetChildren',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeGetChildren',
                 return_types=FunctionReturnTypes(
@@ -1106,10 +1145,12 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeGetChildren',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeGetName',
                 return_types=FunctionReturnTypes(
@@ -1152,8 +1193,10 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeGetName',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeGetName',
                 return_types=FunctionReturnTypes(
@@ -1196,10 +1239,12 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeGetName',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeGetParent',
                 return_types=FunctionReturnTypes(
@@ -1242,8 +1287,10 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeGetParent',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeGetParent',
                 return_types=FunctionReturnTypes(
@@ -1286,10 +1333,12 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeGetParent',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeGetValue',
                 return_types=FunctionReturnTypes(
@@ -1332,8 +1381,10 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeGetValue',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeGetValue',
                 return_types=FunctionReturnTypes(
@@ -1376,10 +1427,12 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeGetValue',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeSetAttribute',
                 return_types=FunctionReturnTypes(
@@ -1444,8 +1497,10 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeSetAttribute',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeSetAttribute',
                 return_types=FunctionReturnTypes(
@@ -1510,10 +1565,12 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeSetAttribute',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeSetName',
                 return_types=FunctionReturnTypes(
@@ -1567,8 +1624,10 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeSetName',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeSetName',
                 return_types=FunctionReturnTypes(
@@ -1622,10 +1681,12 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeSetName',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeSetValue',
                 return_types=FunctionReturnTypes(
@@ -1690,8 +1751,10 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeSetValue',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlNodeSetValue',
                 return_types=FunctionReturnTypes(
@@ -1756,10 +1819,12 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlNodeSetValue',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlSaveFile',
                 return_types=FunctionReturnTypes(
@@ -1802,8 +1867,10 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlSaveFile',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlSaveFile',
                 return_types=FunctionReturnTypes(
@@ -1846,10 +1913,12 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlSaveFile',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlUnloadFile',
                 return_types=FunctionReturnTypes(
@@ -1892,8 +1961,10 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlUnloadFile',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='xmlUnloadFile',
                 return_types=FunctionReturnTypes(
@@ -1936,6 +2007,7 @@ print error if something wrong with xml.
                 is_static=False,
             ),
             name='xmlUnloadFile',
-        ),
+        )
+        ],
     )
 ]

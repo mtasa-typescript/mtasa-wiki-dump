@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addBan',
                 return_types=FunctionReturnTypes(
@@ -112,11 +113,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='addBan',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='banPlayer',
                 return_types=FunctionReturnTypes(
@@ -226,11 +231,15 @@ This function will ban the specified player from the server by IP. """,
                 is_static=False,
             ),
             name='banPlayer',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBanAdmin',
                 return_types=FunctionReturnTypes(
@@ -273,11 +282,15 @@ This function will ban the specified player from the server by IP. """,
                 is_static=False,
             ),
             name='getBanAdmin',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBanIP',
                 return_types=FunctionReturnTypes(
@@ -320,11 +333,15 @@ This function will ban the specified player from the server by IP. """,
                 is_static=False,
             ),
             name='getBanIP',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBanNick',
                 return_types=FunctionReturnTypes(
@@ -367,11 +384,15 @@ This function will ban the specified player from the server by IP. """,
                 is_static=False,
             ),
             name='getBanNick',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBanReason',
                 return_types=FunctionReturnTypes(
@@ -414,11 +435,15 @@ This function will ban the specified player from the server by IP. """,
                 is_static=False,
             ),
             name='getBanReason',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBans',
                 return_types=FunctionReturnTypes(
@@ -452,11 +477,15 @@ This function will ban the specified player from the server by IP. """,
                 is_static=True,
             ),
             name='getBans',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBanSerial',
                 return_types=FunctionReturnTypes(
@@ -499,11 +528,15 @@ This function will ban the specified player from the server by IP. """,
                 is_static=False,
             ),
             name='getBanSerial',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBanTime',
                 return_types=FunctionReturnTypes(
@@ -547,11 +580,15 @@ This function will ban the specified player from the server by IP. """,
                 is_static=False,
             ),
             name='getBanTime',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBanUsername',
                 return_types=FunctionReturnTypes(
@@ -588,11 +625,15 @@ This function will ban the specified player from the server by IP. """,
             ),
             oop=None,
             name='getBanUsername',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getUnbanTime',
                 return_types=FunctionReturnTypes(
@@ -636,11 +677,15 @@ This function will ban the specified player from the server by IP. """,
                 is_static=False,
             ),
             name='getUnbanTime',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isBan',
                 return_types=FunctionReturnTypes(
@@ -677,11 +722,15 @@ This function will ban the specified player from the server by IP. """,
             ),
             oop=None,
             name='isBan',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='kickPlayer',
                 return_types=FunctionReturnTypes(
@@ -746,11 +795,15 @@ This function will ban the specified player from the server by IP. """,
                 is_static=False,
             ),
             name='kickPlayer',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='reloadBans',
                 return_types=FunctionReturnTypes(
@@ -784,11 +837,15 @@ This function will ban the specified player from the server by IP. """,
                 is_static=True,
             ),
             name='reloadBans',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeBan',
                 return_types=FunctionReturnTypes(
@@ -842,11 +899,15 @@ This function will ban the specified player from the server by IP. """,
                 is_static=False,
             ),
             name='removeBan',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBanAdmin',
                 return_types=FunctionReturnTypes(
@@ -900,11 +961,15 @@ This function will ban the specified player from the server by IP. """,
                 is_static=False,
             ),
             name='setBanAdmin',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBanNick',
                 return_types=FunctionReturnTypes(
@@ -958,11 +1023,15 @@ This function will ban the specified player from the server by IP. """,
                 is_static=False,
             ),
             name='setBanNick',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBanReason',
                 return_types=FunctionReturnTypes(
@@ -1016,11 +1085,15 @@ This function will ban the specified player from the server by IP. """,
                 is_static=False,
             ),
             name='setBanReason',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setUnbanTime',
                 return_types=FunctionReturnTypes(
@@ -1074,7 +1147,10 @@ This function will ban the specified player from the server by IP. """,
                 is_static=False,
             ),
             name='setUnbanTime',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     )
 ]

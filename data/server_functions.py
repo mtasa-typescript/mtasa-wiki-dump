@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getMaxPlayers',
                 return_types=FunctionReturnTypes(
@@ -39,11 +40,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getMaxPlayers',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getServerHttpPort',
                 return_types=FunctionReturnTypes(
@@ -71,11 +76,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getServerHttpPort',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getServerName',
                 return_types=FunctionReturnTypes(
@@ -103,11 +112,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getServerName',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getServerPassword',
                 return_types=FunctionReturnTypes(
@@ -135,11 +148,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getServerPassword',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getServerPort',
                 return_types=FunctionReturnTypes(
@@ -167,11 +184,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='getServerPort',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isGlitchEnabled',
                 return_types=FunctionReturnTypes(
@@ -208,11 +229,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='isGlitchEnabled',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isTransferBoxVisible',
                 return_types=FunctionReturnTypes(
@@ -241,8 +266,10 @@ on client this returns a boolean, whether the transfer box should be visible or 
             ),
             oop=None,
             name='isTransferBoxVisible',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isTransferBoxVisible',
                 return_types=FunctionReturnTypes(
@@ -271,10 +298,12 @@ on client this returns a boolean, whether the transfer box should be visible or 
             ),
             oop=None,
             name='isTransferBoxVisible',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setGlitchEnabled',
                 return_types=FunctionReturnTypes(
@@ -323,11 +352,15 @@ Users of the fastmove glitch may additionally want to install https://community.
             ),
             oop=None,
             name='setGlitchEnabled',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setMaxPlayers',
                 return_types=FunctionReturnTypes(
@@ -364,11 +397,15 @@ Users of the fastmove glitch may additionally want to install https://community.
             ),
             oop=None,
             name='setMaxPlayers',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setServerPassword',
                 return_types=FunctionReturnTypes(
@@ -405,11 +442,15 @@ Users of the fastmove glitch may additionally want to install https://community.
             ),
             oop=None,
             name='setServerPassword',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTransferBoxVisible',
                 return_types=FunctionReturnTypes(
@@ -446,8 +487,10 @@ Users of the fastmove glitch may additionally want to install https://community.
             ),
             oop=None,
             name='setTransferBoxVisible',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTransferBoxVisible',
                 return_types=FunctionReturnTypes(
@@ -484,10 +527,12 @@ Users of the fastmove glitch may additionally want to install https://community.
             ),
             oop=None,
             name='setTransferBoxVisible',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='shutdown',
                 return_types=FunctionReturnTypes(
@@ -525,7 +570,10 @@ Make sure your server ACL setup has function.shutdown object protected. """,
             ),
             oop=None,
             name='shutdown',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     )
 ]

@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createBlip',
                 return_types=FunctionReturnTypes(
@@ -158,8 +159,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='createBlip',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createBlip',
                 return_types=FunctionReturnTypes(
@@ -296,10 +299,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='createBlip',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createBlipAttachedTo',
                 return_types=FunctionReturnTypes(
@@ -426,8 +431,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='createBlipAttachedTo',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createBlipAttachedTo',
                 return_types=FunctionReturnTypes(
@@ -544,10 +551,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='createBlipAttachedTo',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBlipColor',
                 return_types=FunctionReturnTypes(
@@ -602,8 +611,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getBlipColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBlipColor',
                 return_types=FunctionReturnTypes(
@@ -658,10 +669,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getBlipColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBlipIcon',
                 return_types=FunctionReturnTypes(
@@ -704,8 +717,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getBlipIcon',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBlipIcon',
                 return_types=FunctionReturnTypes(
@@ -748,10 +763,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getBlipIcon',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBlipOrdering',
                 return_types=FunctionReturnTypes(
@@ -794,8 +811,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getBlipOrdering',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBlipOrdering',
                 return_types=FunctionReturnTypes(
@@ -838,10 +857,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getBlipOrdering',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBlipSize',
                 return_types=FunctionReturnTypes(
@@ -884,8 +905,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getBlipSize',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBlipSize',
                 return_types=FunctionReturnTypes(
@@ -928,10 +951,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getBlipSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBlipVisibleDistance',
                 return_types=FunctionReturnTypes(
@@ -974,8 +999,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getBlipVisibleDistance',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getBlipVisibleDistance',
                 return_types=FunctionReturnTypes(
@@ -1018,10 +1045,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getBlipVisibleDistance',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBlipColor',
                 return_types=FunctionReturnTypes(
@@ -1108,8 +1137,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setBlipColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBlipColor',
                 return_types=FunctionReturnTypes(
@@ -1196,10 +1227,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setBlipColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBlipIcon',
                 return_types=FunctionReturnTypes(
@@ -1253,8 +1286,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setBlipIcon',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBlipIcon',
                 return_types=FunctionReturnTypes(
@@ -1308,10 +1343,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setBlipIcon',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBlipOrdering',
                 return_types=FunctionReturnTypes(
@@ -1365,8 +1402,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setBlipOrdering',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBlipOrdering',
                 return_types=FunctionReturnTypes(
@@ -1420,10 +1459,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setBlipOrdering',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBlipSize',
                 return_types=FunctionReturnTypes(
@@ -1477,8 +1518,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setBlipSize',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBlipSize',
                 return_types=FunctionReturnTypes(
@@ -1532,10 +1575,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setBlipSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBlipVisibleDistance',
                 return_types=FunctionReturnTypes(
@@ -1589,8 +1634,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setBlipVisibleDistance',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setBlipVisibleDistance',
                 return_types=FunctionReturnTypes(
@@ -1644,6 +1691,7 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setBlipVisibleDistance',
-        ),
+        )
+        ],
     )
 ]

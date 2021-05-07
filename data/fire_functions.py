@@ -11,8 +11,11 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createFire',
                 return_types=FunctionReturnTypes(
@@ -80,11 +83,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='createFire',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='extinguishFire',
                 return_types=FunctionReturnTypes(
@@ -152,6 +159,7 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='extinguishFire',
-        ),
+        )
+        ],
     )
 ]

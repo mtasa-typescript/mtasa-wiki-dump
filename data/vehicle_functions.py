@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addVehicleSirens',
                 return_types=FunctionReturnTypes(
@@ -120,11 +121,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='addVehicleSirens',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addVehicleUpgrade',
                 return_types=FunctionReturnTypes(
@@ -179,8 +184,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='addVehicleUpgrade',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addVehicleUpgrade',
                 return_types=FunctionReturnTypes(
@@ -235,11 +242,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='addVehicleUpgrade',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='areVehicleLightsOn',
                 return_types=FunctionReturnTypes(
@@ -283,10 +294,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='areVehicleLightsOn',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='attachTrailerToVehicle',
                 return_types=FunctionReturnTypes(
@@ -340,8 +353,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='attachTrailerToVehicle',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='attachTrailerToVehicle',
                 return_types=FunctionReturnTypes(
@@ -395,10 +410,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='attachTrailerToVehicle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='blowVehicle',
                 return_types=FunctionReturnTypes(
@@ -452,8 +469,10 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='blowVehicle',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='blowVehicle',
                 return_types=FunctionReturnTypes(
@@ -496,10 +515,12 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='blowVehicle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createVehicle',
                 return_types=FunctionReturnTypes(
@@ -653,8 +674,10 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 is_static=True,
             ),
             name='createVehicle',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createVehicle',
                 return_types=FunctionReturnTypes(
@@ -808,10 +831,12 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 is_static=True,
             ),
             name='createVehicle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='detachTrailerFromVehicle',
                 return_types=FunctionReturnTypes(
@@ -865,8 +890,10 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 is_static=False,
             ),
             name='detachTrailerFromVehicle',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='detachTrailerFromVehicle',
                 return_types=FunctionReturnTypes(
@@ -920,10 +947,12 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 is_static=False,
             ),
             name='detachTrailerFromVehicle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fixVehicle',
                 return_types=FunctionReturnTypes(
@@ -966,8 +995,10 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 is_static=False,
             ),
             name='fixVehicle',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='fixVehicle',
                 return_types=FunctionReturnTypes(
@@ -1010,11 +1041,15 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 is_static=False,
             ),
             name='fixVehicle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getHeliBladeCollisionsEnabled',
                 return_types=FunctionReturnTypes(
@@ -1057,11 +1092,15 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 is_static=False,
             ),
             name='getHeliBladeCollisionsEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getHelicopterRotorSpeed',
                 return_types=FunctionReturnTypes(
@@ -1104,10 +1143,12 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 is_static=False,
             ),
             name='getHelicopterRotorSpeed',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getModelHandling',
                 return_types=FunctionReturnTypes(
@@ -1145,11 +1186,15 @@ Note: the data returned may not reflect the actual handling of a particular vehi
             ),
             oop=None,
             name='getModelHandling',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getOriginalHandling',
                 return_types=FunctionReturnTypes(
@@ -1186,8 +1231,10 @@ Note: the data returned may not reflect the actual handling of a particular vehi
             ),
             oop=None,
             name='getOriginalHandling',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getOriginalHandling',
                 return_types=FunctionReturnTypes(
@@ -1224,10 +1271,12 @@ Note: the data returned may not reflect the actual handling of a particular vehi
             ),
             oop=None,
             name='getOriginalHandling',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTrainDirection',
                 return_types=FunctionReturnTypes(
@@ -1270,8 +1319,10 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 is_static=False,
             ),
             name='getTrainDirection',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTrainDirection',
                 return_types=FunctionReturnTypes(
@@ -1314,10 +1365,12 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 is_static=False,
             ),
             name='getTrainDirection',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTrainPosition',
                 return_types=FunctionReturnTypes(
@@ -1360,8 +1413,10 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 is_static=False,
             ),
             name='getTrainPosition',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTrainPosition',
                 return_types=FunctionReturnTypes(
@@ -1404,10 +1459,12 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 is_static=False,
             ),
             name='getTrainPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTrainSpeed',
                 return_types=FunctionReturnTypes(
@@ -1450,8 +1507,10 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 is_static=False,
             ),
             name='getTrainSpeed',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTrainSpeed',
                 return_types=FunctionReturnTypes(
@@ -1494,10 +1553,12 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 is_static=False,
             ),
             name='getTrainSpeed',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTrainTrack',
                 return_types=FunctionReturnTypes(
@@ -1540,8 +1601,10 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 is_static=False,
             ),
             name='getTrainTrack',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getTrainTrack',
                 return_types=FunctionReturnTypes(
@@ -1584,11 +1647,15 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 is_static=False,
             ),
             name='getTrainTrack',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleAdjustableProperty',
                 return_types=FunctionReturnTypes(
@@ -1625,10 +1692,12 @@ Note: the data returned may not reflect the actual handling of a particular vehi
             ),
             oop=None,
             name='getVehicleAdjustableProperty',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleColor',
                 return_types=FunctionReturnTypes(
@@ -1730,8 +1799,10 @@ valid color ids if brgb is set to false:
                 is_static=False,
             ),
             name='getVehicleColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleColor',
                 return_types=FunctionReturnTypes(
@@ -1833,10 +1904,12 @@ valid color ids if brgb is set to false:
                 is_static=False,
             ),
             name='getVehicleColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleCompatibleUpgrades',
                 return_types=FunctionReturnTypes(
@@ -1890,8 +1963,10 @@ valid color ids if brgb is set to false:
                 is_static=False,
             ),
             name='getVehicleCompatibleUpgrades',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleCompatibleUpgrades',
                 return_types=FunctionReturnTypes(
@@ -1945,11 +2020,15 @@ valid color ids if brgb is set to false:
                 is_static=False,
             ),
             name='getVehicleCompatibleUpgrades',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleComponentPosition',
                 return_types=FunctionReturnTypes(
@@ -2025,11 +2104,15 @@ valid color ids if brgb is set to false:
                 is_static=False,
             ),
             name='getVehicleComponentPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleComponentRotation',
                 return_types=FunctionReturnTypes(
@@ -2105,11 +2188,15 @@ valid color ids if brgb is set to false:
                 is_static=False,
             ),
             name='getVehicleComponentRotation',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleComponents',
                 return_types=FunctionReturnTypes(
@@ -2152,11 +2239,15 @@ valid color ids if brgb is set to false:
                 is_static=False,
             ),
             name='getVehicleComponents',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleComponentScale',
                 return_types=FunctionReturnTypes(
@@ -2232,11 +2323,15 @@ valid color ids if brgb is set to false:
                 is_static=False,
             ),
             name='getVehicleComponentScale',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleComponentVisible',
                 return_types=FunctionReturnTypes(
@@ -2290,10 +2385,12 @@ valid color ids if brgb is set to false:
                 is_static=False,
             ),
             name='getVehicleComponentVisible',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleController',
                 return_types=FunctionReturnTypes(
@@ -2336,8 +2433,10 @@ valid color ids if brgb is set to false:
                 is_static=False,
             ),
             name='getVehicleController',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleController',
                 return_types=FunctionReturnTypes(
@@ -2380,11 +2479,15 @@ valid color ids if brgb is set to false:
                 is_static=False,
             ),
             name='getVehicleController',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleCurrentGear',
                 return_types=FunctionReturnTypes(
@@ -2421,10 +2524,12 @@ valid color ids if brgb is set to false:
             ),
             oop=None,
             name='getVehicleCurrentGear',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleDoorOpenRatio',
                 return_types=FunctionReturnTypes(
@@ -2478,8 +2583,10 @@ valid color ids if brgb is set to false:
                 is_static=False,
             ),
             name='getVehicleDoorOpenRatio',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleDoorOpenRatio',
                 return_types=FunctionReturnTypes(
@@ -2533,10 +2640,12 @@ valid color ids if brgb is set to false:
                 is_static=False,
             ),
             name='getVehicleDoorOpenRatio',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleDoorState',
                 return_types=FunctionReturnTypes(
@@ -2601,8 +2710,10 @@ valid color ids if brgb is set to false:
                 is_static=False,
             ),
             name='getVehicleDoorState',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleDoorState',
                 return_types=FunctionReturnTypes(
@@ -2667,11 +2778,15 @@ valid color ids if brgb is set to false:
                 is_static=False,
             ),
             name='getVehicleDoorState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleDummyPosition',
                 return_types=FunctionReturnTypes(
@@ -2749,10 +2864,12 @@ addcommandhandler(getdummy, getdummyposition)
                 is_static=False,
             ),
             name='getVehicleDummyPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleEngineState',
                 return_types=FunctionReturnTypes(
@@ -2795,8 +2912,10 @@ addcommandhandler(getdummy, getdummyposition)
                 is_static=False,
             ),
             name='getVehicleEngineState',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleEngineState',
                 return_types=FunctionReturnTypes(
@@ -2839,11 +2958,15 @@ addcommandhandler(getdummy, getdummyposition)
                 is_static=False,
             ),
             name='getVehicleEngineState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleGravity',
                 return_types=FunctionReturnTypes(
@@ -2888,10 +3011,12 @@ addcommandhandler(getdummy, getdummyposition)
             ),
             oop=None,
             name='getVehicleGravity',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleHandling',
                 return_types=FunctionReturnTypes(
@@ -2934,8 +3059,10 @@ addcommandhandler(getdummy, getdummyposition)
                 is_static=False,
             ),
             name='getVehicleHandling',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleHandling',
                 return_types=FunctionReturnTypes(
@@ -2978,10 +3105,12 @@ addcommandhandler(getdummy, getdummyposition)
                 is_static=False,
             ),
             name='getVehicleHandling',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleHeadLightColor',
                 return_types=FunctionReturnTypes(
@@ -3032,8 +3161,10 @@ addcommandhandler(getdummy, getdummyposition)
                 is_static=False,
             ),
             name='getVehicleHeadLightColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleHeadLightColor',
                 return_types=FunctionReturnTypes(
@@ -3084,10 +3215,12 @@ addcommandhandler(getdummy, getdummyposition)
                 is_static=False,
             ),
             name='getVehicleHeadLightColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleLandingGearDown',
                 return_types=FunctionReturnTypes(
@@ -3131,8 +3264,10 @@ returns nil if the vehicle has no landing gear, or is invalid. """,
                 is_static=False,
             ),
             name='getVehicleLandingGearDown',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleLandingGearDown',
                 return_types=FunctionReturnTypes(
@@ -3176,10 +3311,12 @@ returns nil if the vehicle has no landing gear, or is invalid. """,
                 is_static=False,
             ),
             name='getVehicleLandingGearDown',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleLightState',
                 return_types=FunctionReturnTypes(
@@ -3237,8 +3374,10 @@ returns nil if the vehicle has no landing gear, or is invalid. """,
                 is_static=False,
             ),
             name='getVehicleLightState',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleLightState',
                 return_types=FunctionReturnTypes(
@@ -3296,10 +3435,12 @@ returns nil if the vehicle has no landing gear, or is invalid. """,
                 is_static=False,
             ),
             name='getVehicleLightState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleMaxPassengers',
                 return_types=FunctionReturnTypes(
@@ -3352,8 +3493,10 @@ OR """,
                 is_static=False,
             ),
             name='getVehicleMaxPassengers',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleMaxPassengers',
                 return_types=FunctionReturnTypes(
@@ -3406,11 +3549,15 @@ OR """,
                 is_static=False,
             ),
             name='getVehicleMaxPassengers',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleModelDummyDefaultPosition',
                 return_types=FunctionReturnTypes(
@@ -3472,11 +3619,15 @@ OR """,
                 is_static=True,
             ),
             name='getVehicleModelDummyDefaultPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleModelDummyPosition',
                 return_types=FunctionReturnTypes(
@@ -3538,11 +3689,15 @@ OR """,
                 is_static=True,
             ),
             name='getVehicleModelDummyPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleModelExhaustFumesPosition',
                 return_types=FunctionReturnTypes(
@@ -3593,10 +3748,12 @@ OR """,
                 is_static=True,
             ),
             name='getVehicleModelExhaustFumesPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleModelFromName',
                 return_types=FunctionReturnTypes(
@@ -3640,8 +3797,10 @@ if you use this function on vehicles with shared names, such as police, it will 
                 is_static=True,
             ),
             name='getVehicleModelFromName',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleModelFromName',
                 return_types=FunctionReturnTypes(
@@ -3685,11 +3844,15 @@ if you use this function on vehicles with shared names, such as police, it will 
                 is_static=True,
             ),
             name='getVehicleModelFromName',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleModelWheelSize',
                 return_types=FunctionReturnTypes(
@@ -3747,10 +3910,12 @@ if you use this function on vehicles with shared names, such as police, it will 
                 is_static=True,
             ),
             name='getVehicleModelWheelSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleName',
                 return_types=FunctionReturnTypes(
@@ -3793,8 +3958,10 @@ if you use this function on vehicles with shared names, such as police, it will 
                 is_static=False,
             ),
             name='getVehicleName',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleName',
                 return_types=FunctionReturnTypes(
@@ -3837,10 +4004,12 @@ if you use this function on vehicles with shared names, such as police, it will 
                 is_static=False,
             ),
             name='getVehicleName',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleNameFromModel',
                 return_types=FunctionReturnTypes(
@@ -3883,8 +4052,10 @@ if you use this function on vehicles with shared names, such as police, it will 
                 is_static=True,
             ),
             name='getVehicleNameFromModel',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleNameFromModel',
                 return_types=FunctionReturnTypes(
@@ -3927,11 +4098,15 @@ if you use this function on vehicles with shared names, such as police, it will 
                 is_static=True,
             ),
             name='getVehicleNameFromModel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleNitroCount',
                 return_types=FunctionReturnTypes(
@@ -3968,11 +4143,15 @@ if you use this function on vehicles with shared names, such as police, it will 
             ),
             oop=None,
             name='getVehicleNitroCount',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleNitroLevel',
                 return_types=FunctionReturnTypes(
@@ -4009,10 +4188,12 @@ if you use this function on vehicles with shared names, such as police, it will 
             ),
             oop=None,
             name='getVehicleNitroLevel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleOccupant',
                 return_types=FunctionReturnTypes(
@@ -4066,8 +4247,10 @@ if you use this function on vehicles with shared names, such as police, it will 
                 is_static=False,
             ),
             name='getVehicleOccupant',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleOccupant',
                 return_types=FunctionReturnTypes(
@@ -4121,10 +4304,12 @@ if you use this function on vehicles with shared names, such as police, it will 
                 is_static=False,
             ),
             name='getVehicleOccupant',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleOccupants',
                 return_types=FunctionReturnTypes(
@@ -4178,8 +4363,10 @@ outputdebugstring(players in your vehicle: .. counter)
                 is_static=False,
             ),
             name='getVehicleOccupants',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleOccupants',
                 return_types=FunctionReturnTypes(
@@ -4233,10 +4420,12 @@ outputdebugstring(players in your vehicle: .. counter)
                 is_static=False,
             ),
             name='getVehicleOccupants',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleOverrideLights',
                 return_types=FunctionReturnTypes(
@@ -4279,8 +4468,10 @@ outputdebugstring(players in your vehicle: .. counter)
                 is_static=False,
             ),
             name='getVehicleOverrideLights',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleOverrideLights',
                 return_types=FunctionReturnTypes(
@@ -4323,10 +4514,12 @@ outputdebugstring(players in your vehicle: .. counter)
                 is_static=False,
             ),
             name='getVehicleOverrideLights',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehiclePaintjob',
                 return_types=FunctionReturnTypes(
@@ -4373,8 +4566,10 @@ outputdebugstring(players in your vehicle: .. counter)
                 is_static=False,
             ),
             name='getVehiclePaintjob',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehiclePaintjob',
                 return_types=FunctionReturnTypes(
@@ -4421,10 +4616,12 @@ outputdebugstring(players in your vehicle: .. counter)
                 is_static=False,
             ),
             name='getVehiclePaintjob',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehiclePanelState',
                 return_types=FunctionReturnTypes(
@@ -4485,8 +4682,10 @@ outputdebugstring(players in your vehicle: .. counter)
                 is_static=False,
             ),
             name='getVehiclePanelState',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehiclePanelState',
                 return_types=FunctionReturnTypes(
@@ -4547,10 +4746,12 @@ outputdebugstring(players in your vehicle: .. counter)
                 is_static=False,
             ),
             name='getVehiclePanelState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehiclePlateText',
                 return_types=FunctionReturnTypes(
@@ -4593,8 +4794,10 @@ outputdebugstring(players in your vehicle: .. counter)
                 is_static=False,
             ),
             name='getVehiclePlateText',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehiclePlateText',
                 return_types=FunctionReturnTypes(
@@ -4637,10 +4840,12 @@ outputdebugstring(players in your vehicle: .. counter)
                 is_static=False,
             ),
             name='getVehiclePlateText',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleRespawnPosition',
                 return_types=FunctionReturnTypes(
@@ -4691,11 +4896,15 @@ outputdebugstring(players in your vehicle: .. counter)
                 is_static=False,
             ),
             name='getVehicleRespawnPosition',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleRespawnRotation',
                 return_types=FunctionReturnTypes(
@@ -4746,11 +4955,15 @@ outputdebugstring(players in your vehicle: .. counter)
                 is_static=False,
             ),
             name='getVehicleRespawnRotation',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleSirenParams',
                 return_types=FunctionReturnTypes(
@@ -4802,8 +5015,10 @@ bool sirenparams.flags.silent
                 is_static=False,
             ),
             name='getVehicleSirenParams',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleSirenParams',
                 return_types=FunctionReturnTypes(
@@ -4855,10 +5070,12 @@ bool sirenparams.flags.silent
                 is_static=False,
             ),
             name='getVehicleSirenParams',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleSirens',
                 return_types=FunctionReturnTypes(
@@ -4911,8 +5128,10 @@ int     sirendatasirenpoint.min_alpha
                 is_static=False,
             ),
             name='getVehicleSirens',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleSirens',
                 return_types=FunctionReturnTypes(
@@ -4965,10 +5184,12 @@ int     sirendatasirenpoint.min_alpha
                 is_static=False,
             ),
             name='getVehicleSirens',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleSirensOn',
                 return_types=FunctionReturnTypes(
@@ -5011,8 +5232,10 @@ int     sirendatasirenpoint.min_alpha
                 is_static=False,
             ),
             name='getVehicleSirensOn',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleSirensOn',
                 return_types=FunctionReturnTypes(
@@ -5055,10 +5278,12 @@ int     sirendatasirenpoint.min_alpha
                 is_static=False,
             ),
             name='getVehicleSirensOn',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehiclesOfType',
                 return_types=FunctionReturnTypes(
@@ -5101,11 +5326,15 @@ int     sirendatasirenpoint.min_alpha
                 is_static=False,
             ),
             name='getVehiclesOfType',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleTowedByVehicle',
                 return_types=FunctionReturnTypes(
@@ -5148,8 +5377,10 @@ int     sirendatasirenpoint.min_alpha
                 is_static=False,
             ),
             name='getVehicleTowedByVehicle',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleTowedByVehicle',
                 return_types=FunctionReturnTypes(
@@ -5192,10 +5423,12 @@ int     sirendatasirenpoint.min_alpha
                 is_static=False,
             ),
             name='getVehicleTowedByVehicle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleTowingVehicle',
                 return_types=FunctionReturnTypes(
@@ -5239,8 +5472,10 @@ int     sirendatasirenpoint.min_alpha
                 is_static=False,
             ),
             name='getVehicleTowingVehicle',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleTowingVehicle',
                 return_types=FunctionReturnTypes(
@@ -5284,10 +5519,12 @@ int     sirendatasirenpoint.min_alpha
                 is_static=False,
             ),
             name='getVehicleTowingVehicle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleTurretPosition',
                 return_types=FunctionReturnTypes(
@@ -5334,8 +5571,10 @@ int     sirendatasirenpoint.min_alpha
                 is_static=False,
             ),
             name='getVehicleTurretPosition',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleTurretPosition',
                 return_types=FunctionReturnTypes(
@@ -5382,10 +5621,12 @@ int     sirendatasirenpoint.min_alpha
                 is_static=False,
             ),
             name='getVehicleTurretPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleType',
                 return_types=FunctionReturnTypes(
@@ -5431,8 +5672,10 @@ possible strings returned: """,
                 is_static=False,
             ),
             name='getVehicleType',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleType',
                 return_types=FunctionReturnTypes(
@@ -5478,10 +5721,12 @@ possible strings returned: """,
                 is_static=False,
             ),
             name='getVehicleType',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleUpgradeOnSlot',
                 return_types=FunctionReturnTypes(
@@ -5535,8 +5780,10 @@ possible strings returned: """,
                 is_static=False,
             ),
             name='getVehicleUpgradeOnSlot',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleUpgradeOnSlot',
                 return_types=FunctionReturnTypes(
@@ -5590,10 +5837,12 @@ possible strings returned: """,
                 is_static=False,
             ),
             name='getVehicleUpgradeOnSlot',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleUpgrades',
                 return_types=FunctionReturnTypes(
@@ -5636,8 +5885,10 @@ possible strings returned: """,
                 is_static=False,
             ),
             name='getVehicleUpgrades',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleUpgrades',
                 return_types=FunctionReturnTypes(
@@ -5680,10 +5931,12 @@ possible strings returned: """,
                 is_static=False,
             ),
             name='getVehicleUpgrades',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleUpgradeSlotName',
                 return_types=FunctionReturnTypes(
@@ -5720,8 +5973,10 @@ possible strings returned: """,
             ),
             oop=None,
             name='getVehicleUpgradeSlotName',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleUpgradeSlotName',
                 return_types=FunctionReturnTypes(
@@ -5758,10 +6013,12 @@ possible strings returned: """,
             ),
             oop=None,
             name='getVehicleUpgradeSlotName',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleVariant',
                 return_types=FunctionReturnTypes(
@@ -5812,8 +6069,10 @@ on failure:
                 is_static=False,
             ),
             name='getVehicleVariant',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleVariant',
                 return_types=FunctionReturnTypes(
@@ -5864,11 +6123,15 @@ on failure:
                 is_static=False,
             ),
             name='getVehicleVariant',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleWheelFrictionState',
                 return_types=FunctionReturnTypes(
@@ -5926,11 +6189,15 @@ on failure:
                 is_static=False,
             ),
             name='getVehicleWheelFrictionState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleWheelScale',
                 return_types=FunctionReturnTypes(
@@ -5973,10 +6240,12 @@ on failure:
                 is_static=False,
             ),
             name='getVehicleWheelScale',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleWheelStates',
                 return_types=FunctionReturnTypes(
@@ -6036,8 +6305,10 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='getVehicleWheelStates',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getVehicleWheelStates',
                 return_types=FunctionReturnTypes(
@@ -6097,11 +6368,15 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='getVehicleWheelStates',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isTrainChainEngine',
                 return_types=FunctionReturnTypes(
@@ -6145,10 +6420,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='isTrainChainEngine',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isTrainDerailable',
                 return_types=FunctionReturnTypes(
@@ -6191,8 +6468,10 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='isTrainDerailable',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isTrainDerailable',
                 return_types=FunctionReturnTypes(
@@ -6235,10 +6514,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='isTrainDerailable',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isTrainDerailed',
                 return_types=FunctionReturnTypes(
@@ -6281,8 +6562,10 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='isTrainDerailed',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isTrainDerailed',
                 return_types=FunctionReturnTypes(
@@ -6325,10 +6608,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='isTrainDerailed',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVehicleBlown',
                 return_types=FunctionReturnTypes(
@@ -6371,8 +6656,10 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='isVehicleBlown',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVehicleBlown',
                 return_types=FunctionReturnTypes(
@@ -6415,10 +6702,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='isVehicleBlown',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVehicleDamageProof',
                 return_types=FunctionReturnTypes(
@@ -6461,8 +6750,10 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='isVehicleDamageProof',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVehicleDamageProof',
                 return_types=FunctionReturnTypes(
@@ -6505,10 +6796,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='isVehicleDamageProof',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVehicleFuelTankExplodable',
                 return_types=FunctionReturnTypes(
@@ -6545,8 +6838,10 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
             ),
             oop=None,
             name='isVehicleFuelTankExplodable',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVehicleFuelTankExplodable',
                 return_types=FunctionReturnTypes(
@@ -6583,10 +6878,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
             ),
             oop=None,
             name='isVehicleFuelTankExplodable',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVehicleLocked',
                 return_types=FunctionReturnTypes(
@@ -6629,8 +6926,10 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='isVehicleLocked',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVehicleLocked',
                 return_types=FunctionReturnTypes(
@@ -6673,11 +6972,15 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='isVehicleLocked',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVehicleNitroActivated',
                 return_types=FunctionReturnTypes(
@@ -6714,11 +7017,15 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
             ),
             oop=None,
             name='isVehicleNitroActivated',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVehicleNitroRecharging',
                 return_types=FunctionReturnTypes(
@@ -6755,10 +7062,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
             ),
             oop=None,
             name='isVehicleNitroRecharging',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVehicleOnGround',
                 return_types=FunctionReturnTypes(
@@ -6801,8 +7110,10 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='isVehicleOnGround',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVehicleOnGround',
                 return_types=FunctionReturnTypes(
@@ -6845,10 +7156,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='isVehicleOnGround',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVehicleTaxiLightOn',
                 return_types=FunctionReturnTypes(
@@ -6891,8 +7204,10 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='isVehicleTaxiLightOn',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVehicleTaxiLightOn',
                 return_types=FunctionReturnTypes(
@@ -6935,11 +7250,15 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='isVehicleTaxiLightOn',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVehicleWheelOnGround',
                 return_types=FunctionReturnTypes(
@@ -6997,11 +7316,15 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='isVehicleWheelOnGround',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isVehicleWindowOpen',
                 return_types=FunctionReturnTypes(
@@ -7056,10 +7379,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
             ),
             oop=None,
             name='isVehicleWindowOpen',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeVehicleSirens',
                 return_types=FunctionReturnTypes(
@@ -7096,11 +7421,15 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
             ),
             oop=None,
             name='removeVehicleSirens',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeVehicleUpgrade',
                 return_types=FunctionReturnTypes(
@@ -7148,8 +7477,10 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
             ),
             oop=None,
             name='removeVehicleUpgrade',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeVehicleUpgrade',
                 return_types=FunctionReturnTypes(
@@ -7197,11 +7528,15 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
             ),
             oop=None,
             name='removeVehicleUpgrade',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetVehicleComponentPosition',
                 return_types=FunctionReturnTypes(
@@ -7255,11 +7590,15 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='resetVehicleComponentPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetVehicleComponentRotation',
                 return_types=FunctionReturnTypes(
@@ -7313,11 +7652,15 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='resetVehicleComponentRotation',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetVehicleComponentScale',
                 return_types=FunctionReturnTypes(
@@ -7371,11 +7714,15 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='resetVehicleComponentScale',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetVehicleDummyPositions',
                 return_types=FunctionReturnTypes(
@@ -7418,10 +7765,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='resetVehicleDummyPositions',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetVehicleExplosionTime',
                 return_types=FunctionReturnTypes(
@@ -7458,11 +7807,15 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
             ),
             oop=None,
             name='resetVehicleExplosionTime',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='resetVehicleIdleTime',
                 return_types=FunctionReturnTypes(
@@ -7499,11 +7852,15 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
             ),
             oop=None,
             name='resetVehicleIdleTime',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='respawnVehicle',
                 return_types=FunctionReturnTypes(
@@ -7546,12 +7903,18 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='respawnVehicle',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setHeliBladeCollisionsEnabled',
                 return_types=FunctionReturnTypes(
@@ -7605,11 +7968,15 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='setHeliBladeCollisionsEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setHelicopterRotorSpeed',
                 return_types=FunctionReturnTypes(
@@ -7663,10 +8030,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='setHelicopterRotorSpeed',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setModelHandling',
                 return_types=FunctionReturnTypes(
@@ -7725,11 +8094,15 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
             ),
             oop=None,
             name='setModelHandling',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTrainDerailable',
                 return_types=FunctionReturnTypes(
@@ -7783,8 +8156,10 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='setTrainDerailable',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTrainDerailable',
                 return_types=FunctionReturnTypes(
@@ -7838,10 +8213,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='setTrainDerailable',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTrainDerailed',
                 return_types=FunctionReturnTypes(
@@ -7895,8 +8272,10 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='setTrainDerailed',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTrainDerailed',
                 return_types=FunctionReturnTypes(
@@ -7950,10 +8329,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='setTrainDerailed',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTrainDirection',
                 return_types=FunctionReturnTypes(
@@ -8007,8 +8388,10 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='setTrainDirection',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTrainDirection',
                 return_types=FunctionReturnTypes(
@@ -8062,10 +8445,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='setTrainDirection',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTrainPosition',
                 return_types=FunctionReturnTypes(
@@ -8119,8 +8504,10 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='setTrainPosition',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTrainPosition',
                 return_types=FunctionReturnTypes(
@@ -8174,10 +8561,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='setTrainPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTrainSpeed',
                 return_types=FunctionReturnTypes(
@@ -8231,8 +8620,10 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='setTrainSpeed',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTrainSpeed',
                 return_types=FunctionReturnTypes(
@@ -8286,10 +8677,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='setTrainSpeed',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTrainTrack',
                 return_types=FunctionReturnTypes(
@@ -8343,8 +8736,10 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='setTrainTrack',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setTrainTrack',
                 return_types=FunctionReturnTypes(
@@ -8398,11 +8793,15 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 is_static=False,
             ),
             name='setTrainTrack',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleAdjustableProperty',
                 return_types=FunctionReturnTypes(
@@ -8451,10 +8850,12 @@ This function only works on vehicles with adjustable properties. """,
             ),
             oop=None,
             name='setVehicleAdjustableProperty',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleColor',
                 return_types=FunctionReturnTypes(
@@ -8631,8 +9032,10 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleColor',
                 return_types=FunctionReturnTypes(
@@ -8809,11 +9212,15 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleComponentPosition',
                 return_types=FunctionReturnTypes(
@@ -8914,11 +9321,15 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleComponentPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleComponentRotation',
                 return_types=FunctionReturnTypes(
@@ -9019,11 +9430,15 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleComponentRotation',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleComponentScale',
                 return_types=FunctionReturnTypes(
@@ -9124,11 +9539,15 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleComponentScale',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleComponentVisible',
                 return_types=FunctionReturnTypes(
@@ -9193,10 +9612,12 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleComponentVisible',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleDamageProof',
                 return_types=FunctionReturnTypes(
@@ -9250,8 +9671,10 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleDamageProof',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleDamageProof',
                 return_types=FunctionReturnTypes(
@@ -9305,10 +9728,12 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleDamageProof',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleDirtLevel',
                 return_types=FunctionReturnTypes(
@@ -9356,8 +9781,10 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
             ),
             oop=None,
             name='setVehicleDirtLevel',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleDirtLevel',
                 return_types=FunctionReturnTypes(
@@ -9405,10 +9832,12 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
             ),
             oop=None,
             name='setVehicleDirtLevel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleDoorOpenRatio',
                 return_types=FunctionReturnTypes(
@@ -9484,8 +9913,10 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleDoorOpenRatio',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleDoorOpenRatio',
                 return_types=FunctionReturnTypes(
@@ -9561,10 +9992,12 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleDoorOpenRatio',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleDoorState',
                 return_types=FunctionReturnTypes(
@@ -9636,8 +10069,10 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleDoorState',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleDoorState',
                 return_types=FunctionReturnTypes(
@@ -9709,10 +10144,12 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleDoorState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleDoorsUndamageable',
                 return_types=FunctionReturnTypes(
@@ -9766,8 +10203,10 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleDoorsUndamageable',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleDoorsUndamageable',
                 return_types=FunctionReturnTypes(
@@ -9821,11 +10260,15 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleDoorsUndamageable',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleDummyPosition',
                 return_types=FunctionReturnTypes(
@@ -9910,10 +10353,12 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleDummyPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleEngineState',
                 return_types=FunctionReturnTypes(
@@ -9967,8 +10412,10 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleEngineState',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleEngineState',
                 return_types=FunctionReturnTypes(
@@ -10022,10 +10469,12 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleEngineState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleFuelTankExplodable',
                 return_types=FunctionReturnTypes(
@@ -10073,8 +10522,10 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
             ),
             oop=None,
             name='setVehicleFuelTankExplodable',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleFuelTankExplodable',
                 return_types=FunctionReturnTypes(
@@ -10122,11 +10573,15 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
             ),
             oop=None,
             name='setVehicleFuelTankExplodable',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleGravity',
                 return_types=FunctionReturnTypes(
@@ -10194,10 +10649,12 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
             ),
             oop=None,
             name='setVehicleGravity',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleHandling',
                 return_types=FunctionReturnTypes(
@@ -10256,8 +10713,10 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
             ),
             oop=None,
             name='setVehicleHandling',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleHandling',
                 return_types=FunctionReturnTypes(
@@ -10316,10 +10775,12 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
             ),
             oop=None,
             name='setVehicleHandling',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleHeadLightColor',
                 return_types=FunctionReturnTypes(
@@ -10395,8 +10856,10 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleHeadLightColor',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleHeadLightColor',
                 return_types=FunctionReturnTypes(
@@ -10472,10 +10935,12 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleHeadLightColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleIdleRespawnDelay',
                 return_types=FunctionReturnTypes(
@@ -10529,11 +10994,15 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 is_static=False,
             ),
             name='setVehicleIdleRespawnDelay',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleLandingGearDown',
                 return_types=FunctionReturnTypes(
@@ -10581,8 +11050,10 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
             ),
             oop=None,
             name='setVehicleLandingGearDown',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleLandingGearDown',
                 return_types=FunctionReturnTypes(
@@ -10630,10 +11101,12 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
             ),
             oop=None,
             name='setVehicleLandingGearDown',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleLightState',
                 return_types=FunctionReturnTypes(
@@ -10703,8 +11176,10 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 is_static=False,
             ),
             name='setVehicleLightState',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleLightState',
                 return_types=FunctionReturnTypes(
@@ -10774,10 +11249,12 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 is_static=False,
             ),
             name='setVehicleLightState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleLocked',
                 return_types=FunctionReturnTypes(
@@ -10831,8 +11308,10 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 is_static=False,
             ),
             name='setVehicleLocked',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleLocked',
                 return_types=FunctionReturnTypes(
@@ -10886,11 +11365,15 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 is_static=False,
             ),
             name='setVehicleLocked',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleModelDummyPosition',
                 return_types=FunctionReturnTypes(
@@ -10975,11 +11458,15 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 is_static=True,
             ),
             name='setVehicleModelDummyPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleModelExhaustFumesPosition',
                 return_types=FunctionReturnTypes(
@@ -11053,11 +11540,15 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 is_static=True,
             ),
             name='setVehicleModelExhaustFumesPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleModelWheelSize',
                 return_types=FunctionReturnTypes(
@@ -11125,11 +11616,15 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 is_static=True,
             ),
             name='setVehicleModelWheelSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleNitroActivated',
                 return_types=FunctionReturnTypes(
@@ -11177,11 +11672,15 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
             ),
             oop=None,
             name='setVehicleNitroActivated',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleNitroCount',
                 return_types=FunctionReturnTypes(
@@ -11229,11 +11728,15 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
             ),
             oop=None,
             name='setVehicleNitroCount',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleNitroLevel',
                 return_types=FunctionReturnTypes(
@@ -11281,10 +11784,12 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
             ),
             oop=None,
             name='setVehicleNitroLevel',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleOverrideLights',
                 return_types=FunctionReturnTypes(
@@ -11341,8 +11846,10 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 is_static=False,
             ),
             name='setVehicleOverrideLights',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleOverrideLights',
                 return_types=FunctionReturnTypes(
@@ -11399,10 +11906,12 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 is_static=False,
             ),
             name='setVehicleOverrideLights',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehiclePaintjob',
                 return_types=FunctionReturnTypes(
@@ -11451,8 +11960,10 @@ See Paintjob|paintjob for list of supported vehicles. """,
             ),
             oop=None,
             name='setVehiclePaintjob',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehiclePaintjob',
                 return_types=FunctionReturnTypes(
@@ -11501,10 +12012,12 @@ See Paintjob|paintjob for list of supported vehicles. """,
             ),
             oop=None,
             name='setVehiclePaintjob',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehiclePanelState',
                 return_types=FunctionReturnTypes(
@@ -11579,8 +12092,10 @@ See Paintjob|paintjob for list of supported vehicles. """,
                 is_static=False,
             ),
             name='setVehiclePanelState',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehiclePanelState',
                 return_types=FunctionReturnTypes(
@@ -11655,10 +12170,12 @@ See Paintjob|paintjob for list of supported vehicles. """,
                 is_static=False,
             ),
             name='setVehiclePanelState',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehiclePlateText',
                 return_types=FunctionReturnTypes(
@@ -11713,8 +12230,10 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 is_static=False,
             ),
             name='setVehiclePlateText',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehiclePlateText',
                 return_types=FunctionReturnTypes(
@@ -11769,10 +12288,12 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 is_static=False,
             ),
             name='setVehiclePlateText',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleRespawnDelay',
                 return_types=FunctionReturnTypes(
@@ -11826,11 +12347,15 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 is_static=False,
             ),
             name='setVehicleRespawnDelay',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleRespawnPosition',
                 return_types=FunctionReturnTypes(
@@ -11939,11 +12464,15 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 is_static=False,
             ),
             name='setVehicleRespawnPosition',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleRespawnRotation',
                 return_types=FunctionReturnTypes(
@@ -12019,11 +12548,15 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 is_static=False,
             ),
             name='setVehicleRespawnRotation',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleSirens',
                 return_types=FunctionReturnTypes(
@@ -12165,8 +12698,10 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 is_static=False,
             ),
             name='setVehicleSirens',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleSirens',
                 return_types=FunctionReturnTypes(
@@ -12308,10 +12843,12 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 is_static=False,
             ),
             name='setVehicleSirens',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleSirensOn',
                 return_types=FunctionReturnTypes(
@@ -12365,8 +12902,10 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 is_static=False,
             ),
             name='setVehicleSirensOn',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleSirensOn',
                 return_types=FunctionReturnTypes(
@@ -12420,10 +12959,12 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 is_static=False,
             ),
             name='setVehicleSirensOn',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleTaxiLightOn',
                 return_types=FunctionReturnTypes(
@@ -12477,8 +13018,10 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 is_static=False,
             ),
             name='setVehicleTaxiLightOn',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleTaxiLightOn',
                 return_types=FunctionReturnTypes(
@@ -12532,10 +13075,12 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 is_static=False,
             ),
             name='setVehicleTaxiLightOn',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleTurretPosition',
                 return_types=FunctionReturnTypes(
@@ -12600,8 +13145,10 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 is_static=False,
             ),
             name='setVehicleTurretPosition',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleTurretPosition',
                 return_types=FunctionReturnTypes(
@@ -12666,10 +13213,12 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 is_static=False,
             ),
             name='setVehicleTurretPosition',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleVariant',
                 return_types=FunctionReturnTypes(
@@ -12737,8 +13286,10 @@ on failure:
                 is_static=False,
             ),
             name='setVehicleVariant',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleVariant',
                 return_types=FunctionReturnTypes(
@@ -12806,11 +13357,15 @@ on failure:
                 is_static=False,
             ),
             name='setVehicleVariant',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleWheelScale',
                 return_types=FunctionReturnTypes(
@@ -12864,10 +13419,12 @@ on failure:
                 is_static=False,
             ),
             name='setVehicleWheelScale',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleWheelStates',
                 return_types=FunctionReturnTypes(
@@ -12955,8 +13512,10 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                 is_static=False,
             ),
             name='setVehicleWheelStates',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleWheelStates',
                 return_types=FunctionReturnTypes(
@@ -13044,11 +13603,15 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                 is_static=False,
             ),
             name='setVehicleWheelStates',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setVehicleWindowOpen',
                 return_types=FunctionReturnTypes(
@@ -13119,10 +13682,12 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
             ),
             oop=None,
             name='setVehicleWindowOpen',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='spawnVehicle',
                 return_types=FunctionReturnTypes(
@@ -13231,11 +13796,15 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                 is_static=False,
             ),
             name='spawnVehicle',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='toggleVehicleRespawn',
                 return_types=FunctionReturnTypes(
@@ -13289,7 +13858,10 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                 is_static=False,
             ),
             name='toggleVehicleRespawn',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     )
 ]

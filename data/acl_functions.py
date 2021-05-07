@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclCreate',
                 return_types=FunctionReturnTypes(
@@ -54,11 +55,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='aclCreate',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclCreateGroup',
                 return_types=FunctionReturnTypes(
@@ -101,11 +106,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='aclCreateGroup',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclDestroy',
                 return_types=FunctionReturnTypes(
@@ -148,11 +157,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='aclDestroy',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclDestroyGroup',
                 return_types=FunctionReturnTypes(
@@ -195,11 +208,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='aclDestroyGroup',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclGet',
                 return_types=FunctionReturnTypes(
@@ -242,11 +259,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='aclGet',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclGetGroup',
                 return_types=FunctionReturnTypes(
@@ -289,11 +310,15 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='aclGetGroup',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclGetName',
                 return_types=FunctionReturnTypes(
@@ -336,11 +361,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='aclGetName',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclGetRight',
                 return_types=FunctionReturnTypes(
@@ -394,11 +423,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='aclGetRight',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclGroupAddACL',
                 return_types=FunctionReturnTypes(
@@ -452,11 +485,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='aclGroupAddACL',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclGroupAddObject',
                 return_types=FunctionReturnTypes(
@@ -514,11 +551,15 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 is_static=False,
             ),
             name='aclGroupAddObject',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclGroupGetName',
                 return_types=FunctionReturnTypes(
@@ -561,11 +602,15 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 is_static=False,
             ),
             name='aclGroupGetName',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclGroupList',
                 return_types=FunctionReturnTypes(
@@ -599,11 +644,15 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 is_static=True,
             ),
             name='aclGroupList',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclGroupListACL',
                 return_types=FunctionReturnTypes(
@@ -646,11 +695,15 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 is_static=False,
             ),
             name='aclGroupListACL',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclGroupListObjects',
                 return_types=FunctionReturnTypes(
@@ -693,11 +746,15 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 is_static=False,
             ),
             name='aclGroupListObjects',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclGroupRemoveACL',
                 return_types=FunctionReturnTypes(
@@ -751,11 +808,15 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 is_static=False,
             ),
             name='aclGroupRemoveACL',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclGroupRemoveObject',
                 return_types=FunctionReturnTypes(
@@ -809,11 +870,15 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 is_static=False,
             ),
             name='aclGroupRemoveObject',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclList',
                 return_types=FunctionReturnTypes(
@@ -847,11 +912,15 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 is_static=True,
             ),
             name='aclList',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclListRights',
                 return_types=FunctionReturnTypes(
@@ -905,11 +974,15 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 is_static=False,
             ),
             name='aclListRights',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclReload',
                 return_types=FunctionReturnTypes(
@@ -943,11 +1016,15 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 is_static=True,
             ),
             name='aclReload',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclRemoveRight',
                 return_types=FunctionReturnTypes(
@@ -1001,11 +1078,15 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 is_static=False,
             ),
             name='aclRemoveRight',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclSave',
                 return_types=FunctionReturnTypes(
@@ -1039,11 +1120,15 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 is_static=True,
             ),
             name='aclSave',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='aclSetRight',
                 return_types=FunctionReturnTypes(
@@ -1108,11 +1193,15 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 is_static=False,
             ),
             name='aclSetRight',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='hasObjectPermissionTo',
                 return_types=FunctionReturnTypes(
@@ -1188,11 +1277,15 @@ The only downside of using this method is that the admin has to modify his confi
                 is_static=True,
             ),
             name='hasObjectPermissionTo',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='isObjectInACLGroup',
                 return_types=FunctionReturnTypes(
@@ -1246,7 +1339,10 @@ The only downside of using this method is that the admin has to modify his confi
                 is_static=False,
             ),
             name='isObjectInACLGroup',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     )
 ]

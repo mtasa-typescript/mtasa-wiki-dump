@@ -11,8 +11,11 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='createProjectile',
                 return_types=FunctionReturnTypes(
@@ -194,10 +197,12 @@ DUMP_PARTIAL = [
                 is_static=True,
             ),
             name='createProjectile',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='detonateSatchels',
                 return_types=FunctionReturnTypes(
@@ -234,8 +239,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='detonateSatchels',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='detonateSatchels',
                 return_types=FunctionReturnTypes(
@@ -263,11 +270,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='detonateSatchels',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getProjectileCounter',
                 return_types=FunctionReturnTypes(
@@ -314,11 +325,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getProjectileCounter',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getProjectileCreator',
                 return_types=FunctionReturnTypes(
@@ -361,11 +376,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getProjectileCreator',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getProjectileForce',
                 return_types=FunctionReturnTypes(
@@ -408,11 +427,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getProjectileForce',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getProjectileTarget',
                 return_types=FunctionReturnTypes(
@@ -455,11 +478,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getProjectileTarget',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getProjectileType',
                 return_types=FunctionReturnTypes(
@@ -502,11 +529,15 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='getProjectileType',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='setProjectileCounter',
                 return_types=FunctionReturnTypes(
@@ -564,6 +595,7 @@ DUMP_PARTIAL = [
                 is_static=False,
             ),
             name='setProjectileCounter',
-        ),
+        )
+        ],
     )
 ]

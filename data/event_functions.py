@@ -11,7 +11,8 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addEvent',
                 return_types=FunctionReturnTypes(
@@ -59,8 +60,10 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='addEvent',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addEvent',
                 return_types=FunctionReturnTypes(
@@ -108,10 +111,12 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='addEvent',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addEventHandler',
                 return_types=FunctionReturnTypes(
@@ -204,8 +209,10 @@ The order in which event handlers are triggered is undefined, you should not rel
             ),
             oop=None,
             name='addEventHandler',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='addEventHandler',
                 return_types=FunctionReturnTypes(
@@ -298,10 +305,12 @@ The order in which event handlers are triggered is undefined, you should not rel
             ),
             oop=None,
             name='addEventHandler',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='cancelEvent',
                 return_types=FunctionReturnTypes(
@@ -351,8 +360,10 @@ If you implement your own custom events and want to handle them being cancelled,
             ),
             oop=None,
             name='cancelEvent',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='cancelEvent',
                 return_types=FunctionReturnTypes(
@@ -383,10 +394,12 @@ If you implement your own custom events and want to handle them being cancelled,
             ),
             oop=None,
             name='cancelEvent',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='cancelLatentEvent',
                 return_types=FunctionReturnTypes(
@@ -434,8 +447,10 @@ If you implement your own custom events and want to handle them being cancelled,
             ),
             oop=None,
             name='cancelLatentEvent',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='cancelLatentEvent',
                 return_types=FunctionReturnTypes(
@@ -472,10 +487,12 @@ If you implement your own custom events and want to handle them being cancelled,
             ),
             oop=None,
             name='cancelLatentEvent',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getCancelReason',
                 return_types=FunctionReturnTypes(
@@ -503,11 +520,15 @@ If you implement your own custom events and want to handle them being cancelled,
             ),
             oop=None,
             name='getCancelReason',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getEventHandlers',
                 return_types=FunctionReturnTypes(
@@ -555,8 +576,10 @@ If you implement your own custom events and want to handle them being cancelled,
             ),
             oop=None,
             name='getEventHandlers',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getEventHandlers',
                 return_types=FunctionReturnTypes(
@@ -604,10 +627,12 @@ If you implement your own custom events and want to handle them being cancelled,
             ),
             oop=None,
             name='getEventHandlers',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getLatentEventHandles',
                 return_types=FunctionReturnTypes(
@@ -644,8 +669,10 @@ If you implement your own custom events and want to handle them being cancelled,
             ),
             oop=None,
             name='getLatentEventHandles',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getLatentEventHandles',
                 return_types=FunctionReturnTypes(
@@ -673,10 +700,12 @@ If you implement your own custom events and want to handle them being cancelled,
             ),
             oop=None,
             name='getLatentEventHandles',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getLatentEventStatus',
                 return_types=FunctionReturnTypes(
@@ -724,8 +753,10 @@ If you implement your own custom events and want to handle them being cancelled,
             ),
             oop=None,
             name='getLatentEventStatus',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='getLatentEventStatus',
                 return_types=FunctionReturnTypes(
@@ -762,10 +793,12 @@ If you implement your own custom events and want to handle them being cancelled,
             ),
             oop=None,
             name='getLatentEventStatus',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeEventHandler',
                 return_types=FunctionReturnTypes(
@@ -824,8 +857,10 @@ If you implement your own custom events and want to handle them being cancelled,
             ),
             oop=None,
             name='removeEventHandler',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='removeEventHandler',
                 return_types=FunctionReturnTypes(
@@ -884,10 +919,12 @@ If you implement your own custom events and want to handle them being cancelled,
             ),
             oop=None,
             name='removeEventHandler',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='triggerClientEvent',
                 return_types=FunctionReturnTypes(
@@ -963,11 +1000,15 @@ Keep in mind the bandwidth issues when using events - dont pass a large list of 
                 is_static=False,
             ),
             name='triggerClientEvent',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='triggerEvent',
                 return_types=FunctionReturnTypes(
@@ -1030,8 +1071,10 @@ You can use the value returned from this function to determine if the event was 
             ),
             oop=None,
             name='triggerEvent',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='triggerEvent',
                 return_types=FunctionReturnTypes(
@@ -1094,10 +1137,12 @@ You can use the value returned from this function to determine if the event was 
             ),
             oop=None,
             name='triggerEvent',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='triggerLatentClientEvent',
                 return_types=FunctionReturnTypes(
@@ -1187,12 +1232,18 @@ and other network traffic is not blocked while the data is being transferred. ""
             ),
             oop=None,
             name='triggerLatentClientEvent',
-        ),
-        client=None,
+        )
+        ],
+        client=[
+            
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='triggerLatentServerEvent',
                 return_types=FunctionReturnTypes(
@@ -1270,11 +1321,15 @@ and other network traffic is not blocked while the data is being transferred. ""
             ),
             oop=None,
             name='triggerLatentServerEvent',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='triggerServerEvent',
                 return_types=FunctionReturnTypes(
@@ -1333,10 +1388,12 @@ Keep in mind the bandwidth issues when using events - dont pass a large list of 
             ),
             oop=None,
             name='triggerServerEvent',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=FunctionData(
+        server=[
+            FunctionData(
             signature=FunctionSignature(
                 name='wasEventCancelled',
                 return_types=FunctionReturnTypes(
@@ -1365,8 +1422,10 @@ Events can be cancelled using cancelEvent, this indicates that the resource whic
             ),
             oop=None,
             name='wasEventCancelled',
-        ),
-        client=FunctionData(
+        )
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='wasEventCancelled',
                 return_types=FunctionReturnTypes(
@@ -1395,6 +1454,7 @@ Events can be cancelled using cancelEvent, this indicates that the resource whic
             ),
             oop=None,
             name='wasEventCancelled',
-        ),
+        )
+        ],
     )
 ]

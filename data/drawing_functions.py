@@ -11,8 +11,11 @@ from to_python.core.types import FunctionType, \
     
 DUMP_PARTIAL = [
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxConvertPixels',
                 return_types=FunctionReturnTypes(
@@ -71,11 +74,15 @@ DUMP_PARTIAL = [
             ),
             oop=None,
             name='dxConvertPixels',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxCreateFont',
                 return_types=FunctionReturnTypes(
@@ -161,11 +168,15 @@ you should always check to see if this function has returned false. """,
                 is_static=True,
             ),
             name='dxCreateFont',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxCreateRenderTarget',
                 return_types=FunctionReturnTypes(
@@ -232,11 +243,15 @@ you should always check to see if this function has returned false. """,
                 is_static=True,
             ),
             name='dxCreateRenderTarget',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxCreateScreenSource',
                 return_types=FunctionReturnTypes(
@@ -291,11 +306,15 @@ Note that successful screen source creation is not guaranteed, and may fail due 
                 is_static=True,
             ),
             name='dxCreateScreenSource',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxCreateShader',
                 return_types=FunctionReturnTypes(
@@ -427,11 +446,15 @@ All the following optional arguments are only relevant when the shader is used w
                 is_static=True,
             ),
             name='dxCreateShader',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxCreateTexture',
                 return_types=FunctionReturnTypes(
@@ -533,11 +556,15 @@ or """,
                 is_static=True,
             ),
             name='dxCreateTexture',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxDrawCircle',
                 return_types=FunctionReturnTypes(
@@ -673,11 +700,15 @@ or """,
             ),
             oop=None,
             name='dxDrawCircle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxDrawImage',
                 return_types=FunctionReturnTypes(
@@ -815,11 +846,15 @@ Image files should ideally have dimensions that are a power of two, to prevent p
             ),
             oop=None,
             name='dxDrawImage',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxDrawImageSection',
                 return_types=FunctionReturnTypes(
@@ -1001,11 +1036,15 @@ Image files should ideally have dimensions that are a power of two, to prevent p
             ),
             oop=None,
             name='dxDrawImageSection',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxDrawLine',
                 return_types=FunctionReturnTypes(
@@ -1109,11 +1148,15 @@ Returns a true if the operation was successful, false otherwise. """
             ),
             oop=None,
             name='dxDrawLine',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxDrawLine3D',
                 return_types=FunctionReturnTypes(
@@ -1239,11 +1282,15 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
             ),
             oop=None,
             name='dxDrawLine3D',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxDrawMaterialLine3D',
                 return_types=FunctionReturnTypes(
@@ -1422,11 +1469,15 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
             ),
             oop=None,
             name='dxDrawMaterialLine3D',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxDrawMaterialPrimitive',
                 return_types=FunctionReturnTypes(
@@ -1507,11 +1558,15 @@ Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px...}} 
             ),
             oop=None,
             name='dxDrawMaterialPrimitive',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxDrawMaterialPrimitive3D',
                 return_types=FunctionReturnTypes(
@@ -1593,11 +1648,15 @@ Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px... ""
             ),
             oop=None,
             name='dxDrawMaterialPrimitive3D',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxDrawMaterialSectionLine3D',
                 return_types=FunctionReturnTypes(
@@ -1818,11 +1877,15 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
             ),
             oop=None,
             name='dxDrawMaterialSectionLine3D',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxDrawPrimitive',
                 return_types=FunctionReturnTypes(
@@ -1891,11 +1954,15 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
             ),
             oop=None,
             name='dxDrawPrimitive',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxDrawPrimitive3D',
                 return_types=FunctionReturnTypes(
@@ -1998,11 +2065,15 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
             ),
             oop=None,
             name='dxDrawPrimitive3D',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxDrawRectangle',
                 return_types=FunctionReturnTypes(
@@ -2105,11 +2176,15 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
             ),
             oop=None,
             name='dxDrawRectangle',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxDrawText',
                 return_types=FunctionReturnTypes(
@@ -2343,11 +2418,15 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
             ),
             oop=None,
             name='dxDrawText',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxDrawWiredSphere',
                 return_types=FunctionReturnTypes(
@@ -2448,11 +2527,15 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
             ),
             oop=None,
             name='dxDrawWiredSphere',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxGetBlendMode',
                 return_types=FunctionReturnTypes(
@@ -2484,11 +2567,15 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
             ),
             oop=None,
             name='dxGetBlendMode',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxGetFontHeight',
                 return_types=FunctionReturnTypes(
@@ -2542,11 +2629,15 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 is_static=False,
             ),
             name='dxGetFontHeight',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxGetMaterialSize',
                 return_types=FunctionReturnTypes(
@@ -2598,11 +2689,15 @@ if the material is a volume texture, this function will return three ints repres
                 is_static=False,
             ),
             name='dxGetMaterialSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxGetPixelColor',
                 return_types=FunctionReturnTypes(
@@ -2673,11 +2768,15 @@ if the material is a volume texture, this function will return three ints repres
             ),
             oop=None,
             name='dxGetPixelColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxGetPixelsFormat',
                 return_types=FunctionReturnTypes(
@@ -2714,11 +2813,15 @@ if the material is a volume texture, this function will return three ints repres
             ),
             oop=None,
             name='dxGetPixelsFormat',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxGetPixelsSize',
                 return_types=FunctionReturnTypes(
@@ -2759,11 +2862,15 @@ if the material is a volume texture, this function will return three ints repres
             ),
             oop=None,
             name='dxGetPixelsSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxGetStatus',
                 return_types=FunctionReturnTypes(
@@ -2820,11 +2927,15 @@ if the material is a volume texture, this function will return three ints repres
             ),
             oop=None,
             name='dxGetStatus',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxGetTextSize',
                 return_types=FunctionReturnTypes(
@@ -2938,11 +3049,15 @@ Returns two floats representing the width and height of the text in pixels. """
                 is_static=False,
             ),
             name='dxGetTextSize',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxGetTexturePixels',
                 return_types=FunctionReturnTypes(
@@ -3044,11 +3159,15 @@ By default the pixels from the whole texture is returned. To get only a portion 
                 is_static=False,
             ),
             name='dxGetTexturePixels',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxGetTextWidth',
                 return_types=FunctionReturnTypes(
@@ -3126,11 +3245,15 @@ Returns the float of the width of the text (in pixels). """
                 is_static=False,
             ),
             name='dxGetTextWidth',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxIsAspectRatioAdjustmentEnabled',
                 return_types=FunctionReturnTypes(
@@ -3163,11 +3286,15 @@ Returns the float of the width of the text (in pixels). """
             ),
             oop=None,
             name='dxIsAspectRatioAdjustmentEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxSetAspectRatioAdjustmentEnabled',
                 return_types=FunctionReturnTypes(
@@ -3216,11 +3343,15 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
             ),
             oop=None,
             name='dxSetAspectRatioAdjustmentEnabled',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxSetBlendMode',
                 return_types=FunctionReturnTypes(
@@ -3261,11 +3392,15 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
             ),
             oop=None,
             name='dxSetBlendMode',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxSetPixelColor',
                 return_types=FunctionReturnTypes(
@@ -3368,11 +3503,15 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
             ),
             oop=None,
             name='dxSetPixelColor',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxSetRenderTarget',
                 return_types=FunctionReturnTypes(
@@ -3426,11 +3565,15 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
                 is_static=False,
             ),
             name='dxSetRenderTarget',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxSetShaderTessellation',
                 return_types=FunctionReturnTypes(
@@ -3496,11 +3639,15 @@ Using tessellation allows a shader to manipulate the shape of the rendered image
                 is_static=False,
             ),
             name='dxSetShaderTessellation',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxSetShaderTransform',
                 return_types=FunctionReturnTypes(
@@ -3654,11 +3801,15 @@ To convert screen relative units into screen pixel coordinates, ''multiply'' by 
                 is_static=False,
             ),
             name='dxSetShaderTransform',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxSetShaderValue',
                 return_types=FunctionReturnTypes(
@@ -3723,11 +3874,15 @@ To convert screen relative units into screen pixel coordinates, ''multiply'' by 
                 is_static=False,
             ),
             name='dxSetShaderValue',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxSetTestMode',
                 return_types=FunctionReturnTypes(
@@ -3769,11 +3924,15 @@ Each one of the 3 test modes should be used in turn to help highlight any potent
             ),
             oop=None,
             name='dxSetTestMode',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxSetTextureEdge',
                 return_types=FunctionReturnTypes(
@@ -3838,11 +3997,15 @@ Each one of the 3 test modes should be used in turn to help highlight any potent
                 is_static=False,
             ),
             name='dxSetTextureEdge',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxSetTexturePixels',
                 return_types=FunctionReturnTypes(
@@ -3955,11 +4118,15 @@ By default the pixels are set starting at the top left corner of the texture. To
                 is_static=False,
             ),
             name='dxSetTexturePixels',
-        ),
+        )
+        ],
     ),
     CompoundFunctionData(
-        server=None,
-        client=FunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
             signature=FunctionSignature(
                 name='dxUpdateScreenSource',
                 return_types=FunctionReturnTypes(
@@ -4013,6 +4180,7 @@ By default the pixels are set starting at the top left corner of the texture. To
                 is_static=False,
             ),
             name='dxUpdateScreenSource',
-        ),
+        )
+        ],
     )
 ]
