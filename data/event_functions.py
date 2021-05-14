@@ -993,10 +993,10 @@ Keep in mind the bandwidth issues when using events - dont pass a large list of 
                 result="""returns true if the event trigger has been sent, false if invalid arguments were specified. """,
             ),
             oop=FunctionOOP(
-                description="""None """,
+                description=None,
                 class_name='player',
-                method_name='triggerEvent',
-                field='None',
+                method_name="""triggerEvent""",
+                field=None,
                 is_static=False,
             ),
             name='triggerClientEvent',

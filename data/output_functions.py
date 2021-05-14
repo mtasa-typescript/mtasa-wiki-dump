@@ -218,10 +218,10 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 result=""" """,
             ),
             oop=FunctionOOP(
-                description="""None """,
+                description=None,
                 class_name='player',
-                method_name='outputChat',
-                field='None',
+                method_name="""outputChat""",
+                field=None,
                 is_static=False,
             ),
             name='outputChatBox',
