@@ -8766,8 +8766,8 @@ The binds can be either:
             ),
             oop=FunctionOOP(
                 description=None,
-                class_name='GUI widgets|GuiElementisMainMenuActive',
-                method_name=None,
+                class_name='GUI widgets|GuiElement',
+                method_name="""isMainMenuActive""",
                 field="""mainMenuActive""",
                 is_static=True,
             ),
