@@ -42,6 +42,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns information about how the chatbox looks.
@@ -112,6 +115,9 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -163,6 +169,9 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function brings a GUI element on top of others. """,
@@ -214,6 +223,9 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets a checkboxs selection state. """,
@@ -275,6 +287,9 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function selects (ticks) or unselects a checkbox. """,
@@ -337,6 +352,9 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Adds an item to a combobox. """,
@@ -389,6 +407,9 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes all the items from a combobox. """,
@@ -440,6 +461,9 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -495,6 +519,9 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the text from a specific combobox item. """,
@@ -547,6 +574,9 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the index of the selected combobox item. """,
@@ -598,6 +628,9 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -659,6 +692,9 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes an item from a combobox. """,
@@ -731,6 +767,9 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the text of a combobox item. """,
@@ -794,6 +833,9 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -856,6 +898,9 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the selected item from a combobox. """,
@@ -978,6 +1023,9 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a new CEGUI web Element/Browser|browser element.
@@ -1098,6 +1146,9 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows creation of a GUI Button, which is a clickable item as part of GUI. """,
@@ -1225,6 +1276,9 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a Element/GUI/Checkbox|checkbox. """,
@@ -1343,6 +1397,9 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a combobox GUI element, which you can compare to a gridlist with a dropdown feature. """,
@@ -1460,6 +1517,9 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is for creating a new GUI edit box. This is a text box in which the user can input text. Edit boxes only allow a single line of text. If you want to allow multiple lines of text create a memo box using guiCreateMemo. """,
@@ -1527,6 +1587,9 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a GUI font element that can be used in guiSetFont. Successful font creation is not guaranteed, and may fail due to hardware or memory limitations.
@@ -1631,6 +1694,9 @@ you should always check to see if this function has returned false. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a grid list GUI element.  These are menus which are designed in lists and can have multiple columns.  A good example of a gridlist element can be found in MTAs settings box, under Controls. """,
@@ -1747,6 +1813,9 @@ you should always check to see if this function has returned false. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""<table><tr><td valign=top height=100>
@@ -1866,6 +1935,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a new GUI memo.  This is a multiline edit box in which the user can input text. """,
@@ -1967,6 +2039,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a Element/GUI/Progress bar|progress bar. """,
@@ -2077,6 +2152,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a Element/GUI/Radio button|radio button. """,
@@ -2189,6 +2267,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a GUI scrollbar. You can use the functions guiScrollPaneSetHorizontalScrollPosition, guiScrollPaneSetVerticalScrollPosition, guiScrollPaneGetHorizontalScrollPosition and guiScrollPaneGetVerticalScrollPosition to read and modify the scrollbars scroll. """,
@@ -2290,6 +2371,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This creates a GUI scroll pane. """,
@@ -2400,6 +2484,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a static image using a .png image in the resource. """,
@@ -2467,6 +2554,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a tab on a pre-existing tab panel. A tab is a button as well as a dimension that can be used to switch between information by clicking on the tabs.  Tabs are sorted on a tab panel in the order that they are created. """,
@@ -2569,6 +2659,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a Tab Panel, which acts as a template to create Tabs upon. """,
@@ -2675,6 +2768,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is for creating a new GUI window.  This provides a base for other gui elements to be created within.  However, windows do not have a parent and cannot be created in any GUI elements. """,
@@ -2741,6 +2837,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function deletes a tab from a tab panel. """,
@@ -2793,6 +2892,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the caret (the text cursor) position within the editbox. """,
@@ -2844,6 +2946,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -2895,6 +3000,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -2946,6 +3054,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -3007,6 +3118,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the current position of the caret (the text cursor) within the edit box. """,
@@ -3069,6 +3183,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets or removes masking (covering up the text being typed) for password text fields. """,
@@ -3131,6 +3248,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the maximum text length that can be typed into an edit box. """,
@@ -3193,6 +3313,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to set or remove read-only status for an edit box. If read-only is set to true, the box is not editable. """,
@@ -3245,6 +3368,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -3296,6 +3422,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Alpha represents the transparency of a gui element.  This function allows retrieval of a gui elements current alpha. """,
@@ -3347,6 +3476,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the browser element behind a gui-browser (a browser that has been created via guiCreateBrowser). """,
@@ -3389,6 +3521,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the type of the current cursor image. """,
@@ -3451,6 +3586,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function determines if a GUI element is enabled. """,
@@ -3506,6 +3644,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the current font that is used to draw text in GUI elements. """,
@@ -3549,6 +3690,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks whether user input is focused on the GUI or the game. """,
@@ -3591,6 +3735,9 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current input mode as set by guiSetInputMode.
@@ -3660,6 +3807,9 @@ Default mode is allow_binds. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows retrieval of a GUI elements current position, relative to its parent. """,
@@ -3712,6 +3862,9 @@ Default mode is allow_binds. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets a list of the CEGUI property names and values of a GUI element. To find out what the different properties mean, check out the http://static.cegui.org.uk/static/WindowsLookProperties.html CEGUI properties page. """,
@@ -3773,6 +3926,9 @@ Default mode is allow_binds. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the value of a specific CEGUI property of a GUI element. For a list of properties and their meaning, see the http://static.cegui.org.uk/static/WindowsLookProperties.html CEGUI properties page. """,
@@ -3820,6 +3976,9 @@ Default mode is allow_binds. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the local screen size according to the resolution they are using. """,
@@ -3871,6 +4030,9 @@ Default mode is allow_binds. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the currently selected tab in the specified Element/GUI/Tab panel|tab panel. """,
@@ -3936,6 +4098,9 @@ Default mode is allow_binds. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the size of a GUI element. """,
@@ -3988,6 +4153,9 @@ Default mode is allow_binds. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the text of GUI elements like edit boxes, labels, buttons etc. """,
@@ -4039,6 +4207,9 @@ Default mode is allow_binds. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function determines if a GUI element is visible. """,
@@ -4110,6 +4281,9 @@ Default mode is allow_binds. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to create columns in grid lists. """,
@@ -4183,6 +4357,9 @@ Default mode is allow_binds. """,
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Adds a row to a grid list, and optionally add simple text items with your rows.  Use guiGridListSetItemText to add row headers.
@@ -4249,6 +4426,9 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This allows you to automatically size a column to display everything in it correctly, with the most minimal width. """,
@@ -4301,6 +4481,9 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function clears all the data from a grid list. """,
@@ -4352,6 +4535,9 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This allows you to get the count of existing columns in a gridlist. """,
@@ -4413,6 +4599,9 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the column title of a gridlist column. """,
@@ -4485,6 +4674,9 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This allows you to get the width of an existing column in a gridlist. """,
@@ -4538,6 +4730,9 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the horizontal scroll position from a grid list """,
@@ -4621,6 +4816,9 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the color of a gridlist item. """,
@@ -4694,6 +4892,9 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""With this function you can retrieve the string data associated with an item in a Element/GUI/Gridlist|grid list. This is not the text that is displayed on the item, but an internal string that you can use to hold extra information about the item.<br/>
@@ -4768,6 +4969,9 @@ Note: This function will only work after you set the items text using guiGridLis
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the text from a specific grid list item. """,
@@ -4821,6 +5025,9 @@ Note: This function will only work after you set the items text using guiGridLis
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the number of rows in a grid list. """,
@@ -4872,6 +5079,9 @@ Note: This function will only work after you set the items text using guiGridLis
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the amount of options selected in the specified Element/GUI/Gridlist|grid list. """,
@@ -4927,6 +5137,9 @@ Note: This function will only work after you set the items text using guiGridLis
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the row and column indexes of the selected item in a grid list. First selected row and column is (0, 0). """,
@@ -4978,6 +5191,9 @@ Note: This function will only work after you set the items text using guiGridLis
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the items selected in the specified Element/GUI/Gridlist|grid list.
@@ -5044,6 +5260,9 @@ if everything was successful or false if invalid arguments were passed. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -5095,6 +5314,9 @@ if everything was successful or false if invalid arguments were passed. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the vertical scroll position from a grid list """,
@@ -5156,6 +5378,9 @@ if everything was successful or false if invalid arguments were passed. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This allows you to insert a new row after a specified row, and simultaneously set text. Good for inserting new rows in the middle of existing rows. To insert at the top use -1 as row index. """,
@@ -5211,6 +5436,9 @@ if everything was successful or false if invalid arguments were passed. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -5272,6 +5500,9 @@ if everything was successful or false if invalid arguments were passed. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This allows you to delete columns that exist in grid lists. """,
@@ -5334,6 +5565,9 @@ if everything was successful or false if invalid arguments were passed. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This allows you to delete rows that exist in grid lists. """,
@@ -5406,6 +5640,9 @@ if everything was successful or false if invalid arguments were passed. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to change the column title of a gridlist column. """,
@@ -5489,6 +5726,9 @@ if everything was successful or false if invalid arguments were passed. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This allows you to set the width of an existing column in a gridlist. """,
@@ -5553,6 +5793,9 @@ if everything was successful or false if invalid arguments were passed. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the horizontal scroll position from a grid list """,
@@ -5665,6 +5908,9 @@ if everything was successful or false if invalid arguments were passed. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the color of a gridlist item. """,
@@ -5752,6 +5998,9 @@ if everything was successful or false if invalid arguments were passed. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets a Item Data associated to a grid list item.<br/>
@@ -5857,6 +6106,9 @@ Note: This function will only work after you set the items text using guiGridLis
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the text of a gridlist item.
@@ -5934,6 +6186,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows a gridlists scrollbar to be forced on, or returned to default. """,
@@ -6017,6 +6272,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function selects an item from a gridlist. If you wish to deselect whatever item is selected, pass 0 as both the rowIndex and  columnIndex arguments. """,
@@ -6081,6 +6339,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the selection mode of a gui gridlist.  For example, the MTA server browser selects a whole row, while the Controls dialog selects a single cell. To select multiple items you must be holding down ctrl. """,
@@ -6153,6 +6414,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows the disabling or enabling of sorting within a gridlist.  Sorting is achieved by clicking a column header.  Gridlist items will be sorted according to the clicked column.  By default, gridlists have sorting enabled.  This function will allow you to toggle this. """,
@@ -6215,6 +6479,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the vertical scroll position from a grid list """,
@@ -6275,6 +6542,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the color of a label. """,
@@ -6326,6 +6596,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the height of the font currently used in a GUI text label. """,
@@ -6377,6 +6650,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the extent, or width, of the current text inside a GUI text label. """,
@@ -6458,6 +6734,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to set the color of a GUI label. """,
@@ -6532,6 +6811,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the horizontal alignment of a text label. """,
@@ -6598,6 +6880,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the vertical alignment of a text label. """,
@@ -6653,6 +6938,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the caret (the text cursor) position within the memo box. """,
@@ -6698,6 +6986,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -6743,6 +7034,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -6798,6 +7092,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the current position of the caret (the text cursor) within the memo. """,
@@ -6854,6 +7151,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to set or remove read-only status for a GUI memo. If read-only is set to true, the contents are not editable. """,
@@ -6916,6 +7216,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -6962,6 +7265,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function moves a GUI element to the very back of all other GUI elements. """,
@@ -7013,6 +7319,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the progress of a progress bar as a percentage. """,
@@ -7068,6 +7377,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the progress of a progressbar as a percentage. """,
@@ -7114,6 +7426,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets a radio buttons selection state. """,
@@ -7169,6 +7484,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function selects or unselects a radio button. """,
@@ -7215,6 +7533,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the scroll amount of a scrollbar as a percentage. """,
@@ -7270,6 +7591,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the scroll amount of a scrollbar as a percentage. """,
@@ -7316,6 +7640,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the position of a horizontal scroll pane as a percentage. """,
@@ -7361,6 +7688,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the position of a vertical scroll pane as a percentage. """,
@@ -7416,6 +7746,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the position of a horizontal scroll pane as a percentage. """,
@@ -7482,6 +7815,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows a scrollpanes scrollbars to be forced on, or returned to default. """,
@@ -7539,6 +7875,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the position of a vertical scroll pane as a percentage. """,
@@ -7595,6 +7934,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This changes the alpha level (the visibleness/transparency) of a GUI element """,
@@ -7657,6 +7999,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function enables/disables a GUI element. A disabled GUI element cant be used, gets a gray aspect and doesnt receive any events. """,
@@ -7719,6 +8064,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the font of a GUI_widgets|GUI element to be used when drawing text. """,
@@ -7771,6 +8119,9 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function enables or disables input focus for the GUI.  This means that any keybinds or MTA binds are overidden so that text can be input into an editbox, for example.  In other words, keys such as t and y which activate the chatbox are disabled.
@@ -7823,6 +8174,9 @@ guiSetInputMode can be used as an extended version of guiSetInputEnabled since i
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function controls the input mode to define whether or not (and when) keybinds or MTA binds are overridden (disabled) so that text can be input into an editbox, for example.
@@ -7911,6 +8265,9 @@ The binds can be either:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the position of a GUI element. """,
@@ -7985,6 +8342,9 @@ The binds can be either:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the value of a specific CEGUI property of a GUI element. For a list of properties and their meaning, see the http://static.cegui.org.uk/static/WindowsLookProperties.html CEGUI properties page. """,
@@ -8048,6 +8408,9 @@ The binds can be either:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to change the currently selected Element/GUI/Tab|tab in a Element/GUI/Tab panel|tab panel. """,
@@ -8124,6 +8487,9 @@ The binds can be either:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the dimensions (size) of a GUI element. It refers to the bounding box size for GUI elements. It does not make GUI elements smaller or larger in appearance. """,
@@ -8188,6 +8554,9 @@ The binds can be either:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the text of a GUI element. """,
@@ -8250,6 +8619,9 @@ The binds can be either:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the visibility state of a GUI element. """,
@@ -8306,6 +8678,9 @@ The binds can be either:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the native size of image. That means the original size in pixels of the image file. """,
@@ -8361,6 +8736,9 @@ The binds can be either:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to change the image in GUI static image element to another one. Tip: If you set other images as children you will have to use setElementCallPropagationEnabled to only affect the parent image. """,
@@ -8413,6 +8791,9 @@ The binds can be either:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -8464,6 +8845,9 @@ The binds can be either:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -8525,6 +8909,9 @@ The binds can be either:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to specify whether or not a user can move a GUI window. """,
@@ -8587,6 +8974,9 @@ The binds can be either:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function enables or disables user resizing of a GUI window. """,
@@ -8630,6 +9020,9 @@ The binds can be either:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns whether the ingame chatbox is being used (accepting chatbox input) or not. """,
@@ -8672,6 +9065,9 @@ The binds can be either:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns whether the ingame console window is visible or not. """,
@@ -8714,6 +9110,9 @@ The binds can be either:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns whether the ingame debug window is visible or not. This is the debugwindow visible using the debugscript <level> command. """,
@@ -8756,6 +9155,9 @@ The binds can be either:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns whether the user is in the mainmenu or not. """,
@@ -8798,6 +9200,9 @@ The binds can be either:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns whether any system windows that take focus are active. This includes:
@@ -8845,6 +9250,9 @@ To get the status of the debug view, see isDebugViewActive. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns whether the file downloading dialog box is active or not. This appears when a resource is started and the client doesnt have all the files that resource requires the client to have.
@@ -8897,6 +9305,9 @@ Its important to note that resources arent started on the client until theyre co
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function enables or disables the debug window. """,

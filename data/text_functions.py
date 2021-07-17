@@ -30,6 +30,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""A textdisplay|text display is like a canvas that can contain many textitem|items of text. Each display can be seen by multiple observers (players) and each player can see multiple displays. """,
@@ -185,6 +188,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a text item. A text item represents a single area of text, much like a label does in standard GUI programming. A text item can only be seen by players if it is added to a textdisplay using textDisplayAddText. Each text item can be added to multiple displays, if need be. """,
@@ -241,6 +247,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function destroys a text display and will unlink all the textitems on it. This does not stop the textitems existing, but anyone who was observing the textitems through this display will stop seeing them. """,
@@ -286,6 +295,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function destroys a textitem object. """,
@@ -341,6 +353,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function adds a player as an observer of a textdisplay. This allows the player to see any textitems that the textdisplay contains. """,
@@ -397,6 +412,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function adds a textitem to a textdisplay. This allows any observers of the textdisplay to see the textitem. """,
@@ -443,6 +461,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can be used to retrieve all the players  currently observing a specified textdisplay. """,
@@ -498,6 +519,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if a player can see the specified textdisplay. """,
@@ -554,6 +578,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes a player observer of a textdisplay. This stops the player from being able to see textitems that the textdisplay contains. """,
@@ -610,6 +637,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes a textitem from a textdisplay. This stops any observers of the textdisplay from being able to see the textitem. """,
@@ -668,6 +698,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to retrieve the color of a text item. """,
@@ -717,6 +750,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows retrieval of the position of a text item. """,
@@ -762,6 +798,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the priority of a text item.  Priority defines the rate at whihc a text item is updated """,
@@ -807,6 +846,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows retrieval of the scale or size of a text item. """,
@@ -852,6 +894,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current text of the specified textitem. """,
@@ -937,6 +982,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the color of a text item. """,
@@ -1006,6 +1054,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows the setting of the position of a text item. """,
@@ -1063,6 +1114,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the priority for a text item.  Priority is the importance of sending updated text to the client. The system is implemented as 3 queues, with the high queue being emptied before the medium queue is processed, and with one update sent per server frame. Hence, if you set all your text items to medium priority it has the same effect as if you set them all to high or low. """,
@@ -1119,6 +1173,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows the setting of the scale of a text item. """,
@@ -1175,6 +1232,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Overwrites a previously created text item with the specified text. """,

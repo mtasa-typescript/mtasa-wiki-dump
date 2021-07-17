@@ -129,6 +129,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a marker. A marker is a 3D model in the world that can highlight a particular point or area, often used to instruct players where to go to perform actions such as entering buildings.
@@ -269,6 +272,9 @@ You are able to create as many markers as you wish (memory and element limit per
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a marker. A marker is a 3D model in the world that can highlight a particular point or area, often used to instruct players where to go to perform actions such as entering buildings.
@@ -342,6 +348,9 @@ You are able to create as many markers as you wish (memory and element limit per
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the color and transparency for a marker element. Not all marker types support transparency. """,
@@ -400,6 +409,9 @@ You are able to create as many markers as you wish (memory and element limit per
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the color and transparency for a marker element. Not all marker types support transparency. """,
@@ -439,6 +451,9 @@ You are able to create as many markers as you wish (memory and element limit per
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the number of markers that currently exist in the world. """,
@@ -470,6 +485,9 @@ You are able to create as many markers as you wish (memory and element limit per
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the number of markers that currently exist in the world. """,
@@ -512,6 +530,9 @@ You are able to create as many markers as you wish (memory and element limit per
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the icon name for a marker. """,
@@ -561,6 +582,9 @@ You are able to create as many markers as you wish (memory and element limit per
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the icon name for a marker. """,
@@ -612,6 +636,9 @@ You are able to create as many markers as you wish (memory and element limit per
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a float containing the size of the specified marker. """,
@@ -658,6 +685,9 @@ You are able to create as many markers as you wish (memory and element limit per
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a float containing the size of the specified marker. """,
@@ -714,6 +744,9 @@ You are able to create as many markers as you wish (memory and element limit per
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the position of the specified markers target, the position it points to. This only works for checkpoint markers and ring markers. For checkpoints it returns the position the arrow is pointing to, for ring markers it returns the position the ring is facing. You can set this target with setMarkerTarget. """,
@@ -768,6 +801,9 @@ You are able to create as many markers as you wish (memory and element limit per
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the position of the specified markers target, the position it points to. This only works for checkpoint markers and ring markers. For checkpoints it returns the position the arrow is pointing to, for ring markers it returns the position the ring is facing. You can set this target with setMarkerTarget. """,
@@ -816,6 +852,9 @@ You are able to create as many markers as you wish (memory and element limit per
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a markers type. """,
@@ -863,6 +902,9 @@ if an invalid marker is specified, false is returned. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a markers type. """,
@@ -952,6 +994,9 @@ if an invalid marker is specified, false is returned. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the color of the specified marker by modifying the values for red, green, blue and alpha. """,
@@ -1042,6 +1087,9 @@ if an invalid marker is specified, false is returned. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the color of the specified marker by modifying the values for red, green, blue and alpha. """,
@@ -1104,6 +1152,9 @@ if an invalid marker is specified, false is returned. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -1164,6 +1215,9 @@ if an invalid marker is specified, false is returned. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -1226,6 +1280,9 @@ if an invalid marker is specified, false is returned. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the size of the specified marker.
@@ -1288,6 +1345,9 @@ Setting negative value will flip the marker, do nothing or make it invisible:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the size of the specified marker.
@@ -1372,6 +1432,9 @@ Setting negative value will flip the marker, do nothing or make it invisible:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the target for a marker. Only the checkpoint and ring marker types can have a target.
@@ -1455,6 +1518,9 @@ This function is most useful for setting up markers for races, where each marker
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the target for a marker. Only the checkpoint and ring marker types can have a target.
@@ -1520,6 +1586,9 @@ This function is most useful for setting up markers for races, where each marker
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes a markers type. The type controls how the marker is displayed in the game. Its important that you use marker types that users are used to from the single player game. For example, checkpoints are used in races, rings are used for aircraft races, arrows are used for entering buildings etc. """,
@@ -1577,6 +1646,9 @@ This function is most useful for setting up markers for races, where each marker
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes a markers type. The type controls how the marker is displayed in the game. Its important that you use marker types that users are used to from the single player game. For example, checkpoints are used in races, rings are used for aircraft races, arrows are used for entering buildings etc. """,

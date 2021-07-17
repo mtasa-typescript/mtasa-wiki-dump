@@ -39,6 +39,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is for returning the number of players in the specified team. """,
@@ -85,6 +88,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is for returning the number of players in the specified team. """,
@@ -163,6 +169,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is for creating a new team, which can be used to group players. Players will not join the team until they are respawned. """,
@@ -217,6 +226,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves all the players of the specified team. """,
@@ -263,6 +275,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves all the players of the specified team. """,
@@ -311,6 +326,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the current team a player is on. """,
@@ -357,6 +375,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the current team a player is on. """,
@@ -413,6 +434,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the color of a team. """,
@@ -467,6 +491,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the color of a team. """,
@@ -515,6 +542,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function tells you if friendly fire is turned on for the specified team. """,
@@ -561,6 +591,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function tells you if friendly fire is turned on for the specified team. """,
@@ -609,6 +642,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function finds a team element using the provided team name. """,
@@ -655,6 +691,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function finds a team element using the provided team name. """,
@@ -703,6 +742,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the team name of a team object. """,
@@ -749,6 +791,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the team name of a team object. """,
@@ -807,6 +852,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function adds a player to an existing team. The player will automatically be removed from his current team if hes on one. """,
@@ -889,6 +937,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is for setting the color of a specified team. This color is shown, for example, in the team players nametags. """,
@@ -953,6 +1004,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the friendly fire value for the specified team. """,
@@ -1015,6 +1069,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set a teams name. """,

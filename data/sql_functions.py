@@ -79,6 +79,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function opens a connection to a database and returns an element that can be used with dbQuery. To disconnect use destroyElement. """,
@@ -176,6 +179,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function executes a database query using the supplied connection. No result is returned. """,
@@ -230,6 +236,9 @@ String parameters are automatically quoted and escaped as required. (If you do n
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function frees a database query handle. dbFree only needs to be used if a result has not been obtained with dbPoll """,
@@ -301,6 +310,9 @@ String parameters are automatically quoted and escaped as required. (If you do n
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks the progress of a database query. """,
@@ -402,6 +414,9 @@ a subsequent table represents the next row. """,
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function escapes arguments in the same way as dbQuery, except dbPrepareString returns the query string instead of processing the query. This allows you to safely build complex query strings from component parts and help prevent (one class of) SQL injection.}} """,
@@ -506,6 +521,9 @@ String parameters are automatically quoted and escaped as required. (If you do n
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function starts a database query using the supplied connection. Use the returned query handle with dbPoll to get the result, or dbFree if you dont want the result. """,
@@ -582,6 +600,9 @@ String parameters are automatically quoted and escaped as required. (If you do n
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function executes an arbitrary SQL query and returns the result rows if there are any. It allows parameter binding for security (SQL injection is rendered impossible). """,

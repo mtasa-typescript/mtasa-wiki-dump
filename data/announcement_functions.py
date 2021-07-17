@@ -30,6 +30,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the current gametype as set by setGameType. The game type is displayed in the server browser next to the servers name. """,
@@ -66,6 +69,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the current mapname as set by setMapName. """,
@@ -111,6 +117,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets a rule value. A rule value is a string that can be viewed by server browsers and used for filtering the server list. """,
@@ -156,6 +165,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes a set rule value that can be viewed by server browsers. """,
@@ -201,6 +213,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets a string containing a name for the game type. This should be the game-mode that is active, for example Capture The Flag or Deathmatch. This is then displayed in the server browser and external server browsers.
@@ -247,6 +262,9 @@ It should be noted that mapmanager handles this automatically for gamemodes that
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set a map name that will be visible in the server browser. In practice you should generally rely on the mapmanager to do this for you. """,
@@ -302,6 +320,9 @@ It should be noted that mapmanager handles this automatically for gamemodes that
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets a rule value that can be viewed by server browsers. """,

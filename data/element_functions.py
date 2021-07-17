@@ -59,6 +59,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used together with setElementData in subscribe mode. """,
@@ -182,6 +185,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function attaches one element to another, so that the first one follows the second whenever it moves.
@@ -320,6 +326,9 @@ This is not compatible with all elements.  The following elements are compatible
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function attaches one element to another, so that the first one follows the second whenever it moves.
@@ -390,6 +399,9 @@ This is not compatible with all elements.  The following elements are compatible
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function clears any settings added by setElementVisibleTo and restores an element to its default visibility.  This does not work with all entities - vehicles, players and objects are exempt. This is because these objects are required for accurate sync (theyre physical objects). This function is particularily useful for changing the visibility of markers, radar blips and radar areas. """,
@@ -481,6 +493,9 @@ This is not compatible with all elements.  The following elements are compatible
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function clones (creates an exact copy of) an already existing element. The root node, and player elements, cannot be cloned. If a player element is a child of an element that is cloned, it will be skipped, along with the elements that exist as a child to the player element.
@@ -549,6 +564,9 @@ The cloned element will be placed on the element tree as a child of the same par
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to create a new dummy element in the element tree which do not necessarily represent an entity within the San Andreas world. A common use for this function is for creating custom elements, such as a Flag or a Base.
@@ -607,6 +625,9 @@ Elements created using this function are placed in the element tree with their p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to create a new dummy element in the element tree which do not necessarily represent an entity within the San Andreas world. A common use for this function is for creating custom elements, such as a Flag or a Base.
@@ -657,6 +678,9 @@ Elements created using this function are placed in the element tree with their p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function destroys an element and all elements within it in the hierarchy (its children, the children of those children etc). player|Player elements cannot be destroyed using this function. A player can only be removed from the hierarchy when they quit or are kicked. The root element also cannot be destroyed, however, passing the root as an argument will wipe all elements from the server, except for the players and clients, which will become direct descendants of the root node, and other elements that cannot be destroyed, such as resource root elements.
@@ -704,6 +728,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function destroys an element and all elements within it in the hierarchy (its children, the children of those children etc). player|Player elements cannot be destroyed using this function. A player can only be removed from the hierarchy when they quit or are kicked. The root element also cannot be destroyed, however, passing the root as an argument will wipe all elements from the server, except for the players and clients, which will become direct descendants of the root node, and other elements that cannot be destroyed, such as resource root elements.
@@ -763,6 +790,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function detaches attached elements from one another. """,
@@ -820,6 +850,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function detaches attached elements from one another. """,
@@ -869,6 +902,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns a table of all element data of an element. """,
@@ -920,6 +956,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table of all the elements attached to the specified element """,
@@ -966,6 +1005,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table of all the elements attached to the specified element """,
@@ -1014,6 +1056,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the alpha (transparency) value for the specified element. This can be a player, ped, object, vehicle or Element/Weapon|weapon. """,
@@ -1060,6 +1105,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the alpha (transparency) value for the specified element. This can be a player, ped, object, vehicle or Element/Weapon|weapon. """,
@@ -1116,6 +1164,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -1170,6 +1221,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -1238,6 +1292,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the offsets of an element that has been attached to another element using attachElements. """,
@@ -1304,6 +1361,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the offsets of an element that has been attached to another element using attachElements. """,
@@ -1352,6 +1412,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function determines the element that the specified element is attached to. """,
@@ -1398,6 +1461,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function determines the element that the specified element is attached to. """,
@@ -1459,6 +1525,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""* Element/Player|Player
@@ -1524,6 +1593,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""* Element/Player|Player
@@ -1589,6 +1661,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""* Element/Player|Player
@@ -1656,6 +1731,9 @@ Players are not the only elements that cannot be deleted. This list also include
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the minimum and maximum coordinates of an elements bounding box.
@@ -1715,6 +1793,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns an element from the specified ID. If more than one element with the same ID exists, only the first one in the order it appears in the XML tree will be returned by this function. """,
@@ -1772,6 +1853,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns an element from the specified ID. If more than one element with the same ID exists, only the first one in the order it appears in the XML tree will be returned by this function. """,
@@ -1831,6 +1915,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns an element of the specified type with the specified index. """,
@@ -1893,6 +1980,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns one of the child elements of a given parent element. The child element is selected by its index (0 for the first child, 1 for the second and so on). """,
@@ -1950,6 +2040,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns one of the child elements of a given parent element. The child element is selected by its index (0 for the first child, 1 for the second and so on). """,
@@ -2009,6 +2102,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to retrieve a list of the child elements of a given parent element. Note that it will only return direct children and not elements that are further down the element tree. """,
@@ -2081,6 +2177,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to retrieve a list of the child elements of a given parent element. Note that it will only return direct children and not elements that are further down the element tree. """,
@@ -2145,6 +2244,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the number of children an element has. Note that only the direct children are counted and not elements that are further down the element tree. """,
@@ -2191,6 +2293,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the number of children an element has. Note that only the direct children are counted and not elements that are further down the element tree. """,
@@ -2239,6 +2344,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function indicates if a specific element is set to have collisions disabled. An element without collisions does not interact with the physical environment and remains static. """,
@@ -2285,6 +2393,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function indicates if a specific element is set to have collisions disabled. An element without collisions does not interact with the physical environment and remains static. """,
@@ -2333,6 +2444,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Some elements have an associated colshape, for example Marker and Pickup. This function is used to get the associated colshape. """,
@@ -2379,6 +2493,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Some elements have an associated colshape, for example Marker and Pickup. This function is used to get the associated colshape. """,
@@ -2447,6 +2564,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves element data attached to an element under a certain key. """,
@@ -2515,6 +2635,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves element data attached to an element under a certain key. """,
@@ -2565,6 +2688,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to retrieve the dimension of any element. The dimension determines what/who the element is visible to. """,
@@ -2611,6 +2737,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to retrieve the dimension of any element. The dimension determines what/who the element is visible to. """,
@@ -2662,6 +2791,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to retrieve the distance between a elements centre of mass to the base of the model. This can be used to calculate the position the element has to be set to, to have it on ground level. """,
@@ -2710,6 +2842,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current health for the specified element. This can be a player, a ped, a vehicle, or an object. """,
@@ -2756,6 +2891,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current health for the specified element. This can be a player, a ped, a vehicle, or an object. """,
@@ -2804,6 +2942,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the ID of an element. This is the id attribute of the element and is a string, NOT a number like a model ID, weapons ID or similar. """,
@@ -2850,6 +2991,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the ID of an element. This is the id attribute of the element and is a string, NOT a number like a model ID, weapons ID or similar. """,
@@ -2898,6 +3042,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to retrieve the interior of any element. An interior is the current loaded place, 0 being outside. """,
@@ -2944,6 +3091,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to retrieve the interior of any element. An interior is the current loaded place, 0 being outside. """,
@@ -3002,6 +3152,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets an elements transform matrix. This contains 16 float values that multiplied to a point will give you the point transformed. It is most useful for matrix calculations such as calculating offsets. For further information, please refer to a tutorial of matrices in computer graphics programming. """,
@@ -3059,6 +3212,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets an elements transform matrix. This contains 16 float values that multiplied to a point will give you the point transformed. It is most useful for matrix calculations such as calculating offsets. For further information, please refer to a tutorial of matrices in computer graphics programming. """,
@@ -3108,6 +3264,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the model ID of a given element. This can be a player/ped skin, a pickup model, an object model or a vehicle model. """,
@@ -3157,6 +3316,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the model ID of a given element. This can be a player/ped skin, a pickup model, an object model or a vehicle model. """,
@@ -3208,6 +3370,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to determine the parent of an element. """,
@@ -3254,6 +3419,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to determine the parent of an element. """,
@@ -3310,6 +3478,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""The getElementPosition function allows you to retrieve the position coordinates of an element.  This can be any real world element, including:
@@ -3372,6 +3543,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""The getElementPosition function allows you to retrieve the position coordinates of an element.  This can be any real world element, including:
@@ -3431,6 +3605,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the radius of an element. Normally, sphere or circle-shaped elements tend to return a more accurate and expected radius than others with another shapes. """,
@@ -3501,6 +3678,9 @@ It should be noted that the values returned are relative to the position of the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Retrieve the rotation of elements. """,
@@ -3571,6 +3751,9 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Retrieve the rotation of elements. """,
@@ -3635,6 +3818,9 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to retrieve a list of all elements of the specified type. This can be useful, as it disregards where in the element tree it is. It can be used with either the built in types (listed below) or with any custom type used in a .map file. For example, if there is an element of type flag (e.g. <flag />) in the .map file, the using flag as the type argument would find it. """,
@@ -3695,6 +3881,9 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to retrieve a list of all elements of the specified type. This can be useful, as it disregards where in the element tree it is. It can be used with either the built in types (listed below) or with any custom type used in a .map file. For example, if there is an element of type flag (e.g. <flag />) in the .map file, the using flag as the type argument would find it. """,
@@ -3747,6 +3936,9 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to retrieve a list of all elements in a colshape, of the specified type.
@@ -3813,6 +4005,9 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to retrieve a list of all elements in a colshape, of the specified type.
@@ -3931,6 +4126,9 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""* This function checks if elements are in a box, not in a sphere.
@@ -4051,6 +4249,9 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""* This function checks if elements are in a box, not in a sphere.
@@ -4113,6 +4314,9 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the syncer of an element. The syncer is the player who is in control of the element. """,
@@ -4164,6 +4368,9 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to retrieve the type of an element. """,
@@ -4210,6 +4417,9 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to retrieve the type of an element. """,
@@ -4266,6 +4476,9 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns three floats containing the velocity (movement speeds) along the X, Y, and Z axis respectively. This means that velocity values can be positive and negative for each axis. """,
@@ -4321,6 +4534,9 @@ the returned values are expressed in gta units per 1/50th of a secondhttp://foru
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns three floats containing the velocity (movement speeds) along the X, Y, and Z axis respectively. This means that velocity values can be positive and negative for each axis. """,
@@ -4380,6 +4596,9 @@ the returned values are expressed in gta units per 1/50th of a secondhttp://foru
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to retrieve the zone name of an element (eg. Verdant Bluffs or Ocean Docks)
@@ -4433,6 +4652,9 @@ The same can be achieved client side by getting element coordinates and using Ge
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function return the low LOD element that an element is associated with. """,
@@ -4479,6 +4701,9 @@ The same can be achieved client side by getting element coordinates and using Ge
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function return the low LOD element that an element is associated with. """,
@@ -4518,6 +4743,9 @@ The same can be achieved client side by getting element coordinates and using Ge
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the root node of the element tree, called root. This node contains every other element: all resource root elements, players and remote clients. It is never destroyed and cannot be destroyed using destroyElement.
@@ -4550,6 +4778,9 @@ It is often used to attach handler functions to events triggered for any element
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the root node of the element tree, called root. This node contains every other element: all resource root elements, players and remote clients. It is never destroyed and cannot be destroyed using destroyElement.
@@ -4613,6 +4844,9 @@ It is often used to attach handler functions to events triggered for any element
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if an element has element data available under a certain key.}} """,
@@ -4681,6 +4915,9 @@ It is often used to attach handler functions to events triggered for any element
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if an element has element data available under a certain key.}} """,
@@ -4751,6 +4988,9 @@ It is often used to attach handler functions to events triggered for any element
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used together with setElementData in subscribe mode. """,
@@ -4804,6 +5044,9 @@ It is often used to attach handler functions to events triggered for any element
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if a value is an element or not. """,
@@ -4844,6 +5087,9 @@ It is often used to attach handler functions to events triggered for any element
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if a value is an element or not. """,
@@ -4886,6 +5132,9 @@ It is often used to attach handler functions to events triggered for any element
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions checks whether or not an element is attached to another element. """,
@@ -4932,6 +5181,9 @@ It is often used to attach handler functions to events triggered for any element
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions checks whether or not an element is attached to another element. """,
@@ -4980,6 +5232,9 @@ It is often used to attach handler functions to events triggered for any element
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions checks if certain element has call propagation enabled. """,
@@ -5026,6 +5281,9 @@ It is often used to attach handler functions to events triggered for any element
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions checks if certain element has call propagation enabled. """,
@@ -5087,6 +5345,9 @@ It is often used to attach handler functions to events triggered for any element
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can be used to check whether specified element is collidable with another element.<br>
@@ -5141,6 +5402,9 @@ Note: You can only use this function with the element types listed below.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks whether an element is double-sided as set by setElementDoubleSided or not. """,
@@ -5187,6 +5451,9 @@ Note: You can only use this function with the element types listed below.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks whether an element is double-sided as set by setElementDoubleSided or not. """,
@@ -5235,6 +5502,9 @@ Note: You can only use this function with the element types listed below.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if element has been frozen. """,
@@ -5281,6 +5551,9 @@ Note: You can only use this function with the element types listed below.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if element has been frozen. """,
@@ -5329,6 +5602,9 @@ Note: You can only use this function with the element types listed below.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks whether an element is submerged in water. """,
@@ -5375,6 +5651,9 @@ Note: You can only use this function with the element types listed below.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks whether an element is submerged in water. """,
@@ -5426,6 +5705,9 @@ Note: You can only use this function with the element types listed below.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks whether a clientside element is local to the client (doesnt exist in the server) or not. """,
@@ -5474,6 +5756,9 @@ Note: You can only use this function with the element types listed below.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function reveals if an element is low LOD. """,
@@ -5520,6 +5805,9 @@ Note: You can only use this function with the element types listed below.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function reveals if an element is low LOD. """,
@@ -5571,6 +5859,9 @@ Note: You can only use this function with the element types listed below.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will check if an element is on the screen. Elements behind objects but still in the camera view count as being on screen.
@@ -5623,6 +5914,9 @@ This function is particularly useful for detecting if dynamic objects are in des
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks whether an element is streamable as set by setElementStreamable or not. """,
@@ -5674,6 +5968,9 @@ This function is particularly useful for detecting if dynamic objects are in des
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks whether an element is currently streamed in (not virtualized) and are actual GTA objects in the world. You can force an element to be streamed in using setElementStreamable.<br>
@@ -5720,6 +6017,9 @@ DP2 can return true even if this element is not fully streamed in. This can happ
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks whether an element is synced by the local player or not. Accepted elements are ped|peds and vehicle|vehicles. """,
@@ -5778,6 +6078,9 @@ DP2 can return true even if this element is not fully streamed in. This can happ
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This checks if an element is visible to a player. This does not check if the player can literally see the element, just that they are aware that it exists. Some so-called per-player elements are able to be visible only to some players, as such this checks if this is the case for a particular element/player combination. """,
@@ -5833,6 +6136,9 @@ DP2 can return true even if this element is not fully streamed in. This can happ
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -5891,6 +6197,9 @@ DP2 can return true even if this element is not fully streamed in. This can happ
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to determine if an element is within a collision shape. Please note that for legacy reasons, a colshape created on the client does not collide with elements already existing at that location until they first move. Please also note that before 1.0.3, this did not function correctly when moving a colshape.
@@ -5949,6 +6258,9 @@ Please note that this function doesnt verify whether element is in the same dime
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to determine if an element is within a collision shape. Please note that for legacy reasons, a colshape created on the client does not collide with elements already existing at that location until they first move. Please also note that before 1.0.3, this did not function correctly when moving a colshape.
@@ -6009,6 +6321,9 @@ Please note that this function doesnt verify whether element is in the same dime
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to determine if an element is within a marker. """,
@@ -6066,6 +6381,9 @@ Please note that this function doesnt verify whether element is in the same dime
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to determine if an element is within a marker. """,
@@ -6125,6 +6443,9 @@ Please note that this function doesnt verify whether element is in the same dime
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes the element data with the given key for that element. The element data removal is synced with all the clients. """,
@@ -6197,6 +6518,9 @@ Please note that this function doesnt verify whether element is in the same dime
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used together with setElementData in subscribe mode. """,
@@ -6260,6 +6584,9 @@ Please note that this function doesnt verify whether element is in the same dime
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the alpha (transparency) value for the specified element. This can be a player, ped, object, vehicle or Element/Weapon|weapon. """,
@@ -6318,6 +6645,9 @@ Please note that this function doesnt verify whether element is in the same dime
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the alpha (transparency) value for the specified element. This can be a player, ped, object, vehicle or Element/Weapon|weapon. """,
@@ -6398,6 +6728,9 @@ Please note that this function doesnt verify whether element is in the same dime
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -6477,6 +6810,9 @@ Please note that this function doesnt verify whether element is in the same dime
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -6588,6 +6924,9 @@ Please note that this function doesnt verify whether element is in the same dime
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function updates the offsets of an element that has been attached to another element using attachElements. """,
@@ -6700,6 +7039,9 @@ Please note that this function doesnt verify whether element is in the same dime
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function updates the offsets of an element that has been attached to another element using attachElements. """,
@@ -6777,6 +7119,9 @@ Please note that this function doesnt verify whether element is in the same dime
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""* Element/Player|Player
@@ -6865,6 +7210,9 @@ Please note that this function doesnt verify whether element is in the same dime
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""* Element/Player|Player
@@ -6955,6 +7303,9 @@ Please note that this function doesnt verify whether element is in the same dime
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""* Element/Player|Player
@@ -7013,6 +7364,9 @@ note: updateelementrphanim must be called after this function to apply bone rota
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function enables/disables call propagation on a certain element. Look at the example for a practical application. """,
@@ -7070,6 +7424,9 @@ note: updateelementrphanim must be called after this function to apply bone rota
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function enables/disables call propagation on a certain element. Look at the example for a practical application. """,
@@ -7142,6 +7499,9 @@ note: updateelementrphanim must be called after this function to apply bone rota
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can be used to set an element to collide with another element. An element with collisions disabled does not interact physically with the other element.<br>
@@ -7207,6 +7567,9 @@ Note: You can only use this function with the element types listed below.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can disable or enable an elements collisions. An element without collisions does not interact with the physical environment and remains static. """,
@@ -7264,6 +7627,9 @@ Note: You can only use this function with the element types listed below.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can disable or enable an elements collisions. An element without collisions does not interact with the physical environment and remains static. """,
@@ -7343,6 +7709,9 @@ Note: You can only use this function with the element types listed below.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function stores element data under a certain key, attached to an element. Element data set using this is then synced with all clients and the server. The data can contain server created elements, but you should avoid passing data that is not able to be synced such as xmlnodes, acls, aclgroups etc.
@@ -7428,6 +7797,9 @@ Note this mode only works when setting element data serverside. Setting data cli
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function stores element data under a certain key, attached to an element. Element data set using this is then synced with all clients and the server. The data can contain server created elements, but you should avoid passing data that is not able to be synced such as xmlnodes, acls, aclgroups etc.
@@ -7492,6 +7864,9 @@ Note this mode only works when setting element data serverside. Setting data cli
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to set the dimension of any element. The dimension determines what/who the element is visible to. """,
@@ -7550,6 +7925,9 @@ also returns false if theelement is a player and its not alive. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to set the dimension of any element. The dimension determines what/who the element is visible to. """,
@@ -7610,6 +7988,9 @@ also returns false if theelement is a player and its not alive. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to set the double-sidedness of an elements model. When an elements model is double-sided, its back facing triangles become visible.
@@ -7668,6 +8049,9 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to set the double-sidedness of an elements model. When an elements model is double-sided, its back facing triangles become visible.
@@ -7728,6 +8112,9 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function freezes an element (stops it in its position and disables movement) or unfreezes it. """,
@@ -7785,6 +8172,9 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function freezes an element (stops it in its position and disables movement) or unfreezes it. """,
@@ -7844,6 +8234,9 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the health for the specified element. This can be a ped, object or a vehicle.
@@ -7905,6 +8298,9 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the health for the specified element. This can be a ped, object or a vehicle.
@@ -7968,6 +8364,9 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the ID of an element to a string. This can be anything from an identifying number, to a name.
@@ -8026,6 +8425,9 @@ You can only change the ID of an element clientside if that element has been cre
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the ID of an element to a string. This can be anything from an identifying number, to a name.
@@ -8116,6 +8518,9 @@ You can only change the ID of an element clientside if that element has been cre
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to set the interior of any element. An interior is the current loaded place, 0 being outside. """,
@@ -8206,6 +8611,9 @@ You can only change the ID of an element clientside if that element has been cre
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to set the interior of any element. An interior is the current loaded place, 0 being outside. """,
@@ -8268,6 +8676,9 @@ You can only change the ID of an element clientside if that element has been cre
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets matrix to element. """,
@@ -8325,6 +8736,9 @@ You can only change the ID of an element clientside if that element has been cre
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets matrix to element. """,
@@ -8384,6 +8798,9 @@ You can only change the ID of an element clientside if that element has been cre
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the model of a given element. This allows you to change the model of a player (or ped), a vehicle or an object. """,
@@ -8444,6 +8861,9 @@ You can only change the ID of an element clientside if that element has been cre
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the model of a given element. This allows you to change the model of a player (or ped), a vehicle or an object. """,
@@ -8506,6 +8926,9 @@ You can only change the ID of an element clientside if that element has been cre
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used for setting an element as the parent of another element. """,
@@ -8563,6 +8986,9 @@ You can only change the ID of an element clientside if that element has been cre
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used for setting an element as the parent of another element. """,
@@ -8652,6 +9078,9 @@ You can only change the ID of an element clientside if that element has been cre
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the position of an element to the specified coordinates. """,
@@ -8742,6 +9171,9 @@ You can only change the ID of an element clientside if that element has been cre
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the position of an element to the specified coordinates. """,
@@ -8844,6 +9276,9 @@ You can only change the ID of an element clientside if that element has been cre
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the rotation of elements according to the world (does not work with players that are on the ground). """,
@@ -8950,6 +9385,9 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the rotation of elements according to the world (does not work with players that are on the ground). """,
@@ -9021,6 +9459,9 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can be used to disable streaming for an element. This will make sure the element is not virtualized (streamed out from GTA) when the player moves far away from it. This function only works in elements with a physical representation in the world (entities), such as player|players, ped|peds, vehicle|vehicles and object|objects.
@@ -9082,6 +9523,9 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can be used to change the syncer (player) of an element. The syncer is the player who is responsible for informing the server about the state of that element - its position, orientation and other state information. The function can be also used to remove an elements syncer.
@@ -9168,6 +9612,9 @@ It should also be noted that certain network changes to an element do not requir
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the velocity (movement speeds) along each axis, for an element.
@@ -9253,6 +9700,9 @@ Objects and projectiles velocity can only be set clientside.}} """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the velocity (movement speeds) along each axis, for an element.
@@ -9330,6 +9780,9 @@ Objects and projectiles velocity can only be set clientside.}} """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Does the order of setElementVisibleTo calls really not matter? visibility|Visibility seems to imply that the order does matter.
@@ -9397,6 +9850,9 @@ If you want to clear all visibility settings of an object, try clearElementVisib
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function assigns a low LOD element to an element. The low LOD element is displayed when its associated element is not fully visible. If a low LOD element is assigned to several elements, it will be displayed when any of these elements are not fully visible. """,
@@ -9454,6 +9910,9 @@ If you want to clear all visibility settings of an object, try clearElementVisib
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function assigns a low LOD element to an element. The low LOD element is displayed when its associated element is not fully visible. If a low LOD element is assigned to several elements, it will be displayed when any of these elements are not fully visible. """,
@@ -9506,6 +9965,9 @@ If you want to clear all visibility settings of an object, try clearElementVisib
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""* Element/Player|Player

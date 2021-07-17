@@ -49,6 +49,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to forcefully show a players radar map. """,
@@ -96,6 +99,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to forcefully show a players radar map. """,
@@ -135,6 +141,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table of all the alive players on the server. Opposite function of getDeadPlayers. """,
@@ -177,6 +186,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table of all currently dead players on the server. """,
@@ -222,6 +234,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the player element of the client running the current script.
@@ -265,6 +280,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns anti-cheat info for a player. The info returned by this function can change over time, so use the server event onPlayerACInfo instead. """,
@@ -330,6 +348,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -382,6 +403,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to check the current blur level of a specified player. """,
@@ -419,6 +443,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to check the current blur level of a specified player. """,
@@ -458,6 +485,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the number of players currently connected to the server. """,
@@ -509,6 +539,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a player element for the player with the name passed to the function. """,
@@ -555,6 +588,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a player element for the player with the name passed to the function. """,
@@ -603,6 +639,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the amount of time in milliseconds that a players position has not changed. """,
@@ -654,6 +693,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a string containing the IP address of the player. """,
@@ -711,6 +753,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the GUI bounding box of the radar map texture. """,
@@ -757,6 +802,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the amount of money a player currently has. """,
@@ -794,6 +842,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the amount of money a player currently has. """,
@@ -842,6 +893,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a string containing the name of the specified player. """,
@@ -888,6 +942,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a string containing the name of the specified player. """,
@@ -944,6 +1001,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the current color of a players name tag as RGB values. These are in the range 0-255. """,
@@ -998,6 +1058,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the current color of a players name tag as RGB values. These are in the range 0-255. """,
@@ -1046,6 +1109,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This will allow you to retrieve the name tag a player is currently using. """,
@@ -1092,6 +1158,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This will allow you to retrieve the name tag a player is currently using. """,
@@ -1140,6 +1209,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the ping of a specified player. The ping is the number of milliseconds that data takes to travel from the players client to the server or vice versa. """,
@@ -1186,6 +1258,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the ping of a specified player. The ping is the number of milliseconds that data takes to travel from the players client to the server or vice versa. """,
@@ -1234,6 +1309,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This will allow you to retrieve the player current debug script level. """,
@@ -1285,6 +1363,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the serial for a specified player. """,
@@ -1336,6 +1417,9 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the client version of the specified player as a sortable string. The string is always 15 characters long and is formatted as follows:
@@ -1402,6 +1486,9 @@ And the fifth and sixth numbers represent the build number. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets a players current wanted level. The wanted level is indicated by the amount of stars a player has on the GTA HUD. """,
@@ -1439,6 +1526,9 @@ And the fifth and sixth numbers represent the build number. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets a players current wanted level. The wanted level is indicated by the amount of stars a player has on the GTA HUD. """,
@@ -1478,6 +1568,9 @@ And the fifth and sixth numbers represent the build number. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a random player. """,
@@ -1539,6 +1632,9 @@ And the fifth and sixth numbers represent the build number. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function adds money to a players current money amount.  To set absolute values, setPlayerMoney can be used.<br> """,
@@ -1586,6 +1682,9 @@ And the fifth and sixth numbers represent the build number. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function adds money to a players current money amount.  To set absolute values, setPlayerMoney can be used.<br> """,
@@ -1637,6 +1736,9 @@ And the fifth and sixth numbers represent the build number. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can be used to check whether an hud component is visable or not. """,
@@ -1692,6 +1794,9 @@ And the fifth and sixth numbers represent the build number. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the specified players radar map has been forced on or not. """,
@@ -1729,6 +1834,9 @@ And the fifth and sixth numbers represent the build number. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the specified players radar map has been forced on or not. """,
@@ -1771,6 +1879,9 @@ And the fifth and sixth numbers represent the build number. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the local player has their map showing. """,
@@ -1813,6 +1924,9 @@ And the fifth and sixth numbers represent the build number. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Use this function to check if a player has been muted. """,
@@ -1864,6 +1978,9 @@ And the fifth and sixth numbers represent the build number. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will allow you to determine if a players name tag is currently showing. """,
@@ -1910,6 +2027,9 @@ And the fifth and sixth numbers represent the build number. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will allow you to determine if a players name tag is currently showing. """,
@@ -1949,6 +2069,9 @@ And the fifth and sixth numbers represent the build number. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Added to client side.
@@ -1987,6 +2110,9 @@ This function allows you to make the server reveal whether or not voice is curre
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Added to client side.
@@ -2066,6 +2192,9 @@ This function allows you to make the server reveal whether or not voice is curre
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function redirects the player to a specified server. """,
@@ -2120,6 +2249,9 @@ This function allows you to make the server reveal whether or not voice is curre
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will force the specified player to resend their AC info, triggering the onPlayerACInfo event again. """,
@@ -2165,6 +2297,9 @@ This function allows you to make the server reveal whether or not voice is curre
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will force the specified player to resend their mod info, triggering the onPlayerModInfo event again. """,
@@ -2236,6 +2371,9 @@ This function allows you to make the server reveal whether or not voice is curre
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to change ASE announce values for any player using a specified key.
@@ -2301,6 +2439,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the motion blur level on the clients screen. Accepts a value between 0 and 255. """,
@@ -2348,6 +2489,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the motion blur level on the clients screen. Accepts a value between 0 and 255. """,
@@ -2416,6 +2560,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will show or hide a part of the players HUD. """,
@@ -2488,6 +2635,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will show or hide a part of the players HUD. """,
@@ -2565,6 +2715,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets a players money to a certain value, regardless of current player money. It should be noted that setting negative values does not work and in fact gives the player large amounts of money. """,
@@ -2623,6 +2776,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets a players money to a certain value, regardless of current player money. It should be noted that setting negative values does not work and in fact gives the player large amounts of money. """,
@@ -2682,6 +2838,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Use this function to mute or unmute the player. """,
@@ -2744,6 +2903,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the specified players name. Note that any change made to a players name with this function is not saved in their settings so the name change only lasts till they disconnect. """,
@@ -2826,6 +2988,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This allows you to change the RGB color mixture in the name tags of players. """,
@@ -2906,6 +3071,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This allows you to change the RGB color mixture in the name tags of players. """,
@@ -2968,6 +3136,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Use this to define whether the players name tag is visible or invisible. """,
@@ -3025,6 +3196,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Use this to define whether the players name tag is visible or invisible. """,
@@ -3084,6 +3258,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This will change the text of a players nickname in the world to something besides the nickname he chose. This will not change the players actual nickname, it only changes the visible aspect inside the world (you will see his original nickname in the scoreboard and will refer to his original name in scripts). """,
@@ -3141,6 +3318,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This will change the text of a players nickname in the world to something besides the nickname he chose. This will not change the players actual nickname, it only changes the visible aspect inside the world (you will see his original nickname in the scoreboard and will refer to his original name in scripts). """,
@@ -3200,6 +3380,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This will set players debug level, equivalent to Debugging|debugscript <level>. """,
@@ -3262,6 +3445,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to change who can hear the voice of a player. """,
@@ -3324,6 +3510,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to mute voices for a player. """,
@@ -3386,6 +3575,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set a players wanted level. The wanted level is indicated by the amount of stars a player has on the GTA HUD. """,
@@ -3518,6 +3710,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function spawns the player at an arbitary point on the map.<br> """,
@@ -3587,6 +3782,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function subtracts money from a players current money amount. """,
@@ -3634,6 +3832,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function subtracts money from a players current money amount. """,
@@ -3742,6 +3943,9 @@ For server-wide changes you can use setRuleValue! """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function forces a client to capture the current screen output and send it back to the server. The image will contain the GTA HUD and the output of any dxDraw functions that are not flagged as post GUI. The image specifically excludes the chat box and all GUI (including the client console). The result is received with the event onPlayerScreenShot. """,

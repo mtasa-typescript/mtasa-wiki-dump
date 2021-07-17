@@ -72,6 +72,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Creates a patch of fire that will spread a bit and die out after a while. Because its a client side only function, other players wont see it, so custom events or custom objects will be needed to make a fire visible to some players. """,
@@ -148,6 +151,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,

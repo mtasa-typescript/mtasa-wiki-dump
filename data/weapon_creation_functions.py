@@ -72,6 +72,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Creates a Element/Weapon|custom weapon that can fire bullets. Do not confuse this with player held weapons. """,
@@ -126,6 +129,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Fires one shot from a Element/Weapon|custom weapon. """,
@@ -177,6 +183,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the total ammo a Element/Weapon|custom weapon has. """,
@@ -228,6 +237,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the amount of ammo left in a Element/Weapon|custom weapons magazine/clip. """,
@@ -279,6 +291,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This gets the firing rate to be used when a Element/Weapon|custom weapon opens fire. """,
@@ -340,6 +355,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the flags of a Element/Weapon|custom weapon. """,
@@ -405,6 +423,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the owner of a Element/Weapon|custom weapon. Weapon ownership system was, however, disabled, so this function always returns false. Please refer to setWeaponOwner for details. """,
@@ -456,6 +477,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the state of a Element/Weapon|custom weapon. """,
@@ -511,6 +535,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions gets the target of a Element/Weapon|custom weapon. """,
@@ -566,6 +593,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function resets the firing rate of a Element/Weapon|custom weapon to the default one. """,
@@ -627,6 +657,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the ammo left in a Element/Weapon|custom weapons magazine/clip. """,
@@ -689,6 +722,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the firing rate to be used when a Element/Weapon|custom weapon is in firing state. """,
@@ -761,6 +797,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets a Element/Weapon|custom weapon flags, used to change how it behaves or finds a possible target to shoot. """,
@@ -837,6 +876,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets a Element/Weapon|custom weapons state. """,
@@ -912,6 +954,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the target of a Element/Weapon|custom weapon. There are 3 different targeting modes, which are explained below. """,

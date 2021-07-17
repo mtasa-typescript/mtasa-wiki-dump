@@ -69,6 +69,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will attach a scripting function (handler) to a console command, so that whenever a player or administrator uses the command the function is called.
@@ -136,6 +139,9 @@ This can be triggered from the players console or directly from the chat box by 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will attach a scripting function (handler) to a console command, so that whenever a player or administrator uses the command the function is called.
@@ -224,6 +230,9 @@ This can be triggered from the players console or directly from the chat box by 
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Binds a players key to a handler function or command, which will be called when the key is pressed. """,
@@ -304,6 +313,9 @@ This can be triggered from the players console or directly from the chat box by 
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Binds a players key to a handler function or command, which will be called when the key is pressed. """,
@@ -374,6 +386,9 @@ This can be triggered from the players console or directly from the chat box by 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will call all the attached functions of an existing console command, for a specified player. """,
@@ -426,6 +441,9 @@ This can be triggered from the players console or directly from the chat box by 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will call all the attached functions of an existing console command, for a specified player. """,
@@ -482,6 +500,9 @@ This can be triggered from the players console or directly from the chat box by 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This retrieves the analog control state of a control.  This is useful for detecting sensitive controls, such as those used on a joypad.
@@ -529,6 +550,9 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns a list of key names that are bound to the specified game Control names|control or console command. """,
@@ -571,6 +595,9 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to retrieve a list of all the registered command handlers of a given resource (or of all resources). """,
@@ -611,6 +638,9 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to retrieve a list of all the registered command handlers of a given resource (or of all resources). """,
@@ -666,6 +696,9 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the commands bound to a key. """,
@@ -722,6 +755,9 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will check if a player is pressing a particular control. Controls are those that affect GTA. If you wish to get the state of another key, use bindKey and a command function.
@@ -809,6 +845,9 @@ Note: Not all control states are sent to the server at all times, as such their 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the functions bound to a key. To bind a function to a key use the bindKey function """,
@@ -864,6 +903,9 @@ Note: Not all control states are sent to the server at all times, as such their 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the functions bound to a key. To bind a function to a key use the bindKey function """,
@@ -913,6 +955,9 @@ Note: Not all control states are sent to the server at all times, as such their 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allow you get first key bound to command. """,
@@ -965,6 +1010,9 @@ Note: Not all control states are sent to the server at all times, as such their 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""getKeyBoundToFunction allows retrieval of the first key bound to a function. """,
@@ -1006,6 +1054,9 @@ Note: Not all control states are sent to the server at all times, as such their 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""getKeyBoundToFunction allows retrieval of the first key bound to a function. """,
@@ -1051,6 +1102,9 @@ Note: Not all control states are sent to the server at all times, as such their 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function determines if a certain key is pressed or not.
@@ -1104,6 +1158,9 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Checks whether a GTA control is enabled or disabled for a certain player. """,
@@ -1145,6 +1202,9 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Checks whether a GTA control is enabled or disabled for a certain player. """,
@@ -1217,6 +1277,9 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can be used to find out if a key has already been bound. If you do not specify a keyState or handler, any instances of key being bound will cause isKeyBound to return true. """,
@@ -1277,6 +1340,9 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes a command handler, that is one that has been added using addCommandHandler. This function can only remove command handlers that were added by the resource that it is called in. """,
@@ -1328,6 +1394,9 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes a command handler, that is one that has been added using addCommandHandler. This function can only remove command handlers that were added by the resource that it is called in. """,
@@ -1391,6 +1460,9 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets a state of a specified players control, as if they pressed or released it. """,
@@ -1468,6 +1540,9 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Enables or disables the use of all GTA controls for a specified player. """,
@@ -1531,6 +1606,9 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Enables or disables the use of all GTA controls for a specified player. """,
@@ -1595,6 +1673,9 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Enables or disables the use of a GTA control for a specific player. """,
@@ -1647,6 +1728,9 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Enables or disables the use of a GTA control for a specific player. """,
@@ -1720,6 +1804,9 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Removes an existing key bind from the specified player. """,
@@ -1788,6 +1875,9 @@ Note: If you do not specify ''handler'', any instances of ''key'' being bound wi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Removes an existing key bind from the specified player. """,

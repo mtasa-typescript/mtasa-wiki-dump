@@ -49,6 +49,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to register a custom event. Custom events function exactly like the built-in events. See event system for more information on the event system. """,
@@ -100,6 +103,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to register a custom event. Custom events function exactly like the built-in events. See event system for more information on the event system. """,
@@ -183,6 +189,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will add an event handler. An event handler is a function that will be called when the event its attached to is triggered. See event system for more information on how the event system works.
@@ -279,6 +288,9 @@ The order in which event handlers are triggered is undefined, you should not rel
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will add an event handler. An event handler is a function that will be called when the event its attached to is triggered. See event system for more information on how the event system works.
@@ -347,6 +359,9 @@ The order in which event handlers are triggered is undefined, you should not rel
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to stop the automatic internal handling of events, for example this can be used to prevent an item being given to a player when they walk over a pickup, by canceling the onPickupUse event.
@@ -381,6 +396,9 @@ If you implement your own custom events and want to handle them being cancelled,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to stop the automatic internal handling of events, for example this can be used to prevent an item being given to a player when they walk over a pickup, by canceling the onPickupUse event.
@@ -436,6 +454,9 @@ If you implement your own custom events and want to handle them being cancelled,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Stops a latent event from completing """,
@@ -477,6 +498,9 @@ If you implement your own custom events and want to handle them being cancelled,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Stops a latent event from completing """,
@@ -510,6 +534,9 @@ If you implement your own custom events and want to handle them being cancelled,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the reason for cancelling an event. """,
@@ -565,6 +592,9 @@ If you implement your own custom events and want to handle them being cancelled,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the attached functions from the event and attached element from current lua script. """,
@@ -616,6 +646,9 @@ If you implement your own custom events and want to handle them being cancelled,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the attached functions from the event and attached element from current lua script. """,
@@ -659,6 +692,9 @@ If you implement your own custom events and want to handle them being cancelled,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the currently queued latent events. The last one in the table is always the latest event queued. Each returned handle can be used with getLatentEventStatus or cancelLatentEvent """,
@@ -690,6 +726,9 @@ If you implement your own custom events and want to handle them being cancelled,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the currently queued latent events. The last one in the table is always the latest event queued. Each returned handle can be used with getLatentEventStatus or cancelLatentEvent """,
@@ -742,6 +781,9 @@ If you implement your own custom events and want to handle them being cancelled,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the status of one queued latent event. """,
@@ -783,6 +825,9 @@ If you implement your own custom events and want to handle them being cancelled,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the status of one queued latent event. """,
@@ -845,6 +890,9 @@ If you implement your own custom events and want to handle them being cancelled,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions removes a handler function from an event, so that the function is not called anymore when the event is triggered. See event system for more information on how the event system works. """,
@@ -907,6 +955,9 @@ If you implement your own custom events and want to handle them being cancelled,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions removes a handler function from an event, so that the function is not called anymore when the event is triggered. See event system for more information on how the event system works. """,
@@ -978,6 +1029,9 @@ If you implement your own custom events and want to handle them being cancelled,
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function triggers an event previously registered on a client. This is the primary means of passing information between the server and the client. Clients have a similar triggerServerEvent function that can do the reverse. You can treat this function as if it was an asynchronous function call, using triggerServerEvent to pass back any returned information if necessary.
@@ -1055,6 +1109,9 @@ Keep in mind the bandwidth issues when using events - dont pass a large list of 
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will trigger a named event on a specific element in the element tree. See event system for more information on how the event system works.
@@ -1121,6 +1178,9 @@ You can use the value returned from this function to determine if the event was 
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will trigger a named event on a specific element in the element tree. See event system for more information on how the event system works.
@@ -1216,6 +1276,9 @@ You can use the value returned from this function to determine if the event was 
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is the same as triggerClientEvent  except the transmission rate of the data contained in the arguments can be limited
@@ -1307,6 +1370,9 @@ and other network traffic is not blocked while the data is being transferred. ""
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is the same as triggerServerEvent except the transmission rate of the data contained in the arguments can be limited and other network traffic is not blocked while the data is being transferred. """,
@@ -1373,6 +1439,9 @@ and other network traffic is not blocked while the data is being transferred. ""
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function triggers an event previously registered on the server. This is the primary means of passing information between the client and the server. Servers have a similar triggerClientEvent function that can do the reverse. You can treat this function as if it was an asynchronous function call, using triggerClientEvent to pass back any returned information if necessary.
@@ -1411,6 +1480,9 @@ Keep in mind the bandwidth issues when using events - dont pass a large list of 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the last completed event was cancelled. This is mainly useful for custom events created by scripts.
@@ -1443,6 +1515,9 @@ Events can be cancelled using cancelEvent, this indicates that the resource whic
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the last completed event was cancelled. This is mainly useful for custom events created by scripts.

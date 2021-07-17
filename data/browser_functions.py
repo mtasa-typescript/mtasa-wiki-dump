@@ -42,6 +42,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the browser can return to the previous page. """,
@@ -87,6 +90,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the browser can go to the next page. """,
@@ -162,6 +168,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a new web Element/Browser|browser element. """,
@@ -226,6 +235,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function executes a Javascript string to the specified Element/Browser|browser. Works only with local browsers. """,
@@ -278,6 +290,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will attempt to focus the Element/Browser|browser or unfocus all browsers. The browser that is focused will retrieve keyboard input. """,
@@ -339,6 +354,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets a given property of a specified browser. """,
@@ -383,6 +401,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table containing the browser settings. """,
@@ -447,6 +468,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can be used to retrieve the source code of a website (asynchronously). The size of the source code is limited to 2 MiB (remaining bytes are cut). """,
@@ -502,6 +526,9 @@ function ( string code )
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the title of the passed Element/Browser|browser. """,
@@ -553,6 +580,9 @@ function ( string code )
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the URL of the specified Element/Browser|browser. """,
@@ -614,6 +644,9 @@ function ( string code )
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function injects a mouse click (state: down). """,
@@ -686,6 +719,9 @@ function ( string code )
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function injects a mouse movement. """,
@@ -749,6 +785,9 @@ function ( string code )
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function injects a mouse click (state: up). """,
@@ -821,6 +860,9 @@ function ( string code )
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function injects mouse wheel events. """,
@@ -884,6 +926,9 @@ function ( string code )
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the specified URL is blocked from being loaded. """,
@@ -936,6 +981,9 @@ function ( string code )
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if a browser is focused. """,
@@ -987,6 +1035,9 @@ function ( string code )
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if a browser is currently loading a website. """,
@@ -1068,6 +1119,9 @@ function ( string code )
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function loads the specified URL. """,
@@ -1122,6 +1176,9 @@ function ( string code )
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the browser to the previous page. """,
@@ -1167,6 +1224,9 @@ function ( string code )
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function takes the browser to the next page. """,
@@ -1212,6 +1272,9 @@ function ( string code )
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function reloads the current browsers page. """,
@@ -1277,6 +1340,9 @@ function ( string code )
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function opens a request window in order to accept the requested remote URLs. """,
@@ -1352,6 +1418,9 @@ Syntax:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Allows resizing of CEF browsers at runtime. """,
@@ -1419,6 +1488,9 @@ Syntax:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function provides a requestable ajax resource for Lua/Javascript communication for a Element/Browser|browser. """,
@@ -1492,6 +1564,9 @@ Syntax:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets a given property of a specified browser. """,
@@ -1556,6 +1631,9 @@ Syntax:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the rendering state of a browser. """,
@@ -1566,7 +1644,7 @@ Syntax:
                 result="""returns true if the state was successfully changed """,
             ),
             oop=FunctionOOP(
-                description="""As of MTA: SA {{Current Version|master}} the counterpart is not implemented yet.""",
+                description=None,
                 class_name='browser',
                 method_name="""setRenderingPaused""",
                 field="""renderingPaused""",
@@ -1618,6 +1696,9 @@ Syntax:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets either a specific Element/Browser|browsers volume, or the overall volume for browsers. """,
@@ -1680,6 +1761,9 @@ Syntax:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function toggles the visibility of the developer tools pane. """,

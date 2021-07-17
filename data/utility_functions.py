@@ -59,6 +59,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows tracing of MTA functions and events. It should only be used when debugging scripts as it may degrade script performance.
@@ -130,6 +133,9 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows tracing of MTA functions and events. It should only be used when debugging scripts as it may degrade script performance.
@@ -183,6 +189,9 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the decrypted data from https://en.wikipedia.org/wiki/Base64 base64 representation of the encrypted block """,
@@ -223,6 +232,9 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the decrypted data from https://en.wikipedia.org/wiki/Base64 base64 representation of the encrypted block """,
@@ -265,6 +277,9 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the https://en.wikipedia.org/wiki/Base64 base64 representation of the encoded block of data """,
@@ -305,6 +320,9 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the https://en.wikipedia.org/wiki/Base64 base64 representation of the encoded block of data """,
@@ -357,6 +375,9 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function performs a bitwise AND-conjunction on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#AND Bitwise operation for more details. """,
@@ -407,6 +428,9 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function performs a bitwise AND-conjunction on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#AND Bitwise operation for more details. """,
@@ -459,6 +483,9 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions performs an arithmetic shift on the integer value by integer n positions. In an arithmetic shift, zeros are shifted in to replace the discarded bits. In a right arithmetic shift, the https://en.wikipedia.org/wiki/Sign_bit sign bit is shifted in on the left, thus preserving the sign of the operand.
@@ -511,6 +538,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise ope
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions performs an arithmetic shift on the integer value by integer n positions. In an arithmetic shift, zeros are shifted in to replace the discarded bits. In a right arithmetic shift, the https://en.wikipedia.org/wiki/Sign_bit sign bit is shifted in on the left, thus preserving the sign of the operand.
@@ -575,6 +605,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise ope
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the unsigned number formed by the bits field to field + width - 1 (range: 0-31). """,
@@ -637,6 +670,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise ope
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the unsigned number formed by the bits field to field + width - 1 (range: 0-31). """,
@@ -691,6 +727,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise ope
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions performs a bitwise circular left-rotation on the integer value by integer n positions.
@@ -743,6 +782,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise oper
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions performs a bitwise circular left-rotation on the integer value by integer n positions.
@@ -797,6 +839,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise oper
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions performs a logical left shift on the integer value by integer n positions. In a logical shift, zeros are shifted in to replace the discarded bits.
@@ -849,6 +894,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions performs a logical left shift on the integer value by integer n positions. In a logical shift, zeros are shifted in to replace the discarded bits.
@@ -893,6 +941,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function performs a bitwise NOT on an (unsigned) 32-bit Int|integer. See http://en.wikipedia.org/wiki/Bitwise_operation#NOT Bitwise operation for more details. """,
@@ -933,6 +984,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function performs a bitwise NOT on an (unsigned) 32-bit Int|integer. See http://en.wikipedia.org/wiki/Bitwise_operation#NOT Bitwise operation for more details. """,
@@ -985,6 +1039,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function performs a bitwise OR-conjunction on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#OR Bitwise operation for more details. """,
@@ -1035,6 +1092,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function performs a bitwise OR-conjunction on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#OR Bitwise operation for more details. """,
@@ -1107,6 +1167,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the unsigned number formed by var value with replacement specified at bits field to field + width - 1 """,
@@ -1180,6 +1243,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the unsigned number formed by var value with replacement specified at bits field to field + width - 1 """,
@@ -1235,6 +1301,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions performs a bitwise circular right-rotation on the integer value by integer n positions.
@@ -1287,6 +1356,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise oper
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions performs a bitwise circular right-rotation on the integer value by integer n positions.
@@ -1341,6 +1413,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise oper
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions performs a logical right shift on the integer value by integer n positions. In a logical shift, zeros are shifted in to replace the discarded bits.
@@ -1393,6 +1468,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions performs a logical right shift on the integer value by integer n positions. In a logical shift, zeros are shifted in to replace the discarded bits.
@@ -1447,6 +1525,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function performs an AND-conjunction on two or more (unsigned) 32-bit Int|integers and checks, whether the conjuncted value is zero or not. See http://en.wikipedia.org/wiki/Bitwise_operation#AND Bitwise operation for more details. """,
@@ -1497,6 +1578,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function performs an AND-conjunction on two or more (unsigned) 32-bit Int|integers and checks, whether the conjuncted value is zero or not. See http://en.wikipedia.org/wiki/Bitwise_operation#AND Bitwise operation for more details. """,
@@ -1549,6 +1633,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function performs a bitwise XOR-conjunction (exclusive OR) on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#XOR Bitwise operation for more details. """,
@@ -1599,6 +1686,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function performs a bitwise XOR-conjunction (exclusive OR) on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#XOR Bitwise operation for more details. """,
@@ -1664,6 +1754,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions creates a notification ballon on the desktop. """,
@@ -1708,6 +1801,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""debugSleep freezes the client/server for the specified time. This means that all synchronization, rendering and script execution will stop except HTTP processing invoked by fetchRemote. This function only works, if development mode is enabled by setDevelopmentMode and can be utilised to build a debugger that communicates via HTTP requests with the editor/IDE. """,
@@ -1748,6 +1844,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""debugSleep freezes the client/server for the specified time. This means that all synchronization, rendering and script execution will stop except HTTP processing invoked by fetchRemote. This function only works, if development mode is enabled by setDevelopmentMode and can be utilised to build a debugger that communicates via HTTP requests with the editor/IDE. """,
@@ -1820,6 +1919,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function decodes an encoded string using the specified algorithm. The counterpart of this function is encodeString. """,
@@ -1893,6 +1995,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function decodes an encoded string using the specified algorithm. The counterpart of this function is encodeString. """,
@@ -1938,6 +2043,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will take a reference and returns its Lua element. """,
@@ -1978,6 +2086,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will take a reference and returns its Lua element. """,
@@ -2023,6 +2134,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function ensures the requested resource file is correct and then triggers onClientFileDownloadComplete.  If the file has been previously downloaded and the CRC matches, the file will not be downloaded again but onClientFileDownloadComplete will still run. The file should also be included in the resource meta.xml with the download attribute set to false, see meta.xml for more details. """,
@@ -2095,6 +2209,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function encodes a string using the specified algorithm. The counterpart of this function is decodeString. """,
@@ -2168,6 +2285,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function encodes a string using the specified algorithm. The counterpart of this function is decodeString. """,
@@ -2213,6 +2333,9 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function parses a JSON formatted string into variables. You can use toJSON to encode variables into a JSON string that can be read by this function. """,
@@ -2254,6 +2377,9 @@ note: indices of a json object such as 1: cat are being returned as string, not 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function parses a JSON formatted string into variables. You can use toJSON to encode variables into a JSON string that can be read by this function. """,
@@ -2309,6 +2435,9 @@ note: indices of a json object such as 1: cat are being returned as string, not 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will extract Red, Green, Blue and Alpha values from a hex string you provide it. These strings follow the same format as used in HTML, with addition of the Alpha values. """,
@@ -2371,6 +2500,9 @@ All colors used must begin with a # sign. """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will extract Red, Green, Blue and Alpha values from a hex string you provide it. These strings follow the same format as used in HTML, with addition of the Alpha values. """,
@@ -2414,6 +2546,9 @@ All colors used must begin with a # sign. """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the development mode of the client. For more information see setDevelopmentMode """,
@@ -2445,6 +2580,9 @@ All colors used must begin with a # sign. """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the development mode of the client. For more information see setDevelopmentMode """,
@@ -2517,6 +2655,9 @@ All colors used must begin with a # sign. """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the distance between two 2 dimensional points using the pythagorean theorem. """,
@@ -2590,6 +2731,9 @@ All colors used must begin with a # sign. """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the distance between two 2 dimensional points using the pythagorean theorem. """,
@@ -2685,6 +2829,9 @@ All colors used must begin with a # sign. """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the distance between two 3 dimensional points using the pythagorean theorem. """,
@@ -2780,6 +2927,9 @@ All colors used must begin with a # sign. """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the distance between two 3 dimensional points using the pythagorean theorem. """,
@@ -2867,6 +3017,9 @@ All colors used must begin with a # sign. """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Used for custom Lua based interpolation, returns the easing value (animation time to use in your custom interpolation) given a progress and an Easing|easing function.
@@ -2952,6 +3105,9 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Used for custom Lua based interpolation, returns the easing value (animation time to use in your custom interpolation) given a progress and an Easing|easing function.
@@ -2990,6 +3146,9 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the maximum http://en.wikipedia.org/wiki/Frame_rate FPS (Frames per second) that players on the server can run their game at. """,
@@ -3021,6 +3180,9 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the maximum http://en.wikipedia.org/wiki/Frame_rate FPS (Frames per second) that players on the server can run their game at. """,
@@ -3057,6 +3219,9 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -3109,6 +3274,9 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the players localization setting as set in the MTA client. """,
@@ -3153,6 +3321,9 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns network status information. """,
@@ -3184,6 +3355,9 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns network status information. """,
@@ -3217,6 +3391,9 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table containing network usage information about inbound and outbound packets. """,
@@ -3248,6 +3425,9 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table containing network usage information about inbound and outbound packets. """,
@@ -3314,6 +3494,9 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns performance information. """,
@@ -3380,6 +3563,9 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns performance information. """,
@@ -3434,6 +3620,9 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the server or client (if used client sided it returns time as set on clients computer) real time and returns it in a table. If you want to get the in-game time (shown on GTAs clock) use getTime. """,
@@ -3529,6 +3718,9 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the server or client (if used client sided it returns time as set on clients computer) real time and returns it in a table. If you want to get the in-game time (shown on GTAs clock) use getTime. """,
@@ -3616,6 +3808,9 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves server settings which are usually stored in the mtaserver.conf file.
@@ -3654,6 +3849,9 @@ if the setting name is serverip, may return the string auto on local servers. ""
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns amount of time that your system has been running in milliseconds. By comparing two values of getTickCount, you can determine how much time has passed (in milliseconds) between two events. This could be used to determine how efficient your code is, or to time how long a player takes to complete a task. """,
@@ -3685,6 +3883,9 @@ if the setting name is serverip, may return the string auto on local servers. ""
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns amount of time that your system has been running in milliseconds. By comparing two values of getTickCount, you can determine how much time has passed (in milliseconds) between two events. This could be used to determine how efficient your code is, or to time how long a player takes to complete a task. """,
@@ -3735,6 +3936,9 @@ if the setting name is serverip, may return the string auto on local servers. ""
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is for getting the details of a running timer. """,
@@ -3792,6 +3996,9 @@ if the setting name is serverip, may return the string auto on local servers. ""
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is for getting the details of a running timer. """,
@@ -3843,6 +4050,9 @@ if the setting name is serverip, may return the string auto on local servers. ""
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table of all active timers that the resource that calls it has created. Alternatively, only the timers with a remaining time less than or equal to a certain value can be retrieved. """,
@@ -3883,6 +4093,9 @@ if the setting name is serverip, may return the string auto on local servers. ""
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table of all active timers that the resource that calls it has created. Alternatively, only the timers with a remaining time less than or equal to a certain value can be retrieved. """,
@@ -3945,6 +4158,9 @@ if the setting name is serverip, may return the string auto on local servers. ""
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function splits a string using the given separating character and returns one specified substring. """,
@@ -4007,6 +4223,9 @@ if the setting name is serverip, may return the string auto on local servers. ""
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function splits a string using the given separating character and returns one specified substring. """,
@@ -4051,6 +4270,9 @@ if the setting name is serverip, may return the string auto on local servers. ""
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -4110,6 +4332,9 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -4162,6 +4387,9 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gives you various version information about MTA and the operating system. """,
@@ -4204,6 +4432,9 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gives you various version information about MTA and the operating system. """,
@@ -4267,6 +4498,9 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a hash of the specified string in the specified algorithm. """,
@@ -4318,6 +4552,9 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a hash of the specified string in the specified algorithm. """,
@@ -4371,6 +4608,9 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns human-readable representations of tables and MTA datatypes as a string. """,
@@ -4422,6 +4662,9 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns human-readable representations of tables and MTA datatypes as a string. """,
@@ -4573,6 +4816,9 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Interpolates a 3D Vector between a source value and a target value using either linear interpolation or any other Easing|easing function.
@@ -4729,6 +4975,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Interpolates a 3D Vector between a source value and a target value using either linear interpolation or any other Easing|easing function.
@@ -4799,6 +5048,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function intelligently outputs debug messages into the Debug Console.  It is similar to outputDebugString, but outputs useful information for any variable type, and does not require use of Luas tostring.  This includes information about element types, and table structures.  It is especially useful for quick debug tasks. """,
@@ -4860,6 +5112,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function intelligently outputs debug messages into the Debug Console.  It is similar to outputDebugString, but outputs useful information for any variable type, and does not require use of Luas tostring.  This includes information about element types, and table structures.  It is especially useful for quick debug tasks. """,
@@ -4894,6 +5149,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -4925,6 +5183,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -4967,6 +5228,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if a variable is a timer. """,
@@ -5013,6 +5277,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if a variable is a timer. """,
@@ -5055,6 +5322,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a boolean value whether the client has enabled tray notifications in his settings or not. """,
@@ -5097,6 +5367,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to kill/halt existing timers. """,
@@ -5143,6 +5416,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to kill/halt existing timers. """,
@@ -5191,6 +5467,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Calculates the MD5 hash of the specified string and returns its hexadecimal representation. """,
@@ -5231,6 +5510,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Calculates the MD5 hash of the specified string and returns its hexadecimal representation. """,
@@ -5303,6 +5585,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a new password hash using a specified hashing algorithm. """,
@@ -5377,6 +5662,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a new password hash using a specified hashing algorithm. """,
@@ -5453,6 +5741,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function verifies whether a password matches a password hash. """,
@@ -5527,6 +5818,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function verifies whether a password matches a password hash. """,
@@ -5593,6 +5887,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function stops at the first occurrence of the pattern in the input string and returns the result of the search. """,
@@ -5655,6 +5952,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function stops at the first occurrence of the pattern in the input string and returns the result of the search. """,
@@ -5729,6 +6029,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns all matches. """,
@@ -5802,6 +6105,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns all matches. """,
@@ -5877,6 +6183,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function performs a regular expression search and replace and returns the replaced string. """,
@@ -5950,6 +6259,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function performs a regular expression search and replace and returns the replaced string. """,
@@ -5995,6 +6307,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will create a reference to the given argument. """,
@@ -6035,6 +6350,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will create a reference to the given argument. """,
@@ -6087,6 +6405,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes hooks added by addDebugHook """,
@@ -6142,6 +6463,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes hooks added by addDebugHook """,
@@ -6189,6 +6513,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to reset the elapsed time in existing timers to zero. The function does not reset the times to execute count on timers which have a limited amout of repetitions. """,
@@ -6235,6 +6562,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to reset the elapsed time in existing timers to zero. The function does not reset the times to execute count on timers which have a limited amout of repetitions. """,
@@ -6286,9 +6616,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the players clipboard text (what appears when you paste with CTRL + V) Note that there is no getClipBoard function for safety reasons. """,
+                description="""This function sets the players clipboard text (what appears when you paste with CTRL + V) """,
                 arguments={
                     "theText": """The new text to be in the players clipboard when the player pastes with CTRL + V. """
                 },
@@ -6338,6 +6671,9 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the development mode. Setting development mode allows access to special commands which can assist with script debugging.
@@ -6394,6 +6730,9 @@ Shared development mode functions:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the development mode. Setting development mode allows access to special commands which can assist with script debugging.
@@ -6442,6 +6781,9 @@ Shared development mode functions:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the maximum http://en.wikipedia.org/wiki/Frame_rate FPS (Frames per second) that players on the server can run their game at. """,
@@ -6482,6 +6824,9 @@ Shared development mode functions:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the maximum http://en.wikipedia.org/wiki/Frame_rate FPS (Frames per second) that players on the server can run their game at. """,
@@ -6544,6 +6889,9 @@ Shared development mode functions:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets server settings which are stored in the Server mtaserver.conf|mtaserver.conf file. """,
@@ -6635,6 +6983,9 @@ Shared development mode functions:
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to trigger a function after a number of milliseconds have elapsed. You can call one of your own functions or a built-in function. For example, you could set a timer to spawn a player after a number of seconds have elapsed.
@@ -6717,6 +7068,9 @@ Multi Theft Auto guarantees that the timer will be triggered after at least the 
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to trigger a function after a number of milliseconds have elapsed. You can call one of your own functions or a built-in function. For example, you could set a timer to spawn a player after a number of seconds have elapsed.
@@ -6784,6 +7138,9 @@ Multi Theft Auto guarantees that the timer will be triggered after at least the 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -6830,6 +7187,9 @@ returns true otherwise """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""* The sha module and this function may conflict with eachother, if you use this function uninstall the module!
@@ -6872,6 +7232,9 @@ Calculates the sha256 hash of the specified string. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""* The sha module and this function may conflict with eachother, if you use this function uninstall the module!
@@ -6926,6 +7289,9 @@ Calculates the sha256 hash of the specified string. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function splits a string into substrings. You specify a character that will act as a separating character; this will determine where to split the sub-strings. For example, it can split the string Hello World into two strings containing the two words, by spliting using a space as a separator.
@@ -6978,6 +7344,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function splits a string into substrings. You specify a character that will act as a separating character; this will determine where to split the sub-strings. For example, it can split the string Hello World into two strings containing the two words, by spliting using a space as a separator.
@@ -7032,6 +7401,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function decrypts given https://en.wikipedia.org/wiki/Base64 base64 representation of encrypted data using the https://en.wikipedia.org/wiki/Tiny_Encryption_Algorithm Tiny Encryption Algorithm. """,
@@ -7083,6 +7455,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function decrypts given https://en.wikipedia.org/wiki/Base64 base64 representation of encrypted data using the https://en.wikipedia.org/wiki/Tiny_Encryption_Algorithm Tiny Encryption Algorithm. """,
@@ -7136,6 +7511,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions performs the https://en.wikipedia.org/wiki/Tiny_Encryption_Algorithm Tiny Encryption Algorithm on the given string and returns the https://en.wikipedia.org/wiki/Base64 base64 representation of the encrypted string. """,
@@ -7187,6 +7565,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions performs the https://en.wikipedia.org/wiki/Tiny_Encryption_Algorithm Tiny Encryption Algorithm on the given string and returns the https://en.wikipedia.org/wiki/Base64 base64 representation of the encrypted string. """,
@@ -7260,6 +7641,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the hex number of a specified color, useful for the dx functions. """,
@@ -7333,6 +7717,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the hex number of a specified color, useful for the dx functions. """,
@@ -7398,6 +7785,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function converts a single value (preferably a Lua table) into a JSON encoded string. You can use this to store the data and then load it again using fromJSON. """,
@@ -7462,6 +7852,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function converts a single value (preferably a Lua table) into a JSON encoded string. You can use this to store the data and then load it again using fromJSON. """,
@@ -7508,6 +7901,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""The function returns the string of the specified UTF code. """,
@@ -7548,6 +7944,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""The function returns the string of the specified UTF code. """,
@@ -7590,6 +7989,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""The function returns the UTF codes of the given string. """,
@@ -7630,6 +8032,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""The function returns the UTF codes of the given string. """,
@@ -7672,6 +8077,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""The function gets the real length of a string, in characters. """,
@@ -7712,6 +8120,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""The function gets the real length of a string, in characters. """,
@@ -7764,6 +8175,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""The function returns the byte position at specified character position. """,
@@ -7815,6 +8229,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""The function returns the byte position at specified character position. """,
@@ -7878,6 +8295,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""The function returns a sub string, from the specified positions on a character. """,
@@ -7940,6 +8360,9 @@ Note: You can use the function gettok to retrieve a single token from the string
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""The function returns a sub string, from the specified positions on a character. """,

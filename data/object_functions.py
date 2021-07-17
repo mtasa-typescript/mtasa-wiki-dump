@@ -42,6 +42,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function breaks a specific object. """,
@@ -161,6 +164,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Creates an object element at a given position and rotation. """,
@@ -284,6 +290,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Creates an object element at a given position and rotation. """,
@@ -342,6 +351,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the mass of a specified object. """,
@@ -405,6 +417,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -466,6 +481,9 @@ on failure: false """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the visible size of an object. """,
@@ -520,6 +538,9 @@ on failure: false """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the visible size of an object. """,
@@ -579,6 +600,9 @@ on failure: false """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if an object / model ID is breakable. """,
@@ -631,6 +655,9 @@ on failure: false """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -784,6 +811,9 @@ on failure: false """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will smoothly move an object from its current position to a specified rotation and position. """,
@@ -952,6 +982,9 @@ on failure: false """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will smoothly move an object from its current position to a specified rotation and position. """,
@@ -1015,6 +1048,9 @@ on failure: false """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function respawns a specific object. """,
@@ -1077,6 +1113,9 @@ on failure: false """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets an object to be breakable/unbreakable. """,
@@ -1140,6 +1179,9 @@ on failure: false """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the mass of a specified object. Changing the mass leads to a different movement behavior for especially dynamic objects. """,
@@ -1213,6 +1255,9 @@ on failure: false """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -1293,6 +1338,9 @@ on failure: false """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the visible size of an object. """,
@@ -1373,6 +1421,9 @@ on failure: false """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the visible size of an object. """,
@@ -1425,6 +1476,9 @@ on failure: false """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This will allow you to stop an object that is currently moving. """,
@@ -1472,6 +1526,9 @@ on failure: false """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This will allow you to stop an object that is currently moving. """,
@@ -1534,6 +1591,9 @@ on failure: false """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to toggle if an object should respawn after it got destroyed """,

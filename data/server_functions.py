@@ -30,6 +30,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the maximum number of player slots on the server. """,
@@ -66,6 +69,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the servers HTTP port. """,
@@ -102,6 +108,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the servers name. """,
@@ -138,6 +147,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current password required to join the server. """,
@@ -174,6 +186,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the servers port. """,
@@ -219,6 +234,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves whether San Andreas game glitches are enabled or not, set by using setGlitchEnabled """,
@@ -255,6 +273,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -287,6 +308,9 @@ on client this returns a boolean, whether the transfer box should be visible or 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -340,6 +364,9 @@ on client this returns a boolean, whether the transfer box should be visible or 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function enables or disables glitches that are found in the original Single Player game that can be used to gain an advantage in multiplayer.
@@ -387,6 +414,9 @@ Users of the fastmove glitch may additionally want to install https://community.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the maximum number of player slots on the server. """,
@@ -432,6 +462,9 @@ Users of the fastmove glitch may additionally want to install https://community.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the password required to join the server to the given string. """,
@@ -477,6 +510,9 @@ Users of the fastmove glitch may additionally want to install https://community.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -517,6 +553,9 @@ Users of the fastmove glitch may additionally want to install https://community.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -559,6 +598,9 @@ Users of the fastmove glitch may additionally want to install https://community.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function shuts down the server.

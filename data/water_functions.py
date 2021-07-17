@@ -159,6 +159,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Creates an area of water.
@@ -332,6 +335,9 @@ You are able to give the water a shallow water effect, which practically changes
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Creates an area of water.
@@ -390,6 +396,9 @@ You are able to give the water a shallow water effect, which practically changes
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the water color of the GTA world.
@@ -440,6 +449,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the water color of the GTA world.
@@ -522,6 +534,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to retrieve the water level from a certain location. The water level is 0 in most places though it can vary (e.g. its higher near the dam). """,
@@ -587,6 +602,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the world position of a vertex (i.e. corner) of a water area. Each water area is either a triangle or quad (rectangle) so each has 3 or 4 corners. """,
@@ -652,6 +670,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the world position of a vertex (i.e. corner) of a water area. Each water area is either a triangle or quad (rectangle) so each has 3 or 4 corners. """,
@@ -692,6 +713,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current wave height. """,
@@ -729,6 +753,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current wave height. """,
@@ -771,6 +798,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function determines whether water is drawn last in the rendering order. """,
@@ -804,6 +834,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function reset the water color of the GTA world to default. """,
@@ -841,6 +874,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function reset the water color of the GTA world to default. """,
@@ -880,6 +916,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function resets the water of the GTA world back to its default level. water|Water elements are not affected. """,
@@ -917,6 +956,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function resets the water of the GTA world back to its default level. water|Water elements are not affected. """,
@@ -995,6 +1037,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the water color of the GTA world. """,
@@ -1074,6 +1119,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the water color of the GTA world. """,
@@ -1128,6 +1176,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the water rendering order. """,
@@ -1180,6 +1231,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the height of some or all the water in the game world. """,
@@ -1242,6 +1296,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the height of some or all the water in the game world. """,
@@ -1336,6 +1393,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the world position of a corner point of a water area. """,
@@ -1426,6 +1486,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the world position of a corner point of a water area. """,
@@ -1478,6 +1541,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the wave height to the desired value, the default is 0. """,
@@ -1524,6 +1590,9 @@ Note: The server can only return the water color, if it has actually been set by
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the wave height to the desired value, the default is 0. """,

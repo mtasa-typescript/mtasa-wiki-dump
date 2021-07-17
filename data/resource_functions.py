@@ -39,6 +39,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Aborts a FetchRemote|fetchRemote or CallRemote|callRemote request. """,
@@ -79,6 +82,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Aborts a FetchRemote|fetchRemote or CallRemote|callRemote request. """,
@@ -131,6 +137,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function adds a new empty config file to an existing resource. """,
@@ -189,6 +198,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function adds a new empty mapfile to an existing resource. """,
@@ -254,6 +266,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to call a function from another resource (which must be running).
@@ -346,6 +361,9 @@ returns anything that the designated function has returned, if the function has 
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to call a function from another resource (which must be running).
@@ -490,6 +508,9 @@ returns anything that the designated function has returned, if the function has 
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to call functions that have been exported with HTTP access by other MTA servers. The calls are asynchronous so you do not get an immediate result from the call, instead a callback function you specify is called when the call returns.
@@ -567,6 +588,9 @@ In the case when the call fails, a string containing ERROR followed by an intege
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function copies a specified resource with a new name. """,
@@ -630,6 +654,9 @@ In the case when the call fails, a string containing ERROR followed by an intege
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates an new, empty resource. This creates a directory matching the name you specify on disk, then creates an empty meta.xml file with a <meta> element in it. """,
@@ -682,6 +709,9 @@ In the case when the call fails, a string containing ERROR followed by an intege
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function deletes a resource from the MTA memory and moves it to the /resources-cache/trash/ directory. """,
@@ -800,6 +830,9 @@ In the case when the call fails, a string containing ERROR followed by an intege
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to post and receive data from HTTP servers. The calls are asynchronous so you do not get an immediate result from the call, instead a callback function you specify is called when the download completes.
@@ -930,6 +963,9 @@ If you are using fetchRemote to connect to a PHP script, you can use file_get_co
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to post and receive data from HTTP servers. The calls are asynchronous so you do not get an immediate result from the call, instead a callback function you specify is called when the download completes.
@@ -1015,6 +1051,9 @@ If you are using fetchRemote to connect to a PHP script, you can use file_get_co
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets informations of an FetchRemote|fetchRemote or CallRemote|callRemote request info. """,
@@ -1088,6 +1127,9 @@ the table contains:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets informations of an FetchRemote|fetchRemote or CallRemote|callRemote request info. """,
@@ -1143,6 +1185,9 @@ the table contains:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets all FetchRemote|fetchRemote and CallRemote|callRemote requests currently running. """,
@@ -1183,6 +1228,9 @@ the table contains:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets all FetchRemote|fetchRemote and CallRemote|callRemote requests currently running. """,
@@ -1225,6 +1273,9 @@ the table contains:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the ACL request section from the meta.xml file of the given resource. """,
@@ -1270,6 +1321,9 @@ the table contains:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to return the root node of a configuration file. Config files must be predefined in a resources Meta.xml|meta file.  An alternative way to load XML files is to use xmlLoadFile. """,
@@ -1312,6 +1366,9 @@ the table contains:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to return the root node of a configuration file. Config files must be predefined in a resources Meta.xml|meta file.  An alternative way to load XML files is to use xmlLoadFile. """,
@@ -1356,6 +1413,9 @@ the table contains:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the dynamic element root of a specified resource. The dynamic element root is the parent of elements that are created by scripts (e.g. with createObject) unless they specify a different parent. """,
@@ -1396,6 +1456,9 @@ the table contains:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the dynamic element root of a specified resource. The dynamic element root is the parent of elements that are created by scripts (e.g. with createObject) unless they specify a different parent. """,
@@ -1438,6 +1501,9 @@ the table contains:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns a table containing the names of the functions that a resource exports. It will return the exports of the current resource if there is no argument passed in. """,
@@ -1478,6 +1544,9 @@ the table contains:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns a table containing the names of the functions that a resource exports. It will return the exports of the current resource if there is no argument passed in. """,
@@ -1520,6 +1589,9 @@ the table contains:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to retrieve a resource from its name. A resources name is the same as its folder or file archive name on the server (without the extension). """,
@@ -1566,6 +1638,9 @@ the table contains:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to retrieve a resource from its name. A resources name is the same as its folder or file archive name on the server (without the extension). """,
@@ -1617,6 +1692,9 @@ the table contains:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves a resources GUI element. The resources GUI element is the element in the element tree which is the default parent of all GUI elements that belong to a particular resource. It has a predefined variable called guiRoot, and each resource has one of these. You can attach event handlers to this element to easily capture events that originate from your resource (and global events that originate from the root element). """,
@@ -1669,6 +1747,9 @@ the table contains:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the value of any attribute in a resource info tag. """,
@@ -1721,6 +1802,9 @@ the table contains:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Used to check the last starting time and date of a resource """,
@@ -1767,6 +1851,9 @@ returns a string with the time and date, or false if the resource does not exist
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the reason why a resource failed to start. """,
@@ -1812,6 +1899,9 @@ returns a string with the time and date, or false if the resource does not exist
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the date and time at which a resource was last loaded in the server. """,
@@ -1869,6 +1959,9 @@ an example string is fri mar 28 13:51:04 2008. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the root element of a certain map in a specified resource. """,
@@ -1921,6 +2014,9 @@ an example string is fri mar 28 13:51:04 2008. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the name of the specified resource. """,
@@ -1967,6 +2063,9 @@ an example string is fri mar 28 13:51:04 2008. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the name of the specified resource. """,
@@ -2015,6 +2114,9 @@ an example string is fri mar 28 13:51:04 2008. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the organizational file path (e.g. admin) of a resource. """,
@@ -2066,6 +2168,9 @@ an example string is fri mar 28 13:51:04 2008. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves a resources root element. The resources root element is the element in the element tree which is the parent of all elements that belong to a particular resource (except for elements specifically created elsewhere). You can attach event handlers to this element to easily capture events that originate from your resource (and global events that originate from the root element).
@@ -2113,6 +2218,9 @@ Note: every resource has a Predefined_variables_list|predefined global variable 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves a resources root element. The resources root element is the element in the element tree which is the parent of all elements that belong to a particular resource (except for elements specifically created elsewhere). You can attach event handlers to this element to easily capture events that originate from your resource (and global events that originate from the root element).
@@ -2153,6 +2261,9 @@ Note: every resource has a Predefined_variables_list|predefined global variable 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves a table of all the resources that exist on the server. """,
@@ -2204,6 +2315,9 @@ Note: every resource has a Predefined_variables_list|predefined global variable 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the state of a given resource """,
@@ -2250,6 +2364,9 @@ the state can be one of:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the state of a given resource """,
@@ -2289,6 +2406,9 @@ the state can be one of:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the resource from which the function call was made. """,
@@ -2320,6 +2440,9 @@ the state can be one of:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the resource from which the function call was made. """,
@@ -2362,6 +2485,9 @@ the state can be one of:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Checks whether a resource is currently archived (running from within a ZIP file). """,
@@ -2413,6 +2539,9 @@ the state can be one of:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This will check if a resource is currently protected, as defined in Server_mtaserver.conf#resource|mtaserver.conf. """,
@@ -2474,6 +2603,9 @@ the state can be one of:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function finds new resources and checks for changes to the current ones. """,
@@ -2531,6 +2663,9 @@ the state can be one of:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes a file from the resource. """,
@@ -2603,6 +2738,9 @@ the state can be one of:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function renames a resource. """,
@@ -2736,6 +2874,9 @@ the state can be one of:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function restarts a running resource. Restarting will destroy all the elements that the resource has created (as stopping the resource does).
@@ -2817,6 +2958,9 @@ the state can be one of:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the value of any attribute in a resource info tag. """,
@@ -2960,6 +3104,9 @@ the state can be one of:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function starts a resource either persistently or as a dependency of the current resource. If you start the resource persistently, the resource will run until stopped either using stopResource or by the server admin. A resource started as a dependency will stop when your resource stops, if no other resources have it as a depdendency. This is the same effect as using an include in your meta.xml file.
@@ -3021,6 +3168,9 @@ The function also allows you to specify a number of boolean options. These allow
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function stops a running resource.<br> """,
@@ -3102,6 +3252,9 @@ The function also allows you to specify a number of boolean options. These allow
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the access for one ACL request of the given resource. """,

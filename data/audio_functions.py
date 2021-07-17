@@ -33,6 +33,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""The function is used to retrieve the ID of the current radio channel. """,
@@ -78,6 +81,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the given radio channel name. """,
@@ -123,6 +129,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if a big sound container is available to use or not.
@@ -169,6 +178,9 @@ In case of these invalid audio files, this function returns false.|true}} """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the beats per minute of a specific sound element.
@@ -221,6 +233,9 @@ setTimer to do this.}} """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -274,6 +289,9 @@ setTimer to do this.}} """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the states of all effects of a sound. """,
@@ -346,6 +364,9 @@ sound effect names: """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the fast fourier transform data for an audio stream which is a table of floats representing the current audio frame. This allows things like visualisations.
@@ -405,6 +426,9 @@ case of streams. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to return the playback length of the specified sound element.
@@ -461,6 +485,9 @@ If the element is a player, this function will use the players voice. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the left/right level from a sound element.
@@ -513,6 +540,9 @@ If the element is a player, this function will use the players voice. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets a custom sound max distance at which the sound stops. """,
@@ -574,6 +604,9 @@ If the element is a player, this function will use the players voice. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Used to get the meta tags attached to a sound. These provide information about the sound, for instance the title or the artist.
@@ -627,6 +660,9 @@ If the element is a player, this function will use the players voice. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets a custom sound Minimum distance at which the sound stops getting louder. """,
@@ -678,6 +714,9 @@ If the element is a player, this function will use the players voice. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the pan level of the specified sound element. """,
@@ -729,6 +768,9 @@ If the element is a player, this function will use the players voice. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to return the current seek position of the specified sound element.
@@ -793,6 +835,9 @@ If the element is a player, this function will use the players voice. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the properties of a specific sound. """,
@@ -845,6 +890,9 @@ the first float is the sounds http://en.wikipedia.org/wiki/sampling_rate sample 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to return the playback speed of the specified sound element. """,
@@ -896,6 +944,9 @@ the first float is the sounds http://en.wikipedia.org/wiki/sampling_rate sample 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to return the volume level of the specified sound element.
@@ -958,6 +1009,9 @@ If the element is a player, this function will use the players voice. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the wave form data for an audio stream which is a table of floats representing the current audio frame as a wave.
@@ -1014,6 +1068,9 @@ case of streams. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -1065,6 +1122,9 @@ case of streams. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks whether panning is enabled in a sound element or not. """,
@@ -1116,6 +1176,9 @@ case of streams. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to return the current pause state of the specified sound element.
@@ -1198,6 +1261,9 @@ If the element is a player, this function will use the players voice. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function plays a sound from GTAs big sound containers.
@@ -1316,6 +1382,9 @@ returns a sound element if the sound was successfully created, false otherwise. 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function plays a sound in the GTA world from GTAs big sound containers.
@@ -1400,6 +1469,9 @@ returns a sound element if the sound was successfully created, false otherwise. 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Creates a sound element and plays it immediately after creation for the local player.<br />
@@ -1497,6 +1569,9 @@ returns a sound element if the sound was successfully created, false otherwise. 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Creates a sound element in the GTA world and plays it immediately after creation for the local player. setElementPosition can be used to move the sound element around after it has been created. Remember to use setElementDimension after creating the sound to play it outside of dimension 0.<br />
@@ -1565,6 +1640,9 @@ returns a sound element if the sound was successfully created, false otherwise. 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function plays a frontend sound for the specified player. """,
@@ -1612,6 +1690,9 @@ returns a sound element if the sound was successfully created, false otherwise. 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function plays a frontend sound for the specified player. """,
@@ -1663,6 +1744,9 @@ returns a sound element if the sound was successfully created, false otherwise. 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the heard radio channel, even while not in a vehicle. """,
@@ -1728,6 +1812,9 @@ returns a sound element if the sound was successfully created, false otherwise. 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Used to enable or disable specific sound effects.
@@ -1792,6 +1879,9 @@ Use a player element to control a players voice with this function. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -1860,6 +1950,9 @@ end)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets a custom sound max distance at which the sound stops. """,
@@ -1922,6 +2015,9 @@ end)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets a custom sound Minimum distance at which the sound stops getting louder. """,
@@ -1984,6 +2080,9 @@ end)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to change the pan level of the specified sound element. """,
@@ -2046,6 +2145,9 @@ end)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function toggles the panning of a sound (hearing it closer to the left or right side of the speakers due to the camera position). By default a sound has its panning enabled. """,
@@ -2109,6 +2211,9 @@ if the sound is not 3d, this function will return true as well, but issoundpanni
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to either pause or unpause the playback of the specified sound element.
@@ -2172,6 +2277,9 @@ Use a player element to control a players voice with this function. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to change the seek position of the specified sound element.
@@ -2266,6 +2374,9 @@ Use a player element to control a players voice with this function.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function edits the properties of a specific sound. """,
@@ -2331,6 +2442,9 @@ Use a player element to control a players voice with this function.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can be used to change the playback speed of the specified sound element. """,
@@ -2393,6 +2507,9 @@ Use a player element to control a players voice with this function.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to change the volume level of the specified sound element.
@@ -2446,6 +2563,9 @@ Use a player element to control a players voice with this function. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Stops the sound playback for specified sound element. The sound element is also destroyed. """,

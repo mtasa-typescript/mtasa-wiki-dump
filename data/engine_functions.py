@@ -72,6 +72,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function applies a shader to one or more world textures.
@@ -131,6 +134,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -176,6 +182,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the model ID of an object model from object name. This function is the counterpart of engineGetModelNameFromID. """,
@@ -227,6 +236,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the LOD distance for any object / model ID. """,
@@ -278,6 +290,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the model name of an object model from model ID. This function is the counterpart of engineGetModelIDFromName. """,
@@ -329,6 +344,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -374,6 +392,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table of the world textures which are applied to the specified model. """,
@@ -435,6 +456,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -485,6 +509,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -540,6 +567,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -596,6 +626,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -652,6 +685,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a list of the world textures which are being used to draw the current scene. """,
@@ -714,6 +750,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function imports (adds) a loaded RenderWare Texture Dictionary into a specific model. This is necessary in order for the DFF loader to find any new textures. Please call this function before loading the DFF model file, in order to allow the DFF loading process to find the new textures. This function can also replace default GTA textures, so that it becomes possible to e.g. put custom images on existing billboards. Ped and weapon textures are also supported.
@@ -776,6 +815,9 @@ See here for Optimize_Custom_TXD|tips on reducing the size of TXD files.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function loads a RenderWare Collision (COL 1/2/3) file into GTA. The collisions can then be used to provide collisions for in-game objects.
@@ -837,6 +879,9 @@ This is a client side function. Be sure to transfer your COL file by including i
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function loads a RenderWare Model (DFF) file into GTA.
@@ -909,6 +954,9 @@ The returned DFF element is an element in the element tree, just like vehicles a
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function loads an animation library (IFP) file into GTA with a custom block name. All three IFP formats are supported ANPK, ANP2, and ANP3. Unfortunately, GTA 3 animations are not supported, however, you can load GTA:VC IFP files using this function. You dont have to replace any animation to play a custom one, to play a custom animation, load the IFP file using this function, then use SetPedAnimation|setPedAnimation.
@@ -974,6 +1022,9 @@ If you wish to replace a GTA internal animation with a custom one, you can use E
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function loads a RenderWare Texture Dictionary (TXD) file into GTA. The texture dictionary can then be used to provide textures.
@@ -1047,6 +1098,9 @@ This is a client side function. Be sure to transfer your TXD file by including i
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes a shader from one or more world textures. """,
@@ -1140,6 +1194,9 @@ This is a client side function. Be sure to transfer your TXD file by including i
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function replaces a specific internal (default) animation with a custom one that has been loaded using EngineLoadIFP|engineLoadIFP function. This function only affects a specific player or ped, the Animations|internal animation is not replaced for everyone, for instance, different players and peds are able to have completely different crouching, walking, and fighting etc., animations running simultaneously at the same time. Also, its not synchronized, youll need to execute this function on every client in Lua to synchronize it.
@@ -1201,6 +1258,9 @@ It should be noted that partial animations are not supported, you can still repl
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function replaces the collision file of the given model id to the collision file passed. Use engineLoadCOL to load the collision file first. """,
@@ -1273,6 +1333,9 @@ It should be noted that partial animations are not supported, you can still repl
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function replaces the given model ID with the model contained in a DFF file loaded by engineLoadDFF. This function supports vehicle|vehicles, object|objects, ped|peds and player|players but not CJ clothing and body parts.
@@ -1338,6 +1401,9 @@ To replace weapon models you must use their object IDs, not weapon IDs. There is
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""*before release 1.5.8-20716 this must be ped. """,
@@ -1384,6 +1450,9 @@ To replace weapon models you must use their object IDs, not weapon IDs. There is
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -1435,6 +1504,9 @@ To replace weapon models you must use their object IDs, not weapon IDs. There is
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -1500,6 +1572,9 @@ To replace weapon models you must use their object IDs, not weapon IDs. There is
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function restores internal (default) animations that were replaced using EngineReplaceAnimation|engineReplaceAnimation function. This function only affects a specific player or ped just like EngineReplaceAnimation|engineReplaceAnimation.
@@ -1550,6 +1625,9 @@ If 3rd parameter (animation name) is provided, then only that specific animation
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function restores the original collision model of the given model ID. Reverses the effect of engineReplaceCOL. """,
@@ -1601,6 +1679,9 @@ If 3rd parameter (animation name) is provided, then only that specific animation
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function restores the visual DFF model of the given model ID. This restores the result of engineReplaceModel. """,
@@ -1652,6 +1733,9 @@ If 3rd parameter (animation name) is provided, then only that specific animation
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -1707,6 +1791,9 @@ If 3rd parameter (animation name) is provided, then only that specific animation
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -1744,6 +1831,9 @@ If 3rd parameter (animation name) is provided, then only that specific animation
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -1799,6 +1889,9 @@ If 3rd parameter (animation name) is provided, then only that specific animation
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function enables or disables asynchronous model loading. Enabling asynchronous model loading may reduce the small pauses that occur when a new model is displayed for the first time. However, it can cause the new models to appear slightly later than they might have otherwise. """,
@@ -1861,6 +1954,9 @@ If 3rd parameter (animation name) is provided, then only that specific animation
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets a custom LOD distance for any object / model ID. This is the distance at which objects of that model ID are switched to their LOD model, or (if there is no LOD model) become invisible.
@@ -1933,6 +2029,9 @@ For low LOD elements, engineSetModelLODDistance still has a limit of 300 units, 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -1999,6 +2098,9 @@ For low LOD elements, engineSetModelLODDistance still has a limit of 300 units, 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -2066,6 +2168,9 @@ For low LOD elements, engineSetModelLODDistance still has a limit of 300 units, 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -2133,6 +2238,9 @@ For low LOD elements, engineSetModelLODDistance still has a limit of 300 units, 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,

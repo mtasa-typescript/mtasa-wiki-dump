@@ -39,6 +39,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets a settings value, or a group of settings values, from the settings system|settings registry. """,
@@ -98,6 +101,9 @@ it returns false if the specified setting or settings group doesnt exist, or if 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to save arbitrary data under a certain name on the settings system|settings registry.

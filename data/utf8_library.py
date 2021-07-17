@@ -59,6 +59,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the codepoints for the i-th through j-th character of the string passed. """,
@@ -121,6 +124,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the codepoints for the i-th through j-th character of the string passed. """,
@@ -165,6 +171,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Generates a string representing the character codepoints as arguments. """,
@@ -205,6 +214,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Generates a string representing the character codepoints as arguments. """,
@@ -263,7 +275,7 @@ DUMP_PARTIAL = [
                                 name='offset',
                                 argument_type=FunctionType(
                                     names=['int'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='1',
                             )
@@ -271,6 +283,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Converts the UTF-8 codepoint position to byte-string position. """,
@@ -329,7 +344,7 @@ DUMP_PARTIAL = [
                                 name='offset',
                                 argument_type=FunctionType(
                                     names=['int'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='1',
                             )
@@ -337,6 +352,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Converts the UTF-8 codepoint position to byte-string position. """,
@@ -381,6 +399,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Escapes a string to a UTF-8 format string. It supports several escape formats, see the formatting table. """,
@@ -421,6 +442,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Escapes a string to a UTF-8 format string. It supports several escape formats, see the formatting table. """,
@@ -497,6 +521,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Finds the first occurrence of the http://lua-users.org/wiki/PatternsTutorial pattern in the string passed. If an instance of the pattern is found, a pair of values representing the start and the end of the matched string is returned. """,
@@ -574,6 +601,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Finds the first occurrence of the http://lua-users.org/wiki/PatternsTutorial pattern in the string passed. If an instance of the pattern is found, a pair of values representing the start and the end of the matched string is returned. """,
@@ -619,6 +649,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Converts a UTF-8 string to folded case (lowercase), which can be used to compare two strings. If input is an integer, its treat as a codepoint and a convert codepoint (integer) is returned. """,
@@ -659,6 +692,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Converts a UTF-8 string to folded case (lowercase), which can be used to compare two strings. If input is an integer, its treat as a codepoint and a convert codepoint (integer) is returned. """,
@@ -711,6 +747,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a pattern finding iterator for UTF-8 strings. The iterator will search through the string input looking for instances of the pattern you passed. For more information on iterators read the http://lua-users.org/wiki/ForTutorial ForTutorial and http://lua-users.org/wiki/IteratorsTutorial IteratorsTutorial. """,
@@ -762,6 +801,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a pattern finding iterator for UTF-8 strings. The iterator will search through the string input looking for instances of the pattern you passed. For more information on iterators read the http://lua-users.org/wiki/ForTutorial ForTutorial and http://lua-users.org/wiki/IteratorsTutorial IteratorsTutorial. """,
@@ -835,6 +877,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns a copy of the original input string with replaced matches from the pattern by the replacement value. """,
@@ -908,6 +953,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns a copy of the original input string with replaced matches from the pattern by the replacement value. """,
@@ -973,6 +1021,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Inserts a substring into input string. If insert-position is given, the substring will be inserted before the character at this index, otherwise the substring will concatenate to input. The insert position may be negative. """,
@@ -1035,6 +1086,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Inserts a substring into input string. If insert-position is given, the substring will be inserted before the character at this index, otherwise the substring will concatenate to input. The insert position may be negative. """,
@@ -1099,6 +1153,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the length of the string passed. """,
@@ -1161,6 +1218,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the length of the string passed. """,
@@ -1225,6 +1285,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Extract substrings by matching patterns in the input string. This function can be used to extract specific information from a string. """,
@@ -1287,6 +1350,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Extract substrings by matching patterns in the input string. This function can be used to extract specific information from a string. """,
@@ -1341,6 +1407,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Compares two strings in lower-case and returns the difference indicator (see table below) as an integer value. """,
@@ -1392,6 +1461,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Compares two strings in lower-case and returns the difference indicator (see table below) as an integer value. """,
@@ -1451,7 +1523,7 @@ DUMP_PARTIAL = [
                                 name='offset',
                                 argument_type=FunctionType(
                                     names=['int'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='1',
                             )
@@ -1459,6 +1531,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This is an iteration function to traverse each single codepoint of a UTF-8 string. """,
@@ -1517,7 +1592,7 @@ DUMP_PARTIAL = [
                                 name='offset',
                                 argument_type=FunctionType(
                                     names=['int'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='1',
                             )
@@ -1525,6 +1600,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This is an iteration function to traverse each single codepoint of a UTF-8 string. """,
@@ -1589,6 +1667,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes a substring in a UTF-8 string by using a position range. """,
@@ -1651,6 +1732,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes a substring in a UTF-8 string by using a position range. """,
@@ -1695,6 +1779,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Reverses the input string. """,
@@ -1735,6 +1822,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Reverses the input string. """,
@@ -1797,6 +1887,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns a substring of the string passed. The substring starts at i. If the third argument j is not given, the substring will end at the end of the string. If the third argument is given, the substring ends at and includes j. """,
@@ -1859,6 +1952,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns a substring of the string passed. The substring starts at i. If the third argument j is not given, the substring will end at the end of the string. If the third argument is given, the substring ends at and includes j. """,
@@ -1903,6 +1999,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Converts a UTF-8 string to title case (uppercase). If input is an integer, it is treated as a codepoint and a converted codepoint (integer) is returned. """,
@@ -1943,6 +2042,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Converts a UTF-8 string to title case (uppercase). If input is an integer, it is treated as a codepoint and a converted codepoint (integer) is returned. """,
@@ -2005,6 +2107,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Calculates the width of UTF-8 strings with special/unprintable characters, which require special width treatment. """,
@@ -2067,6 +2172,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Calculates the width of UTF-8 strings with special/unprintable characters, which require special width treatment. """,
@@ -2149,6 +2257,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the location, offset and width of the character at the given location in the UTF-8 string. """,
@@ -2229,6 +2340,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the location, offset and width of the character at the given location in the UTF-8 string. """,

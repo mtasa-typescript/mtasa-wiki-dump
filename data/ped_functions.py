@@ -69,6 +69,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the current clothes on a ped. """,
@@ -148,6 +151,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the current clothes on a ped. """,
@@ -202,6 +208,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the given ped can fall off bikes. """,
@@ -300,6 +309,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Creates a Ped in the GTA world. """,
@@ -385,6 +397,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Creates a Ped in the GTA world. """,
@@ -441,6 +456,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns an integer that contains the ammo in a specified peds weapon. See weapon|Weapon Info """,
@@ -498,6 +516,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns an integer that contains the ammo in a specified peds weapon. See weapon|Weapon Info """,
@@ -570,6 +591,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the analog control state of a ped, as set by setPedAnalogControlState. """,
@@ -642,6 +666,9 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the animation of a player or ped that was set using setPedAnimation. """,
@@ -690,6 +717,9 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current armor of the specified ped. """,
@@ -736,6 +766,9 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current armor of the specified ped. """,
@@ -805,6 +838,9 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the 3D world coordinates of a specific bone of a given ped. """,
@@ -887,6 +923,9 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the current camera rotation of a ped. """,
@@ -949,6 +988,9 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the current clothes texture and model of a certain type on a ped. """,
@@ -1010,6 +1052,9 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the current clothes texture and model of a certain type on a ped. """,
@@ -1059,6 +1104,9 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function detects the element a ped is standing on. This can be a vehicle or an object. """,
@@ -1105,6 +1153,9 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function detects the element a ped is standing on. This can be a vehicle or an object. """,
@@ -1166,6 +1217,9 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Checks whether a ped or the localplayer has a certain control pressed. """,
@@ -1215,6 +1269,9 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Retrieves the fighting style a player/ped is currently using. """,
@@ -1261,6 +1318,9 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Retrieves the fighting style a player/ped is currently using. """,
@@ -1309,6 +1369,9 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current gravity for the specified ped. The default gravity is 0.008. """,
@@ -1363,6 +1426,9 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current move state for the specified ped. """,
@@ -1405,6 +1471,9 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the vehicle that the ped is currently in or is trying to enter, if any. """,
@@ -1451,6 +1520,9 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the vehicle that the ped is currently in or is trying to enter, if any. """,
@@ -1499,6 +1571,9 @@ addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the seat that a specific ped is sitting in in a vehicle. """,
@@ -1550,6 +1625,9 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the seat that a specific ped is sitting in in a vehicle. """,
@@ -1606,6 +1684,9 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current oxygen level of the specified ped. """,
@@ -1657,6 +1738,9 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the name of a specified peds current simplest task.<br> """,
@@ -1709,6 +1793,9 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the value of the specified statistic of a specific ped. """,
@@ -1766,6 +1853,9 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the value of the specified statistic of a specific ped. """,
@@ -1815,6 +1905,9 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the element a ped is currently targeting. """,
@@ -1866,6 +1959,9 @@ this is only effective on physical gta elements, namely:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the element a ped is currently targeting. """,
@@ -1930,6 +2026,9 @@ this is only effective on physical gta elements, namely:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows retrieval of where a peds target is blocked. It will only be blocked if there is an obstacle within a peds target range. """,
@@ -1983,6 +2082,9 @@ this is only effective on physical gta elements, namely:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows retrieval of the position where a peds target range ends, when he is aiming with a weapon. """,
@@ -2042,6 +2144,9 @@ this is only effective on physical gta elements, namely:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows retrieval of the position a peds target range begins, when he is aiming with a weapon. """,
@@ -2119,6 +2224,9 @@ this is only effective on physical gta elements, namely:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get any simple or complex task of a certain type for a ped.
@@ -2190,6 +2298,9 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns an integer that contains the total ammo in a specified peds weapon. See weapon|Weapon Info """,
@@ -2247,6 +2358,9 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns an integer that contains the total ammo in a specified peds weapon. See weapon|Weapon Info """,
@@ -2303,6 +2417,9 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the current voice of a ped. """,
@@ -2345,6 +2462,9 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -2391,6 +2511,9 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -2449,6 +2572,9 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function tells you which weapon type is in a certain weapon|weapon slot of a ped. """,
@@ -2507,6 +2633,9 @@ it should be noted that if a ped runs out of ammo for a weapon, it will still re
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function tells you which weapon type is in a certain weapon|weapon slot of a ped. """,
@@ -2568,6 +2697,9 @@ it should be noted that if a ped runs out of ammo for a weapon, it will still re
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the world position of the muzzle of the weapon that a ped is currently carrying. The weapon muzzle is the end of the gun barrel where the bullets/rockets/... come out.
@@ -2611,6 +2743,9 @@ The position may not be accurate if the ped is off screen. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets a peds selected weapon slot. """,
@@ -2657,6 +2792,9 @@ The position may not be accurate if the ped is off screen. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets a peds selected weapon slot. """,
@@ -2696,6 +2834,9 @@ The position may not be accurate if the ped is off screen. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns all valid ped models. """,
@@ -2727,6 +2868,9 @@ The position may not be accurate if the ped is off screen. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns all valid ped models. """,
@@ -2802,6 +2946,9 @@ The position may not be accurate if the ped is off screen. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gives the specified weapon to the specified ped. This function cant be used on players, use giveWeapon for that.
@@ -2852,6 +2999,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the specified ped is choking (coughing) or not. This happens as a result of weapons that produce smoke - smoke grenades, fire extinguisher and the spray can. """,
@@ -2898,6 +3048,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the specified ped is choking (coughing) or not. This happens as a result of weapons that produce smoke - smoke grenades, fire extinguisher and the spray can. """,
@@ -2946,6 +3099,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the specified ped is dead or not. """,
@@ -2992,6 +3148,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the specified ped is dead or not. """,
@@ -3040,6 +3199,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the ped is in the driveby state. """,
@@ -3086,6 +3248,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the ped is in the driveby state. """,
@@ -3147,6 +3312,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the specified ped is carrying out a certain List of player tasks|task. """,
@@ -3190,6 +3358,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the specified ped is ducked (crouched) or not. """,
@@ -3236,6 +3407,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the specified ped is ducked (crouched) or not. """,
@@ -3287,6 +3461,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if player feets are bleeding. """,
@@ -3329,6 +3506,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""With this function, you can check if a ped has a head or not. """,
@@ -3369,6 +3549,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""With this function, you can check if a ped has a head or not. """,
@@ -3411,6 +3594,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Checks whether or not a given ped is currently in a vehicle. """,
@@ -3457,6 +3643,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Checks whether or not a given ped is currently in a vehicle. """,
@@ -3505,6 +3694,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the specified ped is on fire or not. """,
@@ -3551,6 +3743,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if the specified ped is on fire or not. """,
@@ -3599,6 +3794,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to determine whether or not a ped is on the ground. This is for on-foot usage only. """,
@@ -3645,6 +3843,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to determine whether or not a ped is on the ground. This is for on-foot usage only. """,
@@ -3696,6 +3897,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to determine whether or not a ped is currently reloading their weapon. Useful to stop certain quick reload exploits.}} """,
@@ -3738,6 +3942,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks whether health target markers are drawn as set by setPedTargetingMarkerEnabled or not. """,
@@ -3780,6 +3987,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -3826,6 +4036,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -3914,6 +4127,9 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function kills the specified ped.
@@ -4005,6 +4221,9 @@ From v1.5.3 onwards this function is now available client side. Only works on cl
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function kills the specified ped.
@@ -4058,6 +4277,9 @@ From v1.5.3 onwards this function is now available client side. Only works on cl
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function makes a pedestrian reload their weapon. """,
@@ -4146,6 +4368,9 @@ due to these circumstances causing problems with this function """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to remove the current clothes of a certain type on a ped. It will remove them if the clothesTexture and clothesModel arent specified, or if they match the current clothes on that slot. """,
@@ -4225,6 +4450,9 @@ due to these circumstances causing problems with this function """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to remove the current clothes of a certain type on a ped. It will remove them if the clothesTexture and clothesModel arent specified, or if they match the current clothes on that slot. """,
@@ -4276,6 +4504,9 @@ due to these circumstances causing problems with this function """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes a ped from a vehicle immediately. This works for drivers and passengers. Note that this removes the ped from the vehicle and puts him in the exact position where the command was initiated.
@@ -4323,6 +4554,9 @@ Available client side from 1.3.1 (It will only work with client side vehicles an
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes a ped from a vehicle immediately. This works for drivers and passengers. Note that this removes the ped from the vehicle and puts him in the exact position where the command was initiated.
@@ -4395,6 +4629,9 @@ Available client side from 1.3.1 (It will only work with client side vehicles an
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This sets the analog control state of a control for the local player.
@@ -4475,6 +4712,9 @@ To change the analog controls for a ped, please use setPedAnalogControlState. ""
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to set a peds aim target to a specific point. If a ped is within a certain range defined by getPedTargetStart and getPedTargetEnd he will be targeted and shot.
@@ -4544,6 +4784,9 @@ Note: If you wish to make a ped shoot you must use this in conjunction with an e
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets an analog state of a specified peds control, as if they pressed or released it.
@@ -4679,6 +4922,9 @@ This function only works on peds, to change the analog control state for a playe
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the current Animations|animation of a player or ped. Not specifying the type of animation will automatically cancel the current one. """,
@@ -4825,6 +5071,9 @@ This function only works on peds, to change the analog control state for a playe
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the current Animations|animation of a player or ped. Not specifying the type of animation will automatically cancel the current one. """,
@@ -4903,6 +5152,9 @@ This function only works on peds, to change the analog control state for a playe
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the current animation progress of a player or ped. """,
@@ -4971,6 +5223,9 @@ This function only works on peds, to change the analog control state for a playe
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the current animation progress of a player or ped. """,
@@ -5041,6 +5296,9 @@ This function only works on peds, to change the analog control state for a playe
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the speed of a currently running animation for a particular player or ped. """,
@@ -5109,6 +5367,9 @@ This function only works on peds, to change the analog control state for a playe
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the speed of a currently running animation for a particular player or ped. """,
@@ -5169,6 +5430,9 @@ This function only works on peds, to change the analog control state for a playe
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to set the armor value of a ped. """,
@@ -5226,6 +5490,9 @@ This function only works on peds, to change the analog control state for a playe
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to set the armor value of a ped. """,
@@ -5288,6 +5555,9 @@ This function only works on peds, to change the analog control state for a playe
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the camera rotation of a ped, e.g. where its camera will look at. Dont confuse this with getCameraMatrix, because that function is designed for fixed (scripted) camera moves. """,
@@ -5350,6 +5620,9 @@ This function only works on peds, to change the analog control state for a playe
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function controls if a ped can fall of his bike by accident - namely by banging into a wall. """,
@@ -5409,6 +5682,9 @@ This function only works on peds, to change the analog control state for a playe
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can be used to force the ped to do the choking (coughing) animation until he respawns or toggled off using this function. The animation can not be cancelled by a player its applied to, and he will not loose health. """,
@@ -5484,6 +5760,9 @@ This function only works on peds, to change the analog control state for a playe
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function makes a ped or player press or release a certain control. """,
@@ -5544,6 +5823,9 @@ This function only works on peds, to change the analog control state for a playe
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the driveby state of a ped. """,
@@ -5595,6 +5877,9 @@ This function only works on peds, to change the analog control state for a playe
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the driveby state of a ped. """,
@@ -5661,6 +5946,9 @@ This function only works on peds, to change the analog control state for a playe
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""* If forced to enter as a passenger, it doesnt work if all passenger seats are occupied.
@@ -5732,6 +6020,9 @@ this function returns false in the following cases
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -5791,6 +6082,9 @@ this function returns false in the following cases
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Changes a peds fighting style. Most styles only change the special attack which is done using the Aim and Enter keys. """,
@@ -5842,6 +6136,9 @@ this function returns false in the following cases
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Changes a peds fighting style. Most styles only change the special attack which is done using the Aim and Enter keys. """,
@@ -5898,6 +6195,9 @@ this function returns false in the following cases
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function makes a players foot prints bloody. """,
@@ -5951,6 +6251,9 @@ this function returns false in the following cases
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the gravity level of a ped. """,
@@ -6013,6 +6316,9 @@ this function returns false in the following cases
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""With this function, you can set if a ped has a head or not. """,
@@ -6070,6 +6376,9 @@ this function returns false in the following cases
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""With this function, you can set if a ped has a head or not. """,
@@ -6174,7 +6483,7 @@ this function returns false in the following cases
                                 name='target',
                                 argument_type=FunctionType(
                                     names=['element'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='nil',
                             )
@@ -6182,6 +6491,9 @@ this function returns false in the following cases
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Makes a ped turn his head and look at a specific world position or element. """,
@@ -6192,7 +6504,7 @@ this function returns false in the following cases
                     "z": """the z coordinate of the world position to look at. """,
                     "time": """the time, in milliseconds, during which the ped will look at the target. Once this time has elapsed, he will look ahead again like before the function was applied. A time of 0 will immediately stop any lookat. A negative time will make the ped look at the target indefinitely. """,
                     "blend": """the time, in milliseconds, during which the look will blend. """,
-                    "target": """if this argument is specified, the position arguments will be ignored and the peds gaze will follow the specified element instead. Can be a player, a vehicle, another ped etc. """
+                    "target": """if this argument is specified, the position arguments will be mean offsets relative to the target and the peds gaze will follow the specified element instead. Can be a player, a vehicle, another ped etc. """
                 },
                 result=""" """,
             ),
@@ -6240,6 +6552,9 @@ this function returns false in the following cases
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can be used to set a ped on fire or extinguish a fire on it. """,
@@ -6297,6 +6612,9 @@ this function returns false in the following cases
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can be used to set a ped on fire or extinguish a fire on it. """,
@@ -6359,6 +6677,9 @@ this function returns false in the following cases
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to set the oxygen level of a ped. """,
@@ -6428,6 +6749,9 @@ this function returns false in the following cases
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""*Things like infinite run, fire proof CJ, 150 armor have special activation flags. They need a way to be triggered on/off.
@@ -6492,6 +6816,9 @@ When this function is used client side, it can only be used on client side creat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""*Things like infinite run, fire proof CJ, 150 armor have special activation flags. They need a way to be triggered on/off.
@@ -6541,6 +6868,9 @@ When this function is used client side, it can only be used on client side creat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to toggle the health target marker on top of all pedestrians. """,
@@ -6606,6 +6936,9 @@ When this function is used client side, it can only be used on client side creat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Changes the voice of a ped. """,
@@ -6666,6 +6999,9 @@ When this function is used client side, it can only be used on client side creat
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the walking style of a ped. A walking style consists of a set of animations that are used for walking, running etc. """,
@@ -6724,6 +7060,9 @@ The possible walking styles are: """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the walking style of a ped. A walking style consists of a set of animations that are used for walking, running etc. """,
@@ -6784,6 +7123,9 @@ The possible walking styles are: """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the selected weapon slot of a ped. """,
@@ -6841,6 +7183,9 @@ The possible walking styles are: """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the selected weapon slot of a ped. """,
@@ -6900,6 +7245,9 @@ The possible walking styles are: """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to give or take a jetpack from a ped, it wont work if the ped is in a vehicle.
@@ -6973,6 +7321,9 @@ As such, you should either expect it to fail sometimes, or repeatedly try to giv
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to warp or force a ped into a vehicle.  There are no animations involved when this happens.
@@ -7046,6 +7397,9 @@ Available client side from 1.3.1 (It will only work with client side vehicles an
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to warp or force a ped into a vehicle.  There are no animations involved when this happens.

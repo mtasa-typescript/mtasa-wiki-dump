@@ -149,6 +149,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a blip element, which is displayed as an icon on the clients radar. """,
@@ -289,6 +292,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a blip element, which is displayed as an icon on the clients radar. """,
@@ -421,6 +427,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a blip that is attached to an element. This blip is displayed as an icon on the clients radar and will follow the element that it is attached to around. """,
@@ -541,6 +550,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a blip that is attached to an element. This blip is displayed as an icon on the clients radar and will follow the element that it is attached to around. """,
@@ -595,6 +607,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will tell you what color a blip is. This color is only applicable to the default blip icon (Image:Blipid0s.png|12px, Image:Blipid0u.png|12px or Image:Blipid0d.png|12px). All other icons will ignore this. """,
@@ -653,6 +668,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will tell you what color a blip is. This color is only applicable to the default blip icon (Image:Blipid0s.png|12px, Image:Blipid0u.png|12px or Image:Blipid0d.png|12px). All other icons will ignore this. """,
@@ -701,6 +719,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the icon a blip currently has. """,
@@ -747,6 +768,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the icon a blip currently has. """,
@@ -795,6 +819,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the Z ordering value of a blip. The Z ordering determines if a blip appears on top of or below other blips. Blips with a higher Z ordering value appear on top of blips with a lower value. The default value for all blips is 0. """,
@@ -841,6 +868,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the Z ordering value of a blip. The Z ordering determines if a blip appears on top of or below other blips. Blips with a higher Z ordering value appear on top of blips with a lower value. The default value for all blips is 0. """,
@@ -889,6 +919,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the size of a blip.. """,
@@ -935,6 +968,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the size of a blip.. """,
@@ -983,6 +1019,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will tell you what visible distance a blip has. """,
@@ -1029,6 +1068,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will tell you what visible distance a blip has. """,
@@ -1117,6 +1159,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will let you change the color of a blip. This color is only applicable to the default blip icon (Image:Blipid0s.png|12px, Image:Blipid0u.png|12px or Image:Blipid0d.png|12px). All other icons will ignore this. """,
@@ -1207,6 +1252,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will let you change the color of a blip. This color is only applicable to the default blip icon (Image:Blipid0s.png|12px, Image:Blipid0u.png|12px or Image:Blipid0d.png|12px). All other icons will ignore this. """,
@@ -1269,6 +1317,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the icon for an existing blip element. """,
@@ -1326,6 +1377,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the icon for an existing blip element. """,
@@ -1385,6 +1439,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the Z ordering of a blip. It allows you to make a blip appear on top of or below other blips. """,
@@ -1442,6 +1499,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the Z ordering of a blip. It allows you to make a blip appear on top of or below other blips. """,
@@ -1501,6 +1561,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the size of a blips icon. """,
@@ -1558,6 +1621,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the size of a blips icon. """,
@@ -1617,6 +1683,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will set the visible distance of a blip. """,
@@ -1674,6 +1743,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will set the visible distance of a blip. """,

@@ -99,6 +99,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a pickup element, which is placed in the GTA world and can be picked up to retrieve a health, armour or a weapon. """,
@@ -242,6 +245,9 @@ Other ID Object """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a pickup element, which is placed in the GTA world and can be picked up to retrieve a health, armour or a weapon. """,
@@ -327,6 +333,9 @@ Other ID Object """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the amount of ammo in a weapon pickup. """,
@@ -367,6 +376,9 @@ Other ID Object """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the amount of ammo in a weapon pickup. """,
@@ -409,6 +421,9 @@ Other ID Object """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the amount of health or armor given from a pickup. """,
@@ -449,6 +464,9 @@ Other ID Object """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the amount of health or armor given from a pickup. """,
@@ -491,6 +509,9 @@ Other ID Object """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the time it takes before a pickup respawns after a player picked it up. The time is specified in milliseconds. """,
@@ -536,6 +557,9 @@ Other ID Object """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the type of a pickup, either a health, armour or weapon pickup. """,
@@ -580,6 +604,9 @@ Other ID Object """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the type of a pickup, either a health, armour or weapon pickup. """,
@@ -626,6 +653,9 @@ Other ID Object """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the weapon ID of a weapon pickup. """,
@@ -666,6 +696,9 @@ Other ID Object """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the weapon ID of a weapon pickup. """,
@@ -708,6 +741,9 @@ Other ID Object """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if a pickup is currently spawned (is visible and can be picked up) or not (a player picked it up recently). """,
@@ -763,6 +799,9 @@ Other ID Object """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the time it takes for a pickup to respawn after a player picked it up. """,
@@ -839,6 +878,9 @@ Other ID Object """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows changing the type of a pickup to a Weapon, Armour or Health pickup, and allows you to set the health points or the weapon and ammo that the pickup will give. """,
@@ -927,6 +969,9 @@ Other ID Object """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows changing the type of a pickup to a Weapon, Armour or Health pickup, and allows you to set the health points or the weapon and ammo that the pickup will give. """,
@@ -997,6 +1042,9 @@ Other ID Object """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to simulate the player using a pickup """,
@@ -1048,6 +1096,9 @@ Other ID Object """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to simulate the player using a pickup """,

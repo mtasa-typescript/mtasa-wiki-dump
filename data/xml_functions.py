@@ -49,6 +49,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function copies all contents of a certain node in a XML document to a new document file, so the copied node becomes the new files root node.
@@ -109,6 +112,9 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function copies all contents of a certain node in a XML document to a new document file, so the copied node becomes the new files root node.
@@ -171,6 +177,9 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a new child node under an XML node. """,
@@ -228,6 +237,9 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a new child node under an XML node. """,
@@ -287,6 +299,9 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a new XML document, which can later be saved to a file by using xmlSaveFile. This function will overwrite the file specified if it already exists. """,
@@ -347,6 +362,9 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a new XML document, which can later be saved to a file by using xmlSaveFile. This function will overwrite the file specified if it already exists. """,
@@ -399,6 +417,9 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function destroys a XML node from the XML node tree. """,
@@ -445,6 +466,9 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function destroys a XML node from the XML node tree. """,
@@ -513,6 +537,9 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a named child node of an XML node. """,
@@ -581,6 +608,9 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a named child node of an XML node. """,
@@ -641,6 +671,9 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function provides an alternative way to load XML files to getResourceConfig.
@@ -703,6 +736,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function provides an alternative way to load XML files to getResourceConfig.
@@ -757,6 +793,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -803,6 +842,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -861,6 +903,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to return an attribute of a node in a configuration file. """,
@@ -918,6 +963,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to return an attribute of a node in a configuration file. """,
@@ -967,6 +1015,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns all the attributes of a specific XML node. """,
@@ -1013,6 +1064,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns all the attributes of a specific XML node. """,
@@ -1071,6 +1125,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns all children of a particular XML node, or a particular child node. """,
@@ -1128,6 +1185,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns all children of a particular XML node, or a particular child node. """,
@@ -1177,6 +1237,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the tag name of the specified XML node. """,
@@ -1223,6 +1286,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the tag name of the specified XML node. """,
@@ -1271,6 +1337,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the parent node of an xml node. """,
@@ -1317,6 +1386,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the parent node of an xml node. """,
@@ -1365,6 +1437,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is made to be able to read tag values in XML files (eg. <something>anything</something>). """,
@@ -1411,6 +1486,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is made to be able to read tag values in XML files (eg. <something>anything</something>). """,
@@ -1479,6 +1557,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to edit an attribute of a node in a configuration file. """,
@@ -1547,6 +1628,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to edit an attribute of a node in a configuration file. """,
@@ -1607,6 +1691,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the tag name of the specified XML node. """,
@@ -1664,6 +1751,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the tag name of the specified XML node. """,
@@ -1733,6 +1823,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is made to be able to assign values to tags in XML files (eg. <something>anything</something>). """,
@@ -1801,6 +1894,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is made to be able to assign values to tags in XML files (eg. <something>anything</something>). """,
@@ -1851,6 +1947,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function saves a loaded XML file. """,
@@ -1897,6 +1996,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function saves a loaded XML file. """,
@@ -1945,6 +2047,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Unloads an XML document from memory. """,
@@ -1991,6 +2096,9 @@ print error if something wrong with xml.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Unloads an XML document from memory. """,

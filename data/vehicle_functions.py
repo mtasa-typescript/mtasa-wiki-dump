@@ -99,6 +99,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function adds sirens to a vehicle. """,
@@ -166,6 +169,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function adds an upgrade to a vehicle, e.g. nitrous, hydraulics. """,
@@ -224,6 +230,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function adds an upgrade to a vehicle, e.g. nitrous, hydraulics. """,
@@ -277,6 +286,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""*This is different to getVehicleOverrideLights because this function will return true if the lights were turned on by natural causes.
@@ -336,6 +348,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function attaches a trailer type vehicle to a trailer-towing-type vehicle. """,
@@ -393,6 +408,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function attaches a trailer type vehicle to a trailer-towing-type vehicle. """,
@@ -452,6 +470,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will blow up a vehicle. This will cause an explosion and will kill the driver and any passengers inside it. """,
@@ -499,6 +520,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will blow up a vehicle. This will cause an explosion and will kill the driver and any passengers inside it. """,
@@ -647,6 +671,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a vehicle at the specified location.
@@ -804,6 +831,9 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a vehicle at the specified location.
@@ -873,6 +903,9 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function detaches an already attached trailer from a vehicle. """,
@@ -930,6 +963,9 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function detaches an already attached trailer from a vehicle. """,
@@ -979,6 +1015,9 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will set a vehicles health to full and fix its damage model. If you wish to only change the vehicles health, without affecting its damage model, use setElementHealth. """,
@@ -1025,6 +1064,9 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will set a vehicles health to full and fix its damage model. If you wish to only change the vehicles health, without affecting its damage model, use setElementHealth. """,
@@ -1076,6 +1118,9 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the state of the helicopter blades collisions on the specified vehicle. """,
@@ -1127,6 +1172,9 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Retrieves the speed at which the rotor of a helicopter rotates. """,
@@ -1175,6 +1223,9 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table containing the handling data of the specified vehicle model.
@@ -1221,6 +1272,9 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table of the original vehicle handling. Use getVehicleHandling if you wish to get the current handling of a vehicle, or getModelHandling for a specific vehicle model. """,
@@ -1261,6 +1315,9 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table of the original vehicle handling. Use getVehicleHandling if you wish to get the current handling of a vehicle, or getModelHandling for a specific vehicle model. """,
@@ -1303,6 +1360,9 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the direction in which a train is driving (clockwise or counterclockwise). """,
@@ -1349,6 +1409,9 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the direction in which a train is driving (clockwise or counterclockwise). """,
@@ -1397,6 +1460,9 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the position the train is currently on the track """,
@@ -1443,6 +1509,9 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the position the train is currently on the track """,
@@ -1491,6 +1560,9 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the speed at which a train is traveling on the rails. """,
@@ -1537,6 +1609,9 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the speed at which a train is traveling on the rails. """,
@@ -1585,6 +1660,9 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the track of a train """,
@@ -1631,6 +1709,9 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the track of a train """,
@@ -1682,6 +1763,9 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Use this to get the value of a vehicles adjustable property. This property relates to movable parts of a model, for example hydra jets or dump truck tray. """,
@@ -1778,6 +1862,9 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the color of the specified vehicle. A vehicle can have up to four colors. """,
@@ -1883,6 +1970,9 @@ valid color ids if brgb is set to false:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the color of the specified vehicle. A vehicle can have up to four colors. """,
@@ -1946,6 +2036,9 @@ valid color ids if brgb is set to false:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table of all the compatible upgrades (or all for a specified slot, optionally) for a specified vehicle. """,
@@ -2003,6 +2096,9 @@ valid color ids if brgb is set to false:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table of all the compatible upgrades (or all for a specified slot, optionally) for a specified vehicle. """,
@@ -2083,6 +2179,9 @@ valid color ids if brgb is set to false:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the component position of a vehicle. The vehicle must be streamed in. """,
@@ -2167,6 +2266,9 @@ valid color ids if brgb is set to false:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the component rotation of a vehicle. """,
@@ -2223,6 +2325,9 @@ valid color ids if brgb is set to false:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets a table of the components currently on a vehicle. """,
@@ -2302,6 +2407,9 @@ valid color ids if brgb is set to false:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the component scale of a vehicle.}} """,
@@ -2368,6 +2476,9 @@ valid color ids if brgb is set to false:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function get component visibility for vehicle. """,
@@ -2417,6 +2528,9 @@ valid color ids if brgb is set to false:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the player in control of the specified vehicle which includes somebody who is trying to enter the drivers seat. """,
@@ -2463,6 +2577,9 @@ valid color ids if brgb is set to false:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the player in control of the specified vehicle which includes somebody who is trying to enter the drivers seat. """,
@@ -2514,6 +2631,9 @@ valid color ids if brgb is set to false:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the specified vehicles current gear. """,
@@ -2566,6 +2686,9 @@ valid color ids if brgb is set to false:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function tells you how open a door is (the open ratio). Doors include boots/trunks and bonnets on vehicles that have them. """,
@@ -2623,6 +2746,9 @@ valid color ids if brgb is set to false:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function tells you how open a door is (the open ratio). Doors include boots/trunks and bonnets on vehicles that have them. """,
@@ -2682,6 +2808,9 @@ valid color ids if brgb is set to false:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current state of the specifed door on the vehicle. """,
@@ -2750,6 +2879,9 @@ valid color ids if brgb is set to false:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current state of the specifed door on the vehicle. """,
@@ -2831,6 +2963,9 @@ valid color ids if brgb is set to false:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the position of the dummy for the given vehicle.}} """,
@@ -2896,6 +3031,9 @@ addcommandhandler(getdummy, getdummyposition)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -2942,6 +3080,9 @@ addcommandhandler(getdummy, getdummyposition)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -3001,6 +3142,9 @@ addcommandhandler(getdummy, getdummyposition)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Retrieves the current gravity vector of a vehicle. This is the direction in which the vehicle falls, also the cameras of any passengers will be rotated to match it. """,
@@ -3043,6 +3187,9 @@ addcommandhandler(getdummy, getdummyposition)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table of the current vehicle handling data. """,
@@ -3089,6 +3236,9 @@ addcommandhandler(getdummy, getdummyposition)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table of the current vehicle handling data. """,
@@ -3145,6 +3295,9 @@ addcommandhandler(getdummy, getdummyposition)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will get the headlight color of a vehicle. """,
@@ -3199,6 +3352,9 @@ addcommandhandler(getdummy, getdummyposition)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will get the headlight color of a vehicle. """,
@@ -3247,6 +3403,9 @@ addcommandhandler(getdummy, getdummyposition)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to check whether a vehicles landing gear is down or not. Only planes can be used with this function. """,
@@ -3294,6 +3453,9 @@ returns nil if the vehicle has no landing gear, or is invalid. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to check whether a vehicles landing gear is down or not. Only planes can be used with this function. """,
@@ -3353,6 +3515,9 @@ returns nil if the vehicle has no landing gear, or is invalid. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current state of the specified light on the vehicle. """,
@@ -3414,6 +3579,9 @@ returns nil if the vehicle has no landing gear, or is invalid. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current state of the specified light on the vehicle. """,
@@ -3475,6 +3643,9 @@ returns nil if the vehicle has no landing gear, or is invalid. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the maximum number of passengers that a specified vehicle can hold. Only passenger seats are counted, the driver seat is excluded. """,
@@ -3531,6 +3702,9 @@ OR """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the maximum number of passengers that a specified vehicle can hold. Only passenger seats are counted, the driver seat is excluded. """,
@@ -3602,6 +3776,9 @@ OR """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the default position of the dummies contained in a vehicle model. """,
@@ -3672,6 +3849,9 @@ OR """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets position of the dummies contained in a vehicle model. """,
@@ -3732,6 +3912,9 @@ OR """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the position of the exhaust fumes the vehicle model emits. """,
@@ -3780,6 +3963,9 @@ OR """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the model ID of a vehicle as an integer value from its name. """,
@@ -3827,6 +4013,9 @@ if you use this function on vehicles with shared names, such as police, it will 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the model ID of a vehicle as an integer value from its name. """,
@@ -3889,6 +4078,9 @@ if you use this function on vehicles with shared names, such as police, it will 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -3942,6 +4134,9 @@ if you use this function on vehicles with shared names, such as police, it will 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a string containing the name of the vehicle """,
@@ -3988,6 +4183,9 @@ if you use this function on vehicles with shared names, such as police, it will 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a string containing the name of the vehicle """,
@@ -4036,6 +4234,9 @@ if you use this function on vehicles with shared names, such as police, it will 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the name of a vehicle by its model ID. """,
@@ -4082,6 +4283,9 @@ if you use this function on vehicles with shared names, such as police, it will 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the name of a vehicle by its model ID. """,
@@ -4133,6 +4337,9 @@ if you use this function on vehicles with shared names, such as police, it will 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the nitro count of the vehicle. """,
@@ -4178,6 +4385,9 @@ if you use this function on vehicles with shared names, such as police, it will 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the nitro level of the vehicle. """,
@@ -4230,6 +4440,9 @@ if you use this function on vehicles with shared names, such as police, it will 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the player sitting/trying to enter the specified vehicle. """,
@@ -4287,6 +4500,9 @@ if you use this function on vehicles with shared names, such as police, it will 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the player sitting/trying to enter the specified vehicle. """,
@@ -4336,6 +4552,9 @@ if you use this function on vehicles with shared names, such as police, it will 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets all peds sitting in the specified vehicle. """,
@@ -4393,6 +4612,9 @@ outputdebugstring(players in your vehicle: .. counter)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets all peds sitting in the specified vehicle. """,
@@ -4452,6 +4674,9 @@ outputdebugstring(players in your vehicle: .. counter)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to find out the current state of the override-lights setting of a vehicle. """,
@@ -4498,6 +4723,9 @@ outputdebugstring(players in your vehicle: .. counter)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to find out the current state of the override-lights setting of a vehicle. """,
@@ -4546,6 +4774,9 @@ outputdebugstring(players in your vehicle: .. counter)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the current paintjob on the specified vehicle. <br /> """,
@@ -4596,6 +4827,9 @@ outputdebugstring(players in your vehicle: .. counter)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the current paintjob on the specified vehicle. <br /> """,
@@ -4658,6 +4892,9 @@ outputdebugstring(players in your vehicle: .. counter)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current state of a specifed panel on the vehicle. A vehicle can have up to 7 panels. """,
@@ -4722,6 +4959,9 @@ outputdebugstring(players in your vehicle: .. counter)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current state of a specifed panel on the vehicle. A vehicle can have up to 7 panels. """,
@@ -4778,6 +5018,9 @@ outputdebugstring(players in your vehicle: .. counter)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to retrieve the text on the number plate of a specified vehicle. """,
@@ -4824,6 +5067,9 @@ outputdebugstring(players in your vehicle: .. counter)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to retrieve the text on the number plate of a specified vehicle. """,
@@ -4880,6 +5126,9 @@ outputdebugstring(players in your vehicle: .. counter)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -4939,6 +5188,9 @@ outputdebugstring(players in your vehicle: .. counter)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -4990,6 +5242,9 @@ outputdebugstring(players in your vehicle: .. counter)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function get the parameters of a vehicles siren. """,
@@ -5045,6 +5300,9 @@ bool sirenparams.flags.silent
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function get the parameters of a vehicles siren. """,
@@ -5102,6 +5360,9 @@ bool sirenparams.flags.silent
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the properties of a vehicles sirens. """,
@@ -5158,6 +5419,9 @@ int     sirendatasirenpoint.min_alpha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the properties of a vehicles sirens. """,
@@ -5216,6 +5480,9 @@ int     sirendatasirenpoint.min_alpha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns whether the sirens are turned on for the specified vehicle. """,
@@ -5262,6 +5529,9 @@ int     sirendatasirenpoint.min_alpha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns whether the sirens are turned on for the specified vehicle. """,
@@ -5310,6 +5580,9 @@ int     sirendatasirenpoint.min_alpha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function scans through all the current vehicles and returns the ones matching the given model. """,
@@ -5361,6 +5634,9 @@ int     sirendatasirenpoint.min_alpha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the vehicle being towed by another. """,
@@ -5407,6 +5683,9 @@ int     sirendatasirenpoint.min_alpha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the vehicle being towed by another. """,
@@ -5455,6 +5734,9 @@ int     sirendatasirenpoint.min_alpha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the vehicle that is towing another. """,
@@ -5502,6 +5784,9 @@ int     sirendatasirenpoint.min_alpha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the vehicle that is towing another. """,
@@ -5555,6 +5840,9 @@ int     sirendatasirenpoint.min_alpha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the position of a vehicles turret, if it has one. Vehicles with turrets include firetrucks and tanks. """,
@@ -5605,6 +5893,9 @@ int     sirendatasirenpoint.min_alpha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the position of a vehicles turret, if it has one. Vehicles with turrets include firetrucks and tanks. """,
@@ -5653,6 +5944,9 @@ int     sirendatasirenpoint.min_alpha
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the type of a vehicle (such as if it is a car or a boat). """,
@@ -5702,6 +5996,9 @@ possible strings returned: """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the type of a vehicle (such as if it is a car or a boat). """,
@@ -5763,6 +6060,9 @@ possible strings returned: """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -5820,6 +6120,9 @@ possible strings returned: """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -5869,6 +6172,9 @@ possible strings returned: """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table of all the upgrades on a specifed vehicle. """,
@@ -5915,6 +6221,9 @@ possible strings returned: """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table of all the upgrades on a specifed vehicle. """,
@@ -5963,6 +6272,9 @@ possible strings returned: """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the name of an upgrade slot name (e.g. roof, spoiler). """,
@@ -6003,6 +6315,9 @@ possible strings returned: """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the name of an upgrade slot name (e.g. roof, spoiler). """,
@@ -6049,6 +6364,9 @@ possible strings returned: """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the variant of a specified vehicle. In GTA SA some vehicles are different for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default GTA SA variant list see: Vehicle variants """,
@@ -6103,6 +6421,9 @@ on failure:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the variant of a specified vehicle. In GTA SA some vehicles are different for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default GTA SA variant list see: Vehicle variants """,
@@ -6168,6 +6489,9 @@ on failure:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -6224,6 +6548,9 @@ on failure:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -6284,6 +6611,9 @@ on failure:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current states of all the wheels on the vehicle.
@@ -6347,6 +6677,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current states of all the wheels on the vehicle.
@@ -6403,6 +6736,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if a Element/Vehicle|train is a chain engine (moves the rest of the chains carriages) or not. """,
@@ -6452,6 +6788,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will check if a train or tram is derailable. """,
@@ -6498,6 +6837,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will check if a train or tram is derailable. """,
@@ -6546,6 +6888,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will check if a train or tram is derailed. """,
@@ -6592,6 +6937,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will check if a train or tram is derailed. """,
@@ -6640,6 +6988,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to determine whether a vehicle is blown or still intact. """,
@@ -6686,6 +7037,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to determine whether a vehicle is blown or still intact. """,
@@ -6734,6 +7088,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if a vehicle is damage proof (set with setVehicleDamageProof). """,
@@ -6780,6 +7137,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if a vehicle is damage proof (set with setVehicleDamageProof). """,
@@ -6828,6 +7188,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This will tell you if a vehicles petrol tank is explodable. """,
@@ -6868,6 +7231,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This will tell you if a vehicles petrol tank is explodable. """,
@@ -6910,6 +7276,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This will tell you if a vehicle is locked. """,
@@ -6956,6 +7325,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This will tell you if a vehicle is locked. """,
@@ -7007,6 +7379,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if nitro is activated on the vehicle. """,
@@ -7052,6 +7427,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if nitro is recharging on the vehicle. """,
@@ -7094,6 +7472,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Checks to see if a vehicle has contact with the ground. """,
@@ -7140,6 +7521,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Checks to see if a vehicle has contact with the ground. """,
@@ -7188,6 +7572,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will get the taxi light state of a taxi (vehicle IDs 420 and 438) """,
@@ -7234,6 +7621,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will get the taxi light state of a taxi (vehicle IDs 420 and 438) """,
@@ -7295,6 +7685,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a boolean whether the vehicles wheel is on ground (true) or in air (false). """,
@@ -7361,6 +7754,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -7411,6 +7807,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes sirens from a vehicle. """,
@@ -7466,6 +7865,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -7517,6 +7919,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -7573,6 +7978,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function reset to default component position for vehicle. """,
@@ -7635,6 +8043,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function reset to default component rotation for vehicle. """,
@@ -7697,6 +8108,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function reset to default component scale for vehicle. """,
@@ -7749,6 +8163,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function resets the vehicle dependent dummy positions to the vehicles current model dummy positions.}} """,
@@ -7797,6 +8214,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Resets the vehicle explosion time. This is the point in time at which the vehicle last exploded: at this time plus the vehicles respawn delay, the vehicle is respawned. You can use this function to prevent the vehicle from respawning. """,
@@ -7842,6 +8262,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Resets the vehicle idle time """,
@@ -7887,6 +8310,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function respawns a vehicle according to its set respawn position, set by setVehicleRespawnPosition or the position and rotation it was created on. To spawn a vehicle to a specific location just once, spawnVehicle can be used. """,
@@ -7951,6 +8377,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the state of the helicopter blades collisions on the specified vehicle. """,
@@ -8013,6 +8442,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the rotor speed of a helicopter. """,
@@ -8082,6 +8514,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to change the handling data of all vehicles of a specified model. """,
@@ -8139,6 +8574,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will set a train or tram as derailable. This is, if it can derail when it goes above the maximum speed. """,
@@ -8196,6 +8634,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will set a train or tram as derailable. This is, if it can derail when it goes above the maximum speed. """,
@@ -8255,6 +8696,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will set a train or tram as derailed. """,
@@ -8312,6 +8756,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will set a train or tram as derailed. """,
@@ -8371,6 +8818,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the direction in which a train or tram drives over the rails (clockwise or counterclockwise). """,
@@ -8428,6 +8878,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the direction in which a train or tram drives over the rails (clockwise or counterclockwise). """,
@@ -8487,6 +8940,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the position the train is currently on the track """,
@@ -8544,6 +9000,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the position the train is currently on the track """,
@@ -8603,6 +9062,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the on-track speed of a train. """,
@@ -8660,6 +9122,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the on-track speed of a train. """,
@@ -8719,6 +9184,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the track of a train """,
@@ -8776,6 +9244,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the track of a train """,
@@ -8838,6 +9309,9 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used for adjusting the movable parts of a model, for example hydra jets or dump truck tray.
@@ -9002,6 +9476,9 @@ This function only works on vehicles with adjustable properties. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will set the color of a vehicle using either a RGB format, or the Vehicle Colors|standard San Andreas color IDs. Vehicles can have up to 4 colors, most of the vehicles have 2 colors only.
@@ -9182,6 +9659,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will set the color of a vehicle using either a RGB format, or the Vehicle Colors|standard San Andreas color IDs. Vehicles can have up to 4 colors, most of the vehicles have 2 colors only.
@@ -9297,6 +9777,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the component position of a vehicle. """,
@@ -9406,6 +9889,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the component rotation of a vehicle. """,
@@ -9515,6 +10001,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the component scale of a vehicle. """,
@@ -9594,6 +10083,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets component visibility for vehicle. """,
@@ -9654,6 +10146,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions makes a vehicle damage proof, so it wont take damage from bullets, hits, explosions or fire. A damage proofs vehicle health can still be changed via script. """,
@@ -9711,6 +10206,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions makes a vehicle damage proof, so it wont take damage from bullets, hits, explosions or fire. A damage proofs vehicle health can still be changed via script. """,
@@ -9770,6 +10268,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the dirt level on a vehicle. """,
@@ -9821,6 +10322,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the dirt level on a vehicle. """,
@@ -9894,6 +10398,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets how much a vehicles door is open. Doors include the boot/trunk and the bonnet of the vehicle. """,
@@ -9973,6 +10480,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets how much a vehicles door is open. Doors include the boot/trunk and the bonnet of the vehicle. """,
@@ -10044,6 +10554,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the state of the specified door on a vehicle. """,
@@ -10119,6 +10632,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the state of the specified door on a vehicle. """,
@@ -10186,6 +10702,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function makes a vehicles doors undamageable, so they wont fall off when theyre hit. Note that the vehicle has to be locked using setVehicleLocked for this setting to have any effect. """,
@@ -10243,6 +10762,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function makes a vehicles doors undamageable, so they wont fall off when theyre hit. Note that the vehicle has to be locked using setVehicleLocked for this setting to have any effect. """,
@@ -10335,6 +10857,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the position of the dummy for the given vehicle.}} """,
@@ -10395,6 +10920,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function turns a vehicles engine on or off. Note that the engine will always be turned on when someone enters the driver seat, unless you override that behaviour with scripts. """,
@@ -10452,6 +10980,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function turns a vehicles engine on or off. Note that the engine will always be turned on when someone enters the driver seat, unless you override that behaviour with scripts. """,
@@ -10511,6 +11042,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the explodable state of a vehicles fuel tank, which toggles the ability to blow the vehicle up by shooting the tank. This function will have no effect on vehicles with tanks that cannot be shot in single player. """,
@@ -10520,7 +11054,13 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the vehicles fuel tank explodable state was successfully changed, false otherwise. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description=None,
+                class_name='vehicle',
+                method_name="""setFuelTankExplodable""",
+                field=None,
+                is_static=False,
+            ),
             name='setVehicleFuelTankExplodable',
         )
         ],
@@ -10562,6 +11102,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the explodable state of a vehicles fuel tank, which toggles the ability to blow the vehicle up by shooting the tank. This function will have no effect on vehicles with tanks that cannot be shot in single player. """,
@@ -10571,7 +11114,13 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the vehicles fuel tank explodable state was successfully changed, false otherwise. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description=None,
+                class_name='vehicle',
+                method_name="""setFuelTankExplodable""",
+                field=None,
+                is_static=False,
+            ),
             name='setVehicleFuelTankExplodable',
         )
         ],
@@ -10638,6 +11187,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the gravity vector of a vehicle. The vehicle will fall in this direction, and the camera of any occupants will also be rotated to match it. Can be used for e.g. driving on walls or upside down on ceilings. """,
@@ -10701,6 +11253,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to change the handling data of a vehicle. """,
@@ -10763,6 +11318,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to change the handling data of a vehicle. """,
@@ -10837,6 +11395,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will set the headlight color of a vehicle. valid Red Green and Blue arguments range from 0-255 """,
@@ -10916,6 +11477,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will set the headlight color of a vehicle. valid Red Green and Blue arguments range from 0-255 """,
@@ -10977,6 +11541,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the time delay (in milliseconds) the vehicle will remain at its position while empty. """,
@@ -11039,6 +11606,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the landing gear state of certain vehicles. """,
@@ -11090,6 +11660,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the landing gear state of certain vehicles. """,
@@ -11153,6 +11726,9 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the state of the light on the vehicle. """,
@@ -11226,6 +11802,9 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the state of the light on the vehicle. """,
@@ -11291,6 +11870,9 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can be used to set the vehicles doors to be locked or unlocked.  Locking a vehicle restricts access to the vehicle. """,
@@ -11348,6 +11930,9 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can be used to set the vehicles doors to be locked or unlocked.  Locking a vehicle restricts access to the vehicle. """,
@@ -11440,6 +12025,9 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the position of the dummies contained in a vehicle model. Use setVehicleComponentPosition to adjust the vehicle component positions. """,
@@ -11523,6 +12111,9 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the position of the exhaust fumes the vehicle model emits. Use setVehicleComponentPosition to adjust the exhaust position. """,
@@ -11595,6 +12186,9 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -11661,6 +12255,9 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function activates or deactivates the nitro on the specified vehicle, like if a player pressed the button for activating nitro. """,
@@ -11717,6 +12314,9 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets how many times a player can activate the nitro on a specified vehicle. """,
@@ -11773,6 +12373,9 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the nitro level of the vehicle. """,
@@ -11826,6 +12429,9 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the light overriding setting on a vehicle. """,
@@ -11886,6 +12492,9 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the light overriding setting on a vehicle. """,
@@ -11948,6 +12557,9 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the paintjob on the specified vehicle. <br/>
@@ -12000,6 +12612,9 @@ See Paintjob|paintjob for list of supported vehicles. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the paintjob on the specified vehicle. <br/>
@@ -12064,6 +12679,9 @@ See Paintjob|paintjob for list of supported vehicles. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to change the state of one of the six panels vehicles can have. When executed on the server-side resources, the damage will be synched for all players, whereas the change is only client-side if the function is used in a client resource. """,
@@ -12142,6 +12760,9 @@ See Paintjob|paintjob for list of supported vehicles. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to change the state of one of the six panels vehicles can have. When executed on the server-side resources, the damage will be synched for all players, whereas the change is only client-side if the function is used in a client resource. """,
@@ -12212,6 +12833,9 @@ See Paintjob|paintjob for list of supported vehicles. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can be used to set the numberplate text of a car.
@@ -12270,6 +12894,9 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function can be used to set the numberplate text of a car.
@@ -12330,6 +12957,9 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the time delay (in milliseconds) the vehicle will remain wrecked before respawning. """,
@@ -12442,6 +13072,9 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the position (and rotation) the vehicle will respawn to. """,
@@ -12529,6 +13162,9 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the rotation the vehicle will respawn to. """,
@@ -12673,6 +13309,9 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the properties of a vehicles siren point. """,
@@ -12818,6 +13457,9 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the properties of a vehicles siren point. """,
@@ -12885,6 +13527,9 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the state of the sirens on the specified vehicle. """,
@@ -12942,6 +13587,9 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the state of the sirens on the specified vehicle. """,
@@ -13001,6 +13649,9 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will set the taxi light on in a taxi (vehicle IDs 420 and 438) """,
@@ -13058,6 +13709,9 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will set the taxi light on in a taxi (vehicle IDs 420 and 438) """,
@@ -13127,6 +13781,9 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the position of a vehicles turret, if it has one. This can be used to influence the turrets rotation, so it doesnt follow the camera. Vehicles with turrets include firetrucks and tanks. """,
@@ -13195,6 +13852,9 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the position of a vehicles turret, if it has one. This can be used to influence the turrets rotation, so it doesnt follow the camera. Vehicles with turrets include firetrucks and tanks. """,
@@ -13265,6 +13925,9 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the variant of a specified vehicle. In GTA SA some vehicles are different for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default GTA SA variant list see: Vehicle variants """,
@@ -13336,6 +13999,9 @@ on failure:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the variant of a specified vehicle. In GTA SA some vehicles are different for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default GTA SA variant list see: Vehicle variants """,
@@ -13402,6 +14068,9 @@ on failure:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -13491,6 +14160,9 @@ on failure:
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the state of wheels on the vehicle.
@@ -13582,6 +14254,9 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the state of wheels on the vehicle.
@@ -13658,6 +14333,9 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -13774,6 +14452,9 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Spawns a vehicle at any given position and rotation """,
@@ -13841,6 +14522,9 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function toggles whether or not the vehicle will be respawned after blown or idle. """,

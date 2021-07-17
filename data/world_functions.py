@@ -30,6 +30,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets whether the traffic lights are currently locked or not. If the lights are locked, it means they wont change unless you do setTrafficLightState. """,
@@ -61,6 +64,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets whether the traffic lights are currently locked or not. If the lights are locked, it means they wont change unless you do setTrafficLightState. """,
@@ -136,6 +142,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Creates a SWAT rope like that of the rope in single player used by SWAT Teams abseiling from the Police Maverick. """,
@@ -170,6 +179,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the maximum height at which aircraft can fly without their engines turning off. """,
@@ -201,6 +213,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the maximum height at which aircraft can fly without their engines turning off. """,
@@ -234,6 +249,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the maximum velocity at which aircrafts could fly. Using this function server-side will return the server-side value, not necessarily the same that is set client-side. """,
@@ -265,6 +283,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the maximum velocity at which aircrafts could fly. Using this function server-side will return the server-side value, not necessarily the same that is set client-side. """,
@@ -301,6 +322,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will tell you if the birds are enabled or disabled. """,
@@ -334,6 +358,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will tell you if clouds are enabled or disabled. """,
@@ -365,6 +392,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will tell you if clouds are enabled or disabled. """,
@@ -398,6 +428,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will tell you what is the current render distance. """,
@@ -429,6 +462,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will tell you what is the current render distance. """,
@@ -462,6 +498,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will tell you what is the current fog render distance. """,
@@ -493,6 +532,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will tell you what is the current fog render distance. """,
@@ -526,6 +568,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the current game speed value. """,
@@ -557,6 +602,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the current game speed value. """,
@@ -614,6 +662,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function outputs the bounding box of a garage. """,
@@ -668,6 +719,9 @@ western x position, eastern x position, southern y position, northern y position
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function outputs X, Y and Z position of given garage. """,
@@ -721,6 +775,9 @@ western x position, eastern x position, southern y position, northern y position
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function outputs the size of garage. """,
@@ -754,6 +811,9 @@ western x position, eastern x position, southern y position, northern y position
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current gravity level for the context in which it is called (server or client). """,
@@ -785,6 +845,9 @@ western x position, eastern x position, southern y position, northern y position
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current gravity level for the context in which it is called (server or client). """,
@@ -850,6 +913,9 @@ western x position, eastern x position, southern y position, northern y position
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the Z level of the highest ground below a point.
@@ -918,6 +984,9 @@ It is required that the point is near enough to the local player so that its wit
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will return the current heat haze effect settings.
@@ -982,6 +1051,9 @@ Note: The server can only return the heat haze settings if it has actually been 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will return the current heat haze effect settings.
@@ -1028,6 +1100,9 @@ Note: The server can only return the heat haze settings if it has actually been 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will tell you if interior furniture are enabled or disabled in a specified room ID. """,
@@ -1064,6 +1139,9 @@ Note: The server can only return the heat haze settings if it has actually been 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks to see if the music played by default in clubs is disabled or not. """,
@@ -1097,6 +1175,9 @@ Note: The server can only return the heat haze settings if it has actually been 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the maximum height at which your jetpack can fly without failing to go higher. """,
@@ -1128,6 +1209,9 @@ Note: The server can only return the heat haze settings if it has actually been 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the maximum height at which your jetpack can fly without failing to go higher. """,
@@ -1170,6 +1254,9 @@ Note: The server can only return the heat haze settings if it has actually been 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if a weapon is usable while on a Jetpack. """,
@@ -1206,6 +1293,9 @@ Note: The server can only return the heat haze settings if it has actually been 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Tells you how long an ingame minute takes in real-world milliseconds. The default GTA value is 1000. """,
@@ -1237,6 +1327,9 @@ Note: The server can only return the heat haze settings if it has actually been 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Tells you how long an ingame minute takes in real-world milliseconds. The default GTA value is 1000. """,
@@ -1270,6 +1363,9 @@ Note: The server can only return the heat haze settings if it has actually been 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the moon size. """,
@@ -1301,6 +1397,9 @@ Note: The server can only return the heat haze settings if it has actually been 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the moon size. """,
@@ -1337,6 +1436,9 @@ Note: The server can only return the heat haze settings if it has actually been 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -1370,6 +1472,9 @@ Note: The server can only return the heat haze settings if it has actually been 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get occlusions enabled state. """,
@@ -1401,6 +1506,9 @@ Note: The server can only return the heat haze settings if it has actually been 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get occlusions enabled state. """,
@@ -1437,6 +1545,9 @@ Note: The server can only return the heat haze settings if it has actually been 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -1470,6 +1581,9 @@ Note: The server can only return the heat haze settings if it has actually been 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the current rain level. """,
@@ -1501,6 +1615,9 @@ Note: The server can only return the heat haze settings if it has actually been 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the current rain level. """,
@@ -1566,6 +1683,9 @@ Note: The server can only return the heat haze settings if it has actually been 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the Z level of the lowest roof above a point.
@@ -1662,6 +1782,9 @@ It is required that the point is near enough to the local player so that its wit
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the screen position of a point in the world. This is useful for attaching 2D gui elements to parts of the world (e.g. players) or detecting if a point is on the screen (though it does not check if it is actually visible, you should use processLineOfSight for that). """,
@@ -1719,6 +1842,9 @@ It is required that the point is near enough to the local player so that its wit
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will return the current sky color.
@@ -1771,6 +1897,9 @@ Note: The server can only return the sky color if it has actually been set by sc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will return the current sky color.
@@ -1825,6 +1954,9 @@ Note: The server can only return the sky color if it has actually been set by sc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the color of the sun. """,
@@ -1876,6 +2008,9 @@ Note: The server can only return the sky color if it has actually been set by sc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the color of the sun. """,
@@ -1909,6 +2044,9 @@ Note: The server can only return the sky color if it has actually been set by sc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the size of the sun. """,
@@ -1940,6 +2078,9 @@ Note: The server can only return the sky color if it has actually been set by sc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the size of the sun. """,
@@ -1977,6 +2118,9 @@ Note: The server can only return the sky color if it has actually been set by sc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the current time in the game. If you want to get the real server time, use getRealTime. """,
@@ -2012,6 +2156,9 @@ Note: The server can only return the sky color if it has actually been set by sc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the current time in the game. If you want to get the real server time, use getRealTime. """,
@@ -2045,6 +2192,9 @@ Note: The server can only return the sky color if it has actually been set by sc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the current traffic light state. This state controls the traffic light colors. For instance, state 1 will cause the north and south traffic lights to be amber, and the ones left and east will turn red. """,
@@ -2076,6 +2226,9 @@ Note: The server can only return the sky color if it has actually been set by sc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Gets the current traffic light state. This state controls the traffic light colors. For instance, state 1 will cause the north and south traffic lights to be amber, and the ones left and east will turn red. """,
@@ -2116,6 +2269,9 @@ Note: The server can only return the sky color if it has actually been set by sc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Returns the distance of vehicles LOD. """,
@@ -2154,6 +2310,9 @@ Note: The server can only return the sky color if it has actually been set by sc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current Weather ID. """,
@@ -2189,6 +2348,9 @@ Note: The server can only return the sky color if it has actually been set by sc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current Weather ID. """,
@@ -2230,6 +2392,9 @@ Note: The server can only return the sky color if it has actually been set by sc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the wind velocity in San Andreas. """,
@@ -2271,6 +2436,9 @@ Note: The server can only return the sky color if it has actually been set by sc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the wind velocity in San Andreas. """,
@@ -2346,6 +2514,9 @@ Note: The server can only return the sky color if it has actually been set by sc
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to retrieve the world position corresponding to a 2D position on the screen, at a certain depth.
@@ -2422,6 +2593,9 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to retrieve the zone name of a certain location. """,
@@ -2503,6 +2677,9 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to retrieve the zone name of a certain location. """,
@@ -2559,6 +2736,9 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to check if some background sound effects are enabled. """,
@@ -2601,6 +2781,9 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks whether or not a specific garage door is open. """,
@@ -2641,6 +2824,9 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks whether or not a specific garage door is open. """,
@@ -2816,6 +3002,9 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if there are obstacles between two points of the game world, optionally ignoring certain kinds of elements. Use processLineOfSight if you want more information about what the ray hits. """,
@@ -2884,6 +3073,9 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -2930,6 +3122,9 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Checks if a special world property (cheat) is enabled or not. """,
@@ -3213,6 +3408,9 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function casts a ray between two points in the world, and tells you information about the point that was hit, if any. The two positions must be within the local players draw distance as the collision data is not loaded outside this area, and the call will just fail as if the ray didnt hit.
@@ -3336,6 +3534,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to remove a world object. """,
@@ -3431,6 +3632,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to remove a world object. """,
@@ -3472,6 +3676,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to reset the background sounds to the default setting. """,
@@ -3508,6 +3715,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Resets the motion blur level on the clients screen to default value (36). """,
@@ -3544,6 +3754,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -3577,6 +3790,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function resets the far clip distance to its default state. """,
@@ -3608,6 +3824,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function resets the far clip distance to its default state. """,
@@ -3641,6 +3860,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function resets the fog render distance to its default state. """,
@@ -3672,6 +3894,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function resets the fog render distance to its default state. """,
@@ -3705,6 +3930,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function restores the default heat haze. """,
@@ -3736,6 +3964,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function restores the default heat haze. """,
@@ -3769,6 +4000,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to reset the size of the moon to its normal size. """,
@@ -3800,6 +4034,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to reset the size of the moon to its normal size. """,
@@ -3836,6 +4073,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function resets near clip distance set by setNearClipDistance. """,
@@ -3872,6 +4112,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -3905,6 +4148,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function resets the rain level of the current weather to its default. """,
@@ -3936,6 +4182,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function resets the rain level of the current weather to its default. """,
@@ -3969,6 +4218,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows restoring of a changed sky gradient as a result of setSkyGradient. """,
@@ -4000,6 +4252,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows restoring of a changed sky gradient as a result of setSkyGradient. """,
@@ -4033,6 +4288,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to reset the color of the sun to its normal color. """,
@@ -4064,6 +4322,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to reset the color of the sun to its normal color. """,
@@ -4097,6 +4358,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to reset the size of the sun to its normal size. """,
@@ -4128,6 +4392,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to reset the size of the sun to its normal size. """,
@@ -4164,6 +4431,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Resets the distance of vehicles LOD to default. Default values depends on client setting. If client has enabled high detail vehicles in video options, value will be reset to (500, 500) - otherwise to (70, 150). You can check value of this option using dxGetStatus (SettingHighDetailVehicles). """,
@@ -4197,6 +4467,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function resets the wind velocity in San Andreas to its default state. """,
@@ -4228,6 +4501,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function resets the wind velocity in San Andreas to its default state. """,
@@ -4264,6 +4540,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to reset the world sounds to the default setting. """,
@@ -4297,6 +4576,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows restoring of all world objects,which were removed with RemoveWorldModel. """,
@@ -4328,6 +4610,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows restoring of all world objects,which were removed with RemoveWorldModel. """,
@@ -4420,6 +4705,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows restoring of world object,which was removed with RemoveWorldModel. """,
@@ -4515,6 +4803,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows restoring of world object,which was removed with RemoveWorldModel. """,
@@ -4562,6 +4853,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the maximum flying height of aircraft. """,
@@ -4602,6 +4896,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the maximum flying height of aircraft. """,
@@ -4644,6 +4941,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the maximum velocity at which aircrafts could fly. Using this function server-side will overwrite the value that was previously set client-side. """,
@@ -4684,6 +4984,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the maximum velocity at which aircrafts could fly. Using this function server-side will overwrite the value that was previously set client-side. """,
@@ -4739,6 +5042,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to disable some background sound effects. See also: setWorldSoundEnabled. """,
@@ -4785,6 +5091,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to disable the flying birds. """,
@@ -4827,6 +5136,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will enable or disable clouds. This is useful for race maps which are placed high up as clouds can cause low FPS. """,
@@ -4867,6 +5179,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will enable or disable clouds. This is useful for race maps which are placed high up as clouds can cause low FPS. """,
@@ -4982,6 +5297,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -5031,6 +5349,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the distance of render. Areas beyond the specified distance will not be rendered. """,
@@ -5071,6 +5392,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the distance of render. Areas beyond the specified distance will not be rendered. """,
@@ -5113,6 +5437,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the distance at which fog appears. Keep in mind that this function doesnt change the distance of render. """,
@@ -5153,6 +5480,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the distance at which fog appears. Keep in mind that this function doesnt change the distance of render. """,
@@ -5195,6 +5525,9 @@ the other values are only filled if there is a collision, they contain nil other
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the game speed to the given value. """,
@@ -5236,6 +5569,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the game speed to the given value. """,
@@ -5289,6 +5625,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function opens or closes the specified garage door in the world. """,
@@ -5340,6 +5679,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function opens or closes the specified garage door in the world. """,
@@ -5383,6 +5725,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the servers gravity level.
@@ -5425,6 +5770,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the servers gravity level.
@@ -5549,6 +5897,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the heat haze effect. """,
@@ -5669,6 +6020,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the heat haze effect. """,
@@ -5724,6 +6078,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function toggles furniture generation in interiors with the specified room ID. """,
@@ -5772,6 +6129,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function disables or enables the ambient sounds played by GTA in most interiors, like restaurants, casinos, clubs, houses, etc. """,
@@ -5812,6 +6172,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function disables or enables the ambient sounds played by GTA in most interiors, like restaurants, casinos, clubs, houses, etc. """,
@@ -5854,6 +6217,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the maximum flying height of jetpack. """,
@@ -5894,6 +6260,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the maximum flying height of jetpack. """,
@@ -5946,6 +6315,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets a weapon usable while using the Jetpack. """,
@@ -5992,6 +6364,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the real-world duration of an ingame minute. The GTA default is 1000. """,
@@ -6032,6 +6407,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the real-world duration of an ingame minute. The GTA default is 1000. """,
@@ -6074,6 +6452,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the moon size. Using this function server-side will overwrite the value that was previously set client-side. """,
@@ -6114,6 +6495,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the moon size. Using this function server-side will overwrite the value that was previously set client-side. """,
@@ -6159,6 +6543,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -6201,6 +6588,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to enable or disable occlusions. Occlusions are used by GTA to enhance performance by hiding objects that are (normally) obscured by certain large buildings. However when removeWorldModel is used they may also have the undesired effect of making parts of the map disappear. Disabling occlusions will fix that. """,
@@ -6241,6 +6631,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to enable or disable occlusions. Occlusions are used by GTA to enhance performance by hiding objects that are (normally) obscured by certain large buildings. However when removeWorldModel is used they may also have the undesired effect of making parts of the map disappear. Disabling occlusions will fix that. """,
@@ -6286,6 +6679,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -6328,6 +6724,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the rain level to any weather available in GTA. Use resetRainLevel to undo the changes. """,
@@ -6369,6 +6768,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the rain level to any weather available in GTA. Use resetRainLevel to undo the changes. """,
@@ -6462,6 +6864,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the sky color to a two-color gradient. """,
@@ -6557,6 +6962,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the sky color to a two-color gradient. """,
@@ -6654,6 +7062,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the color of the sun. """,
@@ -6749,6 +7160,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the color of the sun. """,
@@ -6796,6 +7210,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the size of the sun. """,
@@ -6836,6 +7253,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to set the size of the sun. """,
@@ -6888,6 +7308,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the current GTA time to the given time. """,
@@ -6939,6 +7362,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the current GTA time to the given time. """,
@@ -6982,6 +7408,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Toggles whether you want the traffic lights to be locked. If the lights are locked, it means they wont change unless you do setTrafficLightState. """,
@@ -7022,6 +7451,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Toggles whether you want the traffic lights to be locked. If the lights are locked, it means they wont change unless you do setTrafficLightState. """,
@@ -7064,6 +7496,9 @@ the normal game speed is 1. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the current traffic light state. This state controls the traffic light colors. For instance, state 1 will cause the north and south traffic lights to be amber, and the ones left and east will turn red. """,
@@ -7110,6 +7545,9 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the current traffic light state. This state controls the traffic light colors. For instance, state 1 will cause the north and south traffic lights to be amber, and the ones left and east will turn red. """,
@@ -7171,6 +7609,9 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Sets the distance of vehicles LOD. """,
@@ -7214,6 +7655,9 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the current weather to the given valid value. To change the weather gradually, see setWeatherBlended. """,
@@ -7254,6 +7698,9 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the current weather to the given valid value. To change the weather gradually, see setWeatherBlended. """,
@@ -7296,6 +7743,9 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will change the current weather to another in a smooth manner, over the period of 1-2 in-game hours (unlike setWeather, which sets a new weather instantly). To ensure this transition performs as expected, you should not call this function until getWeather indicates that no transition is already being done. """,
@@ -7336,6 +7786,9 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will change the current weather to another in a smooth manner, over the period of 1-2 in-game hours (unlike setWeather, which sets a new weather instantly). To ensure this transition performs as expected, you should not call this function until getWeather indicates that no transition is already being done. """,
@@ -7398,6 +7851,9 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the wind velocity. The wind shakes the vegetation and makes particles fly in a direction. The intensity and direction of the effect deppends of the wind velocity in each axis. """,
@@ -7460,6 +7916,9 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function changes the wind velocity. The wind shakes the vegetation and makes particles fly in a direction. The intensity and direction of the effect deppends of the wind velocity in each axis. """,
@@ -7537,6 +7996,9 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to disable world sounds. A world sound is a sound effect which has not been caused by playSound or playSound3D.
@@ -7598,6 +8060,9 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Enables or disables a special world property. """,
@@ -7720,6 +8185,9 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks to see if a line between two points collides with the water. This is similar to processLineOfSight, but only collides with water. Waves are not taken into account when testing the line. """,

@@ -39,6 +39,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -70,6 +73,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -106,6 +112,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks if players chat is visible. """,
@@ -198,6 +207,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This outputs the specified text string to the chatbox. It can be specified as a message to certain player(s) or all players.
@@ -295,6 +307,9 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This outputs the specified text string to the chatbox. It can be specified as a message to certain player(s) or all players.
@@ -357,6 +372,9 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This outputs the specified text string to the console window (accessed with F8 or ~ key). It can be specified as a message to certain player(s) or all players. """,
@@ -398,6 +416,9 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This outputs the specified text string to the console window (accessed with F8 or ~ key). It can be specified as a message to certain player(s) or all players. """,
@@ -480,6 +501,9 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function outputs scripting debug messages, which can be read by enabling the debug textbox. The debug display level can then be set so that info or warning messages get filtered out. """,
@@ -569,6 +593,9 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function outputs scripting debug messages, which can be read by enabling the debug textbox. The debug display level can then be set so that info or warning messages get filtered out. """,
@@ -620,6 +647,9 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This outputs a line of text to the servers log. This could be useful for debugging. """,
@@ -675,6 +705,9 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to show or hide the players chat. """,
@@ -716,6 +749,9 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to show or hide the players chat. """,

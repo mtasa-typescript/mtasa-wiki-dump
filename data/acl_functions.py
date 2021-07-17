@@ -39,6 +39,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates an ACL entry in the Access Control List system with the specified name. """,
@@ -90,6 +93,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a group in the ACL. An ACL group can contain objects like players and resources. They specify who has access to the ACLs in this group. """,
@@ -141,6 +147,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function destroys the ACL passed. The destroyed ACL will no longer be valid. """,
@@ -192,6 +201,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function destroys the given ACL group. The destroyed ACL group will no longer be valid. """,
@@ -243,6 +255,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Get the ACL with the given name. If need to get most of the ACLs, you should consider using aclList to get a table of them all. """,
@@ -294,6 +309,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the ACL group with the given name. If you need most of the groups you should consider using aclGroupList instead to get a table containing them all. """,
@@ -345,6 +363,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Get the name of given ACL. """,
@@ -406,6 +427,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns whether the access for the given right is set to true or false in the ACL. """,
@@ -468,6 +492,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function adds the given ACL to the given ACL group. This makes the resources and players in the given ACL group have access to whats specified in the given ACL. The rights for something in the different ACLs in a group are OR-ed together, which means if one ACL gives access to something, this ACL group will have access to that. """,
@@ -530,6 +557,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function adds an object to the given ACL group. An object can be a players account, specified as:
@@ -586,6 +616,9 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to get the name of the given ACL group. """,
@@ -628,6 +661,9 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table of all the ACL groups. """,
@@ -679,6 +715,9 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table over all the ACLs that exist in a given ACL group. """,
@@ -730,6 +769,9 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table over all the objects that exist in a given ACL group. These are objects like players and resources. """,
@@ -791,6 +833,9 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes the given ACL from the given ACL group. """,
@@ -853,6 +898,9 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes the given object from the given ACL group. The object can be a resource or a player. See aclGroupAddObject for more details. """,
@@ -896,6 +944,9 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a list of all the ACLs. """,
@@ -957,6 +1008,9 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns a table of all the rights that a given ACL has. """,
@@ -1000,6 +1054,9 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function reloads the ACLs and the ACL groups from the ACL XML file. All ACL and ACL group elements are invalid after a call to this and should not be used anymore. """,
@@ -1061,6 +1118,9 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes the given right (string) from the given ACL. """,
@@ -1104,6 +1164,9 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""The ACL XML file is automatically saved whenever the ACL is modified, but the automatic save can be delayed by up to 10 seconds for performance reasons. Calling this function will force an immediate save. """,
@@ -1175,6 +1238,9 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions changes or adds the given right in the given ACL. The access can be true or false and specifies whether the ACL gives access to the right or not. """,
@@ -1248,6 +1314,9 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns whether or not the given object has access to perform the given action.
@@ -1322,6 +1391,9 @@ The only downside of using this method is that the admin has to modify his confi
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used to determine if an object is in a group. """,

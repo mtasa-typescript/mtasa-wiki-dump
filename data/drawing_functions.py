@@ -62,6 +62,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function converts Texture_pixels|pixels from one format to another. """,
@@ -139,6 +142,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""<br/>
@@ -223,6 +229,9 @@ you should always check to see if this function has returned false. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a render target element, which is a special type of texture that can be drawn on with the dx functions. Successful render target creation is not guaranteed, and may fail due to hardware or memory limitations.
@@ -288,6 +297,9 @@ you should always check to see if this function has returned false. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a screen source, which is a special type of texture that contains the screen as rendered by GTA
@@ -393,6 +405,9 @@ Note that successful screen source creation is not guaranteed, and may fail due 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a shader element that can be used in the dxDraw functions. Successful shader creation is not guaranteed unless the shader|Effect File contains a fallback technique which will work on every PC in the universe.
@@ -519,6 +534,9 @@ All the following optional arguments are only relevant when the shader is used w
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function creates a texture element that can be used in the dxDraw functions.
@@ -681,6 +699,9 @@ or """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""<lowercasetitle/> """,
@@ -825,6 +846,9 @@ or """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Draws an image on the screen for a single frame. In order for the image to stay visible continuously, you need to call this function with the same parameters on each frame update (see onClientRender).<br/>
@@ -1011,6 +1035,9 @@ Image files should ideally have dimensions that are a power of two, to prevent p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Differing from dxDrawImage, this function only draws a part of an image on the screen for a single frame. In order for the image to stay visible continuously, you need to call this function with the same parameters on each frame update (see onClientRender).
@@ -1131,6 +1158,9 @@ Image files should ideally have dimensions that are a power of two, to prevent p
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function draws a 2D line across the screen - rendered for one frame.  This should be used in conjunction with onClientRender in order to display continuously. """,
@@ -1263,6 +1293,9 @@ Returns a true if the operation was successful, false otherwise. """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function draws a 3D line between two points in the 3D world - rendered for one frame.  This should be used in conjunction with onClientRender in order to display continuously. """,
@@ -1419,7 +1452,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                                 name='faceTowardX',
                                 argument_type=FunctionType(
                                     names=['float'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value=None,
                             )
@@ -1429,7 +1462,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                                 name='faceTowardY',
                                 argument_type=FunctionType(
                                     names=['float'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value=None,
                             )
@@ -1439,7 +1472,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                                 name='faceTowardZ',
                                 argument_type=FunctionType(
                                     names=['float'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value=None,
                             )
@@ -1447,6 +1480,9 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function draws a textured 3D line between two points in the 3D world - rendered for one frame.  This should be used in conjunction with onClientPreRender in order to display continuously.
@@ -1544,6 +1580,9 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""If image file is used, it should ideally have dimensions that are a power of two, to prevent possible blurring.
@@ -1633,6 +1672,9 @@ Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px...}} 
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function draws a 3D primitive shape with material applied to it in the 3D world - rendered for one frame. This should be used in conjunction with onClientRender in order to display continuously.
@@ -1825,7 +1867,7 @@ Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px... ""
                                 name='faceTowardX',
                                 argument_type=FunctionType(
                                     names=['float'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value=None,
                             )
@@ -1835,7 +1877,7 @@ Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px... ""
                                 name='faceTowardY',
                                 argument_type=FunctionType(
                                     names=['float'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value=None,
                             )
@@ -1845,7 +1887,7 @@ Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px... ""
                                 name='faceTowardZ',
                                 argument_type=FunctionType(
                                     names=['float'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value=None,
                             )
@@ -1853,6 +1895,9 @@ Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px... ""
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function draws a textured 3D line between two points in the 3D world - rendered for one frame.  This should be used in conjunction with onClientPreRender in order to display continuously.
@@ -1942,6 +1987,9 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -2039,6 +2087,9 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     ],
                     variable_length=True,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function draws a 3D primitive in the 3D world - rendered for one frame.  This should be used in conjunction with onClientRender in order to display continuously. """,
@@ -2160,6 +2211,9 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function draws a 2D rectangle across the screen - rendered for one frame. This should be used in conjunction with onClientRender in order to display continuously. """,
@@ -2283,7 +2337,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                                 name='font',
                                 argument_type=FunctionType(
                                     names=['mixed'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='"default"',
                             )
@@ -2293,7 +2347,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                                 name='alignX',
                                 argument_type=FunctionType(
                                     names=['string'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='"left"',
                             )
@@ -2303,7 +2357,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                                 name='alignY',
                                 argument_type=FunctionType(
                                     names=['string'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='"top"',
                             )
@@ -2313,7 +2367,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                                 name='clip',
                                 argument_type=FunctionType(
                                     names=['bool'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='false',
                             )
@@ -2323,7 +2377,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                                 name='wordBreak',
                                 argument_type=FunctionType(
                                     names=['bool'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='false',
                             )
@@ -2333,7 +2387,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                                 name='postGUI',
                                 argument_type=FunctionType(
                                     names=['bool'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='false',
                             )
@@ -2343,7 +2397,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                                 name='colorCoded',
                                 argument_type=FunctionType(
                                     names=['bool'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='false',
                             )
@@ -2353,7 +2407,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                                 name='subPixelPositioning',
                                 argument_type=FunctionType(
                                     names=['bool'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='false',
                             )
@@ -2363,7 +2417,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                                 name='fRotation',
                                 argument_type=FunctionType(
                                     names=['float'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='0.0',
                             )
@@ -2373,7 +2427,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                                 name='fRotationCenterX',
                                 argument_type=FunctionType(
                                     names=['float'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='0.0',
                             )
@@ -2383,7 +2437,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                                 name='fRotationCenterY',
                                 argument_type=FunctionType(
                                     names=['float'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='0.0',
                             )
@@ -2391,6 +2445,9 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""Draws a string of text on the screen for one frame. In order for the text to stay visible continuously, you need to call this function with the same parameters on each frame update (see onClientRender). """,
@@ -2513,6 +2570,9 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function drawn same sphere as /showcol. It provides 4 levels of iterations which mean density of sphere. Adjust radius to iterations to get optimum density of mesh. About 50 spheres with iterations = 4 can cause fps drop. """,
@@ -2553,6 +2613,9 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the current blend mode for the dxDraw functions. The blend mode is set using dxSetBlendMode """,
@@ -2612,6 +2675,9 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the theoretical height of a certain piece of text, if it were to be drawn using dxDrawText. """,
@@ -2672,6 +2738,9 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This gets the dimensions of the supplied material element. """,
@@ -2756,6 +2825,9 @@ if the material is a volume texture, this function will return three ints repres
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the color of a single pixel from Texture_pixels|pixels contained in a string. It only works with plain format pixels. """,
@@ -2803,6 +2875,9 @@ if the material is a volume texture, this function will return three ints repres
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function returns the format of Texture_pixels|pixels contained in a string. """,
@@ -2852,6 +2927,9 @@ if the material is a volume texture, this function will return three ints repres
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the dimensions of Texture_pixels|pixels contained in a string. It works with all pixel formats. """,
@@ -2888,6 +2966,9 @@ if the material is a volume texture, this function will return three ints repres
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets information about various internal datum """,
@@ -2975,7 +3056,7 @@ if the material is a volume texture, this function will return three ints repres
                         ],
                         [
                             FunctionArgument(
-                                name='scaleX',
+                                name='scaleXY',
                                 argument_type=FunctionType(
                                     names=['float'],
                                     is_optional=True,
@@ -3026,6 +3107,9 @@ if the material is a volume texture, this function will return three ints repres
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""NOTE: This function already takes the clients screen resolution into account. """,
@@ -3134,6 +3218,9 @@ Returns two floats representing the width and height of the text in pixels. """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function fetches the Texture_pixels|pixels from a texture element. It can be used with a standard texture, render target or screen source.
@@ -3224,6 +3311,9 @@ By default the pixels from the whole texture is returned. To get only a portion 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function retrieves the theoretical width (in pixels) of a certain piece of text, if it were to be drawn using dxDrawText.
@@ -3275,6 +3365,9 @@ Returns the float of the width of the text (in pixels). """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the current aspect ratio set by dxSetAspectRatioAdjustmentEnabled. """,
@@ -3331,6 +3424,9 @@ Returns the float of the width of the text (in pixels). """
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows for the positioning of dxDraw calls to be automatically adjusted according to the clients aspect ratio setting.  This lasts for a single execution of an event handler for one of the following events: onClientRender, onClientPreRender and onClientHUDRender. So the function has to be called every frame, just like dxDraws.
@@ -3378,6 +3474,9 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the current blend mode for the dxDraw functions. Changing the blend mode can increase the quality when drawing text or certain other images to a render target. As a general guide use modulate_add when drawing text to a render target, and add when drawing the render target to the screen. Dont forget to restore the default blend at the end - See the example below. """,
@@ -3487,6 +3586,9 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the color of a single pixel for Texture_pixels|pixels contained in a string. It only works with plain format pixels. """,
@@ -3548,6 +3650,9 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -3620,6 +3725,9 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the amount of geometric sub-division to use when drawing a shader element with dxDrawImage.
@@ -3774,6 +3882,9 @@ Using tessellation allows a shader to manipulate the shape of the rendered image
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function applies a 3D transformation to a shader element when it is drawn with dxDrawImage. """,
@@ -3856,6 +3967,9 @@ To convert screen relative units into screen pixel coordinates, ''multiply'' by 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This sets a named parameter for a shader element """,
@@ -3909,6 +4023,9 @@ To convert screen relative units into screen pixel coordinates, ''multiply'' by 
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function is used for testing scripts written using guiCreateFont, dxCreateFont, dxCreateShader and dxCreateRenderTarget.
@@ -3979,6 +4096,9 @@ Each one of the 3 test modes should be used in turn to help highlight any potent
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This functions allows you to change the edge handling after creating the texture. """,
@@ -4092,6 +4212,9 @@ Each one of the 3 test modes should be used in turn to help highlight any potent
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the Texture_pixels|pixels of a texture element. It can be used with a standard texture, render target or screen source. Only plain format pixels please.
@@ -4163,6 +4286,9 @@ By default the pixels are set starting at the top left corner of the texture. To
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function updates the contents of a screen source texture with the screen output from GTA """,
@@ -4174,7 +4300,7 @@ By default the pixels are set starting at the top left corner of the texture. To
             ),
             oop=FunctionOOP(
                 description=None,
-                class_name='texture|screensource',
+                class_name='DxScreenSource',
                 method_name="""update""",
                 field=None,
                 is_static=False,

@@ -89,6 +89,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will add a ban for the specified IP/username/serial to the server. """,
@@ -208,6 +211,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will ban the specified player by either IP, serial or username
@@ -266,6 +272,9 @@ This function will ban the specified player from the server by IP. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will return the responsible admin (nickname of the admin) of the specified ban. """,
@@ -317,6 +326,9 @@ This function will ban the specified player from the server by IP. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will return the IP of the specified ban. """,
@@ -368,6 +380,9 @@ This function will ban the specified player from the server by IP. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will return the nickname (nickname that the player had when he was banned) of the specified ban. """,
@@ -419,6 +434,9 @@ This function will ban the specified player from the server by IP. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will return the ban reason of the specified ban. """,
@@ -461,6 +479,9 @@ This function will ban the specified player from the server by IP. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will return a table containing all the bans present in the servers banlist.xml. """,
@@ -512,6 +533,9 @@ This function will ban the specified player from the server by IP. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will return the serial of the specified ban. """,
@@ -563,6 +587,9 @@ This function will ban the specified player from the server by IP. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will return the time the specified ban was created, in seconds. """,
@@ -615,6 +642,9 @@ This function will ban the specified player from the server by IP. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will return the username of the specified ban. """,
@@ -660,6 +690,9 @@ This function will ban the specified player from the server by IP. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will return the unbanning time of the specified ban in seconds. """,
@@ -712,6 +745,9 @@ This function will ban the specified player from the server by IP. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function checks whether the passed value is valid ban or not. """,
@@ -777,6 +813,9 @@ This function will ban the specified player from the server by IP. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will kick the specified player from the server. """,
@@ -821,6 +860,9 @@ This function will ban the specified player from the server by IP. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will reload the server ban list file. """,
@@ -882,6 +924,9 @@ This function will ban the specified player from the server by IP. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will remove a specific ban. """,
@@ -944,6 +989,9 @@ This function will ban the specified player from the server by IP. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets a new admin for a ban. """,
@@ -1006,6 +1054,9 @@ This function will ban the specified player from the server by IP. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description=""" """,
@@ -1068,6 +1119,9 @@ This function will ban the specified player from the server by IP. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets the reason for the specified ban. """,
@@ -1130,6 +1184,9 @@ This function will ban the specified player from the server by IP. """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function sets a new unban time of a given ban using unix timestamp (seconds since Jan 01 1970). """,

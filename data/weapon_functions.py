@@ -67,6 +67,9 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the original weapon property of the specified weapons specified weapon type. """,
@@ -141,6 +144,9 @@ bool: false if the passed arguments were invalid """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets the original weapon property of the specified weapons specified weapon type. """,
@@ -189,6 +195,9 @@ bool: false if the passed arguments were invalid """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to identify the weapon slot that a weapon belongs to. """,
@@ -229,6 +238,9 @@ bool: false if the passed arguments were invalid """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to identify the weapon slot that a weapon belongs to. """,
@@ -271,6 +283,9 @@ bool: false if the passed arguments were invalid """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will obtain the ID of a particular weapon from its name. """,
@@ -311,6 +326,9 @@ bool: false if the passed arguments were invalid """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function will obtain the ID of a particular weapon from its name. """,
@@ -353,6 +371,9 @@ bool: false if the passed arguments were invalid """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to retrieve the name of a weapon from an ID. """,
@@ -393,6 +414,9 @@ bool: false if the passed arguments were invalid """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function allows you to retrieve the name of a weapon from an ID. """,
@@ -463,6 +487,9 @@ bool: false if the passed arguments were invalid """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets a weapon property of the specified Element/Weapon|custom weapon (clientside only) or specified Weapons|player-held weapon (both client and server). """,
@@ -543,6 +570,9 @@ bool: false if the passed arguments were invalid """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function gets a weapon property of the specified Element/Weapon|custom weapon (clientside only) or specified Weapons|player-held weapon (both client and server). """,
@@ -627,6 +657,9 @@ bool: false if the passed arguments were invalid """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""giveWeapon gives a specified weapon to a certain player or ped. There is an optional argument to specify ammunition. For example, a melee weapon doesnt need an ammo argument.
@@ -708,6 +741,9 @@ bool: false if the passed arguments were invalid """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""<section name=setWeaponAmmo class=server show=true>
@@ -782,6 +818,9 @@ Sets the ammo to a certain amount for a specified weapon (if they already have i
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""<section name=setWeaponAmmo class=server show=true>
@@ -866,6 +905,9 @@ Sets the ammo to a certain amount for a specified weapon (if they already have i
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""<section name=Server class=server show=true>
@@ -951,6 +993,9 @@ bool: returns false if the weapon property was unable to be set """,
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""<section name=Server class=server show=true>
@@ -1020,6 +1065,9 @@ Returns true if the property was set.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes every weapons from a specified ped, rendering it unarmed. """,
@@ -1085,6 +1133,9 @@ Returns true if the property was set.
                     ],
                     variable_length=False,
                 ),
+                generic_types=[
+                    
+                ],
             ),
             docs=FunctionDoc(
                 description="""This function removes a specified weapon or ammo from a certain players inventory. """,
