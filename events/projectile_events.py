@@ -5,11 +5,11 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionData, \
+    EventData, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientProjectileCreation',
             docs=FunctionDoc(
                 description="""This event is triggered when a projectile is created. """,

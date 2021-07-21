@@ -5,11 +5,11 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionData, \
+    EventData, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onWeaponFire',
             docs=FunctionDoc(
                 description="""This event is triggered when a custom weapon gets fired. """,

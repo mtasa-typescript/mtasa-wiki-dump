@@ -5,11 +5,11 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionData, \
+    EventData, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientTrailerAttach',
             docs=FunctionDoc(
                 description="""This event is triggered by a trailer when it gets attached to a towing vehicle. """,
@@ -34,7 +34,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientTrailerDetach',
             docs=FunctionDoc(
                 description="""This event is triggered when a trailer gets detached from its towing vehicle. """,
@@ -59,7 +59,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientVehicleCollision',
             docs=FunctionDoc(
                 description="""This event is triggered when a vehicle collides with an element or a world object.
@@ -191,7 +191,7 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientVehicleDamage',
             docs=FunctionDoc(
                 description="""This event is triggered when a vehicle is damaged. """,
@@ -282,7 +282,7 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientVehicleEnter',
             docs=FunctionDoc(
                 description="""This event gets fired when a player or ped enters a vehicle. """,
@@ -318,7 +318,7 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientVehicleExit',
             docs=FunctionDoc(
                 description="""This event gets fired when a ped or player gets out of a vehicle. """,
@@ -354,7 +354,7 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientVehicleExplode',
             docs=FunctionDoc(
                 description="""This event is triggered when a vehicle explodes. """,
@@ -370,7 +370,7 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientVehicleNitroStateChange',
             docs=FunctionDoc(
                 description="""This event gets triggered when nitro state is changing. """,
@@ -395,7 +395,7 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientVehicleRespawn',
             docs=FunctionDoc(
                 description="""This event is triggered when a vehicle respawns. """,
@@ -411,7 +411,7 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientVehicleStartEnter',
             docs=FunctionDoc(
                 description="""This event is triggered when a ped or player starts entering a vehicle. Once the entering animation completes, onClientVehicleEnter is triggered. """,
@@ -458,7 +458,7 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientVehicleStartExit',
             docs=FunctionDoc(
                 description="""This event is triggered when a ped or player starts exiting a vehicle. Once the exiting animation completes, onClientVehicleExit is triggered. """,
@@ -505,7 +505,7 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onTrailerAttach',
             docs=FunctionDoc(
                 description="""This event is triggered when a trailer is attached to a truck or when a tow truck hooks on to a vehicle. """,
@@ -530,7 +530,7 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onTrailerDetach',
             docs=FunctionDoc(
                 description="""This event is triggered when a trailer is detached from a truck. """,
@@ -555,7 +555,7 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onVehicleDamage',
             docs=FunctionDoc(
                 description="""This event is triggered when a vehicle is damaged. If you want to get the attacker you can use onClientVehicleDamage. """,
@@ -580,7 +580,7 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onVehicleEnter',
             docs=FunctionDoc(
                 description="""This event is triggered when a player or ped enters a vehicle. """,
@@ -627,7 +627,7 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onVehicleExit',
             docs=FunctionDoc(
                 description="""This event is triggered when a player or ped leaves a vehicle. """,
@@ -685,7 +685,7 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onVehicleExplode',
             docs=FunctionDoc(
                 description="""This event is triggered when a vehicle explodes. """,
@@ -701,7 +701,7 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onVehicleRespawn',
             docs=FunctionDoc(
                 description="""This event is triggered when a vehicle is respawned due. See toggleVehicleRespawn. """,
@@ -726,7 +726,7 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onVehicleStartEnter',
             docs=FunctionDoc(
                 description="""This event is triggered when a player or ped starts to enter a vehicle. This event can be used to cancel entry, if necessary. """,
@@ -774,7 +774,7 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onVehicleStartExit',
             docs=FunctionDoc(
                 description="""This event is triggered when a player or ped starts to exit a vehicle. This event can be used to cancel exit, if necessary. """,

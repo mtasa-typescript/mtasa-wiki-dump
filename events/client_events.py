@@ -5,11 +5,11 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionData, \
+    EventData, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onConsole',
             docs=FunctionDoc(
                 description="""This event is triggered when a player types a message into his console. It is also triggered when entering / commands via the chatbox. """,

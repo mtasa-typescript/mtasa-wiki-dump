@@ -5,11 +5,11 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionData, \
+    EventData, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientElementColShapeHit',
             docs=FunctionDoc(
                 description="""This event is triggered when an element (like a player or vehicle) enters a collision shape. """,
@@ -45,7 +45,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientElementColShapeLeave',
             docs=FunctionDoc(
                 description="""This event is triggered when an element (like a player or vehicle) leaves a collision shape. """,
@@ -81,7 +81,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientElementDataChange',
             docs=FunctionDoc(
                 description="""This event is triggered after an elements element data|data entry is changed. Such changes can be made on the client or the server using setElementData. """,
@@ -128,7 +128,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientElementDestroy',
             docs=FunctionDoc(
                 description="""This event is triggered when an element gets destroyed by destroyElement or when the creator resource is stopping. It is also triggered when a children element of this element is destroyed. It is not triggered on a player when they quit. """,
@@ -144,7 +144,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientElementDimensionChange',
             docs=FunctionDoc(
                 description=""" """,
@@ -180,7 +180,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientElementInteriorChange',
             docs=FunctionDoc(
                 description=""" """,
@@ -216,7 +216,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientElementModelChange',
             docs=FunctionDoc(
                 description=""" """,
@@ -252,7 +252,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientElementStreamIn',
             docs=FunctionDoc(
                 description="""This event is triggered whenever a physical element is streamed in. This is triggered for all elements that are streamable, such as players, peds, vehicles, objects and markers. When this event is triggered, that element is guaranteed to be physically created as a GTA object. """,
@@ -268,7 +268,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientElementStreamOut',
             docs=FunctionDoc(
                 description="""This event is triggered whenever a physical element is streamed out. This is triggered for all elements that are streamable, such as players, peds, vehicles, objects and markers when the local player is leaving the element. When this event is triggered, that element is no longer physical and is now virtualized by MTA. """,
@@ -284,7 +284,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onElementClicked',
             docs=FunctionDoc(
                 description="""This event is triggered when an element is clicked on by the client. These events can only trigger when the client has its cursor enabled. It triggers for all three mousebuttons in both their up and down states. """,
@@ -364,7 +364,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onElementColShapeHit',
             docs=FunctionDoc(
                 description="""This event is triggered when an player or vehicle element collides with a colshape. """,
@@ -400,7 +400,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onElementColShapeLeave',
             docs=FunctionDoc(
                 description="""This event is triggered when an player or vehicle element leaves the area of a colshape. """,
@@ -436,7 +436,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onElementDataChange',
             docs=FunctionDoc(
                 description="""This event is triggered after an elements element data|data entry is changed. Such changes can be made on the client or the server using setElementData. """,
@@ -486,7 +486,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onElementDestroy',
             docs=FunctionDoc(
                 description="""This event is triggered when an element gets destroyed by destroyElement or when the creator resource is stopping. It is also triggered when a parent element of this element is destroyed. """,
@@ -502,7 +502,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onElementDimensionChange',
             docs=FunctionDoc(
                 description=""" """,
@@ -538,7 +538,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onElementInteriorChange',
             docs=FunctionDoc(
                 description=""" """,
@@ -574,7 +574,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onElementModelChange',
             docs=FunctionDoc(
                 description="""This event is triggered when the model of an element is changed using setElementModel. """,
@@ -610,7 +610,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onElementStartSync',
             docs=FunctionDoc(
                 description="""This event is triggered when an element becomes synced by a player. """,
@@ -635,7 +635,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onElementStopSync',
             docs=FunctionDoc(
                 description="""This event is triggered when an element is no longer synced by a player. """,

@@ -5,11 +5,11 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionData, \
+    EventData, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientChatMessage',
             docs=FunctionDoc(
                 description="""This event is triggered when any text is output to chatbox, including MTAs hardcoded messages. """,
@@ -67,7 +67,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientConsole',
             docs=FunctionDoc(
                 description="""This event is triggered when the local player enters text in the console. Note that, if you want to add custom console commands, it is easier to use the addCommandHandler function. """,
@@ -92,7 +92,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientDebugMessage',
             docs=FunctionDoc(
                 description="""This event is triggered when client-side debug messages (for instance errors or warnings) would appear in the debug window. This event doesnt require the debug window to be enabled to trigger, however.
@@ -189,7 +189,7 @@ Note: To prevent infinite loops, debug messages that occur inside the function t
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientExplosion',
             docs=FunctionDoc(
                 description="""This event is triggered every time an explosion is created on the current clients scene (inside the streamer). """,
@@ -247,7 +247,7 @@ Note: To prevent infinite loops, debug messages that occur inside the function t
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientFileDownloadComplete',
             docs=FunctionDoc(
                 description="""This event is triggered when a file has been downloaded after downloadFile has been successfully called. """,
@@ -294,7 +294,7 @@ Note: To prevent infinite loops, debug messages that occur inside the function t
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientHUDRender',
             docs=FunctionDoc(
                 description="""This event is triggered before GTA renders the HUD. This is particularly useful if you want to use dxUpdateScreenSource to capture the screen onto a texture without capturing the HUD, or to alter HUD textures using Element/Shader|shaders before they are drawn onto the screen. """,
@@ -310,7 +310,7 @@ Note: To prevent infinite loops, debug messages that occur inside the function t
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientMinimize',
             docs=FunctionDoc(
                 description="""This event is triggered when the local player minimizes the game screen. """,
@@ -326,7 +326,7 @@ Note: To prevent infinite loops, debug messages that occur inside the function t
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPedsProcessed',
             docs=FunctionDoc(
                 description=""" """,
@@ -342,7 +342,7 @@ Note: To prevent infinite loops, debug messages that occur inside the function t
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerNetworkStatus',
             docs=FunctionDoc(
                 description="""This event is triggered when the server network connection to a player is interrupted. See onPlayerNetworkStatus for detecting player to server interruptions. """,
@@ -378,7 +378,7 @@ Note: To prevent infinite loops, debug messages that occur inside the function t
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPreRender',
             docs=FunctionDoc(
                 description="""This event is triggered every time before GTA renders a new frame. """,
@@ -403,7 +403,7 @@ Note: To prevent infinite loops, debug messages that occur inside the function t
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientRender',
             docs=FunctionDoc(
                 description="""This event is triggered every time GTA renders a new frame. It is required for the DirectX drawing functions, and also useful for other clientside operations that have to be applied repeatedly with very short time differences between them. """,
@@ -419,7 +419,7 @@ Note: To prevent infinite loops, debug messages that occur inside the function t
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientRestore',
             docs=FunctionDoc(
                 description="""This event is triggered when the local player restores the game screen from a previously minimized state. """,
@@ -444,7 +444,7 @@ Note: To prevent infinite loops, debug messages that occur inside the function t
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientTransferBoxProgressChange',
             docs=FunctionDoc(
                 description=""" """,
@@ -480,7 +480,7 @@ Note: To prevent infinite loops, debug messages that occur inside the function t
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientTransferBoxVisibilityChange',
             docs=FunctionDoc(
                 description=""" """,
@@ -505,7 +505,7 @@ Note: To prevent infinite loops, debug messages that occur inside the function t
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientWorldSound',
             docs=FunctionDoc(
                 description="""For example, you should only cancel player emitted sounds in this event, because when you cancel certain vehicle sounds, the game will try to play the same sound on the next frame.}} """,

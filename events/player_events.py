@@ -5,11 +5,11 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionData, \
+    EventData, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerChangeNick',
             docs=FunctionDoc(
                 description="""This event is triggered when a player changes his nickname. """,
@@ -45,7 +45,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerChoke',
             docs=FunctionDoc(
                 description="""This event is fired when the local player chokes due to the effect of a weapon such as tear gas grenades, fire extinguishers and spray cans. """,
@@ -70,7 +70,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerDamage',
             docs=FunctionDoc(
                 description="""This event is triggered whenever a player is damaged. """,
@@ -128,7 +128,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerHeliKilled',
             docs=FunctionDoc(
                 description="""This event is fired when a player is killed due to the effect of a helicopter blades. """,
@@ -153,7 +153,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerHitByWaterCannon',
             docs=FunctionDoc(
                 description="""This event is fired when a player is hit by a water cannon. """,
@@ -178,7 +178,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerJoin',
             docs=FunctionDoc(
                 description="""This event is triggered when a player joins a server. It is triggered for all players except the local player, as the local player joins the server before their client-side resources are started. It would also be possible for two players to join within a few seconds of each other and for the two players scripts may not receive onClientPlayerJoin events as their scripts wouldnt have started yet.
@@ -195,7 +195,7 @@ This event is not cancellable. """,
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerPickupHit',
             docs=FunctionDoc(
                 description="""This event triggers whenever a player hits a pickup locally. """,
@@ -231,7 +231,7 @@ This event is not cancellable. """,
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerPickupLeave',
             docs=FunctionDoc(
                 description="""This event triggers whenever a player leaves pickup locally. """,
@@ -267,7 +267,7 @@ This event is not cancellable. """,
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerQuit',
             docs=FunctionDoc(
                 description="""This event is triggered when a remote player quits the game or leaves the server. It will not get triggered on the source players client. (Use onClientResourceStop to save client side data when the local player quits.) """,
@@ -298,7 +298,7 @@ This event is not cancellable. """,
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerRadioSwitch',
             docs=FunctionDoc(
                 description="""This event is triggered whenever the local players radio station is changed """,
@@ -324,7 +324,7 @@ Station ID's: """
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerSpawn',
             docs=FunctionDoc(
                 description="""This event is triggered when any player, including a remote player, spawns. """,
@@ -349,7 +349,7 @@ Station ID's: """
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerStealthKill',
             docs=FunctionDoc(
                 description="""This event is triggered when the local player stealth kills another player. """,
@@ -374,7 +374,7 @@ Station ID's: """
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerStuntFinish',
             docs=FunctionDoc(
                 description="""This event is triggered whenever the local player finishes a vehicle stunt. """,
@@ -421,7 +421,7 @@ Station ID's: """
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerStuntStart',
             docs=FunctionDoc(
                 description="""This event is triggered whenever the local player starts doing a vehicle stunt. """,
@@ -446,7 +446,7 @@ Station ID's: """
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerTarget',
             docs=FunctionDoc(
                 description="""This event is triggered whenever the local player targets an element. """,
@@ -471,7 +471,7 @@ Station ID's: """
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerVehicleEnter',
             docs=FunctionDoc(
                 description="""This event is fired when a player has entered a vehicle. """,
@@ -507,7 +507,7 @@ Station ID's: """
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerVehicleExit',
             docs=FunctionDoc(
                 description="""This event is triggered when a player or ped has exited a vehicle. """,
@@ -543,7 +543,7 @@ Station ID's: """
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerVoicePause',
             docs=FunctionDoc(
                 description="""This event is triggered when a players voice sound is paused using setSoundPaused. """,
@@ -568,7 +568,7 @@ Station ID's: """
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerVoiceResumed',
             docs=FunctionDoc(
                 description="""This event is triggered when a players voice sound is resumed using setSoundPaused. """,
@@ -593,7 +593,7 @@ Station ID's: """
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerVoiceStart',
             docs=FunctionDoc(
                 description="""<div style=border: 1px dotted blue; background: #00CC66;padding:4px;margin-bottom:2px;>Note:  This event should only be used as a low-level function for advanced users.  For typical Voice scripting, please see the Resource:Voice|Voice Resource</div>
@@ -610,7 +610,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerVoiceStop',
             docs=FunctionDoc(
                 description="""This event is triggered when a player stops talking through voice chat. """,
@@ -626,7 +626,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerWasted',
             docs=FunctionDoc(
                 description="""This event is triggered whenever a player, including those remote, dies. """,
@@ -684,7 +684,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerWeaponFire',
             docs=FunctionDoc(
                 description="""This event is called when a player fires a weapon.  This does not trigger for projectiles, melee weapons, or camera. """,
@@ -804,7 +804,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPlayerWeaponSwitch',
             docs=FunctionDoc(
                 description="""This event is triggered whenever the local players equipped weapon|weapon slot changes. This means giveWeapon and takeWeapon will trigger this event if the equipped slot is forced to change. """,
@@ -840,7 +840,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerACInfo',
             docs=FunctionDoc(
                 description="""This event is triggered when a player trips anti-cheat detections. It can be used to script a white/blacklist of custom d3d9.dll files, or a white/blacklist of players with certain anti-cheat codes. The relevant anti-cheat code has to be disabled (or not enabled) in the server Mtaserver.conf#disableac|mtaserver.conf to be of use here. """,
@@ -898,7 +898,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerBan',
             docs=FunctionDoc(
                 description="""This event is triggered when a player added a ban (like onBan). """,
@@ -934,7 +934,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerChangeNick',
             docs=FunctionDoc(
                 description="""This event is triggered when a player changes his nickname. """,
@@ -982,7 +982,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerChat',
             docs=FunctionDoc(
                 description="""This event is triggered when a player chats inside the chatbox. """,
@@ -1021,7 +1021,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerClick',
             docs=FunctionDoc(
                 description="""This event is triggered when a player clicks using the mouse cursor. """,
@@ -1123,7 +1123,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerCommand',
             docs=FunctionDoc(
                 description="""This event is triggered when a player issues a command. """,
@@ -1148,7 +1148,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerConnect',
             docs=FunctionDoc(
                 description="""This event is triggered when a player attempts to connect to the server.
@@ -1233,7 +1233,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerContact',
             docs=FunctionDoc(
                 description="""This event is triggered when a player stands on a different element than before. """,
@@ -1269,7 +1269,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerDamage',
             docs=FunctionDoc(
                 description="""This event is triggered when a player is damaged, in any way.
@@ -1330,7 +1330,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerJoin',
             docs=FunctionDoc(
                 description="""This event is triggered when a player joins the server. This event is not cancellable. """,
@@ -1346,7 +1346,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerLogin',
             docs=FunctionDoc(
                 description="""This event is triggered when a player logs into their account in-game. """,
@@ -1382,7 +1382,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerLogout',
             docs=FunctionDoc(
                 description="""This event is triggered when a user logs out of their account in-game. """,
@@ -1418,7 +1418,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerMarkerHit',
             docs=FunctionDoc(
                 description="""This event is triggered when a player hits a marker. """,
@@ -1454,7 +1454,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerMarkerLeave',
             docs=FunctionDoc(
                 description="""This event is triggered when a player leaves the area of a marker. """,
@@ -1490,7 +1490,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerModInfo',
             docs=FunctionDoc(
                 description="""This event is triggered when a player has modified certain files. """,
@@ -1536,7 +1536,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerMute',
             docs=FunctionDoc(
                 description="""This event is triggered when a player has been muted by setPlayerMuted. """,
@@ -1552,7 +1552,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerNetworkStatus',
             docs=FunctionDoc(
                 description="""This event is triggered when a players network connection to the server is interrupted. See onClientPlayerNetworkStatus for detecting server to player interruptions. """,
@@ -1588,7 +1588,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerPickupHit',
             docs=FunctionDoc(
                 description="""This event is triggered when a player hits a pickup. """,
@@ -1613,7 +1613,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerPickupLeave',
             docs=FunctionDoc(
                 description="""This event is triggered when a player leaves a pickup. """,
@@ -1638,7 +1638,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerPickupUse',
             docs=FunctionDoc(
                 description="""This event is triggered when a player is standing on a pickup while not being in a vehicle. """,
@@ -1663,7 +1663,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerPrivateMessage',
             docs=FunctionDoc(
                 description="""This event is triggered when a player sends a private message with msg command. """,
@@ -1699,7 +1699,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerQuit',
             docs=FunctionDoc(
                 description="""This event is triggered when a player disconnects from the server. """,
@@ -1752,7 +1752,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerScreenShot',
             docs=FunctionDoc(
                 description="""This event is triggered when the screen capture requested by takePlayerScreenShot has completed. """,
@@ -1824,7 +1824,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerSpawn',
             docs=FunctionDoc(
                 description="""This event is called when a player spawns. """,
@@ -1926,7 +1926,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerStealthKill',
             docs=FunctionDoc(
                 description="""This event is triggered when a player stealth kills another player. """,
@@ -1951,7 +1951,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerTarget',
             docs=FunctionDoc(
                 description="""This event is triggered when a player targets an element with his crosshair while aiming, or simply facing it while standing close. Its triggered again when the player no longer targets anything. """,
@@ -1976,7 +1976,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerUnmute',
             docs=FunctionDoc(
                 description="""This event is triggered when a player has been unmuted by setPlayerMuted. """,
@@ -1992,7 +1992,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerVehicleEnter',
             docs=FunctionDoc(
                 description="""This event is triggered when a player enters a vehicle. """,
@@ -2039,7 +2039,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerVehicleExit',
             docs=FunctionDoc(
                 description="""This event is triggered when a player leaves a vehicle, for whatever reason. """,
@@ -2097,7 +2097,7 @@ message = WARNING:
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerVoiceStart',
             docs=FunctionDoc(
                 description="""<div style=border: 1px dotted blue; background: #00CC66;padding:4px;margin-bottom:2px;>Note:  This event should only be used as a low-level function for advanced users.  For typical Voice scripting, please see the Resource:Voice|Voice Resource</div>
@@ -2114,7 +2114,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerVoiceStop',
             docs=FunctionDoc(
                 description="""This event is triggered when a player stops talking through voice chat. """,
@@ -2130,7 +2130,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerWasted',
             docs=FunctionDoc(
                 description="""This event is triggered when a player is killed or dies. """,
@@ -2199,7 +2199,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerWeaponFire',
             docs=FunctionDoc(
                 description="""This event is called when a player fires a weapon.  This does not trigger for projectiles, melee weapons, or camera. """,
@@ -2297,7 +2297,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPlayerWeaponSwitch',
             docs=FunctionDoc(
                 description="""This event is triggered whenever a players equipped weapon slot changes. This means giveWeapon and takeWeapon will trigger this function if the equipped slot is forced to change. """,

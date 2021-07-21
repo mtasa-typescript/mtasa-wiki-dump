@@ -5,11 +5,11 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionData, \
+    EventData, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientColShapeHit',
             docs=FunctionDoc(
                 description="""This event is triggered when a physical element hits a colshape. """,
@@ -45,7 +45,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientColShapeLeave',
             docs=FunctionDoc(
                 description="""This event is triggered when a physical element leaves a colshape. """,
@@ -81,7 +81,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onColShapeHit',
             docs=FunctionDoc(
                 description="""This event is triggered when a physical element hits a colshape. """,
@@ -117,7 +117,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onColShapeLeave',
             docs=FunctionDoc(
                 description="""This event is triggered when a player or a vehicle leaves a collision shape. """,

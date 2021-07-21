@@ -5,11 +5,11 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionData, \
+    EventData, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onBan',
             docs=FunctionDoc(
                 description="""This event is triggered when an IP address or serial is banned from the server. """,
@@ -34,7 +34,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onChatMessage',
             docs=FunctionDoc(
                 description="""This event is triggered when a player uses say, teamsay, me successfully. Or when any message is output to chat using outputChatBox on the server side. It can be used to get the resource responsible for specific outputChatBox call via the second parameter. """,
@@ -70,7 +70,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onDebugMessage',
             docs=FunctionDoc(
                 description="""This event is triggered when debug messages (for instance errors or warnings) appear in the server console.
@@ -137,7 +137,7 @@ Note: To prevent infinite loops, debug messages that occur inside the function t
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onSettingChange',
             docs=FunctionDoc(
                 description="""This event is triggered when resource setting has been changed. For instance, this event would trigger if you would edit the settings of the Race resource through the Admin panel. """,
@@ -184,7 +184,7 @@ Note: To prevent infinite loops, debug messages that occur inside the function t
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onUnban',
             docs=FunctionDoc(
                 description="""This event is triggered when a ban is removed from the server.

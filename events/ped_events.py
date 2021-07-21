@@ -5,11 +5,11 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionData, \
+    EventData, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPedDamage',
             docs=FunctionDoc(
                 description="""This event is triggered whenever a ped is damaged. """,
@@ -67,7 +67,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPedHeliKilled',
             docs=FunctionDoc(
                 description="""This event is fired when a ped is killed due to the effect of a helicopter blades. """,
@@ -92,7 +92,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPedHitByWaterCannon',
             docs=FunctionDoc(
                 description="""This event is fired when a ped is hit by a water cannon. """,
@@ -117,7 +117,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPedStep',
             docs=FunctionDoc(
                 description="""This event is called when a peds foot has come on to the ground after jumping or taking a full step. """,
@@ -142,7 +142,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPedVehicleEnter',
             docs=FunctionDoc(
                 description=""" """,
@@ -178,7 +178,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPedVehicleExit',
             docs=FunctionDoc(
                 description=""" """,
@@ -214,7 +214,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPedWasted',
             docs=FunctionDoc(
                 description="""This event is triggered whenever a ped dies. """,
@@ -282,7 +282,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPedWeaponFire',
             docs=FunctionDoc(
                 description="""This event is called when ped shoots a weapon.  This does not trigger for projectiles based, or melee weapons. """,
@@ -371,7 +371,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPedVehicleEnter',
             docs=FunctionDoc(
                 description=""" """,
@@ -418,7 +418,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPedVehicleExit',
             docs=FunctionDoc(
                 description=""" """,
@@ -476,7 +476,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPedWasted',
             docs=FunctionDoc(
                 description="""This event is triggered when a ped is killed or dies. It is not triggered for players. """,
@@ -545,7 +545,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onPedWeaponSwitch',
             docs=FunctionDoc(
                 description="""This event is triggered when a ped switches weapons. """,

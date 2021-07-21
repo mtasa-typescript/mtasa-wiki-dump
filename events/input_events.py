@@ -5,11 +5,11 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionData, \
+    EventData, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientCharacter',
             docs=FunctionDoc(
                 description="""This event triggers whenever the user presses an alphanumeric character on their keyboard. This also includes special characters, ie.  / # %   { }. """,
@@ -34,7 +34,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientClick',
             docs=FunctionDoc(
                 description="""This event triggers whenever the user clicks his mouse.  This is linked to the GTA world, as oppose to GUI for which onClientGUIClick is to be used.  This event allows detection of click positions of the 3D world. """,
@@ -136,7 +136,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientCursorMove',
             docs=FunctionDoc(
                 description="""This event is called by the root element whenever the cursor is moved over the screen, by the player. It returns information about the world coordinates as well as the screen coordinates of where the player moved the cursor.
@@ -226,7 +226,7 @@ The difference between this event and onClientMouseMove, is that the latter is a
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientDoubleClick',
             docs=FunctionDoc(
                 description="""This event triggers whenever the user double-clicks his mouse.  This is linked to the GTA world, as appose to GUI for which onClientGUIDoubleClick is to be used.  This event allows detection of click positions of the 3D world. """,
@@ -317,7 +317,7 @@ The difference between this event and onClientMouseMove, is that the latter is a
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientGUIAccepted',
             docs=FunctionDoc(
                 description="""This event is triggered when enter is pressed on an editbox. """,
@@ -342,7 +342,7 @@ The difference between this event and onClientMouseMove, is that the latter is a
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientGUIBlur',
             docs=FunctionDoc(
                 description="""This event is triggered each time a GUI element looses input focus (mainly useful for windows, editboxes and memos but triggered for all GUI elements nevertheless). """,
@@ -358,7 +358,7 @@ The difference between this event and onClientMouseMove, is that the latter is a
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientGUIChanged',
             docs=FunctionDoc(
                 description="""This event is fired when a Element/GUI/Memo|memo or an Element/GUI/Edit_field|editbox has changed (either by the user or by guiSetText). """,
@@ -383,7 +383,7 @@ The difference between this event and onClientMouseMove, is that the latter is a
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientGUIClick',
             docs=FunctionDoc(
                 description="""This event happens when any gui-element clicked. """,
@@ -441,7 +441,7 @@ The difference between this event and onClientMouseMove, is that the latter is a
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientGUIComboBoxAccepted',
             docs=FunctionDoc(
                 description="""This event is called when a Element/GUI/Combobox|combobox gets accepted. """,
@@ -466,7 +466,7 @@ The difference between this event and onClientMouseMove, is that the latter is a
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientGUIDoubleClick',
             docs=FunctionDoc(
                 description="""This event is fired when the user double clicks a GUI element. Doesnt work with buttons. """,
@@ -524,7 +524,7 @@ The difference between this event and onClientMouseMove, is that the latter is a
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientGUIFocus',
             docs=FunctionDoc(
                 description="""This event is triggered each time a GUI element gains input focus (mainly useful for windows, editboxes and memos but triggered for all GUI elements nevertheless). """,
@@ -540,7 +540,7 @@ The difference between this event and onClientMouseMove, is that the latter is a
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientGUIMouseDown',
             docs=FunctionDoc(
                 description="""This event is fired when the user clicks certain mouse button on a GUI element. """,
@@ -587,7 +587,7 @@ The difference between this event and onClientMouseMove, is that the latter is a
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientGUIMouseUp',
             docs=FunctionDoc(
                 description="""This event is fired when the user releases his mouse button when on top of a GUI element. """,
@@ -634,7 +634,7 @@ The difference between this event and onClientMouseMove, is that the latter is a
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientGUIMove',
             docs=FunctionDoc(
                 description="""This event is triggered each time the user moves a GUI element. """,
@@ -650,7 +650,7 @@ The difference between this event and onClientMouseMove, is that the latter is a
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientGUIScroll',
             docs=FunctionDoc(
                 description="""This event is fired when a GUI scrollbar is scrolled. """,
@@ -675,7 +675,7 @@ The difference between this event and onClientMouseMove, is that the latter is a
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientGUISize',
             docs=FunctionDoc(
                 description="""This event is triggered when the local client resizes a GUI element. """,
@@ -691,7 +691,7 @@ The difference between this event and onClientMouseMove, is that the latter is a
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientGUITabSwitched',
             docs=FunctionDoc(
                 description="""This event is triggered each time the user switch from GUI tab.
@@ -717,7 +717,7 @@ When adding the event handler on the tab panel, propagate must be true. """,
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientKey',
             docs=FunctionDoc(
                 description="""This event triggers whenever the user presses a button on their keyboard or mouse.
@@ -754,7 +754,7 @@ This event can also be used to see if the client scrolls their mouse wheel. """,
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientMouseEnter',
             docs=FunctionDoc(
                 description="""This event is fired when the user moves the mouse over a GUI element. """,
@@ -801,7 +801,7 @@ This event can also be used to see if the client scrolls their mouse wheel. """,
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientMouseLeave',
             docs=FunctionDoc(
                 description="""This event is fired when the user moves the mouse away from a GUI element. """,
@@ -848,7 +848,7 @@ This event can also be used to see if the client scrolls their mouse wheel. """,
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientMouseMove',
             docs=FunctionDoc(
                 description="""This event is triggered each time the user moves the mouse on top of a GUI element. """,
@@ -884,7 +884,7 @@ This event can also be used to see if the client scrolls their mouse wheel. """,
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientMouseWheel',
             docs=FunctionDoc(
                 description="""This event is triggered each time the user scrolls his mouse scroll on top of a GUI element. """,
@@ -909,7 +909,7 @@ This event can also be used to see if the client scrolls their mouse wheel. """,
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientPaste',
             docs=FunctionDoc(
                 description="""This event triggers when user paste whatever (CTRL + V). This event isnt triggers if menu or console is visible or if any browser is focused, or if cursor is invisible. """,

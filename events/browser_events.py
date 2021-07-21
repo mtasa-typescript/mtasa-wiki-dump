@@ -5,11 +5,11 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionData, \
+    EventData, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientBrowserCreated',
             docs=FunctionDoc(
                 description="""This event is triggered when the CEF browser instance has been created. If you want to load a specific website right after creating the browser (using createBrowser or guiCreateBrowser), this event will be the convenient place. """,
@@ -25,7 +25,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientBrowserCursorChange',
             docs=FunctionDoc(
                 description="""This event is triggered when the cursor changes within a browser window. """,
@@ -50,7 +50,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientBrowserDocumentReady',
             docs=FunctionDoc(
                 description="""This event is executed after the web page has been loaded successfully. """,
@@ -75,7 +75,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientBrowserInputFocusChanged',
             docs=FunctionDoc(
                 description="""This event is triggered when the input focus inside a browser has changed. """,
@@ -100,7 +100,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientBrowserLoadingFailed',
             docs=FunctionDoc(
                 description="""The event is triggered when the browser can not load the page. """,
@@ -147,7 +147,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientBrowserLoadingStart',
             docs=FunctionDoc(
                 description="""The event is triggered when a Browser|webbrowser starts loading a page. """,
@@ -185,7 +185,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientBrowserNavigate',
             docs=FunctionDoc(
                 description="""The event is executed when the browser loads a new page. Do not use loadBrowserURL in the attached function. """,
@@ -232,7 +232,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientBrowserPopup',
             docs=FunctionDoc(
                 description="""TODO """,
@@ -279,7 +279,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientBrowserResourceBlocked',
             docs=FunctionDoc(
                 description="""This event is executed when a resource (images, sounds etc.) has been blocked. """,
@@ -329,7 +329,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientBrowserTooltip',
             docs=FunctionDoc(
                 description="""The event is triggered when the user hovers a tooltip. """,
@@ -354,7 +354,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientBrowserWhitelistChange',
             docs=FunctionDoc(
                 description="""The event is triggered when the whitelist has changed. Note that this event is only triggered if the request window was confirmed by accepting. """,

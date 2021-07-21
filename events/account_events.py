@@ -5,11 +5,11 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionData, \
+    EventData, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onAccountDataChange',
             docs=FunctionDoc(
                 description="""This event is triggered when an accounts data changes through setAccountData. """,

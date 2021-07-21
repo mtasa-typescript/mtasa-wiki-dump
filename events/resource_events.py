@@ -5,11 +5,11 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionData, \
+    EventData, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientResourceFileDownload',
             docs=FunctionDoc(
                 description=""" """,
@@ -67,7 +67,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientResourceStart',
             docs=FunctionDoc(
                 description="""This event is triggered when a resource is started.  Please note that this is not triggered the same time as the serverside event onResourceStart is.  The event is triggered when any clientside resources are started.  This means it is triggered when a clientside script is initiated after a download, which includes downloading after join. So:
@@ -94,7 +94,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[], client=[FunctionData(
+    CompoundEventData(server=[], client=[EventData(
             name='onClientResourceStop',
             docs=FunctionDoc(
                 description="""This event is triggered when a resource is being stopped. """,
@@ -119,7 +119,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onResourceLoadStateChange',
             docs=FunctionDoc(
                 description=""" """,
@@ -166,7 +166,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onResourcePreStart',
             docs=FunctionDoc(
                 description="""Analogous to onResourceStart, but triggered before script files are initialised. """,
@@ -191,7 +191,7 @@ DUMP_PARTIAL = [
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onResourceStart',
             docs=FunctionDoc(
                 description="""This event is triggered when a resource is started.
@@ -217,7 +217,7 @@ Important: If you attach this event to the root element it will called when any 
                     variable_length=False,
                 ),
         )], client=[]),
-    CompoundEventData(server=[FunctionData(
+    CompoundEventData(server=[EventData(
             name='onResourceStop',
             docs=FunctionDoc(
                 description="""This event is triggered when the resource is stopped. This can occur for a number of reasons:
