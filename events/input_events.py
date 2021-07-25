@@ -912,7 +912,7 @@ This event can also be used to see if the client scrolls their mouse wheel. """,
     CompoundEventData(server=[], client=[EventData(
             name='onClientPaste',
             docs=FunctionDoc(
-                description="""This event triggers when user paste whatever (CTRL + V). This event isnt triggers if menu or console is visible or if any browser is focused, or if cursor is invisible. """,
+                description="""This event triggers when user paste whatever (CTRL + V). This event isnt triggered if menu or console is visible or if any browser is focused, or if cursor is invisible. """,
                 arguments={
                     "clipboardText": """: a string representing the pasted value from clipboard. """
                 },
