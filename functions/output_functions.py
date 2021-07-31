@@ -701,6 +701,16 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                                 ),
                                 default_value=None,
                             )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='inputBlocked',
+                                argument_type=FunctionType(
+                                    names=['bool'],
+                                    is_optional=True,
+                                ),
+                                default_value=None,
+                            )
                         ]
                     ],
                     variable_length=False,
@@ -713,7 +723,8 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 description="""This function is used to show or hide the players chat. """,
                 arguments={
                     "thePlayer": """The player whose chat is to be hidden or shown. """,
-                    "show": """A boolean value determining whether to show (true) or hide (false) the chat. """
+                    "show": """A boolean value determining whether to show (true) or hide (false) the chat. """,
+                    "inputBlocked": """A boolean value determining whether chat input is blocked/hidden, regardless of chat visibility. If unset, this will keep the default behaviour prior to r20898 (true when chat is hidden, false when chat is visible). """
                 },
                 result="""returns true if the players chat was shown or hidden successfully, false otherwise. """,
             ),
@@ -745,6 +756,16 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                                 ),
                                 default_value=None,
                             )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='inputBlocked',
+                                argument_type=FunctionType(
+                                    names=['bool'],
+                                    is_optional=True,
+                                ),
+                                default_value=None,
+                            )
                         ]
                     ],
                     variable_length=False,
@@ -756,7 +777,8 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
             docs=FunctionDoc(
                 description="""This function is used to show or hide the players chat. """,
                 arguments={
-                    "show": """A boolean value determining whether to show (true) or hide (false) the chat. """
+                    "show": """A boolean value determining whether to show (true) or hide (false) the chat. """,
+                    "inputBlocked": """A boolean value determining whether chat input is blocked/hidden, regardless of chat visibility. If unset, this will keep the default behaviour prior to r20898 (true when chat is hidden, false when chat is visible). """
                 },
                 result="""returns true if the players chat was shown or hidden successfully, false otherwise. """,
             ),

@@ -1,3 +1,4 @@
 .idea
 .vs
 local.py
+__pycache__
