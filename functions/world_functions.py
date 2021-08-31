@@ -7601,7 +7601,7 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                                 name='trainsAndPlanesDistance',
                                 argument_type=FunctionType(
                                     names=['float'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='vehiclesDistance*2.14',
                             )

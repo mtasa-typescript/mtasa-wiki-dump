@@ -602,28 +602,7 @@ DUMP_PARTIAL = [
                     "controlName": """The control. See control names for a list of possible controls. """,
                     "rawValue": """A bool indicating if it should return the raw player input value (will always return script value for non-player peds). """
                 },
-                result="""returns a float between 0 ( full release ) and 1 ( full push ) indicating the amount the control is pushed.
-<section name=client-side example class=client show=true>
-<syntaxhighlight lang=lua>
-x, y, z = getelementposition(localplayer)
-rotx, roty, rotz = getelementrotation(localplayer)
-cj = createped(0, x, y, z)
-cj2 = createped(0, x, y, z)
-copcar = createvehicle(597, x, y+5, z+2)
-copcar2 = createvehicle(597, x+2, y+10, z+4)
-warppedintovehicle(cj2, copcar2, 0)
-warppedintovehicle(cj, copcar, 0)
-function ongetcjanalogcontrolstate()
-setpedanalogcontrolstate(cj, accelerate, 0.90)
-if getpedanalogcontrolstate(cj, accelerate, 0.90) then
-setpedanalogcontrolstate(cj2, brake_reverse, 0.90)
-end
-end
-addeventhandler(onclientrender, getrootelement(), ongetcjanalogcontrolstate)
-</syntaxhighlight>
-</section>
-<br /><br />
-* this example was created by hydra. """,
+                result="""returns a float between 0 (full release) and 1 (full push) indicating the amount the control is pushed. """,
             ),
             oop=None,
             name='getPedAnalogControlState',
@@ -2967,6 +2946,60 @@ There is an optional argument to specify ammunition and whether to set as the cu
             ),
             oop=None,
             name='givePedWeapon',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
+                name='isPedBleeding',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='thePed',
+                                argument_type=FunctionType(
+                                    names=['ped'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description=""" """,
+                arguments={
+                    "thePed": """the player or ped whose bleeding effect state you want to get. """
+                },
+                result="""returns true if the player or ped is bleeding, false otherwise. """,
+            ),
+            oop=FunctionOOP(
+                description=None,
+                class_name='ped',
+                method_name="""isBleeding""",
+                field="""bleeding""",
+                is_static=False,
+            ),
+            name='isPedBleeding',
         )
         ],
     ),
@@ -5520,6 +5553,71 @@ This function only works on peds, to change the analog control state for a playe
         client=[
             FunctionData(
             signature=FunctionSignature(
+                name='setPedBleeding',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='thePed',
+                                argument_type=FunctionType(
+                                    names=['ped'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='bleeding',
+                                argument_type=FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description=""" """,
+                arguments={
+                    "thePed": """the player or ped whose bleeding effect you want to set of. """,
+                    "bleeding": """boolean specifying whether the player or ped is bleeding or not. """
+                },
+                result="""returns true if the bleeding state was successfully set, error is raised otherwise. """,
+            ),
+            oop=FunctionOOP(
+                description=None,
+                class_name='ped',
+                method_name="""setBleeding""",
+                field="""bleeding""",
+                is_static=False,
+            ),
+            name='setPedBleeding',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
                 name='setPedCameraRotation',
                 return_types=FunctionReturnTypes(
                     return_types=[
@@ -6200,12 +6298,12 @@ this function returns false in the following cases
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function makes a players foot prints bloody. """,
+                description="""This function makes a ped|peds footprints bloody. """,
                 arguments={
-                    "thePlayer": """The player to give bloody foot prints to. """,
-                    "enabled": """Boolean specifying whether or not to have bloody feet. """
+                    "thePlayer": """the ped to give bloody footprints to. """,
+                    "enabled": """boolean specifying whether or not to have bloody feet. """
                 },
-                result="""returns true if changing the players bloody feet status worked. """,
+                result="""returns true if changing the peds bloody feet status worked. """,
             ),
             oop=None,
             name='setPedFootBloodEnabled',

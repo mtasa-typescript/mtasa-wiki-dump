@@ -372,6 +372,31 @@ DUMP_PARTIAL = [
                 ),
         )]),
     CompoundEventData(server=[EventData(
+            name='onPedDamage',
+            docs=FunctionDoc(
+                description="""This event is triggered when a ped is damaged. For player damage, use onPlayerDamage instead. """,
+                arguments={
+                    "loss": """: an int representing the percentage of health the ped lost. """
+                },
+                result=""" """,
+            ),
+            arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='loss',
+                                argument_type=FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+        )], client=[]),
+    CompoundEventData(server=[EventData(
             name='onPedVehicleEnter',
             docs=FunctionDoc(
                 description=""" """,

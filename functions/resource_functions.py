@@ -1284,7 +1284,13 @@ the table contains:
                 },
                 result="""returns a table with the acl requests for the given resource, or false if the resource is not valid. a valid resource with no acl requests will return an empty table. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description=None,
+                class_name='resource',
+                method_name="""getACLRequests""",
+                field="""aclRequests""",
+                is_static=False,
+            ),
             name='getResourceACLRequests',
         )
         ],
@@ -1424,7 +1430,13 @@ the table contains:
                 },
                 result="""returns an element of the resources dynamic element root if the resource specified was valid and active (currently running), false otherwise. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description=None,
+                class_name='resource',
+                method_name="""getDynamicElementRoot""",
+                field="""dynamicElementRoot""",
+                is_static=False,
+            ),
             name='getResourceDynamicElementRoot',
         )
         ],
@@ -1467,7 +1479,13 @@ the table contains:
                 },
                 result="""returns an element of the resources dynamic element root if the resource specified was valid and active (currently running), false otherwise. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description=None,
+                class_name='resource',
+                method_name="""getDynamicElementRoot""",
+                field="""dynamicElementRoot""",
+                is_static=False,
+            ),
             name='getResourceDynamicElementRoot',
         )
         ],
@@ -1512,7 +1530,13 @@ the table contains:
                 },
                 result="""returns a table of function names if successful, false otherwise. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description=None,
+                class_name='resource',
+                method_name="""getExportedFunctions""",
+                field="""exportedFunctions""",
+                is_static=False,
+            ),
             name='getResourceExportedFunctions',
         )
         ],
@@ -1555,7 +1579,13 @@ the table contains:
                 },
                 result="""returns a table of function names if successful, false otherwise. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description=None,
+                class_name='resource',
+                method_name="""getExportedFunctions""",
+                field="""exportedFunctions""",
+                is_static=False,
+            ),
             name='getResourceExportedFunctions',
         )
         ],
@@ -1814,7 +1844,13 @@ the table contains:
                 result="""if successful, returns the unix timestamp when the resource was last started, or the string never if the resource has not been started yet, otherwise false. use in conjunction with getrealtime in order to retrieve detailed information.
 returns a string with the time and date, or false if the resource does not exist. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description=None,
+                class_name='resource',
+                method_name="""getLastStartTime""",
+                field="""lastStartTime""",
+                is_static=False,
+            ),
             name='getResourceLastStartTime',
         )
         ],
@@ -1862,7 +1898,13 @@ returns a string with the time and date, or false if the resource does not exist
                 },
                 result="""if the resource failed to load, returns a string with the failure reason in it. if it loaded successfully, returns an empty string. returns false if the resource doesnt exist. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description=None,
+                class_name='resource',
+                method_name="""getLoadFailureReason""",
+                field="""loadFailureReason""",
+                is_static=False,
+            ),
             name='getResourceLoadFailureReason',
         )
         ],
@@ -1912,7 +1954,13 @@ returns a string with the time and date, or false if the resource does not exist
 if successful, returns a string with the date and time that the resource was last loaded into memory (for example when the server started, or when the resource was changed and reloaded). returns false on failure.
 an example string is fri mar 28 13:51:04 2008. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description=None,
+                class_name='resource',
+                method_name="""getLoadTime""",
+                field="""loadTime""",
+                is_static=False,
+            ),
             name='getResourceLoadTime',
         )
         ],
@@ -2129,7 +2177,7 @@ an example string is fri mar 28 13:51:04 2008. """,
                 description=None,
                 class_name='resource',
                 method_name="""getOrganizationalPath""",
-                field=None,
+                field="""organizationalPath""",
                 is_static=False,
             ),
             name='getResourceOrganizationalPath',
@@ -2417,7 +2465,13 @@ the state can be one of:
                 },
                 result="""returns the resource in which the current script is. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description="""This function is a static function underneath the Resource class.""",
+                class_name='Resource',
+                method_name="""getThis""",
+                field=None,
+                is_static=True,
+            ),
             name='getThisResource',
         )
         ],
@@ -2451,7 +2505,13 @@ the state can be one of:
                 },
                 result="""returns the resource in which the current script is. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description="""This function is a static function underneath the Resource class.""",
+                class_name='Resource',
+                method_name="""getThis""",
+                field=None,
+                is_static=True,
+            ),
             name='getThisResource',
         )
         ],
@@ -2755,7 +2815,7 @@ the state can be one of:
                 description=None,
                 class_name='resource',
                 method_name="""rename""",
-                field=None,
+                field="""name""",
                 is_static=False,
             ),
             name='renameResource',

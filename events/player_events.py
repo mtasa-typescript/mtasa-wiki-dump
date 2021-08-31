@@ -988,10 +988,7 @@ This event is triggered when a player starts talking through voice chat. """,
                 description="""This event is triggered when a player chats inside the chatbox. """,
                 arguments={
                     "message": """: a string representing the message typed into the chat. """,
-                    "messageType": """: an int value representing the message type: """,
-                    "0": """: normal message """,
-                    "1": """: action message (/me) """,
-                    "2": """: team message """
+                    "messageType": """: an int value representing the message type: """
                 },
                 result=""" """,
             ),

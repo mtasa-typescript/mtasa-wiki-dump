@@ -1952,7 +1952,13 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 },
                 result="""returns a gui-memo element of the created memo if it was successfully created, false otherwise. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description=None,
+                class_name='GuiMemo',
+                method_name=None,
+                field=None,
+                is_static=True,
+            ),
             name='guiCreateMemo',
         )
         ],
@@ -6949,7 +6955,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns the caret index on success, false otherwise. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description=None,
+                class_name='GuiMemo',
+                method_name="""getCaretIndex""",
+                field="""caretIndex""",
+                is_static=False,
+            ),
             name='guiMemoGetCaretIndex',
         )
         ],
@@ -6997,7 +7009,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns a float ranging between 0 and 100, or false otherwise. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description=None,
+                class_name='GuiMemo',
+                method_name="""getVerticalScrollPosition""",
+                field="""verticalScrollPosition""",
+                is_static=False,
+            ),
             name='guiMemoGetVerticalScrollPosition',
         )
         ],
@@ -7045,7 +7063,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the memo is read only, false if the memo isnt read only, nil otherwise. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description=None,
+                class_name='GuiMemo',
+                method_name="""isReadOnly""",
+                field="""readOnly""",
+                is_static=False,
+            ),
             name='guiMemoIsReadOnly',
         )
         ],
@@ -7104,7 +7128,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the caret was successfully moved, false otherwise. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description=None,
+                class_name='GuiMemo',
+                method_name="""setCaretIndex""",
+                field="""caretIndex""",
+                is_static=False,
+            ),
             name='guiMemoSetCaretIndex',
         )
         ],
@@ -7228,7 +7258,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the position was set, false otherwise. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description=None,
+                class_name='GuiMemo',
+                method_name="""setVerticalScrollPosition""",
+                field="""verticalScrollPosition""",
+                is_static=False,
+            ),
             name='guiMemoSetVerticalScrollPosition',
         )
         ],

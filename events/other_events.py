@@ -12,12 +12,15 @@ DUMP_PARTIAL = [
     CompoundEventData(server=[], client=[EventData(
             name='onClientChatMessage',
             docs=FunctionDoc(
-                description="""This event is triggered when any text is output to chatbox, including MTAs hardcoded messages. """,
+                description="""This event is triggered when any text is output to chatbox, including MTAs internal messages. """,
                 arguments={
-                    "text": """The text that was output to chatbox """,
+                    "text": """The text that was output to chatbox. """,
                     "r": """The amount of red in the color of the text. """,
                     "g": """The amount of green in the color of the text. """,
-                    "b": """The amount of blue in the color of the text. """
+                    "b": """The amount of blue in the color of the text. """,
+                    "messageType": """The type of message as a number.
+|20912}}
+This function is used to change the loop option of the [[sound]] [[element]]. """
                 },
                 result=""" """,
             ),
@@ -56,6 +59,16 @@ DUMP_PARTIAL = [
                         [
                             FunctionArgument(
                                 name='b',
+                                argument_type=FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='messageType',
                                 argument_type=FunctionType(
                                     names=['int'],
                                     is_optional=False,

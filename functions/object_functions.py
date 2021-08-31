@@ -667,7 +667,13 @@ on failure: false """,
                 result="""* true if the object is moving.
 * false if the object is not moving. """,
             ),
-            oop=None,
+            oop=FunctionOOP(
+                description=None,
+                class_name='object',
+                method_name="""isMoving""",
+                field="""moving""",
+                is_static=False,
+            ),
             name='isObjectMoving',
         )
         ],
@@ -1607,7 +1613,7 @@ on failure: false """,
             oop=FunctionOOP(
                 description=None,
                 class_name='object',
-                method_name="""toggleObjectRespawn""",
+                method_name="""toggleRespawn""",
                 field=None,
                 is_static=False,
             ),

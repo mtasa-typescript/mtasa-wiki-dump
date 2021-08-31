@@ -505,6 +505,97 @@ Note that the collision reported by this event doesnt always damage the vehicle 
                     variable_length=False,
                 ),
         )]),
+    CompoundEventData(server=[], client=[EventData(
+            name='onClientVehicleWeaponHit',
+            docs=FunctionDoc(
+                description="""This event is called when a vehicle weapon hits an element or the world. """,
+                arguments={
+                    "weaponType": """: The type of vehicle weapon. (See the list below) """,
+                    "hitElement": """: The vehicle, ped or player that was hit by the weapon sometimes false. """,
+                    "hitX": """: The X world co-ordinate of where the hit occured. """,
+                    "hitY": """: The Y world co-ordinate of where the hit occured. """,
+                    "hitZ": """: The Z world co-ordinate of where the hit occured. """,
+                    "model": """: The model ID of the element that was hit. """,
+                    "materialID": """: The material ID of the element that was hit. """
+                },
+                result=""" """,
+            ),
+            arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='weaponType',
+                                argument_type=FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='hitElement',
+                                argument_type=FunctionType(
+                                    names=['element'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='hitX',
+                                argument_type=FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='hitY',
+                                argument_type=FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='hitZ',
+                                argument_type=FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='model',
+                                argument_type=FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='materialID',
+                                argument_type=FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+        )]),
     CompoundEventData(server=[EventData(
             name='onTrailerAttach',
             docs=FunctionDoc(

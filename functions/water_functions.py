@@ -523,7 +523,7 @@ Note: The server can only return the water color, if it has actually been set by
                         ],
                         [
                             FunctionArgument(
-                                name='bCheckWaves',
+                                name='ignoreDistanceToWaterThreshold',
                                 argument_type=FunctionType(
                                     names=['bool'],
                                     is_optional=True,
@@ -546,7 +546,7 @@ Note: The server can only return the water color, if it has actually been set by
                     "z": """The Z axis position
 ''or:'' """,
                     "theWater": """the water element """,
-                    "bCheckWaves": """Include the water levels of waves in the ocean, lakes and ... """
+                    "ignoreDistanceToWaterThreshold": """If set to false, this function returns false, if the difference between water level (without waves) and posZ is greater than 3.0 """
                 },
                 result="""returns an integer of the water level if the localplayer/position is near the water (-3 to 20 on the z coordinate) else false if theres no water near the localplayer/position. """,
             ),

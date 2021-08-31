@@ -1157,7 +1157,7 @@ if an invalid marker is specified, false is returned. """,
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description="""This function allows changing the icon of a checkpoint marker. """,
                 arguments={
                     "theMarker": """The marker to change the visual style of """,
                     "icon": """A string referring to the type of icon, acceptable values are: """,
@@ -1220,7 +1220,7 @@ if an invalid marker is specified, false is returned. """,
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description="""This function allows changing the icon of a checkpoint marker. """,
                 arguments={
                     "theMarker": """The marker to change the visual style of """,
                     "icon": """A string referring to the type of icon, acceptable values are: """,

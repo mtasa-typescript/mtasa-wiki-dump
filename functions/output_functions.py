@@ -96,6 +96,45 @@ DUMP_PARTIAL = [
         client=[
             FunctionData(
             signature=FunctionSignature(
+                name='clearDebugBox',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description=""" """,
+                arguments={
+                    
+                },
+                result="""always returns true. """,
+            ),
+            oop=None,
+            name='clearDebugBox',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
                 name='isChatVisible',
                 return_types=FunctionReturnTypes(
                     return_types=[

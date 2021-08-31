@@ -384,7 +384,7 @@ DUMP_PARTIAL = [
                                 name='modelId',
                                 argument_type=FunctionType(
                                     names=['string'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
                                 default_value='""',
                             )
@@ -1382,7 +1382,7 @@ To replace weapon models you must use their object IDs, not weapon IDs. There is
                             FunctionArgument(
                                 name='elementType',
                                 argument_type=FunctionType(
-                                    names=['str'],
+                                    names=['string'],
                                     is_optional=False,
                                 ),
                                 default_value=None,

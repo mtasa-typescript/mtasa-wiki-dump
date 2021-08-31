@@ -32,6 +32,12 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
+        url="/wiki/GetSoundEffectParameters",
+        name="getSoundEffectParameters",
+        category="Audio functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
         url="/wiki/GetSoundEffects",
         name="getSoundEffects",
         category="Audio functions",
@@ -160,6 +166,12 @@ URL_LIST = [
     PageUrl(
         url="/wiki/SetSoundEffectEnabled",
         name="setSoundEffectEnabled",
+        category="Audio functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/SetSoundEffectParameter",
+        name="setSoundEffectParameter",
         category="Audio functions",
         type=ListType.CLIENT,
     ),
@@ -2174,6 +2186,12 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
+        url="/wiki/ClearDebugBox",
+        name="clearDebugBox",
+        category="Output functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
         url="/wiki/IsChatVisible",
         name="isChatVisible",
         category="Output functions",
@@ -2276,6 +2294,12 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
+        url="/wiki/IsPedBleeding",
+        name="isPedBleeding",
+        category="Ped functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
         url="/wiki/IsPedDoingTask",
         name="isPedDoingTask",
         category="Ped functions",
@@ -2308,6 +2332,12 @@ URL_LIST = [
     PageUrl(
         url="/wiki/SetPedAnalogControlState",
         name="setPedAnalogControlState",
+        category="Ped functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/SetPedBleeding",
+        name="setPedBleeding",
         category="Ped functions",
         type=ListType.CLIENT,
     ),
@@ -8318,6 +8348,12 @@ URL_LIST_EVENT = [
         type=ListType.CLIENT,
     ),
     PageUrl(
+        url="/wiki/OnClientVehicleWeaponHit",
+        name="onClientVehicleWeaponHit",
+        category="Vehicle events",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
         url="/wiki/OnClientWeaponFire",
         name="onClientWeaponFire",
         category="Weapon creation events",
@@ -8735,6 +8771,12 @@ URL_LIST_EVENT = [
         url="/wiki/OnPlayerWeaponSwitch",
         name="onPlayerWeaponSwitch",
         category="Player events",
+        type=ListType.SERVER,
+    ),
+    PageUrl(
+        url="/wiki/OnPedDamage",
+        name="onPedDamage",
+        category="Ped events",
         type=ListType.SERVER,
     ),
     PageUrl(

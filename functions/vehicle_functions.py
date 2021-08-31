@@ -6065,7 +6065,8 @@ possible strings returned: """,
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description="""This function returns the current upgrade id on the specified vehicles upgrade slot
+An upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 17 slots (0 to 16). """,
                 arguments={
                     "theVehicle": """: The vehicle whose upgrade you want to retrieve. """,
                     "slot": """: The slot id of the upgrade. (Upgrade list ordered by slot number) """
@@ -6125,7 +6126,8 @@ possible strings returned: """,
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description="""This function returns the current upgrade id on the specified vehicles upgrade slot
+An upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 17 slots (0 to 16). """,
                 arguments={
                     "theVehicle": """: The vehicle whose upgrade you want to retrieve. """,
                     "slot": """: The slot id of the upgrade. (Upgrade list ordered by slot number) """
@@ -7870,7 +7872,7 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description="""This function removes an already existing upgrade from the specified vehicle, eg: nos, hydraulics. Defined in San Andreas\data\maps\veh_mods\veh_mods.ide. """,
                 arguments={
                     "theVehicle": """: The element representing the vehicle you wish to remove the upgrade from """,
                     "upgrade": """: The ID of the upgrade you wish to remove. """
@@ -7924,7 +7926,7 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description="""This function removes an already existing upgrade from the specified vehicle, eg: nos, hydraulics. Defined in San Andreas\data\maps\veh_mods\veh_mods.ide. """,
                 arguments={
                     "theVehicle": """: The element representing the vehicle you wish to remove the upgrade from """,
                     "upgrade": """: The ID of the upgrade you wish to remove. """

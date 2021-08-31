@@ -183,8 +183,7 @@ In case of these invalid audio files, this function returns false.|true}} """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the beats per minute of a specific sound element.
-setTimer to do this.}} """,
+                description="""This function gets the beats per minute of a specific sound element. """,
                 arguments={
                     "sound": """a sound element that is created using playSound or playSound3D """
                 },
@@ -254,6 +253,71 @@ setTimer to do this.}} """,
                 is_static=False,
             ),
             name='getSoundBufferLength',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
+                name='getSoundEffectParameters',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['table'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='sound',
+                                argument_type=FunctionType(
+                                    names=['element'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='effectName',
+                                argument_type=FunctionType(
+                                    names=['string'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description=""" """,
+                arguments={
+                    "sound": """: the sound element. """,
+                    "effectName": """: the name of the effect whose parameters you want to retrieve. """
+                },
+                result="""returns a table with the parameter names as the keys, and their values. if the specified effect name is not valid, an error is raised. """,
+            ),
+            oop=FunctionOOP(
+                description=None,
+                class_name='sound',
+                method_name="""getEffectParameters""",
+                field=None,
+                is_static=False,
+            ),
+            name='getSoundEffectParameters',
         )
         ],
     ),
@@ -370,10 +434,10 @@ sound effect names: """,
             ),
             docs=FunctionDoc(
                 description="""This function gets the fast fourier transform data for an audio stream which is a table of floats representing the current audio frame. This allows things like visualisations.
-A fast fourier transform generates a table of all the frequencies of the current audio frame which starts at the bass end of the spectrum to mids to highs in that order
-Should you have any problems there is an example resource located on the resource svn here:
+A fast fourier transform generates a table of all the frequencies of the current audio frame which starts at the bass end of the spectrum to mids to highs in that order.
+Should you have any problems there is an example resource located on the resources repository:
 https://github.com/multitheftauto/mtasa-resources/tree/master/%5Bgameplay%5D/visualiser Visualiser
-just type startmusic mystreamurl in your console and it will play on the cinema billboard near A51 If the element is a player, this function will use the players voice. """,
+Just type startmusic mystreamurl in your console and it will play on the cinema billboard near A51. If the element is a player, this function will use the players voice. """,
                 arguments={
                     "sound": """a sound element that is created using playSound or playSound3D. Streams are also supported """,
                     "iSamples": """allowed samples are 256, 512, 1024, 2048, 4096, 8192 and 16384. """,
@@ -1844,6 +1908,93 @@ Use a player element to control a players voice with this function. """,
         client=[
             FunctionData(
             signature=FunctionSignature(
+                name='setSoundEffectParameter',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='sound',
+                                argument_type=FunctionType(
+                                    names=['element'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='effectName',
+                                argument_type=FunctionType(
+                                    names=['string'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='effectParam',
+                                argument_type=FunctionType(
+                                    names=['string'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='paramValue',
+                                argument_type=FunctionType(
+                                    names=['var'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description=""" """,
+                arguments={
+                    "sound": """: the sound element. """,
+                    "effectName": """: the name of the effect whose parameter you want to change. """,
+                    "effectParam": """: the parameter #Effects Parameters|name. """,
+                    "paramValue": """: the parameter #Effects Parameters|value. """
+                },
+                result="""returns true if everything went well, error is raised otherwise. """,
+            ),
+            oop=FunctionOOP(
+                description=None,
+                class_name='sound',
+                method_name="""setEffectParameter""",
+                field=None,
+                is_static=False,
+            ),
+            name='setSoundEffectParameter',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
                 name='setSoundLooped',
                 return_types=FunctionReturnTypes(
                     return_types=[
@@ -1889,13 +2040,7 @@ Use a player element to control a players voice with this function. """,
                     "theSound": """The sound element to set the loop. """,
                     "bool": """A boolean representing whether the sound will be looped. """
                 },
-                result="""returns true if the sound element loop was successfully changed, false otherwise.
-<syntaxhighlight lang=lua>
-addeventhandler(onclientresourcestart, resourceroot, function()
-local mysound = playsound(sound.mp3)
-setsoundlooped(mysound, true)
-end)
-</syntaxhighlight> """,
+                result="""returns true if the sound element loop was successfully changed, false otherwise. """,
             ),
             oop=FunctionOOP(
                 description=None,
@@ -2284,7 +2429,7 @@ Use a player element to control a players voice with this function. """,
             docs=FunctionDoc(
                 description="""This function is used to change the seek position of the specified sound element.
 Use a player element to control a players voice with this function.
-*To set position of a remote audio file you have to pause it first, then set the position and then unpause it.}} """,
+*To set position of a remote audio file, you must pause the sound within an onClientSoundStream event after creation, set the sound position and then unpause it again. The sound can also not be throttled (see playSound arguments)}} """,
                 arguments={
                     "theSound": """the sound element which seek position you want to modify. """,
                     "pos": """a float value representing the new seek position of the sound element in seconds. """

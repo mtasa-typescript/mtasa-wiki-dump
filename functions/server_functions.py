@@ -590,9 +590,9 @@ Users of the fastmove glitch may additionally want to install https://community.
                                 name='reason',
                                 argument_type=FunctionType(
                                     names=['string'],
-                                    is_optional=False,
+                                    is_optional=True,
                                 ),
-                                default_value=None,
+                                default_value='"Noreasonspecified"',
                             )
                         ]
                     ],
@@ -606,7 +606,9 @@ Users of the fastmove glitch may additionally want to install https://community.
                 description="""This function shuts down the server.
 Make sure your server ACL setup has function.shutdown object protected. """,
                 arguments={
-                    "reason": """the reason why the server has been shut down. """
+                    "reason": """the reason why the server has been shutdown. """,
+                    "exitCode": """the server application exit code to be returned on shutdown.
+|20915}} """
                 },
                 result="""returns false if it was not possible to shut down the server. """,
             ),

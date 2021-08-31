@@ -191,8 +191,9 @@ DUMP_PARTIAL = [
                 description="""The event is executed when the browser loads a new page. Do not use loadBrowserURL in the attached function. """,
                 arguments={
                     "targetURL": """the page the browser loaded. """,
-                    "isBlocked": """if the browser was created with isLocal set to true, and the browser tried to load a remote page, this would be set to true (and vice-versa).
-* {{New feature/item|3.0160|1.6|7888|'''isMainFrame:''' a [[boolean]] representing whether the entire page (main frame) was loaded or an ''<iframe>'' inside the page was loaded.}} """
+                    "isBlocked": """if the browser was created with isLocal set to true, and the browser tried to load a remote page, this would be set to true (and vice-versa). """,
+                    "isMainFrame": """a boolean representing whether the entire page (main frame) was loaded or an <iframe> inside the page was loaded.
+|7888}} """
                 },
                 result=""" """,
             ),
