@@ -9,7 +9,12 @@ from to_python.core.types import FunctionType, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[], client=[EventData(
+    CompoundEventData(
+        server=[
+            
+        ],
+        client=[
+            EventData(
             name='onClientPickupHit',
             docs=FunctionDoc(
                 description="""This event triggers whenever a pickup is hit clientside. """,
@@ -44,8 +49,15 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )]),
-    CompoundEventData(server=[], client=[EventData(
+        )
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            
+        ],
+        client=[
+            EventData(
             name='onClientPickupLeave',
             docs=FunctionDoc(
                 description="""This event triggers whenever a pickup is left clientside. """,
@@ -80,8 +92,12 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )]),
-    CompoundEventData(server=[EventData(
+        )
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            EventData(
             name='onPickupHit',
             docs=FunctionDoc(
                 description="""This event is triggered when a player hits a pickup. """,
@@ -105,8 +121,15 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )], client=[]),
-    CompoundEventData(server=[EventData(
+        )
+        ],
+        client=[
+            
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            EventData(
             name='onPickupLeave',
             docs=FunctionDoc(
                 description="""This event is triggered when a player leaves a pickup. """,
@@ -130,8 +153,15 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )], client=[]),
-    CompoundEventData(server=[EventData(
+        )
+        ],
+        client=[
+            
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            EventData(
             name='onPickupSpawn',
             docs=FunctionDoc(
                 description="""This event is triggered when a pickup is spawned or respawned. """,
@@ -146,8 +176,15 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )], client=[]),
-    CompoundEventData(server=[EventData(
+        )
+        ],
+        client=[
+            
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            EventData(
             name='onPickupUse',
             docs=FunctionDoc(
                 description="""This event is triggered when a player stands on a pickup while not in a vehicle. """,
@@ -171,5 +208,10 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )], client=[])
+        )
+        ],
+        client=[
+            
+        ],
+    )
 ]

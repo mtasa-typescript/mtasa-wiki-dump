@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -41,7 +40,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a table of all the currently loaded modules. if no modules are loaded, the table will be empty. """,
             ),
-            oop=None,
             name='getLoadedModules',
         )
         ],
@@ -93,7 +91,6 @@ DUMP_PARTIAL = [
 *author: module author
 if invalid name for module is passed, it will return false. """,
             ),
-            oop=None,
             name='getModuleInfo',
         )
         ],

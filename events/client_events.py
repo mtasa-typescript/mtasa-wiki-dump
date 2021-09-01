@@ -9,7 +9,9 @@ from to_python.core.types import FunctionType, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[EventData(
+    CompoundEventData(
+        server=[
+            EventData(
             name='onConsole',
             docs=FunctionDoc(
                 description="""This event is triggered when a player types a message into his console. It is also triggered when entering / commands via the chatbox. """,
@@ -33,5 +35,10 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )], client=[])
+        )
+        ],
+        client=[
+            
+        ],
+    )
 ]

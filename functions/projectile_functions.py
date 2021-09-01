@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -192,13 +191,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a projectile element if projectile creation was successful. returns false if unable to create a projectile (wrong weapon id or projectiles limit was reached). """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Projectile',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createProjectile',
         )
         ],
@@ -243,7 +235,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='detonateSatchels',
         )
         ],
@@ -277,7 +268,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='detonateSatchels',
         )
         ],
@@ -329,13 +319,6 @@ DUMP_PARTIAL = [
 * both types of rockets will explode when it hits 0
 * satchels restarts so i do not think it does anything """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='projectile',
-                method_name="""getCounter""",
-                field="""counter""",
-                is_static=False,
-            ),
             name='getProjectileCounter',
         )
         ],
@@ -382,13 +365,6 @@ DUMP_PARTIAL = [
                     "theProjectile": """The projectiles| projectile element which creator you want to retrieve. """
                 },
                 result="""returns the element which created the projectile if successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='projectile',
-                method_name="""getCreator""",
-                field="""creator""",
-                is_static=False,
             ),
             name='getProjectileCreator',
         )
@@ -437,13 +413,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a float if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='projectile',
-                method_name="""getForce""",
-                field="""force""",
-                is_static=False,
-            ),
             name='getProjectileForce',
         )
         ],
@@ -491,13 +460,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the element which is the projectiles target if the projectile is valid and can have a target (like a heat-seeking rocket), false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='projectile',
-                method_name="""getTarget""",
-                field="""target""",
-                is_static=False,
-            ),
             name='getProjectileTarget',
         )
         ],
@@ -544,13 +506,6 @@ DUMP_PARTIAL = [
                     "theProjectile": """The Element/Projectile|projectile element which type you want to retrieve. """
                 },
                 result="""returns an integer over the type of the projectile or false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='projectile',
-                method_name="""getType""",
-                field="""type""",
-                is_static=False,
             ),
             name='getProjectileType',
         )
@@ -613,13 +568,6 @@ DUMP_PARTIAL = [
                     "timeToDetonate": """The time in milliseconds to detonation. """
                 },
                 result="""returns true on success, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='projectile',
-                method_name="""setCounter""",
-                field="""counter""",
-                is_static=False,
             ),
             name='setProjectileCounter',
         )

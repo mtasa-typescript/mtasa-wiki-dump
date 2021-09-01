@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -50,7 +49,6 @@ DUMP_PARTIAL = [
                 },
                 result="""this function returns a string containing the body part name if the id is valid, false otherwise. """,
             ),
-            oop=None,
             name='getBodyPartName',
         )
         ],
@@ -93,7 +91,6 @@ DUMP_PARTIAL = [
                 },
                 result="""this function returns a string containing the body part name if the id is valid, false otherwise. """,
             ),
-            oop=None,
             name='getBodyPartName',
         )
         ],
@@ -154,7 +151,6 @@ DUMP_PARTIAL = [
                 },
                 result="""this function returns 2 strings, a texture and model respectively, false if invalid arguments were passed to the function. """,
             ),
-            oop=None,
             name='getClothesByTypeIndex',
         )
         ],
@@ -213,7 +209,6 @@ DUMP_PARTIAL = [
                 },
                 result="""this function returns 2 strings, a texture and model respectively, false if invalid arguments were passed to the function. """,
             ),
-            oop=None,
             name='getClothesByTypeIndex',
         )
         ],
@@ -258,7 +253,6 @@ DUMP_PARTIAL = [
                 },
                 result="""this function returns a string (the name of the clothes type) if found, false otherwise. """,
             ),
-            oop=None,
             name='getClothesTypeName',
         )
         ],
@@ -301,7 +295,6 @@ DUMP_PARTIAL = [
                 },
                 result="""this function returns a string (the name of the clothes type) if found, false otherwise. """,
             ),
-            oop=None,
             name='getClothesTypeName',
         )
         ],
@@ -362,7 +355,6 @@ DUMP_PARTIAL = [
                 },
                 result="""this function returns two integers, type and index respectively, false if invalid arguments were passed to the function. """,
             ),
-            oop=None,
             name='getTypeIndexFromClothes',
         )
         ],
@@ -421,7 +413,6 @@ DUMP_PARTIAL = [
                 },
                 result="""this function returns two integers, type and index respectively, false if invalid arguments were passed to the function. """,
             ),
-            oop=None,
             name='getTypeIndexFromClothes',
         )
         ],

@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -138,13 +137,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='radararea|RadarArea',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createRadarArea',
         )
         ],
@@ -275,13 +267,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='radararea|RadarArea',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createRadarArea',
         )
         ],
@@ -338,13 +323,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns four integers in rgba format (red, green, blue, alpha), with a maximum value of 255 for each.  alpha decides transparency where 255 is opaque and 0 is transparent.  returns false if the radararea is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='radararea',
-                method_name="""getColor""",
-                field=None,
-                is_static=False,
-            ),
             name='getRadarAreaColor',
         )
         ],
@@ -399,13 +377,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns four integers in rgba format (red, green, blue, alpha), with a maximum value of 255 for each.  alpha decides transparency where 255 is opaque and 0 is transparent.  returns false if the radararea is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='radararea',
-                method_name="""getColor""",
-                field=None,
-                is_static=False,
-            ),
             name='getRadarAreaColor',
         )
         ],
@@ -454,13 +425,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns two floats indicating the x and y length of the radar area respectively, false if the radar area is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='radararea',
-                method_name="""getSize""",
-                field=None,
-                is_static=False,
-            ),
             name='getRadarAreaSize',
         )
         ],
@@ -507,13 +471,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns two floats indicating the x and y length of the radar area respectively, false if the radar area is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='radararea',
-                method_name="""getSize""",
-                field=None,
-                is_static=False,
-            ),
             name='getRadarAreaSize',
         )
         ],
@@ -580,13 +537,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the position is inside the radar area, false if it isnt or if any parameters are invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='radararea',
-                method_name="""isInside""",
-                field=None,
-                is_static=False,
-            ),
             name='isInsideRadarArea',
         )
         ],
@@ -651,13 +601,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the position is inside the radar area, false if it isnt or if any parameters are invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='radararea',
-                method_name="""isInside""",
-                field=None,
-                is_static=False,
-            ),
             name='isInsideRadarArea',
         )
         ],
@@ -702,13 +645,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the radar area is flashing, false if it is not or if it doesnt exist. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='radararea',
-                method_name="""isFlashing""",
-                field="""flashing""",
-                is_static=False,
-            ),
             name='isRadarAreaFlashing',
         )
         ],
@@ -750,13 +686,6 @@ DUMP_PARTIAL = [
                     "theRadararea": """The radar area you wish to check the state of flashing """
                 },
                 result="""returns true if the radar area is flashing, false if it is not or if it doesnt exist. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='radararea',
-                method_name="""isFlashing""",
-                field="""flashing""",
-                is_static=False,
             ),
             name='isRadarAreaFlashing',
         )
@@ -845,13 +774,6 @@ DUMP_PARTIAL = [
                     "a": """an integer representing the colors alpha (0 for transparent, 255 for opaque) """
                 },
                 result="""returns true if the color was set successfully, false if the radar area doesnt exist or the color arguments are improper. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='radararea',
-                method_name="""setColor""",
-                field=None,
-                is_static=False,
             ),
             name='setRadarAreaColor',
         )
@@ -938,13 +860,6 @@ DUMP_PARTIAL = [
                     "a": """an integer representing the colors alpha (0 for transparent, 255 for opaque) """
                 },
                 result="""returns true if the color was set successfully, false if the radar area doesnt exist or the color arguments are improper. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='radararea',
-                method_name="""setColor""",
-                field=None,
-                is_static=False,
             ),
             name='setRadarAreaColor',
         )
@@ -1000,13 +915,6 @@ DUMP_PARTIAL = [
                     "flash": """a bool indicating whether the radar area should flash (true to flash, false to not flash). """
                 },
                 result="""returns true if the new flash state was successfully set, false if the radar area doesnt exist or invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='radararea',
-                method_name="""setFlashing""",
-                field="""flashing""",
-                is_static=False,
             ),
             name='setRadarAreaFlashing',
         )
@@ -1060,13 +968,6 @@ DUMP_PARTIAL = [
                     "flash": """a bool indicating whether the radar area should flash (true to flash, false to not flash). """
                 },
                 result="""returns true if the new flash state was successfully set, false if the radar area doesnt exist or invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='radararea',
-                method_name="""setFlashing""",
-                field="""flashing""",
-                is_static=False,
             ),
             name='setRadarAreaFlashing',
         )
@@ -1133,13 +1034,6 @@ DUMP_PARTIAL = [
                     "y": """the y length of the radar area. """
                 },
                 result="""returns true if the size was set successfully, false if invalid arguments are passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='radararea',
-                method_name="""setSize""",
-                field=None,
-                is_static=False,
             ),
             name='setRadarAreaSize',
         )
@@ -1204,13 +1098,6 @@ DUMP_PARTIAL = [
                     "y": """the y length of the radar area. """
                 },
                 result="""returns true if the size was set successfully, false if invalid arguments are passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='radararea',
-                method_name="""setSize""",
-                field=None,
-                is_static=False,
             ),
             name='setRadarAreaSize',
         )

@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -72,7 +71,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a sequence of integer values from the original string if successful, nil otherwise. """,
             ),
-            oop=None,
             name='utf8.byte',
         )
         ],
@@ -137,7 +135,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a sequence of integer values from the original string if successful, nil otherwise. """,
             ),
-            oop=None,
             name='utf8.byte',
         )
         ],
@@ -182,7 +179,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string representation of the codepoints passed. """,
             ),
-            oop=None,
             name='utf8.char',
         )
         ],
@@ -225,7 +221,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string representation of the codepoints passed. """,
             ),
-            oop=None,
             name='utf8.char',
         )
         ],
@@ -296,7 +291,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the integer position as in a byte string and the integer codepoint at this position, nil otherwise. """,
             ),
-            oop=None,
             name='utf8.charpos',
         )
         ],
@@ -365,7 +359,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the integer position as in a byte string and the integer codepoint at this position, nil otherwise. """,
             ),
-            oop=None,
             name='utf8.charpos',
         )
         ],
@@ -410,7 +403,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string containing the escaped utf-8 characters from the original string. """,
             ),
-            oop=None,
             name='utf8.escape',
         )
         ],
@@ -453,7 +445,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string containing the escaped utf-8 characters from the original string. """,
             ),
-            oop=None,
             name='utf8.escape',
         )
         ],
@@ -535,7 +526,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns two number values for the beginning and ending position of the matched string, nil otherwise. """,
             ),
-            oop=None,
             name='utf8.find',
         )
         ],
@@ -615,7 +605,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns two number values for the beginning and ending position of the matched string, nil otherwise. """,
             ),
-            oop=None,
             name='utf8.find',
         )
         ],
@@ -660,7 +649,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string in lowercase or returns an integer (see description). """,
             ),
-            oop=None,
             name='utf8.fold',
         )
         ],
@@ -703,7 +691,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string in lowercase or returns an integer (see description). """,
             ),
-            oop=None,
             name='utf8.fold',
         )
         ],
@@ -759,7 +746,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns an function for iterations on the input string by using the passed pattern string. """,
             ),
-            oop=None,
             name='utf8.gmatch',
         )
         ],
@@ -813,7 +799,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns an function for iterations on the input string by using the passed pattern string. """,
             ),
-            oop=None,
             name='utf8.gmatch',
         )
         ],
@@ -891,7 +876,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a pair of values, the modified string and the integer number of substitutions made. """,
             ),
-            oop=None,
             name='utf8.gsub',
         )
         ],
@@ -967,7 +951,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a pair of values, the modified string and the integer number of substitutions made. """,
             ),
-            oop=None,
             name='utf8.gsub',
         )
         ],
@@ -1034,7 +1017,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string with the inserted substring value. """,
             ),
-            oop=None,
             name='utf8.insert',
         )
         ],
@@ -1099,7 +1081,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string with the inserted substring value. """,
             ),
-            oop=None,
             name='utf8.insert',
         )
         ],
@@ -1166,7 +1147,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the length of the string as an integer. """,
             ),
-            oop=None,
             name='utf8.len',
         )
         ],
@@ -1231,7 +1211,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the length of the string as an integer. """,
             ),
-            oop=None,
             name='utf8.len',
         )
         ],
@@ -1298,7 +1277,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a sequence of string matches from the input string, nil otherwise. """,
             ),
-            oop=None,
             name='utf8.match',
         )
         ],
@@ -1363,7 +1341,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a sequence of string matches from the input string, nil otherwise. """,
             ),
-            oop=None,
             name='utf8.match',
         )
         ],
@@ -1419,7 +1396,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns an integer, which indicates the difference, see the table below for further information. """,
             ),
-            oop=None,
             name='utf8.ncasecmp',
         )
         ],
@@ -1473,7 +1449,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns an integer, which indicates the difference, see the table below for further information. """,
             ),
-            oop=None,
             name='utf8.ncasecmp',
         )
         ],
@@ -1544,7 +1519,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the integer position in bytes and the integer codepoint at this position, nil otherwise. """,
             ),
-            oop=None,
             name='utf8.next',
         )
         ],
@@ -1613,7 +1587,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the integer position in bytes and the integer codepoint at this position, nil otherwise. """,
             ),
-            oop=None,
             name='utf8.next',
         )
         ],
@@ -1680,7 +1653,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the string with the removed substring from the range. """,
             ),
-            oop=None,
             name='utf8.remove',
         )
         ],
@@ -1745,7 +1717,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the string with the removed substring from the range. """,
             ),
-            oop=None,
             name='utf8.remove',
         )
         ],
@@ -1790,7 +1761,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string containing the reversed original utf-8 string. """,
             ),
-            oop=None,
             name='utf8.reverse',
         )
         ],
@@ -1833,7 +1803,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string containing the reversed original utf-8 string. """,
             ),
-            oop=None,
             name='utf8.reverse',
         )
         ],
@@ -1900,7 +1869,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string substring of the original string, containing the selected range from the original string. """,
             ),
-            oop=None,
             name='utf8.sub',
         )
         ],
@@ -1965,7 +1933,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string substring of the original string, containing the selected range from the original string. """,
             ),
-            oop=None,
             name='utf8.sub',
         )
         ],
@@ -2010,7 +1977,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string in uppercase or returns an integer (see description). """,
             ),
-            oop=None,
             name='utf8.title',
         )
         ],
@@ -2053,7 +2019,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string in uppercase or returns an integer (see description). """,
             ),
-            oop=None,
             name='utf8.title',
         )
         ],
@@ -2120,7 +2085,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the integer width of the input string or the width of the codepoint integer. """,
             ),
-            oop=None,
             name='utf8.width',
         )
         ],
@@ -2185,7 +2149,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the integer width of the input string or the width of the codepoint integer. """,
             ),
-            oop=None,
             name='utf8.width',
         )
         ],
@@ -2270,7 +2233,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the given location, the offset in utf-8 encoding (if cursor is in the middle of the wide char - offset will be 2) and the width of the character, otherwise only the location as integer will be returned. """,
             ),
-            oop=None,
             name='utf8.widthindex',
         )
         ],
@@ -2353,7 +2315,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the given location, the offset in utf-8 encoding (if cursor is in the middle of the wide char - offset will be 2) and the width of the character, otherwise only the location as integer will be returned. """,
             ),
-            oop=None,
             name='utf8.widthindex',
         )
         ],

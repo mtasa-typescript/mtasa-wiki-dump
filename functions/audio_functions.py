@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -44,7 +43,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the id of the radio channel. """,
             ),
-            oop=None,
             name='getRadioChannel',
         )
         ],
@@ -92,7 +90,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string containing the station name if successful, false otherwise. """,
             ),
-            oop=None,
             name='getRadioChannelName',
         )
         ],
@@ -141,7 +138,6 @@ In case of these invalid audio files, this function returns false.|true}} """,
                 },
                 result="""returns true if the sound container is available, false otherwise. """,
             ),
-            oop=None,
             name='getSFXStatus',
         )
         ],
@@ -188,13 +184,6 @@ In case of these invalid audio files, this function returns false.|true}} """,
                     "sound": """a sound element that is created using playSound or playSound3D """
                 },
                 result="""returns the beats per minute of the given sound. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""getBPM""",
-                field=None,
-                is_static=False,
             ),
             name='getSoundBPM',
         )
@@ -244,13 +233,6 @@ In case of these invalid audio files, this function returns false.|true}} """,
                 result="""* a float value indicating the buffer playback length of the sound in seconds.
 * false if the sound is not a stream.
 * nil if the sound is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""getBufferLength""",
-                field="""bufferLength""",
-                is_static=False,
             ),
             name='getSoundBufferLength',
         )
@@ -310,13 +292,6 @@ In case of these invalid audio files, this function returns false.|true}} """,
                 },
                 result="""returns a table with the parameter names as the keys, and their values. if the specified effect name is not valid, an error is raised. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""getEffectParameters""",
-                field=None,
-                is_static=False,
-            ),
             name='getSoundEffectParameters',
         )
         ],
@@ -364,13 +339,6 @@ In case of these invalid audio files, this function returns false.|true}} """,
                 },
                 result="""returns a table with the effect names as the keys, and their states as the values if successful. otherwise, it returns false.
 sound effect names: """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""getEffects""",
-                field=None,
-                is_static=False,
             ),
             name='getSoundEffects',
         )
@@ -447,13 +415,6 @@ Just type startmusic mystreamurl in your console and it will play on the cinema 
 returns false if the sound is not playing yet or hasnt buffered in the
 case of streams. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""getFFTData""",
-                field=None,
-                is_static=False,
-            ),
             name='getSoundFFTData',
         )
         ],
@@ -501,13 +462,6 @@ If the element is a player, this function will use the players voice. """,
                     "theSound": """the sound element which length you want to return. """
                 },
                 result="""returns an float value indicating the playback length of the sound element in seconds. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""getLength""",
-                field="""length""",
-                is_static=False,
             ),
             name='getSoundLength',
         )
@@ -561,13 +515,6 @@ If the element is a player, this function will use the players voice. """,
                 },
                 result="""returns a two integers in range from 0 to 32768. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""getLevelData""",
-                field=None,
-                is_static=False,
-            ),
             name='getSoundLevelData',
         )
         ],
@@ -614,13 +561,6 @@ If the element is a player, this function will use the players voice. """,
                     "sound": """a sound element. """
                 },
                 result="""returns an integer of the max distance, false if invalid arguments where passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""getMaxDistance""",
-                field="""maxDistance""",
-                is_static=False,
             ),
             name='getSoundMaxDistance',
         )
@@ -681,13 +621,6 @@ If the element is a player, this function will use the players voice. """,
                 },
                 result="""returns a table, but only a string if format is given, with all data available (keys are listed below) for the sound if successful, false otherwise. if any data is unavailable then the associated key is not written to the table. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""getMetaTags""",
-                field=None,
-                is_static=False,
-            ),
             name='getSoundMetaTags',
         )
         ],
@@ -734,13 +667,6 @@ If the element is a player, this function will use the players voice. """,
                     "sound": """a sound element. """
                 },
                 result="""returns an integer of the minimum distance, false if invalid arguements where passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""getMinDistance""",
-                field="""minDistance""",
-                is_static=False,
             ),
             name='getSoundMinDistance',
         )
@@ -789,13 +715,6 @@ If the element is a player, this function will use the players voice. """,
                 },
                 result="""returns float value with range from -1.0 (left) to 1.0 (right), false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""getPan""",
-                field="""pan""",
-                is_static=False,
-            ),
             name='getSoundPan',
         )
         ],
@@ -843,13 +762,6 @@ If the element is a player, this function will use the players voice. """,
                     "theSound": """The sound element which seek position you want to return. """
                 },
                 result="""returns a float value indicating the seek position of the sound element in seconds. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""getPlaybackPosition""",
-                field="""playbackPosition""",
-                is_static=False,
             ),
             name='getSoundPosition',
         )
@@ -911,13 +823,6 @@ If the element is a player, this function will use the players voice. """,
                 result="""this function returns 3 float|floats and a boolean value:
 the first float is the sounds http://en.wikipedia.org/wiki/sampling_rate sample rate, the second one the sounds http://en.wikipedia.org/wiki/tempo tempo, and the third one the http://en.wikipedia.org/wiki/pitch_%28music%29 pitch of the sound. the boolean representing whether the sound is reversed or not. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""getProperties""",
-                field=None,
-                is_static=False,
-            ),
             name='getSoundProperties',
         )
         ],
@@ -964,13 +869,6 @@ the first float is the sounds http://en.wikipedia.org/wiki/sampling_rate sample 
                     "theSound": """the sound element which playback speed you want to return. """
                 },
                 result="""returns an float value indicating the playback speed of the sound element. default sound playback speed is 1.0. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""getSpeed""",
-                field="""speed""",
-                is_static=False,
             ),
             name='getSoundSpeed',
         )
@@ -1019,13 +917,6 @@ If the element is a player, this function will use the players voice. """,
                     "theSound": """the sound element which volume you want to return. """
                 },
                 result="""returns a float representing the volume level of the sound element, false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""getVolume""",
-                field="""volume""",
-                is_static=False,
             ),
             name='getSoundVolume',
         )
@@ -1089,13 +980,6 @@ If the element is a player, this function will use the players voice. """,
 returns false if the sound is not playing yet or hasnt buffered in the
 case of streams. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""getWaveData""",
-                field=None,
-                is_static=False,
-            ),
             name='getSoundWaveData',
         )
         ],
@@ -1142,13 +1026,6 @@ case of streams. """,
                     "theSound": """The sound element which you want to get the loop state. """
                 },
                 result="""returns true if the sound element is seted to loop, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""isLooped""",
-                field=None,
-                is_static=False,
             ),
             name='isSoundLooped',
         )
@@ -1197,13 +1074,6 @@ case of streams. """,
                 },
                 result="""returns true if the sound is valid and it has panning enabled, false if it does not or is not valid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""isPanningEnabled""",
-                field="""panningEnabled""",
-                is_static=False,
-            ),
             name='isSoundPanningEnabled',
         )
         ],
@@ -1251,13 +1121,6 @@ If the element is a player, this function will use the players voice. """,
                     "theSound": """the sound element which pause state you want to return. """
                 },
                 result="""returns true if the sound element is paused, false if unpaused or invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""isPaused""",
-                field="""paused""",
-                is_static=False,
             ),
             name='isSoundPaused',
         )
@@ -1349,7 +1212,6 @@ element playsfx ( string radio, string radiostation, int trackid , bool looped =
 *looped: a boolean representing whether the sound will be looped
 returns a sound element if the sound was successfully created, false otherwise. """,
             ),
-            oop=None,
             name='playSFX',
         )
         ],
@@ -1476,7 +1338,6 @@ element playsfx3d( string radio, string radiostation, int trackid, float x, floa
 *looped: a boolean representing whether the sound will be looped
 returns a sound element if the sound was successfully created, false otherwise. """,
             ),
-            oop=None,
             name='playSFX3D',
         )
         ],
@@ -1549,13 +1410,6 @@ returns a sound element if the sound was successfully created, false otherwise. 
                     "throttled": """a boolean representing whether the sound will be throttled (i.e. given reduced download bandwidth). To throttle the sound, use true. Sounds will be throttled per default and only for URLs. """
                 },
                 result="""returns a sound element if the sound was successfully created, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Sound',
-                method_name=None,
-                field=None,
-                is_static=True,
             ),
             name='playSound',
         )
@@ -1654,13 +1508,6 @@ returns a sound element if the sound was successfully created, false otherwise. 
                 },
                 result="""returns a sound element if the sound was successfully created, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Sound|Sound3D',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='playSound3D',
         )
         ],
@@ -1716,13 +1563,6 @@ returns a sound element if the sound was successfully created, false otherwise. 
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""playSoundFrontEnd""",
-                field=None,
-                is_static=False,
-            ),
             name='playSoundFrontEnd',
         )
         ],
@@ -1764,13 +1604,6 @@ returns a sound element if the sound was successfully created, false otherwise. 
                     "sound": """a whole int specifying the sound id to play. Valid values are: """
                 },
                 result=""" """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Sound',
-                method_name="""playFrontEnd""",
-                field=None,
-                is_static=True,
             ),
             name='playSoundFrontEnd',
         )
@@ -1819,7 +1652,6 @@ returns a sound element if the sound was successfully created, false otherwise. 
                 },
                 result="""returns true if channel was set successfully, false otherwise. """,
             ),
-            oop=None,
             name='setRadioChannel',
         )
         ],
@@ -1889,13 +1721,6 @@ Use a player element to control a players voice with this function. """,
                     "bEnable": """true if you want to enable the effect, false if you want to disable it. """
                 },
                 result="""returns true if the effect was set successfully, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""setEffectEnabled""",
-                field=None,
-                is_static=False,
             ),
             name='setSoundEffectEnabled',
         )
@@ -1977,13 +1802,6 @@ Use a player element to control a players voice with this function. """,
                 },
                 result="""returns true if everything went well, error is raised otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""setEffectParameter""",
-                field=None,
-                is_static=False,
-            ),
             name='setSoundEffectParameter',
         )
         ],
@@ -2041,13 +1859,6 @@ Use a player element to control a players voice with this function. """,
                     "bool": """A boolean representing whether the sound will be looped. """
                 },
                 result="""returns true if the sound element loop was successfully changed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""setLooped""",
-                field=None,
-                is_static=False,
             ),
             name='setSoundLooped',
         )
@@ -2107,13 +1918,6 @@ Use a player element to control a players voice with this function. """,
                 },
                 result="""returns a true if the max distance was set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""setMaxDistance""",
-                field="""maxDistance""",
-                is_static=False,
-            ),
             name='setSoundMaxDistance',
         )
         ],
@@ -2172,13 +1976,6 @@ Use a player element to control a players voice with this function. """,
                 },
                 result="""returns a true if the minimum distance was set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""setMinDistance""",
-                field="""minDistance""",
-                is_static=False,
-            ),
             name='setSoundMinDistance',
         )
         ],
@@ -2236,13 +2033,6 @@ Use a player element to control a players voice with this function. """,
                     "pan": """A float|floating point number representing the desired pan level. Range is from -1.0 (left) to 1.0 (right) """
                 },
                 result="""returns true if the sound element pan was successfully changed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""setPan""",
-                field="""pan""",
-                is_static=False,
             ),
             name='setSoundPan',
         )
@@ -2303,13 +2093,6 @@ Use a player element to control a players voice with this function. """,
                 result="""returns true if the sound is valid and good arguments were passed, false if not.
 if the sound is not 3d, this function will return true as well, but issoundpanningenabled will always return true after this (so it has no effect). """,
             ),
-            oop=FunctionOOP(
-                description="""The method name was incorrect (setPann'''n'''ingEnabled) before version '''1.5.8-9.20761.0'''.""",
-                class_name='sound',
-                method_name="""setPanningEnabled""",
-                field="""panningEnabled""",
-                is_static=False,
-            ),
             name='setSoundPanningEnabled',
         )
         ],
@@ -2368,13 +2151,6 @@ Use a player element to control a players voice with this function. """,
                     "paused": """a boolean value representing whether the sound should be paused or not. To pause the sound, use true. """
                 },
                 result="""returns true if the sound element was successfully paused, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""setPaused""",
-                field="""paused""",
-                is_static=False,
             ),
             name='setSoundPaused',
         )
@@ -2435,13 +2211,6 @@ Use a player element to control a players voice with this function.
                     "pos": """a float value representing the new seek position of the sound element in seconds. """
                 },
                 result="""returns true if the sound elements seek position was successfully changed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""setPlaybackPosition""",
-                field="""playbackPosition""",
-                is_static=False,
             ),
             name='setSoundPosition',
         )
@@ -2534,13 +2303,6 @@ Use a player element to control a players voice with this function.
                 },
                 result="""returns true if the properties sucessfully set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""setProperties""",
-                field=None,
-                is_static=False,
-            ),
             name='setSoundProperties',
         )
         ],
@@ -2598,13 +2360,6 @@ Use a player element to control a players voice with this function.
                     "speed": """a floating point number representing the desired sound playback speed. """
                 },
                 result="""returns true if the sound element playback speed was successfully changed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""setSpeed""",
-                field="""speed""",
-                is_static=False,
             ),
             name='setSoundSpeed',
         )
@@ -2665,13 +2420,6 @@ Use a player element to control a players voice with this function. """,
                 },
                 result="""returns true if the sound element volume was successfully changed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""setVolume""",
-                field="""volume""",
-                is_static=False,
-            ),
             name='setSoundVolume',
         )
         ],
@@ -2718,13 +2466,6 @@ Use a player element to control a players voice with this function. """,
                     "theSound": """the sound element you want to stop playing. """
                 },
                 result="""returns true if the sound was successfully stopped, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='sound',
-                method_name="""stop""",
-                field=None,
-                is_static=False,
             ),
             name='stopSound',
         )

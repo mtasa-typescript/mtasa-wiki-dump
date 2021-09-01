@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -141,13 +140,6 @@ DUMP_PARTIAL = [
                 },
                 result="""if every argument is correct and the limit of 1000 searchlights has not been reached, this function returns a element/searchlight|searchlight element. otherwise, it returns false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Searchlight|SearchLight',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createSearchLight',
         )
         ],
@@ -203,13 +195,6 @@ DUMP_PARTIAL = [
                 },
                 result="""if the specified searchlight element is valid, this function will return three float, which are the three coordinates of searchlights end position. if not, it will return false plus an error message. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Searchlight|searchLight',
-                method_name="""getEndPosition""",
-                field="""endPosition""",
-                is_static=False,
-            ),
             name='getSearchLightEndPosition',
         )
         ],
@@ -256,13 +241,6 @@ DUMP_PARTIAL = [
                     "theSearchLight": """: the searchlight to get the radius of the searchlights light cone in its end. """
                 },
                 result="""if the specified searchlight element is valid, this function will return one float, which is the searchlights end radius. if not, it will return false plus an error message. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Searchlight|searchLight',
-                method_name="""getEndRadius""",
-                field="""endRadius""",
-                is_static=False,
             ),
             name='getSearchLightEndRadius',
         )
@@ -319,13 +297,6 @@ DUMP_PARTIAL = [
                 },
                 result="""if the specified searchlight element is valid, this function will return three float, which are the three coordinates of searchlights start position. if not, it will return false plus an error message. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Searchlight|searchLight',
-                method_name="""getStartPosition""",
-                field="""startPosition""",
-                is_static=False,
-            ),
             name='getSearchLightStartPosition',
         )
         ],
@@ -372,13 +343,6 @@ DUMP_PARTIAL = [
                     "theSearchLight": """: the searchlight to get the radius of the searchlights light cone in its beginning. """
                 },
                 result="""if the specified searchlight element is valid, this function will return one float, which is the searchlights start radius. if not, it will return false plus an error message. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Searchlight|searchLight',
-                method_name="""getStartRadius""",
-                field="""startRadius""",
-                is_static=False,
             ),
             name='getSearchLightStartRadius',
         )
@@ -460,13 +424,6 @@ DUMP_PARTIAL = [
                 },
                 result="""if every argument is correct, this function returns true. if not, it will return false plus an error message. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Searchlight|searchLight',
-                method_name="""setEndPosition""",
-                field="""endPosition""",
-                is_static=False,
-            ),
             name='setSearchLightEndPosition',
         )
         ],
@@ -524,13 +481,6 @@ DUMP_PARTIAL = [
                     "endRadius": """: the radius of the searchlights light cone in its end. """
                 },
                 result="""if every argument is correct, this function returns true. if not, it will return false plus an error message. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Searchlight|searchLight',
-                method_name="""setEndRadius""",
-                field="""endRadius""",
-                is_static=False,
             ),
             name='setSearchLightEndRadius',
         )
@@ -612,13 +562,6 @@ DUMP_PARTIAL = [
                 },
                 result="""if every argument is correct, this function returns true. if not, it will return false plus an error message. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Searchlight|searchLight',
-                method_name="""setStartPosition""",
-                field="""startPosition""",
-                is_static=False,
-            ),
             name='setSearchLightStartPosition',
         )
         ],
@@ -676,13 +619,6 @@ DUMP_PARTIAL = [
                     "startRadius": """: the radius of the searchlights light cone in its beginning. """
                 },
                 result="""if every argument is correct, this function returns true. if not, it will return false plus an error message. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Searchlight|searchLight',
-                method_name="""setStartRadius""",
-                field="""startRadius""",
-                is_static=False,
             ),
             name='setSearchLightStartRadius',
         )

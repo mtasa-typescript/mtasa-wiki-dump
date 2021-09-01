@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -44,7 +43,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a int, 0-255, where 255 is fully opaque and 0 is fully transparent. """,
             ),
-            oop=None,
             name='getCursorAlpha',
         )
         ],
@@ -99,7 +97,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns 5 values: cursorx, cursory, worldx, worldy, worldz. the first two values are the 2d relative screen coordinates of the cursor: cursorx goes from 0 (left side of the screen) to 1 (right side), cursory goes from 0 (top) to 1 (bottom). the 3 values that follow are the 3d world map coordinates that the cursor points at. if the cursor isnt showing, returns false as the first value. """,
             ),
-            oop=None,
             name='getCursorPosition',
         )
         ],
@@ -144,7 +141,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the players cursor is showing, false if it isnt or if invalid parameters were passed. """,
             ),
-            oop=None,
             name='isCursorShowing',
         )
         ],
@@ -178,7 +174,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the players cursor is showing, false if it isnt. """,
             ),
-            oop=None,
             name='isCursorShowing',
         )
         ],
@@ -226,7 +221,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the new alpha value was set, or false otherwise. """,
             ),
-            oop=None,
             name='setCursorAlpha',
         )
         ],
@@ -285,7 +279,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the position has been successfully set, false otherwise. """,
             ),
-            oop=None,
             name='setCursorPosition',
         )
         ],
@@ -352,7 +345,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='showCursor',
         )
         ],
@@ -406,7 +398,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='showCursor',
         )
         ],

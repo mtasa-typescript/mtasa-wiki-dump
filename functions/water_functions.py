@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -177,13 +176,6 @@ You are able to give the water a shallow water effect, which practically changes
                 },
                 result="""returns a water element if successful, false otherwise. the water element can be repositioned with setelementposition and destroyed with destroyelement. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Water',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createWater',
         )
         ],
@@ -353,13 +345,6 @@ You are able to give the water a shallow water effect, which practically changes
                 },
                 result="""returns a water element if successful, false otherwise. the water element can be repositioned with setelementposition and destroyed with destroyelement. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Water',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createWater',
         )
         ],
@@ -408,13 +393,6 @@ Note: The server can only return the water color, if it has actually been set by
                 },
                 result="""returns 4 int|ints, indicating the color of the water. (rgba) """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='water',
-                method_name="""getColor""",
-                field=None,
-                is_static=False,
-            ),
             name='getWaterColor',
         )
         ],
@@ -460,13 +438,6 @@ Note: The server can only return the water color, if it has actually been set by
                     
                 },
                 result="""returns 4 int|ints, indicating the color of the water. (rgba) """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='water',
-                method_name="""getColor""",
-                field=None,
-                is_static=False,
             ),
             name='getWaterColor',
         )
@@ -550,7 +521,6 @@ Note: The server can only return the water color, if it has actually been set by
                 },
                 result="""returns an integer of the water level if the localplayer/position is near the water (-3 to 20 on the z coordinate) else false if theres no water near the localplayer/position. """,
             ),
-            oop=None,
             name='getWaterLevel',
         )
         ],
@@ -614,13 +584,6 @@ Note: The server can only return the water color, if it has actually been set by
                 },
                 result="""returns the x, y and z coordinates of the specified vertex if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='water',
-                method_name="""getVertexPosition""",
-                field=None,
-                is_static=False,
-            ),
             name='getWaterVertexPosition',
         )
         ],
@@ -682,13 +645,6 @@ Note: The server can only return the water color, if it has actually been set by
                 },
                 result="""returns the x, y and z coordinates of the specified vertex if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='water',
-                method_name="""getVertexPosition""",
-                field=None,
-                is_static=False,
-            ),
             name='getWaterVertexPosition',
         )
         ],
@@ -724,13 +680,6 @@ Note: The server can only return the water color, if it has actually been set by
                 },
                 result="""returns the height as a float, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Water',
-                method_name="""getWaveHeight""",
-                field=None,
-                is_static=True,
-            ),
             name='getWaveHeight',
         )
         ],
@@ -763,13 +712,6 @@ Note: The server can only return the water color, if it has actually been set by
                     
                 },
                 result="""returns the height as a float, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Water',
-                method_name="""getWaveHeight""",
-                field=None,
-                is_static=True,
             ),
             name='getWaveHeight',
         )
@@ -809,7 +751,6 @@ Note: The server can only return the water color, if it has actually been set by
                 },
                 result="""returns true if water is drawn last in the rendering order, false otherwise. """,
             ),
-            oop=None,
             name='isWaterDrawnLast',
         )
         ],
@@ -845,13 +786,6 @@ Note: The server can only return the water color, if it has actually been set by
                 },
                 result="""returns true if water color was reset correctly, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Water',
-                method_name="""resetColor""",
-                field=None,
-                is_static=True,
-            ),
             name='resetWaterColor',
         )
         ],
@@ -884,13 +818,6 @@ Note: The server can only return the water color, if it has actually been set by
                     
                 },
                 result="""returns true if water color was reset correctly, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Water',
-                method_name="""resetColor""",
-                field=None,
-                is_static=True,
             ),
             name='resetWaterColor',
         )
@@ -927,13 +854,6 @@ Note: The server can only return the water color, if it has actually been set by
                 },
                 result="""returns true if water level was reset correctly, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Water',
-                method_name="""resetLevel""",
-                field=None,
-                is_static=True,
-            ),
             name='resetWaterLevel',
         )
         ],
@@ -966,13 +886,6 @@ Note: The server can only return the water color, if it has actually been set by
                     
                 },
                 result="""returns true if water level was reset correctly, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Water',
-                method_name="""resetLevel""",
-                field=None,
-                is_static=True,
             ),
             name='resetWaterLevel',
         )
@@ -1050,13 +963,6 @@ Note: The server can only return the water color, if it has actually been set by
                     "alpha": """The alpha (visibility) value of the water, from 0 to 255. Defaults to 200 if not declared. """
                 },
                 result="""returns true if water color was set correctly, false if invalid values were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='water',
-                method_name="""setColor""",
-                field=None,
-                is_static=False,
             ),
             name='setWaterColor',
         )
@@ -1132,13 +1038,6 @@ Note: The server can only return the water color, if it has actually been set by
                     "alpha": """The alpha (visibility) value of the water, from 0 to 255. Defaults to 200 if not declared. """
                 },
                 result="""returns true if water color was set correctly, false if invalid values were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='water',
-                method_name="""setColor""",
-                field=None,
-                is_static=False,
             ),
             name='setWaterColor',
         )
@@ -1187,7 +1086,6 @@ Note: The server can only return the water color, if it has actually been set by
                 },
                 result="""returns true if the rendering order was changed successfully, false otherwise. """,
             ),
-            oop=None,
             name='setWaterDrawnLast',
         )
         ],
@@ -1248,13 +1146,6 @@ Note: The server can only return the water color, if it has actually been set by
                 },
                 result="""returns true if successful, false in case of failure. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='water',
-                method_name="""setLevel""",
-                field="""level""",
-                is_static=False,
-            ),
             name='setWaterLevel',
         )
         ],
@@ -1313,13 +1204,6 @@ Note: The server can only return the water color, if it has actually been set by
                 },
                 result="""returns true if successful, false in case of failure. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='water',
-                method_name="""setLevel""",
-                field="""level""",
-                is_static=False,
-            ),
             name='setWaterLevel',
         )
         ],
@@ -1408,13 +1292,6 @@ Note: The server can only return the water color, if it has actually been set by
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='water',
-                method_name="""setVertexPosition""",
-                field=None,
-                is_static=False,
-            ),
             name='setWaterVertexPosition',
         )
         ],
@@ -1501,13 +1378,6 @@ Note: The server can only return the water color, if it has actually been set by
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='water',
-                method_name="""setVertexPosition""",
-                field=None,
-                is_static=False,
-            ),
             name='setWaterVertexPosition',
         )
         ],
@@ -1552,13 +1422,6 @@ Note: The server can only return the water color, if it has actually been set by
                 },
                 result="""returns a boolean value true or false that tells you if it was successful or not. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Water',
-                method_name="""setWaveHeight""",
-                field=None,
-                is_static=True,
-            ),
             name='setWaveHeight',
         )
         ],
@@ -1600,13 +1463,6 @@ Note: The server can only return the water color, if it has actually been set by
                     "height": """A float between 0 and 100. """
                 },
                 result="""returns a boolean value true or false that tells you if it was successful or not. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Water',
-                method_name="""setWaveHeight""",
-                field=None,
-                is_static=True,
             ),
             name='setWaveHeight',
         )

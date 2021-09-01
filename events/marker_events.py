@@ -9,7 +9,12 @@ from to_python.core.types import FunctionType, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[], client=[EventData(
+    CompoundEventData(
+        server=[
+            
+        ],
+        client=[
+            EventData(
             name='onClientMarkerHit',
             docs=FunctionDoc(
                 description="""This event is triggered when a player enters a marker created using createMarker. """,
@@ -44,8 +49,15 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )]),
-    CompoundEventData(server=[], client=[EventData(
+        )
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            
+        ],
+        client=[
+            EventData(
             name='onClientMarkerLeave',
             docs=FunctionDoc(
                 description="""This event is triggered when a player leaves the area of a marker created using createMarker. """,
@@ -80,8 +92,12 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )]),
-    CompoundEventData(server=[EventData(
+        )
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            EventData(
             name='onMarkerHit',
             docs=FunctionDoc(
                 description="""This event is triggered when an element enters a marker created using createMarker. """,
@@ -116,8 +132,15 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )], client=[]),
-    CompoundEventData(server=[EventData(
+        )
+        ],
+        client=[
+            
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            EventData(
             name='onMarkerLeave',
             docs=FunctionDoc(
                 description="""This event is triggered when an element leaves the area of a marker created using createMarker. """,
@@ -152,5 +175,10 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )], client=[])
+        )
+        ],
+        client=[
+            
+        ],
+    )
 ]

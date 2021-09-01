@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -84,13 +83,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns true if the polygon was changed, false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""addPoint""",
-                field=None,
-                is_static=False,
-            ),
             name='addColPolygonPoint',
         )
         ],
@@ -167,13 +159,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns true if the polygon was changed, false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""addPoint""",
-                field=None,
-                is_static=False,
-            ),
             name='addColPolygonPoint',
         )
         ],
@@ -240,13 +225,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ColShape',
-                method_name="""Circle""",
-                field=None,
-                is_static=True,
-            ),
             name='createColCircle',
         )
         ],
@@ -311,13 +289,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ColShape',
-                method_name="""Circle""",
-                field=None,
-                is_static=True,
-            ),
             name='createColCircle',
         )
         ],
@@ -417,13 +388,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ColShape',
-                method_name="""Cuboid""",
-                field=None,
-                is_static=True,
-            ),
             name='createColCuboid',
         )
         ],
@@ -521,13 +485,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ColShape',
-                method_name="""Cuboid""",
-                field=None,
-                is_static=True,
-            ),
             name='createColCuboid',
         )
         ],
@@ -650,13 +607,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ColShape',
-                method_name="""Polygon""",
-                field=None,
-                is_static=True,
-            ),
             name='createColPolygon',
         )
         ],
@@ -777,13 +727,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ColShape',
-                method_name="""Polygon""",
-                field=None,
-                is_static=True,
-            ),
             name='createColPolygon',
         )
         ],
@@ -861,13 +804,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ColShape',
-                method_name="""Rectangle""",
-                field=None,
-                is_static=True,
-            ),
             name='createColRectangle',
         )
         ],
@@ -943,13 +879,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ColShape',
-                method_name="""Rectangle""",
-                field=None,
-                is_static=True,
-            ),
             name='createColRectangle',
         )
         ],
@@ -1027,13 +956,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ColShape',
-                method_name="""Sphere""",
-                field=None,
-                is_static=True,
-            ),
             name='createColSphere',
         )
         ],
@@ -1109,13 +1031,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ColShape',
-                method_name="""Sphere""",
-                field=None,
-                is_static=True,
-            ),
             name='createColSphere',
         )
         ],
@@ -1204,13 +1119,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ColShape',
-                method_name="""Tube""",
-                field=None,
-                is_static=True,
-            ),
             name='createColTube',
         )
         ],
@@ -1297,13 +1205,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ColShape',
-                method_name="""Tube""",
-                field=None,
-                is_static=True,
-            ),
             name='createColTube',
         )
         ],
@@ -1352,13 +1253,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns two floats, indicating the floor and ceiling of the colshape height, false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""getHeight""",
-                field=None,
-                is_static=False,
-            ),
             name='getColPolygonHeight',
         )
         ],
@@ -1405,13 +1299,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns two floats, indicating the floor and ceiling of the colshape height, false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""getHeight""",
-                field=None,
-                is_static=False,
-            ),
             name='getColPolygonHeight',
         )
         ],
@@ -1471,13 +1358,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns two floats, x and y, indicating the position of the point, false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""getPointPosition""",
-                field=None,
-                is_static=False,
-            ),
             name='getColPolygonPointPosition',
         )
         ],
@@ -1535,13 +1415,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns two floats, x and y, indicating the position of the point, false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""getPointPosition""",
-                field=None,
-                is_static=False,
-            ),
             name='getColPolygonPointPosition',
         )
         ],
@@ -1586,13 +1459,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns a table of coordinates, each coordinate being a table containing the x and y position of a bound point, false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""getPoints""",
-                field=None,
-                is_static=False,
-            ),
             name='getColPolygonPoints',
         )
         ],
@@ -1634,13 +1500,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "shape": """The colshape polygon you wish to get the points of. """
                 },
                 result="""returns a table of coordinates, each coordinate being a table containing the x and y position of a bound point, false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""getPoints""",
-                field=None,
-                is_static=False,
             ),
             name='getColPolygonPoints',
         )
@@ -1686,13 +1545,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 },
                 result="""returns a float containing the radius of the colshape, false if an invalid colshape was passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""getRadius""",
-                field=None,
-                is_static=False,
-            ),
             name='getColShapeRadius',
         )
         ],
@@ -1734,13 +1586,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "shape": """The colshape you wish to get the radius of. """
                 },
                 result="""returns a float containing the radius of the colshape, false if an invalid colshape was passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""getRadius""",
-                field=None,
-                is_static=False,
             ),
             name='getColShapeRadius',
         )
@@ -1796,13 +1641,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
 *cuboid: width, depth, height.
 *rectangle: width, height.
 *tube: height. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""getSize""",
-                field=None,
-                is_static=False,
             ),
             name='getColShapeSize',
         )
@@ -1856,13 +1694,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
 *cuboid: width, depth, height.
 *rectangle: width, height.
 *tube: height. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""getSize""",
-                field=None,
-                is_static=False,
             ),
             name='getColShapeSize',
         )
@@ -1913,13 +1744,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
 *3: rectangle
 *4: polygon
 *5: tube """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""getShapeType""",
-                field="""shapeType""",
-                is_static=False,
             ),
             name='getColShapeType',
         )
@@ -1968,13 +1792,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
 *3: rectangle
 *4: polygon
 *5: tube """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""getShapeType""",
-                field="""shapeType""",
-                is_static=False,
             ),
             name='getColShapeType',
         )
@@ -2052,13 +1869,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "posZ": """The Z coordinate of the position youre checking. """
                 },
                 result="""returns true if the position is inside the colshape, false if it isnt or if any parameters are invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""isInside""",
-                field=None,
-                is_static=False,
             ),
             name='isInsideColShape',
         )
@@ -2134,13 +1944,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "posZ": """The Z coordinate of the position youre checking. """
                 },
                 result="""returns true if the position is inside the colshape, false if it isnt or if any parameters are invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""isInside""",
-                field=None,
-                is_static=False,
             ),
             name='isInsideColShape',
         )
@@ -2196,13 +1999,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "index": """The index of the point you wish to remove. The points are indexed in order, with 1 being the first bound point. You cant remove the last 3 points. """
                 },
                 result="""returns true if the polygon was changed, false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""removePoint""",
-                field=None,
-                is_static=False,
             ),
             name='removeColPolygonPoint',
         )
@@ -2256,13 +2052,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "index": """The index of the point you wish to remove. The points are indexed in order, with 1 being the first bound point. You cant remove the last 3 points. """
                 },
                 result="""returns true if the polygon was changed, false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""removePoint""",
-                field=None,
-                is_static=False,
             ),
             name='removeColPolygonPoint',
         )
@@ -2329,13 +2118,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "ceil": """The polygon ceiling (highest Z coordinate). Parse false to reset this value to infinitely tall. """
                 },
                 result="""returns true if the polygon was changed, false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""setHeight""",
-                field=None,
-                is_static=False,
             ),
             name='setColPolygonHeight',
         )
@@ -2400,13 +2182,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "ceil": """The polygon ceiling (highest Z coordinate). Parse false to reset this value to infinitely tall. """
                 },
                 result="""returns true if the polygon was changed, false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""setHeight""",
-                field=None,
-                is_static=False,
             ),
             name='setColPolygonHeight',
         )
@@ -2484,13 +2259,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fY": """The new Y position of the bound point. """
                 },
                 result="""returns true if the polygon was changed, false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""setPointPosition""",
-                field=None,
-                is_static=False,
             ),
             name='setColPolygonPointPosition',
         )
@@ -2566,13 +2334,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fY": """The new Y position of the bound point. """
                 },
                 result="""returns true if the polygon was changed, false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""setPointPosition""",
-                field=None,
-                is_static=False,
             ),
             name='setColPolygonPointPosition',
         )
@@ -2628,13 +2389,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "radius": """The radius you want to set. """
                 },
                 result="""returns true if the radius was changed, or false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""setRadius""",
-                field=None,
-                is_static=False,
             ),
             name='setColShapeRadius',
         )
@@ -2688,13 +2442,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "radius": """The radius you want to set. """
                 },
                 result="""returns true if the radius was changed, or false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""setRadius""",
-                field=None,
-                is_static=False,
             ),
             name='setColShapeRadius',
         )
@@ -2772,13 +2519,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "height": """The collision tubess height. """
                 },
                 result="""returns true if the size was changed, false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""setSize""",
-                field=None,
-                is_static=False,
             ),
             name='setColShapeSize',
         )
@@ -2854,13 +2594,6 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "height": """The collision tubess height. """
                 },
                 result="""returns true if the size was changed, false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""setSize""",
-                field=None,
-                is_static=False,
             ),
             name='setColShapeSize',
         )

@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -61,13 +60,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""forceMap""",
-                field="""mapForced""",
-                is_static=False,
-            ),
             name='forcePlayerMap',
         )
         ],
@@ -110,13 +102,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Player',
-                method_name="""forceMap""",
-                field=None,
-                is_static=True,
-            ),
             name='forcePlayerMap',
         )
         ],
@@ -151,13 +136,6 @@ DUMP_PARTIAL = [
                     
                 },
                 result="""returns a table of all the alive players. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Player',
-                method_name="""getAllAlive""",
-                field=None,
-                is_static=True,
             ),
             name='getAlivePlayers',
         )
@@ -196,13 +174,6 @@ DUMP_PARTIAL = [
                     
                 },
                 result="""returns a table of all the dead players. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Player',
-                method_name="""getAllDead""",
-                field=None,
-                is_static=True,
             ),
             name='getDeadPlayers',
         )
@@ -246,7 +217,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 },
                 result="""returns the local player element. """,
             ),
-            oop=None,
             name='getLocalPlayer',
         )
         ],
@@ -294,13 +264,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
 *d3d9size: a number representing the file size of any custom d3d9.dll the player may have installed.
 *d3d9md5: a string containing the md5 of any custom d3d9.dll the player may have installed.
 *d3d9sha256: a string containing the sha256 of any custom d3d9.dll the player may have installed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getACInfo""",
-                field="""ACInfo""",
-                is_static=False,
             ),
             name='getPlayerACInfo',
         )
@@ -360,13 +323,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 },
                 result="""this function returns a string containing the requested value if a valid key was specified or false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getAnnounceValue""",
-                field=None,
-                is_static=False,
-            ),
             name='getPlayerAnnounceValue',
         )
         ],
@@ -414,13 +370,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 },
                 result="""returns the players blur level if successful, false if an invalid player was given. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getBlurLevel""",
-                field=None,
-                is_static=False,
-            ),
             name='getPlayerBlurLevel',
         )
         ],
@@ -453,13 +402,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     
                 },
                 result="""returns the local blur level. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Player',
-                method_name="""getBlurLevel""",
-                field="""blurLevel""",
-                is_static=True,
             ),
             name='getPlayerBlurLevel',
         )
@@ -495,13 +437,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     
                 },
                 result="""returns the number of players connected to the server as an int. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Player',
-                method_name="""getCount""",
-                field=None,
-                is_static=True,
             ),
             name='getPlayerCount',
         )
@@ -550,13 +485,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 },
                 result="""returns a player element for the player with the nickname provided. if there is no player with that name, false is returned. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Player',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='getPlayerFromName',
         )
         ],
@@ -598,13 +526,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     "playerName": """: A string containing the name of the player you want to reference """
                 },
                 result="""returns a player element for the player with the nickname provided. if there is no player with that name, false is returned. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Player',
-                method_name=None,
-                field=None,
-                is_static=True,
             ),
             name='getPlayerFromName',
         )
@@ -649,13 +570,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     "thePlayer": """: The player you wish to get the idle time of. """
                 },
                 result="""returns the amount of time in milliseconds that a player has been idle, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getIdleTime""",
-                field="""idleTime""",
-                is_static=False,
             ),
             name='getPlayerIdleTime',
         )
@@ -703,13 +617,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     "thePlayer": """The player element you want to get the IP of. """
                 },
                 result="""returns a string containing the requested playerss ip, or false if the player passed to the function is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getIP""",
-                field="""ip""",
-                is_static=False,
             ),
             name='getPlayerIP',
         )
@@ -768,7 +675,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
 ** negative values may be returned if these coordinates are off screen.
 * if the map is not showing, a false boolean value is returned. """,
             ),
-            oop=None,
             name='getPlayerMapBoundingBox',
         )
         ],
@@ -813,13 +719,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 },
                 result="""returns an integer with the amount of money the specified player has, false if the player is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getMoney""",
-                field="""money""",
-                is_static=False,
-            ),
             name='getPlayerMoney',
         )
         ],
@@ -852,13 +751,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     
                 },
                 result="""returns an integer with the amount of money the local player has. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Player',
-                method_name="""getMoney""",
-                field=None,
-                is_static=True,
             ),
             name='getPlayerMoney',
         )
@@ -904,13 +796,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 },
                 result="""returns a string containing the requested players name, or false if the player passed to the function is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getName""",
-                field="""name""",
-                is_static=False,
-            ),
             name='getPlayerName',
         )
         ],
@@ -952,13 +837,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     "thePlayer": """the player you want to get the name of """
                 },
                 result="""returns a string containing the requested players name, or false if the player passed to the function is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getName""",
-                field="""name""",
-                is_static=False,
             ),
             name='getPlayerName',
         )
@@ -1011,13 +889,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     "thePlayer": """The player whose name tag RGB color values you wish to retrieve. """
                 },
                 result="""returns red, green and blue values if an existent player was specified, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getNametagColor""",
-                field=None,
-                is_static=False,
             ),
             name='getPlayerNametagColor',
         )
@@ -1068,13 +939,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     "thePlayer": """The player whose name tag RGB color values you wish to retrieve. """
                 },
                 result="""returns red, green and blue values if an existent player was specified, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getNametagColor""",
-                field=None,
-                is_static=False,
             ),
             name='getPlayerNametagColor',
         )
@@ -1119,13 +983,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     "thePlayer": """The person whose name tag you want to retrieve """
                 },
                 result="""returns a string with the nametag text, false if the player is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getNametagText""",
-                field="""nametagText""",
-                is_static=False,
             ),
             name='getPlayerNametagText',
         )
@@ -1168,13 +1025,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     "thePlayer": """The person whose name tag you want to retrieve """
                 },
                 result="""returns a string with the nametag text, false if the player is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getNametagText""",
-                field="""nametagText""",
-                is_static=False,
             ),
             name='getPlayerNametagText',
         )
@@ -1219,13 +1069,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     "thePlayer": """: The player whose ping you want to determine. """
                 },
                 result="""returns the ping as an int, or false if the player is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getPing""",
-                field="""ping""",
-                is_static=False,
             ),
             name='getPlayerPing',
         )
@@ -1268,13 +1111,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     "thePlayer": """: The player whose ping you want to determine. """
                 },
                 result="""returns the ping as an int, or false if the player is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getPing""",
-                field="""ping""",
-                is_static=False,
             ),
             name='getPlayerPing',
         )
@@ -1319,13 +1155,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     "thePlayer": """The person whose debug script level you want """
                 },
                 result="""returns an int with the player debug script level, false if the player is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getScriptDebugLevel""",
-                field="""scriptDebugLevel""",
-                is_static=False,
             ),
             name='getPlayerScriptDebugLevel',
         )
@@ -1373,13 +1202,6 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                     "thePlayer": """A player object referencing the specified player. """
                 },
                 result="""returns the serial as a string if it was found, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getSerial""",
-                field="""serial""",
-                is_static=False,
             ),
             name='getPlayerSerial',
         )
@@ -1443,13 +1265,6 @@ And the fifth and sixth numbers represent the build number. """,
                 },
                 result="""returns a string containing the client version, or false if the player is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getVersion""",
-                field="""version""",
-                is_static=False,
-            ),
             name='getPlayerVersion',
         )
         ],
@@ -1497,13 +1312,6 @@ And the fifth and sixth numbers represent the build number. """,
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getWantedLevel""",
-                field="""wantedLevel""",
-                is_static=False,
-            ),
             name='getPlayerWantedLevel',
         )
         ],
@@ -1536,13 +1344,6 @@ And the fifth and sixth numbers represent the build number. """,
                     
                 },
                 result=""" """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Player',
-                method_name="""getWantedLevel""",
-                field=None,
-                is_static=True,
             ),
             name='getPlayerWantedLevel',
         )
@@ -1578,13 +1379,6 @@ And the fifth and sixth numbers represent the build number. """,
                     
                 },
                 result="""returns a random player, false if the server is empty. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Player',
-                method_name="""getRandom""",
-                field=None,
-                is_static=True,
             ),
             name='getRandomPlayer',
         )
@@ -1644,13 +1438,6 @@ And the fifth and sixth numbers represent the build number. """,
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""giveMoney""",
-                field="""money""",
-                is_static=False,
-            ),
             name='givePlayerMoney',
         )
         ],
@@ -1692,13 +1479,6 @@ And the fifth and sixth numbers represent the build number. """,
                     "amount": """a positive integer number specifying the amount of money to give to the player. """
                 },
                 result=""" """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Player',
-                method_name="""giveMoney""",
-                field=None,
-                is_static=True,
             ),
             name='givePlayerMoney',
         )
@@ -1760,7 +1540,6 @@ And the fifth and sixth numbers represent the build number. """,
                 },
                 result="""returns true if the component is visable, false if not. """,
             ),
-            oop=None,
             name='isPlayerHudComponentVisible',
         )
         ],
@@ -1805,13 +1584,6 @@ And the fifth and sixth numbers represent the build number. """,
                 },
                 result="""returns true if the players radar map is forced on, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""isMapForced""",
-                field="""mapForced""",
-                is_static=False,
-            ),
             name='isPlayerMapForced',
         )
         ],
@@ -1844,13 +1616,6 @@ And the fifth and sixth numbers represent the build number. """,
                     
                 },
                 result="""returns true if the local players radar map is forced on, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Player',
-                method_name="""isMapForced""",
-                field=None,
-                is_static=True,
             ),
             name='isPlayerMapForced',
         )
@@ -1890,7 +1655,6 @@ And the fifth and sixth numbers represent the build number. """,
                 },
                 result="""returns true if the player has the map visible, false otherwise. """,
             ),
-            oop=None,
             name='isPlayerMapVisible',
         )
         ],
@@ -1934,13 +1698,6 @@ And the fifth and sixth numbers represent the build number. """,
                     "thePlayer": """The player you are checking. """
                 },
                 result="""returns true if the player is muted and false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""isMuted""",
-                field="""muted""",
-                is_static=False,
             ),
             name='isPlayerMuted',
         )
@@ -1989,13 +1746,6 @@ And the fifth and sixth numbers represent the build number. """,
                 },
                 result="""returns true if the players name tag is being shown, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""isNametagShowing""",
-                field="""nametagShowing""",
-                is_static=False,
-            ),
             name='isPlayerNametagShowing',
         )
         ],
@@ -2038,13 +1788,6 @@ And the fifth and sixth numbers represent the build number. """,
                 },
                 result="""returns true if the players name tag is being shown, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""isNametagShowing""",
-                field="""nametagShowing""",
-                is_static=False,
-            ),
             name='isPlayerNametagShowing',
         )
         ],
@@ -2081,13 +1824,6 @@ This function allows you to make the server reveal whether or not voice is curre
                 },
                 result="""returns true if the voice is enabled on the server, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Player',
-                method_name="""isVoiceEnabled""",
-                field=None,
-                is_static=True,
-            ),
             name='isVoiceEnabled',
         )
         ],
@@ -2121,13 +1857,6 @@ This function allows you to make the server reveal whether or not voice is curre
                     
                 },
                 result="""returns true if the voice is enabled on the server, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Player',
-                method_name="""isVoiceEnabled""",
-                field=None,
-                is_static=True,
             ),
             name='isVoiceEnabled',
         )
@@ -2206,13 +1935,6 @@ This function allows you to make the server reveal whether or not voice is curre
                 },
                 result="""returns true if the player was redirected successfully, false if bad arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""redirect""",
-                field=None,
-                is_static=False,
-            ),
             name='redirectPlayer',
         )
         ],
@@ -2260,7 +1982,6 @@ This function allows you to make the server reveal whether or not voice is curre
                 },
                 result="""returns true if the ac info will be resent, false otherwise. """,
             ),
-            oop=None,
             name='resendPlayerACInfo',
         )
         ],
@@ -2307,13 +2028,6 @@ This function allows you to make the server reveal whether or not voice is curre
                     "thePlayer": """: A player object referencing the specified player """
                 },
                 result="""returns true if the mod info will be resent, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""resendModInfo""",
-                field=None,
-                is_static=False,
             ),
             name='resendPlayerModInfo',
         )
@@ -2386,13 +2100,6 @@ For server-wide changes you can use setRuleValue! """,
                 },
                 result="""returns true if the value was set succesfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setAnnounceValue""",
-                field=None,
-                is_static=False,
-            ),
             name='setPlayerAnnounceValue',
         )
         ],
@@ -2451,13 +2158,6 @@ For server-wide changes you can use setRuleValue! """,
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setBlurLevel""",
-                field="""blurLevel""",
-                is_static=False,
-            ),
             name='setPlayerBlurLevel',
         )
         ],
@@ -2499,13 +2199,6 @@ For server-wide changes you can use setRuleValue! """,
                     "level": """The level to set the blur to (default: 36) """
                 },
                 result=""" """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Player',
-                method_name="""setBlurLevel""",
-                field=None,
-                is_static=True,
             ),
             name='setPlayerBlurLevel',
         )
@@ -2587,13 +2280,6 @@ For server-wide changes you can use setRuleValue! """,
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setHudComponentVisible""",
-                field=None,
-                is_static=False,
-            ),
             name='setPlayerHudComponentVisible',
         )
         ],
@@ -2661,7 +2347,6 @@ For server-wide changes you can use setRuleValue! """,
                 },
                 result=""" """,
             ),
-            oop=None,
             name='setPlayerHudComponentVisible',
         )
         ],
@@ -2728,13 +2413,6 @@ For server-wide changes you can use setRuleValue! """,
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setMoney""",
-                field="""money""",
-                is_static=False,
-            ),
             name='setPlayerMoney',
         )
         ],
@@ -2787,13 +2465,6 @@ For server-wide changes you can use setRuleValue! """,
                     "instant": """If set to true money will be set instantly without counting up/down like in singleplayer.}} """
                 },
                 result=""" """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Player',
-                method_name="""setMoney""",
-                field=None,
-                is_static=True,
             ),
             name='setPlayerMoney',
         )
@@ -2849,13 +2520,6 @@ For server-wide changes you can use setRuleValue! """,
                     "state": """Use true to mute and false to unmute the player. """
                 },
                 result="""returns true if the player was successfully muted or unmuted, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setMuted""",
-                field="""muted""",
-                is_static=False,
             ),
             name='setPlayerMuted',
         )
@@ -2914,13 +2578,6 @@ For server-wide changes you can use setRuleValue! """,
                     "newName": """the new name to set for the player. """
                 },
                 result="""returns true if the player name was changed succesfully, false if invalid arguments are specified. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setName""",
-                field="""name""",
-                is_static=False,
             ),
             name='setPlayerName',
         )
@@ -3003,13 +2660,6 @@ For server-wide changes you can use setRuleValue! """,
                 },
                 result="""returns true if the function was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setNametagColor""",
-                field=None,
-                is_static=False,
-            ),
             name='setPlayerNametagColor',
         )
         ],
@@ -3086,13 +2736,6 @@ For server-wide changes you can use setRuleValue! """,
                 },
                 result="""returns true if the function was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setNametagColor""",
-                field=None,
-                is_static=False,
-            ),
             name='setPlayerNametagColor',
         )
         ],
@@ -3148,13 +2791,6 @@ For server-wide changes you can use setRuleValue! """,
                 },
                 result="""returns true if successful, false otherwise """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setNametagShowing""",
-                field="""nametagShowing""",
-                is_static=False,
-            ),
             name='setPlayerNametagShowing',
         )
         ],
@@ -3207,13 +2843,6 @@ For server-wide changes you can use setRuleValue! """,
                     "showing": """Use true or false to show/hide the tag """
                 },
                 result="""returns true if successful, false otherwise """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setNametagShowing""",
-                field="""nametagShowing""",
-                is_static=False,
             ),
             name='setPlayerNametagShowing',
         )
@@ -3270,13 +2899,6 @@ For server-wide changes you can use setRuleValue! """,
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setNametagText""",
-                field="""nametagText""",
-                is_static=False,
-            ),
             name='setPlayerNametagText',
         )
         ],
@@ -3329,13 +2951,6 @@ For server-wide changes you can use setRuleValue! """,
                     "text": """The new nickname text that will be displayed """
                 },
                 result="""returns true if successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setNametagText""",
-                field="""nametagText""",
-                is_static=False,
             ),
             name='setPlayerNametagText',
         )
@@ -3391,13 +3006,6 @@ For server-wide changes you can use setRuleValue! """,
                     "level": """0: close debug console, 1: only errors, 2: errors and warnings, 3: errors, warnings and info messages """
                 },
                 result="""returns true if successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setScriptDebugLevel""",
-                field="""scriptDebugLevel""",
-                is_static=False,
             ),
             name='setPlayerScriptDebugLevel',
         )
@@ -3457,13 +3065,6 @@ For server-wide changes you can use setRuleValue! """,
                 },
                 result="""returns true if the value was set successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setVoiceBroadcastTo""",
-                field="""voiceBroadcastTo""",
-                is_static=False,
-            ),
             name='setPlayerVoiceBroadcastTo',
         )
         ],
@@ -3522,13 +3123,6 @@ For server-wide changes you can use setRuleValue! """,
                 },
                 result="""returns true if the value was set successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setVoiceIgnoreFrom""",
-                field="""voiceIgnoreFrom""",
-                is_static=False,
-            ),
             name='setPlayerVoiceIgnoreFrom',
         )
         ],
@@ -3586,13 +3180,6 @@ For server-wide changes you can use setRuleValue! """,
                     "stars": """An integer from 0 to 6 representing the wanted level """
                 },
                 result="""returns true if the wanted level was set successfully, false if any of the arguments were invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setWantedLevel""",
-                field="""wantedLevel""",
-                is_static=False,
             ),
             name='setPlayerWantedLevel',
         )
@@ -3729,13 +3316,6 @@ For server-wide changes you can use setRuleValue! """,
                 },
                 result="""returns true if the player was spawned successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""spawn""",
-                field=None,
-                is_static=False,
-            ),
             name='spawnPlayer',
         )
         ],
@@ -3794,13 +3374,6 @@ For server-wide changes you can use setRuleValue! """,
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""takeMoney""",
-                field="""money""",
-                is_static=False,
-            ),
             name='takePlayerMoney',
         )
         ],
@@ -3842,13 +3415,6 @@ For server-wide changes you can use setRuleValue! """,
                     "amount": """an integer number specifying the amount of money to take from the player. """
                 },
                 result=""" """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Player',
-                method_name="""takeMoney""",
-                field=None,
-                is_static=True,
             ),
             name='takePlayerMoney',
         )
@@ -3959,13 +3525,6 @@ For server-wide changes you can use setRuleValue! """,
 *'''maxPacketSize: ''' The maximum size of one packet. """
                 },
                 result="""returns true if the function was successfully, false if invalid arguments are specified. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""takeScreenShot""",
-                field=None,
-                is_static=False,
             ),
             name='takePlayerScreenShot',
         )

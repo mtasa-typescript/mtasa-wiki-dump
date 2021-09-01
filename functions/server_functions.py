@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -41,7 +40,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the maximum number of players allowed on the server. """,
             ),
-            oop=None,
             name='getMaxPlayers',
         )
         ],
@@ -80,7 +78,6 @@ DUMP_PARTIAL = [
                 },
                 result="""an integer corresponding to the servers http port. """,
             ),
-            oop=None,
             name='getServerHttpPort',
         )
         ],
@@ -119,7 +116,6 @@ DUMP_PARTIAL = [
                 },
                 result="""a string containing the servers name. """,
             ),
-            oop=None,
             name='getServerName',
         )
         ],
@@ -158,7 +154,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the current server password as a string if it has a password, if not it returns nil. """,
             ),
-            oop=None,
             name='getServerPassword',
         )
         ],
@@ -197,7 +192,6 @@ DUMP_PARTIAL = [
                 },
                 result="""an integer corresponding to the servers port. """,
             ),
-            oop=None,
             name='getServerPort',
         )
         ],
@@ -245,7 +239,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if if the glitch was enabled, or false if it is disabled. """,
             ),
-            oop=None,
             name='isGlitchEnabled',
         )
         ],
@@ -285,7 +278,6 @@ DUMP_PARTIAL = [
                 result="""on server this returns a boolean, whether the transfer box should be visible during downloads or not.
 on client this returns a boolean, whether the transfer box should be visible or not at the time of invocation. """,
             ),
-            oop=None,
             name='isTransferBoxVisible',
         )
         ],
@@ -320,7 +312,6 @@ on client this returns a boolean, whether the transfer box should be visible or 
                 result="""on server this returns a boolean, whether the transfer box should be visible during downloads or not.
 on client this returns a boolean, whether the transfer box should be visible or not at the time of invocation. """,
             ),
-            oop=None,
             name='isTransferBoxVisible',
         )
         ],
@@ -377,7 +368,6 @@ Users of the fastmove glitch may additionally want to install https://community.
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=None,
             name='setGlitchEnabled',
         )
         ],
@@ -425,7 +415,6 @@ Users of the fastmove glitch may additionally want to install https://community.
                 },
                 result="""returns true if number of player slots was successfully changed, false or nil otherwise. """,
             ),
-            oop=None,
             name='setMaxPlayers',
         )
         ],
@@ -473,7 +462,6 @@ Users of the fastmove glitch may additionally want to install https://community.
                 },
                 result="""returns true if the password was successfully changed or removed, false or nil otherwise. """,
             ),
-            oop=None,
             name='setServerPassword',
         )
         ],
@@ -521,7 +509,6 @@ Users of the fastmove glitch may additionally want to install https://community.
                 },
                 result="""returns true if the visibility was set successfully, false otherwise. """,
             ),
-            oop=None,
             name='setTransferBoxVisible',
         )
         ],
@@ -564,7 +551,6 @@ Users of the fastmove glitch may additionally want to install https://community.
                 },
                 result="""returns true if the visibility was set successfully, false otherwise. """,
             ),
-            oop=None,
             name='setTransferBoxVisible',
         )
         ],
@@ -612,7 +598,6 @@ Make sure your server ACL setup has function.shutdown object protected. """,
                 },
                 result="""returns false if it was not possible to shut down the server. """,
             ),
-            oop=None,
             name='shutdown',
         )
         ],

@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -50,13 +49,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='file',
-                method_name="""close""",
-                field=None,
-                is_static=False,
-            ),
             name='fileClose',
         )
         ],
@@ -99,13 +91,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='file',
-                method_name="""close""",
-                field=None,
-                is_static=False,
-            ),
             name='fileClose',
         )
         ],
@@ -172,13 +157,6 @@ DUMP_PARTIAL = [
                 },
                 result="""return true if the file was copied, else false if the filepath doesnt exist. """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the File class.""",
-                class_name='File',
-                method_name="""copy""",
-                field=None,
-                is_static=True,
-            ),
             name='fileCopy',
         )
         ],
@@ -243,13 +221,6 @@ DUMP_PARTIAL = [
                 },
                 result="""return true if the file was copied, else false if the filepath doesnt exist. """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the File class.""",
-                class_name='File',
-                method_name="""copy""",
-                field=None,
-                is_static=True,
-            ),
             name='fileCopy',
         )
         ],
@@ -296,13 +267,6 @@ DUMP_PARTIAL = [
                 },
                 result="""if successful, returns a file handle which can be used with other file functions (filewrite, fileclose...). returns false if an error occured. """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the File class.""",
-                class_name='File',
-                method_name="""new""",
-                field=None,
-                is_static=True,
-            ),
             name='fileCreate',
         )
         ],
@@ -347,13 +311,6 @@ DUMP_PARTIAL = [
                 },
                 result="""if successful, returns a file handle which can be used with other file functions (filewrite, fileclose...). returns false if an error occured. """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the File class.""",
-                class_name='File',
-                method_name="""new""",
-                field=None,
-                is_static=True,
-            ),
             name='fileCreate',
         )
         ],
@@ -400,13 +357,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if successful, false otherwise (for example if there exists no file with the given name, or it does exist but is in use). """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the File class.""",
-                class_name='File',
-                method_name="""delete""",
-                field=None,
-                is_static=True,
-            ),
             name='fileDelete',
         )
         ],
@@ -451,13 +401,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if successful, false otherwise (for example if there exists no file with the given name, or it does exist but is in use). """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the File class.""",
-                class_name='File',
-                method_name="""delete""",
-                field=None,
-                is_static=True,
-            ),
             name='fileDelete',
         )
         ],
@@ -504,13 +447,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the file exists, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the File class.""",
-                class_name='File',
-                method_name="""exists""",
-                field=None,
-                is_static=True,
-            ),
             name='fileExists',
         )
         ],
@@ -555,13 +491,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the file exists, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the File class.""",
-                class_name='File',
-                method_name="""exists""",
-                field=None,
-                is_static=True,
-            ),
             name='fileExists',
         )
         ],
@@ -606,13 +535,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if succeeded, false in case of failure (e.g. the file handle is invalid). """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='file',
-                method_name="""flush""",
-                field=None,
-                is_static=False,
-            ),
             name='fileFlush',
         )
         ],
@@ -655,13 +577,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if succeeded, false in case of failure (e.g. the file handle is invalid). """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='file',
-                method_name="""flush""",
-                field=None,
-                is_static=False,
-            ),
             name='fileFlush',
         )
         ],
@@ -706,7 +621,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string representing the file path, false if invalid file was provided. """,
             ),
-            oop=None,
             name='fileGetPath',
         )
         ],
@@ -749,7 +663,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string representing the file path, false if invalid file was provided. """,
             ),
-            oop=None,
             name='fileGetPath',
         )
         ],
@@ -794,13 +707,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the file position if successful, or false if an error occured (e.g. an invalid handle was passed). """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='file',
-                method_name="""getPos""",
-                field="""pos""",
-                is_static=False,
-            ),
             name='fileGetPos',
         )
         ],
@@ -843,13 +749,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the file position if successful, or false if an error occured (e.g. an invalid handle was passed). """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='file',
-                method_name="""getPos""",
-                field="""pos""",
-                is_static=False,
-            ),
             name='fileGetPos',
         )
         ],
@@ -894,13 +793,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the file size if successful, or false if an error occured (e.g. an invalid file handle was passed). """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='file',
-                method_name="""getSize""",
-                field="""size""",
-                is_static=False,
-            ),
             name='fileGetSize',
         )
         ],
@@ -942,13 +834,6 @@ DUMP_PARTIAL = [
                     "theFile": """the file handle you wish to get the size of. """
                 },
                 result="""returns the file size if successful, or false if an error occured (e.g. an invalid file handle was passed). """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='file',
-                method_name="""getSize""",
-                field="""size""",
-                is_static=False,
             ),
             name='fileGetSize',
         )
@@ -994,13 +879,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the file position of the specified file is at the end of the file, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='file',
-                method_name="""isEOF""",
-                field="""eof""",
-                is_static=False,
-            ),
             name='fileIsEOF',
         )
         ],
@@ -1042,13 +920,6 @@ DUMP_PARTIAL = [
                     "theFile": """A handle to the file you wish to check. """
                 },
                 result="""returns true if the file position of the specified file is at the end of the file, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='file',
-                method_name="""isEOF""",
-                field="""eof""",
-                is_static=False,
             ),
             name='fileIsEOF',
         )
@@ -1106,13 +977,6 @@ DUMP_PARTIAL = [
                     "readOnly": """By default, the file is opened with reading and writing access. You can specify true for this parameter if you only need reading access. """
                 },
                 result="""if successful, returns a file handle for the file. otherwise returns false (f.e. if the file doesnt exist). """,
-            ),
-            oop=FunctionOOP(
-                description="""The function will only attempt to open the file, it won't create it.""",
-                class_name='File',
-                method_name=None,
-                field=None,
-                is_static=True,
             ),
             name='fileOpen',
         )
@@ -1168,13 +1032,6 @@ DUMP_PARTIAL = [
                     "readOnly": """By default, the file is opened with reading and writing access. You can specify true for this parameter if you only need reading access. """
                 },
                 result="""if successful, returns a file handle for the file. otherwise returns false (f.e. if the file doesnt exist). """,
-            ),
-            oop=FunctionOOP(
-                description="""The function will only attempt to open the file, it won't create it.""",
-                class_name='File',
-                method_name=None,
-                field=None,
-                is_static=True,
             ),
             name='fileOpen',
         )
@@ -1230,13 +1087,6 @@ DUMP_PARTIAL = [
                     "count": """The number of bytes you wish to read. """
                 },
                 result="""returns the bytes that were read in a string. note that this string might not contain as many bytes as you specified if an error occured, i.e. end of file. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='file',
-                method_name="""read""",
-                field=None,
-                is_static=False,
             ),
             name='fileRead',
         )
@@ -1290,13 +1140,6 @@ DUMP_PARTIAL = [
                     "count": """The number of bytes you wish to read. """
                 },
                 result="""returns the bytes that were read in a string. note that this string might not contain as many bytes as you specified if an error occured, i.e. end of file. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='file',
-                method_name="""read""",
-                field=None,
-                is_static=False,
             ),
             name='fileRead',
         )
@@ -1352,13 +1195,6 @@ DUMP_PARTIAL = [
                     "newFilePath": """Destination filepath for the specified source file in the same format. """
                 },
                 result="""if successful, returns true. otherwise returns false. """,
-            ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the File class.""",
-                class_name='File',
-                method_name="""rename""",
-                field=None,
-                is_static=True,
             ),
             name='fileRename',
         )
@@ -1412,13 +1248,6 @@ DUMP_PARTIAL = [
                     "newFilePath": """Destination filepath for the specified source file in the same format. """
                 },
                 result="""if successful, returns true. otherwise returns false. """,
-            ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the File class.""",
-                class_name='File',
-                method_name="""rename""",
-                field=None,
-                is_static=True,
             ),
             name='fileRename',
         )
@@ -1474,13 +1303,6 @@ DUMP_PARTIAL = [
                     "offset": """The new position. This is the number of bytes from the beginning of the file. If this value is larger than the file size, it is limited to 52,428,800 bytes (50 MB). """
                 },
                 result="""returns where the offset was actually set at. i.e. if offset was past the end of the file, it will be set at the end of the file, and this position will be returned. returns false in case of failure (e.g. the specified file handle is invalid). """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='file',
-                method_name="""setPos""",
-                field="""pos""",
-                is_static=False,
             ),
             name='fileSetPos',
         )
@@ -1534,13 +1356,6 @@ DUMP_PARTIAL = [
                     "offset": """The new position. This is the number of bytes from the beginning of the file. If this value is larger than the file size, it is limited to 52,428,800 bytes (50 MB). """
                 },
                 result="""returns where the offset was actually set at. i.e. if offset was past the end of the file, it will be set at the end of the file, and this position will be returned. returns false in case of failure (e.g. the specified file handle is invalid). """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='file',
-                method_name="""setPos""",
-                field="""pos""",
-                is_static=False,
             ),
             name='fileSetPos',
         )
@@ -1616,13 +1431,6 @@ DUMP_PARTIAL = [
                     "string1": """The string to write. """
                 },
                 result="""returns the number of bytes successfully written to the file, returns false if invalid arguments were specified. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='file',
-                method_name="""write""",
-                field=None,
-                is_static=False,
             ),
             name='fileWrite',
         )
@@ -1696,13 +1504,6 @@ DUMP_PARTIAL = [
                     "string1": """The string to write. """
                 },
                 result="""returns the number of bytes successfully written to the file, returns false if invalid arguments were specified. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='file',
-                method_name="""write""",
-                field=None,
-                is_static=False,
             ),
             name='fileWrite',
         )

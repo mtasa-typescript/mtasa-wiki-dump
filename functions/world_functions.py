@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -41,7 +40,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true the traffic lights are currently locked, false otherwise. """,
             ),
-            oop=None,
             name='areTrafficLightsLocked',
         )
         ],
@@ -75,7 +73,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true the traffic lights are currently locked, false otherwise. """,
             ),
-            oop=None,
             name='areTrafficLightsLocked',
         )
         ],
@@ -154,7 +151,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='createSWATRope',
         )
         ],
@@ -190,7 +186,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a float containing the max aircraft height. """,
             ),
-            oop=None,
             name='getAircraftMaxHeight',
         )
         ],
@@ -224,7 +219,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a float containing the max aircraft height. """,
             ),
-            oop=None,
             name='getAircraftMaxHeight',
         )
         ],
@@ -260,7 +254,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a float being the max velocity that is currently set, depending on which side it is used. """,
             ),
-            oop=None,
             name='getAircraftMaxVelocity',
         )
         ],
@@ -294,7 +287,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a float being the max velocity that is currently set, depending on which side it is used. """,
             ),
-            oop=None,
             name='getAircraftMaxVelocity',
         )
         ],
@@ -333,7 +325,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the birds are enabled or false if the birds are disabled. """,
             ),
-            oop=None,
             name='getBirdsEnabled',
         )
         ],
@@ -369,7 +360,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the clouds are enabled or false if clouds are disabled. """,
             ),
-            oop=None,
             name='getCloudsEnabled',
         )
         ],
@@ -403,7 +393,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the clouds are enabled or false if clouds are disabled. """,
             ),
-            oop=None,
             name='getCloudsEnabled',
         )
         ],
@@ -439,7 +428,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a float with the current render distance, false if the operation could not be completed. """,
             ),
-            oop=None,
             name='getFarClipDistance',
         )
         ],
@@ -473,7 +461,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a float with the current render distance, false if the operation could not be completed. """,
             ),
-            oop=None,
             name='getFarClipDistance',
         )
         ],
@@ -509,7 +496,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a float with the current fog render distance, false if the operation could not be completed. """,
             ),
-            oop=None,
             name='getFogDistance',
         )
         ],
@@ -543,7 +529,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a float with the current fog render distance, false if the operation could not be completed. """,
             ),
-            oop=None,
             name='getFogDistance',
         )
         ],
@@ -579,7 +564,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a float representing the speed of the game. """,
             ),
-            oop=None,
             name='getGameSpeed',
         )
         ],
@@ -613,7 +597,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a float representing the speed of the game. """,
             ),
-            oop=None,
             name='getGameSpeed',
         )
         ],
@@ -674,7 +657,6 @@ DUMP_PARTIAL = [
                 result="""returns four floats indicating the bounding box of the garage.
 western x position, eastern x position, southern y position, northern y position,, false when invalid garageid was provided. """,
             ),
-            oop=None,
             name='getGarageBoundingBox',
         )
         ],
@@ -730,7 +712,6 @@ western x position, eastern x position, southern y position, northern y position
                 },
                 result="""returns three floats indicating the position of the garage, x, y and z respectively, false when garageid was invalid. """,
             ),
-            oop=None,
             name='getGaragePosition',
         )
         ],
@@ -786,7 +767,6 @@ western x position, eastern x position, southern y position, northern y position
                 },
                 result="""returns three floats indicating the size of the garage, false if an invalid garageid has been provided """,
             ),
-            oop=None,
             name='getGarageSize',
         )
         ],
@@ -822,7 +802,6 @@ western x position, eastern x position, southern y position, northern y position
                 },
                 result="""returns a float with the current server or client (depending on where you call the function) gravity level. """,
             ),
-            oop=None,
             name='getGravity',
         )
         ],
@@ -856,7 +835,6 @@ western x position, eastern x position, southern y position, northern y position
                 },
                 result="""returns a float with the current server or client (depending on where you call the function) gravity level. """,
             ),
-            oop=None,
             name='getGravity',
         )
         ],
@@ -927,7 +905,6 @@ It is required that the point is near enough to the local player so that its wit
                 },
                 result="""returns a float with the highest ground-level z coord if parameters are valid, 0 if the point you tried to test is outside the loaded world map, false otherwise. """,
             ),
-            oop=None,
             name='getGroundPosition',
         )
         ],
@@ -996,7 +973,6 @@ Note: The server can only return the heat haze settings if it has actually been 
                 },
                 result="""returns 9 values, which are the same used as arguments in setheathaze: """,
             ),
-            oop=None,
             name='getHeatHaze',
         )
         ],
@@ -1063,7 +1039,6 @@ Note: The server can only return the heat haze settings if it has actually been 
                 },
                 result="""returns 9 values, which are the same used as arguments in setheathaze: """,
             ),
-            oop=None,
             name='getHeatHaze',
         )
         ],
@@ -1111,7 +1086,6 @@ Note: The server can only return the heat haze settings if it has actually been 
                 },
                 result="""returns true if interior furniture is enabled or false if interior furniture is disabled. """,
             ),
-            oop=None,
             name='getInteriorFurnitureEnabled',
         )
         ],
@@ -1150,7 +1124,6 @@ Note: The server can only return the heat haze settings if it has actually been 
                 },
                 result="""returns true if music is playing, returns false if music is not playing. """,
             ),
-            oop=None,
             name='getInteriorSoundsEnabled',
         )
         ],
@@ -1186,7 +1159,6 @@ Note: The server can only return the heat haze settings if it has actually been 
                 },
                 result="""returns a float containing the max jetpack height. """,
             ),
-            oop=None,
             name='getJetpackMaxHeight',
         )
         ],
@@ -1220,7 +1192,6 @@ Note: The server can only return the heat haze settings if it has actually been 
                 },
                 result="""returns a float containing the max jetpack height. """,
             ),
-            oop=None,
             name='getJetpackMaxHeight',
         )
         ],
@@ -1265,7 +1236,6 @@ Note: The server can only return the heat haze settings if it has actually been 
                 },
                 result="""returns true if the weapon is enabled, else false if the weapon isnt or invalid arguments are passed. """,
             ),
-            oop=None,
             name='getJetpackWeaponEnabled',
         )
         ],
@@ -1304,7 +1274,6 @@ Note: The server can only return the heat haze settings if it has actually been 
                 },
                 result="""returns the number of real-world milliseconds that go in an ingame minute. """,
             ),
-            oop=None,
             name='getMinuteDuration',
         )
         ],
@@ -1338,7 +1307,6 @@ Note: The server can only return the heat haze settings if it has actually been 
                 },
                 result="""returns the number of real-world milliseconds that go in an ingame minute. """,
             ),
-            oop=None,
             name='getMinuteDuration',
         )
         ],
@@ -1374,7 +1342,6 @@ Note: The server can only return the heat haze settings if it has actually been 
                 },
                 result="""returns a integer being the moon size that is currently set, depending on which side it is used. """,
             ),
-            oop=None,
             name='getMoonSize',
         )
         ],
@@ -1408,7 +1375,6 @@ Note: The server can only return the heat haze settings if it has actually been 
                 },
                 result="""returns a integer being the moon size that is currently set, depending on which side it is used. """,
             ),
-            oop=None,
             name='getMoonSize',
         )
         ],
@@ -1447,7 +1413,6 @@ Note: The server can only return the heat haze settings if it has actually been 
                 },
                 result="""this function returns a float containing the actual near clip distance. """,
             ),
-            oop=None,
             name='getNearClipDistance',
         )
         ],
@@ -1483,7 +1448,6 @@ Note: The server can only return the heat haze settings if it has actually been 
                 },
                 result="""returns true if occlusions are enabled, or false otherwise. """,
             ),
-            oop=None,
             name='getOcclusionsEnabled',
         )
         ],
@@ -1517,7 +1481,6 @@ Note: The server can only return the heat haze settings if it has actually been 
                 },
                 result="""returns true if occlusions are enabled, or false otherwise. """,
             ),
-            oop=None,
             name='getOcclusionsEnabled',
         )
         ],
@@ -1556,7 +1519,6 @@ Note: The server can only return the heat haze settings if it has actually been 
                 },
                 result="""this function returns a float containing the peds lod distance. """,
             ),
-            oop=None,
             name='getPedsLODDistance',
         )
         ],
@@ -1592,7 +1554,6 @@ Note: The server can only return the heat haze settings if it has actually been 
                 },
                 result="""returns the rain level as a number. """,
             ),
-            oop=None,
             name='getRainLevel',
         )
         ],
@@ -1626,7 +1587,6 @@ Note: The server can only return the heat haze settings if it has actually been 
                 },
                 result="""returns the rain level as a number. """,
             ),
-            oop=None,
             name='getRainLevel',
         )
         ],
@@ -1697,7 +1657,6 @@ It is required that the point is near enough to the local player so that its wit
                 },
                 result="""returns a float with the lowest roof-level z coord if parameters are valid, false if the point you tried to test is outside the loaded world map. """,
             ),
-            oop=None,
             name='getRoofPosition',
         )
         ],
@@ -1797,7 +1756,6 @@ It is required that the point is near enough to the local player so that its wit
                 },
                 result="""returns two x, y floats indicating the screen position and float distance between screen and given position if successful, false otherwise. """,
             ),
-            oop=None,
             name='getScreenFromWorldPosition',
         )
         ],
@@ -1854,7 +1812,6 @@ Note: The server can only return the sky color if it has actually been set by sc
                 },
                 result="""returns 6 int|ints, of which the first 3 represent the skys top color, (in rgb) and the last 3 represent the bottom colors. """,
             ),
-            oop=None,
             name='getSkyGradient',
         )
         ],
@@ -1909,7 +1866,6 @@ Note: The server can only return the sky color if it has actually been set by sc
                 },
                 result="""returns 6 int|ints, of which the first 3 represent the skys top color, (in rgb) and the last 3 represent the bottom colors. """,
             ),
-            oop=None,
             name='getSkyGradient',
         )
         ],
@@ -1965,7 +1921,6 @@ Note: The server can only return the sky color if it has actually been set by sc
                 },
                 result="""returns the color of the sun as six numbers, false if its default. """,
             ),
-            oop=None,
             name='getSunColor',
         )
         ],
@@ -2019,7 +1974,6 @@ Note: The server can only return the sky color if it has actually been set by sc
                 },
                 result="""returns the color of the sun as six numbers, false if its default. """,
             ),
-            oop=None,
             name='getSunColor',
         )
         ],
@@ -2055,7 +2009,6 @@ Note: The server can only return the sky color if it has actually been set by sc
                 },
                 result="""returns the size of the sun as a number, false if the size of the sun is at its default. """,
             ),
-            oop=None,
             name='getSunSize',
         )
         ],
@@ -2089,7 +2042,6 @@ Note: The server can only return the sky color if it has actually been set by sc
                 },
                 result="""returns the size of the sun as a number, false if the size of the sun is at its default. """,
             ),
-            oop=None,
             name='getSunSize',
         )
         ],
@@ -2129,7 +2081,6 @@ Note: The server can only return the sky color if it has actually been set by sc
                 },
                 result="""returns two ints that represent hours and minutes. """,
             ),
-            oop=None,
             name='getTime',
         )
         ],
@@ -2167,7 +2118,6 @@ Note: The server can only return the sky color if it has actually been set by sc
                 },
                 result="""returns two ints that represent hours and minutes. """,
             ),
-            oop=None,
             name='getTime',
         )
         ],
@@ -2203,7 +2153,6 @@ Note: The server can only return the sky color if it has actually been set by sc
                 },
                 result="""returns the current traffic_light_states|state of the traffic lights. """,
             ),
-            oop=None,
             name='getTrafficLightState',
         )
         ],
@@ -2237,7 +2186,6 @@ Note: The server can only return the sky color if it has actually been set by sc
                 },
                 result="""returns the current traffic_light_states|state of the traffic lights. """,
             ),
-            oop=None,
             name='getTrafficLightState',
         )
         ],
@@ -2281,7 +2229,6 @@ Note: The server can only return the sky color if it has actually been set by sc
                 result="""* float: general distance used for most vehicles
 * float: distance used for trains and planes """,
             ),
-            oop=None,
             name='getVehiclesLODDistance',
         )
         ],
@@ -2321,7 +2268,6 @@ Note: The server can only return the sky color if it has actually been set by sc
                 },
                 result="""returns two integers indicating the weather type that is currently active. the first integer says what weather is currently considered to be active. the second integer is the weather id that is being blended into if any, otherwise it is nil. """,
             ),
-            oop=None,
             name='getWeather',
         )
         ],
@@ -2359,7 +2305,6 @@ Note: The server can only return the sky color if it has actually been set by sc
                 },
                 result="""returns two integers indicating the weather type that is currently active. the first integer says what weather is currently considered to be active. the second integer is the weather id that is being blended into if any, otherwise it is nil. """,
             ),
-            oop=None,
             name='getWeather',
         )
         ],
@@ -2405,7 +2350,6 @@ Note: The server can only return the sky color if it has actually been set by sc
 *velocityy: the velocity on the y-coordinate or nil if the wind velocity is default.
 *velocityz: the velocity on the z-coordinate or nil if the wind velocity is default. """,
             ),
-            oop=None,
             name='getWindVelocity',
         )
         ],
@@ -2449,7 +2393,6 @@ Note: The server can only return the sky color if it has actually been set by sc
 *velocityy: the velocity on the y-coordinate or nil if the wind velocity is default.
 *velocityz: the velocity on the z-coordinate or nil if the wind velocity is default. """,
             ),
-            oop=None,
             name='getWindVelocity',
         )
         ],
@@ -2529,7 +2472,6 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 },
                 result="""returns three x, y, z floats indicating the world position if successful, false otherwise. """,
             ),
-            oop=None,
             name='getWorldFromScreenPosition',
         )
         ],
@@ -2615,7 +2557,6 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 },
                 result="""returns the string of the zone name """,
             ),
-            oop=None,
             name='getZoneName',
         )
         ],
@@ -2699,7 +2640,6 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 },
                 result="""returns the string of the zone name """,
             ),
-            oop=None,
             name='getZoneName',
         )
         ],
@@ -2747,7 +2687,6 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 },
                 result="""returns true if the ambient sound is enabled, false if it is disabled or invalid values were passed. """,
             ),
-            oop=None,
             name='isAmbientSoundEnabled',
         )
         ],
@@ -2792,7 +2731,6 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 },
                 result="""returns true if the garage is open, false if it is closed or an invalid garage id was given. """,
             ),
-            oop=None,
             name='isGarageOpen',
         )
         ],
@@ -2835,7 +2773,6 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 },
                 result="""returns true if the garage is open, false if it is closed or an invalid garage id was given. """,
             ),
-            oop=None,
             name='isGarageOpen',
         )
         ],
@@ -3026,7 +2963,6 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 },
                 result="""returns true if the line between the specified points is clear, false if theres an obstacle or if invalid parameters are passed. """,
             ),
-            oop=None,
             name='isLineOfSightClear',
         )
         ],
@@ -3085,7 +3021,6 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 },
                 result="""returns true if the world sounds are enabled, false if they are disabled or invalid values were passed. """,
             ),
-            oop=None,
             name='isWorldSoundEnabled',
         )
         ],
@@ -3132,13 +3067,6 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                     "propname": """the name of the property to retrieve. Possible values are listed on SetWorldSpecialPropertyEnabled. """
                 },
                 result="""returns true if the property is enabled, false if it is disabled or the specified property name is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='None',
-                method_name=None,
-                field=None,
-                is_static=None,
             ),
             name='isWorldSpecialPropertyEnabled',
         )
@@ -3450,7 +3378,6 @@ the other values are only filled if there is a collision, they contain nil other
 *worldmodelrotationx,y,z: if worldmodelid is set, this will contain the world model rotation.
 *worldlodmodelid: if worldmodelid is set, this will contain the lod model id if applicable. """,
             ),
-            oop=None,
             name='processLineOfSight',
         )
         ],
@@ -3550,7 +3477,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the object was removed, false if invalid arguments were passed. """,
             ),
-            oop=None,
             name='removeWorldModel',
         )
         ],
@@ -3648,7 +3574,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the object was removed, false if invalid arguments were passed. """,
             ),
-            oop=None,
             name='removeWorldModel',
         )
         ],
@@ -3687,7 +3612,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the ambient sounds were reset, false otherwise. """,
             ),
-            oop=None,
             name='resetAmbientSounds',
         )
         ],
@@ -3726,7 +3650,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the blur level was reset successfully. returns false otherwise. """,
             ),
-            oop=None,
             name='resetBlurLevel',
         )
         ],
@@ -3765,7 +3688,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the color filtering was reset, false otherwise. """,
             ),
-            oop=None,
             name='resetColorFilter',
         )
         ],
@@ -3801,7 +3723,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if operation was successful, false otherwise. """,
             ),
-            oop=None,
             name='resetFarClipDistance',
         )
         ],
@@ -3835,7 +3756,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if operation was successful, false otherwise. """,
             ),
-            oop=None,
             name='resetFarClipDistance',
         )
         ],
@@ -3871,7 +3791,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if operation was successful, false otherwise. """,
             ),
-            oop=None,
             name='resetFogDistance',
         )
         ],
@@ -3905,7 +3824,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if operation was successful, false otherwise. """,
             ),
-            oop=None,
             name='resetFogDistance',
         )
         ],
@@ -3941,7 +3859,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the heat haze was reset correctly, false otherwise. """,
             ),
-            oop=None,
             name='resetHeatHaze',
         )
         ],
@@ -3975,7 +3892,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the heat haze was reset correctly, false otherwise. """,
             ),
-            oop=None,
             name='resetHeatHaze',
         )
         ],
@@ -4011,7 +3927,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the size of the moon was reset, false otherwise. """,
             ),
-            oop=None,
             name='resetMoonSize',
         )
         ],
@@ -4045,7 +3960,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the size of the moon was reset, false otherwise. """,
             ),
-            oop=None,
             name='resetMoonSize',
         )
         ],
@@ -4084,7 +3998,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""*boolean: always returns true """,
             ),
-            oop=None,
             name='resetNearClipDistance',
         )
         ],
@@ -4123,7 +4036,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the peds lod distance was reset, false otherwise. """,
             ),
-            oop=None,
             name='resetPedsLODDistance',
         )
         ],
@@ -4159,7 +4071,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the rain level was reset. """,
             ),
-            oop=None,
             name='resetRainLevel',
         )
         ],
@@ -4193,7 +4104,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the rain level was reset. """,
             ),
-            oop=None,
             name='resetRainLevel',
         )
         ],
@@ -4229,7 +4139,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if sky color was reset correctly, false otherwise. """,
             ),
-            oop=None,
             name='resetSkyGradient',
         )
         ],
@@ -4263,7 +4172,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if sky color was reset correctly, false otherwise. """,
             ),
-            oop=None,
             name='resetSkyGradient',
         )
         ],
@@ -4299,7 +4207,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the color of the sun was reset, false otherwise. """,
             ),
-            oop=None,
             name='resetSunColor',
         )
         ],
@@ -4333,7 +4240,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the color of the sun was reset, false otherwise. """,
             ),
-            oop=None,
             name='resetSunColor',
         )
         ],
@@ -4369,7 +4275,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the size of the sun was reset, false otherwise. """,
             ),
-            oop=None,
             name='resetSunSize',
         )
         ],
@@ -4403,7 +4308,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the size of the sun was reset, false otherwise. """,
             ),
-            oop=None,
             name='resetSunSize',
         )
         ],
@@ -4442,7 +4346,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the vehicles lod distance was reset, false otherwise. """,
             ),
-            oop=None,
             name='resetVehiclesLODDistance',
         )
         ],
@@ -4478,7 +4381,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=None,
             name='resetWindVelocity',
         )
         ],
@@ -4512,7 +4414,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=None,
             name='resetWindVelocity',
         )
         ],
@@ -4551,7 +4452,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the world sounds were reset, false otherwise. """,
             ),
-            oop=None,
             name='resetWorldSounds',
         )
         ],
@@ -4587,7 +4487,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the world objects were restored, false otherwise. """,
             ),
-            oop=None,
             name='restoreAllWorldModels',
         )
         ],
@@ -4621,7 +4520,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the world objects were restored, false otherwise. """,
             ),
-            oop=None,
             name='restoreAllWorldModels',
         )
         ],
@@ -4721,7 +4619,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the world object was restored, false otherwise. """,
             ),
-            oop=None,
             name='restoreWorldModel',
         )
         ],
@@ -4819,7 +4716,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the world object was restored, false otherwise. """,
             ),
-            oop=None,
             name='restoreWorldModel',
         )
         ],
@@ -4864,7 +4760,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=None,
             name='setAircraftMaxHeight',
         )
         ],
@@ -4907,7 +4802,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=None,
             name='setAircraftMaxHeight',
         )
         ],
@@ -4952,7 +4846,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the max velocity was set correctly, false otherwise. """,
             ),
-            oop=None,
             name='setAircraftMaxVelocity',
         )
         ],
@@ -4995,7 +4888,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the max velocity was set correctly, false otherwise. """,
             ),
-            oop=None,
             name='setAircraftMaxVelocity',
         )
         ],
@@ -5054,7 +4946,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the ambient sound was set correctly, false if invalid values were passed. """,
             ),
-            oop=None,
             name='setAmbientSoundEnabled',
         )
         ],
@@ -5102,7 +4993,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the birds state was changed succesfully, false if an invalid argument was specified. """,
             ),
-            oop=None,
             name='setBirdsEnabled',
         )
         ],
@@ -5147,7 +5037,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the cloud state was changed succesfully, false if an invalid argument was specified. """,
             ),
-            oop=None,
             name='setCloudsEnabled',
         )
         ],
@@ -5190,7 +5079,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the cloud state was changed succesfully, false if an invalid argument was specified. """,
             ),
-            oop=None,
             name='setCloudsEnabled',
         )
         ],
@@ -5315,7 +5203,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the color filter was set, false otherwise. """,
             ),
-            oop=None,
             name='setColorFilter',
         )
         ],
@@ -5360,7 +5247,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the distance was set correctly, false if invalid arguments were passed. """,
             ),
-            oop=None,
             name='setFarClipDistance',
         )
         ],
@@ -5403,7 +5289,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the distance was set correctly, false if invalid arguments were passed. """,
             ),
-            oop=None,
             name='setFarClipDistance',
         )
         ],
@@ -5448,7 +5333,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the distance changed successfully, false if bad arguments were passed. """,
             ),
-            oop=None,
             name='setFogDistance',
         )
         ],
@@ -5491,7 +5375,6 @@ the other values are only filled if there is a collision, they contain nil other
                 },
                 result="""returns true if the distance changed successfully, false if bad arguments were passed. """,
             ),
-            oop=None,
             name='setFogDistance',
         )
         ],
@@ -5537,7 +5420,6 @@ the other values are only filled if there is a collision, they contain nil other
                 result="""returns true if the gamespeed was set successfully, false otherwise.
 the normal game speed is 1. """,
             ),
-            oop=None,
             name='setGameSpeed',
         )
         ],
@@ -5581,7 +5463,6 @@ the normal game speed is 1. """,
                 result="""returns true if the gamespeed was set successfully, false otherwise.
 the normal game speed is 1. """,
             ),
-            oop=None,
             name='setGameSpeed',
         )
         ],
@@ -5637,7 +5518,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if successful, false if an invalid garage id was given. """,
             ),
-            oop=None,
             name='setGarageOpen',
         )
         ],
@@ -5691,7 +5571,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if successful, false if an invalid garage id was given. """,
             ),
-            oop=None,
             name='setGarageOpen',
         )
         ],
@@ -5738,7 +5617,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if gravity was changed, false otherwise. """,
             ),
-            oop=None,
             name='setGravity',
         )
         ],
@@ -5783,7 +5661,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if gravity was changed, false otherwise. """,
             ),
-            oop=None,
             name='setGravity',
         )
         ],
@@ -5908,7 +5785,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if the heat haze effect was set correctly, false if invalid values were passed. """,
             ),
-            oop=None,
             name='setHeatHaze',
         )
         ],
@@ -6031,7 +5907,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if the heat haze effect was set correctly, false if invalid values were passed. """,
             ),
-            oop=None,
             name='setHeatHaze',
         )
         ],
@@ -6095,7 +5970,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=None,
             name='setInteriorFurnitureEnabled',
         )
         ],
@@ -6140,7 +6014,6 @@ the normal game speed is 1. """,
                 },
                 result="""if a boolean was passed to the function, it always succeeds and returns true. """,
             ),
-            oop=None,
             name='setInteriorSoundsEnabled',
         )
         ],
@@ -6183,7 +6056,6 @@ the normal game speed is 1. """,
                 },
                 result="""if a boolean was passed to the function, it always succeeds and returns true. """,
             ),
-            oop=None,
             name='setInteriorSoundsEnabled',
         )
         ],
@@ -6228,7 +6100,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=None,
             name='setJetpackMaxHeight',
         )
         ],
@@ -6271,7 +6142,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=None,
             name='setJetpackMaxHeight',
         )
         ],
@@ -6327,7 +6197,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true, else false if invalid arguments are passed. """,
             ),
-            oop=None,
             name='setJetpackWeaponEnabled',
         )
         ],
@@ -6375,7 +6244,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=None,
             name='setMinuteDuration',
         )
         ],
@@ -6418,7 +6286,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=None,
             name='setMinuteDuration',
         )
         ],
@@ -6463,7 +6330,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if the moon size was set correctly, false otherwise. """,
             ),
-            oop=None,
             name='setMoonSize',
         )
         ],
@@ -6506,7 +6372,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if the moon size was set correctly, false otherwise. """,
             ),
-            oop=None,
             name='setMoonSize',
         )
         ],
@@ -6554,7 +6419,6 @@ the normal game speed is 1. """,
                 },
                 result="""this function returns true if the argument is valid. returns false otherwise. """,
             ),
-            oop=None,
             name='setNearClipDistance',
         )
         ],
@@ -6599,7 +6463,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if the setting was set correctly, false if invalid arguments were passed. """,
             ),
-            oop=None,
             name='setOcclusionsEnabled',
         )
         ],
@@ -6642,7 +6505,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if the setting was set correctly, false if invalid arguments were passed. """,
             ),
-            oop=None,
             name='setOcclusionsEnabled',
         )
         ],
@@ -6690,7 +6552,6 @@ the normal game speed is 1. """,
                 },
                 result="""this function returns true if the argument is valid. returns false otherwise. """,
             ),
-            oop=None,
             name='setPedsLODDistance',
         )
         ],
@@ -6736,7 +6597,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if the rain level was set, false otherwise. """,
             ),
-            oop=None,
             name='setRainLevel',
         )
         ],
@@ -6780,7 +6640,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if the rain level was set, false otherwise. """,
             ),
-            oop=None,
             name='setRainLevel',
         )
         ],
@@ -6880,7 +6739,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if sky color was set correctly, false if invalid values were passed. """,
             ),
-            oop=None,
             name='setSkyGradient',
         )
         ],
@@ -6978,7 +6836,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if sky color was set correctly, false if invalid values were passed. """,
             ),
-            oop=None,
             name='setSkyGradient',
         )
         ],
@@ -7078,7 +6935,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if the color of the sun was set, false otherwise. """,
             ),
-            oop=None,
             name='setSunColor',
         )
         ],
@@ -7176,7 +7032,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if the color of the sun was set, false otherwise. """,
             ),
-            oop=None,
             name='setSunColor',
         )
         ],
@@ -7221,7 +7076,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if the size of the sun was set, false otherwise. """,
             ),
-            oop=None,
             name='setSunSize',
         )
         ],
@@ -7264,7 +7118,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if the size of the sun was set, false otherwise. """,
             ),
-            oop=None,
             name='setSunSize',
         )
         ],
@@ -7320,7 +7173,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if the new time was successfully set, false otherwise. """,
             ),
-            oop=None,
             name='setTime',
         )
         ],
@@ -7374,7 +7226,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if the new time was successfully set, false otherwise. """,
             ),
-            oop=None,
             name='setTime',
         )
         ],
@@ -7419,7 +7270,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if the successful, false otherwise. """,
             ),
-            oop=None,
             name='setTrafficLightsLocked',
         )
         ],
@@ -7462,7 +7312,6 @@ the normal game speed is 1. """,
                 },
                 result="""returns true if the successful, false otherwise. """,
             ),
-            oop=None,
             name='setTrafficLightsLocked',
         )
         ],
@@ -7513,7 +7362,6 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 },
                 result="""returns true if the state was successfully set, false otherwise. """,
             ),
-            oop=None,
             name='setTrafficLightState',
         )
         ],
@@ -7562,7 +7410,6 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 },
                 result="""returns true if the state was successfully set, false otherwise. """,
             ),
-            oop=None,
             name='setTrafficLightState',
         )
         ],
@@ -7621,7 +7468,6 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 },
                 result=""" """,
             ),
-            oop=None,
             name='setVehiclesLODDistance',
         )
         ],
@@ -7666,7 +7512,6 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 },
                 result="""returns true if the weather was set succesfully, false if an invalid weatherid was specified. """,
             ),
-            oop=None,
             name='setWeather',
         )
         ],
@@ -7709,7 +7554,6 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 },
                 result="""returns true if the weather was set succesfully, false if an invalid weatherid was specified. """,
             ),
-            oop=None,
             name='setWeather',
         )
         ],
@@ -7754,7 +7598,6 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 },
                 result="""returns true if successful, false if an invalid weatherid is passed. """,
             ),
-            oop=None,
             name='setWeatherBlended',
         )
         ],
@@ -7797,7 +7640,6 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 },
                 result="""returns true if successful, false if an invalid weatherid is passed. """,
             ),
-            oop=None,
             name='setWeatherBlended',
         )
         ],
@@ -7864,7 +7706,6 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 },
                 result="""returns true if successful, false if bad arguments were passed. """,
             ),
-            oop=None,
             name='setWindVelocity',
         )
         ],
@@ -7929,7 +7770,6 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 },
                 result="""returns true if successful, false if bad arguments were passed. """,
             ),
-            oop=None,
             name='setWindVelocity',
         )
         ],
@@ -8013,7 +7853,6 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 },
                 result="""returns true if the world sound was correctly enabled/disabled, false if invalid values were passed. """,
             ),
-            oop=None,
             name='setWorldSoundEnabled',
         )
         ],
@@ -8079,13 +7918,6 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     "enable": """whether or not to enable the property. """
                 },
                 result="""returns true if successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='None',
-                method_name=None,
-                field=None,
-                is_static=None,
             ),
             name='setWorldSpecialPropertyEnabled',
         )
@@ -8197,7 +8029,6 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 },
                 result="""returns true and the position of the intersection point of the line and the water surface if there is a collision, or false if there is no collision. """,
             ),
-            oop=None,
             name='testLineAgainstWater',
         )
         ],

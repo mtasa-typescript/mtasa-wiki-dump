@@ -9,7 +9,9 @@ from to_python.core.types import FunctionType, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[EventData(
+    CompoundEventData(
+        server=[
+            EventData(
             name='onAccountDataChange',
             docs=FunctionDoc(
                 description="""This event is triggered when an accounts data changes through setAccountData. """,
@@ -55,5 +57,10 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )], client=[])
+        )
+        ],
+        client=[
+            
+        ],
+    )
 ]

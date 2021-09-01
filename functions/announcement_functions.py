@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -41,7 +40,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the gametype as a string. if no gametype is set it returns nil. """,
             ),
-            oop=None,
             name='getGameType',
         )
         ],
@@ -80,7 +78,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the mapname as a string. if no mapname is set it returns nil. """,
             ),
-            oop=None,
             name='getMapName',
         )
         ],
@@ -128,7 +125,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string containing the value set for the specified key, false if invalid arguments were specified. """,
             ),
-            oop=None,
             name='getRuleValue',
         )
         ],
@@ -176,7 +172,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the rule value was removed, false if it failed. """,
             ),
-            oop=None,
             name='removeRuleValue',
         )
         ],
@@ -225,7 +220,6 @@ It should be noted that mapmanager handles this automatically for gamemodes that
                 },
                 result="""returns true if the game type was set, false if an invalid argument was passed to the function. """,
             ),
-            oop=None,
             name='setGameType',
         )
         ],
@@ -273,7 +267,6 @@ It should be noted that mapmanager handles this automatically for gamemodes that
                 },
                 result="""returns true if map name was set successfully, false otherwise. """,
             ),
-            oop=None,
             name='setMapName',
         )
         ],
@@ -332,7 +325,6 @@ It should be noted that mapmanager handles this automatically for gamemodes that
                 },
                 result="""returns true if the rule value was set, false if invalid arguments were specified. """,
             ),
-            oop=None,
             name='setRuleValue',
         )
         ],

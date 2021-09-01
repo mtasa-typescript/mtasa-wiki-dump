@@ -9,7 +9,12 @@ from to_python.core.types import FunctionType, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[], client=[EventData(
+    CompoundEventData(
+        server=[
+            
+        ],
+        client=[
+            EventData(
             name='onClientSoundBeat',
             docs=FunctionDoc(
                 description="""This event is triggered when a sound beats. """,
@@ -33,8 +38,15 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )]),
-    CompoundEventData(server=[], client=[EventData(
+        )
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            
+        ],
+        client=[
+            EventData(
             name='onClientSoundChangedMeta',
             docs=FunctionDoc(
                 description="""This event is triggered when a sounds meta tags have been modified. """,
@@ -58,8 +70,15 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )]),
-    CompoundEventData(server=[], client=[EventData(
+        )
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            
+        ],
+        client=[
+            EventData(
             name='onClientSoundFinishedDownload',
             docs=FunctionDoc(
                 description="""This event is triggered when a sound has just finished downloading. This means the complete sound file is now loaded in the players RAM, and can be played completely from start to end. Unlike onClientSoundStream, this event only triggers for file streams, not for live ones since live streams never actually end. """,
@@ -83,8 +102,15 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )]),
-    CompoundEventData(server=[], client=[EventData(
+        )
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            
+        ],
+        client=[
+            EventData(
             name='onClientSoundStarted',
             docs=FunctionDoc(
                 description="""This event is triggered when a sound is started. """,
@@ -108,8 +134,15 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )]),
-    CompoundEventData(server=[], client=[EventData(
+        )
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            
+        ],
+        client=[
+            EventData(
             name='onClientSoundStopped',
             docs=FunctionDoc(
                 description="""This event is triggered when a sound is stopped. """,
@@ -133,8 +166,15 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )]),
-    CompoundEventData(server=[], client=[EventData(
+        )
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            
+        ],
+        client=[
+            EventData(
             name='onClientSoundStream',
             docs=FunctionDoc(
                 description="""This event is triggered when a sound has just finished initial streaming. For file streams, this means the sound will now start playing, but isnt done downloading yet. For live streams, this just means the stream will start playing. This event will also trigger when, for some reason, the streaming failed. """,
@@ -191,5 +231,7 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )])
+        )
+        ],
+    )
 ]

@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -141,13 +140,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the element/effect|effect element if creation was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Effect',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createEffect',
         )
         ],
@@ -267,13 +259,6 @@ DUMP_PARTIAL = [
                     "brightness": """the brightness. Ranges from 0 (almost black) to 1 (normal color). """
                 },
                 result=""" """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Effect',
-                method_name="""addBlood""",
-                field=None,
-                is_static=True,
             ),
             name='fxAddBlood',
         )
@@ -406,13 +391,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Effect',
-                method_name="""addBulletImpact""",
-                field=None,
-                is_static=True,
-            ),
             name='fxAddBulletImpact',
         )
         ],
@@ -481,13 +459,6 @@ DUMP_PARTIAL = [
                     "posZ": """A float representing the z position of the splash """
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Effect',
-                method_name="""addBulletSplash""",
-                field=None,
-                is_static=True,
             ),
             name='fxAddBulletSplash',
         )
@@ -619,13 +590,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Effect',
-                method_name="""addDebris""",
-                field=None,
-                is_static=True,
-            ),
             name='fxAddDebris',
         )
         ],
@@ -694,13 +658,6 @@ DUMP_PARTIAL = [
                     "posZ": """A float representing the z position of the splash """
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Effect',
-                method_name="""addFootSplash""",
-                field=None,
-                is_static=True,
             ),
             name='fxAddFootSplash',
         )
@@ -834,13 +791,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Effect',
-                method_name="""addGlass""",
-                field=None,
-                is_static=True,
-            ),
             name='fxAddGlass',
         )
         ],
@@ -950,13 +900,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Effect',
-                method_name="""addGunshot""",
-                field=None,
-                is_static=True,
-            ),
             name='fxAddGunshot',
         )
         ],
@@ -1054,13 +997,6 @@ DUMP_PARTIAL = [
                     "dirX, dirY, dirZ": """a vector indicating the movement direction of the effect. """
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Effect',
-                method_name="""addPunchImpact""",
-                field=None,
-                is_static=True,
             ),
             name='fxAddPunchImpact',
         )
@@ -1246,13 +1182,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Effect',
-                method_name="""addSparks""",
-                field=None,
-                is_static=True,
-            ),
             name='fxAddSparks',
         )
         ],
@@ -1350,13 +1279,6 @@ DUMP_PARTIAL = [
                     "dirX, dirY, dirZ": """a direction vector indicating where the tank fire is directed to. """
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Effect',
-                method_name="""addTankFire""",
-                field=None,
-                is_static=True,
             ),
             name='fxAddTankFire',
         )
@@ -1456,13 +1378,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Effect',
-                method_name="""addTyreBurst""",
-                field=None,
-                is_static=True,
-            ),
             name='fxAddTyreBurst',
         )
         ],
@@ -1532,13 +1447,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Effect',
-                method_name="""addWaterHydrant""",
-                field=None,
-                is_static=True,
-            ),
             name='fxAddWaterHydrant',
         )
         ],
@@ -1607,13 +1515,6 @@ DUMP_PARTIAL = [
                     "posZ": """A float representing the z position of the splash """
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Effect',
-                method_name="""addWaterSplash""",
-                field=None,
-                is_static=True,
             ),
             name='fxAddWaterSplash',
         )
@@ -1735,13 +1636,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Effect',
-                method_name="""addWood""",
-                field=None,
-                is_static=True,
-            ),
             name='fxAddWood',
         )
         ],
@@ -1789,13 +1683,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='effect',
-                method_name="""getDensity""",
-                field="""density""",
-                is_static=False,
-            ),
             name='getEffectDensity',
         )
         ],
@@ -1842,13 +1729,6 @@ DUMP_PARTIAL = [
                     "theEffect": """The effect to get the speed of. """
                 },
                 result="""returns float containing the effects speed, false if invalid arguments were specified. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='effect',
-                method_name="""getSpeed""",
-                field="""speed""",
-                is_static=False,
             ),
             name='getEffectSpeed',
         )
@@ -1909,13 +1789,6 @@ The limit is 1 for Low, 1.5 for Medium, and 2 for High/Very high.|true}} """,
                 },
                 result="""returns true if the density was succesfully changed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='effect',
-                method_name="""setDensity""",
-                field="""density""",
-                is_static=False,
-            ),
             name='setEffectDensity',
         )
         ],
@@ -1973,13 +1846,6 @@ The limit is 1 for Low, 1.5 for Medium, and 2 for High/Very high.|true}} """,
                     "speed": """The speed to set. """
                 },
                 result="""returns true if the effect speed was succesfuly changed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='effect',
-                method_name="""setSpeed""",
-                field="""speed""",
-                is_static=False,
             ),
             name='setEffectSpeed',
         )

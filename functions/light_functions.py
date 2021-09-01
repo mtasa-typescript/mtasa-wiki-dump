@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -176,13 +175,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the element/light|light element if creation was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Light',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createLight',
         )
         ],
@@ -237,13 +229,6 @@ DUMP_PARTIAL = [
                     "theLight": """The Element/Light|light that you wish to retrieve the color of. """
                 },
                 result="""returns three ints corresponding to the amount of red, green and blue (respectively) of the light, false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='light',
-                method_name="""getColor""",
-                field="""color""",
-                is_static=False,
             ),
             name='getLightColor',
         )
@@ -300,13 +285,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns three ints corresponding to the x, y and z coordinates (respectively) of the light direction, false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='light',
-                method_name="""getDirection""",
-                field="""direction""",
-                is_static=False,
-            ),
             name='getLightDirection',
         )
         ],
@@ -354,13 +332,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a float containing the radius of the specified light, false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='light',
-                method_name="""getRadius""",
-                field="""radius""",
-                is_static=False,
-            ),
             name='getLightRadius',
         )
         ],
@@ -407,13 +378,6 @@ DUMP_PARTIAL = [
                     "theLight": """The Element/Light|light that you wish to retrieve the type of. """
                 },
                 result="""returns an int containing the type of the specified light, false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='light',
-                method_name="""getType""",
-                field=None,
-                is_static=False,
             ),
             name='getLightType',
         )
@@ -492,13 +456,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the function was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='light',
-                method_name="""setColor""",
-                field="""color""",
-                is_static=False,
-            ),
             name='setLightColor',
         )
         ],
@@ -576,13 +533,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the function was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='light',
-                method_name="""setDirection""",
-                field="""direction""",
-                is_static=False,
-            ),
             name='setLightDirection',
         )
         ],
@@ -639,13 +589,6 @@ DUMP_PARTIAL = [
                     "theLight": """The Element/Light|light that you wish to set the radius of. """
                 },
                 result="""returns true if the function was successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='light',
-                method_name="""setRadius""",
-                field="""radius""",
-                is_static=False,
             ),
             name='setLightRadius',
         )

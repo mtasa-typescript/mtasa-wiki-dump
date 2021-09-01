@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -107,13 +106,6 @@ DUMP_PARTIAL = [
                     "seconds": """The amount of seconds the player will be banned from the server for. This can be 0 for an infinite amount of time. """
                 },
                 result="""returns the new ban if the ip/username/serial was banned successfully, false if invalid arguments are specified. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Ban',
-                method_name=None,
-                field=None,
-                is_static=True,
             ),
             name='addBan',
         )
@@ -229,13 +221,6 @@ This function will ban the specified player from the server by IP. """,
                 },
                 result="""returns a ban object if banned successfully, or false if unsuccessful. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""ban""",
-                field=None,
-                is_static=False,
-            ),
             name='banPlayer',
         )
         ],
@@ -282,13 +267,6 @@ This function will ban the specified player from the server by IP. """,
                     "theBan": """The ban you want to return the admin of. """
                 },
                 result="""returns a string of the admin if everything was successful, false if invalid arguments are specified if there was no admin specified for the ban. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ban',
-                method_name="""getAdmin""",
-                field="""admin""",
-                is_static=False,
             ),
             name='getBanAdmin',
         )
@@ -337,13 +315,6 @@ This function will ban the specified player from the server by IP. """,
                 },
                 result="""returns a string of the ip if everything was successful, false if invalid arguments are specified if there was no ip specified for the ban. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ban',
-                method_name="""getIP""",
-                field="""ip""",
-                is_static=False,
-            ),
             name='getBanIP',
         )
         ],
@@ -390,13 +361,6 @@ This function will ban the specified player from the server by IP. """,
                     "theBan": """The ban element which nickname you want to return. """
                 },
                 result="""returns a string of the nickname if everything was successfull, false if invalid arguments are specified if there was no nickname specified for the ban element. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ban',
-                method_name="""getNick""",
-                field="""nick""",
-                is_static=False,
             ),
             name='getBanNick',
         )
@@ -445,13 +409,6 @@ This function will ban the specified player from the server by IP. """,
                 },
                 result="""returns a string of the reason if everything was successful, false if invalid arguments are specified if there was no reason specified for the ban. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ban',
-                method_name="""getReason""",
-                field="""reason""",
-                is_static=False,
-            ),
             name='getBanReason',
         )
         ],
@@ -489,13 +446,6 @@ This function will ban the specified player from the server by IP. """,
                     
                 },
                 result="""returns a table containing all the bans. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Ban',
-                method_name="""getList""",
-                field=None,
-                is_static=True,
             ),
             name='getBans',
         )
@@ -543,13 +493,6 @@ This function will ban the specified player from the server by IP. """,
                     "theBan": """The ban you want to retrieve the serial of. """
                 },
                 result="""returns a string of the serial if everything was successful, false if invalid arguments are specified or if there was no serial specified for the ban. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ban',
-                method_name="""getSerial""",
-                field="""serial""",
-                is_static=False,
             ),
             name='getBanSerial',
         )
@@ -599,13 +542,6 @@ This function will ban the specified player from the server by IP. """,
                 result="""* returns an integer of the banning time in the format of seconds from the year 1970.  use in conjunction with getrealtime in order to retrieve detailed information.
 * returns false if invalid arguments were specified or if there was no banning time specified for the ban. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ban',
-                method_name="""getTime""",
-                field="""time""",
-                is_static=False,
-            ),
             name='getBanTime',
         )
         ],
@@ -653,7 +589,6 @@ This function will ban the specified player from the server by IP. """,
                 },
                 result="""returns a string of the username if everything was successful, false if invalid arguments are specified if there was no username specified for the ban. """,
             ),
-            oop=None,
             name='getBanUsername',
         )
         ],
@@ -702,13 +637,6 @@ This function will ban the specified player from the server by IP. """,
                 result="""* returns an integer of the unbanning time in the format of seconds from the year 1970.  use in conjunction with getrealtime in order to retrieve detailed information.
 * returns false if invalid arguments are specified or if there was no unbanning time specified for the ban. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ban',
-                method_name="""getUnbanTime""",
-                field="""unbanTime""",
-                is_static=False,
-            ),
             name='getUnbanTime',
         )
         ],
@@ -756,7 +684,6 @@ This function will ban the specified player from the server by IP. """,
                 },
                 result="""returns true if the value is a ban, false otherwise. """,
             ),
-            oop=None,
             name='isBan',
         )
         ],
@@ -826,13 +753,6 @@ This function will ban the specified player from the server by IP. """,
                 },
                 result="""returns true if the player was kicked succesfully, false if invalid arguments are specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""kick""",
-                field=None,
-                is_static=False,
-            ),
             name='kickPlayer',
         )
         ],
@@ -870,13 +790,6 @@ This function will ban the specified player from the server by IP. """,
                     
                 },
                 result="""returns true if the ban list was reloaded successfully, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Ban',
-                method_name="""reload""",
-                field=None,
-                is_static=True,
             ),
             name='reloadBans',
         )
@@ -936,13 +849,6 @@ This function will ban the specified player from the server by IP. """,
                 },
                 result="""returns true if the ban was removed succesfully, false if invalid arguments are specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ban',
-                method_name="""remove""",
-                field=None,
-                is_static=False,
-            ),
             name='removeBan',
         )
         ],
@@ -1000,13 +906,6 @@ This function will ban the specified player from the server by IP. """,
                     "theAdmin": """The new admin. """
                 },
                 result="""returns true if changed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ban',
-                method_name="""setAdmin""",
-                field="""admin""",
-                is_static=False,
             ),
             name='setBanAdmin',
         )
@@ -1066,13 +965,6 @@ This function will ban the specified player from the server by IP. """,
                 },
                 result="""returns true if changed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ban',
-                method_name="""setNick""",
-                field="""nick""",
-                is_static=False,
-            ),
             name='setBanNick',
         )
         ],
@@ -1131,13 +1023,6 @@ This function will ban the specified player from the server by IP. """,
                 },
                 result="""returns true if the new reason was set successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ban',
-                method_name="""setReason""",
-                field="""reason""",
-                is_static=False,
-            ),
             name='setBanReason',
         )
         ],
@@ -1195,13 +1080,6 @@ This function will ban the specified player from the server by IP. """,
                     "theTime": """the new unban time """
                 },
                 result="""returns true if changed successfully, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ban',
-                method_name="""setUnbanTime""",
-                field="""unbanTime""",
-                is_static=False,
             ),
             name='setUnbanTime',
         )

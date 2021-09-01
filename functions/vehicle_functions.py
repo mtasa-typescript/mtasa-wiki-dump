@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -116,13 +115,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if sirens were successfully added to the vehicle, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""addSirens""",
-                field=None,
-                is_static=False,
-            ),
             name='addVehicleSirens',
         )
         ],
@@ -182,13 +174,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the upgrade was successfully added to the vehicle, otherwise false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""addUpgrade""",
-                field=None,
-                is_static=False,
-            ),
             name='addVehicleUpgrade',
         )
         ],
@@ -243,13 +228,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the upgrade was successfully added to the vehicle, otherwise false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""addUpgrade""",
-                field=None,
-                is_static=False,
-            ),
             name='addVehicleUpgrade',
         )
         ],
@@ -297,13 +275,6 @@ DUMP_PARTIAL = [
                     "theVehicle": """: the vehicle you wish to retrieve the lights state of. """
                 },
                 result="""returns true if the lights are on, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""areLightsOn""",
-                field="""lightsOn""",
-                is_static=False,
             ),
             name='areVehicleLightsOn',
         )
@@ -360,13 +331,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the vehicles were successfully attached, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""attachTrailer""",
-                field=None,
-                is_static=False,
-            ),
             name='attachTrailerToVehicle',
         )
         ],
@@ -419,13 +383,6 @@ DUMP_PARTIAL = [
                     "theTrailer": """: the trailer you wish to be attached. """
                 },
                 result="""returns true if the vehicles were successfully attached, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""attachTrailer""",
-                field=None,
-                is_static=False,
             ),
             name='attachTrailerToVehicle',
         )
@@ -482,13 +439,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""blow""",
-                field="""blown""",
-                is_static=False,
-            ),
             name='blowVehicle',
         )
         ],
@@ -531,13 +481,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""blow""",
-                field=None,
-                is_static=False,
-            ),
             name='blowVehicle',
         )
         ],
@@ -693,13 +636,6 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 },
                 result="""returns the vehicle element that was created. returns false if the arguments are incorrect, or if the vehicle limit of 65535 is exceeded. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Vehicle',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createVehicle',
         )
         ],
@@ -853,13 +789,6 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 },
                 result="""returns the vehicle element that was created. returns false if the arguments are incorrect, or if the vehicle limit of 65535 is exceeded. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Vehicle',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createVehicle',
         )
         ],
@@ -915,13 +844,6 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 },
                 result="""returns true if the vehicles were successfully detached, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""detachTrailer""",
-                field=None,
-                is_static=False,
-            ),
             name='detachTrailerFromVehicle',
         )
         ],
@@ -975,13 +897,6 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 },
                 result="""returns true if the vehicles were successfully detached, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""detachTrailer""",
-                field=None,
-                is_static=False,
-            ),
             name='detachTrailerFromVehicle',
         )
         ],
@@ -1026,13 +941,6 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 },
                 result="""returns true if the vehicle was fixed, false if thevehicle is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""fix""",
-                field=None,
-                is_static=False,
-            ),
             name='fixVehicle',
         )
         ],
@@ -1074,13 +982,6 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                     "theVehicle": """the vehicle you wish to fix """
                 },
                 result="""returns true if the vehicle was fixed, false if thevehicle is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""fix""",
-                field=None,
-                is_static=False,
             ),
             name='fixVehicle',
         )
@@ -1129,13 +1030,6 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 },
                 result="""returns true if the collisions are enabled for specified vehicle, false if the collisions arent enabled for the specified vehicle, if the vehicle is not a helicopter or if invalid arguments are specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""areHeliBladeCollisionsEnabled""",
-                field="""heliBladeCollisionsEnabled""",
-                is_static=False,
-            ),
             name='getHeliBladeCollisionsEnabled',
         )
         ],
@@ -1183,13 +1077,6 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 },
                 result="""returns the rotor speed if successful. this is 0 when the helicopter is parked, and about 0.2 when it is fully spun up. it can be negative if the rotor rotates counter-clockwise. returns false in case of failure (an invalid element or a vehicle element that is not a helicopter was passed). """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getHelicopterRotorSpeed""",
-                field="""helicopterRotorSpeed""",
-                is_static=False,
-            ),
             name='getHelicopterRotorSpeed',
         )
         ],
@@ -1235,7 +1122,6 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 },
                 result="""returns a table containing all the handling data, false if an invalid vehicle model is specified. here is a list of valid table properties and what they return: """,
             ),
-            oop=None,
             name='getModelHandling',
         )
         ],
@@ -1283,7 +1169,6 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 },
                 result="""returns a table containing all the handling data, false otherwise. here a list of valid table properties and what they return: """,
             ),
-            oop=None,
             name='getOriginalHandling',
         )
         ],
@@ -1326,7 +1211,6 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 },
                 result="""returns a table containing all the handling data, false otherwise. here a list of valid table properties and what they return: """,
             ),
-            oop=None,
             name='getOriginalHandling',
         )
         ],
@@ -1371,13 +1255,6 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 },
                 result="""returns true if the train is driving clockwise on the train track, false if it is going counterclockwise or a failure occured. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getDirection""",
-                field="""direction""",
-                is_static=False,
-            ),
             name='getTrainDirection',
         )
         ],
@@ -1420,13 +1297,6 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 },
                 result="""returns true if the train is driving clockwise on the train track, false if it is going counterclockwise or a failure occured. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getDirection""",
-                field="""direction""",
-                is_static=False,
-            ),
             name='getTrainDirection',
         )
         ],
@@ -1471,13 +1341,6 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 },
                 result="""returns a float that represents how along the track it is, false if there is problem with train element. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getTrainPosition""",
-                field="""trainPosition""",
-                is_static=False,
-            ),
             name='getTrainPosition',
         )
         ],
@@ -1520,13 +1383,6 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 },
                 result="""returns a float that represents how along the track it is, false if there is problem with train element. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getTrainPosition""",
-                field="""trainPosition""",
-                is_static=False,
-            ),
             name='getTrainPosition',
         )
         ],
@@ -1571,13 +1427,6 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 },
                 result="""returns the trains speed if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getSpeed""",
-                field="""trainSpeed""",
-                is_static=False,
-            ),
             name='getTrainSpeed',
         )
         ],
@@ -1619,13 +1468,6 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                     "train": """the train of which to retrieve the speed. """
                 },
                 result="""returns the trains speed if successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getSpeed""",
-                field="""trainSpeed""",
-                is_static=False,
             ),
             name='getTrainSpeed',
         )
@@ -1671,13 +1513,6 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 },
                 result="""returns an integer (whole number) that represents the train track, false if there is problem with train element. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getTrack""",
-                field="""track""",
-                is_static=False,
-            ),
             name='getTrainTrack',
         )
         ],
@@ -1719,13 +1554,6 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                     "train": """the train of which to get the track. """
                 },
                 result="""returns an integer (whole number) that represents the train track, false if there is problem with train element. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getTrack""",
-                field="""track""",
-                is_static=False,
             ),
             name='getTrainTrack',
         )
@@ -1774,7 +1602,6 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 },
                 result="""returns a value from 0 upwards representing adjustment. 0 is default position. maximum varies per vehicle, for example hydra horizontal flight is 5000, while dump truck tray max tilt is 2500. or returns false if the vehicle passed to the function is invalid. """,
             ),
-            oop=None,
             name='getVehicleAdjustableProperty',
         )
         ],
@@ -1878,13 +1705,6 @@ Note: the data returned may not reflect the actual handling of a particular vehi
 valid color ids if brgb is set to false:
 <br> """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getColor""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehicleColor',
         )
         ],
@@ -1986,13 +1806,6 @@ valid color ids if brgb is set to false:
 valid color ids if brgb is set to false:
 <br> """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getColor""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehicleColor',
         )
         ],
@@ -2048,13 +1861,6 @@ valid color ids if brgb is set to false:
                 },
                 result="""returns a table with all the compatible upgrades, or false if invalid arguments are passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getCompatibleUpgrades""",
-                field="""compatibleUpgrades""",
-                is_static=False,
-            ),
             name='getVehicleCompatibleUpgrades',
         )
         ],
@@ -2107,13 +1913,6 @@ valid color ids if brgb is set to false:
                     "slot": """the upgrade slot number for which youre getting the list (from 0 to 16). Compatible upgrades for all slots are listed if this is not specified. """
                 },
                 result="""returns a table with all the compatible upgrades, or false if invalid arguments are passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getCompatibleUpgrades""",
-                field="""compatibleUpgrades""",
-                is_static=False,
             ),
             name='getVehicleCompatibleUpgrades',
         )
@@ -2195,13 +1994,6 @@ valid color ids if brgb is set to false:
                 },
                 result="""returns three floats indicating the position of the component, x, y and z respectively. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getComponentPosition""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehicleComponentPosition',
         )
         ],
@@ -2282,13 +2074,6 @@ valid color ids if brgb is set to false:
                 },
                 result="""returns three floats indicating the rotation of the component, x, y and z respectively. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getComponentRotation""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehicleComponentRotation',
         )
         ],
@@ -2335,13 +2120,6 @@ valid color ids if brgb is set to false:
                     "theVehicle": """The vehicle you wish to get the Vehicle_Components|components of. """
                 },
                 result="""returns a table containing the name of the component as the key and visibility flag of that component as the value """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getComponents""",
-                field="""components""",
-                is_static=False,
             ),
             name='getVehicleComponents',
         )
@@ -2423,13 +2201,6 @@ valid color ids if brgb is set to false:
                 },
                 result="""returns three floats indicating the scale of the component, x, y and z respectively. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getComponentScale""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehicleComponentScale',
         )
         ],
@@ -2488,13 +2259,6 @@ valid color ids if brgb is set to false:
                 },
                 result="""returns a bool indicating the visible state of the component. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getComponentVisible""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehicleComponentVisible',
         )
         ],
@@ -2539,13 +2303,6 @@ valid color ids if brgb is set to false:
                 },
                 result="""returns a player object, if there isnt a driver, it will search the trailer chain for the front driver, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getController""",
-                field="""controller""",
-                is_static=False,
-            ),
             name='getVehicleController',
         )
         ],
@@ -2587,13 +2344,6 @@ valid color ids if brgb is set to false:
                     "theVehicle": """the vehicle you want to get the controller of. """
                 },
                 result="""returns a player object, if there isnt a driver, it will search the trailer chain for the front driver, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getController""",
-                field="""controller""",
-                is_static=False,
             ),
             name='getVehicleController',
         )
@@ -2642,7 +2392,6 @@ valid color ids if brgb is set to false:
                 },
                 result="""returns the gear if successful, false otherwise. """,
             ),
-            oop=None,
             name='getVehicleCurrentGear',
         )
         ],
@@ -2698,13 +2447,6 @@ valid color ids if brgb is set to false:
                 },
                 result="""returns a number between 0 and 1 that indicates how open the door is. 0 is closed, and 1 is fully open. returns false if invalid arguments are passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getDoorOpenRatio""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehicleDoorOpenRatio',
         )
         ],
@@ -2757,13 +2499,6 @@ valid color ids if brgb is set to false:
                     "door": """A whole number, 0 (hood), 1 (trunk), 2 (front left), 3 (front right), 4 (rear left), 5 (rear right) """
                 },
                 result="""returns a number between 0 and 1 that indicates how open the door is. 0 is closed, and 1 is fully open. returns false if invalid arguments are passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getDoorOpenRatio""",
-                field=None,
-                is_static=False,
             ),
             name='getVehicleDoorOpenRatio',
         )
@@ -2830,13 +2565,6 @@ valid color ids if brgb is set to false:
 * 2: shut, damaged
 * 3: ajar, damaged
 * 4: missing """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getDoorState""",
-                field=None,
-                is_static=False,
             ),
             name='getVehicleDoorState',
         )
@@ -2901,13 +2629,6 @@ valid color ids if brgb is set to false:
 * 2: shut, damaged
 * 3: ajar, damaged
 * 4: missing """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getDoorState""",
-                field=None,
-                is_static=False,
             ),
             name='getVehicleDoorState',
         )
@@ -2991,13 +2712,6 @@ end
 addcommandhandler(getdummy, getdummyposition)
 </syntaxhighlight> """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getDummyPosition""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehicleDummyPosition',
         )
         ],
@@ -3042,13 +2756,6 @@ addcommandhandler(getdummy, getdummyposition)
                 },
                 result="""returns true if the vehicles engine is started, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getEngineState""",
-                field="""engineState""",
-                is_static=False,
-            ),
             name='getVehicleEngineState',
         )
         ],
@@ -3090,13 +2797,6 @@ addcommandhandler(getdummy, getdummyposition)
                     "theVehicle": """: the vehicle you wish to get the engine state of. """
                 },
                 result="""returns true if the vehicles engine is started, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getEngineState""",
-                field="""engineState""",
-                is_static=False,
             ),
             name='getVehicleEngineState',
         )
@@ -3153,7 +2853,6 @@ addcommandhandler(getdummy, getdummyposition)
                 },
                 result="""returns the x, y and z components of the gravity vector if successful, false otherwise. """,
             ),
-            oop=None,
             name='getVehicleGravity',
         )
         ],
@@ -3198,13 +2897,6 @@ addcommandhandler(getdummy, getdummyposition)
                 },
                 result="""returns a table containing all the handling data, false otherwise. heres a list of valid table properties and what they return: """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getHandling""",
-                field="""handling""",
-                is_static=False,
-            ),
             name='getVehicleHandling',
         )
         ],
@@ -3246,13 +2938,6 @@ addcommandhandler(getdummy, getdummyposition)
                     "theVehicle": """the vehicle you wish to get the handling data of. """
                 },
                 result="""returns a table containing all the handling data, false otherwise. heres a list of valid table properties and what they return: """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getHandling""",
-                field="""handling""",
-                is_static=False,
             ),
             name='getVehicleHandling',
         )
@@ -3306,13 +2991,6 @@ addcommandhandler(getdummy, getdummyposition)
                 },
                 result="""returns three integers for the red, green and blue of the headlight color for the specified vehicle, false if an invalid vehicle was specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getHeadLightColor""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehicleHeadLightColor',
         )
         ],
@@ -3362,13 +3040,6 @@ addcommandhandler(getdummy, getdummyposition)
                     "theVehicle": """The vehicle that you wish to set the headlight color of. """
                 },
                 result="""returns three integers for the red, green and blue of the headlight color for the specified vehicle, false if an invalid vehicle was specified. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getHeadLightColor""",
-                field=None,
-                is_static=False,
             ),
             name='getVehicleHeadLightColor',
         )
@@ -3414,13 +3085,6 @@ addcommandhandler(getdummy, getdummyposition)
                 },
                 result="""returns true if landing gear is down, false if the landing gear is up.<br />
 returns nil if the vehicle has no landing gear, or is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getLangingGearDown""",
-                field="""landingGearDown""",
-                is_static=False,
             ),
             name='getVehicleLandingGearDown',
         )
@@ -3464,13 +3128,6 @@ returns nil if the vehicle has no landing gear, or is invalid. """,
                 },
                 result="""returns true if landing gear is down, false if the landing gear is up.<br />
 returns nil if the vehicle has no landing gear, or is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getLangingGearDown""",
-                field="""landingGearDown""",
-                is_static=False,
             ),
             name='getVehicleLandingGearDown',
         )
@@ -3530,13 +3187,6 @@ returns nil if the vehicle has no landing gear, or is invalid. """,
                     "3": """Rear left """
                 },
                 result="""returns 0 (working) or 1 (broken) """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getLightState""",
-                field=None,
-                is_static=False,
             ),
             name='getVehicleLightState',
         )
@@ -3594,13 +3244,6 @@ returns nil if the vehicle has no landing gear, or is invalid. """,
                     "3": """Rear left """
                 },
                 result="""returns 0 (working) or 1 (broken) """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getLightState""",
-                field=None,
-                is_static=False,
             ),
             name='getVehicleLightState',
         )
@@ -3655,13 +3298,6 @@ OR """,
                     "modelID": """the model id that you wish to know the maximum capacity of. """
                 },
                 result="""returns an int indicating the maximum number of passengers that can enter a vehicle. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getMaxPassengers""",
-                field="""maxPassengers""",
-                is_static=False,
             ),
             name='getVehicleMaxPassengers',
         )
@@ -3714,13 +3350,6 @@ OR """,
                     "modelID": """the model id that you wish to know the maximum capacity of. """
                 },
                 result="""returns an int indicating the maximum number of passengers that can enter a vehicle. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getMaxPassengers""",
-                field="""maxPassengers""",
-                is_static=False,
             ),
             name='getVehicleMaxPassengers',
         )
@@ -3788,13 +3417,6 @@ OR """,
                 },
                 result="""returns three floats indicating the default position x, y and z of the given dummy. it returns false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Vehicle',
-                method_name="""getVehicleModelDummyDefaultPosition""",
-                field=None,
-                is_static=True,
-            ),
             name='getVehicleModelDummyDefaultPosition',
         )
         ],
@@ -3861,13 +3483,6 @@ OR """,
                 },
                 result="""returns three floats indicating the position x, y and z of given dummy. it returns false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Vehicle',
-                method_name="""getVehicleModelDummyPosition""",
-                field=None,
-                is_static=True,
-            ),
             name='getVehicleModelDummyPosition',
         )
         ],
@@ -3923,13 +3538,6 @@ OR """,
                 },
                 result="""returns the position of the exhaust fumes if everything went fine or false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Vehicle',
-                method_name="""getModelExhaustFumesPosition""",
-                field=None,
-                is_static=True,
-            ),
             name='getVehicleModelExhaustFumesPosition',
         )
         ],
@@ -3975,13 +3583,6 @@ OR """,
                 result="""returns an integer if the name exists, false otherwise.
 if you use this function on vehicles with shared names, such as police, it will return the earliest occurrence of that vehicles id. """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the Vehicle class.""",
-                class_name='Vehicle',
-                method_name="""getModelFromName""",
-                field=None,
-                is_static=True,
-            ),
             name='getVehicleModelFromName',
         )
         ],
@@ -4024,13 +3625,6 @@ if you use this function on vehicles with shared names, such as police, it will 
                 },
                 result="""returns an integer if the name exists, false otherwise.
 if you use this function on vehicles with shared names, such as police, it will return the earliest occurrence of that vehicles id. """,
-            ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the Vehicle class.""",
-                class_name='Vehicle',
-                method_name="""getModelFromName""",
-                field=None,
-                is_static=True,
             ),
             name='getVehicleModelFromName',
         )
@@ -4094,13 +3688,6 @@ if you use this function on vehicles with shared names, such as police, it will 
                 },
                 result="""returns a decimal number or a table, depending on the specified wheel group. if the specified vehicle model id or wheel group are not valid, an error is raised instead. the meaning of the wheel size values is documented in setvehiclemodelwheelsize. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Vehicle',
-                method_name="""getModelWheelSize""",
-                field=None,
-                is_static=True,
-            ),
             name='getVehicleModelWheelSize',
         )
         ],
@@ -4145,13 +3732,6 @@ if you use this function on vehicles with shared names, such as police, it will 
                 },
                 result="""returns a string containing the requested vehicles name, or false if the vehicle passed to the function is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getName""",
-                field="""name""",
-                is_static=False,
-            ),
             name='getVehicleName',
         )
         ],
@@ -4193,13 +3773,6 @@ if you use this function on vehicles with shared names, such as police, it will 
                     "theVehicle": """the vehicle you want to get the name of. """
                 },
                 result="""returns a string containing the requested vehicles name, or false if the vehicle passed to the function is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getName""",
-                field="""name""",
-                is_static=False,
             ),
             name='getVehicleName',
         )
@@ -4245,13 +3818,6 @@ if you use this function on vehicles with shared names, such as police, it will 
                 },
                 result="""returns the name of the vehicle if the model id was valid, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the Vehicle class.""",
-                class_name='Vehicle',
-                method_name="""getNameFromModel""",
-                field=None,
-                is_static=True,
-            ),
             name='getVehicleNameFromModel',
         )
         ],
@@ -4293,13 +3859,6 @@ if you use this function on vehicles with shared names, such as police, it will 
                     "model": """This is the vehicle model ID. See vehicle IDs to see what values will return names. """
                 },
                 result="""returns the name of the vehicle if the model id was valid, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the Vehicle class.""",
-                class_name='Vehicle',
-                method_name="""getNameFromModel""",
-                field=None,
-                is_static=True,
             ),
             name='getVehicleNameFromModel',
         )
@@ -4348,7 +3907,6 @@ if you use this function on vehicles with shared names, such as police, it will 
                 },
                 result="""returns an integer determining the amount of nitro counts of the vehicle, false if there is no nitro in the vehicle. """,
             ),
-            oop=None,
             name='getVehicleNitroCount',
         )
         ],
@@ -4396,7 +3954,6 @@ if you use this function on vehicles with shared names, such as police, it will 
                 },
                 result="""returns a float determining the nitro level (ranges from 0.0001 to 1.0) of the vehicle, false if there is no nitro in the vehicle. """,
             ),
-            oop=None,
             name='getVehicleNitroLevel',
         )
         ],
@@ -4452,13 +4009,6 @@ if you use this function on vehicles with shared names, such as police, it will 
                 },
                 result="""returns the player sitting in the vehicle, or false if the seat is unoccupied or doesnt exist. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getOccupant""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehicleOccupant',
         )
         ],
@@ -4512,13 +4062,6 @@ if you use this function on vehicles with shared names, such as police, it will 
                 },
                 result="""returns the player sitting in the vehicle, or false if the seat is unoccupied or doesnt exist. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getOccupant""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehicleOccupant',
         )
         ],
@@ -4574,13 +4117,6 @@ outputdebugstring(players in your vehicle: .. counter)
 </syntaxhighlight>
 </div> """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getOccupants""",
-                field="""occupants""",
-                is_static=False,
-            ),
             name='getVehicleOccupants',
         )
         ],
@@ -4634,13 +4170,6 @@ outputdebugstring(players in your vehicle: .. counter)
 </syntaxhighlight>
 </div> """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getOccupants""",
-                field="""occupants""",
-                is_static=False,
-            ),
             name='getVehicleOccupants',
         )
         ],
@@ -4685,13 +4214,6 @@ outputdebugstring(players in your vehicle: .. counter)
                 },
                 result="""returns an integer value: 0 (no override), 1 (force off) or 2 (force on). """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getOverrideLights""",
-                field="""overrideLights""",
-                is_static=False,
-            ),
             name='getVehicleOverrideLights',
         )
         ],
@@ -4734,13 +4256,6 @@ outputdebugstring(players in your vehicle: .. counter)
                 },
                 result="""returns an integer value: 0 (no override), 1 (force off) or 2 (force on). """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getOverrideLights""",
-                field="""overrideLights""",
-                is_static=False,
-            ),
             name='getVehicleOverrideLights',
         )
         ],
@@ -4789,13 +4304,6 @@ outputdebugstring(players in your vehicle: .. counter)
 * 2: the third paintjob
 * 3: default paintjob (no paintjob) """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getPaintjob""",
-                field="""paintjob""",
-                is_static=False,
-            ),
             name='getVehiclePaintjob',
         )
         ],
@@ -4842,13 +4350,6 @@ outputdebugstring(players in your vehicle: .. counter)
 * 2: the third paintjob
 * 3: default paintjob (no paintjob) """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getPaintjob""",
-                field="""paintjob""",
-                is_static=False,
-            ),
             name='getVehiclePaintjob',
         )
         ],
@@ -4911,13 +4412,6 @@ outputdebugstring(players in your vehicle: .. counter)
                 },
                 result="""returns an int indicating the state of the specified the panel. this is a value between 0 and 3, with 0 indicating the panel is undamaged and 3 indicating it is very damaged. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getPanelState""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehiclePanelState',
         )
         ],
@@ -4978,13 +4472,6 @@ outputdebugstring(players in your vehicle: .. counter)
                 },
                 result="""returns an int indicating the state of the specified the panel. this is a value between 0 and 3, with 0 indicating the panel is undamaged and 3 indicating it is very damaged. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getPanelState""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehiclePanelState',
         )
         ],
@@ -5029,13 +4516,6 @@ outputdebugstring(players in your vehicle: .. counter)
                 },
                 result="""returns a string that corresponds to the plate on the text, false if a bad argument was passed or if it is not a vehicle. every vehicle (including planes, boats, etc.) has a numberplate, even if its not visible. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getPlateText""",
-                field="""plateText""",
-                is_static=False,
-            ),
             name='getVehiclePlateText',
         )
         ],
@@ -5077,13 +4557,6 @@ outputdebugstring(players in your vehicle: .. counter)
                     "theVehicle": """the vehicle that you wish to retrieve the plate text from. """
                 },
                 result="""returns a string that corresponds to the plate on the text, false if a bad argument was passed or if it is not a vehicle. every vehicle (including planes, boats, etc.) has a numberplate, even if its not visible. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getPlateText""",
-                field="""plateText""",
-                is_static=False,
             ),
             name='getVehiclePlateText',
         )
@@ -5136,13 +4609,6 @@ outputdebugstring(players in your vehicle: .. counter)
                     "theVehicle": """The vehicle which youd like to retrieve the respawn coordinates of. """
                 },
                 result="""returns three float|floats indicating the respawn coordinates of the vehicle, x, y and z respectively. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getRespawnPosition""",
-                field="""respawnPosition""",
-                is_static=False,
             ),
             name='getVehicleRespawnPosition',
         )
@@ -5198,13 +4664,6 @@ outputdebugstring(players in your vehicle: .. counter)
                     "theVehicle": """The vehicle which youd like to retrieve the respawn rotation of. """
                 },
                 result="""returns three float|floats indicating the respawn rotation of the vehicle, x, y and z respectively. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getRespawnRotation""",
-                field="""respawnRotation""",
-                is_static=False,
             ),
             name='getVehicleRespawnRotation',
         )
@@ -5262,13 +4721,6 @@ bool sirenparams.flags.userandomiser
 bool sirenparams.flags.silent
 </syntaxhighlight> """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getSirenParams""",
-                field="""sirenParams""",
-                is_static=False,
-            ),
             name='getVehicleSirenParams',
         )
         ],
@@ -5320,13 +4772,6 @@ bool sirenparams.flags.userandomiser
 bool sirenparams.flags.silent
 </syntaxhighlight> """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getSirenParams""",
-                field="""sirenParams""",
-                is_static=False,
-            ),
             name='getVehicleSirenParams',
         )
         ],
@@ -5381,13 +4826,6 @@ int     sirendatasirenpoint.alpha
 int     sirendatasirenpoint.min_alpha
 </syntaxhighlight> """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getSirens""",
-                field="""sirens""",
-                is_static=False,
-            ),
             name='getVehicleSirens',
         )
         ],
@@ -5440,13 +4878,6 @@ int     sirendatasirenpoint.alpha
 int     sirendatasirenpoint.min_alpha
 </syntaxhighlight> """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getSirens""",
-                field="""sirens""",
-                is_static=False,
-            ),
             name='getVehicleSirens',
         )
         ],
@@ -5491,13 +4922,6 @@ int     sirendatasirenpoint.min_alpha
                 },
                 result="""returns true if the sirens are turned on for the specified vehicle, false if the sirens are turned off for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""areSirensOn""",
-                field="""sirensOn""",
-                is_static=False,
-            ),
             name='getVehicleSirensOn',
         )
         ],
@@ -5539,13 +4963,6 @@ int     sirendatasirenpoint.min_alpha
                     "theVehicle": """The vehicle that will be checked. """
                 },
                 result="""returns true if the sirens are turned on for the specified vehicle, false if the sirens are turned off for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""areSirensOn""",
-                field="""sirensOn""",
-                is_static=False,
             ),
             name='getVehicleSirensOn',
         )
@@ -5590,13 +5007,6 @@ int     sirendatasirenpoint.min_alpha
                     "model": """: The model of vehicles you want. """
                 },
                 result="""returns a table of existing vehicles matching the specified model. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getAllOfType""",
-                field=None,
-                is_static=False,
             ),
             name='getVehiclesOfType',
         )
@@ -5645,13 +5055,6 @@ int     sirendatasirenpoint.min_alpha
                 },
                 result="""returns the vehicle that thevehicle is towing, false if it isnt towing a vehicle. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getTowedByVehicle""",
-                field="""towedByVehicle""",
-                is_static=False,
-            ),
             name='getVehicleTowedByVehicle',
         )
         ],
@@ -5694,13 +5097,6 @@ int     sirendatasirenpoint.min_alpha
                 },
                 result="""returns the vehicle that thevehicle is towing, false if it isnt towing a vehicle. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getTowedByVehicle""",
-                field="""towedByVehicle""",
-                is_static=False,
-            ),
             name='getVehicleTowedByVehicle',
         )
         ],
@@ -5746,13 +5142,6 @@ int     sirendatasirenpoint.min_alpha
                 result="""* the vehicle that thevehicle is being towed by.
 * false if it isnt being towed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getTowingVehicle""",
-                field="""towingVehicle""",
-                is_static=False,
-            ),
             name='getVehicleTowingVehicle',
         )
         ],
@@ -5796,13 +5185,6 @@ int     sirendatasirenpoint.min_alpha
                 result="""* the vehicle that thevehicle is being towed by.
 * false if it isnt being towed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getTowingVehicle""",
-                field="""towingVehicle""",
-                is_static=False,
-            ),
             name='getVehicleTowingVehicle',
         )
         ],
@@ -5851,13 +5233,6 @@ int     sirendatasirenpoint.min_alpha
                 },
                 result="""returns two floats for the x (horizontal) and y (vertical) axis rotation respectively. these values are in radians. the function will return 0, 0 if the vehicle is not a vehicle with a turret. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getTurretPosition""",
-                field="""turretPosition""",
-                is_static=False,
-            ),
             name='getVehicleTurretPosition',
         )
         ],
@@ -5904,13 +5279,6 @@ int     sirendatasirenpoint.min_alpha
                 },
                 result="""returns two floats for the x (horizontal) and y (vertical) axis rotation respectively. these values are in radians. the function will return 0, 0 if the vehicle is not a vehicle with a turret. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getTurretPosition""",
-                field="""turretPosition""",
-                is_static=False,
-            ),
             name='getVehicleTurretPosition',
         )
         ],
@@ -5958,13 +5326,6 @@ int     sirendatasirenpoint.min_alpha
                 result="""returns a string with vehicle type or false if an invalid modelid has been supplied, or an empty string if the vehicle is blocked internally (some trailers).
 possible strings returned: """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getVehicleType""",
-                field="""vehicleType""",
-                is_static=False,
-            ),
             name='getVehicleType',
         )
         ],
@@ -6010,13 +5371,6 @@ possible strings returned: """,
                 result="""returns a string with vehicle type or false if an invalid modelid has been supplied, or an empty string if the vehicle is blocked internally (some trailers).
 possible strings returned: """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getVehicleType""",
-                field="""vehicleType""",
-                is_static=False,
-            ),
             name='getVehicleType',
         )
         ],
@@ -6073,13 +5427,6 @@ An upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 1
                 },
                 result="""returns an integer with the upgrade on the slot if correct arguments were passed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getUpgradeOnSlot""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehicleUpgradeOnSlot',
         )
         ],
@@ -6134,13 +5481,6 @@ An upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 1
                 },
                 result="""returns an integer with the upgrade on the slot if correct arguments were passed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getUpgradeOnSlot""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehicleUpgradeOnSlot',
         )
         ],
@@ -6185,13 +5525,6 @@ An upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 1
                 },
                 result="""returns a table of all the upgrades on each slot of a vehicle, which may be empty, or false if a valid vehicle is not passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getUpgrades""",
-                field="""upgrades""",
-                is_static=False,
-            ),
             name='getVehicleUpgrades',
         )
         ],
@@ -6233,13 +5566,6 @@ An upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 1
                     "theVehicle": """The vehicle you wish to retrieve the upgrades of. """
                 },
                 result="""returns a table of all the upgrades on each slot of a vehicle, which may be empty, or false if a valid vehicle is not passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getUpgrades""",
-                field="""upgrades""",
-                is_static=False,
             ),
             name='getVehicleUpgrades',
         )
@@ -6285,7 +5611,6 @@ An upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 1
                 },
                 result="""returns a string with the slot name if a valid slot or upgrade id was given, false otherwise. """,
             ),
-            oop=None,
             name='getVehicleUpgradeSlotName',
         )
         ],
@@ -6328,7 +5653,6 @@ An upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 1
                 },
                 result="""returns a string with the slot name if a valid slot or upgrade id was given, false otherwise. """,
             ),
-            oop=None,
             name='getVehicleUpgradeSlotName',
         )
         ],
@@ -6380,13 +5704,6 @@ An upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 1
 * int: an integer for the second vehicle variant see vehicle variants
 on failure:
 * bool: false because the specified vehicle didnt exist """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getVariant""",
-                field=None,
-                is_static=False,
             ),
             name='getVehicleVariant',
         )
@@ -6437,13 +5754,6 @@ on failure:
 * int: an integer for the second vehicle variant see vehicle variants
 on failure:
 * bool: false because the specified vehicle didnt exist """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getVariant""",
-                field=None,
-                is_static=False,
             ),
             name='getVehicleVariant',
         )
@@ -6507,13 +5817,6 @@ on failure:
 * 2: slip without acceleration
 * 3: locked wheel (on brake or handbrake). """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getWheelFrictionState""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehicleWheelFrictionState',
         )
         ],
@@ -6560,13 +5863,6 @@ on failure:
                     "theVehicle": """: The vehicle to get its wheel scale of. """
                 },
                 result="""returns the wheel scale of the specified vehicle as a decimal number, or an error if the vehicle is invalid. for more information about the returned number, see setvehiclewheelscale. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getWheelScale""",
-                field="""wheelScale""",
-                is_static=False,
             ),
             name='getVehicleWheelScale',
         )
@@ -6629,13 +5925,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
 * 2: fallen off
 * 3: collisionless """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getWheelStates""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehicleWheelStates',
         )
         ],
@@ -6695,13 +5984,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
 * 2: fallen off
 * 3: collisionless """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""getWheelStates""",
-                field=None,
-                is_static=False,
-            ),
             name='getVehicleWheelStates',
         )
         ],
@@ -6750,13 +6032,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 result="""* true if a element/vehicle|train was passed to the function and if its a chain engine.
 * false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Vehicle|vehicle',
-                method_name="""isTrainChainEngine""",
-                field="""chainEngine""",
-                is_static=False,
-            ),
             name='isTrainChainEngine',
         )
         ],
@@ -6801,13 +6076,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the train is derailable, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""isDerailable""",
-                field="""derailable""",
-                is_static=False,
-            ),
             name='isTrainDerailable',
         )
         ],
@@ -6850,13 +6118,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the train is derailable, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""isDerailable""",
-                field="""derailable""",
-                is_static=False,
-            ),
             name='isTrainDerailable',
         )
         ],
@@ -6901,13 +6162,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the train is derailed, false if the train is still on the rails """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""isDerailed""",
-                field="""derailed""",
-                is_static=False,
-            ),
             name='isTrainDerailed',
         )
         ],
@@ -6950,13 +6204,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the train is derailed, false if the train is still on the rails """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""isDerailed""",
-                field="""derailed""",
-                is_static=False,
-            ),
             name='isTrainDerailed',
         )
         ],
@@ -7001,13 +6248,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the vehicle specified has blown up, false if it is still intact or the vehicle specified is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""isBlown""",
-                field="""blown""",
-                is_static=False,
-            ),
             name='isVehicleBlown',
         )
         ],
@@ -7050,13 +6290,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the vehicle specified has blown up, false if it is still intact or the vehicle specified is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""isBlown""",
-                field="""blown""",
-                is_static=False,
-            ),
             name='isVehicleBlown',
         )
         ],
@@ -7101,13 +6334,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the vehicle is damage proof, false if it isnt or if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""isDamageProof""",
-                field="""damageProof""",
-                is_static=False,
-            ),
             name='isVehicleDamageProof',
         )
         ],
@@ -7150,13 +6376,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the vehicle is damage proof, false if it isnt or if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""isDamageProof""",
-                field="""damageProof""",
-                is_static=False,
-            ),
             name='isVehicleDamageProof',
         )
         ],
@@ -7201,7 +6420,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the specified vehicle is valid and its fuel tank is explodable, false otherwise. """,
             ),
-            oop=None,
             name='isVehicleFuelTankExplodable',
         )
         ],
@@ -7244,7 +6462,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the specified vehicle is valid and its fuel tank is explodable, false otherwise. """,
             ),
-            oop=None,
             name='isVehicleFuelTankExplodable',
         )
         ],
@@ -7289,13 +6506,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the vehicle specified is locked, false if is unlocked or the vehicle specified is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""isLocked""",
-                field="""locked""",
-                is_static=False,
-            ),
             name='isVehicleLocked',
         )
         ],
@@ -7337,13 +6547,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     "theVehicle": """The vehicle that you want to obtain the locked status of. """
                 },
                 result="""returns true if the vehicle specified is locked, false if is unlocked or the vehicle specified is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""isLocked""",
-                field="""locked""",
-                is_static=False,
             ),
             name='isVehicleLocked',
         )
@@ -7392,7 +6595,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the nitro is currently activated on the vehicle, false otherwise. """,
             ),
-            oop=None,
             name='isVehicleNitroActivated',
         )
         ],
@@ -7440,7 +6642,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the nitro is currently recharging on the vehicle, false otherwise. """,
             ),
-            oop=None,
             name='isVehicleNitroRecharging',
         )
         ],
@@ -7485,13 +6686,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if vehicle is on the ground, false if it is not. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""isOnGround""",
-                field="""onGround""",
-                is_static=False,
-            ),
             name='isVehicleOnGround',
         )
         ],
@@ -7533,13 +6727,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     "theVehicle": """The vehicle you wish to check. """
                 },
                 result="""returns true if vehicle is on the ground, false if it is not. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""isOnGround""",
-                field="""onGround""",
-                is_static=False,
             ),
             name='isVehicleOnGround',
         )
@@ -7585,13 +6772,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the light is on, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""isTaxiLightOn""",
-                field="""taxiLightOn""",
-                is_static=False,
-            ),
             name='isVehicleTaxiLightOn',
         )
         ],
@@ -7633,13 +6813,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     "taxi": """The vehicle element of the taxi that you wish to get the light state of. """
                 },
                 result="""returns true if the light is on, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""isTaxiLightOn""",
-                field="""taxiLightOn""",
-                is_static=False,
             ),
             name='isVehicleTaxiLightOn',
         )
@@ -7702,13 +6875,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
 ** <code>"rear_right"</code> or 3 """
                 },
                 result="""returns true if the vehicle wheel is on ground/collided, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""isWheelOnGround""",
-                field=None,
-                is_static=False,
             ),
             name='isVehicleWheelOnGround',
         )
@@ -7775,7 +6941,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""this function returns a boolean which represents window open state. """,
             ),
-            oop=None,
             name='isVehicleWindowOpen',
         )
         ],
@@ -7820,7 +6985,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if sirens were successfully removed from the vehicle, false otherwise. """,
             ),
-            oop=None,
             name='removeVehicleSirens',
         )
         ],
@@ -7879,7 +7043,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the upgrade was successfully removed from the vehicle, otherwise false. """,
             ),
-            oop=None,
             name='removeVehicleUpgrade',
         )
         ],
@@ -7933,7 +7096,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the upgrade was successfully removed from the vehicle, otherwise false. """,
             ),
-            oop=None,
             name='removeVehicleUpgrade',
         )
         ],
@@ -7991,13 +7153,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     "theComponent": """A vehicle component (this is the frame name from the model file of the component you wish to modify) """
                 },
                 result="""returns true if the position of the component was reset, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""resetComponentPosition""",
-                field=None,
-                is_static=False,
             ),
             name='resetVehicleComponentPosition',
         )
@@ -8057,13 +7212,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the rotation of the component was reset, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""resetComponentRotation""",
-                field=None,
-                is_static=False,
-            ),
             name='resetVehicleComponentRotation',
         )
         ],
@@ -8122,13 +7270,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the scale of the component was reset, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""resetComponentScale""",
-                field=None,
-                is_static=False,
-            ),
             name='resetVehicleComponentScale',
         )
         ],
@@ -8176,13 +7317,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true for success, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""resetDummyPositions""",
-                field=None,
-                is_static=False,
-            ),
             name='resetVehicleDummyPositions',
         )
         ],
@@ -8227,7 +7361,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the vehicle explosion time has been reset, false if it failed to reset the explosion time. """,
             ),
-            oop=None,
             name='resetVehicleExplosionTime',
         )
         ],
@@ -8275,7 +7408,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the vehicle idle time has been reset, false if it failed to reset the idle time. """,
             ),
-            oop=None,
             name='resetVehicleIdleTime',
         )
         ],
@@ -8322,13 +7454,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     "theVehicle": """The vehicle you wish to respawn """
                 },
                 result="""returns true if the vehicle respawned successfully, false if the passed argument does not exist or is not a vehicle. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""respawn""",
-                field=None,
-                is_static=False,
             ),
             name='respawnVehicle',
         )
@@ -8391,13 +7516,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the collisions are set for the specified vehicle, false if the collisions cant be set for the specified vehicle, if the vehicle is not a helicopter or if invalid arguments are specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setHeliBladeCollisionsEnabled""",
-                field="""heliBladeCollisionsEnabled""",
-                is_static=False,
-            ),
             name='setHeliBladeCollisionsEnabled',
         )
         ],
@@ -8455,13 +7573,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     "speed": """the new rotor speed. Usual values are 0 if the helicopter stands still, or 0.2 if the rotor is fully spun up. Higher values than normal will not affect the helicopters handling. Negative values are allowed and will make the rotor spin in the opposite direction (pushing the helicopter down). """
                 },
                 result="""returns true if successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setHelicopterRotorSpeed""",
-                field="""helicopterRotorSpeed""",
-                is_static=False,
             ),
             name='setHelicopterRotorSpeed',
         )
@@ -8529,7 +7640,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the handling was set successfully, false otherwise. """,
             ),
-            oop=None,
             name='setModelHandling',
         )
         ],
@@ -8588,13 +7698,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the state was successfully set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setDerailable""",
-                field="""derailable""",
-                is_static=False,
-            ),
             name='setTrainDerailable',
         )
         ],
@@ -8648,13 +7751,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the state was successfully set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setDerailable""",
-                field="""derailable""",
-                is_static=False,
-            ),
             name='setTrainDerailable',
         )
         ],
@@ -8710,13 +7806,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the state was successfully set """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setDerailed""",
-                field="""derailed""",
-                is_static=False,
-            ),
             name='setTrainDerailed',
         )
         ],
@@ -8770,13 +7859,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the state was successfully set """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setDerailed""",
-                field="""derailed""",
-                is_static=False,
-            ),
             name='setTrainDerailed',
         )
         ],
@@ -8832,13 +7914,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setDirection""",
-                field="""direction""",
-                is_static=False,
-            ),
             name='setTrainDirection',
         )
         ],
@@ -8892,13 +7967,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setDirection""",
-                field="""direction""",
-                is_static=False,
-            ),
             name='setTrainDirection',
         )
         ],
@@ -8954,13 +8022,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the train position was set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setTrainPosition""",
-                field="""trainPosition""",
-                is_static=False,
-            ),
             name='setTrainPosition',
         )
         ],
@@ -9014,13 +8075,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the train position was set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setTrainPosition""",
-                field="""trainPosition""",
-                is_static=False,
-            ),
             name='setTrainPosition',
         )
         ],
@@ -9076,13 +8130,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setSpeed""",
-                field="""trainSpeed""",
-                is_static=False,
-            ),
             name='setTrainSpeed',
         )
         ],
@@ -9135,13 +8182,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     "speed": """the new on-track speed of the train. A positive value will make it go clockwise, a negative value counter clockwise. """
                 },
                 result="""returns true if successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setSpeed""",
-                field="""trainSpeed""",
-                is_static=False,
             ),
             name='setTrainSpeed',
         )
@@ -9198,13 +8238,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 },
                 result="""returns true if the track was set to the train, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setTrack""",
-                field="""track""",
-                is_static=False,
-            ),
             name='setTrainTrack',
         )
         ],
@@ -9257,13 +8290,6 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     "track": """the track where you want to set the train. It can be 0, 1, 2 or 3. """
                 },
                 result="""returns true if the track was set to the train, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setTrack""",
-                field="""track""",
-                is_static=False,
             ),
             name='setTrainTrack',
         )
@@ -9324,7 +8350,6 @@ This function only works on vehicles with adjustable properties. """,
                 },
                 result="""returns true if the adjustable property was set, false otherwise. """,
             ),
-            oop=None,
             name='setVehicleAdjustableProperty',
         )
         ],
@@ -9503,13 +8528,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if vehicles color was set, false if an invalid vehicle or invalid colors were specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setColor""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleColor',
         )
         ],
@@ -9686,13 +8704,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if vehicles color was set, false if an invalid vehicle or invalid colors were specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setColor""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleColor',
         )
         ],
@@ -9797,13 +8808,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     "world": """: The position is a world position, relative to the worlds center of coordinates. """
                 },
                 result="""returns true if component position was set successfully, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setComponentPosition""",
-                field=None,
-                is_static=False,
             ),
             name='setVehicleComponentPosition',
         )
@@ -9910,13 +8914,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the component rotation was set successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setComponentRotation""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleComponentRotation',
         )
         ],
@@ -10022,13 +9019,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if component scale was set successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setComponentScale""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleComponentScale',
         )
         ],
@@ -10098,13 +9088,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns a bool indicating if the visiblity was changed successfully. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setComponentVisible""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleComponentVisible',
         )
         ],
@@ -10160,13 +9143,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the vehicle was set damage proof succesfully, false if the arguments are invalid or it failed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setDamageProof""",
-                field="""damageProof""",
-                is_static=False,
-            ),
             name='setVehicleDamageProof',
         )
         ],
@@ -10220,13 +9196,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the vehicle was set damage proof succesfully, false if the arguments are invalid or it failed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setDamageProof""",
-                field="""damageProof""",
-                is_static=False,
-            ),
             name='setVehicleDamageProof',
         )
         ],
@@ -10282,7 +9251,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the dirt level was set on the vehicle, false if the dirt level was not set or if invalid arguments are specified. """,
             ),
-            oop=None,
             name='setVehicleDirtLevel',
         )
         ],
@@ -10336,7 +9304,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the dirt level was set on the vehicle, false if the dirt level was not set or if invalid arguments are specified. """,
             ),
-            oop=None,
             name='setVehicleDirtLevel',
         )
         ],
@@ -10414,13 +9381,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the door open ratio was successfully set, false if invalid arguments are passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setDoorOpenRatio""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleDoorOpenRatio',
         )
         ],
@@ -10496,13 +9456,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the door open ratio was successfully set, false if invalid arguments are passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setDoorOpenRatio""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleDoorOpenRatio',
         )
         ],
@@ -10576,13 +9529,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the door state was successfully set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setDoorState""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleDoorState',
         )
         ],
@@ -10654,13 +9600,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the door state was successfully set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setDoorState""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleDoorState',
         )
         ],
@@ -10716,13 +9655,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the damageability state was successfully changed, false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setDoorsUndamageable""",
-                field="""doorsUndamageable""",
-                is_static=False,
-            ),
             name='setVehicleDoorsUndamageable',
         )
         ],
@@ -10775,13 +9707,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     "state": """A boolean denoting whether the vehicles doors are undamageable (true) or damageable (false). """
                 },
                 result="""returns true if the damageability state was successfully changed, false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setDoorsUndamageable""",
-                field="""doorsUndamageable""",
-                is_static=False,
             ),
             name='setVehicleDoorsUndamageable',
         )
@@ -10872,13 +9797,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true for success, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setDummyPosition""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleDummyPosition',
         )
         ],
@@ -10934,13 +9852,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the vehicles engine state was successfully changed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setEngineState""",
-                field="""engineState""",
-                is_static=False,
-            ),
             name='setVehicleEngineState',
         )
         ],
@@ -10993,13 +9904,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     "engineState": """: A boolean value representing whether the engine will be turned on (true) or off (false). """
                 },
                 result="""returns true if the vehicles engine state was successfully changed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setEngineState""",
-                field="""engineState""",
-                is_static=False,
             ),
             name='setVehicleEngineState',
         )
@@ -11056,13 +9960,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the vehicles fuel tank explodable state was successfully changed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setFuelTankExplodable""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleFuelTankExplodable',
         )
         ],
@@ -11115,13 +10012,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     "explodable": """: A boolean value representing whether or not the fuel tank will be explodable. """
                 },
                 result="""returns true if the vehicles fuel tank explodable state was successfully changed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setFuelTankExplodable""",
-                field=None,
-                is_static=False,
             ),
             name='setVehicleFuelTankExplodable',
         )
@@ -11201,7 +10091,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=None,
             name='setVehicleGravity',
         )
         ],
@@ -11268,7 +10157,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the handling was set successfully, false otherwise. see below a list of valid properties and their required values: """,
             ),
-            oop=None,
             name='setVehicleHandling',
         )
         ],
@@ -11333,7 +10221,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the handling was set successfully, false otherwise. see below a list of valid properties and their required values: """,
             ),
-            oop=None,
             name='setVehicleHandling',
         )
         ],
@@ -11411,13 +10298,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if vehicles headlight color was set, false if an invalid vehicle or invalid color ranges were specified for red,green or blue. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setHeadLightColor""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleHeadLightColor',
         )
         ],
@@ -11493,13 +10373,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if vehicles headlight color was set, false if an invalid vehicle or invalid color ranges were specified for red,green or blue. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setHeadLightColor""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleHeadLightColor',
         )
         ],
@@ -11554,13 +10427,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     "timeDelay": """: The number of milliseconds the vehicle will be allowed to remain unused until it respawns. """
                 },
                 result="""returns true if the vehicle was found and edited. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setIdleRespawnDelay""",
-                field="""idleRespawnDelay""",
-                is_static=False,
             ),
             name='setVehicleIdleRespawnDelay',
         )
@@ -11620,7 +10486,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the landing gear was set successfully, false otherwise. """,
             ),
-            oop=None,
             name='setVehicleLandingGearDown',
         )
         ],
@@ -11674,7 +10539,6 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 },
                 result="""returns true if the landing gear was set successfully, false otherwise. """,
             ),
-            oop=None,
             name='setVehicleLandingGearDown',
         )
         ],
@@ -11746,13 +10610,6 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 },
                 result="""returns true if the light state was set successfully, false if invalid arguments were passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setLightState""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleLightState',
         )
         ],
@@ -11822,13 +10679,6 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 },
                 result="""returns true if the light state was set successfully, false if invalid arguments were passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setLightState""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleLightState',
         )
         ],
@@ -11884,13 +10734,6 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 },
                 result="""returns true if the operation was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setLocked""",
-                field="""locked""",
-                is_static=False,
-            ),
             name='setVehicleLocked',
         )
         ],
@@ -11943,13 +10786,6 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "locked": """Boolean for the status you wish to set. Set true to lock, false to unlock """
                 },
                 result="""returns true if the operation was successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setLocked""",
-                field="""locked""",
-                is_static=False,
             ),
             name='setVehicleLocked',
         )
@@ -12040,13 +10876,6 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 },
                 result="""returns true if everything went fine, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Vehicle',
-                method_name="""setVehicleModelDummyPosition""",
-                field=None,
-                is_static=True,
-            ),
             name='setVehicleModelDummyPosition',
         )
         ],
@@ -12125,13 +10954,6 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 },
                 result="""returns true if everything went fine, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Vehicle',
-                method_name="""setModelExhaustFumesPosition""",
-                field=None,
-                is_static=True,
-            ),
             name='setVehicleModelExhaustFumesPosition',
         )
         ],
@@ -12204,13 +11026,6 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 },
                 result="""returns true if the size for the specified wheel group and vehicle model has been set successfully, or an error if some parameter is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Vehicle',
-                method_name="""setModelWheelSize""",
-                field=None,
-                is_static=True,
-            ),
             name='setVehicleModelWheelSize',
         )
         ],
@@ -12269,7 +11084,6 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 },
                 result="""returns true if the nitro activation state was modified successfully, false otherwise. """,
             ),
-            oop=None,
             name='setVehicleNitroActivated',
         )
         ],
@@ -12328,7 +11142,6 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 },
                 result="""returns true if the nitro count was set successfully to the vehicle, false otherwise. """,
             ),
-            oop=None,
             name='setVehicleNitroCount',
         )
         ],
@@ -12387,7 +11200,6 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 },
                 result="""returns true if the nitro level was set successfully to the vehicle, false otherwise. """,
             ),
-            oop=None,
             name='setVehicleNitroLevel',
         )
         ],
@@ -12446,13 +11258,6 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 },
                 result="""returns true if the vehicles lights setting was changed. otherwise false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setOverrideLights""",
-                field="""overrideLights""",
-                is_static=False,
-            ),
             name='setVehicleOverrideLights',
         )
         ],
@@ -12509,13 +11314,6 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 },
                 result="""returns true if the vehicles lights setting was changed. otherwise false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setOverrideLights""",
-                field="""overrideLights""",
-                is_static=False,
-            ),
             name='setVehicleOverrideLights',
         )
         ],
@@ -12572,7 +11370,6 @@ See Paintjob|paintjob for list of supported vehicles. """,
                 },
                 result="""returns true if the vehicles paintjob was changed. otherwise false. """,
             ),
-            oop=None,
             name='setVehiclePaintjob',
         )
         ],
@@ -12627,7 +11424,6 @@ See Paintjob|paintjob for list of supported vehicles. """,
                 },
                 result="""returns true if the vehicles paintjob was changed. otherwise false. """,
             ),
-            oop=None,
             name='setVehiclePaintjob',
         )
         ],
@@ -12704,13 +11500,6 @@ See Paintjob|paintjob for list of supported vehicles. """,
                 },
                 result="""returns true if the panel state has been updated, false otherwise """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setPanelState""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehiclePanelState',
         )
         ],
@@ -12785,13 +11574,6 @@ See Paintjob|paintjob for list of supported vehicles. """,
                 },
                 result="""returns true if the panel state has been updated, false otherwise """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setPanelState""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehiclePanelState',
         )
         ],
@@ -12848,13 +11630,6 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 },
                 result="""returns true if the numberplate was changed successfully, or false if invalid arguments were passed """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setPlateText""",
-                field="""plateText""",
-                is_static=False,
-            ),
             name='setVehiclePlateText',
         )
         ],
@@ -12908,13 +11683,6 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     "numberplate": """a string that will go on the number plate of the car (max 8 characters). """
                 },
                 result="""returns true if the numberplate was changed successfully, or false if invalid arguments were passed """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setPlateText""",
-                field="""plateText""",
-                is_static=False,
             ),
             name='setVehiclePlateText',
         )
@@ -12970,13 +11738,6 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     "timeDelay": """: The amount of milliseconds to delay. """
                 },
                 result="""returns true if the vehicle was found and edited. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setRespawnDelay""",
-                field="""respawnDelay""",
-                is_static=False,
             ),
             name='setVehicleRespawnDelay',
         )
@@ -13091,13 +11852,6 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 },
                 result="""returns true if the vehicle was found and edited, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setRespawnPosition""",
-                field="""respawnPosition""",
-                is_static=False,
-            ),
             name='setVehicleRespawnPosition',
         )
         ],
@@ -13177,13 +11931,6 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     "rz": """: A float representing the rotation about the Z axis in degrees. """
                 },
                 result="""returns true if the vehicle respawn rotation was set successfully, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setRespawnRotation""",
-                field="""respawnRotation""",
-                is_static=False,
             ),
             name='setVehicleRespawnRotation',
         )
@@ -13331,13 +12078,6 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 },
                 result="""returns true if the siren point was successfully changed on the vehicle, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setSirens""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleSirens',
         )
         ],
@@ -13479,13 +12219,6 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 },
                 result="""returns true if the siren point was successfully changed on the vehicle, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setSirens""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleSirens',
         )
         ],
@@ -13541,13 +12274,6 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 },
                 result="""returns true if the sirens are set for the specified vehicle, false if the sirens cant be set for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setSirensOn""",
-                field="""sirensOn""",
-                is_static=False,
-            ),
             name='setVehicleSirensOn',
         )
         ],
@@ -13600,13 +12326,6 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     "sirensOn": """The state to set the sirens to """
                 },
                 result="""returns true if the sirens are set for the specified vehicle, false if the sirens cant be set for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setSirensOn""",
-                field="""sirensOn""",
-                is_static=False,
             ),
             name='setVehicleSirensOn',
         )
@@ -13663,13 +12382,6 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 },
                 result="""returns true if the state was successfully set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setTaxiLightOn""",
-                field="""taxiLightOn""",
-                is_static=False,
-            ),
             name='setVehicleTaxiLightOn',
         )
         ],
@@ -13722,13 +12434,6 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     "LightState": """whether the light is on. True for on, False for off. """
                 },
                 result="""returns true if the state was successfully set, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setTaxiLightOn""",
-                field="""taxiLightOn""",
-                is_static=False,
             ),
             name='setVehicleTaxiLightOn',
         )
@@ -13795,13 +12500,6 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     "positionY": """: The vertical position of the turret. In radians """
                 },
                 result="""returns a true if a valid vehicle element and valid positions were passed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setTurretPosition""",
-                field="""turretPosition""",
-                is_static=False,
             ),
             name='setVehicleTurretPosition',
         )
@@ -13866,13 +12564,6 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     "positionY": """: The vertical position of the turret. In radians """
                 },
                 result="""returns a true if a valid vehicle element and valid positions were passed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setTurretPosition""",
-                field="""turretPosition""",
-                is_static=False,
             ),
             name='setVehicleTurretPosition',
         )
@@ -13942,13 +12633,6 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
 * bool: returns true as the vehicle variants were successfully set.
 on failure:
 * bool: false because the specified vehicle didnt exist or specified variants were invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setVariant""",
-                field=None,
-                is_static=False,
             ),
             name='setVehicleVariant',
         )
@@ -14016,13 +12700,6 @@ on failure:
 * bool: returns true as the vehicle variants were successfully set.
 on failure:
 * bool: false because the specified vehicle didnt exist or specified variants were invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setVariant""",
-                field=None,
-                is_static=False,
             ),
             name='setVehicleVariant',
         )
@@ -14081,13 +12758,6 @@ on failure:
                     "wheelScale": """: The wheel scale value to set. """
                 },
                 result="""returns true if the wheel scale has been set successfully, or an error if some parameter is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setWheelScale""",
-                field="""wheelScale""",
-                is_static=False,
             ),
             name='setVehicleWheelScale',
         )
@@ -14178,13 +12848,6 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                 },
                 result="""returns a boolean value true or false that tells you if it was successful or not. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setWheelStates""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleWheelStates',
         )
         ],
@@ -14272,13 +12935,6 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                 },
                 result="""returns a boolean value true or false that tells you if it was successful or not. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""setWheelStates""",
-                field=None,
-                is_static=False,
-            ),
             name='setVehicleWheelStates',
         )
         ],
@@ -14360,7 +13016,6 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
 ** if the vehicle has the window, it will return true
 ** if the vehicle does not have the window, it will return false """,
             ),
-            oop=None,
             name='setVehicleWindowOpen',
         )
         ],
@@ -14471,13 +13126,6 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                 },
                 result="""returns true if the vehicle spawned successfully, false if the passed argument does not exist or is not a vehicle. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""spawn""",
-                field=None,
-                is_static=False,
-            ),
             name='spawnVehicle',
         )
         ],
@@ -14535,13 +13183,6 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                     "Respawn": """: A boolean determining if the vehicle will respawn or not. """
                 },
                 result="""returns true if the vehicle was found and edited. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='vehicle',
-                method_name="""toggleRespawn""",
-                field=None,
-                is_static=False,
             ),
             name='toggleVehicleRespawn',
         )

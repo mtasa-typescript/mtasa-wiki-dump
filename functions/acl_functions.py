@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -49,13 +48,6 @@ DUMP_PARTIAL = [
                     "aclName": """The name of the ACL entry to add. """
                 },
                 result="""returns the created acl object if successful. returns false if an acl of the given name could not be created. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ACL',
-                method_name=None,
-                field=None,
-                is_static=True,
             ),
             name='aclCreate',
         )
@@ -104,13 +96,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the pointer to the created aclgroup if successful. returns false if failed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='aclgroup|ACLGroup',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='aclCreateGroup',
         )
         ],
@@ -157,13 +142,6 @@ DUMP_PARTIAL = [
                     "theACL": """The ACL to destroy """
                 },
                 result="""returns true if successfully destroyed and false if it could not be deleted (ie. its not valid). """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='acl',
-                method_name="""destroy""",
-                field=None,
-                is_static=False,
             ),
             name='aclDestroy',
         )
@@ -212,13 +190,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the acl group was successfully deleted, false if it could not be deleted for some reason (ie. invalid argument). """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='aclgroup',
-                method_name="""destroy""",
-                field=None,
-                is_static=False,
-            ),
             name='aclDestroyGroup',
         )
         ],
@@ -265,13 +236,6 @@ DUMP_PARTIAL = [
                     "aclName": """The name to get the ACL belonging to """
                 },
                 result="""returns the acl with that name if it could be retrieved, false/nil if the acl does not exist or it fails for some other reason. """,
-            ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the ACL class.""",
-                class_name='ACL',
-                method_name="""get""",
-                field=None,
-                is_static=True,
             ),
             name='aclGet',
         )
@@ -320,13 +284,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the acl group if it could be found. returns false/nil if it did not exist or failed for some reason. """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the ACL Group class.""",
-                class_name='aclgroup|ACLGroup',
-                method_name="""get""",
-                field=None,
-                is_static=True,
-            ),
             name='aclGetGroup',
         )
         ],
@@ -373,13 +330,6 @@ DUMP_PARTIAL = [
                     "theACL": """The ACL to get the name of """
                 },
                 result="""returns the name of the given acl as a string if successful. returns false/nil if unsuccessful, ie the acl is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='acl',
-                method_name="""getName""",
-                field="""name""",
-                is_static=False,
             ),
             name='aclGetName',
         )
@@ -439,13 +389,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true or false if the acl gives access or not to the given function. returns nil if it failed for some reason, e.g. an invalid acl was specified or the right specified does not exist in the acl. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='acl',
-                method_name="""getRight""",
-                field=None,
-                is_static=False,
-            ),
             name='aclGetRight',
         )
         ],
@@ -503,13 +446,6 @@ DUMP_PARTIAL = [
                     "theACL": """The ACL to add to the group """
                 },
                 result="""returns true if the acl could be successfully added to the acl group, false/nil if either of the elements are invalid, the acl is already in that group or if something else goes wrong. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='aclgroup',
-                method_name="""addACL""",
-                field=None,
-                is_static=False,
             ),
             name='aclGroupAddACL',
         )
@@ -573,13 +509,6 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 },
                 result="""returns true if the object was successfully added to the acl, false if it already existed in the list. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='aclgroup',
-                method_name="""addObject""",
-                field=None,
-                is_static=False,
-            ),
             name='aclGroupAddObject',
         )
         ],
@@ -627,13 +556,6 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 },
                 result="""returns the name of the given acl group as a string if successful, otherwise false or nil if the aclgroup is invalid or it fails for some other reason. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='aclgroup',
-                method_name="""getName""",
-                field="""name""",
-                is_static=False,
-            ),
             name='aclGroupGetName',
         )
         ],
@@ -671,13 +593,6 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     
                 },
                 result="""returns a table of all the acl groups if successful, returns an empty table if no acl groups exist. false/nil can be returned if this function fails for some other reason. """,
-            ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the ACL Group class.""",
-                class_name='aclgroup|ACLGroup',
-                method_name="""list""",
-                field=None,
-                is_static=True,
             ),
             name='aclGroupList',
         )
@@ -726,13 +641,6 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 },
                 result="""returns a table of the acl elements in the given acl group. this table might be empty. returns false or nil if thegroup is invalid or it fails for some other reason. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='aclgroup',
-                method_name="""listACL""",
-                field="""aclList""",
-                is_static=False,
-            ),
             name='aclGroupListACL',
         )
         ],
@@ -779,13 +687,6 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     "theGroup": """The ACL group to get the objects from """
                 },
                 result="""returns a table of strings in the given acl group. this table might be empty. returns false or nil if thegroup is invalid or it fails for some other reason. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='aclgroup',
-                method_name="""listObjects""",
-                field="""objects""",
-                is_static=False,
             ),
             name='aclGroupListObjects',
         )
@@ -845,13 +746,6 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 },
                 result="""returns true if the acl was successfully removed from the acl group, false/nil if it could not be removed for some reason, ie. either of the elements were invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='aclgroup',
-                method_name="""removeACL""",
-                field=None,
-                is_static=False,
-            ),
             name='aclGroupRemoveACL',
         )
         ],
@@ -910,13 +804,6 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 },
                 result="""returns true if the object existed in the acl and could be remoevd, false if it could not be removed for some reason, ie. it did not exist in the given acl group. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='aclgroup',
-                method_name="""removeObject""",
-                field=None,
-                is_static=False,
-            ),
             name='aclGroupRemoveObject',
         )
         ],
@@ -954,13 +841,6 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     
                 },
                 result="""returns a table of all the acls. this table can be empty if no acls exist. it can also return false/nil if it failed for some reason. """,
-            ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the ACL class.""",
-                class_name='ACL',
-                method_name="""list""",
-                field=None,
-                is_static=True,
             ),
             name='aclList',
         )
@@ -1020,13 +900,6 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 },
                 result="""returns a table over the rights as strings in the given acl. this table might be empty. returns false or nil if theacl is invalid or it fails for some other reason. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='acl',
-                method_name="""listRights""",
-                field=None,
-                is_static=False,
-            ),
             name='aclListRights',
         )
         ],
@@ -1064,13 +937,6 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     
                 },
                 result="""returns true if the xml was successfully reloaded from the file, false or nil if the xml was invalid, didnt exist or could not be loaded for some other reason. """,
-            ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the ACL class.""",
-                class_name='ACL',
-                method_name="""reload""",
-                field=None,
-                is_static=True,
             ),
             name='aclReload',
         )
@@ -1130,13 +996,6 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                 },
                 result="""returns true if the given right was successfully removed from the given acl, false or nil if it could not be removed for some reason, ie. it didnt exist in the acl. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='acl',
-                method_name="""removeRight""",
-                field=None,
-                is_static=False,
-            ),
             name='aclRemoveRight',
         )
         ],
@@ -1174,13 +1033,6 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     
                 },
                 result="""returns true if the acl was successfully changed, false or nil if it could not be saved for some reason, ie. file in use. """,
-            ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the ACL class.""",
-                class_name='ACL',
-                method_name="""save""",
-                field=None,
-                is_static=True,
             ),
             name='aclSave',
         )
@@ -1250,13 +1102,6 @@ Objects are specified as strings. The ACL groups work for the user accounts and 
                     "hasAccess": """Whether the access should be set to true or false """
                 },
                 result="""returns true if the access was successfully changed, false or nil if it failed for some reason, ie. invalid acl or the rightname is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='acl',
-                method_name="""setRight""",
-                field=None,
-                is_static=False,
             ),
             name='aclSetRight',
         )
@@ -1338,13 +1183,6 @@ The only downside of using this method is that the admin has to modify his confi
                 },
                 result="""returns true if the given object has permission to perform the given action, false otherwise. returns nil if the function failed because of bad arguments. """,
             ),
-            oop=FunctionOOP(
-                description="""This function is also a static function underneath the ACL class.""",
-                class_name='ACL',
-                method_name="""hasObjectPermissionTo""",
-                field=None,
-                is_static=True,
-            ),
             name='hasObjectPermissionTo',
         )
         ],
@@ -1402,13 +1240,6 @@ The only downside of using this method is that the admin has to modify his confi
                     "theGroup": """the ACL group pointer of the group from which the object should be found. """
                 },
                 result="""returns true if the object is in the specified group, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='aclgroup',
-                method_name="""doesContainObject""",
-                field=None,
-                is_static=False,
             ),
             name='isObjectInACLGroup',
         )

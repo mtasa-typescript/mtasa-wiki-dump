@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -94,7 +93,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='createExplosion',
         )
         ],
@@ -203,7 +201,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='createExplosion',
         )
         ],

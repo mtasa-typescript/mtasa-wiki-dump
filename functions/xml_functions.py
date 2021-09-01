@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -64,13 +63,6 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 },
                 result="""returns the xmlnode of the copy if the node was successfully copied, false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""copy""",
-                field=None,
-                is_static=False,
-            ),
             name='xmlCopyFile',
         )
         ],
@@ -127,13 +119,6 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 },
                 result="""returns the xmlnode of the copy if the node was successfully copied, false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""copy""",
-                field=None,
-                is_static=False,
-            ),
             name='xmlCopyFile',
         )
         ],
@@ -189,13 +174,6 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 },
                 result="""returns the created xmlnode if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""createChild""",
-                field=None,
-                is_static=False,
-            ),
             name='xmlCreateChild',
         )
         ],
@@ -249,13 +227,6 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 },
                 result="""returns the created xmlnode if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""createChild""",
-                field=None,
-                is_static=False,
-            ),
             name='xmlCreateChild',
         )
         ],
@@ -314,13 +285,6 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 },
                 result="""returns the root xmlnode object of the new xml file if successful, or false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Xml|XML',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='xmlCreateFile',
         )
         ],
@@ -377,13 +341,6 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 },
                 result="""returns the root xmlnode object of the new xml file if successful, or false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Xml|XML',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='xmlCreateFile',
         )
         ],
@@ -428,13 +385,6 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 },
                 result="""returns true if the xml node was successfully destroyed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""destroy""",
-                field=None,
-                is_static=False,
-            ),
             name='xmlDestroyNode',
         )
         ],
@@ -477,13 +427,6 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 },
                 result="""returns true if the xml node was successfully destroyed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""destroy""",
-                field=None,
-                is_static=False,
-            ),
             name='xmlDestroyNode',
         )
         ],
@@ -550,13 +493,6 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 },
                 result="""returns an xmlnode if the node was found, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""findChild""",
-                field=None,
-                is_static=False,
-            ),
             name='xmlFindChild',
         )
         ],
@@ -621,13 +557,6 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 },
                 result="""returns an xmlnode if the node was found, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""findChild""",
-                field=None,
-                is_static=False,
-            ),
             name='xmlFindChild',
         )
         ],
@@ -688,13 +617,6 @@ This function loads an XML file and returns the node by specifying a specific fi
 print error if something wrong with xml.
 |7485}} """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the XML class.""",
-                class_name='XML',
-                method_name="""load""",
-                field=None,
-                is_static=True,
-            ),
             name='xmlLoadFile',
         )
         ],
@@ -753,13 +675,6 @@ This function loads an XML file and returns the node by specifying a specific fi
 print error if something wrong with xml.
 |7485}} """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the XML class.""",
-                class_name='XML',
-                method_name="""load""",
-                field=None,
-                is_static=True,
-            ),
             name='xmlLoadFile',
         )
         ],
@@ -804,13 +719,6 @@ print error if something wrong with xml.
                 },
                 result="""returns the root xmlnode object of an xml string if successful, or false otherwise (invalid xml string). """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the XML class.""",
-                class_name='XML',
-                method_name="""loadstring""",
-                field=None,
-                is_static=True,
-            ),
             name='xmlLoadString',
         )
         ],
@@ -853,13 +761,6 @@ print error if something wrong with xml.
                 },
                 result="""returns the root xmlnode object of an xml string if successful, or false otherwise (invalid xml string). """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the XML class.""",
-                class_name='XML',
-                method_name="""loadstring""",
-                field=None,
-                is_static=True,
-            ),
             name='xmlLoadString',
         )
         ],
@@ -915,13 +816,6 @@ print error if something wrong with xml.
                 },
                 result="""returns the attribute in string form or false, if the attribute is not defined. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""getAttribute""",
-                field=None,
-                is_static=False,
-            ),
             name='xmlNodeGetAttribute',
         )
         ],
@@ -975,13 +869,6 @@ print error if something wrong with xml.
                 },
                 result="""returns the attribute in string form or false, if the attribute is not defined. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""getAttribute""",
-                field=None,
-                is_static=False,
-            ),
             name='xmlNodeGetAttribute',
         )
         ],
@@ -1026,13 +913,6 @@ print error if something wrong with xml.
                 },
                 result="""if successful, returns a table with as keys the names of the attributes and as values the corresponding attribute values. if the node has no attributes, returns an empty table. in case of failure, returns false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""getAttributes""",
-                field="""attributes""",
-                is_static=False,
-            ),
             name='xmlNodeGetAttributes',
         )
         ],
@@ -1075,13 +955,6 @@ print error if something wrong with xml.
                 },
                 result="""if successful, returns a table with as keys the names of the attributes and as values the corresponding attribute values. if the node has no attributes, returns an empty table. in case of failure, returns false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""getAttributes""",
-                field="""attributes""",
-                is_static=False,
-            ),
             name='xmlNodeGetAttributes',
         )
         ],
@@ -1137,13 +1010,6 @@ print error if something wrong with xml.
                 },
                 result="""if index isnt specified, returns a table containing all child nodes. if index is specified, returns the corresponding child node if it exists. if no nodes are found, it returns an empty table. returns false in case of failure. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""getChildren""",
-                field="""children""",
-                is_static=False,
-            ),
             name='xmlNodeGetChildren',
         )
         ],
@@ -1197,13 +1063,6 @@ print error if something wrong with xml.
                 },
                 result="""if index isnt specified, returns a table containing all child nodes. if index is specified, returns the corresponding child node if it exists. if no nodes are found, it returns an empty table. returns false in case of failure. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""getChildren""",
-                field="""children""",
-                is_static=False,
-            ),
             name='xmlNodeGetChildren',
         )
         ],
@@ -1248,13 +1107,6 @@ print error if something wrong with xml.
                 },
                 result="""returns the tag name of the node if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""getName""",
-                field="""name""",
-                is_static=False,
-            ),
             name='xmlNodeGetName',
         )
         ],
@@ -1297,13 +1149,6 @@ print error if something wrong with xml.
                 },
                 result="""returns the tag name of the node if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""getName""",
-                field="""name""",
-                is_static=False,
-            ),
             name='xmlNodeGetName',
         )
         ],
@@ -1348,13 +1193,6 @@ print error if something wrong with xml.
                 },
                 result="""returns the parent node of the specified node if successful. returns false if the specified node is the root node or an invalid node was passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""getParent""",
-                field="""parent""",
-                is_static=False,
-            ),
             name='xmlNodeGetParent',
         )
         ],
@@ -1397,13 +1235,6 @@ print error if something wrong with xml.
                 },
                 result="""returns the parent node of the specified node if successful. returns false if the specified node is the root node or an invalid node was passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""getParent""",
-                field="""parent""",
-                is_static=False,
-            ),
             name='xmlNodeGetParent',
         )
         ],
@@ -1448,13 +1279,6 @@ print error if something wrong with xml.
                 },
                 result="""returns the value of the node as a string if it was received successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""getValue""",
-                field="""value""",
-                is_static=False,
-            ),
             name='xmlNodeGetValue',
         )
         ],
@@ -1497,13 +1321,6 @@ print error if something wrong with xml.
                 },
                 result="""returns the value of the node as a string if it was received successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""getValue""",
-                field="""value""",
-                is_static=False,
-            ),
             name='xmlNodeGetValue',
         )
         ],
@@ -1570,13 +1387,6 @@ print error if something wrong with xml.
                 },
                 result="""returns true if the attribute was set successfully, false if the node and/or attribute do not exist, or if theyre faulty. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""setAttribute""",
-                field=None,
-                is_static=False,
-            ),
             name='xmlNodeSetAttribute',
         )
         ],
@@ -1641,13 +1451,6 @@ print error if something wrong with xml.
                 },
                 result="""returns true if the attribute was set successfully, false if the node and/or attribute do not exist, or if theyre faulty. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""setAttribute""",
-                field=None,
-                is_static=False,
-            ),
             name='xmlNodeSetAttribute',
         )
         ],
@@ -1703,13 +1506,6 @@ print error if something wrong with xml.
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""setName""",
-                field="""name""",
-                is_static=False,
-            ),
             name='xmlNodeSetName',
         )
         ],
@@ -1763,13 +1559,6 @@ print error if something wrong with xml.
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""setName""",
-                field="""name""",
-                is_static=False,
-            ),
             name='xmlNodeSetName',
         )
         ],
@@ -1836,13 +1625,6 @@ print error if something wrong with xml.
                 },
                 result="""returns true if value was successfully set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""setValue""",
-                field="""value""",
-                is_static=False,
-            ),
             name='xmlNodeSetValue',
         )
         ],
@@ -1907,13 +1689,6 @@ print error if something wrong with xml.
                 },
                 result="""returns true if value was successfully set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""setValue""",
-                field="""value""",
-                is_static=False,
-            ),
             name='xmlNodeSetValue',
         )
         ],
@@ -1958,13 +1733,6 @@ print error if something wrong with xml.
                 },
                 result="""returns true if save was successful, false if the xml file does not exist. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""saveFile""",
-                field=None,
-                is_static=False,
-            ),
             name='xmlSaveFile',
         )
         ],
@@ -2006,13 +1774,6 @@ print error if something wrong with xml.
                     "rootNode": """the root xmlnode of the loaded XML file. """
                 },
                 result="""returns true if save was successful, false if the xml file does not exist. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""saveFile""",
-                field=None,
-                is_static=False,
             ),
             name='xmlSaveFile',
         )
@@ -2058,13 +1819,6 @@ print error if something wrong with xml.
                 },
                 result="""returns true if the document was unloaded successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""unload""",
-                field=None,
-                is_static=False,
-            ),
             name='xmlUnloadFile',
         )
         ],
@@ -2106,13 +1860,6 @@ print error if something wrong with xml.
                     "node": """root of the XML document to unload """
                 },
                 result="""returns true if the document was unloaded successfully, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='xmlnode',
-                method_name="""unload""",
-                field=None,
-                is_static=False,
             ),
             name='xmlUnloadFile',
         )

@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -71,13 +70,6 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player you wish to subscribe. """
                 },
                 result="""returns true if the player was subscribed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""addDataSubscriber""",
-                field=None,
-                is_static=False,
             ),
             name='addElementDataSubscriber',
         )
@@ -218,13 +210,6 @@ This is not compatible with all elements.  The following elements are compatible
                 },
                 result="""returns true if the attaching process was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""attach""",
-                field=None,
-                is_static=False,
-            ),
             name='attachElements',
         )
         ],
@@ -359,13 +344,6 @@ This is not compatible with all elements.  The following elements are compatible
                 },
                 result="""returns true if the attaching process was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""attach""",
-                field=None,
-                is_static=False,
-            ),
             name='attachElements',
         )
         ],
@@ -409,13 +387,6 @@ This is not compatible with all elements.  The following elements are compatible
                     "theElement": """The element in which you wish to restore to its default visibility """
                 },
                 result="""returns true if the operation was successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""clearVisibility""",
-                field=None,
-                is_static=False,
             ),
             name='clearElementVisibleTo',
         )
@@ -511,13 +482,6 @@ The cloned element will be placed on the element tree as a child of the same par
                 },
                 result="""returns the handle of the new cloned element of the parent, false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""clone""",
-                field=None,
-                is_static=False,
-            ),
             name='cloneElement',
         )
         ],
@@ -577,13 +541,6 @@ Elements created using this function are placed in the element tree with their p
                 },
                 result="""returns the element if it was successfully created. returns false if the arguments are wrong. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createElement',
         )
         ],
@@ -638,13 +595,6 @@ Elements created using this function are placed in the element tree with their p
                 },
                 result="""returns the element if it was successfully created. returns false if the arguments are wrong. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createElement',
         )
         ],
@@ -690,13 +640,6 @@ Players are not the only elements that cannot be deleted. This list also include
                 },
                 result="""returns true if the element was destroyed successfully, false if either the element passed to it was invalid or it could not be destroyed for some other reason (for example, clientside destroyelement cant destroy serverside elements). """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""destroy""",
-                field=None,
-                is_static=False,
-            ),
             name='destroyElement',
         )
         ],
@@ -739,13 +682,6 @@ Players are not the only elements that cannot be deleted. This list also include
                     "elementToDestroy": """The element you wish to destroy. """
                 },
                 result="""returns true if the element was destroyed successfully, false if either the element passed to it was invalid or it could not be destroyed for some other reason (for example, clientside destroyelement cant destroy serverside elements). """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""destroy""",
-                field=None,
-                is_static=False,
             ),
             name='destroyElement',
         )
@@ -802,13 +738,6 @@ Players are not the only elements that cannot be deleted. This list also include
                 },
                 result="""returns true if the detaching was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""detach""",
-                field=None,
-                is_static=False,
-            ),
             name='detachElements',
         )
         ],
@@ -861,13 +790,6 @@ Players are not the only elements that cannot be deleted. This list also include
                     "theAttachToElement": """The element you wish to detach from, will detach from the attached element if this isnt specified. """
                 },
                 result="""returns true if the detaching was successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""detach""",
-                field=None,
-                is_static=False,
             ),
             name='detachElements',
         )
@@ -912,13 +834,6 @@ Players are not the only elements that cannot be deleted. This list also include
                     "theElement": """the element you want to get the element data of. """
                 },
                 result="""if successful, returns a table with as keys the names of the element data and as values the corresponding element data values. returns false in case of failure. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getAllData""",
-                field=None,
-                is_static=False,
             ),
             name='getAllElementData',
         )
@@ -967,13 +882,6 @@ Players are not the only elements that cannot be deleted. This list also include
                 },
                 result="""returns a table of all the elements attached to the specified element. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getAttachedElements""",
-                field=None,
-                is_static=False,
-            ),
             name='getAttachedElements',
         )
         ],
@@ -1016,13 +924,6 @@ Players are not the only elements that cannot be deleted. This list also include
                 },
                 result="""returns a table of all the elements attached to the specified element. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getAttachedElements""",
-                field=None,
-                is_static=False,
-            ),
             name='getAttachedElements',
         )
         ],
@@ -1067,13 +968,6 @@ Players are not the only elements that cannot be deleted. This list also include
                 },
                 result="""returns an integer (0-255; 0 = transparent) indicating the elements alpha, or false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getAlpha""",
-                field="""alpha""",
-                is_static=False,
-            ),
             name='getElementAlpha',
         )
         ],
@@ -1116,13 +1010,6 @@ Players are not the only elements that cannot be deleted. This list also include
                 },
                 result="""returns an integer (0-255; 0 = transparent) indicating the elements alpha, or false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getAlpha""",
-                field="""alpha""",
-                is_static=False,
-            ),
             name='getElementAlpha',
         )
         ],
@@ -1175,13 +1062,6 @@ Players are not the only elements that cannot be deleted. This list also include
                 },
                 result="""returns three floats describing the x, y and z rotation """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getAngularVelocity""",
-                field="""angularVelocity""",
-                is_static=False,
-            ),
             name='getElementAngularVelocity',
         )
         ],
@@ -1232,13 +1112,6 @@ Players are not the only elements that cannot be deleted. This list also include
                 },
                 result="""returns three floats describing the x, y and z rotation """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getAngularVelocity""",
-                field="""angularVelocity""",
-                is_static=False,
-            ),
             name='getElementAngularVelocity',
         )
         ],
@@ -1303,13 +1176,6 @@ Players are not the only elements that cannot be deleted. This list also include
                 },
                 result="""returns 6 float|floats, of which the first 3 indicate the position offset (x, y, z), and the last 3 indicate the rotation offset (x, y, z), if successful. false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getAttachedOffsets""",
-                field=None,
-                is_static=False,
-            ),
             name='getElementAttachedOffsets',
         )
         ],
@@ -1372,13 +1238,6 @@ Players are not the only elements that cannot be deleted. This list also include
                 },
                 result="""returns 6 float|floats, of which the first 3 indicate the position offset (x, y, z), and the last 3 indicate the rotation offset (x, y, z), if successful. false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getAttachedOffsets""",
-                field=None,
-                is_static=False,
-            ),
             name='getElementAttachedOffsets',
         )
         ],
@@ -1423,13 +1282,6 @@ Players are not the only elements that cannot be deleted. This list also include
                 },
                 result="""returns the element that the chosen element is attached to, or false if the element isnt attached to another element. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getAttachedTo""",
-                field=None,
-                is_static=False,
-            ),
             name='getElementAttachedTo',
         )
         ],
@@ -1471,13 +1323,6 @@ Players are not the only elements that cannot be deleted. This list also include
                     "theElement": """The element you require the information for. """
                 },
                 result="""returns the element that the chosen element is attached to, or false if the element isnt attached to another element. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getAttachedTo""",
-                field=None,
-                is_static=False,
             ),
             name='getElementAttachedTo',
         )
@@ -1538,7 +1383,6 @@ Players are not the only elements that cannot be deleted. This list also include
                 },
                 result="""returns a multi-dimensional array (which can be transformed into a proper matrix class using matrix.create method) containing a 4x4 matrix. returns false if invalid arguments were passed. """,
             ),
-            oop=None,
             name='getElementBoneMatrix',
         )
         ],
@@ -1606,7 +1450,6 @@ Players are not the only elements that cannot be deleted. This list also include
                 },
                 result="""returns the x, y, z world position of the bone. """,
             ),
-            oop=None,
             name='getElementBonePosition',
         )
         ],
@@ -1674,7 +1517,6 @@ Players are not the only elements that cannot be deleted. This list also include
                 },
                 result="""returns the yaw, pitch, roll rotation values. """,
             ),
-            oop=None,
             name='getElementBoneRotation',
         )
         ],
@@ -1743,13 +1585,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""*returns min x, min y, min z, max x, max y, max z if the passed element is valid and streamed in, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getBoundingBox""",
-                field=None,
-                is_static=False,
-            ),
             name='getElementBoundingBox',
         )
         ],
@@ -1805,13 +1640,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""returns the element with the given id, or false if no such element exists. """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the Element class.""",
-                class_name='Element',
-                method_name="""getByID""",
-                field=None,
-                is_static=True,
-            ),
             name='getElementByID',
         )
         ],
@@ -1864,13 +1692,6 @@ It should be noted that the values returned are relative to the position of the 
                     "index": """If there are two or more elements of the same ID it will return the element with the specified index starting at 0. """
                 },
                 result="""returns the element with the given id, or false if no such element exists. """,
-            ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the Element class.""",
-                class_name='Element',
-                method_name="""getByID""",
-                field=None,
-                is_static=True,
             ),
             name='getElementByID',
         )
@@ -1926,13 +1747,6 @@ It should be noted that the values returned are relative to the position of the 
                     "index": """the elements index (0 for the first element, 1 for the second, etc). """
                 },
                 result="""returns the requested element, or false if it doesnt exist. """,
-            ),
-            oop=FunctionOOP(
-                description="""This function is a static function inside the Element class.""",
-                class_name='Element',
-                method_name="""getByIndex""",
-                field=None,
-                is_static=True,
             ),
             name='getElementByIndex',
         )
@@ -1992,13 +1806,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""returns the requested element if it exists, or false if it doesnt. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getChild""",
-                field=None,
-                is_static=False,
-            ),
             name='getElementChild',
         )
         ],
@@ -2052,13 +1859,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""returns the requested element if it exists, or false if it doesnt. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getChild""",
-                field=None,
-                is_static=False,
-            ),
             name='getElementChild',
         )
         ],
@@ -2129,13 +1929,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""this function returns a table that contains a list of elements that the parent has. if the element has no children, it will return an empy table. it will return false if the parent element does not exist. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getChildren""",
-                field=None,
-                is_static=False,
-            ),
             name='getElementChildren',
         )
         ],
@@ -2204,13 +1997,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""this function returns a table that contains a list of elements that the parent has. if the element has no children, it will return an empy table. it will return false if the parent element does not exist. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getChildren""",
-                field=None,
-                is_static=False,
-            ),
             name='getElementChildren',
         )
         ],
@@ -2255,13 +2041,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""returns an int with the number of child elements, or false if the parent element does not exist. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getChildrenCount""",
-                field=None,
-                is_static=False,
-            ),
             name='getElementChildrenCount',
         )
         ],
@@ -2304,13 +2083,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""returns an int with the number of child elements, or false if the parent element does not exist. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getChildrenCount""",
-                field=None,
-                is_static=False,
-            ),
             name='getElementChildrenCount',
         )
         ],
@@ -2355,13 +2127,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""returns true if the collisions are enabled, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getCollisionsEnabled""",
-                field="""collisions""",
-                is_static=False,
-            ),
             name='getElementCollisionsEnabled',
         )
         ],
@@ -2404,13 +2169,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""returns true if the collisions are enabled, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getCollisionsEnabled""",
-                field="""collisions""",
-                is_static=False,
-            ),
             name='getElementCollisionsEnabled',
         )
         ],
@@ -2455,13 +2213,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""returns colshape of the element, false if not or an invalid argument was passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getColShape""",
-                field="""colShape""",
-                is_static=False,
-            ),
             name='getElementColShape',
         )
         ],
@@ -2504,13 +2255,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""returns colshape of the element, false if not or an invalid argument was passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getColShape""",
-                field="""colShape""",
-                is_static=False,
-            ),
             name='getElementColShape',
         )
         ],
@@ -2577,13 +2321,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""this function returns a variable containing the requested element data, or false if the element or the element data does not exist. when getting data corresponding to a xml attribute, this is always a string. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getData""",
-                field=None,
-                is_static=False,
-            ),
             name='getElementData',
         )
         ],
@@ -2648,13 +2385,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""this function returns a variable containing the requested element data, or false if the element or the element data does not exist. when getting data corresponding to a xml attribute, this is always a string. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getData""",
-                field=None,
-                is_static=False,
-            ),
             name='getElementData',
         )
         ],
@@ -2699,13 +2429,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""returns an integer for the dimension if theelement is valid, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getDimension""",
-                field="""dimension""",
-                is_static=False,
-            ),
             name='getElementDimension',
         )
         ],
@@ -2747,13 +2470,6 @@ It should be noted that the values returned are relative to the position of the 
                     "theElement": """The element in which youd like to retrieve the dimension of. """
                 },
                 result="""returns an integer for the dimension if theelement is valid, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getDimension""",
-                field="""dimension""",
-                is_static=False,
             ),
             name='getElementDimension',
         )
@@ -2802,13 +2518,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""returns a float with the distance, or false if the element is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getDistanceFromCentreOfMassToBaseOfModel""",
-                field="""distanceFromCentreOfMassToBaseOfModel""",
-                is_static=False,
-            ),
             name='getElementDistanceFromCentreOfMassToBaseOfModel',
         )
         ],
@@ -2853,13 +2562,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""returns a float indicating the elements health, or false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getHealth""",
-                field="""health""",
-                is_static=False,
-            ),
             name='getElementHealth',
         )
         ],
@@ -2902,13 +2604,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""returns a float indicating the elements health, or false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getHealth""",
-                field="""health""",
-                is_static=False,
-            ),
             name='getElementHealth',
         )
         ],
@@ -2953,13 +2648,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""this returns a string containing the element id. it will return an empty string if it has no id. it will return false if the element is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getID""",
-                field="""id""",
-                is_static=False,
-            ),
             name='getElementID',
         )
         ],
@@ -3002,13 +2690,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""this returns a string containing the element id. it will return an empty string if it has no id. it will return false if the element is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getID""",
-                field="""id""",
-                is_static=False,
-            ),
             name='getElementID',
         )
         ],
@@ -3053,13 +2734,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""returns an int for the interior if theelement is valid, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getInterior""",
-                field="""interior""",
-                is_static=False,
-            ),
             name='getElementInterior',
         )
         ],
@@ -3102,13 +2776,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""returns an int for the interior if theelement is valid, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getInterior""",
-                field="""interior""",
-                is_static=False,
-            ),
             name='getElementInterior',
         )
         ],
@@ -3164,13 +2831,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""returns a multi-dimensional array (which can be transformed into a proper matrix class using matrix.create method) containing a 4x4 matrix. returns false if the element is not streamed in, and not a vehicle, ped or object. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getMatrix""",
-                field="""matrix""",
-                is_static=False,
-            ),
             name='getElementMatrix',
         )
         ],
@@ -3224,13 +2884,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""returns a multi-dimensional array (which can be transformed into a proper matrix class using matrix.create method) containing a 4x4 matrix. returns false if the element is not streamed in, and not a vehicle, ped or object. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getMatrix""",
-                field="""matrix""",
-                is_static=False,
-            ),
             name='getElementMatrix',
         )
         ],
@@ -3278,13 +2931,6 @@ It should be noted that the values returned are relative to the position of the 
 * for vehicles: the vehicle ids|vehicle id of the vehicle.
 * for objects: an int specifying the model id. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getModel""",
-                field="""model""",
-                is_static=False,
-            ),
             name='getElementModel',
         )
         ],
@@ -3330,13 +2976,6 @@ It should be noted that the values returned are relative to the position of the 
 * for vehicles: the vehicle ids|vehicle id of the vehicle.
 * for objects: an int specifying the model id. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getModel""",
-                field="""model""",
-                is_static=False,
-            ),
             name='getElementModel',
         )
         ],
@@ -3381,13 +3020,6 @@ It should be noted that the values returned are relative to the position of the 
                 },
                 result="""this returns the parent as an element. it returns false if theelement is invalid, or is the root node. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getParent""",
-                field="""parent""",
-                is_static=False,
-            ),
             name='getElementParent',
         )
         ],
@@ -3429,13 +3061,6 @@ It should be noted that the values returned are relative to the position of the 
                     "theElement": """The child of the parent element you want returned. """
                 },
                 result="""this returns the parent as an element. it returns false if theelement is invalid, or is the root node. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getParent""",
-                field="""parent""",
-                is_static=False,
             ),
             name='getElementParent',
         )
@@ -3496,13 +3121,6 @@ It should be noted that the values returned are relative to the position of the 
                     "theElement": """The element which youd like to retrieve the location of """
                 },
                 result="""returns three floats indicating the position of the element, x, y and z respectively. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getPosition""",
-                field="""position""",
-                is_static=False,
             ),
             name='getElementPosition',
         )
@@ -3561,13 +3179,6 @@ It should be noted that the values returned are relative to the position of the 
                     "theElement": """The element which youd like to retrieve the location of """
                 },
                 result="""returns three floats indicating the position of the element, x, y and z respectively. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getPosition""",
-                field="""position""",
-                is_static=False,
             ),
             name='getElementPosition',
         )
@@ -3619,13 +3230,6 @@ It should be noted that the values returned are relative to the position of the 
                     "object|Objects": """. """
                 },
                 result="""returns a float containing the radius if the element is valid, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getRadius""",
-                field="""radius""",
-                is_static=False,
             ),
             name='getElementRadius',
         )
@@ -3695,13 +3299,6 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 },
                 result="""* rx, ry, rz: 3 floats representing the euler rotation angles on the axis x, y and z (with the rotation order depending on the rotorder argument) if element exists and is a valid element, false if its invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getRotation""",
-                field="""rotation""",
-                is_static=False,
-            ),
             name='getElementRotation',
         )
         ],
@@ -3768,13 +3365,6 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 },
                 result="""* rx, ry, rz: 3 floats representing the euler rotation angles on the axis x, y and z (with the rotation order depending on the rotorder argument) if element exists and is a valid element, false if its invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getRotation""",
-                field="""rotation""",
-                is_static=False,
-            ),
             name='getElementRotation',
         )
         ],
@@ -3829,7 +3419,6 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 },
                 result=""" """,
             ),
-            oop=None,
             name='getElementsByType',
         )
         ],
@@ -3892,7 +3481,6 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 },
                 result=""" """,
             ),
-            oop=None,
             name='getElementsByType',
         )
         ],
@@ -3957,13 +3545,6 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 },
                 result="""returns a table containing all the elements inside the colshape, of the specified type. returns an empty table if there are no elements inside. returns false if the colshape is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""getElementsWithin""",
-                field="""elementsWithin""",
-                is_static=False,
-            ),
             name='getElementsWithinColShape',
         )
         ],
@@ -4026,13 +3607,6 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 },
                 result="""returns a table containing all the elements inside the colshape, of the specified type. returns an empty table if there are no elements inside. returns false if the colshape is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='colshape',
-                method_name="""getElementsWithin""",
-                field="""elementsWithin""",
-                is_static=False,
-            ),
             name='getElementsWithinColShape',
         )
         ],
@@ -4151,13 +3725,6 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 },
                 result="""returns a table containing all the elements of the specified type within range. returns an empty table if there are no elements within range. returns false if the arguments are invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element',
-                method_name="""getWithinRange""",
-                field=None,
-                is_static=True,
-            ),
             name='getElementsWithinRange',
         )
         ],
@@ -4274,13 +3841,6 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 },
                 result="""returns a table containing all the elements of the specified type within range. returns an empty table if there are no elements within range. returns false if the arguments are invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element',
-                method_name="""getWithinRange""",
-                field=None,
-                is_static=True,
-            ),
             name='getElementsWithinRange',
         )
         ],
@@ -4324,13 +3884,6 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """: The element to get the syncer of. """
                 },
                 result="""returns the element that is the syncer of theelement or false if the element does not have a syncer. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getSyncer""",
-                field="""syncer""",
-                is_static=False,
             ),
             name='getElementSyncer',
         )
@@ -4379,13 +3932,6 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 },
                 result="""returns a string containing the element type, false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getType""",
-                field="""type""",
-                is_static=False,
-            ),
             name='getElementType',
         )
         ],
@@ -4427,13 +3973,6 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """The element you wish to get the type of. """
                 },
                 result="""returns a string containing the element type, false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getType""",
-                field="""type""",
-                is_static=False,
             ),
             name='getElementType',
         )
@@ -4487,13 +4026,6 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 },
                 result="""if succesful, returns three floats that represent the elements current velocity along the x, y, and z axis respectively. this function can fail if the element is a player in a car. use the vehicle element in this case. it will also fail if the element specified does not have a velocity, or does not exist. in case of failure, the first return value will be false.
 the returned values are expressed in gta units per 1/50th of a secondhttp://forum.mtasa.com/viewtopic.php?f=91&t=31225. a gta unit is equal to one metrehttp://gta.wikia.com/unit#gta3.2c_gtavc_.26_gtasa. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getVelocity""",
-                field="""velocity""",
-                is_static=False,
             ),
             name='getElementVelocity',
         )
@@ -4545,13 +4077,6 @@ the returned values are expressed in gta units per 1/50th of a secondhttp://foru
                 },
                 result="""if succesful, returns three floats that represent the elements current velocity along the x, y, and z axis respectively. this function can fail if the element is a player in a car. use the vehicle element in this case. it will also fail if the element specified does not have a velocity, or does not exist. in case of failure, the first return value will be false.
 the returned values are expressed in gta units per 1/50th of a secondhttp://forum.mtasa.com/viewtopic.php?f=91&t=31225. a gta unit is equal to one metrehttp://gta.wikia.com/unit#gta3.2c_gtavc_.26_gtasa. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getVelocity""",
-                field="""velocity""",
-                is_static=False,
             ),
             name='getElementVelocity',
         )
@@ -4609,13 +4134,6 @@ The same can be achieved client side by getting element coordinates and using Ge
                 },
                 result="""returns the string of the elements zone name. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getZoneName""",
-                field=None,
-                is_static=False,
-            ),
             name='getElementZoneName',
         )
         ],
@@ -4663,13 +4181,6 @@ The same can be achieved client side by getting element coordinates and using Ge
                 },
                 result="""returns a low lod element if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getLowLOD""",
-                field="""lowLOD""",
-                is_static=False,
-            ),
             name='getLowLODElement',
         )
         ],
@@ -4712,13 +4223,6 @@ The same can be achieved client side by getting element coordinates and using Ge
                 },
                 result="""returns a low lod element if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""getLowLOD""",
-                field="""lowLOD""",
-                is_static=False,
-            ),
             name='getLowLODElement',
         )
         ],
@@ -4755,7 +4259,6 @@ It is often used to attach handler functions to events triggered for any element
                 },
                 result="""returns the root element. """,
             ),
-            oop=None,
             name='getRootElement',
         )
         ],
@@ -4790,7 +4293,6 @@ It is often used to attach handler functions to events triggered for any element
                 },
                 result="""returns the root element. """,
             ),
-            oop=None,
             name='getRootElement',
         )
         ],
@@ -4856,13 +4358,6 @@ It is often used to attach handler functions to events triggered for any element
                     "inherit": """- toggles whether or not the function should go up the hierarchy to find the requested key in case the specified element doesnt have it. """
                 },
                 result="""this function returns true if the element contains element data for key, or false if the element doesnt exist or there is no data associated with the key. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""hasData""",
-                field=None,
-                is_static=False,
             ),
             name='hasElementData',
         )
@@ -4927,13 +4422,6 @@ It is often used to attach handler functions to events triggered for any element
                     "inherit": """- toggles whether or not the function should go up the hierarchy to find the requested key in case the specified element doesnt have it. """
                 },
                 result="""this function returns true if the element contains element data for key, or false if the element doesnt exist or there is no data associated with the key. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""hasData""",
-                field=None,
-                is_static=False,
             ),
             name='hasElementData',
         )
@@ -5001,13 +4489,6 @@ It is often used to attach handler functions to events triggered for any element
                 },
                 result="""returns true if the player is subscribed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""hasDataSubscriber""",
-                field=None,
-                is_static=False,
-            ),
             name='hasElementDataSubscriber',
         )
         ],
@@ -5055,7 +4536,6 @@ It is often used to attach handler functions to events triggered for any element
                 },
                 result="""returns true if the passed value is an element, false otherwise. """,
             ),
-            oop=None,
             name='isElement',
         )
         ],
@@ -5098,7 +4578,6 @@ It is often used to attach handler functions to events triggered for any element
                 },
                 result="""returns true if the passed value is an element, false otherwise. """,
             ),
-            oop=None,
             name='isElement',
         )
         ],
@@ -5143,13 +4622,6 @@ It is often used to attach handler functions to events triggered for any element
                 },
                 result="""returns true if the specified element is attached to another element, false if it is not attached or nil if an improper argument was passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isAttached""",
-                field="""attached""",
-                is_static=False,
-            ),
             name='isElementAttached',
         )
         ],
@@ -5191,13 +4663,6 @@ It is often used to attach handler functions to events triggered for any element
                     "theElement": """The element to check for attachment. """
                 },
                 result="""returns true if the specified element is attached to another element, false if it is not attached or nil if an improper argument was passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isAttached""",
-                field="""attached""",
-                is_static=False,
             ),
             name='isElementAttached',
         )
@@ -5243,13 +4708,6 @@ It is often used to attach handler functions to events triggered for any element
                 },
                 result="""returns true if the propagation is enabled, false if disabled or invalid arguments have been passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isCallPropagationEnabled""",
-                field=None,
-                is_static=False,
-            ),
             name='isElementCallPropagationEnabled',
         )
         ],
@@ -5291,13 +4749,6 @@ It is often used to attach handler functions to events triggered for any element
                     "theElement": """The element to check """
                 },
                 result="""returns true if the propagation is enabled, false if disabled or invalid arguments have been passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isCallPropagationEnabled""",
-                field=None,
-                is_static=False,
             ),
             name='isElementCallPropagationEnabled',
         )
@@ -5362,13 +4813,6 @@ Note: You can only use this function with the element types listed below.
                 },
                 result="""returns true if the elements collide with eachother, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isCollidableWith""",
-                field=None,
-                is_static=False,
-            ),
             name='isElementCollidableWith',
         )
         ],
@@ -5413,13 +4857,6 @@ Note: You can only use this function with the element types listed below.
                 },
                 result="""returns true if the theelement is double-sided, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isDoubleSided""",
-                field="""doubleSided""",
-                is_static=False,
-            ),
             name='isElementDoubleSided',
         )
         ],
@@ -5462,13 +4899,6 @@ Note: You can only use this function with the element types listed below.
                 },
                 result="""returns true if the theelement is double-sided, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isDoubleSided""",
-                field="""doubleSided""",
-                is_static=False,
-            ),
             name='isElementDoubleSided',
         )
         ],
@@ -5513,13 +4943,6 @@ Note: You can only use this function with the element types listed below.
                 },
                 result="""*returns true if the element is frozen, false if it isnt or if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isFrozen""",
-                field="""frozen""",
-                is_static=False,
-            ),
             name='isElementFrozen',
         )
         ],
@@ -5561,13 +4984,6 @@ Note: You can only use this function with the element types listed below.
                     "theElement": """the element whose freeze status we want to check. """
                 },
                 result="""*returns true if the element is frozen, false if it isnt or if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isFrozen""",
-                field="""frozen""",
-                is_static=False,
             ),
             name='isElementFrozen',
         )
@@ -5613,13 +5029,6 @@ Note: You can only use this function with the element types listed below.
                 },
                 result="""returns true if the passed element is in water, false if it isnt, or if the element is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isInWater""",
-                field="""inWater""",
-                is_static=False,
-            ),
             name='isElementInWater',
         )
         ],
@@ -5661,13 +5070,6 @@ Note: You can only use this function with the element types listed below.
                     "theElement": """: The element to check. """
                 },
                 result="""returns true if the passed element is in water, false if it isnt, or if the element is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isInWater""",
-                field="""inWater""",
-                is_static=False,
             ),
             name='isElementInWater',
         )
@@ -5716,13 +5118,6 @@ Note: You can only use this function with the element types listed below.
                 },
                 result="""returns true if the passed element is local, false if not or if invalid parameters are passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isLocal""",
-                field="""localElement""",
-                is_static=False,
-            ),
             name='isElementLocal',
         )
         ],
@@ -5767,13 +5162,6 @@ Note: You can only use this function with the element types listed below.
                 },
                 result="""returns true if the element is low lod, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isLowLOD""",
-                field=None,
-                is_static=False,
-            ),
             name='isElementLowLOD',
         )
         ],
@@ -5815,13 +5203,6 @@ Note: You can only use this function with the element types listed below.
                     "theElement": """The element whose low LOD status we want to get. """
                 },
                 result="""returns true if the element is low lod, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isLowLOD""",
-                field=None,
-                is_static=False,
             ),
             name='isElementLowLOD',
         )
@@ -5871,13 +5252,6 @@ This function is particularly useful for detecting if dynamic objects are in des
                 },
                 result="""returns true if element is on screen, false if not. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isOnScreen""",
-                field="""onScreen""",
-                is_static=False,
-            ),
             name='isElementOnScreen',
         )
         ],
@@ -5924,13 +5298,6 @@ This function is particularly useful for detecting if dynamic objects are in des
                     "theElement": """: The element to check the streamability of. """
                 },
                 result="""returns true if the passed element is streamable like normal, false if this element must always be streamed in. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isStreamable""",
-                field="""streamable""",
-                is_static=False,
             ),
             name='isElementStreamable',
         )
@@ -5980,7 +5347,6 @@ DP2 can return true even if this element is not fully streamed in. This can happ
                 },
                 result="""returns true if the passed element is currently streamed in, false if it is virtualized. """,
             ),
-            oop=None,
             name='isElementStreamedIn',
         )
         ],
@@ -6027,13 +5393,6 @@ DP2 can return true even if this element is not fully streamed in. This can happ
                     "theElement": """: The element to check. """
                 },
                 result="""returns true if the passed element is synced by the local player, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isSyncer""",
-                field="""syncedByLocalPlayer""",
-                is_static=False,
             ),
             name='isElementSyncer',
         )
@@ -6090,13 +5449,6 @@ DP2 can return true even if this element is not fully streamed in. This can happ
                 },
                 result="""returns true if element is visible to the specified player, false if not or an invalid argument was passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isVisibleTo""",
-                field=None,
-                is_static=False,
-            ),
             name='isElementVisibleTo',
         )
         ],
@@ -6146,13 +5498,6 @@ DP2 can return true even if this element is not fully streamed in. This can happ
                     "theElement": """the element to check its frozen waiting for custom map objects to load status. It can be a vehicle, ped or player. """
                 },
                 result="""returns true if the specified element is frozen waiting for collisions of custom map objects to load. returns false if its not or if the specified element is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isWaitingForGroundToLoad""",
-                field="""waitingForGroundToLoad""",
-                is_static=False,
             ),
             name='isElementWaitingForGroundToLoad',
         )
@@ -6210,13 +5555,6 @@ Please note that this function doesnt verify whether element is in the same dime
                 },
                 result="""returns true if the element is within the colshape, false otherwise """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isWithinColShape""",
-                field=None,
-                is_static=False,
-            ),
             name='isElementWithinColShape',
         )
         ],
@@ -6270,13 +5608,6 @@ Please note that this function doesnt verify whether element is in the same dime
                     "theShape": """The colshape youre checking """
                 },
                 result="""returns true if the element is within the colshape, false otherwise """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isWithinColShape""",
-                field=None,
-                is_static=False,
             ),
             name='isElementWithinColShape',
         )
@@ -6333,13 +5664,6 @@ Please note that this function doesnt verify whether element is in the same dime
                 },
                 result="""returns true if the element is within the marker, false otherwise """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isWithinMarker""",
-                field=None,
-                is_static=False,
-            ),
             name='isElementWithinMarker',
         )
         ],
@@ -6392,13 +5716,6 @@ Please note that this function doesnt verify whether element is in the same dime
                     "theMarker": """The marker youre checking. """
                 },
                 result="""returns true if the element is within the marker, false otherwise """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""isWithinMarker""",
-                field=None,
-                is_static=False,
             ),
             name='isElementWithinMarker',
         )
@@ -6454,13 +5771,6 @@ Please note that this function doesnt verify whether element is in the same dime
                     "key": """The key string you wish to remove. """
                 },
                 result="""returns true if the data was removed succesfully, false if the given key does not exist in the element or the element is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""removeData""",
-                field=None,
-                is_static=False,
             ),
             name='removeElementData',
         )
@@ -6531,13 +5841,6 @@ Please note that this function doesnt verify whether element is in the same dime
                 },
                 result="""returns true if the player was unsubscribed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""removeDataSubscriber""",
-                field=None,
-                is_static=False,
-            ),
             name='removeElementDataSubscriber',
         )
         ],
@@ -6597,13 +5900,6 @@ Please note that this function doesnt verify whether element is in the same dime
                 },
                 result="""returns true or false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setAlpha""",
-                field="""alpha""",
-                is_static=False,
-            ),
             name='setElementAlpha',
         )
         ],
@@ -6657,13 +5953,6 @@ Please note that this function doesnt verify whether element is in the same dime
                     "Note": """Objects are fully transparent at 140. """
                 },
                 result="""returns true or false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setAlpha""",
-                field="""alpha""",
-                is_static=False,
             ),
             name='setElementAlpha',
         )
@@ -6741,13 +6030,6 @@ Please note that this function doesnt verify whether element is in the same dime
                     "rz": """velocity around the Z axis """
                 },
                 result="""returns true if it was succesful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setAngularVelocity""",
-                field="""angularVelocity""",
-                is_static=False,
             ),
             name='setElementAngularVelocity',
         )
@@ -6823,13 +6105,6 @@ Please note that this function doesnt verify whether element is in the same dime
                     "rz": """velocity around the Z axis """
                 },
                 result="""returns true if it was succesful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setAngularVelocity""",
-                field="""angularVelocity""",
-                is_static=False,
             ),
             name='setElementAngularVelocity',
         )
@@ -6940,13 +6215,6 @@ Please note that this function doesnt verify whether element is in the same dime
                     "zRotOffset": """The z rotation offset (default 0). """
                 },
                 result="""returns true if the attaching process was successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setAttachedOffsets""",
-                field=None,
-                is_static=False,
             ),
             name='setElementAttachedOffsets',
         )
@@ -7055,13 +6323,6 @@ Please note that this function doesnt verify whether element is in the same dime
                     "zRotOffset": """The z rotation offset (default 0). """
                 },
                 result="""returns true if the attaching process was successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setAttachedOffsets""",
-                field=None,
-                is_static=False,
             ),
             name='setElementAttachedOffsets',
         )
@@ -7133,7 +6394,6 @@ Please note that this function doesnt verify whether element is in the same dime
                 },
                 result="""returns true if the function was successful, false otherwise. """,
             ),
-            oop=None,
             name='setElementBoneMatrix',
         )
         ],
@@ -7226,7 +6486,6 @@ Please note that this function doesnt verify whether element is in the same dime
                 },
                 result="""returns true if the function was successful, false otherwise. """,
             ),
-            oop=None,
             name='setElementBonePosition',
         )
         ],
@@ -7320,7 +6579,6 @@ Please note that this function doesnt verify whether element is in the same dime
                 result="""returns true if the function was successful, false otherwise.
 note: updateelementrphanim must be called after this function to apply bone rotation. """,
             ),
-            oop=None,
             name='setElementBoneRotation',
         )
         ],
@@ -7376,13 +6634,6 @@ note: updateelementrphanim must be called after this function to apply bone rota
                 },
                 result="""returns true, if the propagation behaviour has been changed successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setCallPropagationEnabled""",
-                field=None,
-                is_static=False,
-            ),
             name='setElementCallPropagationEnabled',
         )
         ],
@@ -7435,13 +6686,6 @@ note: updateelementrphanim must be called after this function to apply bone rota
                     "enabled": """Whether propagation should be enabled or not """
                 },
                 result="""returns true, if the propagation behaviour has been changed successfully, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setCallPropagationEnabled""",
-                field=None,
-                is_static=False,
             ),
             name='setElementCallPropagationEnabled',
         )
@@ -7517,13 +6761,6 @@ Note: You can only use this function with the element types listed below.
                 },
                 result="""returns true if the collisions were set succesfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setCollidableWith""",
-                field=None,
-                is_static=False,
-            ),
             name='setElementCollidableWith',
         )
         ],
@@ -7579,13 +6816,6 @@ Note: You can only use this function with the element types listed below.
                 },
                 result="""returns true if the collisions were set succesfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setCollisionsEnabled""",
-                field="""collisions""",
-                is_static=False,
-            ),
             name='setElementCollisionsEnabled',
         )
         ],
@@ -7638,13 +6868,6 @@ Note: You can only use this function with the element types listed below.
                     "enabled": """A boolean to indicate whether collisions are enabled (true) or disabled (false) """
                 },
                 result="""returns true if the collisions were set succesfully, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setCollisionsEnabled""",
-                field="""collisions""",
-                is_static=False,
             ),
             name='setElementCollisionsEnabled',
         )
@@ -7729,13 +6952,6 @@ Note this mode only works when setting element data serverside. Setting data cli
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setData""",
-                field=None,
-                is_static=False,
-            ),
             name='setElementData',
         )
         ],
@@ -7814,13 +7030,6 @@ Note this mode only works when setting element data serverside. Setting data cli
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setData""",
-                field=None,
-                is_static=False,
-            ),
             name='setElementData',
         )
         ],
@@ -7877,13 +7086,6 @@ Note this mode only works when setting element data serverside. Setting data cli
                 result="""returns true if theelement and dimension are valid, false otherwise.
 also returns false if theelement is a player and its not alive. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setDimension""",
-                field="""dimension""",
-                is_static=False,
-            ),
             name='setElementDimension',
         )
         ],
@@ -7938,13 +7140,6 @@ also returns false if theelement is a player and its not alive. """,
                 result="""returns true if theelement and dimension are valid, false otherwise.
 also returns false if theelement is a player and its not alive. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setDimension""",
-                field="""dimension""",
-                is_static=False,
-            ),
             name='setElementDimension',
         )
         ],
@@ -8001,13 +7196,6 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 },
                 result="""returns true if theelement is valid, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setDoubleSided""",
-                field="""doubleSided""",
-                is_static=False,
-            ),
             name='setElementDoubleSided',
         )
         ],
@@ -8062,13 +7250,6 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 },
                 result="""returns true if theelement is valid, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setDoubleSided""",
-                field="""doubleSided""",
-                is_static=False,
-            ),
             name='setElementDoubleSided',
         )
         ],
@@ -8124,13 +7305,6 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 },
                 result="""returns true if the element was frozen, false if it wasnt or if invalid arguments are passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setFrozen""",
-                field="""frozen""",
-                is_static=False,
-            ),
             name='setElementFrozen',
         )
         ],
@@ -8184,13 +7358,6 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 },
                 result="""returns true if the element was frozen, false if it wasnt or if invalid arguments are passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setFrozen""",
-                field="""frozen""",
-                is_static=False,
-            ),
             name='setElementFrozen',
         )
         ],
@@ -8250,13 +7417,6 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 },
                 result="""returns true if the new health was set successfully, or false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setHealth""",
-                field="""health""",
-                is_static=False,
-            ),
             name='setElementHealth',
         )
         ],
@@ -8314,13 +7474,6 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 },
                 result="""returns true if the new health was set successfully, or false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setHealth""",
-                field="""health""",
-                is_static=False,
-            ),
             name='setElementHealth',
         )
         ],
@@ -8377,13 +7530,6 @@ You can only change the ID of an element clientside if that element has been cre
                 },
                 result="""this returns true if successful. it will return false if theelement is invalid, or does not exist, or if name is invalid, or is not a string. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setID""",
-                field="""id""",
-                is_static=False,
-            ),
             name='setElementID',
         )
         ],
@@ -8438,13 +7584,6 @@ You can only change the ID of an element clientside if that element has been cre
                 },
                 result="""this returns true if successful. it will return false if theelement is invalid, or does not exist, or if name is invalid, or is not a string. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setID""",
-                field="""id""",
-                is_static=False,
-            ),
             name='setElementID',
         )
         ],
@@ -8533,13 +7672,6 @@ You can only change the ID of an element clientside if that element has been cre
                 },
                 result="""returns true if theelement and interior are valid arguments, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setInterior""",
-                field="""interior""",
-                is_static=False,
-            ),
             name='setElementInterior',
         )
         ],
@@ -8626,13 +7758,6 @@ You can only change the ID of an element clientside if that element has been cre
                 },
                 result="""returns true if theelement and interior are valid arguments, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setInterior""",
-                field="""interior""",
-                is_static=False,
-            ),
             name='setElementInterior',
         )
         ],
@@ -8688,13 +7813,6 @@ You can only change the ID of an element clientside if that element has been cre
                 },
                 result="""returns true if the matrix was set succesfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setMatrix""",
-                field="""matrix""",
-                is_static=False,
-            ),
             name='setElementMatrix',
         )
         ],
@@ -8748,13 +7866,6 @@ You can only change the ID of an element clientside if that element has been cre
                 },
                 result="""returns true if the matrix was set succesfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setMatrix""",
-                field="""matrix""",
-                is_static=False,
-            ),
             name='setElementMatrix',
         )
         ],
@@ -8813,13 +7924,6 @@ You can only change the ID of an element clientside if that element has been cre
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setModel""",
-                field="""model""",
-                is_static=False,
-            ),
             name='setElementModel',
         )
         ],
@@ -8876,13 +7980,6 @@ You can only change the ID of an element clientside if that element has been cre
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setModel""",
-                field="""model""",
-                is_static=False,
-            ),
             name='setElementModel',
         )
         ],
@@ -8938,13 +8035,6 @@ You can only change the ID of an element clientside if that element has been cre
                 },
                 result="""returns true if both elements are valid, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setParent""",
-                field="""parent""",
-                is_static=False,
-            ),
             name='setElementParent',
         )
         ],
@@ -8997,13 +8087,6 @@ You can only change the ID of an element clientside if that element has been cre
                     "parent": """The element you wish to be the parent of theElement. """
                 },
                 result="""returns true if both elements are valid, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setParent""",
-                field="""parent""",
-                is_static=False,
             ),
             name='setElementParent',
         )
@@ -9092,13 +8175,6 @@ You can only change the ID of an element clientside if that element has been cre
                     "warp": """teleports players, resetting any animations they were doing. Setting this to false preserves the current animation. """
                 },
                 result="""returns true if the function was successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setPosition""",
-                field="""position""",
-                is_static=False,
             ),
             name='setElementPosition',
         )
@@ -9185,13 +8261,6 @@ You can only change the ID of an element clientside if that element has been cre
                     "warp": """teleports players, resetting any animations they were doing. Setting this to false preserves the current animation. """
                 },
                 result="""returns true if the function was successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setPosition""",
-                field="""position""",
-                is_static=False,
             ),
             name='setElementPosition',
         )
@@ -9296,13 +8365,6 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                     "conformPedRotation": """Relevant only for peds and will be ignored for other element types. A bool which should be set to true to ensure the ped rotation is correctly set in all circumstances. Failing to set this argument may result in the ped rotation being inverted whilst it is in the air and other inconsistencies. The default value of false is for backward compatibility with scripts which may depend upon the incorrect behaviour. """
                 },
                 result="""returns true if the element rotation was successfully set and false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setRotation""",
-                field="""rotation""",
-                is_static=False,
             ),
             name='setElementRotation',
         )
@@ -9405,13 +8467,6 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                     "conformPedRotation": """Relevant only for peds and will be ignored for other element types. A bool which should be set to true to ensure the ped rotation is correctly set in all circumstances. Failing to set this argument may result in the ped rotation being inverted whilst it is in the air and other inconsistencies. The default value of false is for backward compatibility with scripts which may depend upon the incorrect behaviour. """
                 },
                 result="""returns true if the element rotation was successfully set and false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setRotation""",
-                field="""rotation""",
-                is_static=False,
             ),
             name='setElementRotation',
         )
@@ -9473,13 +8528,6 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                 },
                 result="""returns whether the element could be set to be streamable. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setStreamable""",
-                field="""streamable""",
-                is_static=False,
-            ),
             name='setElementStreamable',
         )
         ],
@@ -9538,13 +8586,6 @@ It should also be noted that certain network changes to an element do not requir
                     "thePlayer": """The player who should be the new syncer of the element. If set to false, this element will not have a syncer. If set to true, MTA will pick automatically the nearest or most relevant player to that element. """
                 },
                 result="""returns true if the syncer was changed successfully, false if the element passed was not a ped or vehicle. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setSyncer""",
-                field="""syncer""",
-                is_static=False,
             ),
             name='setElementSyncer',
         )
@@ -9632,13 +8673,6 @@ Objects and projectiles velocity can only be set clientside.}} """,
                 },
                 result="""returns true if the speed was set successfully, false if a bad element was specified or other bad arguments. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setVelocity""",
-                field="""velocity""",
-                is_static=False,
-            ),
             name='setElementVelocity',
         )
         ],
@@ -9720,13 +8754,6 @@ Objects and projectiles velocity can only be set clientside.}} """,
                 },
                 result="""returns true if the speed was set successfully, false if a bad element was specified or other bad arguments. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setVelocity""",
-                field="""velocity""",
-                is_static=False,
-            ),
             name='setElementVelocity',
         )
         ],
@@ -9797,13 +8824,6 @@ If you want to clear all visibility settings of an object, try clearElementVisib
                 },
                 result="""returns true if the elements visibility was changed successfully, false otherwise, for example if you are trying to change the visibility of a vehicle, player or object. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setVisibleTo""",
-                field=None,
-                is_static=False,
-            ),
             name='setElementVisibleTo',
         )
         ],
@@ -9862,13 +8882,6 @@ If you want to clear all visibility settings of an object, try clearElementVisib
                 },
                 result="""returns true if the assignment was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setLowLOD""",
-                field="""lowLOD""",
-                is_static=False,
-            ),
             name='setLowLODElement',
         )
         ],
@@ -9922,13 +8935,6 @@ If you want to clear all visibility settings of an object, try clearElementVisib
                 },
                 result="""returns true if the assignment was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='element',
-                method_name="""setLowLOD""",
-                field="""lowLOD""",
-                is_static=False,
-            ),
             name='setLowLODElement',
         )
         ],
@@ -9978,7 +8984,6 @@ This function must be called after setElementBoneRotation for changes to take ef
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=None,
             name='updateElementRpHAnim',
         )
         ],

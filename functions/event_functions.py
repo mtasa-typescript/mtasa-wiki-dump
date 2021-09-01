@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -61,7 +60,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the event was added successfully, false if the event was already added. """,
             ),
-            oop=None,
             name='addEvent',
         )
         ],
@@ -115,7 +113,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the event was added successfully, false if the event was already added. """,
             ),
-            oop=None,
             name='addEvent',
         )
         ],
@@ -216,7 +213,6 @@ The order in which event handlers are triggered is undefined, you should not rel
                 },
                 result="""returns true if the event handler was attached successfully. returns false if the specified event could not be found or any parameters were invalid. """,
             ),
-            oop=None,
             name='addEventHandler',
         )
         ],
@@ -315,7 +311,6 @@ The order in which event handlers are triggered is undefined, you should not rel
                 },
                 result="""returns true if the event handler was attached successfully. returns false if the specified event could not be found or any parameters were invalid. """,
             ),
-            oop=None,
             name='addEventHandler',
         )
         ],
@@ -373,7 +368,6 @@ If you implement your own custom events and want to handle them being cancelled,
                 },
                 result=""" """,
             ),
-            oop=None,
             name='cancelEvent',
         )
         ],
@@ -410,7 +404,6 @@ If you implement your own custom events and want to handle them being cancelled,
                 },
                 result=""" """,
             ),
-            oop=None,
             name='cancelEvent',
         )
         ],
@@ -466,7 +459,6 @@ If you implement your own custom events and want to handle them being cancelled,
                 },
                 result=""" """,
             ),
-            oop=None,
             name='cancelLatentEvent',
         )
         ],
@@ -509,7 +501,6 @@ If you implement your own custom events and want to handle them being cancelled,
                 },
                 result=""" """,
             ),
-            oop=None,
             name='cancelLatentEvent',
         )
         ],
@@ -545,7 +536,6 @@ If you implement your own custom events and want to handle them being cancelled,
                 },
                 result="""returns the reason that was given with cancelevent """,
             ),
-            oop=None,
             name='getCancelReason',
         )
         ],
@@ -604,7 +594,6 @@ If you implement your own custom events and want to handle them being cancelled,
                 },
                 result="""returns table with attached functions, empty table otherwise. """,
             ),
-            oop=None,
             name='getEventHandlers',
         )
         ],
@@ -658,7 +647,6 @@ If you implement your own custom events and want to handle them being cancelled,
                 },
                 result="""returns table with attached functions, empty table otherwise. """,
             ),
-            oop=None,
             name='getEventHandlers',
         )
         ],
@@ -703,7 +691,6 @@ If you implement your own custom events and want to handle them being cancelled,
                 },
                 result=""" """,
             ),
-            oop=None,
             name='getLatentEventHandles',
         )
         ],
@@ -737,7 +724,6 @@ If you implement your own custom events and want to handle them being cancelled,
                 },
                 result=""" """,
             ),
-            oop=None,
             name='getLatentEventHandles',
         )
         ],
@@ -793,7 +779,6 @@ If you implement your own custom events and want to handle them being cancelled,
                 },
                 result=""" """,
             ),
-            oop=None,
             name='getLatentEventStatus',
         )
         ],
@@ -836,7 +821,6 @@ If you implement your own custom events and want to handle them being cancelled,
                 },
                 result=""" """,
             ),
-            oop=None,
             name='getLatentEventStatus',
         )
         ],
@@ -903,7 +887,6 @@ If you implement your own custom events and want to handle them being cancelled,
                 },
                 result="""returns true if the event handler was removed successfully. returns false if the specified event handler could not be found or invalid parameters were passed. """,
             ),
-            oop=None,
             name='removeEventHandler',
         )
         ],
@@ -968,7 +951,6 @@ If you implement your own custom events and want to handle them being cancelled,
                 },
                 result="""returns true if the event handler was removed successfully. returns false if the specified event handler could not be found or invalid parameters were passed. """,
             ),
-            oop=None,
             name='removeEventHandler',
         )
         ],
@@ -1046,13 +1028,6 @@ Keep in mind the bandwidth issues when using events - dont pass a large list of 
                 },
                 result="""returns true if the event trigger has been sent, false if invalid arguments were specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""triggerEvent""",
-                field=None,
-                is_static=False,
-            ),
             name='triggerClientEvent',
         )
         ],
@@ -1126,7 +1101,6 @@ You can use the value returned from this function to determine if the event was 
 * returns true if the event was triggered successfully, and was not cancelled using cancelevent.
 * returns false if the event was triggered successfully, and was cancelled using cancelevent. """,
             ),
-            oop=None,
             name='triggerEvent',
         )
         ],
@@ -1195,7 +1169,6 @@ You can use the value returned from this function to determine if the event was 
 * returns true if the event was triggered successfully, and was not cancelled using cancelevent.
 * returns false if the event was triggered successfully, and was cancelled using cancelevent. """,
             ),
-            oop=None,
             name='triggerEvent',
         )
         ],
@@ -1293,7 +1266,6 @@ and other network traffic is not blocked while the data is being transferred. ""
                 },
                 result="""returns true if the event trigger has been sent, false if invalid arguments were specified. """,
             ),
-            oop=None,
             name='triggerLatentClientEvent',
         )
         ],
@@ -1385,7 +1357,6 @@ and other network traffic is not blocked while the data is being transferred. ""
                 },
                 result="""returns true if the event trigger has been sent, false if invalid arguments were specified. """,
             ),
-            oop=None,
             name='triggerLatentServerEvent',
         )
         ],
@@ -1455,7 +1426,6 @@ Keep in mind the bandwidth issues when using events - dont pass a large list of 
                 },
                 result="""returns true if the event trigger has been sent, false if invalid arguments were specified or a client side element was a parameter. """,
             ),
-            oop=None,
             name='triggerServerEvent',
         )
         ],
@@ -1492,7 +1462,6 @@ Events can be cancelled using cancelEvent, this indicates that the resource whic
                 },
                 result="""returns true if the event was cancelled, false if it wasnt or doesnt exist. """,
             ),
-            oop=None,
             name='wasEventCancelled',
         )
         ],
@@ -1527,7 +1496,6 @@ Events can be cancelled using cancelEvent, this indicates that the resource whic
                 },
                 result="""returns true if the event was cancelled, false if it wasnt or doesnt exist. """,
             ),
-            oop=None,
             name='wasEventCancelled',
         )
         ],

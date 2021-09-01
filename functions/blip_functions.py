@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -160,7 +159,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='createBlip',
         )
         ],
@@ -303,7 +301,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='createBlip',
         )
         ],
@@ -438,7 +435,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='createBlipAttachedTo',
         )
         ],
@@ -561,7 +557,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='createBlipAttachedTo',
         )
         ],
@@ -618,13 +613,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns four integers in rgba format, with a maximum value of 255 for each. the values are, in order, red, green, blue, and alpha.  alpha decides the transparancy where 255 is opaque and 0 is fully transparent. false is returned if the blip is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""getColor""",
-                field=None,
-                is_static=False,
-            ),
             name='getBlipColor',
         )
         ],
@@ -679,13 +667,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns four integers in rgba format, with a maximum value of 255 for each. the values are, in order, red, green, blue, and alpha.  alpha decides the transparancy where 255 is opaque and 0 is fully transparent. false is returned if the blip is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""getColor""",
-                field=None,
-                is_static=False,
-            ),
             name='getBlipColor',
         )
         ],
@@ -730,13 +711,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns an int indicating which icon the blip has. valid values are listed on the radar blips page. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""getIcon""",
-                field="""icon""",
-                is_static=False,
-            ),
             name='getBlipIcon',
         )
         ],
@@ -779,13 +753,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns an int indicating which icon the blip has. valid values are listed on the radar blips page. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""getIcon""",
-                field="""icon""",
-                is_static=False,
-            ),
             name='getBlipIcon',
         )
         ],
@@ -830,13 +797,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the z ordering value of the blip if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""getOrdering""",
-                field="""ordering""",
-                is_static=False,
-            ),
             name='getBlipOrdering',
         )
         ],
@@ -879,13 +839,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the z ordering value of the blip if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""getOrdering""",
-                field="""ordering""",
-                is_static=False,
-            ),
             name='getBlipOrdering',
         )
         ],
@@ -930,13 +883,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns an int indicating the size of the blip. the default value is 2. the maximum value is 25. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""getSize""",
-                field="""size""",
-                is_static=False,
-            ),
             name='getBlipSize',
         )
         ],
@@ -978,13 +924,6 @@ DUMP_PARTIAL = [
                     "theBlip": """The blip you wish to get the size of. """
                 },
                 result="""returns an int indicating the size of the blip. the default value is 2. the maximum value is 25. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""getSize""",
-                field="""size""",
-                is_static=False,
             ),
             name='getBlipSize',
         )
@@ -1030,13 +969,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns one float with the blips visible distance, false if the blip is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""getVisibleDistance""",
-                field="""visibleDistance""",
-                is_static=False,
-            ),
             name='getBlipVisibleDistance',
         )
         ],
@@ -1078,13 +1010,6 @@ DUMP_PARTIAL = [
                     "theBlip": """The blip whose visible distance you wish to get. """
                 },
                 result="""returns one float with the blips visible distance, false if the blip is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""getVisibleDistance""",
-                field="""visibleDistance""",
-                is_static=False,
             ),
             name='getBlipVisibleDistance',
         )
@@ -1173,13 +1098,6 @@ DUMP_PARTIAL = [
                     "alpha": """The amount of alpha in the blips color (0 - 255).  Alpha decides transparancy where 255 is opaque and 0 is transparent. """
                 },
                 result="""returns true if the blips color was set successfully. returns false if the blip passed to the function is invalid, or any of the colors are out of the valid range. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""setColor""",
-                field=None,
-                is_static=False,
             ),
             name='setBlipColor',
         )
@@ -1266,13 +1184,6 @@ DUMP_PARTIAL = [
                     "alpha": """The amount of alpha in the blips color (0 - 255).  Alpha decides transparancy where 255 is opaque and 0 is transparent. """
                 },
                 result="""returns true if the blips color was set successfully. returns false if the blip passed to the function is invalid, or any of the colors are out of the valid range. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""setColor""",
-                field=None,
-                is_static=False,
             ),
             name='setBlipColor',
         )
@@ -1328,13 +1239,6 @@ DUMP_PARTIAL = [
                     "icon": """A number indicating the icon you wish to change it do. Valid values are listed on the Radar Blips page. """
                 },
                 result="""returns true if the icon was successfully set, false if the element passed was not a valid blip or the icon value was not a valid icon number. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""setIcon""",
-                field="""icon""",
-                is_static=False,
             ),
             name='setBlipIcon',
         )
@@ -1388,13 +1292,6 @@ DUMP_PARTIAL = [
                     "icon": """A number indicating the icon you wish to change it do. Valid values are listed on the Radar Blips page. """
                 },
                 result="""returns true if the icon was successfully set, false if the element passed was not a valid blip or the icon value was not a valid icon number. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""setIcon""",
-                field="""icon""",
-                is_static=False,
             ),
             name='setBlipIcon',
         )
@@ -1450,13 +1347,6 @@ DUMP_PARTIAL = [
                     "ordering": """the new Z ordering value. Blips with higher values will appear on top of blips with lower values. Possible range: -32767 to 32767. Default: 0. """
                 },
                 result="""returns true if the blip ordering was changed successfully, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""setOrdering""",
-                field="""ordering""",
-                is_static=False,
             ),
             name='setBlipOrdering',
         )
@@ -1510,13 +1400,6 @@ DUMP_PARTIAL = [
                     "ordering": """the new Z ordering value. Blips with higher values will appear on top of blips with lower values. Possible range: -32767 to 32767. Default: 0. """
                 },
                 result="""returns true if the blip ordering was changed successfully, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""setOrdering""",
-                field="""ordering""",
-                is_static=False,
             ),
             name='setBlipOrdering',
         )
@@ -1572,13 +1455,6 @@ DUMP_PARTIAL = [
                     "iconSize": """The size you wish the icon to be. 2 is the default value. 25 is the maximum value. Value gets clamped between 0 and 25. """
                 },
                 result="""returns an true if the blips size was set successfully. returns false if the element passed was not a blip or if the icon size passed was invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""setSize""",
-                field="""size""",
-                is_static=False,
             ),
             name='setBlipSize',
         )
@@ -1632,13 +1508,6 @@ DUMP_PARTIAL = [
                     "iconSize": """The size you wish the icon to be. 2 is the default value. 25 is the maximum value. Value gets clamped between 0 and 25. """
                 },
                 result="""returns an true if the blips size was set successfully. returns false if the element passed was not a blip or if the icon size passed was invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""setSize""",
-                field="""size""",
-                is_static=False,
             ),
             name='setBlipSize',
         )
@@ -1694,13 +1563,6 @@ DUMP_PARTIAL = [
                     "theDistance": """The distance you want the blip to be visible for. Value gets clamped between 0 and 65535. """
                 },
                 result="""returns true if successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""setVisibleDistance""",
-                field="""visibleDistance""",
-                is_static=False,
             ),
             name='setBlipVisibleDistance',
         )
@@ -1754,13 +1616,6 @@ DUMP_PARTIAL = [
                     "theDistance": """The distance you want the blip to be visible for. Value gets clamped between 0 and 65535. """
                 },
                 result="""returns true if successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='blip',
-                method_name="""setVisibleDistance""",
-                field="""visibleDistance""",
-                is_static=False,
             ),
             name='setBlipVisibleDistance',
         )

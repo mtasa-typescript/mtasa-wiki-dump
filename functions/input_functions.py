@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -87,7 +86,6 @@ This can be triggered from the players console or directly from the chat box by 
                 },
                 result=""" """,
             ),
-            oop=None,
             name='addCommandHandler',
         )
         ],
@@ -156,7 +154,6 @@ This can be triggered from the players console or directly from the chat box by 
                 },
                 result=""" """,
             ),
-            oop=None,
             name='addCommandHandler',
         )
         ],
@@ -251,7 +248,6 @@ This can be triggered from the players console or directly from the chat box by 
                 },
                 result=""" """,
             ),
-            oop=None,
             name='bindKey',
         )
         ],
@@ -332,7 +328,6 @@ This can be triggered from the players console or directly from the chat box by 
                 },
                 result=""" """,
             ),
-            oop=None,
             name='bindKey',
         )
         ],
@@ -399,7 +394,6 @@ This can be triggered from the players console or directly from the chat box by 
                 },
                 result=""" """,
             ),
-            oop=None,
             name='executeCommandHandler',
         )
         ],
@@ -453,7 +447,6 @@ This can be triggered from the players console or directly from the chat box by 
                 },
                 result=""" """,
             ),
-            oop=None,
             name='executeCommandHandler',
         )
         ],
@@ -513,7 +506,6 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
                 },
                 result="""returns a float between 0 and 1 indicating the amount the control is pressed. """,
             ),
-            oop=None,
             name='getAnalogControlState',
         )
         ],
@@ -561,7 +553,6 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
                 },
                 result="""if one or more keys are bound to the specified control or console command, a table is returned indexed by the names of the keys and containing key states as values. if no keys are bound or an invalid name was passed, returns false. """,
             ),
-            oop=None,
             name='getBoundKeys',
         )
         ],
@@ -606,7 +597,6 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
                 },
                 result="""returns a table containing all the commands of the given resource or a table with subtables containing the command and theresource pointer ( { command, theresource } ). see examples below if you dont understand it. """,
             ),
-            oop=None,
             name='getCommandHandlers',
         )
         ],
@@ -649,7 +639,6 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
                 },
                 result="""returns a table containing all the commands of the given resource or a table with subtables containing the command and theresource pointer ( { command, theresource } ). see examples below if you dont understand it. """,
             ),
-            oop=None,
             name='getCommandHandlers',
         )
         ],
@@ -711,7 +700,6 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
                 },
                 result="""returns a table of the commands bound on that key. """,
             ),
-            oop=None,
             name='getCommandsBoundToKey',
         )
         ],
@@ -788,7 +776,6 @@ Note: Not all control states are sent to the server at all times, as such their 
                 },
                 result="""returns the state of the control, false if the control doesnt exist or if the player is dead. """,
             ),
-            oop=None,
             name='getControlState',
         )
         ],
@@ -861,7 +848,6 @@ Note: Not all control states are sent to the server at all times, as such their 
                 },
                 result=""" """,
             ),
-            oop=None,
             name='getFunctionsBoundToKey',
         )
         ],
@@ -918,7 +904,6 @@ Note: Not all control states are sent to the server at all times, as such their 
                 },
                 result=""" """,
             ),
-            oop=None,
             name='getFunctionsBoundToKey',
         )
         ],
@@ -966,7 +951,6 @@ Note: Not all control states are sent to the server at all times, as such their 
                 },
                 result="""returns a string of first key binded to current command. """,
             ),
-            oop=None,
             name='getKeyBoundToCommand',
         )
         ],
@@ -1022,7 +1006,6 @@ Note: Not all control states are sent to the server at all times, as such their 
                 },
                 result="""returns a string of the first key the function was bound to. """,
             ),
-            oop=None,
             name='getKeyBoundToFunction',
         )
         ],
@@ -1065,7 +1048,6 @@ Note: Not all control states are sent to the server at all times, as such their 
                 },
                 result="""returns a string of the first key the function was bound to. """,
             ),
-            oop=None,
             name='getKeyBoundToFunction',
         )
         ],
@@ -1114,7 +1096,6 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 },
                 result="""returns true if the specified key is pressed, false if it isnt or if an invalid key name is passed. """,
             ),
-            oop=None,
             name='getKeyState',
         )
         ],
@@ -1170,7 +1151,6 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 },
                 result=""" """,
             ),
-            oop=None,
             name='isControlEnabled',
         )
         ],
@@ -1213,7 +1193,6 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 },
                 result=""" """,
             ),
-            oop=None,
             name='isControlEnabled',
         )
         ],
@@ -1293,7 +1272,6 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 },
                 result="""returns true if the key is bound, false otherwise. """,
             ),
-            oop=None,
             name='isKeyBound',
         )
         ],
@@ -1352,7 +1330,6 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 },
                 result="""returns true if the command handler was removed successfully, false if the command doesnt exist. """,
             ),
-            oop=None,
             name='removeCommandHandler',
         )
         ],
@@ -1406,7 +1383,6 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 },
                 result="""returns true if the command handler was removed successfully, false if the command doesnt exist. """,
             ),
-            oop=None,
             name='removeCommandHandler',
         )
         ],
@@ -1473,7 +1449,6 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 },
                 result="""returns true if the control state was successfully set, false otherwise. """,
             ),
-            oop=None,
             name='setControlState',
         )
         ],
@@ -1554,7 +1529,6 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 },
                 result=""" """,
             ),
-            oop=None,
             name='toggleAllControls',
         )
         ],
@@ -1619,7 +1593,6 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 },
                 result=""" """,
             ),
-            oop=None,
             name='toggleAllControls',
         )
         ],
@@ -1686,7 +1659,6 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 },
                 result=""" """,
             ),
-            oop=None,
             name='toggleControl',
         )
         ],
@@ -1740,7 +1712,6 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 },
                 result=""" """,
             ),
-            oop=None,
             name='toggleControl',
         )
         ],
@@ -1823,7 +1794,6 @@ Note: If you do not specify ''handler'', any instances of ''key'' being bound wi
                 },
                 result="""returns true if the key was unbound, false if it was not previously bound or invalid arguments were passed to the function. """,
             ),
-            oop=None,
             name='unbindKey',
         )
         ],
@@ -1893,7 +1863,6 @@ Note: If you do not specify ''handler'', any instances of ''key'' being bound wi
                 },
                 result="""returns true if the key was unbound, false if it was not previously bound or invalid arguments were passed to the function. """,
             ),
-            oop=None,
             name='unbindKey',
         )
         ],

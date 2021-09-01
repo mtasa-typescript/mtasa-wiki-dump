@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -41,7 +40,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='textCreateDisplay',
         )
         ],
@@ -210,7 +208,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a textitem object. """,
             ),
-            oop=None,
             name='textCreateTextItem',
         )
         ],
@@ -258,7 +255,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='textDestroyDisplay',
         )
         ],
@@ -306,7 +302,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='textDestroyTextItem',
         )
         ],
@@ -365,7 +360,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='textDisplayAddObserver',
         )
         ],
@@ -424,7 +418,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='textDisplayAddText',
         )
         ],
@@ -472,7 +465,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a table of players that are observers of the display or false if invalid textdisplay is passed. """,
             ),
-            oop=None,
             name='textDisplayGetObservers',
         )
         ],
@@ -531,7 +523,6 @@ DUMP_PARTIAL = [
                 },
                 result="""return true if textdisplay is showing, or false if not. """,
             ),
-            oop=None,
             name='textDisplayIsObserver',
         )
         ],
@@ -590,7 +581,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='textDisplayRemoveObserver',
         )
         ],
@@ -649,7 +639,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='textDisplayRemoveText',
         )
         ],
@@ -709,7 +698,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns four integers in rgba format, with a maximum value of 255 for each. the values are, in order, red, green, blue, and alpha. alpha decides transparency where 255 is opaque and 0 is transparent. false is returned if the text item is invalid. """,
             ),
-            oop=None,
             name='textItemGetColor',
         )
         ],
@@ -761,7 +749,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns two floats of the x and y position on the screen, where the maximum value is 1.0. """,
             ),
-            oop=None,
             name='textItemGetPosition',
         )
         ],
@@ -809,7 +796,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a integer of the priority of a text item, 0 = low, 1 = medium, 2 = high. """,
             ),
-            oop=None,
             name='textItemGetPriority',
         )
         ],
@@ -857,7 +843,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a floating point of the scale of the text. 1.0 is around 12pt. """,
             ),
-            oop=None,
             name='textItemGetScale',
         )
         ],
@@ -905,7 +890,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string containing the text if the function was successful, false otherwise. """,
             ),
-            oop=None,
             name='textItemGetText',
         )
         ],
@@ -997,7 +981,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the color was successfully set, false otherwise. """,
             ),
-            oop=None,
             name='textItemSetColor',
         )
         ],
@@ -1067,7 +1050,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the position was successfully set, false otherwise. """,
             ),
-            oop=None,
             name='textItemSetPosition',
         )
         ],
@@ -1126,7 +1108,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='textItemSetPriority',
         )
         ],
@@ -1185,7 +1166,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the scale was successfully set, false otherwise. """,
             ),
-            oop=None,
             name='textItemSetScale',
         )
         ],
@@ -1244,7 +1224,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='textItemSetText',
         )
         ],

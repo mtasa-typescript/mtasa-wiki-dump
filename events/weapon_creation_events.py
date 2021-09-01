@@ -9,7 +9,12 @@ from to_python.core.types import FunctionType, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[], client=[EventData(
+    CompoundEventData(
+        server=[
+            
+        ],
+        client=[
+            EventData(
             name='onClientWeaponFire',
             docs=FunctionDoc(
                 description="""This event triggers when a Element/Weapon|custom weapon fires a shot. """,
@@ -132,5 +137,7 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )])
+        )
+        ],
+    )
 ]

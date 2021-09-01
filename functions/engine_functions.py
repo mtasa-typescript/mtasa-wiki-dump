@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -91,13 +90,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the shader was successfully applied, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='shader',
-                method_name="""applyToWorldTexture""",
-                field=None,
-                is_static=False,
-            ),
             name='engineApplyShaderToWorldTexture',
         )
         ],
@@ -145,7 +137,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the model was successfully freed, false otherwise. """,
             ),
-            oop=None,
             name='engineFreeModel',
         )
         ],
@@ -192,13 +183,6 @@ DUMP_PARTIAL = [
                     "modelName": """The model name of the object """
                 },
                 result="""returns an int with the id of the object model, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Engine',
-                method_name="""getModelIDFromName""",
-                field=None,
-                is_static=True,
             ),
             name='engineGetModelIDFromName',
         )
@@ -247,13 +231,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a float representing the lod distance of the model, or false if the model argument is incorrect. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Engine',
-                method_name="""getModelLODDistance""",
-                field=None,
-                is_static=True,
-            ),
             name='engineGetModelLODDistance',
         )
         ],
@@ -300,13 +277,6 @@ DUMP_PARTIAL = [
                     "modelID": """The model ID of the object """
                 },
                 result="""returns a string with the name of the object model, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Engine',
-                method_name="""getModelNameFromID""",
-                field=None,
-                is_static=True,
             ),
             name='engineGetModelNameFromID',
         )
@@ -355,7 +325,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns id of physical properties group that requested model uses, in range of 0-160, if the object doesnt have a group assigned, -1 is returned. if passed arguments were wrong, error is triggered. """,
             ),
-            oop=None,
             name='engineGetModelPhysicalPropertiesGroup',
         )
         ],
@@ -402,13 +371,6 @@ DUMP_PARTIAL = [
                     "modelId": """You can either use the model id or the model name. """
                 },
                 result="""returns a table if this function succeeds, false if it fails for some reason. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Engine',
-                method_name="""getModelTextureNames""",
-                field=None,
-                is_static=True,
             ),
             name='engineGetModelTextureNames',
         )
@@ -468,7 +430,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a table of texture elements texturename, texture, false otherwise. """,
             ),
-            oop=None,
             name='engineGetModelTextures',
         )
         ],
@@ -520,7 +481,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns timeon, timeoff """,
             ),
-            oop=None,
             name='engineGetModelVisibleTime',
         )
         ],
@@ -579,7 +539,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the value contained in given property if everything went well, error is raised otherwise. """,
             ),
-            oop=None,
             name='engineGetObjectGroupPhysicalProperty',
         )
         ],
@@ -638,7 +597,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the current property value. see the table below for possible values. """,
             ),
-            oop=None,
             name='engineGetSurfaceProperties',
         )
         ],
@@ -696,13 +654,6 @@ DUMP_PARTIAL = [
                     "modelId": """Only include textures that are used by the model id (or model name) """
                 },
                 result="""returns a table of texture names. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Engine',
-                method_name="""getVisibleTextureNames""",
-                field=None,
-                is_static=True,
             ),
             name='engineGetVisibleTextureNames',
         )
@@ -764,13 +715,6 @@ See here for Optimize_Custom_TXD|tips on reducing the size of TXD files.
                 },
                 result="""returns true if the function executed succesfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='TXD|txd',
-                method_name="""import""",
-                field=None,
-                is_static=False,
-            ),
             name='engineImportTXD',
         )
         ],
@@ -827,13 +771,6 @@ This is a client side function. Be sure to transfer your COL file by including i
                     "col_file / raw_data": """The filepath to the COL file you want to load or whole data buffer of the COL file. """
                 },
                 result="""returns a col if the file was loaded, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='COL|EngineCOL',
-                method_name=None,
-                field=None,
-                is_static=True,
             ),
             name='engineLoadCOL',
         )
@@ -892,13 +829,6 @@ The returned DFF element is an element in the element tree, just like vehicles a
                     "dff_file / raw_data": """The filepath to the DFF file you want to load or whole data buffer of the DFF file. """
                 },
                 result="""returns a dff element if the dff file loaded, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='DFF|EngineDFF',
-                method_name=None,
-                field=None,
-                is_static=True,
             ),
             name='engineLoadDFF',
         )
@@ -967,7 +897,6 @@ If you wish to replace a GTA internal animation with a custom one, you can use E
                 },
                 result="""returns an ifp element if the ifp file loaded, false otherwise. """,
             ),
-            oop=None,
             name='engineLoadIFP',
         )
         ],
@@ -1034,13 +963,6 @@ This is a client side function. Be sure to transfer your TXD file by including i
                     "filteringEnabled": """Whether to enable texture filtering. """
                 },
                 result="""returns a txd if the file was loaded, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='TXD|EngineTXD',
-                method_name=None,
-                field=None,
-                is_static=True,
             ),
             name='engineLoadTXD',
         )
@@ -1110,13 +1032,6 @@ This is a client side function. Be sure to transfer your TXD file by including i
                     "targetElement": """The element to remove the shader from. It should be the same element as used with engineApplyShaderToWorldTexture when the shader was initially applied. """
                 },
                 result="""returns true if the shader was successfully removed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='shader',
-                method_name="""removeFromWorldTexture""",
-                field=None,
-                is_static=False,
             ),
             name='engineRemoveShaderFromWorldTexture',
         )
@@ -1211,7 +1126,6 @@ It should be noted that partial animations are not supported, you can still repl
                 },
                 result="""returns true on success, false in case of failure. """,
             ),
-            oop=None,
             name='engineReplaceAnimation',
         )
         ],
@@ -1269,13 +1183,6 @@ It should be noted that partial animations are not supported, you can still repl
                     "modelID": """The model ID whose collision file you want to replace """
                 },
                 result="""returns true if the collision was successfully replaced, false or nil if the collision could not be replaced for a reason. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='COL|col',
-                method_name="""replace""",
-                field=None,
-                is_static=False,
             ),
             name='engineReplaceCOL',
         )
@@ -1348,13 +1255,6 @@ To replace weapon models you must use their object IDs, not weapon IDs. There is
                 },
                 result="""returns true if the model was successfully replaced, false if it failed for some reason, ie. the dff or the model id is not valid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='DFF|dff',
-                method_name="""replace""",
-                field=None,
-                is_static=False,
-            ),
             name='engineReplaceModel',
         )
         ],
@@ -1413,7 +1313,6 @@ To replace weapon models you must use their object IDs, not weapon IDs. There is
                 },
                 result="""do not rely on the model numbers returned being consistent across multiple clients or multiple runs of resources. there is no guarantee for the order of the numbers or that the same numbers will always correspond to the same element type. any patterns are coincidental """,
             ),
-            oop=None,
             name='engineRequestModel',
         )
         ],
@@ -1460,13 +1359,6 @@ To replace weapon models you must use their object IDs, not weapon IDs. There is
                     "model": """The model / object ID number you want to reset the LOD distance of. """
                 },
                 result="""returns true if the lod distance was reset to default, or false if the model argument is incorrect, or the lod distance hasnt been changed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Engine',
-                method_name="""resetModelLODDistance""",
-                field=None,
-                is_static=True,
             ),
             name='engineResetModelLODDistance',
         )
@@ -1515,7 +1407,6 @@ To replace weapon models you must use their object IDs, not weapon IDs. There is
                 },
                 result="""returns true if the function executed succesfully, false otherwise. """,
             ),
-            oop=None,
             name='engineResetSurfaceProperties',
         )
         ],
@@ -1588,7 +1479,6 @@ If 3rd parameter (animation name) is provided, then only that specific animation
                 },
                 result="""returns true on success, false in case of failure. """,
             ),
-            oop=None,
             name='engineRestoreAnimation',
         )
         ],
@@ -1635,13 +1525,6 @@ If 3rd parameter (animation name) is provided, then only that specific animation
                     "modelID": """The ID of the model to restore the model of """
                 },
                 result="""returns true if this function succeeds, false or nil if it fails for some reason. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Engine',
-                method_name="""restoreCOL""",
-                field=None,
-                is_static=True,
             ),
             name='engineRestoreCOL',
         )
@@ -1690,13 +1573,6 @@ If 3rd parameter (animation name) is provided, then only that specific animation
                 },
                 result="""returns true if the model was successfully restored, false or nil if it failed for some reason. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Engine',
-                method_name="""restoreModel""",
-                field=None,
-                is_static=True,
-            ),
             name='engineRestoreModel',
         )
         ],
@@ -1744,7 +1620,6 @@ If 3rd parameter (animation name) is provided, then only that specific animation
                 },
                 result="""returns true if there were no issues, if passed arguments were invalid an error is raised. """,
             ),
-            oop=None,
             name='engineRestoreModelPhysicalPropertiesGroup',
         )
         ],
@@ -1803,7 +1678,6 @@ If 3rd parameter (animation name) is provided, then only that specific animation
                 },
                 result="""returns true if everything went well, error is raised otherwise. """,
             ),
-            oop=None,
             name='engineRestoreObjectGroupPhysicalProperties',
         )
         ],
@@ -1842,7 +1716,6 @@ If 3rd parameter (animation name) is provided, then only that specific animation
                 },
                 result="""returns true if the world was restreamed successfully, false otherwise. """,
             ),
-            oop=None,
             name='engineRestreamWorld',
         )
         ],
@@ -1900,13 +1773,6 @@ If 3rd parameter (animation name) is provided, then only that specific animation
                     "force": """If set to true, ignores the clients preferences. """
                 },
                 result="""returns true if the function executed successfully, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Engine',
-                method_name="""setAsynchronousLoading""",
-                field=None,
-                is_static=True,
             ),
             name='engineSetAsynchronousLoading',
         )
@@ -1976,13 +1842,6 @@ For low LOD elements, engineSetModelLODDistance still has a limit of 300 units, 
                 },
                 result="""returns true if the function executed succesfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Engine',
-                method_name="""setModelLODDistance""",
-                field=None,
-                is_static=True,
-            ),
             name='engineSetModelLODDistance',
         )
         ],
@@ -2041,7 +1900,6 @@ For low LOD elements, engineSetModelLODDistance still has a limit of 300 units, 
                 },
                 result="""returns true if there were no issues with group change, otherwise an error is raised """,
             ),
-            oop=None,
             name='engineSetModelPhysicalPropertiesGroup',
         )
         ],
@@ -2111,7 +1969,6 @@ For low LOD elements, engineSetModelLODDistance still has a limit of 300 units, 
                 },
                 result="""returns true if the change was successful, false otherwise. """,
             ),
-            oop=None,
             name='engineSetModelVisibleTime',
         )
         ],
@@ -2181,7 +2038,6 @@ For low LOD elements, engineSetModelLODDistance still has a limit of 300 units, 
                 },
                 result="""returns true if everything went well, error is raised otherwise. """,
             ),
-            oop=None,
             name='engineSetObjectGroupPhysicalProperty',
         )
         ],
@@ -2251,7 +2107,6 @@ For low LOD elements, engineSetModelLODDistance still has a limit of 300 units, 
                 },
                 result="""returns true if the function executed succesfully, false otherwise. """,
             ),
-            oop=None,
             name='engineSetSurfaceProperties',
         )
         ],

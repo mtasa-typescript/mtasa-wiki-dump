@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -53,13 +52,6 @@ DUMP_PARTIAL = [
                 },
                 result="""* true if the object was successfully broken.
 * false if the object is not breakable, or a wrong object was given. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='object',
-                method_name="""break""",
-                field=None,
-                is_static=False,
             ),
             name='breakObject',
         )
@@ -182,13 +174,6 @@ DUMP_PARTIAL = [
                 },
                 result="""* returns the object element if the creation was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Object',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createObject',
         )
         ],
@@ -308,13 +293,6 @@ DUMP_PARTIAL = [
                 },
                 result="""* returns the object element if the creation was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Object',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createObject',
         )
         ],
@@ -363,13 +341,6 @@ DUMP_PARTIAL = [
                 result="""* a float representing the mass of the object.
 * false if invalid arguments were passed.
 * -1 if object was never streamed in. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='object',
-                method_name="""getMass""",
-                field="""mass""",
-                is_static=False,
             ),
             name='getObjectMass',
         )
@@ -433,13 +404,6 @@ DUMP_PARTIAL = [
                 result="""on success: table for all, 3 float|floats for center_of_mass or float for other properties
 on failure: false """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='object',
-                method_name="""getProperty""",
-                field=None,
-                is_static=False,
-            ),
             name='getObjectProperty',
         )
         ],
@@ -492,13 +456,6 @@ on failure: false """,
                 },
                 result="""* three float values indicating the scale of the object on the x, y, and z axis if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Object',
-                method_name="""getScale""",
-                field="""scale""",
-                is_static=False,
-            ),
             name='getObjectScale',
         )
         ],
@@ -548,13 +505,6 @@ on failure: false """,
                     "theObject": """: the object you wish to return the scale of. """
                 },
                 result="""* three float values indicating the scale of the object on the x, y, and z axis if successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Object',
-                method_name="""getScale""",
-                field="""scale""",
-                is_static=False,
             ),
             name='getObjectScale',
         )
@@ -612,13 +562,6 @@ on failure: false """,
                 result="""* true if the object is breakable.
 * false if the object is not breakable. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='object',
-                method_name="""isBreakable""",
-                field="""breakable""",
-                is_static=False,
-            ),
             name='isObjectBreakable',
         )
         ],
@@ -666,13 +609,6 @@ on failure: false """,
                 },
                 result="""* true if the object is moving.
 * false if the object is not moving. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='object',
-                method_name="""isMoving""",
-                field="""moving""",
-                is_static=False,
             ),
             name='isObjectMoving',
         )
@@ -840,13 +776,6 @@ on failure: false """,
                 result="""* true if the function moved the object succesfully.
 * false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='object',
-                method_name="""move""",
-                field=None,
-                is_static=False,
-            ),
             name='moveObject',
         )
         ],
@@ -1011,13 +940,6 @@ on failure: false """,
                 result="""* true if the function moved the object succesfully.
 * false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='object',
-                method_name="""move""",
-                field=None,
-                is_static=False,
-            ),
             name='moveObject',
         )
         ],
@@ -1065,13 +987,6 @@ on failure: false """,
                 },
                 result="""* true if the object was sucessfully respawned.
 * false if the object is not breakable, or a wrong object was given. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='object',
-                method_name="""respawn""",
-                field=None,
-                is_static=False,
             ),
             name='respawnObject',
         )
@@ -1132,13 +1047,6 @@ on failure: false """,
                 result="""* true if the object is now breakable.
 * false if it cant or if invalid arguments are passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='object',
-                method_name="""setBreakable""",
-                field="""breakable""",
-                is_static=False,
-            ),
             name='setObjectBreakable',
         )
         ],
@@ -1197,13 +1105,6 @@ on failure: false """,
                 },
                 result="""* true if the new mass value has been.
 * false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='object',
-                method_name="""setMass""",
-                field="""mass""",
-                is_static=False,
             ),
             name='setObjectMass',
         )
@@ -1273,13 +1174,6 @@ on failure: false """,
                     "value": """: the new value for the property. """
                 },
                 result="""returns true if the property was set successfully, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='object',
-                method_name="""setProperty""",
-                field=None,
-                is_static=False,
             ),
             name='setObjectProperty',
         )
@@ -1359,13 +1253,6 @@ on failure: false """,
                 result="""* true if the scale was set properly.
 * false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='object',
-                method_name="""setScale""",
-                field="""scale""",
-                is_static=False,
-            ),
             name='setObjectScale',
         )
         ],
@@ -1442,13 +1329,6 @@ on failure: false """,
                 result="""* true if the scale was set properly.
 * false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='object',
-                method_name="""setScale""",
-                field="""scale""",
-                is_static=False,
-            ),
             name='setObjectScale',
         )
         ],
@@ -1494,13 +1374,6 @@ on failure: false """,
                 result="""* true if successful.
 * false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='object',
-                method_name="""stop""",
-                field=None,
-                is_static=False,
-            ),
             name='stopObject',
         )
         ],
@@ -1543,13 +1416,6 @@ on failure: false """,
                 },
                 result="""* true if successful.
 * false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='object',
-                method_name="""stop""",
-                field=None,
-                is_static=False,
             ),
             name='stopObject',
         )
@@ -1609,13 +1475,6 @@ on failure: false """,
                 },
                 result="""* true when the it was changed successfully.
 * false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='object',
-                method_name="""toggleRespawn""",
-                field=None,
-                is_static=False,
             ),
             name='toggleObjectRespawn',
         )

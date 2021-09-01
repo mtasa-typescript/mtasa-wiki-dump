@@ -9,7 +9,12 @@ from to_python.core.types import FunctionType, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[], client=[EventData(
+    CompoundEventData(
+        server=[
+            
+        ],
+        client=[
+            EventData(
             name='onClientProjectileCreation',
             docs=FunctionDoc(
                 description="""This event is triggered when a projectile is created. """,
@@ -33,5 +38,7 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )])
+        )
+        ],
+    )
 ]

@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -50,13 +49,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns an integer containing the number of players in the team, false if it could not be retrieved. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='team',
-                method_name="""countPlayers""",
-                field="""playerCount""",
-                is_static=False,
-            ),
             name='countPlayersInTeam',
         )
         ],
@@ -98,13 +90,6 @@ DUMP_PARTIAL = [
                     "theTeam": """The team you wish to retrieve the player count of. """
                 },
                 result="""returns an integer containing the number of players in the team, false if it could not be retrieved. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='team',
-                method_name="""countPlayers""",
-                field="""playerCount""",
-                is_static=False,
             ),
             name='countPlayersInTeam',
         )
@@ -183,13 +168,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a team element if it was successfully created, false if invalid arguments are passed or a team with that name already exists. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Team',
-                method_name="""create""",
-                field=None,
-                is_static=True,
-            ),
             name='createTeam',
         )
         ],
@@ -237,13 +215,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a table of all the players in the team, or an empty one if there are none else false if invalid arguments are passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='team',
-                method_name="""getPlayers""",
-                field="""players""",
-                is_static=False,
-            ),
             name='getPlayersInTeam',
         )
         ],
@@ -286,13 +257,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a table of all the players in the team, or an empty one if there are none else false if invalid arguments are passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='team',
-                method_name="""getPlayers""",
-                field="""players""",
-                is_static=False,
-            ),
             name='getPlayersInTeam',
         )
         ],
@@ -337,13 +301,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a team element representing the team the player is on, false if the player is not part of a team. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getTeam""",
-                field="""team""",
-                is_static=False,
-            ),
             name='getPlayerTeam',
         )
         ],
@@ -386,13 +343,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a team element representing the team the player is on, false if the player is not part of a team. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getTeam""",
-                field="""team""",
-                is_static=False,
-            ),
             name='getPlayerTeam',
         )
         ],
@@ -445,13 +395,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns 3 integers representing the red, green, and blue color components of the team if its valid, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='team',
-                method_name="""getColor""",
-                field=None,
-                is_static=False,
-            ),
             name='getTeamColor',
         )
         ],
@@ -502,13 +445,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns 3 integers representing the red, green, and blue color components of the team if its valid, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='team',
-                method_name="""getColor""",
-                field=None,
-                is_static=False,
-            ),
             name='getTeamColor',
         )
         ],
@@ -553,13 +489,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if friendly fire is on for the specified team, false if it is turned off or if invalid arguments are specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='team',
-                method_name="""getFriendlyFire""",
-                field="""friendlyFire""",
-                is_static=False,
-            ),
             name='getTeamFriendlyFire',
         )
         ],
@@ -602,13 +531,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if friendly fire is on for the specified team, false if it is turned off or if invalid arguments are specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='team',
-                method_name="""getFriendlyFire""",
-                field="""friendlyFire""",
-                is_static=False,
-            ),
             name='getTeamFriendlyFire',
         )
         ],
@@ -653,13 +575,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the team element if it was found, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Team',
-                method_name="""getFromName""",
-                field=None,
-                is_static=True,
-            ),
             name='getTeamFromName',
         )
         ],
@@ -701,13 +616,6 @@ DUMP_PARTIAL = [
                     "teamName": """A string determining the name of the team you wish to find. """
                 },
                 result="""returns the team element if it was found, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Team',
-                method_name="""getFromName""",
-                field=None,
-                is_static=True,
             ),
             name='getTeamFromName',
         )
@@ -753,13 +661,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string representing the teams name if the team object was valid, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='team',
-                method_name="""getName""",
-                field="""name""",
-                is_static=False,
-            ),
             name='getTeamName',
         )
         ],
@@ -801,13 +702,6 @@ DUMP_PARTIAL = [
                     "theTeam": """The team you want to retrieve the name of. """
                 },
                 result="""returns a string representing the teams name if the team object was valid, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='team',
-                method_name="""getName""",
-                field="""name""",
-                is_static=False,
             ),
             name='getTeamName',
         )
@@ -863,13 +757,6 @@ DUMP_PARTIAL = [
                     "theTeam": """The team you want to add the player to, or nil if you wish to unassign a player from his team. """
                 },
                 result="""returns true if the player was successfully added to the specified team or removed from his previous one, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setTeam""",
-                field="""team""",
-                is_static=False,
             ),
             name='setPlayerTeam',
         )
@@ -951,13 +838,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the team is valid and the color is different, otherwise false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='team',
-                method_name="""setColor""",
-                field=None,
-                is_static=False,
-            ),
             name='setTeamColor',
         )
         ],
@@ -1016,13 +896,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the friendly fire value is set for the specified team, false if the friendly fire value cant be set for the specified team or if invalid arguments are specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='team',
-                method_name="""setFriendlyFire""",
-                field="""friendlyFire""",
-                is_static=False,
-            ),
             name='setTeamFriendlyFire',
         )
         ],
@@ -1080,13 +953,6 @@ DUMP_PARTIAL = [
                     "newName": """A string representing the name you want the team to be called. """
                 },
                 result="""returns true if the team was valid and the name was changed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='team',
-                method_name="""setName""",
-                field="""name""",
-                is_static=False,
             ),
             name='setTeamName',
         )

@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -154,13 +153,6 @@ You are able to create as many markers as you wish (memory and element limit per
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createMarker',
         )
         ],
@@ -296,13 +288,6 @@ You are able to create as many markers as you wish (memory and element limit per
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createMarker',
         )
         ],
@@ -359,13 +344,6 @@ You are able to create as many markers as you wish (memory and element limit per
                 },
                 result="""returns four ints corresponding to the amount of red, green, blue and alpha (respectively) of the marker, false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""getColor""",
-                field=None,
-                is_static=False,
-            ),
             name='getMarkerColor',
         )
         ],
@@ -420,13 +398,6 @@ You are able to create as many markers as you wish (memory and element limit per
                 },
                 result="""returns four ints corresponding to the amount of red, green, blue and alpha (respectively) of the marker, false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""getColor""",
-                field=None,
-                is_static=False,
-            ),
             name='getMarkerColor',
         )
         ],
@@ -462,7 +433,6 @@ You are able to create as many markers as you wish (memory and element limit per
                 },
                 result="""returns the number of markers that currently exist. """,
             ),
-            oop=None,
             name='getMarkerCount',
         )
         ],
@@ -496,7 +466,6 @@ You are able to create as many markers as you wish (memory and element limit per
                 },
                 result="""returns the number of markers that currently exist. """,
             ),
-            oop=None,
             name='getMarkerCount',
         )
         ],
@@ -543,13 +512,6 @@ You are able to create as many markers as you wish (memory and element limit per
 * none: no icon
 * arrow: arrow icon
 * finish: finish (end-race) icon """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""getIcon""",
-                field="""icon""",
-                is_static=False,
             ),
             name='getMarkerIcon',
         )
@@ -595,13 +557,6 @@ You are able to create as many markers as you wish (memory and element limit per
 * none: no icon
 * arrow: arrow icon
 * finish: finish (end-race) icon """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""getIcon""",
-                field="""icon""",
-                is_static=False,
             ),
             name='getMarkerIcon',
         )
@@ -646,13 +601,6 @@ You are able to create as many markers as you wish (memory and element limit per
                     "myMarker": """: The marker that you wish to retrieve the size of. """
                 },
                 result="""returns a float containing the size of the specified marker. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""getSize""",
-                field="""size""",
-                is_static=False,
             ),
             name='getMarkerSize',
         )
@@ -695,13 +643,6 @@ You are able to create as many markers as you wish (memory and element limit per
                     "myMarker": """: The marker that you wish to retrieve the size of. """
                 },
                 result="""returns a float containing the size of the specified marker. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""getSize""",
-                field="""size""",
-                is_static=False,
             ),
             name='getMarkerSize',
         )
@@ -754,13 +695,6 @@ You are able to create as many markers as you wish (memory and element limit per
                     "theMarker": """The marker you wish to retrieve the target position of. """
                 },
                 result="""returns three floats if a target is set, or false in the first variable and nil in the two others if the marker is invalid or no target is set. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""getTarget""",
-                field="""target""",
-                is_static=False,
             ),
             name='getMarkerTarget',
         )
@@ -811,13 +745,6 @@ You are able to create as many markers as you wish (memory and element limit per
                     "theMarker": """The marker you wish to retrieve the target position of. """
                 },
                 result="""returns three floats if a target is set, or false in the first variable and nil in the two others if the marker is invalid or no target is set. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""getTarget""",
-                field="""target""",
-                is_static=False,
             ),
             name='getMarkerTarget',
         )
@@ -863,13 +790,6 @@ You are able to create as many markers as you wish (memory and element limit per
                 },
                 result="""* returns one of the following strings:
 if an invalid marker is specified, false is returned. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""getMarkerType""",
-                field="""markerType""",
-                is_static=False,
             ),
             name='getMarkerType',
         )
@@ -913,13 +833,6 @@ if an invalid marker is specified, false is returned. """,
                 },
                 result="""* returns one of the following strings:
 if an invalid marker is specified, false is returned. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""getMarkerType""",
-                field="""markerType""",
-                is_static=False,
             ),
             name='getMarkerType',
         )
@@ -1008,13 +921,6 @@ if an invalid marker is specified, false is returned. """,
                     "a": """The amount of alpha in the final color (0 to 255). """
                 },
                 result=""" """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""setColor""",
-                field=None,
-                is_static=False,
             ),
             name='setMarkerColor',
         )
@@ -1101,13 +1007,6 @@ if an invalid marker is specified, false is returned. """,
                     "a": """The amount of alpha in the final color (0 to 255). """
                 },
                 result=""" """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""setColor""",
-                field=None,
-                is_static=False,
             ),
             name='setMarkerColor',
         )
@@ -1166,13 +1065,6 @@ if an invalid marker is specified, false is returned. """,
                     "finish": """: Finish icon (at end of race) """
                 },
                 result=""" """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""setIcon""",
-                field="""icon""",
-                is_static=False,
             ),
             name='setMarkerIcon',
         )
@@ -1229,13 +1121,6 @@ if an invalid marker is specified, false is returned. """,
                     "finish": """: Finish icon (at end of race) """
                 },
                 result=""" """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""setIcon""",
-                field="""icon""",
-                is_static=False,
             ),
             name='setMarkerIcon',
         )
@@ -1296,13 +1181,6 @@ Setting negative value will flip the marker, do nothing or make it invisible:
                     "size": """A float representing new size of the marker. """
                 },
                 result="""returns true if successful, false if failed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""setSize""",
-                field="""size""",
-                is_static=False,
             ),
             name='setMarkerSize',
         )
@@ -1361,13 +1239,6 @@ Setting negative value will flip the marker, do nothing or make it invisible:
                     "size": """A float representing new size of the marker. """
                 },
                 result="""returns true if successful, false if failed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""setSize""",
-                field="""size""",
-                is_static=False,
             ),
             name='setMarkerSize',
         )
@@ -1449,13 +1320,6 @@ This function is most useful for setting up markers for races, where each marker
                     "z": """The z axis of the coordinate to target the marker at """
                 },
                 result="""returns true if target was set, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""setTarget""",
-                field="""target""",
-                is_static=False,
             ),
             name='setMarkerTarget',
         )
@@ -1535,13 +1399,6 @@ This function is most useful for setting up markers for races, where each marker
                     "z": """The z axis of the coordinate to target the marker at """
                 },
                 result="""returns true if target was set, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""setTarget""",
-                field="""target""",
-                is_static=False,
             ),
             name='setMarkerTarget',
         )
@@ -1597,13 +1454,6 @@ This function is most useful for setting up markers for races, where each marker
                     "markerType": """: A string denoting the marker type. Valid values are: """
                 },
                 result="""returns true if the marker type was changed, false if it wasnt or marker values were invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""setMarkerType""",
-                field="""markerType""",
-                is_static=False,
             ),
             name='setMarkerType',
         )
@@ -1657,13 +1507,6 @@ This function is most useful for setting up markers for races, where each marker
                     "markerType": """: A string denoting the marker type. Valid values are: """
                 },
                 result="""returns true if the marker type was changed, false if it wasnt or marker values were invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Marker',
-                method_name="""setMarkerType""",
-                field="""markerType""",
-                is_static=False,
             ),
             name='setMarkerType',
         )

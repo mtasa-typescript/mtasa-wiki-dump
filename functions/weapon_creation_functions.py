@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -86,13 +85,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a element/weapon|custom weapon element, which represents a weapon floating at that position. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Weapon|Weapon',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createWeapon',
         )
         ],
@@ -139,13 +131,6 @@ DUMP_PARTIAL = [
                     "theWeapon": """The weapon to be fired. """
                 },
                 result="""returns true if the shot weapon is valid and therefore the shot was fired, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Weapon|weapon',
-                method_name="""fire""",
-                field=None,
-                is_static=False,
             ),
             name='fireWeapon',
         )
@@ -194,13 +179,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns an int|integer containing how many ammo left has the weapon. returns false if an error occured. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Weapon|weapon',
-                method_name="""getAmmo""",
-                field="""ammo""",
-                is_static=False,
-            ),
             name='getWeaponAmmo',
         )
         ],
@@ -248,13 +226,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the amount of ammo in the element/weapon|custom weapons clip, false if an error occured. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Weapon|weapon',
-                method_name="""getClipAmmo""",
-                field="""clipAmmo""",
-                is_static=False,
-            ),
             name='getWeaponClipAmmo',
         )
         ],
@@ -301,13 +272,6 @@ DUMP_PARTIAL = [
                     "theWeapon": """The weapon to modify the firing rate of. """
                 },
                 result="""returns an integer with the firing rate of the custom weapon, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Weapon|weapon',
-                method_name="""getFiringRate""",
-                field="""firingRate""",
-                is_static=False,
             ),
             name='getWeaponFiringRate',
         )
@@ -380,13 +344,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the true or false on success (flags flag returns 8 values) if the flag is enabled or not. returns false if the weapon element isnt valid or an error occured. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Weapon|weapon',
-                method_name="""getFlags""",
-                field=None,
-                is_static=False,
-            ),
             name='getWeaponFlags',
         )
         ],
@@ -433,13 +390,6 @@ DUMP_PARTIAL = [
                     "theWeapon": """The weapon to get the owner of. """
                 },
                 result="""this function was intended to return the player which owns the element/weapon|custom weapon, and false if an error occured. however, at the moment it always returns false. """,
-            ),
-            oop=FunctionOOP(
-                description="""Pair is completely disabled at the moment (its value is ''[[nil]]'').""",
-                class_name='Element/Weapon|weapon',
-                method_name="""getOwner""",
-                field="""owner""",
-                is_static=False,
             ),
             name='getWeaponOwner',
         )
@@ -492,13 +442,6 @@ DUMP_PARTIAL = [
 ** ready: the weapon is idle.
 * false if an error occured or the element/weapon|weapon is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Weapon|weapon',
-                method_name="""getState""",
-                field="""state""",
-                is_static=False,
-            ),
             name='getWeaponState',
         )
         ],
@@ -550,13 +493,6 @@ DUMP_PARTIAL = [
 **an element if the weapon is firing an entity.
 * returns false if the weapon element is not valid. """,
             ),
-            oop=FunctionOOP(
-                description="""Variable is read only.""",
-                class_name='Element/Weapon|weapon',
-                method_name="""getTarget""",
-                field="""target""",
-                is_static=False,
-            ),
             name='getWeaponTarget',
         )
         ],
@@ -603,13 +539,6 @@ DUMP_PARTIAL = [
                     "theWeapon": """the weapon to reset the firing rate of. """
                 },
                 result="""returns true on success, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Weapon|weapon',
-                method_name="""resetFiringRate""",
-                field=None,
-                is_static=False,
             ),
             name='resetWeaponFiringRate',
         )
@@ -669,13 +598,6 @@ DUMP_PARTIAL = [
                 },
                 result="""this function returns true if the arguments are valid and the weapon clip ammo could be changed; false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Weapon|weapon',
-                method_name="""setClipAmmo""",
-                field="""clipAmmo""",
-                is_static=False,
-            ),
             name='setWeaponClipAmmo',
         )
         ],
@@ -733,13 +655,6 @@ DUMP_PARTIAL = [
                     "firingRate": """The weapon firing rate. It seems to be a kind of frecuency value, so the lower the quicker the Element/Weapon|custom weapon will shoot. """
                 },
                 result="""returns true on success, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Weapon|weapon',
-                method_name="""setFiringRate""",
-                field="""firingRate""",
-                is_static=False,
             ),
             name='setWeaponFiringRate',
         )
@@ -823,13 +738,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if all arguments are valid and the flags where changed; false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Weapon|weapon',
-                method_name="""setFlags""",
-                field=None,
-                is_static=False,
-            ),
             name='setWeaponFlags',
         )
         ],
@@ -890,13 +798,6 @@ DUMP_PARTIAL = [
                     "ready": """: makes the weapon stop reloading or firing. """
                 },
                 result="""returns true on success, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Weapon|weapon',
-                method_name="""setState""",
-                field="""state""",
-                is_static=False,
             ),
             name='setWeaponState',
         )
@@ -1004,7 +905,6 @@ DUMP_PARTIAL = [
 returns true on success, false otherwise.
 returns true on success, false otherwise. """,
             ),
-            oop=None,
             name='setWeaponTarget',
         )
         ],

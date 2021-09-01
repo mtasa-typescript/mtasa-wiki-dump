@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -50,7 +49,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true on success, false when invalid request was provided """,
             ),
-            oop=None,
             name='abortRemoteRequest',
         )
         ],
@@ -93,7 +91,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true on success, false when invalid request was provided """,
             ),
-            oop=None,
             name='abortRemoteRequest',
         )
         ],
@@ -151,7 +148,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the new configs root xmlnode if the config was added successfully, false otherwise. """,
             ),
-            oop=None,
             name='addResourceConfig',
         )
         ],
@@ -212,7 +208,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the new maps root xmlnode if the map was added successfully, false otherwise. """,
             ),
-            oop=None,
             name='addResourceMap',
         )
         ],
@@ -306,13 +301,6 @@ Two extra hidden variables are passed to the exported function:
                 result="""returns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false.
 returns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""call""",
-                field=None,
-                is_static=False,
-            ),
             name='call',
         )
         ],
@@ -400,13 +388,6 @@ Two extra hidden variables are passed to the exported function:
                 },
                 result="""returns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false.
 returns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""call""",
-                field=None,
-                is_static=False,
             ),
             name='call',
         )
@@ -531,7 +512,6 @@ In the case when the call fails, a string containing ERROR followed by an intege
                 },
                 result="""returns true if the function has been called, false otherwise. """,
             ),
-            oop=None,
             name='callRemote',
         )
         ],
@@ -601,13 +581,6 @@ In the case when the call fails, a string containing ERROR followed by an intege
                 },
                 result="""returns the resource element of the copy. returns false if the arguments are incorrect. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""copy""",
-                field=None,
-                is_static=False,
-            ),
             name='copyResource',
         )
         ],
@@ -666,13 +639,6 @@ In the case when the call fails, a string containing ERROR followed by an intege
                 },
                 result="""returns the resource element of the new resource if successful, false otherwise. this could fail if the resource name already is in use, if a directory already exists with the name youve specified (but this isnt a valid resource) or if the name you specify isnt valid. it could also fail if the disk was full or for other similar reasons. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Resource',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createResource',
         )
         ],
@@ -719,13 +685,6 @@ In the case when the call fails, a string containing ERROR followed by an intege
                     "resourceName": """The name of resource to delete. """
                 },
                 result="""returns true if the resource has been deleted successfully, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the Resource class.""",
-                class_name='Resource',
-                method_name="""delete""",
-                field=None,
-                is_static=True,
             ),
             name='deleteResource',
         )
@@ -864,7 +823,6 @@ If you are using fetchRemote to connect to a PHP script, you can use file_get_co
                 },
                 result="""returns a request value which can be used with getremoterequestinfo|getremoterequestinfo or abortremoterequest|abortremoterequest """,
             ),
-            oop=None,
             name='fetchRemote',
         )
         ],
@@ -997,7 +955,6 @@ If you are using fetchRemote to connect to a PHP script, you can use file_get_co
                 },
                 result="""returns a request value which can be used with getremoterequestinfo|getremoterequestinfo or abortremoterequest|abortremoterequest """,
             ),
-            oop=None,
             name='fetchRemote',
         )
         ],
@@ -1075,7 +1032,6 @@ the table contains:
 *postdata: a string containing the request post data as declared in the fetchremote call
 *headers: a table containing the request http headers as declared in the fetchremote call """,
             ),
-            oop=None,
             name='getRemoteRequestInfo',
         )
         ],
@@ -1151,7 +1107,6 @@ the table contains:
 *postdata: a string containing the request post data as declared in the fetchremote call
 *headers: a table containing the request http headers as declared in the fetchremote call """,
             ),
-            oop=None,
             name='getRemoteRequestInfo',
         )
         ],
@@ -1196,7 +1151,6 @@ the table contains:
                 },
                 result="""returns a table with all requests, false if an invalid resource was provided """,
             ),
-            oop=None,
             name='getRemoteRequests',
         )
         ],
@@ -1239,7 +1193,6 @@ the table contains:
                 },
                 result="""returns a table with all requests, false if an invalid resource was provided """,
             ),
-            oop=None,
             name='getRemoteRequests',
         )
         ],
@@ -1283,13 +1236,6 @@ the table contains:
                     "theResource": """the resource to get the ACL requests for. """
                 },
                 result="""returns a table with the acl requests for the given resource, or false if the resource is not valid. a valid resource with no acl requests will return an empty table. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""getACLRequests""",
-                field="""aclRequests""",
-                is_static=False,
             ),
             name='getResourceACLRequests',
         )
@@ -1340,7 +1286,6 @@ the table contains:
                 },
                 result="""returns the root node of the specified configuration file. if the file is corrupted, not defined in the meta file or doesnt exist, returns false. """,
             ),
-            oop=None,
             name='getResourceConfig',
         )
         ],
@@ -1385,7 +1330,6 @@ the table contains:
                 },
                 result="""returns the root node of the specified configuration file. if the file is corrupted, not defined in the meta file or doesnt exist, returns false. """,
             ),
-            oop=None,
             name='getResourceConfig',
         )
         ],
@@ -1430,13 +1374,6 @@ the table contains:
                 },
                 result="""returns an element of the resources dynamic element root if the resource specified was valid and active (currently running), false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""getDynamicElementRoot""",
-                field="""dynamicElementRoot""",
-                is_static=False,
-            ),
             name='getResourceDynamicElementRoot',
         )
         ],
@@ -1479,13 +1416,6 @@ the table contains:
                 },
                 result="""returns an element of the resources dynamic element root if the resource specified was valid and active (currently running), false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""getDynamicElementRoot""",
-                field="""dynamicElementRoot""",
-                is_static=False,
-            ),
             name='getResourceDynamicElementRoot',
         )
         ],
@@ -1530,13 +1460,6 @@ the table contains:
                 },
                 result="""returns a table of function names if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""getExportedFunctions""",
-                field="""exportedFunctions""",
-                is_static=False,
-            ),
             name='getResourceExportedFunctions',
         )
         ],
@@ -1578,13 +1501,6 @@ the table contains:
                     "theResource": """the resource of which you want to know the call|exported functions. """
                 },
                 result="""returns a table of function names if successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""getExportedFunctions""",
-                field="""exportedFunctions""",
-                is_static=False,
             ),
             name='getResourceExportedFunctions',
         )
@@ -1630,13 +1546,6 @@ the table contains:
                 },
                 result="""returns the resource with the specified name, or false if no resource of that name exists. note that clientside this will also return false for resources that are in the loaded state, since the client is unaware of resources that have not been started. """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the Resource class. {{New feature/item|3.0141|1.4.1|7005|OOP function available client side}}""",
-                class_name='Resource',
-                method_name="""getFromName""",
-                field=None,
-                is_static=True,
-            ),
             name='getResourceFromName',
         )
         ],
@@ -1678,13 +1587,6 @@ the table contains:
                     "resourceName": """the name of the resource you wish to get. """
                 },
                 result="""returns the resource with the specified name, or false if no resource of that name exists. note that clientside this will also return false for resources that are in the loaded state, since the client is unaware of resources that have not been started. """,
-            ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the Resource class. {{New feature/item|3.0141|1.4.1|7005|OOP function available client side}}""",
-                class_name='Resource',
-                method_name="""getFromName""",
-                field=None,
-                is_static=True,
             ),
             name='getResourceFromName',
         )
@@ -1733,7 +1635,6 @@ the table contains:
                 },
                 result="""returns the root gui element that contains all the other gui elements. """,
             ),
-            oop=None,
             name='getResourceGUIElement',
         )
         ],
@@ -1789,13 +1690,6 @@ the table contains:
                 },
                 result="""returns a string with the attribute value if it exists, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""getInfo""",
-                field=None,
-                is_static=False,
-            ),
             name='getResourceInfo',
         )
         ],
@@ -1844,13 +1738,6 @@ the table contains:
                 result="""if successful, returns the unix timestamp when the resource was last started, or the string never if the resource has not been started yet, otherwise false. use in conjunction with getrealtime in order to retrieve detailed information.
 returns a string with the time and date, or false if the resource does not exist. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""getLastStartTime""",
-                field="""lastStartTime""",
-                is_static=False,
-            ),
             name='getResourceLastStartTime',
         )
         ],
@@ -1897,13 +1784,6 @@ returns a string with the time and date, or false if the resource does not exist
                     "theResource": """The resource you wish to check. """
                 },
                 result="""if the resource failed to load, returns a string with the failure reason in it. if it loaded successfully, returns an empty string. returns false if the resource doesnt exist. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""getLoadFailureReason""",
-                field="""loadFailureReason""",
-                is_static=False,
             ),
             name='getResourceLoadFailureReason',
         )
@@ -1953,13 +1833,6 @@ returns a string with the time and date, or false if the resource does not exist
                 result="""if successful, returns the unix timestamp when the resource was loaded, otherwise false. use in conjunction with getrealtime in order to retrieve detailed information.
 if successful, returns a string with the date and time that the resource was last loaded into memory (for example when the server started, or when the resource was changed and reloaded). returns false on failure.
 an example string is fri mar 28 13:51:04 2008. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""getLoadTime""",
-                field="""loadTime""",
-                is_static=False,
             ),
             name='getResourceLoadTime',
         )
@@ -2019,13 +1892,6 @@ an example string is fri mar 28 13:51:04 2008. """,
                 },
                 result="""returns an the resources map root element if the map exists and resource specified was valid and active (currently running), false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""getMapRootElement""",
-                field=None,
-                is_static=False,
-            ),
             name='getResourceMapRootElement',
         )
         ],
@@ -2073,13 +1939,6 @@ an example string is fri mar 28 13:51:04 2008. """,
                 },
                 result="""returns a string with the resource name in it, or false if the resource does not exist. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""getName""",
-                field="""name""",
-                is_static=False,
-            ),
             name='getResourceName',
         )
         ],
@@ -2121,13 +1980,6 @@ an example string is fri mar 28 13:51:04 2008. """,
                     "res": """The resource you wish to get the name of. """
                 },
                 result="""returns a string with the resource name in it, or false if the resource does not exist. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""getName""",
-                field="""name""",
-                is_static=False,
             ),
             name='getResourceName',
         )
@@ -2172,13 +2024,6 @@ an example string is fri mar 28 13:51:04 2008. """,
                     "theResource": """the resource of which you want to know the organizational path """
                 },
                 result="""returns the organizational folder name of the resource. it returns empty string if the resource is on root resources folder. it returns false if the resource could not be found. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""getOrganizationalPath""",
-                field="""organizationalPath""",
-                is_static=False,
             ),
             name='getResourceOrganizationalPath',
         )
@@ -2228,13 +2073,6 @@ Note: every resource has a Predefined_variables_list|predefined global variable 
                 },
                 result="""returns an element representing the resources root, false if the specified resource doesnt exist. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""getRootElement""",
-                field="""rootElement""",
-                is_static=False,
-            ),
             name='getResourceRootElement',
         )
         ],
@@ -2278,13 +2116,6 @@ Note: every resource has a Predefined_variables_list|predefined global variable 
                 },
                 result="""returns an element representing the resources root, false if the specified resource doesnt exist. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""getRootElement""",
-                field="""rootElement""",
-                is_static=False,
-            ),
             name='getResourceRootElement',
         )
         ],
@@ -2319,13 +2150,6 @@ Note: every resource has a Predefined_variables_list|predefined global variable 
                     
                 },
                 result="""returns a table of resources. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Resource',
-                method_name="""getAll""",
-                field=None,
-                is_static=True,
             ),
             name='getResources',
         )
@@ -2380,7 +2204,6 @@ the state can be one of:
 *stopping
 *failed to load - use getresourceloadfailurereason to find out why it failed. """,
             ),
-            oop=None,
             name='getResourceState',
         )
         ],
@@ -2429,7 +2252,6 @@ the state can be one of:
 *stopping
 *failed to load - use getresourceloadfailurereason to find out why it failed. """,
             ),
-            oop=None,
             name='getResourceState',
         )
         ],
@@ -2465,13 +2287,6 @@ the state can be one of:
                 },
                 result="""returns the resource in which the current script is. """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the Resource class.""",
-                class_name='Resource',
-                method_name="""getThis""",
-                field=None,
-                is_static=True,
-            ),
             name='getThisResource',
         )
         ],
@@ -2504,13 +2319,6 @@ the state can be one of:
                     
                 },
                 result="""returns the resource in which the current script is. """,
-            ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the Resource class.""",
-                class_name='Resource',
-                method_name="""getThis""",
-                field=None,
-                is_static=True,
             ),
             name='getThisResource',
         )
@@ -2555,13 +2363,6 @@ the state can be one of:
                     "resource": """the resource to check """
                 },
                 result="""returns true if a resource is archived, false if it is not archived, or nil if there is problem with resource. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""isArchived""",
-                field="""archived""",
-                is_static=False,
             ),
             name='isResourceArchived',
         )
@@ -2609,13 +2410,6 @@ the state can be one of:
                     "theResource": """the resource to check """
                 },
                 result="""returns true if the resource is protected, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""isProtected""",
-                field="""protected""",
-                is_static=False,
             ),
             name='isResourceProtected',
         )
@@ -2676,7 +2470,6 @@ the state can be one of:
                 },
                 result="""returns true if refresh was successful, false otherwise. """,
             ),
-            oop=None,
             name='refreshResources',
         )
         ],
@@ -2734,13 +2527,6 @@ the state can be one of:
                     "fileName": """The filename what you want to delete. """
                 },
                 result="""returns true if file was deleted, otherwise false if the resource is in use or the file doesnt exist. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""removeFile""",
-                field=None,
-                is_static=False,
             ),
             name='removeResourceFile',
         )
@@ -2810,13 +2596,6 @@ the state can be one of:
                     "organizationalPath": """If you want to store the new resource inside a category. """
                 },
                 result="""returns true if the resource has been renamed successfully, false otherwise. this could fail if the resource name already is in use, if a directory already exists with the name youve specified (but this isnt a valid resource) or if the name you specify isnt valid. it could also fail if the disk was full or for other similar reasons. wont work on a started resource or if the resource is not loaded (not known by mta (use /refresh)) """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""rename""",
-                field="""name""",
-                is_static=False,
             ),
             name='renameResource',
         )
@@ -2955,13 +2734,6 @@ the state can be one of:
                 },
                 result="""returns true if the resource was restarted, false if the resource wasnt running, or an invalid resource was passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""restart""",
-                field=None,
-                is_static=False,
-            ),
             name='restartResource',
         )
         ],
@@ -3030,13 +2802,6 @@ the state can be one of:
                     "value": """the value of this attribute """
                 },
                 result="""returns true if the info was successfully set, false otherwise """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""setInfo""",
-                field=None,
-                is_static=False,
             ),
             name='setResourceInfo',
         )
@@ -3185,13 +2950,6 @@ The function also allows you to specify a number of boolean options. These allow
                 },
                 result="""returns true if the resource has been started successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""start""",
-                field=None,
-                is_static=False,
-            ),
             name='startResource',
         )
         ],
@@ -3238,13 +2996,6 @@ The function also allows you to specify a number of boolean options. These allow
                     "theResource": """the resource that should be stopped. """
                 },
                 result="""returns true if the resource was stopped, false if the stopping failed, or an invalid resource was passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='resource',
-                method_name="""stop""",
-                field=None,
-                is_static=False,
             ),
             name='stopResource',
         )
@@ -3326,7 +3077,6 @@ The function also allows you to specify a number of boolean options. These allow
                 },
                 result="""returns true if the setting was changed, or false if no change was required or there was a problem with the arguments. """,
             ),
-            oop=None,
             name='updateResourceACLRequest',
         )
         ],

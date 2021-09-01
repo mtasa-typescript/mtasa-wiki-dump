@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -105,13 +104,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""fadeCamera""",
-                field=None,
-                is_static=False,
-            ),
             name='fadeCamera',
         )
         ],
@@ -198,13 +190,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Camera',
-                method_name="""fade""",
-                field=None,
-                is_static=True,
-            ),
             name='fadeCamera',
         )
         ],
@@ -243,7 +228,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns an element that corresponds to the game camera """,
             ),
-            oop=None,
             name='getCamera',
         )
         ],
@@ -286,13 +270,6 @@ DUMP_PARTIAL = [
                 },
                 result="""*objects: if you want the camera to clip on objects.
 *vehicles: if you want the camera to clip on vehicles. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Camera',
-                method_name="""getClip""",
-                field=None,
-                is_static=True,
             ),
             name='getCameraClip',
         )
@@ -344,13 +321,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns one float - the field of view angle """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Camera',
-                method_name="""getFieldOfView""",
-                field="""fov""",
-                is_static=True,
-            ),
             name='getCameraFieldOfView',
         )
         ],
@@ -388,13 +358,6 @@ DUMP_PARTIAL = [
                     
                 },
                 result="""* string indicating the current camera goggle effect. their meanings can be seen below. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Camera',
-                method_name="""getGoggleEffect""",
-                field="""goggleEffect""",
-                is_static=True,
             ),
             name='getCameraGoggleEffect',
         )
@@ -440,13 +403,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getCameraInterior""",
-                field="""cameraInterior""",
-                is_static=False,
-            ),
             name='getCameraInterior',
         )
         ],
@@ -479,13 +435,6 @@ DUMP_PARTIAL = [
                     
                 },
                 result=""" """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Camera',
-                method_name="""getInterior""",
-                field="""interior""",
-                is_static=True,
             ),
             name='getCameraInterior',
         )
@@ -559,13 +508,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getCameraMatrix""",
-                field="""cameraMatrix""",
-                is_static=False,
-            ),
             name='getCameraMatrix',
         )
         ],
@@ -627,13 +569,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Camera',
-                method_name="""getMatrix""",
-                field="""matrix""",
-                is_static=True,
-            ),
             name='getCameraMatrix',
         )
         ],
@@ -672,7 +607,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns an integer representing the camera shake level, from 0 (no shaking effect) to 255 (maximum shaking effect). by default, the camera has no shaking effect. """,
             ),
-            oop=None,
             name='getCameraShakeLevel',
         )
         ],
@@ -717,13 +651,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""getCameraTarget""",
-                field="""cameraTarget""",
-                is_static=False,
-            ),
             name='getCameraTarget',
         )
         ],
@@ -757,7 +684,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='getCameraTarget',
         )
         ],
@@ -799,13 +725,6 @@ DUMP_PARTIAL = [
                     
                 },
                 result=""" """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Camera',
-                method_name="""getCameraViewMode""",
-                field="""viewMode""",
-                is_static=True,
             ),
             name='getCameraViewMode',
         )
@@ -864,13 +783,6 @@ DUMP_PARTIAL = [
                     "vehicles": """Sets if you want the camera to clip on vehicles. """
                 },
                 result="""always returns true. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Camera',
-                method_name="""setClip""",
-                field=None,
-                is_static=True,
             ),
             name='setCameraClip',
         )
@@ -933,13 +845,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the arguments are valid, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Camera',
-                method_name="""setFieldOfView""",
-                field=None,
-                is_static=True,
-            ),
             name='setCameraFieldOfView',
         )
         ],
@@ -999,13 +904,6 @@ DUMP_PARTIAL = [
                 result="""* true if the effect was set correctly.
 * false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Camera',
-                method_name="""setGoggleEffect""",
-                field="""goggleEffect""",
-                is_static=True,
-            ),
             name='setCameraGoggleEffect',
         )
         ],
@@ -1061,13 +959,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setCameraInterior""",
-                field="""cameraInterior""",
-                is_static=False,
-            ),
             name='setCameraInterior',
         )
         ],
@@ -1109,13 +1000,6 @@ DUMP_PARTIAL = [
                     "interior": """the interior to place the camera in. """
                 },
                 result=""" """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Camera',
-                method_name="""setInterior""",
-                field="""interior""",
-                is_static=True,
             ),
             name='setCameraInterior',
         )
@@ -1250,13 +1134,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setCameraMatrix""",
-                field="""cameraMatrix""",
-                is_static=False,
-            ),
             name='setCameraMatrix',
         )
         ],
@@ -1377,13 +1254,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description="""This is under the static class '''Camera'''""",
-                class_name='Camera',
-                method_name="""setMatrix""",
-                field="""matrix""",
-                is_static=True,
-            ),
             name='setCameraMatrix',
         )
         ],
@@ -1431,7 +1301,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the camera shake level was changed, false if the required argument is incorrect or missing. """,
             ),
-            oop=None,
             name='setCameraShakeLevel',
         )
         ],
@@ -1488,13 +1357,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""setCameraTarget""",
-                field="""cameraTarget""",
-                is_static=False,
-            ),
             name='setCameraTarget',
         )
         ],
@@ -1538,7 +1400,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='setCameraTarget',
         )
         ],
@@ -1596,13 +1457,6 @@ DUMP_PARTIAL = [
                     "pedCameraMode": """: The view mode you wish to use when you are not inside vehicles. """
                 },
                 result="""returns true if the view(s) were set correctly, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Camera',
-                method_name="""setCameraViewMode""",
-                field="""viewMode""",
-                is_static=True,
             ),
             name='setCameraViewMode',
         )

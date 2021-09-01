@@ -9,7 +9,12 @@ from to_python.core.types import FunctionType, \
     CompoundEventData
     
 DUMP_PARTIAL = [
-    CompoundEventData(server=[], client=[EventData(
+    CompoundEventData(
+        server=[
+            
+        ],
+        client=[
+            EventData(
             name='onClientObjectBreak',
             docs=FunctionDoc(
                 description="""This event is fired before an object breaks. """,
@@ -33,8 +38,15 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )]),
-    CompoundEventData(server=[], client=[EventData(
+        )
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            
+        ],
+        client=[
+            EventData(
             name='onClientObjectDamage',
             docs=FunctionDoc(
                 description="""This event is fired before an object gets damaged. """,
@@ -69,8 +81,15 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )]),
-    CompoundEventData(server=[], client=[EventData(
+        )
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            
+        ],
+        client=[
+            EventData(
             name='onClientObjectMoveStart',
             docs=FunctionDoc(
                 description=""" """,
@@ -85,8 +104,15 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )]),
-    CompoundEventData(server=[], client=[EventData(
+        )
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            
+        ],
+        client=[
+            EventData(
             name='onClientObjectMoveStop',
             docs=FunctionDoc(
                 description=""" """,
@@ -101,5 +127,7 @@ DUMP_PARTIAL = [
                     ],
                     variable_length=False,
                 ),
-        )])
+        )
+        ],
+    )
 ]

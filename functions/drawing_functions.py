@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -75,7 +74,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a copy of the pixels in the new format, or false if invalid arguments were passed to the function. """,
             ),
-            oop=None,
             name='dxConvertPixels',
         )
         ],
@@ -166,13 +164,6 @@ To see if creation is likely to fail, use dxGetStatus. (When VideoMemoryFreeForM
                 result="""returns a dx font element if successful, false if invalid arguments were passed to the function, or there is insufficient resources available.
 you should always check to see if this function has returned false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='DX_font|DxFont',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='dxCreateFont',
         )
         ],
@@ -244,13 +235,6 @@ To see if creation is likely to fail, use dxGetStatus. (When VideoMemoryFreeForM
                 result="""returns a texture element if successful, false if the system is unable to create a render target.
 you should always check to see if this function has returned false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Texture|DxRenderTarget',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='dxCreateRenderTarget',
         )
         ],
@@ -309,13 +293,6 @@ Note that successful screen source creation is not guaranteed, and may fail due 
                     "height": """The height of the texture  in pixels. """
                 },
                 result="""returns a texture element if successful, false if invalid arguments were passed to the function. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Texture|DxScreenSource',
-                method_name=None,
-                field=None,
-                is_static=True,
             ),
             name='dxCreateScreenSource',
         )
@@ -453,13 +430,6 @@ All the following optional arguments are only relevant when the shader is used w
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Shader|DxShader',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='dxCreateShader',
         )
         ],
@@ -565,13 +535,6 @@ or """,
                     "depth": """Desired number of slices when creating a volume texture """
                 },
                 result="""returns a texture if successful, false if invalid arguments were passed to the function. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Texture|DxTexture',
-                method_name=None,
-                field=None,
-                is_static=True,
             ),
             name='dxCreateTexture',
         )
@@ -719,7 +682,6 @@ or """,
                 },
                 result="""returns true if the creation of the 2d circle was successful, false otherwise. """,
             ),
-            oop=None,
             name='dxDrawCircle',
         )
         ],
@@ -868,7 +830,6 @@ Image files should ideally have dimensions that are a power of two, to prevent p
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=None,
             name='dxDrawImage',
         )
         ],
@@ -1061,7 +1022,6 @@ Image files should ideally have dimensions that are a power of two, to prevent p
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=None,
             name='dxDrawImageSection',
         )
         ],
@@ -1176,7 +1136,6 @@ Returns a true if the operation was successful, false otherwise. """
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
             ),
-            oop=None,
             name='dxDrawLine',
         )
         ],
@@ -1313,7 +1272,6 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
             ),
-            oop=None,
             name='dxDrawLine3D',
         )
         ],
@@ -1503,7 +1461,6 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
             ),
-            oop=None,
             name='dxDrawMaterialLine3D',
         )
         ],
@@ -1595,7 +1552,6 @@ Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px...}} 
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
             ),
-            oop=None,
             name='dxDrawMaterialPrimitive',
         )
         ],
@@ -1688,7 +1644,6 @@ Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px... ""
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
             ),
-            oop=None,
             name='dxDrawMaterialPrimitive3D',
         )
         ],
@@ -1920,7 +1875,6 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
             ),
-            oop=None,
             name='dxDrawMaterialSectionLine3D',
         )
         ],
@@ -2000,7 +1954,6 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
             ),
-            oop=None,
             name='dxDrawPrimitive',
         )
         ],
@@ -2114,7 +2067,6 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
             ),
-            oop=None,
             name='dxDrawPrimitive3D',
         )
         ],
@@ -2228,7 +2180,6 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
                 result="""returns true if the operation was successful, false otherwise. """,
             ),
-            oop=None,
             name='dxDrawRectangle',
         )
         ],
@@ -2473,7 +2424,6 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=None,
             name='dxDrawText',
         )
         ],
@@ -2585,7 +2535,6 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
                 result="""returns a true if the operation was successful, false otherwise. """,
             ),
-            oop=None,
             name='dxDrawWiredSphere',
         )
         ],
@@ -2628,7 +2577,6 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
 *modulate_add
 *overwrite """,
             ),
-            oop=None,
             name='dxGetBlendMode',
         )
         ],
@@ -2687,13 +2635,6 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
                 result="""returns an integer of the height of the text. """,
             ),
-            oop=FunctionOOP(
-                description="""This syntax requires you to ignore the font argument above""",
-                class_name='Element/DX font|font',
-                method_name="""getHeight""",
-                field=None,
-                is_static=False,
-            ),
             name='dxGetFontHeight',
         )
         ],
@@ -2749,13 +2690,6 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
                 result="""returns two ints representing the width and height in pixels of the material, or false if an invalid parameter was passed to the function.
 if the material is a volume texture, this function will return three ints representing the width, height and depth. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='material',
-                method_name="""getSize""",
-                field=None,
-                is_static=False,
             ),
             name='dxGetMaterialSize',
         )
@@ -2838,7 +2772,6 @@ if the material is a volume texture, this function will return three ints repres
                 },
                 result="""returns 4 ints representing the rgba color value of the pixel if succesful, or false if invalid arguments were passed to the function. """,
             ),
-            oop=None,
             name='dxGetPixelColor',
         )
         ],
@@ -2886,7 +2819,6 @@ if the material is a volume texture, this function will return three ints repres
                 },
                 result="""returns the format of the pixels if successful (plain or png or jpeg), false if invalid arguments were passed to the function. """,
             ),
-            oop=None,
             name='dxGetPixelsFormat',
         )
         ],
@@ -2938,7 +2870,6 @@ if the material is a volume texture, this function will return three ints repres
                 },
                 result="""returns width and height of the pixels if successful, false if invalid arguments were passed to the function. """,
             ),
-            oop=None,
             name='dxGetPixelsSize',
         )
         ],
@@ -3007,7 +2938,6 @@ if the material is a volume texture, this function will return three ints repres
 *totalphysicalmemory: the amount of total physical memory in mb.
 *usingdepthbuffer: true if the depth buffer is used, false otherwise. """,
             ),
-            oop=None,
             name='dxGetStatus',
         )
         ],
@@ -3126,13 +3056,6 @@ Returns two floats representing the width and height of the text in pixels. """
                 },
                 result="""returns two floats representing the width and height of the text in pixels. """,
             ),
-            oop=FunctionOOP(
-                description="""This syntax requires you to ignore the font argument above""",
-                class_name='Element/DX font|font',
-                method_name="""getSize""",
-                field=None,
-                is_static=False,
-            ),
             name='dxGetTextSize',
         )
         ],
@@ -3239,13 +3162,6 @@ By default the pixels from the whole texture is returned. To get only a portion 
                 },
                 result="""returns a plain format pixels string if successful, false if invalid arguments were passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='texture',
-                method_name="""getPixels""",
-                field=None,
-                is_static=False,
-            ),
             name='dxGetTexturePixels',
         )
         ],
@@ -3328,13 +3244,6 @@ Returns the float of the width of the text (in pixels). """
                 },
                 result="""returns the float of the width of the text (in pixels). """,
             ),
-            oop=FunctionOOP(
-                description="""This syntax requires you to ignore the font argument above""",
-                class_name='Element/DX font|font',
-                method_name="""getTextWidth""",
-                field=None,
-                is_static=False,
-            ),
             name='dxGetTextWidth',
         )
         ],
@@ -3378,7 +3287,6 @@ Returns the float of the width of the text (in pixels). """
                 result="""*boolean: returns true when enabled by dxsetaspectratioadjustmentenabled, false otherwise.
 *float: aspect ratio set by dxsetaspectratioadjustmentenabled """,
             ),
-            oop=None,
             name='dxIsAspectRatioAdjustmentEnabled',
         )
         ],
@@ -3438,7 +3346,6 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
                 },
                 result="""returns true when it was changed successfully, or false otherwise. """,
             ),
-            oop=None,
             name='dxSetAspectRatioAdjustmentEnabled',
         )
         ],
@@ -3490,7 +3397,6 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
                 },
                 result="""returns true if successful, or false if invalid arguments were passed to the function. """,
             ),
-            oop=None,
             name='dxSetBlendMode',
         )
         ],
@@ -3604,7 +3510,6 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
                 },
                 result="""returns true if successful, or false if invalid arguments were passed to the function. """,
             ),
-            oop=None,
             name='dxSetPixelColor',
         )
         ],
@@ -3662,13 +3567,6 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
                     "clear": """If set to true, the render target will also be cleared. """
                 },
                 result="""returns true if the render target was successfully changed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='texture|rendertarget',
-                method_name="""setAsTarget""",
-                field=None,
-                is_static=False,
             ),
             name='dxSetRenderTarget',
         )
@@ -3739,13 +3637,6 @@ Using tessellation allows a shader to manipulate the shape of the rendered image
                     "tessellationY": """The number of sub-division points along the Y axis. Range is 1 to 500. """
                 },
                 result="""returns true if the shader elements tessellation was successfully changed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='shader',
-                method_name="""setTessellation""",
-                field=None,
-                is_static=False,
             ),
             name='dxSetShaderTessellation',
         )
@@ -3905,13 +3796,6 @@ To convert screen relative units into screen pixel coordinates, ''multiply'' by 
                 },
                 result="""returns true if the shader elements transform was successfully changed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='shader',
-                method_name="""setTransform""",
-                field=None,
-                is_static=False,
-            ),
             name='dxSetShaderTransform',
         )
         ],
@@ -3981,13 +3865,6 @@ To convert screen relative units into screen pixel coordinates, ''multiply'' by 
                 },
                 result="""returns true if the shader elements parameter was successfully changed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='shader',
-                method_name="""setValue""",
-                field=None,
-                is_static=False,
-            ),
             name='dxSetShaderValue',
         )
         ],
@@ -4040,7 +3917,6 @@ Each one of the 3 test modes should be used in turn to help highlight any potent
                 },
                 result="""returns true if the test mode was successfully set, false otherwise. """,
             ),
-            oop=None,
             name='dxSetTestMode',
         )
         ],
@@ -4109,13 +3985,6 @@ Each one of the 3 test modes should be used in turn to help highlight any potent
                     "border-color": """If textureEdge is set to border, you are able to define a border color here """
                 },
                 result=""" """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='texture',
-                method_name="""setEdge""",
-                field=None,
-                is_static=False,
             ),
             name='dxSetTextureEdge',
         )
@@ -4234,13 +4103,6 @@ By default the pixels are set starting at the top left corner of the texture. To
                 },
                 result="""returns a string if successful, false if invalid arguments were passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='texture',
-                method_name="""setPixels""",
-                field=None,
-                is_static=False,
-            ),
             name='dxSetTexturePixels',
         )
         ],
@@ -4298,13 +4160,6 @@ By default the pixels are set starting at the top left corner of the texture. To
                     "resampleNow": """A bool to indicate if the screen should be captured immediately. The default is false which means the screen from the end of the previous frame is used (better for performance and consistency). Use true for layering fullscreen effects. """
                 },
                 result="""returns true if the screen was successfully captured, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='DxScreenSource',
-                method_name="""update""",
-                field=None,
-                is_static=False,
             ),
             name='dxUpdateScreenSource',
         )

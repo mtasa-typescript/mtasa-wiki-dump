@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -106,13 +105,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a database connection element unless there are problems, in which case it return false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Connection',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='dbConnect',
         )
         ],
@@ -193,13 +185,6 @@ String parameters are automatically quoted and escaped as required. (If you do n
                 },
                 result="""returns true unless the connection is incorrect, in which case it returns false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='connection',
-                method_name="""exec""",
-                field=None,
-                is_static=False,
-            ),
             name='dbExec',
         )
         ],
@@ -246,13 +231,6 @@ String parameters are automatically quoted and escaped as required. (If you do n
                     "queryHandle": """A query handle previously returned from dbQuery """
                 },
                 result="""returns true if the handle was successfully freed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='queryHandle',
-                method_name="""free""",
-                field=None,
-                is_static=False,
             ),
             name='dbFree',
         )
@@ -341,13 +319,6 @@ the table is of the format:
 </syntaxhighlight>
 a subsequent table represents the next row. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='queryHandle',
-                method_name="""poll""",
-                field=None,
-                is_static=False,
-            ),
             name='dbPoll',
         )
         ],
@@ -427,13 +398,6 @@ a subsequent table represents the next row. """,
 String parameters are automatically quoted and escaped as required. (If you do not want a string quoted, use '''??''') """
                 },
                 result="""returns a prepare sql query string, or false if an error occurred. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='connection',
-                method_name="""prepareString""",
-                field=None,
-                is_static=False,
             ),
             name='dbPrepareString',
         )
@@ -537,13 +501,6 @@ String parameters are automatically quoted and escaped as required. (If you do n
                 },
                 result="""returns a query handle unless the connection is incorrect, in which case it return false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='connection',
-                method_name="""query""",
-                field=None,
-                is_static=False,
-            ),
             name='dbQuery',
         )
         ],
@@ -621,7 +578,6 @@ String parameters are automatically escaped by adding a backslash (\) before ' a
 </syntaxhighlight>
 a subsequent table represents the next row. """,
             ),
-            oop=None,
             name='executeSQLQuery',
         )
         ],

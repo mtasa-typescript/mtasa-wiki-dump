@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -81,7 +80,6 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                 },
                 result="""returns true if the hook was successfully added, or false otherwise. """,
             ),
-            oop=None,
             name='addDebugHook',
         )
         ],
@@ -155,7 +153,6 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                 },
                 result="""returns true if the hook was successfully added, or false otherwise. """,
             ),
-            oop=None,
             name='addDebugHook',
         )
         ],
@@ -200,7 +197,6 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                 },
                 result="""returns the decrypted data from https://en.wikipedia.org/wiki/base64 base64 representation of the encrypted block if the decryption process was successfully completed, false otherwise. """,
             ),
-            oop=None,
             name='base64Decode',
         )
         ],
@@ -243,7 +239,6 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                 },
                 result="""returns the decrypted data from https://en.wikipedia.org/wiki/base64 base64 representation of the encrypted block if the decryption process was successfully completed, false otherwise. """,
             ),
-            oop=None,
             name='base64Decode',
         )
         ],
@@ -288,7 +283,6 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                 },
                 result="""returns the https://en.wikipedia.org/wiki/base64 base64 representation of the encoded data if the encoding process was successfully completed, false otherwise. """,
             ),
-            oop=None,
             name='base64Encode',
         )
         ],
@@ -331,7 +325,6 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                 },
                 result="""returns the https://en.wikipedia.org/wiki/base64 base64 representation of the encoded data if the encoding process was successfully completed, false otherwise. """,
             ),
-            oop=None,
             name='base64Encode',
         )
         ],
@@ -386,7 +379,6 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                 },
                 result="""returns the conjuncted value. """,
             ),
-            oop=None,
             name='bitAnd',
         )
         ],
@@ -439,7 +431,6 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                 },
                 result="""returns the conjuncted value. """,
             ),
-            oop=None,
             name='bitAnd',
         )
         ],
@@ -496,7 +487,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise ope
                 },
                 result="""returns the arithmetic shifted value as integer. """,
             ),
-            oop=None,
             name='bitArShift',
         )
         ],
@@ -551,7 +541,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise ope
                 },
                 result="""returns the arithmetic shifted value as integer. """,
             ),
-            oop=None,
             name='bitArShift',
         )
         ],
@@ -618,7 +607,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise ope
                 },
                 result="""returns the extracted value/bit sequence. """,
             ),
-            oop=None,
             name='bitExtract',
         )
         ],
@@ -683,7 +671,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise ope
                 },
                 result="""returns the extracted value/bit sequence. """,
             ),
-            oop=None,
             name='bitExtract',
         )
         ],
@@ -740,7 +727,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise oper
                 },
                 result="""returns the circular left-rotated value as integer. """,
             ),
-            oop=None,
             name='bitLRotate',
         )
         ],
@@ -795,7 +781,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise oper
                 },
                 result="""returns the circular left-rotated value as integer. """,
             ),
-            oop=None,
             name='bitLRotate',
         )
         ],
@@ -852,7 +837,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns the logical left shifted value as integer. """,
             ),
-            oop=None,
             name='bitLShift',
         )
         ],
@@ -907,7 +891,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns the logical left shifted value as integer. """,
             ),
-            oop=None,
             name='bitLShift',
         )
         ],
@@ -952,7 +935,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns the value on which the operation has been performed. """,
             ),
-            oop=None,
             name='bitNot',
         )
         ],
@@ -995,7 +977,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns the value on which the operation has been performed. """,
             ),
-            oop=None,
             name='bitNot',
         )
         ],
@@ -1050,7 +1031,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns the conjuncted value. """,
             ),
-            oop=None,
             name='bitOr',
         )
         ],
@@ -1103,7 +1083,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns the conjuncted value. """,
             ),
-            oop=None,
             name='bitOr',
         )
         ],
@@ -1181,7 +1160,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns the replaced value/bit sequence. """,
             ),
-            oop=None,
             name='bitReplace',
         )
         ],
@@ -1257,7 +1235,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns the replaced value/bit sequence. """,
             ),
-            oop=None,
             name='bitReplace',
         )
         ],
@@ -1314,7 +1291,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise oper
                 },
                 result="""returns the circular right-rotated value as integer. """,
             ),
-            oop=None,
             name='bitRRotate',
         )
         ],
@@ -1369,7 +1345,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise oper
                 },
                 result="""returns the circular right-rotated value as integer. """,
             ),
-            oop=None,
             name='bitRRotate',
         )
         ],
@@ -1426,7 +1401,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns the logical right shifted value as integer. """,
             ),
-            oop=None,
             name='bitRShift',
         )
         ],
@@ -1481,7 +1455,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns the logical right shifted value as integer. """,
             ),
-            oop=None,
             name='bitRShift',
         )
         ],
@@ -1536,7 +1509,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns true if the conjuncted value is not zero, false otherwise. if a bad argument was passed to bittest, youll get nil. """,
             ),
-            oop=None,
             name='bitTest',
         )
         ],
@@ -1589,7 +1561,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns true if the conjuncted value is not zero, false otherwise. if a bad argument was passed to bittest, youll get nil. """,
             ),
-            oop=None,
             name='bitTest',
         )
         ],
@@ -1644,7 +1615,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns the conjuncted value. """,
             ),
-            oop=None,
             name='bitXor',
         )
         ],
@@ -1697,7 +1667,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns the conjuncted value. """,
             ),
-            oop=None,
             name='bitXor',
         )
         ],
@@ -1767,7 +1736,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns true if the notification is correctly created, false otherwise. """,
             ),
-            oop=None,
             name='createTrayNotification',
         )
         ],
@@ -1812,7 +1780,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns true if the development mode is enabled and arguments are correct, false otherwise. """,
             ),
-            oop=None,
             name='debugSleep',
         )
         ],
@@ -1855,7 +1822,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns true if the development mode is enabled and arguments are correct, false otherwise. """,
             ),
-            oop=None,
             name='debugSleep',
         )
         ],
@@ -1934,7 +1900,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns the decoded string if successful, false otherwise. if a callback was provided, the decoded string is argument to the callback. """,
             ),
-            oop=None,
             name='decodeString',
         )
         ],
@@ -2011,7 +1976,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns the decoded string if successful, false otherwise. if a callback was provided, the decoded string is argument to the callback. """,
             ),
-            oop=None,
             name='decodeString',
         )
         ],
@@ -2056,7 +2020,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns mixed if the reference were valid. returns false if the reference were invalid. """,
             ),
-            oop=None,
             name='deref',
         )
         ],
@@ -2099,7 +2062,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns mixed if the reference were valid. returns false if the reference were invalid. """,
             ),
-            oop=None,
             name='deref',
         )
         ],
@@ -2147,7 +2109,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 },
                 result="""returns true if file download has been queued, false otherwise. """,
             ),
-            oop=None,
             name='downloadFile',
         )
         ],
@@ -2231,7 +2192,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
 ** iv (https://en.wikipedia.org/wiki/initialization_vector initialization vector): this is a string generated by the encryption algorithm that is needed to decrypt the message by decodestring. if a callback was provided, true is returned immediately, and the iv is passed as an argument to the callback.
 |20898}} """,
             ),
-            oop=None,
             name='encodeString',
         )
         ],
@@ -2313,7 +2273,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
 ** iv (https://en.wikipedia.org/wiki/initialization_vector initialization vector): this is a string generated by the encryption algorithm that is needed to decrypt the message by decodestring. if a callback was provided, true is returned immediately, and the iv is passed as an argument to the callback.
 |20898}} """,
             ),
-            oop=None,
             name='encodeString',
         )
         ],
@@ -2359,7 +2318,6 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 result="""returns variables read from the json string.
 note: indices of a json object such as 1: cat are being returned as string, not as integer. """,
             ),
-            oop=None,
             name='fromJSON',
         )
         ],
@@ -2403,7 +2361,6 @@ note: indices of a json object such as 1: cat are being returned as string, not 
                 result="""returns variables read from the json string.
 note: indices of a json object such as 1: cat are being returned as string, not as integer. """,
             ),
-            oop=None,
             name='fromJSON',
         )
         ],
@@ -2470,7 +2427,6 @@ All colors used must begin with a # sign. """
                 },
                 result="""returns four integers in rgba format, with a maximum value of 255 for each.  each stands for red, green, blue, and alpha.  alpha decides transparancy where 255 is opaque and 0 is transparent.  false is returned if the string passed is invalid (for example, is missing the preceeding # sign). """,
             ),
-            oop=None,
             name='getColorFromString',
         )
         ],
@@ -2535,7 +2491,6 @@ All colors used must begin with a # sign. """
                 },
                 result="""returns four integers in rgba format, with a maximum value of 255 for each.  each stands for red, green, blue, and alpha.  alpha decides transparancy where 255 is opaque and 0 is transparent.  false is returned if the string passed is invalid (for example, is missing the preceeding # sign). """,
             ),
-            oop=None,
             name='getColorFromString',
         )
         ],
@@ -2571,7 +2526,6 @@ All colors used must begin with a # sign. """
                 },
                 result="""returns true if the development mode is on, false if off. """,
             ),
-            oop=None,
             name='getDevelopmentMode',
         )
         ],
@@ -2605,7 +2559,6 @@ All colors used must begin with a # sign. """
                 },
                 result="""returns true if the development mode is on, false if off. """,
             ),
-            oop=None,
             name='getDevelopmentMode',
         )
         ],
@@ -2683,7 +2636,6 @@ All colors used must begin with a # sign. """
                 },
                 result="""returns a float containing the 2d distance between the two points. returns false if invalid parameters are passed. """,
             ),
-            oop=None,
             name='getDistanceBetweenPoints2D',
         )
         ],
@@ -2759,7 +2711,6 @@ All colors used must begin with a # sign. """
                 },
                 result="""returns a float containing the 2d distance between the two points. returns false if invalid parameters are passed. """,
             ),
-            oop=None,
             name='getDistanceBetweenPoints2D',
         )
         ],
@@ -2859,7 +2810,6 @@ All colors used must begin with a # sign. """
                 },
                 result="""returns a float containing the distance between the two points as a float. returns false if an argument passed was invalid. """,
             ),
-            oop=None,
             name='getDistanceBetweenPoints3D',
         )
         ],
@@ -2957,7 +2907,6 @@ All colors used must begin with a # sign. """
                 },
                 result="""returns a float containing the distance between the two points as a float. returns false if an argument passed was invalid. """,
             ),
-            oop=None,
             name='getDistanceBetweenPoints3D',
         )
         ],
@@ -3047,7 +2996,6 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 },
                 result="""returns fanimationtime  the animation time given by the easing function (can be < 0 or > 1 since some easing|easing functions have overshoot or bounce/spring effects, false otherwise (error in parameters). """,
             ),
-            oop=None,
             name='getEasingValue',
         )
         ],
@@ -3135,7 +3083,6 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 },
                 result="""returns fanimationtime  the animation time given by the easing function (can be < 0 or > 1 since some easing|easing functions have overshoot or bounce/spring effects, false otherwise (error in parameters). """,
             ),
-            oop=None,
             name='getEasingValue',
         )
         ],
@@ -3171,7 +3118,6 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 },
                 result="""returns an integer between 25 and 100 of the maximum fps that players can run their game at. """,
             ),
-            oop=None,
             name='getFPSLimit',
         )
         ],
@@ -3205,7 +3151,6 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 },
                 result="""returns an integer between 25 and 100 of the maximum fps that players can run their game at. """,
             ),
-            oop=None,
             name='getFPSLimit',
         )
         ],
@@ -3260,7 +3205,6 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
 |}
 |} """,
             ),
-            oop=None,
             name='getKeyboardLayout',
         )
         ],
@@ -3301,7 +3245,6 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
 *code : the language code (eg. en_us for english (united states) or ar for arabic).
 *name : the name of the language (eg. english (united states) or arabic). """,
             ),
-            oop=None,
             name='getLocalization',
         )
         ],
@@ -3346,7 +3289,6 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 },
                 result=""" """,
             ),
-            oop=None,
             name='getNetworkStats',
         )
         ],
@@ -3380,7 +3322,6 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 },
                 result=""" """,
             ),
-            oop=None,
             name='getNetworkStats',
         )
         ],
@@ -3416,7 +3357,6 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 },
                 result="""returns a table with two fields: in and out. each of these contain a table with two fields: bits and count. each of these contain a table with 256 numeric fields ranging from 0 to 255, containing the appropriate network usage data for such packet id. """,
             ),
-            oop=None,
             name='getNetworkUsageData',
         )
         ],
@@ -3450,7 +3390,6 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 },
                 result="""returns a table with two fields: in and out. each of these contain a table with two fields: bits and count. each of these contain a table with 256 numeric fields ranging from 0 to 255, containing the appropriate network usage data for such packet id. """,
             ),
-            oop=None,
             name='getNetworkUsageData',
         )
         ],
@@ -3521,7 +3460,6 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 },
                 result="""returns two tables. first contains column names. the second contains result rows. each row is table of cells. """,
             ),
-            oop=None,
             name='getPerformanceStats',
         )
         ],
@@ -3590,7 +3528,6 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 },
                 result="""returns two tables. first contains column names. the second contains result rows. each row is table of cells. """,
             ),
-            oop=None,
             name='getPerformanceStats',
         )
         ],
@@ -3690,7 +3627,6 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
 |}
 * second is generally 0-59. extra range to accommodate for leap seconds in certain systems. """,
             ),
-            oop=None,
             name='getRealTime',
         )
         ],
@@ -3788,7 +3724,6 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
 |}
 * second is generally 0-59. extra range to accommodate for leap seconds in certain systems. """,
             ),
-            oop=None,
             name='getRealTime',
         )
         ],
@@ -3835,7 +3770,6 @@ Available in 1.1 and onwards """,
                 result="""returns a string containing the current value for the named setting, or false if the setting does not exist.<br>
 if the setting name is serverip, may return the string auto on local servers. """,
             ),
-            oop=None,
             name='getServerConfigSetting',
         )
         ],
@@ -3874,7 +3808,6 @@ if the setting name is serverip, may return the string auto on local servers. ""
                 },
                 result="""returns an integer containing the number of milliseconds since the system the server is running on started. this has the potential to wrap-around. """,
             ),
-            oop=None,
             name='getTickCount',
         )
         ],
@@ -3908,7 +3841,6 @@ if the setting name is serverip, may return the string auto on local servers. ""
                 },
                 result="""returns an integer containing the number of milliseconds since the system the server is running on started. this has the potential to wrap-around. """,
             ),
-            oop=None,
             name='getTickCount',
         )
         ],
@@ -3964,13 +3896,6 @@ if the setting name is serverip, may return the string auto on local servers. ""
 * integer three represents the time interval of timer.
 * returns false if the timer doesnt exist or stopped running. also, debugscript will say bad argument @ gettimerdetails. to prevent this, you can check if the timer exists with istimer(). """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='timer',
-                method_name="""getDetails""",
-                field=None,
-                is_static=False,
-            ),
             name='getTimerDetails',
         )
         ],
@@ -4024,13 +3949,6 @@ if the setting name is serverip, may return the string auto on local servers. ""
 * integer three represents the time interval of timer.
 * returns false if the timer doesnt exist or stopped running. also, debugscript will say bad argument @ gettimerdetails. to prevent this, you can check if the timer exists with istimer(). """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='timer',
-                method_name="""getDetails""",
-                field=None,
-                is_static=False,
-            ),
             name='getTimerDetails',
         )
         ],
@@ -4075,7 +3993,6 @@ if the setting name is serverip, may return the string auto on local servers. ""
                 },
                 result="""returns a table of all the active timers. """,
             ),
-            oop=None,
             name='getTimers',
         )
         ],
@@ -4118,7 +4035,6 @@ if the setting name is serverip, may return the string auto on local servers. ""
                 },
                 result="""returns a table of all the active timers. """,
             ),
-            oop=None,
             name='getTimers',
         )
         ],
@@ -4185,7 +4101,6 @@ if the setting name is serverip, may return the string auto on local servers. ""
                 },
                 result="""returns a string containing the token if it exists, false otherwise. """,
             ),
-            oop=None,
             name='gettok',
         )
         ],
@@ -4250,7 +4165,6 @@ if the setting name is serverip, may return the string auto on local servers. ""
                 },
                 result="""returns a string containing the token if it exists, false otherwise. """,
             ),
-            oop=None,
             name='gettok',
         )
         ],
@@ -4314,7 +4228,6 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                 },
                 result="""returns a string containing the specified userdatas type, or false plus an error message if the given value is not userdata. """,
             ),
-            oop=None,
             name='getUserdataType',
         )
         ],
@@ -4376,7 +4289,6 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                 },
                 result="""returns a string containing the specified userdatas type, or false plus an error message if the given value is not userdata. """,
             ),
-            oop=None,
             name='getUserdataType',
         )
         ],
@@ -4423,7 +4335,6 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
 *tag: the build tag (from 1.0.3 onwards). contains infomation about the underlying version used. i.e. the final version of 1.0.3 has the build tag of 1.0.3 rc-9. (this can be confirmed by using the console command ver.)
 *sortable: a 15 character sortable version string (from 1.0.4 onwards). format of the string is described in getplayerversion. """,
             ),
-            oop=None,
             name='getVersion',
         )
         ],
@@ -4468,7 +4379,6 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
 *tag: the build tag (from 1.0.3 onwards). contains infomation about the underlying version used. i.e. the final version of 1.0.3 has the build tag of 1.0.3 rc-9. (this can be confirmed by using the console command ver.)
 *sortable: a 15 character sortable version string (from 1.0.4 onwards). format of the string is described in getplayerversion. """,
             ),
-            oop=None,
             name='getVersion',
         )
         ],
@@ -4524,7 +4434,6 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                 },
                 result="""returns the hash of the data, false if an invalid argument was used. """,
             ),
-            oop=None,
             name='hash',
         )
         ],
@@ -4578,7 +4487,6 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                 },
                 result="""returns the hash of the data, false if an invalid argument was used. """,
             ),
-            oop=None,
             name='hash',
         )
         ],
@@ -4634,7 +4542,6 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                 },
                 result="""always returns a string. the contents can change if we update the inspect library, so it is not expected to be consistent across lua versions. """,
             ),
-            oop=None,
             name='inspect',
         )
         ],
@@ -4688,7 +4595,6 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                 },
                 result="""always returns a string. the contents can change if we update the inspect library, so it is not expected to be consistent across lua versions. """,
             ),
-            oop=None,
             name='inspect',
         )
         ],
@@ -4849,7 +4755,6 @@ It can also be used to interpolate 2D vectors or scalars by only setting some of
                 result="""returns x, y, z the interpolated 3d vector/value if successful, false otherwise (error in parameters).
 as mentioned before, interpolatebetween can be used on 2d vectors or scalars in which case only some (x, y or just x) of the returned values are to be used (cf. alpha interpolation in marker example or size interpolation in window example). """,
             ),
-            oop=None,
             name='interpolateBetween',
         )
         ],
@@ -5008,7 +4913,6 @@ It can also be used to interpolate 2D vectors or scalars by only setting some of
                 result="""returns x, y, z the interpolated 3d vector/value if successful, false otherwise (error in parameters).
 as mentioned before, interpolatebetween can be used on 2d vectors or scalars in which case only some (x, y or just x) of the returned values are to be used (cf. alpha interpolation in marker example or size interpolation in window example). """,
             ),
-            oop=None,
             name='interpolateBetween',
         )
         ],
@@ -5074,7 +4978,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""always returns nil. """,
             ),
-            oop=None,
             name='iprint',
         )
         ],
@@ -5138,7 +5041,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""always returns nil. """,
             ),
-            oop=None,
             name='iprint',
         )
         ],
@@ -5174,7 +5076,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns true or false if oop is enabled or not. returns nil if an error arised. """,
             ),
-            oop=None,
             name='isOOPEnabled',
         )
         ],
@@ -5208,7 +5109,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns true or false if oop is enabled or not. returns nil if an error arised. """,
             ),
-            oop=None,
             name='isOOPEnabled',
         )
         ],
@@ -5252,13 +5152,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     "theTimer": """: The variable that we want to check. """
                 },
                 result="""returns true if the passed value is a timer, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='timer',
-                method_name="""isValid""",
-                field="""valid""",
-                is_static=False,
             ),
             name='isTimer',
         )
@@ -5301,13 +5194,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     "theTimer": """: The variable that we want to check. """
                 },
                 result="""returns true if the passed value is a timer, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='timer',
-                method_name="""isValid""",
-                field="""valid""",
-                is_static=False,
             ),
             name='isTimer',
         )
@@ -5347,7 +5233,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns true if the tray notifications are enabled in the settings, false otherwise. """,
             ),
-            oop=None,
             name='isTrayNotificationEnabled',
         )
         ],
@@ -5392,13 +5277,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns true if the timer was successfully killed, false if no such timer existed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='timer',
-                method_name="""destroy""",
-                field=None,
-                is_static=False,
-            ),
             name='killTimer',
         )
         ],
@@ -5441,13 +5319,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns true if the timer was successfully killed, false if no such timer existed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='timer',
-                method_name="""destroy""",
-                field=None,
-                is_static=False,
-            ),
             name='killTimer',
         )
         ],
@@ -5492,7 +5363,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns the md5 hash of the input string if successful, false otherwise. """,
             ),
-            oop=None,
             name='md5',
         )
         ],
@@ -5535,7 +5405,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns the md5 hash of the input string if successful, false otherwise. """,
             ),
-            oop=None,
             name='md5',
         )
         ],
@@ -5614,7 +5483,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns the hash as a string if hashing was successful, false otherwise. if a callback was provided, the aforementioned values are arguments to the callback, and this function will always return true. """,
             ),
-            oop=None,
             name='passwordHash',
         )
         ],
@@ -5691,7 +5559,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns the hash as a string if hashing was successful, false otherwise. if a callback was provided, the aforementioned values are arguments to the callback, and this function will always return true. """,
             ),
-            oop=None,
             name='passwordHash',
         )
         ],
@@ -5771,7 +5638,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns true if the password matches the hash. returns false if the password does not match, or if an unknown hash was passed. if a callback was provided, the aforementioned values are arguments to the callback, and this function will always return true. """,
             ),
-            oop=None,
             name='passwordVerify',
         )
         ],
@@ -5849,7 +5715,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns true if the password matches the hash. returns false if the password does not match, or if an unknown hash was passed. if a callback was provided, the aforementioned values are arguments to the callback, and this function will always return true. """,
             ),
-            oop=None,
             name='passwordVerify',
         )
         ],
@@ -5916,7 +5781,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns true if the pattern was found in the input string, false otherwise. """,
             ),
-            oop=None,
             name='pregFind',
         )
         ],
@@ -5981,7 +5845,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns true if the pattern was found in the input string, false otherwise. """,
             ),
-            oop=None,
             name='pregFind',
         )
         ],
@@ -6059,7 +5922,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns a table if one or more match is found, false otherwise. """,
             ),
-            oop=None,
             name='pregMatch',
         )
         ],
@@ -6135,7 +5997,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns a table if one or more match is found, false otherwise. """,
             ),
-            oop=None,
             name='pregMatch',
         )
         ],
@@ -6213,7 +6074,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns the replaced string, or bool false otherwise. """,
             ),
-            oop=None,
             name='pregReplace',
         )
         ],
@@ -6289,7 +6149,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns the replaced string, or bool false otherwise. """,
             ),
-            oop=None,
             name='pregReplace',
         )
         ],
@@ -6334,7 +6193,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns an int if the reference were successfully created. returns false if the parameter were invalid. """,
             ),
-            oop=None,
             name='ref',
         )
         ],
@@ -6377,7 +6235,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns an int if the reference were successfully created. returns false if the parameter were invalid. """,
             ),
-            oop=None,
             name='ref',
         )
         ],
@@ -6437,7 +6294,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns true if the hook was successfully removed, or false otherwise. """,
             ),
-            oop=None,
             name='removeDebugHook',
         )
         ],
@@ -6495,7 +6351,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns true if the hook was successfully removed, or false otherwise. """,
             ),
-            oop=None,
             name='removeDebugHook',
         )
         ],
@@ -6540,13 +6395,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns true if the timer was successfully reset, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='timer',
-                method_name="""reset""",
-                field=None,
-                is_static=False,
-            ),
             name='resetTimer',
         )
         ],
@@ -6588,13 +6436,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     "theTimer": """The timer whose elapsed time you wish to reset. """
                 },
                 result="""returns true if the timer was successfully reset, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='timer',
-                method_name="""reset""",
-                field=None,
-                is_static=False,
             ),
             name='resetTimer',
         )
@@ -6643,7 +6484,6 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 },
                 result="""returns true if the text in the clip board was set correctly. """,
             ),
-            oop=None,
             name='setClipboard',
         )
         ],
@@ -6704,7 +6544,6 @@ Shared development mode functions:
                 },
                 result="""returns true if the mode was set correctly, false otherwise. """,
             ),
-            oop=None,
             name='setDevelopmentMode',
         )
         ],
@@ -6763,7 +6602,6 @@ Shared development mode functions:
                 },
                 result="""returns true if the mode was set correctly, false otherwise. """,
             ),
-            oop=None,
             name='setDevelopmentMode',
         )
         ],
@@ -6808,7 +6646,6 @@ Shared development mode functions:
                 },
                 result="""returns true if successful, or false if it was not possible to set the limit or an invalid value was passed. """,
             ),
-            oop=None,
             name='setFPSLimit',
         )
         ],
@@ -6851,7 +6688,6 @@ Shared development mode functions:
                 },
                 result="""returns true if successful, or false if it was not possible to set the limit or an invalid value was passed. """,
             ),
-            oop=None,
             name='setFPSLimit',
         )
         ],
@@ -6932,7 +6768,6 @@ Shared development mode functions:
                 },
                 result="""returns true if the setting was successfully set, or false otherwise. """,
             ),
-            oop=None,
             name='setServerConfigSetting',
         )
         ],
@@ -7016,13 +6851,6 @@ Multi Theft Auto guarantees that the timer will be triggered after at least the 
                 },
                 result="""returns a timer pointer if the timer was set successfully, false if the arguments are invalid or the timer could not be set. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Timer',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='setTimer',
         )
         ],
@@ -7101,13 +6929,6 @@ Multi Theft Auto guarantees that the timer will be triggered after at least the 
                 },
                 result="""returns a timer pointer if the timer was set successfully, false if the arguments are invalid or the timer could not be set. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Timer',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='setTimer',
         )
         ],
@@ -7169,7 +6990,6 @@ Multi Theft Auto guarantees that the timer will be triggered after at least the 
 * the client has disabled this feature
 returns true otherwise """,
             ),
-            oop=None,
             name='setWindowFlashing',
         )
         ],
@@ -7216,7 +7036,6 @@ Calculates the sha256 hash of the specified string. """,
                 },
                 result="""returns the sha256 hash of the input string if successful, false otherwise. """,
             ),
-            oop=None,
             name='sha256',
         )
         ],
@@ -7261,7 +7080,6 @@ Calculates the sha256 hash of the specified string. """,
                 },
                 result="""returns the sha256 hash of the input string if successful, false otherwise. """,
             ),
-            oop=None,
             name='sha256',
         )
         ],
@@ -7318,7 +7136,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns a table of substrings split from the original string if successful, false otherwise. """,
             ),
-            oop=None,
             name='split',
         )
         ],
@@ -7373,7 +7190,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns a table of substrings split from the original string if successful, false otherwise. """,
             ),
-            oop=None,
             name='split',
         )
         ],
@@ -7429,7 +7245,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns string containing the decrypted data if the decryption process was successfully completed, false otherwise. """,
             ),
-            oop=None,
             name='teaDecode',
         )
         ],
@@ -7483,7 +7298,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns string containing the decrypted data if the decryption process was successfully completed, false otherwise. """,
             ),
-            oop=None,
             name='teaDecode',
         )
         ],
@@ -7539,7 +7353,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns the https://en.wikipedia.org/wiki/base64 base64 representation of the encrypted string if the encryption process was successfully completed, false otherwise. """,
             ),
-            oop=None,
             name='teaEncode',
         )
         ],
@@ -7593,7 +7406,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns the https://en.wikipedia.org/wiki/base64 base64 representation of the encrypted string if the encryption process was successfully completed, false otherwise. """,
             ),
-            oop=None,
             name='teaEncode',
         )
         ],
@@ -7671,7 +7483,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns a single value representing the color. """,
             ),
-            oop=None,
             name='tocolor',
         )
         ],
@@ -7747,7 +7558,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns a single value representing the color. """,
             ),
-            oop=None,
             name='tocolor',
         )
         ],
@@ -7816,7 +7626,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns a json formatted string. """,
             ),
-            oop=None,
             name='toJSON',
         )
         ],
@@ -7883,7 +7692,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns a json formatted string. """,
             ),
-            oop=None,
             name='toJSON',
         )
         ],
@@ -7928,7 +7736,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns a string if the function was successful, false otherwise. """,
             ),
-            oop=None,
             name='utfChar',
         )
         ],
@@ -7971,7 +7778,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns a string if the function was successful, false otherwise. """,
             ),
-            oop=None,
             name='utfChar',
         )
         ],
@@ -8016,7 +7822,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns an int if the function was successful, false otherwise. """,
             ),
-            oop=None,
             name='utfCode',
         )
         ],
@@ -8059,7 +7864,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns an int if the function was successful, false otherwise. """,
             ),
-            oop=None,
             name='utfCode',
         )
         ],
@@ -8104,7 +7908,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns an int if the function was successful, false otherwise. """,
             ),
-            oop=None,
             name='utfLen',
         )
         ],
@@ -8147,7 +7950,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns an int if the function was successful, false otherwise. """,
             ),
-            oop=None,
             name='utfLen',
         )
         ],
@@ -8203,7 +8005,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns an int if the function was successful, false otherwise. """,
             ),
-            oop=None,
             name='utfSeek',
         )
         ],
@@ -8257,7 +8058,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns an int if the function was successful, false otherwise. """,
             ),
-            oop=None,
             name='utfSeek',
         )
         ],
@@ -8324,7 +8124,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns a string if the function was successful, false otherwise. """,
             ),
-            oop=None,
             name='utfSub',
         )
         ],
@@ -8389,7 +8188,6 @@ Note: You can use the function gettok to retrieve a single token from the string
                 },
                 result="""returns a string if the function was successful, false otherwise. """,
             ),
-            oop=None,
             name='utfSub',
         )
         ],

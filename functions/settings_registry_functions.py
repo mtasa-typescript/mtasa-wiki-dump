@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -54,7 +53,6 @@ DUMP_PARTIAL = [
 *the list of the scripts resource settings if an empty string is passed.
 it returns false if the specified setting or settings group doesnt exist, or if the settings group you are trying to retrieve doesnt have any public or protected settings. """,
             ),
-            oop=None,
             name='get',
         )
         ],
@@ -114,7 +112,6 @@ Its important to note that set always writes to the settings.xml file, even if g
                 },
                 result="""returns true if the setting has been set, false if you do not have access to the setting or invalid arguments were passed. """,
             ),
-            oop=None,
             name='set',
         )
         ],

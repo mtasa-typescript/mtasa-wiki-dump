@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -78,7 +77,6 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
 *a table of all cvar values, if cvar was not specified
 *false if an invalid cvar was specified """,
             ),
-            oop=None,
             name='getChatboxLayout',
         )
         ],
@@ -125,13 +123,6 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     "guiElement": """the GUI element that you want to defocus """
                 },
                 result="""returns true if the function was successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""blur""",
-                field=None,
-                is_static=False,
             ),
             name='guiBlur',
         )
@@ -180,13 +171,6 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 },
                 result="""returns true if the function was successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""bringToFront""",
-                field=None,
-                is_static=False,
-            ),
             name='guiBringToFront',
         )
         ],
@@ -233,13 +217,6 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     "theCheckbox": """The checkbox you wish to retrieve the selection state of. """
                 },
                 result="""returns true if the checkbox is selected, false if it is not. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Checkbox|GuiCheckBox',
-                method_name="""getSelected""",
-                field="""selected""",
-                is_static=False,
             ),
             name='guiCheckBoxGetSelected',
         )
@@ -299,13 +276,6 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 },
                 result="""returns true if the checkboxs selection state was successfully set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Checkbox|GuiCheckBox',
-                method_name="""setSelected""",
-                field="""selected""",
-                is_static=False,
-            ),
             name='guiCheckBoxSetSelected',
         )
         ],
@@ -364,13 +334,6 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 },
                 result="""returns the item id if it has been created, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Combobox|GuiComboBox',
-                method_name="""addItem""",
-                field=None,
-                is_static=False,
-            ),
             name='guiComboBoxAddItem',
         )
         ],
@@ -417,13 +380,6 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     "comboBox": """The combobox element to be cleared """
                 },
                 result="""returns true if the combobox element is valid and has been cleared successfully, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Combobox|GuiComboBox',
-                method_name="""clear""",
-                field=None,
-                is_static=False,
             ),
             name='guiComboBoxClear',
         )
@@ -472,7 +428,6 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 },
                 result="""returns the number of items if the function is successful, false otherwise. """,
             ),
-            oop=None,
             name='guiComboBoxGetItemCount',
         )
         ],
@@ -531,13 +486,6 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 },
                 result="""returns the text of the item if the arguments are right, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Combobox|GuiComboBox',
-                method_name="""getItemText""",
-                field=None,
-                is_static=False,
-            ),
             name='guiComboBoxGetItemText',
         )
         ],
@@ -585,13 +533,6 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 },
                 result="""returns the index of the selected item if the specified combobox is valid and has a selected item, -1 if no item is selected, nil otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Combobox|GuiComboBox',
-                method_name="""getSelected""",
-                field="""selected""",
-                is_static=False,
-            ),
             name='guiComboBoxGetSelected',
         )
         ],
@@ -638,13 +579,6 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     "comboBox": """The combo box to get the state. """
                 },
                 result="""returns true if combobox is opened, false if combobox is closed, nil otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Combobox|GuiComboBox',
-                method_name="""isOpen""",
-                field="""open""",
-                is_static=False,
             ),
             name='guiComboBoxIsOpen',
         )
@@ -703,13 +637,6 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     "itemId": """The index of the item to remove """
                 },
                 result="""returns true if the item was removes successfully, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Combobox|GuiComboBox',
-                method_name="""removeItem""",
-                field=None,
-                is_static=False,
             ),
             name='guiComboBoxRemoveItem',
         )
@@ -780,13 +707,6 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 },
                 result="""returns true if the text was set successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Combobox|GuiComboBox',
-                method_name="""setItemText""",
-                field=None,
-                is_static=False,
-            ),
             name='guiComboBoxSetItemText',
         )
         ],
@@ -845,13 +765,6 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 },
                 result="""returns true if is successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Combobox|GuiComboBox',
-                method_name="""setOpen""",
-                field="""open""",
-                is_static=False,
-            ),
             name='guiComboBoxSetOpen',
         )
         ],
@@ -909,13 +822,6 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     "itemIndex": """the item you want to select (item 0 is the first item). If -1 is specified, then the combo box text is set to its caption. """
                 },
                 result="""returns true if the selected item has been changed successfully, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Combobox|GuiComboBox',
-                method_name="""setSelected""",
-                field="""selected""",
-                is_static=False,
             ),
             name='guiComboBoxSetSelected',
         )
@@ -1043,13 +949,6 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                 },
                 result="""returns a gui-browser element if it was created successfully, false otherwise. returns also false, if the user disabled remote pages and islocal was set to false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/gui-browser|GuiBrowser',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='guiCreateBrowser',
         )
         ],
@@ -1162,13 +1061,6 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                     "parent": """This is the parent that the gui button is attached to.  If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
                 result="""returns an element of the created element/gui/button|button if it was successfully created, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Button|GuiButton',
-                method_name=None,
-                field=None,
-                is_static=True,
             ),
             name='guiCreateButton',
         )
@@ -1294,13 +1186,6 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                 },
                 result="""returns element of the checkbox if it was created succesfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Checkbox|GuiCheckBox',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='guiCreateCheckBox',
         )
         ],
@@ -1413,13 +1298,6 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                     "parent": """This is the parent that the GUI combobox is attached to.  If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
                 result="""returns an element of the created combobox if it was successfully created, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Combobox|GuiComboBox',
-                method_name=None,
-                field=None,
-                is_static=True,
             ),
             name='guiCreateComboBox',
         )
@@ -1534,13 +1412,6 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                 },
                 result="""returns a gui-edit element of the created edit box if it was successfully created, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Edit_field|GuiEdit',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='guiCreateEdit',
         )
         ],
@@ -1600,13 +1471,6 @@ To see if creation is likely to fail, use dxGetStatus. (When VideoMemoryFreeForM
                 },
                 result="""returns a gui font element if successful, false if invalid arguments were passed to the function, or there is insufficient resources available.
 you should always check to see if this function has returned false. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI font|GuiFont',
-                method_name=None,
-                field=None,
-                is_static=True,
             ),
             name='guiCreateFont',
         )
@@ -1709,13 +1573,6 @@ you should always check to see if this function has returned false. """,
                     "parent": """This is the parent that the gui gridlist is attached to.  If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
                 result="""returns an element of the created gridlist if it was successfully created, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name=None,
-                field=None,
-                is_static=True,
             ),
             name='guiCreateGridList',
         )
@@ -1832,13 +1689,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 },
                 result="""returns an gui_widgets|element of the created label if it was successfully created, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Text label|GuiLabel',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='guiCreateLabel',
         )
         ],
@@ -1952,13 +1802,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 },
                 result="""returns a gui-memo element of the created memo if it was successfully created, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GuiMemo',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='guiCreateMemo',
         )
         ],
@@ -2061,7 +1904,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 },
                 result="""returns element of the progress bar if it was created succesfully, false otherwise. """,
             ),
-            oop=None,
             name='guiCreateProgressBar',
         )
         ],
@@ -2176,7 +2018,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 },
                 result="""returns element of the radio button if it was created succesfully, false otherwise. """,
             ),
-            oop=None,
             name='guiCreateRadioButton',
         )
         ],
@@ -2290,7 +2131,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 },
                 result="""returns a gui-scrollbar if it was created successfully, false otherwise. """,
             ),
-            oop=None,
             name='guiCreateScrollBar',
         )
         ],
@@ -2393,7 +2233,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 },
                 result="""the gui-element if created, otherwise false. """,
             ),
-            oop=None,
             name='guiCreateScrollPane',
         )
         ],
@@ -2507,13 +2346,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 },
                 result="""returns element if image was created successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Static_image|GuiStaticImage',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='guiCreateStaticImage',
         )
         ],
@@ -2571,13 +2403,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     "parent": """The parent tab panel, as a tab panel element type """
                 },
                 result="""returns a tab element if successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Tab|GuiTab',
-                method_name=None,
-                field=None,
-                is_static=True,
             ),
             name='guiCreateTab',
         )
@@ -2681,13 +2506,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 },
                 result="""returns a gui tab panel element if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Tab panel|GuiTabPanel',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='guiCreateTabPanel',
         )
         ],
@@ -2790,13 +2608,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 },
                 result="""returns a gui window element if it was created successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Window|GuiWindow',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='guiCreateWindow',
         )
         ],
@@ -2855,13 +2666,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 },
                 result="""returns true the tab was successfully deleted, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Tab|GuiTab',
-                method_name="""delete""",
-                field=None,
-                is_static=False,
-            ),
             name='guiDeleteTab',
         )
         ],
@@ -2908,13 +2712,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     "theElement": """The edit box you want to get the caret position from """
                 },
                 result="""returns the caret index on success, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Edit_field|GuiEdit',
-                method_name="""getCaretIndex""",
-                field="""caretIndex""",
-                is_static=False,
             ),
             name='guiEditGetCaretIndex',
         )
@@ -2963,13 +2760,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 },
                 result="""returns the maximum text length on success, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Edit_field|GuiEdit',
-                method_name="""getMaxLength""",
-                field="""maxLength""",
-                is_static=False,
-            ),
             name='guiEditGetMaxLength',
         )
         ],
@@ -3017,13 +2807,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 },
                 result="""returns true if the edit box is masked, false if not, nil if an invalid edit box was provided. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='None',
-                method_name=None,
-                field="""masked""",
-                is_static=None,
-            ),
             name='guiEditIsMasked',
         )
         ],
@@ -3070,13 +2853,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     "guiEdit": """The edit box to check read-only status of. """
                 },
                 result="""returns true if the edit box is read-only, false if not, nil if an invalid edit box was provided. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='None',
-                method_name=None,
-                field="""readOnly""",
-                is_static=None,
             ),
             name='guiEditIsReadOnly',
         )
@@ -3136,13 +2912,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 },
                 result="""returns true if the index was successfully set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Edit_field|GuiEdit',
-                method_name="""setCaretIndex""",
-                field="""caretIndex""",
-                is_static=False,
-            ),
             name='guiEditSetCaretIndex',
         )
         ],
@@ -3200,13 +2969,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     "status": """A boolean value indicating whether masking is to be enabled or disabled. """
                 },
                 result="""returns true if the function is successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Edit_field|GuiEdit',
-                method_name="""setMasked""",
-                field="""masked""",
-                is_static=False,
             ),
             name='guiEditSetMasked',
         )
@@ -3266,13 +3028,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 },
                 result="""returns true if the max length was set successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Edit_field|GuiEdit',
-                method_name="""setMaxLength""",
-                field="""maxLength""",
-                is_static=False,
-            ),
             name='guiEditSetMaxLength',
         )
         ],
@@ -3331,13 +3086,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 },
                 result="""returns true if edit fields read-only status was changed successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Edit_field|GuiEdit',
-                method_name="""setReadOnly""",
-                field="""readOnly""",
-                is_static=False,
-            ),
             name='guiEditSetReadOnly',
         )
         ],
@@ -3384,13 +3132,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     "guiElement": """the GUI element that you want to focus """
                 },
                 result="""returns true if the function was successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""focus""",
-                field=None,
-                is_static=False,
             ),
             name='guiFocus',
         )
@@ -3439,13 +3180,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 },
                 result="""this function returns a positive integer in between 0 and 1 of the gui elements current alpha, or false if it could not be retrieved. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""getAlpha""",
-                field="""alpha""",
-                is_static=False,
-            ),
             name='guiGetAlpha',
         )
         ],
@@ -3492,13 +3226,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     "theBrowser": """The gui-browser """
                 },
                 result="""returns the element/browser|browser element if a correct element/gui-browser|gui-browser has been passed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/gui-browser|guiBrowser',
-                method_name="""getBrowser""",
-                field="""browser""",
-                is_static=False,
             ),
             name='guiGetBrowser',
         )
@@ -3549,13 +3276,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
 * segment_moving  // segment moving cursor (note: not in use)
 * segment_sizing  // segment sizing cursor (note: not in use) """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""getCursorType""",
-                field="""cursorType""",
-                is_static=True,
-            ),
             name='guiGetCursorType',
         )
         ],
@@ -3602,13 +3322,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     "guiElement": """the GUI element to be checked. """
                 },
                 result="""returns true if the element is enabled, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""getEnabled""",
-                field="""enabled""",
-                is_static=False,
             ),
             name='guiGetEnabled',
         )
@@ -3662,13 +3375,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 result="""*string a string containing the name of the elements current font, or false if the gui element passed to the function is invalid.
 *element  the custom gui font that is used, or nil otherwise """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""getFont""",
-                field="""font""",
-                is_static=False,
-            ),
             name='guiGetFont',
         )
         ],
@@ -3706,13 +3412,6 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     
                 },
                 result="""returns true if input is focused on gui, false if its focused on the game. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""isInputEnabled""",
-                field="""inputEnabled""",
-                is_static=True,
             ),
             name='guiGetInputEnabled',
         )
@@ -3755,13 +3454,6 @@ Default mode is allow_binds. """,
 * allow_binds: binds are enabled, hence using a key such as t in an editbox will still activate the chatbox
 * no_binds: binds are disabled, hence using a key such as t in an editbox will not activate the chatbox
 * no_binds_when_editing: binds are always enabled except when an editable editbox or memo has input focus """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""getInputMode""",
-                field="""inputMode""",
-                is_static=True,
             ),
             name='guiGetInputMode',
         )
@@ -3825,13 +3517,6 @@ Default mode is allow_binds. """,
                 },
                 result="""returns floats representing the x and y position of the element, or false if the position could not be retrieved. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""getPosition""",
-                field="""position""",
-                is_static=False,
-            ),
             name='guiGetPosition',
         )
         ],
@@ -3878,13 +3563,6 @@ Default mode is allow_binds. """,
                     "guiElement": """the GUI element you wish to get the properties of. """
                 },
                 result="""if the function succeeds, the return value is a table. its keys are property names, the corresponding values are the values of the properties (both names and values are always strings). if the function fails, it returns false. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""getProperties""",
-                field="""properties""",
-                is_static=False,
             ),
             name='guiGetProperties',
         )
@@ -3944,13 +3622,6 @@ Default mode is allow_binds. """,
                 },
                 result="""if the function succeeds, it returns a string with the value of the property. if it fails, it returns false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""getProperty""",
-                field=None,
-                is_static=False,
-            ),
             name='guiGetProperty',
         )
         ],
@@ -3992,13 +3663,6 @@ Default mode is allow_binds. """,
                     
                 },
                 result="""this returns two floats representing the players screen resolution, width and height. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""getScreenSize""",
-                field=None,
-                is_static=True,
             ),
             name='guiGetScreenSize',
         )
@@ -4046,13 +3710,6 @@ Default mode is allow_binds. """,
                     "tabPanel": """The Element/GUI/Tab panel|tab panel which current tab you want to retrieve. """
                 },
                 result="""returns an element of the element/gui/tab|tab if a tab was selected or nil if no tab was selected. if passed arguments were invalid or something went wrong, the function will return false. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Tab panel|GuiTabPanel',
-                method_name="""getSelectedTab""",
-                field="""selectedTab""",
-                is_static=False,
             ),
             name='guiGetSelectedTab',
         )
@@ -4116,13 +3773,6 @@ Default mode is allow_binds. """,
                 },
                 result="""returns the gui element size x and y if the function has been successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""getSize""",
-                field=None,
-                is_static=False,
-            ),
             name='guiGetSize',
         )
         ],
@@ -4170,13 +3820,6 @@ Default mode is allow_binds. """,
                 },
                 result="""returns a string containing the requested elements text, or false if the gui element passed to the function is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""getText""",
-                field="""text""",
-                is_static=False,
-            ),
             name='guiGetText',
         )
         ],
@@ -4223,13 +3866,6 @@ Default mode is allow_binds. """,
                     "guiElement": """the GUI element to be checked """
                 },
                 result="""returns true if the element is visible, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""getVisible""",
-                field="""visible""",
-                is_static=False,
             ),
             name='guiGetVisible',
         )
@@ -4299,13 +3935,6 @@ Default mode is allow_binds. """,
                     "width": """Column width, relative to the grid list width """
                 },
                 result="""returns the column id if it was created, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""addColumn""",
-                field=None,
-                is_static=False,
             ),
             name='guiGridListAddColumn',
         )
@@ -4379,13 +4008,6 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 },
                 result="""returns the row id if it has been created, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""addRow""",
-                field=None,
-                is_static=False,
-            ),
             name='guiGridListAddRow',
         )
         ],
@@ -4444,13 +4066,6 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 },
                 result="""returns true if the column was auto-sized, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""autoSizeColumn""",
-                field=None,
-                is_static=False,
-            ),
             name='guiGridListAutoSizeColumn',
         )
         ],
@@ -4498,13 +4113,6 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 },
                 result="""returns true if the grid list element is valid and has been cleared successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""clear""",
-                field=None,
-                is_static=False,
-            ),
             name='guiGridListClear',
         )
         ],
@@ -4551,13 +4159,6 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                     "gridList": """The grid list you want to add a column to """
                 },
                 result="""returns an integer with the amount of columns in the gridlist, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""getColumnCount""",
-                field="""columnCount""",
-                is_static=False,
             ),
             name='guiGridListGetColumnCount',
         )
@@ -4616,13 +4217,6 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                     "columnIndex": """: Column ID """
                 },
                 result="""returns a string containing the column title, or false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""getColumnTitle""",
-                field=None,
-                is_static=False,
             ),
             name='guiGridListGetColumnTitle',
         )
@@ -4693,13 +4287,6 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 },
                 result="""returns the width of the gridlist column, false if bad arguments were given. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""getColumnWidth""",
-                field=None,
-                is_static=False,
-            ),
             name='guiGridListGetColumnWidth',
         )
         ],
@@ -4746,13 +4333,6 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                     "guiGridlist": """: The grid list you want to get the horizontal scroll position from """
                 },
                 result="""returns a integer between 0 and 100 indicating the horizontal scroll position, or false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""getHorizontalScrollPosition""",
-                field="""horizontalScrollPosition""",
-                is_static=False,
             ),
             name='guiGridListGetHorizontalScrollPosition',
         )
@@ -4835,13 +4415,6 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 },
                 result="""returns four int values, representing the amount of red, green, blue and alpha if successful. false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""getItemColor""",
-                field=None,
-                is_static=False,
-            ),
             name='guiGridListGetItemColor',
         )
         ],
@@ -4912,13 +4485,6 @@ Note: This function will only work after you set the items text using guiGridLis
                 },
                 result="""returns the item data of the specified item if succesful, false if one of the arguments was invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""getItemData""",
-                field=None,
-                is_static=False,
-            ),
             name='guiGridListGetItemData',
         )
         ],
@@ -4988,13 +4554,6 @@ Note: This function will only work after you set the items text using guiGridLis
                 },
                 result="""returns the text of the item if the arguments are right, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""getItemText""",
-                field=None,
-                is_static=False,
-            ),
             name='guiGridListGetItemText',
         )
         ],
@@ -5042,13 +4601,6 @@ Note: This function will only work after you set the items text using guiGridLis
                 },
                 result="""returns the number of rows if the function is successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""getRowCount""",
-                field="""rowCount""",
-                is_static=False,
-            ),
             name='guiGridListGetRowCount',
         )
         ],
@@ -5095,13 +4647,6 @@ Note: This function will only work after you set the items text using guiGridLis
                     "gridList": """The Element/GUI/Gridlist|grid list which amount of selected items you want to retrieve. """
                 },
                 result="""returns an integer representing the amount of selected options if everything was successful or false if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""getSelectedCount""",
-                field="""selectedCount""",
-                is_static=False,
             ),
             name='guiGridListGetSelectedCount',
         )
@@ -5153,13 +4698,6 @@ Note: This function will only work after you set the items text using guiGridLis
                     "gridList": """the grid list you want to know the selected row index of """
                 },
                 result="""returns the row and column indexes of the selected item if the specified grid list is valid and has a selected item, (-1, -1) if no item is selected, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""getSelectedItem""",
-                field=None,
-                is_static=False,
             ),
             name='guiGridListGetSelectedItem',
         )
@@ -5223,13 +4761,6 @@ row -- has the second selected items row id
 </syntaxhighlight>
 if everything was successful or false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""getSelectedItems""",
-                field="""selectedItems""",
-                is_static=False,
-            ),
             name='guiGridListGetSelectedItems',
         )
         ],
@@ -5277,13 +4808,6 @@ if everything was successful or false if invalid arguments were passed. """,
                 },
                 result="""returns the id of the current gridlists selection mode. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""getSelectionMode""",
-                field="""selectionMode""",
-                is_static=False,
-            ),
             name='guiGridListGetSelectionMode',
         )
         ],
@@ -5330,13 +4854,6 @@ if everything was successful or false if invalid arguments were passed. """,
                     "guiGridlist": """: The grid list you want to get the vertical scroll position from """
                 },
                 result="""returns a integer between 0 and 100 indicating the vertical scroll position, or false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""getVerticalScrollPosition""",
-                field="""verticalScrollPosition""",
-                is_static=False,
             ),
             name='guiGridListGetVerticalScrollPosition',
         )
@@ -5399,13 +4916,6 @@ if everything was successful or false if invalid arguments were passed. """,
                 },
                 result="""returns true if the row was successfully added, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""insertRowAfter""",
-                field=None,
-                is_static=False,
-            ),
             name='guiGridListInsertRowAfter',
         )
         ],
@@ -5452,13 +4962,6 @@ if everything was successful or false if invalid arguments were passed. """,
                     "guiGridlist": """The GUI gridlist you wish to check if sorting is enabled or not. """
                 },
                 result="""returns true if sorting is enabled, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""isSortingEnabled""",
-                field="""sortingEnabled""",
-                is_static=False,
             ),
             name='guiGridListIsSortingEnabled',
         )
@@ -5518,13 +5021,6 @@ if everything was successful or false if invalid arguments were passed. """,
                 },
                 result="""returns true if the grid list column was successfully removed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""removeColumn""",
-                field=None,
-                is_static=False,
-            ),
             name='guiGridListRemoveColumn',
         )
         ],
@@ -5582,13 +5078,6 @@ if everything was successful or false if invalid arguments were passed. """,
                     "rowIndex": """The row ID which you want to remove """
                 },
                 result="""returns true if the grid list row was successfully removed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""removeRow""",
-                field=None,
-                is_static=False,
             ),
             name='guiGridListRemoveRow',
         )
@@ -5658,13 +5147,6 @@ if everything was successful or false if invalid arguments were passed. """,
                     "title": """: The title of the column """
                 },
                 result="""returns true if the new title was set, or false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""setColumnTitle""",
-                field=None,
-                is_static=False,
             ),
             name='guiGridListSetColumnTitle',
         )
@@ -5746,13 +5228,6 @@ if everything was successful or false if invalid arguments were passed. """,
                 },
                 result="""returns true if the gridlist column width was successfully set, false if bad arguments were given. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""setColumnWidth""",
-                field=None,
-                is_static=False,
-            ),
             name='guiGridListSetColumnWidth',
         )
         ],
@@ -5810,13 +5285,6 @@ if everything was successful or false if invalid arguments were passed. """,
                     "fPosition": """: A float representing the horizontal scroll position (0-100) """
                 },
                 result="""returns true if the horizontal scroll position was set, or false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""setHorizontalScrollPosition""",
-                field="""horizontalScrollPosition""",
-                is_static=False,
             ),
             name='guiGridListSetHorizontalScrollPosition',
         )
@@ -5931,13 +5399,6 @@ if everything was successful or false if invalid arguments were passed. """,
                 },
                 result="""returns true if the item color was set successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""setItemColor""",
-                field=None,
-                is_static=False,
-            ),
             name='guiGridListSetItemColor',
         )
         ],
@@ -6018,13 +5479,6 @@ Note: This function will only work after you set the items text using guiGridLis
                     "data": """The data you wish to set to the item. """
                 },
                 result="""returns true if the data was set successfully, false otherwise """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""setItemData""",
-                field=None,
-                is_static=False,
             ),
             name='guiGridListSetItemData',
         )
@@ -6129,13 +5583,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the item text was set successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""setItemText""",
-                field=None,
-                is_static=False,
-            ),
             name='guiGridListSetItemText',
         )
         ],
@@ -6204,13 +5651,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     "verticalBar": """A bool where true forces the verical scrollbar on, and false returns them to default. """
                 },
                 result="""returns true if the scrollbars were successfully set, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""setScrollBars""",
-                field=None,
-                is_static=False,
             ),
             name='guiGridListSetScrollBars',
         )
@@ -6292,13 +5732,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the passed arguments are correct and the item has been selected, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""setSelectedItem""",
-                field=None,
-                is_static=False,
-            ),
             name='guiGridListSetSelectedItem',
         )
         ],
@@ -6367,13 +5800,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the selection mode was successfully set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""setSelectionMode""",
-                field="""selectionMode""",
-                is_static=False,
-            ),
             name='guiGridListSetSelectionMode',
         )
         ],
@@ -6431,13 +5857,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     "enabled": """A boolean representing whether the sorting is enabled, or disabled. """
                 },
                 result="""returns true if sorting was successfully toggled., false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""setSortingEnabled""",
-                field="""sortingEnabled""",
-                is_static=False,
             ),
             name='guiGridListSetSortingEnabled',
         )
@@ -6497,13 +5916,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the vertical scroll position was set, or false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Gridlist|GuiGridList',
-                method_name="""setVerticalScrollPosition""",
-                field="""verticalScrollPosition""",
-                is_static=False,
-            ),
             name='guiGridListSetVerticalScrollPosition',
         )
         ],
@@ -6559,13 +5971,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns three int values, representing the amount of red, green, blue if successful. false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Text label|GuiLabel',
-                method_name="""getColor""",
-                field=None,
-                is_static=False,
-            ),
             name='guiLabelGetColor',
         )
         ],
@@ -6613,13 +6018,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns the absolute height of the font currently used in the text label if the function is successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Text label|GuiLabel',
-                method_name="""getFontHeight""",
-                field="""fontHeight""",
-                is_static=False,
-            ),
             name='guiLabelGetFontHeight',
         )
         ],
@@ -6666,13 +6064,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     "theLabel": """The text label to get the text extent from. """
                 },
                 result="""returns the absolute width of the current text inside the text label if the function is successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Text label|GuiLabel',
-                method_name="""getTextExtent""",
-                field="""textExtent""",
-                is_static=False,
             ),
             name='guiLabelGetTextExtent',
         )
@@ -6754,13 +6145,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the the color of the gui label was successfully changed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Text label|GuiLabel',
-                method_name="""setColor""",
-                field=None,
-                is_static=False,
-            ),
             name='guiLabelSetColor',
         )
         ],
@@ -6833,13 +6217,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true on success, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Text label|GuiLabel',
-                method_name="""setHorizontalAlign""",
-                field="""horizontalAlign""",
-                is_static=False,
-            ),
             name='guiLabelSetHorizontalAlign',
         )
         ],
@@ -6901,13 +6278,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true on success, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Text label|GuiLabel',
-                method_name="""setVerticalAlign""",
-                field="""verticalAlign""",
-                is_static=False,
-            ),
             name='guiLabelSetVerticalAlign',
         )
         ],
@@ -6954,13 +6324,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     "theElement": """The memo box you want to get the caret position from """
                 },
                 result="""returns the caret index on success, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GuiMemo',
-                method_name="""getCaretIndex""",
-                field="""caretIndex""",
-                is_static=False,
             ),
             name='guiMemoGetCaretIndex',
         )
@@ -7009,13 +6372,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns a float ranging between 0 and 100, or false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GuiMemo',
-                method_name="""getVerticalScrollPosition""",
-                field="""verticalScrollPosition""",
-                is_static=False,
-            ),
             name='guiMemoGetVerticalScrollPosition',
         )
         ],
@@ -7062,13 +6418,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     "theMemo": """The memo to check read-only status of. """
                 },
                 result="""returns true if the memo is read only, false if the memo isnt read only, nil otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GuiMemo',
-                method_name="""isReadOnly""",
-                field="""readOnly""",
-                is_static=False,
             ),
             name='guiMemoIsReadOnly',
         )
@@ -7128,13 +6477,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the caret was successfully moved, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GuiMemo',
-                method_name="""setCaretIndex""",
-                field="""caretIndex""",
-                is_static=False,
-            ),
             name='guiMemoSetCaretIndex',
         )
         ],
@@ -7192,13 +6534,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     "status": """A boolean value indicating whether read-only is to be enabled or disabled. """
                 },
                 result="""returns true if the status was successfully changed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Memo_field|GuiMemo',
-                method_name="""setReadOnly""",
-                field="""readOnly""",
-                is_static=False,
             ),
             name='guiMemoSetReadOnly',
         )
@@ -7258,13 +6593,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the position was set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GuiMemo',
-                method_name="""setVerticalScrollPosition""",
-                field="""verticalScrollPosition""",
-                is_static=False,
-            ),
             name='guiMemoSetVerticalScrollPosition',
         )
         ],
@@ -7311,13 +6639,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     "guiElement": """the GUI element that you want to move to the back """
                 },
                 result="""returns true if the function was successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""moveToBack""",
-                field=None,
-                is_static=False,
             ),
             name='guiMoveToBack',
         )
@@ -7366,7 +6687,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns a float ranging between 0 and 100. """,
             ),
-            oop=None,
             name='guiProgressBarGetProgress',
         )
         ],
@@ -7425,7 +6745,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the progress was set, false otherwise. """,
             ),
-            oop=None,
             name='guiProgressBarSetProgress',
         )
         ],
@@ -7473,7 +6792,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the radio button is selected, false if it is not. """,
             ),
-            oop=None,
             name='guiRadioButtonGetSelected',
         )
         ],
@@ -7532,7 +6850,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the radio buttons selection state was successfully set, false otherwise. """,
             ),
-            oop=None,
             name='guiRadioButtonSetSelected',
         )
         ],
@@ -7580,7 +6897,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns a float ranging between 0 and 100, representing the amount the scrollbar has been scrolled. """,
             ),
-            oop=None,
             name='guiScrollBarGetScrollPosition',
         )
         ],
@@ -7639,7 +6955,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the scroll position was successfully set, false otherwise. """,
             ),
-            oop=None,
             name='guiScrollBarSetScrollPosition',
         )
         ],
@@ -7687,7 +7002,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns a float ranging between 0 and 100, or false otherwise. """,
             ),
-            oop=None,
             name='guiScrollPaneGetHorizontalScrollPosition',
         )
         ],
@@ -7735,7 +7049,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns a float ranging between 0 and 100, or false otherwise. """,
             ),
-            oop=None,
             name='guiScrollPaneGetVerticalScrollPosition',
         )
         ],
@@ -7794,7 +7107,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the position was set, false otherwise. """,
             ),
-            oop=None,
             name='guiScrollPaneSetHorizontalScrollPosition',
         )
         ],
@@ -7864,7 +7176,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the call was successfully, false otherwise. """,
             ),
-            oop=None,
             name='guiScrollPaneSetScrollBars',
         )
         ],
@@ -7923,7 +7234,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the position was set, false otherwise. """,
             ),
-            oop=None,
             name='guiScrollPaneSetVerticalScrollPosition',
         )
         ],
@@ -7981,13 +7291,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     "alpha": """The visibility/transparency of the GUI element. Ranges from 0 (fully transparent) to 1 (fully opaque). Default value is 0.80. """
                 },
                 result="""returns true if the gui elements alpha was successfully changed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""setAlpha""",
-                field="""alpha""",
-                is_static=False,
             ),
             name='guiSetAlpha',
         )
@@ -8047,13 +7350,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""if the function succeeds it returns true, if it fails it returns false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""setEnabled""",
-                field="""enabled""",
-                is_static=False,
-            ),
             name='guiSetEnabled',
         )
         ],
@@ -8112,13 +7408,6 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 },
                 result="""returns true if the font has been successfully set on the gui element, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""setFont""",
-                field="""font""",
-                is_static=False,
-            ),
             name='guiSetFont',
         )
         ],
@@ -8166,13 +7455,6 @@ guiSetInputMode can be used as an extended version of guiSetInputEnabled since i
                     "enabled": """true if input should go to GUI, false if it should go to the game. """
                 },
                 result="""returns true if input mode could be changed, false if invalid parameters are passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""setInputEnabled""",
-                field="""inputEnabled""",
-                is_static=True,
             ),
             name='guiSetInputEnabled',
         )
@@ -8227,13 +7509,6 @@ The binds can be either:
                     "no_binds_when_editing": """binds are always enabled except when an editable editbox or memo has input focus """
                 },
                 result="""returns true if input mode could be changed, false if invalid parameters are passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""setInputMode""",
-                field="""inputMode""",
-                is_static=True,
             ),
             name='guiSetInputMode',
         )
@@ -8315,13 +7590,6 @@ The binds can be either:
                 },
                 result="""returns true if the position has been successfully set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""setPosition""",
-                field="""position""",
-                is_static=False,
-            ),
             name='guiSetPosition',
         )
         ],
@@ -8391,13 +7659,6 @@ The binds can be either:
                 },
                 result="""if the function succeeds it returns true, if it fails it returns false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""setProperty""",
-                field=None,
-                is_static=False,
-            ),
             name='guiSetProperty',
         )
         ],
@@ -8456,7 +7717,6 @@ The binds can be either:
                 },
                 result="""returns true if the selected tab was changed to a new one successfully, false otherwise. """,
             ),
-            oop=None,
             name='guiSetSelectedTab',
         )
         ],
@@ -8537,13 +7797,6 @@ The binds can be either:
                 },
                 result="""returns true if the gui elements size was set successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""setSize""",
-                field=None,
-                is_static=False,
-            ),
             name='guiSetSize',
         )
         ],
@@ -8601,13 +7854,6 @@ The binds can be either:
                     "text": """The new text """
                 },
                 result="""returns true if text has been successfully set on the gui element, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""setText""",
-                field="""text""",
-                is_static=False,
             ),
             name='guiSetText',
         )
@@ -8667,13 +7913,6 @@ The binds can be either:
                 },
                 result="""returns true if the elements visibility could be changed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""setVisible""",
-                field="""visible""",
-                is_static=False,
-            ),
             name='guiSetVisible',
         )
         ],
@@ -8725,7 +7964,6 @@ The binds can be either:
                 },
                 result="""returns two integers where first is the width and second the height of the image in pixels, false if the image element was invalid. """,
             ),
-            oop=None,
             name='guiStaticImageGetNativeSize',
         )
         ],
@@ -8784,13 +8022,6 @@ The binds can be either:
                 },
                 result="""returns true if the the image in the static image element was successfully changed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Static_image|GuiStaticImage',
-                method_name="""loadImage""",
-                field="""image""",
-                is_static=False,
-            ),
             name='guiStaticImageLoadImage',
         )
         ],
@@ -8838,13 +8069,6 @@ The binds can be either:
                 },
                 result="""returns true if the window is movable, false if not, nil if an invalid window was provided. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='None',
-                method_name=None,
-                field="""movable""",
-                is_static=None,
-            ),
             name='guiWindowIsMovable',
         )
         ],
@@ -8891,13 +8115,6 @@ The binds can be either:
                     "guiWindow": """the window to check the sizable flag of """
                 },
                 result="""returns true if the window is sizable, false if not, nil if an invalid window was provided. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='None',
-                method_name=None,
-                field="""sizable""",
-                is_static=None,
             ),
             name='guiWindowIsSizable',
         )
@@ -8957,13 +8174,6 @@ The binds can be either:
                 },
                 result="""returns true if the function is successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Window|GuiWindow',
-                method_name="""setMovable""",
-                field="""movable""",
-                is_static=False,
-            ),
             name='guiWindowSetMovable',
         )
         ],
@@ -9022,13 +8232,6 @@ The binds can be either:
                 },
                 result="""returns true if the function is successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/GUI/Window|GuiWindow',
-                method_name="""setSizable""",
-                field="""sizable""",
-                is_static=False,
-            ),
             name='guiWindowSetSizable',
         )
         ],
@@ -9066,13 +8269,6 @@ The binds can be either:
                     
                 },
                 result="""returns true if the chatbox is receiving input, false if not active. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""isChatBoxInputActive""",
-                field="""chatBoxInputActive""",
-                is_static=True,
             ),
             name='isChatBoxInputActive',
         )
@@ -9112,13 +8308,6 @@ The binds can be either:
                 },
                 result="""returns true if the console is visible, false if not. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""isConsoleActive""",
-                field="""consoleActive""",
-                is_static=False,
-            ),
             name='isConsoleActive',
         )
         ],
@@ -9157,13 +8346,6 @@ The binds can be either:
                 },
                 result="""returns true if the debug view is visible, false if not. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""isDebugViewActive""",
-                field="""debugViewActive""",
-                is_static=True,
-            ),
             name='isDebugViewActive',
         )
         ],
@@ -9201,13 +8383,6 @@ The binds can be either:
                     
                 },
                 result="""returns true if the mainmenu is visible, false if not. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""isMainMenuActive""",
-                field="""mainMenuActive""",
-                is_static=True,
             ),
             name='isMainMenuActive',
         )
@@ -9252,13 +8427,6 @@ To get the status of the debug view, see isDebugViewActive. """,
                 },
                 result="""returns true if the focus is on the mta window, false if it isnt. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI_widgets|GuiElement',
-                method_name="""isMTAWindowActive""",
-                field=None,
-                is_static=True,
-            ),
             name='isMTAWindowActive',
         )
         ],
@@ -9297,13 +8465,6 @@ Its important to note that resources arent started on the client until theyre co
                     
                 },
                 result="""returns true if the file transfer box is visible, false if not. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""isTransferBoxActive""",
-                field=None,
-                is_static=True,
             ),
             name='isTransferBoxActive',
         )
@@ -9351,13 +8512,6 @@ Its important to note that resources arent started on the client until theyre co
                     "enabled": """true if debug window should be visible, false otherwise. """
                 },
                 result="""returns true, false if invalid parameters are passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='GUI widgets|GuiElement',
-                method_name="""setDebugViewActive""",
-                field="""debugViewActive""",
-                is_static=True,
             ),
             name='setDebugViewActive',
         )

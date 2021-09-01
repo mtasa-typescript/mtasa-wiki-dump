@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -72,13 +71,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns an account or false if the account already exists or an error occured. """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the Account class.""",
-                class_name='Account',
-                method_name="""add""",
-                field=None,
-                is_static=True,
-            ),
             name='addAccount',
         )
         ],
@@ -136,13 +128,6 @@ DUMP_PARTIAL = [
                     "fromAccount": """The account you wish to copy the data from. """
                 },
                 result="""returns a true if the accounts were valid, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='account',
-                method_name="""copyDataTo""",
-                field=None,
-                is_static=False,
             ),
             name='copyAccountData',
         )
@@ -214,13 +199,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns an account or false if an account matching the username specified (and password, if specified) could not be found. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Account',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='getAccount',
         )
         ],
@@ -268,7 +246,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns account associated with specified id. returns false if invalid arguments were specified or there is no account with this id. """,
             ),
-            oop=None,
             name='getAccountByID',
         )
         ],
@@ -327,13 +304,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string containing the stored data or false if no data was stored under that key. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='account',
-                method_name="""getData""",
-                field=None,
-                is_static=False,
-            ),
             name='getAccountData',
         )
         ],
@@ -380,13 +350,6 @@ DUMP_PARTIAL = [
                     "theAccount": """The account you wish to get the ID of. """
                 },
                 result="""returns a int containing the accounts id, false if the account does not exist or an invalid argument was passed to the function. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='account',
-                method_name="""getID""",
-                field="""id""",
-                is_static=False,
             ),
             name='getAccountID',
         )
@@ -435,13 +398,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string containing the accounts ip, false if the account does not exist or an invalid argument was passed to the function. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='account',
-                method_name="""getIP""",
-                field="""ip""",
-                is_static=False,
-            ),
             name='getAccountIP',
         )
         ],
@@ -488,13 +444,6 @@ DUMP_PARTIAL = [
                     "theAccount": """The account you wish to get the name of. """
                 },
                 result="""returns a string containing the accounts name, false if the account does not exist or an invalid argument was passed to the function. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='account',
-                method_name="""getName""",
-                field="""name""",
-                is_static=False,
             ),
             name='getAccountName',
         )
@@ -543,13 +492,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a player element if the account is currently in use, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='account',
-                method_name="""getPlayer""",
-                field="""player""",
-                is_static=False,
-            ),
             name='getAccountPlayer',
         )
         ],
@@ -587,13 +529,6 @@ DUMP_PARTIAL = [
                     
                 },
                 result="""a table over the accounts that exist in the server internal.db file. this table might be empty. """,
-            ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the Account class.""",
-                class_name='Account',
-                method_name="""getAll""",
-                field=None,
-                is_static=True,
             ),
             name='getAccounts',
         )
@@ -653,13 +588,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns table containing the accounts associated with specified value at dataname. returns false if invalid arguments were specified. """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the Account class.""",
-                class_name='Account',
-                method_name="""getAllByData""",
-                field=None,
-                is_static=True,
-            ),
             name='getAccountsByData',
         )
         ],
@@ -706,13 +634,6 @@ DUMP_PARTIAL = [
                     "ip": """The IP to get accounts from """
                 },
                 result="""returns table containing the accounts associated with specified ip-address. returns false if invalid arguments were specified. """,
-            ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the Account class.""",
-                class_name='Account',
-                method_name="""getAllByIP""",
-                field=None,
-                is_static=True,
             ),
             name='getAccountsByIP',
         )
@@ -761,13 +682,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns table containing the accounts associated with specified serial. returns false if invalid arguments were specified. """,
             ),
-            oop=FunctionOOP(
-                description="""This function is a static function underneath the Account class.""",
-                class_name='Account',
-                method_name="""getAllBySerial""",
-                field=None,
-                is_static=True,
-            ),
             name='getAccountsBySerial',
         )
         ],
@@ -814,13 +728,6 @@ DUMP_PARTIAL = [
                     "theAccount": """The account to get serial from """
                 },
                 result="""returns string containing the serial, the string is empty if the account was never used. returns false if invalid arguments were specified. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='account',
-                method_name="""getSerial""",
-                field="""serial""",
-                is_static=False,
             ),
             name='getAccountSerial',
         )
@@ -869,13 +776,6 @@ DUMP_PARTIAL = [
                 },
                 result="""a table containing all the user data. this table might be empty. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='account',
-                method_name="""getAllData""",
-                field="""data""",
-                is_static=False,
-            ),
             name='getAllAccountData',
         )
         ],
@@ -923,13 +823,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the players account object, or false if the player passed to the function is invalid. """,
             ),
-            oop=FunctionOOP(
-                description="""Static method [[Account]].getFromPlayer() can also be used""",
-                class_name='player',
-                method_name="""getAccount""",
-                field="""account""",
-                is_static=False,
-            ),
             name='getPlayerAccount',
         )
         ],
@@ -976,13 +869,6 @@ DUMP_PARTIAL = [
                     "theAccount": """The account you want to check to see if it is a guest account. """
                 },
                 result="""returns true if the account is a guest account, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='account',
-                method_name="""isGuest""",
-                field="""guest""",
-                is_static=False,
             ),
             name='isGuestAccount',
         )
@@ -1053,13 +939,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the player was successfully logged into the given account. returns false or nil if the log in failed for some reason, ie. the player was already logged in to some account (use logout first), if the account was already in use or if it failed for some other reason. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""logIn""",
-                field=None,
-                is_static=False,
-            ),
             name='logIn',
         )
         ],
@@ -1107,13 +986,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the player was successfully logged out, false or nil if it failed for some reason, ie. the player was never logged in. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""logOut""",
-                field=None,
-                is_static=False,
-            ),
             name='logOut',
         )
         ],
@@ -1160,13 +1032,6 @@ DUMP_PARTIAL = [
                     "theAccount": """The account you wish to remove """
                 },
                 result="""returns true if account was successfully removed, false if the account does not exist. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='account',
-                method_name="""remove""",
-                field=None,
-                is_static=False,
             ),
             name='removeAccount',
         )
@@ -1237,13 +1102,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a true if the account data was set, false if an invalid argument was specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='account',
-                method_name="""setData""",
-                field=None,
-                is_static=False,
-            ),
             name='setAccountData',
         )
         ],
@@ -1313,13 +1171,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a true if the account name was set, false if an invalid argument was specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='account',
-                method_name="""setName""",
-                field="""name""",
-                is_static=False,
-            ),
             name='setAccountName',
         )
         ],
@@ -1377,13 +1228,6 @@ DUMP_PARTIAL = [
                     "password": """the password """
                 },
                 result="""returns true if the password was set correctly, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='account',
-                method_name="""setPassword""",
-                field="""password""",
-                is_static=False,
             ),
             name='setAccountPassword',
         )

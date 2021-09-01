@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -83,13 +82,6 @@ DUMP_PARTIAL = [
                 },
                 result="""this function returns true if the clothes were successfully added to the ped, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""addClothes""",
-                field=None,
-                is_static=False,
-            ),
             name='addPedClothes',
         )
         ],
@@ -165,13 +157,6 @@ DUMP_PARTIAL = [
                 },
                 result="""this function returns true if the clothes were successfully added to the ped, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""addClothes""",
-                field=None,
-                is_static=False,
-            ),
             name='addPedClothes',
         )
         ],
@@ -218,13 +203,6 @@ DUMP_PARTIAL = [
                     "thePed": """the ped you want to check. """
                 },
                 result="""returns true if the ped can be knocked off bikes, false if he cannot or an invalid element was passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""canBeKnockedOffBike""",
-                field=None,
-                is_static=False,
             ),
             name='canPedBeKnockedOffBike',
         )
@@ -325,7 +303,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='createPed',
         )
         ],
@@ -412,7 +389,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='createPed',
         )
         ],
@@ -468,13 +444,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns an int containing the amount of ammo in the specified peds currently selected or specified clip, or 0 if the ped specified is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getAmmoInClip""",
-                field="""ammoInClip""",
-                is_static=False,
-            ),
             name='getPedAmmoInClip',
         )
         ],
@@ -527,13 +496,6 @@ DUMP_PARTIAL = [
                     "weaponSlot": """an integer representing the weapon slot (set to the peds currently selected slot if not specified). """
                 },
                 result="""returns an int containing the amount of ammo in the specified peds currently selected or specified clip, or 0 if the ped specified is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getAmmoInClip""",
-                field="""ammoInClip""",
-                is_static=False,
             ),
             name='getPedAmmoInClip',
         )
@@ -604,7 +566,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a float between 0 (full release) and 1 (full push) indicating the amount the control is pushed. """,
             ),
-            oop=None,
             name='getPedAnalogControlState',
         )
         ],
@@ -656,13 +617,6 @@ DUMP_PARTIAL = [
                 },
                 result="""<syntaxhighlight lang=lua>string anim, string block, int time, bool loop, bool updateposition, bool interruptable, bool freezelastframe, int blendtime, bool restoretaskonanimend</syntaxhighlight> """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getAnimation""",
-                field=None,
-                is_static=False,
-            ),
             name='getPedAnimation',
         )
         ],
@@ -707,13 +661,6 @@ DUMP_PARTIAL = [
                 },
                 result="""a float with the armor, false if an invalid ped was given. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getArmor""",
-                field="""armor""",
-                is_static=False,
-            ),
             name='getPedArmor',
         )
         ],
@@ -755,13 +702,6 @@ DUMP_PARTIAL = [
                     "thePed": """The ped whose armor you want to check """
                 },
                 result="""a float with the armor, false if an invalid ped was given. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getArmor""",
-                field="""armor""",
-                is_static=False,
             ),
             name='getPedArmor',
         )
@@ -859,13 +799,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the x, y, z world position of the bone. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getBonePosition""",
-                field=None,
-                is_static=False,
-            ),
             name='getPedBonePosition',
         )
         ],
@@ -912,13 +845,6 @@ DUMP_PARTIAL = [
                     "thePed": """the ped to retrieve the camera rotation of. """
                 },
                 result="""returns the camera rotation of the ped in degrees if successful. returns false if an invalid element was passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getCameraRotation""",
-                field="""cameraRotation""",
-                is_static=False,
             ),
             name='getPedCameraRotation',
         )
@@ -979,13 +905,6 @@ DUMP_PARTIAL = [
                 },
                 result="""this function returns 2 string|strings, the clothes texture and model. the first return value will be false if this players clothes type is empty or an invalid player was specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getClothes""",
-                field=None,
-                is_static=False,
-            ),
             name='getPedClothes',
         )
         ],
@@ -1043,13 +962,6 @@ DUMP_PARTIAL = [
                 },
                 result="""this function returns 2 string|strings, the clothes texture and model. the first return value will be false if this players clothes type is empty or an invalid player was specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getClothes""",
-                field=None,
-                is_static=False,
-            ),
             name='getPedClothes',
         )
         ],
@@ -1094,13 +1006,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns an object or a vehicle if the ped is standing on one, false if he is touching none or an invalid element was passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getContactElement""",
-                field="""contactElement""",
-                is_static=False,
-            ),
             name='getPedContactElement',
         )
         ],
@@ -1142,13 +1047,6 @@ DUMP_PARTIAL = [
                     "thePed": """The ped of which you want to get the element he is standing on. """
                 },
                 result="""returns an object or a vehicle if the ped is standing on one, false if he is touching none or an invalid element was passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getContactElement""",
-                field="""contactElement""",
-                is_static=False,
             ),
             name='getPedContactElement',
         )
@@ -1208,13 +1106,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the ped is pressing the specified control, false if not or an invalid argument was passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Ped',
-                method_name="""getControlState""",
-                field=None,
-                is_static=False,
-            ),
             name='getPedControlState',
         )
         ],
@@ -1259,13 +1150,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the peds current fighting style as an integer id, false if it fails to retrieve a value. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getFightingStyle""",
-                field="""fightingStyle""",
-                is_static=False,
-            ),
             name='getPedFightingStyle',
         )
         ],
@@ -1307,13 +1191,6 @@ DUMP_PARTIAL = [
                     "thePed": """the ped whose current fighting style ID you wish to retrieve. """
                 },
                 result="""returns the peds current fighting style as an integer id, false if it fails to retrieve a value. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getFightingStyle""",
-                field="""fightingStyle""",
-                is_static=False,
             ),
             name='getPedFightingStyle',
         )
@@ -1358,13 +1235,6 @@ DUMP_PARTIAL = [
                     "thePed": """The ped whose gravity you want to check. """
                 },
                 result="""returns a float indicating the peds gravity, or false if the ped is invalid. default value is 0.008. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getGravity""",
-                field="""gravity""",
-                is_static=False,
             ),
             name='getPedGravity',
         )
@@ -1416,7 +1286,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a string indicating the peds move state, or false if the ped is not streamed in, the movement type is unknown, the ped is in a vehicle or the ped is invalid. """,
             ),
-            oop=None,
             name='getPedMoveState',
         )
         ],
@@ -1461,13 +1330,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the vehicle that the specified ped is in, or false if the ped is not in a vehicle or is an invalid ped. """,
             ),
-            oop=FunctionOOP(
-                description="""Set the variable to nil to execute [[removePedFromVehicle]]""",
-                class_name='ped',
-                method_name="""getOccupiedVehicle""",
-                field="""vehicle""",
-                is_static=False,
-            ),
             name='getPedOccupiedVehicle',
         )
         ],
@@ -1509,13 +1371,6 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped whose vehicle youre looking up. """
                 },
                 result="""returns the vehicle that the specified ped is in, or false if the ped is not in a vehicle or is an invalid ped. """,
-            ),
-            oop=FunctionOOP(
-                description="""Set the variable to nil to execute [[removePedFromVehicle]]""",
-                class_name='ped',
-                method_name="""getOccupiedVehicle""",
-                field="""vehicle""",
-                is_static=False,
             ),
             name='getPedOccupiedVehicle',
         )
@@ -1565,13 +1420,6 @@ DUMP_PARTIAL = [
 ** 2: rear-left
 ** 3: rear-right
 returns false if the ped is on foot, or the ped doesnt exist. """,
-            ),
-            oop=FunctionOOP(
-                description="""Prior to 1.5, the variable was .occupiedVehicleSeat""",
-                class_name='ped',
-                method_name="""getOccupiedVehicleSeat""",
-                field="""vehicleSeat""",
-                is_static=False,
             ),
             name='getPedOccupiedVehicleSeat',
         )
@@ -1619,13 +1467,6 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
 ** 2: rear-left
 ** 3: rear-right
 returns false if the ped is on foot, or the ped doesnt exist. """,
-            ),
-            oop=FunctionOOP(
-                description="""Prior to 1.5, the variable was .occupiedVehicleSeat""",
-                class_name='ped',
-                method_name="""getOccupiedVehicleSeat""",
-                field="""vehicleSeat""",
-                is_static=False,
             ),
             name='getPedOccupiedVehicleSeat',
         )
@@ -1674,13 +1515,6 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                 },
                 result="""a float with the oxygen level, false if an invalid ped was given. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getOxygenLevel""",
-                field="""oxygenLevel""",
-                is_static=False,
-            ),
             name='getPedOxygenLevel',
         )
         ],
@@ -1728,7 +1562,6 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                 },
                 result="""returns a string representing the name of the peds simplest, active task. """,
             ),
-            oop=None,
             name='getPedSimplestTask',
         )
         ],
@@ -1784,13 +1617,6 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                 },
                 result="""returns the value of the requested statistic. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getStat""",
-                field=None,
-                is_static=False,
-            ),
             name='getPedStat',
         )
         ],
@@ -1844,13 +1670,6 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                 },
                 result="""returns the value of the requested statistic. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getStat""",
-                field=None,
-                is_static=False,
-            ),
             name='getPedStat',
         )
         ],
@@ -1900,13 +1719,6 @@ this is only effective on physical gta elements, namely:
 * vehicles
 * objects """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getTarget""",
-                field=None,
-                is_static=False,
-            ),
             name='getPedTarget',
         )
         ],
@@ -1953,13 +1765,6 @@ this is only effective on physical gta elements, namely:
 * peds
 * vehicles
 * objects """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getTarget""",
-                field=None,
-                is_static=False,
             ),
             name='getPedTarget',
         )
@@ -2016,7 +1821,6 @@ this is only effective on physical gta elements, namely:
                 },
                 result="""returns three floats, x,y,z, representing the position where the peds target collides, or false if it was unsuccessful. """,
             ),
-            oop=None,
             name='getPedTargetCollision',
         )
         ],
@@ -2071,13 +1875,6 @@ this is only effective on physical gta elements, namely:
                     "targetingPed": """the ped who is targeting whose target end you wish to retrieve """
                 },
                 result="""returns three floats, x,y,z, representing the position where the peds target ends according to his range, or false if it was unsuccessful. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getTargetEnd""",
-                field=None,
-                is_static=False,
             ),
             name='getPedTargetEnd',
         )
@@ -2134,7 +1931,6 @@ this is only effective on physical gta elements, namely:
                 },
                 result="""returns three floats, x,y,z, representing the position where the peds target starts, or false if it was unsuccessful. """,
             ),
-            oop=None,
             name='getPedTargetStart',
         )
         ],
@@ -2227,13 +2023,6 @@ It can provide feedback on all tasks relating to a ped. For example, while jumpi
 <br>
 returns between 1 and 4 strings. the first string contains the name of the most complex task, with simpler sub-tasks being named in the following strings. see list of player tasks for valid strings. returns false if invalid arguments are specified or if there is no task of the type specified. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getTask""",
-                field=None,
-                is_static=False,
-            ),
             name='getPedTask',
         )
         ],
@@ -2289,13 +2078,6 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                 },
                 result="""returns an int containing the total amount of ammo for the specified peds weapon, or 0 if the ped specified is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getTotalAmmo""",
-                field=None,
-                is_static=False,
-            ),
             name='getPedTotalAmmo',
         )
         ],
@@ -2349,13 +2131,6 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                 },
                 result="""returns an int containing the total amount of ammo for the specified peds weapon, or 0 if the ped specified is invalid. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getTotalAmmo""",
-                field=None,
-                is_static=False,
-            ),
             name='getPedTotalAmmo',
         )
         ],
@@ -2407,7 +2182,6 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                 },
                 result="""if successul, returns the current voice type name and the voice name of the ped (see ped voices for possible names). returns false in case of failure. """,
             ),
-            oop=None,
             name='getPedVoice',
         )
         ],
@@ -2452,13 +2226,6 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                 },
                 result="""returns the walking style id if successful, false otherwise. the possible walking styles are as follows: """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Ped|ped',
-                method_name="""getWalkingStyle""",
-                field="""walkingStyle""",
-                is_static=False,
-            ),
             name='getPedWalkingStyle',
         )
         ],
@@ -2500,13 +2267,6 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                     "thePed": """the ped whose walking style to retrieve. """
                 },
                 result="""returns the walking style id if successful, false otherwise. the possible walking styles are as follows: """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Ped|ped',
-                method_name="""getWalkingStyle""",
-                field="""walkingStyle""",
-                is_static=False,
             ),
             name='getPedWalkingStyle',
         )
@@ -2563,13 +2323,6 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                 },
                 result="""returns an int indicating the type of the weapon the ped has in the specified slot. if the slot is empty, it returns 0.
 it should be noted that if a ped runs out of ammo for a weapon, it will still return the id of that weapon in the slot (even if it appears as if the ped does not have a weapon at all), though getpedtotalammo will return 0.  therefore, getpedtotalammo should be used in conjunction with getpedweapon in order to check if a ped has a weapon. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getWeapon""",
-                field=None,
-                is_static=False,
             ),
             name='getPedWeapon',
         )
@@ -2624,13 +2377,6 @@ it should be noted that if a ped runs out of ammo for a weapon, it will still re
                 },
                 result="""returns an int indicating the type of the weapon the ped has in the specified slot. if the slot is empty, it returns 0.
 it should be noted that if a ped runs out of ammo for a weapon, it will still return the id of that weapon in the slot (even if it appears as if the ped does not have a weapon at all), though getpedtotalammo will return 0.  therefore, getpedtotalammo should be used in conjunction with getpedweapon in order to check if a ped has a weapon. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getWeapon""",
-                field=None,
-                is_static=False,
             ),
             name='getPedWeapon',
         )
@@ -2688,7 +2434,6 @@ The position may not be accurate if the ped is off screen. """,
                 },
                 result="""if successful, returns the x/y/z coordinates of the weapon muzzle. returns false otherwise. """,
             ),
-            oop=None,
             name='getPedWeaponMuzzlePosition',
         )
         ],
@@ -2733,13 +2478,6 @@ The position may not be accurate if the ped is off screen. """,
                 },
                 result="""returns the selected weapon slot id on success, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getWeaponSlot""",
-                field="""weaponSlot""",
-                is_static=False,
-            ),
             name='getPedWeaponSlot',
         )
         ],
@@ -2782,13 +2520,6 @@ The position may not be accurate if the ped is off screen. """,
                 },
                 result="""returns the selected weapon slot id on success, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""getWeaponSlot""",
-                field="""weaponSlot""",
-                is_static=False,
-            ),
             name='getPedWeaponSlot',
         )
         ],
@@ -2824,7 +2555,6 @@ The position may not be accurate if the ped is off screen. """,
                 },
                 result="""returns a table with all valid ped models. """,
             ),
-            oop=None,
             name='getValidPedModels',
         )
         ],
@@ -2858,7 +2588,6 @@ The position may not be accurate if the ped is off screen. """,
                 },
                 result="""returns a table with all valid ped models. """,
             ),
-            oop=None,
             name='getValidPedModels',
         )
         ],
@@ -2944,7 +2673,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if weapon was successfully given to the ped, false otherwise. """,
             ),
-            oop=None,
             name='givePedWeapon',
         )
         ],
@@ -2992,13 +2720,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if the player or ped is bleeding, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isBleeding""",
-                field="""bleeding""",
-                is_static=False,
-            ),
             name='isPedBleeding',
         )
         ],
@@ -3043,13 +2764,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if the ped is choking, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isChoking""",
-                field="""choking""",
-                is_static=False,
-            ),
             name='isPedChoking',
         )
         ],
@@ -3092,13 +2806,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if the ped is choking, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isChoking""",
-                field="""choking""",
-                is_static=False,
-            ),
             name='isPedChoking',
         )
         ],
@@ -3143,13 +2850,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if the ped is dead, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isDead""",
-                field="""dead""",
-                is_static=False,
-            ),
             name='isPedDead',
         )
         ],
@@ -3191,13 +2891,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     "thePed": """: the ped you want to check up on. """
                 },
                 result="""returns true if the ped is dead, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isDead""",
-                field="""dead""",
-                is_static=False,
             ),
             name='isPedDead',
         )
@@ -3243,13 +2936,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if the driveby state is enabled, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isDoingGangDriveby""",
-                field="""doingGangDriveby""",
-                is_static=False,
-            ),
             name='isPedDoingGangDriveby',
         )
         ],
@@ -3291,13 +2977,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     "thePed": """The ped element whose state is to be checked. """
                 },
                 result="""returns true if the driveby state is enabled, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isDoingGangDriveby""",
-                field="""doingGangDriveby""",
-                is_static=False,
             ),
             name='isPedDoingGangDriveby',
         )
@@ -3357,7 +3036,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if the player is currently doing the task, false otherwise. """,
             ),
-            oop=None,
             name='isPedDoingTask',
         )
         ],
@@ -3402,13 +3080,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if the ped is ducked, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isDucked""",
-                field="""ducked""",
-                is_static=False,
-            ),
             name='isPedDucked',
         )
         ],
@@ -3450,13 +3121,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     "thePed": """: The ped to check. """
                 },
                 result="""returns true if the ped is ducked, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isDucked""",
-                field="""ducked""",
-                is_static=False,
             ),
             name='isPedDucked',
         )
@@ -3505,7 +3169,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if feets are bleeding, false otherwise """,
             ),
-            oop=None,
             name='isPedFootBloodEnabled',
         )
         ],
@@ -3550,7 +3213,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if the ped is headless, false otherwise. """,
             ),
-            oop=None,
             name='isPedHeadless',
         )
         ],
@@ -3593,7 +3255,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if the ped is headless, false otherwise. """,
             ),
-            oop=None,
             name='isPedHeadless',
         )
         ],
@@ -3638,13 +3299,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if the ped is in a vehicle, false if he is on foot or an invalid element was passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isInVehicle""",
-                field="""inVehicle""",
-                is_static=False,
-            ),
             name='isPedInVehicle',
         )
         ],
@@ -3687,13 +3341,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if the ped is in a vehicle, false if he is on foot or an invalid element was passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isInVehicle""",
-                field="""inVehicle""",
-                is_static=False,
-            ),
             name='isPedInVehicle',
         )
         ],
@@ -3738,13 +3385,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if the ped is on fire, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isOnFire""",
-                field="""onFire""",
-                is_static=False,
-            ),
             name='isPedOnFire',
         )
         ],
@@ -3786,13 +3426,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     "thePed": """: The ped to check. """
                 },
                 result="""returns true if the ped is on fire, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isOnFire""",
-                field="""onFire""",
-                is_static=False,
             ),
             name='isPedOnFire',
         )
@@ -3838,13 +3471,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if the ped is on foot and on the ground, false otherwise, even if he is in a car that stands still or on object outside world map. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isOnGround""",
-                field="""onGround""",
-                is_static=False,
-            ),
             name='isPedOnGround',
         )
         ],
@@ -3886,13 +3512,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     "thePed": """The ped you are checking. """
                 },
                 result="""returns true if the ped is on foot and on the ground, false otherwise, even if he is in a car that stands still or on object outside world map. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isOnGround""",
-                field="""onGround""",
-                is_static=False,
             ),
             name='isPedOnGround',
         )
@@ -3941,13 +3560,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if the ped is currently reloading a weapon, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isReloadingWeapon""",
-                field="""reloadingWeapon""",
-                is_static=False,
-            ),
             name='isPedReloadingWeapon',
         )
         ],
@@ -3986,7 +3598,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if the health target markers are enabled, false if not. """,
             ),
-            oop=None,
             name='isPedTargetingMarkerEnabled',
         )
         ],
@@ -4031,13 +3642,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 },
                 result="""returns true if the ped is carrying a jetpack, false if he is not or an invalid element was passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isWearingJetpack""",
-                field="""jetpack""",
-                is_static=False,
-            ),
             name='isPedWearingJetpack',
         )
         ],
@@ -4079,13 +3683,6 @@ There is an optional argument to specify ammunition and whether to set as the cu
                     "thePed": """the ped you want to check """
                 },
                 result="""returns true if the ped is carrying a jetpack, false if he is not or an invalid element was passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""isWearingJetpack""",
-                field="""jetpack""",
-                is_static=False,
             ),
             name='isPedWearingJetpack',
         )
@@ -4175,13 +3772,6 @@ From v1.5.3 onwards this function is now available client side. Only works on cl
                     "stealth": """Boolean value, representing whether or not this a stealth kill """
                 },
                 result="""returns true if the ped was killed, false if the ped specified could not be killed or is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""kill""",
-                field=None,
-                is_static=False,
             ),
             name='killPed',
         )
@@ -4269,13 +3859,6 @@ From v1.5.3 onwards this function is now available client side. Only works on cl
                     "stealth": """Boolean value, representing whether or not this a stealth kill """
                 },
                 result="""returns true if the ped was killed, false if the ped specified could not be killed or is invalid. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""kill""",
-                field=None,
-                is_static=False,
             ),
             name='killPed',
         )
@@ -4327,13 +3910,6 @@ extinguisher)
 3) the ped is using his weapon (shooting/aiming)
 4) the ped moved while crouching recently
 due to these circumstances causing problems with this function """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""reloadWeapon""",
-                field=None,
-                is_static=False,
             ),
             name='reloadPedWeapon',
         )
@@ -4415,13 +3991,6 @@ due to these circumstances causing problems with this function """,
                 },
                 result="""this function returns true if the clothes were successfully removed from the ped, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""removeClothes""",
-                field=None,
-                is_static=False,
-            ),
             name='removePedClothes',
         )
         ],
@@ -4497,13 +4066,6 @@ due to these circumstances causing problems with this function """,
                 },
                 result="""this function returns true if the clothes were successfully removed from the ped, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""removeClothes""",
-                field=None,
-                is_static=False,
-            ),
             name='removePedClothes',
         )
         ],
@@ -4549,13 +4111,6 @@ Available client side from 1.3.1 (It will only work with client side vehicles an
                 },
                 result="""returns true if the operation was successful, false if the specified ped is not valid or if it isnt in a vehicle. """,
             ),
-            oop=FunctionOOP(
-                description="""Set the variable to nil to execute this function""",
-                class_name='ped',
-                method_name="""removeFromVehicle""",
-                field="""vehicle""",
-                is_static=False,
-            ),
             name='removePedFromVehicle',
         )
         ],
@@ -4598,13 +4153,6 @@ Available client side from 1.3.1 (It will only work with client side vehicles an
                     "thePed": """The ped you wish to remove from a vehicle """
                 },
                 result="""returns true if the operation was successful, false if the specified ped is not valid or if it isnt in a vehicle. """,
-            ),
-            oop=FunctionOOP(
-                description="""Set the variable to nil to execute this function""",
-                class_name='ped',
-                method_name="""removeFromVehicle""",
-                field="""vehicle""",
-                is_static=False,
             ),
             name='removePedFromVehicle',
         )
@@ -4678,7 +4226,6 @@ To change the analog controls for a ped, please use setPedAnalogControlState. ""
                 },
                 result="""returns true if the control state was successfully set, false otherwise. """,
             ),
-            oop=None,
             name='setAnalogControlState',
         )
         ],
@@ -4760,7 +4307,6 @@ Note: If you wish to make a ped shoot you must use this in conjunction with an e
                 },
                 result="""returns true if the function was successful, false otherwise. """,
             ),
-            oop=None,
             name='setPedAimTarget',
         )
         ],
@@ -4831,7 +4377,6 @@ This function only works on peds, to change the analog control state for a playe
                 },
                 result="""returns true if the control state was successfully set, false otherwise. """,
             ),
-            oop=None,
             name='setPedAnalogControlState',
         )
         ],
@@ -4976,13 +4521,6 @@ This function only works on peds, to change the analog control state for a playe
                 },
                 result="""returns true if succesful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setAnimation""",
-                field=None,
-                is_static=False,
-            ),
             name='setPedAnimation',
         )
         ],
@@ -5125,13 +4663,6 @@ This function only works on peds, to change the analog control state for a playe
                 },
                 result="""returns true if succesful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setAnimation""",
-                field=None,
-                is_static=False,
-            ),
             name='setPedAnimation',
         )
         ],
@@ -5198,13 +4729,6 @@ This function only works on peds, to change the analog control state for a playe
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setAnimationProgress""",
-                field=None,
-                is_static=False,
-            ),
             name='setPedAnimationProgress',
         )
         ],
@@ -5269,13 +4793,6 @@ This function only works on peds, to change the analog control state for a playe
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setAnimationProgress""",
-                field=None,
-                is_static=False,
-            ),
             name='setPedAnimationProgress',
         )
         ],
@@ -5342,13 +4859,6 @@ This function only works on peds, to change the analog control state for a playe
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setAnimationSpeed""",
-                field=None,
-                is_static=False,
-            ),
             name='setPedAnimationSpeed',
         )
         ],
@@ -5413,13 +4923,6 @@ This function only works on peds, to change the analog control state for a playe
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setAnimationSpeed""",
-                field=None,
-                is_static=False,
-            ),
             name='setPedAnimationSpeed',
         )
         ],
@@ -5475,13 +4978,6 @@ This function only works on peds, to change the analog control state for a playe
                 },
                 result="""returns true if the armor was changed succesfully. returns false if an invalid ped was specified, or the armor value specified is out of acceptable range. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setArmor""",
-                field="""armor""",
-                is_static=False,
-            ),
             name='setPedArmor',
         )
         ],
@@ -5534,13 +5030,6 @@ This function only works on peds, to change the analog control state for a playe
                     "armor": """: the amount of armor you want to set on the ped. Valid values are from 0 to 100. """
                 },
                 result="""returns true if the armor was changed succesfully. returns false if an invalid ped was specified, or the armor value specified is out of acceptable range. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setArmor""",
-                field="""armor""",
-                is_static=False,
             ),
             name='setPedArmor',
         )
@@ -5600,13 +5089,6 @@ This function only works on peds, to change the analog control state for a playe
                 },
                 result="""returns true if the bleeding state was successfully set, error is raised otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setBleeding""",
-                field="""bleeding""",
-                is_static=False,
-            ),
             name='setPedBleeding',
         )
         ],
@@ -5664,13 +5146,6 @@ This function only works on peds, to change the analog control state for a playe
                     "cameraRotation": """The new direction that the ped will walk if you set their forwards control state. If the ped is the local player, it will also change where his camera is looking at if it isnt fixed (i.e. camera target is the local player). """
                 },
                 result="""returns true if the camera rotation was changed, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setCameraRotation""",
-                field="""cameraRotation""",
-                is_static=False,
             ),
             name='setPedCameraRotation',
         )
@@ -5730,13 +5205,6 @@ This function only works on peds, to change the analog control state for a playe
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setCanBeKnockedOffBike""",
-                field=None,
-                is_static=False,
-            ),
             name='setPedCanBeKnockedOffBike',
         )
         ],
@@ -5791,13 +5259,6 @@ This function only works on peds, to change the analog control state for a playe
                     "choking": """true to make the ped choke, false to no longer force his choking animation """
                 },
                 result="""returns true if successful, false otherwise (e.g. player handle is invalid) """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setChoking""",
-                field="""choking""",
-                is_static=False,
             ),
             name='setPedChoking',
         )
@@ -5871,13 +5332,6 @@ This function only works on peds, to change the analog control state for a playe
                 },
                 result="""returns true if successful, false if otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Ped',
-                method_name="""setControlState""",
-                field=None,
-                is_static=False,
-            ),
             name='setPedControlState',
         )
         ],
@@ -5933,7 +5387,6 @@ This function only works on peds, to change the analog control state for a playe
                 },
                 result="""returns true if the driveby state could be changed, false otherwise. """,
             ),
-            oop=None,
             name='setPedDoingGangDriveby',
         )
         ],
@@ -5987,7 +5440,6 @@ This function only works on peds, to change the analog control state for a playe
                 },
                 result="""returns true if the driveby state could be changed, false otherwise. """,
             ),
-            oop=None,
             name='setPedDoingGangDriveby',
         )
         ],
@@ -6081,7 +5533,6 @@ this function returns false in the following cases
 *onclientvehiclestartenter was cancelled by a script.
 *the ped has an active task_primary task. use getpedtask to monitor what the ped is doing. """,
             ),
-            oop=None,
             name='setPedEnterVehicle',
         )
         ],
@@ -6136,7 +5587,6 @@ this function returns false in the following cases
 *time passed since last enter/exit for this ped is less than 1500 ms.
 *the ped is getting jacked. """,
             ),
-            oop=None,
             name='setPedExitVehicle',
         )
         ],
@@ -6192,7 +5642,6 @@ this function returns false in the following cases
                 },
                 result="""returns true in case of success, false otherwise. """,
             ),
-            oop=None,
             name='setPedFightingStyle',
         )
         ],
@@ -6246,7 +5695,6 @@ this function returns false in the following cases
                 },
                 result="""returns true in case of success, false otherwise. """,
             ),
-            oop=None,
             name='setPedFightingStyle',
         )
         ],
@@ -6305,7 +5753,6 @@ this function returns false in the following cases
                 },
                 result="""returns true if changing the peds bloody feet status worked. """,
             ),
-            oop=None,
             name='setPedFootBloodEnabled',
         )
         ],
@@ -6360,13 +5807,6 @@ this function returns false in the following cases
                     "level": """: The level of gravity (default is 0.008). """
                 },
                 result="""returns true if the gravity was successfully set, false otherwise """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setGravity""",
-                field="""gravity""",
-                is_static=False,
             ),
             name='setPedGravity',
         )
@@ -6426,13 +5866,6 @@ this function returns false in the following cases
                 },
                 result="""returns true if successful, false otherwise """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setHeadless""",
-                field="""headless""",
-                is_static=False,
-            ),
             name='setPedHeadless',
         )
         ],
@@ -6485,13 +5918,6 @@ this function returns false in the following cases
                     "headState": """: head state, use true if you want the ped be headless, use false to give back the head. """
                 },
                 result="""returns true if successful, false otherwise """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setHeadless""",
-                field="""headless""",
-                is_static=False,
             ),
             name='setPedHeadless',
         )
@@ -6606,7 +6032,6 @@ this function returns false in the following cases
                 },
                 result=""" """,
             ),
-            oop=None,
             name='setPedLookAt',
         )
         ],
@@ -6662,13 +6087,6 @@ this function returns false in the following cases
                 },
                 result="""returns true if successful, false otherwise """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setOnFire""",
-                field="""onFire""",
-                is_static=False,
-            ),
             name='setPedOnFire',
         )
         ],
@@ -6721,13 +6139,6 @@ this function returns false in the following cases
                     "isOnFire": """true to set the ped on fire, false to extinguish any fire on him """
                 },
                 result="""returns true if successful, false otherwise """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setOnFire""",
-                field="""onFire""",
-                is_static=False,
             ),
             name='setPedOnFire',
         )
@@ -6786,13 +6197,6 @@ this function returns false in the following cases
                     "oxygen": """: the amount of oxygen you want to set on the ped. Native values are from 0 to 1000. Each of the stamina (22) and underwater stamina (225) Template:Stats|stat maximum adds a bonus of 1500. So the maximum oxygen level is 4000. """
                 },
                 result="""returns true if the oxygen level was changed succesfully. returns false if an invalid ped and/or oxygen level was specified. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setOxygenLevel""",
-                field="""oxygenLevel""",
-                is_static=False,
             ),
             name='setPedOxygenLevel',
         )
@@ -6862,7 +6266,6 @@ When this function is used client side, it can only be used on client side creat
                 },
                 result="""returns true if the statistic was changed succesfully. returns false if an invalid player is specified, if the stat-id/value is out of acceptable range or if the fat or body_muscle stats are used on non-cj players. """,
             ),
-            oop=None,
             name='setPedStat',
         )
         ],
@@ -6929,7 +6332,6 @@ When this function is used client side, it can only be used on client side creat
                 },
                 result="""returns true if the statistic was changed succesfully. returns false if an invalid player is specified, if the stat-id/value is out of acceptable range or if the fat or body_muscle stats are used on non-cj players. """,
             ),
-            oop=None,
             name='setPedStat',
         )
         ],
@@ -6977,7 +6379,6 @@ When this function is used client side, it can only be used on client side creat
                 },
                 result="""returns true if the markers were enabled, false if werent or if invalid arguments are passed. """,
             ),
-            oop=None,
             name='setPedTargetingMarkerEnabled',
         )
         ],
@@ -7047,13 +6448,6 @@ When this function is used client side, it can only be used on client side creat
                 },
                 result="""returns true when the voice was successfully set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setVoice""",
-                field=None,
-                is_static=False,
-            ),
             name='setPedVoice',
         )
         ],
@@ -7110,13 +6504,6 @@ The possible walking styles are: """
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Ped|ped',
-                method_name="""setWalkingStyle""",
-                field="""walkingStyle""",
-                is_static=False,
-            ),
             name='setPedWalkingStyle',
         )
         ],
@@ -7170,13 +6557,6 @@ The possible walking styles are: """
 The possible walking styles are: """
                 },
                 result="""returns true if successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Ped|ped',
-                method_name="""setWalkingStyle""",
-                field="""walkingStyle""",
-                is_static=False,
             ),
             name='setPedWalkingStyle',
         )
@@ -7233,13 +6613,6 @@ The possible walking styles are: """
                 },
                 result="""returns true if successful in setting the peds equipped weapon slot, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setWeaponSlot""",
-                field="""weaponSlot""",
-                is_static=False,
-            ),
             name='setPedWeaponSlot',
         )
         ],
@@ -7292,13 +6665,6 @@ The possible walking styles are: """
                     "weaponSlot": """the weapon slot to set. """
                 },
                 result="""returns true if successful in setting the peds equipped weapon slot, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setWeaponSlot""",
-                field="""weaponSlot""",
-                is_static=False,
             ),
             name='setPedWeaponSlot',
         )
@@ -7355,13 +6721,6 @@ As such, you should either expect it to fail sometimes, or repeatedly try to giv
                     "state": """A boolean representing whether to give or take the jetpack. """
                 },
                 result="""returns true if a jetpack was successfully set for the ped, false if setting it failed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='ped',
-                method_name="""setWearingJetpack""",
-                field="""jetpack""",
-                is_static=False,
             ),
             name='setPedWearingJetpack',
         )
@@ -7437,13 +6796,6 @@ Available client side from 1.3.1 (It will only work with client side vehicles an
                 },
                 result="""returns true if the operation is successful, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description="""Set the variable to nil to execute [[removePedFromVehicle]]""",
-                class_name='ped',
-                method_name="""warpIntoVehicle""",
-                field="""vehicle""",
-                is_static=False,
-            ),
             name='warpPedIntoVehicle',
         )
         ],
@@ -7512,13 +6864,6 @@ Available client side from 1.3.1 (It will only work with client side vehicles an
                     "3": """Rear-right """
                 },
                 result="""returns true if the operation is successful, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description="""Set the variable to nil to execute [[removePedFromVehicle]]""",
-                class_name='ped',
-                method_name="""warpIntoVehicle""",
-                field="""vehicle""",
-                is_static=False,
             ),
             name='warpPedIntoVehicle',
         )

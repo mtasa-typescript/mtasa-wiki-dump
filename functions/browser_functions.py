@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -53,7 +52,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the browser can navigate back, false otherwise. """,
             ),
-            oop=None,
             name='canBrowserNavigateBack',
         )
         ],
@@ -101,7 +99,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the browser can go to the next page, false otherwise. """,
             ),
-            oop=None,
             name='canBrowserNavigateForward',
         )
         ],
@@ -182,13 +179,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns a texture of the browser if it was created successfully, false otherwise. returns also false, if the user disabled remote pages and islocal was set to false. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|Browser',
-                method_name=None,
-                field=None,
-                is_static=True,
-            ),
             name='createBrowser',
         )
         ],
@@ -247,13 +237,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if executing javascript is allowed in the current context, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|browser',
-                method_name="""executeJavascript""",
-                field=None,
-                is_static=False,
-            ),
             name='executeBrowserJavascript',
         )
         ],
@@ -300,13 +283,6 @@ DUMP_PARTIAL = [
                     "webBrowser": """The web browser to be focused - if this is nil, it will unfocus all browsers. """
                 },
                 result="""returns true if the browser was focused or if nil was passed, false if it failed to focus or the browser does not exist. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|browser',
-                method_name="""focus""",
-                field=None,
-                is_static=False,
             ),
             name='focusBrowser',
         )
@@ -367,13 +343,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns the value if the property was successfully found, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|browser',
-                method_name="""getProperty""",
-                field=None,
-                is_static=False,
-            ),
             name='getBrowserProperty',
         )
         ],
@@ -414,13 +383,6 @@ DUMP_PARTIAL = [
 * remoteenabled: true if remote websites are enabled, false otherwise
 * remotejavascript: true if javascript is enabled on remote websites, false otherwise
 * pluginsenabled: true if plugins such as flash, silverlight (but not java) are enabled, false otherwise. this setting is false by default. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|Browser',
-                method_name="""getSettings""",
-                field=None,
-                is_static=True,
             ),
             name='getBrowserSettings',
         )
@@ -483,13 +445,6 @@ function ( string code )
                 },
                 result="""returns true if valid arguments have been passed, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|browser',
-                method_name="""getSource""",
-                field=None,
-                is_static=False,
-            ),
             name='getBrowserSource',
         )
         ],
@@ -537,13 +492,6 @@ function ( string code )
                 },
                 result="""returns the title as a string. returns false if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|browser',
-                method_name="""getTitle""",
-                field="""title""",
-                is_static=False,
-            ),
             name='getBrowserTitle',
         )
         ],
@@ -590,13 +538,6 @@ function ( string code )
                     "webBrowser": """The browser """
                 },
                 result="""returns the web browser url. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|browser',
-                method_name="""getURL""",
-                field="""url""",
-                is_static=False,
             ),
             name='getBrowserURL',
         )
@@ -655,13 +596,6 @@ function ( string code )
                     "mouseButton": """The mouse button (Possible values: left, middle, right) """
                 },
                 result="""returns true if the click was successfully injected, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|browser',
-                method_name="""injectMouseDown""",
-                field=None,
-                is_static=False,
             ),
             name='injectBrowserMouseDown',
         )
@@ -732,13 +666,6 @@ function ( string code )
                 },
                 result="""returns true if the movement was injected successfully, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|browser',
-                method_name="""injectMouseMove""",
-                field=None,
-                is_static=False,
-            ),
             name='injectBrowserMouseMove',
         )
         ],
@@ -796,13 +723,6 @@ function ( string code )
                     "mouseButton": """The mouse button (Possible values: left, middle, right) """
                 },
                 result="""returns true if the click was successfully injected, false otherwise. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|browser',
-                method_name="""injectMouseUp""",
-                field=None,
-                is_static=False,
             ),
             name='injectBrowserMouseUp',
         )
@@ -873,13 +793,6 @@ function ( string code )
                 },
                 result="""returns true if the mouse action was successfully injected, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|browser',
-                method_name="""injectMouseWheel""",
-                field=None,
-                is_static=False,
-            ),
             name='injectBrowserMouseWheel',
         )
         ],
@@ -938,13 +851,6 @@ function ( string code )
                 },
                 result="""returns false if the url is able to be loaded, true if it is blocked and nil if an invalid domain/url was passed. """,
             ),
-            oop=FunctionOOP(
-                description="""This is a static function under the '''Browser''' class""",
-                class_name='Element/Browser|Browser',
-                method_name="""isDomainBlocked""",
-                field=None,
-                is_static=True,
-            ),
             name='isBrowserDomainBlocked',
         )
         ],
@@ -992,13 +898,6 @@ function ( string code )
                 },
                 result="""returns true if the browser is focused, false otherwise and nil if invalid arguments were passed. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|browser',
-                method_name="""isFocused""",
-                field=None,
-                is_static=False,
-            ),
             name='isBrowserFocused',
         )
         ],
@@ -1045,13 +944,6 @@ function ( string code )
                     "webBrowser": """The browser """
                 },
                 result="""returns true if the browser is loading a website, false otherwise and nil if invalid arguments were passed. """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|browser',
-                method_name="""isLoading""",
-                field="""loading""",
-                is_static=False,
             ),
             name='isBrowserLoading',
         )
@@ -1133,13 +1025,6 @@ function ( string code )
                 },
                 result="""returns true if the url was successfully loaded. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|browser',
-                method_name="""loadURL""",
-                field="""url""",
-                is_static=False,
-            ),
             name='loadBrowserURL',
         )
         ],
@@ -1187,7 +1072,6 @@ function ( string code )
                 },
                 result="""returns true if the browser has returned to the previous page, false otherwise. """,
             ),
-            oop=None,
             name='navigateBrowserBack',
         )
         ],
@@ -1235,7 +1119,6 @@ function ( string code )
                 },
                 result="""returns true if the browser has gone to the next page, false otherwise. """,
             ),
-            oop=None,
             name='navigateBrowserForward',
         )
         ],
@@ -1283,7 +1166,6 @@ function ( string code )
                 },
                 result="""returns true if the browser has reloaded, false otherwise. """,
             ),
-            oop=None,
             name='reloadBrowserPage',
         )
         ],
@@ -1355,13 +1237,6 @@ Syntax:
                 },
                 result="""returns true, if the string was successfully read, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|Browser',
-                method_name="""requestDomains""",
-                field=None,
-                is_static=True,
-            ),
             name='requestBrowserDomains',
         )
         ],
@@ -1431,7 +1306,6 @@ Syntax:
                 },
                 result="""returns true if the browser is resized successfully, false if theres something wrong. """,
             ),
-            oop=None,
             name='resizeBrowser',
         )
         ],
@@ -1500,13 +1374,6 @@ Syntax:
                     "handler": """The function to call if the webBrowser attempts to open the ajax endpoint. If this parameter is nil or omitted, the ajax handler for the url will be deleted. """
                 },
                 result=""" """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|browser',
-                method_name="""setAjaxHandler""",
-                field=None,
-                is_static=False,
             ),
             name='setBrowserAjaxHandler',
         )
@@ -1578,13 +1445,6 @@ Syntax:
                 },
                 result="""returns true if the property was successfully set, false otherwise. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|browser',
-                method_name="""setProperty""",
-                field=None,
-                is_static=False,
-            ),
             name='setBrowserProperty',
         )
         ],
@@ -1642,13 +1502,6 @@ Syntax:
                     "paused": """true to pause rendering, false to continue """
                 },
                 result="""returns true if the state was successfully changed """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='browser',
-                method_name="""setRenderingPaused""",
-                field="""renderingPaused""",
-                is_static=False,
             ),
             name='setBrowserRenderingPaused',
         )
@@ -1708,13 +1561,6 @@ Syntax:
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Browser|browser',
-                method_name="""setVolume""",
-                field="""volume""",
-                is_static=False,
-            ),
             name='setBrowserVolume',
         )
         ],
@@ -1772,13 +1618,6 @@ Syntax:
                     "visible": """true to show the tools, false to hide """
                 },
                 result="""returns true if the visibility was successfully toggled, false if an error occurred """,
-            ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='browser',
-                method_name="""toggleDevTools""",
-                field="""devTools""",
-                is_static=False,
             ),
             name='toggleBrowserDevTools',
         )

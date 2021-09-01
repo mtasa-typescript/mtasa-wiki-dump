@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -50,7 +49,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the players chat was cleared successfully, false otherwise. """,
             ),
-            oop=None,
             name='clearChatBox',
         )
         ],
@@ -84,7 +82,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the players chat was cleared successfully, false otherwise. """,
             ),
-            oop=None,
             name='clearChatBox',
         )
         ],
@@ -123,7 +120,6 @@ DUMP_PARTIAL = [
                 },
                 result="""always returns true. """,
             ),
-            oop=None,
             name='clearDebugBox',
         )
         ],
@@ -162,7 +158,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the chat is visible, false otherwise. """,
             ),
-            oop=None,
             name='isChatVisible',
         )
         ],
@@ -268,13 +263,6 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 },
                 result=""" """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='player',
-                method_name="""outputChat""",
-                field=None,
-                is_static=False,
-            ),
             name='outputChatBox',
         )
         ],
@@ -367,7 +355,6 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 },
                 result=""" """,
             ),
-            oop=None,
             name='outputChatBox',
         )
         ],
@@ -423,7 +410,6 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 },
                 result=""" """,
             ),
-            oop=None,
             name='outputConsole',
         )
         ],
@@ -466,7 +452,6 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 },
                 result=""" """,
             ),
-            oop=None,
             name='outputConsole',
         )
         ],
@@ -560,7 +545,6 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 },
                 result="""returns true if the debug message was successfully output, false if invalid arguments are specified. """,
             ),
-            oop=None,
             name='outputDebugString',
         )
         ],
@@ -652,7 +636,6 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 },
                 result="""returns true if the debug message was successfully output, false if invalid arguments are specified. """,
             ),
-            oop=None,
             name='outputDebugString',
         )
         ],
@@ -697,7 +680,6 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=None,
             name='outputServerLog',
         )
         ],
@@ -767,7 +749,6 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 },
                 result="""returns true if the players chat was shown or hidden successfully, false otherwise. """,
             ),
-            oop=None,
             name='showChat',
         )
         ],
@@ -821,7 +802,6 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 },
                 result="""returns true if the players chat was shown or hidden successfully, false otherwise. """,
             ),
-            oop=None,
             name='showChat',
         )
         ],

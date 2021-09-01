@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -84,7 +83,6 @@ int: the weapon property
 on failure:
 bool: false if the passed arguments were invalid """,
             ),
-            oop=None,
             name='getOriginalWeaponProperty',
         )
         ],
@@ -161,7 +159,6 @@ int: the weapon property
 on failure:
 bool: false if the passed arguments were invalid """,
             ),
-            oop=None,
             name='getOriginalWeaponProperty',
         )
         ],
@@ -206,7 +203,6 @@ bool: false if the passed arguments were invalid """,
                 },
                 result="""returns an integer representing the given weapon ids associated weapon slot, false if the id was invalid. """,
             ),
-            oop=None,
             name='getSlotFromWeapon',
         )
         ],
@@ -249,7 +245,6 @@ bool: false if the passed arguments were invalid """,
                 },
                 result="""returns an integer representing the given weapon ids associated weapon slot, false if the id was invalid. """,
             ),
-            oop=None,
             name='getSlotFromWeapon',
         )
         ],
@@ -294,7 +289,6 @@ bool: false if the passed arguments were invalid """,
                 },
                 result="""returns an int if the name matches that of a weapon, false otherwise. """,
             ),
-            oop=None,
             name='getWeaponIDFromName',
         )
         ],
@@ -337,7 +331,6 @@ bool: false if the passed arguments were invalid """,
                 },
                 result="""returns an int if the name matches that of a weapon, false otherwise. """,
             ),
-            oop=None,
             name='getWeaponIDFromName',
         )
         ],
@@ -382,7 +375,6 @@ bool: false if the passed arguments were invalid """,
                 },
                 result="""returns a string of the name of the weapon or death type, false otherwise. names will be like these: (ignoring case) """,
             ),
-            oop=None,
             name='getWeaponNameFromID',
         )
         ],
@@ -425,7 +417,6 @@ bool: false if the passed arguments were invalid """,
                 },
                 result="""returns a string of the name of the weapon or death type, false otherwise. names will be like these: (ignoring case) """,
             ),
-            oop=None,
             name='getWeaponNameFromID',
         )
         ],
@@ -503,13 +494,6 @@ The following properties are get only: """
 int: the weapon property
 on failure:
 bool: false if the passed arguments were invalid """,
-            ),
-            oop=FunctionOOP(
-                description="""This OOP syntax is for [[Element/Weapon|custom weapons]] only.""",
-                class_name='Element/Weapon|weapon',
-                method_name="""getProperty""",
-                field=None,
-                is_static=False,
             ),
             name='getWeaponProperty',
         )
@@ -586,13 +570,6 @@ The following properties are get only: """
 int: the weapon property
 on failure:
 bool: false if the passed arguments were invalid """,
-            ),
-            oop=FunctionOOP(
-                description="""This OOP syntax is for [[Element/Weapon|custom weapons]] only.""",
-                class_name='Element/Weapon|weapon',
-                method_name="""getProperty""",
-                field=None,
-                is_static=False,
             ),
             name='getWeaponProperty',
         )
@@ -674,7 +651,6 @@ bool: false if the passed arguments were invalid """,
                 },
                 result="""returns true if weapon was successfully acquired, false otherwise. """,
             ),
-            oop=None,
             name='giveWeapon',
         )
         ],
@@ -756,7 +732,6 @@ Sets the ammo to a certain amount for a specified weapon (if they already have i
                 },
                 result="""returns a boolean value true or false that tells you if it was successful or not. """,
             ),
-            oop=None,
             name='setWeaponAmmo',
         )
         ],
@@ -833,7 +808,6 @@ Sets the ammo to a certain amount for a specified weapon (if they already have i
                 },
                 result="""returns a boolean value true or false that tells you if it was successful or not. """,
             ),
-            oop=None,
             name='setWeaponAmmo',
         )
         ],
@@ -941,7 +915,6 @@ bool: returns true if the weapon property was successfully set
 on failure:
 bool: returns false if the weapon property was unable to be set """,
             ),
-            oop=None,
             name='setWeaponProperty',
         )
         ],
@@ -1025,13 +998,6 @@ Returns true if the property was set.
                 },
                 result="""returns true if the property was set. """,
             ),
-            oop=FunctionOOP(
-                description=None,
-                class_name='Element/Weapon|weapon',
-                method_name="""setProperty""",
-                field=None,
-                is_static=False,
-            ),
             name='setWeaponProperty',
         )
         ],
@@ -1076,7 +1042,6 @@ Returns true if the property was set.
                 },
                 result="""returns true if the function succeeded, false otherwise. """,
             ),
-            oop=None,
             name='takeAllWeapons',
         )
         ],
@@ -1146,7 +1111,6 @@ Returns true if the property was set.
                 },
                 result="""returns a true if the weapon/ammo was removed successfully, false otherwise. """,
             ),
-            oop=None,
             name='takeWeapon',
         )
         ],

@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -84,7 +83,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if successful, false if bad arguments were passed or the limit of active fires was reached. there can be a maximum of 60 active fires. """,
             ),
-            oop=None,
             name='createFire',
         )
         ],
@@ -163,7 +161,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if successful, false otherwise. """,
             ),
-            oop=None,
             name='extinguishFire',
         )
         ],

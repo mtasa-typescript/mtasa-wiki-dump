@@ -5,7 +5,6 @@ from to_python.core.types import FunctionType, \
     FunctionReturnTypes, \
     FunctionSignature, \
     FunctionDoc, \
-    FunctionOOP, \
     FunctionData, \
     CompoundFunctionData
     
@@ -61,7 +60,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns an element object that corresponds to the root of the new data added, i.e. an element that represents the node xmlnode passed to the function. returns false if the arguments are invalid. """,
             ),
-            oop=None,
             name='loadMapData',
         )
         ],
@@ -109,7 +107,6 @@ DUMP_PARTIAL = [
                 },
                 result="""returns true if the map info was reset successfully, otherwise false. """,
             ),
-            oop=None,
             name='resetMapInfo',
         )
         ],
@@ -179,7 +176,6 @@ DUMP_PARTIAL = [
                 },
                 result=""" """,
             ),
-            oop=None,
             name='saveMapData',
         )
         ],
