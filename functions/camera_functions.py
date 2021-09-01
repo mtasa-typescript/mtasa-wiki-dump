@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -93,7 +93,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will fade a players camera to a color or back to normal over a specified time period. This will also affect the sound volume for the player (50% faded = 50% volume, full fade = no sound). For clientside scripts you can perform 2 fade ins or fade outs in a row, but for serverside scripts you must use one then the other. """,
+                description='This function will fade a players camera to a color or back to normal over a specified time period. This will also affect the sound volume for the player (50% faded = 50% volume, full fade = no sound). For clientside scripts you can perform 2 fade ins or fade outs in a row, but for serverside scripts you must use one then the other.' ,
                 arguments={
                     "thePlayer": """The player whose camera you wish to fade. """,
                     "fadeIn": """Should the camera be faded in or out? Pass true to fade the camera in, false to fade it out to a color. """,
@@ -102,9 +102,8 @@ DUMP_PARTIAL = [
                     "green": """The amount of green in the color that the camera fades out to (0 - 255). Not required for fading in. """,
                     "blue": """The amount of blue in the color that the camera fades out to (0 - 255). Not required for fading in. """
                 },
-                result=""" """,
-            ),
-            name='fadeCamera',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -180,7 +179,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will fade a players camera to a color or back to normal over a specified time period. This will also affect the sound volume for the player (50% faded = 50% volume, full fade = no sound). For clientside scripts you can perform 2 fade ins or fade outs in a row, but for serverside scripts you must use one then the other. """,
+                description='This function will fade a players camera to a color or back to normal over a specified time period. This will also affect the sound volume for the player (50% faded = 50% volume, full fade = no sound). For clientside scripts you can perform 2 fade ins or fade outs in a row, but for serverside scripts you must use one then the other.' ,
                 arguments={
                     "fadeIn": """Should the camera be faded in our out? Pass true to fade the camera in, false to fade it out to a color. """,
                     "timeToFade": """The number of seconds it should take to fade. """,
@@ -188,9 +187,8 @@ DUMP_PARTIAL = [
                     "green": """The amount of green in the color that the camera fades out to (0 - 255). Not required for fading in. """,
                     "blue": """The amount of blue in the color that the camera fades out to (0 - 255). Not required for fading in. """
                 },
-                result=""" """,
-            ),
-            name='fadeCamera',
+                result='' ,
+            )
         )
         ],
     ),
@@ -222,13 +220,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns an element that corresponds to the game camera """,
+                description='This function returns an element that corresponds to the game camera' ,
                 arguments={
                     
                 },
-                result="""returns an element that corresponds to the game camera """,
-            ),
-            name='getCamera',
+                result='returns an element that corresponds to the game camera' ,
+            )
         )
         ],
     ),
@@ -264,14 +261,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     
                 },
-                result="""*objects: if you want the camera to clip on objects.
-*vehicles: if you want the camera to clip on vehicles. """,
-            ),
-            name='getCameraClip',
+                result='*objects: if you want the camera to clip on objects.\n*vehicles: if you want the camera to clip on vehicles.' ,
+            )
         )
         ],
     ),
@@ -312,16 +307,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "cameraMode": """the camera mode to get the field of view of
 ** "player": whilst walking/running
 ** "vehicle": whilst in vehicle
 ** "vehicle_max": the max the field of view can go to when the vehicle is moving at a high speed (must be higher than "vehicle") """
                 },
-                result="""returns one float - the field of view angle """,
-            ),
-            name='getCameraFieldOfView',
+                result='returns one float - the field of view angle' ,
+            )
         )
         ],
     ),
@@ -353,13 +347,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns what goggle effect is currently affecting the camera. """,
+                description='This function returns what goggle effect is currently affecting the camera.' ,
                 arguments={
                     
                 },
-                result="""* string indicating the current camera goggle effect. their meanings can be seen below. """,
-            ),
-            name='getCameraGoggleEffect',
+                result='* string indicating the current camera goggle effect. their meanings can be seen below.' ,
+            )
         )
         ],
     ),
@@ -397,13 +390,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the interior of the local camera (independent of the interior of the local player). """,
+                description='Returns the interior of the local camera (independent of the interior of the local player).' ,
                 arguments={
                     "thePlayer": """: The player whose camera interior you want to get. """
                 },
-                result=""" """,
-            ),
-            name='getCameraInterior',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -430,13 +422,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the interior of the local camera (independent of the interior of the local player). """,
+                description='Returns the interior of the local camera (independent of the interior of the local player).' ,
                 arguments={
                     
                 },
-                result=""" """,
-            ),
-            name='getCameraInterior',
+                result='' ,
+            )
         )
         ],
     ),
@@ -502,13 +493,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the position of the camera and the position of the point it is facing. """,
+                description='This function gets the position of the camera and the position of the point it is facing.' ,
                 arguments={
                     "thePlayer": """The player whose camera matrix is to be returned. """
                 },
-                result=""" """,
-            ),
-            name='getCameraMatrix',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -563,13 +553,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the position of the camera and the position of the point it is facing. """,
+                description='This function gets the position of the camera and the position of the point it is facing.' ,
                 arguments={
                     
                 },
-                result=""" """,
-            ),
-            name='getCameraMatrix',
+                result='' ,
+            )
         )
         ],
     ),
@@ -601,13 +590,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the camera shake level set by setCameraShakeLevel.}} """,
+                description='This function gets the camera shake level set by setCameraShakeLevel.}}' ,
                 arguments={
                     
                 },
-                result="""returns an integer representing the camera shake level, from 0 (no shaking effect) to 255 (maximum shaking effect). by default, the camera has no shaking effect. """,
-            ),
-            name='getCameraShakeLevel',
+                result='returns an integer representing the camera shake level, from 0 (no shaking effect) to 255 (maximum shaking effect). by default, the camera has no shaking effect.' ,
+            )
         )
         ],
     ),
@@ -645,13 +633,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns an element that corresponds to the current target of the specified players camera (i.e. what it is following). """,
+                description='This function returns an element that corresponds to the current target of the specified players camera (i.e. what it is following).' ,
                 arguments={
                     "thePlayer": """The player whose camera you wish to receive the target of. """
                 },
-                result=""" """,
-            ),
-            name='getCameraTarget',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -678,13 +665,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns an element that corresponds to the current target of the specified players camera (i.e. what it is following). """,
+                description='This function returns an element that corresponds to the current target of the specified players camera (i.e. what it is following).' ,
                 arguments={
                     
                 },
-                result=""" """,
-            ),
-            name='getCameraTarget',
+                result='' ,
+            )
         )
         ],
     ),
@@ -720,13 +706,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to get the active camera view modes. This indicates at what distance the camera will follow the player or vehicle. """,
+                description='This function allows you to get the active camera view modes. This indicates at what distance the camera will follow the player or vehicle.' ,
                 arguments={
                     
                 },
-                result=""" """,
-            ),
-            name='getCameraViewMode',
+                result='' ,
+            )
         )
         ],
     ),
@@ -777,14 +762,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets if the camera will collide with any objects or vehicles in its way. This means that if object clip is enabled an object is in the way of where the camera actually wants to be, the camera will try to be in front of it. This function can disable that. """,
+                description='This function sets if the camera will collide with any objects or vehicles in its way. This means that if object clip is enabled an object is in the way of where the camera actually wants to be, the camera will try to be in front of it. This function can disable that.' ,
                 arguments={
                     "objects": """Sets if you want the camera to clip on objects. """,
                     "vehicles": """Sets if you want the camera to clip on vehicles. """
                 },
-                result="""always returns true. """,
-            ),
-            name='setCameraClip',
+                result='always returns true.' ,
+            )
         )
         ],
     ),
@@ -835,7 +819,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "cameraMode": """the camera mode to get the field of view of
 ** "player": whilst walking/running
@@ -843,9 +827,8 @@ DUMP_PARTIAL = [
 ** "vehicle_max": the max the field of view can go to when the vehicle is moving at a high speed (must be higher than "vehicle") """,
                     "fieldOfView": """The field of view angle, 0 to 179. """
                 },
-                result="""returns true if the arguments are valid, false otherwise. """,
-            ),
-            name='setCameraFieldOfView',
+                result='returns true if the arguments are valid, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -896,15 +879,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to set the cameras current goggle effect. This means you can activate nightvision or infrared effects by script """,
+                description='This function allows you to set the cameras current goggle effect. This means you can activate nightvision or infrared effects by script' ,
                 arguments={
                     "goggleEffect": """: the goggle effect you wish to set """,
                     "noiseEnabled": """: whether or not there should be a fuzzy noise effect """
                 },
-                result="""* true if the effect was set correctly.
-* false otherwise. """,
-            ),
-            name='setCameraGoggleEffect',
+                result='* true if the effect was set correctly.\n* false otherwise.' ,
+            )
         )
         ],
     ),
@@ -952,14 +933,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the interior of the local camera. Only the interior of the camera is changed, the local player stays in the interior he was in. """,
+                description='Sets the interior of the local camera. Only the interior of the camera is changed, the local player stays in the interior he was in.' ,
                 arguments={
                     "thePlayer": """the player whose camera interior will be set. """,
                     "interior": """the interior to place the camera in. """
                 },
-                result=""" """,
-            ),
-            name='setCameraInterior',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -995,13 +975,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the interior of the local camera. Only the interior of the camera is changed, the local player stays in the interior he was in. """,
+                description='Sets the interior of the local camera. Only the interior of the camera is changed, the local player stays in the interior he was in.' ,
                 arguments={
                     "interior": """the interior to place the camera in. """
                 },
-                result=""" """,
-            ),
-            name='setCameraInterior',
+                result='' ,
+            )
         )
         ],
     ),
@@ -1119,7 +1098,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the cameras position and direction. The first three arguments are the point at which the camera lies, the last three are the point the camera faces (or the point it looks at). """,
+                description='This function sets the cameras position and direction. The first three arguments are the point at which the camera lies, the last three are the point the camera faces (or the point it looks at).' ,
                 arguments={
                     "thePlayer": """The player whose camera is to be changed. """,
                     "positionX": """The x coordinate of the cameras position. """,
@@ -1132,9 +1111,8 @@ DUMP_PARTIAL = [
                     "roll": """The camera roll angle, -180 to 180. A value of 0 means the camera sits straight, positive values will turn it counter-clockwise and negative values will turn it clockwise. -180 or 180 means the camera is upside down. """,
                     "fov": """the field of view angle, 0.01 to 180. The higher this value is, the more you will be able to see what is to your sides. """
                 },
-                result=""" """,
-            ),
-            name='setCameraMatrix',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -1240,7 +1218,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the cameras position and direction. The first three arguments are the point at which the camera lies, the last three are the point the camera faces (or the point it looks at). """,
+                description='This function sets the cameras position and direction. The first three arguments are the point at which the camera lies, the last three are the point the camera faces (or the point it looks at).' ,
                 arguments={
                     "positionX": """The x coordinate of the cameras position. """,
                     "positionY": """The y coordinate of the cameras position. """,
@@ -1252,9 +1230,8 @@ DUMP_PARTIAL = [
                     "roll": """The camera roll angle, -180 to 180. A value of 0 means the camera sits straight, positive values will turn it counter-clockwise and negative values will turn it clockwise. -180 or 180 means the camera is upside down. """,
                     "fov": """the field of view angle, 0.01 to 180. The higher this value is, the more you will be able to see what is to your sides. """
                 },
-                result=""" """,
-            ),
-            name='setCameraMatrix',
+                result='' ,
+            )
         )
         ],
     ),
@@ -1295,13 +1272,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the camera shake level (as seen on the Are you going to San Fierro? singleplayer mission).}} """,
+                description='This function sets the camera shake level (as seen on the Are you going to San Fierro? singleplayer mission).}}' ,
                 arguments={
                     "shakeLevel": """: an integer between 0 and 255, which represents the camera shake intensity level. """
                 },
-                result="""returns true if the camera shake level was changed, false if the required argument is incorrect or missing. """,
-            ),
-            name='setCameraShakeLevel',
+                result='returns true if the camera shake level was changed, false if the required argument is incorrect or missing.' ,
+            )
         )
         ],
     ),
@@ -1349,15 +1325,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to set a players camera to follow other elements instead. Currently supported element type is:
-*Players """,
+                description='This function allows you to set a players camera to follow other elements instead. Currently supported element type is:\n*Players' ,
                 arguments={
                     "thePlayer": """The player whose camera you wish to modify. """,
                     "target": """The player who you want the camera to follow. If none is specified, the camera will target the player. """
                 },
-                result=""" """,
-            ),
-            name='setCameraTarget',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -1393,14 +1367,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to set a players camera to follow other elements instead. Currently supported element type is:
-*Players """,
+                description='This function allows you to set a players camera to follow other elements instead. Currently supported element type is:\n*Players' ,
                 arguments={
                     "target": """The player who you want the local camera to follow. """
                 },
-                result=""" """,
-            ),
-            name='setCameraTarget',
+                result='' ,
+            )
         )
         ],
     ),
@@ -1451,14 +1423,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to set the camera view modes. This indicates at what distance the camera will follow the player or vehicle. """,
+                description='This function allows you to set the camera view modes. This indicates at what distance the camera will follow the player or vehicle.' ,
                 arguments={
                     "vehicleCameraMode": """: The view mode you wish to use when inside vehicles. """,
                     "pedCameraMode": """: The view mode you wish to use when you are not inside vehicles. """
                 },
-                result="""returns true if the view(s) were set correctly, false otherwise. """,
-            ),
-            name='setCameraViewMode',
+                result='returns true if the view(s) were set correctly, false otherwise.' ,
+            )
         )
         ],
     )

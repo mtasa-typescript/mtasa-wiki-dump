@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -34,13 +34,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the maximum number of player slots on the server. """,
+                description='This function returns the maximum number of player slots on the server.' ,
                 arguments={
                     
                 },
-                result="""returns the maximum number of players allowed on the server. """,
-            ),
-            name='getMaxPlayers',
+                result='returns the maximum number of players allowed on the server.' ,
+            )
         )
         ],
         client=[
@@ -72,13 +71,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the servers HTTP port. """,
+                description='This function retrieves the servers HTTP port.' ,
                 arguments={
                     
                 },
-                result="""an integer corresponding to the servers http port. """,
-            ),
-            name='getServerHttpPort',
+                result='an integer corresponding to the servers http port.' ,
+            )
         )
         ],
         client=[
@@ -110,13 +108,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the servers name. """,
+                description='This function retrieves the servers name.' ,
                 arguments={
                     
                 },
-                result="""a string containing the servers name. """,
-            ),
-            name='getServerName',
+                result='a string containing the servers name.' ,
+            )
         )
         ],
         client=[
@@ -148,13 +145,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current password required to join the server. """,
+                description='This function returns the current password required to join the server.' ,
                 arguments={
                     
                 },
-                result="""returns the current server password as a string if it has a password, if not it returns nil. """,
-            ),
-            name='getServerPassword',
+                result='returns the current server password as a string if it has a password, if not it returns nil.' ,
+            )
         )
         ],
         client=[
@@ -186,13 +182,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the servers port. """,
+                description='This function retrieves the servers port.' ,
                 arguments={
                     
                 },
-                result="""an integer corresponding to the servers port. """,
-            ),
-            name='getServerPort',
+                result='an integer corresponding to the servers port.' ,
+            )
         )
         ],
         client=[
@@ -233,13 +228,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves whether San Andreas game glitches are enabled or not, set by using setGlitchEnabled """,
+                description='This function retrieves whether San Andreas game glitches are enabled or not, set by using setGlitchEnabled' ,
                 arguments={
                     "glitchName": """the name of the property to set. Possible values are: """
                 },
-                result="""returns true if if the glitch was enabled, or false if it is disabled. """,
-            ),
-            name='isGlitchEnabled',
+                result='returns true if if the glitch was enabled, or false if it is disabled.' ,
+            )
         )
         ],
         client=[
@@ -271,14 +265,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     
                 },
-                result="""on server this returns a boolean, whether the transfer box should be visible during downloads or not.
-on client this returns a boolean, whether the transfer box should be visible or not at the time of invocation. """,
-            ),
-            name='isTransferBoxVisible',
+                result='on server this returns a boolean, whether the transfer box should be visible during downloads or not.\non client this returns a boolean, whether the transfer box should be visible or not at the time of invocation.' ,
+            )
         )
         ],
         client=[
@@ -305,14 +297,12 @@ on client this returns a boolean, whether the transfer box should be visible or 
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     
                 },
-                result="""on server this returns a boolean, whether the transfer box should be visible during downloads or not.
-on client this returns a boolean, whether the transfer box should be visible or not at the time of invocation. """,
-            ),
-            name='isTransferBoxVisible',
+                result='on server this returns a boolean, whether the transfer box should be visible during downloads or not.\non client this returns a boolean, whether the transfer box should be visible or not at the time of invocation.' ,
+            )
         )
         ],
     ),
@@ -360,15 +350,13 @@ on client this returns a boolean, whether the transfer box should be visible or 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function enables or disables glitches that are found in the original Single Player game that can be used to gain an advantage in multiplayer.
-Users of the fastmove glitch may additionally want to install https://community.mtasa.com/index.php?p=resources&s=details&id=13368 this resource to disable crouchsliding. """,
+                description='This function enables or disables glitches that are found in the original Single Player game that can be used to gain an advantage in multiplayer.\nUsers of the fastmove glitch may additionally want to install https://community.mtasa.com/index.php?p=resources&s=details&id=13368 this resource to disable crouchsliding.' ,
                 arguments={
                     "glitchName": """the name of the property to set. Possible values are: """,
                     "enable": """whether or not to enable the glitch. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setGlitchEnabled',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -409,13 +397,12 @@ Users of the fastmove glitch may additionally want to install https://community.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the maximum number of player slots on the server. """,
+                description='This function sets the maximum number of player slots on the server.' ,
                 arguments={
                     "slots": """Maximum number of player slots on the server. """
                 },
-                result="""returns true if number of player slots was successfully changed, false or nil otherwise. """,
-            ),
-            name='setMaxPlayers',
+                result='returns true if number of player slots was successfully changed, false or nil otherwise.' ,
+            )
         )
         ],
         client=[
@@ -456,13 +443,12 @@ Users of the fastmove glitch may additionally want to install https://community.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the password required to join the server to the given string. """,
+                description='This function changes the password required to join the server to the given string.' ,
                 arguments={
                     "thePassword": """The new server password you want. Pass nil or an empty string to remove the password. """
                 },
-                result="""returns true if the password was successfully changed or removed, false or nil otherwise. """,
-            ),
-            name='setServerPassword',
+                result='returns true if the password was successfully changed or removed, false or nil otherwise.' ,
+            )
         )
         ],
         client=[
@@ -503,13 +489,12 @@ Users of the fastmove glitch may additionally want to install https://community.
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "visible": """The new visibility state. """
                 },
-                result="""returns true if the visibility was set successfully, false otherwise. """,
-            ),
-            name='setTransferBoxVisible',
+                result='returns true if the visibility was set successfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -545,13 +530,12 @@ Users of the fastmove glitch may additionally want to install https://community.
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "visible": """The new visibility state. """
                 },
-                result="""returns true if the visibility was set successfully, false otherwise. """,
-            ),
-            name='setTransferBoxVisible',
+                result='returns true if the visibility was set successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -589,16 +573,14 @@ Users of the fastmove glitch may additionally want to install https://community.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function shuts down the server.
-Make sure your server ACL setup has function.shutdown object protected. """,
+                description='This function shuts down the server.\nMake sure your server ACL setup has function.shutdown object protected.' ,
                 arguments={
                     "reason": """the reason why the server has been shutdown. """,
                     "exitCode": """the server application exit code to be returned on shutdown.
 |20915}} """
                 },
-                result="""returns false if it was not possible to shut down the server. """,
-            ),
-            name='shutdown',
+                result='returns false if it was not possible to shut down the server.' ,
+            )
         )
         ],
         client=[

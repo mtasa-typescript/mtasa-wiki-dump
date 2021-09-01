@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -76,16 +76,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates a Element/Weapon|custom weapon that can fire bullets. Do not confuse this with player held weapons. """,
+                description='Creates a Element/Weapon|custom weapon that can fire bullets. Do not confuse this with player held weapons.' ,
                 arguments={
                     "theType": """The weapon type which can be: """,
                     "x": """The x position to create the weapon. """,
                     "y": """The y position to create the weapon. """,
                     "z": """The z position to create the weapon. """
                 },
-                result="""returns a element/weapon|custom weapon element, which represents a weapon floating at that position. """,
-            ),
-            name='createWeapon',
+                result='returns a element/weapon|custom weapon element, which represents a weapon floating at that position.' ,
+            )
         )
         ],
     ),
@@ -126,13 +125,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Fires one shot from a Element/Weapon|custom weapon. """,
+                description='Fires one shot from a Element/Weapon|custom weapon.' ,
                 arguments={
                     "theWeapon": """The weapon to be fired. """
                 },
-                result="""returns true if the shot weapon is valid and therefore the shot was fired, false otherwise. """,
-            ),
-            name='fireWeapon',
+                result='returns true if the shot weapon is valid and therefore the shot was fired, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -173,13 +171,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the total ammo a Element/Weapon|custom weapon has. """,
+                description='This function gets the total ammo a Element/Weapon|custom weapon has.' ,
                 arguments={
                     "theWeapon": """: The weapon to get the ammo of. """
                 },
-                result="""returns an int|integer containing how many ammo left has the weapon. returns false if an error occured. """,
-            ),
-            name='getWeaponAmmo',
+                result='returns an int|integer containing how many ammo left has the weapon. returns false if an error occured.' ,
+            )
         )
         ],
     ),
@@ -220,13 +217,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the amount of ammo left in a Element/Weapon|custom weapons magazine/clip. """,
+                description='This function gets the amount of ammo left in a Element/Weapon|custom weapons magazine/clip.' ,
                 arguments={
                     "theWeapon": """the weapon to get the clip ammo of. """
                 },
-                result="""returns the amount of ammo in the element/weapon|custom weapons clip, false if an error occured. """,
-            ),
-            name='getWeaponClipAmmo',
+                result='returns the amount of ammo in the element/weapon|custom weapons clip, false if an error occured.' ,
+            )
         )
         ],
     ),
@@ -267,13 +263,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This gets the firing rate to be used when a Element/Weapon|custom weapon opens fire. """,
+                description='This gets the firing rate to be used when a Element/Weapon|custom weapon opens fire.' ,
                 arguments={
                     "theWeapon": """The weapon to modify the firing rate of. """
                 },
-                result="""returns an integer with the firing rate of the custom weapon, false otherwise. """,
-            ),
-            name='getWeaponFiringRate',
+                result='returns an integer with the firing rate of the custom weapon, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -324,7 +319,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the flags of a Element/Weapon|custom weapon. """,
+                description='This function gets the flags of a Element/Weapon|custom weapon.' ,
                 arguments={
                     "theWeapon": """the weapon to get the flag of. """,
                     "theFlag": """the weapon flag to get: """,
@@ -342,9 +337,8 @@ DUMP_PARTIAL = [
                     "shoot_if_out_of_range": """: if enabled, the weapon still fires its target beyond the weapon range distance. """,
                     "shoot_if_blocked": """: if enabled, the weapon still fires its target even if its blocked by something. """
                 },
-                result="""returns the true or false on success (flags flag returns 8 values) if the flag is enabled or not. returns false if the weapon element isnt valid or an error occured. """,
-            ),
-            name='getWeaponFlags',
+                result='returns the true or false on success (flags flag returns 8 values) if the flag is enabled or not. returns false if the weapon element isnt valid or an error occured.' ,
+            )
         )
         ],
     ),
@@ -385,13 +379,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the owner of a Element/Weapon|custom weapon. Weapon ownership system was, however, disabled, so this function always returns false. Please refer to setWeaponOwner for details. """,
+                description='This function gets the owner of a Element/Weapon|custom weapon. Weapon ownership system was, however, disabled, so this function always returns false. Please refer to setWeaponOwner for details.' ,
                 arguments={
                     "theWeapon": """The weapon to get the owner of. """
                 },
-                result="""this function was intended to return the player which owns the element/weapon|custom weapon, and false if an error occured. however, at the moment it always returns false. """,
-            ),
-            name='getWeaponOwner',
+                result='this function was intended to return the player which owns the element/weapon|custom weapon, and false if an error occured. however, at the moment it always returns false.' ,
+            )
         )
         ],
     ),
@@ -432,17 +425,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the state of a Element/Weapon|custom weapon. """,
+                description='This function gets the state of a Element/Weapon|custom weapon.' ,
                 arguments={
                     "theWeapon": """the Element/Weapon|weapon to get the state of. """
                 },
-                result="""* a string if the element/weapon|weapon is valid, indicating the weapon state, which can be:
-** reloading: the weapon is reloading.
-** firing: the weapon is constantly shooting (unless any shooting blocking flags are set) according to its assigned firing rate.
-** ready: the weapon is idle.
-* false if an error occured or the element/weapon|weapon is invalid. """,
-            ),
-            name='getWeaponState',
+                result='* a string if the element/weapon|weapon is valid, indicating the weapon state, which can be:\n** reloading: the weapon is reloading.\n** firing: the weapon is constantly shooting (unless any shooting blocking flags are set) according to its assigned firing rate.\n** ready: the weapon is idle.\n* false if an error occured or the element/weapon|weapon is invalid.' ,
+            )
         )
         ],
     ),
@@ -483,17 +471,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions gets the target of a Element/Weapon|custom weapon. """,
+                description='This functions gets the target of a Element/Weapon|custom weapon.' ,
                 arguments={
                     "theWeapon": """The weapon to get the target of. """
                 },
-                result="""* returns the target of the element/weapon|custom weapon, which can be:
-**nil if the weapon is in rotation based targeting.
-**3 float|floats if the weapon is firing at a fixed point.
-**an element if the weapon is firing an entity.
-* returns false if the weapon element is not valid. """,
-            ),
-            name='getWeaponTarget',
+                result='* returns the target of the element/weapon|custom weapon, which can be:\n**nil if the weapon is in rotation based targeting.\n**3 float|floats if the weapon is firing at a fixed point.\n**an element if the weapon is firing an entity.\n* returns false if the weapon element is not valid.' ,
+            )
         )
         ],
     ),
@@ -534,13 +517,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function resets the firing rate of a Element/Weapon|custom weapon to the default one. """,
+                description='This function resets the firing rate of a Element/Weapon|custom weapon to the default one.' ,
                 arguments={
                     "theWeapon": """the weapon to reset the firing rate of. """
                 },
-                result="""returns true on success, false otherwise. """,
-            ),
-            name='resetWeaponFiringRate',
+                result='returns true on success, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -591,14 +573,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the ammo left in a Element/Weapon|custom weapons magazine/clip. """,
+                description='This function sets the ammo left in a Element/Weapon|custom weapons magazine/clip.' ,
                 arguments={
                     "theWeapon": """The Element/Weapon|weapon to set the clip ammo of. """,
                     "clipAmmo": """The amount of ammo in the clip. """
                 },
-                result="""this function returns true if the arguments are valid and the weapon clip ammo could be changed; false otherwise. """,
-            ),
-            name='setWeaponClipAmmo',
+                result='this function returns true if the arguments are valid and the weapon clip ammo could be changed; false otherwise.' ,
+            )
         )
         ],
     ),
@@ -649,14 +630,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the firing rate to be used when a Element/Weapon|custom weapon is in firing state. """,
+                description='This function sets the firing rate to be used when a Element/Weapon|custom weapon is in firing state.' ,
                 arguments={
                     "theWeapon": """The weapon to modify the firing rate of. """,
                     "firingRate": """The weapon firing rate. It seems to be a kind of frecuency value, so the lower the quicker the Element/Weapon|custom weapon will shoot. """
                 },
-                result="""returns true on success, false otherwise. """,
-            ),
-            name='setWeaponFiringRate',
+                result='returns true on success, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -717,7 +697,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets a Element/Weapon|custom weapon flags, used to change how it behaves or finds a possible target to shoot. """,
+                description='This function sets a Element/Weapon|custom weapon flags, used to change how it behaves or finds a possible target to shoot.' ,
                 arguments={
                     "theWeapon": """the Element/Weapon|weapon element to set the flag of. """,
                     "theFlag": """the weapon flag to change (all of them can be true or false): """,
@@ -736,9 +716,8 @@ DUMP_PARTIAL = [
                     "shoot_if_blocked": """: if enabled, the weapon will still fire its target even if its blocked by something. """,
                     "enable": """: whether to enable or disable the specified flag. """
                 },
-                result="""returns true if all arguments are valid and the flags where changed; false otherwise. """,
-            ),
-            name='setWeaponFlags',
+                result='returns true if all arguments are valid and the flags where changed; false otherwise.' ,
+            )
         )
         ],
     ),
@@ -789,7 +768,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets a Element/Weapon|custom weapons state. """,
+                description='This function sets a Element/Weapon|custom weapons state.' ,
                 arguments={
                     "theWeapon": """: the weapon you wish to set the state of. """,
                     "theState": """: the state you wish to set: """,
@@ -797,9 +776,8 @@ DUMP_PARTIAL = [
                     "firing": """: makes the weapon constantly fire its target (unless any shooting blocking flags are set) according to its assigned firing rate. """,
                     "ready": """: makes the weapon stop reloading or firing. """
                 },
-                result="""returns true on success, false otherwise. """,
-            ),
-            name='setWeaponState',
+                result='returns true on success, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -860,7 +838,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the target of a Element/Weapon|custom weapon. There are 3 different targeting modes, which are explained below. """,
+                description='This function sets the target of a Element/Weapon|custom weapon. There are 3 different targeting modes, which are explained below.' ,
                 arguments={
                     "theWeapon": """The weapon to clear the target of. """,
                     "theTarget": """The element to shoot at. It can be a player, ped, vehicle or object. """,
@@ -901,11 +879,8 @@ DUMP_PARTIAL = [
                     "targetY": """The target Y. """,
                     "targetZ": """The target Z. """
                 },
-                result="""returns true on success, false otherwise.
-returns true on success, false otherwise.
-returns true on success, false otherwise. """,
-            ),
-            name='setWeaponTarget',
+                result='returns true on success, false otherwise.\nreturns true on success, false otherwise.\nreturns true on success, false otherwise.' ,
+            )
         )
         ],
     )

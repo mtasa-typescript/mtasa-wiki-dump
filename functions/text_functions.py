@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -34,13 +34,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""A textdisplay|text display is like a canvas that can contain many textitem|items of text. Each display can be seen by multiple observers (players) and each player can see multiple displays. """,
+                description='A textdisplay|text display is like a canvas that can contain many textitem|items of text. Each display can be seen by multiple observers (players) and each player can see multiple displays.' ,
                 arguments={
                     
                 },
-                result=""" """,
-            ),
-            name='textCreateDisplay',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -191,7 +190,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a text item. A text item represents a single area of text, much like a label does in standard GUI programming. A text item can only be seen by players if it is added to a textdisplay using textDisplayAddText. Each text item can be added to multiple displays, if need be. """,
+                description='This function creates a text item. A text item represents a single area of text, much like a label does in standard GUI programming. A text item can only be seen by players if it is added to a textdisplay using textDisplayAddText. Each text item can be added to multiple displays, if need be.' ,
                 arguments={
                     "text": """: A string of text you want to display """,
                     "x": """: A floating point number between 0.0 and 1.0 indicating how far across the screen the text should be shown, as a percentage of the width, from the left hand side. """,
@@ -206,9 +205,8 @@ DUMP_PARTIAL = [
                     "alignY": """: A string representing the Y-alignment of the text. (top, center, bottom) """,
                     "shadowAlpha": """: A value between 0 and 255 indicating how dark the drop shadow should be. """
                 },
-                result="""returns a textitem object. """,
-            ),
-            name='textCreateTextItem',
+                result='returns a textitem object.' ,
+            )
         )
         ],
         client=[
@@ -249,13 +247,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function destroys a text display and will unlink all the textitems on it. This does not stop the textitems existing, but anyone who was observing the textitems through this display will stop seeing them. """,
+                description='This function destroys a text display and will unlink all the textitems on it. This does not stop the textitems existing, but anyone who was observing the textitems through this display will stop seeing them.' ,
                 arguments={
                     "display": """This is the textdisplay that you wish to have destroyed. """
                 },
-                result=""" """,
-            ),
-            name='textDestroyDisplay',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -296,13 +293,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function destroys a textitem object. """,
+                description='This function destroys a textitem object.' ,
                 arguments={
                     "theTextitem": """The text item you wish to destroy. """
                 },
-                result=""" """,
-            ),
-            name='textDestroyTextItem',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -353,14 +349,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function adds a player as an observer of a textdisplay. This allows the player to see any textitems that the textdisplay contains. """,
+                description='This function adds a player as an observer of a textdisplay. This allows the player to see any textitems that the textdisplay contains.' ,
                 arguments={
                     "display": """: The textdisplay to add the player to as an observer. """,
                     "playerToAdd": """: The player that should observe the textdisplay. """
                 },
-                result=""" """,
-            ),
-            name='textDisplayAddObserver',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -411,14 +406,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function adds a textitem to a textdisplay. This allows any observers of the textdisplay to see the textitem. """,
+                description='This function adds a textitem to a textdisplay. This allows any observers of the textdisplay to see the textitem.' ,
                 arguments={
                     "displayToAddTo": """: The textdisplay to add the textitem to. """,
                     "itemToAdd": """: The textitem to add to the display. """
                 },
-                result=""" """,
-            ),
-            name='textDisplayAddText',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -459,13 +453,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to retrieve all the players  currently observing a specified textdisplay. """,
+                description='This function can be used to retrieve all the players  currently observing a specified textdisplay.' ,
                 arguments={
                     "theDisplay": """: The textdisplay of which observers you want to get. """
                 },
-                result="""returns a table of players that are observers of the display or false if invalid textdisplay is passed. """,
-            ),
-            name='textDisplayGetObservers',
+                result='returns a table of players that are observers of the display or false if invalid textdisplay is passed.' ,
+            )
         )
         ],
         client=[
@@ -516,14 +509,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if a player can see the specified textdisplay. """,
+                description='This function checks if a player can see the specified textdisplay.' ,
                 arguments={
                     "display": """: The textdisplay. """,
                     "thePlayer": """: The player. """
                 },
-                result="""return true if textdisplay is showing, or false if not. """,
-            ),
-            name='textDisplayIsObserver',
+                result='return true if textdisplay is showing, or false if not.' ,
+            )
         )
         ],
         client=[
@@ -574,14 +566,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes a player observer of a textdisplay. This stops the player from being able to see textitems that the textdisplay contains. """,
+                description='This function removes a player observer of a textdisplay. This stops the player from being able to see textitems that the textdisplay contains.' ,
                 arguments={
                     "display": """: The textdisplay to remove the player from as an observer. """,
                     "playerToRemove": """: The player that should be removed from the textdisplay. """
                 },
-                result=""" """,
-            ),
-            name='textDisplayRemoveObserver',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -632,14 +623,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes a textitem from a textdisplay. This stops any observers of the textdisplay from being able to see the textitem. """,
+                description='This function removes a textitem from a textdisplay. This stops any observers of the textdisplay from being able to see the textitem.' ,
                 arguments={
                     "displayToRemoveFrom": """: The textdisplay to remove the textitem from. """,
                     "itemToRemove": """: The textitem to remove from the display. """
                 },
-                result=""" """,
-            ),
-            name='textDisplayRemoveText',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -692,13 +682,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to retrieve the color of a text item. """,
+                description='This function allows you to retrieve the color of a text item.' ,
                 arguments={
                     "theTextItem": """The text item you wish to retrieve the color of. """
                 },
-                result="""returns four integers in rgba format, with a maximum value of 255 for each. the values are, in order, red, green, blue, and alpha. alpha decides transparency where 255 is opaque and 0 is transparent. false is returned if the text item is invalid. """,
-            ),
-            name='textItemGetColor',
+                result='returns four integers in rgba format, with a maximum value of 255 for each. the values are, in order, red, green, blue, and alpha. alpha decides transparency where 255 is opaque and 0 is transparent. false is returned if the text item is invalid.' ,
+            )
         )
         ],
         client=[
@@ -743,13 +732,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows retrieval of the position of a text item. """,
+                description='This function allows retrieval of the position of a text item.' ,
                 arguments={
                     "theTextItem": """The textitem you wish to retrieve the position of """
                 },
-                result="""returns two floats of the x and y position on the screen, where the maximum value is 1.0. """,
-            ),
-            name='textItemGetPosition',
+                result='returns two floats of the x and y position on the screen, where the maximum value is 1.0.' ,
+            )
         )
         ],
         client=[
@@ -790,13 +778,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the priority of a text item.  Priority defines the rate at whihc a text item is updated """,
+                description='This function retrieves the priority of a text item.  Priority defines the rate at whihc a text item is updated' ,
                 arguments={
                     "textitemToCheck": """The text item you wish to retrieve the priority of. """
                 },
-                result="""returns a integer of the priority of a text item, 0 = low, 1 = medium, 2 = high. """,
-            ),
-            name='textItemGetPriority',
+                result='returns a integer of the priority of a text item, 0 = low, 1 = medium, 2 = high.' ,
+            )
         )
         ],
         client=[
@@ -837,13 +824,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows retrieval of the scale or size of a text item. """,
+                description='This function allows retrieval of the scale or size of a text item.' ,
                 arguments={
                     "theTextitem": """The text item you wish to retrieve the scale of """
                 },
-                result="""returns a floating point of the scale of the text. 1.0 is around 12pt. """,
-            ),
-            name='textItemGetScale',
+                result='returns a floating point of the scale of the text. 1.0 is around 12pt.' ,
+            )
         )
         ],
         client=[
@@ -884,13 +870,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current text of the specified textitem. """,
+                description='This function returns the current text of the specified textitem.' ,
                 arguments={
                     "theTextitem": """A valid textitem. """
                 },
-                result="""returns a string containing the text if the function was successful, false otherwise. """,
-            ),
-            name='textItemGetText',
+                result='returns a string containing the text if the function was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -971,7 +956,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the color of a text item. """,
+                description='This function sets the color of a text item.' ,
                 arguments={
                     "theTextItem": """The textitem you wish to set the color of. """,
                     "red": """The amount of red in the text items color (0 - 255). """,
@@ -979,9 +964,8 @@ DUMP_PARTIAL = [
                     "blue": """The amount of blue in the text items color (0 - 255). """,
                     "alpha": """The amount of alpha in the text items color (0 - 255). Alpha decides transparency where 255 is opaque and 0 is transparent. """
                 },
-                result="""returns true if the color was successfully set, false otherwise. """,
-            ),
-            name='textItemSetColor',
+                result='returns true if the color was successfully set, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1042,15 +1026,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows the setting of the position of a text item. """,
+                description='This function allows the setting of the position of a text item.' ,
                 arguments={
                     "theTextItem": """The text item that you want to move """,
                     "x": """A floating point number between 0.0 and 1.0 indicating how far across the screen the text should be shown, as a percentage of the width, from the left hand side. """,
                     "y": """A floating point number between 0.0 and 1.0 indicating how far down the screen the text should be shown, as a percentage of the height, from the top. """
                 },
-                result="""returns true if the position was successfully set, false otherwise. """,
-            ),
-            name='textItemSetPosition',
+                result='returns true if the position was successfully set, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1101,14 +1084,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the priority for a text item.  Priority is the importance of sending updated text to the client. The system is implemented as 3 queues, with the high queue being emptied before the medium queue is processed, and with one update sent per server frame. Hence, if you set all your text items to medium priority it has the same effect as if you set them all to high or low. """,
+                description='This function sets the priority for a text item.  Priority is the importance of sending updated text to the client. The system is implemented as 3 queues, with the high queue being emptied before the medium queue is processed, and with one update sent per server frame. Hence, if you set all your text items to medium priority it has the same effect as if you set them all to high or low.' ,
                 arguments={
                     "theTextItem": """The text item you wish to set priority to. """,
                     "priority": """The priority you wish to set to the item, which can be high, medium, or low respective of their priority. """
                 },
-                result=""" """,
-            ),
-            name='textItemSetPriority',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -1159,14 +1141,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows the setting of the scale of a text item. """,
+                description='This function allows the setting of the scale of a text item.' ,
                 arguments={
                     "theTextitem": """The text item you wish to set the scale of. """,
                     "scale": """A floating point value indicating the scale of the text you wish to set to. 1.0 is around 12pt. """
                 },
-                result="""returns true if the scale was successfully set, false otherwise. """,
-            ),
-            name='textItemSetScale',
+                result='returns true if the scale was successfully set, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1217,14 +1198,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Overwrites a previously created text item with the specified text. """,
+                description='Overwrites a previously created text item with the specified text.' ,
                 arguments={
                     "theTextitem": """An existing text item that was previously created with textCreateTextItem """,
                     "text": """The new text for the text item """
                 },
-                result=""" """,
-            ),
-            name='textItemSetText',
+                result='' ,
+            )
         )
         ],
         client=[

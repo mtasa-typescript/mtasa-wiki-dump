@@ -17,12 +17,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientPlayerChangeNick',
             docs=FunctionDoc(
-                description="""This event is triggered when a player changes his nickname. """,
+                description='This event is triggered when a player changes his nickname.' ,
                 arguments={
                     "oldNick": """the nickname the player had before. """,
                     "newNick": """the new nickname of the player. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -60,11 +60,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientPlayerChoke',
             docs=FunctionDoc(
-                description="""This event is fired when the local player chokes due to the effect of a weapon such as tear gas grenades, fire extinguishers and spray cans. """,
+                description='This event is fired when the local player chokes due to the effect of a weapon such as tear gas grenades, fire extinguishers and spray cans.' ,
                 arguments={
                     "weapon": """an int representing the ID of the weapon which caused the choking. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -92,14 +92,14 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientPlayerDamage',
             docs=FunctionDoc(
-                description="""This event is triggered whenever a player is damaged. """,
+                description='This event is triggered whenever a player is damaged.' ,
                 arguments={
                     "attacker": """: A player element representing the attacker or vehicle element (when being run over or falling off a bike). """,
                     "damage_causing": """: An int representing the cause of damage, either a Weapons|attacker weapon, or some other Damage Types|types of damage. """,
                     "bodypart": """: An integer representing the bodypart the player was damaged. """,
                     "loss": """: A float representing the percentage of health the player lost. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -157,11 +157,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientPlayerHeliKilled',
             docs=FunctionDoc(
-                description="""This event is fired when a player is killed due to the effect of a helicopter blades. """,
+                description='This event is fired when a player is killed due to the effect of a helicopter blades.' ,
                 arguments={
                     "killer": """the vehicle (heli) responsible for causing the death. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -189,11 +189,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientPlayerHitByWaterCannon',
             docs=FunctionDoc(
-                description="""This event is fired when a player is hit by a water cannon. """,
+                description='This event is fired when a player is hit by a water cannon.' ,
                 arguments={
                     "playerHit": """the player which got shot by the water cannon """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -221,12 +221,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientPlayerJoin',
             docs=FunctionDoc(
-                description="""This event is triggered when a player joins a server. It is triggered for all players except the local player, as the local player joins the server before their client-side resources are started. It would also be possible for two players to join within a few seconds of each other and for the two players scripts may not receive onClientPlayerJoin events as their scripts wouldnt have started yet.
-This event is not cancellable. """,
+                description='This event is triggered when a player joins a server. It is triggered for all players except the local player, as the local player joins the server before their client-side resources are started. It would also be possible for two players to join within a few seconds of each other and for the two players scripts may not receive onClientPlayerJoin events as their scripts wouldnt have started yet.\nThis event is not cancellable.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -245,12 +244,12 @@ This event is not cancellable. """,
             EventData(
             name='onClientPlayerPickupHit',
             docs=FunctionDoc(
-                description="""This event triggers whenever a player hits a pickup locally. """,
+                description='This event triggers whenever a player hits a pickup locally.' ,
                 arguments={
                     "thePickup": """the pickup that was hit. """,
                     "matchingDimension": """true if thePickup is in the same dimension as the player, false otherwise. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -288,12 +287,12 @@ This event is not cancellable. """,
             EventData(
             name='onClientPlayerPickupLeave',
             docs=FunctionDoc(
-                description="""This event triggers whenever a player leaves pickup locally. """,
+                description='This event triggers whenever a player leaves pickup locally.' ,
                 arguments={
                     "thePickup": """the pickup that was left. """,
                     "matchingDimension": """true if thePickup is in the same dimension as the player, false otherwise. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -331,7 +330,7 @@ This event is not cancellable. """,
             EventData(
             name='onClientPlayerQuit',
             docs=FunctionDoc(
-                description="""This event is triggered when a remote player quits the game or leaves the server. It will not get triggered on the source players client. (Use onClientResourceStop to save client side data when the local player quits.) """,
+                description='This event is triggered when a remote player quits the game or leaves the server. It will not get triggered on the source players client. (Use onClientResourceStop to save client side data when the local player quits.)' ,
                 arguments={
                     "reason": """: A string representing the reason why the player quit.
 ** "Unknown"
@@ -341,7 +340,7 @@ This event is not cancellable. """,
 ** "Bad Connection"
 ** "Timed out" """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -369,12 +368,12 @@ This event is not cancellable. """,
             EventData(
             name='onClientPlayerRadioSwitch',
             docs=FunctionDoc(
-                description="""This event is triggered whenever the local players radio station is changed """,
+                description='This event is triggered whenever the local players radio station is changed' ,
                 arguments={
                     "stationID": """: An integer representing the station the player switched to.
 Station ID's: """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -402,11 +401,11 @@ Station ID's: """
             EventData(
             name='onClientPlayerSpawn',
             docs=FunctionDoc(
-                description="""This event is triggered when any player, including a remote player, spawns. """,
+                description='This event is triggered when any player, including a remote player, spawns.' ,
                 arguments={
                     "hisTeam": """: A team element representing the team the player spawned on. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -434,11 +433,11 @@ Station ID's: """
             EventData(
             name='onClientPlayerStealthKill',
             docs=FunctionDoc(
-                description="""This event is triggered when the local player stealth kills another player. """,
+                description='This event is triggered when the local player stealth kills another player.' ,
                 arguments={
                     "targetPlayer": """: The player or ped that is being stealth killed. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -466,13 +465,13 @@ Station ID's: """
             EventData(
             name='onClientPlayerStuntFinish',
             docs=FunctionDoc(
-                description="""This event is triggered whenever the local player finishes a vehicle stunt. """,
+                description='This event is triggered whenever the local player finishes a vehicle stunt.' ,
                 arguments={
                     "stuntType": """: the type of stunt the player just performed. Valid types are: """,
                     "stuntTime": """: the number of miliseconds the stunt lasted. """,
                     "stuntDistance": """: the distance traveled while doing the stunt. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -520,11 +519,11 @@ Station ID's: """
             EventData(
             name='onClientPlayerStuntStart',
             docs=FunctionDoc(
-                description="""This event is triggered whenever the local player starts doing a vehicle stunt. """,
+                description='This event is triggered whenever the local player starts doing a vehicle stunt.' ,
                 arguments={
                     "stuntType": """: the type of stunt the player is starting to perform. Valid types are: """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -552,11 +551,11 @@ Station ID's: """
             EventData(
             name='onClientPlayerTarget',
             docs=FunctionDoc(
-                description="""This event is triggered whenever the local player targets an element. """,
+                description='This event is triggered whenever the local player targets an element.' ,
                 arguments={
                     "target": """The element the player targetted. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -584,12 +583,12 @@ Station ID's: """
             EventData(
             name='onClientPlayerVehicleEnter',
             docs=FunctionDoc(
-                description="""This event is fired when a player has entered a vehicle. """,
+                description='This event is fired when a player has entered a vehicle.' ,
                 arguments={
                     "theVehicle": """the vehicle that the player entered """,
                     "seat": """the seat that the player now is on. Drivers seat = 0, higher numbers are passenger seats. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -627,12 +626,12 @@ Station ID's: """
             EventData(
             name='onClientPlayerVehicleExit',
             docs=FunctionDoc(
-                description="""This event is triggered when a player or ped has exited a vehicle. """,
+                description='This event is triggered when a player or ped has exited a vehicle.' ,
                 arguments={
                     "theVehicle": """the vehicle that the player exited. """,
                     "seat": """the number of the seat that the player was sitting on. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -670,11 +669,11 @@ Station ID's: """
             EventData(
             name='onClientPlayerVoicePause',
             docs=FunctionDoc(
-                description="""This event is triggered when a players voice sound is paused using setSoundPaused. """,
+                description='This event is triggered when a players voice sound is paused using setSoundPaused.' ,
                 arguments={
                     "reason": """: the reason for the pause, this can be only paused. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -702,11 +701,11 @@ Station ID's: """
             EventData(
             name='onClientPlayerVoiceResumed',
             docs=FunctionDoc(
-                description="""This event is triggered when a players voice sound is resumed using setSoundPaused. """,
+                description='This event is triggered when a players voice sound is resumed using setSoundPaused.' ,
                 arguments={
                     "reason": """: the reason for the pause, this can be only resumed. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -734,12 +733,11 @@ Station ID's: """
             EventData(
             name='onClientPlayerVoiceStart',
             docs=FunctionDoc(
-                description="""<div style=border: 1px dotted blue; background: #00CC66;padding:4px;margin-bottom:2px;>Note:  This event should only be used as a low-level function for advanced users.  For typical Voice scripting, please see the Resource:Voice|Voice Resource</div>
-This event is triggered when a player starts talking through voice chat. """,
+                description='<div style=border: 1px dotted blue; background: #00CC66;padding:4px;margin-bottom:2px;>Note:  This event should only be used as a low-level function for advanced users.  For typical Voice scripting, please see the Resource:Voice|Voice Resource</div>\nThis event is triggered when a player starts talking through voice chat.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -758,11 +756,11 @@ This event is triggered when a player starts talking through voice chat. """,
             EventData(
             name='onClientPlayerVoiceStop',
             docs=FunctionDoc(
-                description="""This event is triggered when a player stops talking through voice chat. """,
+                description='This event is triggered when a player stops talking through voice chat.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -781,14 +779,14 @@ This event is triggered when a player starts talking through voice chat. """,
             EventData(
             name='onClientPlayerWasted',
             docs=FunctionDoc(
-                description="""This event is triggered whenever a player, including those remote, dies. """,
+                description='This event is triggered whenever a player, including those remote, dies.' ,
                 arguments={
                     "killer": """: A player element representing the killer. """,
                     "weapon": """: An int|integer representing the Weapons|killer weapon or the Damage Types|damage types. """,
                     "bodypart": """: An int|integer representing the bodypart the player was damaged. """,
                     "stealth": """: A boolean representing whether or not this was a stealth kill. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -846,7 +844,7 @@ This event is triggered when a player starts talking through voice chat. """,
             EventData(
             name='onClientPlayerWeaponFire',
             docs=FunctionDoc(
-                description="""This event is called when a player fires a weapon.  This does not trigger for projectiles, melee weapons, or camera. """,
+                description='This event is called when a player fires a weapon.  This does not trigger for projectiles, melee weapons, or camera.' ,
                 arguments={
                     "weapon": """:  an int representing weapons|weapon used for firing a shot. """,
                     "ammo": """: an int amount of ammo left for this weapon type. """,
@@ -855,7 +853,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     "hitElement": """: an element which was hit by a shot. """,
                     "startX": """, startY, startZ: float world coordinates representing the start of the bullet. Note: This is not the gun muzzle. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -973,12 +971,12 @@ This event is triggered when a player starts talking through voice chat. """,
             EventData(
             name='onClientPlayerWeaponSwitch',
             docs=FunctionDoc(
-                description="""This event is triggered whenever the local players equipped weapon|weapon slot changes. This means giveWeapon and takeWeapon will trigger this event if the equipped slot is forced to change. """,
+                description='This event is triggered whenever the local players equipped weapon|weapon slot changes. This means giveWeapon and takeWeapon will trigger this event if the equipped slot is forced to change.' ,
                 arguments={
                     "previousWeaponSlot": """: An integer representing the previous weapon|weapon slot the player had before he switched. """,
                     "currentWeaponSlot": """: An integer representing the new weapon|weapon slot the player has after he switched. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1013,14 +1011,14 @@ This event is triggered when a player starts talking through voice chat. """,
             EventData(
             name='onPlayerACInfo',
             docs=FunctionDoc(
-                description="""This event is triggered when a player trips anti-cheat detections. It can be used to script a white/blacklist of custom d3d9.dll files, or a white/blacklist of players with certain anti-cheat codes. The relevant anti-cheat code has to be disabled (or not enabled) in the server Mtaserver.conf#disableac|mtaserver.conf to be of use here. """,
+                description='This event is triggered when a player trips anti-cheat detections. It can be used to script a white/blacklist of custom d3d9.dll files, or a white/blacklist of players with certain anti-cheat codes. The relevant anti-cheat code has to be disabled (or not enabled) in the server Mtaserver.conf#disableac|mtaserver.conf to be of use here.' ,
                 arguments={
                     "detectedACList": """: A table of Anti-cheat_guide|anti-cheat codes the player has triggered. """,
                     "d3d9Size": """: A number representing the file size of any custom d3d9.dll the player may have installed. """,
                     "d3d9MD5": """: A string containing the MD5 of any custom d3d9.dll the player may have installed. """,
                     "d3d9SHA256": """: A string containing the SHA256 of any custom d3d9.dll the player may have installed. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1078,12 +1076,12 @@ This event is triggered when a player starts talking through voice chat. """,
             EventData(
             name='onPlayerBan',
             docs=FunctionDoc(
-                description="""This event is triggered when a player added a ban (like onBan). """,
+                description='This event is triggered when a player added a ban (like onBan).' ,
                 arguments={
                     "banPointer": """: the ban pointer which was added. """,
                     "responsibleElement": """: the player who added the ban. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1121,14 +1119,14 @@ This event is triggered when a player starts talking through voice chat. """,
             EventData(
             name='onPlayerChangeNick',
             docs=FunctionDoc(
-                description="""This event is triggered when a player changes his nickname. """,
+                description='This event is triggered when a player changes his nickname.' ,
                 arguments={
                     "oldNick": """the nickname the player had before. """,
                     "newNick": """the new nickname of the player. """,
                     "changedByUser": """a boolean representing whether the name was changed using setPlayerName or by the user.
 |9765}} """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1176,12 +1174,12 @@ This event is triggered when a player starts talking through voice chat. """,
             EventData(
             name='onPlayerChat',
             docs=FunctionDoc(
-                description="""This event is triggered when a player chats inside the chatbox. """,
+                description='This event is triggered when a player chats inside the chatbox.' ,
                 arguments={
                     "message": """: a string representing the message typed into the chat. """,
                     "messageType": """: an int value representing the message type: """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1219,7 +1217,7 @@ This event is triggered when a player starts talking through voice chat. """,
             EventData(
             name='onPlayerClick',
             docs=FunctionDoc(
-                description="""This event is triggered when a player clicks using the mouse cursor. """,
+                description='This event is triggered when a player clicks using the mouse cursor.' ,
                 arguments={
                     "mouseButton": """: a string representing the mouse button that was pressed. Value can be left, middle or right. """,
                     "buttonState": """: a string representing the button state. Value can be up or down. """,
@@ -1230,7 +1228,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     "screenPosX": """: the X position on the screen the player clicked on. """,
                     "screenPosY": """: the Y position on the screen the player clicked on. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1328,11 +1326,11 @@ This event is triggered when a player starts talking through voice chat. """,
             EventData(
             name='onPlayerCommand',
             docs=FunctionDoc(
-                description="""This event is triggered when a player issues a command. """,
+                description='This event is triggered when a player issues a command.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1360,12 +1358,7 @@ This event is triggered when a player starts talking through voice chat. """,
             EventData(
             name='onPlayerConnect',
             docs=FunctionDoc(
-                description="""This event is triggered when a player attempts to connect to the server.
-bordercolorhex = CC3333 |
-bgcolorhex = FF8888 |
-message = WARNING:
-* You should never, under any circumstances, modify the player returned by getPlayerFromName before onPlayerJoin to avoid desynchronization (e.g. setPlayerName).
-* If you want to set custom disconnect text, cancelEvent should be called at the end of the onPlayerConnect event, otherwise the client will be displayed the default text if any other event, native or custom, is triggered before cancelling. """,
+                description='This event is triggered when a player attempts to connect to the server.\nbordercolorhex = CC3333 |\nbgcolorhex = FF8888 |\nmessage = WARNING:\n* You should never, under any circumstances, modify the player returned by getPlayerFromName before onPlayerJoin to avoid desynchronization (e.g. setPlayerName).\n* If you want to set custom disconnect text, cancelEvent should be called at the end of the onPlayerConnect event, otherwise the client will be displayed the default text if any other event, native or custom, is triggered before cancelling.' ,
                 arguments={
                     "playerNick": """: The players current nickname. """,
                     "playerIP": """: The players current IP. """,
@@ -1374,7 +1367,7 @@ message = WARNING:
                     "playerVersionNumber": """: The players MTA version in pure numerical form, e.g. 256 for 1.0, 257 for 1.0.1, etc. """,
                     "playerVersionString": """: The players MTA version in sortable string form. Same as the return value from getPlayerVersion. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1452,12 +1445,12 @@ message = WARNING:
             EventData(
             name='onPlayerContact',
             docs=FunctionDoc(
-                description="""This event is triggered when a player stands on a different element than before. """,
+                description='This event is triggered when a player stands on a different element than before.' ,
                 arguments={
                     "previousElement": """: the element player was standing on before. nil if none. """,
                     "currentElement": """: the new element that the player is standing on now. nil if none. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1495,17 +1488,14 @@ message = WARNING:
             EventData(
             name='onPlayerDamage',
             docs=FunctionDoc(
-                description="""This event is triggered when a player is damaged, in any way.
-*This event is not triggered when attacked by a team member if friendly fire is enabled.
-*Canceling this event has no effect. Cancel the client-side event onClientPlayerDamage instead.
-*onPlayerDamage doesnt trigger if the damage kills the player, onPlayerWasted is called instead. """,
+                description='This event is triggered when a player is damaged, in any way.\n*This event is not triggered when attacked by a team member if friendly fire is enabled.\n*Canceling this event has no effect. Cancel the client-side event onClientPlayerDamage instead.\n*onPlayerDamage doesnt trigger if the damage kills the player, onPlayerWasted is called instead.' ,
                 arguments={
                     "attacker": """: a player element representing the player who was the attacker.  If there was no attacker this returns false. """,
                     "damage_causing": """: an int representing the cause of damage, either a Weapons|attacker weapon, or some other Damage Types|types of damage. """,
                     "bodypart": """: an int representing the bodypart ID the player was hit on when he got damaged. """,
                     "loss": """: a float representing the percentage of health the player lost. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1563,11 +1553,11 @@ message = WARNING:
             EventData(
             name='onPlayerJoin',
             docs=FunctionDoc(
-                description="""This event is triggered when a player joins the server. This event is not cancellable. """,
+                description='This event is triggered when a player joins the server. This event is not cancellable.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1586,12 +1576,12 @@ message = WARNING:
             EventData(
             name='onPlayerLogin',
             docs=FunctionDoc(
-                description="""This event is triggered when a player logs into their account in-game. """,
+                description='This event is triggered when a player logs into their account in-game.' ,
                 arguments={
                     "thePreviousAccount": """: the account the player was logged into before. """,
                     "theCurrentAccount": """: the account the player logged into just now. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1629,12 +1619,12 @@ message = WARNING:
             EventData(
             name='onPlayerLogout',
             docs=FunctionDoc(
-                description="""This event is triggered when a user logs out of their account in-game. """,
+                description='This event is triggered when a user logs out of their account in-game.' ,
                 arguments={
                     "thePreviousAccount": """: the account the client was logged in as. """,
                     "theCurrentAccount": """: the account the client is a part of now (usually a guest account). """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1672,12 +1662,12 @@ message = WARNING:
             EventData(
             name='onPlayerMarkerHit',
             docs=FunctionDoc(
-                description="""This event is triggered when a player hits a marker. """,
+                description='This event is triggered when a player hits a marker.' ,
                 arguments={
                     "markerHit": """: the marker the player hit. """,
                     "matchingDimension": """: a boolean representing whether the player and the hit marker are in the same dimension. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1715,12 +1705,12 @@ message = WARNING:
             EventData(
             name='onPlayerMarkerLeave',
             docs=FunctionDoc(
-                description="""This event is triggered when a player leaves the area of a marker. """,
+                description='This event is triggered when a player leaves the area of a marker.' ,
                 arguments={
                     "markerLeft": """: the marker the player left. """,
                     "matchingDimension": """: a boolean representing whether the player and the left marker are in the same dimension. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1758,7 +1748,7 @@ message = WARNING:
             EventData(
             name='onPlayerModInfo',
             docs=FunctionDoc(
-                description="""This event is triggered when a player has modified certain files. """,
+                description='This event is triggered when a player has modified certain files.' ,
                 arguments={
                     "filename": """: a string with the filename of the modified file. """,
                     "itemlist": """: a table with the details of each modification within the file. Possible keys for each sub-table are: """,
@@ -1773,7 +1763,7 @@ message = WARNING:
                     "paddedMd5": """: md5 of the item bytes padded to 2048 byte boundary. """,
                     "paddedSha256": """: sha256 of the item bytes padded to 2048 byte boundary. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1811,11 +1801,11 @@ message = WARNING:
             EventData(
             name='onPlayerMute',
             docs=FunctionDoc(
-                description="""This event is triggered when a player has been muted by setPlayerMuted. """,
+                description='This event is triggered when a player has been muted by setPlayerMuted.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1834,12 +1824,12 @@ message = WARNING:
             EventData(
             name='onPlayerNetworkStatus',
             docs=FunctionDoc(
-                description="""This event is triggered when a players network connection to the server is interrupted. See onClientPlayerNetworkStatus for detecting server to player interruptions. """,
+                description='This event is triggered when a players network connection to the server is interrupted. See onClientPlayerNetworkStatus for detecting server to player interruptions.' ,
                 arguments={
                     "status": """: an int which is 0 if the interruption has begun, or 1 if the interruption is ending. """,
                     "ticks": """: an int representing the ticks since the interruption started. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1877,11 +1867,11 @@ message = WARNING:
             EventData(
             name='onPlayerPickupHit',
             docs=FunctionDoc(
-                description="""This event is triggered when a player hits a pickup. """,
+                description='This event is triggered when a player hits a pickup.' ,
                 arguments={
                     "pickupHit": """: the pickup the player hit. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1909,11 +1899,11 @@ message = WARNING:
             EventData(
             name='onPlayerPickupLeave',
             docs=FunctionDoc(
-                description="""This event is triggered when a player leaves a pickup. """,
+                description='This event is triggered when a player leaves a pickup.' ,
                 arguments={
                     "pickupLeft": """: the pickup the player left. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1941,11 +1931,11 @@ message = WARNING:
             EventData(
             name='onPlayerPickupUse',
             docs=FunctionDoc(
-                description="""This event is triggered when a player is standing on a pickup while not being in a vehicle. """,
+                description='This event is triggered when a player is standing on a pickup while not being in a vehicle.' ,
                 arguments={
                     "thePickupToUse": """: the pickup the player is standing on and is about to pick up. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1973,12 +1963,12 @@ message = WARNING:
             EventData(
             name='onPlayerPrivateMessage',
             docs=FunctionDoc(
-                description="""This event is triggered when a player sends a private message with msg command. """,
+                description='This event is triggered when a player sends a private message with msg command.' ,
                 arguments={
                     "message": """: a string representing the private message to be sent. """,
                     "recipient": """: the player to whom the message is being sent. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -2016,7 +2006,7 @@ message = WARNING:
             EventData(
             name='onPlayerQuit',
             docs=FunctionDoc(
-                description="""This event is triggered when a player disconnects from the server. """,
+                description='This event is triggered when a player disconnects from the server.' ,
                 arguments={
                     "quitType": """: How the player left. Possible values: """,
                     "Unknown": """ """,
@@ -2028,7 +2018,7 @@ message = WARNING:
                     "reason": """: If the player was kicked or banned, the reason given goes here. If the player was not kicked or banned, this will be false. """,
                     "responsibleElement": """: The element that was responsible for kicking or banning the player. This is commonly another player, but can also be the console element. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -2076,7 +2066,7 @@ message = WARNING:
             EventData(
             name='onPlayerScreenShot',
             docs=FunctionDoc(
-                description="""This event is triggered when the screen capture requested by takePlayerScreenShot has completed. """,
+                description='This event is triggered when the screen capture requested by takePlayerScreenShot has completed.' ,
                 arguments={
                     "theResource": """: the resource which called takePlayerScreenShot. """,
                     "status": """: a string containing the status of the event which can be one of three values: """,
@@ -2087,7 +2077,7 @@ message = WARNING:
                     "timestamp": """: an int representing the server tick count when the capture was taken. """,
                     "tag": """: a string passed to takePlayerScreenShot. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -2155,7 +2145,7 @@ message = WARNING:
             EventData(
             name='onPlayerSpawn',
             docs=FunctionDoc(
-                description="""This event is called when a player spawns. """,
+                description='This event is called when a player spawns.' ,
                 arguments={
                     "posX": """: the X position the player spawned at. """,
                     "posY": """: the Y position the player spawned at. """,
@@ -2166,7 +2156,7 @@ message = WARNING:
                     "theInterior": """: the interior the player spawned in. """,
                     "theDimension": """: the dimension the player spawned in. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -2264,11 +2254,11 @@ message = WARNING:
             EventData(
             name='onPlayerStealthKill',
             docs=FunctionDoc(
-                description="""This event is triggered when a player stealth kills another player. """,
+                description='This event is triggered when a player stealth kills another player.' ,
                 arguments={
                     "targetPlayer": """: the player or ped that is being stealth killed. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -2296,11 +2286,11 @@ message = WARNING:
             EventData(
             name='onPlayerTarget',
             docs=FunctionDoc(
-                description="""This event is triggered when a player targets an element with his crosshair while aiming, or simply facing it while standing close. Its triggered again when the player no longer targets anything. """,
+                description='This event is triggered when a player targets an element with his crosshair while aiming, or simply facing it while standing close. Its triggered again when the player no longer targets anything.' ,
                 arguments={
                     "targettedElement": """: the element the player is targetting. false if no element is being targetted anymore. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -2328,11 +2318,11 @@ message = WARNING:
             EventData(
             name='onPlayerUnmute',
             docs=FunctionDoc(
-                description="""This event is triggered when a player has been unmuted by setPlayerMuted. """,
+                description='This event is triggered when a player has been unmuted by setPlayerMuted.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -2351,13 +2341,13 @@ message = WARNING:
             EventData(
             name='onPlayerVehicleEnter',
             docs=FunctionDoc(
-                description="""This event is triggered when a player enters a vehicle. """,
+                description='This event is triggered when a player enters a vehicle.' ,
                 arguments={
                     "theVehicle": """: a vehicle element representing the vehicle that was entered. """,
                     "seat": """: an int representing the seat in which the player is entering. """,
                     "jacked": """: a player or ped element representing who has been jacked. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -2405,14 +2395,14 @@ message = WARNING:
             EventData(
             name='onPlayerVehicleExit',
             docs=FunctionDoc(
-                description="""This event is triggered when a player leaves a vehicle, for whatever reason. """,
+                description='This event is triggered when a player leaves a vehicle, for whatever reason.' ,
                 arguments={
                     "theVehicle": """: a vehicle element representing the vehicle in which the player exited from. """,
                     "seat": """: an int representing the seat in which the player was before exiting. """,
                     "jacker": """: a player or ped element representing who jacked the driver. """,
                     "forcedByScript": """a boolean representing whether the exit was forced using removePedFromVehicle or by the player. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -2470,12 +2460,11 @@ message = WARNING:
             EventData(
             name='onPlayerVoiceStart',
             docs=FunctionDoc(
-                description="""<div style=border: 1px dotted blue; background: #00CC66;padding:4px;margin-bottom:2px;>Note:  This event should only be used as a low-level function for advanced users.  For typical Voice scripting, please see the Resource:Voice|Voice Resource</div>
-This event is triggered when a player starts talking through voice chat. """,
+                description='<div style=border: 1px dotted blue; background: #00CC66;padding:4px;margin-bottom:2px;>Note:  This event should only be used as a low-level function for advanced users.  For typical Voice scripting, please see the Resource:Voice|Voice Resource</div>\nThis event is triggered when a player starts talking through voice chat.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -2494,11 +2483,11 @@ This event is triggered when a player starts talking through voice chat. """,
             EventData(
             name='onPlayerVoiceStop',
             docs=FunctionDoc(
-                description="""This event is triggered when a player stops talking through voice chat. """,
+                description='This event is triggered when a player stops talking through voice chat.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -2517,7 +2506,7 @@ This event is triggered when a player starts talking through voice chat. """,
             EventData(
             name='onPlayerWasted',
             docs=FunctionDoc(
-                description="""This event is triggered when a player is killed or dies. """,
+                description='This event is triggered when a player is killed or dies.' ,
                 arguments={
                     "totalAmmo": """: an int representing the total ammo the victim had when they died. """,
                     "killer": """: an element representing the player, vehicle or object who was the killer. Deaths resulting from fall damage provide the vehicle or object landed on as the killer. If there was no killer this is false. """,
@@ -2525,7 +2514,7 @@ This event is triggered when a player starts talking through voice chat. """,
                     "bodypart": """: an int representing the bodypart ID the victim was hit on when they died. """,
                     "stealth": """: a boolean value representing whether or not this was a stealth kill. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -2593,14 +2582,14 @@ This event is triggered when a player starts talking through voice chat. """,
             EventData(
             name='onPlayerWeaponFire',
             docs=FunctionDoc(
-                description="""This event is called when a player fires a weapon.  This does not trigger for projectiles, melee weapons, or camera. """,
+                description='This event is called when a player fires a weapon.  This does not trigger for projectiles, melee weapons, or camera.' ,
                 arguments={
                     "weapon": """:  an int representing weapons|weapon used for making a shot. """,
                     "endX": """, endY, endZ: float world coordinates representing an end point. """,
                     "hitElement": """: an element which was hit by a shot. Currently this can be only another player. Note: hitElement could be incorrect and should not be relied upon. """,
                     "startX": """, startY, startZ: float world coordinates representing the start of the bullet. Note: This is not the gun muzzle. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -2698,12 +2687,12 @@ This event is triggered when a player starts talking through voice chat. """,
             EventData(
             name='onPlayerWeaponSwitch',
             docs=FunctionDoc(
-                description="""This event is triggered whenever a players equipped weapon slot changes. This means giveWeapon and takeWeapon will trigger this function if the equipped slot is forced to change. """,
+                description='This event is triggered whenever a players equipped weapon slot changes. This means giveWeapon and takeWeapon will trigger this function if the equipped slot is forced to change.' ,
                 arguments={
                     "previousWeaponID": """: An int|integer representing the weapons|weapon that was switched from. """,
                     "currentWeaponID": """: An int|integer representing the weapons|weapon that was switched to. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[

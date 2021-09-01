@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -83,7 +83,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates an explosion of a certain type at a specified point in the world. If creator is specified, the explosion will occur only in its dimension. """,
+                description='Creates an explosion of a certain type at a specified point in the world. If creator is specified, the explosion will occur only in its dimension.' ,
                 arguments={
                     "x": """a float value that specifies the X world coordinate where the explosion is created at. """,
                     "y": """a float value that specifies the Y world coordinate where the explosion is created at. """,
@@ -91,9 +91,8 @@ DUMP_PARTIAL = [
                     "theType": """an integer specifying the explosion type. Valid types are: """,
                     "creator": """the explosions simulated creator, the player responsible for it. """
                 },
-                result=""" """,
-            ),
-            name='createExplosion',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -189,7 +188,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates an explosion of a certain type at a specified point in the world. If creator is specified, the explosion will occur only in its dimension. """,
+                description='Creates an explosion of a certain type at a specified point in the world. If creator is specified, the explosion will occur only in its dimension.' ,
                 arguments={
                     "x": """a float value that specifies the X world coordinate where the explosion is created at. """,
                     "y": """a float value that specifies the Y world coordinate where the explosion is created at. """,
@@ -199,9 +198,8 @@ DUMP_PARTIAL = [
                     "camShake": """a float specifying the camera shakes intensity. """,
                     "damaging": """a boolean specifying whether the explosion should cause damage or not. """
                 },
-                result=""" """,
-            ),
-            name='createExplosion',
+                result='' ,
+            )
         )
         ],
     )

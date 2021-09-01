@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -63,15 +63,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used together with setElementData in subscribe mode. """,
+                description='This function is used together with setElementData in subscribe mode.' ,
                 arguments={
                     "theElement": """The element you wish to subscribe the player to. """,
                     "key": """The key you wish to subscribe the player to. """,
                     "thePlayer": """The player you wish to subscribe. """
                 },
-                result="""returns true if the player was subscribed, false otherwise. """,
-            ),
-            name='addElementDataSubscriber',
+                result='returns true if the player was subscribed, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -182,22 +181,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function attaches one element to another, so that the first one follows the second whenever it moves.
-If an attempt is made to attach two elements that are already attached the opposite way (eg theElement becomes theAttachToElement and vice versa), the 1st attachment order is automatically detached in favor of the 2nd attachment order. For example, if carA was attached to carB, now carB is attached to carA. Also, an element cannot be attached to two separate elements at one time. For example, two cars can be attached to one single car, but one single car cannot be attached to two separate cars. If you attempt to do this, the existing attachment will automatically be dropped in favor of the new attachment. For example, if carA is asked to attached to carB then carC, it is only attached to carC.
-This is not compatible with all elements.  The following elements are compatible:
-* Peds
-* Players
-* Blips
-* Vehicles
-* Objects
-* Markers
-* Pickups
-* Sounds
-* Colshapes
-* createWeapon|Weapons
-* Cameras
-*The offset coodinates reflect the object space, not the world space. This means that you cannot calculate the exact offsets between two objects by pre-positioning them in the map editor as a reference. Please see attachElementsOffsets for more details.
-*Due to a limitation in GTA, unexpected attach rotations may occur if all rotation offsets are non-zero. (i.e. Try to ensure at least one of xRotOffset, yRotOffset or zRotOffset is zero).}} """,
+                description='This function attaches one element to another, so that the first one follows the second whenever it moves.\nIf an attempt is made to attach two elements that are already attached the opposite way (eg theElement becomes theAttachToElement and vice versa), the 1st attachment order is automatically detached in favor of the 2nd attachment order. For example, if carA was attached to carB, now carB is attached to carA. Also, an element cannot be attached to two separate elements at one time. For example, two cars can be attached to one single car, but one single car cannot be attached to two separate cars. If you attempt to do this, the existing attachment will automatically be dropped in favor of the new attachment. For example, if carA is asked to attached to carB then carC, it is only attached to carC.\nThis is not compatible with all elements.  The following elements are compatible:\n* Peds\n* Players\n* Blips\n* Vehicles\n* Objects\n* Markers\n* Pickups\n* Sounds\n* Colshapes\n* createWeapon|Weapons\n* Cameras\n*The offset coodinates reflect the object space, not the world space. This means that you cannot calculate the exact offsets between two objects by pre-positioning them in the map editor as a reference. Please see attachElementsOffsets for more details.\n*Due to a limitation in GTA, unexpected attach rotations may occur if all rotation offsets are non-zero. (i.e. Try to ensure at least one of xRotOffset, yRotOffset or zRotOffset is zero).}}' ,
                 arguments={
                     "theElement": """The element to be attached. """,
                     "theAttachToElement": """The element to attach the first to. """,
@@ -208,9 +192,8 @@ This is not compatible with all elements.  The following elements are compatible
                     "yRotOffset": """The y rotation offset (default 0). """,
                     "zRotOffset": """The z rotation offset (default 0). """
                 },
-                result="""returns true if the attaching process was successful, false otherwise. """,
-            ),
-            name='attachElements',
+                result='returns true if the attaching process was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -316,22 +299,7 @@ This is not compatible with all elements.  The following elements are compatible
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function attaches one element to another, so that the first one follows the second whenever it moves.
-If an attempt is made to attach two elements that are already attached the opposite way (eg theElement becomes theAttachToElement and vice versa), the 1st attachment order is automatically detached in favor of the 2nd attachment order. For example, if carA was attached to carB, now carB is attached to carA. Also, an element cannot be attached to two separate elements at one time. For example, two cars can be attached to one single car, but one single car cannot be attached to two separate cars. If you attempt to do this, the existing attachment will automatically be dropped in favor of the new attachment. For example, if carA is asked to attached to carB then carC, it is only attached to carC.
-This is not compatible with all elements.  The following elements are compatible:
-* Peds
-* Players
-* Blips
-* Vehicles
-* Objects
-* Markers
-* Pickups
-* Sounds
-* Colshapes
-* createWeapon|Weapons
-* Cameras
-*The offset coodinates reflect the object space, not the world space. This means that you cannot calculate the exact offsets between two objects by pre-positioning them in the map editor as a reference. Please see attachElementsOffsets for more details.
-*Due to a limitation in GTA, unexpected attach rotations may occur if all rotation offsets are non-zero. (i.e. Try to ensure at least one of xRotOffset, yRotOffset or zRotOffset is zero).}} """,
+                description='This function attaches one element to another, so that the first one follows the second whenever it moves.\nIf an attempt is made to attach two elements that are already attached the opposite way (eg theElement becomes theAttachToElement and vice versa), the 1st attachment order is automatically detached in favor of the 2nd attachment order. For example, if carA was attached to carB, now carB is attached to carA. Also, an element cannot be attached to two separate elements at one time. For example, two cars can be attached to one single car, but one single car cannot be attached to two separate cars. If you attempt to do this, the existing attachment will automatically be dropped in favor of the new attachment. For example, if carA is asked to attached to carB then carC, it is only attached to carC.\nThis is not compatible with all elements.  The following elements are compatible:\n* Peds\n* Players\n* Blips\n* Vehicles\n* Objects\n* Markers\n* Pickups\n* Sounds\n* Colshapes\n* createWeapon|Weapons\n* Cameras\n*The offset coodinates reflect the object space, not the world space. This means that you cannot calculate the exact offsets between two objects by pre-positioning them in the map editor as a reference. Please see attachElementsOffsets for more details.\n*Due to a limitation in GTA, unexpected attach rotations may occur if all rotation offsets are non-zero. (i.e. Try to ensure at least one of xRotOffset, yRotOffset or zRotOffset is zero).}}' ,
                 arguments={
                     "theElement": """The element to be attached. """,
                     "theAttachToElement": """The element to attach the first to. """,
@@ -342,9 +310,8 @@ This is not compatible with all elements.  The following elements are compatible
                     "yRotOffset": """The y rotation offset (default 0). """,
                     "zRotOffset": """The z rotation offset (default 0). """
                 },
-                result="""returns true if the attaching process was successful, false otherwise. """,
-            ),
-            name='attachElements',
+                result='returns true if the attaching process was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -382,13 +349,12 @@ This is not compatible with all elements.  The following elements are compatible
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function clears any settings added by setElementVisibleTo and restores an element to its default visibility.  This does not work with all entities - vehicles, players and objects are exempt. This is because these objects are required for accurate sync (theyre physical objects). This function is particularily useful for changing the visibility of markers, radar blips and radar areas. """,
+                description='This function clears any settings added by setElementVisibleTo and restores an element to its default visibility.  This does not work with all entities - vehicles, players and objects are exempt. This is because these objects are required for accurate sync (theyre physical objects). This function is particularily useful for changing the visibility of markers, radar blips and radar areas.' ,
                 arguments={
                     "theElement": """The element in which you wish to restore to its default visibility """
                 },
-                result="""returns true if the operation was successful, false otherwise. """,
-            ),
-            name='clearElementVisibleTo',
+                result='returns true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -469,9 +435,7 @@ This is not compatible with all elements.  The following elements are compatible
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function clones (creates an exact copy of) an already existing element. The root node, and player elements, cannot be cloned. If a player element is a child of an element that is cloned, it will be skipped, along with the elements that exist as a child to the player element.
-Players are not the only elements that cannot be cloned. This list also includes remoteclients, and console elements.
-The cloned element will be placed on the element tree as a child of the same parent as the cloned element. """,
+                description='This function clones (creates an exact copy of) an already existing element. The root node, and player elements, cannot be cloned. If a player element is a child of an element that is cloned, it will be skipped, along with the elements that exist as a child to the player element.\nPlayers are not the only elements that cannot be cloned. This list also includes remoteclients, and console elements.\nThe cloned element will be placed on the element tree as a child of the same parent as the cloned element.' ,
                 arguments={
                     "theElement": """The element that you wish to clone. """,
                     "xPos": """: A floating point number representing the X coordinate on the map. """,
@@ -480,9 +444,8 @@ The cloned element will be placed on the element tree as a child of the same par
                     "cloneChildren": """: A boolean value representing whether or not the elements children will be cloned.
 '''Note: if 'cloneChildren' is true, the position floats will be offsets from the cloned element's position.''' """
                 },
-                result="""returns the handle of the new cloned element of the parent, false if invalid arguments were passed. """,
-            ),
-            name='cloneElement',
+                result='returns the handle of the new cloned element of the parent, false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -533,15 +496,13 @@ The cloned element will be placed on the element tree as a child of the same par
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to create a new dummy element in the element tree which do not necessarily represent an entity within the San Andreas world. A common use for this function is for creating custom elements, such as a Flag or a Base.
-Elements created using this function are placed in the element tree with their parent as the dynamic map element. """,
+                description='This function is used to create a new dummy element in the element tree which do not necessarily represent an entity within the San Andreas world. A common use for this function is for creating custom elements, such as a Flag or a Base.\nElements created using this function are placed in the element tree with their parent as the dynamic map element.' ,
                 arguments={
                     "elementType": """The type of element being created. """,
                     "elementID": """The ID of the element being created. """
                 },
-                result="""returns the element if it was successfully created. returns false if the arguments are wrong. """,
-            ),
-            name='createElement',
+                result='returns the element if it was successfully created. returns false if the arguments are wrong.' ,
+            )
         )
         ],
         client=[
@@ -587,15 +548,13 @@ Elements created using this function are placed in the element tree with their p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to create a new dummy element in the element tree which do not necessarily represent an entity within the San Andreas world. A common use for this function is for creating custom elements, such as a Flag or a Base.
-Elements created using this function are placed in the element tree with their parent as the dynamic map element. """,
+                description='This function is used to create a new dummy element in the element tree which do not necessarily represent an entity within the San Andreas world. A common use for this function is for creating custom elements, such as a Flag or a Base.\nElements created using this function are placed in the element tree with their parent as the dynamic map element.' ,
                 arguments={
                     "elementType": """The type of element being created. """,
                     "elementID": """The ID of the element being created. """
                 },
-                result="""returns the element if it was successfully created. returns false if the arguments are wrong. """,
-            ),
-            name='createElement',
+                result='returns the element if it was successfully created. returns false if the arguments are wrong.' ,
+            )
         )
         ],
     ),
@@ -633,14 +592,12 @@ Elements created using this function are placed in the element tree with their p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function destroys an element and all elements within it in the hierarchy (its children, the children of those children etc). player|Player elements cannot be destroyed using this function. A player can only be removed from the hierarchy when they quit or are kicked. The root element also cannot be destroyed, however, passing the root as an argument will wipe all elements from the server, except for the players and clients, which will become direct descendants of the root node, and other elements that cannot be destroyed, such as resource root elements.
-Players are not the only elements that cannot be deleted. This list also includes remote clients and console elements. """,
+                description='This function destroys an element and all elements within it in the hierarchy (its children, the children of those children etc). player|Player elements cannot be destroyed using this function. A player can only be removed from the hierarchy when they quit or are kicked. The root element also cannot be destroyed, however, passing the root as an argument will wipe all elements from the server, except for the players and clients, which will become direct descendants of the root node, and other elements that cannot be destroyed, such as resource root elements.\nPlayers are not the only elements that cannot be deleted. This list also includes remote clients and console elements.' ,
                 arguments={
                     "elementToDestroy": """The element you wish to destroy. """
                 },
-                result="""returns true if the element was destroyed successfully, false if either the element passed to it was invalid or it could not be destroyed for some other reason (for example, clientside destroyelement cant destroy serverside elements). """,
-            ),
-            name='destroyElement',
+                result='returns true if the element was destroyed successfully, false if either the element passed to it was invalid or it could not be destroyed for some other reason (for example, clientside destroyelement cant destroy serverside elements).' ,
+            )
         )
         ],
         client=[
@@ -676,14 +633,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function destroys an element and all elements within it in the hierarchy (its children, the children of those children etc). player|Player elements cannot be destroyed using this function. A player can only be removed from the hierarchy when they quit or are kicked. The root element also cannot be destroyed, however, passing the root as an argument will wipe all elements from the server, except for the players and clients, which will become direct descendants of the root node, and other elements that cannot be destroyed, such as resource root elements.
-Players are not the only elements that cannot be deleted. This list also includes remote clients and console elements. """,
+                description='This function destroys an element and all elements within it in the hierarchy (its children, the children of those children etc). player|Player elements cannot be destroyed using this function. A player can only be removed from the hierarchy when they quit or are kicked. The root element also cannot be destroyed, however, passing the root as an argument will wipe all elements from the server, except for the players and clients, which will become direct descendants of the root node, and other elements that cannot be destroyed, such as resource root elements.\nPlayers are not the only elements that cannot be deleted. This list also includes remote clients and console elements.' ,
                 arguments={
                     "elementToDestroy": """The element you wish to destroy. """
                 },
-                result="""returns true if the element was destroyed successfully, false if either the element passed to it was invalid or it could not be destroyed for some other reason (for example, clientside destroyelement cant destroy serverside elements). """,
-            ),
-            name='destroyElement',
+                result='returns true if the element was destroyed successfully, false if either the element passed to it was invalid or it could not be destroyed for some other reason (for example, clientside destroyelement cant destroy serverside elements).' ,
+            )
         )
         ],
     ),
@@ -731,14 +686,13 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function detaches attached elements from one another. """,
+                description='This function detaches attached elements from one another.' ,
                 arguments={
                     "theElement": """The element to be detached (the child) """,
                     "theAttachToElement": """The element you wish to detach from, will detach from the attached element if this isnt specified. """
                 },
-                result="""returns true if the detaching was successful, false otherwise. """,
-            ),
-            name='detachElements',
+                result='returns true if the detaching was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -784,14 +738,13 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function detaches attached elements from one another. """,
+                description='This function detaches attached elements from one another.' ,
                 arguments={
                     "theElement": """The element to be detached (the child) """,
                     "theAttachToElement": """The element you wish to detach from, will detach from the attached element if this isnt specified. """
                 },
-                result="""returns true if the detaching was successful, false otherwise. """,
-            ),
-            name='detachElements',
+                result='returns true if the detaching was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -829,13 +782,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns a table of all element data of an element. """,
+                description='Returns a table of all element data of an element.' ,
                 arguments={
                     "theElement": """the element you want to get the element data of. """
                 },
-                result="""if successful, returns a table with as keys the names of the element data and as values the corresponding element data values. returns false in case of failure. """,
-            ),
-            name='getAllElementData',
+                result='if successful, returns a table with as keys the names of the element data and as values the corresponding element data values. returns false in case of failure.' ,
+            )
         )
         ],
         client=[
@@ -876,13 +828,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table of all the elements attached to the specified element """,
+                description='This function returns a table of all the elements attached to the specified element' ,
                 arguments={
                     "theElement": """: The element which you require the information from. """
                 },
-                result="""returns a table of all the elements attached to the specified element. """,
-            ),
-            name='getAttachedElements',
+                result='returns a table of all the elements attached to the specified element.' ,
+            )
         )
         ],
         client=[
@@ -918,13 +869,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table of all the elements attached to the specified element """,
+                description='This function returns a table of all the elements attached to the specified element' ,
                 arguments={
                     "theElement": """: The element which you require the information from. """
                 },
-                result="""returns a table of all the elements attached to the specified element. """,
-            ),
-            name='getAttachedElements',
+                result='returns a table of all the elements attached to the specified element.' ,
+            )
         )
         ],
     ),
@@ -962,13 +912,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the alpha (transparency) value for the specified element. This can be a player, ped, object, vehicle or Element/Weapon|weapon. """,
+                description='This function returns the alpha (transparency) value for the specified element. This can be a player, ped, object, vehicle or Element/Weapon|weapon.' ,
                 arguments={
                     "theElement": """The element whose alpha you want to retrieve. """
                 },
-                result="""returns an integer (0-255; 0 = transparent) indicating the elements alpha, or false if invalid arguments were passed. """,
-            ),
-            name='getElementAlpha',
+                result='returns an integer (0-255; 0 = transparent) indicating the elements alpha, or false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -1004,13 +953,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the alpha (transparency) value for the specified element. This can be a player, ped, object, vehicle or Element/Weapon|weapon. """,
+                description='This function returns the alpha (transparency) value for the specified element. This can be a player, ped, object, vehicle or Element/Weapon|weapon.' ,
                 arguments={
                     "theElement": """The element whose alpha you want to retrieve. """
                 },
-                result="""returns an integer (0-255; 0 = transparent) indicating the elements alpha, or false if invalid arguments were passed. """,
-            ),
-            name='getElementAlpha',
+                result='returns an integer (0-255; 0 = transparent) indicating the elements alpha, or false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -1056,13 +1004,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theElement": """The element to retrieve the angular velocity from. Can be either a player, ped, object, vehicle or a Element/Weapon|custom weapon. Server side supports only vehicles currently. """
                 },
-                result="""returns three floats describing the x, y and z rotation """,
-            ),
-            name='getElementAngularVelocity',
+                result='returns three floats describing the x, y and z rotation' ,
+            )
         )
         ],
         client=[
@@ -1106,13 +1053,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theElement": """The element to retrieve the angular velocity from. Can be either a player, ped, object, vehicle or a Element/Weapon|custom weapon. Server side supports only vehicles currently. """
                 },
-                result="""returns three floats describing the x, y and z rotation """,
-            ),
-            name='getElementAngularVelocity',
+                result='returns three floats describing the x, y and z rotation' ,
+            )
         )
         ],
     ),
@@ -1170,13 +1116,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the offsets of an element that has been attached to another element using attachElements. """,
+                description='This function returns the offsets of an element that has been attached to another element using attachElements.' ,
                 arguments={
                     "theElement": """The attached element. """
                 },
-                result="""returns 6 float|floats, of which the first 3 indicate the position offset (x, y, z), and the last 3 indicate the rotation offset (x, y, z), if successful. false otherwise. """,
-            ),
-            name='getElementAttachedOffsets',
+                result='returns 6 float|floats, of which the first 3 indicate the position offset (x, y, z), and the last 3 indicate the rotation offset (x, y, z), if successful. false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1232,13 +1177,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the offsets of an element that has been attached to another element using attachElements. """,
+                description='This function returns the offsets of an element that has been attached to another element using attachElements.' ,
                 arguments={
                     "theElement": """The attached element. """
                 },
-                result="""returns 6 float|floats, of which the first 3 indicate the position offset (x, y, z), and the last 3 indicate the rotation offset (x, y, z), if successful. false otherwise. """,
-            ),
-            name='getElementAttachedOffsets',
+                result='returns 6 float|floats, of which the first 3 indicate the position offset (x, y, z), and the last 3 indicate the rotation offset (x, y, z), if successful. false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1276,13 +1220,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function determines the element that the specified element is attached to. """,
+                description='This function determines the element that the specified element is attached to.' ,
                 arguments={
                     "theElement": """The element you require the information for. """
                 },
-                result="""returns the element that the chosen element is attached to, or false if the element isnt attached to another element. """,
-            ),
-            name='getElementAttachedTo',
+                result='returns the element that the chosen element is attached to, or false if the element isnt attached to another element.' ,
+            )
         )
         ],
         client=[
@@ -1318,13 +1261,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function determines the element that the specified element is attached to. """,
+                description='This function determines the element that the specified element is attached to.' ,
                 arguments={
                     "theElement": """The element you require the information for. """
                 },
-                result="""returns the element that the chosen element is attached to, or false if the element isnt attached to another element. """,
-            ),
-            name='getElementAttachedTo',
+                result='returns the element that the chosen element is attached to, or false if the element isnt attached to another element.' ,
+            )
         )
         ],
     ),
@@ -1375,15 +1317,13 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description="""* Element/Player|Player
-* Element/Ped|Ped """,
+                description='* Element/Player|Player\n* Element/Ped|Ped' ,
                 arguments={
                     "theElement": """the element to get the bone matrix on. """,
                     "bone": """the ID of the bone to get the matrix of. See Bone IDs """
                 },
-                result="""returns a multi-dimensional array (which can be transformed into a proper matrix class using matrix.create method) containing a 4x4 matrix. returns false if invalid arguments were passed. """,
-            ),
-            name='getElementBoneMatrix',
+                result='returns a multi-dimensional array (which can be transformed into a proper matrix class using matrix.create method) containing a 4x4 matrix. returns false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -1442,15 +1382,13 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description="""* Element/Player|Player
-* Element/Ped|Ped """,
+                description='* Element/Player|Player\n* Element/Ped|Ped' ,
                 arguments={
                     "theElement": """the element to get the bone position on. """,
                     "bone": """the ID of the bone to get the position of. See Bone IDs """
                 },
-                result="""returns the x, y, z world position of the bone. """,
-            ),
-            name='getElementBonePosition',
+                result='returns the x, y, z world position of the bone.' ,
+            )
         )
         ],
     ),
@@ -1509,15 +1447,13 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description="""* Element/Player|Player
-* Element/Ped|Ped """,
+                description='* Element/Player|Player\n* Element/Ped|Ped' ,
                 arguments={
                     "theElement": """the element to get the bone rotation on. """,
                     "bone": """the ID of the bone to get the rotation of. See Bone IDs """
                 },
-                result="""returns the yaw, pitch, roll rotation values. """,
-            ),
-            name='getElementBoneRotation',
+                result='returns the yaw, pitch, roll rotation values.' ,
+            )
         )
         ],
     ),
@@ -1578,14 +1514,12 @@ Players are not the only elements that cannot be deleted. This list also include
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the minimum and maximum coordinates of an elements bounding box.
-It should be noted that the values returned are relative to the position of the element, and as such if you wish to get world coordinates for drawing, etc., you should retrieve the position of the element and add the returned values onto that. """,
+                description='This function returns the minimum and maximum coordinates of an elements bounding box.\nIt should be noted that the values returned are relative to the position of the element, and as such if you wish to get world coordinates for drawing, etc., you should retrieve the position of the element and add the returned values onto that.' ,
                 arguments={
                     "theElement": """the element whose bounding box we want to get. """
                 },
-                result="""*returns min x, min y, min z, max x, max y, max z if the passed element is valid and streamed in, false otherwise. """,
-            ),
-            name='getElementBoundingBox',
+                result='*returns min x, min y, min z, max x, max y, max z if the passed element is valid and streamed in, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1633,14 +1567,13 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns an element from the specified ID. If more than one element with the same ID exists, only the first one in the order it appears in the XML tree will be returned by this function. """,
+                description='This function returns an element from the specified ID. If more than one element with the same ID exists, only the first one in the order it appears in the XML tree will be returned by this function.' ,
                 arguments={
                     "id": """The ID of the element as it appears in the XML file or as set by setElementID. """,
                     "index": """If there are two or more elements of the same ID it will return the element with the specified index starting at 0. """
                 },
-                result="""returns the element with the given id, or false if no such element exists. """,
-            ),
-            name='getElementByID',
+                result='returns the element with the given id, or false if no such element exists.' ,
+            )
         )
         ],
         client=[
@@ -1686,14 +1619,13 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns an element from the specified ID. If more than one element with the same ID exists, only the first one in the order it appears in the XML tree will be returned by this function. """,
+                description='This function returns an element from the specified ID. If more than one element with the same ID exists, only the first one in the order it appears in the XML tree will be returned by this function.' ,
                 arguments={
                     "id": """The ID of the element as it appears in the XML file or as set by setElementID. """,
                     "index": """If there are two or more elements of the same ID it will return the element with the specified index starting at 0. """
                 },
-                result="""returns the element with the given id, or false if no such element exists. """,
-            ),
-            name='getElementByID',
+                result='returns the element with the given id, or false if no such element exists.' ,
+            )
         )
         ],
     ),
@@ -1741,14 +1673,13 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns an element of the specified type with the specified index. """,
+                description='This function returns an element of the specified type with the specified index.' ,
                 arguments={
                     "theType": """the type of the element to be returned. Examples include player, vehicle, or a custom type. """,
                     "index": """the elements index (0 for the first element, 1 for the second, etc). """
                 },
-                result="""returns the requested element, or false if it doesnt exist. """,
-            ),
-            name='getElementByIndex',
+                result='returns the requested element, or false if it doesnt exist.' ,
+            )
         )
         ],
         client=[
@@ -1799,14 +1730,13 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns one of the child elements of a given parent element. The child element is selected by its index (0 for the first child, 1 for the second and so on). """,
+                description='This function returns one of the child elements of a given parent element. The child element is selected by its index (0 for the first child, 1 for the second and so on).' ,
                 arguments={
                     "parent": """the element above the one to be returned in the hierarchy. """,
                     "index": """the elements index (0 for the first element, 1 for the second, etc). """
                 },
-                result="""returns the requested element if it exists, or false if it doesnt. """,
-            ),
-            name='getElementChild',
+                result='returns the requested element if it exists, or false if it doesnt.' ,
+            )
         )
         ],
         client=[
@@ -1852,14 +1782,13 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns one of the child elements of a given parent element. The child element is selected by its index (0 for the first child, 1 for the second and so on). """,
+                description='This function returns one of the child elements of a given parent element. The child element is selected by its index (0 for the first child, 1 for the second and so on).' ,
                 arguments={
                     "parent": """the element above the one to be returned in the hierarchy. """,
                     "index": """the elements index (0 for the first element, 1 for the second, etc). """
                 },
-                result="""returns the requested element if it exists, or false if it doesnt. """,
-            ),
-            name='getElementChild',
+                result='returns the requested element if it exists, or false if it doesnt.' ,
+            )
         )
         ],
     ),
@@ -1907,7 +1836,7 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to retrieve a list of the child elements of a given parent element. Note that it will only return direct children and not elements that are further down the element tree. """,
+                description='This function is used to retrieve a list of the child elements of a given parent element. Note that it will only return direct children and not elements that are further down the element tree.' ,
                 arguments={
                     "parent": """Supply this argument with the parent of the children you want returned. """,
                     "theType": """The type of element you want a list of. This is the same as the tag name in the .map file, so this can be used with a custom element type if desired. Built in types are: """,
@@ -1927,9 +1856,8 @@ It should be noted that the values returned are relative to the position of the 
                     "remoteclient": """A remote client connected to the server """,
                     "console": """The server Console """
                 },
-                result="""this function returns a table that contains a list of elements that the parent has. if the element has no children, it will return an empy table. it will return false if the parent element does not exist. """,
-            ),
-            name='getElementChildren',
+                result='this function returns a table that contains a list of elements that the parent has. if the element has no children, it will return an empy table. it will return false if the parent element does not exist.' ,
+            )
         )
         ],
         client=[
@@ -1975,7 +1903,7 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to retrieve a list of the child elements of a given parent element. Note that it will only return direct children and not elements that are further down the element tree. """,
+                description='This function is used to retrieve a list of the child elements of a given parent element. Note that it will only return direct children and not elements that are further down the element tree.' ,
                 arguments={
                     "parent": """Supply this argument with the parent of the children you want returned. """,
                     "theType": """The type of element you want a list of. This is the same as the tag name in the .map file, so this can be used with a custom element type if desired. Built in types are: """,
@@ -1995,9 +1923,8 @@ It should be noted that the values returned are relative to the position of the 
                     "remoteclient": """A remote client connected to the server """,
                     "console": """The server Console """
                 },
-                result="""this function returns a table that contains a list of elements that the parent has. if the element has no children, it will return an empy table. it will return false if the parent element does not exist. """,
-            ),
-            name='getElementChildren',
+                result='this function returns a table that contains a list of elements that the parent has. if the element has no children, it will return an empy table. it will return false if the parent element does not exist.' ,
+            )
         )
         ],
     ),
@@ -2035,13 +1962,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the number of children an element has. Note that only the direct children are counted and not elements that are further down the element tree. """,
+                description='This function returns the number of children an element has. Note that only the direct children are counted and not elements that are further down the element tree.' ,
                 arguments={
                     "parent": """the parent element """
                 },
-                result="""returns an int with the number of child elements, or false if the parent element does not exist. """,
-            ),
-            name='getElementChildrenCount',
+                result='returns an int with the number of child elements, or false if the parent element does not exist.' ,
+            )
         )
         ],
         client=[
@@ -2077,13 +2003,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the number of children an element has. Note that only the direct children are counted and not elements that are further down the element tree. """,
+                description='This function returns the number of children an element has. Note that only the direct children are counted and not elements that are further down the element tree.' ,
                 arguments={
                     "parent": """the parent element """
                 },
-                result="""returns an int with the number of child elements, or false if the parent element does not exist. """,
-            ),
-            name='getElementChildrenCount',
+                result='returns an int with the number of child elements, or false if the parent element does not exist.' ,
+            )
         )
         ],
     ),
@@ -2121,13 +2046,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function indicates if a specific element is set to have collisions disabled. An element without collisions does not interact with the physical environment and remains static. """,
+                description='This function indicates if a specific element is set to have collisions disabled. An element without collisions does not interact with the physical environment and remains static.' ,
                 arguments={
                     "theElement": """The element for which you want to check whether collisions are enabled """
                 },
-                result="""returns true if the collisions are enabled, false otherwise. """,
-            ),
-            name='getElementCollisionsEnabled',
+                result='returns true if the collisions are enabled, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2163,13 +2087,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function indicates if a specific element is set to have collisions disabled. An element without collisions does not interact with the physical environment and remains static. """,
+                description='This function indicates if a specific element is set to have collisions disabled. An element without collisions does not interact with the physical environment and remains static.' ,
                 arguments={
                     "theElement": """The element for which you want to check whether collisions are enabled """
                 },
-                result="""returns true if the collisions are enabled, false otherwise. """,
-            ),
-            name='getElementCollisionsEnabled',
+                result='returns true if the collisions are enabled, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2207,13 +2130,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Some elements have an associated colshape, for example Marker and Pickup. This function is used to get the associated colshape. """,
+                description='Some elements have an associated colshape, for example Marker and Pickup. This function is used to get the associated colshape.' ,
                 arguments={
                     "theElement": """The element you want to get the colshape of """
                 },
-                result="""returns colshape of the element, false if not or an invalid argument was passed to the function. """,
-            ),
-            name='getElementColShape',
+                result='returns colshape of the element, false if not or an invalid argument was passed to the function.' ,
+            )
         )
         ],
         client=[
@@ -2249,13 +2171,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Some elements have an associated colshape, for example Marker and Pickup. This function is used to get the associated colshape. """,
+                description='Some elements have an associated colshape, for example Marker and Pickup. This function is used to get the associated colshape.' ,
                 arguments={
                     "theElement": """The element you want to get the colshape of """
                 },
-                result="""returns colshape of the element, false if not or an invalid argument was passed to the function. """,
-            ),
-            name='getElementColShape',
+                result='returns colshape of the element, false if not or an invalid argument was passed to the function.' ,
+            )
         )
         ],
     ),
@@ -2313,15 +2234,14 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves element data attached to an element under a certain key. """,
+                description='This function retrieves element data attached to an element under a certain key.' ,
                 arguments={
                     "theElement": """This is the element with data you want to retrieve. """,
                     "key": """The name of the element data entry you want to retrieve. (Maximum 31 characters.) """,
                     "inherit": """- toggles whether or not the function should go up the hierarchy to find the requested key in case the specified element doesnt have it. """
                 },
-                result="""this function returns a variable containing the requested element data, or false if the element or the element data does not exist. when getting data corresponding to a xml attribute, this is always a string. """,
-            ),
-            name='getElementData',
+                result='this function returns a variable containing the requested element data, or false if the element or the element data does not exist. when getting data corresponding to a xml attribute, this is always a string.' ,
+            )
         )
         ],
         client=[
@@ -2377,15 +2297,14 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves element data attached to an element under a certain key. """,
+                description='This function retrieves element data attached to an element under a certain key.' ,
                 arguments={
                     "theElement": """This is the element with data you want to retrieve. """,
                     "key": """The name of the element data entry you want to retrieve. (Maximum 31 characters.) """,
                     "inherit": """- toggles whether or not the function should go up the hierarchy to find the requested key in case the specified element doesnt have it. """
                 },
-                result="""this function returns a variable containing the requested element data, or false if the element or the element data does not exist. when getting data corresponding to a xml attribute, this is always a string. """,
-            ),
-            name='getElementData',
+                result='this function returns a variable containing the requested element data, or false if the element or the element data does not exist. when getting data corresponding to a xml attribute, this is always a string.' ,
+            )
         )
         ],
     ),
@@ -2423,13 +2342,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to retrieve the dimension of any element. The dimension determines what/who the element is visible to. """,
+                description='This function allows you to retrieve the dimension of any element. The dimension determines what/who the element is visible to.' ,
                 arguments={
                     "theElement": """The element in which youd like to retrieve the dimension of. """
                 },
-                result="""returns an integer for the dimension if theelement is valid, false otherwise. """,
-            ),
-            name='getElementDimension',
+                result='returns an integer for the dimension if theelement is valid, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2465,13 +2383,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to retrieve the dimension of any element. The dimension determines what/who the element is visible to. """,
+                description='This function allows you to retrieve the dimension of any element. The dimension determines what/who the element is visible to.' ,
                 arguments={
                     "theElement": """The element in which youd like to retrieve the dimension of. """
                 },
-                result="""returns an integer for the dimension if theelement is valid, false otherwise. """,
-            ),
-            name='getElementDimension',
+                result='returns an integer for the dimension if theelement is valid, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2512,13 +2429,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to retrieve the distance between a elements centre of mass to the base of the model. This can be used to calculate the position the element has to be set to, to have it on ground level. """,
+                description='This function is used to retrieve the distance between a elements centre of mass to the base of the model. This can be used to calculate the position the element has to be set to, to have it on ground level.' ,
                 arguments={
                     
                 },
-                result="""returns a float with the distance, or false if the element is invalid. """,
-            ),
-            name='getElementDistanceFromCentreOfMassToBaseOfModel',
+                result='returns a float with the distance, or false if the element is invalid.' ,
+            )
         )
         ],
     ),
@@ -2556,13 +2472,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current health for the specified element. This can be a player, a ped, a vehicle, or an object. """,
+                description='This function returns the current health for the specified element. This can be a player, a ped, a vehicle, or an object.' ,
                 arguments={
                     "theElement": """The player or vehicle whose health you want to check. """
                 },
-                result="""returns a float indicating the elements health, or false if invalid arguments were passed. """,
-            ),
-            name='getElementHealth',
+                result='returns a float indicating the elements health, or false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -2598,13 +2513,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current health for the specified element. This can be a player, a ped, a vehicle, or an object. """,
+                description='This function returns the current health for the specified element. This can be a player, a ped, a vehicle, or an object.' ,
                 arguments={
                     "theElement": """The player or vehicle whose health you want to check. """
                 },
-                result="""returns a float indicating the elements health, or false if invalid arguments were passed. """,
-            ),
-            name='getElementHealth',
+                result='returns a float indicating the elements health, or false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -2642,13 +2556,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the ID of an element. This is the id attribute of the element and is a string, NOT a number like a model ID, weapons ID or similar. """,
+                description='This function gets the ID of an element. This is the id attribute of the element and is a string, NOT a number like a model ID, weapons ID or similar.' ,
                 arguments={
                     "theElement": """the element from which to retrieve the ID. """
                 },
-                result="""this returns a string containing the element id. it will return an empty string if it has no id. it will return false if the element is invalid. """,
-            ),
-            name='getElementID',
+                result='this returns a string containing the element id. it will return an empty string if it has no id. it will return false if the element is invalid.' ,
+            )
         )
         ],
         client=[
@@ -2684,13 +2597,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the ID of an element. This is the id attribute of the element and is a string, NOT a number like a model ID, weapons ID or similar. """,
+                description='This function gets the ID of an element. This is the id attribute of the element and is a string, NOT a number like a model ID, weapons ID or similar.' ,
                 arguments={
                     "theElement": """the element from which to retrieve the ID. """
                 },
-                result="""this returns a string containing the element id. it will return an empty string if it has no id. it will return false if the element is invalid. """,
-            ),
-            name='getElementID',
+                result='this returns a string containing the element id. it will return an empty string if it has no id. it will return false if the element is invalid.' ,
+            )
         )
         ],
     ),
@@ -2728,13 +2640,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to retrieve the interior of any element. An interior is the current loaded place, 0 being outside. """,
+                description='This function allows you to retrieve the interior of any element. An interior is the current loaded place, 0 being outside.' ,
                 arguments={
                     "theElement": """The element of which youd like to retrieve the interior """
                 },
-                result="""returns an int for the interior if theelement is valid, false otherwise. """,
-            ),
-            name='getElementInterior',
+                result='returns an int for the interior if theelement is valid, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2770,13 +2681,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to retrieve the interior of any element. An interior is the current loaded place, 0 being outside. """,
+                description='This function allows you to retrieve the interior of any element. An interior is the current loaded place, 0 being outside.' ,
                 arguments={
                     "theElement": """The element of which youd like to retrieve the interior """
                 },
-                result="""returns an int for the interior if theelement is valid, false otherwise. """,
-            ),
-            name='getElementInterior',
+                result='returns an int for the interior if theelement is valid, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2824,14 +2734,13 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets an elements transform matrix. This contains 16 float values that multiplied to a point will give you the point transformed. It is most useful for matrix calculations such as calculating offsets. For further information, please refer to a tutorial of matrices in computer graphics programming. """,
+                description='This function gets an elements transform matrix. This contains 16 float values that multiplied to a point will give you the point transformed. It is most useful for matrix calculations such as calculating offsets. For further information, please refer to a tutorial of matrices in computer graphics programming.' ,
                 arguments={
                     "theElement": """The element which you wish to retrieve the matrix for. """,
                     "legacy": """Set to false to return correctly setup matrix (i.e. Last column in the first 3 rows set to zero). """
                 },
-                result="""returns a multi-dimensional array (which can be transformed into a proper matrix class using matrix.create method) containing a 4x4 matrix. returns false if the element is not streamed in, and not a vehicle, ped or object. """,
-            ),
-            name='getElementMatrix',
+                result='returns a multi-dimensional array (which can be transformed into a proper matrix class using matrix.create method) containing a 4x4 matrix. returns false if the element is not streamed in, and not a vehicle, ped or object.' ,
+            )
         )
         ],
         client=[
@@ -2877,14 +2786,13 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets an elements transform matrix. This contains 16 float values that multiplied to a point will give you the point transformed. It is most useful for matrix calculations such as calculating offsets. For further information, please refer to a tutorial of matrices in computer graphics programming. """,
+                description='This function gets an elements transform matrix. This contains 16 float values that multiplied to a point will give you the point transformed. It is most useful for matrix calculations such as calculating offsets. For further information, please refer to a tutorial of matrices in computer graphics programming.' ,
                 arguments={
                     "theElement": """The element which you wish to retrieve the matrix for. """,
                     "legacy": """Set to false to return correctly setup matrix (i.e. Last column in the first 3 rows set to zero). """
                 },
-                result="""returns a multi-dimensional array (which can be transformed into a proper matrix class using matrix.create method) containing a 4x4 matrix. returns false if the element is not streamed in, and not a vehicle, ped or object. """,
-            ),
-            name='getElementMatrix',
+                result='returns a multi-dimensional array (which can be transformed into a proper matrix class using matrix.create method) containing a 4x4 matrix. returns false if the element is not streamed in, and not a vehicle, ped or object.' ,
+            )
         )
         ],
     ),
@@ -2922,16 +2830,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the model ID of a given element. This can be a player/ped skin, a pickup model, an object model or a vehicle model. """,
+                description='Returns the model ID of a given element. This can be a player/ped skin, a pickup model, an object model or a vehicle model.' ,
                 arguments={
                     "theElement": """the element to retrieve the model ID of. """
                 },
-                result="""returns the model id if successful, false otherwise.
-* for players/peds: a gtasa player model (skin) id. see character skins.
-* for vehicles: the vehicle ids|vehicle id of the vehicle.
-* for objects: an int specifying the model id. """,
-            ),
-            name='getElementModel',
+                result='returns the model id if successful, false otherwise.\n* for players/peds: a gtasa player model (skin) id. see character skins.\n* for vehicles: the vehicle ids|vehicle id of the vehicle.\n* for objects: an int specifying the model id.' ,
+            )
         )
         ],
         client=[
@@ -2967,16 +2871,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the model ID of a given element. This can be a player/ped skin, a pickup model, an object model or a vehicle model. """,
+                description='Returns the model ID of a given element. This can be a player/ped skin, a pickup model, an object model or a vehicle model.' ,
                 arguments={
                     "theElement": """the element to retrieve the model ID of. """
                 },
-                result="""returns the model id if successful, false otherwise.
-* for players/peds: a gtasa player model (skin) id. see character skins.
-* for vehicles: the vehicle ids|vehicle id of the vehicle.
-* for objects: an int specifying the model id. """,
-            ),
-            name='getElementModel',
+                result='returns the model id if successful, false otherwise.\n* for players/peds: a gtasa player model (skin) id. see character skins.\n* for vehicles: the vehicle ids|vehicle id of the vehicle.\n* for objects: an int specifying the model id.' ,
+            )
         )
         ],
     ),
@@ -3014,13 +2914,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to determine the parent of an element. """,
+                description='This function is used to determine the parent of an element.' ,
                 arguments={
                     "theElement": """The child of the parent element you want returned. """
                 },
-                result="""this returns the parent as an element. it returns false if theelement is invalid, or is the root node. """,
-            ),
-            name='getElementParent',
+                result='this returns the parent as an element. it returns false if theelement is invalid, or is the root node.' ,
+            )
         )
         ],
         client=[
@@ -3056,13 +2955,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to determine the parent of an element. """,
+                description='This function is used to determine the parent of an element.' ,
                 arguments={
                     "theElement": """The child of the parent element you want returned. """
                 },
-                result="""this returns the parent as an element. it returns false if theelement is invalid, or is the root node. """,
-            ),
-            name='getElementParent',
+                result='this returns the parent as an element. it returns false if theelement is invalid, or is the root node.' ,
+            )
         )
         ],
     ),
@@ -3108,21 +3006,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""The getElementPosition function allows you to retrieve the position coordinates of an element.  This can be any real world element, including:
-* Element/Player|Players
-* Element/Vehicle|Vehicles
-* Element/Object|Objects
-* Element/Pickup|Pickups
-* Element/Marker|Markers
-* Element/Collision shape|Collision shapes
-* Element/Blip|Blips
-* Element/Radar area|Radar areas """,
+                description='The getElementPosition function allows you to retrieve the position coordinates of an element.  This can be any real world element, including:\n* Element/Player|Players\n* Element/Vehicle|Vehicles\n* Element/Object|Objects\n* Element/Pickup|Pickups\n* Element/Marker|Markers\n* Element/Collision shape|Collision shapes\n* Element/Blip|Blips\n* Element/Radar area|Radar areas' ,
                 arguments={
                     "theElement": """The element which youd like to retrieve the location of """
                 },
-                result="""returns three floats indicating the position of the element, x, y and z respectively. """,
-            ),
-            name='getElementPosition',
+                result='returns three floats indicating the position of the element, x, y and z respectively.' ,
+            )
         )
         ],
         client=[
@@ -3166,21 +3055,12 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""The getElementPosition function allows you to retrieve the position coordinates of an element.  This can be any real world element, including:
-* Element/Player|Players
-* Element/Vehicle|Vehicles
-* Element/Object|Objects
-* Element/Pickup|Pickups
-* Element/Marker|Markers
-* Element/Collision shape|Collision shapes
-* Element/Blip|Blips
-* Element/Radar area|Radar areas """,
+                description='The getElementPosition function allows you to retrieve the position coordinates of an element.  This can be any real world element, including:\n* Element/Player|Players\n* Element/Vehicle|Vehicles\n* Element/Object|Objects\n* Element/Pickup|Pickups\n* Element/Marker|Markers\n* Element/Collision shape|Collision shapes\n* Element/Blip|Blips\n* Element/Radar area|Radar areas' ,
                 arguments={
                     "theElement": """The element which youd like to retrieve the location of """
                 },
-                result="""returns three floats indicating the position of the element, x, y and z respectively. """,
-            ),
-            name='getElementPosition',
+                result='returns three floats indicating the position of the element, x, y and z respectively.' ,
+            )
         )
         ],
     ),
@@ -3221,7 +3101,7 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the radius of an element. Normally, sphere or circle-shaped elements tend to return a more accurate and expected radius than others with another shapes. """,
+                description='This function gets the radius of an element. Normally, sphere or circle-shaped elements tend to return a more accurate and expected radius than others with another shapes.' ,
                 arguments={
                     "theElement": """The element to get the radius of. It can be any entity type, such as: """,
                     "player|Players": """. """,
@@ -3229,9 +3109,8 @@ It should be noted that the values returned are relative to the position of the 
                     "vehicle|Vehicles": """. """,
                     "object|Objects": """. """
                 },
-                result="""returns a float containing the radius if the element is valid, false otherwise. """,
-            ),
-            name='getElementRadius',
+                result='returns a float containing the radius if the element is valid, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3287,7 +3166,7 @@ It should be noted that the values returned are relative to the position of the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Retrieve the rotation of elements. """,
+                description='Retrieve the rotation of elements.' ,
                 arguments={
                     "theElement": """The element whose rotation will be retrieved """,
                     "rotOrder": """A string representing the rotation order desired when returning the http://en.wikipedia.org/wiki/Euler_angles euler angles. If omitted, default value is default. Allowed values are: """,
@@ -3297,9 +3176,8 @@ It should be noted that the values returned are relative to the position of the 
 The default rotation order for peds/players is Z-Y-X (clientside) and -Z-Y-X (serverside) but those rotation orders (set using ''"default"'' on peds) can not be used manually on other element types since they only exist due to historical and backward compatibility reasons.
 Specifying a rotation order other than ''"default"'' allows the same angles to later be uniformly used on several elements without having to consider their type. """
                 },
-                result="""* rx, ry, rz: 3 floats representing the euler rotation angles on the axis x, y and z (with the rotation order depending on the rotorder argument) if element exists and is a valid element, false if its invalid. """,
-            ),
-            name='getElementRotation',
+                result='* rx, ry, rz: 3 floats representing the euler rotation angles on the axis x, y and z (with the rotation order depending on the rotorder argument) if element exists and is a valid element, false if its invalid.' ,
+            )
         )
         ],
         client=[
@@ -3353,7 +3231,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description="""Retrieve the rotation of elements. """,
+                description='Retrieve the rotation of elements.' ,
                 arguments={
                     "theElement": """The element whose rotation will be retrieved """,
                     "rotOrder": """A string representing the rotation order desired when returning the http://en.wikipedia.org/wiki/Euler_angles euler angles. If omitted, default value is default. Allowed values are: """,
@@ -3363,9 +3241,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
 The default rotation order for peds/players is Z-Y-X (clientside) and -Z-Y-X (serverside) but those rotation orders (set using ''"default"'' on peds) can not be used manually on other element types since they only exist due to historical and backward compatibility reasons.
 Specifying a rotation order other than ''"default"'' allows the same angles to later be uniformly used on several elements without having to consider their type. """
                 },
-                result="""* rx, ry, rz: 3 floats representing the euler rotation angles on the axis x, y and z (with the rotation order depending on the rotorder argument) if element exists and is a valid element, false if its invalid. """,
-            ),
-            name='getElementRotation',
+                result='* rx, ry, rz: 3 floats representing the euler rotation angles on the axis x, y and z (with the rotation order depending on the rotorder argument) if element exists and is a valid element, false if its invalid.' ,
+            )
         )
         ],
     ),
@@ -3413,13 +3290,12 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to retrieve a list of all elements of the specified type. This can be useful, as it disregards where in the element tree it is. It can be used with either the built in types (listed below) or with any custom type used in a .map file. For example, if there is an element of type flag (e.g. <flag />) in the .map file, the using flag as the type argument would find it. """,
+                description='This function is used to retrieve a list of all elements of the specified type. This can be useful, as it disregards where in the element tree it is. It can be used with either the built in types (listed below) or with any custom type used in a .map file. For example, if there is an element of type flag (e.g. <flag />) in the .map file, the using flag as the type argument would find it.' ,
                 arguments={
                     
                 },
-                result=""" """,
-            ),
-            name='getElementsByType',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -3475,13 +3351,12 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to retrieve a list of all elements of the specified type. This can be useful, as it disregards where in the element tree it is. It can be used with either the built in types (listed below) or with any custom type used in a .map file. For example, if there is an element of type flag (e.g. <flag />) in the .map file, the using flag as the type argument would find it. """,
+                description='This function is used to retrieve a list of all elements of the specified type. This can be useful, as it disregards where in the element tree it is. It can be used with either the built in types (listed below) or with any custom type used in a .map file. For example, if there is an element of type flag (e.g. <flag />) in the .map file, the using flag as the type argument would find it.' ,
                 arguments={
                     
                 },
-                result=""" """,
-            ),
-            name='getElementsByType',
+                result='' ,
+            )
         )
         ],
     ),
@@ -3529,9 +3404,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to retrieve a list of all elements in a colshape, of the specified type.
-* For legacy reasons, a colshape created on the client does not collide with elements already existing at that location until they first move
-* This function doesnt verify whether elements are in the same dimension and interior, additional checks could be implemented manually if they are needed """,
+                description='This function is used to retrieve a list of all elements in a colshape, of the specified type.\n* For legacy reasons, a colshape created on the client does not collide with elements already existing at that location until they first move\n* This function doesnt verify whether elements are in the same dimension and interior, additional checks could be implemented manually if they are needed' ,
                 arguments={
                     "theShape": """The colshape you want to get the elements from. """,
                     "elemType": """The type of element you want a list of. This can be any element type, the common ones being: """,
@@ -3543,9 +3416,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "marker": """A marker """,
                     "remoteclient": """A remote client connected to the server """
                 },
-                result="""returns a table containing all the elements inside the colshape, of the specified type. returns an empty table if there are no elements inside. returns false if the colshape is invalid. """,
-            ),
-            name='getElementsWithinColShape',
+                result='returns a table containing all the elements inside the colshape, of the specified type. returns an empty table if there are no elements inside. returns false if the colshape is invalid.' ,
+            )
         )
         ],
         client=[
@@ -3591,9 +3463,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to retrieve a list of all elements in a colshape, of the specified type.
-* For legacy reasons, a colshape created on the client does not collide with elements already existing at that location until they first move
-* This function doesnt verify whether elements are in the same dimension and interior, additional checks could be implemented manually if they are needed """,
+                description='This function is used to retrieve a list of all elements in a colshape, of the specified type.\n* For legacy reasons, a colshape created on the client does not collide with elements already existing at that location until they first move\n* This function doesnt verify whether elements are in the same dimension and interior, additional checks could be implemented manually if they are needed' ,
                 arguments={
                     "theShape": """The colshape you want to get the elements from. """,
                     "elemType": """The type of element you want a list of. This can be any element type, the common ones being: """,
@@ -3605,9 +3475,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "marker": """A marker """,
                     "remoteclient": """A remote client connected to the server """
                 },
-                result="""returns a table containing all the elements inside the colshape, of the specified type. returns an empty table if there are no elements inside. returns false if the colshape is invalid. """,
-            ),
-            name='getElementsWithinColShape',
+                result='returns a table containing all the elements inside the colshape, of the specified type. returns an empty table if there are no elements inside. returns false if the colshape is invalid.' ,
+            )
         )
         ],
     ),
@@ -3705,9 +3574,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description="""* This function checks if elements are in a box, not in a sphere.
-* Z argument isnt in use currently, but make your scripts like it is for future compatibility reasons.
-* This function doesnt work with elements which is created by createElement.}} """,
+                description='* This function checks if elements are in a box, not in a sphere.\n* Z argument isnt in use currently, but make your scripts like it is for future compatibility reasons.\n* This function doesnt work with elements which is created by createElement.}}' ,
                 arguments={
                     "x": """the x coordinate at which to retrieve elements """,
                     "y": """the y coordinate at which to retrieve elements """,
@@ -3723,9 +3590,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "interior": """The interior you want to limit the search to. If not specified, it can return elements in any interior. """,
                     "dimension": """The dimension you want to limit the search to. If not specified, it can return elements in any dimension. """
                 },
-                result="""returns a table containing all the elements of the specified type within range. returns an empty table if there are no elements within range. returns false if the arguments are invalid. """,
-            ),
-            name='getElementsWithinRange',
+                result='returns a table containing all the elements of the specified type within range. returns an empty table if there are no elements within range. returns false if the arguments are invalid.' ,
+            )
         )
         ],
         client=[
@@ -3821,9 +3687,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description="""* This function checks if elements are in a box, not in a sphere.
-* Z argument isnt in use currently, but make your scripts like it is for future compatibility reasons.
-* This function doesnt work with elements which is created by createElement.}} """,
+                description='* This function checks if elements are in a box, not in a sphere.\n* Z argument isnt in use currently, but make your scripts like it is for future compatibility reasons.\n* This function doesnt work with elements which is created by createElement.}}' ,
                 arguments={
                     "x": """the x coordinate at which to retrieve elements """,
                     "y": """the y coordinate at which to retrieve elements """,
@@ -3839,9 +3703,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "interior": """The interior you want to limit the search to. If not specified, it can return elements in any interior. """,
                     "dimension": """The dimension you want to limit the search to. If not specified, it can return elements in any dimension. """
                 },
-                result="""returns a table containing all the elements of the specified type within range. returns an empty table if there are no elements within range. returns false if the arguments are invalid. """,
-            ),
-            name='getElementsWithinRange',
+                result='returns a table containing all the elements of the specified type within range. returns an empty table if there are no elements within range. returns false if the arguments are invalid.' ,
+            )
         )
         ],
     ),
@@ -3879,13 +3742,12 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the syncer of an element. The syncer is the player who is in control of the element. """,
+                description='This function gets the syncer of an element. The syncer is the player who is in control of the element.' ,
                 arguments={
                     "theElement": """: The element to get the syncer of. """
                 },
-                result="""returns the element that is the syncer of theelement or false if the element does not have a syncer. """,
-            ),
-            name='getElementSyncer',
+                result='returns the element that is the syncer of theelement or false if the element does not have a syncer.' ,
+            )
         )
         ],
         client=[
@@ -3926,13 +3788,12 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to retrieve the type of an element. """,
+                description='This function is used to retrieve the type of an element.' ,
                 arguments={
                     "theElement": """The element you wish to get the type of. """
                 },
-                result="""returns a string containing the element type, false if invalid arguments were passed. """,
-            ),
-            name='getElementType',
+                result='returns a string containing the element type, false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -3968,13 +3829,12 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to retrieve the type of an element. """,
+                description='This function is used to retrieve the type of an element.' ,
                 arguments={
                     "theElement": """The element you wish to get the type of. """
                 },
-                result="""returns a string containing the element type, false if invalid arguments were passed. """,
-            ),
-            name='getElementType',
+                result='returns a string containing the element type, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -4020,14 +3880,12 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns three floats containing the velocity (movement speeds) along the X, Y, and Z axis respectively. This means that velocity values can be positive and negative for each axis. """,
+                description='This function returns three floats containing the velocity (movement speeds) along the X, Y, and Z axis respectively. This means that velocity values can be positive and negative for each axis.' ,
                 arguments={
                     "theElement": """: The element you wish to retrieve the velocity of. """
                 },
-                result="""if succesful, returns three floats that represent the elements current velocity along the x, y, and z axis respectively. this function can fail if the element is a player in a car. use the vehicle element in this case. it will also fail if the element specified does not have a velocity, or does not exist. in case of failure, the first return value will be false.
-the returned values are expressed in gta units per 1/50th of a secondhttp://forum.mtasa.com/viewtopic.php?f=91&t=31225. a gta unit is equal to one metrehttp://gta.wikia.com/unit#gta3.2c_gtavc_.26_gtasa. """,
-            ),
-            name='getElementVelocity',
+                result='if succesful, returns three floats that represent the elements current velocity along the x, y, and z axis respectively. this function can fail if the element is a player in a car. use the vehicle element in this case. it will also fail if the element specified does not have a velocity, or does not exist. in case of failure, the first return value will be false.\nthe returned values are expressed in gta units per 1/50th of a secondhttp://forum.mtasa.com/viewtopic.php?f=91&t=31225. a gta unit is equal to one metrehttp://gta.wikia.com/unit#gta3.2c_gtavc_.26_gtasa.' ,
+            )
         )
         ],
         client=[
@@ -4071,14 +3929,12 @@ the returned values are expressed in gta units per 1/50th of a secondhttp://foru
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns three floats containing the velocity (movement speeds) along the X, Y, and Z axis respectively. This means that velocity values can be positive and negative for each axis. """,
+                description='This function returns three floats containing the velocity (movement speeds) along the X, Y, and Z axis respectively. This means that velocity values can be positive and negative for each axis.' ,
                 arguments={
                     "theElement": """: The element you wish to retrieve the velocity of. """
                 },
-                result="""if succesful, returns three floats that represent the elements current velocity along the x, y, and z axis respectively. this function can fail if the element is a player in a car. use the vehicle element in this case. it will also fail if the element specified does not have a velocity, or does not exist. in case of failure, the first return value will be false.
-the returned values are expressed in gta units per 1/50th of a secondhttp://forum.mtasa.com/viewtopic.php?f=91&t=31225. a gta unit is equal to one metrehttp://gta.wikia.com/unit#gta3.2c_gtavc_.26_gtasa. """,
-            ),
-            name='getElementVelocity',
+                result='if succesful, returns three floats that represent the elements current velocity along the x, y, and z axis respectively. this function can fail if the element is a player in a car. use the vehicle element in this case. it will also fail if the element specified does not have a velocity, or does not exist. in case of failure, the first return value will be false.\nthe returned values are expressed in gta units per 1/50th of a secondhttp://forum.mtasa.com/viewtopic.php?f=91&t=31225. a gta unit is equal to one metrehttp://gta.wikia.com/unit#gta3.2c_gtavc_.26_gtasa.' ,
+            )
         )
         ],
     ),
@@ -4126,15 +3982,13 @@ the returned values are expressed in gta units per 1/50th of a secondhttp://foru
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to retrieve the zone name of an element (eg. Verdant Bluffs or Ocean Docks)
-The same can be achieved client side by getting element coordinates and using GetZoneName. """,
+                description='This function allows you to retrieve the zone name of an element (eg. Verdant Bluffs or Ocean Docks)\nThe same can be achieved client side by getting element coordinates and using GetZoneName.' ,
                 arguments={
                     "theElement": """The element which youd like to retrieve the zone name from """,
                     "citiesonly": """: An optional argument to choose if you want to return the city name (eg Las Venturas) """
                 },
-                result="""returns the string of the elements zone name. """,
-            ),
-            name='getElementZoneName',
+                result='returns the string of the elements zone name.' ,
+            )
         )
         ],
         client=[
@@ -4175,13 +4029,12 @@ The same can be achieved client side by getting element coordinates and using Ge
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function return the low LOD element that an element is associated with. """,
+                description='This function return the low LOD element that an element is associated with.' ,
                 arguments={
                     "theElement": """The element whose low LOD version we want to get. """
                 },
-                result="""returns a low lod element if successful, false otherwise. """,
-            ),
-            name='getLowLODElement',
+                result='returns a low lod element if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -4217,13 +4070,12 @@ The same can be achieved client side by getting element coordinates and using Ge
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function return the low LOD element that an element is associated with. """,
+                description='This function return the low LOD element that an element is associated with.' ,
                 arguments={
                     "theElement": """The element whose low LOD version we want to get. """
                 },
-                result="""returns a low lod element if successful, false otherwise. """,
-            ),
-            name='getLowLODElement',
+                result='returns a low lod element if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4252,14 +4104,12 @@ The same can be achieved client side by getting element coordinates and using Ge
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the root node of the element tree, called root. This node contains every other element: all resource root elements, players and remote clients. It is never destroyed and cannot be destroyed using destroyElement.
-It is often used to attach handler functions to events triggered for any element, or also to make a scripting function affect all elements. """,
+                description='This function returns the root node of the element tree, called root. This node contains every other element: all resource root elements, players and remote clients. It is never destroyed and cannot be destroyed using destroyElement.\nIt is often used to attach handler functions to events triggered for any element, or also to make a scripting function affect all elements.' ,
                 arguments={
                     
                 },
-                result="""returns the root element. """,
-            ),
-            name='getRootElement',
+                result='returns the root element.' ,
+            )
         )
         ],
         client=[
@@ -4286,14 +4136,12 @@ It is often used to attach handler functions to events triggered for any element
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the root node of the element tree, called root. This node contains every other element: all resource root elements, players and remote clients. It is never destroyed and cannot be destroyed using destroyElement.
-It is often used to attach handler functions to events triggered for any element, or also to make a scripting function affect all elements. """,
+                description='This function returns the root node of the element tree, called root. This node contains every other element: all resource root elements, players and remote clients. It is never destroyed and cannot be destroyed using destroyElement.\nIt is often used to attach handler functions to events triggered for any element, or also to make a scripting function affect all elements.' ,
                 arguments={
                     
                 },
-                result="""returns the root element. """,
-            ),
-            name='getRootElement',
+                result='returns the root element.' ,
+            )
         )
         ],
     ),
@@ -4351,15 +4199,14 @@ It is often used to attach handler functions to events triggered for any element
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if an element has element data available under a certain key.}} """,
+                description='This function checks if an element has element data available under a certain key.}}' ,
                 arguments={
                     "theElement": """This is the element with data you want to check. """,
                     "key": """The name of the element data entry you want to check for. (Maximum 31 characters.) """,
                     "inherit": """- toggles whether or not the function should go up the hierarchy to find the requested key in case the specified element doesnt have it. """
                 },
-                result="""this function returns true if the element contains element data for key, or false if the element doesnt exist or there is no data associated with the key. """,
-            ),
-            name='hasElementData',
+                result='this function returns true if the element contains element data for key, or false if the element doesnt exist or there is no data associated with the key.' ,
+            )
         )
         ],
         client=[
@@ -4415,15 +4262,14 @@ It is often used to attach handler functions to events triggered for any element
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if an element has element data available under a certain key.}} """,
+                description='This function checks if an element has element data available under a certain key.}}' ,
                 arguments={
                     "theElement": """This is the element with data you want to check. """,
                     "key": """The name of the element data entry you want to check for. (Maximum 31 characters.) """,
                     "inherit": """- toggles whether or not the function should go up the hierarchy to find the requested key in case the specified element doesnt have it. """
                 },
-                result="""this function returns true if the element contains element data for key, or false if the element doesnt exist or there is no data associated with the key. """,
-            ),
-            name='hasElementData',
+                result='this function returns true if the element contains element data for key, or false if the element doesnt exist or there is no data associated with the key.' ,
+            )
         )
         ],
     ),
@@ -4481,15 +4327,14 @@ It is often used to attach handler functions to events triggered for any element
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used together with setElementData in subscribe mode. """,
+                description='This function is used together with setElementData in subscribe mode.' ,
                 arguments={
                     "theElement": """The element you wish to check whether the player is subscribed to. """,
                     "key": """The key you wish to check whether the player is subscribed to. """,
                     "thePlayer": """The player you wish to check. """
                 },
-                result="""returns true if the player is subscribed, false otherwise. """,
-            ),
-            name='hasElementDataSubscriber',
+                result='returns true if the player is subscribed, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -4530,13 +4375,12 @@ It is often used to attach handler functions to events triggered for any element
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if a value is an element or not. """,
+                description='This function checks if a value is an element or not.' ,
                 arguments={
                     "theValue": """: The value that we want to check. """
                 },
-                result="""returns true if the passed value is an element, false otherwise. """,
-            ),
-            name='isElement',
+                result='returns true if the passed value is an element, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -4572,13 +4416,12 @@ It is often used to attach handler functions to events triggered for any element
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if a value is an element or not. """,
+                description='This function checks if a value is an element or not.' ,
                 arguments={
                     "theValue": """: The value that we want to check. """
                 },
-                result="""returns true if the passed value is an element, false otherwise. """,
-            ),
-            name='isElement',
+                result='returns true if the passed value is an element, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4616,13 +4459,12 @@ It is often used to attach handler functions to events triggered for any element
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions checks whether or not an element is attached to another element. """,
+                description='This functions checks whether or not an element is attached to another element.' ,
                 arguments={
                     "theElement": """The element to check for attachment. """
                 },
-                result="""returns true if the specified element is attached to another element, false if it is not attached or nil if an improper argument was passed. """,
-            ),
-            name='isElementAttached',
+                result='returns true if the specified element is attached to another element, false if it is not attached or nil if an improper argument was passed.' ,
+            )
         )
         ],
         client=[
@@ -4658,13 +4500,12 @@ It is often used to attach handler functions to events triggered for any element
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions checks whether or not an element is attached to another element. """,
+                description='This functions checks whether or not an element is attached to another element.' ,
                 arguments={
                     "theElement": """The element to check for attachment. """
                 },
-                result="""returns true if the specified element is attached to another element, false if it is not attached or nil if an improper argument was passed. """,
-            ),
-            name='isElementAttached',
+                result='returns true if the specified element is attached to another element, false if it is not attached or nil if an improper argument was passed.' ,
+            )
         )
         ],
     ),
@@ -4702,13 +4543,12 @@ It is often used to attach handler functions to events triggered for any element
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions checks if certain element has call propagation enabled. """,
+                description='This functions checks if certain element has call propagation enabled.' ,
                 arguments={
                     "theElement": """The element to check """
                 },
-                result="""returns true if the propagation is enabled, false if disabled or invalid arguments have been passed. """,
-            ),
-            name='isElementCallPropagationEnabled',
+                result='returns true if the propagation is enabled, false if disabled or invalid arguments have been passed.' ,
+            )
         )
         ],
         client=[
@@ -4744,13 +4584,12 @@ It is often used to attach handler functions to events triggered for any element
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions checks if certain element has call propagation enabled. """,
+                description='This functions checks if certain element has call propagation enabled.' ,
                 arguments={
                     "theElement": """The element to check """
                 },
-                result="""returns true if the propagation is enabled, false if disabled or invalid arguments have been passed. """,
-            ),
-            name='isElementCallPropagationEnabled',
+                result='returns true if the propagation is enabled, false if disabled or invalid arguments have been passed.' ,
+            )
         )
         ],
     ),
@@ -4801,19 +4640,13 @@ It is often used to attach handler functions to events triggered for any element
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to check whether specified element is collidable with another element.<br>
-Note: You can only use this function with the element types listed below.
-*Player
-*Ped
-*Vehicle
-*Object """,
+                description='This function can be used to check whether specified element is collidable with another element.<br>\nNote: You can only use this function with the element types listed below.\n*Player\n*Ped\n*Vehicle\n*Object' ,
                 arguments={
                     "theElement": """The element which colliding you want to get """,
                     "withElement": """The other element which colliding with the first entity you want to get """
                 },
-                result="""returns true if the elements collide with eachother, false otherwise. """,
-            ),
-            name='isElementCollidableWith',
+                result='returns true if the elements collide with eachother, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4851,13 +4684,12 @@ Note: You can only use this function with the element types listed below.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks whether an element is double-sided as set by setElementDoubleSided or not. """,
+                description='This function checks whether an element is double-sided as set by setElementDoubleSided or not.' ,
                 arguments={
                     "theElement": """The element in which youd like to check the double-sidedness of. """
                 },
-                result="""returns true if the theelement is double-sided, false otherwise. """,
-            ),
-            name='isElementDoubleSided',
+                result='returns true if the theelement is double-sided, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -4893,13 +4725,12 @@ Note: You can only use this function with the element types listed below.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks whether an element is double-sided as set by setElementDoubleSided or not. """,
+                description='This function checks whether an element is double-sided as set by setElementDoubleSided or not.' ,
                 arguments={
                     "theElement": """The element in which youd like to check the double-sidedness of. """
                 },
-                result="""returns true if the theelement is double-sided, false otherwise. """,
-            ),
-            name='isElementDoubleSided',
+                result='returns true if the theelement is double-sided, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4937,13 +4768,12 @@ Note: You can only use this function with the element types listed below.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if element has been frozen. """,
+                description='This function checks if element has been frozen.' ,
                 arguments={
                     "theElement": """the element whose freeze status we want to check. """
                 },
-                result="""*returns true if the element is frozen, false if it isnt or if invalid arguments were passed. """,
-            ),
-            name='isElementFrozen',
+                result='*returns true if the element is frozen, false if it isnt or if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -4979,13 +4809,12 @@ Note: You can only use this function with the element types listed below.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if element has been frozen. """,
+                description='This function checks if element has been frozen.' ,
                 arguments={
                     "theElement": """the element whose freeze status we want to check. """
                 },
-                result="""*returns true if the element is frozen, false if it isnt or if invalid arguments were passed. """,
-            ),
-            name='isElementFrozen',
+                result='*returns true if the element is frozen, false if it isnt or if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -5023,13 +4852,12 @@ Note: You can only use this function with the element types listed below.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks whether an element is submerged in water. """,
+                description='This function checks whether an element is submerged in water.' ,
                 arguments={
                     "theElement": """: The element to check. """
                 },
-                result="""returns true if the passed element is in water, false if it isnt, or if the element is invalid. """,
-            ),
-            name='isElementInWater',
+                result='returns true if the passed element is in water, false if it isnt, or if the element is invalid.' ,
+            )
         )
         ],
         client=[
@@ -5065,13 +4893,12 @@ Note: You can only use this function with the element types listed below.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks whether an element is submerged in water. """,
+                description='This function checks whether an element is submerged in water.' ,
                 arguments={
                     "theElement": """: The element to check. """
                 },
-                result="""returns true if the passed element is in water, false if it isnt, or if the element is invalid. """,
-            ),
-            name='isElementInWater',
+                result='returns true if the passed element is in water, false if it isnt, or if the element is invalid.' ,
+            )
         )
         ],
     ),
@@ -5112,13 +4939,12 @@ Note: You can only use this function with the element types listed below.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks whether a clientside element is local to the client (doesnt exist in the server) or not. """,
+                description='This function checks whether a clientside element is local to the client (doesnt exist in the server) or not.' ,
                 arguments={
                     "theElement": """: The element that we want to check. """
                 },
-                result="""returns true if the passed element is local, false if not or if invalid parameters are passed. """,
-            ),
-            name='isElementLocal',
+                result='returns true if the passed element is local, false if not or if invalid parameters are passed.' ,
+            )
         )
         ],
     ),
@@ -5156,13 +4982,12 @@ Note: You can only use this function with the element types listed below.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function reveals if an element is low LOD. """,
+                description='This function reveals if an element is low LOD.' ,
                 arguments={
                     "theElement": """The element whose low LOD status we want to get. """
                 },
-                result="""returns true if the element is low lod, false otherwise. """,
-            ),
-            name='isElementLowLOD',
+                result='returns true if the element is low lod, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -5198,13 +5023,12 @@ Note: You can only use this function with the element types listed below.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function reveals if an element is low LOD. """,
+                description='This function reveals if an element is low LOD.' ,
                 arguments={
                     "theElement": """The element whose low LOD status we want to get. """
                 },
-                result="""returns true if the element is low lod, false otherwise. """,
-            ),
-            name='isElementLowLOD',
+                result='returns true if the element is low lod, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5245,14 +5069,12 @@ Note: You can only use this function with the element types listed below.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will check if an element is on the screen. Elements behind objects but still in the camera view count as being on screen.
-This function is particularly useful for detecting if dynamic objects are in destroyed state. Destroyed objects will return false. """,
+                description='This function will check if an element is on the screen. Elements behind objects but still in the camera view count as being on screen.\nThis function is particularly useful for detecting if dynamic objects are in destroyed state. Destroyed objects will return false.' ,
                 arguments={
                     "theElement": """The element of which you wish to check wether its being rendered on screen. """
                 },
-                result="""returns true if element is on screen, false if not. """,
-            ),
-            name='isElementOnScreen',
+                result='returns true if element is on screen, false if not.' ,
+            )
         )
         ],
     ),
@@ -5293,13 +5115,12 @@ This function is particularly useful for detecting if dynamic objects are in des
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks whether an element is streamable as set by setElementStreamable or not. """,
+                description='This function checks whether an element is streamable as set by setElementStreamable or not.' ,
                 arguments={
                     "theElement": """: The element to check the streamability of. """
                 },
-                result="""returns true if the passed element is streamable like normal, false if this element must always be streamed in. """,
-            ),
-            name='isElementStreamable',
+                result='returns true if the passed element is streamable like normal, false if this element must always be streamed in.' ,
+            )
         )
         ],
     ),
@@ -5340,14 +5161,12 @@ This function is particularly useful for detecting if dynamic objects are in des
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks whether an element is currently streamed in (not virtualized) and are actual GTA objects in the world. You can force an element to be streamed in using setElementStreamable.<br>
-DP2 can return true even if this element is not fully streamed in. This can happen during the period when the vehicle/object model is loading while the element is not actually fully created yet. """,
+                description='This function checks whether an element is currently streamed in (not virtualized) and are actual GTA objects in the world. You can force an element to be streamed in using setElementStreamable.<br>\nDP2 can return true even if this element is not fully streamed in. This can happen during the period when the vehicle/object model is loading while the element is not actually fully created yet.' ,
                 arguments={
                     "theElement": """: The element to check whether is streamed in or not. """
                 },
-                result="""returns true if the passed element is currently streamed in, false if it is virtualized. """,
-            ),
-            name='isElementStreamedIn',
+                result='returns true if the passed element is currently streamed in, false if it is virtualized.' ,
+            )
         )
         ],
     ),
@@ -5388,13 +5207,12 @@ DP2 can return true even if this element is not fully streamed in. This can happ
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks whether an element is synced by the local player or not. Accepted elements are ped|peds and vehicle|vehicles. """,
+                description='This function checks whether an element is synced by the local player or not. Accepted elements are ped|peds and vehicle|vehicles.' ,
                 arguments={
                     "theElement": """: The element to check. """
                 },
-                result="""returns true if the passed element is synced by the local player, false otherwise. """,
-            ),
-            name='isElementSyncer',
+                result='returns true if the passed element is synced by the local player, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5442,14 +5260,13 @@ DP2 can return true even if this element is not fully streamed in. This can happ
                 ],
             ),
             docs=FunctionDoc(
-                description="""This checks if an element is visible to a player. This does not check if the player can literally see the element, just that they are aware that it exists. Some so-called per-player elements are able to be visible only to some players, as such this checks if this is the case for a particular element/player combination. """,
+                description='This checks if an element is visible to a player. This does not check if the player can literally see the element, just that they are aware that it exists. Some so-called per-player elements are able to be visible only to some players, as such this checks if this is the case for a particular element/player combination.' ,
                 arguments={
                     "theElement": """The element you want to check the visibility of """,
                     "visibleTo": """The player you want to check against """
                 },
-                result="""returns true if element is visible to the specified player, false if not or an invalid argument was passed to the function. """,
-            ),
-            name='isElementVisibleTo',
+                result='returns true if element is visible to the specified player, false if not or an invalid argument was passed to the function.' ,
+            )
         )
         ],
         client=[
@@ -5493,13 +5310,12 @@ DP2 can return true even if this element is not fully streamed in. This can happ
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theElement": """the element to check its frozen waiting for custom map objects to load status. It can be a vehicle, ped or player. """
                 },
-                result="""returns true if the specified element is frozen waiting for collisions of custom map objects to load. returns false if its not or if the specified element is invalid. """,
-            ),
-            name='isElementWaitingForGroundToLoad',
+                result='returns true if the specified element is frozen waiting for collisions of custom map objects to load. returns false if its not or if the specified element is invalid.' ,
+            )
         )
         ],
     ),
@@ -5547,15 +5363,13 @@ DP2 can return true even if this element is not fully streamed in. This can happ
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to determine if an element is within a collision shape. Please note that for legacy reasons, a colshape created on the client does not collide with elements already existing at that location until they first move. Please also note that before 1.0.3, this did not function correctly when moving a colshape.
-Please note that this function doesnt verify whether element is in the same dimension and interior, additional checks could be implemented manually if they are needed. """,
+                description='This function is used to determine if an element is within a collision shape. Please note that for legacy reasons, a colshape created on the client does not collide with elements already existing at that location until they first move. Please also note that before 1.0.3, this did not function correctly when moving a colshape.\nPlease note that this function doesnt verify whether element is in the same dimension and interior, additional checks could be implemented manually if they are needed.' ,
                 arguments={
                     "theElement": """The element youre checking. """,
                     "theShape": """The colshape youre checking """
                 },
-                result="""returns true if the element is within the colshape, false otherwise """,
-            ),
-            name='isElementWithinColShape',
+                result='returns true if the element is within the colshape, false otherwise' ,
+            )
         )
         ],
         client=[
@@ -5601,15 +5415,13 @@ Please note that this function doesnt verify whether element is in the same dime
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to determine if an element is within a collision shape. Please note that for legacy reasons, a colshape created on the client does not collide with elements already existing at that location until they first move. Please also note that before 1.0.3, this did not function correctly when moving a colshape.
-Please note that this function doesnt verify whether element is in the same dimension and interior, additional checks could be implemented manually if they are needed. """,
+                description='This function is used to determine if an element is within a collision shape. Please note that for legacy reasons, a colshape created on the client does not collide with elements already existing at that location until they first move. Please also note that before 1.0.3, this did not function correctly when moving a colshape.\nPlease note that this function doesnt verify whether element is in the same dimension and interior, additional checks could be implemented manually if they are needed.' ,
                 arguments={
                     "theElement": """The element youre checking. """,
                     "theShape": """The colshape youre checking """
                 },
-                result="""returns true if the element is within the colshape, false otherwise """,
-            ),
-            name='isElementWithinColShape',
+                result='returns true if the element is within the colshape, false otherwise' ,
+            )
         )
         ],
     ),
@@ -5657,14 +5469,13 @@ Please note that this function doesnt verify whether element is in the same dime
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to determine if an element is within a marker. """,
+                description='This function is used to determine if an element is within a marker.' ,
                 arguments={
                     "theElement": """The element youre checking. """,
                     "theMarker": """The marker youre checking. """
                 },
-                result="""returns true if the element is within the marker, false otherwise """,
-            ),
-            name='isElementWithinMarker',
+                result='returns true if the element is within the marker, false otherwise' ,
+            )
         )
         ],
         client=[
@@ -5710,14 +5521,13 @@ Please note that this function doesnt verify whether element is in the same dime
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to determine if an element is within a marker. """,
+                description='This function is used to determine if an element is within a marker.' ,
                 arguments={
                     "theElement": """The element youre checking. """,
                     "theMarker": """The marker youre checking. """
                 },
-                result="""returns true if the element is within the marker, false otherwise """,
-            ),
-            name='isElementWithinMarker',
+                result='returns true if the element is within the marker, false otherwise' ,
+            )
         )
         ],
     ),
@@ -5765,14 +5575,13 @@ Please note that this function doesnt verify whether element is in the same dime
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes the element data with the given key for that element. The element data removal is synced with all the clients. """,
+                description='This function removes the element data with the given key for that element. The element data removal is synced with all the clients.' ,
                 arguments={
                     "theElement": """The element you wish to remove the data from. """,
                     "key": """The key string you wish to remove. """
                 },
-                result="""returns true if the data was removed succesfully, false if the given key does not exist in the element or the element is invalid. """,
-            ),
-            name='removeElementData',
+                result='returns true if the data was removed succesfully, false if the given key does not exist in the element or the element is invalid.' ,
+            )
         )
         ],
         client=[
@@ -5833,15 +5642,14 @@ Please note that this function doesnt verify whether element is in the same dime
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used together with setElementData in subscribe mode. """,
+                description='This function is used together with setElementData in subscribe mode.' ,
                 arguments={
                     "theElement": """The element you wish to unsubscribe the player from. """,
                     "key": """The key you wish to unsubscribe the player from. """,
                     "thePlayer": """The player you wish to unsubscribe. """
                 },
-                result="""returns true if the player was unsubscribed, false otherwise. """,
-            ),
-            name='removeElementDataSubscriber',
+                result='returns true if the player was unsubscribed, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -5892,15 +5700,14 @@ Please note that this function doesnt verify whether element is in the same dime
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the alpha (transparency) value for the specified element. This can be a player, ped, object, vehicle or Element/Weapon|weapon. """,
+                description='This function sets the alpha (transparency) value for the specified element. This can be a player, ped, object, vehicle or Element/Weapon|weapon.' ,
                 arguments={
                     "theElement": """The element whose alpha you want to set. """,
                     "alpha": """The alpha value to set. Values are 0-255, where 255 is fully opaque and 0 is fully transparent. """,
                     "Note": """Objects are fully transparent at 140. """
                 },
-                result="""returns true or false if invalid arguments were passed. """,
-            ),
-            name='setElementAlpha',
+                result='returns true or false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -5946,15 +5753,14 @@ Please note that this function doesnt verify whether element is in the same dime
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the alpha (transparency) value for the specified element. This can be a player, ped, object, vehicle or Element/Weapon|weapon. """,
+                description='This function sets the alpha (transparency) value for the specified element. This can be a player, ped, object, vehicle or Element/Weapon|weapon.' ,
                 arguments={
                     "theElement": """The element whose alpha you want to set. """,
                     "alpha": """The alpha value to set. Values are 0-255, where 255 is fully opaque and 0 is fully transparent. """,
                     "Note": """Objects are fully transparent at 140. """
                 },
-                result="""returns true or false if invalid arguments were passed. """,
-            ),
-            name='setElementAlpha',
+                result='returns true or false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -6022,16 +5828,15 @@ Please note that this function doesnt verify whether element is in the same dime
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theElement": """The element to apply the spin to. Can be either a player, ped, object, vehicle or a Element/Weapon|custom weapon. """,
                     "rx": """velocity around the X axis """,
                     "ry": """velocity around the Y axis """,
                     "rz": """velocity around the Z axis """
                 },
-                result="""returns true if it was succesful, false otherwise. """,
-            ),
-            name='setElementAngularVelocity',
+                result='returns true if it was succesful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6097,16 +5902,15 @@ Please note that this function doesnt verify whether element is in the same dime
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theElement": """The element to apply the spin to. Can be either a player, ped, object, vehicle or a Element/Weapon|custom weapon. """,
                     "rx": """velocity around the X axis """,
                     "ry": """velocity around the Y axis """,
                     "rz": """velocity around the Z axis """
                 },
-                result="""returns true if it was succesful, false otherwise. """,
-            ),
-            name='setElementAngularVelocity',
+                result='returns true if it was succesful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6204,7 +6008,7 @@ Please note that this function doesnt verify whether element is in the same dime
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function updates the offsets of an element that has been attached to another element using attachElements. """,
+                description='This function updates the offsets of an element that has been attached to another element using attachElements.' ,
                 arguments={
                     "theElement": """The attached element. """,
                     "xPosOffset": """The x offset, if you want the elements to be a certain distance from one another (default 0). """,
@@ -6214,9 +6018,8 @@ Please note that this function doesnt verify whether element is in the same dime
                     "yRotOffset": """The y rotation offset (default 0). """,
                     "zRotOffset": """The z rotation offset (default 0). """
                 },
-                result="""returns true if the attaching process was successful, false otherwise. """,
-            ),
-            name='setElementAttachedOffsets',
+                result='returns true if the attaching process was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6312,7 +6115,7 @@ Please note that this function doesnt verify whether element is in the same dime
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function updates the offsets of an element that has been attached to another element using attachElements. """,
+                description='This function updates the offsets of an element that has been attached to another element using attachElements.' ,
                 arguments={
                     "theElement": """The attached element. """,
                     "xPosOffset": """The x offset, if you want the elements to be a certain distance from one another (default 0). """,
@@ -6322,9 +6125,8 @@ Please note that this function doesnt verify whether element is in the same dime
                     "yRotOffset": """The y rotation offset (default 0). """,
                     "zRotOffset": """The z rotation offset (default 0). """
                 },
-                result="""returns true if the attaching process was successful, false otherwise. """,
-            ),
-            name='setElementAttachedOffsets',
+                result='returns true if the attaching process was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6385,16 +6187,14 @@ Please note that this function doesnt verify whether element is in the same dime
                 ],
             ),
             docs=FunctionDoc(
-                description="""* Element/Player|Player
-* Element/Ped|Ped """,
+                description='* Element/Player|Player\n* Element/Ped|Ped' ,
                 arguments={
                     "theElement": """the element to set the bone matrix on. """,
                     "bone": """the ID of the bone. See Bone IDs """,
                     "matrix": """the MTA matrix to set. """
                 },
-                result="""returns true if the function was successful, false otherwise. """,
-            ),
-            name='setElementBoneMatrix',
+                result='returns true if the function was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6475,8 +6275,7 @@ Please note that this function doesnt verify whether element is in the same dime
                 ],
             ),
             docs=FunctionDoc(
-                description="""* Element/Player|Player
-* Element/Ped|Ped """,
+                description='* Element/Player|Player\n* Element/Ped|Ped' ,
                 arguments={
                     "theElement": """the element to set the bone position on. """,
                     "bone": """the ID of the bone to set the position of. See Bone IDs """,
@@ -6484,9 +6283,8 @@ Please note that this function doesnt verify whether element is in the same dime
                     "y": """The y coordinate of the destination. """,
                     "z": """The z coordinate of the destination. """
                 },
-                result="""returns true if the function was successful, false otherwise. """,
-            ),
-            name='setElementBonePosition',
+                result='returns true if the function was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6567,8 +6365,7 @@ Please note that this function doesnt verify whether element is in the same dime
                 ],
             ),
             docs=FunctionDoc(
-                description="""* Element/Player|Player
-* Element/Ped|Ped """,
+                description='* Element/Player|Player\n* Element/Ped|Ped' ,
                 arguments={
                     "theElement": """the element to set the bone rotation on. """,
                     "bone": """the ID of the bone to set the rotation of. See Bone IDs """,
@@ -6576,10 +6373,8 @@ Please note that this function doesnt verify whether element is in the same dime
                     "pitch": """the pitch rotation value. """,
                     "roll": """the roll rotation value. """
                 },
-                result="""returns true if the function was successful, false otherwise.
-note: updateelementrphanim must be called after this function to apply bone rotation. """,
-            ),
-            name='setElementBoneRotation',
+                result='returns true if the function was successful, false otherwise.\nnote: updateelementrphanim must be called after this function to apply bone rotation.' ,
+            )
         )
         ],
     ),
@@ -6627,14 +6422,13 @@ note: updateelementrphanim must be called after this function to apply bone rota
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function enables/disables call propagation on a certain element. Look at the example for a practical application. """,
+                description='This function enables/disables call propagation on a certain element. Look at the example for a practical application.' ,
                 arguments={
                     "theElement": """The element whose propagation behaviour youd like to change """,
                     "enabled": """Whether propagation should be enabled or not """
                 },
-                result="""returns true, if the propagation behaviour has been changed successfully, false otherwise. """,
-            ),
-            name='setElementCallPropagationEnabled',
+                result='returns true, if the propagation behaviour has been changed successfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6680,14 +6474,13 @@ note: updateelementrphanim must be called after this function to apply bone rota
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function enables/disables call propagation on a certain element. Look at the example for a practical application. """,
+                description='This function enables/disables call propagation on a certain element. Look at the example for a practical application.' ,
                 arguments={
                     "theElement": """The element whose propagation behaviour youd like to change """,
                     "enabled": """Whether propagation should be enabled or not """
                 },
-                result="""returns true, if the propagation behaviour has been changed successfully, false otherwise. """,
-            ),
-            name='setElementCallPropagationEnabled',
+                result='returns true, if the propagation behaviour has been changed successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6748,20 +6541,14 @@ note: updateelementrphanim must be called after this function to apply bone rota
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to set an element to collide with another element. An element with collisions disabled does not interact physically with the other element.<br>
-Note: You can only use this function with the element types listed below.
-*Player
-*Ped
-*Vehicle
-*Object """,
+                description='This function can be used to set an element to collide with another element. An element with collisions disabled does not interact physically with the other element.<br>\nNote: You can only use this function with the element types listed below.\n*Player\n*Ped\n*Vehicle\n*Object' ,
                 arguments={
                     "theElement": """The element which colliding you want to change """,
                     "withElement": """The other element you wish the first entity to collide with """,
                     "enabled": """A boolean to indicate whether elements should be able to collide with eachother (true) or not (false) """
                 },
-                result="""returns true if the collisions were set succesfully, false otherwise. """,
-            ),
-            name='setElementCollidableWith',
+                result='returns true if the collisions were set succesfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6809,14 +6596,13 @@ Note: You can only use this function with the element types listed below.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can disable or enable an elements collisions. An element without collisions does not interact with the physical environment and remains static. """,
+                description='This function can disable or enable an elements collisions. An element without collisions does not interact with the physical environment and remains static.' ,
                 arguments={
                     "theElement": """The element you wish to set the collisions of """,
                     "enabled": """A boolean to indicate whether collisions are enabled (true) or disabled (false) """
                 },
-                result="""returns true if the collisions were set succesfully, false otherwise. """,
-            ),
-            name='setElementCollisionsEnabled',
+                result='returns true if the collisions were set succesfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6862,14 +6648,13 @@ Note: You can only use this function with the element types listed below.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can disable or enable an elements collisions. An element without collisions does not interact with the physical environment and remains static. """,
+                description='This function can disable or enable an elements collisions. An element without collisions does not interact with the physical environment and remains static.' ,
                 arguments={
                     "theElement": """The element you wish to set the collisions of """,
                     "enabled": """A boolean to indicate whether collisions are enabled (true) or disabled (false) """
                 },
-                result="""returns true if the collisions were set succesfully, false otherwise. """,
-            ),
-            name='setElementCollisionsEnabled',
+                result='returns true if the collisions were set succesfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6937,10 +6722,7 @@ Note: You can only use this function with the element types listed below.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function stores element data under a certain key, attached to an element. Element data set using this is then synced with all clients and the server. The data can contain server created elements, but you should avoid passing data that is not able to be synced such as xmlnodes, acls, aclgroups etc.
-As element data is synced to all clients, it can generate a lot of network traffic and be heavy on performance. Events are much more efficient for sending data from a client to the server only, or from the server to a specific client. <br/>
-Usage of element data should be disencouraged where your goal can be achieved with events like above, and table|tables for storing and retrieving data.
-Note this mode only works when setting element data serverside. Setting data clientside still sends the update to all clients if synchronize is set to true. """,
+                description='This function stores element data under a certain key, attached to an element. Element data set using this is then synced with all clients and the server. The data can contain server created elements, but you should avoid passing data that is not able to be synced such as xmlnodes, acls, aclgroups etc.\nAs element data is synced to all clients, it can generate a lot of network traffic and be heavy on performance. Events are much more efficient for sending data from a client to the server only, or from the server to a specific client. <br/>\nUsage of element data should be disencouraged where your goal can be achieved with events like above, and table|tables for storing and retrieving data.\nNote this mode only works when setting element data serverside. Setting data clientside still sends the update to all clients if synchronize is set to true.' ,
                 arguments={
                     "theElement": """The element you wish to attach the data to. """,
                     "key": """The key you wish to store the data under. (Maximum 31 characters.) """,
@@ -6950,9 +6732,8 @@ Note this mode only works when setting element data serverside. Setting data cli
                     "local": """- Dont synchronise. You can also parse false for this option. """,
                     "subscribe": """- Only synchronise to specific clients. See addElementDataSubscriber and removeElementDataSubscriber. """
                 },
-                result=""" """,
-            ),
-            name='setElementData',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -7018,19 +6799,15 @@ Note this mode only works when setting element data serverside. Setting data cli
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function stores element data under a certain key, attached to an element. Element data set using this is then synced with all clients and the server. The data can contain server created elements, but you should avoid passing data that is not able to be synced such as xmlnodes, acls, aclgroups etc.
-As element data is synced to all clients, it can generate a lot of network traffic and be heavy on performance. Events are much more efficient for sending data from a client to the server only, or from the server to a specific client. <br/>
-Usage of element data should be disencouraged where your goal can be achieved with events like above, and table|tables for storing and retrieving data.
-Note this mode only works when setting element data serverside. Setting data clientside still sends the update to all clients if synchronize is set to true. """,
+                description='This function stores element data under a certain key, attached to an element. Element data set using this is then synced with all clients and the server. The data can contain server created elements, but you should avoid passing data that is not able to be synced such as xmlnodes, acls, aclgroups etc.\nAs element data is synced to all clients, it can generate a lot of network traffic and be heavy on performance. Events are much more efficient for sending data from a client to the server only, or from the server to a specific client. <br/>\nUsage of element data should be disencouraged where your goal can be achieved with events like above, and table|tables for storing and retrieving data.\nNote this mode only works when setting element data serverside. Setting data clientside still sends the update to all clients if synchronize is set to true.' ,
                 arguments={
                     "theElement": """The element you wish to attach the data to. """,
                     "key": """The key you wish to store the data under. (Maximum 31 characters.) """,
                     "value": """The value you wish to store. See element data for a list of acceptable datatypes. """,
                     "synchronize": """Determines whether or not the data will be synchronized with the server. """
                 },
-                result=""" """,
-            ),
-            name='setElementData',
+                result='' ,
+            )
         )
         ],
     ),
@@ -7078,15 +6855,13 @@ Note this mode only works when setting element data serverside. Setting data cli
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to set the dimension of any element. The dimension determines what/who the element is visible to. """,
+                description='This function allows you to set the dimension of any element. The dimension determines what/who the element is visible to.' ,
                 arguments={
                     "theElement": """The element in which youd like to set the dimension of. """,
                     "dimension": """An integer representing the dimension ID. {{New feature/item|3.0154|1.5.3|11199|You can also use -1 to make the element visible in all dimensions (only valid to objects).}} Valid values are 0 to 65535. """
                 },
-                result="""returns true if theelement and dimension are valid, false otherwise.
-also returns false if theelement is a player and its not alive. """,
-            ),
-            name='setElementDimension',
+                result='returns true if theelement and dimension are valid, false otherwise.\nalso returns false if theelement is a player and its not alive.' ,
+            )
         )
         ],
         client=[
@@ -7132,15 +6907,13 @@ also returns false if theelement is a player and its not alive. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to set the dimension of any element. The dimension determines what/who the element is visible to. """,
+                description='This function allows you to set the dimension of any element. The dimension determines what/who the element is visible to.' ,
                 arguments={
                     "theElement": """The element in which youd like to set the dimension of. """,
                     "dimension": """An integer representing the dimension ID. {{New feature/item|3.0154|1.5.3|11199|You can also use -1 to make the element visible in all dimensions (only valid to objects).}} Valid values are 0 to 65535. """
                 },
-                result="""returns true if theelement and dimension are valid, false otherwise.
-also returns false if theelement is a player and its not alive. """,
-            ),
-            name='setElementDimension',
+                result='returns true if theelement and dimension are valid, false otherwise.\nalso returns false if theelement is a player and its not alive.' ,
+            )
         )
         ],
     ),
@@ -7188,15 +6961,13 @@ also returns false if theelement is a player and its not alive. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to set the double-sidedness of an elements model. When an elements model is double-sided, its back facing triangles become visible.
-Possible uses of double-sidedness are: Elimination of invisible walls, using buildings as enclosures, using inverted landmasses as large pits or to make cave networks. It can also remove the need to add extra triangles to custom models when trying to make them appear solid from all directions. """,
+                description='This function allows you to set the double-sidedness of an elements model. When an elements model is double-sided, its back facing triangles become visible.\nPossible uses of double-sidedness are: Elimination of invisible walls, using buildings as enclosures, using inverted landmasses as large pits or to make cave networks. It can also remove the need to add extra triangles to custom models when trying to make them appear solid from all directions.' ,
                 arguments={
                     "theElement": """The element in which youd like to set the double-sidedness of. """,
                     "enable": """Set to true/false to enable/disable double-sidedness. """
                 },
-                result="""returns true if theelement is valid, false otherwise. """,
-            ),
-            name='setElementDoubleSided',
+                result='returns true if theelement is valid, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7242,15 +7013,13 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to set the double-sidedness of an elements model. When an elements model is double-sided, its back facing triangles become visible.
-Possible uses of double-sidedness are: Elimination of invisible walls, using buildings as enclosures, using inverted landmasses as large pits or to make cave networks. It can also remove the need to add extra triangles to custom models when trying to make them appear solid from all directions. """,
+                description='This function allows you to set the double-sidedness of an elements model. When an elements model is double-sided, its back facing triangles become visible.\nPossible uses of double-sidedness are: Elimination of invisible walls, using buildings as enclosures, using inverted landmasses as large pits or to make cave networks. It can also remove the need to add extra triangles to custom models when trying to make them appear solid from all directions.' ,
                 arguments={
                     "theElement": """The element in which youd like to set the double-sidedness of. """,
                     "enable": """Set to true/false to enable/disable double-sidedness. """
                 },
-                result="""returns true if theelement is valid, false otherwise. """,
-            ),
-            name='setElementDoubleSided',
+                result='returns true if theelement is valid, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7298,14 +7067,13 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function freezes an element (stops it in its position and disables movement) or unfreezes it. """,
+                description='This function freezes an element (stops it in its position and disables movement) or unfreezes it.' ,
                 arguments={
                     "theElement": """The element whose freeze status we want to change. """,
                     "freezeStatus": """A boolean denoting whether we want to freeze (true) or unfreeze (false) it. """
                 },
-                result="""returns true if the element was frozen, false if it wasnt or if invalid arguments are passed. """,
-            ),
-            name='setElementFrozen',
+                result='returns true if the element was frozen, false if it wasnt or if invalid arguments are passed.' ,
+            )
         )
         ],
         client=[
@@ -7351,14 +7119,13 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function freezes an element (stops it in its position and disables movement) or unfreezes it. """,
+                description='This function freezes an element (stops it in its position and disables movement) or unfreezes it.' ,
                 arguments={
                     "theElement": """The element whose freeze status we want to change. """,
                     "freezeStatus": """A boolean denoting whether we want to freeze (true) or unfreeze (false) it. """
                 },
-                result="""returns true if the element was frozen, false if it wasnt or if invalid arguments are passed. """,
-            ),
-            name='setElementFrozen',
+                result='returns true if the element was frozen, false if it wasnt or if invalid arguments are passed.' ,
+            )
         )
         ],
     ),
@@ -7406,18 +7173,13 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the health for the specified element. This can be a ped, object or a vehicle.
-*650: white steam 0%, black smoke 0%
-*450: white steam 100%, black smoke 50%
-*250: white steam 0%, black smoke 100%
-*249: fire with big black smoke """,
+                description='This function sets the health for the specified element. This can be a ped, object or a vehicle.\n*650: white steam 0%, black smoke 0%\n*450: white steam 100%, black smoke 50%\n*250: white steam 0%, black smoke 100%\n*249: fire with big black smoke' ,
                 arguments={
                     "theElement": """The ped, vehicle or object whose health you want to set. """,
                     "newHealth": """A float indicating the new health to set for the element. """
                 },
-                result="""returns true if the new health was set successfully, or false if invalid arguments were passed. """,
-            ),
-            name='setElementHealth',
+                result='returns true if the new health was set successfully, or false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -7463,18 +7225,13 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the health for the specified element. This can be a ped, object or a vehicle.
-*650: white steam 0%, black smoke 0%
-*450: white steam 100%, black smoke 50%
-*250: white steam 0%, black smoke 100%
-*249: fire with big black smoke """,
+                description='This function sets the health for the specified element. This can be a ped, object or a vehicle.\n*650: white steam 0%, black smoke 0%\n*450: white steam 100%, black smoke 50%\n*250: white steam 0%, black smoke 100%\n*249: fire with big black smoke' ,
                 arguments={
                     "theElement": """The ped, vehicle or object whose health you want to set. """,
                     "newHealth": """A float indicating the new health to set for the element. """
                 },
-                result="""returns true if the new health was set successfully, or false if invalid arguments were passed. """,
-            ),
-            name='setElementHealth',
+                result='returns true if the new health was set successfully, or false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -7522,15 +7279,13 @@ Possible uses of double-sidedness are: Elimination of invisible walls, using bui
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the ID of an element to a string. This can be anything from an identifying number, to a name.
-You can only change the ID of an element clientside if that element has been created clientside as well. """,
+                description='This function sets the ID of an element to a string. This can be anything from an identifying number, to a name.\nYou can only change the ID of an element clientside if that element has been created clientside as well.' ,
                 arguments={
                     "theElement": """The element you want to set the ID of. """,
                     "name": """The new ID for theElement. """
                 },
-                result="""this returns true if successful. it will return false if theelement is invalid, or does not exist, or if name is invalid, or is not a string. """,
-            ),
-            name='setElementID',
+                result='this returns true if successful. it will return false if theelement is invalid, or does not exist, or if name is invalid, or is not a string.' ,
+            )
         )
         ],
         client=[
@@ -7576,15 +7331,13 @@ You can only change the ID of an element clientside if that element has been cre
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the ID of an element to a string. This can be anything from an identifying number, to a name.
-You can only change the ID of an element clientside if that element has been created clientside as well. """,
+                description='This function sets the ID of an element to a string. This can be anything from an identifying number, to a name.\nYou can only change the ID of an element clientside if that element has been created clientside as well.' ,
                 arguments={
                     "theElement": """The element you want to set the ID of. """,
                     "name": """The new ID for theElement. """
                 },
-                result="""this returns true if successful. it will return false if theelement is invalid, or does not exist, or if name is invalid, or is not a string. """,
-            ),
-            name='setElementID',
+                result='this returns true if successful. it will return false if theelement is invalid, or does not exist, or if name is invalid, or is not a string.' ,
+            )
         )
         ],
     ),
@@ -7662,7 +7415,7 @@ You can only change the ID of an element clientside if that element has been cre
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to set the interior of any element. An interior is the current loaded place, 0 being outside. """,
+                description='This function allows you to set the interior of any element. An interior is the current loaded place, 0 being outside.' ,
                 arguments={
                     "theElement": """The element in which youd like to set the interior of. """,
                     "interior": """The interior you want to set the element to. Valid values are 0 to 255. """,
@@ -7670,9 +7423,8 @@ You can only change the ID of an element clientside if that element has been cre
                     "y": """A floating point number representing the Y coordinate on the map. """,
                     "z": """A floating point number representing the Z coordinate on the map. """
                 },
-                result="""returns true if theelement and interior are valid arguments, false otherwise. """,
-            ),
-            name='setElementInterior',
+                result='returns true if theelement and interior are valid arguments, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7748,7 +7500,7 @@ You can only change the ID of an element clientside if that element has been cre
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to set the interior of any element. An interior is the current loaded place, 0 being outside. """,
+                description='This function allows you to set the interior of any element. An interior is the current loaded place, 0 being outside.' ,
                 arguments={
                     "theElement": """The element in which youd like to set the interior of. """,
                     "interior": """The interior you want to set the element to. Valid values are 0 to 255. """,
@@ -7756,9 +7508,8 @@ You can only change the ID of an element clientside if that element has been cre
                     "y": """A floating point number representing the Y coordinate on the map. """,
                     "z": """A floating point number representing the Z coordinate on the map. """
                 },
-                result="""returns true if theelement and interior are valid arguments, false otherwise. """,
-            ),
-            name='setElementInterior',
+                result='returns true if theelement and interior are valid arguments, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7806,14 +7557,13 @@ You can only change the ID of an element clientside if that element has been cre
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets matrix to element. """,
+                description='This function sets matrix to element.' ,
                 arguments={
                     "theElement": """The element which you set matrix """,
                     "theMatrix": """The matrix. """
                 },
-                result="""returns true if the matrix was set succesfully, false otherwise. """,
-            ),
-            name='setElementMatrix',
+                result='returns true if the matrix was set succesfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7859,14 +7609,13 @@ You can only change the ID of an element clientside if that element has been cre
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets matrix to element. """,
+                description='This function sets matrix to element.' ,
                 arguments={
                     "theElement": """The element which you set matrix """,
                     "theMatrix": """The matrix. """
                 },
-                result="""returns true if the matrix was set succesfully, false otherwise. """,
-            ),
-            name='setElementMatrix',
+                result='returns true if the matrix was set succesfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7914,7 +7663,7 @@ You can only change the ID of an element clientside if that element has been cre
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the model of a given element. This allows you to change the model of a player (or ped), a vehicle or an object. """,
+                description='Sets the model of a given element. This allows you to change the model of a player (or ped), a vehicle or an object.' ,
                 arguments={
                     "theElement": """the element you want to change. """,
                     "model": """the model ID to set.
@@ -7922,9 +7671,8 @@ You can only change the ID of an element clientside if that element has been cre
 ** For vehicles: The [[Vehicle IDs|vehicle ID]] of the vehicle being changed.
 ** For objects/projectiles/weapons: An [[int]] specifying the model id. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setElementModel',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7970,7 +7718,7 @@ You can only change the ID of an element clientside if that element has been cre
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the model of a given element. This allows you to change the model of a player (or ped), a vehicle or an object. """,
+                description='Sets the model of a given element. This allows you to change the model of a player (or ped), a vehicle or an object.' ,
                 arguments={
                     "theElement": """the element you want to change. """,
                     "model": """the model ID to set.
@@ -7978,9 +7726,8 @@ You can only change the ID of an element clientside if that element has been cre
 ** For vehicles: The [[Vehicle IDs|vehicle ID]] of the vehicle being changed.
 ** For objects/projectiles/weapons: An [[int]] specifying the model id. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setElementModel',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -8028,14 +7775,13 @@ You can only change the ID of an element clientside if that element has been cre
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used for setting an element as the parent of another element. """,
+                description='This function is used for setting an element as the parent of another element.' ,
                 arguments={
                     "theElement": """The element that you wish to set the parent of. """,
                     "parent": """The element you wish to be the parent of theElement. """
                 },
-                result="""returns true if both elements are valid, false otherwise. """,
-            ),
-            name='setElementParent',
+                result='returns true if both elements are valid, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -8081,14 +7827,13 @@ You can only change the ID of an element clientside if that element has been cre
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used for setting an element as the parent of another element. """,
+                description='This function is used for setting an element as the parent of another element.' ,
                 arguments={
                     "theElement": """The element that you wish to set the parent of. """,
                     "parent": """The element you wish to be the parent of theElement. """
                 },
-                result="""returns true if both elements are valid, false otherwise. """,
-            ),
-            name='setElementParent',
+                result='returns true if both elements are valid, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -8166,7 +7911,7 @@ You can only change the ID of an element clientside if that element has been cre
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the position of an element to the specified coordinates. """,
+                description='This function sets the position of an element to the specified coordinates.' ,
                 arguments={
                     "theElement": """A valid element to be moved. """,
                     "x": """The x coordinate of the destination. """,
@@ -8174,9 +7919,8 @@ You can only change the ID of an element clientside if that element has been cre
                     "z": """The z coordinate of the destination. """,
                     "warp": """teleports players, resetting any animations they were doing. Setting this to false preserves the current animation. """
                 },
-                result="""returns true if the function was successful, false otherwise. """,
-            ),
-            name='setElementPosition',
+                result='returns true if the function was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -8252,7 +7996,7 @@ You can only change the ID of an element clientside if that element has been cre
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the position of an element to the specified coordinates. """,
+                description='This function sets the position of an element to the specified coordinates.' ,
                 arguments={
                     "theElement": """A valid element to be moved. """,
                     "x": """The x coordinate of the destination. """,
@@ -8260,9 +8004,8 @@ You can only change the ID of an element clientside if that element has been cre
                     "z": """The z coordinate of the destination. """,
                     "warp": """teleports players, resetting any animations they were doing. Setting this to false preserves the current animation. """
                 },
-                result="""returns true if the function was successful, false otherwise. """,
-            ),
-            name='setElementPosition',
+                result='returns true if the function was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -8350,7 +8093,7 @@ You can only change the ID of an element clientside if that element has been cre
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the rotation of elements according to the world (does not work with players that are on the ground). """,
+                description='Sets the rotation of elements according to the world (does not work with players that are on the ground).' ,
                 arguments={
                     "theElement": """The element whose rotation will be set """,
                     "rotX": """The elements rotation around the x axis in degrees """,
@@ -8364,9 +8107,8 @@ The default rotation order for peds/players is -Z-Y-X but this rotation order (s
 Specifying a rotation order other than ''"default"'' allows the same angles to be uniformly used on several elements without having to consider their type. """,
                     "conformPedRotation": """Relevant only for peds and will be ignored for other element types. A bool which should be set to true to ensure the ped rotation is correctly set in all circumstances. Failing to set this argument may result in the ped rotation being inverted whilst it is in the air and other inconsistencies. The default value of false is for backward compatibility with scripts which may depend upon the incorrect behaviour. """
                 },
-                result="""returns true if the element rotation was successfully set and false otherwise. """,
-            ),
-            name='setElementRotation',
+                result='returns true if the element rotation was successfully set and false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -8452,7 +8194,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the rotation of elements according to the world (does not work with players that are on the ground). """,
+                description='Sets the rotation of elements according to the world (does not work with players that are on the ground).' ,
                 arguments={
                     "theElement": """The element whose rotation will be set """,
                     "rotX": """The elements rotation around the x axis in degrees """,
@@ -8466,9 +8208,8 @@ The default rotation order for peds/players is -Z-Y-X but this rotation order (s
 Specifying a rotation order other than ''"default"'' allows the same angles to be uniformly used on several elements without having to consider their type. """,
                     "conformPedRotation": """Relevant only for peds and will be ignored for other element types. A bool which should be set to true to ensure the ped rotation is correctly set in all circumstances. Failing to set this argument may result in the ped rotation being inverted whilst it is in the air and other inconsistencies. The default value of false is for backward compatibility with scripts which may depend upon the incorrect behaviour. """
                 },
-                result="""returns true if the element rotation was successfully set and false otherwise. """,
-            ),
-            name='setElementRotation',
+                result='returns true if the element rotation was successfully set and false otherwise.' ,
+            )
         )
         ],
     ),
@@ -8519,16 +8260,13 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to disable streaming for an element. This will make sure the element is not virtualized (streamed out from GTA) when the player moves far away from it. This function only works in elements with a physical representation in the world (entities), such as player|players, ped|peds, vehicle|vehicles and object|objects.
-* There is a limit of elements that can be streamed in safely for every GTA entity type. If you bypass said limit by using this function, the client can experience problems of disappearing objects and unstability when trying to stream in new elements of that type.
-* In general, if you disable too many elements (of the same type or not) to stream out, GTA will always try to render them, so it can cause a noticeable FPS drop.}} """,
+                description='This function can be used to disable streaming for an element. This will make sure the element is not virtualized (streamed out from GTA) when the player moves far away from it. This function only works in elements with a physical representation in the world (entities), such as player|players, ped|peds, vehicle|vehicles and object|objects.\n* There is a limit of elements that can be streamed in safely for every GTA entity type. If you bypass said limit by using this function, the client can experience problems of disappearing objects and unstability when trying to stream in new elements of that type.\n* In general, if you disable too many elements (of the same type or not) to stream out, GTA will always try to render them, so it can cause a noticeable FPS drop.}}' ,
                 arguments={
                     "theElement": """The element you wish to set the streaming of """,
                     "streamable": """true if this element should stream in/out like normal, false if it should always be streamed in. """
                 },
-                result="""returns whether the element could be set to be streamable. """,
-            ),
-            name='setElementStreamable',
+                result='returns whether the element could be set to be streamable.' ,
+            )
         )
         ],
     ),
@@ -8576,18 +8314,13 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to change the syncer (player) of an element. The syncer is the player who is responsible for informing the server about the state of that element - its position, orientation and other state information. The function can be also used to remove an elements syncer.
-Only vehicle and ped elements can have a syncer, other element types are not currently automatically synced by MTA.
-Please note that using this function to change an elements syncer will only last as long as the element is within syncable range of the player. This is within 140 units for vehicles and 100 units for peds. As soon as it becomes impossible for your chosen player to sync the element, another player (or no player) will be automatically selected, and your setting will be lost. With vehicles, the last occupant to leave a vehicle will be selected as the syncer and override any setting you may have made.
-Using this function to remove an elements syncer, means no player will be assigned to syncing the element. That will not be changed until setElementSyncer is called again.
-It should also be noted that certain network changes to an element do not require a syncer. Actions such as destroying an element or explicitly setting the elements position (in a server side script), will still be updated on all clients regardless of this setting. """,
+                description='This function can be used to change the syncer (player) of an element. The syncer is the player who is responsible for informing the server about the state of that element - its position, orientation and other state information. The function can be also used to remove an elements syncer.\nOnly vehicle and ped elements can have a syncer, other element types are not currently automatically synced by MTA.\nPlease note that using this function to change an elements syncer will only last as long as the element is within syncable range of the player. This is within 140 units for vehicles and 100 units for peds. As soon as it becomes impossible for your chosen player to sync the element, another player (or no player) will be automatically selected, and your setting will be lost. With vehicles, the last occupant to leave a vehicle will be selected as the syncer and override any setting you may have made.\nUsing this function to remove an elements syncer, means no player will be assigned to syncing the element. That will not be changed until setElementSyncer is called again.\nIt should also be noted that certain network changes to an element do not require a syncer. Actions such as destroying an element or explicitly setting the elements position (in a server side script), will still be updated on all clients regardless of this setting.' ,
                 arguments={
                     "theElement": """The element whose syncer you wish to change. """,
                     "thePlayer": """The player who should be the new syncer of the element. If set to false, this element will not have a syncer. If set to true, MTA will pick automatically the nearest or most relevant player to that element. """
                 },
-                result="""returns true if the syncer was changed successfully, false if the element passed was not a ped or vehicle. """,
-            ),
-            name='setElementSyncer',
+                result='returns true if the syncer was changed successfully, false if the element passed was not a ped or vehicle.' ,
+            )
         )
         ],
         client=[
@@ -8658,22 +8391,15 @@ It should also be noted that certain network changes to an element do not requir
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the velocity (movement speeds) along each axis, for an element.
-This is not compatible with all elements. Only the following elements are compatible:
-* Peds.
-* Vehicles.
-* Objects.
-* Projectiles.
-Objects and projectiles velocity can only be set clientside.}} """,
+                description='This function sets the velocity (movement speeds) along each axis, for an element.\nThis is not compatible with all elements. Only the following elements are compatible:\n* Peds.\n* Vehicles.\n* Objects.\n* Projectiles.\nObjects and projectiles velocity can only be set clientside.}}' ,
                 arguments={
                     "theElement": """The element you wish to set the velocity of. """,
                     "speedX": """A floating point value determining the speed along the X axis. """,
                     "speedY": """A floating point value determining the speed along the Y axis. """,
                     "speedZ": """A floating point value determining the speed along the Z axis. """
                 },
-                result="""returns true if the speed was set successfully, false if a bad element was specified or other bad arguments. """,
-            ),
-            name='setElementVelocity',
+                result='returns true if the speed was set successfully, false if a bad element was specified or other bad arguments.' ,
+            )
         )
         ],
         client=[
@@ -8739,22 +8465,15 @@ Objects and projectiles velocity can only be set clientside.}} """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the velocity (movement speeds) along each axis, for an element.
-This is not compatible with all elements. Only the following elements are compatible:
-* Peds.
-* Vehicles.
-* Objects.
-* Projectiles.
-Objects and projectiles velocity can only be set clientside.}} """,
+                description='This function sets the velocity (movement speeds) along each axis, for an element.\nThis is not compatible with all elements. Only the following elements are compatible:\n* Peds.\n* Vehicles.\n* Objects.\n* Projectiles.\nObjects and projectiles velocity can only be set clientside.}}' ,
                 arguments={
                     "theElement": """The element you wish to set the velocity of. """,
                     "speedX": """A floating point value determining the speed along the X axis. """,
                     "speedY": """A floating point value determining the speed along the Y axis. """,
                     "speedZ": """A floating point value determining the speed along the Z axis. """
                 },
-                result="""returns true if the speed was set successfully, false if a bad element was specified or other bad arguments. """,
-            ),
-            name='setElementVelocity',
+                result='returns true if the speed was set successfully, false if a bad element was specified or other bad arguments.' ,
+            )
         )
         ],
     ),
@@ -8812,19 +8531,14 @@ Objects and projectiles velocity can only be set clientside.}} """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Does the order of setElementVisibleTo calls really not matter? visibility|Visibility seems to imply that the order does matter.
-Is this function particularly or only useful for changing the visibility of markers, radar blips and radar areas?|User:EAi|EAiUser:Iam2noob4u|Iam2noob4u
-This function can change an elements visibility. This does not work with all entities - vehicles, players and objects are exempt. This is because these objects are required for accurate sync (theyre physical objects that contribute to the physics engine). This function is particularly useful for changing the visibility of markers, radar blips and radar areas.
-Visibility settings of lower elements in the element tree override higher ones - if visibility for root is set to false and for a player is set to true, it will be visible to the player.
-If you want to clear all visibility settings of an object, try clearElementVisibleTo """,
+                description='Does the order of setElementVisibleTo calls really not matter? visibility|Visibility seems to imply that the order does matter.\nIs this function particularly or only useful for changing the visibility of markers, radar blips and radar areas?|User:EAi|EAiUser:Iam2noob4u|Iam2noob4u\nThis function can change an elements visibility. This does not work with all entities - vehicles, players and objects are exempt. This is because these objects are required for accurate sync (theyre physical objects that contribute to the physics engine). This function is particularly useful for changing the visibility of markers, radar blips and radar areas.\nVisibility settings of lower elements in the element tree override higher ones - if visibility for root is set to false and for a player is set to true, it will be visible to the player.\nIf you want to clear all visibility settings of an object, try clearElementVisibleTo' ,
                 arguments={
                     "theElement": """The element you want to control the visibility of. """,
                     "visibleTo": """The element you wish the element to be visible or invisible to. Any child elements that are players will also be able to see the element. See visibility. """,
                     "visible": """Whether you are making it visible or invisible to the player. """
                 },
-                result="""returns true if the elements visibility was changed successfully, false otherwise, for example if you are trying to change the visibility of a vehicle, player or object. """,
-            ),
-            name='setElementVisibleTo',
+                result='returns true if the elements visibility was changed successfully, false otherwise, for example if you are trying to change the visibility of a vehicle, player or object.' ,
+            )
         )
         ],
         client=[
@@ -8875,14 +8589,13 @@ If you want to clear all visibility settings of an object, try clearElementVisib
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function assigns a low LOD element to an element. The low LOD element is displayed when its associated element is not fully visible. If a low LOD element is assigned to several elements, it will be displayed when any of these elements are not fully visible. """,
+                description='This function assigns a low LOD element to an element. The low LOD element is displayed when its associated element is not fully visible. If a low LOD element is assigned to several elements, it will be displayed when any of these elements are not fully visible.' ,
                 arguments={
                     "theElement": """The element whose low LOD version we want to change. """,
                     "lowLODElement": """A low LOD element to display when the first element is not fully visible. """
                 },
-                result="""returns true if the assignment was successful, false otherwise. """,
-            ),
-            name='setLowLODElement',
+                result='returns true if the assignment was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -8928,14 +8641,13 @@ If you want to clear all visibility settings of an object, try clearElementVisib
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function assigns a low LOD element to an element. The low LOD element is displayed when its associated element is not fully visible. If a low LOD element is assigned to several elements, it will be displayed when any of these elements are not fully visible. """,
+                description='This function assigns a low LOD element to an element. The low LOD element is displayed when its associated element is not fully visible. If a low LOD element is assigned to several elements, it will be displayed when any of these elements are not fully visible.' ,
                 arguments={
                     "theElement": """The element whose low LOD version we want to change. """,
                     "lowLODElement": """A low LOD element to display when the first element is not fully visible. """
                 },
-                result="""returns true if the assignment was successful, false otherwise. """,
-            ),
-            name='setLowLODElement',
+                result='returns true if the assignment was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -8976,15 +8688,12 @@ If you want to clear all visibility settings of an object, try clearElementVisib
                 ],
             ),
             docs=FunctionDoc(
-                description="""* Element/Player|Player
-* Element/Ped|Ped
-This function must be called after setElementBoneRotation for changes to take effect. It should only be called once per frame, after you are done rotating bones on that element, as it is quite heavy. """,
+                description='* Element/Player|Player\n* Element/Ped|Ped\nThis function must be called after setElementBoneRotation for changes to take effect. It should only be called once per frame, after you are done rotating bones on that element, as it is quite heavy.' ,
                 arguments={
                     "theElement": """the element to update. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='updateElementRpHAnim',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     )

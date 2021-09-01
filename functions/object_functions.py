@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -46,14 +46,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function breaks a specific object. """,
+                description='This function breaks a specific object.' ,
                 arguments={
                     "theObject": """an object element """
                 },
-                result="""* true if the object was successfully broken.
-* false if the object is not breakable, or a wrong object was given. """,
-            ),
-            name='breakObject',
+                result='* true if the object was successfully broken.\n* false if the object is not breakable, or a wrong object was given.' ,
+            )
         )
         ],
     ),
@@ -161,7 +159,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates an object element at a given position and rotation. """,
+                description='Creates an object element at a given position and rotation.' ,
                 arguments={
                     "modelId": """A whole integer specifying the GTA:SA object model ID. """,
                     "x": """A floating point number representing the X coordinate on the map. """,
@@ -172,9 +170,8 @@ DUMP_PARTIAL = [
                     "rz": """A floating point number representing the rotation about the Z axis in degrees. """,
                     "isLowLOD": """A bool value specifying if the object will be low LOD. A low LOD object has no collision and a longer draw distance. """
                 },
-                result="""* returns the object element if the creation was successful, false otherwise. """,
-            ),
-            name='createObject',
+                result='* returns the object element if the creation was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -280,7 +277,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates an object element at a given position and rotation. """,
+                description='Creates an object element at a given position and rotation.' ,
                 arguments={
                     "modelId": """A whole integer specifying the GTA:SA object model ID. """,
                     "x": """A floating point number representing the X coordinate on the map. """,
@@ -291,9 +288,8 @@ DUMP_PARTIAL = [
                     "rz": """A floating point number representing the rotation about the Z axis in degrees. """,
                     "isLowLOD": """A bool value specifying if the object will be low LOD. A low LOD object has no collision and a longer draw distance. """
                 },
-                result="""* returns the object element if the creation was successful, false otherwise. """,
-            ),
-            name='createObject',
+                result='* returns the object element if the creation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -334,15 +330,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the mass of a specified object. """,
+                description='This function returns the mass of a specified object.' ,
                 arguments={
                     "theObject": """the object whose mass you want to get. """
                 },
-                result="""* a float representing the mass of the object.
-* false if invalid arguments were passed.
-* -1 if object was never streamed in. """,
-            ),
-            name='getObjectMass',
+                result='* a float representing the mass of the object.\n* false if invalid arguments were passed.\n* -1 if object was never streamed in.' ,
+            )
         )
         ],
     ),
@@ -393,7 +386,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theObject": """: the object you wish to get a property of. """,
                     "property": """: the property you want to get the value of:
@@ -401,10 +394,8 @@ DUMP_PARTIAL = [
 * "all" - ''table'' with values of all properties below (OOP method: ''getProperties'')
 </div> """
                 },
-                result="""on success: table for all, 3 float|floats for center_of_mass or float for other properties
-on failure: false """,
-            ),
-            name='getObjectProperty',
+                result='on success: table for all, 3 float|floats for center_of_mass or float for other properties\non failure: false' ,
+            )
         )
         ],
     ),
@@ -450,13 +441,12 @@ on failure: false """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the visible size of an object. """,
+                description='This function returns the visible size of an object.' ,
                 arguments={
                     "theObject": """: the object you wish to return the scale of. """
                 },
-                result="""* three float values indicating the scale of the object on the x, y, and z axis if successful, false otherwise. """,
-            ),
-            name='getObjectScale',
+                result='* three float values indicating the scale of the object on the x, y, and z axis if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -500,13 +490,12 @@ on failure: false """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the visible size of an object. """,
+                description='This function returns the visible size of an object.' ,
                 arguments={
                     "theObject": """: the object you wish to return the scale of. """
                 },
-                result="""* three float values indicating the scale of the object on the x, y, and z axis if successful, false otherwise. """,
-            ),
-            name='getObjectScale',
+                result='* three float values indicating the scale of the object on the x, y, and z axis if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -555,14 +544,12 @@ on failure: false """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if an object / model ID is breakable. """,
+                description='This function checks if an object / model ID is breakable.' ,
                 arguments={
                     "theObject / modelId": """The object / model ID thats being checked. """
                 },
-                result="""* true if the object is breakable.
-* false if the object is not breakable. """,
-            ),
-            name='isObjectBreakable',
+                result='* true if the object is breakable.\n* false if the object is not breakable.' ,
+            )
         )
         ],
     ),
@@ -603,14 +590,12 @@ on failure: false """,
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theObject": """The object """
                 },
-                result="""* true if the object is moving.
-* false if the object is not moving. """,
-            ),
-            name='isObjectMoving',
+                result='* true if the object is moving.\n* false if the object is not moving.' ,
+            )
         )
         ],
     ),
@@ -758,7 +743,7 @@ on failure: false """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will smoothly move an object from its current position to a specified rotation and position. """,
+                description='This function will smoothly move an object from its current position to a specified rotation and position.' ,
                 arguments={
                     "theObject": """the object that will be moved. """,
                     "time": """the time in milliseconds the object will arrive at the destination. """,
@@ -773,10 +758,8 @@ on failure: false """,
                     "fEasingAmplitude": """the amplitude of the Easing|easing function (only some easing functions use this parameter) """,
                     "fEasingOvershoot": """the overshoot of the Easing|easing function (only some easing functions use this parameter) """
                 },
-                result="""* true if the function moved the object succesfully.
-* false otherwise. """,
-            ),
-            name='moveObject',
+                result='* true if the function moved the object succesfully.\n* false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -922,7 +905,7 @@ on failure: false """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will smoothly move an object from its current position to a specified rotation and position. """,
+                description='This function will smoothly move an object from its current position to a specified rotation and position.' ,
                 arguments={
                     "theObject": """the object that will be moved. """,
                     "time": """the time in milliseconds the object will arrive at the destination. """,
@@ -937,10 +920,8 @@ on failure: false """,
                     "fEasingAmplitude": """the amplitude of the Easing|easing function (only some easing functions use this parameter) """,
                     "fEasingOvershoot": """the overshoot of the Easing|easing function (only some easing functions use this parameter) """
                 },
-                result="""* true if the function moved the object succesfully.
-* false otherwise. """,
-            ),
-            name='moveObject',
+                result='* true if the function moved the object succesfully.\n* false otherwise.' ,
+            )
         )
         ],
     ),
@@ -981,14 +962,12 @@ on failure: false """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function respawns a specific object. """,
+                description='This function respawns a specific object.' ,
                 arguments={
                     "theObject": """an object element """
                 },
-                result="""* true if the object was sucessfully respawned.
-* false if the object is not breakable, or a wrong object was given. """,
-            ),
-            name='respawnObject',
+                result='* true if the object was sucessfully respawned.\n* false if the object is not breakable, or a wrong object was given.' ,
+            )
         )
         ],
     ),
@@ -1039,15 +1018,13 @@ on failure: false """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets an object to be breakable/unbreakable. """,
+                description='This function sets an object to be breakable/unbreakable.' ,
                 arguments={
                     "object": """the object thats being set. """,
                     "breakable": """a boolean whether the object is breakable (true) or unbreakable (false). """
                 },
-                result="""* true if the object is now breakable.
-* false if it cant or if invalid arguments are passed. """,
-            ),
-            name='setObjectBreakable',
+                result='* true if the object is now breakable.\n* false if it cant or if invalid arguments are passed.' ,
+            )
         )
         ],
     ),
@@ -1098,15 +1075,13 @@ on failure: false """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the mass of a specified object. Changing the mass leads to a different movement behavior for especially dynamic objects. """,
+                description='This function sets the mass of a specified object. Changing the mass leads to a different movement behavior for especially dynamic objects.' ,
                 arguments={
                     "theObject": """the object whose mass will be set. """,
                     "mass": """the new mass. """
                 },
-                result="""* true if the new mass value has been.
-* false otherwise. """,
-            ),
-            name='setObjectMass',
+                result='* true if the new mass value has been.\n* false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1167,15 +1142,14 @@ on failure: false """,
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theObject": """: the object you wish to change a property of. """,
                     "property": """: the property you want to set the value of: """,
                     "value": """: the new value for the property. """
                 },
-                result="""returns true if the property was set successfully, false otherwise. """,
-            ),
-            name='setObjectProperty',
+                result='returns true if the property was set successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1243,17 +1217,15 @@ on failure: false """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the visible size of an object. """,
+                description='This function changes the visible size of an object.' ,
                 arguments={
                     "theObject": """: the object you wish to change the scale of. """,
                     "scale": """: a float containing the new scale. 1.0 is the standard scale, with 0.5 being half the size and 2.0 being twice the size. If the scaleY is set, this will be scaleX. """,
                     "scaleY": """: a float containing the new scale on the Y axis """,
                     "scaleZ": """: a float containing the new scale on the Z axis """
                 },
-                result="""* true if the scale was set properly.
-* false otherwise. """,
-            ),
-            name='setObjectScale',
+                result='* true if the scale was set properly.\n* false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1319,17 +1291,15 @@ on failure: false """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the visible size of an object. """,
+                description='This function changes the visible size of an object.' ,
                 arguments={
                     "theObject": """: the object you wish to change the scale of. """,
                     "scale": """: a float containing the new scale. 1.0 is the standard scale, with 0.5 being half the size and 2.0 being twice the size. If the scaleY is set, this will be scaleX. """,
                     "scaleY": """: a float containing the new scale on the Y axis """,
                     "scaleZ": """: a float containing the new scale on the Z axis """
                 },
-                result="""* true if the scale was set properly.
-* false otherwise. """,
-            ),
-            name='setObjectScale',
+                result='* true if the scale was set properly.\n* false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1367,14 +1337,12 @@ on failure: false """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This will allow you to stop an object that is currently moving. """,
+                description='This will allow you to stop an object that is currently moving.' ,
                 arguments={
                     "theobject": """the object whose movement you wish to stop """
                 },
-                result="""* true if successful.
-* false otherwise. """,
-            ),
-            name='stopObject',
+                result='* true if successful.\n* false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1410,14 +1378,12 @@ on failure: false """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This will allow you to stop an object that is currently moving. """,
+                description='This will allow you to stop an object that is currently moving.' ,
                 arguments={
                     "theobject": """the object whose movement you wish to stop """
                 },
-                result="""* true if successful.
-* false otherwise. """,
-            ),
-            name='stopObject',
+                result='* true if successful.\n* false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1468,15 +1434,13 @@ on failure: false """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to toggle if an object should respawn after it got destroyed """,
+                description='This function is used to toggle if an object should respawn after it got destroyed' ,
                 arguments={
                     "theObject": """: the object you want to toggle the respawn from """,
                     "respawn": """: a bool denoting whether we want to enable (true) or disable (false) respawning """
                 },
-                result="""* true when the it was changed successfully.
-* false otherwise. """,
-            ),
-            name='toggleObjectRespawn',
+                result='* true when the it was changed successfully.\n* false otherwise.' ,
+            )
         )
         ],
     )

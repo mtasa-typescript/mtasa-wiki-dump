@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -123,7 +123,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to create custom radar areas on the radar. """,
+                description='This function can be used to create custom radar areas on the radar.' ,
                 arguments={
                     "startPosX": """A float representing the origin x position of the radar area. """,
                     "startPosY": """A float representing the origin y position of the radar area. """,
@@ -135,9 +135,8 @@ DUMP_PARTIAL = [
                     "a": """An integer representing the amount of alpha in the color.  This allows setting the transparency of the radar area.  255 is opaque and 0 is transparent. """,
                     "visibleTo": """An element that you wish to restrict the visibility of the radar area to. (Server function only) """
                 },
-                result=""" """,
-            ),
-            name='createRadarArea',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -253,7 +252,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to create custom radar areas on the radar. """,
+                description='This function can be used to create custom radar areas on the radar.' ,
                 arguments={
                     "startPosX": """A float representing the origin x position of the radar area. """,
                     "startPosY": """A float representing the origin y position of the radar area. """,
@@ -265,9 +264,8 @@ DUMP_PARTIAL = [
                     "a": """An integer representing the amount of alpha in the color.  This allows setting the transparency of the radar area.  255 is opaque and 0 is transparent. """,
                     "visibleTo": """An element that you wish to restrict the visibility of the radar area to. (Server function only) """
                 },
-                result=""" """,
-            ),
-            name='createRadarArea',
+                result='' ,
+            )
         )
         ],
     ),
@@ -317,13 +315,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to retrieve the current color of a radararea|radar area. """,
+                description='This function can be used to retrieve the current color of a radararea|radar area.' ,
                 arguments={
                     "theRadararea": """The radararea|radar area you wish to retrieve the colour of. """
                 },
-                result="""returns four integers in rgba format (red, green, blue, alpha), with a maximum value of 255 for each.  alpha decides transparency where 255 is opaque and 0 is transparent.  returns false if the radararea is invalid. """,
-            ),
-            name='getRadarAreaColor',
+                result='returns four integers in rgba format (red, green, blue, alpha), with a maximum value of 255 for each.  alpha decides transparency where 255 is opaque and 0 is transparent.  returns false if the radararea is invalid.' ,
+            )
         )
         ],
         client=[
@@ -371,13 +368,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to retrieve the current color of a radararea|radar area. """,
+                description='This function can be used to retrieve the current color of a radararea|radar area.' ,
                 arguments={
                     "theRadararea": """The radararea|radar area you wish to retrieve the colour of. """
                 },
-                result="""returns four integers in rgba format (red, green, blue, alpha), with a maximum value of 255 for each.  alpha decides transparency where 255 is opaque and 0 is transparent.  returns false if the radararea is invalid. """,
-            ),
-            name='getRadarAreaColor',
+                result='returns four integers in rgba format (red, green, blue, alpha), with a maximum value of 255 for each.  alpha decides transparency where 255 is opaque and 0 is transparent.  returns false if the radararea is invalid.' ,
+            )
         )
         ],
     ),
@@ -419,13 +415,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used for getting the X and Y size of an existing radararea|radar area. """,
+                description='This function is used for getting the X and Y size of an existing radararea|radar area.' ,
                 arguments={
                     "theRadararea": """The radararea|radar area element whose size you wish to get. """
                 },
-                result="""returns two floats indicating the x and y length of the radar area respectively, false if the radar area is invalid. """,
-            ),
-            name='getRadarAreaSize',
+                result='returns two floats indicating the x and y length of the radar area respectively, false if the radar area is invalid.' ,
+            )
         )
         ],
         client=[
@@ -465,13 +460,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used for getting the X and Y size of an existing radararea|radar area. """,
+                description='This function is used for getting the X and Y size of an existing radararea|radar area.' ,
                 arguments={
                     "theRadararea": """The radararea|radar area element whose size you wish to get. """
                 },
-                result="""returns two floats indicating the x and y length of the radar area respectively, false if the radar area is invalid. """,
-            ),
-            name='getRadarAreaSize',
+                result='returns two floats indicating the x and y length of the radar area respectively, false if the radar area is invalid.' ,
+            )
         )
         ],
     ),
@@ -529,15 +523,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if a 2D position is inside a radararea|radar area or not. """,
+                description='This function checks if a 2D position is inside a radararea|radar area or not.' ,
                 arguments={
                     "theArea": """The radararea|radar area youre checking the position against. """,
                     "posX": """The X coordinate of the position youre checking. """,
                     "posY": """The Y coordinate of the position youre checking. """
                 },
-                result="""returns true if the position is inside the radar area, false if it isnt or if any parameters are invalid. """,
-            ),
-            name='isInsideRadarArea',
+                result='returns true if the position is inside the radar area, false if it isnt or if any parameters are invalid.' ,
+            )
         )
         ],
         client=[
@@ -593,15 +586,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if a 2D position is inside a radararea|radar area or not. """,
+                description='This function checks if a 2D position is inside a radararea|radar area or not.' ,
                 arguments={
                     "theArea": """The radararea|radar area youre checking the position against. """,
                     "posX": """The X coordinate of the position youre checking. """,
                     "posY": """The Y coordinate of the position youre checking. """
                 },
-                result="""returns true if the position is inside the radar area, false if it isnt or if any parameters are invalid. """,
-            ),
-            name='isInsideRadarArea',
+                result='returns true if the position is inside the radar area, false if it isnt or if any parameters are invalid.' ,
+            )
         )
         ],
     ),
@@ -639,13 +631,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows detection of whether a radar area is flashing or not. """,
+                description='This function allows detection of whether a radar area is flashing or not.' ,
                 arguments={
                     "theRadararea": """The radar area you wish to check the state of flashing """
                 },
-                result="""returns true if the radar area is flashing, false if it is not or if it doesnt exist. """,
-            ),
-            name='isRadarAreaFlashing',
+                result='returns true if the radar area is flashing, false if it is not or if it doesnt exist.' ,
+            )
         )
         ],
         client=[
@@ -681,13 +672,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows detection of whether a radar area is flashing or not. """,
+                description='This function allows detection of whether a radar area is flashing or not.' ,
                 arguments={
                     "theRadararea": """The radar area you wish to check the state of flashing """
                 },
-                result="""returns true if the radar area is flashing, false if it is not or if it doesnt exist. """,
-            ),
-            name='isRadarAreaFlashing',
+                result='returns true if the radar area is flashing, false if it is not or if it doesnt exist.' ,
+            )
         )
         ],
     ),
@@ -765,7 +755,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the color of an existing radar area. """,
+                description='Sets the color of an existing radar area.' ,
                 arguments={
                     "theRadarArea": """the radararea element whose color you wish to set. """,
                     "r": """an integer representing the amount of red in the color (0 for no red, 255 for solid red) """,
@@ -773,9 +763,8 @@ DUMP_PARTIAL = [
                     "b": """an integer representing the amount of blue in the color (0 for no blue, 255 for solid blue) """,
                     "a": """an integer representing the colors alpha (0 for transparent, 255 for opaque) """
                 },
-                result="""returns true if the color was set successfully, false if the radar area doesnt exist or the color arguments are improper. """,
-            ),
-            name='setRadarAreaColor',
+                result='returns true if the color was set successfully, false if the radar area doesnt exist or the color arguments are improper.' ,
+            )
         )
         ],
         client=[
@@ -851,7 +840,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the color of an existing radar area. """,
+                description='Sets the color of an existing radar area.' ,
                 arguments={
                     "theRadarArea": """the radararea element whose color you wish to set. """,
                     "r": """an integer representing the amount of red in the color (0 for no red, 255 for solid red) """,
@@ -859,9 +848,8 @@ DUMP_PARTIAL = [
                     "b": """an integer representing the amount of blue in the color (0 for no blue, 255 for solid blue) """,
                     "a": """an integer representing the colors alpha (0 for transparent, 255 for opaque) """
                 },
-                result="""returns true if the color was set successfully, false if the radar area doesnt exist or the color arguments are improper. """,
-            ),
-            name='setRadarAreaColor',
+                result='returns true if the color was set successfully, false if the radar area doesnt exist or the color arguments are improper.' ,
+            )
         )
         ],
     ),
@@ -909,14 +897,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function makes an existing radar area flash in transparency. """,
+                description='This function makes an existing radar area flash in transparency.' ,
                 arguments={
                     "theRadarArea": """the radararea element we want to change flashing state of. """,
                     "flash": """a bool indicating whether the radar area should flash (true to flash, false to not flash). """
                 },
-                result="""returns true if the new flash state was successfully set, false if the radar area doesnt exist or invalid arguments were passed. """,
-            ),
-            name='setRadarAreaFlashing',
+                result='returns true if the new flash state was successfully set, false if the radar area doesnt exist or invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -962,14 +949,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function makes an existing radar area flash in transparency. """,
+                description='This function makes an existing radar area flash in transparency.' ,
                 arguments={
                     "theRadarArea": """the radararea element we want to change flashing state of. """,
                     "flash": """a bool indicating whether the radar area should flash (true to flash, false to not flash). """
                 },
-                result="""returns true if the new flash state was successfully set, false if the radar area doesnt exist or invalid arguments were passed. """,
-            ),
-            name='setRadarAreaFlashing',
+                result='returns true if the new flash state was successfully set, false if the radar area doesnt exist or invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -1027,15 +1013,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the size of an existing radararea|radar area. """,
+                description='This function changes the size of an existing radararea|radar area.' ,
                 arguments={
                     "theRadararea": """the radararea element whose size is to be changed. """,
                     "x": """the x length of the radar area. """,
                     "y": """the y length of the radar area. """
                 },
-                result="""returns true if the size was set successfully, false if invalid arguments are passed. """,
-            ),
-            name='setRadarAreaSize',
+                result='returns true if the size was set successfully, false if invalid arguments are passed.' ,
+            )
         )
         ],
         client=[
@@ -1091,15 +1076,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the size of an existing radararea|radar area. """,
+                description='This function changes the size of an existing radararea|radar area.' ,
                 arguments={
                     "theRadararea": """the radararea element whose size is to be changed. """,
                     "x": """the x length of the radar area. """,
                     "y": """the y length of the radar area. """
                 },
-                result="""returns true if the size was set successfully, false if invalid arguments are passed. """,
-            ),
-            name='setRadarAreaSize',
+                result='returns true if the size was set successfully, false if invalid arguments are passed.' ,
+            )
         )
         ],
     )

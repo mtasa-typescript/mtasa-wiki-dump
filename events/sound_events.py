@@ -17,11 +17,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientSoundBeat',
             docs=FunctionDoc(
-                description="""This event is triggered when a sound beats. """,
+                description='This event is triggered when a sound beats.' ,
                 arguments={
                     "theTime": """: the position in the song of the beat """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -49,11 +49,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientSoundChangedMeta',
             docs=FunctionDoc(
-                description="""This event is triggered when a sounds meta tags have been modified. """,
+                description='This event is triggered when a sounds meta tags have been modified.' ,
                 arguments={
                     "streamTitle": """: The title of a specific stream """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -81,11 +81,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientSoundFinishedDownload',
             docs=FunctionDoc(
-                description="""This event is triggered when a sound has just finished downloading. This means the complete sound file is now loaded in the players RAM, and can be played completely from start to end. Unlike onClientSoundStream, this event only triggers for file streams, not for live ones since live streams never actually end. """,
+                description='This event is triggered when a sound has just finished downloading. This means the complete sound file is now loaded in the players RAM, and can be played completely from start to end. Unlike onClientSoundStream, this event only triggers for file streams, not for live ones since live streams never actually end.' ,
                 arguments={
                     "length": """: The length of the stream in milliseconds """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -113,11 +113,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientSoundStarted',
             docs=FunctionDoc(
-                description="""This event is triggered when a sound is started. """,
+                description='This event is triggered when a sound is started.' ,
                 arguments={
                     "reason": """: the reason the sound was started, can be play, resumed or enabled. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -145,11 +145,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientSoundStopped',
             docs=FunctionDoc(
-                description="""This event is triggered when a sound is stopped. """,
+                description='This event is triggered when a sound is stopped.' ,
                 arguments={
                     "reason": """: the reason the sound was stopped, can be finished, paused, destroyed or disabled. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -177,14 +177,14 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientSoundStream',
             docs=FunctionDoc(
-                description="""This event is triggered when a sound has just finished initial streaming. For file streams, this means the sound will now start playing, but isnt done downloading yet. For live streams, this just means the stream will start playing. This event will also trigger when, for some reason, the streaming failed. """,
+                description='This event is triggered when a sound has just finished initial streaming. For file streams, this means the sound will now start playing, but isnt done downloading yet. For live streams, this just means the stream will start playing. This event will also trigger when, for some reason, the streaming failed.' ,
                 arguments={
                     "success": """: A boolean indicating whether the stream was a success or not """,
                     "length": """: The length of the stream in seconds. Always returns 0 for a live stream """,
                     "streamName": """: The name of the stream. Note that this isnt the filename. Also note that this isnt always provided """,
                     "errorMessage": """: A string containing the error message or an empty string if there was no error """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[

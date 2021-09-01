@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -66,15 +66,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function converts Texture_pixels|pixels from one format to another. """,
+                description='This function converts Texture_pixels|pixels from one format to another.' ,
                 arguments={
                     "pixels": """The pixels to convert the format of """,
                     "newFormat": """The new format required (plain or png or jpeg) """,
                     "quality": """The quality of the returned pixels if the new format is jpeg """
                 },
-                result="""returns a copy of the pixels in the new format, or false if invalid arguments were passed to the function. """,
-            ),
-            name='dxConvertPixels',
+                result='returns a copy of the pixels in the new format, or false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
     ),
@@ -145,9 +144,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""<br/>
-This function creates a DX font element that can be used in dxDrawText. Successful font creation is not guaranteed, and may fail due to hardware or memory limitations.
-To see if creation is likely to fail, use dxGetStatus. (When VideoMemoryFreeForMTA is zero, failure is guaranteed.) """,
+                description='<br/>\nThis function creates a DX font element that can be used in dxDrawText. Successful font creation is not guaranteed, and may fail due to hardware or memory limitations.\nTo see if creation is likely to fail, use dxGetStatus. (When VideoMemoryFreeForMTA is zero, failure is guaranteed.)' ,
                 arguments={
                     "filepath": """the name of the file containing the font """,
                     "size": """size of the font """,
@@ -161,10 +158,8 @@ To see if creation is likely to fail, use dxGetStatus. (When VideoMemoryFreeForM
 ** "cleartype"
 ** "cleartype_natural" """
                 },
-                result="""returns a dx font element if successful, false if invalid arguments were passed to the function, or there is insufficient resources available.
-you should always check to see if this function has returned false. """,
-            ),
-            name='dxCreateFont',
+                result='returns a dx font element if successful, false if invalid arguments were passed to the function, or there is insufficient resources available.\nyou should always check to see if this function has returned false.' ,
+            )
         )
         ],
     ),
@@ -225,17 +220,14 @@ you should always check to see if this function has returned false. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a render target element, which is a special type of texture that can be drawn on with the dx functions. Successful render target creation is not guaranteed, and may fail due to hardware or memory limitations.
-To see if creation is likely to fail, use dxGetStatus. (When VideoMemoryFreeForMTA is zero, failure is guaranteed.) """,
+                description='This function creates a render target element, which is a special type of texture that can be drawn on with the dx functions. Successful render target creation is not guaranteed, and may fail due to hardware or memory limitations.\nTo see if creation is likely to fail, use dxGetStatus. (When VideoMemoryFreeForMTA is zero, failure is guaranteed.)' ,
                 arguments={
                     "width": """The width of the texture in pixels. """,
                     "height": """The height of the texture in pixels. """,
                     "withAlpha": """The render target will be created with an alpha channel. false will turn images alpha channels to black color """
                 },
-                result="""returns a texture element if successful, false if the system is unable to create a render target.
-you should always check to see if this function has returned false. """,
-            ),
-            name='dxCreateRenderTarget',
+                result='returns a texture element if successful, false if the system is unable to create a render target.\nyou should always check to see if this function has returned false.' ,
+            )
         )
         ],
     ),
@@ -286,15 +278,13 @@ you should always check to see if this function has returned false. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a screen source, which is a special type of texture that contains the screen as rendered by GTA
-Note that successful screen source creation is not guaranteed, and may fail due to hardware or memory limitations. You should always check to see if this function has returned false. """,
+                description='This function creates a screen source, which is a special type of texture that contains the screen as rendered by GTA\nNote that successful screen source creation is not guaranteed, and may fail due to hardware or memory limitations. You should always check to see if this function has returned false.' ,
                 arguments={
                     "width": """The width of the texture in pixels. """,
                     "height": """The height of the texture  in pixels. """
                 },
-                result="""returns a texture element if successful, false if invalid arguments were passed to the function. """,
-            ),
-            name='dxCreateScreenSource',
+                result='returns a texture element if successful, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
     ),
@@ -387,50 +377,12 @@ Note that successful screen source creation is not guaranteed, and may fail due 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a shader element that can be used in the dxDraw functions. Successful shader creation is not guaranteed unless the shader|Effect File contains a fallback technique which will work on every PC in the universe.
-<syntaxhighlight lang=lua>
-element, string dxCreateShader ( string filepath / string raw_data , float priority = 0, float maxDistance = 0, bool layered = false, string elementTypes = world,vehicle,object,other  )
-</syntaxhighlight>
-*filepath / raw_data: The filepath of the shader|shader  Effect File (.fx) file or whole data buffer of the shader file
-All the following optional arguments are only relevant when the shader is used with engineApplyShaderToWorldTexture
-*priority: If more than one shader is matched to a world texture, the shader with the highest priority will be used. If there is more than one shader with the same highest priority, the most recently created shader is used.
-*maxDistance: If non-zero, the shader will be applied to textures nearer than maxDistance only. This can speed up rendering, but (to look good) may require the shader to fade out its own effect as the texture reaches maxDistance.
-*layered: When set to true, the shader will be drawn in a separate render pass. Several layered shaders can be drawn on the same world texture. (To avoid http://en.wikipedia.org/wiki/Z-fighting Z fighting artifacts, you may have to add DepthBias<nowiki>=</nowiki>-0.0002; to the technique pass, but this might cause visual artifacts when applied on vehicles)
-*elementTypes: A comma seperated list of element types to restrict this shader to. Valid element types are:
-** world - Textures in the GTA world
-** ped - Player and ped textures
-** vehicle - Vehicles textures
-** object - Objects textures
-** other - Element textures which are not peds, vehicles or objects
-** all - Everything
-*element: A shader element if successful, false if invalid arguments were passed to the function. You should always check to see if this function has returned false.
-*string: The name of the technique that will be used.
-|20688}}
-<syntaxhighlight lang=lua>
-element, string dxCreateShader ( string filepath / string raw_data  , table macros = {} , float priority = 0, float maxDistance = 0, bool layered = false, string elementTypes = world,vehicle,object,other  )
-</syntaxhighlight>
-*filepath / raw_data: The filepath of the shader|shader  Effect File (.fx) file or whole data buffer of the shader file
-All the following optional arguments are only relevant when the shader is used with engineApplyShaderToWorldTexture
-*macros: A table contains macros in an ordered and/or unordered way. See example below.
-*priority: If more than one shader is matched to a world texture, the shader with the highest priority will be used. If there is more than one shader with the same highest priority, the most recently created shader is used.
-*maxDistance: If non-zero, the shader will be applied to textures nearer than maxDistance only. This can speed up rendering, but (to look good) may require the shader to fade out its own effect as the texture reaches maxDistance.
-*layered: When set to true, the shader will be drawn in a separate render pass. Several layered shaders can be drawn on the same world texture. (To avoid http://en.wikipedia.org/wiki/Z-fighting Z fighting artifacts, you may have to add DepthBias<nowiki>=</nowiki>-0.0002; to the technique pass, but this might cause visual artifacts when applied on vehicles)
-*elementTypes: A comma seperated list of element types to restrict this shader to. Valid element types are:
-** world - Textures in the GTA world
-** ped - Player and ped textures
-** vehicle - Vehicles textures
-** object - Objects textures
-** other - Element textures which are not peds, vehicles or objects
-** all - Everything
-*element: A shader element if successful, false if invalid arguments were passed to the function. You should always check to see if this function has returned false.
-*string: The name of the technique that will be used.
-|20688}} """,
+                description='This function creates a shader element that can be used in the dxDraw functions. Successful shader creation is not guaranteed unless the shader|Effect File contains a fallback technique which will work on every PC in the universe.\n<syntaxhighlight lang=lua>\nelement, string dxCreateShader ( string filepath / string raw_data , float priority = 0, float maxDistance = 0, bool layered = false, string elementTypes = world,vehicle,object,other  )\n</syntaxhighlight>\n*filepath / raw_data: The filepath of the shader|shader  Effect File (.fx) file or whole data buffer of the shader file\nAll the following optional arguments are only relevant when the shader is used with engineApplyShaderToWorldTexture\n*priority: If more than one shader is matched to a world texture, the shader with the highest priority will be used. If there is more than one shader with the same highest priority, the most recently created shader is used.\n*maxDistance: If non-zero, the shader will be applied to textures nearer than maxDistance only. This can speed up rendering, but (to look good) may require the shader to fade out its own effect as the texture reaches maxDistance.\n*layered: When set to true, the shader will be drawn in a separate render pass. Several layered shaders can be drawn on the same world texture. (To avoid http://en.wikipedia.org/wiki/Z-fighting Z fighting artifacts, you may have to add DepthBias<nowiki>=</nowiki>-0.0002; to the technique pass, but this might cause visual artifacts when applied on vehicles)\n*elementTypes: A comma seperated list of element types to restrict this shader to. Valid element types are:\n** world - Textures in the GTA world\n** ped - Player and ped textures\n** vehicle - Vehicles textures\n** object - Objects textures\n** other - Element textures which are not peds, vehicles or objects\n** all - Everything\n*element: A shader element if successful, false if invalid arguments were passed to the function. You should always check to see if this function has returned false.\n*string: The name of the technique that will be used.\n|20688}}\n<syntaxhighlight lang=lua>\nelement, string dxCreateShader ( string filepath / string raw_data  , table macros = {} , float priority = 0, float maxDistance = 0, bool layered = false, string elementTypes = world,vehicle,object,other  )\n</syntaxhighlight>\n*filepath / raw_data: The filepath of the shader|shader  Effect File (.fx) file or whole data buffer of the shader file\nAll the following optional arguments are only relevant when the shader is used with engineApplyShaderToWorldTexture\n*macros: A table contains macros in an ordered and/or unordered way. See example below.\n*priority: If more than one shader is matched to a world texture, the shader with the highest priority will be used. If there is more than one shader with the same highest priority, the most recently created shader is used.\n*maxDistance: If non-zero, the shader will be applied to textures nearer than maxDistance only. This can speed up rendering, but (to look good) may require the shader to fade out its own effect as the texture reaches maxDistance.\n*layered: When set to true, the shader will be drawn in a separate render pass. Several layered shaders can be drawn on the same world texture. (To avoid http://en.wikipedia.org/wiki/Z-fighting Z fighting artifacts, you may have to add DepthBias<nowiki>=</nowiki>-0.0002; to the technique pass, but this might cause visual artifacts when applied on vehicles)\n*elementTypes: A comma seperated list of element types to restrict this shader to. Valid element types are:\n** world - Textures in the GTA world\n** ped - Player and ped textures\n** vehicle - Vehicles textures\n** object - Objects textures\n** other - Element textures which are not peds, vehicles or objects\n** all - Everything\n*element: A shader element if successful, false if invalid arguments were passed to the function. You should always check to see if this function has returned false.\n*string: The name of the technique that will be used.\n|20688}}' ,
                 arguments={
                     
                 },
-                result=""" """,
-            ),
-            name='dxCreateShader',
+                result='' ,
+            )
         )
         ],
     ),
@@ -509,8 +461,7 @@ All the following optional arguments are only relevant when the shader is used w
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a texture element that can be used in the dxDraw functions.
-It is possible to use dxCreateTexture to load cubemaps and volume textures, but these will only be useable as inputs for a shader. The Microsoft utility http://nightly.mtasa.com/files/shaders/DxTex.zip DxTex can view and change cubemaps and volume textures. DxTex can also convert standard textures into DXT1/3/5 compressed .dds which should reduce file sizes. """,
+                description='This function creates a texture element that can be used in the dxDraw functions.\nIt is possible to use dxCreateTexture to load cubemaps and volume textures, but these will only be useable as inputs for a shader. The Microsoft utility http://nightly.mtasa.com/files/shaders/DxTex.zip DxTex can view and change cubemaps and volume textures. DxTex can also convert standard textures into DXT1/3/5 compressed .dds which should reduce file sizes.' ,
                 arguments={
                     "filepath": """The filepath of the image. (.bmp, .dds, .jpg, .png, and .tga images are supported). Image files should ideally have dimensions that are a power of two, to prevent possible blurring.
 or """,
@@ -534,9 +485,8 @@ or """,
                     "cube": """: Cube map """,
                     "depth": """Desired number of slices when creating a volume texture """
                 },
-                result="""returns a texture if successful, false if invalid arguments were passed to the function. """,
-            ),
-            name='dxCreateTexture',
+                result='returns a texture if successful, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
     ),
@@ -667,7 +617,7 @@ or """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""<lowercasetitle/> """,
+                description='<lowercasetitle/>' ,
                 arguments={
                     "posX": """: An integer representing the absolute X position of the circle center, represented by pixels on the screen. """,
                     "posY": """: An integer representing the absolute Y position of the circle center, represented by pixels on the screen. """,
@@ -680,9 +630,8 @@ or """,
                     "ratio": """: Ratio between width and height, e.g: 2 would mean that the width of the circle is 2 times the height. """,
                     "postGUI": """: A bool representing whether the circle should be drawn on top of or behind any ingame GUI (rendered by CEGUI). """
                 },
-                result="""returns true if the creation of the 2d circle was successful, false otherwise. """,
-            ),
-            name='dxDrawCircle',
+                result='returns true if the creation of the 2d circle was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -813,9 +762,7 @@ or """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Draws an image on the screen for a single frame. In order for the image to stay visible continuously, you need to call this function with the same parameters on each frame update (see onClientRender).<br/>
-Image files should ideally have dimensions that are a power of two, to prevent possible blurring.<br/>
-<b>Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px...</b> """,
+                description='Draws an image on the screen for a single frame. In order for the image to stay visible continuously, you need to call this function with the same parameters on each frame update (see onClientRender).<br/>\nImage files should ideally have dimensions that are a power of two, to prevent possible blurring.<br/>\n<b>Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px...</b>' ,
                 arguments={
                     "posX": """the absolute X coordinate of the top left corner of the image """,
                     "posY": """the absolute Y coordinate of the top left corner of the image """,
@@ -828,9 +775,8 @@ Image files should ideally have dimensions that are a power of two, to prevent p
                     "color": """Tints the image with a value produced by tocolor or hexadecimal number in format: 0xAARRGGBB (RR = red, GG = green, BB = blue, AA = alpha). """,
                     "postGUI": """A bool representing whether the image should be drawn on top of or behind any ingame GUI (rendered by CEGUI). """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='dxDrawImage',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1001,9 +947,7 @@ Image files should ideally have dimensions that are a power of two, to prevent p
                 ],
             ),
             docs=FunctionDoc(
-                description="""Differing from dxDrawImage, this function only draws a part of an image on the screen for a single frame. In order for the image to stay visible continuously, you need to call this function with the same parameters on each frame update (see onClientRender).
-Image files should ideally have dimensions that are a power of two, to prevent possible blurring.<br/>
-<b>Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px...</b> """,
+                description='Differing from dxDrawImage, this function only draws a part of an image on the screen for a single frame. In order for the image to stay visible continuously, you need to call this function with the same parameters on each frame update (see onClientRender).\nImage files should ideally have dimensions that are a power of two, to prevent possible blurring.<br/>\n<b>Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px...</b>' ,
                 arguments={
                     "posX": """the absolute X coordinate of the top left corner of the image """,
                     "posY": """the absolute Y coordinate of the top left corner of the image """,
@@ -1020,9 +964,8 @@ Image files should ideally have dimensions that are a power of two, to prevent p
                     "color": """the color of the image, a value produced by tocolor or hexadecimal number in format: 0xAARRGGBB (AA = alpha, RR = red, GG = green, BB = blue). """,
                     "postgui": """A bool representing whether the image should be drawn on top of or behind any ingame GUI (rendered by CEGUI). """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='dxDrawImageSection',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1123,7 +1066,7 @@ Image files should ideally have dimensions that are a power of two, to prevent p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function draws a 2D line across the screen - rendered for one frame.  This should be used in conjunction with onClientRender in order to display continuously. """,
+                description='This function draws a 2D line across the screen - rendered for one frame.  This should be used in conjunction with onClientRender in order to display continuously.' ,
                 arguments={
                     "startX": """An integer representing the absolute start X position of the line, represented by pixels on the screen. """,
                     "startY": """An integer representing the absolute start Y position of the line, represented by pixels on the screen. """,
@@ -1134,9 +1077,8 @@ Image files should ideally have dimensions that are a power of two, to prevent p
                     "postGUI": """A bool representing whether the line should be drawn on top of or behind any ingame GUI (rendered by CEGUI).
 Returns a true if the operation was successful, false otherwise. """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='dxDrawLine',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1257,7 +1199,7 @@ Returns a true if the operation was successful, false otherwise. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function draws a 3D line between two points in the 3D world - rendered for one frame.  This should be used in conjunction with onClientRender in order to display continuously. """,
+                description='This function draws a 3D line between two points in the 3D world - rendered for one frame.  This should be used in conjunction with onClientRender in order to display continuously.' ,
                 arguments={
                     "startX": """The start X position of the 3D line, representing a coordinate in the GTA world. """,
                     "startY": """The start Y position of the 3D line, representing a coordinate in the GTA world. """,
@@ -1270,9 +1212,8 @@ Returns a true if the operation was successful, false otherwise. """
                     "postGUI": """A bool representing whether the line should be drawn on top of or behind any ingame GUI (rendered by CEGUI).
 Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='dxDrawLine3D',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1443,9 +1384,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function draws a textured 3D line between two points in the 3D world - rendered for one frame.  This should be used in conjunction with onClientPreRender in order to display continuously.
-The 3D line with a large width value effectively becomes a rectangle, so it it possible to construct basic shapes such as boxes with several large width lines and the appropriate values for faceToward.
-3D lines are drawn at a particular place in the Game_Processing_Order|game processing order, so use onClientPreRender for drawing if you are attaching them to world elements. """,
+                description='This function draws a textured 3D line between two points in the 3D world - rendered for one frame.  This should be used in conjunction with onClientPreRender in order to display continuously.\nThe 3D line with a large width value effectively becomes a rectangle, so it it possible to construct basic shapes such as boxes with several large width lines and the appropriate values for faceToward.\n3D lines are drawn at a particular place in the Game_Processing_Order|game processing order, so use onClientPreRender for drawing if you are attaching them to world elements.' ,
                 arguments={
                     "startX/Y/Z": """The start position of the 3D line, representing a coordinate in the GTA world. """,
                     "endX/Y/Z": """The end position of the 3D line, representing a coordinate in the GTA world. """,
@@ -1459,9 +1398,8 @@ The 3D line with a large width value effectively becomes a rectangle, so it it p
                     "faceTowardX/Y/Z": """The position the front of the line should face towards. If this is not set, the camera position is used, so the front of the line faces toward the camera.
 Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='dxDrawMaterialLine3D',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1542,17 +1480,15 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""If image file is used, it should ideally have dimensions that are a power of two, to prevent possible blurring.
-Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px...}} """,
+                description='If image file is used, it should ideally have dimensions that are a power of two, to prevent possible blurring.\nPower of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px...}}' ,
                 arguments={
                     "pType": """Type of primitive to be drawn. """,
                     "image": """Either a material element or a filepath of the image which is going to be drawn. (.dds images are also supported). Image files should ideally have dimensions that are a power of two, to prevent possible blurring. Use a texture created with dxCreateTexture to speed up drawing. """,
                     "postGUI": """A bool representing whether the line should be drawn on top of or behind any ingame GUI (rendered by CEGUI). """,
                     "vertices": """Tables representing each primitive vertice, required amount of them is determined by primitive type. """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='dxDrawMaterialPrimitive',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1633,18 +1569,15 @@ Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px...}} 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function draws a 3D primitive shape with material applied to it in the 3D world - rendered for one frame. This should be used in conjunction with onClientRender in order to display continuously.
-If image file is used, it should ideally have dimensions that are a power of two, to prevent possible blurring.
-Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px... """,
+                description='This function draws a 3D primitive shape with material applied to it in the 3D world - rendered for one frame. This should be used in conjunction with onClientRender in order to display continuously.\nIf image file is used, it should ideally have dimensions that are a power of two, to prevent possible blurring.\nPower of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px...' ,
                 arguments={
                     "pType": """Type of primitive to be drawn. """,
                     "image": """Either a material element or a filepath of the image which is going to be drawn. (.dds images are also supported). Image files should ideally have dimensions that are a power of two, to prevent possible blurring. Use a texture created with dxCreateTexture to speed up drawing. """,
                     "postGUI": """A bool representing whether the line should be drawn on top of or behind any ingame GUI (rendered by CEGUI). """,
                     "vertices": """Tables representing each primitive vertice, required amount of them is determined by primitive type. """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='dxDrawMaterialPrimitive3D',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1855,8 +1788,7 @@ Power of two: 2px, 4px, 8px, 16px, 32px, 64px, 128px, 256px, 512px, 1024px... ""
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function draws a textured 3D line between two points in the 3D world - rendered for one frame.  This should be used in conjunction with onClientPreRender in order to display continuously.
-The 3D line with a large width value effectively becomes a rectangle, so it it possible to construct basic shapes such as boxes with several large width lines and the appropriate values for faceToward. """,
+                description='This function draws a textured 3D line between two points in the 3D world - rendered for one frame.  This should be used in conjunction with onClientPreRender in order to display continuously.\nThe 3D line with a large width value effectively becomes a rectangle, so it it possible to construct basic shapes such as boxes with several large width lines and the appropriate values for faceToward.' ,
                 arguments={
                     "startX/Y/Z": """The start position of the 3D line, representing a coordinate in the GTA world. """,
                     "endX/Y/Z": """The end position of the 3D line, representing a coordinate in the GTA world. """,
@@ -1873,9 +1805,8 @@ The 3D line with a large width value effectively becomes a rectangle, so it it p
                     "faceTowardX/Y/Z": """The direction the front of the line should face towards. If this is not set, the front of the line always faces toward the camera.
 Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='dxDrawMaterialSectionLine3D',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1946,15 +1877,14 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "pType": """Type of primitive to be drawn. """,
                     "postGUI": """A bool representing whether the line should be drawn on top of or behind any ingame GUI (rendered by CEGUI). """,
                     "vertices": """Tables representing each primitive vertice, required amount of them is determined by primitive type. """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='dxDrawPrimitive',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2045,7 +1975,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function draws a 3D primitive in the 3D world - rendered for one frame.  This should be used in conjunction with onClientRender in order to display continuously. """,
+                description='This function draws a 3D primitive in the 3D world - rendered for one frame.  This should be used in conjunction with onClientRender in order to display continuously.' ,
                 arguments={
                     "primitiveType": """The type of primitive to be drawn. This could be:
 "pointlist"
@@ -2065,9 +1995,8 @@ The vertex should be passed like this:
                     "vertexN": """A table with the coordinates of the vertex plus its color. You can add as much as you want.
 Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='dxDrawPrimitive3D',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2168,7 +2097,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function draws a 2D rectangle across the screen - rendered for one frame. This should be used in conjunction with onClientRender in order to display continuously. """,
+                description='This function draws a 2D rectangle across the screen - rendered for one frame. This should be used in conjunction with onClientRender in order to display continuously.' ,
                 arguments={
                     "startX": """An float representing the absolute origin X position of the rectangle, represented by pixels on the screen. """,
                     "startY": """An float representing the absolute origin Y position of the rectangle, represented by pixels on the screen. """,
@@ -2178,9 +2107,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     "postGUI": """A bool representing whether the line should be drawn on top of or behind any ingame GUI. """,
                     "subPixelPositioning": """A bool representing whether the rectangle can be positioned sub-pixel-ly. """
                 },
-                result="""returns true if the operation was successful, false otherwise. """,
-            ),
-            name='dxDrawRectangle',
+                result='returns true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2401,7 +2329,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""Draws a string of text on the screen for one frame. In order for the text to stay visible continuously, you need to call this function with the same parameters on each frame update (see onClientRender). """,
+                description='Draws a string of text on the screen for one frame. In order for the text to stay visible continuously, you need to call this function with the same parameters on each frame update (see onClientRender).' ,
                 arguments={
                     "text": """the text to draw """,
                     "leftX": """the absolute X coordinate of the top left corner of the text """,
@@ -2422,9 +2350,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     "fRotationCenterX": """Rotation Origin X """,
                     "fRotationCenterY": """Rotation Origin Y """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='dxDrawText',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2525,7 +2452,7 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function drawn same sphere as /showcol. It provides 4 levels of iterations which mean density of sphere. Adjust radius to iterations to get optimum density of mesh. About 50 spheres with iterations = 4 can cause fps drop. """,
+                description='This function drawn same sphere as /showcol. It provides 4 levels of iterations which mean density of sphere. Adjust radius to iterations to get optimum density of mesh. About 50 spheres with iterations = 4 can cause fps drop.' ,
                 arguments={
                     "x, y, z": """A position in world of sphere. """,
                     "radius": """A radius of sphere. """,
@@ -2533,9 +2460,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     "fLineWidth": """A width of line """,
                     "iterations": """Number 1, 2, 3 or 4. 1 mean low density, 4 mean high. """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='dxDrawWiredSphere',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2567,17 +2493,12 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current blend mode for the dxDraw functions. The blend mode is set using dxSetBlendMode """,
+                description='This function returns the current blend mode for the dxDraw functions. The blend mode is set using dxSetBlendMode' ,
                 arguments={
                     
                 },
-                result="""returns the current blend mode, which can be one of:
-*blend
-*add
-*modulate_add
-*overwrite """,
-            ),
-            name='dxGetBlendMode',
+                result='returns the current blend mode, which can be one of:\n*blend\n*add\n*modulate_add\n*overwrite' ,
+            )
         )
         ],
     ),
@@ -2628,14 +2549,13 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the theoretical height of a certain piece of text, if it were to be drawn using dxDrawText. """,
+                description='This function retrieves the theoretical height of a certain piece of text, if it were to be drawn using dxDrawText.' ,
                 arguments={
                     "scale": """The size of the text. """,
                     "font": """Either a custom DX font element or the name of a built-in dx font: """
                 },
-                result="""returns an integer of the height of the text. """,
-            ),
-            name='dxGetFontHeight',
+                result='returns an integer of the height of the text.' ,
+            )
         )
         ],
     ),
@@ -2684,14 +2604,12 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This gets the dimensions of the supplied material element. """,
+                description='This gets the dimensions of the supplied material element.' ,
                 arguments={
                     "material": """The material element whose size is to be gotten """
                 },
-                result="""returns two ints representing the width and height in pixels of the material, or false if an invalid parameter was passed to the function.
-if the material is a volume texture, this function will return three ints representing the width, height and depth. """,
-            ),
-            name='dxGetMaterialSize',
+                result='returns two ints representing the width and height in pixels of the material, or false if an invalid parameter was passed to the function.\nif the material is a volume texture, this function will return three ints representing the width, height and depth.' ,
+            )
         )
         ],
     ),
@@ -2764,15 +2682,14 @@ if the material is a volume texture, this function will return three ints repres
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the color of a single pixel from Texture_pixels|pixels contained in a string. It only works with plain format pixels. """,
+                description='This function gets the color of a single pixel from Texture_pixels|pixels contained in a string. It only works with plain format pixels.' ,
                 arguments={
                     "pixels": """The pixels to use """,
                     "x": """The X coordinate for the pixel """,
                     "y": """The Y coordinate for the pixel """
                 },
-                result="""returns 4 ints representing the rgba color value of the pixel if succesful, or false if invalid arguments were passed to the function. """,
-            ),
-            name='dxGetPixelColor',
+                result='returns 4 ints representing the rgba color value of the pixel if succesful, or false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
     ),
@@ -2813,13 +2730,12 @@ if the material is a volume texture, this function will return three ints repres
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the format of Texture_pixels|pixels contained in a string. """,
+                description='This function returns the format of Texture_pixels|pixels contained in a string.' ,
                 arguments={
                     "pixels": """The pixels to get the format of """
                 },
-                result="""returns the format of the pixels if successful (plain or png or jpeg), false if invalid arguments were passed to the function. """,
-            ),
-            name='dxGetPixelsFormat',
+                result='returns the format of the pixels if successful (plain or png or jpeg), false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
     ),
@@ -2864,13 +2780,12 @@ if the material is a volume texture, this function will return three ints repres
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the dimensions of Texture_pixels|pixels contained in a string. It works with all pixel formats. """,
+                description='This function gets the dimensions of Texture_pixels|pixels contained in a string. It works with all pixel formats.' ,
                 arguments={
                     "pixels": """The pixels to get the dimensions of """
                 },
-                result="""returns width and height of the pixels if successful, false if invalid arguments were passed to the function. """,
-            ),
-            name='dxGetPixelsSize',
+                result='returns width and height of the pixels if successful, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
     ),
@@ -2902,43 +2817,12 @@ if the material is a volume texture, this function will return three ints repres
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets information about various internal datum """,
+                description='This function gets information about various internal datum' ,
                 arguments={
                     
                 },
-                result="""returns a table with the following entries:
-*testmode: the current dx test mode. see dxsettestmode.
-*videocardname: the name of the graphics card.
-*videocardram: the installed memory in mb of the graphics card.
-*videocardpsversion: the maximum pixel shader version of the graphics card.
-*videocardmaxanisotropy: the maximum anisotropic filtering available. (0-4 which respectively mean: off,2x,4x,8x,16x)
-*videocardnumrendertargets: the maximum number of simultaneous render targets a shader can use.
-*videomemoryfreeformta: the amount of memory in mb available for mta to use. when this gets to zero, guicreatefont, dxcreatefont and dxcreaterendertarget will fail.
-*videomemoryusedbyfonts: the amount of graphic memory in mb used by custom fonts.
-*videomemoryusedbytextures: the amount of graphic memory in mb used by textures.
-*videomemoryusedbyrendertargets: the amount of graphic memory in mb used by render targets.
-*settingwindowed: the windowed setting. (true/false)
-*settingfullscreenstyle: display style when in full screen mode. (0-2 which respectively mean: standard, borderless window, borderless keep res)
-*settingfxquality: the fx quality. (0-3)
-*settingdrawdistance: the draw distance setting. (0-100)
-*settingvolumetricshadows: the volumetric shadows setting. (true/false)
-*settingstreamingvideomemoryforgta: the usable graphics memory setting. (64-256)
-*settinganisotropicfiltering: the anisotropic filtering setting. (0-4 which respectively mean: off,2x,4x,8x,16x)
-*settingantialiasing: the anti-aliasing setting. (0-3 which respectively mean: off,1x,2x,3x)
-*settingheathaze: the heat haze setting. (true/false)
-*settinggrasseffect: the grass effect setting. (true/false)
-*setting32bitcolor: the color depth of the screen. (false is 16bit, true is 32bit)
-*settinghudmatchaspectratio: the hud match aspect ratio setting. (true/false)
-*settingaspectratio: the aspect ratio setting. (auto, 4:3, 16:10, 16:9)
-*settingfov: the fov setting.
-*settinghighdetailvehicles: high detail vehicles setting. (true/false)
-*settinghighdetailpeds: high detail peds setting. (true/false)
-*allowscreenupload: the allows screen uploads setting. (true/false)
-*depthbufferformat: the format of the shader readable depth buffer, or unknown if not available.
-*totalphysicalmemory: the amount of total physical memory in mb.
-*usingdepthbuffer: true if the depth buffer is used, false otherwise. """,
-            ),
-            name='dxGetStatus',
+                result='returns a table with the following entries:\n*testmode: the current dx test mode. see dxsettestmode.\n*videocardname: the name of the graphics card.\n*videocardram: the installed memory in mb of the graphics card.\n*videocardpsversion: the maximum pixel shader version of the graphics card.\n*videocardmaxanisotropy: the maximum anisotropic filtering available. (0-4 which respectively mean: off,2x,4x,8x,16x)\n*videocardnumrendertargets: the maximum number of simultaneous render targets a shader can use.\n*videomemoryfreeformta: the amount of memory in mb available for mta to use. when this gets to zero, guicreatefont, dxcreatefont and dxcreaterendertarget will fail.\n*videomemoryusedbyfonts: the amount of graphic memory in mb used by custom fonts.\n*videomemoryusedbytextures: the amount of graphic memory in mb used by textures.\n*videomemoryusedbyrendertargets: the amount of graphic memory in mb used by render targets.\n*settingwindowed: the windowed setting. (true/false)\n*settingfullscreenstyle: display style when in full screen mode. (0-2 which respectively mean: standard, borderless window, borderless keep res)\n*settingfxquality: the fx quality. (0-3)\n*settingdrawdistance: the draw distance setting. (0-100)\n*settingvolumetricshadows: the volumetric shadows setting. (true/false)\n*settingstreamingvideomemoryforgta: the usable graphics memory setting. (64-256)\n*settinganisotropicfiltering: the anisotropic filtering setting. (0-4 which respectively mean: off,2x,4x,8x,16x)\n*settingantialiasing: the anti-aliasing setting. (0-3 which respectively mean: off,1x,2x,3x)\n*settingheathaze: the heat haze setting. (true/false)\n*settinggrasseffect: the grass effect setting. (true/false)\n*setting32bitcolor: the color depth of the screen. (false is 16bit, true is 32bit)\n*settinghudmatchaspectratio: the hud match aspect ratio setting. (true/false)\n*settingaspectratio: the aspect ratio setting. (auto, 4:3, 16:10, 16:9)\n*settingfov: the fov setting.\n*settinghighdetailvehicles: high detail vehicles setting. (true/false)\n*settinghighdetailpeds: high detail peds setting. (true/false)\n*allowscreenupload: the allows screen uploads setting. (true/false)\n*depthbufferformat: the format of the shader readable depth buffer, or unknown if not available.\n*totalphysicalmemory: the amount of total physical memory in mb.\n*usingdepthbuffer: true if the depth buffer is used, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3043,7 +2927,7 @@ if the material is a volume texture, this function will return three ints repres
                 ],
             ),
             docs=FunctionDoc(
-                description="""NOTE: This function already takes the clients screen resolution into account. """,
+                description='NOTE: This function already takes the clients screen resolution into account.' ,
                 arguments={
                     "text": """A string representing the text for which you wish to retrieve with width for. """,
                     "width": """The width of the text. Use with wordBreak = true. """,
@@ -3054,9 +2938,8 @@ if the material is a volume texture, this function will return three ints repres
                     "colorCoded": """Should we exclude color codes from the width? False will include the hex in the length.
 Returns two floats representing the width and height of the text in pixels. """
                 },
-                result="""returns two floats representing the width and height of the text in pixels. """,
-            ),
-            name='dxGetTextSize',
+                result='returns two floats representing the width and height of the text in pixels.' ,
+            )
         )
         ],
     ),
@@ -3147,10 +3030,7 @@ Returns two floats representing the width and height of the text in pixels. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function fetches the Texture_pixels|pixels from a texture element. It can be used with a standard texture, render target or screen source.
-*This function is slow and not something you want to be doing once a frame.
-*It is slower when reading pixels from a render target or screen source.
-*And is very slow indeed if the texture format is not  argb . """,
+                description='This function fetches the Texture_pixels|pixels from a texture element. It can be used with a standard texture, render target or screen source.\n*This function is slow and not something you want to be doing once a frame.\n*It is slower when reading pixels from a render target or screen source.\n*And is very slow indeed if the texture format is not  argb .' ,
                 arguments={
                     "texture": """The texture element to get the pixels from """,
                     "surfaceIndex": """Desired slice to get if the texture is a volume texture, or desired face to get if the texture is a cube map. <nowiki>(Cube map faces: 0=+X 1=-X 2=+Y 3=-Y 4=+Z 5=-Z)</nowiki>
@@ -3160,9 +3040,8 @@ By default the pixels from the whole texture is returned. To get only a portion 
                     "width": """Rectangle width """,
                     "height": """Rectangle height """
                 },
-                result="""returns a plain format pixels string if successful, false if invalid arguments were passed to the function. """,
-            ),
-            name='dxGetTexturePixels',
+                result='returns a plain format pixels string if successful, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
     ),
@@ -3233,8 +3112,7 @@ By default the pixels from the whole texture is returned. To get only a portion 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the theoretical width (in pixels) of a certain piece of text, if it were to be drawn using dxDrawText.
-NOTE: This function already takes the clients screen resolution into account. """,
+                description='This function retrieves the theoretical width (in pixels) of a certain piece of text, if it were to be drawn using dxDrawText.\nNOTE: This function already takes the clients screen resolution into account.' ,
                 arguments={
                     "text": """A string representing the text for which you wish to retrieve with width for. """,
                     "scale": """The size of the text. """,
@@ -3242,9 +3120,8 @@ NOTE: This function already takes the clients screen resolution into account. ""
                     "bColorCoded": """Should we exclude color codes from the width? (false will include the hex in the length)
 Returns the float of the width of the text (in pixels). """
                 },
-                result="""returns the float of the width of the text (in pixels). """,
-            ),
-            name='dxGetTextWidth',
+                result='returns the float of the width of the text (in pixels).' ,
+            )
         )
         ],
     ),
@@ -3280,14 +3157,12 @@ Returns the float of the width of the text (in pixels). """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the current aspect ratio set by dxSetAspectRatioAdjustmentEnabled. """,
+                description='This function gets the current aspect ratio set by dxSetAspectRatioAdjustmentEnabled.' ,
                 arguments={
                     
                 },
-                result="""*boolean: returns true when enabled by dxsetaspectratioadjustmentenabled, false otherwise.
-*float: aspect ratio set by dxsetaspectratioadjustmentenabled """,
-            ),
-            name='dxIsAspectRatioAdjustmentEnabled',
+                result='*boolean: returns true when enabled by dxsetaspectratioadjustmentenabled, false otherwise.\n*float: aspect ratio set by dxsetaspectratioadjustmentenabled' ,
+            )
         )
         ],
     ),
@@ -3338,15 +3213,13 @@ Returns the float of the width of the text (in pixels). """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows for the positioning of dxDraw calls to be automatically adjusted according to the clients aspect ratio setting.  This lasts for a single execution of an event handler for one of the following events: onClientRender, onClientPreRender and onClientHUDRender. So the function has to be called every frame, just like dxDraws.
-This is particularly useful for draws that must align with the GTA HUD, for which the sizing and positioning can vary for different aspect ratios. """,
+                description='This function allows for the positioning of dxDraw calls to be automatically adjusted according to the clients aspect ratio setting.  This lasts for a single execution of an event handler for one of the following events: onClientRender, onClientPreRender and onClientHUDRender. So the function has to be called every frame, just like dxDraws.\nThis is particularly useful for draws that must align with the GTA HUD, for which the sizing and positioning can vary for different aspect ratios.' ,
                 arguments={
                     "bEnabled": """: Should the adjustment be enabled or disabled. """,
                     "sourceRatio": """This should be set to the aspect ratio the dxDraws were originally designed in. """
                 },
-                result="""returns true when it was changed successfully, or false otherwise. """,
-            ),
-            name='dxSetAspectRatioAdjustmentEnabled',
+                result='returns true when it was changed successfully, or false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3387,7 +3260,7 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the current blend mode for the dxDraw functions. Changing the blend mode can increase the quality when drawing text or certain other images to a render target. As a general guide use modulate_add when drawing text to a render target, and add when drawing the render target to the screen. Dont forget to restore the default blend at the end - See the example below. """,
+                description='This function sets the current blend mode for the dxDraw functions. Changing the blend mode can increase the quality when drawing text or certain other images to a render target. As a general guide use modulate_add when drawing text to a render target, and add when drawing the render target to the screen. Dont forget to restore the default blend at the end - See the example below.' ,
                 arguments={
                     "blendMode": """The blend mode to use which can be one of: """,
                     "blend": """The source textures are alpha blended to the screen/render target. This is the default mode for drawing and gives the results we all know and love. """,
@@ -3395,9 +3268,8 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
                     "modulate_add": """The source textures are multiplied by the alpha and then added to the screen/render target. """,
                     "overwrite": """The source textures are overwritten. This can be useful for clearing render targets. """
                 },
-                result="""returns true if successful, or false if invalid arguments were passed to the function. """,
-            ),
-            name='dxSetBlendMode',
+                result='returns true if successful, or false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
     ),
@@ -3498,7 +3370,7 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the color of a single pixel for Texture_pixels|pixels contained in a string. It only works with plain format pixels. """,
+                description='This function sets the color of a single pixel for Texture_pixels|pixels contained in a string. It only works with plain format pixels.' ,
                 arguments={
                     "pixels": """The pixels to use """,
                     "x": """The X coordinate for the pixel """,
@@ -3508,9 +3380,8 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
                     "b": """The blue channel for the color (0-255) """,
                     "a": """The alpha channel for the color (0-255) """
                 },
-                result="""returns true if successful, or false if invalid arguments were passed to the function. """,
-            ),
-            name='dxSetPixelColor',
+                result='returns true if successful, or false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
     ),
@@ -3561,14 +3432,13 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "renderTarget": """The render target element whose pixels we want to draw on. """,
                     "clear": """If set to true, the render target will also be cleared. """
                 },
-                result="""returns true if the render target was successfully changed, false otherwise. """,
-            ),
-            name='dxSetRenderTarget',
+                result='returns true if the render target was successfully changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3629,16 +3499,14 @@ This is particularly useful for draws that must align with the GTA HUD, for whic
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the amount of geometric sub-division to use when drawing a shader element with dxDrawImage.
-Using tessellation allows a shader to manipulate the shape of the rendered image at each sub-division boundary. """,
+                description='This function sets the amount of geometric sub-division to use when drawing a shader element with dxDrawImage.\nUsing tessellation allows a shader to manipulate the shape of the rendered image at each sub-division boundary.' ,
                 arguments={
                     "theShader": """The shader element whose tessellation is to be changed """,
                     "tessellationX": """The number of sub-division points along the X axis. Range is 1 to 500. """,
                     "tessellationY": """The number of sub-division points along the Y axis. Range is 1 to 500. """
                 },
-                result="""returns true if the shader elements tessellation was successfully changed, false otherwise. """,
-            ),
-            name='dxSetShaderTessellation',
+                result='returns true if the shader elements tessellation was successfully changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3779,7 +3647,7 @@ Using tessellation allows a shader to manipulate the shape of the rendered image
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function applies a 3D transformation to a shader element when it is drawn with dxDrawImage. """,
+                description='This function applies a 3D transformation to a shader element when it is drawn with dxDrawImage.' ,
                 arguments={
                     "theShader": """The shader element whose transformation is to be changed """,
                     "rotationX": """Rotation angle in degrees around the X axis (Left,right). This will make the shader rotate along its width. """,
@@ -3794,9 +3662,8 @@ Using tessellation allows a shader to manipulate the shape of the rendered image
                     "bPerspectiveCenterOffsetOriginIsScreen": """Set to boolean|true if the center of perspective origin should be the center of the screen rather than the center of the image.
 To convert screen relative units into screen pixel coordinates, ''multiply'' by the screen size. Conversely, to convert screen pixel coordinates to screen relative units, '''''divide''''' by the screen size. """
                 },
-                result="""returns true if the shader elements transform was successfully changed, false otherwise. """,
-            ),
-            name='dxSetShaderTransform',
+                result='returns true if the shader elements transform was successfully changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3857,15 +3724,14 @@ To convert screen relative units into screen pixel coordinates, ''multiply'' by 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This sets a named parameter for a shader element """,
+                description='This sets a named parameter for a shader element' ,
                 arguments={
                     "theShader": """The shader element whose parameter is to be changed """,
                     "parameterName": """The name of parameter """,
                     "value": """The value to set, which can be a texture, a bool, a number or a list of numbers(max 16 floats(numbers)) """
                 },
-                result="""returns true if the shader elements parameter was successfully changed, false otherwise. """,
-            ),
-            name='dxSetShaderValue',
+                result='returns true if the shader elements parameter was successfully changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3906,8 +3772,7 @@ To convert screen relative units into screen pixel coordinates, ''multiply'' by 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used for testing scripts written using guiCreateFont, dxCreateFont, dxCreateShader and dxCreateRenderTarget.
-Each one of the 3 test modes should be used in turn to help highlight any potential problems. """,
+                description='This function is used for testing scripts written using guiCreateFont, dxCreateFont, dxCreateShader and dxCreateRenderTarget.\nEach one of the 3 test modes should be used in turn to help highlight any potential problems.' ,
                 arguments={
                     "testMode": """The test mode to be set. It can be one of the following values: """,
                     "none": """Test mode disabled """,
@@ -3915,9 +3780,8 @@ Each one of the 3 test modes should be used in turn to help highlight any potent
                     "low_mem": """Simulate little free video memory available for MTA. """,
                     "no_shader": """Simulate shaders failing validation. """
                 },
-                result="""returns true if the test mode was successfully set, false otherwise. """,
-            ),
-            name='dxSetTestMode',
+                result='returns true if the test mode was successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3978,15 +3842,14 @@ Each one of the 3 test modes should be used in turn to help highlight any potent
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions allows you to change the edge handling after creating the texture. """,
+                description='This functions allows you to change the edge handling after creating the texture.' ,
                 arguments={
                     "theTexture": """The affected texture """,
                     "textureEdge": """The texture edge mode. Available modes are wrap, mirror, clamp, border, mirror-once """,
                     "border-color": """If textureEdge is set to border, you are able to define a border color here """
                 },
-                result=""" """,
-            ),
-            name='dxSetTextureEdge',
+                result='' ,
+            )
         )
         ],
     ),
@@ -4087,10 +3950,7 @@ Each one of the 3 test modes should be used in turn to help highlight any potent
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the Texture_pixels|pixels of a texture element. It can be used with a standard texture, render target or screen source. Only plain format pixels please.
-* This function is slow and not something you want to be doing once a frame.
-* It is very slow when setting pixels to a render target or screen source.
-* And is very slow indeed if the texture format is not argb. """,
+                description='This function sets the Texture_pixels|pixels of a texture element. It can be used with a standard texture, render target or screen source. Only plain format pixels please.\n* This function is slow and not something you want to be doing once a frame.\n* It is very slow when setting pixels to a render target or screen source.\n* And is very slow indeed if the texture format is not argb.' ,
                 arguments={
                     "texture": """The texture element to set the pixels of """,
                     "pixels": """The plain format pixels to use """,
@@ -4101,9 +3961,8 @@ By default the pixels are set starting at the top left corner of the texture. To
                     "width": """Rectangle width """,
                     "height": """Rectangle height """
                 },
-                result="""returns a string if successful, false if invalid arguments were passed to the function. """,
-            ),
-            name='dxSetTexturePixels',
+                result='returns a string if successful, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
     ),
@@ -4154,14 +4013,13 @@ By default the pixels are set starting at the top left corner of the texture. To
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function updates the contents of a screen source texture with the screen output from GTA """,
+                description='This function updates the contents of a screen source texture with the screen output from GTA' ,
                 arguments={
                     "screenSource": """The screen source element whose pixels we want to fill with the screen capture """,
                     "resampleNow": """A bool to indicate if the screen should be captured immediately. The default is false which means the screen from the end of the previous frame is used (better for performance and consistency). Use true for layering fullscreen effects. """
                 },
-                result="""returns true if the screen was successfully captured, false otherwise. """,
-            ),
-            name='dxUpdateScreenSource',
+                result='returns true if the screen was successfully captured, false otherwise.' ,
+            )
         )
         ],
     )

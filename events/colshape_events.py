@@ -17,12 +17,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientColShapeHit',
             docs=FunctionDoc(
-                description="""This event is triggered when a physical element hits a colshape. """,
+                description='This event is triggered when a physical element hits a colshape.' ,
                 arguments={
                     "theElement": """the element that entered the colshape. """,
                     "matchingDimension": """a boolean referring to whether the hit collision shape was in the same dimension as the element. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -60,12 +60,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientColShapeLeave',
             docs=FunctionDoc(
-                description="""This event is triggered when a physical element leaves a colshape. """,
+                description='This event is triggered when a physical element leaves a colshape.' ,
                 arguments={
                     "theElement": """the element that left the colshape. """,
                     "matchingDimension": """a boolean referring to whether the collision shape was in the same dimension as the element. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -100,12 +100,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onColShapeHit',
             docs=FunctionDoc(
-                description="""This event is triggered when a physical element hits a colshape. """,
+                description='This event is triggered when a physical element hits a colshape.' ,
                 arguments={
                     "hitElement": """: the element that entered the colshape. """,
                     "matchingDimension": """: a boolean referring to whether the hit collision shape was in the same dimension as the element. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -143,12 +143,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onColShapeLeave',
             docs=FunctionDoc(
-                description="""This event is triggered when a player or a vehicle leaves a collision shape. """,
+                description='This event is triggered when a player or a vehicle leaves a collision shape.' ,
                 arguments={
                     "leaveElement": """: The element that who exited the col shape. This can be a player or a vehicle. """,
                     "matchingDimension": """: a boolean referring to whether the collision shape was in the same dimension as the element. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[

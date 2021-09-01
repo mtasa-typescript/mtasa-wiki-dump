@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -103,7 +103,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a pickup element, which is placed in the GTA world and can be picked up to retrieve a health, armour or a weapon. """,
+                description='This function creates a pickup element, which is placed in the GTA world and can be picked up to retrieve a health, armour or a weapon.' ,
                 arguments={
                     "x": """: A floating point number representing the X coordinate on the map. """,
                     "y": """: A floating point number representing the Y coordinate on the map. """,
@@ -144,9 +144,8 @@ Other ID Object """,
                     "respawnTime": """: How long before the pickup respawns in milliseconds (This parameter is ignored on the client!) """,
                     "ammo": """: An integer representing the amount of ammo a pickup contains.  This is only valid when the pickup type is a weapon pickup. """
                 },
-                result="""returns pickup element if the pickup was created succesfully, otherwise returns false. """,
-            ),
-            name='createPickup',
+                result='returns pickup element if the pickup was created succesfully, otherwise returns false.' ,
+            )
         )
         ],
         client=[
@@ -242,7 +241,7 @@ Other ID Object """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a pickup element, which is placed in the GTA world and can be picked up to retrieve a health, armour or a weapon. """,
+                description='This function creates a pickup element, which is placed in the GTA world and can be picked up to retrieve a health, armour or a weapon.' ,
                 arguments={
                     "x": """: A floating point number representing the X coordinate on the map. """,
                     "y": """: A floating point number representing the Y coordinate on the map. """,
@@ -283,9 +282,8 @@ Other ID Object """,
                     "respawnTime": """: How long before the pickup respawns in milliseconds (This parameter is ignored on the client!) """,
                     "ammo": """: An integer representing the amount of ammo a pickup contains.  This is only valid when the pickup type is a weapon pickup. """
                 },
-                result="""returns pickup element if the pickup was created succesfully, otherwise returns false. """,
-            ),
-            name='createPickup',
+                result='returns pickup element if the pickup was created succesfully, otherwise returns false.' ,
+            )
         )
         ],
     ),
@@ -323,13 +321,12 @@ Other ID Object """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the amount of ammo in a weapon pickup. """,
+                description='This function retrieves the amount of ammo in a weapon pickup.' ,
                 arguments={
                     "thePickup": """The pickup in which you wish to retrieve the ammo of """
                 },
-                result="""returns an integer of the amount of ammo in the pickup, false if the pickup element is invalid, 0 if its no weapon pickup. """,
-            ),
-            name='getPickupAmmo',
+                result='returns an integer of the amount of ammo in the pickup, false if the pickup element is invalid, 0 if its no weapon pickup.' ,
+            )
         )
         ],
         client=[
@@ -365,13 +362,12 @@ Other ID Object """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the amount of ammo in a weapon pickup. """,
+                description='This function retrieves the amount of ammo in a weapon pickup.' ,
                 arguments={
                     "thePickup": """The pickup in which you wish to retrieve the ammo of """
                 },
-                result="""returns an integer of the amount of ammo in the pickup, false if the pickup element is invalid, 0 if its no weapon pickup. """,
-            ),
-            name='getPickupAmmo',
+                result='returns an integer of the amount of ammo in the pickup, false if the pickup element is invalid, 0 if its no weapon pickup.' ,
+            )
         )
         ],
     ),
@@ -409,13 +405,12 @@ Other ID Object """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the amount of health or armor given from a pickup. """,
+                description='This function retrieves the amount of health or armor given from a pickup.' ,
                 arguments={
                     "thePickup": """The pickup you wish to retrieve the amount from. """
                 },
-                result="""returns an integer of the amount the pickup is set to, false if its invalid, 0 if its no health or amor pickup. """,
-            ),
-            name='getPickupAmount',
+                result='returns an integer of the amount the pickup is set to, false if its invalid, 0 if its no health or amor pickup.' ,
+            )
         )
         ],
         client=[
@@ -451,13 +446,12 @@ Other ID Object """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the amount of health or armor given from a pickup. """,
+                description='This function retrieves the amount of health or armor given from a pickup.' ,
                 arguments={
                     "thePickup": """The pickup you wish to retrieve the amount from. """
                 },
-                result="""returns an integer of the amount the pickup is set to, false if its invalid, 0 if its no health or amor pickup. """,
-            ),
-            name='getPickupAmount',
+                result='returns an integer of the amount the pickup is set to, false if its invalid, 0 if its no health or amor pickup.' ,
+            )
         )
         ],
     ),
@@ -495,13 +489,12 @@ Other ID Object """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the time it takes before a pickup respawns after a player picked it up. The time is specified in milliseconds. """,
+                description='Returns the time it takes before a pickup respawns after a player picked it up. The time is specified in milliseconds.' ,
                 arguments={
                     "thePickup": """the pickup you want the respawn time of """
                 },
-                result="""returns the respawn time of the pickup if successful, false in case of failure. """,
-            ),
-            name='getPickupRespawnInterval',
+                result='returns the respawn time of the pickup if successful, false in case of failure.' ,
+            )
         )
         ],
         client=[
@@ -542,17 +535,12 @@ Other ID Object """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the type of a pickup, either a health, armour or weapon pickup. """,
+                description='This function retrieves the type of a pickup, either a health, armour or weapon pickup.' ,
                 arguments={
                     "thePickup": """The pickup you wish to retrieve the type of. """
                 },
-                result="""returns false if the pickup is invalid, or an integer of the type of the pickup, which include:
-*0: health pickup
-*1: armour pickup
-*2: weapon pickup
-*3: custom pickup """,
-            ),
-            name='getPickupType',
+                result='returns false if the pickup is invalid, or an integer of the type of the pickup, which include:\n*0: health pickup\n*1: armour pickup\n*2: weapon pickup\n*3: custom pickup' ,
+            )
         )
         ],
         client=[
@@ -588,17 +576,12 @@ Other ID Object """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the type of a pickup, either a health, armour or weapon pickup. """,
+                description='This function retrieves the type of a pickup, either a health, armour or weapon pickup.' ,
                 arguments={
                     "thePickup": """The pickup you wish to retrieve the type of. """
                 },
-                result="""returns false if the pickup is invalid, or an integer of the type of the pickup, which include:
-*0: health pickup
-*1: armour pickup
-*2: weapon pickup
-*3: custom pickup """,
-            ),
-            name='getPickupType',
+                result='returns false if the pickup is invalid, or an integer of the type of the pickup, which include:\n*0: health pickup\n*1: armour pickup\n*2: weapon pickup\n*3: custom pickup' ,
+            )
         )
         ],
     ),
@@ -636,13 +619,12 @@ Other ID Object """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the weapon ID of a weapon pickup. """,
+                description='This function retrieves the weapon ID of a weapon pickup.' ,
                 arguments={
                     "thePickup": """The pickup of which you wish to retrieve the weapon """
                 },
-                result="""returns the weapons|weapon id of the pickup, or false if the pickup is invalid. """,
-            ),
-            name='getPickupWeapon',
+                result='returns the weapons|weapon id of the pickup, or false if the pickup is invalid.' ,
+            )
         )
         ],
         client=[
@@ -678,13 +660,12 @@ Other ID Object """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the weapon ID of a weapon pickup. """,
+                description='This function retrieves the weapon ID of a weapon pickup.' ,
                 arguments={
                     "thePickup": """The pickup of which you wish to retrieve the weapon """
                 },
-                result="""returns the weapons|weapon id of the pickup, or false if the pickup is invalid. """,
-            ),
-            name='getPickupWeapon',
+                result='returns the weapons|weapon id of the pickup, or false if the pickup is invalid.' ,
+            )
         )
         ],
     ),
@@ -722,13 +703,12 @@ Other ID Object """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if a pickup is currently spawned (is visible and can be picked up) or not (a player picked it up recently). """,
+                description='This function checks if a pickup is currently spawned (is visible and can be picked up) or not (a player picked it up recently).' ,
                 arguments={
                     "thePickup": """the pickup you want to check. """
                 },
-                result="""returns true if the pickup is spawned, false if its not spawned or an invalid pickup was specified. """,
-            ),
-            name='isPickupSpawned',
+                result='returns true if the pickup is spawned, false if its not spawned or an invalid pickup was specified.' ,
+            )
         )
         ],
         client=[
@@ -779,14 +759,13 @@ Other ID Object """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the time it takes for a pickup to respawn after a player picked it up. """,
+                description='Sets the time it takes for a pickup to respawn after a player picked it up.' ,
                 arguments={
                     "thePickup": """the pickup to set the respawn time of """,
                     "ms": """the new respawn time in ms """
                 },
-                result="""returns true if the new respawn time was set successfully, false otherwise. """,
-            ),
-            name='setPickupRespawnInterval',
+                result='returns true if the new respawn time was set successfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -857,7 +836,7 @@ Other ID Object """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows changing the type of a pickup to a Weapon, Armour or Health pickup, and allows you to set the health points or the weapon and ammo that the pickup will give. """,
+                description='This function allows changing the type of a pickup to a Weapon, Armour or Health pickup, and allows you to set the health points or the weapon and ammo that the pickup will give.' ,
                 arguments={
                     "thePickup": """The pickup which you wish to change the settings of """,
                     "theType": """: An integer representing the type of pickup. You can choose from: """,
@@ -879,9 +858,8 @@ Other ID Object """,
                     "1277": """Save (floppy disk) """,
                     "ammo": """: An integer representing the amount of ammo a pickup contains. This argument is only valid when the pickup type is a Weapon Pickup, and must be specified in that case. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setPickupType',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -947,7 +925,7 @@ Other ID Object """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows changing the type of a pickup to a Weapon, Armour or Health pickup, and allows you to set the health points or the weapon and ammo that the pickup will give. """,
+                description='This function allows changing the type of a pickup to a Weapon, Armour or Health pickup, and allows you to set the health points or the weapon and ammo that the pickup will give.' ,
                 arguments={
                     "thePickup": """The pickup which you wish to change the settings of """,
                     "theType": """: An integer representing the type of pickup. You can choose from: """,
@@ -969,9 +947,8 @@ Other ID Object """,
                     "1277": """Save (floppy disk) """,
                     "ammo": """: An integer representing the amount of ammo a pickup contains. This argument is only valid when the pickup type is a Weapon Pickup, and must be specified in that case. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setPickupType',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1019,14 +996,13 @@ Other ID Object """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to simulate the player using a pickup """,
+                description='This function is used to simulate the player using a pickup' ,
                 arguments={
                     "thePickup": """: The pickup element to be picked up/used. """,
                     "thePlayer": """: The player to use the pickup. """
                 },
-                result=""" """,
-            ),
-            name='usePickup',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -1072,14 +1048,13 @@ Other ID Object """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to simulate the player using a pickup """,
+                description='This function is used to simulate the player using a pickup' ,
                 arguments={
                     "thePickup": """: The pickup element to be picked up/used. """,
                     "thePlayer": """: The player to use the pickup. """
                 },
-                result=""" """,
-            ),
-            name='usePickup',
+                result='' ,
+            )
         )
         ],
     )

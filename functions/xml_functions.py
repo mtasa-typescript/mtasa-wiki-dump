@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -53,17 +53,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function copies all contents of a certain node in a XML document to a new document file, so the copied node becomes the new files root node.
-The new file will not be saved to file system until xmlSaveFile() is called """,
+                description='This function copies all contents of a certain node in a XML document to a new document file, so the copied node becomes the new files root node.\nThe new file will not be saved to file system until xmlSaveFile() is called' ,
                 arguments={
                     "nodeToCopy": """the xmlnode that is to be copied to a new document. """,
                     "newFilePath": """the path of the file that is to be created, in the following format: :resourceName/path. resourceName is the name of the resource the file is in, and path is the path from the root directory of the resource to the file.
 :For example, to create a file named 'newfile.xml' with myNode as the root node in the resource 'ctf', it can be done from another resource this way: ''xmlCopyFile(myNode, ":ctf/newfile.xml")''.
 :If the file is to be in the current resource, only the file path is necessary, e.g. ''xmlCopyFile(myNode, "newfile.xml")''. """
                 },
-                result="""returns the xmlnode of the copy if the node was successfully copied, false if invalid arguments were passed. """,
-            ),
-            name='xmlCopyFile',
+                result='returns the xmlnode of the copy if the node was successfully copied, false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -109,17 +107,15 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function copies all contents of a certain node in a XML document to a new document file, so the copied node becomes the new files root node.
-The new file will not be saved to file system until xmlSaveFile() is called """,
+                description='This function copies all contents of a certain node in a XML document to a new document file, so the copied node becomes the new files root node.\nThe new file will not be saved to file system until xmlSaveFile() is called' ,
                 arguments={
                     "nodeToCopy": """the xmlnode that is to be copied to a new document. """,
                     "newFilePath": """the path of the file that is to be created, in the following format: :resourceName/path. resourceName is the name of the resource the file is in, and path is the path from the root directory of the resource to the file.
 :For example, to create a file named 'newfile.xml' with myNode as the root node in the resource 'ctf', it can be done from another resource this way: ''xmlCopyFile(myNode, ":ctf/newfile.xml")''.
 :If the file is to be in the current resource, only the file path is necessary, e.g. ''xmlCopyFile(myNode, "newfile.xml")''. """
                 },
-                result="""returns the xmlnode of the copy if the node was successfully copied, false if invalid arguments were passed. """,
-            ),
-            name='xmlCopyFile',
+                result='returns the xmlnode of the copy if the node was successfully copied, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -167,14 +163,13 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a new child node under an XML node. """,
+                description='This function creates a new child node under an XML node.' ,
                 arguments={
                     "parentNode": """the xmlnode you want to create a new child node under. """,
                     "tagName": """the type of the child node that will be created. """
                 },
-                result="""returns the created xmlnode if successful, false otherwise. """,
-            ),
-            name='xmlCreateChild',
+                result='returns the created xmlnode if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -220,14 +215,13 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a new child node under an XML node. """,
+                description='This function creates a new child node under an XML node.' ,
                 arguments={
                     "parentNode": """the xmlnode you want to create a new child node under. """,
                     "tagName": """the type of the child node that will be created. """
                 },
-                result="""returns the created xmlnode if successful, false otherwise. """,
-            ),
-            name='xmlCreateChild',
+                result='returns the created xmlnode if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -275,7 +269,7 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a new XML document, which can later be saved to a file by using xmlSaveFile. This function will overwrite the file specified if it already exists. """,
+                description='This function creates a new XML document, which can later be saved to a file by using xmlSaveFile. This function will overwrite the file specified if it already exists.' ,
                 arguments={
                     "filePath": """The filepath of the file in the following format: :resourceName/path. resourceName is the name of the resource the file will be in, and path is the path from the root directory of the resource to the file.
 :For example, if you want to create a file named 'new.xml' in the resource 'ctf', it can be created from another resource this way: ''xmlCreateFile(":ctf/new.xml", "newroot")''.
@@ -283,9 +277,8 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
 :Note that if a different resource than default is being accessed, the caller resource needs access to general.ModifyOtherObjects in the [[ACL]]. """,
                     "rootNodeName": """the name of the root node in the XML document. """
                 },
-                result="""returns the root xmlnode object of the new xml file if successful, or false otherwise. """,
-            ),
-            name='xmlCreateFile',
+                result='returns the root xmlnode object of the new xml file if successful, or false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -331,7 +324,7 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a new XML document, which can later be saved to a file by using xmlSaveFile. This function will overwrite the file specified if it already exists. """,
+                description='This function creates a new XML document, which can later be saved to a file by using xmlSaveFile. This function will overwrite the file specified if it already exists.' ,
                 arguments={
                     "filePath": """The filepath of the file in the following format: :resourceName/path. resourceName is the name of the resource the file will be in, and path is the path from the root directory of the resource to the file.
 :For example, if you want to create a file named 'new.xml' in the resource 'ctf', it can be created from another resource this way: ''xmlCreateFile(":ctf/new.xml", "newroot")''.
@@ -339,9 +332,8 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
 :Note that if a different resource than default is being accessed, the caller resource needs access to general.ModifyOtherObjects in the [[ACL]]. """,
                     "rootNodeName": """the name of the root node in the XML document. """
                 },
-                result="""returns the root xmlnode object of the new xml file if successful, or false otherwise. """,
-            ),
-            name='xmlCreateFile',
+                result='returns the root xmlnode object of the new xml file if successful, or false otherwise.' ,
+            )
         )
         ],
     ),
@@ -379,13 +371,12 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function destroys a XML node from the XML node tree. """,
+                description='This function destroys a XML node from the XML node tree.' ,
                 arguments={
                     "theXMLNode": """The xml node you want to destroy. """
                 },
-                result="""returns true if the xml node was successfully destroyed, false otherwise. """,
-            ),
-            name='xmlDestroyNode',
+                result='returns true if the xml node was successfully destroyed, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -421,13 +412,12 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function destroys a XML node from the XML node tree. """,
+                description='This function destroys a XML node from the XML node tree.' ,
                 arguments={
                     "theXMLNode": """The xml node you want to destroy. """
                 },
-                result="""returns true if the xml node was successfully destroyed, false otherwise. """,
-            ),
-            name='xmlDestroyNode',
+                result='returns true if the xml node was successfully destroyed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -485,15 +475,14 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a named child node of an XML node. """,
+                description='This function returns a named child node of an XML node.' ,
                 arguments={
                     "parent": """: This is an xmlnode that you want to find the child node under. """,
                     "tagName": """: This is the name of the child node you wish to find (case-sensitive). """,
                     "index": """: This is the 0-based index of the node you wish to find. For example, to find the 5th subnode with a particular name, you would use 4 as the index value. To find the first occurence, use 0. """
                 },
-                result="""returns an xmlnode if the node was found, false otherwise. """,
-            ),
-            name='xmlFindChild',
+                result='returns an xmlnode if the node was found, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -549,15 +538,14 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a named child node of an XML node. """,
+                description='This function returns a named child node of an XML node.' ,
                 arguments={
                     "parent": """: This is an xmlnode that you want to find the child node under. """,
                     "tagName": """: This is the name of the child node you wish to find (case-sensitive). """,
                     "index": """: This is the 0-based index of the node you wish to find. For example, to find the 5th subnode with a particular name, you would use 4 as the index value. To find the first occurence, use 0. """
                 },
-                result="""returns an xmlnode if the node was found, false otherwise. """,
-            ),
-            name='xmlFindChild',
+                result='returns an xmlnode if the node was found, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -605,19 +593,15 @@ The new file will not be saved to file system until xmlSaveFile() is called """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function provides an alternative way to load XML files to getResourceConfig.
-This function loads an XML file and returns the node by specifying a specific file path, while getResourceConfig allows for loading an XML file from a resource. """,
+                description='This function provides an alternative way to load XML files to getResourceConfig.\nThis function loads an XML file and returns the node by specifying a specific file path, while getResourceConfig allows for loading an XML file from a resource.' ,
                 arguments={
                     "filePath": """The filepath of the file in the following format: :resourceName/path. resourceName is the name of the resource the file is in, and path is the path from the root directory of the resource to the file.
 :For example, if there is a file named 'settings.xml' in the resource 'ctf', it can be accessed from another resource this way: ''xmlLoadFile(":ctf/settings.xml")''.
 :If the file is in the current resource, only the file path is necessary, e.g. ''xmlLoadFile("settings.xml")''. """,
                     "readOnly": """By default, the XML file is opened with reading and writing access. You can specify true for this parameter if you only need reading access. """
                 },
-                result="""returns the root xmlnode object of an xml file if successful, or false otherwise.
-print error if something wrong with xml.
-|7485}} """,
-            ),
-            name='xmlLoadFile',
+                result='returns the root xmlnode object of an xml file if successful, or false otherwise.\nprint error if something wrong with xml.\n|7485}}' ,
+            )
         )
         ],
         client=[
@@ -663,19 +647,15 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function provides an alternative way to load XML files to getResourceConfig.
-This function loads an XML file and returns the node by specifying a specific file path, while getResourceConfig allows for loading an XML file from a resource. """,
+                description='This function provides an alternative way to load XML files to getResourceConfig.\nThis function loads an XML file and returns the node by specifying a specific file path, while getResourceConfig allows for loading an XML file from a resource.' ,
                 arguments={
                     "filePath": """The filepath of the file in the following format: :resourceName/path. resourceName is the name of the resource the file is in, and path is the path from the root directory of the resource to the file.
 :For example, if there is a file named 'settings.xml' in the resource 'ctf', it can be accessed from another resource this way: ''xmlLoadFile(":ctf/settings.xml")''.
 :If the file is in the current resource, only the file path is necessary, e.g. ''xmlLoadFile("settings.xml")''. """,
                     "readOnly": """By default, the XML file is opened with reading and writing access. You can specify true for this parameter if you only need reading access. """
                 },
-                result="""returns the root xmlnode object of an xml file if successful, or false otherwise.
-print error if something wrong with xml.
-|7485}} """,
-            ),
-            name='xmlLoadFile',
+                result='returns the root xmlnode object of an xml file if successful, or false otherwise.\nprint error if something wrong with xml.\n|7485}}' ,
+            )
         )
         ],
     ),
@@ -713,13 +693,12 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "xmlString": """A string containing XML data """
                 },
-                result="""returns the root xmlnode object of an xml string if successful, or false otherwise (invalid xml string). """,
-            ),
-            name='xmlLoadString',
+                result='returns the root xmlnode object of an xml string if successful, or false otherwise (invalid xml string).' ,
+            )
         )
         ],
         client=[
@@ -755,13 +734,12 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "xmlString": """A string containing XML data """
                 },
-                result="""returns the root xmlnode object of an xml string if successful, or false otherwise (invalid xml string). """,
-            ),
-            name='xmlLoadString',
+                result='returns the root xmlnode object of an xml string if successful, or false otherwise (invalid xml string).' ,
+            )
         )
         ],
     ),
@@ -809,14 +787,13 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to return an attribute of a node in a configuration file. """,
+                description='This function is used to return an attribute of a node in a configuration file.' ,
                 arguments={
                     "node": """The node from which you wish to return the attribute """,
                     "name": """The name of the attribute. """
                 },
-                result="""returns the attribute in string form or false, if the attribute is not defined. """,
-            ),
-            name='xmlNodeGetAttribute',
+                result='returns the attribute in string form or false, if the attribute is not defined.' ,
+            )
         )
         ],
         client=[
@@ -862,14 +839,13 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to return an attribute of a node in a configuration file. """,
+                description='This function is used to return an attribute of a node in a configuration file.' ,
                 arguments={
                     "node": """The node from which you wish to return the attribute """,
                     "name": """The name of the attribute. """
                 },
-                result="""returns the attribute in string form or false, if the attribute is not defined. """,
-            ),
-            name='xmlNodeGetAttribute',
+                result='returns the attribute in string form or false, if the attribute is not defined.' ,
+            )
         )
         ],
     ),
@@ -907,13 +883,12 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns all the attributes of a specific XML node. """,
+                description='Returns all the attributes of a specific XML node.' ,
                 arguments={
                     "node": """the XML node to get the attributes of. """
                 },
-                result="""if successful, returns a table with as keys the names of the attributes and as values the corresponding attribute values. if the node has no attributes, returns an empty table. in case of failure, returns false. """,
-            ),
-            name='xmlNodeGetAttributes',
+                result='if successful, returns a table with as keys the names of the attributes and as values the corresponding attribute values. if the node has no attributes, returns an empty table. in case of failure, returns false.' ,
+            )
         )
         ],
         client=[
@@ -949,13 +924,12 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns all the attributes of a specific XML node. """,
+                description='Returns all the attributes of a specific XML node.' ,
                 arguments={
                     "node": """the XML node to get the attributes of. """
                 },
-                result="""if successful, returns a table with as keys the names of the attributes and as values the corresponding attribute values. if the node has no attributes, returns an empty table. in case of failure, returns false. """,
-            ),
-            name='xmlNodeGetAttributes',
+                result='if successful, returns a table with as keys the names of the attributes and as values the corresponding attribute values. if the node has no attributes, returns an empty table. in case of failure, returns false.' ,
+            )
         )
         ],
     ),
@@ -1003,14 +977,13 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns all children of a particular XML node, or a particular child node. """,
+                description='This function returns all children of a particular XML node, or a particular child node.' ,
                 arguments={
                     "parent": """This is the xmlnode you want to retrieve one or all child nodes of. """,
                     "index": """If you only want to retrieve one particular child node, specify its (0-based) index here. For example if you only want the first node, specify 0; the fifth node has index 4, etc. """
                 },
-                result="""if index isnt specified, returns a table containing all child nodes. if index is specified, returns the corresponding child node if it exists. if no nodes are found, it returns an empty table. returns false in case of failure. """,
-            ),
-            name='xmlNodeGetChildren',
+                result='if index isnt specified, returns a table containing all child nodes. if index is specified, returns the corresponding child node if it exists. if no nodes are found, it returns an empty table. returns false in case of failure.' ,
+            )
         )
         ],
         client=[
@@ -1056,14 +1029,13 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns all children of a particular XML node, or a particular child node. """,
+                description='This function returns all children of a particular XML node, or a particular child node.' ,
                 arguments={
                     "parent": """This is the xmlnode you want to retrieve one or all child nodes of. """,
                     "index": """If you only want to retrieve one particular child node, specify its (0-based) index here. For example if you only want the first node, specify 0; the fifth node has index 4, etc. """
                 },
-                result="""if index isnt specified, returns a table containing all child nodes. if index is specified, returns the corresponding child node if it exists. if no nodes are found, it returns an empty table. returns false in case of failure. """,
-            ),
-            name='xmlNodeGetChildren',
+                result='if index isnt specified, returns a table containing all child nodes. if index is specified, returns the corresponding child node if it exists. if no nodes are found, it returns an empty table. returns false in case of failure.' ,
+            )
         )
         ],
     ),
@@ -1101,13 +1073,12 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the tag name of the specified XML node. """,
+                description='Gets the tag name of the specified XML node.' ,
                 arguments={
                     "node": """the node to get the tag name of. """
                 },
-                result="""returns the tag name of the node if successful, false otherwise. """,
-            ),
-            name='xmlNodeGetName',
+                result='returns the tag name of the node if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1143,13 +1114,12 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the tag name of the specified XML node. """,
+                description='Gets the tag name of the specified XML node.' ,
                 arguments={
                     "node": """the node to get the tag name of. """
                 },
-                result="""returns the tag name of the node if successful, false otherwise. """,
-            ),
-            name='xmlNodeGetName',
+                result='returns the tag name of the node if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1187,13 +1157,12 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the parent node of an xml node. """,
+                description='Returns the parent node of an xml node.' ,
                 arguments={
                     "node": """the node of which you want to know the parent. """
                 },
-                result="""returns the parent node of the specified node if successful. returns false if the specified node is the root node or an invalid node was passed. """,
-            ),
-            name='xmlNodeGetParent',
+                result='returns the parent node of the specified node if successful. returns false if the specified node is the root node or an invalid node was passed.' ,
+            )
         )
         ],
         client=[
@@ -1229,13 +1198,12 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the parent node of an xml node. """,
+                description='Returns the parent node of an xml node.' ,
                 arguments={
                     "node": """the node of which you want to know the parent. """
                 },
-                result="""returns the parent node of the specified node if successful. returns false if the specified node is the root node or an invalid node was passed. """,
-            ),
-            name='xmlNodeGetParent',
+                result='returns the parent node of the specified node if successful. returns false if the specified node is the root node or an invalid node was passed.' ,
+            )
         )
         ],
     ),
@@ -1273,13 +1241,12 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is made to be able to read tag values in XML files (eg. <something>anything</something>). """,
+                description='This function is made to be able to read tag values in XML files (eg. <something>anything</something>).' ,
                 arguments={
                     "theXMLNode": """The xml node of which you need to know the value. """
                 },
-                result="""returns the value of the node as a string if it was received successfully, false otherwise. """,
-            ),
-            name='xmlNodeGetValue',
+                result='returns the value of the node as a string if it was received successfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1315,13 +1282,12 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is made to be able to read tag values in XML files (eg. <something>anything</something>). """,
+                description='This function is made to be able to read tag values in XML files (eg. <something>anything</something>).' ,
                 arguments={
                     "theXMLNode": """The xml node of which you need to know the value. """
                 },
-                result="""returns the value of the node as a string if it was received successfully, false otherwise. """,
-            ),
-            name='xmlNodeGetValue',
+                result='returns the value of the node as a string if it was received successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1379,15 +1345,14 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to edit an attribute of a node in a configuration file. """,
+                description='This function is used to edit an attribute of a node in a configuration file.' ,
                 arguments={
                     "node": """The node of which you wish to edit an attribute. """,
                     "name": """The name of the attribute. """,
                     "value": """The value which you wish to change the attribute to. (Note: nil will delete the attribute) """
                 },
-                result="""returns true if the attribute was set successfully, false if the node and/or attribute do not exist, or if theyre faulty. """,
-            ),
-            name='xmlNodeSetAttribute',
+                result='returns true if the attribute was set successfully, false if the node and/or attribute do not exist, or if theyre faulty.' ,
+            )
         )
         ],
         client=[
@@ -1443,15 +1408,14 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to edit an attribute of a node in a configuration file. """,
+                description='This function is used to edit an attribute of a node in a configuration file.' ,
                 arguments={
                     "node": """The node of which you wish to edit an attribute. """,
                     "name": """The name of the attribute. """,
                     "value": """The value which you wish to change the attribute to. (Note: nil will delete the attribute) """
                 },
-                result="""returns true if the attribute was set successfully, false if the node and/or attribute do not exist, or if theyre faulty. """,
-            ),
-            name='xmlNodeSetAttribute',
+                result='returns true if the attribute was set successfully, false if the node and/or attribute do not exist, or if theyre faulty.' ,
+            )
         )
         ],
     ),
@@ -1499,14 +1463,13 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the tag name of the specified XML node. """,
+                description='Sets the tag name of the specified XML node.' ,
                 arguments={
                     "node": """the node to change the tag name of. """,
                     "name": """the new tag name to set. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='xmlNodeSetName',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1552,14 +1515,13 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the tag name of the specified XML node. """,
+                description='Sets the tag name of the specified XML node.' ,
                 arguments={
                     "node": """the node to change the tag name of. """,
                     "name": """the new tag name to set. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='xmlNodeSetName',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1617,15 +1579,14 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is made to be able to assign values to tags in XML files (eg. <something>anything</something>). """,
+                description='This function is made to be able to assign values to tags in XML files (eg. <something>anything</something>).' ,
                 arguments={
                     "theXMLNode": """The xml node you want to set the value of. """,
                     "value": """The string value you want the node to have. """,
                     "setCDATA": """A boolean indicating if you want the value to be enclosed inside CDATA tags. """
                 },
-                result="""returns true if value was successfully set, false otherwise. """,
-            ),
-            name='xmlNodeSetValue',
+                result='returns true if value was successfully set, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1681,15 +1642,14 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is made to be able to assign values to tags in XML files (eg. <something>anything</something>). """,
+                description='This function is made to be able to assign values to tags in XML files (eg. <something>anything</something>).' ,
                 arguments={
                     "theXMLNode": """The xml node you want to set the value of. """,
                     "value": """The string value you want the node to have. """,
                     "setCDATA": """A boolean indicating if you want the value to be enclosed inside CDATA tags. """
                 },
-                result="""returns true if value was successfully set, false otherwise. """,
-            ),
-            name='xmlNodeSetValue',
+                result='returns true if value was successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1727,13 +1687,12 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function saves a loaded XML file. """,
+                description='This function saves a loaded XML file.' ,
                 arguments={
                     "rootNode": """the root xmlnode of the loaded XML file. """
                 },
-                result="""returns true if save was successful, false if the xml file does not exist. """,
-            ),
-            name='xmlSaveFile',
+                result='returns true if save was successful, false if the xml file does not exist.' ,
+            )
         )
         ],
         client=[
@@ -1769,13 +1728,12 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function saves a loaded XML file. """,
+                description='This function saves a loaded XML file.' ,
                 arguments={
                     "rootNode": """the root xmlnode of the loaded XML file. """
                 },
-                result="""returns true if save was successful, false if the xml file does not exist. """,
-            ),
-            name='xmlSaveFile',
+                result='returns true if save was successful, false if the xml file does not exist.' ,
+            )
         )
         ],
     ),
@@ -1813,13 +1771,12 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""Unloads an XML document from memory. """,
+                description='Unloads an XML document from memory.' ,
                 arguments={
                     "node": """root of the XML document to unload """
                 },
-                result="""returns true if the document was unloaded successfully, false otherwise. """,
-            ),
-            name='xmlUnloadFile',
+                result='returns true if the document was unloaded successfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1855,13 +1812,12 @@ print error if something wrong with xml.
                 ],
             ),
             docs=FunctionDoc(
-                description="""Unloads an XML document from memory. """,
+                description='Unloads an XML document from memory.' ,
                 arguments={
                     "node": """root of the XML document to unload """
                 },
-                result="""returns true if the document was unloaded successfully, false otherwise. """,
-            ),
-            name='xmlUnloadFile',
+                result='returns true if the document was unloaded successfully, false otherwise.' ,
+            )
         )
         ],
     )

@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -156,9 +156,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""* The direction of the light only has any effect if the light type is spot light.
-* One light will only apply illumination effects to Element/Ped|peds, Element/Player|players, wheels and number plates (like a emergency vehicle siren light does).
-* Two or more lights will apply illumination effects to everything (excluding objects) that is in range of, at least, two of them. """,
+                description='* The direction of the light only has any effect if the light type is spot light.\n* One light will only apply illumination effects to Element/Ped|peds, Element/Player|players, wheels and number plates (like a emergency vehicle siren light does).\n* Two or more lights will apply illumination effects to everything (excluding objects) that is in range of, at least, two of them.' ,
                 arguments={
                     "lightType": """An integer representing the type of light to create. """,
                     "posX": """A floating point number representing the X coordinate on the map. """,
@@ -173,9 +171,8 @@ DUMP_PARTIAL = [
                     "dirZ": """A floating point number representing the light directions Z coordinate on the map. """,
                     "createsShadow": """A boolean representing whether or not does the light cast shadows. """
                 },
-                result="""returns the element/light|light element if creation was successful, false otherwise. """,
-            ),
-            name='createLight',
+                result='returns the element/light|light element if creation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -224,13 +221,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the color for a Element/Light|light element. """,
+                description='This function returns the color for a Element/Light|light element.' ,
                 arguments={
                     "theLight": """The Element/Light|light that you wish to retrieve the color of. """
                 },
-                result="""returns three ints corresponding to the amount of red, green and blue (respectively) of the light, false if invalid arguments were passed. """,
-            ),
-            name='getLightColor',
+                result='returns three ints corresponding to the amount of red, green and blue (respectively) of the light, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -279,13 +275,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the direction for a Element/Light|light element. """,
+                description='This function returns the direction for a Element/Light|light element.' ,
                 arguments={
                     "theLight": """The Element/Light|light that you wish to retrieve the direction of. """
                 },
-                result="""returns three ints corresponding to the x, y and z coordinates (respectively) of the light direction, false if invalid arguments were passed. """,
-            ),
-            name='getLightDirection',
+                result='returns three ints corresponding to the x, y and z coordinates (respectively) of the light direction, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -326,13 +321,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the radius for a Element/Light|light element. """,
+                description='This function returns the radius for a Element/Light|light element.' ,
                 arguments={
                     "theLight": """The Element/Light|light that you wish to retrieve the radius of. """
                 },
-                result="""returns a float containing the radius of the specified light, false if invalid arguments were passed. """,
-            ),
-            name='getLightRadius',
+                result='returns a float containing the radius of the specified light, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -373,13 +367,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the type for a Element/Light|light element. """,
+                description='This function returns the type for a Element/Light|light element.' ,
                 arguments={
                     "theLight": """The Element/Light|light that you wish to retrieve the type of. """
                 },
-                result="""returns an int containing the type of the specified light, false if invalid arguments were passed. """,
-            ),
-            name='getLightType',
+                result='returns an int containing the type of the specified light, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -450,13 +443,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the color for a Element/Light|light element. """,
+                description='This function sets the color for a Element/Light|light element.' ,
                 arguments={
                     "theLight": """The Element/Light|light that you wish to set the color of. """
                 },
-                result="""returns true if the function was successful, false otherwise. """,
-            ),
-            name='setLightColor',
+                result='returns true if the function was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -527,13 +519,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the direction for a Element/Light|light element. """,
+                description='This function sets the direction for a Element/Light|light element.' ,
                 arguments={
                     "theLight": """The Element/Light|light that you wish to set the direction of. """
                 },
-                result="""returns true if the function was successful, false otherwise. """,
-            ),
-            name='setLightDirection',
+                result='returns true if the function was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -584,13 +575,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the radius for a Element/Light|light element. """,
+                description='This function sets the radius for a Element/Light|light element.' ,
                 arguments={
                     "theLight": """The Element/Light|light that you wish to set the radius of. """
                 },
-                result="""returns true if the function was successful, false otherwise. """,
-            ),
-            name='setLightRadius',
+                result='returns true if the function was successful, false otherwise.' ,
+            )
         )
         ],
     )

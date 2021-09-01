@@ -17,12 +17,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientPickupHit',
             docs=FunctionDoc(
-                description="""This event triggers whenever a pickup is hit clientside. """,
+                description='This event triggers whenever a pickup is hit clientside.' ,
                 arguments={
                     "thePlayer": """the player that hit the pickup """,
                     "matchingDimension": """true if thePlayer is in the same dimension as the pickup, false otherwise. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -60,12 +60,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientPickupLeave',
             docs=FunctionDoc(
-                description="""This event triggers whenever a pickup is left clientside. """,
+                description='This event triggers whenever a pickup is left clientside.' ,
                 arguments={
                     "thePlayer": """the player that left the pickup """,
                     "matchingDimension": """true if thePlayer is in the same dimension as the pickup, false otherwise. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -100,11 +100,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onPickupHit',
             docs=FunctionDoc(
-                description="""This event is triggered when a player hits a pickup. """,
+                description='This event is triggered when a player hits a pickup.' ,
                 arguments={
                     "thePlayer": """: a player element referring to the player who moved over the pickup. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -132,11 +132,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onPickupLeave',
             docs=FunctionDoc(
-                description="""This event is triggered when a player leaves a pickup. """,
+                description='This event is triggered when a player leaves a pickup.' ,
                 arguments={
                     "thePlayer": """: a player element referring to the player who left the pickup. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -164,11 +164,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onPickupSpawn',
             docs=FunctionDoc(
-                description="""This event is triggered when a pickup is spawned or respawned. """,
+                description='This event is triggered when a pickup is spawned or respawned.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -187,11 +187,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onPickupUse',
             docs=FunctionDoc(
-                description="""This event is triggered when a player stands on a pickup while not in a vehicle. """,
+                description='This event is triggered when a player stands on a pickup while not in a vehicle.' ,
                 arguments={
                     "playerWhoUsed": """: a player element referring to the player who used the pickup. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[

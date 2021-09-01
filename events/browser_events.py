@@ -17,11 +17,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientBrowserCreated',
             docs=FunctionDoc(
-                description="""This event is triggered when the CEF browser instance has been created. If you want to load a specific website right after creating the browser (using createBrowser or guiCreateBrowser), this event will be the convenient place. """,
+                description='This event is triggered when the CEF browser instance has been created. If you want to load a specific website right after creating the browser (using createBrowser or guiCreateBrowser), this event will be the convenient place.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -40,11 +40,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientBrowserCursorChange',
             docs=FunctionDoc(
-                description="""This event is triggered when the cursor changes within a browser window. """,
+                description='This event is triggered when the cursor changes within a browser window.' ,
                 arguments={
                     "cursorId": """The new cursor ID. See #Cursor IDs|Cursor IDs. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -72,11 +72,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientBrowserDocumentReady',
             docs=FunctionDoc(
-                description="""This event is executed after the web page has been loaded successfully. """,
+                description='This event is executed after the web page has been loaded successfully.' ,
                 arguments={
                     "url": """the url of the web page loaded. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -104,11 +104,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientBrowserInputFocusChanged',
             docs=FunctionDoc(
-                description="""This event is triggered when the input focus inside a browser has changed. """,
+                description='This event is triggered when the input focus inside a browser has changed.' ,
                 arguments={
                     "gainedFocus": """: true if an input field has been focused, false if it has lost focus. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -136,13 +136,13 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientBrowserLoadingFailed',
             docs=FunctionDoc(
-                description="""The event is triggered when the browser can not load the page. """,
+                description='The event is triggered when the browser can not load the page.' ,
                 arguments={
                     "url": """the requested URL. """,
                     "errorCode": """see #Error_codes|error codes below. """,
                     "errorDescription": """a short description. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -190,14 +190,14 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientBrowserLoadingStart',
             docs=FunctionDoc(
-                description="""The event is triggered when a Browser|webbrowser starts loading a page. """,
+                description='The event is triggered when a Browser|webbrowser starts loading a page.' ,
                 arguments={
                     "URL": """string containing the URL that will be loaded.
 * {{New feature/item|3.0160|1.6|7888|'''isMainFrame:''' a [[boolean]] representing whether the entire page (main frame) was loaded or an ''<iframe>'' inside the page was loaded. """,
                     "true": """: If the URL is loaded in the main frame. """,
                     "false": """: If the URL is loaded in a <iframe>.}} """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -235,14 +235,14 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientBrowserNavigate',
             docs=FunctionDoc(
-                description="""The event is executed when the browser loads a new page. Do not use loadBrowserURL in the attached function. """,
+                description='The event is executed when the browser loads a new page. Do not use loadBrowserURL in the attached function.' ,
                 arguments={
                     "targetURL": """the page the browser loaded. """,
                     "isBlocked": """if the browser was created with isLocal set to true, and the browser tried to load a remote page, this would be set to true (and vice-versa). """,
                     "isMainFrame": """a boolean representing whether the entire page (main frame) was loaded or an <iframe> inside the page was loaded.
 |7888}} """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -290,13 +290,13 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientBrowserPopup',
             docs=FunctionDoc(
-                description="""TODO """,
+                description='TODO' ,
                 arguments={
                     "targetURL": """ """,
                     "openerURL": """ """,
                     "isPopup": """ """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -344,7 +344,7 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientBrowserResourceBlocked',
             docs=FunctionDoc(
-                description="""This event is executed when a resource (images, sounds etc.) has been blocked. """,
+                description='This event is executed when a resource (images, sounds etc.) has been blocked.' ,
                 arguments={
                     "url": """: the blocked URL. """,
                     "domain": """: the blocked domain (part of the URL). """,
@@ -353,7 +353,7 @@ DUMP_PARTIAL = [
                     "1": """: blacklisted """,
                     "2": """: blocked protocol scheme """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -401,11 +401,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientBrowserTooltip',
             docs=FunctionDoc(
-                description="""The event is triggered when the user hovers a tooltip. """,
+                description='The event is triggered when the user hovers a tooltip.' ,
                 arguments={
                     "text": """string containing the tooltip text. Empty string if user is not longer hovering. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -433,11 +433,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientBrowserWhitelistChange',
             docs=FunctionDoc(
-                description="""The event is triggered when the whitelist has changed. Note that this event is only triggered if the request window was confirmed by accepting. """,
+                description='The event is triggered when the whitelist has changed. Note that this event is only triggered if the request window was confirmed by accepting.' ,
                 arguments={
                     "changedDomains": """a table of changed domains. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[

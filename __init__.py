@@ -98,6 +98,105 @@ DUMP_FUNCTIONS = [
 ]
 
 
+from to_python.dump.oops.account_functions import DUMP_PARTIAL as DP_O_ACCOUNT_FUNCTIONS
+from to_python.dump.oops.acl_functions import DUMP_PARTIAL as DP_O_ACL_FUNCTIONS
+from to_python.dump.oops.admin_functions import DUMP_PARTIAL as DP_O_ADMIN_FUNCTIONS
+from to_python.dump.oops.announcement_functions import DUMP_PARTIAL as DP_O_ANNOUNCEMENT_FUNCTIONS
+from to_python.dump.oops.audio_functions import DUMP_PARTIAL as DP_O_AUDIO_FUNCTIONS
+from to_python.dump.oops.blip_functions import DUMP_PARTIAL as DP_O_BLIP_FUNCTIONS
+from to_python.dump.oops.browser_functions import DUMP_PARTIAL as DP_O_BROWSER_FUNCTIONS
+from to_python.dump.oops.camera_functions import DUMP_PARTIAL as DP_O_CAMERA_FUNCTIONS
+from to_python.dump.oops.clothes_and_body_functions import DUMP_PARTIAL as DP_O_CLOTHES_AND_BODY_FUNCTIONS
+from to_python.dump.oops.collision_shape_functions import DUMP_PARTIAL as DP_O_COLLISION_SHAPE_FUNCTIONS
+from to_python.dump.oops.cursor_functions import DUMP_PARTIAL as DP_O_CURSOR_FUNCTIONS
+from to_python.dump.oops.drawing_functions import DUMP_PARTIAL as DP_O_DRAWING_FUNCTIONS
+from to_python.dump.oops.effects_functions import DUMP_PARTIAL as DP_O_EFFECTS_FUNCTIONS
+from to_python.dump.oops.element_functions import DUMP_PARTIAL as DP_O_ELEMENT_FUNCTIONS
+from to_python.dump.oops.engine_functions import DUMP_PARTIAL as DP_O_ENGINE_FUNCTIONS
+from to_python.dump.oops.event_functions import DUMP_PARTIAL as DP_O_EVENT_FUNCTIONS
+from to_python.dump.oops.explosion_functions import DUMP_PARTIAL as DP_O_EXPLOSION_FUNCTIONS
+from to_python.dump.oops.file_functions import DUMP_PARTIAL as DP_O_FILE_FUNCTIONS
+from to_python.dump.oops.fire_functions import DUMP_PARTIAL as DP_O_FIRE_FUNCTIONS
+from to_python.dump.oops.gui_functions import DUMP_PARTIAL as DP_O_GUI_FUNCTIONS
+from to_python.dump.oops.input_functions import DUMP_PARTIAL as DP_O_INPUT_FUNCTIONS
+from to_python.dump.oops.light_functions import DUMP_PARTIAL as DP_O_LIGHT_FUNCTIONS
+from to_python.dump.oops.map_functions import DUMP_PARTIAL as DP_O_MAP_FUNCTIONS
+from to_python.dump.oops.marker_functions import DUMP_PARTIAL as DP_O_MARKER_FUNCTIONS
+from to_python.dump.oops.module_functions import DUMP_PARTIAL as DP_O_MODULE_FUNCTIONS
+from to_python.dump.oops.object_functions import DUMP_PARTIAL as DP_O_OBJECT_FUNCTIONS
+from to_python.dump.oops.output_functions import DUMP_PARTIAL as DP_O_OUTPUT_FUNCTIONS
+from to_python.dump.oops.ped_functions import DUMP_PARTIAL as DP_O_PED_FUNCTIONS
+from to_python.dump.oops.pickup_functions import DUMP_PARTIAL as DP_O_PICKUP_FUNCTIONS
+from to_python.dump.oops.player_functions import DUMP_PARTIAL as DP_O_PLAYER_FUNCTIONS
+from to_python.dump.oops.projectile_functions import DUMP_PARTIAL as DP_O_PROJECTILE_FUNCTIONS
+from to_python.dump.oops.radar_area_functions import DUMP_PARTIAL as DP_O_RADAR_AREA_FUNCTIONS
+from to_python.dump.oops.resource_functions import DUMP_PARTIAL as DP_O_RESOURCE_FUNCTIONS
+from to_python.dump.oops.searchlight_functions import DUMP_PARTIAL as DP_O_SEARCHLIGHT_FUNCTIONS
+from to_python.dump.oops.server_functions import DUMP_PARTIAL as DP_O_SERVER_FUNCTIONS
+from to_python.dump.oops.settings_registry_functions import DUMP_PARTIAL as DP_O_SETTINGS_REGISTRY_FUNCTIONS
+from to_python.dump.oops.sql_functions import DUMP_PARTIAL as DP_O_SQL_FUNCTIONS
+from to_python.dump.oops.team_functions import DUMP_PARTIAL as DP_O_TEAM_FUNCTIONS
+from to_python.dump.oops.text_functions import DUMP_PARTIAL as DP_O_TEXT_FUNCTIONS
+from to_python.dump.oops.utf8_library import DUMP_PARTIAL as DP_O_UTF8_LIBRARY
+from to_python.dump.oops.utility_functions import DUMP_PARTIAL as DP_O_UTILITY_FUNCTIONS
+from to_python.dump.oops.vehicle_functions import DUMP_PARTIAL as DP_O_VEHICLE_FUNCTIONS
+from to_python.dump.oops.water_functions import DUMP_PARTIAL as DP_O_WATER_FUNCTIONS
+from to_python.dump.oops.weapon_creation_functions import DUMP_PARTIAL as DP_O_WEAPON_CREATION_FUNCTIONS
+from to_python.dump.oops.weapon_functions import DUMP_PARTIAL as DP_O_WEAPON_FUNCTIONS
+from to_python.dump.oops.world_functions import DUMP_PARTIAL as DP_O_WORLD_FUNCTIONS
+from to_python.dump.oops.xml_functions import DUMP_PARTIAL as DP_O_XML_FUNCTIONS
+
+DUMP_OOPS = [
+    *DP_O_ACCOUNT_FUNCTIONS,
+    *DP_O_ACL_FUNCTIONS,
+    *DP_O_ADMIN_FUNCTIONS,
+    *DP_O_ANNOUNCEMENT_FUNCTIONS,
+    *DP_O_AUDIO_FUNCTIONS,
+    *DP_O_BLIP_FUNCTIONS,
+    *DP_O_BROWSER_FUNCTIONS,
+    *DP_O_CAMERA_FUNCTIONS,
+    *DP_O_CLOTHES_AND_BODY_FUNCTIONS,
+    *DP_O_COLLISION_SHAPE_FUNCTIONS,
+    *DP_O_CURSOR_FUNCTIONS,
+    *DP_O_DRAWING_FUNCTIONS,
+    *DP_O_EFFECTS_FUNCTIONS,
+    *DP_O_ELEMENT_FUNCTIONS,
+    *DP_O_ENGINE_FUNCTIONS,
+    *DP_O_EVENT_FUNCTIONS,
+    *DP_O_EXPLOSION_FUNCTIONS,
+    *DP_O_FILE_FUNCTIONS,
+    *DP_O_FIRE_FUNCTIONS,
+    *DP_O_GUI_FUNCTIONS,
+    *DP_O_INPUT_FUNCTIONS,
+    *DP_O_LIGHT_FUNCTIONS,
+    *DP_O_MAP_FUNCTIONS,
+    *DP_O_MARKER_FUNCTIONS,
+    *DP_O_MODULE_FUNCTIONS,
+    *DP_O_OBJECT_FUNCTIONS,
+    *DP_O_OUTPUT_FUNCTIONS,
+    *DP_O_PED_FUNCTIONS,
+    *DP_O_PICKUP_FUNCTIONS,
+    *DP_O_PLAYER_FUNCTIONS,
+    *DP_O_PROJECTILE_FUNCTIONS,
+    *DP_O_RADAR_AREA_FUNCTIONS,
+    *DP_O_RESOURCE_FUNCTIONS,
+    *DP_O_SEARCHLIGHT_FUNCTIONS,
+    *DP_O_SERVER_FUNCTIONS,
+    *DP_O_SETTINGS_REGISTRY_FUNCTIONS,
+    *DP_O_SQL_FUNCTIONS,
+    *DP_O_TEAM_FUNCTIONS,
+    *DP_O_TEXT_FUNCTIONS,
+    *DP_O_UTF8_LIBRARY,
+    *DP_O_UTILITY_FUNCTIONS,
+    *DP_O_VEHICLE_FUNCTIONS,
+    *DP_O_WATER_FUNCTIONS,
+    *DP_O_WEAPON_CREATION_FUNCTIONS,
+    *DP_O_WEAPON_FUNCTIONS,
+    *DP_O_WORLD_FUNCTIONS,
+    *DP_O_XML_FUNCTIONS
+]
+
+
 from to_python.dump.events.account_events import DUMP_PARTIAL as DP_E_ACCOUNT_EVENTS
 from to_python.dump.events.browser_events import DUMP_PARTIAL as DP_E_BROWSER_EVENTS
 from to_python.dump.events.client_events import DUMP_PARTIAL as DP_E_CLIENT_EVENTS

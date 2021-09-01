@@ -14,13 +14,13 @@ DUMP_PARTIAL = [
             EventData(
             name='onAccountDataChange',
             docs=FunctionDoc(
-                description="""This event is triggered when an accounts data changes through setAccountData. """,
+                description='This event is triggered when an accounts data changes through setAccountData.' ,
                 arguments={
                     "theAccount": """: the account that had data changed. """,
                     "theKey": """: the string key that is being changed. """,
                     "theValue": """: the value it is changing to. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[

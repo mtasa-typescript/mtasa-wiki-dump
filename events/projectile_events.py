@@ -17,11 +17,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientProjectileCreation',
             docs=FunctionDoc(
-                description="""This event is triggered when a projectile is created. """,
+                description='This event is triggered when a projectile is created.' ,
                 arguments={
                     "creator": """the element that created the projectile. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[

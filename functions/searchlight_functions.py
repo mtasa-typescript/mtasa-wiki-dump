@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -126,7 +126,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "startX": """: the X coordinate where the searchlight light cone will start. """,
                     "startY": """: the Y coordinate where the searchlight light cone will start. """,
@@ -138,9 +138,8 @@ DUMP_PARTIAL = [
                     "endRadius": """: the radius of the searchlights light cone in its end. """,
                     "renderSpot": """: if true, the searchlight will lighten the surface where it ends. """
                 },
-                result="""if every argument is correct and the limit of 1000 searchlights has not been reached, this function returns a element/searchlight|searchlight element. otherwise, it returns false. """,
-            ),
-            name='createSearchLight',
+                result='if every argument is correct and the limit of 1000 searchlights has not been reached, this function returns a element/searchlight|searchlight element. otherwise, it returns false.' ,
+            )
         )
         ],
     ),
@@ -189,13 +188,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the end position of a Element/Searchlight|searchlight element. """,
+                description='This function gets the end position of a Element/Searchlight|searchlight element.' ,
                 arguments={
                     "theSearchLight": """: the searchlight to get the position where the searchlights light cone ends. """
                 },
-                result="""if the specified searchlight element is valid, this function will return three float, which are the three coordinates of searchlights end position. if not, it will return false plus an error message. """,
-            ),
-            name='getSearchLightEndPosition',
+                result='if the specified searchlight element is valid, this function will return three float, which are the three coordinates of searchlights end position. if not, it will return false plus an error message.' ,
+            )
         )
         ],
     ),
@@ -236,13 +234,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the end radius of a Element/Searchlight|searchlight element. """,
+                description='This function gets the end radius of a Element/Searchlight|searchlight element.' ,
                 arguments={
                     "theSearchLight": """: the searchlight to get the radius of the searchlights light cone in its end. """
                 },
-                result="""if the specified searchlight element is valid, this function will return one float, which is the searchlights end radius. if not, it will return false plus an error message. """,
-            ),
-            name='getSearchLightEndRadius',
+                result='if the specified searchlight element is valid, this function will return one float, which is the searchlights end radius. if not, it will return false plus an error message.' ,
+            )
         )
         ],
     ),
@@ -291,13 +288,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the start position of a Element/Searchlight|searchlight element. """,
+                description='This function gets the start position of a Element/Searchlight|searchlight element.' ,
                 arguments={
                     "theSearchLight": """: the searchlight to get the position where the searchlights light cone starts. """
                 },
-                result="""if the specified searchlight element is valid, this function will return three float, which are the three coordinates of searchlights start position. if not, it will return false plus an error message. """,
-            ),
-            name='getSearchLightStartPosition',
+                result='if the specified searchlight element is valid, this function will return three float, which are the three coordinates of searchlights start position. if not, it will return false plus an error message.' ,
+            )
         )
         ],
     ),
@@ -338,13 +334,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the start radius of a Element/Searchlight|searchlight element. """,
+                description='This function gets the start radius of a Element/Searchlight|searchlight element.' ,
                 arguments={
                     "theSearchLight": """: the searchlight to get the radius of the searchlights light cone in its beginning. """
                 },
-                result="""if the specified searchlight element is valid, this function will return one float, which is the searchlights start radius. if not, it will return false plus an error message. """,
-            ),
-            name='getSearchLightStartRadius',
+                result='if the specified searchlight element is valid, this function will return one float, which is the searchlights start radius. if not, it will return false plus an error message.' ,
+            )
         )
         ],
     ),
@@ -415,16 +410,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theSearchLight": """: the searchlight to modify the property of. """,
                     "endX": """: the X coordinate where the searchlight light cone will end. """,
                     "endY": """: the Y coordinate where the searchlight light cone will end. """,
                     "endZ": """: the Z coordinate where the searchlight light cone will end. """
                 },
-                result="""if every argument is correct, this function returns true. if not, it will return false plus an error message. """,
-            ),
-            name='setSearchLightEndPosition',
+                result='if every argument is correct, this function returns true. if not, it will return false plus an error message.' ,
+            )
         )
         ],
     ),
@@ -475,14 +469,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the end radius of a Element/Searchlight|searchlight element. """,
+                description='This function sets the end radius of a Element/Searchlight|searchlight element.' ,
                 arguments={
                     "theSearchLight": """: the searchlight to modify the property of. """,
                     "endRadius": """: the radius of the searchlights light cone in its end. """
                 },
-                result="""if every argument is correct, this function returns true. if not, it will return false plus an error message. """,
-            ),
-            name='setSearchLightEndRadius',
+                result='if every argument is correct, this function returns true. if not, it will return false plus an error message.' ,
+            )
         )
         ],
     ),
@@ -553,16 +546,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the start position of a Element/Searchlight|searchlight element. """,
+                description='This function sets the start position of a Element/Searchlight|searchlight element.' ,
                 arguments={
                     "theSearchLight": """: the searchlight to modify the property of. """,
                     "startX": """: the X coordinate where the searchlight light cone will start. """,
                     "startY": """: the Y coordinate where the searchlight light cone will start. """,
                     "startZ": """: the Z coordinate where the searchlight light cone will start. """
                 },
-                result="""if every argument is correct, this function returns true. if not, it will return false plus an error message. """,
-            ),
-            name='setSearchLightStartPosition',
+                result='if every argument is correct, this function returns true. if not, it will return false plus an error message.' ,
+            )
         )
         ],
     ),
@@ -613,14 +605,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the start radius of a Element/Searchlight|searchlight element. """,
+                description='This function sets the start radius of a Element/Searchlight|searchlight element.' ,
                 arguments={
                     "theSearchLight": """: the searchlight to modify the property of. """,
                     "startRadius": """: the radius of the searchlights light cone in its beginning. """
                 },
-                result="""if every argument is correct, this function returns true. if not, it will return false plus an error message. """,
-            ),
-            name='setSearchLightStartRadius',
+                result='if every argument is correct, this function returns true. if not, it will return false plus an error message.' ,
+            )
         )
         ],
     )

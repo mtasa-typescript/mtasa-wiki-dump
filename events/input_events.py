@@ -17,11 +17,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientCharacter',
             docs=FunctionDoc(
-                description="""This event triggers whenever the user presses an alphanumeric character on their keyboard. This also includes special characters, ie.  / # %   { }. """,
+                description='This event triggers whenever the user presses an alphanumeric character on their keyboard. This also includes special characters, ie.  / # %   { }.' ,
                 arguments={
                     "character": """: a string representing the pressed character. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -49,7 +49,7 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientClick',
             docs=FunctionDoc(
-                description="""This event triggers whenever the user clicks his mouse.  This is linked to the GTA world, as oppose to GUI for which onClientGUIClick is to be used.  This event allows detection of click positions of the 3D world. """,
+                description='This event triggers whenever the user clicks his mouse.  This is linked to the GTA world, as oppose to GUI for which onClientGUIClick is to be used.  This event allows detection of click positions of the 3D world.' ,
                 arguments={
                     "button": """:  This refers the button used to click on the mouse, can be left, right, or middle. """,
                     "state": """: This can be used to tell if the user released or pressed the mouse button, where up is passed if the button is released, and down is passed if the button is pushed. """,
@@ -60,7 +60,7 @@ DUMP_PARTIAL = [
                     "worldZ": """: This represents the 3D z coordinate the player clicked on the screen, and is relative to the GTA world. """,
                     "clickedWorld": """: This represents any physical entity elements that were clicked. If the player clicked on no MTA element, its set to false. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -158,8 +158,7 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientCursorMove',
             docs=FunctionDoc(
-                description="""This event is called by the root element whenever the cursor is moved over the screen, by the player. It returns information about the world coordinates as well as the screen coordinates of where the player moved the cursor.
-The difference between this event and onClientMouseMove, is that the latter is actually called by GUI elements. This is to prevent double calling of onClientCursorMove, as onClientCursorMove is always called. """,
+                description='This event is called by the root element whenever the cursor is moved over the screen, by the player. It returns information about the world coordinates as well as the screen coordinates of where the player moved the cursor.\nThe difference between this event and onClientMouseMove, is that the latter is actually called by GUI elements. This is to prevent double calling of onClientCursorMove, as onClientCursorMove is always called.' ,
                 arguments={
                     "cursorX": """the relative X coordinate of the mouse cursor. 0 = left side of the screen, 1 = right side. """,
                     "cursorY": """the relative Y coordinate of the mouse cursor. 0 = top of the screen, 1 = bottom. """,
@@ -167,7 +166,7 @@ The difference between this event and onClientMouseMove, is that the latter is a
                     "absoluteY": """the Y coordinate of the mouse cursor, in pixels, measured from the top of the screen. """,
                     "worldX, worldY, worldZ": """the 3D in-game world coordinates that the cursor is pointing at. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -255,7 +254,7 @@ The difference between this event and onClientMouseMove, is that the latter is a
             EventData(
             name='onClientDoubleClick',
             docs=FunctionDoc(
-                description="""This event triggers whenever the user double-clicks his mouse.  This is linked to the GTA world, as appose to GUI for which onClientGUIDoubleClick is to be used.  This event allows detection of click positions of the 3D world. """,
+                description='This event triggers whenever the user double-clicks his mouse.  This is linked to the GTA world, as appose to GUI for which onClientGUIDoubleClick is to be used.  This event allows detection of click positions of the 3D world.' ,
                 arguments={
                     "button": """:  This refers the button used to click on the mouse, can be left, right, or middle. """,
                     "absoluteX": """: This refers to the 2D x coordinate the user clicked on his screen, and is an absolute position in pixels. """,
@@ -265,7 +264,7 @@ The difference between this event and onClientMouseMove, is that the latter is a
                     "worldZ": """: This represents the 3D z coordinate the player clicked on the screen, and is relative to the GTA world. """,
                     "clickedWorld": """: This represents any physical entity elements that were clicked. If the player clicked on no MTA element, its set to false. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -353,11 +352,11 @@ The difference between this event and onClientMouseMove, is that the latter is a
             EventData(
             name='onClientGUIAccepted',
             docs=FunctionDoc(
-                description="""This event is triggered when enter is pressed on an editbox. """,
+                description='This event is triggered when enter is pressed on an editbox.' ,
                 arguments={
                     "editBox": """: the Element/GUI/Edit_field|editbox which had focus. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -385,11 +384,11 @@ The difference between this event and onClientMouseMove, is that the latter is a
             EventData(
             name='onClientGUIBlur',
             docs=FunctionDoc(
-                description="""This event is triggered each time a GUI element looses input focus (mainly useful for windows, editboxes and memos but triggered for all GUI elements nevertheless). """,
+                description='This event is triggered each time a GUI element looses input focus (mainly useful for windows, editboxes and memos but triggered for all GUI elements nevertheless).' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -408,11 +407,11 @@ The difference between this event and onClientMouseMove, is that the latter is a
             EventData(
             name='onClientGUIChanged',
             docs=FunctionDoc(
-                description="""This event is fired when a Element/GUI/Memo|memo or an Element/GUI/Edit_field|editbox has changed (either by the user or by guiSetText). """,
+                description='This event is fired when a Element/GUI/Memo|memo or an Element/GUI/Edit_field|editbox has changed (either by the user or by guiSetText).' ,
                 arguments={
                     "theElement": """: The GUI element which was changed. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -440,14 +439,14 @@ The difference between this event and onClientMouseMove, is that the latter is a
             EventData(
             name='onClientGUIClick',
             docs=FunctionDoc(
-                description="""This event happens when any gui-element clicked. """,
+                description='This event happens when any gui-element clicked.' ,
                 arguments={
                     "button": """the name of the button which will be clicked, it can be left, right, middle. """,
                     "state": """the state of the mouse button, will be down if the mouse button was pushed, or up if it was released. Please note currently only the up state is supported. """,
                     "absoluteX": """the X position of the mouse cursor, in pixels, measured from the left side of the screen. """,
                     "absoluteY": """the Y position of the mouse cursor, in pixels, measured from the top of the screen. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -505,11 +504,11 @@ The difference between this event and onClientMouseMove, is that the latter is a
             EventData(
             name='onClientGUIComboBoxAccepted',
             docs=FunctionDoc(
-                description="""This event is called when a Element/GUI/Combobox|combobox gets accepted. """,
+                description='This event is called when a Element/GUI/Combobox|combobox gets accepted.' ,
                 arguments={
                     "theElement": """the Element/GUI/Combobox|combobox that got accepted. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -537,14 +536,14 @@ The difference between this event and onClientMouseMove, is that the latter is a
             EventData(
             name='onClientGUIDoubleClick',
             docs=FunctionDoc(
-                description="""This event is fired when the user double clicks a GUI element. Doesnt work with buttons. """,
+                description='This event is fired when the user double clicks a GUI element. Doesnt work with buttons.' ,
                 arguments={
                     "button": """the name of the mouse button that the GUI element was double clicked with. """,
                     "state": """the state of the mouse button. Can be down or up. """,
                     "absoluteX": """the X position of the mouse cursor, in pixels, measured from the left side of the screen. """,
                     "absoluteY": """the Y position of the mouse cursor, in pixels, measured from the top of the screen. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -602,11 +601,11 @@ The difference between this event and onClientMouseMove, is that the latter is a
             EventData(
             name='onClientGUIFocus',
             docs=FunctionDoc(
-                description="""This event is triggered each time a GUI element gains input focus (mainly useful for windows, editboxes and memos but triggered for all GUI elements nevertheless). """,
+                description='This event is triggered each time a GUI element gains input focus (mainly useful for windows, editboxes and memos but triggered for all GUI elements nevertheless).' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -625,13 +624,13 @@ The difference between this event and onClientMouseMove, is that the latter is a
             EventData(
             name='onClientGUIMouseDown',
             docs=FunctionDoc(
-                description="""This event is fired when the user clicks certain mouse button on a GUI element. """,
+                description='This event is fired when the user clicks certain mouse button on a GUI element.' ,
                 arguments={
                     "button": """the name of the mouse button that the GUI element was clicked with, can be left, right, or middle. """,
                     "absoluteX": """the X position of the mouse cursor, in pixels, measured from the left side of the screen. """,
                     "absoluteY": """the Y position of the mouse cursor, in pixels, measured from the top of the screen. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -679,13 +678,13 @@ The difference between this event and onClientMouseMove, is that the latter is a
             EventData(
             name='onClientGUIMouseUp',
             docs=FunctionDoc(
-                description="""This event is fired when the user releases his mouse button when on top of a GUI element. """,
+                description='This event is fired when the user releases his mouse button when on top of a GUI element.' ,
                 arguments={
                     "button": """the name of the mouse button that was released on a GUI element, can be left, right, or middle. """,
                     "absoluteX": """the X position of the mouse cursor, in pixels, measured from the left side of the screen. """,
                     "absoluteY": """the Y position of the mouse cursor, in pixels, measured from the top of the screen. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -733,11 +732,11 @@ The difference between this event and onClientMouseMove, is that the latter is a
             EventData(
             name='onClientGUIMove',
             docs=FunctionDoc(
-                description="""This event is triggered each time the user moves a GUI element. """,
+                description='This event is triggered each time the user moves a GUI element.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -756,11 +755,11 @@ The difference between this event and onClientMouseMove, is that the latter is a
             EventData(
             name='onClientGUIScroll',
             docs=FunctionDoc(
-                description="""This event is fired when a GUI scrollbar is scrolled. """,
+                description='This event is fired when a GUI scrollbar is scrolled.' ,
                 arguments={
                     "scrolled": """:  the Element/GUI/Scrollbar|scrollbar element that was scrolled. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -788,11 +787,11 @@ The difference between this event and onClientMouseMove, is that the latter is a
             EventData(
             name='onClientGUISize',
             docs=FunctionDoc(
-                description="""This event is triggered when the local client resizes a GUI element. """,
+                description='This event is triggered when the local client resizes a GUI element.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -811,12 +810,11 @@ The difference between this event and onClientMouseMove, is that the latter is a
             EventData(
             name='onClientGUITabSwitched',
             docs=FunctionDoc(
-                description="""This event is triggered each time the user switch from GUI tab.
-When adding the event handler on the tab panel, propagate must be true. """,
+                description='This event is triggered each time the user switch from GUI tab.\nWhen adding the event handler on the tab panel, propagate must be true.' ,
                 arguments={
                     "theElement": """: the Element/GUI/Tab|tab which was selected. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -844,13 +842,12 @@ When adding the event handler on the tab panel, propagate must be true. """,
             EventData(
             name='onClientKey',
             docs=FunctionDoc(
-                description="""This event triggers whenever the user presses a button on their keyboard or mouse.
-This event can also be used to see if the client scrolls their mouse wheel. """,
+                description='This event triggers whenever the user presses a button on their keyboard or mouse.\nThis event can also be used to see if the client scrolls their mouse wheel.' ,
                 arguments={
                     "button": """:  This refers the button pressed. See key names for a list of keys. """,
                     "pressOrRelease": """: This refers to whether they were pressing or releasing the key, true when pressing, false when releasing. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -888,13 +885,13 @@ This event can also be used to see if the client scrolls their mouse wheel. """,
             EventData(
             name='onClientMouseEnter',
             docs=FunctionDoc(
-                description="""This event is fired when the user moves the mouse over a GUI element. """,
+                description='This event is fired when the user moves the mouse over a GUI element.' ,
                 arguments={
                     "absoluteX": """:  the X position of the mouse cursor, in pixels, measured from the left side of the screen. """,
                     "absoluteY": """:  the Y position of the mouse cursor, in pixels, measured from the top of the screen. """,
                     "leftGUI": """: the gui element that was switched from, or nil if it doesnt exist. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -942,13 +939,13 @@ This event can also be used to see if the client scrolls their mouse wheel. """,
             EventData(
             name='onClientMouseLeave',
             docs=FunctionDoc(
-                description="""This event is fired when the user moves the mouse away from a GUI element. """,
+                description='This event is fired when the user moves the mouse away from a GUI element.' ,
                 arguments={
                     "absoluteX": """:  the X position of the mouse cursor, in pixels, measured from the left side of the screen. """,
                     "absoluteY": """:  the Y position of the mouse cursor, in pixels, measured from the top of the screen. """,
                     "enteredGUI": """: is the GUI element that was switched from, or nil if it doesnt exist. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -996,12 +993,12 @@ This event can also be used to see if the client scrolls their mouse wheel. """,
             EventData(
             name='onClientMouseMove',
             docs=FunctionDoc(
-                description="""This event is triggered each time the user moves the mouse on top of a GUI element. """,
+                description='This event is triggered each time the user moves the mouse on top of a GUI element.' ,
                 arguments={
                     "absoluteX": """:  the X position of the mouse cursor, in pixels, measured from the left side of the screen. """,
                     "absoluteY": """:  the Y position of the mouse cursor, in pixels, measured from the top of the screen. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1039,11 +1036,11 @@ This event can also be used to see if the client scrolls their mouse wheel. """,
             EventData(
             name='onClientMouseWheel',
             docs=FunctionDoc(
-                description="""This event is triggered each time the user scrolls his mouse scroll on top of a GUI element. """,
+                description='This event is triggered each time the user scrolls his mouse scroll on top of a GUI element.' ,
                 arguments={
                     "upOrDown": """: An int|integer representing whether the scroll was scrolled up or down. This can be either 1 (mouse was scrolled up) or -1 (mouse was scrolled down). """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -1071,11 +1068,11 @@ This event can also be used to see if the client scrolls their mouse wheel. """,
             EventData(
             name='onClientPaste',
             docs=FunctionDoc(
-                description="""This event triggers when user paste whatever (CTRL + V). This event isnt triggered if menu or console is visible or if any browser is focused, or if cursor is invisible. """,
+                description='This event triggers when user paste whatever (CTRL + V). This event isnt triggered if menu or console is visible or if any browser is focused, or if cursor is invisible.' ,
                 arguments={
                     "clipboardText": """: a string representing the pasted value from clipboard. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[

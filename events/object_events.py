@@ -17,11 +17,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientObjectBreak',
             docs=FunctionDoc(
-                description="""This event is fired before an object breaks. """,
+                description='This event is fired before an object breaks.' ,
                 arguments={
                     "attacker": """the vehicle/ped/player who is breaking the object """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -49,12 +49,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientObjectDamage',
             docs=FunctionDoc(
-                description="""This event is fired before an object gets damaged. """,
+                description='This event is fired before an object gets damaged.' ,
                 arguments={
                     "loss": """the health loss caused by the damage. This parameter contains the theoretical loss, which could be less than 0, if you substract it of the current health. If you want to get the real loss, you have to substract the new health of the old health (use a timer for this). """,
                     "attacker": """the vehicle/ped/player who is damaging the object. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -92,11 +92,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientObjectMoveStart',
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -115,11 +115,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientObjectMoveStop',
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[

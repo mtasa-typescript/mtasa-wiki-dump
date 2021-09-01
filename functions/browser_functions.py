@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -46,13 +46,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the browser can return to the previous page. """,
+                description='This function checks if the browser can return to the previous page.' ,
                 arguments={
                     "webBrowser": """The browser you want to check for a previous page. """
                 },
-                result="""returns true if the browser can navigate back, false otherwise. """,
-            ),
-            name='canBrowserNavigateBack',
+                result='returns true if the browser can navigate back, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -93,13 +92,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the browser can go to the next page. """,
+                description='This function checks if the browser can go to the next page.' ,
                 arguments={
                     "webBrowser": """The browser you want check for a next page. """
                 },
-                result="""returns true if the browser can go to the next page, false otherwise. """,
-            ),
-            name='canBrowserNavigateForward',
+                result='returns true if the browser can go to the next page, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -170,16 +168,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a new web Element/Browser|browser element. """,
+                description='This function creates a new web Element/Browser|browser element.' ,
                 arguments={
                     "width": """The browsers native width. This should be greater than or equal to 1. """,
                     "height": """The browsers native height. This should be greater than or equal to 1. """,
                     "isLocal": """Sets whether the browser can only show local content or content from the internet (see examples for more information) """,
                     "transparent": """true if you want the browser transparent, false for opaque. """
                 },
-                result="""returns a texture of the browser if it was created successfully, false otherwise. returns also false, if the user disabled remote pages and islocal was set to false. """,
-            ),
-            name='createBrowser',
+                result='returns a texture of the browser if it was created successfully, false otherwise. returns also false, if the user disabled remote pages and islocal was set to false.' ,
+            )
         )
         ],
     ),
@@ -230,14 +227,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function executes a Javascript string to the specified Element/Browser|browser. Works only with local browsers. """,
+                description='This function executes a Javascript string to the specified Element/Browser|browser. Works only with local browsers.' ,
                 arguments={
                     "webBrowser": """The web browser which will execute the Javascript code """,
                     "jsCode": """The Javascript code string """
                 },
-                result="""returns true if executing javascript is allowed in the current context, false otherwise. """,
-            ),
-            name='executeBrowserJavascript',
+                result='returns true if executing javascript is allowed in the current context, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -278,13 +274,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will attempt to focus the Element/Browser|browser or unfocus all browsers. The browser that is focused will retrieve keyboard input. """,
+                description='This function will attempt to focus the Element/Browser|browser or unfocus all browsers. The browser that is focused will retrieve keyboard input.' ,
                 arguments={
                     "webBrowser": """The web browser to be focused - if this is nil, it will unfocus all browsers. """
                 },
-                result="""returns true if the browser was focused or if nil was passed, false if it failed to focus or the browser does not exist. """,
-            ),
-            name='focusBrowser',
+                result='returns true if the browser was focused or if nil was passed, false if it failed to focus or the browser does not exist.' ,
+            )
         )
         ],
     ),
@@ -335,15 +330,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets a given property of a specified browser. """,
+                description='This function gets a given property of a specified browser.' ,
                 arguments={
                     "theBrowser": """browser element to get the property value of """,
                     "key": """The browser property key. It can be: """,
                     "mobile": """Surfing the web as mobile """
                 },
-                result="""returns the value if the property was successfully found, false otherwise. """,
-            ),
-            name='getBrowserProperty',
+                result='returns the value if the property was successfully found, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -375,16 +369,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table containing the browser settings. """,
+                description='This function returns a table containing the browser settings.' ,
                 arguments={
                     
                 },
-                result="""a table having the following keys:
-* remoteenabled: true if remote websites are enabled, false otherwise
-* remotejavascript: true if javascript is enabled on remote websites, false otherwise
-* pluginsenabled: true if plugins such as flash, silverlight (but not java) are enabled, false otherwise. this setting is false by default. """,
-            ),
-            name='getBrowserSettings',
+                result='a table having the following keys:\n* remoteenabled: true if remote websites are enabled, false otherwise\n* remotejavascript: true if javascript is enabled on remote websites, false otherwise\n* pluginsenabled: true if plugins such as flash, silverlight (but not java) are enabled, false otherwise. this setting is false by default.' ,
+            )
         )
         ],
     ),
@@ -435,7 +425,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to retrieve the source code of a website (asynchronously). The size of the source code is limited to 2 MiB (remaining bytes are cut). """,
+                description='This function can be used to retrieve the source code of a website (asynchronously). The size of the source code is limited to 2 MiB (remaining bytes are cut).' ,
                 arguments={
                     "webBrowser": """The browser element you want to get the source of """,
                     "callback": """a callback function with syntax as described below
@@ -443,9 +433,8 @@ DUMP_PARTIAL = [
 function ( string code )
 </syntaxhighlight> """
                 },
-                result="""returns true if valid arguments have been passed, false otherwise. """,
-            ),
-            name='getBrowserSource',
+                result='returns true if valid arguments have been passed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -486,13 +475,12 @@ function ( string code )
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the title of the passed Element/Browser|browser. """,
+                description='This function returns the title of the passed Element/Browser|browser.' ,
                 arguments={
                     "webBrowser": """The browser """
                 },
-                result="""returns the title as a string. returns false if invalid arguments were passed. """,
-            ),
-            name='getBrowserTitle',
+                result='returns the title as a string. returns false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -533,13 +521,12 @@ function ( string code )
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the URL of the specified Element/Browser|browser. """,
+                description='This function returns the URL of the specified Element/Browser|browser.' ,
                 arguments={
                     "webBrowser": """The browser """
                 },
-                result="""returns the web browser url. """,
-            ),
-            name='getBrowserURL',
+                result='returns the web browser url.' ,
+            )
         )
         ],
     ),
@@ -590,14 +577,13 @@ function ( string code )
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function injects a mouse click (state: down). """,
+                description='This function injects a mouse click (state: down).' ,
                 arguments={
                     "webBrowser": """The web browser """,
                     "mouseButton": """The mouse button (Possible values: left, middle, right) """
                 },
-                result="""returns true if the click was successfully injected, false otherwise. """,
-            ),
-            name='injectBrowserMouseDown',
+                result='returns true if the click was successfully injected, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -658,15 +644,14 @@ function ( string code )
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function injects a mouse movement. """,
+                description='This function injects a mouse movement.' ,
                 arguments={
                     "webBrowser": """The browser which will retrieve the mouse movement """,
                     "posX": """Absolute X screen coordinate """,
                     "posY": """Absolute Y screen coordinate """
                 },
-                result="""returns true if the movement was injected successfully, false otherwise. """,
-            ),
-            name='injectBrowserMouseMove',
+                result='returns true if the movement was injected successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -717,14 +702,13 @@ function ( string code )
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function injects a mouse click (state: up). """,
+                description='This function injects a mouse click (state: up).' ,
                 arguments={
                     "webBrowser": """The web browser """,
                     "mouseButton": """The mouse button (Possible values: left, middle, right) """
                 },
-                result="""returns true if the click was successfully injected, false otherwise. """,
-            ),
-            name='injectBrowserMouseUp',
+                result='returns true if the click was successfully injected, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -785,15 +769,14 @@ function ( string code )
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function injects mouse wheel events. """,
+                description='This function injects mouse wheel events.' ,
                 arguments={
                     "webBrowser": """The web browser """,
                     "verticalScroll": """: Amount of units you want the browser to scroll along the Y-axe. """,
                     "horizontalScroll": """: Amount of units you want the browser to scroll along the X-axe. """
                 },
-                result="""returns true if the mouse action was successfully injected, false otherwise. """,
-            ),
-            name='injectBrowserMouseWheel',
+                result='returns true if the mouse action was successfully injected, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -844,14 +827,13 @@ function ( string code )
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the specified URL is blocked from being loaded. """,
+                description='This function checks if the specified URL is blocked from being loaded.' ,
                 arguments={
                     "address": """A website URL """,
                     "isURL": """true if address should be parsed as URL, false otherwise. """
                 },
-                result="""returns false if the url is able to be loaded, true if it is blocked and nil if an invalid domain/url was passed. """,
-            ),
-            name='isBrowserDomainBlocked',
+                result='returns false if the url is able to be loaded, true if it is blocked and nil if an invalid domain/url was passed.' ,
+            )
         )
         ],
     ),
@@ -892,13 +874,12 @@ function ( string code )
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if a browser is focused. """,
+                description='This function checks if a browser is focused.' ,
                 arguments={
                     "webBrowser": """The browser """
                 },
-                result="""returns true if the browser is focused, false otherwise and nil if invalid arguments were passed. """,
-            ),
-            name='isBrowserFocused',
+                result='returns true if the browser is focused, false otherwise and nil if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -939,13 +920,12 @@ function ( string code )
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if a browser is currently loading a website. """,
+                description='This function checks if a browser is currently loading a website.' ,
                 arguments={
                     "webBrowser": """The browser """
                 },
-                result="""returns true if the browser is loading a website, false otherwise and nil if invalid arguments were passed. """,
-            ),
-            name='isBrowserLoading',
+                result='returns true if the browser is loading a website, false otherwise and nil if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -1016,16 +996,15 @@ function ( string code )
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function loads the specified URL. """,
+                description='This function loads the specified URL.' ,
                 arguments={
                     "webBrowser": """The Element/Browser|browser element which will load the URL """,
                     "url": """The url you want to load. It can either contain a remote website (http:// prefix) or a website stored within a local resource (http://mta/local/gui.html for example, see Local_Scheme_Handler|Local Scheme Handler for details). """,
                     "postData": """The post data passed to the website. Its content type can be any type (e.g. JSON) if urlEncoded is set to false """,
                     "urlEncoded": """If set to true, it will be available f.e. in PHPs $_POST variable (the content type is: application/x-www-form-urlencoded) """
                 },
-                result="""returns true if the url was successfully loaded. """,
-            ),
-            name='loadBrowserURL',
+                result='returns true if the url was successfully loaded.' ,
+            )
         )
         ],
     ),
@@ -1066,13 +1045,12 @@ function ( string code )
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the browser to the previous page. """,
+                description='Returns the browser to the previous page.' ,
                 arguments={
                     "webBrowser": """The browser that you want return to the previous page. """
                 },
-                result="""returns true if the browser has returned to the previous page, false otherwise. """,
-            ),
-            name='navigateBrowserBack',
+                result='returns true if the browser has returned to the previous page, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1113,13 +1091,12 @@ function ( string code )
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function takes the browser to the next page. """,
+                description='This function takes the browser to the next page.' ,
                 arguments={
                     "webBrowser": """The browser that you want to take to the next page. """
                 },
-                result="""returns true if the browser has gone to the next page, false otherwise. """,
-            ),
-            name='navigateBrowserForward',
+                result='returns true if the browser has gone to the next page, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1160,13 +1137,12 @@ function ( string code )
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function reloads the current browsers page. """,
+                description='This function reloads the current browsers page.' ,
                 arguments={
                     "webBrowser": """The browser that you want to reload. """
                 },
-                result="""returns true if the browser has reloaded, false otherwise. """,
-            ),
-            name='reloadBrowserPage',
+                result='returns true if the browser has reloaded, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1227,7 +1203,7 @@ function ( string code )
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function opens a request window in order to accept the requested remote URLs. """,
+                description='This function opens a request window in order to accept the requested remote URLs.' ,
                 arguments={
                     "pages": """A table containing all domains """,
                     "parseAsURL": """true if the passed addresses should be converted from URLs, false otherwise. """,
@@ -1235,9 +1211,8 @@ function ( string code )
 Syntax:
 <syntaxhighlight lang="lua">function(bool wasAccepted, table new_domains)</syntaxhighlight> """
                 },
-                result="""returns true, if the string was successfully read, false otherwise. """,
-            ),
-            name='requestBrowserDomains',
+                result='returns true, if the string was successfully read, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1298,15 +1273,14 @@ Syntax:
                 ],
             ),
             docs=FunctionDoc(
-                description="""Allows resizing of CEF browsers at runtime. """,
+                description='Allows resizing of CEF browsers at runtime.' ,
                 arguments={
                     "webBrowser": """The browser you want to resize. """,
                     "width": """The new width of the browser. """,
                     "height": """The new height of the browser. """
                 },
-                result="""returns true if the browser is resized successfully, false if theres something wrong. """,
-            ),
-            name='resizeBrowser',
+                result='returns true if the browser is resized successfully, false if theres something wrong.' ,
+            )
         )
         ],
     ),
@@ -1367,15 +1341,14 @@ Syntax:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function provides a requestable ajax resource for Lua/Javascript communication for a Element/Browser|browser. """,
+                description='This function provides a requestable ajax resource for Lua/Javascript communication for a Element/Browser|browser.' ,
                 arguments={
                     "webBrowser": """The web browser which will execute the Javascript code """,
                     "url": """The URL endpoint to handle """,
                     "handler": """The function to call if the webBrowser attempts to open the ajax endpoint. If this parameter is nil or omitted, the ajax handler for the url will be deleted. """
                 },
-                result=""" """,
-            ),
-            name='setBrowserAjaxHandler',
+                result='' ,
+            )
         )
         ],
     ),
@@ -1436,16 +1409,15 @@ Syntax:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets a given property of a specified browser. """,
+                description='This function sets a given property of a specified browser.' ,
                 arguments={
                     "theBrowser": """The browser element you want to set a property of """,
                     "key": """The browser property key. It can be: """,
                     "mobile": """Surfing the web as mobile """,
                     "value": """A value indicating whether to enable (1) the property or not (0) """
                 },
-                result="""returns true if the property was successfully set, false otherwise. """,
-            ),
-            name='setBrowserProperty',
+                result='returns true if the property was successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1496,14 +1468,13 @@ Syntax:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the rendering state of a browser. """,
+                description='This function sets the rendering state of a browser.' ,
                 arguments={
                     "webBrowser": """The browser """,
                     "paused": """true to pause rendering, false to continue """
                 },
-                result="""returns true if the state was successfully changed """,
-            ),
-            name='setBrowserRenderingPaused',
+                result='returns true if the state was successfully changed' ,
+            )
         )
         ],
     ),
@@ -1554,14 +1525,13 @@ Syntax:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets either a specific Element/Browser|browsers volume, or the overall volume for browsers. """,
+                description='This function sets either a specific Element/Browser|browsers volume, or the overall volume for browsers.' ,
                 arguments={
                     "volume": """A float|floating point number representing the desired volume level. Range is from 0.0 to 1.0 """,
                     "webBrowser": """A browser element """
                 },
-                result=""" """,
-            ),
-            name='setBrowserVolume',
+                result='' ,
+            )
         )
         ],
     ),
@@ -1612,14 +1582,13 @@ Syntax:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function toggles the visibility of the developer tools pane. """,
+                description='This function toggles the visibility of the developer tools pane.' ,
                 arguments={
                     "webBrowser": """The browser """,
                     "visible": """true to show the tools, false to hide """
                 },
-                result="""returns true if the visibility was successfully toggled, false if an error occurred """,
-            ),
-            name='toggleBrowserDevTools',
+                result='returns true if the visibility was successfully toggled, false if an error occurred' ,
+            )
         )
         ],
     )

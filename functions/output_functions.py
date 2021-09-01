@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -43,13 +43,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "clearFor": """The player whose chat is to be cleared. By default, this is set to the root element, which will affect all players. """
                 },
-                result="""returns true if the players chat was cleared successfully, false otherwise. """,
-            ),
-            name='clearChatBox',
+                result='returns true if the players chat was cleared successfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -76,13 +75,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     
                 },
-                result="""returns true if the players chat was cleared successfully, false otherwise. """,
-            ),
-            name='clearChatBox',
+                result='returns true if the players chat was cleared successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -114,13 +112,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     
                 },
-                result="""always returns true. """,
-            ),
-            name='clearDebugBox',
+                result='always returns true.' ,
+            )
         )
         ],
     ),
@@ -152,13 +149,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if players chat is visible. """,
+                description='This function checks if players chat is visible.' ,
                 arguments={
                     
                 },
-                result="""returns true if the chat is visible, false otherwise. """,
-            ),
-            name='isChatVisible',
+                result='returns true if the chat is visible, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -246,12 +242,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This outputs the specified text string to the chatbox. It can be specified as a message to certain player(s) or all players.
-It can optionally allow you to embed color changes into the string by setting the colorCoded boolean to true. This allows:
-<syntaxhighlight lang=lua>
-outputChatBox ( #FF0000Hello #00FF00World, root, 255, 255, 255, true )
-</syntaxhighlight>
-This will display as: <span style=color:red;>Hello</span> <span style=color:green>World</span> """,
+                description='This outputs the specified text string to the chatbox. It can be specified as a message to certain player(s) or all players.\nIt can optionally allow you to embed color changes into the string by setting the colorCoded boolean to true. This allows:\n<syntaxhighlight lang=lua>\noutputChatBox ( #FF0000Hello #00FF00World, root, 255, 255, 255, true )\n</syntaxhighlight>\nThis will display as: <span style=color:red;>Hello</span> <span style=color:green>World</span>' ,
                 arguments={
                     "text": """The text string that you wish to send to the chat window. If more than 256 characters it will not be showed in chat. """,
                     "visibleTo": """Can also be a table of players or team.}} """,
@@ -261,9 +252,8 @@ This will display as: <span style=color:red;>Hello</span> <span style=color:gree
                     "colorCoded": """A boolean value determining whether or not #RRGGBB tags should be used.
 Note: The #RRGGBB format must contain capital letters a-f is not acceptable but A-F is. Default RGB values in this format are: '#E7D9B0'. """
                 },
-                result=""" """,
-            ),
-            name='outputChatBox',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -339,12 +329,7 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This outputs the specified text string to the chatbox. It can be specified as a message to certain player(s) or all players.
-It can optionally allow you to embed color changes into the string by setting the colorCoded boolean to true. This allows:
-<syntaxhighlight lang=lua>
-outputChatBox ( #FF0000Hello #00FF00World, root, 255, 255, 255, true )
-</syntaxhighlight>
-This will display as: <span style=color:red;>Hello</span> <span style=color:green>World</span> """,
+                description='This outputs the specified text string to the chatbox. It can be specified as a message to certain player(s) or all players.\nIt can optionally allow you to embed color changes into the string by setting the colorCoded boolean to true. This allows:\n<syntaxhighlight lang=lua>\noutputChatBox ( #FF0000Hello #00FF00World, root, 255, 255, 255, true )\n</syntaxhighlight>\nThis will display as: <span style=color:red;>Hello</span> <span style=color:green>World</span>' ,
                 arguments={
                     "text": """The text string that you wish to send to the chat window. If more than 256 characters it will not be showed in chat. """,
                     "r": """The amount of red in the color of the text. Default value is 231. """,
@@ -353,9 +338,8 @@ This will display as: <span style=color:red;>Hello</span> <span style=color:gree
                     "colorCoded": """A boolean value determining whether or not #RRGGBB tags should be used.
 Note: The #RRGGBB format must contain capital letters a-f is not acceptable but A-F is. Default RGB values in this format are: '#E7D9B0'. """
                 },
-                result=""" """,
-            ),
-            name='outputChatBox',
+                result='' ,
+            )
         )
         ],
     ),
@@ -403,14 +387,13 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This outputs the specified text string to the console window (accessed with F8 or ~ key). It can be specified as a message to certain player(s) or all players. """,
+                description='This outputs the specified text string to the console window (accessed with F8 or ~ key). It can be specified as a message to certain player(s) or all players.' ,
                 arguments={
                     "text": """The text string that you wish to send to the console window """,
                     "visibleTo": """This specifies who the chat is visible to. Any players in this element will see the chat message. See visibility. """
                 },
-                result=""" """,
-            ),
-            name='outputConsole',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -446,13 +429,12 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This outputs the specified text string to the console window (accessed with F8 or ~ key). It can be specified as a message to certain player(s) or all players. """,
+                description='This outputs the specified text string to the console window (accessed with F8 or ~ key). It can be specified as a message to certain player(s) or all players.' ,
                 arguments={
                     "text": """The text string that you wish to send to the console window """
                 },
-                result=""" """,
-            ),
-            name='outputConsole',
+                result='' ,
+            )
         )
         ],
     ),
@@ -530,7 +512,7 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function outputs scripting debug messages, which can be read by enabling the debug textbox. The debug display level can then be set so that info or warning messages get filtered out. """,
+                description='This function outputs scripting debug messages, which can be read by enabling the debug textbox. The debug display level can then be set so that info or warning messages get filtered out.' ,
                 arguments={
                     "text": """the text to be output to the debug box. """,
                     "level": """the debug message level. Possible values are: """,
@@ -543,9 +525,8 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                     "green": """The amount of green in the color of the text. Default value is 255. """,
                     "blue": """The amount of blue in the color of the text. Default value is 255. """
                 },
-                result="""returns true if the debug message was successfully output, false if invalid arguments are specified. """,
-            ),
-            name='outputDebugString',
+                result='returns true if the debug message was successfully output, false if invalid arguments are specified.' ,
+            )
         )
         ],
         client=[
@@ -621,7 +602,7 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function outputs scripting debug messages, which can be read by enabling the debug textbox. The debug display level can then be set so that info or warning messages get filtered out. """,
+                description='This function outputs scripting debug messages, which can be read by enabling the debug textbox. The debug display level can then be set so that info or warning messages get filtered out.' ,
                 arguments={
                     "text": """the text to be output to the debug box. """,
                     "level": """the debug message level. Possible values are: """,
@@ -634,9 +615,8 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                     "green": """The amount of green in the color of the text. Default value is 255. """,
                     "blue": """The amount of blue in the color of the text. Default value is 255. """
                 },
-                result="""returns true if the debug message was successfully output, false if invalid arguments are specified. """,
-            ),
-            name='outputDebugString',
+                result='returns true if the debug message was successfully output, false if invalid arguments are specified.' ,
+            )
         )
         ],
     ),
@@ -674,13 +654,12 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This outputs a line of text to the servers log. This could be useful for debugging. """,
+                description='This outputs a line of text to the servers log. This could be useful for debugging.' ,
                 arguments={
                     "text": """The text to be output to the log. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='outputServerLog',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -741,15 +720,14 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to show or hide the players chat. """,
+                description='This function is used to show or hide the players chat.' ,
                 arguments={
                     "thePlayer": """The player whose chat is to be hidden or shown. """,
                     "show": """A boolean value determining whether to show (true) or hide (false) the chat. """,
                     "inputBlocked": """A boolean value determining whether chat input is blocked/hidden, regardless of chat visibility. If unset, this will keep the default behaviour prior to r20898 (true when chat is hidden, false when chat is visible). """
                 },
-                result="""returns true if the players chat was shown or hidden successfully, false otherwise. """,
-            ),
-            name='showChat',
+                result='returns true if the players chat was shown or hidden successfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -795,14 +773,13 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to show or hide the players chat. """,
+                description='This function is used to show or hide the players chat.' ,
                 arguments={
                     "show": """A boolean value determining whether to show (true) or hide (false) the chat. """,
                     "inputBlocked": """A boolean value determining whether chat input is blocked/hidden, regardless of chat visibility. If unset, this will keep the default behaviour prior to r20898 (true when chat is hidden, false when chat is visible). """
                 },
-                result="""returns true if the players chat was shown or hidden successfully, false otherwise. """,
-            ),
-            name='showChat',
+                result='returns true if the players chat was shown or hidden successfully, false otherwise.' ,
+            )
         )
         ],
     )

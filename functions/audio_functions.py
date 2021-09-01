@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -37,13 +37,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""The function is used to retrieve the ID of the current radio channel. """,
+                description='The function is used to retrieve the ID of the current radio channel.' ,
                 arguments={
                     
                 },
-                result="""returns the id of the radio channel. """,
-            ),
-            name='getRadioChannel',
+                result='returns the id of the radio channel.' ,
+            )
         )
         ],
     ),
@@ -84,13 +83,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the given radio channel name. """,
+                description='This function gets the given radio channel name.' ,
                 arguments={
                     "id": """The ID of the radio station you want to get the name of. It is a number from 0 to 12. """
                 },
-                result="""returns a string containing the station name if successful, false otherwise. """,
-            ),
-            name='getRadioChannelName',
+                result='returns a string containing the station name if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -131,14 +129,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if a big sound container is available to use or not.
-In case of these invalid audio files, this function returns false.|true}} """,
+                description='This function checks if a big sound container is available to use or not.\nIn case of these invalid audio files, this function returns false.|true}}' ,
                 arguments={
                     "audioContainer": """The container name. Possible values are: feet, genrl, pain_a, script, spc_ea, spc_fa, spc_ga, spc_na, spc_pa """
                 },
-                result="""returns true if the sound container is available, false otherwise. """,
-            ),
-            name='getSFXStatus',
+                result='returns true if the sound container is available, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -179,13 +175,12 @@ In case of these invalid audio files, this function returns false.|true}} """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the beats per minute of a specific sound element. """,
+                description='This function gets the beats per minute of a specific sound element.' ,
                 arguments={
                     "sound": """a sound element that is created using playSound or playSound3D """
                 },
-                result="""returns the beats per minute of the given sound. """,
-            ),
-            name='getSoundBPM',
+                result='returns the beats per minute of the given sound.' ,
+            )
         )
         ],
     ),
@@ -226,15 +221,12 @@ In case of these invalid audio files, this function returns false.|true}} """,
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theSound": """the sound element which buffer length you want to get. """
                 },
-                result="""* a float value indicating the buffer playback length of the sound in seconds.
-* false if the sound is not a stream.
-* nil if the sound is invalid. """,
-            ),
-            name='getSoundBufferLength',
+                result='* a float value indicating the buffer playback length of the sound in seconds.\n* false if the sound is not a stream.\n* nil if the sound is invalid.' ,
+            )
         )
         ],
     ),
@@ -285,14 +277,13 @@ In case of these invalid audio files, this function returns false.|true}} """,
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "sound": """: the sound element. """,
                     "effectName": """: the name of the effect whose parameters you want to retrieve. """
                 },
-                result="""returns a table with the parameter names as the keys, and their values. if the specified effect name is not valid, an error is raised. """,
-            ),
-            name='getSoundEffectParameters',
+                result='returns a table with the parameter names as the keys, and their values. if the specified effect name is not valid, an error is raised.' ,
+            )
         )
         ],
     ),
@@ -333,14 +324,12 @@ In case of these invalid audio files, this function returns false.|true}} """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the states of all effects of a sound. """,
+                description='Returns the states of all effects of a sound.' ,
                 arguments={
                     "sound": """a sound element. """
                 },
-                result="""returns a table with the effect names as the keys, and their states as the values if successful. otherwise, it returns false.
-sound effect names: """,
-            ),
-            name='getSoundEffects',
+                result='returns a table with the effect names as the keys, and their states as the values if successful. otherwise, it returns false.\nsound effect names:' ,
+            )
         )
         ],
     ),
@@ -401,21 +390,14 @@ sound effect names: """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the fast fourier transform data for an audio stream which is a table of floats representing the current audio frame. This allows things like visualisations.
-A fast fourier transform generates a table of all the frequencies of the current audio frame which starts at the bass end of the spectrum to mids to highs in that order.
-Should you have any problems there is an example resource located on the resources repository:
-https://github.com/multitheftauto/mtasa-resources/tree/master/%5Bgameplay%5D/visualiser Visualiser
-Just type startmusic mystreamurl in your console and it will play on the cinema billboard near A51. If the element is a player, this function will use the players voice. """,
+                description='This function gets the fast fourier transform data for an audio stream which is a table of floats representing the current audio frame. This allows things like visualisations.\nA fast fourier transform generates a table of all the frequencies of the current audio frame which starts at the bass end of the spectrum to mids to highs in that order.\nShould you have any problems there is an example resource located on the resources repository:\nhttps://github.com/multitheftauto/mtasa-resources/tree/master/%5Bgameplay%5D/visualiser Visualiser\nJust type startmusic mystreamurl in your console and it will play on the cinema billboard near A51. If the element is a player, this function will use the players voice.' ,
                 arguments={
                     "sound": """a sound element that is created using playSound or playSound3D. Streams are also supported """,
                     "iSamples": """allowed samples are 256, 512, 1024, 2048, 4096, 8192 and 16384. """,
                     "iBands": """post processing option allows you to split the samples into the desired amount of bands or bars so if you only need 5 bars this saves a lot of cpu power compared to trying to do it in Lua. """
                 },
-                result="""returns a table of isamples/2 (or ibands if ibands is used) floats representing the current audio frame.
-returns false if the sound is not playing yet or hasnt buffered in the
-case of streams. """,
-            ),
-            name='getSoundFFTData',
+                result='returns a table of isamples/2 (or ibands if ibands is used) floats representing the current audio frame.\nreturns false if the sound is not playing yet or hasnt buffered in the\ncase of streams.' ,
+            )
         )
         ],
     ),
@@ -456,14 +438,12 @@ case of streams. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to return the playback length of the specified sound element.
-If the element is a player, this function will use the players voice. """,
+                description='This function is used to return the playback length of the specified sound element.\nIf the element is a player, this function will use the players voice.' ,
                 arguments={
                     "theSound": """the sound element which length you want to return. """
                 },
-                result="""returns an float value indicating the playback length of the sound element in seconds. """,
-            ),
-            name='getSoundLength',
+                result='returns an float value indicating the playback length of the sound element in seconds.' ,
+            )
         )
         ],
     ),
@@ -508,14 +488,12 @@ If the element is a player, this function will use the players voice. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the left/right level from a sound element.
-If the element is a player, this function will use the players voice. """,
+                description='This function gets the left/right level from a sound element.\nIf the element is a player, this function will use the players voice.' ,
                 arguments={
                     "theSound": """the sound element which level data you want to return. """
                 },
-                result="""returns a two integers in range from 0 to 32768. """,
-            ),
-            name='getSoundLevelData',
+                result='returns a two integers in range from 0 to 32768.' ,
+            )
         )
         ],
     ),
@@ -556,13 +534,12 @@ If the element is a player, this function will use the players voice. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets a custom sound max distance at which the sound stops. """,
+                description='Gets a custom sound max distance at which the sound stops.' ,
                 arguments={
                     "sound": """a sound element. """
                 },
-                result="""returns an integer of the max distance, false if invalid arguments where passed. """,
-            ),
-            name='getSoundMaxDistance',
+                result='returns an integer of the max distance, false if invalid arguments where passed.' ,
+            )
         )
         ],
     ),
@@ -613,15 +590,13 @@ If the element is a player, this function will use the players voice. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Used to get the meta tags attached to a sound. These provide information about the sound, for instance the title or the artist.
-*This function does not work on remote WAV files """,
+                description='Used to get the meta tags attached to a sound. These provide information about the sound, for instance the title or the artist.\n*This function does not work on remote WAV files' ,
                 arguments={
                     "sound": """a sound element. """,
                     "format": """a filter string to get a specific meta tag. """
                 },
-                result="""returns a table, but only a string if format is given, with all data available (keys are listed below) for the sound if successful, false otherwise. if any data is unavailable then the associated key is not written to the table. """,
-            ),
-            name='getSoundMetaTags',
+                result='returns a table, but only a string if format is given, with all data available (keys are listed below) for the sound if successful, false otherwise. if any data is unavailable then the associated key is not written to the table.' ,
+            )
         )
         ],
     ),
@@ -662,13 +637,12 @@ If the element is a player, this function will use the players voice. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets a custom sound Minimum distance at which the sound stops getting louder. """,
+                description='Gets a custom sound Minimum distance at which the sound stops getting louder.' ,
                 arguments={
                     "sound": """a sound element. """
                 },
-                result="""returns an integer of the minimum distance, false if invalid arguements where passed. """,
-            ),
-            name='getSoundMinDistance',
+                result='returns an integer of the minimum distance, false if invalid arguements where passed.' ,
+            )
         )
         ],
     ),
@@ -709,13 +683,12 @@ If the element is a player, this function will use the players voice. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the pan level of the specified sound element. """,
+                description='This function is used to get the pan level of the specified sound element.' ,
                 arguments={
                     "theSound": """the sound element which pan you want to get. """
                 },
-                result="""returns float value with range from -1.0 (left) to 1.0 (right), false otherwise. """,
-            ),
-            name='getSoundPan',
+                result='returns float value with range from -1.0 (left) to 1.0 (right), false otherwise.' ,
+            )
         )
         ],
     ),
@@ -756,14 +729,12 @@ If the element is a player, this function will use the players voice. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to return the current seek position of the specified sound element.
-If the element is a player, this function will use the players voice. """,
+                description='This function is used to return the current seek position of the specified sound element.\nIf the element is a player, this function will use the players voice.' ,
                 arguments={
                     "theSound": """The sound element which seek position you want to return. """
                 },
-                result="""returns a float value indicating the seek position of the sound element in seconds. """,
-            ),
-            name='getSoundPosition',
+                result='returns a float value indicating the seek position of the sound element in seconds.' ,
+            )
         )
         ],
     ),
@@ -816,14 +787,12 @@ If the element is a player, this function will use the players voice. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the properties of a specific sound. """,
+                description='This function gets the properties of a specific sound.' ,
                 arguments={
                     "sound": """a sound element that is created using playSound or playSound3D """
                 },
-                result="""this function returns 3 float|floats and a boolean value:
-the first float is the sounds http://en.wikipedia.org/wiki/sampling_rate sample rate, the second one the sounds http://en.wikipedia.org/wiki/tempo tempo, and the third one the http://en.wikipedia.org/wiki/pitch_%28music%29 pitch of the sound. the boolean representing whether the sound is reversed or not. """,
-            ),
-            name='getSoundProperties',
+                result='this function returns 3 float|floats and a boolean value:\nthe first float is the sounds http://en.wikipedia.org/wiki/sampling_rate sample rate, the second one the sounds http://en.wikipedia.org/wiki/tempo tempo, and the third one the http://en.wikipedia.org/wiki/pitch_%28music%29 pitch of the sound. the boolean representing whether the sound is reversed or not.' ,
+            )
         )
         ],
     ),
@@ -864,13 +833,12 @@ the first float is the sounds http://en.wikipedia.org/wiki/sampling_rate sample 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to return the playback speed of the specified sound element. """,
+                description='This function is used to return the playback speed of the specified sound element.' ,
                 arguments={
                     "theSound": """the sound element which playback speed you want to return. """
                 },
-                result="""returns an float value indicating the playback speed of the sound element. default sound playback speed is 1.0. """,
-            ),
-            name='getSoundSpeed',
+                result='returns an float value indicating the playback speed of the sound element. default sound playback speed is 1.0.' ,
+            )
         )
         ],
     ),
@@ -911,14 +879,12 @@ the first float is the sounds http://en.wikipedia.org/wiki/sampling_rate sample 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to return the volume level of the specified sound element.
-If the element is a player, this function will use the players voice. """,
+                description='This function is used to return the volume level of the specified sound element.\nIf the element is a player, this function will use the players voice.' ,
                 arguments={
                     "theSound": """the sound element which volume you want to return. """
                 },
-                result="""returns a float representing the volume level of the sound element, false if invalid arguments were passed. """,
-            ),
-            name='getSoundVolume',
+                result='returns a float representing the volume level of the sound element, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -969,18 +935,13 @@ If the element is a player, this function will use the players voice. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the wave form data for an audio stream which is a table of floats representing the current audio frame as a wave.
-This allows things like visualisations.
-If the element is a player, this function will use the players voice. """,
+                description='This function gets the wave form data for an audio stream which is a table of floats representing the current audio frame as a wave.\nThis allows things like visualisations.\nIf the element is a player, this function will use the players voice.' ,
                 arguments={
                     "sound": """a sound element that is created using playSound or playSound3D. Streams are also supported """,
                     "iSamples": """allowed samples are 256, 512, 1024, 2048, 4096, 8192 and 16384. """
                 },
-                result="""returns a table of isamples floats representing the current audio frame waveform.
-returns false if the sound is not playing yet or hasnt buffered in the
-case of streams. """,
-            ),
-            name='getSoundWaveData',
+                result='returns a table of isamples floats representing the current audio frame waveform.\nreturns false if the sound is not playing yet or hasnt buffered in the\ncase of streams.' ,
+            )
         )
         ],
     ),
@@ -1021,13 +982,12 @@ case of streams. """,
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theSound": """The sound element which you want to get the loop state. """
                 },
-                result="""returns true if the sound element is seted to loop, false otherwise. """,
-            ),
-            name='isSoundLooped',
+                result='returns true if the sound element is seted to loop, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1068,13 +1028,12 @@ case of streams. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks whether panning is enabled in a sound element or not. """,
+                description='This function checks whether panning is enabled in a sound element or not.' ,
                 arguments={
                     "theSound": """A valid sound element. """
                 },
-                result="""returns true if the sound is valid and it has panning enabled, false if it does not or is not valid. """,
-            ),
-            name='isSoundPanningEnabled',
+                result='returns true if the sound is valid and it has panning enabled, false if it does not or is not valid.' ,
+            )
         )
         ],
     ),
@@ -1115,14 +1074,12 @@ case of streams. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to return the current pause state of the specified sound element.
-If the element is a player, this function will use the players voice. """,
+                description='This function is used to return the current pause state of the specified sound element.\nIf the element is a player, this function will use the players voice.' ,
                 arguments={
                     "theSound": """the sound element which pause state you want to return. """
                 },
-                result="""returns true if the sound element is paused, false if unpaused or invalid arguments were passed. """,
-            ),
-            name='isSoundPaused',
+                result='returns true if the sound element is paused, false if unpaused or invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -1193,26 +1150,15 @@ If the element is a player, this function will use the players voice. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function plays a sound from GTAs big sound containers.
-In case of these invalid audio files, this function returns false.
-It also returns false when trying to play a track deleted in the recent GTA: SA Steam patches (and if the client is using a Steam GTA: SA copy).|true}} """,
+                description='This function plays a sound from GTAs big sound containers.\nIn case of these invalid audio files, this function returns false.\nIt also returns false when trying to play a track deleted in the recent GTA: SA Steam patches (and if the client is using a Steam GTA: SA copy).|true}}' ,
                 arguments={
                     "containerName": """The name of the audio container. Possible values are: feet, genrl, pain_a, script, spc_ea, spc_fa, spc_ga, spc_na, spc_pa """,
                     "bankId": """The audio bank id """,
                     "soundId": """The sound id within the audio bank """,
                     "looped": """A boolean representing whether the sound will be looped """
                 },
-                result="""returns a sound element if the sound was successfully created, false otherwise.
-<syntaxhighlight lang=lua>
-element playsfx ( string radio, string radiostation, int trackid , bool looped = false  )
-</syntaxhighlight>
-*radio: the string radio (used to differentiate to the first syntax)
-*radiostation: the radio station. possible values are adverts, ambience, police, playback fm, k-rose, k-dst, cutscene, beats, bounce fm, sf-ur, radio los santos, radio x, csr 103.9, k-jah west, master sounds 98.3, wctr.
-*trackid : the radio track id within the radio station audio file
-*looped: a boolean representing whether the sound will be looped
-returns a sound element if the sound was successfully created, false otherwise. """,
-            ),
-            name='playSFX',
+                result='returns a sound element if the sound was successfully created, false otherwise.\n<syntaxhighlight lang=lua>\nelement playsfx ( string radio, string radiostation, int trackid , bool looped = false  )\n</syntaxhighlight>\n*radio: the string radio (used to differentiate to the first syntax)\n*radiostation: the radio station. possible values are adverts, ambience, police, playback fm, k-rose, k-dst, cutscene, beats, bounce fm, sf-ur, radio los santos, radio x, csr 103.9, k-jah west, master sounds 98.3, wctr.\n*trackid : the radio track id within the radio station audio file\n*looped: a boolean representing whether the sound will be looped\nreturns a sound element if the sound was successfully created, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1313,9 +1259,7 @@ returns a sound element if the sound was successfully created, false otherwise. 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function plays a sound in the GTA world from GTAs big sound containers.
-In case of these invalid audio files, this function returns false.
-It also returns false when trying to play a track deleted in the recent GTA: SA Steam patches (and if the client is using a Steam GTA: SA copy).|true}} """,
+                description='This function plays a sound in the GTA world from GTAs big sound containers.\nIn case of these invalid audio files, this function returns false.\nIt also returns false when trying to play a track deleted in the recent GTA: SA Steam patches (and if the client is using a Steam GTA: SA copy).|true}}' ,
                 arguments={
                     "containerName": """The name of the audio container. Possible values are: feet, genrl, pain_a, script, spc_ea, spc_fa, spc_ga, spc_na, spc_pa """,
                     "bankId": """The audio bank id """,
@@ -1325,20 +1269,8 @@ It also returns false when trying to play a track deleted in the recent GTA: SA 
                     "z": """A floating point number representing the Z coordinate on the map. """,
                     "looped": """A boolean representing whether the sound will be looped """
                 },
-                result="""returns a sound element if the sound was successfully created, false otherwise.
-<syntaxhighlight lang=lua>
-element playsfx3d( string radio, string radiostation, int trackid, float x, float y, float z , bool looped = false  )
-</syntaxhighlight>
-*radio: the string radio (used to differentiate to the first syntax)
-*radiostation: the radio station. possible values are adverts, ambience, police, playback fm, k-rose, k-dst, cutscene, beats, bounce fm, sf-ur, radio los santos, radio x, csr 103.9, k-jah west, master sounds 98.3, wctr.
-*trackid : the radio track id within the radio station audio file
-*x: a floating point number representing the x coordinate on the map.
-*y: a floating point number representing the y coordinate on the map.
-*z: a floating point number representing the z coordinate on the map.
-*looped: a boolean representing whether the sound will be looped
-returns a sound element if the sound was successfully created, false otherwise. """,
-            ),
-            name='playSFX3D',
+                result='returns a sound element if the sound was successfully created, false otherwise.\n<syntaxhighlight lang=lua>\nelement playsfx3d( string radio, string radiostation, int trackid, float x, float y, float z , bool looped = false  )\n</syntaxhighlight>\n*radio: the string radio (used to differentiate to the first syntax)\n*radiostation: the radio station. possible values are adverts, ambience, police, playback fm, k-rose, k-dst, cutscene, beats, bounce fm, sf-ur, radio los santos, radio x, csr 103.9, k-jah west, master sounds 98.3, wctr.\n*trackid : the radio track id within the radio station audio file\n*x: a floating point number representing the x coordinate on the map.\n*y: a floating point number representing the y coordinate on the map.\n*z: a floating point number representing the z coordinate on the map.\n*looped: a boolean representing whether the sound will be looped\nreturns a sound element if the sound was successfully created, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1399,19 +1331,15 @@ returns a sound element if the sound was successfully created, false otherwise. 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates a sound element and plays it immediately after creation for the local player.<br />
-<br />
-*The only supported audio formats are MP3, WAV, OGG, RIFF, MOD, XM, IT, S3M and PLS (e.g. Webstream).
-*For performance reasons, when using playSound for effects that will be played lots (i.e. weapon fire), it is recommend that you convert your audio file to a one channel (mono) WAV with sample rate of 22050 Hz or less. Also consider adding a limit on how often the effect can be played e.g. once every 50ms.}} """,
+                description='Creates a sound element and plays it immediately after creation for the local player.<br />\n<br />\n*The only supported audio formats are MP3, WAV, OGG, RIFF, MOD, XM, IT, S3M and PLS (e.g. Webstream).\n*For performance reasons, when using playSound for effects that will be played lots (i.e. weapon fire), it is recommend that you convert your audio file to a one channel (mono) WAV with sample rate of 22050 Hz or less. Also consider adding a limit on how often the effect can be played e.g. once every 50ms.}}' ,
                 arguments={
                     "soundPath": """Can also be raw sound data.
 |20460}} """,
                     "looped": """a boolean representing whether the sound will be looped. To loop the sound, use true. Loop is not available for streaming sounds, only for sound files. """,
                     "throttled": """a boolean representing whether the sound will be throttled (i.e. given reduced download bandwidth). To throttle the sound, use true. Sounds will be throttled per default and only for URLs. """
                 },
-                result="""returns a sound element if the sound was successfully created, false otherwise. """,
-            ),
-            name='playSound',
+                result='returns a sound element if the sound was successfully created, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1492,10 +1420,7 @@ returns a sound element if the sound was successfully created, false otherwise. 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates a sound element in the GTA world and plays it immediately after creation for the local player. setElementPosition can be used to move the sound element around after it has been created. Remember to use setElementDimension after creating the sound to play it outside of dimension 0.<br />
-<br />
-*The only supported audio formats are MP3, WAV, OGG, RIFF, MOD, XM, IT and S3M.
-*For performance reasons, when using playSound3D for effects that will be played lots (i.e. weapon fire), it is recommend that you convert your audio file to a one channel (mono) WAV with sample rate of 22050 Hz or less. Also consider adding a limit on how often the effect can be played e.g. once every 50ms.}} """,
+                description='Creates a sound element in the GTA world and plays it immediately after creation for the local player. setElementPosition can be used to move the sound element around after it has been created. Remember to use setElementDimension after creating the sound to play it outside of dimension 0.<br />\n<br />\n*The only supported audio formats are MP3, WAV, OGG, RIFF, MOD, XM, IT and S3M.\n*For performance reasons, when using playSound3D for effects that will be played lots (i.e. weapon fire), it is recommend that you convert your audio file to a one channel (mono) WAV with sample rate of 22050 Hz or less. Also consider adding a limit on how often the effect can be played e.g. once every 50ms.}}' ,
                 arguments={
                     "soundPath": """Can also be raw sound data.
 |20460}} """,
@@ -1506,9 +1431,8 @@ returns a sound element if the sound was successfully created, false otherwise. 
                     "looped": """a boolean representing whether the sound will be looped. To loop the sound, use true. """,
                     "throttled": """a boolean representing whether the sound will be throttled (i.e. given reduced download bandwidth). To throttle the sound, use true. """
                 },
-                result="""returns a sound element if the sound was successfully created, false otherwise. """,
-            ),
-            name='playSound3D',
+                result='returns a sound element if the sound was successfully created, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1556,14 +1480,13 @@ returns a sound element if the sound was successfully created, false otherwise. 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function plays a frontend sound for the specified player. """,
+                description='This function plays a frontend sound for the specified player.' ,
                 arguments={
                     "thePlayer": """the player you want the sound to play for. """,
                     "sound": """a whole int specifying the sound id to play. Valid values are: """
                 },
-                result=""" """,
-            ),
-            name='playSoundFrontEnd',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -1599,13 +1522,12 @@ returns a sound element if the sound was successfully created, false otherwise. 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function plays a frontend sound for the specified player. """,
+                description='This function plays a frontend sound for the specified player.' ,
                 arguments={
                     "sound": """a whole int specifying the sound id to play. Valid values are: """
                 },
-                result=""" """,
-            ),
-            name='playSoundFrontEnd',
+                result='' ,
+            )
         )
         ],
     ),
@@ -1646,13 +1568,12 @@ returns a sound element if the sound was successfully created, false otherwise. 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the heard radio channel, even while not in a vehicle. """,
+                description='This function sets the heard radio channel, even while not in a vehicle.' ,
                 arguments={
                     "ID": """The ID of the radio station you want to play. """
                 },
-                result="""returns true if channel was set successfully, false otherwise. """,
-            ),
-            name='setRadioChannel',
+                result='returns true if channel was set successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1713,16 +1634,14 @@ returns a sound element if the sound was successfully created, false otherwise. 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Used to enable or disable specific sound effects.
-Use a player element to control a players voice with this function. """,
+                description='Used to enable or disable specific sound effects.\nUse a player element to control a players voice with this function.' ,
                 arguments={
                     "sound": """a sound element or a player element which will affect the Resource:Voice|voice broadcast. """,
                     "effectName": """the effect you want to enable or disable """,
                     "bEnable": """true if you want to enable the effect, false if you want to disable it. """
                 },
-                result="""returns true if the effect was set successfully, false otherwise. """,
-            ),
-            name='setSoundEffectEnabled',
+                result='returns true if the effect was set successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1793,16 +1712,15 @@ Use a player element to control a players voice with this function. """,
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "sound": """: the sound element. """,
                     "effectName": """: the name of the effect whose parameter you want to change. """,
                     "effectParam": """: the parameter #Effects Parameters|name. """,
                     "paramValue": """: the parameter #Effects Parameters|value. """
                 },
-                result="""returns true if everything went well, error is raised otherwise. """,
-            ),
-            name='setSoundEffectParameter',
+                result='returns true if everything went well, error is raised otherwise.' ,
+            )
         )
         ],
     ),
@@ -1853,14 +1771,13 @@ Use a player element to control a players voice with this function. """,
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theSound": """The sound element to set the loop. """,
                     "bool": """A boolean representing whether the sound will be looped. """
                 },
-                result="""returns true if the sound element loop was successfully changed, false otherwise. """,
-            ),
-            name='setSoundLooped',
+                result='returns true if the sound element loop was successfully changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1911,14 +1828,13 @@ Use a player element to control a players voice with this function. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets a custom sound max distance at which the sound stops. """,
+                description='Sets a custom sound max distance at which the sound stops.' ,
                 arguments={
                     "sound": """a sound element. """,
                     "distance": """the default value for this is 20 """
                 },
-                result="""returns a true if the max distance was set, false otherwise. """,
-            ),
-            name='setSoundMaxDistance',
+                result='returns a true if the max distance was set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1969,14 +1885,13 @@ Use a player element to control a players voice with this function. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets a custom sound Minimum distance at which the sound stops getting louder. """,
+                description='Sets a custom sound Minimum distance at which the sound stops getting louder.' ,
                 arguments={
                     "sound": """a sound element. """,
                     "distance": """an integer representing the distance the sound stops getting louder. the default value for this is 5 """
                 },
-                result="""returns a true if the minimum distance was set, false otherwise. """,
-            ),
-            name='setSoundMinDistance',
+                result='returns a true if the minimum distance was set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2027,14 +1942,13 @@ Use a player element to control a players voice with this function. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to change the pan level of the specified sound element. """,
+                description='This function is used to change the pan level of the specified sound element.' ,
                 arguments={
                     "theSound": """The sound element which pan you want to modify. """,
                     "pan": """A float|floating point number representing the desired pan level. Range is from -1.0 (left) to 1.0 (right) """
                 },
-                result="""returns true if the sound element pan was successfully changed, false otherwise. """,
-            ),
-            name='setSoundPan',
+                result='returns true if the sound element pan was successfully changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2085,15 +1999,13 @@ Use a player element to control a players voice with this function. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function toggles the panning of a sound (hearing it closer to the left or right side of the speakers due to the camera position). By default a sound has its panning enabled. """,
+                description='This function toggles the panning of a sound (hearing it closer to the left or right side of the speakers due to the camera position). By default a sound has its panning enabled.' ,
                 arguments={
                     "sound": """a sound element to change the panning of. """,
                     "enable": """true to enable the panning, false otherwise. """
                 },
-                result="""returns true if the sound is valid and good arguments were passed, false if not.
-if the sound is not 3d, this function will return true as well, but issoundpanningenabled will always return true after this (so it has no effect). """,
-            ),
-            name='setSoundPanningEnabled',
+                result='returns true if the sound is valid and good arguments were passed, false if not.\nif the sound is not 3d, this function will return true as well, but issoundpanningenabled will always return true after this (so it has no effect).' ,
+            )
         )
         ],
     ),
@@ -2144,15 +2056,13 @@ if the sound is not 3d, this function will return true as well, but issoundpanni
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to either pause or unpause the playback of the specified sound element.
-Use a player element to control a players voice with this function. """,
+                description='This function is used to either pause or unpause the playback of the specified sound element.\nUse a player element to control a players voice with this function.' ,
                 arguments={
                     "theSound": """the sound element which you want to pause/unpause. """,
                     "paused": """a boolean value representing whether the sound should be paused or not. To pause the sound, use true. """
                 },
-                result="""returns true if the sound element was successfully paused, false otherwise. """,
-            ),
-            name='setSoundPaused',
+                result='returns true if the sound element was successfully paused, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2203,16 +2113,13 @@ Use a player element to control a players voice with this function. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to change the seek position of the specified sound element.
-Use a player element to control a players voice with this function.
-*To set position of a remote audio file, you must pause the sound within an onClientSoundStream event after creation, set the sound position and then unpause it again. The sound can also not be throttled (see playSound arguments)}} """,
+                description='This function is used to change the seek position of the specified sound element.\nUse a player element to control a players voice with this function.\n*To set position of a remote audio file, you must pause the sound within an onClientSoundStream event after creation, set the sound position and then unpause it again. The sound can also not be throttled (see playSound arguments)}}' ,
                 arguments={
                     "theSound": """the sound element which seek position you want to modify. """,
                     "pos": """a float value representing the new seek position of the sound element in seconds. """
                 },
-                result="""returns true if the sound elements seek position was successfully changed, false otherwise. """,
-            ),
-            name='setSoundPosition',
+                result='returns true if the sound elements seek position was successfully changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2293,7 +2200,7 @@ Use a player element to control a players voice with this function.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function edits the properties of a specific sound. """,
+                description='This function edits the properties of a specific sound.' ,
                 arguments={
                     "sound": """a sound element that is created using playSound or playSound3D """,
                     "fSampleRate": """a float that defines the new sounds http://en.wikipedia.org/wiki/Sampling_rate sample rate """,
@@ -2301,9 +2208,8 @@ Use a player element to control a players voice with this function.
                     "fPitch": """a float that defines the new sound http://en.wikipedia.org/wiki/Pitch_%28music%29 pitch """,
                     "bReverse": """a boolean representing whether the sound will be reversed or not. """
                 },
-                result="""returns true if the properties sucessfully set, false otherwise. """,
-            ),
-            name='setSoundProperties',
+                result='returns true if the properties sucessfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2354,14 +2260,13 @@ Use a player element to control a players voice with this function.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to change the playback speed of the specified sound element. """,
+                description='This function can be used to change the playback speed of the specified sound element.' ,
                 arguments={
                     "theSound": """the sound element which volume you want to modify. """,
                     "speed": """a floating point number representing the desired sound playback speed. """
                 },
-                result="""returns true if the sound element playback speed was successfully changed, false otherwise. """,
-            ),
-            name='setSoundSpeed',
+                result='returns true if the sound element playback speed was successfully changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2412,15 +2317,13 @@ Use a player element to control a players voice with this function.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to change the volume level of the specified sound element.
-Use a player element to control a players voice with this function. """,
+                description='This function is used to change the volume level of the specified sound element.\nUse a player element to control a players voice with this function.' ,
                 arguments={
                     "theSound": """The sound element which volume you want to modify or a player element which voice volume you want to modify. """,
                     "volume": """A floating point number representing the desired volume level. Range is from 0.0 to 1.0. This can go above 1.0 for amplification. """
                 },
-                result="""returns true if the sound element volume was successfully changed, false otherwise. """,
-            ),
-            name='setSoundVolume',
+                result='returns true if the sound element volume was successfully changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2461,13 +2364,12 @@ Use a player element to control a players voice with this function. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Stops the sound playback for specified sound element. The sound element is also destroyed. """,
+                description='Stops the sound playback for specified sound element. The sound element is also destroyed.' ,
                 arguments={
                     "theSound": """the sound element you want to stop playing. """
                 },
-                result="""returns true if the sound was successfully stopped, false otherwise. """,
-            ),
-            name='stopSound',
+                result='returns true if the sound was successfully stopped, false otherwise.' ,
+            )
         )
         ],
     )

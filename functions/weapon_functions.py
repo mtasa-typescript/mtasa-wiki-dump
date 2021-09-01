@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -71,19 +71,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the original weapon property of the specified weapons specified weapon type. """,
+                description='This function gets the original weapon property of the specified weapons specified weapon type.' ,
                 arguments={
                     "weaponID or weaponName": """The ID or name of the weapon you want to get info of. Names can be: """,
                     "weaponSkill": """Either: pro, std or poor """,
                     "property": """The property you want to get the value of:
 The following properties are get only: """
                 },
-                result="""on success:
-int: the weapon property
-on failure:
-bool: false if the passed arguments were invalid """,
-            ),
-            name='getOriginalWeaponProperty',
+                result='on success:\nint: the weapon property\non failure:\nbool: false if the passed arguments were invalid' ,
+            )
         )
         ],
         client=[
@@ -147,19 +143,15 @@ bool: false if the passed arguments were invalid """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the original weapon property of the specified weapons specified weapon type. """,
+                description='This function gets the original weapon property of the specified weapons specified weapon type.' ,
                 arguments={
                     "weaponID or weaponName": """The ID or name of the weapon you want to get info of. Names can be: """,
                     "weaponSkill": """Either: pro, std or poor """,
                     "property": """The property you want to get the value of:
 The following properties are get only: """
                 },
-                result="""on success:
-int: the weapon property
-on failure:
-bool: false if the passed arguments were invalid """,
-            ),
-            name='getOriginalWeaponProperty',
+                result='on success:\nint: the weapon property\non failure:\nbool: false if the passed arguments were invalid' ,
+            )
         )
         ],
     ),
@@ -197,13 +189,12 @@ bool: false if the passed arguments were invalid """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to identify the weapon slot that a weapon belongs to. """,
+                description='This function allows you to identify the weapon slot that a weapon belongs to.' ,
                 arguments={
                     "weaponid": """Weapon to find the weapon slot of. """
                 },
-                result="""returns an integer representing the given weapon ids associated weapon slot, false if the id was invalid. """,
-            ),
-            name='getSlotFromWeapon',
+                result='returns an integer representing the given weapon ids associated weapon slot, false if the id was invalid.' ,
+            )
         )
         ],
         client=[
@@ -239,13 +230,12 @@ bool: false if the passed arguments were invalid """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to identify the weapon slot that a weapon belongs to. """,
+                description='This function allows you to identify the weapon slot that a weapon belongs to.' ,
                 arguments={
                     "weaponid": """Weapon to find the weapon slot of. """
                 },
-                result="""returns an integer representing the given weapon ids associated weapon slot, false if the id was invalid. """,
-            ),
-            name='getSlotFromWeapon',
+                result='returns an integer representing the given weapon ids associated weapon slot, false if the id was invalid.' ,
+            )
         )
         ],
     ),
@@ -283,13 +273,12 @@ bool: false if the passed arguments were invalid """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will obtain the ID of a particular weapon from its name. """,
+                description='This function will obtain the ID of a particular weapon from its name.' ,
                 arguments={
                     "name": """A string containing the name of the weapon. Names can be: (Case is ignored) """
                 },
-                result="""returns an int if the name matches that of a weapon, false otherwise. """,
-            ),
-            name='getWeaponIDFromName',
+                result='returns an int if the name matches that of a weapon, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -325,13 +314,12 @@ bool: false if the passed arguments were invalid """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will obtain the ID of a particular weapon from its name. """,
+                description='This function will obtain the ID of a particular weapon from its name.' ,
                 arguments={
                     "name": """A string containing the name of the weapon. Names can be: (Case is ignored) """
                 },
-                result="""returns an int if the name matches that of a weapon, false otherwise. """,
-            ),
-            name='getWeaponIDFromName',
+                result='returns an int if the name matches that of a weapon, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -369,13 +357,12 @@ bool: false if the passed arguments were invalid """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to retrieve the name of a weapon from an ID. """,
+                description='This function allows you to retrieve the name of a weapon from an ID.' ,
                 arguments={
                     "id": """The ID you wish to retrieve the name of """
                 },
-                result="""returns a string of the name of the weapon or death type, false otherwise. names will be like these: (ignoring case) """,
-            ),
-            name='getWeaponNameFromID',
+                result='returns a string of the name of the weapon or death type, false otherwise. names will be like these: (ignoring case)' ,
+            )
         )
         ],
         client=[
@@ -411,13 +398,12 @@ bool: false if the passed arguments were invalid """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to retrieve the name of a weapon from an ID. """,
+                description='This function allows you to retrieve the name of a weapon from an ID.' ,
                 arguments={
                     "id": """The ID you wish to retrieve the name of """
                 },
-                result="""returns a string of the name of the weapon or death type, false otherwise. names will be like these: (ignoring case) """,
-            ),
-            name='getWeaponNameFromID',
+                result='returns a string of the name of the weapon or death type, false otherwise. names will be like these: (ignoring case)' ,
+            )
         )
         ],
     ),
@@ -483,19 +469,15 @@ bool: false if the passed arguments were invalid """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets a weapon property of the specified Element/Weapon|custom weapon (clientside only) or specified Weapons|player-held weapon (both client and server). """,
+                description='This function gets a weapon property of the specified Element/Weapon|custom weapon (clientside only) or specified Weapons|player-held weapon (both client and server).' ,
                 arguments={
                     "weaponID or weaponName": """The ID or name of the weapon you want to get info of. Names can be: """,
                     "weaponSkill": """Either: pro, std or poor """,
                     "property": """The property you want to get the value of:
 The following properties are get only: """
                 },
-                result="""on success:
-int: the weapon property
-on failure:
-bool: false if the passed arguments were invalid """,
-            ),
-            name='getWeaponProperty',
+                result='on success:\nint: the weapon property\non failure:\nbool: false if the passed arguments were invalid' ,
+            )
         )
         ],
         client=[
@@ -559,19 +541,15 @@ bool: false if the passed arguments were invalid """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets a weapon property of the specified Element/Weapon|custom weapon (clientside only) or specified Weapons|player-held weapon (both client and server). """,
+                description='This function gets a weapon property of the specified Element/Weapon|custom weapon (clientside only) or specified Weapons|player-held weapon (both client and server).' ,
                 arguments={
                     "weaponID or weaponName": """The ID or name of the weapon you want to get info of. Names can be: """,
                     "weaponSkill": """Either: pro, std or poor """,
                     "property": """The property you want to get the value of:
 The following properties are get only: """
                 },
-                result="""on success:
-int: the weapon property
-on failure:
-bool: false if the passed arguments were invalid """,
-            ),
-            name='getWeaponProperty',
+                result='on success:\nint: the weapon property\non failure:\nbool: false if the passed arguments were invalid' ,
+            )
         )
         ],
     ),
@@ -639,19 +617,15 @@ bool: false if the passed arguments were invalid """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""giveWeapon gives a specified weapon to a certain player or ped. There is an optional argument to specify ammunition. For example, a melee weapon doesnt need an ammo argument.
-*When setting ammo for Weapon|weapons in slot 0,1,10,11 or 12, the ammo max is 1
-*When setting ammo for Weapon|weapons in slot 3,4,5, the ammo is added
-*When setting ammo for Weapon|weapons in slot 2,6,7,8,9 and the slot weapon is changing, the ammo is replaced """,
+                description='giveWeapon gives a specified weapon to a certain player or ped. There is an optional argument to specify ammunition. For example, a melee weapon doesnt need an ammo argument.\n*When setting ammo for Weapon|weapons in slot 0,1,10,11 or 12, the ammo max is 1\n*When setting ammo for Weapon|weapons in slot 3,4,5, the ammo is added\n*When setting ammo for Weapon|weapons in slot 2,6,7,8,9 and the slot weapon is changing, the ammo is replaced' ,
                 arguments={
                     "thePlayer": """A player or ped object referencing the specified player (or ped) """,
                     "weapon": """A whole number integer that refers to a Weapon ID. Click Weapon|here for a list of possible weapon IDs. """,
                     "ammo": """A whole number integer serving as the ammo amount for the given weapon.  For weapons that do not require ammo, such as melee, this should be at least 1. """,
                     "setAsCurrent": """A boolean value determining whether or not the weapon will be set as the players current. """
                 },
-                result="""returns true if weapon was successfully acquired, false otherwise. """,
-            ),
-            name='giveWeapon',
+                result='returns true if weapon was successfully acquired, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -722,17 +696,15 @@ bool: false if the passed arguments were invalid """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""<section name=setWeaponAmmo class=server show=true>
-Sets the ammo to a certain amount for a specified weapon (if they already have it), regardless of current ammo. """,
+                description='<section name=setWeaponAmmo class=server show=true>\nSets the ammo to a certain amount for a specified weapon (if they already have it), regardless of current ammo.' ,
                 arguments={
                     "thePlayer": """A player object referencing the specified player """,
                     "weapon": """A whole number integer that refers to a weapon ID. """,
                     "totalAmmo": """A whole number integer serving as the total ammo amount for the given weapon (including ammo in clip). """,
                     "ammoInClip": """The amount of ammo to set in the players clip.  This will be taken from the main ammo.  If left unspecified or set to 0, the current clip will remain. """
                 },
-                result="""returns a boolean value true or false that tells you if it was successful or not. """,
-            ),
-            name='setWeaponAmmo',
+                result='returns a boolean value true or false that tells you if it was successful or not.' ,
+            )
         )
         ],
         client=[
@@ -798,17 +770,15 @@ Sets the ammo to a certain amount for a specified weapon (if they already have i
                 ],
             ),
             docs=FunctionDoc(
-                description="""<section name=setWeaponAmmo class=server show=true>
-Sets the ammo to a certain amount for a specified weapon (if they already have it), regardless of current ammo. """,
+                description='<section name=setWeaponAmmo class=server show=true>\nSets the ammo to a certain amount for a specified weapon (if they already have it), regardless of current ammo.' ,
                 arguments={
                     "thePlayer": """A player object referencing the specified player """,
                     "weapon": """A whole number integer that refers to a weapon ID. """,
                     "totalAmmo": """A whole number integer serving as the total ammo amount for the given weapon (including ammo in clip). """,
                     "ammoInClip": """The amount of ammo to set in the players clip.  This will be taken from the main ammo.  If left unspecified or set to 0, the current clip will remain. """
                 },
-                result="""returns a boolean value true or false that tells you if it was successful or not. """,
-            ),
-            name='setWeaponAmmo',
+                result='returns a boolean value true or false that tells you if it was successful or not.' ,
+            )
         )
         ],
     ),
@@ -884,38 +854,15 @@ Sets the ammo to a certain amount for a specified weapon (if they already have i
                 ],
             ),
             docs=FunctionDoc(
-                description="""<section name=Server class=server show=true>
-This function sets the weapon property of the specified weapons specified weapon type. See lower down the page for documentation related to weapon creation.
-<syntaxhighlight lang=lua>bool setWeaponProperty ( int weaponID/string weaponName, string weaponSkill, string property, int/float theValue )</syntaxhighlight>
-*weaponID: The ID or name of the Weapons|weapon you want to set a property of. Names can be:
-*weaponSkill: Either: pro, std or poor. The player must have this skill level set to have the effect.
-*property: The property you want to set the value of:
-*theValue: The value to set the property to.
-On success:
-bool: Returns true if the weapon property was successfully set
-On failure:
-bool: Returns false if the weapon property was unable to be set
-</section>
-<section name=Client class=client show=true>
-<p>The client side function only applies to custom weapons created client sided.</p>
-<syntaxhighlight lang=lua>bool setWeaponProperty ( weapon theWeapon, string strProperty, value theValue )</syntaxhighlight>
-* theWeapon: the weapon to change the property of.
-* strProperty: the property to edit:
-* theValue: The value to set the property to.
-Returns true if the property was set.
-</section> """,
+                description='<section name=Server class=server show=true>\nThis function sets the weapon property of the specified weapons specified weapon type. See lower down the page for documentation related to weapon creation.\n<syntaxhighlight lang=lua>bool setWeaponProperty ( int weaponID/string weaponName, string weaponSkill, string property, int/float theValue )</syntaxhighlight>\n*weaponID: The ID or name of the Weapons|weapon you want to set a property of. Names can be:\n*weaponSkill: Either: pro, std or poor. The player must have this skill level set to have the effect.\n*property: The property you want to set the value of:\n*theValue: The value to set the property to.\nOn success:\nbool: Returns true if the weapon property was successfully set\nOn failure:\nbool: Returns false if the weapon property was unable to be set\n</section>\n<section name=Client class=client show=true>\n<p>The client side function only applies to custom weapons created client sided.</p>\n<syntaxhighlight lang=lua>bool setWeaponProperty ( weapon theWeapon, string strProperty, value theValue )</syntaxhighlight>\n* theWeapon: the weapon to change the property of.\n* strProperty: the property to edit:\n* theValue: The value to set the property to.\nReturns true if the property was set.\n</section>' ,
                 arguments={
                     "weaponID": """The ID or name of the Weapons|weapon you want to set a property of. Names can be: """,
                     "weaponSkill": """Either: pro, std or poor. The player must have this skill level set to have the effect. """,
                     "property": """The property you want to set the value of: """,
                     "theValue": """The value to set the property to. """
                 },
-                result="""on success:
-bool: returns true if the weapon property was successfully set
-on failure:
-bool: returns false if the weapon property was unable to be set """,
-            ),
-            name='setWeaponProperty',
+                result='on success:\nbool: returns true if the weapon property was successfully set\non failure:\nbool: returns false if the weapon property was unable to be set' ,
+            )
         )
         ],
         client=[
@@ -971,34 +918,14 @@ bool: returns false if the weapon property was unable to be set """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""<section name=Server class=server show=true>
-This function sets the weapon property of the specified weapons specified weapon type. See lower down the page for documentation related to weapon creation.
-<syntaxhighlight lang=lua>bool setWeaponProperty ( int weaponID/string weaponName, string weaponSkill, string property, int/float theValue )</syntaxhighlight>
-*weaponID: The ID or name of the Weapons|weapon you want to set a property of. Names can be:
-*weaponSkill: Either: pro, std or poor. The player must have this skill level set to have the effect.
-*property: The property you want to set the value of:
-*theValue: The value to set the property to.
-On success:
-bool: Returns true if the weapon property was successfully set
-On failure:
-bool: Returns false if the weapon property was unable to be set
-</section>
-<section name=Client class=client show=true>
-<p>The client side function only applies to custom weapons created client sided.</p>
-<syntaxhighlight lang=lua>bool setWeaponProperty ( weapon theWeapon, string strProperty, value theValue )</syntaxhighlight>
-* theWeapon: the weapon to change the property of.
-* strProperty: the property to edit:
-* theValue: The value to set the property to.
-Returns true if the property was set.
-</section> """,
+                description='<section name=Server class=server show=true>\nThis function sets the weapon property of the specified weapons specified weapon type. See lower down the page for documentation related to weapon creation.\n<syntaxhighlight lang=lua>bool setWeaponProperty ( int weaponID/string weaponName, string weaponSkill, string property, int/float theValue )</syntaxhighlight>\n*weaponID: The ID or name of the Weapons|weapon you want to set a property of. Names can be:\n*weaponSkill: Either: pro, std or poor. The player must have this skill level set to have the effect.\n*property: The property you want to set the value of:\n*theValue: The value to set the property to.\nOn success:\nbool: Returns true if the weapon property was successfully set\nOn failure:\nbool: Returns false if the weapon property was unable to be set\n</section>\n<section name=Client class=client show=true>\n<p>The client side function only applies to custom weapons created client sided.</p>\n<syntaxhighlight lang=lua>bool setWeaponProperty ( weapon theWeapon, string strProperty, value theValue )</syntaxhighlight>\n* theWeapon: the weapon to change the property of.\n* strProperty: the property to edit:\n* theValue: The value to set the property to.\nReturns true if the property was set.\n</section>' ,
                 arguments={
                     "theWeapon": """the weapon to change the property of. """,
                     "strProperty": """the property to edit: """,
                     "theValue": """The value to set the property to. """
                 },
-                result="""returns true if the property was set. """,
-            ),
-            name='setWeaponProperty',
+                result='returns true if the property was set.' ,
+            )
         )
         ],
     ),
@@ -1036,13 +963,12 @@ Returns true if the property was set.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes every weapons from a specified ped, rendering it unarmed. """,
+                description='This function removes every weapons from a specified ped, rendering it unarmed.' ,
                 arguments={
                     "thePed": """: A ped element referencing the specified ped """
                 },
-                result="""returns true if the function succeeded, false otherwise. """,
-            ),
-            name='takeAllWeapons',
+                result='returns true if the function succeeded, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1103,15 +1029,14 @@ Returns true if the property was set.
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes a specified weapon or ammo from a certain players inventory. """,
+                description='This function removes a specified weapon or ammo from a certain players inventory.' ,
                 arguments={
                     "thePlayer": """: A player object referencing the specified player. """,
                     "weaponId": """: An integer that refers to a weapon that you wish to remove. """,
                     "ammo": """: If used, this amount of ammo will be taken instead and the weapon will not be removed. """
                 },
-                result="""returns a true if the weapon/ammo was removed successfully, false otherwise. """,
-            ),
-            name='takeWeapon',
+                result='returns a true if the weapon/ammo was removed successfully, false otherwise.' ,
+            )
         )
         ],
         client=[

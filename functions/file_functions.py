@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -43,13 +43,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Closes a file handle obtained by fileCreate or fileOpen. """,
+                description='Closes a file handle obtained by fileCreate or fileOpen.' ,
                 arguments={
                     "theFile": """The file handle to close. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='fileClose',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -85,13 +84,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Closes a file handle obtained by fileCreate or fileOpen. """,
+                description='Closes a file handle obtained by fileCreate or fileOpen.' ,
                 arguments={
                     "theFile": """The file handle to close. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='fileClose',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -149,15 +147,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function copies a file.{{Note|The file functions should not be used to implement configuration files. It is encouraged to use the XML functions for this instead.}} """,
+                description='This function copies a file.{{Note|The file functions should not be used to implement configuration files. It is encouraged to use the XML functions for this instead.}}' ,
                 arguments={
                     "filePath": """: The path of the file you want to copy. """,
                     "copyToFilePath": """: Where to copy the specified file to. """,
                     "overwrite": """: If set to true it will overwrite a file that already exists at copyToFilePath. """
                 },
-                result="""return true if the file was copied, else false if the filepath doesnt exist. """,
-            ),
-            name='fileCopy',
+                result='return true if the file was copied, else false if the filepath doesnt exist.' ,
+            )
         )
         ],
         client=[
@@ -213,15 +210,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function copies a file.{{Note|The file functions should not be used to implement configuration files. It is encouraged to use the XML functions for this instead.}} """,
+                description='This function copies a file.{{Note|The file functions should not be used to implement configuration files. It is encouraged to use the XML functions for this instead.}}' ,
                 arguments={
                     "filePath": """: The path of the file you want to copy. """,
                     "copyToFilePath": """: Where to copy the specified file to. """,
                     "overwrite": """: If set to true it will overwrite a file that already exists at copyToFilePath. """
                 },
-                result="""return true if the file was copied, else false if the filepath doesnt exist. """,
-            ),
-            name='fileCopy',
+                result='return true if the file was copied, else false if the filepath doesnt exist.' ,
+            )
         )
         ],
     ),
@@ -259,15 +255,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates a new file in a directory of a resource. If there already exists a file with the specified name, it is overwritten with an empty file. """,
+                description='Creates a new file in a directory of a resource. If there already exists a file with the specified name, it is overwritten with an empty file.' ,
                 arguments={
                     "filePath": """The filepath of the file to be created in the following format: :resourceName/path. resourceName is the name of the resource the file is in, and path is the path from the root directory of the resource to the file.
 :For example, if you want to create a file named 'myfile.txt' in the resource 'mapcreator', it can be created from another resource this way: ''fileCreate(":mapcreator/myfile.txt")''.
 :If the file is in the current resource, only the file path is necessary, e.g. ''fileCreate("myfile.txt")''. """
                 },
-                result="""if successful, returns a file handle which can be used with other file functions (filewrite, fileclose...). returns false if an error occured. """,
-            ),
-            name='fileCreate',
+                result='if successful, returns a file handle which can be used with other file functions (filewrite, fileclose...). returns false if an error occured.' ,
+            )
         )
         ],
         client=[
@@ -303,15 +298,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates a new file in a directory of a resource. If there already exists a file with the specified name, it is overwritten with an empty file. """,
+                description='Creates a new file in a directory of a resource. If there already exists a file with the specified name, it is overwritten with an empty file.' ,
                 arguments={
                     "filePath": """The filepath of the file to be created in the following format: :resourceName/path. resourceName is the name of the resource the file is in, and path is the path from the root directory of the resource to the file.
 :For example, if you want to create a file named 'myfile.txt' in the resource 'mapcreator', it can be created from another resource this way: ''fileCreate(":mapcreator/myfile.txt")''.
 :If the file is in the current resource, only the file path is necessary, e.g. ''fileCreate("myfile.txt")''. """
                 },
-                result="""if successful, returns a file handle which can be used with other file functions (filewrite, fileclose...). returns false if an error occured. """,
-            ),
-            name='fileCreate',
+                result='if successful, returns a file handle which can be used with other file functions (filewrite, fileclose...). returns false if an error occured.' ,
+            )
         )
         ],
     ),
@@ -349,15 +343,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Deletes the specified file. """,
+                description='Deletes the specified file.' ,
                 arguments={
                     "filePath": """The filepath of the file to delete in the following format: :resourceName/path. resourceName is the name of the resource the file is in, and path is the path from the root directory of the resource to the file.
 :For example, if you want to delete a file name "myFile.txt" in the resource 'fileres', it can be deleted from another resource this way: ''fileDelete(":fileres/myFile.txt")''.
 :If the file is in the current resource, only the file path is necessary, e.g. ''fileDelete("myFile.txt")''. """
                 },
-                result="""returns true if successful, false otherwise (for example if there exists no file with the given name, or it does exist but is in use). """,
-            ),
-            name='fileDelete',
+                result='returns true if successful, false otherwise (for example if there exists no file with the given name, or it does exist but is in use).' ,
+            )
         )
         ],
         client=[
@@ -393,15 +386,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Deletes the specified file. """,
+                description='Deletes the specified file.' ,
                 arguments={
                     "filePath": """The filepath of the file to delete in the following format: :resourceName/path. resourceName is the name of the resource the file is in, and path is the path from the root directory of the resource to the file.
 :For example, if you want to delete a file name "myFile.txt" in the resource 'fileres', it can be deleted from another resource this way: ''fileDelete(":fileres/myFile.txt")''.
 :If the file is in the current resource, only the file path is necessary, e.g. ''fileDelete("myFile.txt")''. """
                 },
-                result="""returns true if successful, false otherwise (for example if there exists no file with the given name, or it does exist but is in use). """,
-            ),
-            name='fileDelete',
+                result='returns true if successful, false otherwise (for example if there exists no file with the given name, or it does exist but is in use).' ,
+            )
         )
         ],
     ),
@@ -439,15 +431,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions checks whether a specified file exists inside a resource. """,
+                description='This functions checks whether a specified file exists inside a resource.' ,
                 arguments={
                     "filePath": """The filepath of the file, whose existence is going to be checked, in the following format: :resourceName/path. resourceName is the name of the resource the file is checked to be in, and path is the path from the root directory of the resource to the file.
 :For example, if you want to check whether a file named 'myfile.txt' exists in the resource 'mapcreator', it can be done from another resource this way: ''fileExists(":mapcreator/myfile.txt")''.
 :If the file, whose existence is going to be checked, is in the current resource, only the file path is necessary, e.g. ''fileExists("myfile.txt")''. Note that you must use forward slashes '/' for the folders, backslashes '\' will return false. """
                 },
-                result="""returns true if the file exists, false otherwise. """,
-            ),
-            name='fileExists',
+                result='returns true if the file exists, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -483,15 +474,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions checks whether a specified file exists inside a resource. """,
+                description='This functions checks whether a specified file exists inside a resource.' ,
                 arguments={
                     "filePath": """The filepath of the file, whose existence is going to be checked, in the following format: :resourceName/path. resourceName is the name of the resource the file is checked to be in, and path is the path from the root directory of the resource to the file.
 :For example, if you want to check whether a file named 'myfile.txt' exists in the resource 'mapcreator', it can be done from another resource this way: ''fileExists(":mapcreator/myfile.txt")''.
 :If the file, whose existence is going to be checked, is in the current resource, only the file path is necessary, e.g. ''fileExists("myfile.txt")''. Note that you must use forward slashes '/' for the folders, backslashes '\' will return false. """
                 },
-                result="""returns true if the file exists, false otherwise. """,
-            ),
-            name='fileExists',
+                result='returns true if the file exists, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -529,13 +519,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Forces pending disk writes to be executed. fileWrite doesnt directly write to the hard disk but places the data in a temporary buffer; only when there is enough data in the buffer it is actually written to disk. Call this function if you need the data written right now without closing the file. This is useful for log files that might want to be read while the resource is still executing. fileFlush can be called after each log entry is written. Without this, the file may appear empty or outdated to the user. """,
+                description='Forces pending disk writes to be executed. fileWrite doesnt directly write to the hard disk but places the data in a temporary buffer; only when there is enough data in the buffer it is actually written to disk. Call this function if you need the data written right now without closing the file. This is useful for log files that might want to be read while the resource is still executing. fileFlush can be called after each log entry is written. Without this, the file may appear empty or outdated to the user.' ,
                 arguments={
                     "theFile": """The file handle of the file you wish to flush. """
                 },
-                result="""returns true if succeeded, false in case of failure (e.g. the file handle is invalid). """,
-            ),
-            name='fileFlush',
+                result='returns true if succeeded, false in case of failure (e.g. the file handle is invalid).' ,
+            )
         )
         ],
         client=[
@@ -571,13 +560,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Forces pending disk writes to be executed. fileWrite doesnt directly write to the hard disk but places the data in a temporary buffer; only when there is enough data in the buffer it is actually written to disk. Call this function if you need the data written right now without closing the file. This is useful for log files that might want to be read while the resource is still executing. fileFlush can be called after each log entry is written. Without this, the file may appear empty or outdated to the user. """,
+                description='Forces pending disk writes to be executed. fileWrite doesnt directly write to the hard disk but places the data in a temporary buffer; only when there is enough data in the buffer it is actually written to disk. Call this function if you need the data written right now without closing the file. This is useful for log files that might want to be read while the resource is still executing. fileFlush can be called after each log entry is written. Without this, the file may appear empty or outdated to the user.' ,
                 arguments={
                     "theFile": """The file handle of the file you wish to flush. """
                 },
-                result="""returns true if succeeded, false in case of failure (e.g. the file handle is invalid). """,
-            ),
-            name='fileFlush',
+                result='returns true if succeeded, false in case of failure (e.g. the file handle is invalid).' ,
+            )
         )
         ],
     ),
@@ -615,13 +603,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the path of the given file. """,
+                description='This function retrieves the path of the given file.' ,
                 arguments={
                     "theFile": """The file you want to get the path. """
                 },
-                result="""returns a string representing the file path, false if invalid file was provided. """,
-            ),
-            name='fileGetPath',
+                result='returns a string representing the file path, false if invalid file was provided.' ,
+            )
         )
         ],
         client=[
@@ -657,13 +644,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the path of the given file. """,
+                description='This function retrieves the path of the given file.' ,
                 arguments={
                     "theFile": """The file you want to get the path. """
                 },
-                result="""returns a string representing the file path, false if invalid file was provided. """,
-            ),
-            name='fileGetPath',
+                result='returns a string representing the file path, false if invalid file was provided.' ,
+            )
         )
         ],
     ),
@@ -701,13 +687,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the current read/write position in the given file. """,
+                description='Returns the current read/write position in the given file.' ,
                 arguments={
                     "theFile": """the file handle you wish to get the position of. """
                 },
-                result="""returns the file position if successful, or false if an error occured (e.g. an invalid handle was passed). """,
-            ),
-            name='fileGetPos',
+                result='returns the file position if successful, or false if an error occured (e.g. an invalid handle was passed).' ,
+            )
         )
         ],
         client=[
@@ -743,13 +728,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the current read/write position in the given file. """,
+                description='Returns the current read/write position in the given file.' ,
                 arguments={
                     "theFile": """the file handle you wish to get the position of. """
                 },
-                result="""returns the file position if successful, or false if an error occured (e.g. an invalid handle was passed). """,
-            ),
-            name='fileGetPos',
+                result='returns the file position if successful, or false if an error occured (e.g. an invalid handle was passed).' ,
+            )
         )
         ],
     ),
@@ -787,13 +771,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the total size in bytes of the given file. """,
+                description='Returns the total size in bytes of the given file.' ,
                 arguments={
                     "theFile": """the file handle you wish to get the size of. """
                 },
-                result="""returns the file size if successful, or false if an error occured (e.g. an invalid file handle was passed). """,
-            ),
-            name='fileGetSize',
+                result='returns the file size if successful, or false if an error occured (e.g. an invalid file handle was passed).' ,
+            )
         )
         ],
         client=[
@@ -829,13 +812,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the total size in bytes of the given file. """,
+                description='Returns the total size in bytes of the given file.' ,
                 arguments={
                     "theFile": """the file handle you wish to get the size of. """
                 },
-                result="""returns the file size if successful, or false if an error occured (e.g. an invalid file handle was passed). """,
-            ),
-            name='fileGetSize',
+                result='returns the file size if successful, or false if an error occured (e.g. an invalid file handle was passed).' ,
+            )
         )
         ],
     ),
@@ -873,13 +855,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Checks if the file position is at the end of the file. """,
+                description='Checks if the file position is at the end of the file.' ,
                 arguments={
                     "theFile": """A handle to the file you wish to check. """
                 },
-                result="""returns true if the file position of the specified file is at the end of the file, false otherwise. """,
-            ),
-            name='fileIsEOF',
+                result='returns true if the file position of the specified file is at the end of the file, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -915,13 +896,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Checks if the file position is at the end of the file. """,
+                description='Checks if the file position is at the end of the file.' ,
                 arguments={
                     "theFile": """A handle to the file you wish to check. """
                 },
-                result="""returns true if the file position of the specified file is at the end of the file, false otherwise. """,
-            ),
-            name='fileIsEOF',
+                result='returns true if the file position of the specified file is at the end of the file, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -969,16 +949,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Opens an existing file for reading and writing. """,
+                description='Opens an existing file for reading and writing.' ,
                 arguments={
                     "filePath": """The filepath of the file in the following format: :resourceName/path. resourceName is the name of the resource the file is in, and path is the path from the root directory of the resource to the file.
 :For example, if there is a file named 'coolObjects.txt' in the resource 'objectSearch', it can be opened from another resource this way: ''fileOpen(":objectSearch/coolObjects.txt")''.
 :If the file is in the current resource, only the file path is necessary, e.g. ''fileOpen("coolObjects.txt")''. """,
                     "readOnly": """By default, the file is opened with reading and writing access. You can specify true for this parameter if you only need reading access. """
                 },
-                result="""if successful, returns a file handle for the file. otherwise returns false (f.e. if the file doesnt exist). """,
-            ),
-            name='fileOpen',
+                result='if successful, returns a file handle for the file. otherwise returns false (f.e. if the file doesnt exist).' ,
+            )
         )
         ],
         client=[
@@ -1024,16 +1003,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Opens an existing file for reading and writing. """,
+                description='Opens an existing file for reading and writing.' ,
                 arguments={
                     "filePath": """The filepath of the file in the following format: :resourceName/path. resourceName is the name of the resource the file is in, and path is the path from the root directory of the resource to the file.
 :For example, if there is a file named 'coolObjects.txt' in the resource 'objectSearch', it can be opened from another resource this way: ''fileOpen(":objectSearch/coolObjects.txt")''.
 :If the file is in the current resource, only the file path is necessary, e.g. ''fileOpen("coolObjects.txt")''. """,
                     "readOnly": """By default, the file is opened with reading and writing access. You can specify true for this parameter if you only need reading access. """
                 },
-                result="""if successful, returns a file handle for the file. otherwise returns false (f.e. if the file doesnt exist). """,
-            ),
-            name='fileOpen',
+                result='if successful, returns a file handle for the file. otherwise returns false (f.e. if the file doesnt exist).' ,
+            )
         )
         ],
     ),
@@ -1081,14 +1059,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Reads the specified number of bytes from the given file starting at its current read/write position, and returns them as a string. """,
+                description='Reads the specified number of bytes from the given file starting at its current read/write position, and returns them as a string.' ,
                 arguments={
                     "theFile": """A handle to the file you wish to read from. Use fileOpen to obtain this handle. """,
                     "count": """The number of bytes you wish to read. """
                 },
-                result="""returns the bytes that were read in a string. note that this string might not contain as many bytes as you specified if an error occured, i.e. end of file. """,
-            ),
-            name='fileRead',
+                result='returns the bytes that were read in a string. note that this string might not contain as many bytes as you specified if an error occured, i.e. end of file.' ,
+            )
         )
         ],
         client=[
@@ -1134,14 +1111,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Reads the specified number of bytes from the given file starting at its current read/write position, and returns them as a string. """,
+                description='Reads the specified number of bytes from the given file starting at its current read/write position, and returns them as a string.' ,
                 arguments={
                     "theFile": """A handle to the file you wish to read from. Use fileOpen to obtain this handle. """,
                     "count": """The number of bytes you wish to read. """
                 },
-                result="""returns the bytes that were read in a string. note that this string might not contain as many bytes as you specified if an error occured, i.e. end of file. """,
-            ),
-            name='fileRead',
+                result='returns the bytes that were read in a string. note that this string might not contain as many bytes as you specified if an error occured, i.e. end of file.' ,
+            )
         )
         ],
     ),
@@ -1189,14 +1165,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Renames the specified file. """,
+                description='Renames the specified file.' ,
                 arguments={
                     "filePath": """The filepath of the source file in the following format: :resourceName/path. resourceName is the name of the resource the file is in, and path is the path from the root directory of the resource to the file. If the file is in the current resource, only the file path is necessary. """,
                     "newFilePath": """Destination filepath for the specified source file in the same format. """
                 },
-                result="""if successful, returns true. otherwise returns false. """,
-            ),
-            name='fileRename',
+                result='if successful, returns true. otherwise returns false.' ,
+            )
         )
         ],
         client=[
@@ -1242,14 +1217,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Renames the specified file. """,
+                description='Renames the specified file.' ,
                 arguments={
                     "filePath": """The filepath of the source file in the following format: :resourceName/path. resourceName is the name of the resource the file is in, and path is the path from the root directory of the resource to the file. If the file is in the current resource, only the file path is necessary. """,
                     "newFilePath": """Destination filepath for the specified source file in the same format. """
                 },
-                result="""if successful, returns true. otherwise returns false. """,
-            ),
-            name='fileRename',
+                result='if successful, returns true. otherwise returns false.' ,
+            )
         )
         ],
     ),
@@ -1297,14 +1271,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the current read/write position in the file. """,
+                description='Sets the current read/write position in the file.' ,
                 arguments={
                     "theFile": """The file handle of which you want to change the read/write position. """,
                     "offset": """The new position. This is the number of bytes from the beginning of the file. If this value is larger than the file size, it is limited to 52,428,800 bytes (50 MB). """
                 },
-                result="""returns where the offset was actually set at. i.e. if offset was past the end of the file, it will be set at the end of the file, and this position will be returned. returns false in case of failure (e.g. the specified file handle is invalid). """,
-            ),
-            name='fileSetPos',
+                result='returns where the offset was actually set at. i.e. if offset was past the end of the file, it will be set at the end of the file, and this position will be returned. returns false in case of failure (e.g. the specified file handle is invalid).' ,
+            )
         )
         ],
         client=[
@@ -1350,14 +1323,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the current read/write position in the file. """,
+                description='Sets the current read/write position in the file.' ,
                 arguments={
                     "theFile": """The file handle of which you want to change the read/write position. """,
                     "offset": """The new position. This is the number of bytes from the beginning of the file. If this value is larger than the file size, it is limited to 52,428,800 bytes (50 MB). """
                 },
-                result="""returns where the offset was actually set at. i.e. if offset was past the end of the file, it will be set at the end of the file, and this position will be returned. returns false in case of failure (e.g. the specified file handle is invalid). """,
-            ),
-            name='fileSetPos',
+                result='returns where the offset was actually set at. i.e. if offset was past the end of the file, it will be set at the end of the file, and this position will be returned. returns false in case of failure (e.g. the specified file handle is invalid).' ,
+            )
         )
         ],
     ),
@@ -1425,14 +1397,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Writes one or more strings to a given file, starting at the current read/write position. Advances the position over the number of bytes that were written. """,
+                description='Writes one or more strings to a given file, starting at the current read/write position. Advances the position over the number of bytes that were written.' ,
                 arguments={
                     "theFile": """A handle to the file you wish to write to. The file must have been opened with write access, i.e. the file handle must be a result of fileCreate or fileOpen with the readonly parameter set to false. """,
                     "string1": """The string to write. """
                 },
-                result="""returns the number of bytes successfully written to the file, returns false if invalid arguments were specified. """,
-            ),
-            name='fileWrite',
+                result='returns the number of bytes successfully written to the file, returns false if invalid arguments were specified.' ,
+            )
         )
         ],
         client=[
@@ -1498,14 +1469,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Writes one or more strings to a given file, starting at the current read/write position. Advances the position over the number of bytes that were written. """,
+                description='Writes one or more strings to a given file, starting at the current read/write position. Advances the position over the number of bytes that were written.' ,
                 arguments={
                     "theFile": """A handle to the file you wish to write to. The file must have been opened with write access, i.e. the file handle must be a result of fileCreate or fileOpen with the readonly parameter set to false. """,
                     "string1": """The string to write. """
                 },
-                result="""returns the number of bytes successfully written to the file, returns false if invalid arguments were specified. """,
-            ),
-            name='fileWrite',
+                result='returns the number of bytes successfully written to the file, returns false if invalid arguments were specified.' ,
+            )
         )
         ],
     )

@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -126,7 +126,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates an Element/Effect|effect on specified position. """,
+                description='Creates an Element/Effect|effect on specified position.' ,
                 arguments={
                     "name": """A string contains Element/Effect#Effects_list|effect name. """,
                     "x": """A floating point number representing the X coordinate on the map. """,
@@ -138,9 +138,8 @@ DUMP_PARTIAL = [
                     "drawDistance": """A floating point number between 1 and 8191 which represents the draw distance of the effect, or 0 to use the default draw distance. """,
                     "soundEnable": """to enable the sound of the effect. """
                 },
-                result="""returns the element/effect|effect element if creation was successful, false otherwise. """,
-            ),
-            name='createEffect',
+                result='returns the element/effect|effect element if creation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -251,16 +250,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates a blood splatter particle effect. """,
+                description='Creates a blood splatter particle effect.' ,
                 arguments={
                     "posX, posY, posZ": """the world coordinates where the effect originates. """,
                     "dirX, dirY, dirZ": """a direction vector indicating where the blood flies to. """,
                     "count": """the number of flying droplets to create. """,
                     "brightness": """the brightness. Ranges from 0 (almost black) to 1 (normal color). """
                 },
-                result=""" """,
-            ),
-            name='fxAddBlood',
+                result='' ,
+            )
         )
         ],
     ),
@@ -381,7 +379,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates a bullet impact particle effect, consisting of a small smoke cloud and a number of sparks. """,
+                description='Creates a bullet impact particle effect, consisting of a small smoke cloud and a number of sparks.' ,
                 arguments={
                     "posX, posY, posZ": """the world coordinates where the effect originates. """,
                     "dirX, dirY, dirZ": """a vector indicating the direction of the effect. """,
@@ -389,9 +387,8 @@ DUMP_PARTIAL = [
                     "sparkCount": """the number of sparks to create. """,
                     "smokeIntensity": """the amount/transparency of smoke, ranges from 0 to 1. """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='fxAddBulletImpact',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -452,15 +449,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a bullet splash particle effect, normally created when shooting into water. """,
+                description='This function creates a bullet splash particle effect, normally created when shooting into water.' ,
                 arguments={
                     "posX": """A float representing the x position of the splash """,
                     "posY": """A float representing the y position of the splash """,
                     "posZ": """A float representing the z position of the splash """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='fxAddBulletSplash',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -581,16 +577,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates a debris particle effect (e.g. bits that fly off a car when ramming a wall). """,
+                description='Creates a debris particle effect (e.g. bits that fly off a car when ramming a wall).' ,
                 arguments={
                     "posX, posY, posZ": """the world coordinates where the debris originates. """,
                     "colorR, colorG, colorB, colorA": """the color and alpha (transparency) of the debris effect. """,
                     "scale": """the size of the chunks. """,
                     "count": """the number of chunks to create. """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='fxAddDebris',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -651,15 +646,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a foot splash particle effect, normally created when walking into water. """,
+                description='This function creates a foot splash particle effect, normally created when walking into water.' ,
                 arguments={
                     "posX": """A float representing the x position of the splash """,
                     "posY": """A float representing the y position of the splash """,
                     "posZ": """A float representing the z position of the splash """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='fxAddFootSplash',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -780,7 +774,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a glass particle effect. """,
+                description='This function creates a glass particle effect.' ,
                 arguments={
                     "posX": """A float representing the x position of the glass """,
                     "posY": """A float representing the y position of the glass """,
@@ -789,9 +783,8 @@ DUMP_PARTIAL = [
                     "scale": """A float representing the size of the particle effect, where 1 is the standard size. """,
                     "count": """The density of the particle effect. """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='fxAddGlass',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -892,15 +885,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a gunshot particle effect. """,
+                description='This function creates a gunshot particle effect.' ,
                 arguments={
                     "posX, posY, posZ": """the world coordinates where the effect originates. """,
                     "dirX, dirY, dirZ": """a direction vector indicating where the bullet is fired. """,
                     "includeSparks": """A bool representing whether the particle effect will generate sparks. """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='fxAddGunshot',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -991,14 +983,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates a punch impact particle effect (a small dust cloud). """,
+                description='Creates a punch impact particle effect (a small dust cloud).' ,
                 arguments={
                     "posX, posY, posZ": """the world coordinates where the effect originates. """,
                     "dirX, dirY, dirZ": """a vector indicating the movement direction of the effect. """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='fxAddPunchImpact',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1169,7 +1160,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates a number of sparks originating from a point or along a line. """,
+                description='Creates a number of sparks originating from a point or along a line.' ,
                 arguments={
                     "posX, posY, posZ": """the world coordinates where the sparks originate. """,
                     "dirX, dirY, dirZ": """a direction vector indicating where the sparks fly to. The longer this vector is, the faster the sparks fly. """,
@@ -1180,9 +1171,8 @@ DUMP_PARTIAL = [
                     "spread": """determines how strongly the particles deviate from each other. With low values the particles will stay quite close together, high values will make them fly in all directions. Also affects their speed. """,
                     "life": """the higher this value, the longer the sparks survive before they disappear. """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='fxAddSparks',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1273,14 +1263,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a tank firing particle effect. """,
+                description='This function creates a tank firing particle effect.' ,
                 arguments={
                     "posX, posY, posZ": """the world coordinates where the effect originates. """,
                     "dirX, dirY, dirZ": """a direction vector indicating where the tank fire is directed to. """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='fxAddTankFire',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1371,14 +1360,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates a tyre burst particle effect (a small white smoke puff). """,
+                description='Creates a tyre burst particle effect (a small white smoke puff).' ,
                 arguments={
                     "posX, posY, posZ": """the world coordinates where the puff originates. """,
                     "dirX, dirY, dirZ": """a vector indicating the movement direction of the effect. """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='fxAddTyreBurst',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1439,15 +1427,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a water hydrant particle effect. """,
+                description='This function creates a water hydrant particle effect.' ,
                 arguments={
                     "posX": """A float representing the x position of the hydrant """,
                     "posY": """A float representing the y position of the hydrant """,
                     "posZ": """A float representing the z position of the hydrant """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='fxAddWaterHydrant',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1508,15 +1495,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a water splash particle effect. """,
+                description='This function creates a water splash particle effect.' ,
                 arguments={
                     "posX": """A float representing the x position of the splash """,
                     "posY": """A float representing the y position of the splash """,
                     "posZ": """A float representing the z position of the splash """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='fxAddWaterSplash',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1627,16 +1613,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates a wood splinter particle effect. """,
+                description='Creates a wood splinter particle effect.' ,
                 arguments={
                     "posX, posY, posZ": """the world coordinates where the effect originates. """,
                     "dirX, dirY, dirZ": """a direction vector indicating where the wood splinters fly to. """,
                     "count": """the number of splinters to create. """,
                     "brightness": """the brightness. Ranges from 0 (black) to 1 (normal color). """
                 },
-                result="""returns a true if the operation was successful, false otherwise. """,
-            ),
-            name='fxAddWood',
+                result='returns a true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1677,13 +1662,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the density of certain effect. """,
+                description='This function gets the density of certain effect.' ,
                 arguments={
                     "theEffect": """The effect to get density of. """
                 },
-                result=""" """,
-            ),
-            name='getEffectDensity',
+                result='' ,
+            )
         )
         ],
     ),
@@ -1724,13 +1708,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the speed of a specified effect. """,
+                description='This function gets the speed of a specified effect.' ,
                 arguments={
                     "theEffect": """The effect to get the speed of. """
                 },
-                result="""returns float containing the effects speed, false if invalid arguments were specified. """,
-            ),
-            name='getEffectSpeed',
+                result='returns float containing the effects speed, false if invalid arguments were specified.' ,
+            )
         )
         ],
     ),
@@ -1781,15 +1764,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the density of a specified effect.
-The limit is 1 for Low, 1.5 for Medium, and 2 for High/Very high.|true}} """,
+                description='This function sets the density of a specified effect.\nThe limit is 1 for Low, 1.5 for Medium, and 2 for High/Very high.|true}}' ,
                 arguments={
                     "theEffect": """The effect to change the speed of. """,
                     "density": """The level of density (from 0 to 2). """
                 },
-                result="""returns true if the density was succesfully changed, false otherwise. """,
-            ),
-            name='setEffectDensity',
+                result='returns true if the density was succesfully changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1840,14 +1821,13 @@ The limit is 1 for Low, 1.5 for Medium, and 2 for High/Very high.|true}} """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the speed of a specified effect. """,
+                description='This function sets the speed of a specified effect.' ,
                 arguments={
                     "theEffect": """The effect to change the speed of. """,
                     "speed": """The speed to set. """
                 },
-                result="""returns true if the effect speed was succesfuly changed, false otherwise. """,
-            ),
-            name='setEffectSpeed',
+                result='returns true if the effect speed was succesfuly changed, false otherwise.' ,
+            )
         )
         ],
     )

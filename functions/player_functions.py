@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -53,14 +53,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to forcefully show a players radar map. """,
+                description='This function is used to forcefully show a players radar map.' ,
                 arguments={
                     "thePlayer": """: A player object referencing the specified player """,
                     "forceOn": """: A boolean value representing whether or not the players radar map will be forced on """
                 },
-                result=""" """,
-            ),
-            name='forcePlayerMap',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -96,13 +95,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to forcefully show a players radar map. """,
+                description='This function is used to forcefully show a players radar map.' ,
                 arguments={
                     "forceOn": """: A boolean value representing whether or not the players radar map will be forced on """
                 },
-                result=""" """,
-            ),
-            name='forcePlayerMap',
+                result='' ,
+            )
         )
         ],
     ),
@@ -131,13 +129,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table of all the alive players on the server. Opposite function of getDeadPlayers. """,
+                description='This function returns a table of all the alive players on the server. Opposite function of getDeadPlayers.' ,
                 arguments={
                     
                 },
-                result="""returns a table of all the alive players. """,
-            ),
-            name='getAlivePlayers',
+                result='returns a table of all the alive players.' ,
+            )
         )
         ],
         client=[
@@ -169,13 +166,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table of all currently dead players on the server. """,
+                description='This function returns a table of all currently dead players on the server.' ,
                 arguments={
                     
                 },
-                result="""returns a table of all the dead players. """,
-            ),
-            name='getDeadPlayers',
+                result='returns a table of all the dead players.' ,
+            )
         )
         ],
         client=[
@@ -210,14 +206,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the player element of the client running the current script.
-You can use the predefined variable localPlayer instead of typing getLocalPlayer() """,
+                description='This function gets the player element of the client running the current script.\nYou can use the predefined variable localPlayer instead of typing getLocalPlayer()' ,
                 arguments={
                     
                 },
-                result="""returns the local player element. """,
-            ),
-            name='getLocalPlayer',
+                result='returns the local player element.' ,
+            )
         )
         ],
     ),
@@ -255,17 +249,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns anti-cheat info for a player. The info returned by this function can change over time, so use the server event onPlayerACInfo instead. """,
+                description='This function returns anti-cheat info for a player. The info returned by this function can change over time, so use the server event onPlayerACInfo instead.' ,
                 arguments={
                     "thePlayer": """The player whose anti-cheat info you want to check. """
                 },
-                result="""returns a table with the following entries:
-* detectedac: a string containing a comma separated list of anti-cheat_guide|anti-cheat codes the player has triggered.
-*d3d9size: a number representing the file size of any custom d3d9.dll the player may have installed.
-*d3d9md5: a string containing the md5 of any custom d3d9.dll the player may have installed.
-*d3d9sha256: a string containing the sha256 of any custom d3d9.dll the player may have installed. """,
-            ),
-            name='getPlayerACInfo',
+                result='returns a table with the following entries:\n* detectedac: a string containing a comma separated list of anti-cheat_guide|anti-cheat codes the player has triggered.\n*d3d9size: a number representing the file size of any custom d3d9.dll the player may have installed.\n*d3d9md5: a string containing the md5 of any custom d3d9.dll the player may have installed.\n*d3d9sha256: a string containing the sha256 of any custom d3d9.dll the player may have installed.' ,
+            )
         )
         ],
         client=[
@@ -316,14 +305,13 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "thePlayer": """This is the Player whos value you want to retrieve. """,
                     "key": """The name of the key. """
                 },
-                result="""this function returns a string containing the requested value if a valid key was specified or false otherwise. """,
-            ),
-            name='getPlayerAnnounceValue',
+                result='this function returns a string containing the requested value if a valid key was specified or false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -364,13 +352,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to check the current blur level of a specified player. """,
+                description='This function allows you to check the current blur level of a specified player.' ,
                 arguments={
                     "thePlayer": """The player whose blur level you want to check. """
                 },
-                result="""returns the players blur level if successful, false if an invalid player was given. """,
-            ),
-            name='getPlayerBlurLevel',
+                result='returns the players blur level if successful, false if an invalid player was given.' ,
+            )
         )
         ],
         client=[
@@ -397,13 +384,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to check the current blur level of a specified player. """,
+                description='This function allows you to check the current blur level of a specified player.' ,
                 arguments={
                     
                 },
-                result="""returns the local blur level. """,
-            ),
-            name='getPlayerBlurLevel',
+                result='returns the local blur level.' ,
+            )
         )
         ],
     ),
@@ -432,13 +418,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the number of players currently connected to the server. """,
+                description='This function returns the number of players currently connected to the server.' ,
                 arguments={
                     
                 },
-                result="""returns the number of players connected to the server as an int. """,
-            ),
-            name='getPlayerCount',
+                result='returns the number of players connected to the server as an int.' ,
+            )
         )
         ],
         client=[
@@ -479,13 +464,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a player element for the player with the name passed to the function. """,
+                description='This function returns a player element for the player with the name passed to the function.' ,
                 arguments={
                     "playerName": """: A string containing the name of the player you want to reference """
                 },
-                result="""returns a player element for the player with the nickname provided. if there is no player with that name, false is returned. """,
-            ),
-            name='getPlayerFromName',
+                result='returns a player element for the player with the nickname provided. if there is no player with that name, false is returned.' ,
+            )
         )
         ],
         client=[
@@ -521,13 +505,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a player element for the player with the name passed to the function. """,
+                description='This function returns a player element for the player with the name passed to the function.' ,
                 arguments={
                     "playerName": """: A string containing the name of the player you want to reference """
                 },
-                result="""returns a player element for the player with the nickname provided. if there is no player with that name, false is returned. """,
-            ),
-            name='getPlayerFromName',
+                result='returns a player element for the player with the nickname provided. if there is no player with that name, false is returned.' ,
+            )
         )
         ],
     ),
@@ -565,13 +548,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the amount of time in milliseconds that a players position has not changed. """,
+                description='This function gets the amount of time in milliseconds that a players position has not changed.' ,
                 arguments={
                     "thePlayer": """: The player you wish to get the idle time of. """
                 },
-                result="""returns the amount of time in milliseconds that a player has been idle, false otherwise. """,
-            ),
-            name='getPlayerIdleTime',
+                result='returns the amount of time in milliseconds that a player has been idle, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -612,13 +594,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a string containing the IP address of the player. """,
+                description='This function returns a string containing the IP address of the player.' ,
                 arguments={
                     "thePlayer": """The player element you want to get the IP of. """
                 },
-                result="""returns a string containing the requested playerss ip, or false if the player passed to the function is invalid. """,
-            ),
-            name='getPlayerIP',
+                result='returns a string containing the requested playerss ip, or false if the player passed to the function is invalid.' ,
+            )
         )
         ],
         client=[
@@ -665,17 +646,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the GUI bounding box of the radar map texture. """,
+                description='This function gets the GUI bounding box of the radar map texture.' ,
                 arguments={
                     
                 },
-                result="""* if the players map is showing, it returns four integers: minx, miny, maxx, maxy.  these are absolute position coordinates of where the players map is drawn on the screen.
-** minx, miny represent the world coordinates -3000, 3000 (upper-left corner of the world map).
-** maxx, maxy represent the world coordinates 3000, -3000 (lower-right corner of the world map).
-** negative values may be returned if these coordinates are off screen.
-* if the map is not showing, a false boolean value is returned. """,
-            ),
-            name='getPlayerMapBoundingBox',
+                result='* if the players map is showing, it returns four integers: minx, miny, maxx, maxy.  these are absolute position coordinates of where the players map is drawn on the screen.\n** minx, miny represent the world coordinates -3000, 3000 (upper-left corner of the world map).\n** maxx, maxy represent the world coordinates 3000, -3000 (lower-right corner of the world map).\n** negative values may be returned if these coordinates are off screen.\n* if the map is not showing, a false boolean value is returned.' ,
+            )
         )
         ],
     ),
@@ -713,13 +689,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the amount of money a player currently has. """,
+                description='Returns the amount of money a player currently has.' ,
                 arguments={
                     "thePlayer": """The player you wish the retrieve the amount of money from. """
                 },
-                result="""returns an integer with the amount of money the specified player has, false if the player is invalid. """,
-            ),
-            name='getPlayerMoney',
+                result='returns an integer with the amount of money the specified player has, false if the player is invalid.' ,
+            )
         )
         ],
         client=[
@@ -746,13 +721,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the amount of money a player currently has. """,
+                description='Returns the amount of money a player currently has.' ,
                 arguments={
                     
                 },
-                result="""returns an integer with the amount of money the local player has. """,
-            ),
-            name='getPlayerMoney',
+                result='returns an integer with the amount of money the local player has.' ,
+            )
         )
         ],
     ),
@@ -790,13 +764,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a string containing the name of the specified player. """,
+                description='This function returns a string containing the name of the specified player.' ,
                 arguments={
                     "thePlayer": """the player you want to get the name of """
                 },
-                result="""returns a string containing the requested players name, or false if the player passed to the function is invalid. """,
-            ),
-            name='getPlayerName',
+                result='returns a string containing the requested players name, or false if the player passed to the function is invalid.' ,
+            )
         )
         ],
         client=[
@@ -832,13 +805,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a string containing the name of the specified player. """,
+                description='This function returns a string containing the name of the specified player.' ,
                 arguments={
                     "thePlayer": """the player you want to get the name of """
                 },
-                result="""returns a string containing the requested players name, or false if the player passed to the function is invalid. """,
-            ),
-            name='getPlayerName',
+                result='returns a string containing the requested players name, or false if the player passed to the function is invalid.' ,
+            )
         )
         ],
     ),
@@ -884,13 +856,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the current color of a players name tag as RGB values. These are in the range 0-255. """,
+                description='This function gets the current color of a players name tag as RGB values. These are in the range 0-255.' ,
                 arguments={
                     "thePlayer": """The player whose name tag RGB color values you wish to retrieve. """
                 },
-                result="""returns red, green and blue values if an existent player was specified, false otherwise. """,
-            ),
-            name='getPlayerNametagColor',
+                result='returns red, green and blue values if an existent player was specified, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -934,13 +905,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the current color of a players name tag as RGB values. These are in the range 0-255. """,
+                description='This function gets the current color of a players name tag as RGB values. These are in the range 0-255.' ,
                 arguments={
                     "thePlayer": """The player whose name tag RGB color values you wish to retrieve. """
                 },
-                result="""returns red, green and blue values if an existent player was specified, false otherwise. """,
-            ),
-            name='getPlayerNametagColor',
+                result='returns red, green and blue values if an existent player was specified, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -978,13 +948,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This will allow you to retrieve the name tag a player is currently using. """,
+                description='This will allow you to retrieve the name tag a player is currently using.' ,
                 arguments={
                     "thePlayer": """The person whose name tag you want to retrieve """
                 },
-                result="""returns a string with the nametag text, false if the player is invalid. """,
-            ),
-            name='getPlayerNametagText',
+                result='returns a string with the nametag text, false if the player is invalid.' ,
+            )
         )
         ],
         client=[
@@ -1020,13 +989,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This will allow you to retrieve the name tag a player is currently using. """,
+                description='This will allow you to retrieve the name tag a player is currently using.' ,
                 arguments={
                     "thePlayer": """The person whose name tag you want to retrieve """
                 },
-                result="""returns a string with the nametag text, false if the player is invalid. """,
-            ),
-            name='getPlayerNametagText',
+                result='returns a string with the nametag text, false if the player is invalid.' ,
+            )
         )
         ],
     ),
@@ -1064,13 +1032,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the ping of a specified player. The ping is the number of milliseconds that data takes to travel from the players client to the server or vice versa. """,
+                description='This function returns the ping of a specified player. The ping is the number of milliseconds that data takes to travel from the players client to the server or vice versa.' ,
                 arguments={
                     "thePlayer": """: The player whose ping you want to determine. """
                 },
-                result="""returns the ping as an int, or false if the player is invalid. """,
-            ),
-            name='getPlayerPing',
+                result='returns the ping as an int, or false if the player is invalid.' ,
+            )
         )
         ],
         client=[
@@ -1106,13 +1073,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the ping of a specified player. The ping is the number of milliseconds that data takes to travel from the players client to the server or vice versa. """,
+                description='This function returns the ping of a specified player. The ping is the number of milliseconds that data takes to travel from the players client to the server or vice versa.' ,
                 arguments={
                     "thePlayer": """: The player whose ping you want to determine. """
                 },
-                result="""returns the ping as an int, or false if the player is invalid. """,
-            ),
-            name='getPlayerPing',
+                result='returns the ping as an int, or false if the player is invalid.' ,
+            )
         )
         ],
     ),
@@ -1150,13 +1116,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This will allow you to retrieve the player current debug script level. """,
+                description='This will allow you to retrieve the player current debug script level.' ,
                 arguments={
                     "thePlayer": """The person whose debug script level you want """
                 },
-                result="""returns an int with the player debug script level, false if the player is invalid. """,
-            ),
-            name='getPlayerScriptDebugLevel',
+                result='returns an int with the player debug script level, false if the player is invalid.' ,
+            )
         )
         ],
         client=[
@@ -1197,13 +1162,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the serial for a specified player. """,
+                description='This function returns the serial for a specified player.' ,
                 arguments={
                     "thePlayer": """A player object referencing the specified player. """
                 },
-                result="""returns the serial as a string if it was found, false otherwise. """,
-            ),
-            name='getPlayerSerial',
+                result='returns the serial as a string if it was found, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1244,28 +1208,12 @@ You can use the predefined variable localPlayer instead of typing getLocalPlayer
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the client version of the specified player as a sortable string. The string is always 15 characters long and is formatted as follows:
-* 1 character representing the major version
-* 1 dot character
-* 1 character representing the minor version
-* 1 dot character
-* 1 character representing the maintenance version
-* 1 dash character
-* 1 character representing the build type
-* 1 dot character
-* 5 characters representing the build number
-* 1 dot character
-* 1 character representing the build revision
-An example of a version string would be: 1.0.4-9.01746.0
-Where the first three numbers represent the major/minor/maintenance version, i.e. 1.0.4<br>
-The fourth number is 9, which means its a release build, (Development and beta builds have lower numbers here)<br>
-And the fifth and sixth numbers represent the build number. """,
+                description='This function gets the client version of the specified player as a sortable string. The string is always 15 characters long and is formatted as follows:\n* 1 character representing the major version\n* 1 dot character\n* 1 character representing the minor version\n* 1 dot character\n* 1 character representing the maintenance version\n* 1 dash character\n* 1 character representing the build type\n* 1 dot character\n* 5 characters representing the build number\n* 1 dot character\n* 1 character representing the build revision\nAn example of a version string would be: 1.0.4-9.01746.0\nWhere the first three numbers represent the major/minor/maintenance version, i.e. 1.0.4<br>\nThe fourth number is 9, which means its a release build, (Development and beta builds have lower numbers here)<br>\nAnd the fifth and sixth numbers represent the build number.' ,
                 arguments={
                     "thePlayer": """The player whose client version you wish to get. """
                 },
-                result="""returns a string containing the client version, or false if the player is invalid. """,
-            ),
-            name='getPlayerVersion',
+                result='returns a string containing the client version, or false if the player is invalid.' ,
+            )
         )
         ],
         client=[
@@ -1306,13 +1254,12 @@ And the fifth and sixth numbers represent the build number. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets a players current wanted level. The wanted level is indicated by the amount of stars a player has on the GTA HUD. """,
+                description='This function gets a players current wanted level. The wanted level is indicated by the amount of stars a player has on the GTA HUD.' ,
                 arguments={
                     "thePlayer": """The player whose wanted level you wish to get """
                 },
-                result=""" """,
-            ),
-            name='getPlayerWantedLevel',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -1339,13 +1286,12 @@ And the fifth and sixth numbers represent the build number. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets a players current wanted level. The wanted level is indicated by the amount of stars a player has on the GTA HUD. """,
+                description='This function gets a players current wanted level. The wanted level is indicated by the amount of stars a player has on the GTA HUD.' ,
                 arguments={
                     
                 },
-                result=""" """,
-            ),
-            name='getPlayerWantedLevel',
+                result='' ,
+            )
         )
         ],
     ),
@@ -1374,13 +1320,12 @@ And the fifth and sixth numbers represent the build number. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a random player. """,
+                description='This function returns a random player.' ,
                 arguments={
                     
                 },
-                result="""returns a random player, false if the server is empty. """,
-            ),
-            name='getRandomPlayer',
+                result='returns a random player, false if the server is empty.' ,
+            )
         )
         ],
         client=[
@@ -1431,14 +1376,13 @@ And the fifth and sixth numbers represent the build number. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function adds money to a players current money amount.  To set absolute values, setPlayerMoney can be used.<br> """,
+                description='This function adds money to a players current money amount.  To set absolute values, setPlayerMoney can be used.<br>' ,
                 arguments={
                     "thePlayer": """the player you are giving the money to. """,
                     "amount": """a positive integer number specifying the amount of money to give to the player. """
                 },
-                result=""" """,
-            ),
-            name='givePlayerMoney',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -1474,13 +1418,12 @@ And the fifth and sixth numbers represent the build number. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function adds money to a players current money amount.  To set absolute values, setPlayerMoney can be used.<br> """,
+                description='This function adds money to a players current money amount.  To set absolute values, setPlayerMoney can be used.<br>' ,
                 arguments={
                     "amount": """a positive integer number specifying the amount of money to give to the player. """
                 },
-                result=""" """,
-            ),
-            name='givePlayerMoney',
+                result='' ,
+            )
         )
         ],
     ),
@@ -1521,7 +1464,7 @@ And the fifth and sixth numbers represent the build number. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to check whether an hud component is visable or not. """,
+                description='This function can be used to check whether an hud component is visable or not.' ,
                 arguments={
                     "component": """The component you wish to check. Valid values are: """,
                     "ammo": """The display showing how much ammo the player has in their weapon """,
@@ -1538,9 +1481,8 @@ And the fifth and sixth numbers represent the build number. """,
                     "wanted": """The display showing the players wanted level """,
                     "crosshair": """The weapon crosshair and sniper scope """
                 },
-                result="""returns true if the component is visable, false if not. """,
-            ),
-            name='isPlayerHudComponentVisible',
+                result='returns true if the component is visable, false if not.' ,
+            )
         )
         ],
     ),
@@ -1578,13 +1520,12 @@ And the fifth and sixth numbers represent the build number. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the specified players radar map has been forced on or not. """,
+                description='This function checks if the specified players radar map has been forced on or not.' ,
                 arguments={
                     "thePlayer": """A player object referencing the specified player """
                 },
-                result="""returns true if the players radar map is forced on, false otherwise. """,
-            ),
-            name='isPlayerMapForced',
+                result='returns true if the players radar map is forced on, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1611,13 +1552,12 @@ And the fifth and sixth numbers represent the build number. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the specified players radar map has been forced on or not. """,
+                description='This function checks if the specified players radar map has been forced on or not.' ,
                 arguments={
                     
                 },
-                result="""returns true if the local players radar map is forced on, false otherwise. """,
-            ),
-            name='isPlayerMapForced',
+                result='returns true if the local players radar map is forced on, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1649,13 +1589,12 @@ And the fifth and sixth numbers represent the build number. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the local player has their map showing. """,
+                description='This function checks if the local player has their map showing.' ,
                 arguments={
                     
                 },
-                result="""returns true if the player has the map visible, false otherwise. """,
-            ),
-            name='isPlayerMapVisible',
+                result='returns true if the player has the map visible, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1693,13 +1632,12 @@ And the fifth and sixth numbers represent the build number. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Use this function to check if a player has been muted. """,
+                description='Use this function to check if a player has been muted.' ,
                 arguments={
                     "thePlayer": """The player you are checking. """
                 },
-                result="""returns true if the player is muted and false otherwise. """,
-            ),
-            name='isPlayerMuted',
+                result='returns true if the player is muted and false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1740,13 +1678,12 @@ And the fifth and sixth numbers represent the build number. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will allow you to determine if a players name tag is currently showing. """,
+                description='This function will allow you to determine if a players name tag is currently showing.' ,
                 arguments={
                     "thePlayer": """The player whose current name tag condition you want to check """
                 },
-                result="""returns true if the players name tag is being shown, false otherwise. """,
-            ),
-            name='isPlayerNametagShowing',
+                result='returns true if the players name tag is being shown, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1782,13 +1719,12 @@ And the fifth and sixth numbers represent the build number. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will allow you to determine if a players name tag is currently showing. """,
+                description='This function will allow you to determine if a players name tag is currently showing.' ,
                 arguments={
                     "thePlayer": """The player whose current name tag condition you want to check """
                 },
-                result="""returns true if the players name tag is being shown, false otherwise. """,
-            ),
-            name='isPlayerNametagShowing',
+                result='returns true if the players name tag is being shown, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1817,14 +1753,12 @@ And the fifth and sixth numbers represent the build number. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Added to client side.
-This function allows you to make the server reveal whether or not voice is currently enabled. """,
+                description='Added to client side.\nThis function allows you to make the server reveal whether or not voice is currently enabled.' ,
                 arguments={
                     
                 },
-                result="""returns true if the voice is enabled on the server, false otherwise. """,
-            ),
-            name='isVoiceEnabled',
+                result='returns true if the voice is enabled on the server, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1851,14 +1785,12 @@ This function allows you to make the server reveal whether or not voice is curre
                 ],
             ),
             docs=FunctionDoc(
-                description="""Added to client side.
-This function allows you to make the server reveal whether or not voice is currently enabled. """,
+                description='Added to client side.\nThis function allows you to make the server reveal whether or not voice is currently enabled.' ,
                 arguments={
                     
                 },
-                result="""returns true if the voice is enabled on the server, false otherwise. """,
-            ),
-            name='isVoiceEnabled',
+                result='returns true if the voice is enabled on the server, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1926,16 +1858,15 @@ This function allows you to make the server reveal whether or not voice is curre
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function redirects the player to a specified server. """,
+                description='This function redirects the player to a specified server.' ,
                 arguments={
                     "thePlayer": """The player you want to redirect """,
                     "serverIP": """The IP address (or domain name that resolves to the IP address) of the server you want to redirect the player to. Use an empty string to reconnect to the same server. """,
                     "serverPort": """The game port of the server you want to redirect the player to, this is usually 22003. Set to zero to use the same port as the current server. """,
                     "serverPassword": """The password for the server if its protected """
                 },
-                result="""returns true if the player was redirected successfully, false if bad arguments were passed. """,
-            ),
-            name='redirectPlayer',
+                result='returns true if the player was redirected successfully, false if bad arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -1976,13 +1907,12 @@ This function allows you to make the server reveal whether or not voice is curre
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will force the specified player to resend their AC info, triggering the onPlayerACInfo event again. """,
+                description='This function will force the specified player to resend their AC info, triggering the onPlayerACInfo event again.' ,
                 arguments={
                     "thePlayer": """: A player object referencing the specified player """
                 },
-                result="""returns true if the ac info will be resent, false otherwise. """,
-            ),
-            name='resendPlayerACInfo',
+                result='returns true if the ac info will be resent, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2023,13 +1953,12 @@ This function allows you to make the server reveal whether or not voice is curre
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will force the specified player to resend their mod info, triggering the onPlayerModInfo event again. """,
+                description='This function will force the specified player to resend their mod info, triggering the onPlayerModInfo event again.' ,
                 arguments={
                     "thePlayer": """: A player object referencing the specified player """
                 },
-                result="""returns true if the mod info will be resent, false otherwise. """,
-            ),
-            name='resendPlayerModInfo',
+                result='returns true if the mod info will be resent, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2090,17 +2019,14 @@ This function allows you to make the server reveal whether or not voice is curre
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to change ASE announce values for any player using a specified key.
-As an example this can be used to change the score value which will be shown at https://www.game-state.com/ game-state.coms server list.
-For server-wide changes you can use setRuleValue! """,
+                description='This function allows you to change ASE announce values for any player using a specified key.\nAs an example this can be used to change the score value which will be shown at https://www.game-state.com/ game-state.coms server list.\nFor server-wide changes you can use setRuleValue!' ,
                 arguments={
                     "thePlayer": """The player whos announce value you wish to change. """,
                     "key": """The key which the value will be stored at. """,
                     "value": """The value you wish to store. """
                 },
-                result="""returns true if the value was set succesfully, false otherwise. """,
-            ),
-            name='setPlayerAnnounceValue',
+                result='returns true if the value was set succesfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2151,14 +2077,13 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the motion blur level on the clients screen. Accepts a value between 0 and 255. """,
+                description='Sets the motion blur level on the clients screen. Accepts a value between 0 and 255.' ,
                 arguments={
                     "thePlayer": """The player whose blur level will be changed. """,
                     "level": """The level to set the blur to (default: 36) """
                 },
-                result=""" """,
-            ),
-            name='setPlayerBlurLevel',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -2194,13 +2119,12 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the motion blur level on the clients screen. Accepts a value between 0 and 255. """,
+                description='Sets the motion blur level on the clients screen. Accepts a value between 0 and 255.' ,
                 arguments={
                     "level": """The level to set the blur to (default: 36) """
                 },
-                result=""" """,
-            ),
-            name='setPlayerBlurLevel',
+                result='' ,
+            )
         )
         ],
     ),
@@ -2258,7 +2182,7 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will show or hide a part of the players HUD. """,
+                description='This function will show or hide a part of the players HUD.' ,
                 arguments={
                     "thePlayer": """The player element for which you wish to show/hide a HUD component """,
                     "component": """The component you wish to show or hide. Valid values are: """,
@@ -2278,9 +2202,8 @@ For server-wide changes you can use setRuleValue! """,
                     "crosshair": """The weapon crosshair and sniper scope """,
                     "show": """Specify if the component should be shown (true) or hidden (false) """
                 },
-                result=""" """,
-            ),
-            name='setPlayerHudComponentVisible',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -2326,7 +2249,7 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will show or hide a part of the players HUD. """,
+                description='This function will show or hide a part of the players HUD.' ,
                 arguments={
                     "component": """The component you wish to show or hide. Valid values are: """,
                     "all": """All of the following at the same time """,
@@ -2345,9 +2268,8 @@ For server-wide changes you can use setRuleValue! """,
                     "crosshair": """The weapon crosshair and sniper scope """,
                     "show": """Specify if the component should be shown (true) or hidden (false) """
                 },
-                result=""" """,
-            ),
-            name='setPlayerHudComponentVisible',
+                result='' ,
+            )
         )
         ],
     ),
@@ -2405,15 +2327,14 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets a players money to a certain value, regardless of current player money. It should be noted that setting negative values does not work and in fact gives the player large amounts of money. """,
+                description='Sets a players money to a certain value, regardless of current player money. It should be noted that setting negative values does not work and in fact gives the player large amounts of money.' ,
                 arguments={
                     "thePlayer": """Which player to set the money of. """,
                     "amount": """A whole integer specifying the new amount of money the player will have. """,
                     "instant": """If set to true money will be set instantly without counting up/down like in singleplayer.}} """
                 },
-                result=""" """,
-            ),
-            name='setPlayerMoney',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -2459,14 +2380,13 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets a players money to a certain value, regardless of current player money. It should be noted that setting negative values does not work and in fact gives the player large amounts of money. """,
+                description='Sets a players money to a certain value, regardless of current player money. It should be noted that setting negative values does not work and in fact gives the player large amounts of money.' ,
                 arguments={
                     "amount": """A whole integer specifying the new amount of money the local player will have. """,
                     "instant": """If set to true money will be set instantly without counting up/down like in singleplayer.}} """
                 },
-                result=""" """,
-            ),
-            name='setPlayerMoney',
+                result='' ,
+            )
         )
         ],
     ),
@@ -2514,14 +2434,13 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Use this function to mute or unmute the player. """,
+                description='Use this function to mute or unmute the player.' ,
                 arguments={
                     "thePlayer": """The player you are muting or unmuting. """,
                     "state": """Use true to mute and false to unmute the player. """
                 },
-                result="""returns true if the player was successfully muted or unmuted, false otherwise. """,
-            ),
-            name='setPlayerMuted',
+                result='returns true if the player was successfully muted or unmuted, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2572,14 +2491,13 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the specified players name. Note that any change made to a players name with this function is not saved in their settings so the name change only lasts till they disconnect. """,
+                description='This function changes the specified players name. Note that any change made to a players name with this function is not saved in their settings so the name change only lasts till they disconnect.' ,
                 arguments={
                     "thePlayer": """the player that will have its name set. """,
                     "newName": """the new name to set for the player. """
                 },
-                result="""returns true if the player name was changed succesfully, false if invalid arguments are specified. """,
-            ),
-            name='setPlayerName',
+                result='returns true if the player name was changed succesfully, false if invalid arguments are specified.' ,
+            )
         )
         ],
         client=[
@@ -2650,7 +2568,7 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This allows you to change the RGB color mixture in the name tags of players. """,
+                description='This allows you to change the RGB color mixture in the name tags of players.' ,
                 arguments={
                     "thePlayer": """The player whose name tag text you wish to change the color of """,
                     "r": """The amount of red you want in the mixture of RGB (0-255 is valid) """,
@@ -2658,9 +2576,8 @@ For server-wide changes you can use setRuleValue! """,
                     "b": """The amount of blue you want in the mixture of RGB (0-255 is valid) """,
                     "false": """If false is specified instead of the colors, the nametag color will reset to defaulting to your team color. """
                 },
-                result="""returns true if the function was successful, false otherwise. """,
-            ),
-            name='setPlayerNametagColor',
+                result='returns true if the function was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2726,7 +2643,7 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This allows you to change the RGB color mixture in the name tags of players. """,
+                description='This allows you to change the RGB color mixture in the name tags of players.' ,
                 arguments={
                     "thePlayer": """The player whose name tag text you wish to change the color of """,
                     "r": """The amount of red you want in the mixture of RGB (0-255 is valid) """,
@@ -2734,9 +2651,8 @@ For server-wide changes you can use setRuleValue! """,
                     "b": """The amount of blue you want in the mixture of RGB (0-255 is valid) """,
                     "false": """If false is specified instead of the colors, the nametag color will reset to defaulting to your team color. """
                 },
-                result="""returns true if the function was successful, false otherwise. """,
-            ),
-            name='setPlayerNametagColor',
+                result='returns true if the function was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2784,14 +2700,13 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Use this to define whether the players name tag is visible or invisible. """,
+                description='Use this to define whether the players name tag is visible or invisible.' ,
                 arguments={
                     "thePlayer": """Define the player whos tag visiblity status you want to change """,
                     "showing": """Use true or false to show/hide the tag """
                 },
-                result="""returns true if successful, false otherwise """,
-            ),
-            name='setPlayerNametagShowing',
+                result='returns true if successful, false otherwise' ,
+            )
         )
         ],
         client=[
@@ -2837,14 +2752,13 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Use this to define whether the players name tag is visible or invisible. """,
+                description='Use this to define whether the players name tag is visible or invisible.' ,
                 arguments={
                     "thePlayer": """Define the player whos tag visiblity status you want to change """,
                     "showing": """Use true or false to show/hide the tag """
                 },
-                result="""returns true if successful, false otherwise """,
-            ),
-            name='setPlayerNametagShowing',
+                result='returns true if successful, false otherwise' ,
+            )
         )
         ],
     ),
@@ -2892,14 +2806,13 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This will change the text of a players nickname in the world to something besides the nickname he chose. This will not change the players actual nickname, it only changes the visible aspect inside the world (you will see his original nickname in the scoreboard and will refer to his original name in scripts). """,
+                description='This will change the text of a players nickname in the world to something besides the nickname he chose. This will not change the players actual nickname, it only changes the visible aspect inside the world (you will see his original nickname in the scoreboard and will refer to his original name in scripts).' ,
                 arguments={
                     "thePlayer": """The player whose nickname text you wish to change """,
                     "text": """The new nickname text that will be displayed """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setPlayerNametagText',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2945,14 +2858,13 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This will change the text of a players nickname in the world to something besides the nickname he chose. This will not change the players actual nickname, it only changes the visible aspect inside the world (you will see his original nickname in the scoreboard and will refer to his original name in scripts). """,
+                description='This will change the text of a players nickname in the world to something besides the nickname he chose. This will not change the players actual nickname, it only changes the visible aspect inside the world (you will see his original nickname in the scoreboard and will refer to his original name in scripts).' ,
                 arguments={
                     "thePlayer": """The player whose nickname text you wish to change """,
                     "text": """The new nickname text that will be displayed """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setPlayerNametagText',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3000,14 +2912,13 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This will set players debug level, equivalent to Debugging|debugscript <level>. """,
+                description='This will set players debug level, equivalent to Debugging|debugscript <level>.' ,
                 arguments={
                     "thePlayer": """The player whose debug level you wish to change """,
                     "level": """0: close debug console, 1: only errors, 2: errors and warnings, 3: errors, warnings and info messages """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setPlayerScriptDebugLevel',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -3058,14 +2969,13 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to change who can hear the voice of a player. """,
+                description='This function allows you to change who can hear the voice of a player.' ,
                 arguments={
                     "thePlayer": """The player you wish to change """,
                     "broadcastTo": """Element or table of elements who should hear the voice from this player """
                 },
-                result="""returns true if the value was set successfully, false otherwise. """,
-            ),
-            name='setPlayerVoiceBroadcastTo',
+                result='returns true if the value was set successfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -3116,14 +3026,13 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to mute voices for a player. """,
+                description='This function allows you to mute voices for a player.' ,
                 arguments={
                     "thePlayer": """The player you wish to change """,
                     "ignoreFrom": """Element or table of elements which the player should not hear voices from. Use nil if no one should be ignored. """
                 },
-                result="""returns true if the value was set successfully, false otherwise. """,
-            ),
-            name='setPlayerVoiceIgnoreFrom',
+                result='returns true if the value was set successfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -3174,14 +3083,13 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set a players wanted level. The wanted level is indicated by the amount of stars a player has on the GTA HUD. """,
+                description='This function is used to set a players wanted level. The wanted level is indicated by the amount of stars a player has on the GTA HUD.' ,
                 arguments={
                     "thePlayer": """The player whose wanted level is to be set """,
                     "stars": """An integer from 0 to 6 representing the wanted level """
                 },
-                result="""returns true if the wanted level was set successfully, false if any of the arguments were invalid. """,
-            ),
-            name='setPlayerWantedLevel',
+                result='returns true if the wanted level was set successfully, false if any of the arguments were invalid.' ,
+            )
         )
         ],
         client=[
@@ -3302,7 +3210,7 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function spawns the player at an arbitary point on the map.<br> """,
+                description='This function spawns the player at an arbitary point on the map.<br>' ,
                 arguments={
                     "thePlayer": """The player you want to spawn. """,
                     "x": """The x co-ordinate to spawn the player at. """,
@@ -3314,9 +3222,8 @@ For server-wide changes you can use setRuleValue! """,
                     "dimension": """The ID of the dimension that the player should be in. """,
                     "theTeam": """the team the player will join. """
                 },
-                result="""returns true if the player was spawned successfully, false otherwise. """,
-            ),
-            name='spawnPlayer',
+                result='returns true if the player was spawned successfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -3367,14 +3274,13 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function subtracts money from a players current money amount. """,
+                description='This function subtracts money from a players current money amount.' ,
                 arguments={
                     "thePlayer": """the player you are taking the money from. """,
                     "amount": """an integer number specifying the amount of money to take from the player. """
                 },
-                result=""" """,
-            ),
-            name='takePlayerMoney',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -3410,13 +3316,12 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function subtracts money from a players current money amount. """,
+                description='This function subtracts money from a players current money amount.' ,
                 arguments={
                     "amount": """an integer number specifying the amount of money to take from the player. """
                 },
-                result=""" """,
-            ),
-            name='takePlayerMoney',
+                result='' ,
+            )
         )
         ],
     ),
@@ -3514,7 +3419,7 @@ For server-wide changes you can use setRuleValue! """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function forces a client to capture the current screen output and send it back to the server. The image will contain the GTA HUD and the output of any dxDraw functions that are not flagged as post GUI. The image specifically excludes the chat box and all GUI (including the client console). The result is received with the event onPlayerScreenShot. """,
+                description='This function forces a client to capture the current screen output and send it back to the server. The image will contain the GTA HUD and the output of any dxDraw functions that are not flagged as post GUI. The image specifically excludes the chat box and all GUI (including the client console). The result is received with the event onPlayerScreenShot.' ,
                 arguments={
                     "thePlayer": """the player to get the screen capture from. """,
                     "width": """the width of the capture image. """,
@@ -3524,9 +3429,8 @@ For server-wide changes you can use setRuleValue! """,
                     "maxBandwith": """The amount of client upload bandwidth to use (in bytes per second) when sending the image.
 *'''maxPacketSize: ''' The maximum size of one packet. """
                 },
-                result="""returns true if the function was successfully, false if invalid arguments are specified. """,
-            ),
-            name='takePlayerScreenShot',
+                result='returns true if the function was successfully, false if invalid arguments are specified.' ,
+            )
         )
         ],
         client=[

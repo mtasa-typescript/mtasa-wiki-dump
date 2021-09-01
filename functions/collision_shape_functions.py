@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -73,7 +73,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape polygon you wish add a point to. """,
                     "fX": """The X position of the new bound point. """,
@@ -81,9 +81,8 @@ DUMP_PARTIAL = [
                     "index": """The index where the new point will be inserted in the polygon. The points are indexed in order, with 1 being the first bound point. Passing 0 will insert the point as the last one in the polygon.
 Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were passed. """
                 },
-                result="""returns true if the polygon was changed, false if invalid arguments were passed. """,
-            ),
-            name='addColPolygonPoint',
+                result='returns true if the polygon was changed, false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -149,7 +148,7 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape polygon you wish add a point to. """,
                     "fX": """The X position of the new bound point. """,
@@ -157,9 +156,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "index": """The index where the new point will be inserted in the polygon. The points are indexed in order, with 1 being the first bound point. Passing 0 will insert the point as the last one in the polygon.
 Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were passed. """
                 },
-                result="""returns true if the polygon was changed, false if invalid arguments were passed. """,
-            ),
-            name='addColPolygonPoint',
+                result='returns true if the polygon was changed, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -217,15 +215,14 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a collision circle. This is a shape that has a position and a radius and infinite height that you can use to detect a players presence. Events will be triggered when a player enters or leaves it. """,
+                description='This function creates a collision circle. This is a shape that has a position and a radius and infinite height that you can use to detect a players presence. Events will be triggered when a player enters or leaves it.' ,
                 arguments={
                     "fX": """The collision circles center points X axis position """,
                     "fY": """The collision circles center points Y axis position """,
                     "radius": """The radius of the collision circle. Can not be smaller than 0.1 """
                 },
-                result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
-            ),
-            name='createColCircle',
+                result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
         client=[
@@ -281,15 +278,14 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a collision circle. This is a shape that has a position and a radius and infinite height that you can use to detect a players presence. Events will be triggered when a player enters or leaves it. """,
+                description='This function creates a collision circle. This is a shape that has a position and a radius and infinite height that you can use to detect a players presence. Events will be triggered when a player enters or leaves it.' ,
                 arguments={
                     "fX": """The collision circles center points X axis position """,
                     "fY": """The collision circles center points Y axis position """,
                     "radius": """The radius of the collision circle. Can not be smaller than 0.1 """
                 },
-                result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
-            ),
-            name='createColCircle',
+                result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
     ),
@@ -377,7 +373,7 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a collision cuboid. This is a shape that has a position, width, depth and height. See http://en.wikipedia.org/wiki/Cuboid Wikipedia for a definition of a cuboid. The XYZ of the col starts at the southwest bottom corner of the shape. """,
+                description='This function creates a collision cuboid. This is a shape that has a position, width, depth and height. See http://en.wikipedia.org/wiki/Cuboid Wikipedia for a definition of a cuboid. The XYZ of the col starts at the southwest bottom corner of the shape.' ,
                 arguments={
                     "fX": """The X position of the collision cuboids western side """,
                     "fY": """The Y position of the collision cuboids southern side """,
@@ -386,9 +382,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fDepth": """The collision cuboids depth """,
                     "fHeight": """The collision cuboids height """
                 },
-                result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
-            ),
-            name='createColCuboid',
+                result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
         client=[
@@ -474,7 +469,7 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a collision cuboid. This is a shape that has a position, width, depth and height. See http://en.wikipedia.org/wiki/Cuboid Wikipedia for a definition of a cuboid. The XYZ of the col starts at the southwest bottom corner of the shape. """,
+                description='This function creates a collision cuboid. This is a shape that has a position, width, depth and height. See http://en.wikipedia.org/wiki/Cuboid Wikipedia for a definition of a cuboid. The XYZ of the col starts at the southwest bottom corner of the shape.' ,
                 arguments={
                     "fX": """The X position of the collision cuboids western side """,
                     "fY": """The Y position of the collision cuboids southern side """,
@@ -483,9 +478,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fDepth": """The collision cuboids depth """,
                     "fHeight": """The collision cuboids height """
                 },
-                result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
-            ),
-            name='createColCuboid',
+                result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
     ),
@@ -593,7 +587,7 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a collision polygon. See http://en.wikipedia.org/wiki/Polygon Wikipedia for a definition of a polygon. The first set of X Y of this shape is not part of the colshape bounds, so can set anywhere in the game world, however for performance, place it as close to the centre of the polygon as you can. It should be noted this shape is 2D. There should be at least 3 bound points set. """,
+                description='This function creates a collision polygon. See http://en.wikipedia.org/wiki/Polygon Wikipedia for a definition of a polygon. The first set of X Y of this shape is not part of the colshape bounds, so can set anywhere in the game world, however for performance, place it as close to the centre of the polygon as you can. It should be noted this shape is 2D. There should be at least 3 bound points set.' ,
                 arguments={
                     "fCenterX": """The X position of the collision polygons position - the position that will be returned from getElementPosition. """,
                     "fCenterY": """The Y position of the collision polygons position - the position that will be returned from getElementPosition. """,
@@ -605,9 +599,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fY3": """The 3rd Y position of the collision polygons bound point """,
                     "...": """From the 3rd position you can have as many points as you require to create the colshape. """
                 },
-                result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
-            ),
-            name='createColPolygon',
+                result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
         client=[
@@ -713,7 +706,7 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a collision polygon. See http://en.wikipedia.org/wiki/Polygon Wikipedia for a definition of a polygon. The first set of X Y of this shape is not part of the colshape bounds, so can set anywhere in the game world, however for performance, place it as close to the centre of the polygon as you can. It should be noted this shape is 2D. There should be at least 3 bound points set. """,
+                description='This function creates a collision polygon. See http://en.wikipedia.org/wiki/Polygon Wikipedia for a definition of a polygon. The first set of X Y of this shape is not part of the colshape bounds, so can set anywhere in the game world, however for performance, place it as close to the centre of the polygon as you can. It should be noted this shape is 2D. There should be at least 3 bound points set.' ,
                 arguments={
                     "fCenterX": """The X position of the collision polygons position - the position that will be returned from getElementPosition. """,
                     "fCenterY": """The Y position of the collision polygons position - the position that will be returned from getElementPosition. """,
@@ -725,9 +718,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fY3": """The 3rd Y position of the collision polygons bound point """,
                     "...": """From the 3rd position you can have as many points as you require to create the colshape. """
                 },
-                result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
-            ),
-            name='createColPolygon',
+                result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
     ),
@@ -795,16 +787,15 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a collision rectangle. This is a shape that has a position and a width and a depth. See http://en.wikipedia.org/wiki/Rectangle Rectangle for a definition of a rectangle. XY marks on the south west corner of the colshape. """,
+                description='This function creates a collision rectangle. This is a shape that has a position and a width and a depth. See http://en.wikipedia.org/wiki/Rectangle Rectangle for a definition of a rectangle. XY marks on the south west corner of the colshape.' ,
                 arguments={
                     "fX": """The X position of the collision rectangles west side """,
                     "fY": """The Y position of the collision rectangles south side """,
                     "fWidth": """The collision rectangles width """,
                     "fHeight": """The collision rectangles height """
                 },
-                result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
-            ),
-            name='createColRectangle',
+                result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
         client=[
@@ -870,16 +861,15 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a collision rectangle. This is a shape that has a position and a width and a depth. See http://en.wikipedia.org/wiki/Rectangle Rectangle for a definition of a rectangle. XY marks on the south west corner of the colshape. """,
+                description='This function creates a collision rectangle. This is a shape that has a position and a width and a depth. See http://en.wikipedia.org/wiki/Rectangle Rectangle for a definition of a rectangle. XY marks on the south west corner of the colshape.' ,
                 arguments={
                     "fX": """The X position of the collision rectangles west side """,
                     "fY": """The Y position of the collision rectangles south side """,
                     "fWidth": """The collision rectangles width """,
                     "fHeight": """The collision rectangles height """
                 },
-                result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
-            ),
-            name='createColRectangle',
+                result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
     ),
@@ -947,16 +937,15 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a collision sphere. This is a shape that has a position and a radius. See http://en.wikipedia.org/wiki/Sphere Wikipedia for a definition of a sphere. """,
+                description='This function creates a collision sphere. This is a shape that has a position and a radius. See http://en.wikipedia.org/wiki/Sphere Wikipedia for a definition of a sphere.' ,
                 arguments={
                     "fX": """The collision spheres center points X axis position """,
                     "fY": """The collision spheres center points Y axis position """,
                     "fZ": """The collision spheres center points Z axis position """,
                     "fRadius": """The collision spheres radius """
                 },
-                result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
-            ),
-            name='createColSphere',
+                result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
         client=[
@@ -1022,16 +1011,15 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a collision sphere. This is a shape that has a position and a radius. See http://en.wikipedia.org/wiki/Sphere Wikipedia for a definition of a sphere. """,
+                description='This function creates a collision sphere. This is a shape that has a position and a radius. See http://en.wikipedia.org/wiki/Sphere Wikipedia for a definition of a sphere.' ,
                 arguments={
                     "fX": """The collision spheres center points X axis position """,
                     "fY": """The collision spheres center points Y axis position """,
                     "fZ": """The collision spheres center points Z axis position """,
                     "fRadius": """The collision spheres radius """
                 },
-                result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
-            ),
-            name='createColSphere',
+                result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
     ),
@@ -1109,7 +1097,7 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a collision tube. This is a shape that has a position and a 2D (X/Y) radius and a height. See http://en.wikipedia.org/wiki/Cylinder_(geometry) Cylinder for a definition of a tube. A tube is similar to a colcircle, except that it has a limited height, this means you can limit the distance above the position defined by (fX, fY, fZ) that the collision is detected. """,
+                description='This function creates a collision tube. This is a shape that has a position and a 2D (X/Y) radius and a height. See http://en.wikipedia.org/wiki/Cylinder_(geometry) Cylinder for a definition of a tube. A tube is similar to a colcircle, except that it has a limited height, this means you can limit the distance above the position defined by (fX, fY, fZ) that the collision is detected.' ,
                 arguments={
                     "fX": """The position of the base of the tubes center on the X axis """,
                     "fY": """The position of the base of the tubes center on the Y axis """,
@@ -1117,9 +1105,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fRadius": """The collision tubes radius """,
                     "fHeight": """The collision tubes height """
                 },
-                result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
-            ),
-            name='createColTube',
+                result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
         client=[
@@ -1195,7 +1182,7 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a collision tube. This is a shape that has a position and a 2D (X/Y) radius and a height. See http://en.wikipedia.org/wiki/Cylinder_(geometry) Cylinder for a definition of a tube. A tube is similar to a colcircle, except that it has a limited height, this means you can limit the distance above the position defined by (fX, fY, fZ) that the collision is detected. """,
+                description='This function creates a collision tube. This is a shape that has a position and a 2D (X/Y) radius and a height. See http://en.wikipedia.org/wiki/Cylinder_(geometry) Cylinder for a definition of a tube. A tube is similar to a colcircle, except that it has a limited height, this means you can limit the distance above the position defined by (fX, fY, fZ) that the collision is detected.' ,
                 arguments={
                     "fX": """The position of the base of the tubes center on the X axis """,
                     "fY": """The position of the base of the tubes center on the Y axis """,
@@ -1203,9 +1190,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fRadius": """The collision tubes radius """,
                     "fHeight": """The collision tubes height """
                 },
-                result="""returns a colshape element if successful, false if invalid arguments were passed to the function. """,
-            ),
-            name='createColTube',
+                result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
     ),
@@ -1247,13 +1233,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description="""By default, a colshape polygon is infinitely tall.}} """,
+                description='By default, a colshape polygon is infinitely tall.}}' ,
                 arguments={
                     "shape": """The colshape polygon """
                 },
-                result="""returns two floats, indicating the floor and ceiling of the colshape height, false if invalid arguments were passed. """,
-            ),
-            name='getColPolygonHeight',
+                result='returns two floats, indicating the floor and ceiling of the colshape height, false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -1293,13 +1278,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description="""By default, a colshape polygon is infinitely tall.}} """,
+                description='By default, a colshape polygon is infinitely tall.}}' ,
                 arguments={
                     "shape": """The colshape polygon """
                 },
-                result="""returns two floats, indicating the floor and ceiling of the colshape height, false if invalid arguments were passed. """,
-            ),
-            name='getColPolygonHeight',
+                result='returns two floats, indicating the floor and ceiling of the colshape height, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -1351,14 +1335,13 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape polygon you wish to change. """,
                     "index": """The index of the point you wish to retrieve. The points are indexed in order, with 1 being the first bound point. """
                 },
-                result="""returns two floats, x and y, indicating the position of the point, false if invalid arguments were passed. """,
-            ),
-            name='getColPolygonPointPosition',
+                result='returns two floats, x and y, indicating the position of the point, false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -1408,14 +1391,13 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape polygon you wish to change. """,
                     "index": """The index of the point you wish to retrieve. The points are indexed in order, with 1 being the first bound point. """
                 },
-                result="""returns two floats, x and y, indicating the position of the point, false if invalid arguments were passed. """,
-            ),
-            name='getColPolygonPointPosition',
+                result='returns two floats, x and y, indicating the position of the point, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -1453,13 +1435,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape polygon you wish to get the points of. """
                 },
-                result="""returns a table of coordinates, each coordinate being a table containing the x and y position of a bound point, false if invalid arguments were passed. """,
-            ),
-            name='getColPolygonPoints',
+                result='returns a table of coordinates, each coordinate being a table containing the x and y position of a bound point, false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -1495,13 +1476,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape polygon you wish to get the points of. """
                 },
-                result="""returns a table of coordinates, each coordinate being a table containing the x and y position of a bound point, false if invalid arguments were passed. """,
-            ),
-            name='getColPolygonPoints',
+                result='returns a table of coordinates, each coordinate being a table containing the x and y position of a bound point, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -1539,13 +1519,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape you wish to get the radius of. """
                 },
-                result="""returns a float containing the radius of the colshape, false if an invalid colshape was passed. """,
-            ),
-            name='getColShapeRadius',
+                result='returns a float containing the radius of the colshape, false if an invalid colshape was passed.' ,
+            )
         )
         ],
         client=[
@@ -1581,13 +1560,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape you wish to get the radius of. """
                 },
-                result="""returns a float containing the radius of the colshape, false if an invalid colshape was passed. """,
-            ),
-            name='getColShapeRadius',
+                result='returns a float containing the radius of the colshape, false if an invalid colshape was passed.' ,
+            )
         )
         ],
     ),
@@ -1633,16 +1611,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape you wish to get the size of. """
                 },
-                result="""returns up to 3 floats depending on the colshape type (see below), false if invalid arguments were passed.
-*cuboid: width, depth, height.
-*rectangle: width, height.
-*tube: height. """,
-            ),
-            name='getColShapeSize',
+                result='returns up to 3 floats depending on the colshape type (see below), false if invalid arguments were passed.\n*cuboid: width, depth, height.\n*rectangle: width, height.\n*tube: height.' ,
+            )
         )
         ],
         client=[
@@ -1686,16 +1660,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape you wish to get the size of. """
                 },
-                result="""returns up to 3 floats depending on the colshape type (see below), false if invalid arguments were passed.
-*cuboid: width, depth, height.
-*rectangle: width, height.
-*tube: height. """,
-            ),
-            name='getColShapeSize',
+                result='returns up to 3 floats depending on the colshape type (see below), false if invalid arguments were passed.\n*cuboid: width, depth, height.\n*rectangle: width, height.\n*tube: height.' ,
+            )
         )
         ],
     ),
@@ -1733,19 +1703,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape you wish to get the type of. """
                 },
-                result="""returns false if invalid arguments were passed, or an integer of the type of the colshape, which include:
-*0: circle
-*1: cuboid
-*2: sphere
-*3: rectangle
-*4: polygon
-*5: tube """,
-            ),
-            name='getColShapeType',
+                result='returns false if invalid arguments were passed, or an integer of the type of the colshape, which include:\n*0: circle\n*1: cuboid\n*2: sphere\n*3: rectangle\n*4: polygon\n*5: tube' ,
+            )
         )
         ],
         client=[
@@ -1781,19 +1744,12 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape you wish to get the type of. """
                 },
-                result="""returns false if invalid arguments were passed, or an integer of the type of the colshape, which include:
-*0: circle
-*1: cuboid
-*2: sphere
-*3: rectangle
-*4: polygon
-*5: tube """,
-            ),
-            name='getColShapeType',
+                result='returns false if invalid arguments were passed, or an integer of the type of the colshape, which include:\n*0: circle\n*1: cuboid\n*2: sphere\n*3: rectangle\n*4: polygon\n*5: tube' ,
+            )
         )
         ],
     ),
@@ -1861,16 +1817,15 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theShape": """The colshape youre checking the position against. """,
                     "posX": """The X coordinate of the position youre checking. """,
                     "posY": """The Y coordinate of the position youre checking. """,
                     "posZ": """The Z coordinate of the position youre checking. """
                 },
-                result="""returns true if the position is inside the colshape, false if it isnt or if any parameters are invalid. """,
-            ),
-            name='isInsideColShape',
+                result='returns true if the position is inside the colshape, false if it isnt or if any parameters are invalid.' ,
+            )
         )
         ],
         client=[
@@ -1936,16 +1891,15 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theShape": """The colshape youre checking the position against. """,
                     "posX": """The X coordinate of the position youre checking. """,
                     "posY": """The Y coordinate of the position youre checking. """,
                     "posZ": """The Z coordinate of the position youre checking. """
                 },
-                result="""returns true if the position is inside the colshape, false if it isnt or if any parameters are invalid. """,
-            ),
-            name='isInsideColShape',
+                result='returns true if the position is inside the colshape, false if it isnt or if any parameters are invalid.' ,
+            )
         )
         ],
     ),
@@ -1993,14 +1947,13 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape polygon you wish to remove a point from. """,
                     "index": """The index of the point you wish to remove. The points are indexed in order, with 1 being the first bound point. You cant remove the last 3 points. """
                 },
-                result="""returns true if the polygon was changed, false if invalid arguments were passed. """,
-            ),
-            name='removeColPolygonPoint',
+                result='returns true if the polygon was changed, false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -2046,14 +1999,13 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape polygon you wish to remove a point from. """,
                     "index": """The index of the point you wish to remove. The points are indexed in order, with 1 being the first bound point. You cant remove the last 3 points. """
                 },
-                result="""returns true if the polygon was changed, false if invalid arguments were passed. """,
-            ),
-            name='removeColPolygonPoint',
+                result='returns true if the polygon was changed, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -2111,15 +2063,14 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description="""By default, a colshape polygon is infinitely tall.}} """,
+                description='By default, a colshape polygon is infinitely tall.}}' ,
                 arguments={
                     "shape": """The colshape polygon """,
                     "floor": """The polygon floor (lowest Z coordinate). Parse false to reset this value to 0. """,
                     "ceil": """The polygon ceiling (highest Z coordinate). Parse false to reset this value to infinitely tall. """
                 },
-                result="""returns true if the polygon was changed, false if invalid arguments were passed. """,
-            ),
-            name='setColPolygonHeight',
+                result='returns true if the polygon was changed, false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -2175,15 +2126,14 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description="""By default, a colshape polygon is infinitely tall.}} """,
+                description='By default, a colshape polygon is infinitely tall.}}' ,
                 arguments={
                     "shape": """The colshape polygon """,
                     "floor": """The polygon floor (lowest Z coordinate). Parse false to reset this value to 0. """,
                     "ceil": """The polygon ceiling (highest Z coordinate). Parse false to reset this value to infinitely tall. """
                 },
-                result="""returns true if the polygon was changed, false if invalid arguments were passed. """,
-            ),
-            name='setColPolygonHeight',
+                result='returns true if the polygon was changed, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -2251,16 +2201,15 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape polygon you wish to change. """,
                     "index": """The index of the point you wish to change. The points are indexed in order, with 1 being the first bound point. """,
                     "fX": """The new X position of the bound point. """,
                     "fY": """The new Y position of the bound point. """
                 },
-                result="""returns true if the polygon was changed, false if invalid arguments were passed. """,
-            ),
-            name='setColPolygonPointPosition',
+                result='returns true if the polygon was changed, false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -2326,16 +2275,15 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape polygon you wish to change. """,
                     "index": """The index of the point you wish to change. The points are indexed in order, with 1 being the first bound point. """,
                     "fX": """The new X position of the bound point. """,
                     "fY": """The new Y position of the bound point. """
                 },
-                result="""returns true if the polygon was changed, false if invalid arguments were passed. """,
-            ),
-            name='setColPolygonPointPosition',
+                result='returns true if the polygon was changed, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -2383,14 +2331,13 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape you wish to change the radius of. """,
                     "radius": """The radius you want to set. """
                 },
-                result="""returns true if the radius was changed, or false if invalid arguments were passed. """,
-            ),
-            name='setColShapeRadius',
+                result='returns true if the radius was changed, or false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -2436,14 +2383,13 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape you wish to change the radius of. """,
                     "radius": """The radius you want to set. """
                 },
-                result="""returns true if the radius was changed, or false if invalid arguments were passed. """,
-            ),
-            name='setColShapeRadius',
+                result='returns true if the radius was changed, or false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -2511,16 +2457,15 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape you wish to change the size of. """,
                     "width": """The collision rectangles width. """,
                     "depth": """The collision cuboids depth. """,
                     "height": """The collision tubess height. """
                 },
-                result="""returns true if the size was changed, false if invalid arguments were passed. """,
-            ),
-            name='setColShapeSize',
+                result='returns true if the size was changed, false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -2586,16 +2531,15 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shape": """The colshape you wish to change the size of. """,
                     "width": """The collision rectangles width. """,
                     "depth": """The collision cuboids depth. """,
                     "height": """The collision tubess height. """
                 },
-                result="""returns true if the size was changed, false if invalid arguments were passed. """,
-            ),
-            name='setColShapeSize',
+                result='returns true if the size was changed, false if invalid arguments were passed.' ,
+            )
         )
         ],
     )

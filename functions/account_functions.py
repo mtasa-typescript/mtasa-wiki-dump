@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -63,15 +63,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function adds an account to the list of registered accounts of the current server. """,
+                description='This function adds an account to the list of registered accounts of the current server.' ,
                 arguments={
                     "name": """The name of the account you wish to make, this normally is the players name. """,
                     "pass": """The password to set for this account for future logins. """,
                     "allowCaseVariations": """Whether the username is case sensitive (if this is set to true, usernames Bob and bob will refer to different accounts) """
                 },
-                result="""returns an account or false if the account already exists or an error occured. """,
-            ),
-            name='addAccount',
+                result='returns an account or false if the account already exists or an error occured.' ,
+            )
         )
         ],
         client=[
@@ -122,14 +121,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function copies all of the data from one account to another. """,
+                description='This function copies all of the data from one account to another.' ,
                 arguments={
                     "theAccount": """The account you wish to copy the data to. """,
                     "fromAccount": """The account you wish to copy the data from. """
                 },
-                result="""returns a true if the accounts were valid, false otherwise. """,
-            ),
-            name='copyAccountData',
+                result='returns a true if the accounts were valid, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -190,16 +188,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns an account for a specific user. """,
+                description='This function returns an account for a specific user.' ,
                 arguments={
                     "username": """The username of the account you want to retrieve """,
                     "password": """The password for the account. If this argument is not specified, you can get the account whatever password it is, otherwise the password must match the accounts. """,
                     "caseSensitive": """: Specifies whether to ignore the case when searching for an account.
 |16257}} """
                 },
-                result="""returns an account or false if an account matching the username specified (and password, if specified) could not be found. """,
-            ),
-            name='getAccount',
+                result='returns an account or false if an account matching the username specified (and password, if specified) could not be found.' ,
+            )
         )
         ],
         client=[
@@ -240,13 +237,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the account with the specific ID. """,
+                description='This function returns the account with the specific ID.' ,
                 arguments={
                     "id": """The ID to get account from """
                 },
-                result="""returns account associated with specified id. returns false if invalid arguments were specified or there is no account with this id. """,
-            ),
-            name='getAccountByID',
+                result='returns account associated with specified id. returns false if invalid arguments were specified or there is no account with this id.' ,
+            )
         )
         ],
         client=[
@@ -297,14 +293,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves a string that has been stored using setAccountData. Data stored as account data is persistent across users sessions and maps, unless they are logged into a guest account. """,
+                description='This function retrieves a string that has been stored using setAccountData. Data stored as account data is persistent across users sessions and maps, unless they are logged into a guest account.' ,
                 arguments={
                     "theAccount": """The account you wish to retrieve the data from. """,
                     "key": """The key under which the data is stored """
                 },
-                result="""returns a string containing the stored data or false if no data was stored under that key. """,
-            ),
-            name='getAccountData',
+                result='returns a string containing the stored data or false if no data was stored under that key.' ,
+            )
         )
         ],
         client=[
@@ -345,13 +340,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the ID of an account. """,
+                description='This function retrieves the ID of an account.' ,
                 arguments={
                     "theAccount": """The account you wish to get the ID of. """
                 },
-                result="""returns a int containing the accounts id, false if the account does not exist or an invalid argument was passed to the function. """,
-            ),
-            name='getAccountID',
+                result='returns a int containing the accounts id, false if the account does not exist or an invalid argument was passed to the function.' ,
+            )
         )
         ],
         client=[
@@ -392,13 +386,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the IP address of an account. """,
+                description='This function retrieves the IP address of an account.' ,
                 arguments={
                     "theAccount": """The account you wish to get the IP of. """
                 },
-                result="""returns a string containing the accounts ip, false if the account does not exist or an invalid argument was passed to the function. """,
-            ),
-            name='getAccountIP',
+                result='returns a string containing the accounts ip, false if the account does not exist or an invalid argument was passed to the function.' ,
+            )
         )
         ],
         client=[
@@ -439,13 +432,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the name of an account. """,
+                description='This function retrieves the name of an account.' ,
                 arguments={
                     "theAccount": """The account you wish to get the name of. """
                 },
-                result="""returns a string containing the accounts name, false if the account does not exist or an invalid argument was passed to the function. """,
-            ),
-            name='getAccountName',
+                result='returns a string containing the accounts name, false if the account does not exist or an invalid argument was passed to the function.' ,
+            )
         )
         ],
         client=[
@@ -486,13 +478,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the player element that is currently using a specified account, i.e. is logged into it. Only one player can use an account at a time. """,
+                description='This function returns the player element that is currently using a specified account, i.e. is logged into it. Only one player can use an account at a time.' ,
                 arguments={
                     "theAccount": """The account you wish to get the player of. """
                 },
-                result="""returns a player element if the account is currently in use, false otherwise. """,
-            ),
-            name='getAccountPlayer',
+                result='returns a player element if the account is currently in use, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -524,13 +515,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table over all the accounts that exist in the server internal.db file. (Note: accounts.xml is no longer used after version 1.0.4) """,
+                description='This function returns a table over all the accounts that exist in the server internal.db file. (Note: accounts.xml is no longer used after version 1.0.4)' ,
                 arguments={
                     
                 },
-                result="""a table over the accounts that exist in the server internal.db file. this table might be empty. """,
-            ),
-            name='getAccounts',
+                result='a table over the accounts that exist in the server internal.db file. this table might be empty.' ,
+            )
         )
         ],
         client=[
@@ -581,14 +571,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table containing all accounts with specified dataName and value (set with setAccountData). """,
+                description='This function returns a table containing all accounts with specified dataName and value (set with setAccountData).' ,
                 arguments={
                     "dataName": """The name of the data """,
                     "value": """The value the dataName should have """
                 },
-                result="""returns table containing the accounts associated with specified value at dataname. returns false if invalid arguments were specified. """,
-            ),
-            name='getAccountsByData',
+                result='returns table containing the accounts associated with specified value at dataname. returns false if invalid arguments were specified.' ,
+            )
         )
         ],
         client=[
@@ -629,13 +618,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table containing all accounts that were logged onto from specified IP-address. """,
+                description='This function returns a table containing all accounts that were logged onto from specified IP-address.' ,
                 arguments={
                     "ip": """The IP to get accounts from """
                 },
-                result="""returns table containing the accounts associated with specified ip-address. returns false if invalid arguments were specified. """,
-            ),
-            name='getAccountsByIP',
+                result='returns table containing the accounts associated with specified ip-address. returns false if invalid arguments were specified.' ,
+            )
         )
         ],
         client=[
@@ -676,13 +664,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table containing all accounts that were logged onto from specified serial. If the serial is empty string, it will return all accounts that were never logged onto. """,
+                description='This function returns a table containing all accounts that were logged onto from specified serial. If the serial is empty string, it will return all accounts that were never logged onto.' ,
                 arguments={
                     "serial": """The serial to get accounts from """
                 },
-                result="""returns table containing the accounts associated with specified serial. returns false if invalid arguments were specified. """,
-            ),
-            name='getAccountsBySerial',
+                result='returns table containing the accounts associated with specified serial. returns false if invalid arguments were specified.' ,
+            )
         )
         ],
         client=[
@@ -723,13 +710,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the last serial that logged onto the specified account. """,
+                description='This function returns the last serial that logged onto the specified account.' ,
                 arguments={
                     "theAccount": """The account to get serial from """
                 },
-                result="""returns string containing the serial, the string is empty if the account was never used. returns false if invalid arguments were specified. """,
-            ),
-            name='getAccountSerial',
+                result='returns string containing the serial, the string is empty if the account was never used. returns false if invalid arguments were specified.' ,
+            )
         )
         ],
         client=[
@@ -770,13 +756,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table containing all the user data for the account provided """,
+                description='This function returns a table containing all the user data for the account provided' ,
                 arguments={
                     "theAccount": """The account you wish to retrieve all data from. """
                 },
-                result="""a table containing all the user data. this table might be empty. """,
-            ),
-            name='getAllAccountData',
+                result='a table containing all the user data. this table might be empty.' ,
+            )
         )
         ],
         client=[
@@ -817,13 +802,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the specified players account object. """,
+                description='This function returns the specified players account object.' ,
                 arguments={
                     "thePlayer": """The player element you want to get the account of. """
                 },
-                result="""returns the players account object, or false if the player passed to the function is invalid. """,
-            ),
-            name='getPlayerAccount',
+                result='returns the players account object, or false if the player passed to the function is invalid.' ,
+            )
         )
         ],
         client=[
@@ -864,13 +848,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks to see if an account is a guest account. A guest account is an account automatically created for a user when they join the server and deleted when they quit or login to another account. Data stored in a guest account is not stored after the player has left the server. As a consequence, this function will check if a player is logged in or not. """,
+                description='This function checks to see if an account is a guest account. A guest account is an account automatically created for a user when they join the server and deleted when they quit or login to another account. Data stored in a guest account is not stored after the player has left the server. As a consequence, this function will check if a player is logged in or not.' ,
                 arguments={
                     "theAccount": """The account you want to check to see if it is a guest account. """
                 },
-                result="""returns true if the account is a guest account, false otherwise. """,
-            ),
-            name='isGuestAccount',
+                result='returns true if the account is a guest account, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -931,15 +914,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions logs the given player in to the given account. You need to provide the password needed to log into that account. """,
+                description='This functions logs the given player in to the given account. You need to provide the password needed to log into that account.' ,
                 arguments={
                     "thePlayer": """The player to log into an account """,
                     "theAccount": """The account to log the player into """,
                     "thePassword": """The password needed to sign into this account """
                 },
-                result="""returns true if the player was successfully logged into the given account. returns false or nil if the log in failed for some reason, ie. the player was already logged in to some account (use logout first), if the account was already in use or if it failed for some other reason. """,
-            ),
-            name='logIn',
+                result='returns true if the player was successfully logged into the given account. returns false or nil if the log in failed for some reason, ie. the player was already logged in to some account (use logout first), if the account was already in use or if it failed for some other reason.' ,
+            )
         )
         ],
         client=[
@@ -980,13 +962,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function logs the given player out of his current account. """,
+                description='This function logs the given player out of his current account.' ,
                 arguments={
                     "thePlayer": """The player to log out of his current account """
                 },
-                result="""returns true if the player was successfully logged out, false or nil if it failed for some reason, ie. the player was never logged in. """,
-            ),
-            name='logOut',
+                result='returns true if the player was successfully logged out, false or nil if it failed for some reason, ie. the player was never logged in.' ,
+            )
         )
         ],
         client=[
@@ -1027,13 +1008,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to delete existing player accounts. """,
+                description='This function is used to delete existing player accounts.' ,
                 arguments={
                     "theAccount": """The account you wish to remove """
                 },
-                result="""returns true if account was successfully removed, false if the account does not exist. """,
-            ),
-            name='removeAccount',
+                result='returns true if account was successfully removed, false if the account does not exist.' ,
+            )
         )
         ],
         client=[
@@ -1094,15 +1074,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets a string to be stored in an account. This can then be retrieved using getAccountData. Data stored as account data is persistent across users sessions and maps, unless they are logged into a guest account. Even if logged into a guest account, account data can be useful as a way to store a reference to your own account system, though its persistence is equivalent to that of using setElementData on the players element. """,
+                description='This function sets a string to be stored in an account. This can then be retrieved using getAccountData. Data stored as account data is persistent across users sessions and maps, unless they are logged into a guest account. Even if logged into a guest account, account data can be useful as a way to store a reference to your own account system, though its persistence is equivalent to that of using setElementData on the players element.' ,
                 arguments={
                     "theAccount": """The account you wish to retrieve the data from. """,
                     "key": """The key under which you wish to store the data """,
                     "value": """The value you wish to store. Set to false to remove the data. NOTE: you cannot store tables as values, but you can use toJSON strings. """
                 },
-                result="""returns a true if the account data was set, false if an invalid argument was specified. """,
-            ),
-            name='setAccountData',
+                result='returns a true if the account data was set, false if an invalid argument was specified.' ,
+            )
         )
         ],
         client=[
@@ -1163,15 +1142,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the name of an account. """,
+                description='This function sets the name of an account.' ,
                 arguments={
                     "theAccount": """The account you wish to change the name. """,
                     "name": """The new name. """,
                     "allowCaseVariations": """Whether the username is case sensitive (if this is set to true, usernames Bob and bob will refer to different accounts) """
                 },
-                result="""returns a true if the account name was set, false if an invalid argument was specified. """,
-            ),
-            name='setAccountName',
+                result='returns a true if the account name was set, false if an invalid argument was specified.' ,
+            )
         )
         ],
         client=[
@@ -1222,14 +1200,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the password of the specified account. """,
+                description='This function sets the password of the specified account.' ,
                 arguments={
                     "theAccount": """the account whose password you want to set """,
                     "password": """the password """
                 },
-                result="""returns true if the password was set correctly, false otherwise. """,
-            ),
-            name='setAccountPassword',
+                result='returns true if the password was set correctly, false otherwise.' ,
+            )
         )
         ],
         client=[

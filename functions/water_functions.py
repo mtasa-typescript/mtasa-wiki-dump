@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -163,9 +163,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates an area of water.
-The largest possible size of a water area is 5996&#0215;5996. Also be aware that the function will change all x and y coordinates you specify into even integer numbers if necessary: this is because of a limitation of San Andreas.
-You are able to give the water a shallow water effect, which practically changes the water invisible to the eye. However, all elements still work the same way as without the shallow effect - allowing swimming, diving, vehicles to sink, etc. """,
+                description='Creates an area of water.\nThe largest possible size of a water area is 5996&#0215;5996. Also be aware that the function will change all x and y coordinates you specify into even integer numbers if necessary: this is because of a limitation of San Andreas.\nYou are able to give the water a shallow water effect, which practically changes the water invisible to the eye. However, all elements still work the same way as without the shallow effect - allowing swimming, diving, vehicles to sink, etc.' ,
                 arguments={
                     "x1, y1, z1": """position of bottom left (south-west) corner. """,
                     "x2, y2, z2": """position of bottom right (south-east) corner. """,
@@ -174,9 +172,8 @@ You are able to give the water a shallow water effect, which practically changes
                     "x4, y4, z4": """position of top right (north-east) corner. """,
                     "bShallow": """gives the water a shallow water effect. """
                 },
-                result="""returns a water element if successful, false otherwise. the water element can be repositioned with setelementposition and destroyed with destroyelement. """,
-            ),
-            name='createWater',
+                result='returns a water element if successful, false otherwise. the water element can be repositioned with setelementposition and destroyed with destroyelement.' ,
+            )
         )
         ],
         client=[
@@ -332,9 +329,7 @@ You are able to give the water a shallow water effect, which practically changes
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates an area of water.
-The largest possible size of a water area is 5996&#0215;5996. Also be aware that the function will change all x and y coordinates you specify into even integer numbers if necessary: this is because of a limitation of San Andreas.
-You are able to give the water a shallow water effect, which practically changes the water invisible to the eye. However, all elements still work the same way as without the shallow effect - allowing swimming, diving, vehicles to sink, etc. """,
+                description='Creates an area of water.\nThe largest possible size of a water area is 5996&#0215;5996. Also be aware that the function will change all x and y coordinates you specify into even integer numbers if necessary: this is because of a limitation of San Andreas.\nYou are able to give the water a shallow water effect, which practically changes the water invisible to the eye. However, all elements still work the same way as without the shallow effect - allowing swimming, diving, vehicles to sink, etc.' ,
                 arguments={
                     "x1, y1, z1": """position of bottom left (south-west) corner. """,
                     "x2, y2, z2": """position of bottom right (south-east) corner. """,
@@ -343,9 +338,8 @@ You are able to give the water a shallow water effect, which practically changes
                     "x4, y4, z4": """position of top right (north-east) corner. """,
                     "bShallow": """gives the water a shallow water effect. """
                 },
-                result="""returns a water element if successful, false otherwise. the water element can be repositioned with setelementposition and destroyed with destroyelement. """,
-            ),
-            name='createWater',
+                result='returns a water element if successful, false otherwise. the water element can be repositioned with setelementposition and destroyed with destroyelement.' ,
+            )
         )
         ],
     ),
@@ -386,14 +380,12 @@ You are able to give the water a shallow water effect, which practically changes
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the water color of the GTA world.
-Note: The server can only return the water color, if it has actually been set by script. """,
+                description='This function returns the water color of the GTA world.\nNote: The server can only return the water color, if it has actually been set by script.' ,
                 arguments={
                     
                 },
-                result="""returns 4 int|ints, indicating the color of the water. (rgba) """,
-            ),
-            name='getWaterColor',
+                result='returns 4 int|ints, indicating the color of the water. (rgba)' ,
+            )
         )
         ],
         client=[
@@ -432,14 +424,12 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the water color of the GTA world.
-Note: The server can only return the water color, if it has actually been set by script. """,
+                description='This function returns the water color of the GTA world.\nNote: The server can only return the water color, if it has actually been set by script.' ,
                 arguments={
                     
                 },
-                result="""returns 4 int|ints, indicating the color of the water. (rgba) """,
-            ),
-            name='getWaterColor',
+                result='returns 4 int|ints, indicating the color of the water. (rgba)' ,
+            )
         )
         ],
     ),
@@ -510,7 +500,7 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to retrieve the water level from a certain location. The water level is 0 in most places though it can vary (e.g. its higher near the dam). """,
+                description='This function allows you to retrieve the water level from a certain location. The water level is 0 in most places though it can vary (e.g. its higher near the dam).' ,
                 arguments={
                     "x": """The X axis position """,
                     "y": """The Y axis position """,
@@ -519,9 +509,8 @@ Note: The server can only return the water color, if it has actually been set by
                     "theWater": """the water element """,
                     "ignoreDistanceToWaterThreshold": """If set to false, this function returns false, if the difference between water level (without waves) and posZ is greater than 3.0 """
                 },
-                result="""returns an integer of the water level if the localplayer/position is near the water (-3 to 20 on the z coordinate) else false if theres no water near the localplayer/position. """,
-            ),
-            name='getWaterLevel',
+                result='returns an integer of the water level if the localplayer/position is near the water (-3 to 20 on the z coordinate) else false if theres no water near the localplayer/position.' ,
+            )
         )
         ],
     ),
@@ -577,14 +566,13 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the world position of a vertex (i.e. corner) of a water area. Each water area is either a triangle or quad (rectangle) so each has 3 or 4 corners. """,
+                description='Gets the world position of a vertex (i.e. corner) of a water area. Each water area is either a triangle or quad (rectangle) so each has 3 or 4 corners.' ,
                 arguments={
                     "theWater": """the water element to get the vertex of """,
                     "vertexIndex": """the index of the vertex whose position to get. Values range from 1 to 4 for a water quad, or 1 to 3 for a triangle. """
                 },
-                result="""returns the x, y and z coordinates of the specified vertex if successful, false otherwise. """,
-            ),
-            name='getWaterVertexPosition',
+                result='returns the x, y and z coordinates of the specified vertex if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -638,14 +626,13 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the world position of a vertex (i.e. corner) of a water area. Each water area is either a triangle or quad (rectangle) so each has 3 or 4 corners. """,
+                description='Gets the world position of a vertex (i.e. corner) of a water area. Each water area is either a triangle or quad (rectangle) so each has 3 or 4 corners.' ,
                 arguments={
                     "theWater": """the water element to get the vertex of """,
                     "vertexIndex": """the index of the vertex whose position to get. Values range from 1 to 4 for a water quad, or 1 to 3 for a triangle. """
                 },
-                result="""returns the x, y and z coordinates of the specified vertex if successful, false otherwise. """,
-            ),
-            name='getWaterVertexPosition',
+                result='returns the x, y and z coordinates of the specified vertex if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -674,13 +661,12 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current wave height. """,
+                description='This function returns the current wave height.' ,
                 arguments={
                     
                 },
-                result="""returns the height as a float, false otherwise. """,
-            ),
-            name='getWaveHeight',
+                result='returns the height as a float, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -707,13 +693,12 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current wave height. """,
+                description='This function returns the current wave height.' ,
                 arguments={
                     
                 },
-                result="""returns the height as a float, false otherwise. """,
-            ),
-            name='getWaveHeight',
+                result='returns the height as a float, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -745,13 +730,12 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function determines whether water is drawn last in the rendering order. """,
+                description='This function determines whether water is drawn last in the rendering order.' ,
                 arguments={
                     
                 },
-                result="""returns true if water is drawn last in the rendering order, false otherwise. """,
-            ),
-            name='isWaterDrawnLast',
+                result='returns true if water is drawn last in the rendering order, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -780,13 +764,12 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function reset the water color of the GTA world to default. """,
+                description='This function reset the water color of the GTA world to default.' ,
                 arguments={
                     
                 },
-                result="""returns true if water color was reset correctly, false otherwise. """,
-            ),
-            name='resetWaterColor',
+                result='returns true if water color was reset correctly, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -813,13 +796,12 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function reset the water color of the GTA world to default. """,
+                description='This function reset the water color of the GTA world to default.' ,
                 arguments={
                     
                 },
-                result="""returns true if water color was reset correctly, false otherwise. """,
-            ),
-            name='resetWaterColor',
+                result='returns true if water color was reset correctly, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -848,13 +830,12 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function resets the water of the GTA world back to its default level. water|Water elements are not affected. """,
+                description='This function resets the water of the GTA world back to its default level. water|Water elements are not affected.' ,
                 arguments={
                     
                 },
-                result="""returns true if water level was reset correctly, false otherwise. """,
-            ),
-            name='resetWaterLevel',
+                result='returns true if water level was reset correctly, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -881,13 +862,12 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function resets the water of the GTA world back to its default level. water|Water elements are not affected. """,
+                description='This function resets the water of the GTA world back to its default level. water|Water elements are not affected.' ,
                 arguments={
                     
                 },
-                result="""returns true if water level was reset correctly, false otherwise. """,
-            ),
-            name='resetWaterLevel',
+                result='returns true if water level was reset correctly, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -955,16 +935,15 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the water color of the GTA world. """,
+                description='This function changes the water color of the GTA world.' ,
                 arguments={
                     "red": """The red value of the water, from 0 to 255. """,
                     "green": """The green value of the water, from 0 to 255. """,
                     "blue": """The blue value of the water, from 0 to 255. """,
                     "alpha": """The alpha (visibility) value of the water, from 0 to 255. Defaults to 200 if not declared. """
                 },
-                result="""returns true if water color was set correctly, false if invalid values were passed. """,
-            ),
-            name='setWaterColor',
+                result='returns true if water color was set correctly, false if invalid values were passed.' ,
+            )
         )
         ],
         client=[
@@ -1030,16 +1009,15 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the water color of the GTA world. """,
+                description='This function changes the water color of the GTA world.' ,
                 arguments={
                     "red": """The red value of the water, from 0 to 255. """,
                     "green": """The green value of the water, from 0 to 255. """,
                     "blue": """The blue value of the water, from 0 to 255. """,
                     "alpha": """The alpha (visibility) value of the water, from 0 to 255. Defaults to 200 if not declared. """
                 },
-                result="""returns true if water color was set correctly, false if invalid values were passed. """,
-            ),
-            name='setWaterColor',
+                result='returns true if water color was set correctly, false if invalid values were passed.' ,
+            )
         )
         ],
     ),
@@ -1080,13 +1058,12 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the water rendering order. """,
+                description='This function changes the water rendering order.' ,
                 arguments={
                     "bEnabled": """: A boolean value determining whether water should be drawn last. """
                 },
-                result="""returns true if the rendering order was changed successfully, false otherwise. """,
-            ),
-            name='setWaterDrawnLast',
+                result='returns true if the rendering order was changed successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1134,7 +1111,7 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the height of some or all the water in the game world. """,
+                description='Sets the height of some or all the water in the game world.' ,
                 arguments={
                     "level": """the new Z coordinate of the water surface. All water in the game world is set to this height. """,
                     "theWater": """the water element to change.
@@ -1144,9 +1121,8 @@ Note: The server can only return the water color, if it has actually been set by
                     "includeWorldSea": """a boolean indicating whether to set the level of the sea water """,
                     "includeOutsideWorldSea": """a boolean indicating whether to also set the level of sea water outside the world area, ie. outside -3000, 3000. """
                 },
-                result="""returns true if successful, false in case of failure. """,
-            ),
-            name='setWaterLevel',
+                result='returns true if successful, false in case of failure.' ,
+            )
         )
         ],
         client=[
@@ -1192,7 +1168,7 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the height of some or all the water in the game world. """,
+                description='Sets the height of some or all the water in the game world.' ,
                 arguments={
                     "level": """the new Z coordinate of the water surface. All water in the game world is set to this height. """,
                     "theWater": """the water element to change.
@@ -1202,9 +1178,8 @@ Note: The server can only return the water color, if it has actually been set by
                     "includeWorldSea": """a boolean indicating whether to set the level of the sea water """,
                     "includeOutsideWorldSea": """a boolean indicating whether to also set the level of sea water outside the world area, ie. outside -3000, 3000. """
                 },
-                result="""returns true if successful, false in case of failure. """,
-            ),
-            name='setWaterLevel',
+                result='returns true if successful, false in case of failure.' ,
+            )
         )
         ],
     ),
@@ -1282,7 +1257,7 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the world position of a corner point of a water area. """,
+                description='Sets the world position of a corner point of a water area.' ,
                 arguments={
                     "theWater": """the water element of which to change a vertex. """,
                     "vertexIndex": """the index of the vertex to move. Values range from 1 to 4 for water quads, and 1 to 3 for triangles. """,
@@ -1290,9 +1265,8 @@ Note: The server can only return the water color, if it has actually been set by
                     "y": """the Y coordinate to set for the vertex. """,
                     "z": """the Z coordinate to set for the vertex. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setWaterVertexPosition',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1368,7 +1342,7 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the world position of a corner point of a water area. """,
+                description='Sets the world position of a corner point of a water area.' ,
                 arguments={
                     "theWater": """the water element of which to change a vertex. """,
                     "vertexIndex": """the index of the vertex to move. Values range from 1 to 4 for water quads, and 1 to 3 for triangles. """,
@@ -1376,9 +1350,8 @@ Note: The server can only return the water color, if it has actually been set by
                     "y": """the Y coordinate to set for the vertex. """,
                     "z": """the Z coordinate to set for the vertex. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setWaterVertexPosition',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1416,13 +1389,12 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the wave height to the desired value, the default is 0. """,
+                description='This function sets the wave height to the desired value, the default is 0.' ,
                 arguments={
                     "height": """A float between 0 and 100. """
                 },
-                result="""returns a boolean value true or false that tells you if it was successful or not. """,
-            ),
-            name='setWaveHeight',
+                result='returns a boolean value true or false that tells you if it was successful or not.' ,
+            )
         )
         ],
         client=[
@@ -1458,13 +1430,12 @@ Note: The server can only return the water color, if it has actually been set by
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the wave height to the desired value, the default is 0. """,
+                description='This function sets the wave height to the desired value, the default is 0.' ,
                 arguments={
                     "height": """A float between 0 and 100. """
                 },
-                result="""returns a boolean value true or false that tells you if it was successful or not. """,
-            ),
-            name='setWaveHeight',
+                result='returns a boolean value true or false that tells you if it was successful or not.' ,
+            )
         )
         ],
     )

@@ -17,14 +17,14 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientResourceFileDownload',
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "fileResource": """resource the file belongs to """,
                     "fileName": """relative resource file path """,
                     "fileSize": """size of the file in bytes """,
                     "state": """possible values: <code>queued</code> or <code>finished</code> or <code>failed</code> """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -82,13 +82,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientResourceStart',
             docs=FunctionDoc(
-                description="""This event is triggered when a resource is started.  Please note that this is not triggered the same time as the serverside event onResourceStart is.  The event is triggered when any clientside resources are started.  This means it is triggered when a clientside script is initiated after a download, which includes downloading after join. So:
-* If a resource is running before a player joins, the onClientResourceStart event will be triggered after they join and have downloaded that resource.
-* If a resource is started after a player has joined, the player will be made to download the required files, and then the onClientResourceStart event will be triggered. """,
+                description='This event is triggered when a resource is started.  Please note that this is not triggered the same time as the serverside event onResourceStart is.  The event is triggered when any clientside resources are started.  This means it is triggered when a clientside script is initiated after a download, which includes downloading after join. So:\n* If a resource is running before a player joins, the onClientResourceStart event will be triggered after they join and have downloaded that resource.\n* If a resource is started after a player has joined, the player will be made to download the required files, and then the onClientResourceStart event will be triggered.' ,
                 arguments={
                     "startedResource": """: the resource that was started. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -116,11 +114,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientResourceStop',
             docs=FunctionDoc(
-                description="""This event is triggered when a resource is being stopped. """,
+                description='This event is triggered when a resource is being stopped.' ,
                 arguments={
                     "stoppedResource": """: the resource that is about to get stopped. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -145,13 +143,13 @@ DUMP_PARTIAL = [
             EventData(
             name='onResourceLoadStateChange',
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "changedResource": """: the resource that was either loaded, reloaded or is unloading. """,
                     "oldState": """: the state the resource was in before it changed. """,
                     "newState": """: the state the resource has changed to. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -199,11 +197,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onResourcePreStart',
             docs=FunctionDoc(
-                description="""Analogous to onResourceStart, but triggered before script files are initialised. """,
+                description='Analogous to onResourceStart, but triggered before script files are initialised.' ,
                 arguments={
                     "startingResource": """: the resource that is starting. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -231,12 +229,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onResourceStart',
             docs=FunctionDoc(
-                description="""This event is triggered when a resource is started.
-Important: If you attach this event to the root element it will called when any resource starts, not just the resource your script is running inside. As such, most of the time you will want to check that the resource passed to this event matches your resource (compare with the value returned by getThisResource before doing anything. Alternatively you can attach the event to resourceRoot. """,
+                description='This event is triggered when a resource is started.\nImportant: If you attach this event to the root element it will called when any resource starts, not just the resource your script is running inside. As such, most of the time you will want to check that the resource passed to this event matches your resource (compare with the value returned by getThisResource before doing anything. Alternatively you can attach the event to resourceRoot.' ,
                 arguments={
                     "startedResource": """: the resource that was started. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -264,17 +261,12 @@ Important: If you attach this event to the root element it will called when any 
             EventData(
             name='onResourceStop',
             docs=FunctionDoc(
-                description="""This event is triggered when the resource is stopped. This can occur for a number of reasons:
-* The stop console command was used
-* The restart console command was used
-* The resource was modified (the resource will automatically restart)
-* Another resource stopped it using stopResource.
-Note: If you wish to just detect a single resource being stopped, you should attach handlers for this event to the resources root element. You can access this using getResourceRootElement. """,
+                description='This event is triggered when the resource is stopped. This can occur for a number of reasons:\n* The stop console command was used\n* The restart console command was used\n* The resource was modified (the resource will automatically restart)\n* Another resource stopped it using stopResource.\nNote: If you wish to just detect a single resource being stopped, you should attach handlers for this event to the resources root element. You can access this using getResourceRootElement.' ,
                 arguments={
                     "stoppedResource": """: the resource that is being stopped. """,
                     "wasDeleted": """: a boolean representing whether the resource folder was deleted, moved or renamed. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[

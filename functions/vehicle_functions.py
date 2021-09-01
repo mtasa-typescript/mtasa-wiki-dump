@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -103,7 +103,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function adds sirens to a vehicle. """,
+                description='This function adds sirens to a vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle to add sirens """,
                     "sirenCount": """The amount of siren points on the vehicle (8 maximum) """,
@@ -113,9 +113,8 @@ DUMP_PARTIAL = [
                     "useRandomiser": """Randomise the light order, false for sequential """,
                     "silentFlag": """If you want the siren to be silent set this to true """
                 },
-                result="""returns true if sirens were successfully added to the vehicle, false otherwise. """,
-            ),
-            name='addVehicleSirens',
+                result='returns true if sirens were successfully added to the vehicle, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -166,15 +165,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function adds an upgrade to a vehicle, e.g. nitrous, hydraulics. """,
+                description='This function adds an upgrade to a vehicle, e.g. nitrous, hydraulics.' ,
                 arguments={
                     "theVehicle": """: The element representing the vehicle you wish to add the upgrade to. """,
                     "upgrade": """: The id of the upgrade you wish to add: 1000 to 1193 (see Vehicle Upgrades) or all to add all upgrades.
 '''Note:''' setCameraTarget will behave strangely if you use hydraulics (upgrade id: 1087) server sided and when your camera target is the player inside the vehicle with hydraulics and if the player is not you. """
                 },
-                result="""returns true if the upgrade was successfully added to the vehicle, otherwise false. """,
-            ),
-            name='addVehicleUpgrade',
+                result='returns true if the upgrade was successfully added to the vehicle, otherwise false.' ,
+            )
         )
         ],
         client=[
@@ -220,15 +218,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function adds an upgrade to a vehicle, e.g. nitrous, hydraulics. """,
+                description='This function adds an upgrade to a vehicle, e.g. nitrous, hydraulics.' ,
                 arguments={
                     "theVehicle": """: The element representing the vehicle you wish to add the upgrade to. """,
                     "upgrade": """: The id of the upgrade you wish to add: 1000 to 1193 (see Vehicle Upgrades) or all to add all upgrades.
 '''Note:''' setCameraTarget will behave strangely if you use hydraulics (upgrade id: 1087) server sided and when your camera target is the player inside the vehicle with hydraulics and if the player is not you. """
                 },
-                result="""returns true if the upgrade was successfully added to the vehicle, otherwise false. """,
-            ),
-            name='addVehicleUpgrade',
+                result='returns true if the upgrade was successfully added to the vehicle, otherwise false.' ,
+            )
         )
         ],
     ),
@@ -269,14 +266,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""*This is different to getVehicleOverrideLights because this function will return true if the lights were turned on by natural causes.
-* Unless setVehicleOverrideLights is used, vehicles always automatically disable their lights at 06:25 and enable them at 20:26.}} """,
+                description='*This is different to getVehicleOverrideLights because this function will return true if the lights were turned on by natural causes.\n* Unless setVehicleOverrideLights is used, vehicles always automatically disable their lights at 06:25 and enable them at 20:26.}}' ,
                 arguments={
                     "theVehicle": """: the vehicle you wish to retrieve the lights state of. """
                 },
-                result="""returns true if the lights are on, false otherwise. """,
-            ),
-            name='areVehicleLightsOn',
+                result='returns true if the lights are on, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -324,14 +319,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function attaches a trailer type vehicle to a trailer-towing-type vehicle. """,
+                description='This function attaches a trailer type vehicle to a trailer-towing-type vehicle.' ,
                 arguments={
                     "theVehicle": """: the vehicle you wish to attach a trailer to. """,
                     "theTrailer": """: the trailer you wish to be attached. """
                 },
-                result="""returns true if the vehicles were successfully attached, false otherwise. """,
-            ),
-            name='attachTrailerToVehicle',
+                result='returns true if the vehicles were successfully attached, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -377,14 +371,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function attaches a trailer type vehicle to a trailer-towing-type vehicle. """,
+                description='This function attaches a trailer type vehicle to a trailer-towing-type vehicle.' ,
                 arguments={
                     "theVehicle": """: the vehicle you wish to attach a trailer to. """,
                     "theTrailer": """: the trailer you wish to be attached. """
                 },
-                result="""returns true if the vehicles were successfully attached, false otherwise. """,
-            ),
-            name='attachTrailerToVehicle',
+                result='returns true if the vehicles were successfully attached, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -432,14 +425,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will blow up a vehicle. This will cause an explosion and will kill the driver and any passengers inside it. """,
+                description='This function will blow up a vehicle. This will cause an explosion and will kill the driver and any passengers inside it.' ,
                 arguments={
                     "vehicleToBlow": """the vehicle that you wish to blow up. """,
                     "explode": """if this argument is true then the vehicle will explode, otherwise it will just be blown up silently. """
                 },
-                result=""" """,
-            ),
-            name='blowVehicle',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -475,13 +467,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will blow up a vehicle. This will cause an explosion and will kill the driver and any passengers inside it. """,
+                description='This function will blow up a vehicle. This will cause an explosion and will kill the driver and any passengers inside it.' ,
                 arguments={
                     "vehicleToBlow": """the vehicle that you wish to blow up. """
                 },
-                result=""" """,
-            ),
-            name='blowVehicle',
+                result='' ,
+            )
         )
         ],
     ),
@@ -619,8 +610,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a vehicle at the specified location.
-Its worth nothing that the position of the vehicle is the center point of the vehicle, not its base. As such, you need to ensure that the z value (vertical axis) is some height above the ground. You can find the exact height using the client side function getElementDistanceFromCentreOfMassToBaseOfModel, or you can estimate it yourself and just spawn the vehicle so it drops to the ground. """,
+                description='This function creates a vehicle at the specified location.\nIts worth nothing that the position of the vehicle is the center point of the vehicle, not its base. As such, you need to ensure that the z value (vertical axis) is some height above the ground. You can find the exact height using the client side function getElementDistanceFromCentreOfMassToBaseOfModel, or you can estimate it yourself and just spawn the vehicle so it drops to the ground.' ,
                 arguments={
                     "model": """: The Vehicle IDs|vehicle ID of the vehicle being created. """,
                     "x": """: A floating point number representing the X coordinate on the map. """,
@@ -634,9 +624,8 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                     "variant1": """: An integer for the first vehicle variant. See vehicle variants. """,
                     "variant2": """: An integer for the second vehicle variant. See vehicle variants. """
                 },
-                result="""returns the vehicle element that was created. returns false if the arguments are incorrect, or if the vehicle limit of 65535 is exceeded. """,
-            ),
-            name='createVehicle',
+                result='returns the vehicle element that was created. returns false if the arguments are incorrect, or if the vehicle limit of 65535 is exceeded.' ,
+            )
         )
         ],
         client=[
@@ -772,8 +761,7 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a vehicle at the specified location.
-Its worth nothing that the position of the vehicle is the center point of the vehicle, not its base. As such, you need to ensure that the z value (vertical axis) is some height above the ground. You can find the exact height using the client side function getElementDistanceFromCentreOfMassToBaseOfModel, or you can estimate it yourself and just spawn the vehicle so it drops to the ground. """,
+                description='This function creates a vehicle at the specified location.\nIts worth nothing that the position of the vehicle is the center point of the vehicle, not its base. As such, you need to ensure that the z value (vertical axis) is some height above the ground. You can find the exact height using the client side function getElementDistanceFromCentreOfMassToBaseOfModel, or you can estimate it yourself and just spawn the vehicle so it drops to the ground.' ,
                 arguments={
                     "model": """: The Vehicle IDs|vehicle ID of the vehicle being created. """,
                     "x": """: A floating point number representing the X coordinate on the map. """,
@@ -787,9 +775,8 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                     "variant1": """: An integer for the first vehicle variant. See vehicle variants. """,
                     "variant2": """: An integer for the second vehicle variant. See vehicle variants. """
                 },
-                result="""returns the vehicle element that was created. returns false if the arguments are incorrect, or if the vehicle limit of 65535 is exceeded. """,
-            ),
-            name='createVehicle',
+                result='returns the vehicle element that was created. returns false if the arguments are incorrect, or if the vehicle limit of 65535 is exceeded.' ,
+            )
         )
         ],
     ),
@@ -837,14 +824,13 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function detaches an already attached trailer from a vehicle. """,
+                description='This function detaches an already attached trailer from a vehicle.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to detach a trailer from. """,
                     "theTrailer": """: The trailer you wish to be detached. """
                 },
-                result="""returns true if the vehicles were successfully detached, false otherwise. """,
-            ),
-            name='detachTrailerFromVehicle',
+                result='returns true if the vehicles were successfully detached, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -890,14 +876,13 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function detaches an already attached trailer from a vehicle. """,
+                description='This function detaches an already attached trailer from a vehicle.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to detach a trailer from. """,
                     "theTrailer": """: The trailer you wish to be detached. """
                 },
-                result="""returns true if the vehicles were successfully detached, false otherwise. """,
-            ),
-            name='detachTrailerFromVehicle',
+                result='returns true if the vehicles were successfully detached, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -935,13 +920,12 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will set a vehicles health to full and fix its damage model. If you wish to only change the vehicles health, without affecting its damage model, use setElementHealth. """,
+                description='This function will set a vehicles health to full and fix its damage model. If you wish to only change the vehicles health, without affecting its damage model, use setElementHealth.' ,
                 arguments={
                     "theVehicle": """the vehicle you wish to fix """
                 },
-                result="""returns true if the vehicle was fixed, false if thevehicle is invalid. """,
-            ),
-            name='fixVehicle',
+                result='returns true if the vehicle was fixed, false if thevehicle is invalid.' ,
+            )
         )
         ],
         client=[
@@ -977,13 +961,12 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will set a vehicles health to full and fix its damage model. If you wish to only change the vehicles health, without affecting its damage model, use setElementHealth. """,
+                description='This function will set a vehicles health to full and fix its damage model. If you wish to only change the vehicles health, without affecting its damage model, use setElementHealth.' ,
                 arguments={
                     "theVehicle": """the vehicle you wish to fix """
                 },
-                result="""returns true if the vehicle was fixed, false if thevehicle is invalid. """,
-            ),
-            name='fixVehicle',
+                result='returns true if the vehicle was fixed, false if thevehicle is invalid.' ,
+            )
         )
         ],
     ),
@@ -1024,13 +1007,12 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the state of the helicopter blades collisions on the specified vehicle. """,
+                description='This function gets the state of the helicopter blades collisions on the specified vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle that will be checked. """
                 },
-                result="""returns true if the collisions are enabled for specified vehicle, false if the collisions arent enabled for the specified vehicle, if the vehicle is not a helicopter or if invalid arguments are specified. """,
-            ),
-            name='getHeliBladeCollisionsEnabled',
+                result='returns true if the collisions are enabled for specified vehicle, false if the collisions arent enabled for the specified vehicle, if the vehicle is not a helicopter or if invalid arguments are specified.' ,
+            )
         )
         ],
     ),
@@ -1071,13 +1053,12 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 ],
             ),
             docs=FunctionDoc(
-                description="""Retrieves the speed at which the rotor of a helicopter rotates. """,
+                description='Retrieves the speed at which the rotor of a helicopter rotates.' ,
                 arguments={
                     "heli": """the helicopter element to get the rotor speed of. """
                 },
-                result="""returns the rotor speed if successful. this is 0 when the helicopter is parked, and about 0.2 when it is fully spun up. it can be negative if the rotor rotates counter-clockwise. returns false in case of failure (an invalid element or a vehicle element that is not a helicopter was passed). """,
-            ),
-            name='getHelicopterRotorSpeed',
+                result='returns the rotor speed if successful. this is 0 when the helicopter is parked, and about 0.2 when it is fully spun up. it can be negative if the rotor rotates counter-clockwise. returns false in case of failure (an invalid element or a vehicle element that is not a helicopter was passed).' ,
+            )
         )
         ],
     ),
@@ -1115,14 +1096,12 @@ Its worth nothing that the position of the vehicle is the center point of the ve
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table containing the handling data of the specified vehicle model.
-Note: the data returned may not reflect the actual handling of a particular vehicle, since this may be overriden by the setVehicleHandling function. """,
+                description='This function returns a table containing the handling data of the specified vehicle model.\nNote: the data returned may not reflect the actual handling of a particular vehicle, since this may be overriden by the setVehicleHandling function.' ,
                 arguments={
                     "modelId": """the vehicle model you wish to get the handling data of. """
                 },
-                result="""returns a table containing all the handling data, false if an invalid vehicle model is specified. here is a list of valid table properties and what they return: """,
-            ),
-            name='getModelHandling',
+                result='returns a table containing all the handling data, false if an invalid vehicle model is specified. here is a list of valid table properties and what they return:' ,
+            )
         )
         ],
         client=[
@@ -1163,13 +1142,12 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table of the original vehicle handling. Use getVehicleHandling if you wish to get the current handling of a vehicle, or getModelHandling for a specific vehicle model. """,
+                description='This function returns a table of the original vehicle handling. Use getVehicleHandling if you wish to get the current handling of a vehicle, or getModelHandling for a specific vehicle model.' ,
                 arguments={
                     "modelID": """The vehicle ID you wish to get the original handling from. """
                 },
-                result="""returns a table containing all the handling data, false otherwise. here a list of valid table properties and what they return: """,
-            ),
-            name='getOriginalHandling',
+                result='returns a table containing all the handling data, false otherwise. here a list of valid table properties and what they return:' ,
+            )
         )
         ],
         client=[
@@ -1205,13 +1183,12 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table of the original vehicle handling. Use getVehicleHandling if you wish to get the current handling of a vehicle, or getModelHandling for a specific vehicle model. """,
+                description='This function returns a table of the original vehicle handling. Use getVehicleHandling if you wish to get the current handling of a vehicle, or getModelHandling for a specific vehicle model.' ,
                 arguments={
                     "modelID": """The vehicle ID you wish to get the original handling from. """
                 },
-                result="""returns a table containing all the handling data, false otherwise. here a list of valid table properties and what they return: """,
-            ),
-            name='getOriginalHandling',
+                result='returns a table containing all the handling data, false otherwise. here a list of valid table properties and what they return:' ,
+            )
         )
         ],
     ),
@@ -1249,13 +1226,12 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the direction in which a train is driving (clockwise or counterclockwise). """,
+                description='Gets the direction in which a train is driving (clockwise or counterclockwise).' ,
                 arguments={
                     "train": """the train of which to get the driving direction. """
                 },
-                result="""returns true if the train is driving clockwise on the train track, false if it is going counterclockwise or a failure occured. """,
-            ),
-            name='getTrainDirection',
+                result='returns true if the train is driving clockwise on the train track, false if it is going counterclockwise or a failure occured.' ,
+            )
         )
         ],
         client=[
@@ -1291,13 +1267,12 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the direction in which a train is driving (clockwise or counterclockwise). """,
+                description='Gets the direction in which a train is driving (clockwise or counterclockwise).' ,
                 arguments={
                     "train": """the train of which to get the driving direction. """
                 },
-                result="""returns true if the train is driving clockwise on the train track, false if it is going counterclockwise or a failure occured. """,
-            ),
-            name='getTrainDirection',
+                result='returns true if the train is driving clockwise on the train track, false if it is going counterclockwise or a failure occured.' ,
+            )
         )
         ],
     ),
@@ -1335,13 +1310,12 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the position the train is currently on the track """,
+                description='Gets the position the train is currently on the track' ,
                 arguments={
                     "train": """the train to get the position of """
                 },
-                result="""returns a float that represents how along the track it is, false if there is problem with train element. """,
-            ),
-            name='getTrainPosition',
+                result='returns a float that represents how along the track it is, false if there is problem with train element.' ,
+            )
         )
         ],
         client=[
@@ -1377,13 +1351,12 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the position the train is currently on the track """,
+                description='Gets the position the train is currently on the track' ,
                 arguments={
                     "train": """the train to get the position of """
                 },
-                result="""returns a float that represents how along the track it is, false if there is problem with train element. """,
-            ),
-            name='getTrainPosition',
+                result='returns a float that represents how along the track it is, false if there is problem with train element.' ,
+            )
         )
         ],
     ),
@@ -1421,13 +1394,12 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the speed at which a train is traveling on the rails. """,
+                description='Gets the speed at which a train is traveling on the rails.' ,
                 arguments={
                     "train": """the train of which to retrieve the speed. """
                 },
-                result="""returns the trains speed if successful, false otherwise. """,
-            ),
-            name='getTrainSpeed',
+                result='returns the trains speed if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1463,13 +1435,12 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the speed at which a train is traveling on the rails. """,
+                description='Gets the speed at which a train is traveling on the rails.' ,
                 arguments={
                     "train": """the train of which to retrieve the speed. """
                 },
-                result="""returns the trains speed if successful, false otherwise. """,
-            ),
-            name='getTrainSpeed',
+                result='returns the trains speed if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1507,13 +1478,12 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the track of a train """,
+                description='Gets the track of a train' ,
                 arguments={
                     "train": """the train of which to get the track. """
                 },
-                result="""returns an integer (whole number) that represents the train track, false if there is problem with train element. """,
-            ),
-            name='getTrainTrack',
+                result='returns an integer (whole number) that represents the train track, false if there is problem with train element.' ,
+            )
         )
         ],
         client=[
@@ -1549,13 +1519,12 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the track of a train """,
+                description='Gets the track of a train' ,
                 arguments={
                     "train": """the train of which to get the track. """
                 },
-                result="""returns an integer (whole number) that represents the train track, false if there is problem with train element. """,
-            ),
-            name='getTrainTrack',
+                result='returns an integer (whole number) that represents the train track, false if there is problem with train element.' ,
+            )
         )
         ],
     ),
@@ -1596,13 +1565,12 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 ],
             ),
             docs=FunctionDoc(
-                description="""Use this to get the value of a vehicles adjustable property. This property relates to movable parts of a model, for example hydra jets or dump truck tray. """,
+                description='Use this to get the value of a vehicles adjustable property. This property relates to movable parts of a model, for example hydra jets or dump truck tray.' ,
                 arguments={
                     "theVehicle": """The vehicle you want to get the adjustable property of. """
                 },
-                result="""returns a value from 0 upwards representing adjustment. 0 is default position. maximum varies per vehicle, for example hydra horizontal flight is 5000, while dump truck tray max tilt is 2500. or returns false if the vehicle passed to the function is invalid. """,
-            ),
-            name='getVehicleAdjustableProperty',
+                result='returns a value from 0 upwards representing adjustment. 0 is default position. maximum varies per vehicle, for example hydra horizontal flight is 5000, while dump truck tray max tilt is 2500. or returns false if the vehicle passed to the function is invalid.' ,
+            )
         )
         ],
     ),
@@ -1694,18 +1662,13 @@ Note: the data returned may not reflect the actual handling of a particular vehi
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the color of the specified vehicle. A vehicle can have up to four colors. """,
+                description='This function returns the color of the specified vehicle. A vehicle can have up to four colors.' ,
                 arguments={
                     "theVehicle": """The vehicle that you wish to get the color of. """,
                     "bRGB": """A boolean specifying whether to return RGB values. A setting of false will result in the function returning color ids instead. """
                 },
-                result="""*returns 12 int|ints (if brgb is true) indicating the red, green and blue components of each of the 4 vehicle colors.
-*returns 4 int|ints (if brgb is false) indicating the color ids of each of the 4 vehicle colors.
-*returns false if the vehicle doesnt exist.
-valid color ids if brgb is set to false:
-<br> """,
-            ),
-            name='getVehicleColor',
+                result='*returns 12 int|ints (if brgb is true) indicating the red, green and blue components of each of the 4 vehicle colors.\n*returns 4 int|ints (if brgb is false) indicating the color ids of each of the 4 vehicle colors.\n*returns false if the vehicle doesnt exist.\nvalid color ids if brgb is set to false:\n<br>' ,
+            )
         )
         ],
         client=[
@@ -1795,18 +1758,13 @@ valid color ids if brgb is set to false:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the color of the specified vehicle. A vehicle can have up to four colors. """,
+                description='This function returns the color of the specified vehicle. A vehicle can have up to four colors.' ,
                 arguments={
                     "theVehicle": """The vehicle that you wish to get the color of. """,
                     "bRGB": """A boolean specifying whether to return RGB values. A setting of false will result in the function returning color ids instead. """
                 },
-                result="""*returns 12 int|ints (if brgb is true) indicating the red, green and blue components of each of the 4 vehicle colors.
-*returns 4 int|ints (if brgb is false) indicating the color ids of each of the 4 vehicle colors.
-*returns false if the vehicle doesnt exist.
-valid color ids if brgb is set to false:
-<br> """,
-            ),
-            name='getVehicleColor',
+                result='*returns 12 int|ints (if brgb is true) indicating the red, green and blue components of each of the 4 vehicle colors.\n*returns 4 int|ints (if brgb is false) indicating the color ids of each of the 4 vehicle colors.\n*returns false if the vehicle doesnt exist.\nvalid color ids if brgb is set to false:\n<br>' ,
+            )
         )
         ],
     ),
@@ -1854,14 +1812,13 @@ valid color ids if brgb is set to false:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table of all the compatible upgrades (or all for a specified slot, optionally) for a specified vehicle. """,
+                description='This function returns a table of all the compatible upgrades (or all for a specified slot, optionally) for a specified vehicle.' ,
                 arguments={
                     "theVehicle": """the vehicle you wish to retrieve the list of compatible upgrades of. """,
                     "slot": """the upgrade slot number for which youre getting the list (from 0 to 16). Compatible upgrades for all slots are listed if this is not specified. """
                 },
-                result="""returns a table with all the compatible upgrades, or false if invalid arguments are passed. """,
-            ),
-            name='getVehicleCompatibleUpgrades',
+                result='returns a table with all the compatible upgrades, or false if invalid arguments are passed.' ,
+            )
         )
         ],
         client=[
@@ -1907,14 +1864,13 @@ valid color ids if brgb is set to false:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table of all the compatible upgrades (or all for a specified slot, optionally) for a specified vehicle. """,
+                description='This function returns a table of all the compatible upgrades (or all for a specified slot, optionally) for a specified vehicle.' ,
                 arguments={
                     "theVehicle": """the vehicle you wish to retrieve the list of compatible upgrades of. """,
                     "slot": """the upgrade slot number for which youre getting the list (from 0 to 16). Compatible upgrades for all slots are listed if this is not specified. """
                 },
-                result="""returns a table with all the compatible upgrades, or false if invalid arguments are passed. """,
-            ),
-            name='getVehicleCompatibleUpgrades',
+                result='returns a table with all the compatible upgrades, or false if invalid arguments are passed.' ,
+            )
         )
         ],
     ),
@@ -1983,7 +1939,7 @@ valid color ids if brgb is set to false:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the component position of a vehicle. The vehicle must be streamed in. """,
+                description='This function gets the component position of a vehicle. The vehicle must be streamed in.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to get component position of. """,
                     "theComponent": """A Vehicle_Components|vehicle component (this is the frame name from the model file of the component you wish to modify) """,
@@ -1992,9 +1948,8 @@ valid color ids if brgb is set to false:
                     "root": """The position is relative to the root component. """,
                     "world": """The position is a world position. """
                 },
-                result="""returns three floats indicating the position of the component, x, y and z respectively. """,
-            ),
-            name='getVehicleComponentPosition',
+                result='returns three floats indicating the position of the component, x, y and z respectively.' ,
+            )
         )
         ],
     ),
@@ -2063,7 +2018,7 @@ valid color ids if brgb is set to false:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the component rotation of a vehicle. """,
+                description='This function gets the component rotation of a vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to get component rotation of. """,
                     "theComponent": """A Vehicle_Components|vehicle component (this is the frame name from the model file of the component you wish to modify) """,
@@ -2072,9 +2027,8 @@ valid color ids if brgb is set to false:
                     "root": """: The rotation is relative to the root component. """,
                     "world": """: The rotation is a world rotation, relative to the worlds coordinates axes. """
                 },
-                result="""returns three floats indicating the rotation of the component, x, y and z respectively. """,
-            ),
-            name='getVehicleComponentRotation',
+                result='returns three floats indicating the rotation of the component, x, y and z respectively.' ,
+            )
         )
         ],
     ),
@@ -2115,13 +2069,12 @@ valid color ids if brgb is set to false:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets a table of the components currently on a vehicle. """,
+                description='This function gets a table of the components currently on a vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to get the Vehicle_Components|components of. """
                 },
-                result="""returns a table containing the name of the component as the key and visibility flag of that component as the value """,
-            ),
-            name='getVehicleComponents',
+                result='returns a table containing the name of the component as the key and visibility flag of that component as the value' ,
+            )
         )
         ],
     ),
@@ -2190,7 +2143,7 @@ valid color ids if brgb is set to false:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the component scale of a vehicle.}} """,
+                description='This function gets the component scale of a vehicle.}}' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to get component scale of. """,
                     "theComponent": """A Vehicle_Components|vehicle component (this is the frame name from the model file of the component you wish to modify) """,
@@ -2199,9 +2152,8 @@ valid color ids if brgb is set to false:
                     "root": """The scale  is relative to the root component. """,
                     "world": """The scale is a world scale. """
                 },
-                result="""returns three floats indicating the scale of the component, x, y and z respectively. """,
-            ),
-            name='getVehicleComponentScale',
+                result='returns three floats indicating the scale of the component, x, y and z respectively.' ,
+            )
         )
         ],
     ),
@@ -2252,14 +2204,13 @@ valid color ids if brgb is set to false:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function get component visibility for vehicle. """,
+                description='This function get component visibility for vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to get component visibility of. """,
                     "theComponent": """A Vehicle_Components|vehicle component (this is the frame name from the model file of the component you wish to modify) """
                 },
-                result="""returns a bool indicating the visible state of the component. """,
-            ),
-            name='getVehicleComponentVisible',
+                result='returns a bool indicating the visible state of the component.' ,
+            )
         )
         ],
     ),
@@ -2297,13 +2248,12 @@ valid color ids if brgb is set to false:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the player in control of the specified vehicle which includes somebody who is trying to enter the drivers seat. """,
+                description='This function is used to get the player in control of the specified vehicle which includes somebody who is trying to enter the drivers seat.' ,
                 arguments={
                     "theVehicle": """the vehicle you want to get the controller of. """
                 },
-                result="""returns a player object, if there isnt a driver, it will search the trailer chain for the front driver, false otherwise. """,
-            ),
-            name='getVehicleController',
+                result='returns a player object, if there isnt a driver, it will search the trailer chain for the front driver, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2339,13 +2289,12 @@ valid color ids if brgb is set to false:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the player in control of the specified vehicle which includes somebody who is trying to enter the drivers seat. """,
+                description='This function is used to get the player in control of the specified vehicle which includes somebody who is trying to enter the drivers seat.' ,
                 arguments={
                     "theVehicle": """the vehicle you want to get the controller of. """
                 },
-                result="""returns a player object, if there isnt a driver, it will search the trailer chain for the front driver, false otherwise. """,
-            ),
-            name='getVehicleController',
+                result='returns a player object, if there isnt a driver, it will search the trailer chain for the front driver, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2386,13 +2335,12 @@ valid color ids if brgb is set to false:
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the specified vehicles current gear. """,
+                description='Gets the specified vehicles current gear.' ,
                 arguments={
                     "theVehicle": """the vehicle to get the gear of """
                 },
-                result="""returns the gear if successful, false otherwise. """,
-            ),
-            name='getVehicleCurrentGear',
+                result='returns the gear if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2440,14 +2388,13 @@ valid color ids if brgb is set to false:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function tells you how open a door is (the open ratio). Doors include boots/trunks and bonnets on vehicles that have them. """,
+                description='This function tells you how open a door is (the open ratio). Doors include boots/trunks and bonnets on vehicles that have them.' ,
                 arguments={
                     "theVehicle": """The vehicle that you wish to get the door open ratio of. """,
                     "door": """A whole number, 0 (hood), 1 (trunk), 2 (front left), 3 (front right), 4 (rear left), 5 (rear right) """
                 },
-                result="""returns a number between 0 and 1 that indicates how open the door is. 0 is closed, and 1 is fully open. returns false if invalid arguments are passed. """,
-            ),
-            name='getVehicleDoorOpenRatio',
+                result='returns a number between 0 and 1 that indicates how open the door is. 0 is closed, and 1 is fully open. returns false if invalid arguments are passed.' ,
+            )
         )
         ],
         client=[
@@ -2493,14 +2440,13 @@ valid color ids if brgb is set to false:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function tells you how open a door is (the open ratio). Doors include boots/trunks and bonnets on vehicles that have them. """,
+                description='This function tells you how open a door is (the open ratio). Doors include boots/trunks and bonnets on vehicles that have them.' ,
                 arguments={
                     "theVehicle": """The vehicle that you wish to get the door open ratio of. """,
                     "door": """A whole number, 0 (hood), 1 (trunk), 2 (front left), 3 (front right), 4 (rear left), 5 (rear right) """
                 },
-                result="""returns a number between 0 and 1 that indicates how open the door is. 0 is closed, and 1 is fully open. returns false if invalid arguments are passed. """,
-            ),
-            name='getVehicleDoorOpenRatio',
+                result='returns a number between 0 and 1 that indicates how open the door is. 0 is closed, and 1 is fully open. returns false if invalid arguments are passed.' ,
+            )
         )
         ],
     ),
@@ -2548,7 +2494,7 @@ valid color ids if brgb is set to false:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current state of the specifed door on the vehicle. """,
+                description='This function returns the current state of the specifed door on the vehicle.' ,
                 arguments={
                     "theVehicle": """the vehicle you want to get the door status of. """,
                     "door": """a whole number representing which door to get the status of. Valid values are: """,
@@ -2559,14 +2505,8 @@ valid color ids if brgb is set to false:
                     "4": """Rear left """,
                     "5": """Rear right """
                 },
-                result="""if successful, one of the following integers will be returned:
-* 0: shut, intact (also returned if the door does not exist)
-* 1: ajar, intact
-* 2: shut, damaged
-* 3: ajar, damaged
-* 4: missing """,
-            ),
-            name='getVehicleDoorState',
+                result='if successful, one of the following integers will be returned:\n* 0: shut, intact (also returned if the door does not exist)\n* 1: ajar, intact\n* 2: shut, damaged\n* 3: ajar, damaged\n* 4: missing' ,
+            )
         )
         ],
         client=[
@@ -2612,7 +2552,7 @@ valid color ids if brgb is set to false:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current state of the specifed door on the vehicle. """,
+                description='This function returns the current state of the specifed door on the vehicle.' ,
                 arguments={
                     "theVehicle": """the vehicle you want to get the door status of. """,
                     "door": """a whole number representing which door to get the status of. Valid values are: """,
@@ -2623,14 +2563,8 @@ valid color ids if brgb is set to false:
                     "4": """Rear left """,
                     "5": """Rear right """
                 },
-                result="""if successful, one of the following integers will be returned:
-* 0: shut, intact (also returned if the door does not exist)
-* 1: ajar, intact
-* 2: shut, damaged
-* 3: ajar, damaged
-* 4: missing """,
-            ),
-            name='getVehicleDoorState',
+                result='if successful, one of the following integers will be returned:\n* 0: shut, intact (also returned if the door does not exist)\n* 1: ajar, intact\n* 2: shut, damaged\n* 3: ajar, damaged\n* 4: missing' ,
+            )
         )
         ],
     ),
@@ -2689,30 +2623,13 @@ valid color ids if brgb is set to false:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the position of the dummy for the given vehicle.}} """,
+                description='This function returns the position of the dummy for the given vehicle.}}' ,
                 arguments={
                     "theVehicle": """The vehicle you want to get the dummy positions from """,
                     "dummy": """The dummy whose position you want to get """
                 },
-                result="""returns three floats indicating the position x, y and z of the vehicles dummy. it returns false otherwise.
-this is a command to get the position of the players vehicle dummy position specified as an argument.
-<syntaxhighlight lang=lua>
-function getdummyposition(cmd, dummy)
-if (not dummy) then
-return false
-end
-local veh = getpedoccupiedvehicle(localplayer)
-if (not veh) then
-outputchatbox(you should be in a vehicle to use this command, 255, 25, 25)
-return false
-end
-local x, y, z = getvehicledummyposition(veh, dummy)
-outputchatbox(x: ..x.., y: ..y.., z: ..z, 0, 255, 0)
-end
-addcommandhandler(getdummy, getdummyposition)
-</syntaxhighlight> """,
-            ),
-            name='getVehicleDummyPosition',
+                result='returns three floats indicating the position x, y and z of the vehicles dummy. it returns false otherwise.\nthis is a command to get the position of the players vehicle dummy position specified as an argument.\n<syntaxhighlight lang=lua>\nfunction getdummyposition(cmd, dummy)\nif (not dummy) then\nreturn false\nend\nlocal veh = getpedoccupiedvehicle(localplayer)\nif (not veh) then\noutputchatbox(you should be in a vehicle to use this command, 255, 25, 25)\nreturn false\nend\nlocal x, y, z = getvehicledummyposition(veh, dummy)\noutputchatbox(x: ..x.., y: ..y.., z: ..z, 0, 255, 0)\nend\naddcommandhandler(getdummy, getdummyposition)\n</syntaxhighlight>' ,
+            )
         )
         ],
     ),
@@ -2750,13 +2667,12 @@ addcommandhandler(getdummy, getdummyposition)
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theVehicle": """: the vehicle you wish to get the engine state of. """
                 },
-                result="""returns true if the vehicles engine is started, false otherwise. """,
-            ),
-            name='getVehicleEngineState',
+                result='returns true if the vehicles engine is started, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2792,13 +2708,12 @@ addcommandhandler(getdummy, getdummyposition)
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theVehicle": """: the vehicle you wish to get the engine state of. """
                 },
-                result="""returns true if the vehicles engine is started, false otherwise. """,
-            ),
-            name='getVehicleEngineState',
+                result='returns true if the vehicles engine is started, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2847,13 +2762,12 @@ addcommandhandler(getdummy, getdummyposition)
                 ],
             ),
             docs=FunctionDoc(
-                description="""Retrieves the current gravity vector of a vehicle. This is the direction in which the vehicle falls, also the cameras of any passengers will be rotated to match it. """,
+                description='Retrieves the current gravity vector of a vehicle. This is the direction in which the vehicle falls, also the cameras of any passengers will be rotated to match it.' ,
                 arguments={
                     "theVehicle": """the vehicle to retrieve the gravity vector of. """
                 },
-                result="""returns the x, y and z components of the gravity vector if successful, false otherwise. """,
-            ),
-            name='getVehicleGravity',
+                result='returns the x, y and z components of the gravity vector if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2891,13 +2805,12 @@ addcommandhandler(getdummy, getdummyposition)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table of the current vehicle handling data. """,
+                description='This function returns a table of the current vehicle handling data.' ,
                 arguments={
                     "theVehicle": """the vehicle you wish to get the handling data of. """
                 },
-                result="""returns a table containing all the handling data, false otherwise. heres a list of valid table properties and what they return: """,
-            ),
-            name='getVehicleHandling',
+                result='returns a table containing all the handling data, false otherwise. heres a list of valid table properties and what they return:' ,
+            )
         )
         ],
         client=[
@@ -2933,13 +2846,12 @@ addcommandhandler(getdummy, getdummyposition)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table of the current vehicle handling data. """,
+                description='This function returns a table of the current vehicle handling data.' ,
                 arguments={
                     "theVehicle": """the vehicle you wish to get the handling data of. """
                 },
-                result="""returns a table containing all the handling data, false otherwise. heres a list of valid table properties and what they return: """,
-            ),
-            name='getVehicleHandling',
+                result='returns a table containing all the handling data, false otherwise. heres a list of valid table properties and what they return:' ,
+            )
         )
         ],
     ),
@@ -2985,13 +2897,12 @@ addcommandhandler(getdummy, getdummyposition)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will get the headlight color of a vehicle. """,
+                description='This function will get the headlight color of a vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle that you wish to set the headlight color of. """
                 },
-                result="""returns three integers for the red, green and blue of the headlight color for the specified vehicle, false if an invalid vehicle was specified. """,
-            ),
-            name='getVehicleHeadLightColor',
+                result='returns three integers for the red, green and blue of the headlight color for the specified vehicle, false if an invalid vehicle was specified.' ,
+            )
         )
         ],
         client=[
@@ -3035,13 +2946,12 @@ addcommandhandler(getdummy, getdummyposition)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will get the headlight color of a vehicle. """,
+                description='This function will get the headlight color of a vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle that you wish to set the headlight color of. """
                 },
-                result="""returns three integers for the red, green and blue of the headlight color for the specified vehicle, false if an invalid vehicle was specified. """,
-            ),
-            name='getVehicleHeadLightColor',
+                result='returns three integers for the red, green and blue of the headlight color for the specified vehicle, false if an invalid vehicle was specified.' ,
+            )
         )
         ],
     ),
@@ -3079,14 +2989,12 @@ addcommandhandler(getdummy, getdummyposition)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to check whether a vehicles landing gear is down or not. Only planes can be used with this function. """,
+                description='This function is used to check whether a vehicles landing gear is down or not. Only planes can be used with this function.' ,
                 arguments={
                     "theVehicle": """the vehicle of which you wish to check the landing gear state. """
                 },
-                result="""returns true if landing gear is down, false if the landing gear is up.<br />
-returns nil if the vehicle has no landing gear, or is invalid. """,
-            ),
-            name='getVehicleLandingGearDown',
+                result='returns true if landing gear is down, false if the landing gear is up.<br />\nreturns nil if the vehicle has no landing gear, or is invalid.' ,
+            )
         )
         ],
         client=[
@@ -3122,14 +3030,12 @@ returns nil if the vehicle has no landing gear, or is invalid. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to check whether a vehicles landing gear is down or not. Only planes can be used with this function. """,
+                description='This function is used to check whether a vehicles landing gear is down or not. Only planes can be used with this function.' ,
                 arguments={
                     "theVehicle": """the vehicle of which you wish to check the landing gear state. """
                 },
-                result="""returns true if landing gear is down, false if the landing gear is up.<br />
-returns nil if the vehicle has no landing gear, or is invalid. """,
-            ),
-            name='getVehicleLandingGearDown',
+                result='returns true if landing gear is down, false if the landing gear is up.<br />\nreturns nil if the vehicle has no landing gear, or is invalid.' ,
+            )
         )
         ],
     ),
@@ -3177,7 +3083,7 @@ returns nil if the vehicle has no landing gear, or is invalid. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current state of the specified light on the vehicle. """,
+                description='This function returns the current state of the specified light on the vehicle.' ,
                 arguments={
                     "theVehicle": """the vehicle that you wish to know the light state of. """,
                     "light": """A whole number determining the individual light: """,
@@ -3186,9 +3092,8 @@ returns nil if the vehicle has no landing gear, or is invalid. """,
                     "2": """Rear right """,
                     "3": """Rear left """
                 },
-                result="""returns 0 (working) or 1 (broken) """,
-            ),
-            name='getVehicleLightState',
+                result='returns 0 (working) or 1 (broken)' ,
+            )
         )
         ],
         client=[
@@ -3234,7 +3139,7 @@ returns nil if the vehicle has no landing gear, or is invalid. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current state of the specified light on the vehicle. """,
+                description='This function returns the current state of the specified light on the vehicle.' ,
                 arguments={
                     "theVehicle": """the vehicle that you wish to know the light state of. """,
                     "light": """A whole number determining the individual light: """,
@@ -3243,9 +3148,8 @@ returns nil if the vehicle has no landing gear, or is invalid. """,
                     "2": """Rear right """,
                     "3": """Rear left """
                 },
-                result="""returns 0 (working) or 1 (broken) """,
-            ),
-            name='getVehicleLightState',
+                result='returns 0 (working) or 1 (broken)' ,
+            )
         )
         ],
     ),
@@ -3291,15 +3195,14 @@ returns nil if the vehicle has no landing gear, or is invalid. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the maximum number of passengers that a specified vehicle can hold. Only passenger seats are counted, the driver seat is excluded. """,
+                description='This function returns the maximum number of passengers that a specified vehicle can hold. Only passenger seats are counted, the driver seat is excluded.' ,
                 arguments={
                     "theVehicle": """the vehicle that you wish to know the maximum capacity of.
 OR """,
                     "modelID": """the model id that you wish to know the maximum capacity of. """
                 },
-                result="""returns an int indicating the maximum number of passengers that can enter a vehicle. """,
-            ),
-            name='getVehicleMaxPassengers',
+                result='returns an int indicating the maximum number of passengers that can enter a vehicle.' ,
+            )
         )
         ],
         client=[
@@ -3343,15 +3246,14 @@ OR """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the maximum number of passengers that a specified vehicle can hold. Only passenger seats are counted, the driver seat is excluded. """,
+                description='This function returns the maximum number of passengers that a specified vehicle can hold. Only passenger seats are counted, the driver seat is excluded.' ,
                 arguments={
                     "theVehicle": """the vehicle that you wish to know the maximum capacity of.
 OR """,
                     "modelID": """the model id that you wish to know the maximum capacity of. """
                 },
-                result="""returns an int indicating the maximum number of passengers that can enter a vehicle. """,
-            ),
-            name='getVehicleMaxPassengers',
+                result='returns an int indicating the maximum number of passengers that can enter a vehicle.' ,
+            )
         )
         ],
     ),
@@ -3410,14 +3312,13 @@ OR """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the default position of the dummies contained in a vehicle model. """,
+                description='This function gets the default position of the dummies contained in a vehicle model.' ,
                 arguments={
                     "modelID": """: The model ID which you want to apply the change to """,
                     "dummy": """: The dummy whose position you want to get """
                 },
-                result="""returns three floats indicating the default position x, y and z of the given dummy. it returns false otherwise. """,
-            ),
-            name='getVehicleModelDummyDefaultPosition',
+                result='returns three floats indicating the default position x, y and z of the given dummy. it returns false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3476,14 +3377,13 @@ OR """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets position of the dummies contained in a vehicle model. """,
+                description='This function gets position of the dummies contained in a vehicle model.' ,
                 arguments={
                     "modelID": """: The model ID which you want to apply the change to """,
                     "dummy": """: The dummy whose position you want to get """
                 },
-                result="""returns three floats indicating the position x, y and z of given dummy. it returns false otherwise. """,
-            ),
-            name='getVehicleModelDummyPosition',
+                result='returns three floats indicating the position x, y and z of given dummy. it returns false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3532,13 +3432,12 @@ OR """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the position of the exhaust fumes the vehicle model emits. """,
+                description='This function returns the position of the exhaust fumes the vehicle model emits.' ,
                 arguments={
                     "modelID": """: The vehicle model ID. """
                 },
-                result="""returns the position of the exhaust fumes if everything went fine or false otherwise. """,
-            ),
-            name='getVehicleModelExhaustFumesPosition',
+                result='returns the position of the exhaust fumes if everything went fine or false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3576,14 +3475,12 @@ OR """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the model ID of a vehicle as an integer value from its name. """,
+                description='This function retrieves the model ID of a vehicle as an integer value from its name.' ,
                 arguments={
                     "name": """A string containing the name of the vehicle. """
                 },
-                result="""returns an integer if the name exists, false otherwise.
-if you use this function on vehicles with shared names, such as police, it will return the earliest occurrence of that vehicles id. """,
-            ),
-            name='getVehicleModelFromName',
+                result='returns an integer if the name exists, false otherwise.\nif you use this function on vehicles with shared names, such as police, it will return the earliest occurrence of that vehicles id.' ,
+            )
         )
         ],
         client=[
@@ -3619,14 +3516,12 @@ if you use this function on vehicles with shared names, such as police, it will 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the model ID of a vehicle as an integer value from its name. """,
+                description='This function retrieves the model ID of a vehicle as an integer value from its name.' ,
                 arguments={
                     "name": """A string containing the name of the vehicle. """
                 },
-                result="""returns an integer if the name exists, false otherwise.
-if you use this function on vehicles with shared names, such as police, it will return the earliest occurrence of that vehicles id. """,
-            ),
-            name='getVehicleModelFromName',
+                result='returns an integer if the name exists, false otherwise.\nif you use this function on vehicles with shared names, such as police, it will return the earliest occurrence of that vehicles id.' ,
+            )
         )
         ],
     ),
@@ -3677,7 +3572,7 @@ if you use this function on vehicles with shared names, such as police, it will 
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "vehicleModel": """: The Vehicle IDs|vehicle model ID. """,
                     "wheelGroup": """: The group of wheels of the vehicle model to retrieve their size value. If not specified, it defaults to all_wheels. The following values are supported: """,
@@ -3686,9 +3581,8 @@ if you use this function on vehicles with shared names, such as police, it will 
                     "all_wheels": """: Convenience group that returns all the wheel sizes in a table of the following format:
 <syntaxhighlight lang="lua">{ front_axle = 0.8, rear_axle = 0.7 }</syntaxhighlight> """
                 },
-                result="""returns a decimal number or a table, depending on the specified wheel group. if the specified vehicle model id or wheel group are not valid, an error is raised instead. the meaning of the wheel size values is documented in setvehiclemodelwheelsize. """,
-            ),
-            name='getVehicleModelWheelSize',
+                result='returns a decimal number or a table, depending on the specified wheel group. if the specified vehicle model id or wheel group are not valid, an error is raised instead. the meaning of the wheel size values is documented in setvehiclemodelwheelsize.' ,
+            )
         )
         ],
     ),
@@ -3726,13 +3620,12 @@ if you use this function on vehicles with shared names, such as police, it will 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a string containing the name of the vehicle """,
+                description='This function returns a string containing the name of the vehicle' ,
                 arguments={
                     "theVehicle": """the vehicle you want to get the name of. """
                 },
-                result="""returns a string containing the requested vehicles name, or false if the vehicle passed to the function is invalid. """,
-            ),
-            name='getVehicleName',
+                result='returns a string containing the requested vehicles name, or false if the vehicle passed to the function is invalid.' ,
+            )
         )
         ],
         client=[
@@ -3768,13 +3661,12 @@ if you use this function on vehicles with shared names, such as police, it will 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a string containing the name of the vehicle """,
+                description='This function returns a string containing the name of the vehicle' ,
                 arguments={
                     "theVehicle": """the vehicle you want to get the name of. """
                 },
-                result="""returns a string containing the requested vehicles name, or false if the vehicle passed to the function is invalid. """,
-            ),
-            name='getVehicleName',
+                result='returns a string containing the requested vehicles name, or false if the vehicle passed to the function is invalid.' ,
+            )
         )
         ],
     ),
@@ -3812,13 +3704,12 @@ if you use this function on vehicles with shared names, such as police, it will 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the name of a vehicle by its model ID. """,
+                description='Gets the name of a vehicle by its model ID.' ,
                 arguments={
                     "model": """This is the vehicle model ID. See vehicle IDs to see what values will return names. """
                 },
-                result="""returns the name of the vehicle if the model id was valid, false otherwise. """,
-            ),
-            name='getVehicleNameFromModel',
+                result='returns the name of the vehicle if the model id was valid, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -3854,13 +3745,12 @@ if you use this function on vehicles with shared names, such as police, it will 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the name of a vehicle by its model ID. """,
+                description='Gets the name of a vehicle by its model ID.' ,
                 arguments={
                     "model": """This is the vehicle model ID. See vehicle IDs to see what values will return names. """
                 },
-                result="""returns the name of the vehicle if the model id was valid, false otherwise. """,
-            ),
-            name='getVehicleNameFromModel',
+                result='returns the name of the vehicle if the model id was valid, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3901,13 +3791,12 @@ if you use this function on vehicles with shared names, such as police, it will 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the nitro count of the vehicle. """,
+                description='This function gets the nitro count of the vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle which you want to get a nitro count. """
                 },
-                result="""returns an integer determining the amount of nitro counts of the vehicle, false if there is no nitro in the vehicle. """,
-            ),
-            name='getVehicleNitroCount',
+                result='returns an integer determining the amount of nitro counts of the vehicle, false if there is no nitro in the vehicle.' ,
+            )
         )
         ],
     ),
@@ -3948,13 +3837,12 @@ if you use this function on vehicles with shared names, such as police, it will 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the nitro level of the vehicle. """,
+                description='This function gets the nitro level of the vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle, which you want to get a nitro level. """
                 },
-                result="""returns a float determining the nitro level (ranges from 0.0001 to 1.0) of the vehicle, false if there is no nitro in the vehicle. """,
-            ),
-            name='getVehicleNitroLevel',
+                result='returns a float determining the nitro level (ranges from 0.0001 to 1.0) of the vehicle, false if there is no nitro in the vehicle.' ,
+            )
         )
         ],
     ),
@@ -4002,14 +3890,13 @@ if you use this function on vehicles with shared names, such as police, it will 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the player sitting/trying to enter the specified vehicle. """,
+                description='This function gets the player sitting/trying to enter the specified vehicle.' ,
                 arguments={
                     "theVehicle": """the vehicle of which you wish to retrieve the driver or a passenger. """,
                     "seat": """the seat where the player is sitting (0 for driver, 1+ for passengers). """
                 },
-                result="""returns the player sitting in the vehicle, or false if the seat is unoccupied or doesnt exist. """,
-            ),
-            name='getVehicleOccupant',
+                result='returns the player sitting in the vehicle, or false if the seat is unoccupied or doesnt exist.' ,
+            )
         )
         ],
         client=[
@@ -4055,14 +3942,13 @@ if you use this function on vehicles with shared names, such as police, it will 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the player sitting/trying to enter the specified vehicle. """,
+                description='This function gets the player sitting/trying to enter the specified vehicle.' ,
                 arguments={
                     "theVehicle": """the vehicle of which you wish to retrieve the driver or a passenger. """,
                     "seat": """the seat where the player is sitting (0 for driver, 1+ for passengers). """
                 },
-                result="""returns the player sitting in the vehicle, or false if the seat is unoccupied or doesnt exist. """,
-            ),
-            name='getVehicleOccupant',
+                result='returns the player sitting in the vehicle, or false if the seat is unoccupied or doesnt exist.' ,
+            )
         )
         ],
     ),
@@ -4100,24 +3986,12 @@ if you use this function on vehicles with shared names, such as police, it will 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets all peds sitting in the specified vehicle. """,
+                description='This function gets all peds sitting in the specified vehicle.' ,
                 arguments={
                     "theVehicle": """the vehicle of which you wish to retrieve the occupants. """
                 },
-                result="""returns a table with seat id as an index and the occupant as an element like this: tableseat = occupant
-returns false if an invalid vehicle was passed or if the vehicle has no seats (like a trailer)
-<div style=font-weight: bold;background:blue;color:white;padding:2px; padding-left:8px;>counting players in a vehicle</div>
-<div style=border: 2px solid blue;padding: 5px;>dont use an ipairs loop with the table returned by this function. it will skip the driver, as ipairs starts at 1 and the driver seat is id 0. and if theres an empty seat, ipairs will stop looping. you should use a pairs loop instead.
-<syntaxhighlight lang=lua>
-local counter = 0
-for seat, player in pairs(getvehicleoccupants(pseudovehicle)) do
-counter = counter + 1
-end
-outputdebugstring(players in your vehicle: .. counter)
-</syntaxhighlight>
-</div> """,
-            ),
-            name='getVehicleOccupants',
+                result='returns a table with seat id as an index and the occupant as an element like this: tableseat = occupant\nreturns false if an invalid vehicle was passed or if the vehicle has no seats (like a trailer)\n<div style=font-weight: bold;background:blue;color:white;padding:2px; padding-left:8px;>counting players in a vehicle</div>\n<div style=border: 2px solid blue;padding: 5px;>dont use an ipairs loop with the table returned by this function. it will skip the driver, as ipairs starts at 1 and the driver seat is id 0. and if theres an empty seat, ipairs will stop looping. you should use a pairs loop instead.\n<syntaxhighlight lang=lua>\nlocal counter = 0\nfor seat, player in pairs(getvehicleoccupants(pseudovehicle)) do\ncounter = counter + 1\nend\noutputdebugstring(players in your vehicle: .. counter)\n</syntaxhighlight>\n</div>' ,
+            )
         )
         ],
         client=[
@@ -4153,24 +4027,12 @@ outputdebugstring(players in your vehicle: .. counter)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets all peds sitting in the specified vehicle. """,
+                description='This function gets all peds sitting in the specified vehicle.' ,
                 arguments={
                     "theVehicle": """the vehicle of which you wish to retrieve the occupants. """
                 },
-                result="""returns a table with seat id as an index and the occupant as an element like this: tableseat = occupant
-returns false if an invalid vehicle was passed or if the vehicle has no seats (like a trailer)
-<div style=font-weight: bold;background:blue;color:white;padding:2px; padding-left:8px;>counting players in a vehicle</div>
-<div style=border: 2px solid blue;padding: 5px;>dont use an ipairs loop with the table returned by this function. it will skip the driver, as ipairs starts at 1 and the driver seat is id 0. and if theres an empty seat, ipairs will stop looping. you should use a pairs loop instead.
-<syntaxhighlight lang=lua>
-local counter = 0
-for seat, player in pairs(getvehicleoccupants(pseudovehicle)) do
-counter = counter + 1
-end
-outputdebugstring(players in your vehicle: .. counter)
-</syntaxhighlight>
-</div> """,
-            ),
-            name='getVehicleOccupants',
+                result='returns a table with seat id as an index and the occupant as an element like this: tableseat = occupant\nreturns false if an invalid vehicle was passed or if the vehicle has no seats (like a trailer)\n<div style=font-weight: bold;background:blue;color:white;padding:2px; padding-left:8px;>counting players in a vehicle</div>\n<div style=border: 2px solid blue;padding: 5px;>dont use an ipairs loop with the table returned by this function. it will skip the driver, as ipairs starts at 1 and the driver seat is id 0. and if theres an empty seat, ipairs will stop looping. you should use a pairs loop instead.\n<syntaxhighlight lang=lua>\nlocal counter = 0\nfor seat, player in pairs(getvehicleoccupants(pseudovehicle)) do\ncounter = counter + 1\nend\noutputdebugstring(players in your vehicle: .. counter)\n</syntaxhighlight>\n</div>' ,
+            )
         )
         ],
     ),
@@ -4208,13 +4070,12 @@ outputdebugstring(players in your vehicle: .. counter)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to find out the current state of the override-lights setting of a vehicle. """,
+                description='This function is used to find out the current state of the override-lights setting of a vehicle.' ,
                 arguments={
                     "theVehicle": """: the vehicle you wish to retrieve the override lights setting of. """
                 },
-                result="""returns an integer value: 0 (no override), 1 (force off) or 2 (force on). """,
-            ),
-            name='getVehicleOverrideLights',
+                result='returns an integer value: 0 (no override), 1 (force off) or 2 (force on).' ,
+            )
         )
         ],
         client=[
@@ -4250,13 +4111,12 @@ outputdebugstring(players in your vehicle: .. counter)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to find out the current state of the override-lights setting of a vehicle. """,
+                description='This function is used to find out the current state of the override-lights setting of a vehicle.' ,
                 arguments={
                     "theVehicle": """: the vehicle you wish to retrieve the override lights setting of. """
                 },
-                result="""returns an integer value: 0 (no override), 1 (force off) or 2 (force on). """,
-            ),
-            name='getVehicleOverrideLights',
+                result='returns an integer value: 0 (no override), 1 (force off) or 2 (force on).' ,
+            )
         )
         ],
     ),
@@ -4294,17 +4154,12 @@ outputdebugstring(players in your vehicle: .. counter)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the current paintjob on the specified vehicle. <br /> """,
+                description='This function gets the current paintjob on the specified vehicle. <br />' ,
                 arguments={
                     "theVehicle": """: the vehicle you wish to get the paintjob of. """
                 },
-                result="""returns an integer representing the current paintjob on the vehicle. <br />
-* 0: the first paintjob
-* 1: the second paintjob
-* 2: the third paintjob
-* 3: default paintjob (no paintjob) """,
-            ),
-            name='getVehiclePaintjob',
+                result='returns an integer representing the current paintjob on the vehicle. <br />\n* 0: the first paintjob\n* 1: the second paintjob\n* 2: the third paintjob\n* 3: default paintjob (no paintjob)' ,
+            )
         )
         ],
         client=[
@@ -4340,17 +4195,12 @@ outputdebugstring(players in your vehicle: .. counter)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the current paintjob on the specified vehicle. <br /> """,
+                description='This function gets the current paintjob on the specified vehicle. <br />' ,
                 arguments={
                     "theVehicle": """: the vehicle you wish to get the paintjob of. """
                 },
-                result="""returns an integer representing the current paintjob on the vehicle. <br />
-* 0: the first paintjob
-* 1: the second paintjob
-* 2: the third paintjob
-* 3: default paintjob (no paintjob) """,
-            ),
-            name='getVehiclePaintjob',
+                result='returns an integer representing the current paintjob on the vehicle. <br />\n* 0: the first paintjob\n* 1: the second paintjob\n* 2: the third paintjob\n* 3: default paintjob (no paintjob)' ,
+            )
         )
         ],
     ),
@@ -4398,7 +4248,7 @@ outputdebugstring(players in your vehicle: .. counter)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current state of a specifed panel on the vehicle. A vehicle can have up to 7 panels. """,
+                description='This function returns the current state of a specifed panel on the vehicle. A vehicle can have up to 7 panels.' ,
                 arguments={
                     "theVehicle": """the vehicle that you wish to know the panel state of. """,
                     "panel": """an integer specifying the panel you want to know the state of. Not every vehicle has every panel. Possible values are: """,
@@ -4410,9 +4260,8 @@ outputdebugstring(players in your vehicle: .. counter)
                     "5": """Front bumper """,
                     "6": """Rear bumper """
                 },
-                result="""returns an int indicating the state of the specified the panel. this is a value between 0 and 3, with 0 indicating the panel is undamaged and 3 indicating it is very damaged. """,
-            ),
-            name='getVehiclePanelState',
+                result='returns an int indicating the state of the specified the panel. this is a value between 0 and 3, with 0 indicating the panel is undamaged and 3 indicating it is very damaged.' ,
+            )
         )
         ],
         client=[
@@ -4458,7 +4307,7 @@ outputdebugstring(players in your vehicle: .. counter)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current state of a specifed panel on the vehicle. A vehicle can have up to 7 panels. """,
+                description='This function returns the current state of a specifed panel on the vehicle. A vehicle can have up to 7 panels.' ,
                 arguments={
                     "theVehicle": """the vehicle that you wish to know the panel state of. """,
                     "panel": """an integer specifying the panel you want to know the state of. Not every vehicle has every panel. Possible values are: """,
@@ -4470,9 +4319,8 @@ outputdebugstring(players in your vehicle: .. counter)
                     "5": """Front bumper """,
                     "6": """Rear bumper """
                 },
-                result="""returns an int indicating the state of the specified the panel. this is a value between 0 and 3, with 0 indicating the panel is undamaged and 3 indicating it is very damaged. """,
-            ),
-            name='getVehiclePanelState',
+                result='returns an int indicating the state of the specified the panel. this is a value between 0 and 3, with 0 indicating the panel is undamaged and 3 indicating it is very damaged.' ,
+            )
         )
         ],
     ),
@@ -4510,13 +4358,12 @@ outputdebugstring(players in your vehicle: .. counter)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to retrieve the text on the number plate of a specified vehicle. """,
+                description='This function is used to retrieve the text on the number plate of a specified vehicle.' ,
                 arguments={
                     "theVehicle": """the vehicle that you wish to retrieve the plate text from. """
                 },
-                result="""returns a string that corresponds to the plate on the text, false if a bad argument was passed or if it is not a vehicle. every vehicle (including planes, boats, etc.) has a numberplate, even if its not visible. """,
-            ),
-            name='getVehiclePlateText',
+                result='returns a string that corresponds to the plate on the text, false if a bad argument was passed or if it is not a vehicle. every vehicle (including planes, boats, etc.) has a numberplate, even if its not visible.' ,
+            )
         )
         ],
         client=[
@@ -4552,13 +4399,12 @@ outputdebugstring(players in your vehicle: .. counter)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to retrieve the text on the number plate of a specified vehicle. """,
+                description='This function is used to retrieve the text on the number plate of a specified vehicle.' ,
                 arguments={
                     "theVehicle": """the vehicle that you wish to retrieve the plate text from. """
                 },
-                result="""returns a string that corresponds to the plate on the text, false if a bad argument was passed or if it is not a vehicle. every vehicle (including planes, boats, etc.) has a numberplate, even if its not visible. """,
-            ),
-            name='getVehiclePlateText',
+                result='returns a string that corresponds to the plate on the text, false if a bad argument was passed or if it is not a vehicle. every vehicle (including planes, boats, etc.) has a numberplate, even if its not visible.' ,
+            )
         )
         ],
     ),
@@ -4604,13 +4450,12 @@ outputdebugstring(players in your vehicle: .. counter)
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theVehicle": """The vehicle which youd like to retrieve the respawn coordinates of. """
                 },
-                result="""returns three float|floats indicating the respawn coordinates of the vehicle, x, y and z respectively. """,
-            ),
-            name='getVehicleRespawnPosition',
+                result='returns three float|floats indicating the respawn coordinates of the vehicle, x, y and z respectively.' ,
+            )
         )
         ],
         client=[
@@ -4659,13 +4504,12 @@ outputdebugstring(players in your vehicle: .. counter)
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theVehicle": """The vehicle which youd like to retrieve the respawn rotation of. """
                 },
-                result="""returns three float|floats indicating the respawn rotation of the vehicle, x, y and z respectively. """,
-            ),
-            name='getVehicleRespawnRotation',
+                result='returns three float|floats indicating the respawn rotation of the vehicle, x, y and z respectively.' ,
+            )
         )
         ],
         client=[
@@ -4706,22 +4550,12 @@ outputdebugstring(players in your vehicle: .. counter)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function get the parameters of a vehicles siren. """,
+                description='This function get the parameters of a vehicles siren.' ,
                 arguments={
                     "theVehicle": """The vehicle to get the siren parameters of """
                 },
-                result="""returns a table with the siren count, siren type and a sub table for the four flags. false otherwise.
-<syntaxhighlight lang=lua>
-int   sirenparams.sirencount
-int   sirenparams.sirentype
-table sirenparams.flags
-bool sirenparams.flags360
-bool sirenparams.flags.doloscheck
-bool sirenparams.flags.userandomiser
-bool sirenparams.flags.silent
-</syntaxhighlight> """,
-            ),
-            name='getVehicleSirenParams',
+                result='returns a table with the siren count, siren type and a sub table for the four flags. false otherwise.\n<syntaxhighlight lang=lua>\nint   sirenparams.sirencount\nint   sirenparams.sirentype\ntable sirenparams.flags\nbool sirenparams.flags360\nbool sirenparams.flags.doloscheck\nbool sirenparams.flags.userandomiser\nbool sirenparams.flags.silent\n</syntaxhighlight>' ,
+            )
         )
         ],
         client=[
@@ -4757,22 +4591,12 @@ bool sirenparams.flags.silent
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function get the parameters of a vehicles siren. """,
+                description='This function get the parameters of a vehicles siren.' ,
                 arguments={
                     "theVehicle": """The vehicle to get the siren parameters of """
                 },
-                result="""returns a table with the siren count, siren type and a sub table for the four flags. false otherwise.
-<syntaxhighlight lang=lua>
-int   sirenparams.sirencount
-int   sirenparams.sirentype
-table sirenparams.flags
-bool sirenparams.flags360
-bool sirenparams.flags.doloscheck
-bool sirenparams.flags.userandomiser
-bool sirenparams.flags.silent
-</syntaxhighlight> """,
-            ),
-            name='getVehicleSirenParams',
+                result='returns a table with the siren count, siren type and a sub table for the four flags. false otherwise.\n<syntaxhighlight lang=lua>\nint   sirenparams.sirencount\nint   sirenparams.sirentype\ntable sirenparams.flags\nbool sirenparams.flags360\nbool sirenparams.flags.doloscheck\nbool sirenparams.flags.userandomiser\nbool sirenparams.flags.silent\n</syntaxhighlight>' ,
+            )
         )
         ],
     ),
@@ -4810,23 +4634,12 @@ bool sirenparams.flags.silent
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the properties of a vehicles sirens. """,
+                description='This function gets the properties of a vehicles sirens.' ,
                 arguments={
                     "theVehicle": """The vehicle to get siren information of. """
                 },
-                result="""if the vehicle is invalid, it returns false. otherwise, returns a table with sub tables containing the properties of each siren point in the following manner:
-<syntaxhighlight lang=lua>
-float   sirendatasirenpoint.x
-float   sirendatasirenpoint.y
-float   sirendatasirenpoint.z
-int     sirendatasirenpoint.red
-int     sirendatasirenpoint.green
-int     sirendatasirenpoint.blue
-int     sirendatasirenpoint.alpha
-int     sirendatasirenpoint.min_alpha
-</syntaxhighlight> """,
-            ),
-            name='getVehicleSirens',
+                result='if the vehicle is invalid, it returns false. otherwise, returns a table with sub tables containing the properties of each siren point in the following manner:\n<syntaxhighlight lang=lua>\nfloat   sirendatasirenpoint.x\nfloat   sirendatasirenpoint.y\nfloat   sirendatasirenpoint.z\nint     sirendatasirenpoint.red\nint     sirendatasirenpoint.green\nint     sirendatasirenpoint.blue\nint     sirendatasirenpoint.alpha\nint     sirendatasirenpoint.min_alpha\n</syntaxhighlight>' ,
+            )
         )
         ],
         client=[
@@ -4862,23 +4675,12 @@ int     sirendatasirenpoint.min_alpha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the properties of a vehicles sirens. """,
+                description='This function gets the properties of a vehicles sirens.' ,
                 arguments={
                     "theVehicle": """The vehicle to get siren information of. """
                 },
-                result="""if the vehicle is invalid, it returns false. otherwise, returns a table with sub tables containing the properties of each siren point in the following manner:
-<syntaxhighlight lang=lua>
-float   sirendatasirenpoint.x
-float   sirendatasirenpoint.y
-float   sirendatasirenpoint.z
-int     sirendatasirenpoint.red
-int     sirendatasirenpoint.green
-int     sirendatasirenpoint.blue
-int     sirendatasirenpoint.alpha
-int     sirendatasirenpoint.min_alpha
-</syntaxhighlight> """,
-            ),
-            name='getVehicleSirens',
+                result='if the vehicle is invalid, it returns false. otherwise, returns a table with sub tables containing the properties of each siren point in the following manner:\n<syntaxhighlight lang=lua>\nfloat   sirendatasirenpoint.x\nfloat   sirendatasirenpoint.y\nfloat   sirendatasirenpoint.z\nint     sirendatasirenpoint.red\nint     sirendatasirenpoint.green\nint     sirendatasirenpoint.blue\nint     sirendatasirenpoint.alpha\nint     sirendatasirenpoint.min_alpha\n</syntaxhighlight>' ,
+            )
         )
         ],
     ),
@@ -4916,13 +4718,12 @@ int     sirendatasirenpoint.min_alpha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns whether the sirens are turned on for the specified vehicle. """,
+                description='This function returns whether the sirens are turned on for the specified vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle that will be checked. """
                 },
-                result="""returns true if the sirens are turned on for the specified vehicle, false if the sirens are turned off for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified. """,
-            ),
-            name='getVehicleSirensOn',
+                result='returns true if the sirens are turned on for the specified vehicle, false if the sirens are turned off for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified.' ,
+            )
         )
         ],
         client=[
@@ -4958,13 +4759,12 @@ int     sirendatasirenpoint.min_alpha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns whether the sirens are turned on for the specified vehicle. """,
+                description='This function returns whether the sirens are turned on for the specified vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle that will be checked. """
                 },
-                result="""returns true if the sirens are turned on for the specified vehicle, false if the sirens are turned off for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified. """,
-            ),
-            name='getVehicleSirensOn',
+                result='returns true if the sirens are turned on for the specified vehicle, false if the sirens are turned off for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified.' ,
+            )
         )
         ],
     ),
@@ -5002,13 +4802,12 @@ int     sirendatasirenpoint.min_alpha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function scans through all the current vehicles and returns the ones matching the given model. """,
+                description='This function scans through all the current vehicles and returns the ones matching the given model.' ,
                 arguments={
                     "model": """: The model of vehicles you want. """
                 },
-                result="""returns a table of existing vehicles matching the specified model. """,
-            ),
-            name='getVehiclesOfType',
+                result='returns a table of existing vehicles matching the specified model.' ,
+            )
         )
         ],
         client=[
@@ -5049,13 +4848,12 @@ int     sirendatasirenpoint.min_alpha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the vehicle being towed by another. """,
+                description='This function is used to get the vehicle being towed by another.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to get the towed vehicle from. """
                 },
-                result="""returns the vehicle that thevehicle is towing, false if it isnt towing a vehicle. """,
-            ),
-            name='getVehicleTowedByVehicle',
+                result='returns the vehicle that thevehicle is towing, false if it isnt towing a vehicle.' ,
+            )
         )
         ],
         client=[
@@ -5091,13 +4889,12 @@ int     sirendatasirenpoint.min_alpha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the vehicle being towed by another. """,
+                description='This function is used to get the vehicle being towed by another.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to get the towed vehicle from. """
                 },
-                result="""returns the vehicle that thevehicle is towing, false if it isnt towing a vehicle. """,
-            ),
-            name='getVehicleTowedByVehicle',
+                result='returns the vehicle that thevehicle is towing, false if it isnt towing a vehicle.' ,
+            )
         )
         ],
     ),
@@ -5135,14 +4932,12 @@ int     sirendatasirenpoint.min_alpha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the vehicle that is towing another. """,
+                description='This function is used to get the vehicle that is towing another.' ,
                 arguments={
                     "theVehicle": """: the vehicle being towed. """
                 },
-                result="""* the vehicle that thevehicle is being towed by.
-* false if it isnt being towed. """,
-            ),
-            name='getVehicleTowingVehicle',
+                result='* the vehicle that thevehicle is being towed by.\n* false if it isnt being towed.' ,
+            )
         )
         ],
         client=[
@@ -5178,14 +4973,12 @@ int     sirendatasirenpoint.min_alpha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the vehicle that is towing another. """,
+                description='This function is used to get the vehicle that is towing another.' ,
                 arguments={
                     "theVehicle": """: the vehicle being towed. """
                 },
-                result="""* the vehicle that thevehicle is being towed by.
-* false if it isnt being towed. """,
-            ),
-            name='getVehicleTowingVehicle',
+                result='* the vehicle that thevehicle is being towed by.\n* false if it isnt being towed.' ,
+            )
         )
         ],
     ),
@@ -5227,13 +5020,12 @@ int     sirendatasirenpoint.min_alpha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the position of a vehicles turret, if it has one. Vehicles with turrets include firetrucks and tanks. """,
+                description='This function gets the position of a vehicles turret, if it has one. Vehicles with turrets include firetrucks and tanks.' ,
                 arguments={
                     "turretVehicle": """: The vehicle whose turret position you want to retrieve. This should be a vehicle with a turret. """
                 },
-                result="""returns two floats for the x (horizontal) and y (vertical) axis rotation respectively. these values are in radians. the function will return 0, 0 if the vehicle is not a vehicle with a turret. """,
-            ),
-            name='getVehicleTurretPosition',
+                result='returns two floats for the x (horizontal) and y (vertical) axis rotation respectively. these values are in radians. the function will return 0, 0 if the vehicle is not a vehicle with a turret.' ,
+            )
         )
         ],
         client=[
@@ -5273,13 +5065,12 @@ int     sirendatasirenpoint.min_alpha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the position of a vehicles turret, if it has one. Vehicles with turrets include firetrucks and tanks. """,
+                description='This function gets the position of a vehicles turret, if it has one. Vehicles with turrets include firetrucks and tanks.' ,
                 arguments={
                     "turretVehicle": """: The vehicle whose turret position you want to retrieve. This should be a vehicle with a turret. """
                 },
-                result="""returns two floats for the x (horizontal) and y (vertical) axis rotation respectively. these values are in radians. the function will return 0, 0 if the vehicle is not a vehicle with a turret. """,
-            ),
-            name='getVehicleTurretPosition',
+                result='returns two floats for the x (horizontal) and y (vertical) axis rotation respectively. these values are in radians. the function will return 0, 0 if the vehicle is not a vehicle with a turret.' ,
+            )
         )
         ],
     ),
@@ -5317,16 +5108,14 @@ int     sirendatasirenpoint.min_alpha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the type of a vehicle (such as if it is a car or a boat). """,
+                description='This function retrieves the type of a vehicle (such as if it is a car or a boat).' ,
                 arguments={
                     "vehicle": """The vehicle element to get the type of.
 '''OR''' """,
                     "modelID": """A vehicle model ID """
                 },
-                result="""returns a string with vehicle type or false if an invalid modelid has been supplied, or an empty string if the vehicle is blocked internally (some trailers).
-possible strings returned: """,
-            ),
-            name='getVehicleType',
+                result='returns a string with vehicle type or false if an invalid modelid has been supplied, or an empty string if the vehicle is blocked internally (some trailers).\npossible strings returned:' ,
+            )
         )
         ],
         client=[
@@ -5362,16 +5151,14 @@ possible strings returned: """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the type of a vehicle (such as if it is a car or a boat). """,
+                description='This function retrieves the type of a vehicle (such as if it is a car or a boat).' ,
                 arguments={
                     "vehicle": """The vehicle element to get the type of.
 '''OR''' """,
                     "modelID": """A vehicle model ID """
                 },
-                result="""returns a string with vehicle type or false if an invalid modelid has been supplied, or an empty string if the vehicle is blocked internally (some trailers).
-possible strings returned: """,
-            ),
-            name='getVehicleType',
+                result='returns a string with vehicle type or false if an invalid modelid has been supplied, or an empty string if the vehicle is blocked internally (some trailers).\npossible strings returned:' ,
+            )
         )
         ],
     ),
@@ -5419,15 +5206,13 @@ possible strings returned: """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current upgrade id on the specified vehicles upgrade slot
-An upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 17 slots (0 to 16). """,
+                description='This function returns the current upgrade id on the specified vehicles upgrade slot\nAn upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 17 slots (0 to 16).' ,
                 arguments={
                     "theVehicle": """: The vehicle whose upgrade you want to retrieve. """,
                     "slot": """: The slot id of the upgrade. (Upgrade list ordered by slot number) """
                 },
-                result="""returns an integer with the upgrade on the slot if correct arguments were passed, false otherwise. """,
-            ),
-            name='getVehicleUpgradeOnSlot',
+                result='returns an integer with the upgrade on the slot if correct arguments were passed, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -5473,15 +5258,13 @@ An upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 1
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current upgrade id on the specified vehicles upgrade slot
-An upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 17 slots (0 to 16). """,
+                description='This function returns the current upgrade id on the specified vehicles upgrade slot\nAn upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 17 slots (0 to 16).' ,
                 arguments={
                     "theVehicle": """: The vehicle whose upgrade you want to retrieve. """,
                     "slot": """: The slot id of the upgrade. (Upgrade list ordered by slot number) """
                 },
-                result="""returns an integer with the upgrade on the slot if correct arguments were passed, false otherwise. """,
-            ),
-            name='getVehicleUpgradeOnSlot',
+                result='returns an integer with the upgrade on the slot if correct arguments were passed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5519,13 +5302,12 @@ An upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 1
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table of all the upgrades on a specifed vehicle. """,
+                description='This function returns a table of all the upgrades on a specifed vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to retrieve the upgrades of. """
                 },
-                result="""returns a table of all the upgrades on each slot of a vehicle, which may be empty, or false if a valid vehicle is not passed. """,
-            ),
-            name='getVehicleUpgrades',
+                result='returns a table of all the upgrades on each slot of a vehicle, which may be empty, or false if a valid vehicle is not passed.' ,
+            )
         )
         ],
         client=[
@@ -5561,13 +5343,12 @@ An upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 1
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table of all the upgrades on a specifed vehicle. """,
+                description='This function returns a table of all the upgrades on a specifed vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to retrieve the upgrades of. """
                 },
-                result="""returns a table of all the upgrades on each slot of a vehicle, which may be empty, or false if a valid vehicle is not passed. """,
-            ),
-            name='getVehicleUpgrades',
+                result='returns a table of all the upgrades on each slot of a vehicle, which may be empty, or false if a valid vehicle is not passed.' ,
+            )
         )
         ],
     ),
@@ -5605,13 +5386,12 @@ An upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 1
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the name of an upgrade slot name (e.g. roof, spoiler). """,
+                description='This function returns the name of an upgrade slot name (e.g. roof, spoiler).' ,
                 arguments={
                     "slot/upgrade": """the slot ID or corresponding upgrade ID of which you want the name. """
                 },
-                result="""returns a string with the slot name if a valid slot or upgrade id was given, false otherwise. """,
-            ),
-            name='getVehicleUpgradeSlotName',
+                result='returns a string with the slot name if a valid slot or upgrade id was given, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -5647,13 +5427,12 @@ An upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 1
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the name of an upgrade slot name (e.g. roof, spoiler). """,
+                description='This function returns the name of an upgrade slot name (e.g. roof, spoiler).' ,
                 arguments={
                     "slot/upgrade": """the slot ID or corresponding upgrade ID of which you want the name. """
                 },
-                result="""returns a string with the slot name if a valid slot or upgrade id was given, false otherwise. """,
-            ),
-            name='getVehicleUpgradeSlotName',
+                result='returns a string with the slot name if a valid slot or upgrade id was given, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5695,17 +5474,12 @@ An upgrade slot is a certain type of upgrade (eg: exhaust, spoiler), there are 1
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the variant of a specified vehicle. In GTA SA some vehicles are different for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default GTA SA variant list see: Vehicle variants """,
+                description='This function gets the variant of a specified vehicle. In GTA SA some vehicles are different for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default GTA SA variant list see: Vehicle variants' ,
                 arguments={
                     "theVehicle": """A handle to the vehicle that you want to get the variant of. """
                 },
-                result="""on success:
-* int: an integer for the first vehicle variant see vehicle variants
-* int: an integer for the second vehicle variant see vehicle variants
-on failure:
-* bool: false because the specified vehicle didnt exist """,
-            ),
-            name='getVehicleVariant',
+                result='on success:\n* int: an integer for the first vehicle variant see vehicle variants\n* int: an integer for the second vehicle variant see vehicle variants\non failure:\n* bool: false because the specified vehicle didnt exist' ,
+            )
         )
         ],
         client=[
@@ -5745,17 +5519,12 @@ on failure:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the variant of a specified vehicle. In GTA SA some vehicles are different for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default GTA SA variant list see: Vehicle variants """,
+                description='This function gets the variant of a specified vehicle. In GTA SA some vehicles are different for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default GTA SA variant list see: Vehicle variants' ,
                 arguments={
                     "theVehicle": """A handle to the vehicle that you want to get the variant of. """
                 },
-                result="""on success:
-* int: an integer for the first vehicle variant see vehicle variants
-* int: an integer for the second vehicle variant see vehicle variants
-on failure:
-* bool: false because the specified vehicle didnt exist """,
-            ),
-            name='getVehicleVariant',
+                result='on success:\n* int: an integer for the first vehicle variant see vehicle variants\n* int: an integer for the second vehicle variant see vehicle variants\non failure:\n* bool: false because the specified vehicle didnt exist' ,
+            )
         )
         ],
     ),
@@ -5806,18 +5575,13 @@ on failure:
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theVehicle": """The vehicle that you wish to get the wheel friction state. """,
                     "wheel": """The wheel you want to check. (0: front left, 1: rear left, 2: front right, 3: rear right) """
                 },
-                result="""returns a int indicating the wheel friction state. this value can be:
-* 0: normal friction
-* 1: slip with acceleration (only for driving wheels)
-* 2: slip without acceleration
-* 3: locked wheel (on brake or handbrake). """,
-            ),
-            name='getVehicleWheelFrictionState',
+                result='returns a int indicating the wheel friction state. this value can be:\n* 0: normal friction\n* 1: slip with acceleration (only for driving wheels)\n* 2: slip without acceleration\n* 3: locked wheel (on brake or handbrake).' ,
+            )
         )
         ],
     ),
@@ -5858,13 +5622,12 @@ on failure:
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theVehicle": """: The vehicle to get its wheel scale of. """
                 },
-                result="""returns the wheel scale of the specified vehicle as a decimal number, or an error if the vehicle is invalid. for more information about the returned number, see setvehiclewheelscale. """,
-            ),
-            name='getVehicleWheelScale',
+                result='returns the wheel scale of the specified vehicle as a decimal number, or an error if the vehicle is invalid. for more information about the returned number, see setvehiclewheelscale.' ,
+            )
         )
         ],
     ),
@@ -5914,18 +5677,12 @@ on failure:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current states of all the wheels on the vehicle.
-No vehicles have more than 4 wheels, if they appear to they will be duplicating other wheels. """,
+                description='This function returns the current states of all the wheels on the vehicle.\nNo vehicles have more than 4 wheels, if they appear to they will be duplicating other wheels.' ,
                 arguments={
                     "theVehicle": """A handle to the vehicle that you wish to know the wheel states of. """
                 },
-                result="""returns 4 ints indicating the states of the wheels (front left, rear left, front right, rear right). these values can be:
-* 0: inflated
-* 1: flat
-* 2: fallen off
-* 3: collisionless """,
-            ),
-            name='getVehicleWheelStates',
+                result='returns 4 ints indicating the states of the wheels (front left, rear left, front right, rear right). these values can be:\n* 0: inflated\n* 1: flat\n* 2: fallen off\n* 3: collisionless' ,
+            )
         )
         ],
         client=[
@@ -5973,18 +5730,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current states of all the wheels on the vehicle.
-No vehicles have more than 4 wheels, if they appear to they will be duplicating other wheels. """,
+                description='This function returns the current states of all the wheels on the vehicle.\nNo vehicles have more than 4 wheels, if they appear to they will be duplicating other wheels.' ,
                 arguments={
                     "theVehicle": """A handle to the vehicle that you wish to know the wheel states of. """
                 },
-                result="""returns 4 ints indicating the states of the wheels (front left, rear left, front right, rear right). these values can be:
-* 0: inflated
-* 1: flat
-* 2: fallen off
-* 3: collisionless """,
-            ),
-            name='getVehicleWheelStates',
+                result='returns 4 ints indicating the states of the wheels (front left, rear left, front right, rear right). these values can be:\n* 0: inflated\n* 1: flat\n* 2: fallen off\n* 3: collisionless' ,
+            )
         )
         ],
     ),
@@ -6025,14 +5776,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if a Element/Vehicle|train is a chain engine (moves the rest of the chains carriages) or not. """,
+                description='This function checks if a Element/Vehicle|train is a chain engine (moves the rest of the chains carriages) or not.' ,
                 arguments={
                     "theTrain": """a Element/Vehicle|train to check if its a chain engine or not. """
                 },
-                result="""* true if a element/vehicle|train was passed to the function and if its a chain engine.
-* false otherwise. """,
-            ),
-            name='isTrainChainEngine',
+                result='* true if a element/vehicle|train was passed to the function and if its a chain engine.\n* false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6070,13 +5819,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will check if a train or tram is derailable. """,
+                description='This function will check if a train or tram is derailable.' ,
                 arguments={
                     "vehicleToCheck": """The vehicle you wish to check. """
                 },
-                result="""returns true if the train is derailable, false otherwise. """,
-            ),
-            name='isTrainDerailable',
+                result='returns true if the train is derailable, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6112,13 +5860,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will check if a train or tram is derailable. """,
+                description='This function will check if a train or tram is derailable.' ,
                 arguments={
                     "vehicleToCheck": """The vehicle you wish to check. """
                 },
-                result="""returns true if the train is derailable, false otherwise. """,
-            ),
-            name='isTrainDerailable',
+                result='returns true if the train is derailable, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6156,13 +5903,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will check if a train or tram is derailed. """,
+                description='This function will check if a train or tram is derailed.' ,
                 arguments={
                     "vehicleToCheck": """the vehicle that you wish to check is derailed. """
                 },
-                result="""returns true if the train is derailed, false if the train is still on the rails """,
-            ),
-            name='isTrainDerailed',
+                result='returns true if the train is derailed, false if the train is still on the rails' ,
+            )
         )
         ],
         client=[
@@ -6198,13 +5944,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will check if a train or tram is derailed. """,
+                description='This function will check if a train or tram is derailed.' ,
                 arguments={
                     "vehicleToCheck": """the vehicle that you wish to check is derailed. """
                 },
-                result="""returns true if the train is derailed, false if the train is still on the rails """,
-            ),
-            name='isTrainDerailed',
+                result='returns true if the train is derailed, false if the train is still on the rails' ,
+            )
         )
         ],
     ),
@@ -6242,13 +5987,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to determine whether a vehicle is blown or still intact. """,
+                description='This function allows you to determine whether a vehicle is blown or still intact.' ,
                 arguments={
                     "theVehicle": """The vehicle that you want to obtain the blown status of. """
                 },
-                result="""returns true if the vehicle specified has blown up, false if it is still intact or the vehicle specified is invalid. """,
-            ),
-            name='isVehicleBlown',
+                result='returns true if the vehicle specified has blown up, false if it is still intact or the vehicle specified is invalid.' ,
+            )
         )
         ],
         client=[
@@ -6284,13 +6028,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to determine whether a vehicle is blown or still intact. """,
+                description='This function allows you to determine whether a vehicle is blown or still intact.' ,
                 arguments={
                     "theVehicle": """The vehicle that you want to obtain the blown status of. """
                 },
-                result="""returns true if the vehicle specified has blown up, false if it is still intact or the vehicle specified is invalid. """,
-            ),
-            name='isVehicleBlown',
+                result='returns true if the vehicle specified has blown up, false if it is still intact or the vehicle specified is invalid.' ,
+            )
         )
         ],
     ),
@@ -6328,13 +6071,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if a vehicle is damage proof (set with setVehicleDamageProof). """,
+                description='This function checks if a vehicle is damage proof (set with setVehicleDamageProof).' ,
                 arguments={
                     "theVehicle": """the vehicle whose invincibility status we want to check. """
                 },
-                result="""returns true if the vehicle is damage proof, false if it isnt or if invalid arguments were passed. """,
-            ),
-            name='isVehicleDamageProof',
+                result='returns true if the vehicle is damage proof, false if it isnt or if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -6370,13 +6112,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if a vehicle is damage proof (set with setVehicleDamageProof). """,
+                description='This function checks if a vehicle is damage proof (set with setVehicleDamageProof).' ,
                 arguments={
                     "theVehicle": """the vehicle whose invincibility status we want to check. """
                 },
-                result="""returns true if the vehicle is damage proof, false if it isnt or if invalid arguments were passed. """,
-            ),
-            name='isVehicleDamageProof',
+                result='returns true if the vehicle is damage proof, false if it isnt or if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -6414,13 +6155,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This will tell you if a vehicles petrol tank is explodable. """,
+                description='This will tell you if a vehicles petrol tank is explodable.' ,
                 arguments={
                     "theVehicle": """The vehicle that you want to obtain the fuel tank status of. """
                 },
-                result="""returns true if the specified vehicle is valid and its fuel tank is explodable, false otherwise. """,
-            ),
-            name='isVehicleFuelTankExplodable',
+                result='returns true if the specified vehicle is valid and its fuel tank is explodable, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6456,13 +6196,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This will tell you if a vehicles petrol tank is explodable. """,
+                description='This will tell you if a vehicles petrol tank is explodable.' ,
                 arguments={
                     "theVehicle": """The vehicle that you want to obtain the fuel tank status of. """
                 },
-                result="""returns true if the specified vehicle is valid and its fuel tank is explodable, false otherwise. """,
-            ),
-            name='isVehicleFuelTankExplodable',
+                result='returns true if the specified vehicle is valid and its fuel tank is explodable, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6500,13 +6239,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This will tell you if a vehicle is locked. """,
+                description='This will tell you if a vehicle is locked.' ,
                 arguments={
                     "theVehicle": """The vehicle that you want to obtain the locked status of. """
                 },
-                result="""returns true if the vehicle specified is locked, false if is unlocked or the vehicle specified is invalid. """,
-            ),
-            name='isVehicleLocked',
+                result='returns true if the vehicle specified is locked, false if is unlocked or the vehicle specified is invalid.' ,
+            )
         )
         ],
         client=[
@@ -6542,13 +6280,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This will tell you if a vehicle is locked. """,
+                description='This will tell you if a vehicle is locked.' ,
                 arguments={
                     "theVehicle": """The vehicle that you want to obtain the locked status of. """
                 },
-                result="""returns true if the vehicle specified is locked, false if is unlocked or the vehicle specified is invalid. """,
-            ),
-            name='isVehicleLocked',
+                result='returns true if the vehicle specified is locked, false if is unlocked or the vehicle specified is invalid.' ,
+            )
         )
         ],
     ),
@@ -6589,13 +6326,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if nitro is activated on the vehicle. """,
+                description='This function checks if nitro is activated on the vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle, which you want to check for an activation. """
                 },
-                result="""returns true if the nitro is currently activated on the vehicle, false otherwise. """,
-            ),
-            name='isVehicleNitroActivated',
+                result='returns true if the nitro is currently activated on the vehicle, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6636,13 +6372,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if nitro is recharging on the vehicle. """,
+                description='This function checks if nitro is recharging on the vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle, which you want to check for recharging. """
                 },
-                result="""returns true if the nitro is currently recharging on the vehicle, false otherwise. """,
-            ),
-            name='isVehicleNitroRecharging',
+                result='returns true if the nitro is currently recharging on the vehicle, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6680,13 +6415,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Checks to see if a vehicle has contact with the ground. """,
+                description='Checks to see if a vehicle has contact with the ground.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to check. """
                 },
-                result="""returns true if vehicle is on the ground, false if it is not. """,
-            ),
-            name='isVehicleOnGround',
+                result='returns true if vehicle is on the ground, false if it is not.' ,
+            )
         )
         ],
         client=[
@@ -6722,13 +6456,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Checks to see if a vehicle has contact with the ground. """,
+                description='Checks to see if a vehicle has contact with the ground.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to check. """
                 },
-                result="""returns true if vehicle is on the ground, false if it is not. """,
-            ),
-            name='isVehicleOnGround',
+                result='returns true if vehicle is on the ground, false if it is not.' ,
+            )
         )
         ],
     ),
@@ -6766,13 +6499,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will get the taxi light state of a taxi (vehicle IDs 420 and 438) """,
+                description='This function will get the taxi light state of a taxi (vehicle IDs 420 and 438)' ,
                 arguments={
                     "taxi": """The vehicle element of the taxi that you wish to get the light state of. """
                 },
-                result="""returns true if the light is on, false otherwise. """,
-            ),
-            name='isVehicleTaxiLightOn',
+                result='returns true if the light is on, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6808,13 +6540,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will get the taxi light state of a taxi (vehicle IDs 420 and 438) """,
+                description='This function will get the taxi light state of a taxi (vehicle IDs 420 and 438)' ,
                 arguments={
                     "taxi": """The vehicle element of the taxi that you wish to get the light state of. """
                 },
-                result="""returns true if the light is on, false otherwise. """,
-            ),
-            name='isVehicleTaxiLightOn',
+                result='returns true if the light is on, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6865,7 +6596,7 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a boolean whether the vehicles wheel is on ground (true) or in air (false). """,
+                description='This function returns a boolean whether the vehicles wheel is on ground (true) or in air (false).' ,
                 arguments={
                     "theVehicle": """The vehicle, which you want to check. """,
                     "wheel": """The wheel name or number, see list below:
@@ -6874,9 +6605,8 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
 ** <code>"front_right"</code> or 2
 ** <code>"rear_right"</code> or 3 """
                 },
-                result="""returns true if the vehicle wheel is on ground/collided, false otherwise. """,
-            ),
-            name='isVehicleWheelOnGround',
+                result='returns true if the vehicle wheel is on ground/collided, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6927,7 +6657,7 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theVehicle": """The vehicle that you wish to get the window state. """,
                     "window": """An int|integer representing a vehicle window. It can be: """,
@@ -6939,9 +6669,8 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                     "5": """left back window """,
                     "6": """windshield """
                 },
-                result="""this function returns a boolean which represents window open state. """,
-            ),
-            name='isVehicleWindowOpen',
+                result='this function returns a boolean which represents window open state.' ,
+            )
         )
         ],
     ),
@@ -6979,13 +6708,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes sirens from a vehicle. """,
+                description='This function removes sirens from a vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle to remove the sirens of """
                 },
-                result="""returns true if sirens were successfully removed from the vehicle, false otherwise. """,
-            ),
-            name='removeVehicleSirens',
+                result='returns true if sirens were successfully removed from the vehicle, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7036,14 +6764,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes an already existing upgrade from the specified vehicle, eg: nos, hydraulics. Defined in San Andreas\data\maps\veh_mods\veh_mods.ide. """,
+                description='This function removes an already existing upgrade from the specified vehicle, eg: nos, hydraulics. Defined in San Andreas\\data\\maps\\veh_mods\\veh_mods.ide.' ,
                 arguments={
                     "theVehicle": """: The element representing the vehicle you wish to remove the upgrade from """,
                     "upgrade": """: The ID of the upgrade you wish to remove. """
                 },
-                result="""returns true if the upgrade was successfully removed from the vehicle, otherwise false. """,
-            ),
-            name='removeVehicleUpgrade',
+                result='returns true if the upgrade was successfully removed from the vehicle, otherwise false.' ,
+            )
         )
         ],
         client=[
@@ -7089,14 +6816,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes an already existing upgrade from the specified vehicle, eg: nos, hydraulics. Defined in San Andreas\data\maps\veh_mods\veh_mods.ide. """,
+                description='This function removes an already existing upgrade from the specified vehicle, eg: nos, hydraulics. Defined in San Andreas\\data\\maps\\veh_mods\\veh_mods.ide.' ,
                 arguments={
                     "theVehicle": """: The element representing the vehicle you wish to remove the upgrade from """,
                     "upgrade": """: The ID of the upgrade you wish to remove. """
                 },
-                result="""returns true if the upgrade was successfully removed from the vehicle, otherwise false. """,
-            ),
-            name='removeVehicleUpgrade',
+                result='returns true if the upgrade was successfully removed from the vehicle, otherwise false.' ,
+            )
         )
         ],
     ),
@@ -7147,14 +6873,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function reset to default component position for vehicle. """,
+                description='This function reset to default component position for vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to reset component position. """,
                     "theComponent": """A vehicle component (this is the frame name from the model file of the component you wish to modify) """
                 },
-                result="""returns true if the position of the component was reset, false otherwise. """,
-            ),
-            name='resetVehicleComponentPosition',
+                result='returns true if the position of the component was reset, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7205,14 +6930,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function reset to default component rotation for vehicle. """,
+                description='This function reset to default component rotation for vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to reset component rotation. """,
                     "theComponent": """A vehicle component (this is the frame name from the model file of the component you wish to modify) """
                 },
-                result="""returns true if the rotation of the component was reset, false otherwise. """,
-            ),
-            name='resetVehicleComponentRotation',
+                result='returns true if the rotation of the component was reset, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7263,14 +6987,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function reset to default component scale for vehicle. """,
+                description='This function reset to default component scale for vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to reset component scale. """,
                     "theComponent": """A vehicle component (this is the frame name from the model file of the component you wish to modify) """
                 },
-                result="""returns true if the scale of the component was reset, false otherwise. """,
-            ),
-            name='resetVehicleComponentScale',
+                result='returns true if the scale of the component was reset, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7311,13 +7034,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function resets the vehicle dependent dummy positions to the vehicles current model dummy positions.}} """,
+                description='This function resets the vehicle dependent dummy positions to the vehicles current model dummy positions.}}' ,
                 arguments={
                     "theVehicle": """The vehicle to reset """
                 },
-                result="""returns true for success, false otherwise. """,
-            ),
-            name='resetVehicleDummyPositions',
+                result='returns true for success, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7355,13 +7077,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Resets the vehicle explosion time. This is the point in time at which the vehicle last exploded: at this time plus the vehicles respawn delay, the vehicle is respawned. You can use this function to prevent the vehicle from respawning. """,
+                description='Resets the vehicle explosion time. This is the point in time at which the vehicle last exploded: at this time plus the vehicles respawn delay, the vehicle is respawned. You can use this function to prevent the vehicle from respawning.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to reset the explosion time from. """
                 },
-                result="""returns true if the vehicle explosion time has been reset, false if it failed to reset the explosion time. """,
-            ),
-            name='resetVehicleExplosionTime',
+                result='returns true if the vehicle explosion time has been reset, false if it failed to reset the explosion time.' ,
+            )
         )
         ],
         client=[
@@ -7402,13 +7123,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Resets the vehicle idle time """,
+                description='Resets the vehicle idle time' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to reset the idle time from. """
                 },
-                result="""returns true if the vehicle idle time has been reset, false if it failed to reset the idle time. """,
-            ),
-            name='resetVehicleIdleTime',
+                result='returns true if the vehicle idle time has been reset, false if it failed to reset the idle time.' ,
+            )
         )
         ],
         client=[
@@ -7449,13 +7169,12 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function respawns a vehicle according to its set respawn position, set by setVehicleRespawnPosition or the position and rotation it was created on. To spawn a vehicle to a specific location just once, spawnVehicle can be used. """,
+                description='This function respawns a vehicle according to its set respawn position, set by setVehicleRespawnPosition or the position and rotation it was created on. To spawn a vehicle to a specific location just once, spawnVehicle can be used.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to respawn """
                 },
-                result="""returns true if the vehicle respawned successfully, false if the passed argument does not exist or is not a vehicle. """,
-            ),
-            name='respawnVehicle',
+                result='returns true if the vehicle respawned successfully, false if the passed argument does not exist or is not a vehicle.' ,
+            )
         )
         ],
         client=[
@@ -7509,14 +7228,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the state of the helicopter blades collisions on the specified vehicle. """,
+                description='This function changes the state of the helicopter blades collisions on the specified vehicle.' ,
                 arguments={
                     "theVehicle": """The helicopter that will have the blades collisions set. """,
                     "collisions": """The state of the helicopter blades collisions. """
                 },
-                result="""returns true if the collisions are set for the specified vehicle, false if the collisions cant be set for the specified vehicle, if the vehicle is not a helicopter or if invalid arguments are specified. """,
-            ),
-            name='setHeliBladeCollisionsEnabled',
+                result='returns true if the collisions are set for the specified vehicle, false if the collisions cant be set for the specified vehicle, if the vehicle is not a helicopter or if invalid arguments are specified.' ,
+            )
         )
         ],
     ),
@@ -7567,14 +7285,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the rotor speed of a helicopter. """,
+                description='Sets the rotor speed of a helicopter.' ,
                 arguments={
                     "heli": """the helicopter to adjust the rotor of. """,
                     "speed": """the new rotor speed. Usual values are 0 if the helicopter stands still, or 0.2 if the rotor is fully spun up. Higher values than normal will not affect the helicopters handling. Negative values are allowed and will make the rotor spin in the opposite direction (pushing the helicopter down). """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setHelicopterRotorSpeed',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7632,15 +7349,14 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to change the handling data of all vehicles of a specified model. """,
+                description='This function is used to change the handling data of all vehicles of a specified model.' ,
                 arguments={
                     "modelId": """The Vehicle_IDs|vehicle model you wish to set the handling of. """,
                     "property": """The property you wish to set the handling of the vehicle to, or nil if you want to reset the all the handling properties. """,
                     "value": """The value of the modelss handling property you wish to set, or nil if you want to reset the handling property to its default value. """
                 },
-                result="""returns true if the handling was set successfully, false otherwise. """,
-            ),
-            name='setModelHandling',
+                result='returns true if the handling was set successfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7691,14 +7407,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will set a train or tram as derailable. This is, if it can derail when it goes above the maximum speed. """,
+                description='This function will set a train or tram as derailable. This is, if it can derail when it goes above the maximum speed.' ,
                 arguments={
                     "derailableVehicle": """The vehicle that you wish to set derailable. """,
                     "derailable": """whether the train or tram is derailable. True as derailable, False as non-derailable. """
                 },
-                result="""returns true if the state was successfully set, false otherwise. """,
-            ),
-            name='setTrainDerailable',
+                result='returns true if the state was successfully set, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7744,14 +7459,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will set a train or tram as derailable. This is, if it can derail when it goes above the maximum speed. """,
+                description='This function will set a train or tram as derailable. This is, if it can derail when it goes above the maximum speed.' ,
                 arguments={
                     "derailableVehicle": """The vehicle that you wish to set derailable. """,
                     "derailable": """whether the train or tram is derailable. True as derailable, False as non-derailable. """
                 },
-                result="""returns true if the state was successfully set, false otherwise. """,
-            ),
-            name='setTrainDerailable',
+                result='returns true if the state was successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7799,14 +7513,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will set a train or tram as derailed. """,
+                description='This function will set a train or tram as derailed.' ,
                 arguments={
                     "vehicleToDerail": """The vehicle that you wish to derail. """,
                     "derailed": """whether the train is derailed. """
                 },
-                result="""returns true if the state was successfully set """,
-            ),
-            name='setTrainDerailed',
+                result='returns true if the state was successfully set' ,
+            )
         )
         ],
         client=[
@@ -7852,14 +7565,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will set a train or tram as derailed. """,
+                description='This function will set a train or tram as derailed.' ,
                 arguments={
                     "vehicleToDerail": """The vehicle that you wish to derail. """,
                     "derailed": """whether the train is derailed. """
                 },
-                result="""returns true if the state was successfully set """,
-            ),
-            name='setTrainDerailed',
+                result='returns true if the state was successfully set' ,
+            )
         )
         ],
     ),
@@ -7907,14 +7619,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the direction in which a train or tram drives over the rails (clockwise or counterclockwise). """,
+                description='Sets the direction in which a train or tram drives over the rails (clockwise or counterclockwise).' ,
                 arguments={
                     "train": """the train whose direction to change. """,
                     "clockwise": """if true, will make the train go clockwise. If false, makes it go counterclockwise. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setTrainDirection',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7960,14 +7671,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the direction in which a train or tram drives over the rails (clockwise or counterclockwise). """,
+                description='Sets the direction in which a train or tram drives over the rails (clockwise or counterclockwise).' ,
                 arguments={
                     "train": """the train whose direction to change. """,
                     "clockwise": """if true, will make the train go clockwise. If false, makes it go counterclockwise. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setTrainDirection',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -8015,14 +7725,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the position the train is currently on the track """,
+                description='Sets the position the train is currently on the track' ,
                 arguments={
                     "train": """the train of which to set the track """,
                     "position": """the position along the track (0 - 18107 a complete way round) """
                 },
-                result="""returns true if the train position was set, false otherwise. """,
-            ),
-            name='setTrainPosition',
+                result='returns true if the train position was set, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -8068,14 +7777,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the position the train is currently on the track """,
+                description='Sets the position the train is currently on the track' ,
                 arguments={
                     "train": """the train of which to set the track """,
                     "position": """the position along the track (0 - 18107 a complete way round) """
                 },
-                result="""returns true if the train position was set, false otherwise. """,
-            ),
-            name='setTrainPosition',
+                result='returns true if the train position was set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -8123,14 +7831,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the on-track speed of a train. """,
+                description='Sets the on-track speed of a train.' ,
                 arguments={
                     "train": """the train whose speed to change. """,
                     "speed": """the new on-track speed of the train. A positive value will make it go clockwise, a negative value counter clockwise. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setTrainSpeed',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -8176,14 +7883,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the on-track speed of a train. """,
+                description='Sets the on-track speed of a train.' ,
                 arguments={
                     "train": """the train whose speed to change. """,
                     "speed": """the new on-track speed of the train. A positive value will make it go clockwise, a negative value counter clockwise. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setTrainSpeed',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -8231,14 +7937,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the track of a train """,
+                description='Sets the track of a train' ,
                 arguments={
                     "train": """the train of which to set the track """,
                     "track": """the track where you want to set the train. It can be 0, 1, 2 or 3. """
                 },
-                result="""returns true if the track was set to the train, false otherwise. """,
-            ),
-            name='setTrainTrack',
+                result='returns true if the track was set to the train, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -8284,14 +7989,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the track of a train """,
+                description='Sets the track of a train' ,
                 arguments={
                     "train": """the train of which to set the track """,
                     "track": """the track where you want to set the train. It can be 0, 1, 2 or 3. """
                 },
-                result="""returns true if the track was set to the train, false otherwise. """,
-            ),
-            name='setTrainTrack',
+                result='returns true if the track was set to the train, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -8342,15 +8046,13 @@ No vehicles have more than 4 wheels, if they appear to they will be duplicating 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used for adjusting the movable parts of a model, for example hydra jets or dump truck tray.
-This function only works on vehicles with adjustable properties. """,
+                description='This function is used for adjusting the movable parts of a model, for example hydra jets or dump truck tray.\nThis function only works on vehicles with adjustable properties.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to change the adjustable property of. """,
                     "value": """: A value from 0 between ?. (Set the adjustable value between 0 and N. 0 is the default value. It is possible to force the setting beyond default maximum, for example setting above 5000 on the dump truck (normal max 2500) will cause the tray to be fully vertical.) """
                 },
-                result="""returns true if the adjustable property was set, false otherwise. """,
-            ),
-            name='setVehicleAdjustableProperty',
+                result='returns true if the adjustable property was set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -8508,27 +8210,12 @@ This function only works on vehicles with adjustable properties. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will set the color of a vehicle using either a RGB format, or the Vehicle Colors|standard San Andreas color IDs. Vehicles can have up to 4 colors, most of the vehicles have 2 colors only.
-<syntaxhighlight lang=lua>
-bool setVehicleColor(vehicle veh, int r1, int g1, int b1, int r2, int g2, int b2, int r3, int g3, int b3, int r4, int g4, int b4)
-</syntaxhighlight>
-<syntaxhighlight lang=lua>
-bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
-</syntaxhighlight>
-*theVehicle: The vehicle that you wish to set the color of.
-* RGB format:
-** r1, g1, b1: Three integers indicating the red, green and blue components of the first (main) color for the vehicle
-* Palette format:
-** p1, p2, p3, p4: Exactly four integers indicating the Vehicle Colors|vehicle color IDs from the palette. <br> If a vehicle has fewer than four colours, you must still provide four colours, otherwise the RGB format will be used.
-*r2, g2, b2: Three integers indicating the red, green and blue components of the second color for the vehicle
-*r3, g3, b3: Three integers indicating the red, green and blue components of the third color for the vehicle
-*r4, g4, b4: Three integers indicating the red, green and blue components of the fourth color for the vehicle """,
+                description='This function will set the color of a vehicle using either a RGB format, or the Vehicle Colors|standard San Andreas color IDs. Vehicles can have up to 4 colors, most of the vehicles have 2 colors only.\n<syntaxhighlight lang=lua>\nbool setVehicleColor(vehicle veh, int r1, int g1, int b1, int r2, int g2, int b2, int r3, int g3, int b3, int r4, int g4, int b4)\n</syntaxhighlight>\n<syntaxhighlight lang=lua>\nbool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)\n</syntaxhighlight>\n*theVehicle: The vehicle that you wish to set the color of.\n* RGB format:\n** r1, g1, b1: Three integers indicating the red, green and blue components of the first (main) color for the vehicle\n* Palette format:\n** p1, p2, p3, p4: Exactly four integers indicating the Vehicle Colors|vehicle color IDs from the palette. <br> If a vehicle has fewer than four colours, you must still provide four colours, otherwise the RGB format will be used.\n*r2, g2, b2: Three integers indicating the red, green and blue components of the second color for the vehicle\n*r3, g3, b3: Three integers indicating the red, green and blue components of the third color for the vehicle\n*r4, g4, b4: Three integers indicating the red, green and blue components of the fourth color for the vehicle' ,
                 arguments={
                     
                 },
-                result="""returns true if vehicles color was set, false if an invalid vehicle or invalid colors were specified. """,
-            ),
-            name='setVehicleColor',
+                result='returns true if vehicles color was set, false if an invalid vehicle or invalid colors were specified.' ,
+            )
         )
         ],
         client=[
@@ -8684,27 +8371,12 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will set the color of a vehicle using either a RGB format, or the Vehicle Colors|standard San Andreas color IDs. Vehicles can have up to 4 colors, most of the vehicles have 2 colors only.
-<syntaxhighlight lang=lua>
-bool setVehicleColor(vehicle veh, int r1, int g1, int b1, int r2, int g2, int b2, int r3, int g3, int b3, int r4, int g4, int b4)
-</syntaxhighlight>
-<syntaxhighlight lang=lua>
-bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
-</syntaxhighlight>
-*theVehicle: The vehicle that you wish to set the color of.
-* RGB format:
-** r1, g1, b1: Three integers indicating the red, green and blue components of the first (main) color for the vehicle
-* Palette format:
-** p1, p2, p3, p4: Exactly four integers indicating the Vehicle Colors|vehicle color IDs from the palette. <br> If a vehicle has fewer than four colours, you must still provide four colours, otherwise the RGB format will be used.
-*r2, g2, b2: Three integers indicating the red, green and blue components of the second color for the vehicle
-*r3, g3, b3: Three integers indicating the red, green and blue components of the third color for the vehicle
-*r4, g4, b4: Three integers indicating the red, green and blue components of the fourth color for the vehicle """,
+                description='This function will set the color of a vehicle using either a RGB format, or the Vehicle Colors|standard San Andreas color IDs. Vehicles can have up to 4 colors, most of the vehicles have 2 colors only.\n<syntaxhighlight lang=lua>\nbool setVehicleColor(vehicle veh, int r1, int g1, int b1, int r2, int g2, int b2, int r3, int g3, int b3, int r4, int g4, int b4)\n</syntaxhighlight>\n<syntaxhighlight lang=lua>\nbool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)\n</syntaxhighlight>\n*theVehicle: The vehicle that you wish to set the color of.\n* RGB format:\n** r1, g1, b1: Three integers indicating the red, green and blue components of the first (main) color for the vehicle\n* Palette format:\n** p1, p2, p3, p4: Exactly four integers indicating the Vehicle Colors|vehicle color IDs from the palette. <br> If a vehicle has fewer than four colours, you must still provide four colours, otherwise the RGB format will be used.\n*r2, g2, b2: Three integers indicating the red, green and blue components of the second color for the vehicle\n*r3, g3, b3: Three integers indicating the red, green and blue components of the third color for the vehicle\n*r4, g4, b4: Three integers indicating the red, green and blue components of the fourth color for the vehicle' ,
                 arguments={
                     
                 },
-                result="""returns true if vehicles color was set, false if an invalid vehicle or invalid colors were specified. """,
-            ),
-            name='setVehicleColor',
+                result='returns true if vehicles color was set, false if an invalid vehicle or invalid colors were specified.' ,
+            )
         )
         ],
     ),
@@ -8795,7 +8467,7 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the component position of a vehicle. """,
+                description='This function sets the component position of a vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to set component position. """,
                     "theComponent": """A Vehicle_Components|vehicle component (this is the frame name from the model file of the component you wish to modify) """,
@@ -8807,9 +8479,8 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     "root": """(default if not specified): The position is relative to the root component. """,
                     "world": """: The position is a world position, relative to the worlds center of coordinates. """
                 },
-                result="""returns true if component position was set successfully, false otherwise. """,
-            ),
-            name='setVehicleComponentPosition',
+                result='returns true if component position was set successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -8900,7 +8571,7 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the component rotation of a vehicle. """,
+                description='This function sets the component rotation of a vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to set component rotation of. """,
                     "theComponent": """A Vehicle_Components|vehicle component (this is the frame name from the model file of the component you wish to modify) """,
@@ -8912,9 +8583,8 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     "root": """: The rotation is relative to the root component. """,
                     "world": """: The rotation is a world rotation, relative to the worlds coordinates axes. """
                 },
-                result="""returns true if the component rotation was set successfully, false otherwise. """,
-            ),
-            name='setVehicleComponentRotation',
+                result='returns true if the component rotation was set successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -9005,7 +8675,7 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the component scale of a vehicle. """,
+                description='This function sets the component scale of a vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to set component scale. """,
                     "theComponent": """A Vehicle_Components|vehicle component (this is the frame name from the model file of the component you wish to modify) """,
@@ -9017,9 +8687,8 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     "root": """(default if not specified): The scale is relative to the root component. """,
                     "world": """: The scale is a world scale, relative to the worlds center of coordinates. """
                 },
-                result="""returns true if component scale was set successfully, false otherwise. """,
-            ),
-            name='setVehicleComponentScale',
+                result='returns true if component scale was set successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -9080,15 +8749,14 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets component visibility for vehicle. """,
+                description='This function sets component visibility for vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to set component visibility of. """,
                     "theComponent": """A Vehicle_Components|vehicle component (this is the components frame name (also called dummy) from the vehicle models DFF file of which you want to manipulate components) """,
                     "visible": """a bool which determines if the component should be visible """
                 },
-                result="""returns a bool indicating if the visiblity was changed successfully. """,
-            ),
-            name='setVehicleComponentVisible',
+                result='returns a bool indicating if the visiblity was changed successfully.' ,
+            )
         )
         ],
     ),
@@ -9136,14 +8804,13 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions makes a vehicle damage proof, so it wont take damage from bullets, hits, explosions or fire. A damage proofs vehicle health can still be changed via script. """,
+                description='This functions makes a vehicle damage proof, so it wont take damage from bullets, hits, explosions or fire. A damage proofs vehicle health can still be changed via script.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to make damage proof. """,
                     "damageProof": """true is damage proof, false is damageable. """
                 },
-                result="""returns true if the vehicle was set damage proof succesfully, false if the arguments are invalid or it failed. """,
-            ),
-            name='setVehicleDamageProof',
+                result='returns true if the vehicle was set damage proof succesfully, false if the arguments are invalid or it failed.' ,
+            )
         )
         ],
         client=[
@@ -9189,14 +8856,13 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions makes a vehicle damage proof, so it wont take damage from bullets, hits, explosions or fire. A damage proofs vehicle health can still be changed via script. """,
+                description='This functions makes a vehicle damage proof, so it wont take damage from bullets, hits, explosions or fire. A damage proofs vehicle health can still be changed via script.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to make damage proof. """,
                     "damageProof": """true is damage proof, false is damageable. """
                 },
-                result="""returns true if the vehicle was set damage proof succesfully, false if the arguments are invalid or it failed. """,
-            ),
-            name='setVehicleDamageProof',
+                result='returns true if the vehicle was set damage proof succesfully, false if the arguments are invalid or it failed.' ,
+            )
         )
         ],
     ),
@@ -9244,14 +8910,13 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the dirt level on a vehicle. """,
+                description='This function sets the dirt level on a vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle that you want to set the dirt level from """,
                     "dirtLevel": """The dirt level """
                 },
-                result="""returns true if the dirt level was set on the vehicle, false if the dirt level was not set or if invalid arguments are specified. """,
-            ),
-            name='setVehicleDirtLevel',
+                result='returns true if the dirt level was set on the vehicle, false if the dirt level was not set or if invalid arguments are specified.' ,
+            )
         )
         ],
         client=[
@@ -9297,14 +8962,13 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the dirt level on a vehicle. """,
+                description='This function sets the dirt level on a vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle that you want to set the dirt level from """,
                     "dirtLevel": """The dirt level """
                 },
-                result="""returns true if the dirt level was set on the vehicle, false if the dirt level was not set or if invalid arguments are specified. """,
-            ),
-            name='setVehicleDirtLevel',
+                result='returns true if the dirt level was set on the vehicle, false if the dirt level was not set or if invalid arguments are specified.' ,
+            )
         )
         ],
     ),
@@ -9372,16 +9036,15 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets how much a vehicles door is open. Doors include the boot/trunk and the bonnet of the vehicle. """,
+                description='This function sets how much a vehicles door is open. Doors include the boot/trunk and the bonnet of the vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle that you wish to change the door open ratio of. """,
                     "door": """A whole number, 0 (hood), 1 (trunk), 2 (front left), 3 (front right), 4 (rear left), 5 (rear right) """,
                     "ratio": """The ratio value, ranging from 0 (fully closed) to 1 (fully open). """,
                     "time": """The number of milliseconds the door should take to reach the value you have specified. A value of 0 will change the door open ratio instantly. """
                 },
-                result="""returns true if the door open ratio was successfully set, false if invalid arguments are passed. """,
-            ),
-            name='setVehicleDoorOpenRatio',
+                result='returns true if the door open ratio was successfully set, false if invalid arguments are passed.' ,
+            )
         )
         ],
         client=[
@@ -9447,16 +9110,15 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets how much a vehicles door is open. Doors include the boot/trunk and the bonnet of the vehicle. """,
+                description='This function sets how much a vehicles door is open. Doors include the boot/trunk and the bonnet of the vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle that you wish to change the door open ratio of. """,
                     "door": """A whole number, 0 (hood), 1 (trunk), 2 (front left), 3 (front right), 4 (rear left), 5 (rear right) """,
                     "ratio": """The ratio value, ranging from 0 (fully closed) to 1 (fully open). """,
                     "time": """The number of milliseconds the door should take to reach the value you have specified. A value of 0 will change the door open ratio instantly. """
                 },
-                result="""returns true if the door open ratio was successfully set, false if invalid arguments are passed. """,
-            ),
-            name='setVehicleDoorOpenRatio',
+                result='returns true if the door open ratio was successfully set, false if invalid arguments are passed.' ,
+            )
         )
         ],
     ),
@@ -9514,7 +9176,7 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the state of the specified door on a vehicle. """,
+                description='This function sets the state of the specified door on a vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle that you wish to change the door state of. """,
                     "door": """An integer representing which door to set the state of. Valid values are: """,
@@ -9527,9 +9189,8 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     "state": """An integer representing the state to set the door to. Valid values are: """,
                     "spawnFlyingComponent": """A boolean, if set to true, spawns flying doors etc. if you remove a component with <nowiki>state == 4</nowiki>. """
                 },
-                result="""returns true if the door state was successfully set, false otherwise. """,
-            ),
-            name='setVehicleDoorState',
+                result='returns true if the door state was successfully set, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -9585,7 +9246,7 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the state of the specified door on a vehicle. """,
+                description='This function sets the state of the specified door on a vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle that you wish to change the door state of. """,
                     "door": """An integer representing which door to set the state of. Valid values are: """,
@@ -9598,9 +9259,8 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     "state": """An integer representing the state to set the door to. Valid values are: """,
                     "spawnFlyingComponent": """A boolean, if set to true, spawns flying doors etc. if you remove a component with <nowiki>state == 4</nowiki>. """
                 },
-                result="""returns true if the door state was successfully set, false otherwise. """,
-            ),
-            name='setVehicleDoorState',
+                result='returns true if the door state was successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -9648,14 +9308,13 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function makes a vehicles doors undamageable, so they wont fall off when theyre hit. Note that the vehicle has to be locked using setVehicleLocked for this setting to have any effect. """,
+                description='This function makes a vehicles doors undamageable, so they wont fall off when theyre hit. Note that the vehicle has to be locked using setVehicleLocked for this setting to have any effect.' ,
                 arguments={
                     "theVehicle": """The vehicle of which you wish to set the car door damageability. """,
                     "state": """A boolean denoting whether the vehicles doors are undamageable (true) or damageable (false). """
                 },
-                result="""returns true if the damageability state was successfully changed, false if invalid arguments were passed. """,
-            ),
-            name='setVehicleDoorsUndamageable',
+                result='returns true if the damageability state was successfully changed, false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -9701,14 +9360,13 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function makes a vehicles doors undamageable, so they wont fall off when theyre hit. Note that the vehicle has to be locked using setVehicleLocked for this setting to have any effect. """,
+                description='This function makes a vehicles doors undamageable, so they wont fall off when theyre hit. Note that the vehicle has to be locked using setVehicleLocked for this setting to have any effect.' ,
                 arguments={
                     "theVehicle": """The vehicle of which you wish to set the car door damageability. """,
                     "state": """A boolean denoting whether the vehicles doors are undamageable (true) or damageable (false). """
                 },
-                result="""returns true if the damageability state was successfully changed, false if invalid arguments were passed. """,
-            ),
-            name='setVehicleDoorsUndamageable',
+                result='returns true if the damageability state was successfully changed, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -9789,15 +9447,14 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the position of the dummy for the given vehicle.}} """,
+                description='This function sets the position of the dummy for the given vehicle.}}' ,
                 arguments={
                     "theVehicle": """The vehicle you want to set the dummy position for """,
                     "dummy": """The dummy whose position you want to set """,
                     "x": """, y, z The new dummy position """
                 },
-                result="""returns true for success, false otherwise. """,
-            ),
-            name='setVehicleDummyPosition',
+                result='returns true for success, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -9845,14 +9502,13 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function turns a vehicles engine on or off. Note that the engine will always be turned on when someone enters the driver seat, unless you override that behaviour with scripts. """,
+                description='This function turns a vehicles engine on or off. Note that the engine will always be turned on when someone enters the driver seat, unless you override that behaviour with scripts.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to change the engine state of. """,
                     "engineState": """: A boolean value representing whether the engine will be turned on (true) or off (false). """
                 },
-                result="""returns true if the vehicles engine state was successfully changed, false otherwise. """,
-            ),
-            name='setVehicleEngineState',
+                result='returns true if the vehicles engine state was successfully changed, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -9898,14 +9554,13 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function turns a vehicles engine on or off. Note that the engine will always be turned on when someone enters the driver seat, unless you override that behaviour with scripts. """,
+                description='This function turns a vehicles engine on or off. Note that the engine will always be turned on when someone enters the driver seat, unless you override that behaviour with scripts.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to change the engine state of. """,
                     "engineState": """: A boolean value representing whether the engine will be turned on (true) or off (false). """
                 },
-                result="""returns true if the vehicles engine state was successfully changed, false otherwise. """,
-            ),
-            name='setVehicleEngineState',
+                result='returns true if the vehicles engine state was successfully changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -9953,14 +9608,13 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the explodable state of a vehicles fuel tank, which toggles the ability to blow the vehicle up by shooting the tank. This function will have no effect on vehicles with tanks that cannot be shot in single player. """,
+                description='This function changes the explodable state of a vehicles fuel tank, which toggles the ability to blow the vehicle up by shooting the tank. This function will have no effect on vehicles with tanks that cannot be shot in single player.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to change the fuel tank explodable state of. """,
                     "explodable": """: A boolean value representing whether or not the fuel tank will be explodable. """
                 },
-                result="""returns true if the vehicles fuel tank explodable state was successfully changed, false otherwise. """,
-            ),
-            name='setVehicleFuelTankExplodable',
+                result='returns true if the vehicles fuel tank explodable state was successfully changed, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -10006,14 +9660,13 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the explodable state of a vehicles fuel tank, which toggles the ability to blow the vehicle up by shooting the tank. This function will have no effect on vehicles with tanks that cannot be shot in single player. """,
+                description='This function changes the explodable state of a vehicles fuel tank, which toggles the ability to blow the vehicle up by shooting the tank. This function will have no effect on vehicles with tanks that cannot be shot in single player.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to change the fuel tank explodable state of. """,
                     "explodable": """: A boolean value representing whether or not the fuel tank will be explodable. """
                 },
-                result="""returns true if the vehicles fuel tank explodable state was successfully changed, false otherwise. """,
-            ),
-            name='setVehicleFuelTankExplodable',
+                result='returns true if the vehicles fuel tank explodable state was successfully changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -10084,14 +9737,13 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the gravity vector of a vehicle. The vehicle will fall in this direction, and the camera of any occupants will also be rotated to match it. Can be used for e.g. driving on walls or upside down on ceilings. """,
+                description='Sets the gravity vector of a vehicle. The vehicle will fall in this direction, and the camera of any occupants will also be rotated to match it. Can be used for e.g. driving on walls or upside down on ceilings.' ,
                 arguments={
                     "theVehicle": """the vehicle of which to change the gravity. """,
                     "x, y, z": """the components of the new gravity vector. If this vector has length 1, the strength of the gravity will be same as the global gravity for other entities. If it is 2, it will be twice as strong, etc. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setVehicleGravity',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -10149,15 +9801,14 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to change the handling data of a vehicle. """,
+                description='This function is used to change the handling data of a vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to set the handling of. """,
                     "property": """The property you wish to set the handling of the vehicle to. """,
                     "value": """The value of the property you wish to set the handling of the vehicle to. """
                 },
-                result="""returns true if the handling was set successfully, false otherwise. see below a list of valid properties and their required values: """,
-            ),
-            name='setVehicleHandling',
+                result='returns true if the handling was set successfully, false otherwise. see below a list of valid properties and their required values:' ,
+            )
         )
         ],
         client=[
@@ -10213,15 +9864,14 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to change the handling data of a vehicle. """,
+                description='This function is used to change the handling data of a vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to set the handling of. """,
                     "property": """The property you wish to set the handling of the vehicle to. """,
                     "value": """The value of the property you wish to set the handling of the vehicle to. """
                 },
-                result="""returns true if the handling was set successfully, false otherwise. see below a list of valid properties and their required values: """,
-            ),
-            name='setVehicleHandling',
+                result='returns true if the handling was set successfully, false otherwise. see below a list of valid properties and their required values:' ,
+            )
         )
         ],
     ),
@@ -10289,16 +9939,15 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will set the headlight color of a vehicle. valid Red Green and Blue arguments range from 0-255 """,
+                description='This function will set the headlight color of a vehicle. valid Red Green and Blue arguments range from 0-255' ,
                 arguments={
                     "theVehicle": """The vehicle that you wish to set the headlight color of. """,
                     "red": """An integer indicating the amount of red for the vehicles headlights """,
                     "green": """An integer indicating the amount of green for the vehicles headlights """,
                     "blue": """An integer indicating the amount of blue for the vehicles headlights """
                 },
-                result="""returns true if vehicles headlight color was set, false if an invalid vehicle or invalid color ranges were specified for red,green or blue. """,
-            ),
-            name='setVehicleHeadLightColor',
+                result='returns true if vehicles headlight color was set, false if an invalid vehicle or invalid color ranges were specified for red,green or blue.' ,
+            )
         )
         ],
         client=[
@@ -10364,16 +10013,15 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will set the headlight color of a vehicle. valid Red Green and Blue arguments range from 0-255 """,
+                description='This function will set the headlight color of a vehicle. valid Red Green and Blue arguments range from 0-255' ,
                 arguments={
                     "theVehicle": """The vehicle that you wish to set the headlight color of. """,
                     "red": """An integer indicating the amount of red for the vehicles headlights """,
                     "green": """An integer indicating the amount of green for the vehicles headlights """,
                     "blue": """An integer indicating the amount of blue for the vehicles headlights """
                 },
-                result="""returns true if vehicles headlight color was set, false if an invalid vehicle or invalid color ranges were specified for red,green or blue. """,
-            ),
-            name='setVehicleHeadLightColor',
+                result='returns true if vehicles headlight color was set, false if an invalid vehicle or invalid color ranges were specified for red,green or blue.' ,
+            )
         )
         ],
     ),
@@ -10421,14 +10069,13 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the time delay (in milliseconds) the vehicle will remain at its position while empty. """,
+                description='This function sets the time delay (in milliseconds) the vehicle will remain at its position while empty.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to change the respawn delay of. """,
                     "timeDelay": """: The number of milliseconds the vehicle will be allowed to remain unused until it respawns. """
                 },
-                result="""returns true if the vehicle was found and edited. """,
-            ),
-            name='setVehicleIdleRespawnDelay',
+                result='returns true if the vehicle was found and edited.' ,
+            )
         )
         ],
         client=[
@@ -10479,14 +10126,13 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the landing gear state of certain vehicles. """,
+                description='This function is used to set the landing gear state of certain vehicles.' ,
                 arguments={
                     "theVehicle": """The vehicle of which you wish to set the landing gear state. """,
                     "gearState": """A bool representing the state of the landing gear.  true represents a collapsed landing gear, while false represents a disabled landing gear. """
                 },
-                result="""returns true if the landing gear was set successfully, false otherwise. """,
-            ),
-            name='setVehicleLandingGearDown',
+                result='returns true if the landing gear was set successfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -10532,14 +10178,13 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the landing gear state of certain vehicles. """,
+                description='This function is used to set the landing gear state of certain vehicles.' ,
                 arguments={
                     "theVehicle": """The vehicle of which you wish to set the landing gear state. """,
                     "gearState": """A bool representing the state of the landing gear.  true represents a collapsed landing gear, while false represents a disabled landing gear. """
                 },
-                result="""returns true if the landing gear was set successfully, false otherwise. """,
-            ),
-            name='setVehicleLandingGearDown',
+                result='returns true if the landing gear was set successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -10597,7 +10242,7 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the state of the light on the vehicle. """,
+                description='This function sets the state of the light on the vehicle.' ,
                 arguments={
                     "theVehicle": """A handle to the vehicle that you wish to change the light state of. """,
                     "light": """A whole number determining the individual light: """,
@@ -10608,9 +10253,8 @@ bool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)
                     "state": """A whole number determining the new state of the light. 0 represents normal lights, and 1 represents broken lights.
 Returns ''true'' if the light state was set successfully, ''false'' if invalid arguments were passed to the function. """
                 },
-                result="""returns true if the light state was set successfully, false if invalid arguments were passed to the function. """,
-            ),
-            name='setVehicleLightState',
+                result='returns true if the light state was set successfully, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
         client=[
@@ -10666,7 +10310,7 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the state of the light on the vehicle. """,
+                description='This function sets the state of the light on the vehicle.' ,
                 arguments={
                     "theVehicle": """A handle to the vehicle that you wish to change the light state of. """,
                     "light": """A whole number determining the individual light: """,
@@ -10677,9 +10321,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "state": """A whole number determining the new state of the light. 0 represents normal lights, and 1 represents broken lights.
 Returns ''true'' if the light state was set successfully, ''false'' if invalid arguments were passed to the function. """
                 },
-                result="""returns true if the light state was set successfully, false if invalid arguments were passed to the function. """,
-            ),
-            name='setVehicleLightState',
+                result='returns true if the light state was set successfully, false if invalid arguments were passed to the function.' ,
+            )
         )
         ],
     ),
@@ -10727,14 +10370,13 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to set the vehicles doors to be locked or unlocked.  Locking a vehicle restricts access to the vehicle. """,
+                description='This function can be used to set the vehicles doors to be locked or unlocked.  Locking a vehicle restricts access to the vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle which you wish to change the lock status of """,
                     "locked": """Boolean for the status you wish to set. Set true to lock, false to unlock """
                 },
-                result="""returns true if the operation was successful, false otherwise. """,
-            ),
-            name='setVehicleLocked',
+                result='returns true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -10780,14 +10422,13 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to set the vehicles doors to be locked or unlocked.  Locking a vehicle restricts access to the vehicle. """,
+                description='This function can be used to set the vehicles doors to be locked or unlocked.  Locking a vehicle restricts access to the vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle which you wish to change the lock status of """,
                     "locked": """Boolean for the status you wish to set. Set true to lock, false to unlock """
                 },
-                result="""returns true if the operation was successful, false otherwise. """,
-            ),
-            name='setVehicleLocked',
+                result='returns true if the operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -10868,15 +10509,14 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the position of the dummies contained in a vehicle model. Use setVehicleComponentPosition to adjust the vehicle component positions. """,
+                description='This function sets the position of the dummies contained in a vehicle model. Use setVehicleComponentPosition to adjust the vehicle component positions.' ,
                 arguments={
                     "modelID": """: The model ID which you want to apply the change to """,
                     "dummy": """: The dummy whose position you want to change """,
                     "posX": """, posY, posZ: The desired position """
                 },
-                result="""returns true if everything went fine, false otherwise. """,
-            ),
-            name='setVehicleModelDummyPosition',
+                result='returns true if everything went fine, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -10947,14 +10587,13 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the position of the exhaust fumes the vehicle model emits. Use setVehicleComponentPosition to adjust the exhaust position. """,
+                description='This function sets the position of the exhaust fumes the vehicle model emits. Use setVehicleComponentPosition to adjust the exhaust position.' ,
                 arguments={
                     "modelID": """: The model ID which you want to apply the change to """,
                     "posX": """, posY, posZ: The desired position """
                 },
-                result="""returns true if everything went fine, false otherwise. """,
-            ),
-            name='setVehicleModelExhaustFumesPosition',
+                result='returns true if everything went fine, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -11015,7 +10654,7 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "vehicleModel": """: The Vehicle IDs|vehicle model ID. """,
                     "wheelGroup": """: The group of wheels of the vehicle model that will have its size set by this function. The following values are supported: """,
@@ -11024,9 +10663,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "all_wheels": """: Convenience group that contains the other wheel groups: front_axle and rear_axle. """,
                     "wheelSize": """: The wheel size value to set. Default GTA values for automobiles usually are around 0.7. It must be greater than 0. """
                 },
-                result="""returns true if the size for the specified wheel group and vehicle model has been set successfully, or an error if some parameter is invalid. """,
-            ),
-            name='setVehicleModelWheelSize',
+                result='returns true if the size for the specified wheel group and vehicle model has been set successfully, or an error if some parameter is invalid.' ,
+            )
         )
         ],
     ),
@@ -11077,14 +10715,13 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function activates or deactivates the nitro on the specified vehicle, like if a player pressed the button for activating nitro. """,
+                description='This function activates or deactivates the nitro on the specified vehicle, like if a player pressed the button for activating nitro.' ,
                 arguments={
                     "theVehicle": """The vehicle to activate or deactivate the nitro on. """,
                     "state": """true if you want to activate the nitro, false if you want to disable it. """
                 },
-                result="""returns true if the nitro activation state was modified successfully, false otherwise. """,
-            ),
-            name='setVehicleNitroActivated',
+                result='returns true if the nitro activation state was modified successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -11135,14 +10772,13 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets how many times a player can activate the nitro on a specified vehicle. """,
+                description='This function sets how many times a player can activate the nitro on a specified vehicle.' ,
                 arguments={
                     "theVehicle": """: the vehicle which you want to modify how many times a player can use its nitro. """,
                     "count": """: how many times should the player be able to use the nitro of this vehicle (from 0-100 times; 0 means that it cant be used and 101 means that it can be used infinite times). """
                 },
-                result="""returns true if the nitro count was set successfully to the vehicle, false otherwise. """,
-            ),
-            name='setVehicleNitroCount',
+                result='returns true if the nitro count was set successfully to the vehicle, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -11193,14 +10829,13 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the nitro level of the vehicle. """,
+                description='This function sets the nitro level of the vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle, which you want to set. """,
                     "level": """Nitro level you want to set (ranges from 0.0001 to 1.0). """
                 },
-                result="""returns true if the nitro level was set successfully to the vehicle, false otherwise. """,
-            ),
-            name='setVehicleNitroLevel',
+                result='returns true if the nitro level was set successfully to the vehicle, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -11248,7 +10883,7 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the light overriding setting on a vehicle. """,
+                description='This function changes the light overriding setting on a vehicle.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to change the override lights setting of. """,
                     "value": """: A whole number representing the state of the lights: """,
@@ -11256,9 +10891,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "1": """: Lights are forced off. """,
                     "2": """: Lights are forced on. """
                 },
-                result="""returns true if the vehicles lights setting was changed. otherwise false. """,
-            ),
-            name='setVehicleOverrideLights',
+                result='returns true if the vehicles lights setting was changed. otherwise false.' ,
+            )
         )
         ],
         client=[
@@ -11304,7 +10938,7 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the light overriding setting on a vehicle. """,
+                description='This function changes the light overriding setting on a vehicle.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to change the override lights setting of. """,
                     "value": """: A whole number representing the state of the lights: """,
@@ -11312,9 +10946,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "1": """: Lights are forced off. """,
                     "2": """: Lights are forced on. """
                 },
-                result="""returns true if the vehicles lights setting was changed. otherwise false. """,
-            ),
-            name='setVehicleOverrideLights',
+                result='returns true if the vehicles lights setting was changed. otherwise false.' ,
+            )
         )
         ],
     ),
@@ -11362,15 +10995,13 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the paintjob on the specified vehicle. <br/>
-See Paintjob|paintjob for list of supported vehicles. """,
+                description='This function changes the paintjob on the specified vehicle. <br/>\nSee Paintjob|paintjob for list of supported vehicles.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to change the paintjob of. """,
                     "value": """: A whole number representing the new paintjob id. Ranges from 0 up to 3. """
                 },
-                result="""returns true if the vehicles paintjob was changed. otherwise false. """,
-            ),
-            name='setVehiclePaintjob',
+                result='returns true if the vehicles paintjob was changed. otherwise false.' ,
+            )
         )
         ],
         client=[
@@ -11416,15 +11047,13 @@ See Paintjob|paintjob for list of supported vehicles. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the paintjob on the specified vehicle. <br/>
-See Paintjob|paintjob for list of supported vehicles. """,
+                description='This function changes the paintjob on the specified vehicle. <br/>\nSee Paintjob|paintjob for list of supported vehicles.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to change the paintjob of. """,
                     "value": """: A whole number representing the new paintjob id. Ranges from 0 up to 3. """
                 },
-                result="""returns true if the vehicles paintjob was changed. otherwise false. """,
-            ),
-            name='setVehiclePaintjob',
+                result='returns true if the vehicles paintjob was changed. otherwise false.' ,
+            )
         )
         ],
     ),
@@ -11482,7 +11111,7 @@ See Paintjob|paintjob for list of supported vehicles. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to change the state of one of the six panels vehicles can have. When executed on the server-side resources, the damage will be synched for all players, whereas the change is only client-side if the function is used in a client resource. """,
+                description='This function allows you to change the state of one of the six panels vehicles can have. When executed on the server-side resources, the damage will be synched for all players, whereas the change is only client-side if the function is used in a client resource.' ,
                 arguments={
                     "theVehicle": """The vehicle you would like to modify the panel of. """,
                     "panelID": """An ID specifying the part of the vehicle. Possible values are: """,
@@ -11498,9 +11127,8 @@ See Paintjob|paintjob for list of supported vehicles. """,
                     "Planes": """ """,
                     "state": """How damaged the part is on the scale of 0 to 3, with 0 being undamaged and 3 being very damaged. How this is manifested depends on the panel and the vehicle. """
                 },
-                result="""returns true if the panel state has been updated, false otherwise """,
-            ),
-            name='setVehiclePanelState',
+                result='returns true if the panel state has been updated, false otherwise' ,
+            )
         )
         ],
         client=[
@@ -11556,7 +11184,7 @@ See Paintjob|paintjob for list of supported vehicles. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to change the state of one of the six panels vehicles can have. When executed on the server-side resources, the damage will be synched for all players, whereas the change is only client-side if the function is used in a client resource. """,
+                description='This function allows you to change the state of one of the six panels vehicles can have. When executed on the server-side resources, the damage will be synched for all players, whereas the change is only client-side if the function is used in a client resource.' ,
                 arguments={
                     "theVehicle": """The vehicle you would like to modify the panel of. """,
                     "panelID": """An ID specifying the part of the vehicle. Possible values are: """,
@@ -11572,9 +11200,8 @@ See Paintjob|paintjob for list of supported vehicles. """,
                     "Planes": """ """,
                     "state": """How damaged the part is on the scale of 0 to 3, with 0 being undamaged and 3 being very damaged. How this is manifested depends on the panel and the vehicle. """
                 },
-                result="""returns true if the panel state has been updated, false otherwise """,
-            ),
-            name='setVehiclePanelState',
+                result='returns true if the panel state has been updated, false otherwise' ,
+            )
         )
         ],
     ),
@@ -11622,15 +11249,13 @@ See Paintjob|paintjob for list of supported vehicles. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to set the numberplate text of a car.
-It now also changes the numberplate text of any vehicle that has visual numberplates. """,
+                description='This function can be used to set the numberplate text of a car.\nIt now also changes the numberplate text of any vehicle that has visual numberplates.' ,
                 arguments={
                     "theVehicle": """the vehicle whose numberplate you want to change. """,
                     "numberplate": """a string that will go on the number plate of the car (max 8 characters). """
                 },
-                result="""returns true if the numberplate was changed successfully, or false if invalid arguments were passed """,
-            ),
-            name='setVehiclePlateText',
+                result='returns true if the numberplate was changed successfully, or false if invalid arguments were passed' ,
+            )
         )
         ],
         client=[
@@ -11676,15 +11301,13 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to set the numberplate text of a car.
-It now also changes the numberplate text of any vehicle that has visual numberplates. """,
+                description='This function can be used to set the numberplate text of a car.\nIt now also changes the numberplate text of any vehicle that has visual numberplates.' ,
                 arguments={
                     "theVehicle": """the vehicle whose numberplate you want to change. """,
                     "numberplate": """a string that will go on the number plate of the car (max 8 characters). """
                 },
-                result="""returns true if the numberplate was changed successfully, or false if invalid arguments were passed """,
-            ),
-            name='setVehiclePlateText',
+                result='returns true if the numberplate was changed successfully, or false if invalid arguments were passed' ,
+            )
         )
         ],
     ),
@@ -11732,14 +11355,13 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the time delay (in milliseconds) the vehicle will remain wrecked before respawning. """,
+                description='This function sets the time delay (in milliseconds) the vehicle will remain wrecked before respawning.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to change the respawn delay of. """,
                     "timeDelay": """: The amount of milliseconds to delay. """
                 },
-                result="""returns true if the vehicle was found and edited. """,
-            ),
-            name='setVehicleRespawnDelay',
+                result='returns true if the vehicle was found and edited.' ,
+            )
         )
         ],
         client=[
@@ -11840,7 +11462,7 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the position (and rotation) the vehicle will respawn to. """,
+                description='This function sets the position (and rotation) the vehicle will respawn to.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to change the respawn position of. """,
                     "x": """: A floating point number representing the X coordinate on the map. """,
@@ -11850,9 +11472,8 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     "ry": """: A floating point number representing the rotation about the Y axis in Degrees. """,
                     "rz": """: A floating point number representing the rotation about the Z axis in Degrees. """
                 },
-                result="""returns true if the vehicle was found and edited, false otherwise. """,
-            ),
-            name='setVehicleRespawnPosition',
+                result='returns true if the vehicle was found and edited, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -11923,16 +11544,15 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the rotation the vehicle will respawn to. """,
+                description='This function sets the rotation the vehicle will respawn to.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to change the respawn position of. """,
                     "rx": """: A float representing the rotation about the X axis in degrees. """,
                     "ry": """: A float representing the rotation about the Y axis in degrees. """,
                     "rz": """: A float representing the rotation about the Z axis in degrees. """
                 },
-                result="""returns true if the vehicle respawn rotation was set successfully, false otherwise. """,
-            ),
-            name='setVehicleRespawnRotation',
+                result='returns true if the vehicle respawn rotation was set successfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -12063,7 +11683,7 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the properties of a vehicles siren point. """,
+                description='This function changes the properties of a vehicles siren point.' ,
                 arguments={
                     "theVehicle": """The vehicle to modify """,
                     "sirenPoint": """The siren point to modify """,
@@ -12076,9 +11696,8 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     "alpha": """The alpha of the siren from 0 to 255 """,
                     "minAlpha": """The minimum alpha of the light during day time """
                 },
-                result="""returns true if the siren point was successfully changed on the vehicle, false otherwise. """,
-            ),
-            name='setVehicleSirens',
+                result='returns true if the siren point was successfully changed on the vehicle, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -12204,7 +11823,7 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the properties of a vehicles siren point. """,
+                description='This function changes the properties of a vehicles siren point.' ,
                 arguments={
                     "theVehicle": """The vehicle to modify """,
                     "sirenPoint": """The siren point to modify """,
@@ -12217,9 +11836,8 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                     "alpha": """The alpha of the siren from 0 to 255 """,
                     "minAlpha": """The minimum alpha of the light during day time """
                 },
-                result="""returns true if the siren point was successfully changed on the vehicle, false otherwise. """,
-            ),
-            name='setVehicleSirens',
+                result='returns true if the siren point was successfully changed on the vehicle, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -12267,14 +11885,13 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the state of the sirens on the specified vehicle. """,
+                description='This function changes the state of the sirens on the specified vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle that will have the sirens set """,
                     "sirensOn": """The state to set the sirens to """
                 },
-                result="""returns true if the sirens are set for the specified vehicle, false if the sirens cant be set for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified. """,
-            ),
-            name='setVehicleSirensOn',
+                result='returns true if the sirens are set for the specified vehicle, false if the sirens cant be set for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified.' ,
+            )
         )
         ],
         client=[
@@ -12320,14 +11937,13 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the state of the sirens on the specified vehicle. """,
+                description='This function changes the state of the sirens on the specified vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle that will have the sirens set """,
                     "sirensOn": """The state to set the sirens to """
                 },
-                result="""returns true if the sirens are set for the specified vehicle, false if the sirens cant be set for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified. """,
-            ),
-            name='setVehicleSirensOn',
+                result='returns true if the sirens are set for the specified vehicle, false if the sirens cant be set for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified.' ,
+            )
         )
         ],
     ),
@@ -12375,14 +11991,13 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will set the taxi light on in a taxi (vehicle IDs 420 and 438) """,
+                description='This function will set the taxi light on in a taxi (vehicle IDs 420 and 438)' ,
                 arguments={
                     "taxi": """The vehicle element of the taxi that you wish to turn the light on. """,
                     "LightState": """whether the light is on. True for on, False for off. """
                 },
-                result="""returns true if the state was successfully set, false otherwise. """,
-            ),
-            name='setVehicleTaxiLightOn',
+                result='returns true if the state was successfully set, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -12428,14 +12043,13 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will set the taxi light on in a taxi (vehicle IDs 420 and 438) """,
+                description='This function will set the taxi light on in a taxi (vehicle IDs 420 and 438)' ,
                 arguments={
                     "taxi": """The vehicle element of the taxi that you wish to turn the light on. """,
                     "LightState": """whether the light is on. True for on, False for off. """
                 },
-                result="""returns true if the state was successfully set, false otherwise. """,
-            ),
-            name='setVehicleTaxiLightOn',
+                result='returns true if the state was successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -12493,15 +12107,14 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the position of a vehicles turret, if it has one. This can be used to influence the turrets rotation, so it doesnt follow the camera. Vehicles with turrets include firetrucks and tanks. """,
+                description='This function sets the position of a vehicles turret, if it has one. This can be used to influence the turrets rotation, so it doesnt follow the camera. Vehicles with turrets include firetrucks and tanks.' ,
                 arguments={
                     "turretVehicle": """: The vehicle whose turret position you want to retrieve. This should be a vehicle with a turret. """,
                     "positionX": """: The horizontal position of the turret. In radians """,
                     "positionY": """: The vertical position of the turret. In radians """
                 },
-                result="""returns a true if a valid vehicle element and valid positions were passed, false otherwise. """,
-            ),
-            name='setVehicleTurretPosition',
+                result='returns a true if a valid vehicle element and valid positions were passed, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -12557,15 +12170,14 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the position of a vehicles turret, if it has one. This can be used to influence the turrets rotation, so it doesnt follow the camera. Vehicles with turrets include firetrucks and tanks. """,
+                description='This function sets the position of a vehicles turret, if it has one. This can be used to influence the turrets rotation, so it doesnt follow the camera. Vehicles with turrets include firetrucks and tanks.' ,
                 arguments={
                     "turretVehicle": """: The vehicle whose turret position you want to retrieve. This should be a vehicle with a turret. """,
                     "positionX": """: The horizontal position of the turret. In radians """,
                     "positionY": """: The vertical position of the turret. In radians """
                 },
-                result="""returns a true if a valid vehicle element and valid positions were passed, false otherwise. """,
-            ),
-            name='setVehicleTurretPosition',
+                result='returns a true if a valid vehicle element and valid positions were passed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -12623,18 +12235,14 @@ It now also changes the numberplate text of any vehicle that has visual numberpl
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the variant of a specified vehicle. In GTA SA some vehicles are different for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default GTA SA variant list see: Vehicle variants """,
+                description='This function sets the variant of a specified vehicle. In GTA SA some vehicles are different for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default GTA SA variant list see: Vehicle variants' ,
                 arguments={
                     "theVehicle": """A handle to the vehicle that you want to get the variant of. """,
                     "variant1": """: An integer for the first variant see Vehicle variants """,
                     "variant2": """: An integer for the second variant see Vehicle variants """
                 },
-                result="""on success:
-* bool: returns true as the vehicle variants were successfully set.
-on failure:
-* bool: false because the specified vehicle didnt exist or specified variants were invalid. """,
-            ),
-            name='setVehicleVariant',
+                result='on success:\n* bool: returns true as the vehicle variants were successfully set.\non failure:\n* bool: false because the specified vehicle didnt exist or specified variants were invalid.' ,
+            )
         )
         ],
         client=[
@@ -12690,18 +12298,14 @@ on failure:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the variant of a specified vehicle. In GTA SA some vehicles are different for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default GTA SA variant list see: Vehicle variants """,
+                description='This function sets the variant of a specified vehicle. In GTA SA some vehicles are different for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default GTA SA variant list see: Vehicle variants' ,
                 arguments={
                     "theVehicle": """A handle to the vehicle that you want to get the variant of. """,
                     "variant1": """: An integer for the first variant see Vehicle variants """,
                     "variant2": """: An integer for the second variant see Vehicle variants """
                 },
-                result="""on success:
-* bool: returns true as the vehicle variants were successfully set.
-on failure:
-* bool: false because the specified vehicle didnt exist or specified variants were invalid. """,
-            ),
-            name='setVehicleVariant',
+                result='on success:\n* bool: returns true as the vehicle variants were successfully set.\non failure:\n* bool: false because the specified vehicle didnt exist or specified variants were invalid.' ,
+            )
         )
         ],
     ),
@@ -12752,14 +12356,13 @@ on failure:
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theVehicle": """: The vehicle whose wheel scale you wish to modify. """,
                     "wheelScale": """: The wheel scale value to set. """
                 },
-                result="""returns true if the wheel scale has been set successfully, or an error if some parameter is invalid. """,
-            ),
-            name='setVehicleWheelScale',
+                result='returns true if the wheel scale has been set successfully, or an error if some parameter is invalid.' ,
+            )
         )
         ],
     ),
@@ -12837,8 +12440,7 @@ on failure:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the state of wheels on the vehicle.
-Internally, no vehicles have more than 4 wheels. If they appear to, they will be duplicating other wheels. """,
+                description='This function sets the state of wheels on the vehicle.\nInternally, no vehicles have more than 4 wheels. If they appear to, they will be duplicating other wheels.' ,
                 arguments={
                     "theVehicle": """A handle to the vehicle that you wish to change the wheel states of. """,
                     "frontLeft": """A whole number representing the wheel state (-1 for no change) """,
@@ -12846,9 +12448,8 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                     "frontRight": """A whole number representing the wheel state (-1 for no change) """,
                     "rearRight": """A whole number representing the wheel state (-1 for no change) """
                 },
-                result="""returns a boolean value true or false that tells you if it was successful or not. """,
-            ),
-            name='setVehicleWheelStates',
+                result='returns a boolean value true or false that tells you if it was successful or not.' ,
+            )
         )
         ],
         client=[
@@ -12924,8 +12525,7 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the state of wheels on the vehicle.
-Internally, no vehicles have more than 4 wheels. If they appear to, they will be duplicating other wheels. """,
+                description='This function sets the state of wheels on the vehicle.\nInternally, no vehicles have more than 4 wheels. If they appear to, they will be duplicating other wheels.' ,
                 arguments={
                     "theVehicle": """A handle to the vehicle that you wish to change the wheel states of. """,
                     "frontLeft": """A whole number representing the wheel state (-1 for no change) """,
@@ -12933,9 +12533,8 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                     "frontRight": """A whole number representing the wheel state (-1 for no change) """,
                     "rearRight": """A whole number representing the wheel state (-1 for no change) """
                 },
-                result="""returns a boolean value true or false that tells you if it was successful or not. """,
-            ),
-            name='setVehicleWheelStates',
+                result='returns a boolean value true or false that tells you if it was successful or not.' ,
+            )
         )
         ],
     ),
@@ -12996,7 +12595,7 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theVehicle": """The vehicle that you wish to change the window state. """,
                     "window": """An integer representing window. """,
@@ -13009,14 +12608,8 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                     "6": """windshield """,
                     "open": """Boolean which represent window open state. """
                 },
-                result="""* when the vehicle is not streamed in:
-** if the window id does lie within the acceptable list of values, it will return true
-** if the window id does not lie within the acceptable list of values, it will return false
-* when the vehicle is streamed in:
-** if the vehicle has the window, it will return true
-** if the vehicle does not have the window, it will return false """,
-            ),
-            name='setVehicleWindowOpen',
+                result='* when the vehicle is not streamed in:\n** if the window id does lie within the acceptable list of values, it will return true\n** if the window id does not lie within the acceptable list of values, it will return false\n* when the vehicle is streamed in:\n** if the vehicle has the window, it will return true\n** if the vehicle does not have the window, it will return false' ,
+            )
         )
         ],
     ),
@@ -13114,7 +12707,7 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                 ],
             ),
             docs=FunctionDoc(
-                description="""Spawns a vehicle at any given position and rotation """,
+                description='Spawns a vehicle at any given position and rotation' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to spawn """,
                     "x": """The x position you wish to spawn the vehicle at """,
@@ -13124,9 +12717,8 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                     "ry": """The y rotation you wish to spawn the vehicle at """,
                     "rz": """The z rotation you wish to spawn the vehicle at """
                 },
-                result="""returns true if the vehicle spawned successfully, false if the passed argument does not exist or is not a vehicle. """,
-            ),
-            name='spawnVehicle',
+                result='returns true if the vehicle spawned successfully, false if the passed argument does not exist or is not a vehicle.' ,
+            )
         )
         ],
         client=[
@@ -13177,14 +12769,13 @@ Internally, no vehicles have more than 4 wheels. If they appear to, they will be
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function toggles whether or not the vehicle will be respawned after blown or idle. """,
+                description='This function toggles whether or not the vehicle will be respawned after blown or idle.' ,
                 arguments={
                     "theVehicle": """: The vehicle you wish to toggle the respawning of. """,
                     "Respawn": """: A boolean determining if the vehicle will respawn or not. """
                 },
-                result="""returns true if the vehicle was found and edited. """,
-            ),
-            name='toggleVehicleRespawn',
+                result='returns true if the vehicle was found and edited.' ,
+            )
         )
         ],
         client=[

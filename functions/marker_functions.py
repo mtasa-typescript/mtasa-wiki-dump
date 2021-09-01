@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -133,12 +133,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a marker. A marker is a 3D model in the world that can highlight a particular point or area, often used to instruct players where to go to perform actions such as entering buildings.
-There are various limits that govern the maximum number of each type that can be visible at once. These are:
-* Coronas: 32
-* Checkpoints, Rings, Cylinders and Arrows combined: 32
-You are able to create as many markers as you wish (memory and element limit permitting), but the player will only be able to see the nearest ones up to the limit.
-<br><br><br><br> """,
+                description='This function creates a marker. A marker is a 3D model in the world that can highlight a particular point or area, often used to instruct players where to go to perform actions such as entering buildings.\nThere are various limits that govern the maximum number of each type that can be visible at once. These are:\n* Coronas: 32\n* Checkpoints, Rings, Cylinders and Arrows combined: 32\nYou are able to create as many markers as you wish (memory and element limit permitting), but the player will only be able to see the nearest ones up to the limit.\n<br><br><br><br>' ,
                 arguments={
                     "x": """: A floating point number representing the X coordinate on the map. """,
                     "y": """: A floating point number representing the Y coordinate on the map. """,
@@ -151,9 +146,8 @@ You are able to create as many markers as you wish (memory and element limit per
                     "a": """: An integer number representing the amount of alpha to use in the colouring of the marker (0 - 255 where 0 is transparent and 255 is opaque). """,
                     "visibleTo": """: This defines which elements can see the marker. Defaults to visible to everyone. See visibility. """
                 },
-                result=""" """,
-            ),
-            name='createMarker',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -269,12 +263,7 @@ You are able to create as many markers as you wish (memory and element limit per
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a marker. A marker is a 3D model in the world that can highlight a particular point or area, often used to instruct players where to go to perform actions such as entering buildings.
-There are various limits that govern the maximum number of each type that can be visible at once. These are:
-* Coronas: 32
-* Checkpoints, Rings, Cylinders and Arrows combined: 32
-You are able to create as many markers as you wish (memory and element limit permitting), but the player will only be able to see the nearest ones up to the limit.
-<br><br><br><br> """,
+                description='This function creates a marker. A marker is a 3D model in the world that can highlight a particular point or area, often used to instruct players where to go to perform actions such as entering buildings.\nThere are various limits that govern the maximum number of each type that can be visible at once. These are:\n* Coronas: 32\n* Checkpoints, Rings, Cylinders and Arrows combined: 32\nYou are able to create as many markers as you wish (memory and element limit permitting), but the player will only be able to see the nearest ones up to the limit.\n<br><br><br><br>' ,
                 arguments={
                     "x": """: A floating point number representing the X coordinate on the map. """,
                     "y": """: A floating point number representing the Y coordinate on the map. """,
@@ -286,9 +275,8 @@ You are able to create as many markers as you wish (memory and element limit per
                     "b": """: An integer number representing the amount of blue to use in the colouring of the marker (0 - 255). """,
                     "a": """: An integer number representing the amount of alpha to use in the colouring of the marker (0 - 255 where 0 is transparent and 255 is opaque). """
                 },
-                result=""" """,
-            ),
-            name='createMarker',
+                result='' ,
+            )
         )
         ],
     ),
@@ -338,13 +326,12 @@ You are able to create as many markers as you wish (memory and element limit per
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the color and transparency for a marker element. Not all marker types support transparency. """,
+                description='This function returns the color and transparency for a marker element. Not all marker types support transparency.' ,
                 arguments={
                     "theMarker": """: The marker that you wish to retrieve the color of. """
                 },
-                result="""returns four ints corresponding to the amount of red, green, blue and alpha (respectively) of the marker, false if invalid arguments were passed. """,
-            ),
-            name='getMarkerColor',
+                result='returns four ints corresponding to the amount of red, green, blue and alpha (respectively) of the marker, false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -392,13 +379,12 @@ You are able to create as many markers as you wish (memory and element limit per
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the color and transparency for a marker element. Not all marker types support transparency. """,
+                description='This function returns the color and transparency for a marker element. Not all marker types support transparency.' ,
                 arguments={
                     "theMarker": """: The marker that you wish to retrieve the color of. """
                 },
-                result="""returns four ints corresponding to the amount of red, green, blue and alpha (respectively) of the marker, false if invalid arguments were passed. """,
-            ),
-            name='getMarkerColor',
+                result='returns four ints corresponding to the amount of red, green, blue and alpha (respectively) of the marker, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -427,13 +413,12 @@ You are able to create as many markers as you wish (memory and element limit per
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the number of markers that currently exist in the world. """,
+                description='Returns the number of markers that currently exist in the world.' ,
                 arguments={
                     
                 },
-                result="""returns the number of markers that currently exist. """,
-            ),
-            name='getMarkerCount',
+                result='returns the number of markers that currently exist.' ,
+            )
         )
         ],
         client=[
@@ -460,13 +445,12 @@ You are able to create as many markers as you wish (memory and element limit per
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the number of markers that currently exist in the world. """,
+                description='Returns the number of markers that currently exist in the world.' ,
                 arguments={
                     
                 },
-                result="""returns the number of markers that currently exist. """,
-            ),
-            name='getMarkerCount',
+                result='returns the number of markers that currently exist.' ,
+            )
         )
         ],
     ),
@@ -504,16 +488,12 @@ You are able to create as many markers as you wish (memory and element limit per
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the icon name for a marker. """,
+                description='This function returns the icon name for a marker.' ,
                 arguments={
                     "theMarker": """: A marker element referencing the specified marker. """
                 },
-                result="""returns false if the marker passed is invalid or a string containing one of the following:
-* none: no icon
-* arrow: arrow icon
-* finish: finish (end-race) icon """,
-            ),
-            name='getMarkerIcon',
+                result='returns false if the marker passed is invalid or a string containing one of the following:\n* none: no icon\n* arrow: arrow icon\n* finish: finish (end-race) icon' ,
+            )
         )
         ],
         client=[
@@ -549,16 +529,12 @@ You are able to create as many markers as you wish (memory and element limit per
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the icon name for a marker. """,
+                description='This function returns the icon name for a marker.' ,
                 arguments={
                     "theMarker": """: A marker element referencing the specified marker. """
                 },
-                result="""returns false if the marker passed is invalid or a string containing one of the following:
-* none: no icon
-* arrow: arrow icon
-* finish: finish (end-race) icon """,
-            ),
-            name='getMarkerIcon',
+                result='returns false if the marker passed is invalid or a string containing one of the following:\n* none: no icon\n* arrow: arrow icon\n* finish: finish (end-race) icon' ,
+            )
         )
         ],
     ),
@@ -596,13 +572,12 @@ You are able to create as many markers as you wish (memory and element limit per
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a float containing the size of the specified marker. """,
+                description='This function returns a float containing the size of the specified marker.' ,
                 arguments={
                     "myMarker": """: The marker that you wish to retrieve the size of. """
                 },
-                result="""returns a float containing the size of the specified marker. """,
-            ),
-            name='getMarkerSize',
+                result='returns a float containing the size of the specified marker.' ,
+            )
         )
         ],
         client=[
@@ -638,13 +613,12 @@ You are able to create as many markers as you wish (memory and element limit per
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a float containing the size of the specified marker. """,
+                description='This function returns a float containing the size of the specified marker.' ,
                 arguments={
                     "myMarker": """: The marker that you wish to retrieve the size of. """
                 },
-                result="""returns a float containing the size of the specified marker. """,
-            ),
-            name='getMarkerSize',
+                result='returns a float containing the size of the specified marker.' ,
+            )
         )
         ],
     ),
@@ -690,13 +664,12 @@ You are able to create as many markers as you wish (memory and element limit per
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the position of the specified markers target, the position it points to. This only works for checkpoint markers and ring markers. For checkpoints it returns the position the arrow is pointing to, for ring markers it returns the position the ring is facing. You can set this target with setMarkerTarget. """,
+                description='This function returns the position of the specified markers target, the position it points to. This only works for checkpoint markers and ring markers. For checkpoints it returns the position the arrow is pointing to, for ring markers it returns the position the ring is facing. You can set this target with setMarkerTarget.' ,
                 arguments={
                     "theMarker": """The marker you wish to retrieve the target position of. """
                 },
-                result="""returns three floats if a target is set, or false in the first variable and nil in the two others if the marker is invalid or no target is set. """,
-            ),
-            name='getMarkerTarget',
+                result='returns three floats if a target is set, or false in the first variable and nil in the two others if the marker is invalid or no target is set.' ,
+            )
         )
         ],
         client=[
@@ -740,13 +713,12 @@ You are able to create as many markers as you wish (memory and element limit per
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the position of the specified markers target, the position it points to. This only works for checkpoint markers and ring markers. For checkpoints it returns the position the arrow is pointing to, for ring markers it returns the position the ring is facing. You can set this target with setMarkerTarget. """,
+                description='This function returns the position of the specified markers target, the position it points to. This only works for checkpoint markers and ring markers. For checkpoints it returns the position the arrow is pointing to, for ring markers it returns the position the ring is facing. You can set this target with setMarkerTarget.' ,
                 arguments={
                     "theMarker": """The marker you wish to retrieve the target position of. """
                 },
-                result="""returns three floats if a target is set, or false in the first variable and nil in the two others if the marker is invalid or no target is set. """,
-            ),
-            name='getMarkerTarget',
+                result='returns three floats if a target is set, or false in the first variable and nil in the two others if the marker is invalid or no target is set.' ,
+            )
         )
         ],
     ),
@@ -784,14 +756,12 @@ You are able to create as many markers as you wish (memory and element limit per
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a markers type. """,
+                description='This function returns a markers type.' ,
                 arguments={
                     "theMarker": """: A marker element referencing the specified marker. """
                 },
-                result="""* returns one of the following strings:
-if an invalid marker is specified, false is returned. """,
-            ),
-            name='getMarkerType',
+                result='* returns one of the following strings:\nif an invalid marker is specified, false is returned.' ,
+            )
         )
         ],
         client=[
@@ -827,14 +797,12 @@ if an invalid marker is specified, false is returned. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a markers type. """,
+                description='This function returns a markers type.' ,
                 arguments={
                     "theMarker": """: A marker element referencing the specified marker. """
                 },
-                result="""* returns one of the following strings:
-if an invalid marker is specified, false is returned. """,
-            ),
-            name='getMarkerType',
+                result='* returns one of the following strings:\nif an invalid marker is specified, false is returned.' ,
+            )
         )
         ],
     ),
@@ -912,7 +880,7 @@ if an invalid marker is specified, false is returned. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the color of the specified marker by modifying the values for red, green, blue and alpha. """,
+                description='This function sets the color of the specified marker by modifying the values for red, green, blue and alpha.' ,
                 arguments={
                     "theMarker": """The marker that you wish to set the color of. """,
                     "r": """The amount of red in the final color (0 to 255). """,
@@ -920,9 +888,8 @@ if an invalid marker is specified, false is returned. """,
                     "b": """The amount of blue in the final color (0 to 255). """,
                     "a": """The amount of alpha in the final color (0 to 255). """
                 },
-                result=""" """,
-            ),
-            name='setMarkerColor',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -998,7 +965,7 @@ if an invalid marker is specified, false is returned. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the color of the specified marker by modifying the values for red, green, blue and alpha. """,
+                description='This function sets the color of the specified marker by modifying the values for red, green, blue and alpha.' ,
                 arguments={
                     "theMarker": """The marker that you wish to set the color of. """,
                     "r": """The amount of red in the final color (0 to 255). """,
@@ -1006,9 +973,8 @@ if an invalid marker is specified, false is returned. """,
                     "b": """The amount of blue in the final color (0 to 255). """,
                     "a": """The amount of alpha in the final color (0 to 255). """
                 },
-                result=""" """,
-            ),
-            name='setMarkerColor',
+                result='' ,
+            )
         )
         ],
     ),
@@ -1056,7 +1022,7 @@ if an invalid marker is specified, false is returned. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows changing the icon of a checkpoint marker. """,
+                description='This function allows changing the icon of a checkpoint marker.' ,
                 arguments={
                     "theMarker": """The marker to change the visual style of """,
                     "icon": """A string referring to the type of icon, acceptable values are: """,
@@ -1064,9 +1030,8 @@ if an invalid marker is specified, false is returned. """,
                     "arrow": """: Arrow icon """,
                     "finish": """: Finish icon (at end of race) """
                 },
-                result=""" """,
-            ),
-            name='setMarkerIcon',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -1112,7 +1077,7 @@ if an invalid marker is specified, false is returned. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows changing the icon of a checkpoint marker. """,
+                description='This function allows changing the icon of a checkpoint marker.' ,
                 arguments={
                     "theMarker": """The marker to change the visual style of """,
                     "icon": """A string referring to the type of icon, acceptable values are: """,
@@ -1120,9 +1085,8 @@ if an invalid marker is specified, false is returned. """,
                     "arrow": """: Arrow icon """,
                     "finish": """: Finish icon (at end of race) """
                 },
-                result=""" """,
-            ),
-            name='setMarkerIcon',
+                result='' ,
+            )
         )
         ],
     ),
@@ -1170,19 +1134,13 @@ if an invalid marker is specified, false is returned. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the size of the specified marker.
-Setting negative value will flip the marker, do nothing or make it invisible:
-* cylinder or arrow: upside down
-* ring: inside out
-* checkpoint: disappear
-* corona: bigger """,
+                description='This function sets the size of the specified marker.\nSetting negative value will flip the marker, do nothing or make it invisible:\n* cylinder or arrow: upside down\n* ring: inside out\n* checkpoint: disappear\n* corona: bigger' ,
                 arguments={
                     "theMarker": """The marker that you wish to set the size of. """,
                     "size": """A float representing new size of the marker. """
                 },
-                result="""returns true if successful, false if failed. """,
-            ),
-            name='setMarkerSize',
+                result='returns true if successful, false if failed.' ,
+            )
         )
         ],
         client=[
@@ -1228,19 +1186,13 @@ Setting negative value will flip the marker, do nothing or make it invisible:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the size of the specified marker.
-Setting negative value will flip the marker, do nothing or make it invisible:
-* cylinder or arrow: upside down
-* ring: inside out
-* checkpoint: disappear
-* corona: bigger """,
+                description='This function sets the size of the specified marker.\nSetting negative value will flip the marker, do nothing or make it invisible:\n* cylinder or arrow: upside down\n* ring: inside out\n* checkpoint: disappear\n* corona: bigger' ,
                 arguments={
                     "theMarker": """The marker that you wish to set the size of. """,
                     "size": """A float representing new size of the marker. """
                 },
-                result="""returns true if successful, false if failed. """,
-            ),
-            name='setMarkerSize',
+                result='returns true if successful, false if failed.' ,
+            )
         )
         ],
     ),
@@ -1308,20 +1260,15 @@ Setting negative value will flip the marker, do nothing or make it invisible:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the target for a marker. Only the checkpoint and ring marker types can have a target.
-For checkpoint markers, the target is shown as an arrow aiming at the point specified.
-For ring markers, the target is shown by rotating the whole ring so that it faces the point specified.
-This function is most useful for setting up markers for races, where each marker points to the next ones position.
-(This is mostly used in races!) """,
+                description='This function sets the target for a marker. Only the checkpoint and ring marker types can have a target.\nFor checkpoint markers, the target is shown as an arrow aiming at the point specified.\nFor ring markers, the target is shown by rotating the whole ring so that it faces the point specified.\nThis function is most useful for setting up markers for races, where each marker points to the next ones position.\n(This is mostly used in races!)' ,
                 arguments={
                     "theMarker": """The marker to set the target of """,
                     "x": """The x axis of the coordinate to target the marker at """,
                     "y": """The y axis of the coordinate to target the marker at """,
                     "z": """The z axis of the coordinate to target the marker at """
                 },
-                result="""returns true if target was set, false otherwise. """,
-            ),
-            name='setMarkerTarget',
+                result='returns true if target was set, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1387,20 +1334,15 @@ This function is most useful for setting up markers for races, where each marker
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the target for a marker. Only the checkpoint and ring marker types can have a target.
-For checkpoint markers, the target is shown as an arrow aiming at the point specified.
-For ring markers, the target is shown by rotating the whole ring so that it faces the point specified.
-This function is most useful for setting up markers for races, where each marker points to the next ones position.
-(This is mostly used in races!) """,
+                description='This function sets the target for a marker. Only the checkpoint and ring marker types can have a target.\nFor checkpoint markers, the target is shown as an arrow aiming at the point specified.\nFor ring markers, the target is shown by rotating the whole ring so that it faces the point specified.\nThis function is most useful for setting up markers for races, where each marker points to the next ones position.\n(This is mostly used in races!)' ,
                 arguments={
                     "theMarker": """The marker to set the target of """,
                     "x": """The x axis of the coordinate to target the marker at """,
                     "y": """The y axis of the coordinate to target the marker at """,
                     "z": """The z axis of the coordinate to target the marker at """
                 },
-                result="""returns true if target was set, false otherwise. """,
-            ),
-            name='setMarkerTarget',
+                result='returns true if target was set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1448,14 +1390,13 @@ This function is most useful for setting up markers for races, where each marker
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes a markers type. The type controls how the marker is displayed in the game. Its important that you use marker types that users are used to from the single player game. For example, checkpoints are used in races, rings are used for aircraft races, arrows are used for entering buildings etc. """,
+                description='This function changes a markers type. The type controls how the marker is displayed in the game. Its important that you use marker types that users are used to from the single player game. For example, checkpoints are used in races, rings are used for aircraft races, arrows are used for entering buildings etc.' ,
                 arguments={
                     "theMarker": """: A marker element referencing the specified marker. """,
                     "markerType": """: A string denoting the marker type. Valid values are: """
                 },
-                result="""returns true if the marker type was changed, false if it wasnt or marker values were invalid. """,
-            ),
-            name='setMarkerType',
+                result='returns true if the marker type was changed, false if it wasnt or marker values were invalid.' ,
+            )
         )
         ],
         client=[
@@ -1501,14 +1442,13 @@ This function is most useful for setting up markers for races, where each marker
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes a markers type. The type controls how the marker is displayed in the game. Its important that you use marker types that users are used to from the single player game. For example, checkpoints are used in races, rings are used for aircraft races, arrows are used for entering buildings etc. """,
+                description='This function changes a markers type. The type controls how the marker is displayed in the game. Its important that you use marker types that users are used to from the single player game. For example, checkpoints are used in races, rings are used for aircraft races, arrows are used for entering buildings etc.' ,
                 arguments={
                     "theMarker": """: A marker element referencing the specified marker. """,
                     "markerType": """: A string denoting the marker type. Valid values are: """
                 },
-                result="""returns true if the marker type was changed, false if it wasnt or marker values were invalid. """,
-            ),
-            name='setMarkerType',
+                result='returns true if the marker type was changed, false if it wasnt or marker values were invalid.' ,
+            )
         )
         ],
     )

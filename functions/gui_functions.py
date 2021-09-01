@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -46,8 +46,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns information about how the chatbox looks.
-These values come from the file called: Chatboxpresets.xml but it depends on what type of preset you currently have, which is chosen from your settings in the Interface tab. """,
+                description='Returns information about how the chatbox looks.\nThese values come from the file called: Chatboxpresets.xml but it depends on what type of preset you currently have, which is chosen from your settings in the Interface tab.' ,
                 arguments={
                     "CVar": """the name of the property you want returned. Can be the following values: """,
                     "chat_font": """- Returns the chatbox font """,
@@ -71,13 +70,8 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                     "chat_use_cegui": """- Returns whether CEGUI is used to render the chatbox """,
                     "text_scale": """- Returns text scale """
                 },
-                result="""*4 numbers if the cvar contains color
-*2 numbers if chat_scale was entered
-*1 number if any other cvar was specified
-*a table of all cvar values, if cvar was not specified
-*false if an invalid cvar was specified """,
-            ),
-            name='getChatboxLayout',
+                result='*4 numbers if the cvar contains color\n*2 numbers if chat_scale was entered\n*1 number if any other cvar was specified\n*a table of all cvar values, if cvar was not specified\n*false if an invalid cvar was specified' ,
+            )
         )
         ],
     ),
@@ -118,13 +112,12 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "guiElement": """the GUI element that you want to defocus """
                 },
-                result="""returns true if the function was successful, false otherwise. """,
-            ),
-            name='guiBlur',
+                result='returns true if the function was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -165,13 +158,12 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function brings a GUI element on top of others. """,
+                description='This function brings a GUI element on top of others.' ,
                 arguments={
                     "guiElement": """the GUI element that you want to move to the front. """
                 },
-                result="""returns true if the function was successful, false otherwise. """,
-            ),
-            name='guiBringToFront',
+                result='returns true if the function was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -212,13 +204,12 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets a checkboxs selection state. """,
+                description='This function gets a checkboxs selection state.' ,
                 arguments={
                     "theCheckbox": """The checkbox you wish to retrieve the selection state of. """
                 },
-                result="""returns true if the checkbox is selected, false if it is not. """,
-            ),
-            name='guiCheckBoxGetSelected',
+                result='returns true if the checkbox is selected, false if it is not.' ,
+            )
         )
         ],
     ),
@@ -269,14 +260,13 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function selects (ticks) or unselects a checkbox. """,
+                description='This function selects (ticks) or unselects a checkbox.' ,
                 arguments={
                     "theCheckbox": """The GUI element in which you wish to change the selection state of """,
                     "state": """The state of the checkbox, where true indicates selected, and false indicates unselected. """
                 },
-                result="""returns true if the checkboxs selection state was successfully set, false otherwise. """,
-            ),
-            name='guiCheckBoxSetSelected',
+                result='returns true if the checkboxs selection state was successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -327,14 +317,13 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 ],
             ),
             docs=FunctionDoc(
-                description="""Adds an item to a combobox. """,
+                description='Adds an item to a combobox.' ,
                 arguments={
                     "comboBox": """The combobox you want to add a row to """,
                     "value": """The text that the item will contain. """
                 },
-                result="""returns the item id if it has been created, false otherwise. """,
-            ),
-            name='guiComboBoxAddItem',
+                result='returns the item id if it has been created, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -375,13 +364,12 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes all the items from a combobox. """,
+                description='This function removes all the items from a combobox.' ,
                 arguments={
                     "comboBox": """The combobox element to be cleared """
                 },
-                result="""returns true if the combobox element is valid and has been cleared successfully, false otherwise. """,
-            ),
-            name='guiComboBoxClear',
+                result='returns true if the combobox element is valid and has been cleared successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -422,13 +410,12 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "comboBox": """The combo box to get the number of items from. """
                 },
-                result="""returns the number of items if the function is successful, false otherwise. """,
-            ),
-            name='guiComboBoxGetItemCount',
+                result='returns the number of items if the function is successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -479,14 +466,13 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the text from a specific combobox item. """,
+                description='This function retrieves the text from a specific combobox item.' ,
                 arguments={
                     "comboBox": """The combobox containing the item youre interested in """,
                     "itemId": """The index of the item """
                 },
-                result="""returns the text of the item if the arguments are right, false otherwise. """,
-            ),
-            name='guiComboBoxGetItemText',
+                result='returns the text of the item if the arguments are right, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -527,13 +513,12 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the index of the selected combobox item. """,
+                description='This function returns the index of the selected combobox item.' ,
                 arguments={
                     "comboBox": """the combobox you want to know the selected item index of """
                 },
-                result="""returns the index of the selected item if the specified combobox is valid and has a selected item, -1 if no item is selected, nil otherwise. """,
-            ),
-            name='guiComboBoxGetSelected',
+                result='returns the index of the selected item if the specified combobox is valid and has a selected item, -1 if no item is selected, nil otherwise.' ,
+            )
         )
         ],
     ),
@@ -574,13 +559,12 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "comboBox": """The combo box to get the state. """
                 },
-                result="""returns true if combobox is opened, false if combobox is closed, nil otherwise. """,
-            ),
-            name='guiComboBoxIsOpen',
+                result='returns true if combobox is opened, false if combobox is closed, nil otherwise.' ,
+            )
         )
         ],
     ),
@@ -631,14 +615,13 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes an item from a combobox. """,
+                description='This function removes an item from a combobox.' ,
                 arguments={
                     "comboBox": """The combobox containing the item youre interested in """,
                     "itemId": """The index of the item to remove """
                 },
-                result="""returns true if the item was removes successfully, false otherwise. """,
-            ),
-            name='guiComboBoxRemoveItem',
+                result='returns true if the item was removes successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -699,15 +682,14 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the text of a combobox item. """,
+                description='This function changes the text of a combobox item.' ,
                 arguments={
                     "comboBox": """The combobox containing the item youre interested in """,
                     "itemId": """The index of the item """,
                     "text": """The text you want to put in (does NOT accept numbers, use tostring() for that) """
                 },
-                result="""returns true if the text was set successfully, false otherwise. """,
-            ),
-            name='guiComboBoxSetItemText',
+                result='returns true if the text was set successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -758,14 +740,13 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "comboBox": """The combobox to be opened or closed. """,
                     "state": """The state of combobox. true, if the combobox is to be opened. false if the combobox is to be closed. """
                 },
-                result="""returns true if is successful, false otherwise. """,
-            ),
-            name='guiComboBoxSetOpen',
+                result='returns true if is successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -816,14 +797,13 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the selected item from a combobox. """,
+                description='This function sets the selected item from a combobox.' ,
                 arguments={
                     "comboBox": """the combobox you want to select an item from """,
                     "itemIndex": """the item you want to select (item 0 is the first item). If -1 is specified, then the combo box text is set to its caption. """
                 },
-                result="""returns true if the selected item has been changed successfully, false otherwise. """,
-            ),
-            name='guiComboBoxSetSelected',
+                result='returns true if the selected item has been changed successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -934,9 +914,7 @@ These values come from the file called: Chatboxpresets.xml but it depends on wha
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a new CEGUI web Element/Browser|browser element.
-<br>The difference between this, and createBrowser is that, this handles inputs internally, and it can be attached to GUI windows. So this one is more suitable for custom dx based interfaces.
-You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-browser-vs-gui-browser/?do=findComment&comment=737334 here. """,
+                description='This function creates a new CEGUI web Element/Browser|browser element.\n<br>The difference between this, and createBrowser is that, this handles inputs internally, and it can be attached to GUI windows. So this one is more suitable for custom dx based interfaces.\nYou can learn more about the differences https://forum.mtasa.com/topic/80422-dx-browser-vs-gui-browser/?do=findComment&comment=737334 here.' ,
                 arguments={
                     "x": """A float of the 2D x position of the browser on a players screen.  This is affected by the relative argument. """,
                     "y": """A float of the 2D y position of the browser on a players screen. This is affected by the relative argument. """,
@@ -947,9 +925,8 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                     "isRelative": """This is whether sizes and positioning are relative.  If this is true, then all x,y,width,height floats must be between 0 and 1, representing sizes/positions as a fraction of the screen size. If false, then the size and co-ordinates are based on clients resolution, accessible using guiGetScreenSize. """,
                     "parent": """This is the parent that the radio button is attached to. If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
-                result="""returns a gui-browser element if it was created successfully, false otherwise. returns also false, if the user disabled remote pages and islocal was set to false. """,
-            ),
-            name='guiCreateBrowser',
+                result='returns a gui-browser element if it was created successfully, false otherwise. returns also false, if the user disabled remote pages and islocal was set to false.' ,
+            )
         )
         ],
     ),
@@ -1050,7 +1027,7 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows creation of a GUI Button, which is a clickable item as part of GUI. """,
+                description='This function allows creation of a GUI Button, which is a clickable item as part of GUI.' ,
                 arguments={
                     "x": """A float of the 2D x position of the GUI button on a players screen.  This is affected by the relative argument. """,
                     "y": """A float of the 2D y position of the GUI button on a players screen. This is affected by the relative argument. """,
@@ -1060,9 +1037,8 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                     "relative": """This is whether sizes and positioning are relative.  If this is true, then all x, y, width and height floats must be between 0 and 1, representing sizes relative to the parent. """,
                     "parent": """This is the parent that the gui button is attached to.  If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
-                result="""returns an element of the created element/gui/button|button if it was successfully created, false otherwise. """,
-            ),
-            name='guiCreateButton',
+                result='returns an element of the created element/gui/button|button if it was successfully created, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1173,7 +1149,7 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a Element/GUI/Checkbox|checkbox. """,
+                description='This function creates a Element/GUI/Checkbox|checkbox.' ,
                 arguments={
                     "x": """A float of the 2D x position of the checkbox on a players screen. This is affected by the relative argument. """,
                     "y": """A float of the 2D y position of the checkbox on a players screen. This is affected by the relative argument. """,
@@ -1184,9 +1160,8 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                     "relative": """This is whether sizes and positioning are relative. If this is true, then all x,y,width,height floats must be between 0 and 1, representing measures relative to the parent. """,
                     "parent": """This is the parent that the checkbox is attached to. If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
-                result="""returns element of the checkbox if it was created succesfully, false otherwise. """,
-            ),
-            name='guiCreateCheckBox',
+                result='returns element of the checkbox if it was created succesfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1287,7 +1262,7 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a combobox GUI element, which you can compare to a gridlist with a dropdown feature. """,
+                description='This function creates a combobox GUI element, which you can compare to a gridlist with a dropdown feature.' ,
                 arguments={
                     "x": """A float of the 2D x position of the GUI combobox on a players screen.  This is affected by the relative argument. """,
                     "y": """A float of the 2D y position of the GUI combobox on a players screen. This is affected by the relative argument. """,
@@ -1297,9 +1272,8 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                     "relative": """This is whether sizes and positioning are relative.  If this is true, then all x,y,width,height floats must be between 0 and 1, representing sizes relative to the parent. """,
                     "parent": """This is the parent that the GUI combobox is attached to.  If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
-                result="""returns an element of the created combobox if it was successfully created, false otherwise. """,
-            ),
-            name='guiCreateComboBox',
+                result='returns an element of the created combobox if it was successfully created, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1400,7 +1374,7 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is for creating a new GUI edit box. This is a text box in which the user can input text. Edit boxes only allow a single line of text. If you want to allow multiple lines of text create a memo box using guiCreateMemo. """,
+                description='This function is for creating a new GUI edit box. This is a text box in which the user can input text. Edit boxes only allow a single line of text. If you want to allow multiple lines of text create a memo box using guiCreateMemo.' ,
                 arguments={
                     "x": """A float of the 2D x position of the GUI edit box on a players screen.  This is affected by the relative argument. """,
                     "y": """A float of the 2D y position of the GUI edit box on a players screen. This is affected by the relative argument. """,
@@ -1410,9 +1384,8 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                     "relative": """This is whether sizes and positioning are relative.  If this is true, then all x,y,width,height floats must be between 0 and 1, representing measures relative to the parent. """,
                     "parent": """This is the parent that the GUI edit box is attached to.  If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
-                result="""returns a gui-edit element of the created edit box if it was successfully created, false otherwise. """,
-            ),
-            name='guiCreateEdit',
+                result='returns a gui-edit element of the created edit box if it was successfully created, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1463,16 +1436,13 @@ You can learn more about the differences https://forum.mtasa.com/topic/80422-dx-
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a GUI font element that can be used in guiSetFont. Successful font creation is not guaranteed, and may fail due to hardware or memory limitations.
-To see if creation is likely to fail, use dxGetStatus. (When VideoMemoryFreeForMTA is zero, failure is guaranteed.) """,
+                description='This function creates a GUI font element that can be used in guiSetFont. Successful font creation is not guaranteed, and may fail due to hardware or memory limitations.\nTo see if creation is likely to fail, use dxGetStatus. (When VideoMemoryFreeForMTA is zero, failure is guaranteed.)' ,
                 arguments={
                     "filepath": """the name of the file containing the font """,
                     "size": """size of the font """
                 },
-                result="""returns a gui font element if successful, false if invalid arguments were passed to the function, or there is insufficient resources available.
-you should always check to see if this function has returned false. """,
-            ),
-            name='guiCreateFont',
+                result='returns a gui font element if successful, false if invalid arguments were passed to the function, or there is insufficient resources available.\nyou should always check to see if this function has returned false.' ,
+            )
         )
         ],
     ),
@@ -1563,7 +1533,7 @@ you should always check to see if this function has returned false. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a grid list GUI element.  These are menus which are designed in lists and can have multiple columns.  A good example of a gridlist element can be found in MTAs settings box, under Controls. """,
+                description='This function creates a grid list GUI element.  These are menus which are designed in lists and can have multiple columns.  A good example of a gridlist element can be found in MTAs settings box, under Controls.' ,
                 arguments={
                     "x": """A float of the 2D x position of the GUI gridlist on a players screen.  This is affected by the relative argument. """,
                     "y": """A float of the 2D y position of the GUI gridlist on a players screen. This is affected by the relative argument. """,
@@ -1572,9 +1542,8 @@ you should always check to see if this function has returned false. """,
                     "relative": """This is whether sizes and positioning are relative.  If this is true, then all x,y,width,height floats must be between 0 and 1, representing sizes relative to the parent. """,
                     "parent": """This is the parent that the gui gridlist is attached to.  If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
-                result="""returns an element of the created gridlist if it was successfully created, false otherwise. """,
-            ),
-            name='guiCreateGridList',
+                result='returns an element of the created gridlist if it was successfully created, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1675,9 +1644,7 @@ you should always check to see if this function has returned false. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""<table><tr><td valign=top height=100>
-This function is for creating a new GUI label.  A label is simply a piece of text that cannot be edited by the user. If you would like to have a bigger text youd have to change its font because font size is not supported.
-</td></tr></table> """,
+                description='<table><tr><td valign=top height=100>\nThis function is for creating a new GUI label.  A label is simply a piece of text that cannot be edited by the user. If you would like to have a bigger text youd have to change its font because font size is not supported.\n</td></tr></table>' ,
                 arguments={
                     "x": """A float of the 2D x position of the GUI label on a players screen.  This is affected by the relative argument. """,
                     "y": """A float of the 2D y position of the GUI label on a players screen. This is affected by the relative argument. """,
@@ -1687,9 +1654,8 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     "relative": """This is whether sizes and positioning are relative.  If this is true, then all x,y,width,height floats must be between 0 and 1, representing sizes relative to the parent. """,
                     "parent": """This is the parent that the gui label is attached to.  If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
-                result="""returns an gui_widgets|element of the created label if it was successfully created, false otherwise. """,
-            ),
-            name='guiCreateLabel',
+                result='returns an gui_widgets|element of the created label if it was successfully created, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1790,7 +1756,7 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a new GUI memo.  This is a multiline edit box in which the user can input text. """,
+                description='This function creates a new GUI memo.  This is a multiline edit box in which the user can input text.' ,
                 arguments={
                     "x": """A float of the 2D x position of the GUI memo on a players screen.  This is affected by the relative argument. """,
                     "y": """A float of the 2D y position of the GUI memo on a players screen. This is affected by the relative argument. """,
@@ -1800,9 +1766,8 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     "relative": """This is whether sizes and positioning are relative.  If this is true, then all x,y,width,height floats must be between 0 and 1, representing measures relative to the parent. """,
                     "parent": """This is the parent that the GUI memo is attached to.  If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
-                result="""returns a gui-memo element of the created memo if it was successfully created, false otherwise. """,
-            ),
-            name='guiCreateMemo',
+                result='returns a gui-memo element of the created memo if it was successfully created, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1893,7 +1858,7 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a Element/GUI/Progress bar|progress bar. """,
+                description='This function creates a Element/GUI/Progress bar|progress bar.' ,
                 arguments={
                     "x": """A float of the 2D x position of the progress bar on a players screen. This is affected by the relative argument. """,
                     "y": """A float of the 2D y position of the progress bar on a players screen. This is affected by the relative argument. """,
@@ -1902,9 +1867,8 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     "relative": """This is whether sizes and positioning are relative. If this is true, then all x,y,width,height floats must be between 0 and 1, representing measures relative to the parent. """,
                     "parent": """This is the parent that the progress bar is attached to. If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
-                result="""returns element of the progress bar if it was created succesfully, false otherwise. """,
-            ),
-            name='guiCreateProgressBar',
+                result='returns element of the progress bar if it was created succesfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2005,7 +1969,7 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a Element/GUI/Radio button|radio button. """,
+                description='This function creates a Element/GUI/Radio button|radio button.' ,
                 arguments={
                     "x": """A float of the 2D x position of the radio button on a players screen. This is affected by the relative argument. """,
                     "y": """A float of the 2D y position of the radio button on a players screen. This is affected by the relative argument. """,
@@ -2016,9 +1980,8 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     "parent": """This is the parent that the radio button is attached to. If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning.
 ''NOTE:'' All radio buttons become grouped together with their parent item.  Only ONE radio button per group/parent will be able to be selected at the same time. """
                 },
-                result="""returns element of the radio button if it was created succesfully, false otherwise. """,
-            ),
-            name='guiCreateRadioButton',
+                result='returns element of the radio button if it was created succesfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2119,7 +2082,7 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a GUI scrollbar. You can use the functions guiScrollPaneSetHorizontalScrollPosition, guiScrollPaneSetVerticalScrollPosition, guiScrollPaneGetHorizontalScrollPosition and guiScrollPaneGetVerticalScrollPosition to read and modify the scrollbars scroll. """,
+                description='This function creates a GUI scrollbar. You can use the functions guiScrollPaneSetHorizontalScrollPosition, guiScrollPaneSetVerticalScrollPosition, guiScrollPaneGetHorizontalScrollPosition and guiScrollPaneGetVerticalScrollPosition to read and modify the scrollbars scroll.' ,
                 arguments={
                     "x": """the 2D x offset of the GUI scrollbar from its parent.  This is affected by the relative argument. """,
                     "y": """the 2D y offset of the GUI scrollbar from its parent. This is affected by the relative argument. """,
@@ -2129,9 +2092,8 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     "relative": """whether sizes and positions are relative to their parents.  If this is true, then all measures must be between 0 and 1, representing sizes/positions as a fraction of the parent widgets size. """,
                     "parent": """the gui-element this scrollbar is attached to. By default, it is nil, meaning the widget is attached to the background. """
                 },
-                result="""returns a gui-scrollbar if it was created successfully, false otherwise. """,
-            ),
-            name='guiCreateScrollBar',
+                result='returns a gui-scrollbar if it was created successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2222,7 +2184,7 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This creates a GUI scroll pane. """,
+                description='This creates a GUI scroll pane.' ,
                 arguments={
                     "x": """the 2D x offset of the GUI scrollpane from its parent. This is affected by the relative argument. """,
                     "y": """the 2D y offset of the GUI scrollpane from its parent. This is affected by the relative argument. """,
@@ -2231,9 +2193,8 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     "relative": """whether sizes and positions are relative to their parents. If this is true, then all measures must be between 0 and 1, representing sizes/positions as a fraction of the parent widgets size. """,
                     "parent": """the gui-element this scrollpane is attached to. By default, it is nil, meaning the widget is attached to the background. """
                 },
-                result="""the gui-element if created, otherwise false. """,
-            ),
-            name='guiCreateScrollPane',
+                result='the gui-element if created, otherwise false.' ,
+            )
         )
         ],
     ),
@@ -2334,7 +2295,7 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a static image using a .png image in the resource. """,
+                description='This function creates a static image using a .png image in the resource.' ,
                 arguments={
                     "x": """A float of the 2D x position of the image on a players screen. This is affected by the relative argument. """,
                     "y": """A float of the 2D y position of the image on a players screen. This is affected by the relative argument. """,
@@ -2344,9 +2305,8 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     "relative": """This is whether sizes and positioning are relative. If this is true, then all x,y,width,height floats must be between 0 and 1, representing measures relative to the parent. """,
                     "parent": """This is the parent that the image is attached to. If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
-                result="""returns element if image was created successfully, false otherwise. """,
-            ),
-            name='guiCreateStaticImage',
+                result='returns element if image was created successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2397,14 +2357,13 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a tab on a pre-existing tab panel. A tab is a button as well as a dimension that can be used to switch between information by clicking on the tabs.  Tabs are sorted on a tab panel in the order that they are created. """,
+                description='This function creates a tab on a pre-existing tab panel. A tab is a button as well as a dimension that can be used to switch between information by clicking on the tabs.  Tabs are sorted on a tab panel in the order that they are created.' ,
                 arguments={
                     "text": """The caption for the tab """,
                     "parent": """The parent tab panel, as a tab panel element type """
                 },
-                result="""returns a tab element if successful, false otherwise. """,
-            ),
-            name='guiCreateTab',
+                result='returns a tab element if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2495,7 +2454,7 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a Tab Panel, which acts as a template to create Tabs upon. """,
+                description='This function creates a Tab Panel, which acts as a template to create Tabs upon.' ,
                 arguments={
                     "x": """A float of the 2D x position of the GUI tab panel on a players screen.  This is affected by the relative argument. """,
                     "y": """A float of the 2D y position of the GUI tab panel on a players screen. This is affected by the relative argument. """,
@@ -2504,9 +2463,8 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     "relative": """This is whether sizes and positioning are relative.  If this is true, then all x,y,width,height floats must be between 0 and 1, representing sizes relative to the parent. """,
                     "parent": """This is the parent that the tab panel is attached to.  If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
-                result="""returns a gui tab panel element if successful, false otherwise. """,
-            ),
-            name='guiCreateTabPanel',
+                result='returns a gui tab panel element if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2597,7 +2555,7 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is for creating a new GUI window.  This provides a base for other gui elements to be created within.  However, windows do not have a parent and cannot be created in any GUI elements. """,
+                description='This function is for creating a new GUI window.  This provides a base for other gui elements to be created within.  However, windows do not have a parent and cannot be created in any GUI elements.' ,
                 arguments={
                     "x": """A float of the 2D x position of the GUI window on a players screen.  This is affected by the relative argument. """,
                     "y": """A float of the 2D y position of the GUI window on a players screen. This is affected by the relative argument. """,
@@ -2606,9 +2564,8 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                     "titleBarText": """A string of the text that will be displayed in the title bar of the window. """,
                     "relative": """This is whether sizes and positioning are relative.  If this is true, then all x,y,width,height floats must be between 0 and 1, representing sizes/positions as a fraction of the screen size. If false, then the size and co-ordinates are based on clients resolution, accessible using guiGetScreenSize. """
                 },
-                result="""returns a gui window element if it was created successfully, false otherwise. """,
-            ),
-            name='guiCreateWindow',
+                result='returns a gui window element if it was created successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2659,14 +2616,13 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function deletes a tab from a tab panel. """,
+                description='This function deletes a tab from a tab panel.' ,
                 arguments={
                     "tabToDelete": """This is an element representing the tab that you want to delete. """,
                     "tabPanel": """This is the guiCreateTabPanel|tab panel parent that the tab is attached to. """
                 },
-                result="""returns true the tab was successfully deleted, false otherwise. """,
-            ),
-            name='guiDeleteTab',
+                result='returns true the tab was successfully deleted, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2707,13 +2663,12 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the caret (the text cursor) position within the editbox. """,
+                description='This function returns the caret (the text cursor) position within the editbox.' ,
                 arguments={
                     "theElement": """The edit box you want to get the caret position from """
                 },
-                result="""returns the caret index on success, false otherwise. """,
-            ),
-            name='guiEditGetCaretIndex',
+                result='returns the caret index on success, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2754,13 +2709,12 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "guiEdit": """The edit box you want to get the maximum text length of. """
                 },
-                result="""returns the maximum text length on success, false otherwise. """,
-            ),
-            name='guiEditGetMaxLength',
+                result='returns the maximum text length on success, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2801,13 +2755,12 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "guiEdit": """the edit box to check masked flag of. """
                 },
-                result="""returns true if the edit box is masked, false if not, nil if an invalid edit box was provided. """,
-            ),
-            name='guiEditIsMasked',
+                result='returns true if the edit box is masked, false if not, nil if an invalid edit box was provided.' ,
+            )
         )
         ],
     ),
@@ -2848,13 +2801,12 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "guiEdit": """The edit box to check read-only status of. """
                 },
-                result="""returns true if the edit box is read-only, false if not, nil if an invalid edit box was provided. """,
-            ),
-            name='guiEditIsReadOnly',
+                result='returns true if the edit box is read-only, false if not, nil if an invalid edit box was provided.' ,
+            )
         )
         ],
     ),
@@ -2905,14 +2857,13 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the current position of the caret (the text cursor) within the edit box. """,
+                description='This function sets the current position of the caret (the text cursor) within the edit box.' ,
                 arguments={
                     "theElement": """The edit box to be changed. """,
                     "index": """An integer referring to the desired position within the box. """
                 },
-                result="""returns true if the index was successfully set, false otherwise. """,
-            ),
-            name='guiEditSetCaretIndex',
+                result='returns true if the index was successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2963,14 +2914,13 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets or removes masking (covering up the text being typed) for password text fields. """,
+                description='This function sets or removes masking (covering up the text being typed) for password text fields.' ,
                 arguments={
                     "theElement": """The edit box to be changed. """,
                     "status": """A boolean value indicating whether masking is to be enabled or disabled. """
                 },
-                result="""returns true if the function is successful, false otherwise. """,
-            ),
-            name='guiEditSetMasked',
+                result='returns true if the function is successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3021,14 +2971,13 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the maximum text length that can be typed into an edit box. """,
+                description='This function sets the maximum text length that can be typed into an edit box.' ,
                 arguments={
                     "theElement": """The edit box to be changed. """,
                     "length": """An integer indicating the maximum number of characters that can be typed into the box. """
                 },
-                result="""returns true if the max length was set successfully, false otherwise. """,
-            ),
-            name='guiEditSetMaxLength',
+                result='returns true if the max length was set successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3079,14 +3028,13 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to set or remove read-only status for an edit box. If read-only is set to true, the box is not editable. """,
+                description='This function allows you to set or remove read-only status for an edit box. If read-only is set to true, the box is not editable.' ,
                 arguments={
                     "editField": """The element of the Element/GUI/Edit field|edit field to be modified. """,
                     "status": """A boolean value indicating whether read-only is to be enabled or disabled. """
                 },
-                result="""returns true if edit fields read-only status was changed successfully, false otherwise. """,
-            ),
-            name='guiEditSetReadOnly',
+                result='returns true if edit fields read-only status was changed successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3127,13 +3075,12 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "guiElement": """the GUI element that you want to focus """
                 },
-                result="""returns true if the function was successful, false otherwise. """,
-            ),
-            name='guiFocus',
+                result='returns true if the function was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3174,13 +3121,12 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""Alpha represents the transparency of a gui element.  This function allows retrieval of a gui elements current alpha. """,
+                description='Alpha represents the transparency of a gui element.  This function allows retrieval of a gui elements current alpha.' ,
                 arguments={
                     "guiElement": """The gui element in which you want to retrieve the alpha of. """
                 },
-                result="""this function returns a positive integer in between 0 and 1 of the gui elements current alpha, or false if it could not be retrieved. """,
-            ),
-            name='guiGetAlpha',
+                result='this function returns a positive integer in between 0 and 1 of the gui elements current alpha, or false if it could not be retrieved.' ,
+            )
         )
         ],
     ),
@@ -3221,13 +3167,12 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the browser element behind a gui-browser (a browser that has been created via guiCreateBrowser). """,
+                description='This function gets the browser element behind a gui-browser (a browser that has been created via guiCreateBrowser).' ,
                 arguments={
                     "theBrowser": """The gui-browser """
                 },
-                result="""returns the element/browser|browser element if a correct element/gui-browser|gui-browser has been passed, false otherwise. """,
-            ),
-            name='guiGetBrowser',
+                result='returns the element/browser|browser element if a correct element/gui-browser|gui-browser has been passed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3259,24 +3204,12 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the type of the current cursor image. """,
+                description='This function is used to get the type of the current cursor image.' ,
                 arguments={
                     
                 },
-                result="""returns a string containing the cursor type:
-* none            // cursor has no image
-* arrow           // default cursor
-* sizing_ns       // n-s (up-down) sizing cursor
-* sizing_ew       // e-w (left-right) sizing cursor
-* sizing_nwse     // nw-se diagonal sizing cursor
-* sizing_nesw     // ne-sw diagonal sizing cursor
-* sizing_eswe     // es-we horizontal sizing cursor
-* move            // move cursor
-* container_drag  // drag container cursor (note: not in use)
-* segment_moving  // segment moving cursor (note: not in use)
-* segment_sizing  // segment sizing cursor (note: not in use) """,
-            ),
-            name='guiGetCursorType',
+                result='returns a string containing the cursor type:\n* none            // cursor has no image\n* arrow           // default cursor\n* sizing_ns       // n-s (up-down) sizing cursor\n* sizing_ew       // e-w (left-right) sizing cursor\n* sizing_nwse     // nw-se diagonal sizing cursor\n* sizing_nesw     // ne-sw diagonal sizing cursor\n* sizing_eswe     // es-we horizontal sizing cursor\n* move            // move cursor\n* container_drag  // drag container cursor (note: not in use)\n* segment_moving  // segment moving cursor (note: not in use)\n* segment_sizing  // segment sizing cursor (note: not in use)' ,
+            )
         )
         ],
     ),
@@ -3317,13 +3250,12 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function determines if a GUI element is enabled. """,
+                description='This function determines if a GUI element is enabled.' ,
                 arguments={
                     "guiElement": """the GUI element to be checked. """
                 },
-                result="""returns true if the element is enabled, false otherwise. """,
-            ),
-            name='guiGetEnabled',
+                result='returns true if the element is enabled, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3368,14 +3300,12 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the current font that is used to draw text in GUI elements. """,
+                description='This function is used to get the current font that is used to draw text in GUI elements.' ,
                 arguments={
                     "guiElement": """element you wish to get the font of. """
                 },
-                result="""*string a string containing the name of the elements current font, or false if the gui element passed to the function is invalid.
-*element  the custom gui font that is used, or nil otherwise """,
-            ),
-            name='guiGetFont',
+                result='*string a string containing the name of the elements current font, or false if the gui element passed to the function is invalid.\n*element  the custom gui font that is used, or nil otherwise' ,
+            )
         )
         ],
     ),
@@ -3407,13 +3337,12 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks whether user input is focused on the GUI or the game. """,
+                description='This function checks whether user input is focused on the GUI or the game.' ,
                 arguments={
                     
                 },
-                result="""returns true if input is focused on gui, false if its focused on the game. """,
-            ),
-            name='guiGetInputEnabled',
+                result='returns true if input is focused on gui, false if its focused on the game.' ,
+            )
         )
         ],
     ),
@@ -3445,17 +3374,12 @@ This function is for creating a new GUI label.  A label is simply a piece of tex
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current input mode as set by guiSetInputMode.
-Default mode is allow_binds. """,
+                description='This function returns the current input mode as set by guiSetInputMode.\nDefault mode is allow_binds.' ,
                 arguments={
                     
                 },
-                result="""returns a string defining the current input mode, potential values are:
-* allow_binds: binds are enabled, hence using a key such as t in an editbox will still activate the chatbox
-* no_binds: binds are disabled, hence using a key such as t in an editbox will not activate the chatbox
-* no_binds_when_editing: binds are always enabled except when an editable editbox or memo has input focus """,
-            ),
-            name='guiGetInputMode',
+                result='returns a string defining the current input mode, potential values are:\n* allow_binds: binds are enabled, hence using a key such as t in an editbox will still activate the chatbox\n* no_binds: binds are disabled, hence using a key such as t in an editbox will not activate the chatbox\n* no_binds_when_editing: binds are always enabled except when an editable editbox or memo has input focus' ,
+            )
         )
         ],
     ),
@@ -3510,14 +3434,13 @@ Default mode is allow_binds. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows retrieval of a GUI elements current position, relative to its parent. """,
+                description='This function allows retrieval of a GUI elements current position, relative to its parent.' ,
                 arguments={
                     "guiElement": """The gui element of which you wish to retrieve the position. """,
                     "relative": """A boolean representing whether the position should be relative to the elements parent width, or the number of offset pixels from the parents origin. """
                 },
-                result="""returns floats representing the x and y position of the element, or false if the position could not be retrieved. """,
-            ),
-            name='guiGetPosition',
+                result='returns floats representing the x and y position of the element, or false if the position could not be retrieved.' ,
+            )
         )
         ],
     ),
@@ -3558,13 +3481,12 @@ Default mode is allow_binds. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets a list of the CEGUI property names and values of a GUI element. To find out what the different properties mean, check out the http://static.cegui.org.uk/static/WindowsLookProperties.html CEGUI properties page. """,
+                description='This function gets a list of the CEGUI property names and values of a GUI element. To find out what the different properties mean, check out the http://static.cegui.org.uk/static/WindowsLookProperties.html CEGUI properties page.' ,
                 arguments={
                     "guiElement": """the GUI element you wish to get the properties of. """
                 },
-                result="""if the function succeeds, the return value is a table. its keys are property names, the corresponding values are the values of the properties (both names and values are always strings). if the function fails, it returns false. """,
-            ),
-            name='guiGetProperties',
+                result='if the function succeeds, the return value is a table. its keys are property names, the corresponding values are the values of the properties (both names and values are always strings). if the function fails, it returns false.' ,
+            )
         )
         ],
     ),
@@ -3615,14 +3537,13 @@ Default mode is allow_binds. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the value of a specific CEGUI property of a GUI element. For a list of properties and their meaning, see the http://static.cegui.org.uk/static/WindowsLookProperties.html CEGUI properties page. """,
+                description='This function gets the value of a specific CEGUI property of a GUI element. For a list of properties and their meaning, see the http://static.cegui.org.uk/static/WindowsLookProperties.html CEGUI properties page.' ,
                 arguments={
                     "guiElement": """the GUI element you wish to get a property of. """,
                     "property": """the name of of property you want the value of. """
                 },
-                result="""if the function succeeds, it returns a string with the value of the property. if it fails, it returns false. """,
-            ),
-            name='guiGetProperty',
+                result='if the function succeeds, it returns a string with the value of the property. if it fails, it returns false.' ,
+            )
         )
         ],
     ),
@@ -3658,13 +3579,12 @@ Default mode is allow_binds. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the local screen size according to the resolution they are using. """,
+                description='This function retrieves the local screen size according to the resolution they are using.' ,
                 arguments={
                     
                 },
-                result="""this returns two floats representing the players screen resolution, width and height. """,
-            ),
-            name='guiGetScreenSize',
+                result='this returns two floats representing the players screen resolution, width and height.' ,
+            )
         )
         ],
     ),
@@ -3705,13 +3625,12 @@ Default mode is allow_binds. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the currently selected tab in the specified Element/GUI/Tab panel|tab panel. """,
+                description='This function returns the currently selected tab in the specified Element/GUI/Tab panel|tab panel.' ,
                 arguments={
                     "tabPanel": """The Element/GUI/Tab panel|tab panel which current tab you want to retrieve. """
                 },
-                result="""returns an element of the element/gui/tab|tab if a tab was selected or nil if no tab was selected. if passed arguments were invalid or something went wrong, the function will return false. """,
-            ),
-            name='guiGetSelectedTab',
+                result='returns an element of the element/gui/tab|tab if a tab was selected or nil if no tab was selected. if passed arguments were invalid or something went wrong, the function will return false.' ,
+            )
         )
         ],
     ),
@@ -3766,14 +3685,13 @@ Default mode is allow_binds. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the size of a GUI element. """,
+                description='This function gets the size of a GUI element.' ,
                 arguments={
                     "theElement": """The GUI element to get size of. """,
                     "relative": """A boolean representing whether the size should be relative to the elements parent width, or an absolute size in pixels. """
                 },
-                result="""returns the gui element size x and y if the function has been successful, false otherwise. """,
-            ),
-            name='guiGetSize',
+                result='returns the gui element size x and y if the function has been successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3814,13 +3732,12 @@ Default mode is allow_binds. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the text of GUI elements like edit boxes, labels, buttons etc. """,
+                description='This function is used to get the text of GUI elements like edit boxes, labels, buttons etc.' ,
                 arguments={
                     "guiElement": """element you wish to get text of. """
                 },
-                result="""returns a string containing the requested elements text, or false if the gui element passed to the function is invalid. """,
-            ),
-            name='guiGetText',
+                result='returns a string containing the requested elements text, or false if the gui element passed to the function is invalid.' ,
+            )
         )
         ],
     ),
@@ -3861,13 +3778,12 @@ Default mode is allow_binds. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function determines if a GUI element is visible. """,
+                description='This function determines if a GUI element is visible.' ,
                 arguments={
                     "guiElement": """the GUI element to be checked """
                 },
-                result="""returns true if the element is visible, false otherwise. """,
-            ),
-            name='guiGetVisible',
+                result='returns true if the element is visible, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3928,15 +3844,14 @@ Default mode is allow_binds. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to create columns in grid lists. """,
+                description='This function is used to create columns in grid lists.' ,
                 arguments={
                     "gridList": """The grid list you want to add a column to """,
                     "title": """Title of the column """,
                     "width": """Column width, relative to the grid list width """
                 },
-                result="""returns the column id if it was created, false otherwise. """,
-            ),
-            name='guiGridListAddColumn',
+                result='returns the column id if it was created, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3997,18 +3912,15 @@ Default mode is allow_binds. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Adds a row to a grid list, and optionally add simple text items with your rows.  Use guiGridListSetItemText to add row headers.
-ATTENTION: Without guiGridListSetItemText there is no row added to the grid.
-Look at the example, first you give the row a name with row = guiGridListAddRow ( playerList ), and then you use guiGridListSetItemText. }} """,
+                description='Adds a row to a grid list, and optionally add simple text items with your rows.  Use guiGridListSetItemText to add row headers.\nATTENTION: Without guiGridListSetItemText there is no row added to the grid.\nLook at the example, first you give the row a name with row = guiGridListAddRow ( playerList ), and then you use guiGridListSetItemText. }}' ,
                 arguments={
                     "gridList": """The grid list you want to add a row to """,
                     "itemText1": """The text for the first column item in the row.  Either a string or a number can be passed (use numbers for sorting purposes). """,
                     "itemText2": """The text for the second column item in the row.  Either a string or a number can be passed (use numbers for sorting purposes). """,
                     "...": """Item text for any other columns """
                 },
-                result="""returns the row id if it has been created, false otherwise. """,
-            ),
-            name='guiGridListAddRow',
+                result='returns the row id if it has been created, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4059,14 +3971,13 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This allows you to automatically size a column to display everything in it correctly, with the most minimal width. """,
+                description='This allows you to automatically size a column to display everything in it correctly, with the most minimal width.' ,
                 arguments={
                     "gridList": """The Element/GUI/Gridlist|grid list element where the column is located. """,
                     "columnIndex": """The ID of the column you want to be auto-sized. """
                 },
-                result="""returns true if the column was auto-sized, false otherwise. """,
-            ),
-            name='guiGridListAutoSizeColumn',
+                result='returns true if the column was auto-sized, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4107,13 +4018,12 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function clears all the data from a grid list. """,
+                description='This function clears all the data from a grid list.' ,
                 arguments={
                     "gridList": """The grid list element to be cleared """
                 },
-                result="""returns true if the grid list element is valid and has been cleared successfully, false otherwise. """,
-            ),
-            name='guiGridListClear',
+                result='returns true if the grid list element is valid and has been cleared successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4154,13 +4064,12 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This allows you to get the count of existing columns in a gridlist. """,
+                description='This allows you to get the count of existing columns in a gridlist.' ,
                 arguments={
                     "gridList": """The grid list you want to add a column to """
                 },
-                result="""returns an integer with the amount of columns in the gridlist, false otherwise. """,
-            ),
-            name='guiGridListGetColumnCount',
+                result='returns an integer with the amount of columns in the gridlist, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4211,14 +4120,13 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the column title of a gridlist column. """,
+                description='This function is used to get the column title of a gridlist column.' ,
                 arguments={
                     "guiGridlist": """: The grid list you want to get the column title from """,
                     "columnIndex": """: Column ID """
                 },
-                result="""returns a string containing the column title, or false otherwise. """,
-            ),
-            name='guiGridListGetColumnTitle',
+                result='returns a string containing the column title, or false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4279,15 +4187,14 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This allows you to get the width of an existing column in a gridlist. """,
+                description='This allows you to get the width of an existing column in a gridlist.' ,
                 arguments={
                     "gridList": """The grid list you want to add a column to """,
                     "columnIndex": """Column ID of the Get size """,
                     "relative": """A boolean defining whether width measurements will be relative to the Gridlist size, or absolute pixels. """
                 },
-                result="""returns the width of the gridlist column, false if bad arguments were given. """,
-            ),
-            name='guiGridListGetColumnWidth',
+                result='returns the width of the gridlist column, false if bad arguments were given.' ,
+            )
         )
         ],
     ),
@@ -4328,13 +4235,12 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the horizontal scroll position from a grid list """,
+                description='This function is used to get the horizontal scroll position from a grid list' ,
                 arguments={
                     "guiGridlist": """: The grid list you want to get the horizontal scroll position from """
                 },
-                result="""returns a integer between 0 and 100 indicating the horizontal scroll position, or false otherwise. """,
-            ),
-            name='guiGridListGetHorizontalScrollPosition',
+                result='returns a integer between 0 and 100 indicating the horizontal scroll position, or false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4407,15 +4313,14 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the color of a gridlist item. """,
+                description='This function gets the color of a gridlist item.' ,
                 arguments={
                     "gridList": """The grid list element """,
                     "rowIndex": """Row ID """,
                     "columnIndex": """Column ID """
                 },
-                result="""returns four int values, representing the amount of red, green, blue and alpha if successful. false otherwise. """,
-            ),
-            name='guiGridListGetItemColor',
+                result='returns four int values, representing the amount of red, green, blue and alpha if successful. false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4476,16 +4381,14 @@ Look at the example, first you give the row a name with row = guiGridListAddRow 
                 ],
             ),
             docs=FunctionDoc(
-                description="""With this function you can retrieve the string data associated with an item in a Element/GUI/Gridlist|grid list. This is not the text that is displayed on the item, but an internal string that you can use to hold extra information about the item.<br/>
-Note: This function will only work after you set the items text using guiGridListSetItemText! """,
+                description='With this function you can retrieve the string data associated with an item in a Element/GUI/Gridlist|grid list. This is not the text that is displayed on the item, but an internal string that you can use to hold extra information about the item.<br/>\nNote: This function will only work after you set the items text using guiGridListSetItemText!' ,
                 arguments={
                     "gridList": """the grid list containing the item youre interested in """,
                     "rowIndex": """the row index of the item """,
                     "columnIndex": """the column index of the item """
                 },
-                result="""returns the item data of the specified item if succesful, false if one of the arguments was invalid. """,
-            ),
-            name='guiGridListGetItemData',
+                result='returns the item data of the specified item if succesful, false if one of the arguments was invalid.' ,
+            )
         )
         ],
     ),
@@ -4546,15 +4449,14 @@ Note: This function will only work after you set the items text using guiGridLis
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the text from a specific grid list item. """,
+                description='This function retrieves the text from a specific grid list item.' ,
                 arguments={
                     "gridList": """the gridlist containing the item youre interested in """,
                     "rowIndex": """row id of the item """,
                     "columnIndex": """column id of the item """
                 },
-                result="""returns the text of the item if the arguments are right, false otherwise. """,
-            ),
-            name='guiGridListGetItemText',
+                result='returns the text of the item if the arguments are right, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4595,13 +4497,12 @@ Note: This function will only work after you set the items text using guiGridLis
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the number of rows in a grid list. """,
+                description='This function returns the number of rows in a grid list.' ,
                 arguments={
                     "gridList": """The grid list to get the number of rows from. """
                 },
-                result="""returns the number of rows if the function is successful, false otherwise. """,
-            ),
-            name='guiGridListGetRowCount',
+                result='returns the number of rows if the function is successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4642,13 +4543,12 @@ Note: This function will only work after you set the items text using guiGridLis
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the amount of options selected in the specified Element/GUI/Gridlist|grid list. """,
+                description='This function returns the amount of options selected in the specified Element/GUI/Gridlist|grid list.' ,
                 arguments={
                     "gridList": """The Element/GUI/Gridlist|grid list which amount of selected items you want to retrieve. """
                 },
-                result="""returns an integer representing the amount of selected options if everything was successful or false if invalid arguments were passed. """,
-            ),
-            name='guiGridListGetSelectedCount',
+                result='returns an integer representing the amount of selected options if everything was successful or false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -4693,13 +4593,12 @@ Note: This function will only work after you set the items text using guiGridLis
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the row and column indexes of the selected item in a grid list. First selected row and column is (0, 0). """,
+                description='This function returns the row and column indexes of the selected item in a grid list. First selected row and column is (0, 0).' ,
                 arguments={
                     "gridList": """the grid list you want to know the selected row index of """
                 },
-                result="""returns the row and column indexes of the selected item if the specified grid list is valid and has a selected item, (-1, -1) if no item is selected, false otherwise. """,
-            ),
-            name='guiGridListGetSelectedItem',
+                result='returns the row and column indexes of the selected item if the specified grid list is valid and has a selected item, (-1, -1) if no item is selected, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4740,28 +4639,12 @@ Note: This function will only work after you set the items text using guiGridLis
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the items selected in the specified Element/GUI/Gridlist|grid list.
-Note that for some reason the column ID is 1 lower than it should be, for example 0 is returned but if you try and get the text for column 0 there is nothing, but column 1 has what you clicked on. """,
+                description='This function returns the items selected in the specified Element/GUI/Gridlist|grid list.\nNote that for some reason the column ID is 1 lower than it should be, for example 0 is returned but if you try and get the text for column 0 there is nothing, but column 1 has what you clicked on.' ,
                 arguments={
                     "gridList": """The Element/GUI/Gridlist|grid list which selected items you want to retrieve. """
                 },
-                result="""returns a table over the selected items in the element/gui/gridlist|grid list in this format:
-<syntaxhighlight lang=lua>
-table = {
-1 = {
-column, -- has the first selected items column id
-row -- has the first selected items row id
-},
-2 = {
-column,-- has the second selected items column id
-row -- has the second selected items row id
-},
-...
-}
-</syntaxhighlight>
-if everything was successful or false if invalid arguments were passed. """,
-            ),
-            name='guiGridListGetSelectedItems',
+                result='returns a table over the selected items in the element/gui/gridlist|grid list in this format:\n<syntaxhighlight lang=lua>\ntable = {\n1 = {\ncolumn, -- has the first selected items column id\nrow -- has the first selected items row id\n},\n2 = {\ncolumn,-- has the second selected items column id\nrow -- has the second selected items row id\n},\n...\n}\n</syntaxhighlight>\nif everything was successful or false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -4802,13 +4685,12 @@ if everything was successful or false if invalid arguments were passed. """,
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "gridlist": """The gridlist you want to get the selection mode of. """
                 },
-                result="""returns the id of the current gridlists selection mode. """,
-            ),
-            name='guiGridListGetSelectionMode',
+                result='returns the id of the current gridlists selection mode.' ,
+            )
         )
         ],
     ),
@@ -4849,13 +4731,12 @@ if everything was successful or false if invalid arguments were passed. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the vertical scroll position from a grid list """,
+                description='This function is used to get the vertical scroll position from a grid list' ,
                 arguments={
                     "guiGridlist": """: The grid list you want to get the vertical scroll position from """
                 },
-                result="""returns a integer between 0 and 100 indicating the vertical scroll position, or false otherwise. """,
-            ),
-            name='guiGridListGetVerticalScrollPosition',
+                result='returns a integer between 0 and 100 indicating the vertical scroll position, or false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4906,7 +4787,7 @@ if everything was successful or false if invalid arguments were passed. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This allows you to insert a new row after a specified row, and simultaneously set text. Good for inserting new rows in the middle of existing rows. To insert at the top use -1 as row index. """,
+                description='This allows you to insert a new row after a specified row, and simultaneously set text. Good for inserting new rows in the middle of existing rows. To insert at the top use -1 as row index.' ,
                 arguments={
                     "gridList": """The grid list you want to add a row to """,
                     "rowIndex": """Row ID of the row you want to insert the new row after. """,
@@ -4914,9 +4795,8 @@ if everything was successful or false if invalid arguments were passed. """,
                     "itemText2": """The text for the second column item in the row.  Either a string or a number can be passed (use numbers for sorting purposes). """,
                     "...": """Item text for any other columns """
                 },
-                result="""returns true if the row was successfully added, false otherwise. """,
-            ),
-            name='guiGridListInsertRowAfter',
+                result='returns true if the row was successfully added, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4957,13 +4837,12 @@ if everything was successful or false if invalid arguments were passed. """,
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "guiGridlist": """The GUI gridlist you wish to check if sorting is enabled or not. """
                 },
-                result="""returns true if sorting is enabled, false otherwise. """,
-            ),
-            name='guiGridListIsSortingEnabled',
+                result='returns true if sorting is enabled, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5014,14 +4893,13 @@ if everything was successful or false if invalid arguments were passed. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This allows you to delete columns that exist in grid lists. """,
+                description='This allows you to delete columns that exist in grid lists.' ,
                 arguments={
                     "gridList": """The grid list you want to remove a column from """,
                     "columnIndex": """Column ID """
                 },
-                result="""returns true if the grid list column was successfully removed, false otherwise. """,
-            ),
-            name='guiGridListRemoveColumn',
+                result='returns true if the grid list column was successfully removed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5072,14 +4950,13 @@ if everything was successful or false if invalid arguments were passed. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This allows you to delete rows that exist in grid lists. """,
+                description='This allows you to delete rows that exist in grid lists.' ,
                 arguments={
                     "gridList": """The grid list you want to remove a row from """,
                     "rowIndex": """The row ID which you want to remove """
                 },
-                result="""returns true if the grid list row was successfully removed, false otherwise. """,
-            ),
-            name='guiGridListRemoveRow',
+                result='returns true if the grid list row was successfully removed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5140,15 +5017,14 @@ if everything was successful or false if invalid arguments were passed. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to change the column title of a gridlist column. """,
+                description='This function is used to change the column title of a gridlist column.' ,
                 arguments={
                     "guiGridlist": """: The grid list you want to change the column title from """,
                     "columnIndex": """: Column ID """,
                     "title": """: The title of the column """
                 },
-                result="""returns true if the new title was set, or false otherwise. """,
-            ),
-            name='guiGridListSetColumnTitle',
+                result='returns true if the new title was set, or false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5219,16 +5095,15 @@ if everything was successful or false if invalid arguments were passed. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This allows you to set the width of an existing column in a gridlist. """,
+                description='This allows you to set the width of an existing column in a gridlist.' ,
                 arguments={
                     "gridList": """The grid list you want to add a column to """,
                     "columnIndex": """Column ID of the size you want to change """,
                     "width": """A float or integer of the width of the column depending on the relative argument. """,
                     "relative": """A boolean defining whether width measurements will be relative to the Gridlist size, or absolute pixels. """
                 },
-                result="""returns true if the gridlist column width was successfully set, false if bad arguments were given. """,
-            ),
-            name='guiGridListSetColumnWidth',
+                result='returns true if the gridlist column width was successfully set, false if bad arguments were given.' ,
+            )
         )
         ],
     ),
@@ -5279,14 +5154,13 @@ if everything was successful or false if invalid arguments were passed. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the horizontal scroll position from a grid list """,
+                description='This function is used to set the horizontal scroll position from a grid list' ,
                 arguments={
                     "guiGridlist": """: The grid list you want to set the horizontal scroll position from """,
                     "fPosition": """: A float representing the horizontal scroll position (0-100) """
                 },
-                result="""returns true if the horizontal scroll position was set, or false otherwise. """,
-            ),
-            name='guiGridListSetHorizontalScrollPosition',
+                result='returns true if the horizontal scroll position was set, or false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5387,7 +5261,7 @@ if everything was successful or false if invalid arguments were passed. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the color of a gridlist item. """,
+                description='This function changes the color of a gridlist item.' ,
                 arguments={
                     "gridList": """The grid list element """,
                     "rowIndex": """Row ID """,
@@ -5397,9 +5271,8 @@ if everything was successful or false if invalid arguments were passed. """,
                     "blue": """The amount of blue in the color (0-255) """,
                     "alpha": """The amount of alpha in the color (0-255). """
                 },
-                result="""returns true if the item color was set successfully, false otherwise. """,
-            ),
-            name='guiGridListSetItemColor',
+                result='returns true if the item color was set successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5470,17 +5343,15 @@ if everything was successful or false if invalid arguments were passed. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets a Item Data associated to a grid list item.<br/>
-Note: This function will only work after you set the items text using guiGridListSetItemText! """,
+                description='This function sets a Item Data associated to a grid list item.<br/>\nNote: This function will only work after you set the items text using guiGridListSetItemText!' ,
                 arguments={
                     "gridList": """A gridlist element of the data you wish to set to """,
                     "rowIndex": """The row of the item you wish to set to """,
                     "columnIndex": """The column of the item you wish to set to """,
                     "data": """The data you wish to set to the item. """
                 },
-                result="""returns true if the data was set successfully, false otherwise """,
-            ),
-            name='guiGridListSetItemData',
+                result='returns true if the data was set successfully, false otherwise' ,
+            )
         )
         ],
     ),
@@ -5571,8 +5442,7 @@ Note: This function will only work after you set the items text using guiGridLis
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the text of a gridlist item.
-Notice: This function doesnt work well with Sorting. If you are using sorting, please use the optional arguments of guiGridListAddRow as much as possible. """,
+                description='This function changes the text of a gridlist item.\nNotice: This function doesnt work well with Sorting. If you are using sorting, please use the optional arguments of guiGridListAddRow as much as possible.' ,
                 arguments={
                     "gridList": """The grid list element """,
                     "rowIndex": """Row ID """,
@@ -5581,9 +5451,8 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     "section": """Determines if the item is a section """,
                     "number": """Tells whether the text item is a number value or not (used for sorting) """
                 },
-                result="""returns true if the item text was set successfully, false otherwise. """,
-            ),
-            name='guiGridListSetItemText',
+                result='returns true if the item text was set successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5644,15 +5513,14 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows a gridlists scrollbar to be forced on, or returned to default. """,
+                description='This function allows a gridlists scrollbar to be forced on, or returned to default.' ,
                 arguments={
                     "guiGridlist": """The GUI gridlist you wish to change the state of scrollbars """,
                     "horizontalBar": """A bool where true forces the horizontal scrollbar on, and false returns them to default. """,
                     "verticalBar": """A bool where true forces the verical scrollbar on, and false returns them to default. """
                 },
-                result="""returns true if the scrollbars were successfully set, false otherwise. """,
-            ),
-            name='guiGridListSetScrollBars',
+                result='returns true if the scrollbars were successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5723,16 +5591,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function selects an item from a gridlist. If you wish to deselect whatever item is selected, pass 0 as both the rowIndex and  columnIndex arguments. """,
+                description='This function selects an item from a gridlist. If you wish to deselect whatever item is selected, pass 0 as both the rowIndex and  columnIndex arguments.' ,
                 arguments={
                     "gridList": """the grid list you want to select an item from """,
                     "rowIndex": """the row you want to select (index 0 is the first row) """,
                     "columnIndex": """the column you want to select (index 1 is the first column) """,
                     "bReset": """set to false for multiple selections """
                 },
-                result="""returns true if the passed arguments are correct and the item has been selected, false otherwise. """,
-            ),
-            name='guiGridListSetSelectedItem',
+                result='returns true if the passed arguments are correct and the item has been selected, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5783,7 +5650,7 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the selection mode of a gui gridlist.  For example, the MTA server browser selects a whole row, while the Controls dialog selects a single cell. To select multiple items you must be holding down ctrl. """,
+                description='This function sets the selection mode of a gui gridlist.  For example, the MTA server browser selects a whole row, while the Controls dialog selects a single cell. To select multiple items you must be holding down ctrl.' ,
                 arguments={
                     "gridlist": """The gridlist in which you wish to set the selection mode. """,
                     "mode": """The mode of the selection.  Can be the following values: """,
@@ -5798,9 +5665,8 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                     "8": """Nominated(First) single row selection """,
                     "9": """Nominated(First) multiple row selection """
                 },
-                result="""returns true if the selection mode was successfully set, false otherwise. """,
-            ),
-            name='guiGridListSetSelectionMode',
+                result='returns true if the selection mode was successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5851,14 +5717,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows the disabling or enabling of sorting within a gridlist.  Sorting is achieved by clicking a column header.  Gridlist items will be sorted according to the clicked column.  By default, gridlists have sorting enabled.  This function will allow you to toggle this. """,
+                description='This function allows the disabling or enabling of sorting within a gridlist.  Sorting is achieved by clicking a column header.  Gridlist items will be sorted according to the clicked column.  By default, gridlists have sorting enabled.  This function will allow you to toggle this.' ,
                 arguments={
                     "guiGridlist": """The GUI gridlist you wish to toggle the sorting of. """,
                     "enabled": """A boolean representing whether the sorting is enabled, or disabled. """
                 },
-                result="""returns true if sorting was successfully toggled., false otherwise. """,
-            ),
-            name='guiGridListSetSortingEnabled',
+                result='returns true if sorting was successfully toggled., false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5909,14 +5774,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the vertical scroll position from a grid list """,
+                description='This function is used to set the vertical scroll position from a grid list' ,
                 arguments={
                     "guiGridlist": """: The grid list you want to set the vertical scroll position from """,
                     "fPosition": """: A float representing the vertical scroll position (0-100) """
                 },
-                result="""returns true if the vertical scroll position was set, or false otherwise. """,
-            ),
-            name='guiGridListSetVerticalScrollPosition',
+                result='returns true if the vertical scroll position was set, or false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5965,13 +5829,12 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the color of a label. """,
+                description='This function gets the color of a label.' ,
                 arguments={
                     "theLabel": """The label to get color. """
                 },
-                result="""returns three int values, representing the amount of red, green, blue if successful. false otherwise. """,
-            ),
-            name='guiLabelGetColor',
+                result='returns three int values, representing the amount of red, green, blue if successful. false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6012,13 +5875,12 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the height of the font currently used in a GUI text label. """,
+                description='This function returns the height of the font currently used in a GUI text label.' ,
                 arguments={
                     "theLabel": """The text label to get the font height from. """
                 },
-                result="""returns the absolute height of the font currently used in the text label if the function is successful, false otherwise. """,
-            ),
-            name='guiLabelGetFontHeight',
+                result='returns the absolute height of the font currently used in the text label if the function is successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6059,13 +5921,12 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the extent, or width, of the current text inside a GUI text label. """,
+                description='This function returns the extent, or width, of the current text inside a GUI text label.' ,
                 arguments={
                     "theLabel": """The text label to get the text extent from. """
                 },
-                result="""returns the absolute width of the current text inside the text label if the function is successful, false otherwise. """,
-            ),
-            name='guiLabelGetTextExtent',
+                result='returns the absolute width of the current text inside the text label if the function is successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6136,16 +5997,15 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to set the color of a GUI label. """,
+                description='This function allows you to set the color of a GUI label.' ,
                 arguments={
                     "theElement": """The label to be changed. """,
                     "red": """An integer specifying the amount of red (0 to 255). """,
                     "green": """An integer specifying the amount of green (0 to 255). """,
                     "blue": """An integer specifying the amount of blue (0 to 255). """
                 },
-                result="""returns true if the the color of the gui label was successfully changed, false otherwise. """,
-            ),
-            name='guiLabelSetColor',
+                result='returns true if the the color of the gui label was successfully changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6206,7 +6066,7 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the horizontal alignment of a text label. """,
+                description='This function sets the horizontal alignment of a text label.' ,
                 arguments={
                     "theLabel": """The text label to set the horizontal alignment on. """,
                     "align": """The alignment type. Valid type strings are:
@@ -6215,9 +6075,8 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
 **"right" """,
                     "wordwrap": """Whether or not to enable wordwrap for the gui-label. """
                 },
-                result="""returns true on success, false otherwise. """,
-            ),
-            name='guiLabelSetHorizontalAlign',
+                result='returns true on success, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6268,7 +6127,7 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the vertical alignment of a text label. """,
+                description='This function sets the vertical alignment of a text label.' ,
                 arguments={
                     "theLabel": """The text label to set the vertical alignment on. """,
                     "align": """The alignment type. Valid type strings are:
@@ -6276,9 +6135,8 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
 **"center"
 **"bottom" """
                 },
-                result="""returns true on success, false otherwise. """,
-            ),
-            name='guiLabelSetVerticalAlign',
+                result='returns true on success, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6319,13 +6177,12 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the caret (the text cursor) position within the memo box. """,
+                description='This function returns the caret (the text cursor) position within the memo box.' ,
                 arguments={
                     "theElement": """The memo box you want to get the caret position from """
                 },
-                result="""returns the caret index on success, false otherwise. """,
-            ),
-            name='guiMemoGetCaretIndex',
+                result='returns the caret index on success, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6366,13 +6223,12 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theMemo": """: the guiCreateMemo|memo you want to know the vertical scroll position of. """
                 },
-                result="""returns a float ranging between 0 and 100, or false otherwise. """,
-            ),
-            name='guiMemoGetVerticalScrollPosition',
+                result='returns a float ranging between 0 and 100, or false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6413,13 +6269,12 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theMemo": """The memo to check read-only status of. """
                 },
-                result="""returns true if the memo is read only, false if the memo isnt read only, nil otherwise. """,
-            ),
-            name='guiMemoIsReadOnly',
+                result='returns true if the memo is read only, false if the memo isnt read only, nil otherwise.' ,
+            )
         )
         ],
     ),
@@ -6470,14 +6325,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the current position of the caret (the text cursor) within the memo. """,
+                description='This function sets the current position of the caret (the text cursor) within the memo.' ,
                 arguments={
                     "theMemo": """The memo edit box where the caret position is to be changed. """,
                     "index": """An integer referring to the desired character position within the box. 0 would be before the first character in the box, 1 before the second, etc. """
                 },
-                result="""returns true if the caret was successfully moved, false otherwise. """,
-            ),
-            name='guiMemoSetCaretIndex',
+                result='returns true if the caret was successfully moved, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6528,14 +6382,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to set or remove read-only status for a GUI memo. If read-only is set to true, the contents are not editable. """,
+                description='This function allows you to set or remove read-only status for a GUI memo. If read-only is set to true, the contents are not editable.' ,
                 arguments={
                     "theMemo": """The memo to change read-only status of. """,
                     "status": """A boolean value indicating whether read-only is to be enabled or disabled. """
                 },
-                result="""returns true if the status was successfully changed, false otherwise. """,
-            ),
-            name='guiMemoSetReadOnly',
+                result='returns true if the status was successfully changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6586,14 +6439,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theMemo": """: the guiCreateMemo|memo you want to change the vertical scroll position of. """,
                     "position": """: a float ranging between 0 and 100. """
                 },
-                result="""returns true if the position was set, false otherwise. """,
-            ),
-            name='guiMemoSetVerticalScrollPosition',
+                result='returns true if the position was set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6634,13 +6486,12 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function moves a GUI element to the very back of all other GUI elements. """,
+                description='This function moves a GUI element to the very back of all other GUI elements.' ,
                 arguments={
                     "guiElement": """the GUI element that you want to move to the back """
                 },
-                result="""returns true if the function was successful, false otherwise. """,
-            ),
-            name='guiMoveToBack',
+                result='returns true if the function was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6681,13 +6532,12 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the progress of a progress bar as a percentage. """,
+                description='This function gets the progress of a progress bar as a percentage.' ,
                 arguments={
                     "theProgressbar": """: The progressbar you want to check. """
                 },
-                result="""returns a float ranging between 0 and 100. """,
-            ),
-            name='guiProgressBarGetProgress',
+                result='returns a float ranging between 0 and 100.' ,
+            )
         )
         ],
     ),
@@ -6738,14 +6588,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the progress of a progressbar as a percentage. """,
+                description='This function is used to set the progress of a progressbar as a percentage.' ,
                 arguments={
                     "theProgressbar": """: The progressbar you want to change the progress of """,
                     "progress": """: a float ranging from 0 - 100 """
                 },
-                result="""returns true if the progress was set, false otherwise. """,
-            ),
-            name='guiProgressBarSetProgress',
+                result='returns true if the progress was set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6786,13 +6635,12 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets a radio buttons selection state. """,
+                description='This function gets a radio buttons selection state.' ,
                 arguments={
                     "guiRadioButton": """The radio button you wish to retrieve the selection state of. """
                 },
-                result="""returns true if the radio button is selected, false if it is not. """,
-            ),
-            name='guiRadioButtonGetSelected',
+                result='returns true if the radio button is selected, false if it is not.' ,
+            )
         )
         ],
     ),
@@ -6843,14 +6691,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function selects or unselects a radio button. """,
+                description='This function selects or unselects a radio button.' ,
                 arguments={
                     "guiRadioButton": """The GUI radio button in which you wish to change the selection state of """,
                     "state": """The state of the radio button, where true indicates selected, and false indicates unselected. """
                 },
-                result="""returns true if the radio buttons selection state was successfully set, false otherwise. """,
-            ),
-            name='guiRadioButtonSetSelected',
+                result='returns true if the radio buttons selection state was successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6891,13 +6738,12 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the scroll amount of a scrollbar as a percentage. """,
+                description='This function gets the scroll amount of a scrollbar as a percentage.' ,
                 arguments={
                     "theScrollBar": """: The scrollbar you want to check. """
                 },
-                result="""returns a float ranging between 0 and 100, representing the amount the scrollbar has been scrolled. """,
-            ),
-            name='guiScrollBarGetScrollPosition',
+                result='returns a float ranging between 0 and 100, representing the amount the scrollbar has been scrolled.' ,
+            )
         )
         ],
     ),
@@ -6948,14 +6794,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the scroll amount of a scrollbar as a percentage. """,
+                description='This function is used to set the scroll amount of a scrollbar as a percentage.' ,
                 arguments={
                     "theScrollBar": """: The scrollbar you want to change the progress of """,
                     "amount": """: a float ranging from 0 - 100 representing the amount you wish to set the scroll bar. """
                 },
-                result="""returns true if the scroll position was successfully set, false otherwise. """,
-            ),
-            name='guiScrollBarSetScrollPosition',
+                result='returns true if the scroll position was successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6996,13 +6841,12 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the position of a horizontal scroll pane as a percentage. """,
+                description='This function is used to get the position of a horizontal scroll pane as a percentage.' ,
                 arguments={
                     "horizontalScrollPane": """: The scroll pane you want to know the position of """
                 },
-                result="""returns a float ranging between 0 and 100, or false otherwise. """,
-            ),
-            name='guiScrollPaneGetHorizontalScrollPosition',
+                result='returns a float ranging between 0 and 100, or false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7043,13 +6887,12 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the position of a vertical scroll pane as a percentage. """,
+                description='This function is used to get the position of a vertical scroll pane as a percentage.' ,
                 arguments={
                     "verticalScrollPane": """: The scroll pane you want to know the position of """
                 },
-                result="""returns a float ranging between 0 and 100, or false otherwise. """,
-            ),
-            name='guiScrollPaneGetVerticalScrollPosition',
+                result='returns a float ranging between 0 and 100, or false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7100,14 +6943,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the position of a horizontal scroll pane as a percentage. """,
+                description='This function is used to set the position of a horizontal scroll pane as a percentage.' ,
                 arguments={
                     "horizontalScrollPane": """: The scroll pane you want to change the position of """,
                     "position": """: a float ranging from 0 - 100 """
                 },
-                result="""returns true if the position was set, false otherwise. """,
-            ),
-            name='guiScrollPaneSetHorizontalScrollPosition',
+                result='returns true if the position was set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7168,15 +7010,14 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows a scrollpanes scrollbars to be forced on, or returned to default. """,
+                description='This function allows a scrollpanes scrollbars to be forced on, or returned to default.' ,
                 arguments={
                     "scrollPane": """the GUI scrollpane element you want to set the scrollbars of. """,
                     "horizontal": """A bool where true forces the horizontal scrollbar on, and false returns them to default. """,
                     "vertical": """A bool where true forces the vertical scrollbar on, and false returns them to default. """
                 },
-                result="""returns true if the call was successfully, false otherwise. """,
-            ),
-            name='guiScrollPaneSetScrollBars',
+                result='returns true if the call was successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7227,14 +7068,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the position of a vertical scroll pane as a percentage. """,
+                description='This function is used to set the position of a vertical scroll pane as a percentage.' ,
                 arguments={
                     "verticalScrollPane": """: The scroll pane you want to change the position of """,
                     "position": """: a float ranging from 0 - 100 """
                 },
-                result="""returns true if the position was set, false otherwise. """,
-            ),
-            name='guiScrollPaneSetVerticalScrollPosition',
+                result='returns true if the position was set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7285,14 +7125,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This changes the alpha level (the visibleness/transparency) of a GUI element """,
+                description='This changes the alpha level (the visibleness/transparency) of a GUI element' ,
                 arguments={
                     "guiElement": """the GUI element whose visibility is to be changed """,
                     "alpha": """The visibility/transparency of the GUI element. Ranges from 0 (fully transparent) to 1 (fully opaque). Default value is 0.80. """
                 },
-                result="""returns true if the gui elements alpha was successfully changed, false otherwise. """,
-            ),
-            name='guiSetAlpha',
+                result='returns true if the gui elements alpha was successfully changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7343,14 +7182,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function enables/disables a GUI element. A disabled GUI element cant be used, gets a gray aspect and doesnt receive any events. """,
+                description='This function enables/disables a GUI element. A disabled GUI element cant be used, gets a gray aspect and doesnt receive any events.' ,
                 arguments={
                     "guiElement": """the GUI element you wish to enable or disable """,
                     "enabled": """the new state """
                 },
-                result="""if the function succeeds it returns true, if it fails it returns false. """,
-            ),
-            name='guiSetEnabled',
+                result='if the function succeeds it returns true, if it fails it returns false.' ,
+            )
         )
         ],
     ),
@@ -7401,14 +7239,13 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the font of a GUI_widgets|GUI element to be used when drawing text. """,
+                description='This function sets the font of a GUI_widgets|GUI element to be used when drawing text.' ,
                 arguments={
                     "guiElement": """The GUI element you wish to change the font of """,
                     "font": """Either a custom GUI font element or the name of a built-in GUI font. See Standard GUI Font Names """
                 },
-                result="""returns true if the font has been successfully set on the gui element, false otherwise. """,
-            ),
-            name='guiSetFont',
+                result='returns true if the font has been successfully set on the gui element, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7449,14 +7286,12 @@ Notice: This function doesnt work well with Sorting. If you are using sorting, p
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function enables or disables input focus for the GUI.  This means that any keybinds or MTA binds are overidden so that text can be input into an editbox, for example.  In other words, keys such as t and y which activate the chatbox are disabled.
-guiSetInputMode can be used as an extended version of guiSetInputEnabled since it provides the same functionality with one added feature. """,
+                description='This function enables or disables input focus for the GUI.  This means that any keybinds or MTA binds are overidden so that text can be input into an editbox, for example.  In other words, keys such as t and y which activate the chatbox are disabled.\nguiSetInputMode can be used as an extended version of guiSetInputEnabled since it provides the same functionality with one added feature.' ,
                 arguments={
                     "enabled": """true if input should go to GUI, false if it should go to the game. """
                 },
-                result="""returns true if input mode could be changed, false if invalid parameters are passed. """,
-            ),
-            name='guiSetInputEnabled',
+                result='returns true if input mode could be changed, false if invalid parameters are passed.' ,
+            )
         )
         ],
     ),
@@ -7497,20 +7332,15 @@ guiSetInputMode can be used as an extended version of guiSetInputEnabled since i
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function controls the input mode to define whether or not (and when) keybinds or MTA binds are overridden (disabled) so that text can be input into an editbox, for example.
-The binds can be either:
-* never disabled (hence using a key such as t in an editbox will still activate the chatbox)
-* always disabled (hence using a key such as t in an editbox will not activate the chatbox)
-* only disabled when actually editing an editbox or a memo (binds are always enabled except when an editbox or memo has input focus) """,
+                description='This function controls the input mode to define whether or not (and when) keybinds or MTA binds are overridden (disabled) so that text can be input into an editbox, for example.\nThe binds can be either:\n* never disabled (hence using a key such as t in an editbox will still activate the chatbox)\n* always disabled (hence using a key such as t in an editbox will not activate the chatbox)\n* only disabled when actually editing an editbox or a memo (binds are always enabled except when an editbox or memo has input focus)' ,
                 arguments={
                     "mode": """a string representing the desired input mode. Accepted values are: """,
                     "allow_binds": """binds are enabled, hence using a key such as t in an editbox will still activate the chatbox (default) """,
                     "no_binds": """binds are disabled, hence using a key such as t in an editbox will not activate the chatbox """,
                     "no_binds_when_editing": """binds are always enabled except when an editable editbox or memo has input focus """
                 },
-                result="""returns true if input mode could be changed, false if invalid parameters are passed. """,
-            ),
-            name='guiSetInputMode',
+                result='returns true if input mode could be changed, false if invalid parameters are passed.' ,
+            )
         )
         ],
     ),
@@ -7581,16 +7411,15 @@ The binds can be either:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the position of a GUI element. """,
+                description='This function sets the position of a GUI element.' ,
                 arguments={
                     "theElement": """The GUI element to change position for """,
                     "x": """Position over the X axis """,
                     "y": """Position over the Y axis """,
                     "relative": """Bool that indicates if the x/y positions are relative to the elements parent element. """
                 },
-                result="""returns true if the position has been successfully set, false otherwise. """,
-            ),
-            name='guiSetPosition',
+                result='returns true if the position has been successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7651,15 +7480,14 @@ The binds can be either:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the value of a specific CEGUI property of a GUI element. For a list of properties and their meaning, see the http://static.cegui.org.uk/static/WindowsLookProperties.html CEGUI properties page. """,
+                description='This function sets the value of a specific CEGUI property of a GUI element. For a list of properties and their meaning, see the http://static.cegui.org.uk/static/WindowsLookProperties.html CEGUI properties page.' ,
                 arguments={
                     "guiElement": """the GUI element you wish to get a property of. """,
                     "property": """the name of of property you want the value of. """,
                     "value": """the new value for the property. """
                 },
-                result="""if the function succeeds it returns true, if it fails it returns false. """,
-            ),
-            name='guiSetProperty',
+                result='if the function succeeds it returns true, if it fails it returns false.' ,
+            )
         )
         ],
     ),
@@ -7710,14 +7538,13 @@ The binds can be either:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to change the currently selected Element/GUI/Tab|tab in a Element/GUI/Tab panel|tab panel. """,
+                description='This function is used to change the currently selected Element/GUI/Tab|tab in a Element/GUI/Tab panel|tab panel.' ,
                 arguments={
                     "tabPanel": """The Element/GUI/Tab panel|tab panel which current tab you want to change. """,
                     "theTab": """The Element/GUI/Tab|tab which will be the new active tab. """
                 },
-                result="""returns true if the selected tab was changed to a new one successfully, false otherwise. """,
-            ),
-            name='guiSetSelectedTab',
+                result='returns true if the selected tab was changed to a new one successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7788,16 +7615,15 @@ The binds can be either:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the dimensions (size) of a GUI element. It refers to the bounding box size for GUI elements. It does not make GUI elements smaller or larger in appearance. """,
+                description='This function sets the dimensions (size) of a GUI element. It refers to the bounding box size for GUI elements. It does not make GUI elements smaller or larger in appearance.' ,
                 arguments={
                     "guiElement": """the GUI element whose visibility is to be changed """,
                     "width": """The desired width setting for the gui element """,
                     "height": """The desired height setting for the gui element """,
                     "relative": """This is whether sizes and positioning are relative.  If this is true, then all x,y,width,height floats must be between 0 and 1, representing sizes relative to the parent. """
                 },
-                result="""returns true if the gui elements size was set successfully, false otherwise. """,
-            ),
-            name='guiSetSize',
+                result='returns true if the gui elements size was set successfully, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7848,14 +7674,13 @@ The binds can be either:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the text of a GUI element. """,
+                description='This function sets the text of a GUI element.' ,
                 arguments={
                     "guiElement": """The GUI element you wish to change the text of """,
                     "text": """The new text """
                 },
-                result="""returns true if text has been successfully set on the gui element, false otherwise. """,
-            ),
-            name='guiSetText',
+                result='returns true if text has been successfully set on the gui element, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7906,14 +7731,13 @@ The binds can be either:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the visibility state of a GUI element. """,
+                description='This function changes the visibility state of a GUI element.' ,
                 arguments={
                     "guiElement": """the GUI element whose visibility is to be changed """,
                     "state": """the new visibility state """
                 },
-                result="""returns true if the elements visibility could be changed, false otherwise. """,
-            ),
-            name='guiSetVisible',
+                result='returns true if the elements visibility could be changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7958,13 +7782,12 @@ The binds can be either:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the native size of image. That means the original size in pixels of the image file. """,
+                description='This function gets the native size of image. That means the original size in pixels of the image file.' ,
                 arguments={
                     "theImage": """The static image element to get the original size of. """
                 },
-                result="""returns two integers where first is the width and second the height of the image in pixels, false if the image element was invalid. """,
-            ),
-            name='guiStaticImageGetNativeSize',
+                result='returns two integers where first is the width and second the height of the image in pixels, false if the image element was invalid.' ,
+            )
         )
         ],
     ),
@@ -8015,14 +7838,13 @@ The binds can be either:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to change the image in GUI static image element to another one. Tip: If you set other images as children you will have to use setElementCallPropagationEnabled to only affect the parent image. """,
+                description='This function allows you to change the image in GUI static image element to another one. Tip: If you set other images as children you will have to use setElementCallPropagationEnabled to only affect the parent image.' ,
                 arguments={
                     "theElement": """The static image element to be changed. """,
                     "filename": """A string specifying the filepath of the image file being loaded in current resource. """
                 },
-                result="""returns true if the the image in the static image element was successfully changed, false otherwise. """,
-            ),
-            name='guiStaticImageLoadImage',
+                result='returns true if the the image in the static image element was successfully changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -8063,13 +7885,12 @@ The binds can be either:
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "guiWindow": """the window to check the movable flag of """
                 },
-                result="""returns true if the window is movable, false if not, nil if an invalid window was provided. """,
-            ),
-            name='guiWindowIsMovable',
+                result='returns true if the window is movable, false if not, nil if an invalid window was provided.' ,
+            )
         )
         ],
     ),
@@ -8110,13 +7931,12 @@ The binds can be either:
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "guiWindow": """the window to check the sizable flag of """
                 },
-                result="""returns true if the window is sizable, false if not, nil if an invalid window was provided. """,
-            ),
-            name='guiWindowIsSizable',
+                result='returns true if the window is sizable, false if not, nil if an invalid window was provided.' ,
+            )
         )
         ],
     ),
@@ -8167,14 +7987,13 @@ The binds can be either:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to specify whether or not a user can move a GUI window. """,
+                description='This function allows you to specify whether or not a user can move a GUI window.' ,
                 arguments={
                     "theElement": """The window to be changed. """,
                     "status": """A boolean value indicating whether the window is movable or not. """
                 },
-                result="""returns true if the function is successful, false otherwise. """,
-            ),
-            name='guiWindowSetMovable',
+                result='returns true if the function is successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -8225,14 +8044,13 @@ The binds can be either:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function enables or disables user resizing of a GUI window. """,
+                description='This function enables or disables user resizing of a GUI window.' ,
                 arguments={
                     "theElement": """The window to be changed. """,
                     "status": """A boolean value indicating whether user resizing is to be enabled or disabled. """
                 },
-                result="""returns true if the function is successful, false otherwise. """,
-            ),
-            name='guiWindowSetSizable',
+                result='returns true if the function is successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -8264,13 +8082,12 @@ The binds can be either:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns whether the ingame chatbox is being used (accepting chatbox input) or not. """,
+                description='This function returns whether the ingame chatbox is being used (accepting chatbox input) or not.' ,
                 arguments={
                     
                 },
-                result="""returns true if the chatbox is receiving input, false if not active. """,
-            ),
-            name='isChatBoxInputActive',
+                result='returns true if the chatbox is receiving input, false if not active.' ,
+            )
         )
         ],
     ),
@@ -8302,13 +8119,12 @@ The binds can be either:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns whether the ingame console window is visible or not. """,
+                description='This function returns whether the ingame console window is visible or not.' ,
                 arguments={
                     
                 },
-                result="""returns true if the console is visible, false if not. """,
-            ),
-            name='isConsoleActive',
+                result='returns true if the console is visible, false if not.' ,
+            )
         )
         ],
     ),
@@ -8340,13 +8156,12 @@ The binds can be either:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns whether the ingame debug window is visible or not. This is the debugwindow visible using the debugscript <level> command. """,
+                description='This function returns whether the ingame debug window is visible or not. This is the debugwindow visible using the debugscript <level> command.' ,
                 arguments={
                     
                 },
-                result="""returns true if the debug view is visible, false if not. """,
-            ),
-            name='isDebugViewActive',
+                result='returns true if the debug view is visible, false if not.' ,
+            )
         )
         ],
     ),
@@ -8378,13 +8193,12 @@ The binds can be either:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns whether the user is in the mainmenu or not. """,
+                description='This function returns whether the user is in the mainmenu or not.' ,
                 arguments={
                     
                 },
-                result="""returns true if the mainmenu is visible, false if not. """,
-            ),
-            name='isMainMenuActive',
+                result='returns true if the mainmenu is visible, false if not.' ,
+            )
         )
         ],
     ),
@@ -8416,18 +8230,12 @@ The binds can be either:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns whether any system windows that take focus are active. This includes:
-* Chatbox input
-* Console window
-* Main menu
-* Transferbox
-To get the status of the debug view, see isDebugViewActive. """,
+                description='This function returns whether any system windows that take focus are active. This includes:\n* Chatbox input\n* Console window\n* Main menu\n* Transferbox\nTo get the status of the debug view, see isDebugViewActive.' ,
                 arguments={
                     
                 },
-                result="""returns true if the focus is on the mta window, false if it isnt. """,
-            ),
-            name='isMTAWindowActive',
+                result='returns true if the focus is on the mta window, false if it isnt.' ,
+            )
         )
         ],
     ),
@@ -8459,14 +8267,12 @@ To get the status of the debug view, see isDebugViewActive. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns whether the file downloading dialog box is active or not. This appears when a resource is started and the client doesnt have all the files that resource requires the client to have.
-Its important to note that resources arent started on the client until theyre completely downloaded, so a resource cannot use this function to detect if its own files are downloaded. A client-side resource triggers the onClientResourceStart event when the files it requires are downloaded. """,
+                description='This function returns whether the file downloading dialog box is active or not. This appears when a resource is started and the client doesnt have all the files that resource requires the client to have.\nIts important to note that resources arent started on the client until theyre completely downloaded, so a resource cannot use this function to detect if its own files are downloaded. A client-side resource triggers the onClientResourceStart event when the files it requires are downloaded.' ,
                 arguments={
                     
                 },
-                result="""returns true if the file transfer box is visible, false if not. """,
-            ),
-            name='isTransferBoxActive',
+                result='returns true if the file transfer box is visible, false if not.' ,
+            )
         )
         ],
     ),
@@ -8507,13 +8313,12 @@ Its important to note that resources arent started on the client until theyre co
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function enables or disables the debug window. """,
+                description='This function enables or disables the debug window.' ,
                 arguments={
                     "enabled": """true if debug window should be visible, false otherwise. """
                 },
-                result="""returns true, false if invalid parameters are passed. """,
-            ),
-            name='setDebugViewActive',
+                result='returns true, false if invalid parameters are passed.' ,
+            )
         )
         ],
     )

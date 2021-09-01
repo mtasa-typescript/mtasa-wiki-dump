@@ -14,11 +14,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onWeaponFire',
             docs=FunctionDoc(
-                description="""This event is triggered when a custom weapon gets fired. """,
+                description='This event is triggered when a custom weapon gets fired.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[

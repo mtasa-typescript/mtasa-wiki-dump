@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -176,9 +176,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a projectile of the specified type on the specified coordinates.
-*Model argument is not synchronized between clients. Clients differs from local player see always standard projectile model.
-*Target argument can only be defined as a player or another projectile. """,
+                description='This function creates a projectile of the specified type on the specified coordinates.\n*Model argument is not synchronized between clients. Clients differs from local player see always standard projectile model.\n*Target argument can only be defined as a player or another projectile.' ,
                 arguments={
                     "creator": """The element representing creator of the projectile. In case you want the projectile to be synced for everybody creator must be the local player or his vehicle. """,
                     "weaponType": """int representing the projectile weaponType (characteristics). Valid IDs are: """,
@@ -189,9 +187,8 @@ DUMP_PARTIAL = [
                     "velX": """, velY, velZ: float starting velocity for the projectile. """,
                     "model": """: Integer representing the projectiles model, uses default model for weaponType if not specified. """
                 },
-                result="""returns a projectile element if projectile creation was successful. returns false if unable to create a projectile (wrong weapon id or projectiles limit was reached). """,
-            ),
-            name='createProjectile',
+                result='returns a projectile element if projectile creation was successful. returns false if unable to create a projectile (wrong weapon id or projectiles limit was reached).' ,
+            )
         )
         ],
     ),
@@ -229,13 +226,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to detonate a players satchels. """,
+                description='This function can be used to detonate a players satchels.' ,
                 arguments={
                     
                 },
-                result=""" """,
-            ),
-            name='detonateSatchels',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -262,13 +258,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to detonate a players satchels. """,
+                description='This function can be used to detonate a players satchels.' ,
                 arguments={
                     
                 },
-                result=""" """,
-            ),
-            name='detonateSatchels',
+                result='' ,
+            )
         )
         ],
     ),
@@ -309,17 +304,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Get the time left before a projectile detonates. """,
+                description='Get the time left before a projectile detonates.' ,
                 arguments={
                     "projectile": """: the projectile to get the timer of. """
                 },
-                result="""returns the the time in milliseconds to detonation which depending on the projectile type will do different things:
-* grenades will explode when it hits 0
-* teargas may be a duration timer
-* both types of rockets will explode when it hits 0
-* satchels restarts so i do not think it does anything """,
-            ),
-            name='getProjectileCounter',
+                result='returns the the time in milliseconds to detonation which depending on the projectile type will do different things:\n* grenades will explode when it hits 0\n* teargas may be a duration timer\n* both types of rockets will explode when it hits 0\n* satchels restarts so i do not think it does anything' ,
+            )
         )
         ],
     ),
@@ -360,13 +350,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the creator of the specified projectile. """,
+                description='This function returns the creator of the specified projectile.' ,
                 arguments={
                     "theProjectile": """The projectiles| projectile element which creator you want to retrieve. """
                 },
-                result="""returns the element which created the projectile if successful, false otherwise. """,
-            ),
-            name='getProjectileCreator',
+                result='returns the element which created the projectile if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -407,13 +396,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the force of the specified projectile. """,
+                description='This function returns the force of the specified projectile.' ,
                 arguments={
                     "theProjectile": """The projectiles| projectile element which force you want to retrieve. """
                 },
-                result="""returns a float if successful, false otherwise. """,
-            ),
-            name='getProjectileForce',
+                result='returns a float if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -454,13 +442,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the target of the specified projectile. """,
+                description='This function returns the target of the specified projectile.' ,
                 arguments={
                     "theProjectile": """The projectiles| projectile element which target you want to retrieve. """
                 },
-                result="""returns the element which is the projectiles target if the projectile is valid and can have a target (like a heat-seeking rocket), false otherwise. """,
-            ),
-            name='getProjectileTarget',
+                result='returns the element which is the projectiles target if the projectile is valid and can have a target (like a heat-seeking rocket), false otherwise.' ,
+            )
         )
         ],
     ),
@@ -501,13 +488,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the type of the specified projectile. """,
+                description='This function returns the type of the specified projectile.' ,
                 arguments={
                     "theProjectile": """The Element/Projectile|projectile element which type you want to retrieve. """
                 },
-                result="""returns an integer over the type of the projectile or false if invalid arguments were passed. """,
-            ),
-            name='getProjectileType',
+                result='returns an integer over the type of the projectile or false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -558,18 +544,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Will change the projectile counter timer which depending on the projectile type will do different things:
-* Rockets and Grenades will explode when it hits 0
-* Teargas may be a duration timer
-* Satchels restart (we currently assume it doesnt cause an effect)
-* Molotov will explode with search ground level when it hits 0 """,
+                description='Will change the projectile counter timer which depending on the projectile type will do different things:\n* Rockets and Grenades will explode when it hits 0\n* Teargas may be a duration timer\n* Satchels restart (we currently assume it doesnt cause an effect)\n* Molotov will explode with search ground level when it hits 0' ,
                 arguments={
                     "projectile": """The projectile to edit the timer of. """,
                     "timeToDetonate": """The time in milliseconds to detonation. """
                 },
-                result="""returns true on success, false otherwise. """,
-            ),
-            name='setProjectileCounter',
+                result='returns true on success, false otherwise.' ,
+            )
         )
         ],
     )

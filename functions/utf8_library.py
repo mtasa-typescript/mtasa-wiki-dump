@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -63,15 +63,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the codepoints for the i-th through j-th character of the string passed. """,
+                description='Returns the codepoints for the i-th through j-th character of the string passed.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "i": """An integer representing the beginning position. """,
                     "j": """An integer representing the ending position. """
                 },
-                result="""returns a sequence of integer values from the original string if successful, nil otherwise. """,
-            ),
-            name='utf8.byte',
+                result='returns a sequence of integer values from the original string if successful, nil otherwise.' ,
+            )
         )
         ],
         client=[
@@ -127,15 +126,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the codepoints for the i-th through j-th character of the string passed. """,
+                description='Returns the codepoints for the i-th through j-th character of the string passed.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "i": """An integer representing the beginning position. """,
                     "j": """An integer representing the ending position. """
                 },
-                result="""returns a sequence of integer values from the original string if successful, nil otherwise. """,
-            ),
-            name='utf8.byte',
+                result='returns a sequence of integer values from the original string if successful, nil otherwise.' ,
+            )
         )
         ],
     ),
@@ -173,13 +171,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Generates a string representing the character codepoints as arguments. """,
+                description='Generates a string representing the character codepoints as arguments.' ,
                 arguments={
                     "codepoints": """An variable argument sequence of code points representing the desired unicode characters. """
                 },
-                result="""returns a string representation of the codepoints passed. """,
-            ),
-            name='utf8.char',
+                result='returns a string representation of the codepoints passed.' ,
+            )
         )
         ],
         client=[
@@ -215,13 +212,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Generates a string representing the character codepoints as arguments. """,
+                description='Generates a string representing the character codepoints as arguments.' ,
                 arguments={
                     "codepoints": """An variable argument sequence of code points representing the desired unicode characters. """
                 },
-                result="""returns a string representation of the codepoints passed. """,
-            ),
-            name='utf8.char',
+                result='returns a string representation of the codepoints passed.' ,
+            )
         )
         ],
     ),
@@ -283,15 +279,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Converts the UTF-8 codepoint position to byte-string position. """,
+                description='Converts the UTF-8 codepoint position to byte-string position.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "charpos": """An integer representing the beginning position (offset will be added/subtracted). """,
                     "offset": """An integer representing the offset to charpos. """
                 },
-                result="""returns the integer position as in a byte string and the integer codepoint at this position, nil otherwise. """,
-            ),
-            name='utf8.charpos',
+                result='returns the integer position as in a byte string and the integer codepoint at this position, nil otherwise.' ,
+            )
         )
         ],
         client=[
@@ -351,15 +346,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Converts the UTF-8 codepoint position to byte-string position. """,
+                description='Converts the UTF-8 codepoint position to byte-string position.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "charpos": """An integer representing the beginning position (offset will be added/subtracted). """,
                     "offset": """An integer representing the offset to charpos. """
                 },
-                result="""returns the integer position as in a byte string and the integer codepoint at this position, nil otherwise. """,
-            ),
-            name='utf8.charpos',
+                result='returns the integer position as in a byte string and the integer codepoint at this position, nil otherwise.' ,
+            )
         )
         ],
     ),
@@ -397,13 +391,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Escapes a string to a UTF-8 format string. It supports several escape formats, see the formatting table. """,
+                description='Escapes a string to a UTF-8 format string. It supports several escape formats, see the formatting table.' ,
                 arguments={
                     "input": """A string character sequence """
                 },
-                result="""returns a string containing the escaped utf-8 characters from the original string. """,
-            ),
-            name='utf8.escape',
+                result='returns a string containing the escaped utf-8 characters from the original string.' ,
+            )
         )
         ],
         client=[
@@ -439,13 +432,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Escapes a string to a UTF-8 format string. It supports several escape formats, see the formatting table. """,
+                description='Escapes a string to a UTF-8 format string. It supports several escape formats, see the formatting table.' ,
                 arguments={
                     "input": """A string character sequence """
                 },
-                result="""returns a string containing the escaped utf-8 characters from the original string. """,
-            ),
-            name='utf8.escape',
+                result='returns a string containing the escaped utf-8 characters from the original string.' ,
+            )
         )
         ],
     ),
@@ -517,16 +509,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Finds the first occurrence of the http://lua-users.org/wiki/PatternsTutorial pattern in the string passed. If an instance of the pattern is found, a pair of values representing the start and the end of the matched string is returned. """,
+                description='Finds the first occurrence of the http://lua-users.org/wiki/PatternsTutorial pattern in the string passed. If an instance of the pattern is found, a pair of values representing the start and the end of the matched string is returned.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "pattern": """A string match http://lua-users.org/wiki/PatternsTutorial pattern (you can disable pattern matching by using the optional fourth argument plain) """,
                     "startpos": """An integer representing the beginning position. """,
                     "plain": """A boolean, if pattern matching should be turned off """
                 },
-                result="""returns two number values for the beginning and ending position of the matched string, nil otherwise. """,
-            ),
-            name='utf8.find',
+                result='returns two number values for the beginning and ending position of the matched string, nil otherwise.' ,
+            )
         )
         ],
         client=[
@@ -596,16 +587,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Finds the first occurrence of the http://lua-users.org/wiki/PatternsTutorial pattern in the string passed. If an instance of the pattern is found, a pair of values representing the start and the end of the matched string is returned. """,
+                description='Finds the first occurrence of the http://lua-users.org/wiki/PatternsTutorial pattern in the string passed. If an instance of the pattern is found, a pair of values representing the start and the end of the matched string is returned.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "pattern": """A string match http://lua-users.org/wiki/PatternsTutorial pattern (you can disable pattern matching by using the optional fourth argument plain) """,
                     "startpos": """An integer representing the beginning position. """,
                     "plain": """A boolean, if pattern matching should be turned off """
                 },
-                result="""returns two number values for the beginning and ending position of the matched string, nil otherwise. """,
-            ),
-            name='utf8.find',
+                result='returns two number values for the beginning and ending position of the matched string, nil otherwise.' ,
+            )
         )
         ],
     ),
@@ -643,13 +633,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Converts a UTF-8 string to folded case (lowercase), which can be used to compare two strings. If input is an integer, its treat as a codepoint and a convert codepoint (integer) is returned. """,
+                description='Converts a UTF-8 string to folded case (lowercase), which can be used to compare two strings. If input is an integer, its treat as a codepoint and a convert codepoint (integer) is returned.' ,
                 arguments={
                     "input": """A string character sequence OR an integer value """
                 },
-                result="""returns a string in lowercase or returns an integer (see description). """,
-            ),
-            name='utf8.fold',
+                result='returns a string in lowercase or returns an integer (see description).' ,
+            )
         )
         ],
         client=[
@@ -685,13 +674,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Converts a UTF-8 string to folded case (lowercase), which can be used to compare two strings. If input is an integer, its treat as a codepoint and a convert codepoint (integer) is returned. """,
+                description='Converts a UTF-8 string to folded case (lowercase), which can be used to compare two strings. If input is an integer, its treat as a codepoint and a convert codepoint (integer) is returned.' ,
                 arguments={
                     "input": """A string character sequence OR an integer value """
                 },
-                result="""returns a string in lowercase or returns an integer (see description). """,
-            ),
-            name='utf8.fold',
+                result='returns a string in lowercase or returns an integer (see description).' ,
+            )
         )
         ],
     ),
@@ -739,14 +727,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a pattern finding iterator for UTF-8 strings. The iterator will search through the string input looking for instances of the pattern you passed. For more information on iterators read the http://lua-users.org/wiki/ForTutorial ForTutorial and http://lua-users.org/wiki/IteratorsTutorial IteratorsTutorial. """,
+                description='This function returns a pattern finding iterator for UTF-8 strings. The iterator will search through the string input looking for instances of the pattern you passed. For more information on iterators read the http://lua-users.org/wiki/ForTutorial ForTutorial and http://lua-users.org/wiki/IteratorsTutorial IteratorsTutorial.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "pattern": """A string match http://lua-users.org/wiki/PatternsTutorial pattern """
                 },
-                result="""returns an function for iterations on the input string by using the passed pattern string. """,
-            ),
-            name='utf8.gmatch',
+                result='returns an function for iterations on the input string by using the passed pattern string.' ,
+            )
         )
         ],
         client=[
@@ -792,14 +779,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a pattern finding iterator for UTF-8 strings. The iterator will search through the string input looking for instances of the pattern you passed. For more information on iterators read the http://lua-users.org/wiki/ForTutorial ForTutorial and http://lua-users.org/wiki/IteratorsTutorial IteratorsTutorial. """,
+                description='This function returns a pattern finding iterator for UTF-8 strings. The iterator will search through the string input looking for instances of the pattern you passed. For more information on iterators read the http://lua-users.org/wiki/ForTutorial ForTutorial and http://lua-users.org/wiki/IteratorsTutorial IteratorsTutorial.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "pattern": """A string match http://lua-users.org/wiki/PatternsTutorial pattern """
                 },
-                result="""returns an function for iterations on the input string by using the passed pattern string. """,
-            ),
-            name='utf8.gmatch',
+                result='returns an function for iterations on the input string by using the passed pattern string.' ,
+            )
         )
         ],
     ),
@@ -867,16 +853,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns a copy of the original input string with replaced matches from the pattern by the replacement value. """,
+                description='Returns a copy of the original input string with replaced matches from the pattern by the replacement value.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "pattern": """A string match http://lua-users.org/wiki/PatternsTutorial pattern """,
                     "replace": """A string literal OR an integer value OR a function (see examples below) OR a table ({ match = replacement }) """,
                     "match_limit": """An integer to limit the number of substitutions made """
                 },
-                result="""returns a pair of values, the modified string and the integer number of substitutions made. """,
-            ),
-            name='utf8.gsub',
+                result='returns a pair of values, the modified string and the integer number of substitutions made.' ,
+            )
         )
         ],
         client=[
@@ -942,16 +927,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns a copy of the original input string with replaced matches from the pattern by the replacement value. """,
+                description='Returns a copy of the original input string with replaced matches from the pattern by the replacement value.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "pattern": """A string match http://lua-users.org/wiki/PatternsTutorial pattern """,
                     "replace": """A string literal OR an integer value OR a function (see examples below) OR a table ({ match = replacement }) """,
                     "match_limit": """An integer to limit the number of substitutions made """
                 },
-                result="""returns a pair of values, the modified string and the integer number of substitutions made. """,
-            ),
-            name='utf8.gsub',
+                result='returns a pair of values, the modified string and the integer number of substitutions made.' ,
+            )
         )
         ],
     ),
@@ -1009,15 +993,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Inserts a substring into input string. If insert-position is given, the substring will be inserted before the character at this index, otherwise the substring will concatenate to input. The insert position may be negative. """,
+                description='Inserts a substring into input string. If insert-position is given, the substring will be inserted before the character at this index, otherwise the substring will concatenate to input. The insert position may be negative.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "substring": """A string character sequence which should be inserted """,
                     "insert_pos": """An integer representing the position, where the substring will be inserted at. """
                 },
-                result="""returns a string with the inserted substring value. """,
-            ),
-            name='utf8.insert',
+                result='returns a string with the inserted substring value.' ,
+            )
         )
         ],
         client=[
@@ -1073,15 +1056,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Inserts a substring into input string. If insert-position is given, the substring will be inserted before the character at this index, otherwise the substring will concatenate to input. The insert position may be negative. """,
+                description='Inserts a substring into input string. If insert-position is given, the substring will be inserted before the character at this index, otherwise the substring will concatenate to input. The insert position may be negative.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "substring": """A string character sequence which should be inserted """,
                     "insert_pos": """An integer representing the position, where the substring will be inserted at. """
                 },
-                result="""returns a string with the inserted substring value. """,
-            ),
-            name='utf8.insert',
+                result='returns a string with the inserted substring value.' ,
+            )
         )
         ],
     ),
@@ -1139,15 +1121,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the length of the string passed. """,
+                description='Returns the length of the string passed.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "i": """An integer representing the beginning position for measuring the length of the section (may be negative). """,
                     "j": """An integer representing the ending position for measuring the length of the section (may be negative). """
                 },
-                result="""returns the length of the string as an integer. """,
-            ),
-            name='utf8.len',
+                result='returns the length of the string as an integer.' ,
+            )
         )
         ],
         client=[
@@ -1203,15 +1184,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the length of the string passed. """,
+                description='Returns the length of the string passed.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "i": """An integer representing the beginning position for measuring the length of the section (may be negative). """,
                     "j": """An integer representing the ending position for measuring the length of the section (may be negative). """
                 },
-                result="""returns the length of the string as an integer. """,
-            ),
-            name='utf8.len',
+                result='returns the length of the string as an integer.' ,
+            )
         )
         ],
     ),
@@ -1269,15 +1249,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Extract substrings by matching patterns in the input string. This function can be used to extract specific information from a string. """,
+                description='Extract substrings by matching patterns in the input string. This function can be used to extract specific information from a string.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "pattern": """A string match http://lua-users.org/wiki/PatternsTutorial pattern """,
                     "index": """An integer representing the beginning position for the pattern matching """
                 },
-                result="""returns a sequence of string matches from the input string, nil otherwise. """,
-            ),
-            name='utf8.match',
+                result='returns a sequence of string matches from the input string, nil otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1333,15 +1312,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Extract substrings by matching patterns in the input string. This function can be used to extract specific information from a string. """,
+                description='Extract substrings by matching patterns in the input string. This function can be used to extract specific information from a string.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "pattern": """A string match http://lua-users.org/wiki/PatternsTutorial pattern """,
                     "index": """An integer representing the beginning position for the pattern matching """
                 },
-                result="""returns a sequence of string matches from the input string, nil otherwise. """,
-            ),
-            name='utf8.match',
+                result='returns a sequence of string matches from the input string, nil otherwise.' ,
+            )
         )
         ],
     ),
@@ -1389,14 +1367,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Compares two strings in lower-case and returns the difference indicator (see table below) as an integer value. """,
+                description='Compares two strings in lower-case and returns the difference indicator (see table below) as an integer value.' ,
                 arguments={
                     "a": """A string character sequence """,
                     "b": """A string character sequence """
                 },
-                result="""returns an integer, which indicates the difference, see the table below for further information. """,
-            ),
-            name='utf8.ncasecmp',
+                result='returns an integer, which indicates the difference, see the table below for further information.' ,
+            )
         )
         ],
         client=[
@@ -1442,14 +1419,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Compares two strings in lower-case and returns the difference indicator (see table below) as an integer value. """,
+                description='Compares two strings in lower-case and returns the difference indicator (see table below) as an integer value.' ,
                 arguments={
                     "a": """A string character sequence """,
                     "b": """A string character sequence """
                 },
-                result="""returns an integer, which indicates the difference, see the table below for further information. """,
-            ),
-            name='utf8.ncasecmp',
+                result='returns an integer, which indicates the difference, see the table below for further information.' ,
+            )
         )
         ],
     ),
@@ -1511,15 +1487,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This is an iteration function to traverse each single codepoint of a UTF-8 string. """,
+                description='This is an iteration function to traverse each single codepoint of a UTF-8 string.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "charpos": """An integer representing the beginning position (offset will be added/subtracted). """,
                     "offset": """An integer representing the offset to charpos. """
                 },
-                result="""returns the integer position in bytes and the integer codepoint at this position, nil otherwise. """,
-            ),
-            name='utf8.next',
+                result='returns the integer position in bytes and the integer codepoint at this position, nil otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1579,15 +1554,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This is an iteration function to traverse each single codepoint of a UTF-8 string. """,
+                description='This is an iteration function to traverse each single codepoint of a UTF-8 string.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "charpos": """An integer representing the beginning position (offset will be added/subtracted). """,
                     "offset": """An integer representing the offset to charpos. """
                 },
-                result="""returns the integer position in bytes and the integer codepoint at this position, nil otherwise. """,
-            ),
-            name='utf8.next',
+                result='returns the integer position in bytes and the integer codepoint at this position, nil otherwise.' ,
+            )
         )
         ],
     ),
@@ -1645,15 +1619,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes a substring in a UTF-8 string by using a position range. """,
+                description='This function removes a substring in a UTF-8 string by using a position range.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "start": """An integer representing the beginning position. """,
                     "stop": """An integer representing the ending position. """
                 },
-                result="""returns the string with the removed substring from the range. """,
-            ),
-            name='utf8.remove',
+                result='returns the string with the removed substring from the range.' ,
+            )
         )
         ],
         client=[
@@ -1709,15 +1682,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes a substring in a UTF-8 string by using a position range. """,
+                description='This function removes a substring in a UTF-8 string by using a position range.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "start": """An integer representing the beginning position. """,
                     "stop": """An integer representing the ending position. """
                 },
-                result="""returns the string with the removed substring from the range. """,
-            ),
-            name='utf8.remove',
+                result='returns the string with the removed substring from the range.' ,
+            )
         )
         ],
     ),
@@ -1755,13 +1727,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Reverses the input string. """,
+                description='Reverses the input string.' ,
                 arguments={
                     "input": """A string character sequence """
                 },
-                result="""returns a string containing the reversed original utf-8 string. """,
-            ),
-            name='utf8.reverse',
+                result='returns a string containing the reversed original utf-8 string.' ,
+            )
         )
         ],
         client=[
@@ -1797,13 +1768,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Reverses the input string. """,
+                description='Reverses the input string.' ,
                 arguments={
                     "input": """A string character sequence """
                 },
-                result="""returns a string containing the reversed original utf-8 string. """,
-            ),
-            name='utf8.reverse',
+                result='returns a string containing the reversed original utf-8 string.' ,
+            )
         )
         ],
     ),
@@ -1861,15 +1831,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns a substring of the string passed. The substring starts at i. If the third argument j is not given, the substring will end at the end of the string. If the third argument is given, the substring ends at and includes j. """,
+                description='Returns a substring of the string passed. The substring starts at i. If the third argument j is not given, the substring will end at the end of the string. If the third argument is given, the substring ends at and includes j.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "i": """An integer representing the beginning position (may be negative). """,
                     "j": """An integer representing the ending position (may be negative). """
                 },
-                result="""returns a string substring of the original string, containing the selected range from the original string. """,
-            ),
-            name='utf8.sub',
+                result='returns a string substring of the original string, containing the selected range from the original string.' ,
+            )
         )
         ],
         client=[
@@ -1925,15 +1894,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns a substring of the string passed. The substring starts at i. If the third argument j is not given, the substring will end at the end of the string. If the third argument is given, the substring ends at and includes j. """,
+                description='Returns a substring of the string passed. The substring starts at i. If the third argument j is not given, the substring will end at the end of the string. If the third argument is given, the substring ends at and includes j.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "i": """An integer representing the beginning position (may be negative). """,
                     "j": """An integer representing the ending position (may be negative). """
                 },
-                result="""returns a string substring of the original string, containing the selected range from the original string. """,
-            ),
-            name='utf8.sub',
+                result='returns a string substring of the original string, containing the selected range from the original string.' ,
+            )
         )
         ],
     ),
@@ -1971,13 +1939,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Converts a UTF-8 string to title case (uppercase). If input is an integer, it is treated as a codepoint and a converted codepoint (integer) is returned. """,
+                description='Converts a UTF-8 string to title case (uppercase). If input is an integer, it is treated as a codepoint and a converted codepoint (integer) is returned.' ,
                 arguments={
                     "input": """A string character sequence OR an integer value """
                 },
-                result="""returns a string in uppercase or returns an integer (see description). """,
-            ),
-            name='utf8.title',
+                result='returns a string in uppercase or returns an integer (see description).' ,
+            )
         )
         ],
         client=[
@@ -2013,13 +1980,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Converts a UTF-8 string to title case (uppercase). If input is an integer, it is treated as a codepoint and a converted codepoint (integer) is returned. """,
+                description='Converts a UTF-8 string to title case (uppercase). If input is an integer, it is treated as a codepoint and a converted codepoint (integer) is returned.' ,
                 arguments={
                     "input": """A string character sequence OR an integer value """
                 },
-                result="""returns a string in uppercase or returns an integer (see description). """,
-            ),
-            name='utf8.title',
+                result='returns a string in uppercase or returns an integer (see description).' ,
+            )
         )
         ],
     ),
@@ -2077,15 +2043,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Calculates the width of UTF-8 strings with special/unprintable characters, which require special width treatment. """,
+                description='Calculates the width of UTF-8 strings with special/unprintable characters, which require special width treatment.' ,
                 arguments={
                     "input": """A string character sequence OR a codepoint integer """,
                     "ambi_is_double": """A boolean, if set to true, ambiguous characters width is 2 (see example below). """,
                     "default_width": """An integer, if given, is used as width for unprintable characters. """
                 },
-                result="""returns the integer width of the input string or the width of the codepoint integer. """,
-            ),
-            name='utf8.width',
+                result='returns the integer width of the input string or the width of the codepoint integer.' ,
+            )
         )
         ],
         client=[
@@ -2141,15 +2106,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Calculates the width of UTF-8 strings with special/unprintable characters, which require special width treatment. """,
+                description='Calculates the width of UTF-8 strings with special/unprintable characters, which require special width treatment.' ,
                 arguments={
                     "input": """A string character sequence OR a codepoint integer """,
                     "ambi_is_double": """A boolean, if set to true, ambiguous characters width is 2 (see example below). """,
                     "default_width": """An integer, if given, is used as width for unprintable characters. """
                 },
-                result="""returns the integer width of the input string or the width of the codepoint integer. """,
-            ),
-            name='utf8.width',
+                result='returns the integer width of the input string or the width of the codepoint integer.' ,
+            )
         )
         ],
     ),
@@ -2225,15 +2189,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the location, offset and width of the character at the given location in the UTF-8 string. """,
+                description='Returns the location, offset and width of the character at the given location in the UTF-8 string.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "ambi_is_double": """A boolean, if set to true, ambiguous characters width is 2 (see example). """,
                     "default_width": """An integer, if given, is used as width for unprintable characters. """
                 },
-                result="""returns the given location, the offset in utf-8 encoding (if cursor is in the middle of the wide char - offset will be 2) and the width of the character, otherwise only the location as integer will be returned. """,
-            ),
-            name='utf8.widthindex',
+                result='returns the given location, the offset in utf-8 encoding (if cursor is in the middle of the wide char - offset will be 2) and the width of the character, otherwise only the location as integer will be returned.' ,
+            )
         )
         ],
         client=[
@@ -2307,15 +2270,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the location, offset and width of the character at the given location in the UTF-8 string. """,
+                description='Returns the location, offset and width of the character at the given location in the UTF-8 string.' ,
                 arguments={
                     "input": """A string character sequence """,
                     "ambi_is_double": """A boolean, if set to true, ambiguous characters width is 2 (see example). """,
                     "default_width": """An integer, if given, is used as width for unprintable characters. """
                 },
-                result="""returns the given location, the offset in utf-8 encoding (if cursor is in the middle of the wide char - offset will be 2) and the width of the character, otherwise only the location as integer will be returned. """,
-            ),
-            name='utf8.widthindex',
+                result='returns the given location, the offset in utf-8 encoding (if cursor is in the middle of the wide char - offset will be 2) and the width of the character, otherwise only the location as integer will be returned.' ,
+            )
         )
         ],
     )

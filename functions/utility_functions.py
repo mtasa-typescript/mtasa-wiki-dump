@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -63,8 +63,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows tracing of MTA functions and events. It should only be used when debugging scripts as it may degrade script performance.
-Debug hooks are not recursive, so functions and events triggered inside the hook callback will not be traced. """,
+                description='This function allows tracing of MTA functions and events. It should only be used when debugging scripts as it may degrade script performance.\nDebug hooks are not recursive, so functions and events triggered inside the hook callback will not be traced.' ,
                 arguments={
                     "hookType": """The type of hook to add. This can be:
 ** preEvent
@@ -78,9 +77,8 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                     "nameList": """Table of strings for restricting which functions and events the hook will be triggered on
 ** addDebugHook and removeDebugHook will only be hooked if they are specified in the name list """
                 },
-                result="""returns true if the hook was successfully added, or false otherwise. """,
-            ),
-            name='addDebugHook',
+                result='returns true if the hook was successfully added, or false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -136,8 +134,7 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows tracing of MTA functions and events. It should only be used when debugging scripts as it may degrade script performance.
-Debug hooks are not recursive, so functions and events triggered inside the hook callback will not be traced. """,
+                description='This function allows tracing of MTA functions and events. It should only be used when debugging scripts as it may degrade script performance.\nDebug hooks are not recursive, so functions and events triggered inside the hook callback will not be traced.' ,
                 arguments={
                     "hookType": """The type of hook to add. This can be:
 ** preEvent
@@ -151,9 +148,8 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                     "nameList": """Table of strings for restricting which functions and events the hook will be triggered on
 ** addDebugHook and removeDebugHook will only be hooked if they are specified in the name list """
                 },
-                result="""returns true if the hook was successfully added, or false otherwise. """,
-            ),
-            name='addDebugHook',
+                result='returns true if the hook was successfully added, or false otherwise.' ,
+            )
         )
         ],
     ),
@@ -191,13 +187,12 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the decrypted data from https://en.wikipedia.org/wiki/Base64 base64 representation of the encrypted block """,
+                description='This function returns the decrypted data from https://en.wikipedia.org/wiki/Base64 base64 representation of the encrypted block' ,
                 arguments={
                     "data": """The block of data you want to decrypt """
                 },
-                result="""returns the decrypted data from https://en.wikipedia.org/wiki/base64 base64 representation of the encrypted block if the decryption process was successfully completed, false otherwise. """,
-            ),
-            name='base64Decode',
+                result='returns the decrypted data from https://en.wikipedia.org/wiki/base64 base64 representation of the encrypted block if the decryption process was successfully completed, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -233,13 +228,12 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the decrypted data from https://en.wikipedia.org/wiki/Base64 base64 representation of the encrypted block """,
+                description='This function returns the decrypted data from https://en.wikipedia.org/wiki/Base64 base64 representation of the encrypted block' ,
                 arguments={
                     "data": """The block of data you want to decrypt """
                 },
-                result="""returns the decrypted data from https://en.wikipedia.org/wiki/base64 base64 representation of the encrypted block if the decryption process was successfully completed, false otherwise. """,
-            ),
-            name='base64Decode',
+                result='returns the decrypted data from https://en.wikipedia.org/wiki/base64 base64 representation of the encrypted block if the decryption process was successfully completed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -277,13 +271,12 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the https://en.wikipedia.org/wiki/Base64 base64 representation of the encoded block of data """,
+                description='This function returns the https://en.wikipedia.org/wiki/Base64 base64 representation of the encoded block of data' ,
                 arguments={
                     "data": """The block of data you want to encode """
                 },
-                result="""returns the https://en.wikipedia.org/wiki/base64 base64 representation of the encoded data if the encoding process was successfully completed, false otherwise. """,
-            ),
-            name='base64Encode',
+                result='returns the https://en.wikipedia.org/wiki/base64 base64 representation of the encoded data if the encoding process was successfully completed, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -319,13 +312,12 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the https://en.wikipedia.org/wiki/Base64 base64 representation of the encoded block of data """,
+                description='This function returns the https://en.wikipedia.org/wiki/Base64 base64 representation of the encoded block of data' ,
                 arguments={
                     "data": """The block of data you want to encode """
                 },
-                result="""returns the https://en.wikipedia.org/wiki/base64 base64 representation of the encoded data if the encoding process was successfully completed, false otherwise. """,
-            ),
-            name='base64Encode',
+                result='returns the https://en.wikipedia.org/wiki/base64 base64 representation of the encoded data if the encoding process was successfully completed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -373,13 +365,12 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function performs a bitwise AND-conjunction on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#AND Bitwise operation for more details. """,
+                description='This function performs a bitwise AND-conjunction on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#AND Bitwise operation for more details.' ,
                 arguments={
                     "varN": """The value you want to perform an AND-conjunction on """
                 },
-                result="""returns the conjuncted value. """,
-            ),
-            name='bitAnd',
+                result='returns the conjuncted value.' ,
+            )
         )
         ],
         client=[
@@ -425,13 +416,12 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function performs a bitwise AND-conjunction on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#AND Bitwise operation for more details. """,
+                description='This function performs a bitwise AND-conjunction on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#AND Bitwise operation for more details.' ,
                 arguments={
                     "varN": """The value you want to perform an AND-conjunction on """
                 },
-                result="""returns the conjuncted value. """,
-            ),
-            name='bitAnd',
+                result='returns the conjuncted value.' ,
+            )
         )
         ],
     ),
@@ -479,15 +469,13 @@ Debug hooks are not recursive, so functions and events triggered inside the hook
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions performs an arithmetic shift on the integer value by integer n positions. In an arithmetic shift, zeros are shifted in to replace the discarded bits. In a right arithmetic shift, the https://en.wikipedia.org/wiki/Sign_bit sign bit is shifted in on the left, thus preserving the sign of the operand.
-See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise operation for more details. """,
+                description='This functions performs an arithmetic shift on the integer value by integer n positions. In an arithmetic shift, zeros are shifted in to replace the discarded bits. In a right arithmetic shift, the https://en.wikipedia.org/wiki/Sign_bit sign bit is shifted in on the left, thus preserving the sign of the operand.\nSee https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise operation for more details.' ,
                 arguments={
                     "value": """The value you want to perform the arithmetic shift on. """,
                     "n": """The amount of positions to shift the value by. """
                 },
-                result="""returns the arithmetic shifted value as integer. """,
-            ),
-            name='bitArShift',
+                result='returns the arithmetic shifted value as integer.' ,
+            )
         )
         ],
         client=[
@@ -533,15 +521,13 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise ope
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions performs an arithmetic shift on the integer value by integer n positions. In an arithmetic shift, zeros are shifted in to replace the discarded bits. In a right arithmetic shift, the https://en.wikipedia.org/wiki/Sign_bit sign bit is shifted in on the left, thus preserving the sign of the operand.
-See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise operation for more details. """,
+                description='This functions performs an arithmetic shift on the integer value by integer n positions. In an arithmetic shift, zeros are shifted in to replace the discarded bits. In a right arithmetic shift, the https://en.wikipedia.org/wiki/Sign_bit sign bit is shifted in on the left, thus preserving the sign of the operand.\nSee https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise operation for more details.' ,
                 arguments={
                     "value": """The value you want to perform the arithmetic shift on. """,
                     "n": """The amount of positions to shift the value by. """
                 },
-                result="""returns the arithmetic shifted value as integer. """,
-            ),
-            name='bitArShift',
+                result='returns the arithmetic shifted value as integer.' ,
+            )
         )
         ],
     ),
@@ -599,15 +585,14 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise ope
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the unsigned number formed by the bits field to field + width - 1 (range: 0-31). """,
+                description='This function returns the unsigned number formed by the bits field to field + width - 1 (range: 0-31).' ,
                 arguments={
                     "var": """The value """,
                     "field": """The field number """,
                     "width": """Number of bits to extract """
                 },
-                result="""returns the extracted value/bit sequence. """,
-            ),
-            name='bitExtract',
+                result='returns the extracted value/bit sequence.' ,
+            )
         )
         ],
         client=[
@@ -663,15 +648,14 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise ope
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the unsigned number formed by the bits field to field + width - 1 (range: 0-31). """,
+                description='This function returns the unsigned number formed by the bits field to field + width - 1 (range: 0-31).' ,
                 arguments={
                     "var": """The value """,
                     "field": """The field number """,
                     "width": """Number of bits to extract """
                 },
-                result="""returns the extracted value/bit sequence. """,
-            ),
-            name='bitExtract',
+                result='returns the extracted value/bit sequence.' ,
+            )
         )
         ],
     ),
@@ -719,15 +703,13 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Arithmetic_shift Bitwise ope
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions performs a bitwise circular left-rotation on the integer value by integer n positions.
-See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise operation for more details. """,
+                description='This functions performs a bitwise circular left-rotation on the integer value by integer n positions.\nSee https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise operation for more details.' ,
                 arguments={
                     "value": """The value you want to perform the rotation on. """,
                     "n": """The amount of positions to rotate the value by. """
                 },
-                result="""returns the circular left-rotated value as integer. """,
-            ),
-            name='bitLRotate',
+                result='returns the circular left-rotated value as integer.' ,
+            )
         )
         ],
         client=[
@@ -773,15 +755,13 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise oper
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions performs a bitwise circular left-rotation on the integer value by integer n positions.
-See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise operation for more details. """,
+                description='This functions performs a bitwise circular left-rotation on the integer value by integer n positions.\nSee https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise operation for more details.' ,
                 arguments={
                     "value": """The value you want to perform the rotation on. """,
                     "n": """The amount of positions to rotate the value by. """
                 },
-                result="""returns the circular left-rotated value as integer. """,
-            ),
-            name='bitLRotate',
+                result='returns the circular left-rotated value as integer.' ,
+            )
         )
         ],
     ),
@@ -829,15 +809,13 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise oper
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions performs a logical left shift on the integer value by integer n positions. In a logical shift, zeros are shifted in to replace the discarded bits.
-See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operation for more details. """,
+                description='This functions performs a logical left shift on the integer value by integer n positions. In a logical shift, zeros are shifted in to replace the discarded bits.\nSee https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operation for more details.' ,
                 arguments={
                     "value": """The value you want to perform the shift on. """,
                     "n": """The amount of positions to shift the value by. """
                 },
-                result="""returns the logical left shifted value as integer. """,
-            ),
-            name='bitLShift',
+                result='returns the logical left shifted value as integer.' ,
+            )
         )
         ],
         client=[
@@ -883,15 +861,13 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions performs a logical left shift on the integer value by integer n positions. In a logical shift, zeros are shifted in to replace the discarded bits.
-See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operation for more details. """,
+                description='This functions performs a logical left shift on the integer value by integer n positions. In a logical shift, zeros are shifted in to replace the discarded bits.\nSee https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operation for more details.' ,
                 arguments={
                     "value": """The value you want to perform the shift on. """,
                     "n": """The amount of positions to shift the value by. """
                 },
-                result="""returns the logical left shifted value as integer. """,
-            ),
-            name='bitLShift',
+                result='returns the logical left shifted value as integer.' ,
+            )
         )
         ],
     ),
@@ -929,13 +905,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function performs a bitwise NOT on an (unsigned) 32-bit Int|integer. See http://en.wikipedia.org/wiki/Bitwise_operation#NOT Bitwise operation for more details. """,
+                description='This function performs a bitwise NOT on an (unsigned) 32-bit Int|integer. See http://en.wikipedia.org/wiki/Bitwise_operation#NOT Bitwise operation for more details.' ,
                 arguments={
                     "var": """The value you want to perform a bitwise NOT on """
                 },
-                result="""returns the value on which the operation has been performed. """,
-            ),
-            name='bitNot',
+                result='returns the value on which the operation has been performed.' ,
+            )
         )
         ],
         client=[
@@ -971,13 +946,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function performs a bitwise NOT on an (unsigned) 32-bit Int|integer. See http://en.wikipedia.org/wiki/Bitwise_operation#NOT Bitwise operation for more details. """,
+                description='This function performs a bitwise NOT on an (unsigned) 32-bit Int|integer. See http://en.wikipedia.org/wiki/Bitwise_operation#NOT Bitwise operation for more details.' ,
                 arguments={
                     "var": """The value you want to perform a bitwise NOT on """
                 },
-                result="""returns the value on which the operation has been performed. """,
-            ),
-            name='bitNot',
+                result='returns the value on which the operation has been performed.' ,
+            )
         )
         ],
     ),
@@ -1025,13 +999,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function performs a bitwise OR-conjunction on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#OR Bitwise operation for more details. """,
+                description='This function performs a bitwise OR-conjunction on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#OR Bitwise operation for more details.' ,
                 arguments={
                     "varN": """The value you want to perform an OR-conjunction on """
                 },
-                result="""returns the conjuncted value. """,
-            ),
-            name='bitOr',
+                result='returns the conjuncted value.' ,
+            )
         )
         ],
         client=[
@@ -1077,13 +1050,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function performs a bitwise OR-conjunction on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#OR Bitwise operation for more details. """,
+                description='This function performs a bitwise OR-conjunction on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#OR Bitwise operation for more details.' ,
                 arguments={
                     "varN": """The value you want to perform an OR-conjunction on """
                 },
-                result="""returns the conjuncted value. """,
-            ),
-            name='bitOr',
+                result='returns the conjuncted value.' ,
+            )
         )
         ],
     ),
@@ -1151,16 +1123,15 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the unsigned number formed by var value with replacement specified at bits field to field + width - 1 """,
+                description='This function returns the unsigned number formed by var value with replacement specified at bits field to field + width - 1' ,
                 arguments={
                     "var": """The value """,
                     "replaceValue": """The replaceValue """,
                     "field": """The field number """,
                     "width": """Number of bits to extract """
                 },
-                result="""returns the replaced value/bit sequence. """,
-            ),
-            name='bitReplace',
+                result='returns the replaced value/bit sequence.' ,
+            )
         )
         ],
         client=[
@@ -1226,16 +1197,15 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the unsigned number formed by var value with replacement specified at bits field to field + width - 1 """,
+                description='This function returns the unsigned number formed by var value with replacement specified at bits field to field + width - 1' ,
                 arguments={
                     "var": """The value """,
                     "replaceValue": """The replaceValue """,
                     "field": """The field number """,
                     "width": """Number of bits to extract """
                 },
-                result="""returns the replaced value/bit sequence. """,
-            ),
-            name='bitReplace',
+                result='returns the replaced value/bit sequence.' ,
+            )
         )
         ],
     ),
@@ -1283,15 +1253,13 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions performs a bitwise circular right-rotation on the integer value by integer n positions.
-See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise operation for more details. """,
+                description='This functions performs a bitwise circular right-rotation on the integer value by integer n positions.\nSee https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise operation for more details.' ,
                 arguments={
                     "value": """The value you want to perform the rotation on. """,
                     "n": """The amount of positions to rotate the value by. """
                 },
-                result="""returns the circular right-rotated value as integer. """,
-            ),
-            name='bitRRotate',
+                result='returns the circular right-rotated value as integer.' ,
+            )
         )
         ],
         client=[
@@ -1337,15 +1305,13 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise oper
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions performs a bitwise circular right-rotation on the integer value by integer n positions.
-See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise operation for more details. """,
+                description='This functions performs a bitwise circular right-rotation on the integer value by integer n positions.\nSee https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise operation for more details.' ,
                 arguments={
                     "value": """The value you want to perform the rotation on. """,
                     "n": """The amount of positions to rotate the value by. """
                 },
-                result="""returns the circular right-rotated value as integer. """,
-            ),
-            name='bitRRotate',
+                result='returns the circular right-rotated value as integer.' ,
+            )
         )
         ],
     ),
@@ -1393,15 +1359,13 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Rotate_no_carry Bitwise oper
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions performs a logical right shift on the integer value by integer n positions. In a logical shift, zeros are shifted in to replace the discarded bits.
-See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operation for more details. """,
+                description='This functions performs a logical right shift on the integer value by integer n positions. In a logical shift, zeros are shifted in to replace the discarded bits.\nSee https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operation for more details.' ,
                 arguments={
                     "value": """The value you want to perform the shift on. """,
                     "n": """The amount of positions to shift the value by. """
                 },
-                result="""returns the logical right shifted value as integer. """,
-            ),
-            name='bitRShift',
+                result='returns the logical right shifted value as integer.' ,
+            )
         )
         ],
         client=[
@@ -1447,15 +1411,13 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions performs a logical right shift on the integer value by integer n positions. In a logical shift, zeros are shifted in to replace the discarded bits.
-See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operation for more details. """,
+                description='This functions performs a logical right shift on the integer value by integer n positions. In a logical shift, zeros are shifted in to replace the discarded bits.\nSee https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operation for more details.' ,
                 arguments={
                     "value": """The value you want to perform the shift on. """,
                     "n": """The amount of positions to shift the value by. """
                 },
-                result="""returns the logical right shifted value as integer. """,
-            ),
-            name='bitRShift',
+                result='returns the logical right shifted value as integer.' ,
+            )
         )
         ],
     ),
@@ -1503,13 +1465,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function performs an AND-conjunction on two or more (unsigned) 32-bit Int|integers and checks, whether the conjuncted value is zero or not. See http://en.wikipedia.org/wiki/Bitwise_operation#AND Bitwise operation for more details. """,
+                description='This function performs an AND-conjunction on two or more (unsigned) 32-bit Int|integers and checks, whether the conjuncted value is zero or not. See http://en.wikipedia.org/wiki/Bitwise_operation#AND Bitwise operation for more details.' ,
                 arguments={
                     "varN": """The value you want to perform the operation on (see above) """
                 },
-                result="""returns true if the conjuncted value is not zero, false otherwise. if a bad argument was passed to bittest, youll get nil. """,
-            ),
-            name='bitTest',
+                result='returns true if the conjuncted value is not zero, false otherwise. if a bad argument was passed to bittest, youll get nil.' ,
+            )
         )
         ],
         client=[
@@ -1555,13 +1516,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function performs an AND-conjunction on two or more (unsigned) 32-bit Int|integers and checks, whether the conjuncted value is zero or not. See http://en.wikipedia.org/wiki/Bitwise_operation#AND Bitwise operation for more details. """,
+                description='This function performs an AND-conjunction on two or more (unsigned) 32-bit Int|integers and checks, whether the conjuncted value is zero or not. See http://en.wikipedia.org/wiki/Bitwise_operation#AND Bitwise operation for more details.' ,
                 arguments={
                     "varN": """The value you want to perform the operation on (see above) """
                 },
-                result="""returns true if the conjuncted value is not zero, false otherwise. if a bad argument was passed to bittest, youll get nil. """,
-            ),
-            name='bitTest',
+                result='returns true if the conjuncted value is not zero, false otherwise. if a bad argument was passed to bittest, youll get nil.' ,
+            )
         )
         ],
     ),
@@ -1609,13 +1569,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function performs a bitwise XOR-conjunction (exclusive OR) on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#XOR Bitwise operation for more details. """,
+                description='This function performs a bitwise XOR-conjunction (exclusive OR) on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#XOR Bitwise operation for more details.' ,
                 arguments={
                     "varN": """The value you want to perform a XOR-conjunction on """
                 },
-                result="""returns the conjuncted value. """,
-            ),
-            name='bitXor',
+                result='returns the conjuncted value.' ,
+            )
         )
         ],
         client=[
@@ -1661,13 +1620,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function performs a bitwise XOR-conjunction (exclusive OR) on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#XOR Bitwise operation for more details. """,
+                description='This function performs a bitwise XOR-conjunction (exclusive OR) on two or more (unsigned) 32-bit Int|integers. See http://en.wikipedia.org/wiki/Bitwise_operation#XOR Bitwise operation for more details.' ,
                 arguments={
                     "varN": """The value you want to perform a XOR-conjunction on """
                 },
-                result="""returns the conjuncted value. """,
-            ),
-            name='bitXor',
+                result='returns the conjuncted value.' ,
+            )
         )
         ],
     ),
@@ -1728,15 +1686,14 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions creates a notification ballon on the desktop. """,
+                description='This functions creates a notification ballon on the desktop.' ,
                 arguments={
                     "notificationText": """The text to send in the notification. """,
                     "iconType": """The notification icon type. Possible values are: default (the MTA icon), info, warning, error """,
                     "useSound": """A boolean value indicating whether or not to play a sound when receiving the notification. """
                 },
-                result="""returns true if the notification is correctly created, false otherwise. """,
-            ),
-            name='createTrayNotification',
+                result='returns true if the notification is correctly created, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1774,13 +1731,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""debugSleep freezes the client/server for the specified time. This means that all synchronization, rendering and script execution will stop except HTTP processing invoked by fetchRemote. This function only works, if development mode is enabled by setDevelopmentMode and can be utilised to build a debugger that communicates via HTTP requests with the editor/IDE. """,
+                description='debugSleep freezes the client/server for the specified time. This means that all synchronization, rendering and script execution will stop except HTTP processing invoked by fetchRemote. This function only works, if development mode is enabled by setDevelopmentMode and can be utilised to build a debugger that communicates via HTTP requests with the editor/IDE.' ,
                 arguments={
                     "sleep": """: An integer value in milliseconds. """
                 },
-                result="""returns true if the development mode is enabled and arguments are correct, false otherwise. """,
-            ),
-            name='debugSleep',
+                result='returns true if the development mode is enabled and arguments are correct, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1816,13 +1772,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""debugSleep freezes the client/server for the specified time. This means that all synchronization, rendering and script execution will stop except HTTP processing invoked by fetchRemote. This function only works, if development mode is enabled by setDevelopmentMode and can be utilised to build a debugger that communicates via HTTP requests with the editor/IDE. """,
+                description='debugSleep freezes the client/server for the specified time. This means that all synchronization, rendering and script execution will stop except HTTP processing invoked by fetchRemote. This function only works, if development mode is enabled by setDevelopmentMode and can be utilised to build a debugger that communicates via HTTP requests with the editor/IDE.' ,
                 arguments={
                     "sleep": """: An integer value in milliseconds. """
                 },
-                result="""returns true if the development mode is enabled and arguments are correct, false otherwise. """,
-            ),
-            name='debugSleep',
+                result='returns true if the development mode is enabled and arguments are correct, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1890,7 +1845,7 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function decodes an encoded string using the specified algorithm. The counterpart of this function is encodeString. """,
+                description='This function decodes an encoded string using the specified algorithm. The counterpart of this function is encodeString.' ,
                 arguments={
                     "algorithm": """The algorithm to use. """,
                     "input": """The input to decode. """,
@@ -1898,9 +1853,8 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     "callback": """providing a callback will run this function asynchronously, the arguments to the callback are the same as the returned values below.
 |20394}} """
                 },
-                result="""returns the decoded string if successful, false otherwise. if a callback was provided, the decoded string is argument to the callback. """,
-            ),
-            name='decodeString',
+                result='returns the decoded string if successful, false otherwise. if a callback was provided, the decoded string is argument to the callback.' ,
+            )
         )
         ],
         client=[
@@ -1966,7 +1920,7 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function decodes an encoded string using the specified algorithm. The counterpart of this function is encodeString. """,
+                description='This function decodes an encoded string using the specified algorithm. The counterpart of this function is encodeString.' ,
                 arguments={
                     "algorithm": """The algorithm to use. """,
                     "input": """The input to decode. """,
@@ -1974,9 +1928,8 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     "callback": """providing a callback will run this function asynchronously, the arguments to the callback are the same as the returned values below.
 |20394}} """
                 },
-                result="""returns the decoded string if successful, false otherwise. if a callback was provided, the decoded string is argument to the callback. """,
-            ),
-            name='decodeString',
+                result='returns the decoded string if successful, false otherwise. if a callback was provided, the decoded string is argument to the callback.' ,
+            )
         )
         ],
     ),
@@ -2014,13 +1967,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will take a reference and returns its Lua element. """,
+                description='This function will take a reference and returns its Lua element.' ,
                 arguments={
                     "reference": """The valid reference, which you want to dereference """
                 },
-                result="""returns mixed if the reference were valid. returns false if the reference were invalid. """,
-            ),
-            name='deref',
+                result='returns mixed if the reference were valid. returns false if the reference were invalid.' ,
+            )
         )
         ],
         client=[
@@ -2056,13 +2008,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will take a reference and returns its Lua element. """,
+                description='This function will take a reference and returns its Lua element.' ,
                 arguments={
                     "reference": """The valid reference, which you want to dereference """
                 },
-                result="""returns mixed if the reference were valid. returns false if the reference were invalid. """,
-            ),
-            name='deref',
+                result='returns mixed if the reference were valid. returns false if the reference were invalid.' ,
+            )
         )
         ],
     ),
@@ -2103,13 +2054,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function ensures the requested resource file is correct and then triggers onClientFileDownloadComplete.  If the file has been previously downloaded and the CRC matches, the file will not be downloaded again but onClientFileDownloadComplete will still run. The file should also be included in the resource meta.xml with the download attribute set to false, see meta.xml for more details. """,
+                description='This function ensures the requested resource file is correct and then triggers onClientFileDownloadComplete.  If the file has been previously downloaded and the CRC matches, the file will not be downloaded again but onClientFileDownloadComplete will still run. The file should also be included in the resource meta.xml with the download attribute set to false, see meta.xml for more details.' ,
                 arguments={
                     "fileName": """: A string referencing the name of the file to download """
                 },
-                result="""returns true if file download has been queued, false otherwise. """,
-            ),
-            name='downloadFile',
+                result='returns true if file download has been queued, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2177,7 +2127,7 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function encodes a string using the specified algorithm. The counterpart of this function is decodeString. """,
+                description='This function encodes a string using the specified algorithm. The counterpart of this function is decodeString.' ,
                 arguments={
                     "algorithm": """The algorithm to use. """,
                     "input": """The input to encode. """,
@@ -2185,14 +2135,8 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     "callback": """providing a callback will run this function asynchronously, the arguments to the callback are the same as the returned values below.
 |20394}} """
                 },
-                result="""* tea
-** encodedstring: the encoded string if successful, false otherwise. if a callback was provided, true is returned immediately, and the encoded string is passed as an argument to the callback.
-* aes128
-** encodedstring: the encoded string if successful, false otherwise. if a callback was provided, true is returned immediately, and the encoded string is passed as an argument to the callback.
-** iv (https://en.wikipedia.org/wiki/initialization_vector initialization vector): this is a string generated by the encryption algorithm that is needed to decrypt the message by decodestring. if a callback was provided, true is returned immediately, and the iv is passed as an argument to the callback.
-|20898}} """,
-            ),
-            name='encodeString',
+                result='* tea\n** encodedstring: the encoded string if successful, false otherwise. if a callback was provided, true is returned immediately, and the encoded string is passed as an argument to the callback.\n* aes128\n** encodedstring: the encoded string if successful, false otherwise. if a callback was provided, true is returned immediately, and the encoded string is passed as an argument to the callback.\n** iv (https://en.wikipedia.org/wiki/initialization_vector initialization vector): this is a string generated by the encryption algorithm that is needed to decrypt the message by decodestring. if a callback was provided, true is returned immediately, and the iv is passed as an argument to the callback.\n|20898}}' ,
+            )
         )
         ],
         client=[
@@ -2258,7 +2202,7 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function encodes a string using the specified algorithm. The counterpart of this function is decodeString. """,
+                description='This function encodes a string using the specified algorithm. The counterpart of this function is decodeString.' ,
                 arguments={
                     "algorithm": """The algorithm to use. """,
                     "input": """The input to encode. """,
@@ -2266,14 +2210,8 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                     "callback": """providing a callback will run this function asynchronously, the arguments to the callback are the same as the returned values below.
 |20394}} """
                 },
-                result="""* tea
-** encodedstring: the encoded string if successful, false otherwise. if a callback was provided, true is returned immediately, and the encoded string is passed as an argument to the callback.
-* aes128
-** encodedstring: the encoded string if successful, false otherwise. if a callback was provided, true is returned immediately, and the encoded string is passed as an argument to the callback.
-** iv (https://en.wikipedia.org/wiki/initialization_vector initialization vector): this is a string generated by the encryption algorithm that is needed to decrypt the message by decodestring. if a callback was provided, true is returned immediately, and the iv is passed as an argument to the callback.
-|20898}} """,
-            ),
-            name='encodeString',
+                result='* tea\n** encodedstring: the encoded string if successful, false otherwise. if a callback was provided, true is returned immediately, and the encoded string is passed as an argument to the callback.\n* aes128\n** encodedstring: the encoded string if successful, false otherwise. if a callback was provided, true is returned immediately, and the encoded string is passed as an argument to the callback.\n** iv (https://en.wikipedia.org/wiki/initialization_vector initialization vector): this is a string generated by the encryption algorithm that is needed to decrypt the message by decodestring. if a callback was provided, true is returned immediately, and the iv is passed as an argument to the callback.\n|20898}}' ,
+            )
         )
         ],
     ),
@@ -2311,14 +2249,12 @@ See https://en.wikipedia.org/wiki/Bitwise_operation#Logical_shift Bitwise operat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function parses a JSON formatted string into variables. You can use toJSON to encode variables into a JSON string that can be read by this function. """,
+                description='This function parses a JSON formatted string into variables. You can use toJSON to encode variables into a JSON string that can be read by this function.' ,
                 arguments={
                     "json": """A JSON formatted string """
                 },
-                result="""returns variables read from the json string.
-note: indices of a json object such as 1: cat are being returned as string, not as integer. """,
-            ),
-            name='fromJSON',
+                result='returns variables read from the json string.\nnote: indices of a json object such as 1: cat are being returned as string, not as integer.' ,
+            )
         )
         ],
         client=[
@@ -2354,14 +2290,12 @@ note: indices of a json object such as 1: cat are being returned as string, not 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function parses a JSON formatted string into variables. You can use toJSON to encode variables into a JSON string that can be read by this function. """,
+                description='This function parses a JSON formatted string into variables. You can use toJSON to encode variables into a JSON string that can be read by this function.' ,
                 arguments={
                     "json": """A JSON formatted string """
                 },
-                result="""returns variables read from the json string.
-note: indices of a json object such as 1: cat are being returned as string, not as integer. """,
-            ),
-            name='fromJSON',
+                result='returns variables read from the json string.\nnote: indices of a json object such as 1: cat are being returned as string, not as integer.' ,
+            )
         )
         ],
     ),
@@ -2411,7 +2345,7 @@ note: indices of a json object such as 1: cat are being returned as string, not 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will extract Red, Green, Blue and Alpha values from a hex string you provide it. These strings follow the same format as used in HTML, with addition of the Alpha values. """,
+                description='This function will extract Red, Green, Blue and Alpha values from a hex string you provide it. These strings follow the same format as used in HTML, with addition of the Alpha values.' ,
                 arguments={
                     "theColor": """A string containing a valid color code.
 :Valid strings are: """,
@@ -2425,9 +2359,8 @@ note: indices of a json object such as 1: cat are being returned as string, not 
                     "#34455699": """is Red: 52, Green: 69, Blue: 86, Alpha: 153
 All colors used must begin with a # sign. """
                 },
-                result="""returns four integers in rgba format, with a maximum value of 255 for each.  each stands for red, green, blue, and alpha.  alpha decides transparancy where 255 is opaque and 0 is transparent.  false is returned if the string passed is invalid (for example, is missing the preceeding # sign). """,
-            ),
-            name='getColorFromString',
+                result='returns four integers in rgba format, with a maximum value of 255 for each.  each stands for red, green, blue, and alpha.  alpha decides transparancy where 255 is opaque and 0 is transparent.  false is returned if the string passed is invalid (for example, is missing the preceeding # sign).' ,
+            )
         )
         ],
         client=[
@@ -2475,7 +2408,7 @@ All colors used must begin with a # sign. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will extract Red, Green, Blue and Alpha values from a hex string you provide it. These strings follow the same format as used in HTML, with addition of the Alpha values. """,
+                description='This function will extract Red, Green, Blue and Alpha values from a hex string you provide it. These strings follow the same format as used in HTML, with addition of the Alpha values.' ,
                 arguments={
                     "theColor": """A string containing a valid color code.
 :Valid strings are: """,
@@ -2489,9 +2422,8 @@ All colors used must begin with a # sign. """
                     "#34455699": """is Red: 52, Green: 69, Blue: 86, Alpha: 153
 All colors used must begin with a # sign. """
                 },
-                result="""returns four integers in rgba format, with a maximum value of 255 for each.  each stands for red, green, blue, and alpha.  alpha decides transparancy where 255 is opaque and 0 is transparent.  false is returned if the string passed is invalid (for example, is missing the preceeding # sign). """,
-            ),
-            name='getColorFromString',
+                result='returns four integers in rgba format, with a maximum value of 255 for each.  each stands for red, green, blue, and alpha.  alpha decides transparancy where 255 is opaque and 0 is transparent.  false is returned if the string passed is invalid (for example, is missing the preceeding # sign).' ,
+            )
         )
         ],
     ),
@@ -2520,13 +2452,12 @@ All colors used must begin with a # sign. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the development mode of the client. For more information see setDevelopmentMode """,
+                description='This function is used to get the development mode of the client. For more information see setDevelopmentMode' ,
                 arguments={
                     
                 },
-                result="""returns true if the development mode is on, false if off. """,
-            ),
-            name='getDevelopmentMode',
+                result='returns true if the development mode is on, false if off.' ,
+            )
         )
         ],
         client=[
@@ -2553,13 +2484,12 @@ All colors used must begin with a # sign. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the development mode of the client. For more information see setDevelopmentMode """,
+                description='This function is used to get the development mode of the client. For more information see setDevelopmentMode' ,
                 arguments={
                     
                 },
-                result="""returns true if the development mode is on, false if off. """,
-            ),
-            name='getDevelopmentMode',
+                result='returns true if the development mode is on, false if off.' ,
+            )
         )
         ],
     ),
@@ -2627,16 +2557,15 @@ All colors used must begin with a # sign. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the distance between two 2 dimensional points using the pythagorean theorem. """,
+                description='This function returns the distance between two 2 dimensional points using the pythagorean theorem.' ,
                 arguments={
                     "x1": """: The X position of the first point """,
                     "y1": """: The Y position of the first point """,
                     "x2": """: The X position of the second point """,
                     "y2": """: The Y position of the second point """
                 },
-                result="""returns a float containing the 2d distance between the two points. returns false if invalid parameters are passed. """,
-            ),
-            name='getDistanceBetweenPoints2D',
+                result='returns a float containing the 2d distance between the two points. returns false if invalid parameters are passed.' ,
+            )
         )
         ],
         client=[
@@ -2702,16 +2631,15 @@ All colors used must begin with a # sign. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the distance between two 2 dimensional points using the pythagorean theorem. """,
+                description='This function returns the distance between two 2 dimensional points using the pythagorean theorem.' ,
                 arguments={
                     "x1": """: The X position of the first point """,
                     "y1": """: The Y position of the first point """,
                     "x2": """: The X position of the second point """,
                     "y2": """: The Y position of the second point """
                 },
-                result="""returns a float containing the 2d distance between the two points. returns false if invalid parameters are passed. """,
-            ),
-            name='getDistanceBetweenPoints2D',
+                result='returns a float containing the 2d distance between the two points. returns false if invalid parameters are passed.' ,
+            )
         )
         ],
     ),
@@ -2799,7 +2727,7 @@ All colors used must begin with a # sign. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the distance between two 3 dimensional points using the pythagorean theorem. """,
+                description='This function returns the distance between two 3 dimensional points using the pythagorean theorem.' ,
                 arguments={
                     "x1": """: The X position of the first point """,
                     "y1": """: The Y position of the first point """,
@@ -2808,9 +2736,8 @@ All colors used must begin with a # sign. """
                     "y2": """: The Y position of the second point """,
                     "z2": """: The Z position of the second point """
                 },
-                result="""returns a float containing the distance between the two points as a float. returns false if an argument passed was invalid. """,
-            ),
-            name='getDistanceBetweenPoints3D',
+                result='returns a float containing the distance between the two points as a float. returns false if an argument passed was invalid.' ,
+            )
         )
         ],
         client=[
@@ -2896,7 +2823,7 @@ All colors used must begin with a # sign. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the distance between two 3 dimensional points using the pythagorean theorem. """,
+                description='This function returns the distance between two 3 dimensional points using the pythagorean theorem.' ,
                 arguments={
                     "x1": """: The X position of the first point """,
                     "y1": """: The Y position of the first point """,
@@ -2905,9 +2832,8 @@ All colors used must begin with a # sign. """
                     "y2": """: The Y position of the second point """,
                     "z2": """: The Z position of the second point """
                 },
-                result="""returns a float containing the distance between the two points as a float. returns false if an argument passed was invalid. """,
-            ),
-            name='getDistanceBetweenPoints3D',
+                result='returns a float containing the distance between the two points as a float. returns false if an argument passed was invalid.' ,
+            )
         )
         ],
     ),
@@ -2985,8 +2911,7 @@ All colors used must begin with a # sign. """
                 ],
             ),
             docs=FunctionDoc(
-                description="""Used for custom Lua based interpolation, returns the easing value (animation time to use in your custom interpolation) given a progress and an Easing|easing function.
-In most cases, either moveObject or interpolateBetween can do the job. getEasingValue is only provided in case you want to do your own custom interpolation based on easing. """,
+                description='Used for custom Lua based interpolation, returns the easing value (animation time to use in your custom interpolation) given a progress and an Easing|easing function.\nIn most cases, either moveObject or interpolateBetween can do the job. getEasingValue is only provided in case you want to do your own custom interpolation based on easing.' ,
                 arguments={
                     "fProgress": """float between 0 and 1 indicating the interpolation progress (0 at the beginning of the interpolation, 1 at the end). """,
                     "strEasingType": """the Easing|easing function to use for the interpolation """,
@@ -2994,9 +2919,8 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                     "fEasingAmplitude": """the amplitude of the Easing|easing function (only some easing functions use this parameter) """,
                     "fEasingOvershoot": """the overshoot of the Easing|easing function (only some easing functions use this parameter) """
                 },
-                result="""returns fanimationtime  the animation time given by the easing function (can be < 0 or > 1 since some easing|easing functions have overshoot or bounce/spring effects, false otherwise (error in parameters). """,
-            ),
-            name='getEasingValue',
+                result='returns fanimationtime  the animation time given by the easing function (can be < 0 or > 1 since some easing|easing functions have overshoot or bounce/spring effects, false otherwise (error in parameters).' ,
+            )
         )
         ],
         client=[
@@ -3072,8 +2996,7 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 ],
             ),
             docs=FunctionDoc(
-                description="""Used for custom Lua based interpolation, returns the easing value (animation time to use in your custom interpolation) given a progress and an Easing|easing function.
-In most cases, either moveObject or interpolateBetween can do the job. getEasingValue is only provided in case you want to do your own custom interpolation based on easing. """,
+                description='Used for custom Lua based interpolation, returns the easing value (animation time to use in your custom interpolation) given a progress and an Easing|easing function.\nIn most cases, either moveObject or interpolateBetween can do the job. getEasingValue is only provided in case you want to do your own custom interpolation based on easing.' ,
                 arguments={
                     "fProgress": """float between 0 and 1 indicating the interpolation progress (0 at the beginning of the interpolation, 1 at the end). """,
                     "strEasingType": """the Easing|easing function to use for the interpolation """,
@@ -3081,9 +3004,8 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                     "fEasingAmplitude": """the amplitude of the Easing|easing function (only some easing functions use this parameter) """,
                     "fEasingOvershoot": """the overshoot of the Easing|easing function (only some easing functions use this parameter) """
                 },
-                result="""returns fanimationtime  the animation time given by the easing function (can be < 0 or > 1 since some easing|easing functions have overshoot or bounce/spring effects, false otherwise (error in parameters). """,
-            ),
-            name='getEasingValue',
+                result='returns fanimationtime  the animation time given by the easing function (can be < 0 or > 1 since some easing|easing functions have overshoot or bounce/spring effects, false otherwise (error in parameters).' ,
+            )
         )
         ],
     ),
@@ -3112,13 +3034,12 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the maximum http://en.wikipedia.org/wiki/Frame_rate FPS (Frames per second) that players on the server can run their game at. """,
+                description='This function retrieves the maximum http://en.wikipedia.org/wiki/Frame_rate FPS (Frames per second) that players on the server can run their game at.' ,
                 arguments={
                     
                 },
-                result="""returns an integer between 25 and 100 of the maximum fps that players can run their game at. """,
-            ),
-            name='getFPSLimit',
+                result='returns an integer between 25 and 100 of the maximum fps that players can run their game at.' ,
+            )
         )
         ],
         client=[
@@ -3145,13 +3066,12 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the maximum http://en.wikipedia.org/wiki/Frame_rate FPS (Frames per second) that players on the server can run their game at. """,
+                description='This function retrieves the maximum http://en.wikipedia.org/wiki/Frame_rate FPS (Frames per second) that players on the server can run their game at.' ,
                 arguments={
                     
                 },
-                result="""returns an integer between 25 and 100 of the maximum fps that players can run their game at. """,
-            ),
-            name='getFPSLimit',
+                result='returns an integer between 25 and 100 of the maximum fps that players can run their game at.' ,
+            )
         )
         ],
     ),
@@ -3183,29 +3103,12 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     
                 },
-                result="""returns a table with keyboard layout properties:
-{| class=wikitable style=cellpadding: 10px;
-|-
-! property || values and description
-|-
-| <code>readinglayout</code> ||
-{| class=prettytable
-|-
-| <code>ltr</code> || left to right (english)
-|-
-| <code>rtl</code> || right to left (arabic, hebrew)
-|-
-| <code>ttb-rtl-ltr</code> || either read vertically from top to bottom with columns going from right to left, or read in horizontal rows from left to right, as for the japanese (japan) locale.
-|-
-| <code>ttb-ltr</code> || read vertically from top to bottom with columns going from left to right, as for the mongolian (mongolian) locale.
-|}
-|} """,
-            ),
-            name='getKeyboardLayout',
+                result='returns a table with keyboard layout properties:\n{| class=wikitable style=cellpadding: 10px;\n|-\n! property || values and description\n|-\n| <code>readinglayout</code> ||\n{| class=prettytable\n|-\n| <code>ltr</code> || left to right (english)\n|-\n| <code>rtl</code> || right to left (arabic, hebrew)\n|-\n| <code>ttb-rtl-ltr</code> || either read vertically from top to bottom with columns going from right to left, or read in horizontal rows from left to right, as for the japanese (japan) locale.\n|-\n| <code>ttb-ltr</code> || read vertically from top to bottom with columns going from left to right, as for the mongolian (mongolian) locale.\n|}\n|}' ,
+            )
         )
         ],
     ),
@@ -3237,15 +3140,12 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the players localization setting as set in the MTA client. """,
+                description='This function gets the players localization setting as set in the MTA client.' ,
                 arguments={
                     
                 },
-                result="""returns a table with the following entries:
-*code : the language code (eg. en_us for english (united states) or ar for arabic).
-*name : the name of the language (eg. english (united states) or arabic). """,
-            ),
-            name='getLocalization',
+                result='returns a table with the following entries:\n*code : the language code (eg. en_us for english (united states) or ar for arabic).\n*name : the name of the language (eg. english (united states) or arabic).' ,
+            )
         )
         ],
     ),
@@ -3283,13 +3183,12 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns network status information. """,
+                description='This function returns network status information.' ,
                 arguments={
                     
                 },
-                result=""" """,
-            ),
-            name='getNetworkStats',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -3316,13 +3215,12 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns network status information. """,
+                description='This function returns network status information.' ,
                 arguments={
                     
                 },
-                result=""" """,
-            ),
-            name='getNetworkStats',
+                result='' ,
+            )
         )
         ],
     ),
@@ -3351,13 +3249,12 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table containing network usage information about inbound and outbound packets. """,
+                description='This function returns a table containing network usage information about inbound and outbound packets.' ,
                 arguments={
                     
                 },
-                result="""returns a table with two fields: in and out. each of these contain a table with two fields: bits and count. each of these contain a table with 256 numeric fields ranging from 0 to 255, containing the appropriate network usage data for such packet id. """,
-            ),
-            name='getNetworkUsageData',
+                result='returns a table with two fields: in and out. each of these contain a table with two fields: bits and count. each of these contain a table with 256 numeric fields ranging from 0 to 255, containing the appropriate network usage data for such packet id.' ,
+            )
         )
         ],
         client=[
@@ -3384,13 +3281,12 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table containing network usage information about inbound and outbound packets. """,
+                description='This function returns a table containing network usage information about inbound and outbound packets.' ,
                 arguments={
                     
                 },
-                result="""returns a table with two fields: in and out. each of these contain a table with two fields: bits and count. each of these contain a table with 256 numeric fields ranging from 0 to 255, containing the appropriate network usage data for such packet id. """,
-            ),
-            name='getNetworkUsageData',
+                result='returns a table with two fields: in and out. each of these contain a table with two fields: bits and count. each of these contain a table with 256 numeric fields ranging from 0 to 255, containing the appropriate network usage data for such packet id.' ,
+            )
         )
         ],
     ),
@@ -3452,15 +3348,14 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns performance information. """,
+                description='This function returns performance information.' ,
                 arguments={
                     "category": """Performance statistics category. If empty string is given, list of all categories is returned.See categories for more information. """,
                     "options": """Category specific , separated options. All categories supports h option for help. """,
                     "filter": """Case-sensitive filter used to select returned rows. Only name column is filtered. """
                 },
-                result="""returns two tables. first contains column names. the second contains result rows. each row is table of cells. """,
-            ),
-            name='getPerformanceStats',
+                result='returns two tables. first contains column names. the second contains result rows. each row is table of cells.' ,
+            )
         )
         ],
         client=[
@@ -3520,15 +3415,14 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns performance information. """,
+                description='This function returns performance information.' ,
                 arguments={
                     "category": """Performance statistics category. If empty string is given, list of all categories is returned.See categories for more information. """,
                     "options": """Category specific , separated options. All categories supports h option for help. """,
                     "filter": """Case-sensitive filter used to select returned rows. Only name column is filtered. """
                 },
-                result="""returns two tables. first contains column names. the second contains result rows. each row is table of cells. """,
-            ),
-            name='getPerformanceStats',
+                result='returns two tables. first contains column names. the second contains result rows. each row is table of cells.' ,
+            )
         )
         ],
     ),
@@ -3576,58 +3470,13 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the server or client (if used client sided it returns time as set on clients computer) real time and returns it in a table. If you want to get the in-game time (shown on GTAs clock) use getTime. """,
+                description='This function gets the server or client (if used client sided it returns time as set on clients computer) real time and returns it in a table. If you want to get the in-game time (shown on GTAs clock) use getTime.' ,
                 arguments={
                     "seconds": """A count in seconds from the year 1970.  Useful for storing points in time, or for retrieving time information for getBanTime. The valid range of this argument is 0 to 32,000,000,000 """,
                     "localTime": """Set to true to adjust for the locally set timezone. """
                 },
-                result="""returns a table of substrings with different time format or false if the seconds argument is out of range.
-{| border=2 cellpadding=2 cellspacing=0 style=margin: 1em 1em 1em 0; background: #f9f9f9; border: 1px #aaa solid; border-collapse: collapse; font-size: 95%;
-|member
-|meaning
-|range
-|-
-|second
-|seconds after the minute
-|0-61*
-|-
-|minute
-|minutes after the hour
-|0-59
-|-
-|hour
-|hours since midnight
-|0-23
-|-
-|monthday
-|day of the month
-|1-31
-|-
-|month
-|months since january
-|0-11
-|-
-|year
-|years since 1900
-|-
-|weekday
-|days since sunday
-|0-6
-|-
-|yearday
-|days since january 1
-|0-365
-|-
-|isdst
-|daylight saving time flag
-|-
-|timestamp
-|seconds since 1970 (ignoring set timezone)
-|
-|}
-* second is generally 0-59. extra range to accommodate for leap seconds in certain systems. """,
-            ),
-            name='getRealTime',
+                result='returns a table of substrings with different time format or false if the seconds argument is out of range.\n{| border=2 cellpadding=2 cellspacing=0 style=margin: 1em 1em 1em 0; background: #f9f9f9; border: 1px #aaa solid; border-collapse: collapse; font-size: 95%;\n|member\n|meaning\n|range\n|-\n|second\n|seconds after the minute\n|0-61*\n|-\n|minute\n|minutes after the hour\n|0-59\n|-\n|hour\n|hours since midnight\n|0-23\n|-\n|monthday\n|day of the month\n|1-31\n|-\n|month\n|months since january\n|0-11\n|-\n|year\n|years since 1900\n|-\n|weekday\n|days since sunday\n|0-6\n|-\n|yearday\n|days since january 1\n|0-365\n|-\n|isdst\n|daylight saving time flag\n|-\n|timestamp\n|seconds since 1970 (ignoring set timezone)\n|\n|}\n* second is generally 0-59. extra range to accommodate for leap seconds in certain systems.' ,
+            )
         )
         ],
         client=[
@@ -3673,58 +3522,13 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the server or client (if used client sided it returns time as set on clients computer) real time and returns it in a table. If you want to get the in-game time (shown on GTAs clock) use getTime. """,
+                description='This function gets the server or client (if used client sided it returns time as set on clients computer) real time and returns it in a table. If you want to get the in-game time (shown on GTAs clock) use getTime.' ,
                 arguments={
                     "seconds": """A count in seconds from the year 1970.  Useful for storing points in time, or for retrieving time information for getBanTime. The valid range of this argument is 0 to 32,000,000,000 """,
                     "localTime": """Set to true to adjust for the locally set timezone. """
                 },
-                result="""returns a table of substrings with different time format or false if the seconds argument is out of range.
-{| border=2 cellpadding=2 cellspacing=0 style=margin: 1em 1em 1em 0; background: #f9f9f9; border: 1px #aaa solid; border-collapse: collapse; font-size: 95%;
-|member
-|meaning
-|range
-|-
-|second
-|seconds after the minute
-|0-61*
-|-
-|minute
-|minutes after the hour
-|0-59
-|-
-|hour
-|hours since midnight
-|0-23
-|-
-|monthday
-|day of the month
-|1-31
-|-
-|month
-|months since january
-|0-11
-|-
-|year
-|years since 1900
-|-
-|weekday
-|days since sunday
-|0-6
-|-
-|yearday
-|days since january 1
-|0-365
-|-
-|isdst
-|daylight saving time flag
-|-
-|timestamp
-|seconds since 1970 (ignoring set timezone)
-|
-|}
-* second is generally 0-59. extra range to accommodate for leap seconds in certain systems. """,
-            ),
-            name='getRealTime',
+                result='returns a table of substrings with different time format or false if the seconds argument is out of range.\n{| border=2 cellpadding=2 cellspacing=0 style=margin: 1em 1em 1em 0; background: #f9f9f9; border: 1px #aaa solid; border-collapse: collapse; font-size: 95%;\n|member\n|meaning\n|range\n|-\n|second\n|seconds after the minute\n|0-61*\n|-\n|minute\n|minutes after the hour\n|0-59\n|-\n|hour\n|hours since midnight\n|0-23\n|-\n|monthday\n|day of the month\n|1-31\n|-\n|month\n|months since january\n|0-11\n|-\n|year\n|years since 1900\n|-\n|weekday\n|days since sunday\n|0-6\n|-\n|yearday\n|days since january 1\n|0-365\n|-\n|isdst\n|daylight saving time flag\n|-\n|timestamp\n|seconds since 1970 (ignoring set timezone)\n|\n|}\n* second is generally 0-59. extra range to accommodate for leap seconds in certain systems.' ,
+            )
         )
         ],
     ),
@@ -3762,15 +3566,12 @@ In most cases, either moveObject or interpolateBetween can do the job. getEasing
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves server settings which are usually stored in the mtaserver.conf file.
-Available in 1.1 and onwards """,
+                description='This function retrieves server settings which are usually stored in the mtaserver.conf file.\nAvailable in 1.1 and onwards' ,
                 arguments={
                     "name": """The name of the setting (setting names can be found Server_mtaserver.conf|here) """
                 },
-                result="""returns a string containing the current value for the named setting, or false if the setting does not exist.<br>
-if the setting name is serverip, may return the string auto on local servers. """,
-            ),
-            name='getServerConfigSetting',
+                result='returns a string containing the current value for the named setting, or false if the setting does not exist.<br>\nif the setting name is serverip, may return the string auto on local servers.' ,
+            )
         )
         ],
         client=[
@@ -3802,13 +3603,12 @@ if the setting name is serverip, may return the string auto on local servers. ""
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns amount of time that your system has been running in milliseconds. By comparing two values of getTickCount, you can determine how much time has passed (in milliseconds) between two events. This could be used to determine how efficient your code is, or to time how long a player takes to complete a task. """,
+                description='This function returns amount of time that your system has been running in milliseconds. By comparing two values of getTickCount, you can determine how much time has passed (in milliseconds) between two events. This could be used to determine how efficient your code is, or to time how long a player takes to complete a task.' ,
                 arguments={
                     
                 },
-                result="""returns an integer containing the number of milliseconds since the system the server is running on started. this has the potential to wrap-around. """,
-            ),
-            name='getTickCount',
+                result='returns an integer containing the number of milliseconds since the system the server is running on started. this has the potential to wrap-around.' ,
+            )
         )
         ],
         client=[
@@ -3835,13 +3635,12 @@ if the setting name is serverip, may return the string auto on local servers. ""
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns amount of time that your system has been running in milliseconds. By comparing two values of getTickCount, you can determine how much time has passed (in milliseconds) between two events. This could be used to determine how efficient your code is, or to time how long a player takes to complete a task. """,
+                description='This function returns amount of time that your system has been running in milliseconds. By comparing two values of getTickCount, you can determine how much time has passed (in milliseconds) between two events. This could be used to determine how efficient your code is, or to time how long a player takes to complete a task.' ,
                 arguments={
                     
                 },
-                result="""returns an integer containing the number of milliseconds since the system the server is running on started. this has the potential to wrap-around. """,
-            ),
-            name='getTickCount',
+                result='returns an integer containing the number of milliseconds since the system the server is running on started. this has the potential to wrap-around.' ,
+            )
         )
         ],
     ),
@@ -3887,16 +3686,12 @@ if the setting name is serverip, may return the string auto on local servers. ""
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is for getting the details of a running timer. """,
+                description='This function is for getting the details of a running timer.' ,
                 arguments={
                     "theTimer": """A timer element. """
                 },
-                result="""* integer one represents the time left in miliseconds (1000th of a second) of the current time left in the loop.
-* integer two represents the amount of times the timer has left to execute.
-* integer three represents the time interval of timer.
-* returns false if the timer doesnt exist or stopped running. also, debugscript will say bad argument @ gettimerdetails. to prevent this, you can check if the timer exists with istimer(). """,
-            ),
-            name='getTimerDetails',
+                result='* integer one represents the time left in miliseconds (1000th of a second) of the current time left in the loop.\n* integer two represents the amount of times the timer has left to execute.\n* integer three represents the time interval of timer.\n* returns false if the timer doesnt exist or stopped running. also, debugscript will say bad argument @ gettimerdetails. to prevent this, you can check if the timer exists with istimer().' ,
+            )
         )
         ],
         client=[
@@ -3940,16 +3735,12 @@ if the setting name is serverip, may return the string auto on local servers. ""
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is for getting the details of a running timer. """,
+                description='This function is for getting the details of a running timer.' ,
                 arguments={
                     "theTimer": """A timer element. """
                 },
-                result="""* integer one represents the time left in miliseconds (1000th of a second) of the current time left in the loop.
-* integer two represents the amount of times the timer has left to execute.
-* integer three represents the time interval of timer.
-* returns false if the timer doesnt exist or stopped running. also, debugscript will say bad argument @ gettimerdetails. to prevent this, you can check if the timer exists with istimer(). """,
-            ),
-            name='getTimerDetails',
+                result='* integer one represents the time left in miliseconds (1000th of a second) of the current time left in the loop.\n* integer two represents the amount of times the timer has left to execute.\n* integer three represents the time interval of timer.\n* returns false if the timer doesnt exist or stopped running. also, debugscript will say bad argument @ gettimerdetails. to prevent this, you can check if the timer exists with istimer().' ,
+            )
         )
         ],
     ),
@@ -3987,13 +3778,12 @@ if the setting name is serverip, may return the string auto on local servers. ""
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table of all active timers that the resource that calls it has created. Alternatively, only the timers with a remaining time less than or equal to a certain value can be retrieved. """,
+                description='This function returns a table of all active timers that the resource that calls it has created. Alternatively, only the timers with a remaining time less than or equal to a certain value can be retrieved.' ,
                 arguments={
                     "theTime": """The maximum time left (in milliseconds) on the timers you wish to retrieve. """
                 },
-                result="""returns a table of all the active timers. """,
-            ),
-            name='getTimers',
+                result='returns a table of all the active timers.' ,
+            )
         )
         ],
         client=[
@@ -4029,13 +3819,12 @@ if the setting name is serverip, may return the string auto on local servers. ""
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a table of all active timers that the resource that calls it has created. Alternatively, only the timers with a remaining time less than or equal to a certain value can be retrieved. """,
+                description='This function returns a table of all active timers that the resource that calls it has created. Alternatively, only the timers with a remaining time less than or equal to a certain value can be retrieved.' ,
                 arguments={
                     "theTime": """The maximum time left (in milliseconds) on the timers you wish to retrieve. """
                 },
-                result="""returns a table of all the active timers. """,
-            ),
-            name='getTimers',
+                result='returns a table of all the active timers.' ,
+            )
         )
         ],
     ),
@@ -4093,15 +3882,14 @@ if the setting name is serverip, may return the string auto on local servers. ""
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function splits a string using the given separating character and returns one specified substring. """,
+                description='This function splits a string using the given separating character and returns one specified substring.' ,
                 arguments={
                     "text": """the string that should be split. """,
                     "tokenNumber": """which token should be returned (1 for the first, 2 for the second, and so on). """,
                     "separatingCharacter": """the ASCII|ASCII number representing the character you want to use to separate the tokens. You can easily retrieve this by running string.byte on a string containing the separating character. """
                 },
-                result="""returns a string containing the token if it exists, false otherwise. """,
-            ),
-            name='gettok',
+                result='returns a string containing the token if it exists, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -4157,15 +3945,14 @@ if the setting name is serverip, may return the string auto on local servers. ""
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function splits a string using the given separating character and returns one specified substring. """,
+                description='This function splits a string using the given separating character and returns one specified substring.' ,
                 arguments={
                     "text": """the string that should be split. """,
                     "tokenNumber": """which token should be returned (1 for the first, 2 for the second, and so on). """,
                     "separatingCharacter": """the ASCII|ASCII number representing the character you want to use to separate the tokens. You can easily retrieve this by running string.byte on a string containing the separating character. """
                 },
-                result="""returns a string containing the token if it exists, false otherwise. """,
-            ),
-            name='gettok',
+                result='returns a string containing the token if it exists, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4203,7 +3990,7 @@ if the setting name is serverip, may return the string auto on local servers. ""
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "value": """: A userdata value to get the type of. Userdata types can be: """,
                     "Shared": """ """,
@@ -4226,9 +4013,8 @@ if the setting name is serverip, may return the string auto on local servers. ""
 Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc3f80fa2d7a73e70a68e8f116b591cb68#diff-09a3546021ff952dc0f94a99aae11356R297 """,
                     "weapon": """: a Weapon|custom weapon. """
                 },
-                result="""returns a string containing the specified userdatas type, or false plus an error message if the given value is not userdata. """,
-            ),
-            name='getUserdataType',
+                result='returns a string containing the specified userdatas type, or false plus an error message if the given value is not userdata.' ,
+            )
         )
         ],
         client=[
@@ -4264,7 +4050,7 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "value": """: A userdata value to get the type of. Userdata types can be: """,
                     "Shared": """ """,
@@ -4287,9 +4073,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
 Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc3f80fa2d7a73e70a68e8f116b591cb68#diff-09a3546021ff952dc0f94a99aae11356R297 """,
                     "weapon": """: a Weapon|custom weapon. """
                 },
-                result="""returns a string containing the specified userdatas type, or false plus an error message if the given value is not userdata. """,
-            ),
-            name='getUserdataType',
+                result='returns a string containing the specified userdatas type, or false plus an error message if the given value is not userdata.' ,
+            )
         )
         ],
     ),
@@ -4318,24 +4103,12 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gives you various version information about MTA and the operating system. """,
+                description='This function gives you various version information about MTA and the operating system.' ,
                 arguments={
                     
                 },
-                result="""returns a table with version information. specifically these keys are present in the table:
-*number: the mta server or client version (depending where the function was called) in pure numerical form, e.g. 256
-*mta: the mta server or client version (depending where the function was called) in textual form, e.g. 1.0
-*name: the full mta product name, either mta:sa server or mta:sa client.
-*netcode: the netcode version number.
-*os: returns the operating system on which the server or client is running
-*type: the type of build.  can be:
-**nightly rx - a nightly development build.  x represents the nightly build revision.
-**custom - a build compiled manually
-**release - a build that is publicly released (provisional).
-*tag: the build tag (from 1.0.3 onwards). contains infomation about the underlying version used. i.e. the final version of 1.0.3 has the build tag of 1.0.3 rc-9. (this can be confirmed by using the console command ver.)
-*sortable: a 15 character sortable version string (from 1.0.4 onwards). format of the string is described in getplayerversion. """,
-            ),
-            name='getVersion',
+                result='returns a table with version information. specifically these keys are present in the table:\n*number: the mta server or client version (depending where the function was called) in pure numerical form, e.g. 256\n*mta: the mta server or client version (depending where the function was called) in textual form, e.g. 1.0\n*name: the full mta product name, either mta:sa server or mta:sa client.\n*netcode: the netcode version number.\n*os: returns the operating system on which the server or client is running\n*type: the type of build.  can be:\n**nightly rx - a nightly development build.  x represents the nightly build revision.\n**custom - a build compiled manually\n**release - a build that is publicly released (provisional).\n*tag: the build tag (from 1.0.3 onwards). contains infomation about the underlying version used. i.e. the final version of 1.0.3 has the build tag of 1.0.3 rc-9. (this can be confirmed by using the console command ver.)\n*sortable: a 15 character sortable version string (from 1.0.4 onwards). format of the string is described in getplayerversion.' ,
+            )
         )
         ],
         client=[
@@ -4362,24 +4135,12 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gives you various version information about MTA and the operating system. """,
+                description='This function gives you various version information about MTA and the operating system.' ,
                 arguments={
                     
                 },
-                result="""returns a table with version information. specifically these keys are present in the table:
-*number: the mta server or client version (depending where the function was called) in pure numerical form, e.g. 256
-*mta: the mta server or client version (depending where the function was called) in textual form, e.g. 1.0
-*name: the full mta product name, either mta:sa server or mta:sa client.
-*netcode: the netcode version number.
-*os: returns the operating system on which the server or client is running
-*type: the type of build.  can be:
-**nightly rx - a nightly development build.  x represents the nightly build revision.
-**custom - a build compiled manually
-**release - a build that is publicly released (provisional).
-*tag: the build tag (from 1.0.3 onwards). contains infomation about the underlying version used. i.e. the final version of 1.0.3 has the build tag of 1.0.3 rc-9. (this can be confirmed by using the console command ver.)
-*sortable: a 15 character sortable version string (from 1.0.4 onwards). format of the string is described in getplayerversion. """,
-            ),
-            name='getVersion',
+                result='returns a table with version information. specifically these keys are present in the table:\n*number: the mta server or client version (depending where the function was called) in pure numerical form, e.g. 256\n*mta: the mta server or client version (depending where the function was called) in textual form, e.g. 1.0\n*name: the full mta product name, either mta:sa server or mta:sa client.\n*netcode: the netcode version number.\n*os: returns the operating system on which the server or client is running\n*type: the type of build.  can be:\n**nightly rx - a nightly development build.  x represents the nightly build revision.\n**custom - a build compiled manually\n**release - a build that is publicly released (provisional).\n*tag: the build tag (from 1.0.3 onwards). contains infomation about the underlying version used. i.e. the final version of 1.0.3 has the build tag of 1.0.3 rc-9. (this can be confirmed by using the console command ver.)\n*sortable: a 15 character sortable version string (from 1.0.4 onwards). format of the string is described in getplayerversion.' ,
+            )
         )
         ],
     ),
@@ -4427,14 +4188,13 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a hash of the specified string in the specified algorithm. """,
+                description='This function returns a hash of the specified string in the specified algorithm.' ,
                 arguments={
                     "algorithm": """: A string which must be one of these: md5, sha1, sha224, sha256, sha384, sha512 """,
                     "dataToHash": """: A string of the data to hash. """
                 },
-                result="""returns the hash of the data, false if an invalid argument was used. """,
-            ),
-            name='hash',
+                result='returns the hash of the data, false if an invalid argument was used.' ,
+            )
         )
         ],
         client=[
@@ -4480,14 +4240,13 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a hash of the specified string in the specified algorithm. """,
+                description='This function returns a hash of the specified string in the specified algorithm.' ,
                 arguments={
                     "algorithm": """: A string which must be one of these: md5, sha1, sha224, sha256, sha384, sha512 """,
                     "dataToHash": """: A string of the data to hash. """
                 },
-                result="""returns the hash of the data, false if an invalid argument was used. """,
-            ),
-            name='hash',
+                result='returns the hash of the data, false if an invalid argument was used.' ,
+            )
         )
         ],
     ),
@@ -4535,14 +4294,13 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns human-readable representations of tables and MTA datatypes as a string. """,
+                description='This function returns human-readable representations of tables and MTA datatypes as a string.' ,
                 arguments={
                     "var": """A variable of any datatype. """,
                     "options": """A table of options. It is not mandatory, but when it is provided, it must be a table. For a list of options, see the https://github.com/kikito/inspect.lua#options Inspects GitHub page. """
                 },
-                result="""always returns a string. the contents can change if we update the inspect library, so it is not expected to be consistent across lua versions. """,
-            ),
-            name='inspect',
+                result='always returns a string. the contents can change if we update the inspect library, so it is not expected to be consistent across lua versions.' ,
+            )
         )
         ],
         client=[
@@ -4588,14 +4346,13 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns human-readable representations of tables and MTA datatypes as a string. """,
+                description='This function returns human-readable representations of tables and MTA datatypes as a string.' ,
                 arguments={
                     "var": """A variable of any datatype. """,
                     "options": """A table of options. It is not mandatory, but when it is provided, it must be a table. For a list of options, see the https://github.com/kikito/inspect.lua#options Inspects GitHub page. """
                 },
-                result="""always returns a string. the contents can change if we update the inspect library, so it is not expected to be consistent across lua versions. """,
-            ),
-            name='inspect',
+                result='always returns a string. the contents can change if we update the inspect library, so it is not expected to be consistent across lua versions.' ,
+            )
         )
         ],
     ),
@@ -4741,8 +4498,7 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                 ],
             ),
             docs=FunctionDoc(
-                description="""Interpolates a 3D Vector between a source value and a target value using either linear interpolation or any other Easing|easing function.
-It can also be used to interpolate 2D vectors or scalars by only setting some of the x, y, z values and putting 0 to the others. """,
+                description='Interpolates a 3D Vector between a source value and a target value using either linear interpolation or any other Easing|easing function.\nIt can also be used to interpolate 2D vectors or scalars by only setting some of the x, y, z values and putting 0 to the others.' ,
                 arguments={
                     "x1, y1, z1": """3D coordinates of source vector/value """,
                     "x2, y2, z2": """3D coordinates of target vector/value """,
@@ -4752,10 +4508,8 @@ It can also be used to interpolate 2D vectors or scalars by only setting some of
                     "fEasingAmplitude": """the amplitude of the Easing|easing function (only some easing functions use this parameter) """,
                     "fEasingOvershoot": """the overshoot of the Easing|easing function (only some easing functions use this parameter) """
                 },
-                result="""returns x, y, z the interpolated 3d vector/value if successful, false otherwise (error in parameters).
-as mentioned before, interpolatebetween can be used on 2d vectors or scalars in which case only some (x, y or just x) of the returned values are to be used (cf. alpha interpolation in marker example or size interpolation in window example). """,
-            ),
-            name='interpolateBetween',
+                result='returns x, y, z the interpolated 3d vector/value if successful, false otherwise (error in parameters).\nas mentioned before, interpolatebetween can be used on 2d vectors or scalars in which case only some (x, y or just x) of the returned values are to be used (cf. alpha interpolation in marker example or size interpolation in window example).' ,
+            )
         )
         ],
         client=[
@@ -4899,8 +4653,7 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Interpolates a 3D Vector between a source value and a target value using either linear interpolation or any other Easing|easing function.
-It can also be used to interpolate 2D vectors or scalars by only setting some of the x, y, z values and putting 0 to the others. """,
+                description='Interpolates a 3D Vector between a source value and a target value using either linear interpolation or any other Easing|easing function.\nIt can also be used to interpolate 2D vectors or scalars by only setting some of the x, y, z values and putting 0 to the others.' ,
                 arguments={
                     "x1, y1, z1": """3D coordinates of source vector/value """,
                     "x2, y2, z2": """3D coordinates of target vector/value """,
@@ -4910,10 +4663,8 @@ It can also be used to interpolate 2D vectors or scalars by only setting some of
                     "fEasingAmplitude": """the amplitude of the Easing|easing function (only some easing functions use this parameter) """,
                     "fEasingOvershoot": """the overshoot of the Easing|easing function (only some easing functions use this parameter) """
                 },
-                result="""returns x, y, z the interpolated 3d vector/value if successful, false otherwise (error in parameters).
-as mentioned before, interpolatebetween can be used on 2d vectors or scalars in which case only some (x, y or just x) of the returned values are to be used (cf. alpha interpolation in marker example or size interpolation in window example). """,
-            ),
-            name='interpolateBetween',
+                result='returns x, y, z the interpolated 3d vector/value if successful, false otherwise (error in parameters).\nas mentioned before, interpolatebetween can be used on 2d vectors or scalars in which case only some (x, y or just x) of the returned values are to be used (cf. alpha interpolation in marker example or size interpolation in window example).' ,
+            )
         )
         ],
     ),
@@ -4971,14 +4722,13 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function intelligently outputs debug messages into the Debug Console.  It is similar to outputDebugString, but outputs useful information for any variable type, and does not require use of Luas tostring.  This includes information about element types, and table structures.  It is especially useful for quick debug tasks. """,
+                description='This function intelligently outputs debug messages into the Debug Console.  It is similar to outputDebugString, but outputs useful information for any variable type, and does not require use of Luas tostring.  This includes information about element types, and table structures.  It is especially useful for quick debug tasks.' ,
                 arguments={
                     "var1": """A variable of any type to print intelligent information for. """,
                     "var2+": """Another variable to be output.  An unlimited number of arguments can be supplied """
                 },
-                result="""always returns nil. """,
-            ),
-            name='iprint',
+                result='always returns nil.' ,
+            )
         )
         ],
         client=[
@@ -5034,14 +4784,13 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function intelligently outputs debug messages into the Debug Console.  It is similar to outputDebugString, but outputs useful information for any variable type, and does not require use of Luas tostring.  This includes information about element types, and table structures.  It is especially useful for quick debug tasks. """,
+                description='This function intelligently outputs debug messages into the Debug Console.  It is similar to outputDebugString, but outputs useful information for any variable type, and does not require use of Luas tostring.  This includes information about element types, and table structures.  It is especially useful for quick debug tasks.' ,
                 arguments={
                     "var1": """A variable of any type to print intelligent information for. """,
                     "var2+": """Another variable to be output.  An unlimited number of arguments can be supplied """
                 },
-                result="""always returns nil. """,
-            ),
-            name='iprint',
+                result='always returns nil.' ,
+            )
         )
         ],
     ),
@@ -5070,13 +4819,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     
                 },
-                result="""returns true or false if oop is enabled or not. returns nil if an error arised. """,
-            ),
-            name='isOOPEnabled',
+                result='returns true or false if oop is enabled or not. returns nil if an error arised.' ,
+            )
         )
         ],
         client=[
@@ -5103,13 +4851,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     
                 },
-                result="""returns true or false if oop is enabled or not. returns nil if an error arised. """,
-            ),
-            name='isOOPEnabled',
+                result='returns true or false if oop is enabled or not. returns nil if an error arised.' ,
+            )
         )
         ],
     ),
@@ -5147,13 +4894,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if a variable is a timer. """,
+                description='This function checks if a variable is a timer.' ,
                 arguments={
                     "theTimer": """: The variable that we want to check. """
                 },
-                result="""returns true if the passed value is a timer, false otherwise. """,
-            ),
-            name='isTimer',
+                result='returns true if the passed value is a timer, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -5189,13 +4935,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if a variable is a timer. """,
+                description='This function checks if a variable is a timer.' ,
                 arguments={
                     "theTimer": """: The variable that we want to check. """
                 },
-                result="""returns true if the passed value is a timer, false otherwise. """,
-            ),
-            name='isTimer',
+                result='returns true if the passed value is a timer, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5227,13 +4972,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns a boolean value whether the client has enabled tray notifications in his settings or not. """,
+                description='This function returns a boolean value whether the client has enabled tray notifications in his settings or not.' ,
                 arguments={
                     
                 },
-                result="""returns true if the tray notifications are enabled in the settings, false otherwise. """,
-            ),
-            name='isTrayNotificationEnabled',
+                result='returns true if the tray notifications are enabled in the settings, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5271,13 +5015,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to kill/halt existing timers. """,
+                description='This function allows you to kill/halt existing timers.' ,
                 arguments={
                     "theTimer": """The timer you wish to halt. """
                 },
-                result="""returns true if the timer was successfully killed, false if no such timer existed. """,
-            ),
-            name='killTimer',
+                result='returns true if the timer was successfully killed, false if no such timer existed.' ,
+            )
         )
         ],
         client=[
@@ -5313,13 +5056,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to kill/halt existing timers. """,
+                description='This function allows you to kill/halt existing timers.' ,
                 arguments={
                     "theTimer": """The timer you wish to halt. """
                 },
-                result="""returns true if the timer was successfully killed, false if no such timer existed. """,
-            ),
-            name='killTimer',
+                result='returns true if the timer was successfully killed, false if no such timer existed.' ,
+            )
         )
         ],
     ),
@@ -5357,13 +5099,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Calculates the MD5 hash of the specified string and returns its hexadecimal representation. """,
+                description='Calculates the MD5 hash of the specified string and returns its hexadecimal representation.' ,
                 arguments={
                     "str": """the string to hash. """
                 },
-                result="""returns the md5 hash of the input string if successful, false otherwise. """,
-            ),
-            name='md5',
+                result='returns the md5 hash of the input string if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -5399,13 +5140,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Calculates the MD5 hash of the specified string and returns its hexadecimal representation. """,
+                description='Calculates the MD5 hash of the specified string and returns its hexadecimal representation.' ,
                 arguments={
                     "str": """the string to hash. """
                 },
-                result="""returns the md5 hash of the input string if successful, false otherwise. """,
-            ),
-            name='md5',
+                result='returns the md5 hash of the input string if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5473,7 +5213,7 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a new password hash using a specified hashing algorithm. """,
+                description='This function creates a new password hash using a specified hashing algorithm.' ,
                 arguments={
                     "password": """The password to hash. """,
                     "algorithm": """The algorithm to use: """,
@@ -5481,9 +5221,8 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     "options": """table with options for the hashing algorithm, as detailed below. """,
                     "callback": """providing a callback will run this function asynchronously, the arguments to the callback are the same as the returned values below. """
                 },
-                result="""returns the hash as a string if hashing was successful, false otherwise. if a callback was provided, the aforementioned values are arguments to the callback, and this function will always return true. """,
-            ),
-            name='passwordHash',
+                result='returns the hash as a string if hashing was successful, false otherwise. if a callback was provided, the aforementioned values are arguments to the callback, and this function will always return true.' ,
+            )
         )
         ],
         client=[
@@ -5549,7 +5288,7 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates a new password hash using a specified hashing algorithm. """,
+                description='This function creates a new password hash using a specified hashing algorithm.' ,
                 arguments={
                     "password": """The password to hash. """,
                     "algorithm": """The algorithm to use: """,
@@ -5557,9 +5296,8 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     "options": """table with options for the hashing algorithm, as detailed below. """,
                     "callback": """providing a callback will run this function asynchronously, the arguments to the callback are the same as the returned values below. """
                 },
-                result="""returns the hash as a string if hashing was successful, false otherwise. if a callback was provided, the aforementioned values are arguments to the callback, and this function will always return true. """,
-            ),
-            name='passwordHash',
+                result='returns the hash as a string if hashing was successful, false otherwise. if a callback was provided, the aforementioned values are arguments to the callback, and this function will always return true.' ,
+            )
         )
         ],
     ),
@@ -5627,7 +5365,7 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function verifies whether a password matches a password hash. """,
+                description='This function verifies whether a password matches a password hash.' ,
                 arguments={
                     "password": """The password to check. """,
                     "hash": """A supported hash (see passwordHash). <span style=color:red>Note that only the prefix $2y$ is supported for type bcrypt (older prefixes can cause security issues).</span> """,
@@ -5636,9 +5374,8 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     "callback": """providing a callback will run this function asynchronously, the arguments to the callback are the same as the returned values below.
 |11281}} """
                 },
-                result="""returns true if the password matches the hash. returns false if the password does not match, or if an unknown hash was passed. if a callback was provided, the aforementioned values are arguments to the callback, and this function will always return true. """,
-            ),
-            name='passwordVerify',
+                result='returns true if the password matches the hash. returns false if the password does not match, or if an unknown hash was passed. if a callback was provided, the aforementioned values are arguments to the callback, and this function will always return true.' ,
+            )
         )
         ],
         client=[
@@ -5704,7 +5441,7 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function verifies whether a password matches a password hash. """,
+                description='This function verifies whether a password matches a password hash.' ,
                 arguments={
                     "password": """The password to check. """,
                     "hash": """A supported hash (see passwordHash). <span style=color:red>Note that only the prefix $2y$ is supported for type bcrypt (older prefixes can cause security issues).</span> """,
@@ -5713,9 +5450,8 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                     "callback": """providing a callback will run this function asynchronously, the arguments to the callback are the same as the returned values below.
 |11281}} """
                 },
-                result="""returns true if the password matches the hash. returns false if the password does not match, or if an unknown hash was passed. if a callback was provided, the aforementioned values are arguments to the callback, and this function will always return true. """,
-            ),
-            name='passwordVerify',
+                result='returns true if the password matches the hash. returns false if the password does not match, or if an unknown hash was passed. if a callback was provided, the aforementioned values are arguments to the callback, and this function will always return true.' ,
+            )
         )
         ],
     ),
@@ -5773,15 +5509,14 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function stops at the first occurrence of the pattern in the input string and returns the result of the search. """,
+                description='This function stops at the first occurrence of the pattern in the input string and returns the result of the search.' ,
                 arguments={
                     "subject": """The input string """,
                     "pattern": """The pattern string to search for in the input string. """,
                     "flags": """Conjuncted value that contains flags ( 1 - ignorecase, 2 - multiline, 4 - dotall, 8 - extended, 16 - unicode ) or ( i - Ignore case, m - Multiline, d - Dotall, e - Extended, u - Unicode ) """
                 },
-                result="""returns true if the pattern was found in the input string, false otherwise. """,
-            ),
-            name='pregFind',
+                result='returns true if the pattern was found in the input string, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -5837,15 +5572,14 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function stops at the first occurrence of the pattern in the input string and returns the result of the search. """,
+                description='This function stops at the first occurrence of the pattern in the input string and returns the result of the search.' ,
                 arguments={
                     "subject": """The input string """,
                     "pattern": """The pattern string to search for in the input string. """,
                     "flags": """Conjuncted value that contains flags ( 1 - ignorecase, 2 - multiline, 4 - dotall, 8 - extended, 16 - unicode ) or ( i - Ignore case, m - Multiline, d - Dotall, e - Extended, u - Unicode ) """
                 },
-                result="""returns true if the pattern was found in the input string, false otherwise. """,
-            ),
-            name='pregFind',
+                result='returns true if the pattern was found in the input string, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5913,16 +5647,15 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns all matches. """,
+                description='This function returns all matches.' ,
                 arguments={
                     "base": """The base string for replace. """,
                     "pattern": """The pattern for match in base string. """,
                     "flags": """Conjuncted value that contains flags ( 1 - ignorecase, 2 - multiline, 4 - dotall, 8 - extended, 16 - unicode ) or ( i - Ignore case, m - Multiline, d - Dotall, e - Extended, u - Unicode ) """,
                     "maxResults": """Maximum number of results to return """
                 },
-                result="""returns a table if one or more match is found, false otherwise. """,
-            ),
-            name='pregMatch',
+                result='returns a table if one or more match is found, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -5988,16 +5721,15 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns all matches. """,
+                description='This function returns all matches.' ,
                 arguments={
                     "base": """The base string for replace. """,
                     "pattern": """The pattern for match in base string. """,
                     "flags": """Conjuncted value that contains flags ( 1 - ignorecase, 2 - multiline, 4 - dotall, 8 - extended, 16 - unicode ) or ( i - Ignore case, m - Multiline, d - Dotall, e - Extended, u - Unicode ) """,
                     "maxResults": """Maximum number of results to return """
                 },
-                result="""returns a table if one or more match is found, false otherwise. """,
-            ),
-            name='pregMatch',
+                result='returns a table if one or more match is found, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6065,16 +5797,15 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function performs a regular expression search and replace and returns the replaced string. """,
+                description='This function performs a regular expression search and replace and returns the replaced string.' ,
                 arguments={
                     "subject": """The input string. """,
                     "pattern": """The pattern string to search for in the input string. """,
                     "replacement": """The replacement string to replace all matches within the input string. """,
                     "flags": """Conjuncted value that contains flags ( 1 - ignorecase, 2 - multiline, 4 - dotall, 8 - extended, 16 - unicode ) or ( i - Ignore case, m - Multiline, d - Dotall, e - Extended, u - Unicode ) """
                 },
-                result="""returns the replaced string, or bool false otherwise. """,
-            ),
-            name='pregReplace',
+                result='returns the replaced string, or bool false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6140,16 +5871,15 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function performs a regular expression search and replace and returns the replaced string. """,
+                description='This function performs a regular expression search and replace and returns the replaced string.' ,
                 arguments={
                     "subject": """The input string. """,
                     "pattern": """The pattern string to search for in the input string. """,
                     "replacement": """The replacement string to replace all matches within the input string. """,
                     "flags": """Conjuncted value that contains flags ( 1 - ignorecase, 2 - multiline, 4 - dotall, 8 - extended, 16 - unicode ) or ( i - Ignore case, m - Multiline, d - Dotall, e - Extended, u - Unicode ) """
                 },
-                result="""returns the replaced string, or bool false otherwise. """,
-            ),
-            name='pregReplace',
+                result='returns the replaced string, or bool false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6187,13 +5917,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will create a reference to the given argument. """,
+                description='This function will create a reference to the given argument.' ,
                 arguments={
                     "objectToReference": """The Lua element, which you want to reference """
                 },
-                result="""returns an int if the reference were successfully created. returns false if the parameter were invalid. """,
-            ),
-            name='ref',
+                result='returns an int if the reference were successfully created. returns false if the parameter were invalid.' ,
+            )
         )
         ],
         client=[
@@ -6229,13 +5958,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will create a reference to the given argument. """,
+                description='This function will create a reference to the given argument.' ,
                 arguments={
                     "objectToReference": """The Lua element, which you want to reference """
                 },
-                result="""returns an int if the reference were successfully created. returns false if the parameter were invalid. """,
-            ),
-            name='ref',
+                result='returns an int if the reference were successfully created. returns false if the parameter were invalid.' ,
+            )
         )
         ],
     ),
@@ -6283,7 +6011,7 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes hooks added by addDebugHook """,
+                description='This function removes hooks added by addDebugHook' ,
                 arguments={
                     "hookType": """The type of hook to remove. This can be:
 ** preEvent
@@ -6292,9 +6020,8 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
 ** postFunction """,
                     "callbackFunction": """The callback function to remove """
                 },
-                result="""returns true if the hook was successfully removed, or false otherwise. """,
-            ),
-            name='removeDebugHook',
+                result='returns true if the hook was successfully removed, or false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6340,7 +6067,7 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes hooks added by addDebugHook """,
+                description='This function removes hooks added by addDebugHook' ,
                 arguments={
                     "hookType": """The type of hook to remove. This can be:
 ** preEvent
@@ -6349,9 +6076,8 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
 ** postFunction """,
                     "callbackFunction": """The callback function to remove """
                 },
-                result="""returns true if the hook was successfully removed, or false otherwise. """,
-            ),
-            name='removeDebugHook',
+                result='returns true if the hook was successfully removed, or false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6389,13 +6115,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to reset the elapsed time in existing timers to zero. The function does not reset the times to execute count on timers which have a limited amout of repetitions. """,
+                description='This function allows you to reset the elapsed time in existing timers to zero. The function does not reset the times to execute count on timers which have a limited amout of repetitions.' ,
                 arguments={
                     "theTimer": """The timer whose elapsed time you wish to reset. """
                 },
-                result="""returns true if the timer was successfully reset, false otherwise. """,
-            ),
-            name='resetTimer',
+                result='returns true if the timer was successfully reset, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6431,13 +6156,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to reset the elapsed time in existing timers to zero. The function does not reset the times to execute count on timers which have a limited amout of repetitions. """,
+                description='This function allows you to reset the elapsed time in existing timers to zero. The function does not reset the times to execute count on timers which have a limited amout of repetitions.' ,
                 arguments={
                     "theTimer": """The timer whose elapsed time you wish to reset. """
                 },
-                result="""returns true if the timer was successfully reset, false otherwise. """,
-            ),
-            name='resetTimer',
+                result='returns true if the timer was successfully reset, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6478,13 +6202,12 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the players clipboard text (what appears when you paste with CTRL + V) """,
+                description='This function sets the players clipboard text (what appears when you paste with CTRL + V)' ,
                 arguments={
                     "theText": """The new text to be in the players clipboard when the player pastes with CTRL + V. """
                 },
-                result="""returns true if the text in the clip board was set correctly. """,
-            ),
-            name='setClipboard',
+                result='returns true if the text in the clip board was set correctly.' ,
+            )
         )
         ],
     ),
@@ -6532,19 +6255,13 @@ as mentioned before, interpolatebetween can be used on 2d vectors or scalars in 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the development mode. Setting development mode allows access to special commands which can assist with script debugging.
-Client-side development mode commands:
-* Client_Commands#showcol|showcol: Enables colshapes to be viewed as a wireframe object.
-* Client_Commands#showsound|showsound: Enables world sound ids to be printed in the debug output window.
-Shared development mode functions:
-* debugSleep: Sets the freeze time for the client/server. """,
+                description='This function is used to set the development mode. Setting development mode allows access to special commands which can assist with script debugging.\nClient-side development mode commands:\n* Client_Commands#showcol|showcol: Enables colshapes to be viewed as a wireframe object.\n* Client_Commands#showsound|showsound: Enables world sound ids to be printed in the debug output window.\nShared development mode functions:\n* debugSleep: Sets the freeze time for the client/server.' ,
                 arguments={
                     "enable": """: A boolean to indicate whether development mode is on (true) or off (false) """,
                     "enableWeb": """: A boolean to indicate whether browser debug messages will be filtered (false) or not (true) """
                 },
-                result="""returns true if the mode was set correctly, false otherwise. """,
-            ),
-            name='setDevelopmentMode',
+                result='returns true if the mode was set correctly, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6590,19 +6307,13 @@ Shared development mode functions:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the development mode. Setting development mode allows access to special commands which can assist with script debugging.
-Client-side development mode commands:
-* Client_Commands#showcol|showcol: Enables colshapes to be viewed as a wireframe object.
-* Client_Commands#showsound|showsound: Enables world sound ids to be printed in the debug output window.
-Shared development mode functions:
-* debugSleep: Sets the freeze time for the client/server. """,
+                description='This function is used to set the development mode. Setting development mode allows access to special commands which can assist with script debugging.\nClient-side development mode commands:\n* Client_Commands#showcol|showcol: Enables colshapes to be viewed as a wireframe object.\n* Client_Commands#showsound|showsound: Enables world sound ids to be printed in the debug output window.\nShared development mode functions:\n* debugSleep: Sets the freeze time for the client/server.' ,
                 arguments={
                     "enable": """: A boolean to indicate whether development mode is on (true) or off (false) """,
                     "enableWeb": """: A boolean to indicate whether browser debug messages will be filtered (false) or not (true) """
                 },
-                result="""returns true if the mode was set correctly, false otherwise. """,
-            ),
-            name='setDevelopmentMode',
+                result='returns true if the mode was set correctly, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6640,13 +6351,12 @@ Shared development mode functions:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the maximum http://en.wikipedia.org/wiki/Frame_rate FPS (Frames per second) that players on the server can run their game at. """,
+                description='This function sets the maximum http://en.wikipedia.org/wiki/Frame_rate FPS (Frames per second) that players on the server can run their game at.' ,
                 arguments={
                     "fpsLimit": """An integer value representing the maximum FPS. This value may be between 25 and 100 FPS. You can also pass 0 or false, in which case the FPS limit will be the one set in the client settings (by default, 100 FPS and the client fps limit should also be manually changed via fps_limit=0 in console or MTA San Andreas 1.5\MTA\config\coreconfig.xml). """
                 },
-                result="""returns true if successful, or false if it was not possible to set the limit or an invalid value was passed. """,
-            ),
-            name='setFPSLimit',
+                result='returns true if successful, or false if it was not possible to set the limit or an invalid value was passed.' ,
+            )
         )
         ],
         client=[
@@ -6682,13 +6392,12 @@ Shared development mode functions:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the maximum http://en.wikipedia.org/wiki/Frame_rate FPS (Frames per second) that players on the server can run their game at. """,
+                description='This function sets the maximum http://en.wikipedia.org/wiki/Frame_rate FPS (Frames per second) that players on the server can run their game at.' ,
                 arguments={
                     "fpsLimit": """An integer value representing the maximum FPS. This value may be between 25 and 100 FPS. You can also pass 0 or false, in which case the FPS limit will be the one set in the client settings (by default, 100 FPS and the client fps limit should also be manually changed via fps_limit=0 in console or MTA San Andreas 1.5\MTA\config\coreconfig.xml). """
                 },
-                result="""returns true if successful, or false if it was not possible to set the limit or an invalid value was passed. """,
-            ),
-            name='setFPSLimit',
+                result='returns true if successful, or false if it was not possible to set the limit or an invalid value was passed.' ,
+            )
         )
         ],
     ),
@@ -6746,7 +6455,7 @@ Shared development mode functions:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets server settings which are stored in the Server mtaserver.conf|mtaserver.conf file. """,
+                description='This function sets server settings which are stored in the Server mtaserver.conf|mtaserver.conf file.' ,
                 arguments={
                     "name": """The name of the setting. Only certain settings from Server mtaserver.conf|mtaserver.conf can be changed with this function. These are:
 ** minclientversion
@@ -6766,9 +6475,8 @@ Shared development mode functions:
                     "value": """The value of the setting """,
                     "bSave": """Set to true to make the setting permanent, or false for use only until the next server restart. """
                 },
-                result="""returns true if the setting was successfully set, or false otherwise. """,
-            ),
-            name='setServerConfigSetting',
+                result='returns true if the setting was successfully set, or false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6839,19 +6547,15 @@ Shared development mode functions:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to trigger a function after a number of milliseconds have elapsed. You can call one of your own functions or a built-in function. For example, you could set a timer to spawn a player after a number of seconds have elapsed.
-Once a timer has finished repeating, it no longer exists.
-The minimum accepted interval is 0ms.
-Multi Theft Auto guarantees that the timer will be triggered after at least the interval you specify. The resolution of the timer is tied to the frame rate (server side and client-side). All the overdue timers are triggered at a single point each frame. This means that if, for example, the player is running at 30 frames per second, then two timers specified to occur after 100ms and 110ms would more than likely occur during the same frame, as the difference in time between the two timers (10ms) is less than half the length of the frame (33ms). As with most timers provided by other languages, you shouldnt rely on the timer triggering at an exact point in the future. """,
+                description='This function allows you to trigger a function after a number of milliseconds have elapsed. You can call one of your own functions or a built-in function. For example, you could set a timer to spawn a player after a number of seconds have elapsed.\nOnce a timer has finished repeating, it no longer exists.\nThe minimum accepted interval is 0ms.\nMulti Theft Auto guarantees that the timer will be triggered after at least the interval you specify. The resolution of the timer is tied to the frame rate (server side and client-side). All the overdue timers are triggered at a single point each frame. This means that if, for example, the player is running at 30 frames per second, then two timers specified to occur after 100ms and 110ms would more than likely occur during the same frame, as the difference in time between the two timers (10ms) is less than half the length of the frame (33ms). As with most timers provided by other languages, you shouldnt rely on the timer triggering at an exact point in the future.' ,
                 arguments={
                     "theFunction": """The function you wish the timer to call. """,
                     "timeInterval": """The number of milliseconds that should elapse before the function is called. (the minimum is 50 (0 on 1.5.6 r16715); 1000 milliseconds = 1 second) """,
                     "timesToExecute": """The number of times you want the timer to execute, or 0 for infinite repetitions. """,
                     "arguments": """Any arguments you wish to pass to the function can be listed after the timesToExecute argument. Note that any tables you want to pass will get cloned, whereas metatables and functions/function references in that passed table will get lost. Also changes you make in the original table before the function gets called wont get transferred. """
                 },
-                result="""returns a timer pointer if the timer was set successfully, false if the arguments are invalid or the timer could not be set. """,
-            ),
-            name='setTimer',
+                result='returns a timer pointer if the timer was set successfully, false if the arguments are invalid or the timer could not be set.' ,
+            )
         )
         ],
         client=[
@@ -6917,19 +6621,15 @@ Multi Theft Auto guarantees that the timer will be triggered after at least the 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to trigger a function after a number of milliseconds have elapsed. You can call one of your own functions or a built-in function. For example, you could set a timer to spawn a player after a number of seconds have elapsed.
-Once a timer has finished repeating, it no longer exists.
-The minimum accepted interval is 0ms.
-Multi Theft Auto guarantees that the timer will be triggered after at least the interval you specify. The resolution of the timer is tied to the frame rate (server side and client-side). All the overdue timers are triggered at a single point each frame. This means that if, for example, the player is running at 30 frames per second, then two timers specified to occur after 100ms and 110ms would more than likely occur during the same frame, as the difference in time between the two timers (10ms) is less than half the length of the frame (33ms). As with most timers provided by other languages, you shouldnt rely on the timer triggering at an exact point in the future. """,
+                description='This function allows you to trigger a function after a number of milliseconds have elapsed. You can call one of your own functions or a built-in function. For example, you could set a timer to spawn a player after a number of seconds have elapsed.\nOnce a timer has finished repeating, it no longer exists.\nThe minimum accepted interval is 0ms.\nMulti Theft Auto guarantees that the timer will be triggered after at least the interval you specify. The resolution of the timer is tied to the frame rate (server side and client-side). All the overdue timers are triggered at a single point each frame. This means that if, for example, the player is running at 30 frames per second, then two timers specified to occur after 100ms and 110ms would more than likely occur during the same frame, as the difference in time between the two timers (10ms) is less than half the length of the frame (33ms). As with most timers provided by other languages, you shouldnt rely on the timer triggering at an exact point in the future.' ,
                 arguments={
                     "theFunction": """The function you wish the timer to call. """,
                     "timeInterval": """The number of milliseconds that should elapse before the function is called. (the minimum is 50 (0 on 1.5.6 r16715); 1000 milliseconds = 1 second) """,
                     "timesToExecute": """The number of times you want the timer to execute, or 0 for infinite repetitions. """,
                     "arguments": """Any arguments you wish to pass to the function can be listed after the timesToExecute argument. Note that any tables you want to pass will get cloned, whereas metatables and functions/function references in that passed table will get lost. Also changes you make in the original table before the function gets called wont get transferred. """
                 },
-                result="""returns a timer pointer if the timer was set successfully, false if the arguments are invalid or the timer could not be set. """,
-            ),
-            name='setTimer',
+                result='returns a timer pointer if the timer was set successfully, false if the arguments are invalid or the timer could not be set.' ,
+            )
         )
         ],
     ),
@@ -6980,17 +6680,13 @@ Multi Theft Auto guarantees that the timer will be triggered after at least the 
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "shouldFlash": """whether the window should flash """,
                     "count": """the number of times the window should flash, defaults to 10 times """
                 },
-                result="""returns false if:
-* the window is already in focus
-* the client has disabled this feature
-returns true otherwise """,
-            ),
-            name='setWindowFlashing',
+                result='returns false if:\n* the window is already in focus\n* the client has disabled this feature\nreturns true otherwise' ,
+            )
         )
         ],
     ),
@@ -7028,15 +6724,12 @@ returns true otherwise """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""* The sha module and this function may conflict with eachother, if you use this function uninstall the module!
-* This function returns an uppercase string, so make sure you string.upper() anything else you are checking against that has been sha256d elsewhere.}}
-Calculates the sha256 hash of the specified string. """,
+                description='* The sha module and this function may conflict with eachother, if you use this function uninstall the module!\n* This function returns an uppercase string, so make sure you string.upper() anything else you are checking against that has been sha256d elsewhere.}}\nCalculates the sha256 hash of the specified string.' ,
                 arguments={
                     "str": """the string to hash. """
                 },
-                result="""returns the sha256 hash of the input string if successful, false otherwise. """,
-            ),
-            name='sha256',
+                result='returns the sha256 hash of the input string if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7072,15 +6765,12 @@ Calculates the sha256 hash of the specified string. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""* The sha module and this function may conflict with eachother, if you use this function uninstall the module!
-* This function returns an uppercase string, so make sure you string.upper() anything else you are checking against that has been sha256d elsewhere.}}
-Calculates the sha256 hash of the specified string. """,
+                description='* The sha module and this function may conflict with eachother, if you use this function uninstall the module!\n* This function returns an uppercase string, so make sure you string.upper() anything else you are checking against that has been sha256d elsewhere.}}\nCalculates the sha256 hash of the specified string.' ,
                 arguments={
                     "str": """the string to hash. """
                 },
-                result="""returns the sha256 hash of the input string if successful, false otherwise. """,
-            ),
-            name='sha256',
+                result='returns the sha256 hash of the input string if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7128,15 +6818,13 @@ Calculates the sha256 hash of the specified string. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function splits a string into substrings. You specify a character that will act as a separating character; this will determine where to split the sub-strings. For example, it can split the string Hello World into two strings containing the two words, by spliting using a space as a separator.
-Note: You can use the function gettok to retrieve a single token from the string at a specific index. This may be faster for one-off lookups, but considerably slower if you are going to check each token in a long string. """,
+                description='This function splits a string into substrings. You specify a character that will act as a separating character; this will determine where to split the sub-strings. For example, it can split the string Hello World into two strings containing the two words, by spliting using a space as a separator.\nNote: You can use the function gettok to retrieve a single token from the string at a specific index. This may be faster for one-off lookups, but considerably slower if you are going to check each token in a long string.' ,
                 arguments={
                     "stringToSplit": """The string you wish to split into parts. """,
                     "separatingChar": """A string of the character you want to split, or the ASCII|ASCII number representing the character you want to use to split. """
                 },
-                result="""returns a table of substrings split from the original string if successful, false otherwise. """,
-            ),
-            name='split',
+                result='returns a table of substrings split from the original string if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7182,15 +6870,13 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function splits a string into substrings. You specify a character that will act as a separating character; this will determine where to split the sub-strings. For example, it can split the string Hello World into two strings containing the two words, by spliting using a space as a separator.
-Note: You can use the function gettok to retrieve a single token from the string at a specific index. This may be faster for one-off lookups, but considerably slower if you are going to check each token in a long string. """,
+                description='This function splits a string into substrings. You specify a character that will act as a separating character; this will determine where to split the sub-strings. For example, it can split the string Hello World into two strings containing the two words, by spliting using a space as a separator.\nNote: You can use the function gettok to retrieve a single token from the string at a specific index. This may be faster for one-off lookups, but considerably slower if you are going to check each token in a long string.' ,
                 arguments={
                     "stringToSplit": """The string you wish to split into parts. """,
                     "separatingChar": """A string of the character you want to split, or the ASCII|ASCII number representing the character you want to use to split. """
                 },
-                result="""returns a table of substrings split from the original string if successful, false otherwise. """,
-            ),
-            name='split',
+                result='returns a table of substrings split from the original string if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7238,14 +6924,13 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function decrypts given https://en.wikipedia.org/wiki/Base64 base64 representation of encrypted data using the https://en.wikipedia.org/wiki/Tiny_Encryption_Algorithm Tiny Encryption Algorithm. """,
+                description='This function decrypts given https://en.wikipedia.org/wiki/Base64 base64 representation of encrypted data using the https://en.wikipedia.org/wiki/Tiny_Encryption_Algorithm Tiny Encryption Algorithm.' ,
                 arguments={
                     "data": """The block of data you want to decrypt """,
                     "key": """The key that should be used for decryption (Only first 16 characters are used) """
                 },
-                result="""returns string containing the decrypted data if the decryption process was successfully completed, false otherwise. """,
-            ),
-            name='teaDecode',
+                result='returns string containing the decrypted data if the decryption process was successfully completed, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7291,14 +6976,13 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function decrypts given https://en.wikipedia.org/wiki/Base64 base64 representation of encrypted data using the https://en.wikipedia.org/wiki/Tiny_Encryption_Algorithm Tiny Encryption Algorithm. """,
+                description='This function decrypts given https://en.wikipedia.org/wiki/Base64 base64 representation of encrypted data using the https://en.wikipedia.org/wiki/Tiny_Encryption_Algorithm Tiny Encryption Algorithm.' ,
                 arguments={
                     "data": """The block of data you want to decrypt """,
                     "key": """The key that should be used for decryption (Only first 16 characters are used) """
                 },
-                result="""returns string containing the decrypted data if the decryption process was successfully completed, false otherwise. """,
-            ),
-            name='teaDecode',
+                result='returns string containing the decrypted data if the decryption process was successfully completed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7346,14 +7030,13 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions performs the https://en.wikipedia.org/wiki/Tiny_Encryption_Algorithm Tiny Encryption Algorithm on the given string and returns the https://en.wikipedia.org/wiki/Base64 base64 representation of the encrypted string. """,
+                description='This functions performs the https://en.wikipedia.org/wiki/Tiny_Encryption_Algorithm Tiny Encryption Algorithm on the given string and returns the https://en.wikipedia.org/wiki/Base64 base64 representation of the encrypted string.' ,
                 arguments={
                     "text": """The string you want to encrypt. (See second example if you want to encode binary data) """,
                     "key": """The key that should be used for encryption (Only first 16 characters are used) """
                 },
-                result="""returns the https://en.wikipedia.org/wiki/base64 base64 representation of the encrypted string if the encryption process was successfully completed, false otherwise. """,
-            ),
-            name='teaEncode',
+                result='returns the https://en.wikipedia.org/wiki/base64 base64 representation of the encrypted string if the encryption process was successfully completed, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7399,14 +7082,13 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""This functions performs the https://en.wikipedia.org/wiki/Tiny_Encryption_Algorithm Tiny Encryption Algorithm on the given string and returns the https://en.wikipedia.org/wiki/Base64 base64 representation of the encrypted string. """,
+                description='This functions performs the https://en.wikipedia.org/wiki/Tiny_Encryption_Algorithm Tiny Encryption Algorithm on the given string and returns the https://en.wikipedia.org/wiki/Base64 base64 representation of the encrypted string.' ,
                 arguments={
                     "text": """The string you want to encrypt. (See second example if you want to encode binary data) """,
                     "key": """The key that should be used for encryption (Only first 16 characters are used) """
                 },
-                result="""returns the https://en.wikipedia.org/wiki/base64 base64 representation of the encrypted string if the encryption process was successfully completed, false otherwise. """,
-            ),
-            name='teaEncode',
+                result='returns the https://en.wikipedia.org/wiki/base64 base64 representation of the encrypted string if the encryption process was successfully completed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7474,16 +7156,15 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the hex number of a specified color, useful for the dx functions. """,
+                description='This function retrieves the hex number of a specified color, useful for the dx functions.' ,
                 arguments={
                     "red": """The amount of http://en.wikipedia.org/wiki/RGBA_color_space red in the color (0-255). """,
                     "green": """The amount of http://en.wikipedia.org/wiki/RGBA_color_space green in the color (0-255). """,
                     "blue": """The amount of http://en.wikipedia.org/wiki/RGBA_color_space blue in the color (0-255). """,
                     "alpha": """The amount of http://en.wikipedia.org/wiki/RGBA_color_space alpha in the color (0-255). """
                 },
-                result="""returns a single value representing the color. """,
-            ),
-            name='tocolor',
+                result='returns a single value representing the color.' ,
+            )
         )
         ],
         client=[
@@ -7549,16 +7230,15 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the hex number of a specified color, useful for the dx functions. """,
+                description='This function retrieves the hex number of a specified color, useful for the dx functions.' ,
                 arguments={
                     "red": """The amount of http://en.wikipedia.org/wiki/RGBA_color_space red in the color (0-255). """,
                     "green": """The amount of http://en.wikipedia.org/wiki/RGBA_color_space green in the color (0-255). """,
                     "blue": """The amount of http://en.wikipedia.org/wiki/RGBA_color_space blue in the color (0-255). """,
                     "alpha": """The amount of http://en.wikipedia.org/wiki/RGBA_color_space alpha in the color (0-255). """
                 },
-                result="""returns a single value representing the color. """,
-            ),
-            name='tocolor',
+                result='returns a single value representing the color.' ,
+            )
         )
         ],
     ),
@@ -7616,7 +7296,7 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function converts a single value (preferably a Lua table) into a JSON encoded string. You can use this to store the data and then load it again using fromJSON. """,
+                description='This function converts a single value (preferably a Lua table) into a JSON encoded string. You can use this to store the data and then load it again using fromJSON.' ,
                 arguments={
                     "var": """An argument of any type. Arguments that are elements will be stored as element IDs that are liable to change between sessions. As such, do not save elements across sessions as you will get unpredictable results. """,
                     "compact": """a boolean representing whether the string will contain whitespaces. To remove whitespaces from JSON string, use true. String will contain whitespaces per default. """,
@@ -7624,9 +7304,8 @@ Note: You can use the function gettok to retrieve a single token from the string
 ** spaces
 ** tabs """
                 },
-                result="""returns a json formatted string. """,
-            ),
-            name='toJSON',
+                result='returns a json formatted string.' ,
+            )
         )
         ],
         client=[
@@ -7682,7 +7361,7 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function converts a single value (preferably a Lua table) into a JSON encoded string. You can use this to store the data and then load it again using fromJSON. """,
+                description='This function converts a single value (preferably a Lua table) into a JSON encoded string. You can use this to store the data and then load it again using fromJSON.' ,
                 arguments={
                     "var": """An argument of any type. Arguments that are elements will be stored as element IDs that are liable to change between sessions. As such, do not save elements across sessions as you will get unpredictable results. """,
                     "compact": """a boolean representing whether the string will contain whitespaces. To remove whitespaces from JSON string, use true. String will contain whitespaces per default. """,
@@ -7690,9 +7369,8 @@ Note: You can use the function gettok to retrieve a single token from the string
 ** spaces
 ** tabs """
                 },
-                result="""returns a json formatted string. """,
-            ),
-            name='toJSON',
+                result='returns a json formatted string.' ,
+            )
         )
         ],
     ),
@@ -7730,13 +7408,12 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""The function returns the string of the specified UTF code. """,
+                description='The function returns the string of the specified UTF code.' ,
                 arguments={
                     "characterCode": """The UTF code, to get the string of. """
                 },
-                result="""returns a string if the function was successful, false otherwise. """,
-            ),
-            name='utfChar',
+                result='returns a string if the function was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7772,13 +7449,12 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""The function returns the string of the specified UTF code. """,
+                description='The function returns the string of the specified UTF code.' ,
                 arguments={
                     "characterCode": """The UTF code, to get the string of. """
                 },
-                result="""returns a string if the function was successful, false otherwise. """,
-            ),
-            name='utfChar',
+                result='returns a string if the function was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7816,13 +7492,12 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""The function returns the UTF codes of the given string. """,
+                description='The function returns the UTF codes of the given string.' ,
                 arguments={
                     "theString": """The string to get the UTF code of. """
                 },
-                result="""returns an int if the function was successful, false otherwise. """,
-            ),
-            name='utfCode',
+                result='returns an int if the function was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7858,13 +7533,12 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""The function returns the UTF codes of the given string. """,
+                description='The function returns the UTF codes of the given string.' ,
                 arguments={
                     "theString": """The string to get the UTF code of. """
                 },
-                result="""returns an int if the function was successful, false otherwise. """,
-            ),
-            name='utfCode',
+                result='returns an int if the function was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7902,13 +7576,12 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""The function gets the real length of a string, in characters. """,
+                description='The function gets the real length of a string, in characters.' ,
                 arguments={
                     "theString": """The string to get the length of. """
                 },
-                result="""returns an int if the function was successful, false otherwise. """,
-            ),
-            name='utfLen',
+                result='returns an int if the function was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7944,13 +7617,12 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""The function gets the real length of a string, in characters. """,
+                description='The function gets the real length of a string, in characters.' ,
                 arguments={
                     "theString": """The string to get the length of. """
                 },
-                result="""returns an int if the function was successful, false otherwise. """,
-            ),
-            name='utfLen',
+                result='returns an int if the function was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7998,14 +7670,13 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""The function returns the byte position at specified character position. """,
+                description='The function returns the byte position at specified character position.' ,
                 arguments={
                     "theString": """The string. """,
                     "position": """An int with the specified charachter position. """
                 },
-                result="""returns an int if the function was successful, false otherwise. """,
-            ),
-            name='utfSeek',
+                result='returns an int if the function was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -8051,14 +7722,13 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""The function returns the byte position at specified character position. """,
+                description='The function returns the byte position at specified character position.' ,
                 arguments={
                     "theString": """The string. """,
                     "position": """An int with the specified charachter position. """
                 },
-                result="""returns an int if the function was successful, false otherwise. """,
-            ),
-            name='utfSeek',
+                result='returns an int if the function was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -8116,15 +7786,14 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""The function returns a sub string, from the specified positions on a character. """,
+                description='The function returns a sub string, from the specified positions on a character.' ,
                 arguments={
                     "theString": """The string. """,
                     "Start": """An int with the start position. """,
                     "End": """An int with the end position. """
                 },
-                result="""returns a string if the function was successful, false otherwise. """,
-            ),
-            name='utfSub',
+                result='returns a string if the function was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -8180,15 +7849,14 @@ Note: You can use the function gettok to retrieve a single token from the string
                 ],
             ),
             docs=FunctionDoc(
-                description="""The function returns a sub string, from the specified positions on a character. """,
+                description='The function returns a sub string, from the specified positions on a character.' ,
                 arguments={
                     "theString": """The string. """,
                     "Start": """An int with the start position. """,
                     "End": """An int with the end position. """
                 },
-                result="""returns a string if the function was successful, false otherwise. """,
-            ),
-            name='utfSub',
+                result='returns a string if the function was successful, false otherwise.' ,
+            )
         )
         ],
     )

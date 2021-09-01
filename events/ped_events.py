@@ -17,14 +17,14 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientPedDamage',
             docs=FunctionDoc(
-                description="""This event is triggered whenever a ped is damaged. """,
+                description='This event is triggered whenever a ped is damaged.' ,
                 arguments={
                     "attacker": """: A player element representing the attacker or vehicle element (when a ped falls of a bike). """,
                     "weapon": """: An integer representing the Weapons|weapon ID the attacker used """,
                     "bodypart": """: An integer representing the bodypart the ped was damaged """,
                     "loss": """: A float representing the percentage of health the ped lost. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -82,11 +82,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientPedHeliKilled',
             docs=FunctionDoc(
-                description="""This event is fired when a ped is killed due to the effect of a helicopter blades. """,
+                description='This event is fired when a ped is killed due to the effect of a helicopter blades.' ,
                 arguments={
                     "killer": """the vehicle (heli) responsible for causing the death. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -114,11 +114,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientPedHitByWaterCannon',
             docs=FunctionDoc(
-                description="""This event is fired when a ped is hit by a water cannon. """,
+                description='This event is fired when a ped is hit by a water cannon.' ,
                 arguments={
                     "pedHit": """the ped which got shot by the water cannon """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -146,11 +146,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientPedStep',
             docs=FunctionDoc(
-                description="""This event is called when a peds foot has come on to the ground after jumping or taking a full step. """,
+                description='This event is called when a peds foot has come on to the ground after jumping or taking a full step.' ,
                 arguments={
                     "leftFoot": """:  a bool representing if it was the left foot that moved. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -178,12 +178,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientPedVehicleEnter',
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theVehicle": """the vehicle that the ped entered """,
                     "seat": """the seat that the ped now is on. Drivers seat = 0, higher numbers are passenger seats. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -221,12 +221,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientPedVehicleExit',
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theVehicle": """the vehicle that the ped exited. """,
                     "seat": """the number of the seat that the ped was sitting on. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -264,7 +264,7 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientPedWasted',
             docs=FunctionDoc(
-                description="""This event is triggered whenever a ped dies. """,
+                description='This event is triggered whenever a ped dies.' ,
                 arguments={
                     "killer": """: A player element representing the killer. """,
                     "weapon": """: An int|integer representing the Weapons|killer weapon or the Damage Types|damage types. """,
@@ -273,7 +273,7 @@ DUMP_PARTIAL = [
 '''OR''' """,
                     "stealth": """: A boolean representing whether or not this was a stealth kill. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -339,7 +339,7 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientPedWeaponFire',
             docs=FunctionDoc(
-                description="""This event is called when ped shoots a weapon.  This does not trigger for projectiles based, or melee weapons. """,
+                description='This event is called when ped shoots a weapon.  This does not trigger for projectiles based, or melee weapons.' ,
                 arguments={
                     "weapon": """:  an int representing weapons|weapon used for making a shot. """,
                     "ammo": """: an int ammount of ammo left for this weapon type. """,
@@ -347,7 +347,7 @@ DUMP_PARTIAL = [
                     "hitX": """, hitY, hitZ: float world coordinates representing a hit point. """,
                     "hitElement": """: an element which was hit by a shot. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -432,11 +432,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onPedDamage',
             docs=FunctionDoc(
-                description="""This event is triggered when a ped is damaged. For player damage, use onPlayerDamage instead. """,
+                description='This event is triggered when a ped is damaged. For player damage, use onPlayerDamage instead.' ,
                 arguments={
                     "loss": """: an int representing the percentage of health the ped lost. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -464,13 +464,13 @@ DUMP_PARTIAL = [
             EventData(
             name='onPedVehicleEnter',
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theVehicle": """: a vehicle element representing the vehicle that was entered. """,
                     "seat": """: an int representing the seat in which the ped is entering. """,
                     "jacked": """: a player or ped element representing who has been jacked. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -518,14 +518,14 @@ DUMP_PARTIAL = [
             EventData(
             name='onPedVehicleExit',
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "theVehicle": """: a vehicle element representing the vehicle in which the ped exited from. """,
                     "seat": """: an int representing the seat in which the ped was before exiting. """,
                     "jacker": """: a player or ped element representing who jacked the driver. """,
                     "forcedByScript": """a boolean representing whether the exit was forced using removePedFromVehicle or by the ped. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -583,7 +583,7 @@ DUMP_PARTIAL = [
             EventData(
             name='onPedWasted',
             docs=FunctionDoc(
-                description="""This event is triggered when a ped is killed or dies. It is not triggered for players. """,
+                description='This event is triggered when a ped is killed or dies. It is not triggered for players.' ,
                 arguments={
                     "totalAmmo": """: an int representing the total ammo the victim had when he died. """,
                     "killer": """: an element representing the player or vehicle who was the killer.  If there was no killer this is false. """,
@@ -591,7 +591,7 @@ DUMP_PARTIAL = [
                     "bodypart": """: an int representing the bodypart ID the victim was hit on when he died. """,
                     "stealth": """: a boolean representing whether or not this was a stealth kill. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -659,12 +659,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onPedWeaponSwitch',
             docs=FunctionDoc(
-                description="""This event is triggered when a ped switches weapons. """,
+                description='This event is triggered when a ped switches weapons.' ,
                 arguments={
                     "previousWeaponID": """: an int representing the weapon that was switched from. """,
                     "currentWeaponID": """: an int representing the weapon that was switched to. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[

@@ -14,11 +14,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onConsole',
             docs=FunctionDoc(
-                description="""This event is triggered when a player types a message into his console. It is also triggered when entering / commands via the chatbox. """,
+                description='This event is triggered when a player types a message into his console. It is also triggered when entering / commands via the chatbox.' ,
                 arguments={
                     "theMessage": """: a string representing the message entered into the console. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[

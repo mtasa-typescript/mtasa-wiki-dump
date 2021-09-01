@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -43,13 +43,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Aborts a FetchRemote|fetchRemote or CallRemote|callRemote request. """,
+                description='Aborts a FetchRemote|fetchRemote or CallRemote|callRemote request.' ,
                 arguments={
                     "theRequest": """: returned from FetchRemote|fetchRemote, CallRemote|callRemote or GetRemoteRequests|getRemoteRequests """
                 },
-                result="""returns true on success, false when invalid request was provided """,
-            ),
-            name='abortRemoteRequest',
+                result='returns true on success, false when invalid request was provided' ,
+            )
         )
         ],
         client=[
@@ -85,13 +84,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Aborts a FetchRemote|fetchRemote or CallRemote|callRemote request. """,
+                description='Aborts a FetchRemote|fetchRemote or CallRemote|callRemote request.' ,
                 arguments={
                     "theRequest": """: returned from FetchRemote|fetchRemote, CallRemote|callRemote or GetRemoteRequests|getRemoteRequests """
                 },
-                result="""returns true on success, false when invalid request was provided """,
-            ),
-            name='abortRemoteRequest',
+                result='returns true on success, false when invalid request was provided' ,
+            )
         )
         ],
     ),
@@ -139,16 +137,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function adds a new empty config file to an existing resource. """,
+                description='This function adds a new empty config file to an existing resource.' ,
                 arguments={
                     "filePath": """The filepath of the file to be created in the following format: :resourceName/path. resourceName is the name of the resource the file is in, and path is the path from the root directory of the resource to the file.
 :For example, if you want to create a config named 'settings.xml' in the resource 'ctf', it can be created from another resource this way: ''addResourceConfig(":ctf/settings.xml", "server")''.
 :If you want to create the file in the current resource, only the file path is necessary, e.g. ''addResourceConfig("settings.xml", "server")''. """,
                     "filetype": """a string indicating whether the file is serverside (server) or clientside (client). """
                 },
-                result="""returns the new configs root xmlnode if the config was added successfully, false otherwise. """,
-            ),
-            name='addResourceConfig',
+                result='returns the new configs root xmlnode if the config was added successfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -199,16 +196,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function adds a new empty mapfile to an existing resource. """,
+                description='This function adds a new empty mapfile to an existing resource.' ,
                 arguments={
                     "filePath": """The filepath of the resource map in the following format: :resourceName/path. resourceName is the name of the resource the map file will be in, and path is the path from the root directory of the resource to the file.
 :For example, if you want to create a map file named 'manycars.map' in the resource 'cdm', it can be created from another resource this way: ''addResourceMap(":cdm/manycars.map")''.
 :If you want to create the map file in the current resource, only the file path is necessary, e.g. ''addResourceMap("manycars.map")''. """,
                     "dimension": """the dimension in which the maps objects will be placed. """
                 },
-                result="""returns the new maps root xmlnode if the map was added successfully, false otherwise. """,
-            ),
-            name='addResourceMap',
+                result='returns the new maps root xmlnode if the map was added successfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -266,31 +262,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to call a function from another resource (which must be running).
-The function which you wish to call must first be exported within the resources meta.  For example:
-<syntaxhighlight lang=xml><meta>
-<info author=jbeta type=script description=Scoreboard resource />
-<script src=scoreboard_client.lua type=client/>
-<script src=scoreboard_exports.lua type=server/>
-<script src=scoreboard_http.lua type=server/>
-<export function=getScoreboardColumns http=true />
-<export function=getScoreboardRows http=true />
-<export function=addScoreboardColumn type=server/>
-<export function=removeScoreboardColumn type=server/>
-<export function=setPlayerScoreboardForced type=server/>
-<export function=setScoreboardForced type=client/>
-</meta></syntaxhighlight>
-This enables other resources to call a function from this resource.
-You cannot call a server function from the client or vice versa. See triggerServerEvent and triggerClientEvent for possibilities to do that.
-There is an easier syntax replacing this function. For example, you can instead of:<br>
-<syntaxhighlight lang=lua>call ( getResourceFromName ( resource ), exportedFunction, 1, 2, three )</syntaxhighlight>
-do much like a normal call:<br>
-<syntaxhighlight lang=lua>exports.resource:exportedFunction ( 1, 2, three )</syntaxhighlight>
-If the resource name contains illegal characters (such as hyphens), you can also do:<br>
-<syntaxhighlight lang=lua>exportsresource-name:exportedFunction ( 1, 2, three )</syntaxhighlight>
-Two extra hidden variables are passed to the exported function:
-* sourceResource - The resource that called the exported function
-* sourceResourceRoot - The resource root element of the resource which called the exported function. """,
+                description='This function is used to call a function from another resource (which must be running).\nThe function which you wish to call must first be exported within the resources meta.  For example:\n<syntaxhighlight lang=xml><meta>\n<info author=jbeta type=script description=Scoreboard resource />\n<script src=scoreboard_client.lua type=client/>\n<script src=scoreboard_exports.lua type=server/>\n<script src=scoreboard_http.lua type=server/>\n<export function=getScoreboardColumns http=true />\n<export function=getScoreboardRows http=true />\n<export function=addScoreboardColumn type=server/>\n<export function=removeScoreboardColumn type=server/>\n<export function=setPlayerScoreboardForced type=server/>\n<export function=setScoreboardForced type=client/>\n</meta></syntaxhighlight>\nThis enables other resources to call a function from this resource.\nYou cannot call a server function from the client or vice versa. See triggerServerEvent and triggerClientEvent for possibilities to do that.\nThere is an easier syntax replacing this function. For example, you can instead of:<br>\n<syntaxhighlight lang=lua>call ( getResourceFromName ( resource ), exportedFunction, 1, 2, three )</syntaxhighlight>\ndo much like a normal call:<br>\n<syntaxhighlight lang=lua>exports.resource:exportedFunction ( 1, 2, three )</syntaxhighlight>\nIf the resource name contains illegal characters (such as hyphens), you can also do:<br>\n<syntaxhighlight lang=lua>exportsresource-name:exportedFunction ( 1, 2, three )</syntaxhighlight>\nTwo extra hidden variables are passed to the exported function:\n* sourceResource - The resource that called the exported function\n* sourceResourceRoot - The resource root element of the resource which called the exported function.' ,
                 arguments={
                     "theResource": """This is a resource pointer which refers to the resource you are calling a function from. """,
                     "theFunction": """This is a string with the name of the function which you want to call. """,
@@ -298,10 +270,8 @@ Two extra hidden variables are passed to the exported function:
                     "resource_name": """Resource name """,
                     "exportedFunction": """The name of the function you want to call. Its not a string. """
                 },
-                result="""returns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false.
-returns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false. """,
-            ),
-            name='call',
+                result='returns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false.\nreturns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false.' ,
+            )
         )
         ],
         client=[
@@ -354,31 +324,7 @@ returns anything that the designated function has returned, if the function has 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to call a function from another resource (which must be running).
-The function which you wish to call must first be exported within the resources meta.  For example:
-<syntaxhighlight lang=xml><meta>
-<info author=jbeta type=script description=Scoreboard resource />
-<script src=scoreboard_client.lua type=client/>
-<script src=scoreboard_exports.lua type=server/>
-<script src=scoreboard_http.lua type=server/>
-<export function=getScoreboardColumns http=true />
-<export function=getScoreboardRows http=true />
-<export function=addScoreboardColumn type=server/>
-<export function=removeScoreboardColumn type=server/>
-<export function=setPlayerScoreboardForced type=server/>
-<export function=setScoreboardForced type=client/>
-</meta></syntaxhighlight>
-This enables other resources to call a function from this resource.
-You cannot call a server function from the client or vice versa. See triggerServerEvent and triggerClientEvent for possibilities to do that.
-There is an easier syntax replacing this function. For example, you can instead of:<br>
-<syntaxhighlight lang=lua>call ( getResourceFromName ( resource ), exportedFunction, 1, 2, three )</syntaxhighlight>
-do much like a normal call:<br>
-<syntaxhighlight lang=lua>exports.resource:exportedFunction ( 1, 2, three )</syntaxhighlight>
-If the resource name contains illegal characters (such as hyphens), you can also do:<br>
-<syntaxhighlight lang=lua>exportsresource-name:exportedFunction ( 1, 2, three )</syntaxhighlight>
-Two extra hidden variables are passed to the exported function:
-* sourceResource - The resource that called the exported function
-* sourceResourceRoot - The resource root element of the resource which called the exported function. """,
+                description='This function is used to call a function from another resource (which must be running).\nThe function which you wish to call must first be exported within the resources meta.  For example:\n<syntaxhighlight lang=xml><meta>\n<info author=jbeta type=script description=Scoreboard resource />\n<script src=scoreboard_client.lua type=client/>\n<script src=scoreboard_exports.lua type=server/>\n<script src=scoreboard_http.lua type=server/>\n<export function=getScoreboardColumns http=true />\n<export function=getScoreboardRows http=true />\n<export function=addScoreboardColumn type=server/>\n<export function=removeScoreboardColumn type=server/>\n<export function=setPlayerScoreboardForced type=server/>\n<export function=setScoreboardForced type=client/>\n</meta></syntaxhighlight>\nThis enables other resources to call a function from this resource.\nYou cannot call a server function from the client or vice versa. See triggerServerEvent and triggerClientEvent for possibilities to do that.\nThere is an easier syntax replacing this function. For example, you can instead of:<br>\n<syntaxhighlight lang=lua>call ( getResourceFromName ( resource ), exportedFunction, 1, 2, three )</syntaxhighlight>\ndo much like a normal call:<br>\n<syntaxhighlight lang=lua>exports.resource:exportedFunction ( 1, 2, three )</syntaxhighlight>\nIf the resource name contains illegal characters (such as hyphens), you can also do:<br>\n<syntaxhighlight lang=lua>exportsresource-name:exportedFunction ( 1, 2, three )</syntaxhighlight>\nTwo extra hidden variables are passed to the exported function:\n* sourceResource - The resource that called the exported function\n* sourceResourceRoot - The resource root element of the resource which called the exported function.' ,
                 arguments={
                     "theResource": """This is a resource pointer which refers to the resource you are calling a function from. """,
                     "theFunction": """This is a string with the name of the function which you want to call. """,
@@ -386,10 +332,8 @@ Two extra hidden variables are passed to the exported function:
                     "resource_name": """Resource name """,
                     "exportedFunction": """The name of the function you want to call. Its not a string. """
                 },
-                result="""returns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false.
-returns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false. """,
-            ),
-            name='call',
+                result='returns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false.\nreturns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false.' ,
+            )
         )
         ],
     ),
@@ -494,11 +438,7 @@ returns anything that the designated function has returned, if the function has 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to call functions that have been exported with HTTP access by other MTA servers. The calls are asynchronous so you do not get an immediate result from the call, instead a callback function you specify is called when the call returns.
-You can also use this function to access a standard web page on a server you own by specifying the URL. The arguments you specify to callRemote are passed to the web page using HTTP POST as a JSON array. This will always have an array as the root element. The page must return a JSON formated *array* in the pages body with the results of the call (or an empty array if there are no results).
-You can use the PHP SDK to create PHP pages that can be called by this function. See the PHP SDK page for an example.
-In addition, it is possible to use this function to get information about a resource in the MTA community, besides other things. Check out the Community Resources article.
-In the case when the call fails, a string containing ERROR followed by an integer containing the error reason will be passed to the callback function. The reason for failure will be similar to errors found with websites - file not found, server not found and timeouts. """,
+                description='This function allows you to call functions that have been exported with HTTP access by other MTA servers. The calls are asynchronous so you do not get an immediate result from the call, instead a callback function you specify is called when the call returns.\nYou can also use this function to access a standard web page on a server you own by specifying the URL. The arguments you specify to callRemote are passed to the web page using HTTP POST as a JSON array. This will always have an array as the root element. The page must return a JSON formated *array* in the pages body with the results of the call (or an empty array if there are no results).\nYou can use the PHP SDK to create PHP pages that can be called by this function. See the PHP SDK page for an example.\nIn addition, it is possible to use this function to get information about a resource in the MTA community, besides other things. Check out the Community Resources article.\nIn the case when the call fails, a string containing ERROR followed by an integer containing the error reason will be passed to the callback function. The reason for failure will be similar to errors found with websites - file not found, server not found and timeouts.' ,
                 arguments={
                     "host": """This is a host name - including the HTTP port - of the server you wish to connect to. """,
                     "resourceName": """This is a name of the resource that contains the exported function you want to call. """,
@@ -510,9 +450,8 @@ In the case when the call fails, a string containing ERROR followed by an intege
                     "connectTimeout": """Number of milliseconds each connection attempt will take before timing out """,
                     "arguments": """Any arguments you may want to pass to the function when it is called. Any number of arguments of can be specified, each being passed to the designated function. Most data types can be passed, including tables. The only values that cannot be passed are userdata values such as xmlnodes - elements and resources can be passed though may be misinterpreted on other game servers (or cause warnings). """
                 },
-                result="""returns true if the function has been called, false otherwise. """,
-            ),
-            name='callRemote',
+                result='returns true if the function has been called, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -573,15 +512,14 @@ In the case when the call fails, a string containing ERROR followed by an intege
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function copies a specified resource with a new name. """,
+                description='This function copies a specified resource with a new name.' ,
                 arguments={
                     "theResource": """the resource which is going to be copied """,
                     "newResourceName": """the name that the copied resource will receive """,
                     "organizationalDir": """: A string containing the path where the resource should be copied to (e.g. gamemodes/amx). """
                 },
-                result="""returns the resource element of the copy. returns false if the arguments are incorrect. """,
-            ),
-            name='copyResource',
+                result='returns the resource element of the copy. returns false if the arguments are incorrect.' ,
+            )
         )
         ],
         client=[
@@ -632,14 +570,13 @@ In the case when the call fails, a string containing ERROR followed by an intege
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function creates an new, empty resource. This creates a directory matching the name you specify on disk, then creates an empty meta.xml file with a <meta> element in it. """,
+                description='This function creates an new, empty resource. This creates a directory matching the name you specify on disk, then creates an empty meta.xml file with a <meta> element in it.' ,
                 arguments={
                     "resourceName": """The name of the new resource. This should be a valid file name. Its recommended that you do not have spaces or non-ASCII characters in resource names. """,
                     "organizationalDir": """: A string containing the path where the resource should be created (e.g. gamemodes/amx). """
                 },
-                result="""returns the resource element of the new resource if successful, false otherwise. this could fail if the resource name already is in use, if a directory already exists with the name youve specified (but this isnt a valid resource) or if the name you specify isnt valid. it could also fail if the disk was full or for other similar reasons. """,
-            ),
-            name='createResource',
+                result='returns the resource element of the new resource if successful, false otherwise. this could fail if the resource name already is in use, if a directory already exists with the name youve specified (but this isnt a valid resource) or if the name you specify isnt valid. it could also fail if the disk was full or for other similar reasons.' ,
+            )
         )
         ],
         client=[
@@ -680,13 +617,12 @@ In the case when the call fails, a string containing ERROR followed by an intege
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function deletes a resource from the MTA memory and moves it to the /resources-cache/trash/ directory. """,
+                description='This function deletes a resource from the MTA memory and moves it to the /resources-cache/trash/ directory.' ,
                 arguments={
                     "resourceName": """The name of resource to delete. """
                 },
-                result="""returns true if the resource has been deleted successfully, false otherwise. """,
-            ),
-            name='deleteResource',
+                result='returns true if the resource has been deleted successfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -794,9 +730,7 @@ In the case when the call fails, a string containing ERROR followed by an intege
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to post and receive data from HTTP servers. The calls are asynchronous so you do not get an immediate result from the call, instead a callback function you specify is called when the download completes.
-In the case when the call fails, a string containing ERROR followed by an integer containing the error reason will be passed to the callback function. The reason for failure will be similar to errors found with websites - file not found, server not found and timeouts.
-If you are using fetchRemote to connect to a PHP script, you can use file_get_contents(php://input) to read the postData sent from this function. """,
+                description='This function allows you to post and receive data from HTTP servers. The calls are asynchronous so you do not get an immediate result from the call, instead a callback function you specify is called when the download completes.\nIn the case when the call fails, a string containing ERROR followed by an integer containing the error reason will be passed to the callback function. The reason for failure will be similar to errors found with websites - file not found, server not found and timeouts.\nIf you are using fetchRemote to connect to a PHP script, you can use file_get_contents(php://input) to read the postData sent from this function.' ,
                 arguments={
                     "URL": """A full URL in the format <nowiki>http://hostname/path/file.ext</nowiki>. A port can be specified with a colon followed by a port number appended to the hostname. """,
                     "callbackFunction": """This is the function that should receive the data returned from the remote server. The callback argument list should be: """,
@@ -821,9 +755,8 @@ If you are using fetchRemote to connect to a PHP script, you can use file_get_co
                     "password": """A string specifying the password for protected pages. """,
                     "formFields": """A table containing form items to submit. (for POST method only)  e.g.{ name&#61;bob, email&#61;bob@example.com } """
                 },
-                result="""returns a request value which can be used with getremoterequestinfo|getremoterequestinfo or abortremoterequest|abortremoterequest """,
-            ),
-            name='fetchRemote',
+                result='returns a request value which can be used with getremoterequestinfo|getremoterequestinfo or abortremoterequest|abortremoterequest' ,
+            )
         )
         ],
         client=[
@@ -926,9 +859,7 @@ If you are using fetchRemote to connect to a PHP script, you can use file_get_co
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to post and receive data from HTTP servers. The calls are asynchronous so you do not get an immediate result from the call, instead a callback function you specify is called when the download completes.
-In the case when the call fails, a string containing ERROR followed by an integer containing the error reason will be passed to the callback function. The reason for failure will be similar to errors found with websites - file not found, server not found and timeouts.
-If you are using fetchRemote to connect to a PHP script, you can use file_get_contents(php://input) to read the postData sent from this function. """,
+                description='This function allows you to post and receive data from HTTP servers. The calls are asynchronous so you do not get an immediate result from the call, instead a callback function you specify is called when the download completes.\nIn the case when the call fails, a string containing ERROR followed by an integer containing the error reason will be passed to the callback function. The reason for failure will be similar to errors found with websites - file not found, server not found and timeouts.\nIf you are using fetchRemote to connect to a PHP script, you can use file_get_contents(php://input) to read the postData sent from this function.' ,
                 arguments={
                     "URL": """A full URL in the format <nowiki>http://hostname/path/file.ext</nowiki>. A port can be specified with a colon followed by a port number appended to the hostname. """,
                     "callbackFunction": """This is the function that should receive the data returned from the remote server. The callback argument list should be: """,
@@ -953,9 +884,8 @@ If you are using fetchRemote to connect to a PHP script, you can use file_get_co
                     "password": """A string specifying the password for protected pages. """,
                     "formFields": """A table containing form items to submit. (for POST method only)  e.g.{ name&#61;bob, email&#61;bob@example.com } """
                 },
-                result="""returns a request value which can be used with getremoterequestinfo|getremoterequestinfo or abortremoterequest|abortremoterequest """,
-            ),
-            name='fetchRemote',
+                result='returns a request value which can be used with getremoterequestinfo|getremoterequestinfo or abortremoterequest|abortremoterequest' ,
+            )
         )
         ],
     ),
@@ -1013,26 +943,12 @@ If you are using fetchRemote to connect to a PHP script, you can use file_get_co
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets informations of an FetchRemote|fetchRemote or CallRemote|callRemote request info. """,
+                description='Gets informations of an FetchRemote|fetchRemote or CallRemote|callRemote request info.' ,
                 arguments={
                     "theRequest": """: returned from FetchRemote|fetchRemote, CallRemote|callRemote or GetRemoteRequests|getRemoteRequests """
                 },
-                result="""returns a table when valid, false otherwise
-the table contains:
-*bytesreceived: a number specifying the amount of data received so far. zero means the download is queued
-*bytestotal: a number specifying the final download size. will be zero if the remote http server has not set the content-length header
-*currentattempt: a number specifying the current connection attempt
-*type: a string specifying either fetch or call
-*url: a string specifying the url
-*resource: the resource which started the request, or false if the resource has since been stopped/restarted
-*queue: a string specifying the queue name
-*method: a string specifying the http method. e.g. get or post
-*connectionattempts: a number specifying max number connection attempts as declared in the fetchremote call
-*connectiontimeout: a number specifying connection attempt timeout as declared in the fetchremote call
-*postdata: a string containing the request post data as declared in the fetchremote call
-*headers: a table containing the request http headers as declared in the fetchremote call """,
-            ),
-            name='getRemoteRequestInfo',
+                result='returns a table when valid, false otherwise\nthe table contains:\n*bytesreceived: a number specifying the amount of data received so far. zero means the download is queued\n*bytestotal: a number specifying the final download size. will be zero if the remote http server has not set the content-length header\n*currentattempt: a number specifying the current connection attempt\n*type: a string specifying either fetch or call\n*url: a string specifying the url\n*resource: the resource which started the request, or false if the resource has since been stopped/restarted\n*queue: a string specifying the queue name\n*method: a string specifying the http method. e.g. get or post\n*connectionattempts: a number specifying max number connection attempts as declared in the fetchremote call\n*connectiontimeout: a number specifying connection attempt timeout as declared in the fetchremote call\n*postdata: a string containing the request post data as declared in the fetchremote call\n*headers: a table containing the request http headers as declared in the fetchremote call' ,
+            )
         )
         ],
         client=[
@@ -1088,26 +1004,12 @@ the table contains:
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets informations of an FetchRemote|fetchRemote or CallRemote|callRemote request info. """,
+                description='Gets informations of an FetchRemote|fetchRemote or CallRemote|callRemote request info.' ,
                 arguments={
                     "theRequest": """: returned from FetchRemote|fetchRemote, CallRemote|callRemote or GetRemoteRequests|getRemoteRequests """
                 },
-                result="""returns a table when valid, false otherwise
-the table contains:
-*bytesreceived: a number specifying the amount of data received so far. zero means the download is queued
-*bytestotal: a number specifying the final download size. will be zero if the remote http server has not set the content-length header
-*currentattempt: a number specifying the current connection attempt
-*type: a string specifying either fetch or call
-*url: a string specifying the url
-*resource: the resource which started the request, or false if the resource has since been stopped/restarted
-*queue: a string specifying the queue name
-*method: a string specifying the http method. e.g. get or post
-*connectionattempts: a number specifying max number connection attempts as declared in the fetchremote call
-*connectiontimeout: a number specifying connection attempt timeout as declared in the fetchremote call
-*postdata: a string containing the request post data as declared in the fetchremote call
-*headers: a table containing the request http headers as declared in the fetchremote call """,
-            ),
-            name='getRemoteRequestInfo',
+                result='returns a table when valid, false otherwise\nthe table contains:\n*bytesreceived: a number specifying the amount of data received so far. zero means the download is queued\n*bytestotal: a number specifying the final download size. will be zero if the remote http server has not set the content-length header\n*currentattempt: a number specifying the current connection attempt\n*type: a string specifying either fetch or call\n*url: a string specifying the url\n*resource: the resource which started the request, or false if the resource has since been stopped/restarted\n*queue: a string specifying the queue name\n*method: a string specifying the http method. e.g. get or post\n*connectionattempts: a number specifying max number connection attempts as declared in the fetchremote call\n*connectiontimeout: a number specifying connection attempt timeout as declared in the fetchremote call\n*postdata: a string containing the request post data as declared in the fetchremote call\n*headers: a table containing the request http headers as declared in the fetchremote call' ,
+            )
         )
         ],
     ),
@@ -1145,13 +1047,12 @@ the table contains:
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets all FetchRemote|fetchRemote and CallRemote|callRemote requests currently running. """,
+                description='Gets all FetchRemote|fetchRemote and CallRemote|callRemote requests currently running.' ,
                 arguments={
                     "theResource": """: the resource to get all requests from """
                 },
-                result="""returns a table with all requests, false if an invalid resource was provided """,
-            ),
-            name='getRemoteRequests',
+                result='returns a table with all requests, false if an invalid resource was provided' ,
+            )
         )
         ],
         client=[
@@ -1187,13 +1088,12 @@ the table contains:
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets all FetchRemote|fetchRemote and CallRemote|callRemote requests currently running. """,
+                description='Gets all FetchRemote|fetchRemote and CallRemote|callRemote requests currently running.' ,
                 arguments={
                     "theResource": """: the resource to get all requests from """
                 },
-                result="""returns a table with all requests, false if an invalid resource was provided """,
-            ),
-            name='getRemoteRequests',
+                result='returns a table with all requests, false if an invalid resource was provided' ,
+            )
         )
         ],
     ),
@@ -1231,13 +1131,12 @@ the table contains:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the ACL request section from the meta.xml file of the given resource. """,
+                description='This function retrieves the ACL request section from the meta.xml file of the given resource.' ,
                 arguments={
                     "theResource": """the resource to get the ACL requests for. """
                 },
-                result="""returns a table with the acl requests for the given resource, or false if the resource is not valid. a valid resource with no acl requests will return an empty table. """,
-            ),
-            name='getResourceACLRequests',
+                result='returns a table with the acl requests for the given resource, or false if the resource is not valid. a valid resource with no acl requests will return an empty table.' ,
+            )
         )
         ],
         client=[
@@ -1278,15 +1177,14 @@ the table contains:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to return the root node of a configuration file. Config files must be predefined in a resources Meta.xml|meta file.  An alternative way to load XML files is to use xmlLoadFile. """,
+                description='This function is used to return the root node of a configuration file. Config files must be predefined in a resources Meta.xml|meta file.  An alternative way to load XML files is to use xmlLoadFile.' ,
                 arguments={
                     "filePath": """The filepath of the file in the following format: :resourceName/path. resourceName is the name of the resource the file is in, and path is the path from the root directory of the resource to the file.
 :For example, if there is a file named 'settings.xml' in the resource 'ctf', it can be accessed from another resource this way: ''getResourceConfig(":ctf/settings.xml")''.
 :If the file is in the current resource, only the file path is necessary, e.g. ''getResourceConfig("settings.xml")''. """
                 },
-                result="""returns the root node of the specified configuration file. if the file is corrupted, not defined in the meta file or doesnt exist, returns false. """,
-            ),
-            name='getResourceConfig',
+                result='returns the root node of the specified configuration file. if the file is corrupted, not defined in the meta file or doesnt exist, returns false.' ,
+            )
         )
         ],
         client=[
@@ -1322,15 +1220,14 @@ the table contains:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to return the root node of a configuration file. Config files must be predefined in a resources Meta.xml|meta file.  An alternative way to load XML files is to use xmlLoadFile. """,
+                description='This function is used to return the root node of a configuration file. Config files must be predefined in a resources Meta.xml|meta file.  An alternative way to load XML files is to use xmlLoadFile.' ,
                 arguments={
                     "filePath": """The filepath of the file in the following format: :resourceName/path. resourceName is the name of the resource the file is in, and path is the path from the root directory of the resource to the file.
 :For example, if there is a file named 'settings.xml' in the resource 'ctf', it can be accessed from another resource this way: ''getResourceConfig(":ctf/settings.xml")''.
 :If the file is in the current resource, only the file path is necessary, e.g. ''getResourceConfig("settings.xml")''. """
                 },
-                result="""returns the root node of the specified configuration file. if the file is corrupted, not defined in the meta file or doesnt exist, returns false. """,
-            ),
-            name='getResourceConfig',
+                result='returns the root node of the specified configuration file. if the file is corrupted, not defined in the meta file or doesnt exist, returns false.' ,
+            )
         )
         ],
     ),
@@ -1368,13 +1265,12 @@ the table contains:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the dynamic element root of a specified resource. The dynamic element root is the parent of elements that are created by scripts (e.g. with createObject) unless they specify a different parent. """,
+                description='This function retrieves the dynamic element root of a specified resource. The dynamic element root is the parent of elements that are created by scripts (e.g. with createObject) unless they specify a different parent.' ,
                 arguments={
                     "theResource": """the resource of which dynamic element root we want. """
                 },
-                result="""returns an element of the resources dynamic element root if the resource specified was valid and active (currently running), false otherwise. """,
-            ),
-            name='getResourceDynamicElementRoot',
+                result='returns an element of the resources dynamic element root if the resource specified was valid and active (currently running), false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1410,13 +1306,12 @@ the table contains:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the dynamic element root of a specified resource. The dynamic element root is the parent of elements that are created by scripts (e.g. with createObject) unless they specify a different parent. """,
+                description='This function retrieves the dynamic element root of a specified resource. The dynamic element root is the parent of elements that are created by scripts (e.g. with createObject) unless they specify a different parent.' ,
                 arguments={
                     "theResource": """the resource of which dynamic element root we want. """
                 },
-                result="""returns an element of the resources dynamic element root if the resource specified was valid and active (currently running), false otherwise. """,
-            ),
-            name='getResourceDynamicElementRoot',
+                result='returns an element of the resources dynamic element root if the resource specified was valid and active (currently running), false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1454,13 +1349,12 @@ the table contains:
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns a table containing the names of the functions that a resource exports. It will return the exports of the current resource if there is no argument passed in. """,
+                description='Returns a table containing the names of the functions that a resource exports. It will return the exports of the current resource if there is no argument passed in.' ,
                 arguments={
                     "theResource": """the resource of which you want to know the call|exported functions. """
                 },
-                result="""returns a table of function names if successful, false otherwise. """,
-            ),
-            name='getResourceExportedFunctions',
+                result='returns a table of function names if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1496,13 +1390,12 @@ the table contains:
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns a table containing the names of the functions that a resource exports. It will return the exports of the current resource if there is no argument passed in. """,
+                description='Returns a table containing the names of the functions that a resource exports. It will return the exports of the current resource if there is no argument passed in.' ,
                 arguments={
                     "theResource": """the resource of which you want to know the call|exported functions. """
                 },
-                result="""returns a table of function names if successful, false otherwise. """,
-            ),
-            name='getResourceExportedFunctions',
+                result='returns a table of function names if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1540,13 +1433,12 @@ the table contains:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to retrieve a resource from its name. A resources name is the same as its folder or file archive name on the server (without the extension). """,
+                description='This function is used to retrieve a resource from its name. A resources name is the same as its folder or file archive name on the server (without the extension).' ,
                 arguments={
                     "resourceName": """the name of the resource you wish to get. """
                 },
-                result="""returns the resource with the specified name, or false if no resource of that name exists. note that clientside this will also return false for resources that are in the loaded state, since the client is unaware of resources that have not been started. """,
-            ),
-            name='getResourceFromName',
+                result='returns the resource with the specified name, or false if no resource of that name exists. note that clientside this will also return false for resources that are in the loaded state, since the client is unaware of resources that have not been started.' ,
+            )
         )
         ],
         client=[
@@ -1582,13 +1474,12 @@ the table contains:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to retrieve a resource from its name. A resources name is the same as its folder or file archive name on the server (without the extension). """,
+                description='This function is used to retrieve a resource from its name. A resources name is the same as its folder or file archive name on the server (without the extension).' ,
                 arguments={
                     "resourceName": """the name of the resource you wish to get. """
                 },
-                result="""returns the resource with the specified name, or false if no resource of that name exists. note that clientside this will also return false for resources that are in the loaded state, since the client is unaware of resources that have not been started. """,
-            ),
-            name='getResourceFromName',
+                result='returns the resource with the specified name, or false if no resource of that name exists. note that clientside this will also return false for resources that are in the loaded state, since the client is unaware of resources that have not been started.' ,
+            )
         )
         ],
     ),
@@ -1629,13 +1520,12 @@ the table contains:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves a resources GUI element. The resources GUI element is the element in the element tree which is the default parent of all GUI elements that belong to a particular resource. It has a predefined variable called guiRoot, and each resource has one of these. You can attach event handlers to this element to easily capture events that originate from your resource (and global events that originate from the root element). """,
+                description='This function retrieves a resources GUI element. The resources GUI element is the element in the element tree which is the default parent of all GUI elements that belong to a particular resource. It has a predefined variable called guiRoot, and each resource has one of these. You can attach event handlers to this element to easily capture events that originate from your resource (and global events that originate from the root element).' ,
                 arguments={
                     "theResource": """the resource whose GUI element we are getting. If not specified, assumes the current resource. """
                 },
-                result="""returns the root gui element that contains all the other gui elements. """,
-            ),
-            name='getResourceGUIElement',
+                result='returns the root gui element that contains all the other gui elements.' ,
+            )
         )
         ],
     ),
@@ -1683,14 +1573,13 @@ the table contains:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the value of any attribute in a resource info tag. """,
+                description='This function retrieves the value of any attribute in a resource info tag.' ,
                 arguments={
                     "theResource": """the resource we are getting the info from. """,
                     "attribute": """the name of the attribute we want info about. """
                 },
-                result="""returns a string with the attribute value if it exists, false otherwise. """,
-            ),
-            name='getResourceInfo',
+                result='returns a string with the attribute value if it exists, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1731,14 +1620,12 @@ the table contains:
                 ],
             ),
             docs=FunctionDoc(
-                description="""Used to check the last starting time and date of a resource """,
+                description='Used to check the last starting time and date of a resource' ,
                 arguments={
                     "theResource": """The resource of which youd like to check the last starting time. """
                 },
-                result="""if successful, returns the unix timestamp when the resource was last started, or the string never if the resource has not been started yet, otherwise false. use in conjunction with getrealtime in order to retrieve detailed information.
-returns a string with the time and date, or false if the resource does not exist. """,
-            ),
-            name='getResourceLastStartTime',
+                result='if successful, returns the unix timestamp when the resource was last started, or the string never if the resource has not been started yet, otherwise false. use in conjunction with getrealtime in order to retrieve detailed information.\nreturns a string with the time and date, or false if the resource does not exist.' ,
+            )
         )
         ],
         client=[
@@ -1779,13 +1666,12 @@ returns a string with the time and date, or false if the resource does not exist
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the reason why a resource failed to start. """,
+                description='This function retrieves the reason why a resource failed to start.' ,
                 arguments={
                     "theResource": """The resource you wish to check. """
                 },
-                result="""if the resource failed to load, returns a string with the failure reason in it. if it loaded successfully, returns an empty string. returns false if the resource doesnt exist. """,
-            ),
-            name='getResourceLoadFailureReason',
+                result='if the resource failed to load, returns a string with the failure reason in it. if it loaded successfully, returns an empty string. returns false if the resource doesnt exist.' ,
+            )
         )
         ],
         client=[
@@ -1826,15 +1712,12 @@ returns a string with the time and date, or false if the resource does not exist
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the date and time at which a resource was last loaded in the server. """,
+                description='Gets the date and time at which a resource was last loaded in the server.' ,
                 arguments={
                     "res": """the resource you want to know the load time of. """
                 },
-                result="""if successful, returns the unix timestamp when the resource was loaded, otherwise false. use in conjunction with getrealtime in order to retrieve detailed information.
-if successful, returns a string with the date and time that the resource was last loaded into memory (for example when the server started, or when the resource was changed and reloaded). returns false on failure.
-an example string is fri mar 28 13:51:04 2008. """,
-            ),
-            name='getResourceLoadTime',
+                result='if successful, returns the unix timestamp when the resource was loaded, otherwise false. use in conjunction with getrealtime in order to retrieve detailed information.\nif successful, returns a string with the date and time that the resource was last loaded into memory (for example when the server started, or when the resource was changed and reloaded). returns false on failure.\nan example string is fri mar 28 13:51:04 2008.' ,
+            )
         )
         ],
         client=[
@@ -1885,14 +1768,13 @@ an example string is fri mar 28 13:51:04 2008. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the root element of a certain map in a specified resource. """,
+                description='This function retrieves the root element of a certain map in a specified resource.' ,
                 arguments={
                     "theResource": """the resource where the map is located """,
                     "mapName": """name of the maps which root element we want to retrieve, file extension is required """
                 },
-                result="""returns an the resources map root element if the map exists and resource specified was valid and active (currently running), false otherwise. """,
-            ),
-            name='getResourceMapRootElement',
+                result='returns an the resources map root element if the map exists and resource specified was valid and active (currently running), false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1933,13 +1815,12 @@ an example string is fri mar 28 13:51:04 2008. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the name of the specified resource. """,
+                description='This function gets the name of the specified resource.' ,
                 arguments={
                     "res": """The resource you wish to get the name of. """
                 },
-                result="""returns a string with the resource name in it, or false if the resource does not exist. """,
-            ),
-            name='getResourceName',
+                result='returns a string with the resource name in it, or false if the resource does not exist.' ,
+            )
         )
         ],
         client=[
@@ -1975,13 +1856,12 @@ an example string is fri mar 28 13:51:04 2008. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the name of the specified resource. """,
+                description='This function gets the name of the specified resource.' ,
                 arguments={
                     "res": """The resource you wish to get the name of. """
                 },
-                result="""returns a string with the resource name in it, or false if the resource does not exist. """,
-            ),
-            name='getResourceName',
+                result='returns a string with the resource name in it, or false if the resource does not exist.' ,
+            )
         )
         ],
     ),
@@ -2019,13 +1899,12 @@ an example string is fri mar 28 13:51:04 2008. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the organizational file path (e.g. admin) of a resource. """,
+                description='This function returns the organizational file path (e.g. admin) of a resource.' ,
                 arguments={
                     "theResource": """the resource of which you want to know the organizational path """
                 },
-                result="""returns the organizational folder name of the resource. it returns empty string if the resource is on root resources folder. it returns false if the resource could not be found. """,
-            ),
-            name='getResourceOrganizationalPath',
+                result='returns the organizational folder name of the resource. it returns empty string if the resource is on root resources folder. it returns false if the resource could not be found.' ,
+            )
         )
         ],
         client=[
@@ -2066,14 +1945,12 @@ an example string is fri mar 28 13:51:04 2008. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves a resources root element. The resources root element is the element in the element tree which is the parent of all elements that belong to a particular resource (except for elements specifically created elsewhere). You can attach event handlers to this element to easily capture events that originate from your resource (and global events that originate from the root element).
-Note: every resource has a Predefined_variables_list|predefined global variable called resourceRoot whose value is the root element of that resource. """,
+                description='This function retrieves a resources root element. The resources root element is the element in the element tree which is the parent of all elements that belong to a particular resource (except for elements specifically created elsewhere). You can attach event handlers to this element to easily capture events that originate from your resource (and global events that originate from the root element).\nNote: every resource has a Predefined_variables_list|predefined global variable called resourceRoot whose value is the root element of that resource.' ,
                 arguments={
                     "theResource": """the resource whose root element we are getting. If not specified, assumes the current resource. (the resource returned from getThisResource) """
                 },
-                result="""returns an element representing the resources root, false if the specified resource doesnt exist. """,
-            ),
-            name='getResourceRootElement',
+                result='returns an element representing the resources root, false if the specified resource doesnt exist.' ,
+            )
         )
         ],
         client=[
@@ -2109,14 +1986,12 @@ Note: every resource has a Predefined_variables_list|predefined global variable 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves a resources root element. The resources root element is the element in the element tree which is the parent of all elements that belong to a particular resource (except for elements specifically created elsewhere). You can attach event handlers to this element to easily capture events that originate from your resource (and global events that originate from the root element).
-Note: every resource has a Predefined_variables_list|predefined global variable called resourceRoot whose value is the root element of that resource. """,
+                description='This function retrieves a resources root element. The resources root element is the element in the element tree which is the parent of all elements that belong to a particular resource (except for elements specifically created elsewhere). You can attach event handlers to this element to easily capture events that originate from your resource (and global events that originate from the root element).\nNote: every resource has a Predefined_variables_list|predefined global variable called resourceRoot whose value is the root element of that resource.' ,
                 arguments={
                     "theResource": """the resource whose root element we are getting. If not specified, assumes the current resource. (the resource returned from getThisResource) """
                 },
-                result="""returns an element representing the resources root, false if the specified resource doesnt exist. """,
-            ),
-            name='getResourceRootElement',
+                result='returns an element representing the resources root, false if the specified resource doesnt exist.' ,
+            )
         )
         ],
     ),
@@ -2145,13 +2020,12 @@ Note: every resource has a Predefined_variables_list|predefined global variable 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves a table of all the resources that exist on the server. """,
+                description='This function retrieves a table of all the resources that exist on the server.' ,
                 arguments={
                     
                 },
-                result="""returns a table of resources. """,
-            ),
-            name='getResources',
+                result='returns a table of resources.' ,
+            )
         )
         ],
         client=[
@@ -2192,19 +2066,12 @@ Note: every resource has a Predefined_variables_list|predefined global variable 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the state of a given resource """,
+                description='This function returns the state of a given resource' ,
                 arguments={
                     "theResource": """The resource you wish to get the state of. """
                 },
-                result="""if successful returns a string with the resource state in it, false otherwise.
-the state can be one of:
-*loaded
-*running
-*starting
-*stopping
-*failed to load - use getresourceloadfailurereason to find out why it failed. """,
-            ),
-            name='getResourceState',
+                result='if successful returns a string with the resource state in it, false otherwise.\nthe state can be one of:\n*loaded\n*running\n*starting\n*stopping\n*failed to load - use getresourceloadfailurereason to find out why it failed.' ,
+            )
         )
         ],
         client=[
@@ -2240,19 +2107,12 @@ the state can be one of:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the state of a given resource """,
+                description='This function returns the state of a given resource' ,
                 arguments={
                     "theResource": """The resource you wish to get the state of. """
                 },
-                result="""if successful returns a string with the resource state in it, false otherwise.
-the state can be one of:
-*loaded
-*running
-*starting
-*stopping
-*failed to load - use getresourceloadfailurereason to find out why it failed. """,
-            ),
-            name='getResourceState',
+                result='if successful returns a string with the resource state in it, false otherwise.\nthe state can be one of:\n*loaded\n*running\n*starting\n*stopping\n*failed to load - use getresourceloadfailurereason to find out why it failed.' ,
+            )
         )
         ],
     ),
@@ -2281,13 +2141,12 @@ the state can be one of:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the resource from which the function call was made. """,
+                description='This function retrieves the resource from which the function call was made.' ,
                 arguments={
                     
                 },
-                result="""returns the resource in which the current script is. """,
-            ),
-            name='getThisResource',
+                result='returns the resource in which the current script is.' ,
+            )
         )
         ],
         client=[
@@ -2314,13 +2173,12 @@ the state can be one of:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the resource from which the function call was made. """,
+                description='This function retrieves the resource from which the function call was made.' ,
                 arguments={
                     
                 },
-                result="""returns the resource in which the current script is. """,
-            ),
-            name='getThisResource',
+                result='returns the resource in which the current script is.' ,
+            )
         )
         ],
     ),
@@ -2358,13 +2216,12 @@ the state can be one of:
                 ],
             ),
             docs=FunctionDoc(
-                description="""Checks whether a resource is currently archived (running from within a ZIP file). """,
+                description='Checks whether a resource is currently archived (running from within a ZIP file).' ,
                 arguments={
                     "resource": """the resource to check """
                 },
-                result="""returns true if a resource is archived, false if it is not archived, or nil if there is problem with resource. """,
-            ),
-            name='isResourceArchived',
+                result='returns true if a resource is archived, false if it is not archived, or nil if there is problem with resource.' ,
+            )
         )
         ],
         client=[
@@ -2405,13 +2262,12 @@ the state can be one of:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This will check if a resource is currently protected, as defined in Server_mtaserver.conf#resource|mtaserver.conf. """,
+                description='This will check if a resource is currently protected, as defined in Server_mtaserver.conf#resource|mtaserver.conf.' ,
                 arguments={
                     "theResource": """the resource to check """
                 },
-                result="""returns true if the resource is protected, false otherwise. """,
-            ),
-            name='isResourceProtected',
+                result='returns true if the resource is protected, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2462,15 +2318,14 @@ the state can be one of:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function finds new resources and checks for changes to the current ones. """,
+                description='This function finds new resources and checks for changes to the current ones.' ,
                 arguments={
                     "refreshAll": """: If true MTA will check for changes in all resources. If false, MTA will only check for new resources and try to reload resources with errors """,
                     "targetResource": """: If set, the refresh is restricted to the supplied resource only
 '''Note:''' Checking for changes in all resources can result in lag for a short period of time. It should generally be avoided to set refreshAll to ''true''. """
                 },
-                result="""returns true if refresh was successful, false otherwise. """,
-            ),
-            name='refreshResources',
+                result='returns true if refresh was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2521,14 +2376,13 @@ the state can be one of:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes a file from the resource. """,
+                description='This function removes a file from the resource.' ,
                 arguments={
                     "theResource": """The resource element. """,
                     "fileName": """The filename what you want to delete. """
                 },
-                result="""returns true if file was deleted, otherwise false if the resource is in use or the file doesnt exist. """,
-            ),
-            name='removeResourceFile',
+                result='returns true if file was deleted, otherwise false if the resource is in use or the file doesnt exist.' ,
+            )
         )
         ],
         client=[
@@ -2589,15 +2443,14 @@ the state can be one of:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function renames a resource. """,
+                description='This function renames a resource.' ,
                 arguments={
                     "theResource": """The name of resource or the resource you want to rename. """,
                     "newResourceName": """The name of what the resource should be renamed to. """,
                     "organizationalPath": """If you want to store the new resource inside a category. """
                 },
-                result="""returns true if the resource has been renamed successfully, false otherwise. this could fail if the resource name already is in use, if a directory already exists with the name youve specified (but this isnt a valid resource) or if the name you specify isnt valid. it could also fail if the disk was full or for other similar reasons. wont work on a started resource or if the resource is not loaded (not known by mta (use /refresh)) """,
-            ),
-            name='renameResource',
+                result='returns true if the resource has been renamed successfully, false otherwise. this could fail if the resource name already is in use, if a directory already exists with the name youve specified (but this isnt a valid resource) or if the name you specify isnt valid. it could also fail if the disk was full or for other similar reasons. wont work on a started resource or if the resource is not loaded (not known by mta (use /refresh))' ,
+            )
         )
         ],
         client=[
@@ -2718,9 +2571,7 @@ the state can be one of:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function restarts a running resource. Restarting will destroy all the elements that the resource has created (as stopping the resource does).
-*Dont forget to give admin rights to the resource, in which you are using restartResource function or it wont work.
-*This function does not restart the resource immediately. Restarts are queued up until the end of the servers frame to ensure that they occur in the correct order (and that dependent resources can start and stop correctly). The resource being restarted will have an onResourceStop event triggered and the restarted instance will receive an onResourceStart event. Remember that the element and resource variables will be invalidated during the restart, though of course, the resources name will not.}} """,
+                description='This function restarts a running resource. Restarting will destroy all the elements that the resource has created (as stopping the resource does).\n*Dont forget to give admin rights to the resource, in which you are using restartResource function or it wont work.\n*This function does not restart the resource immediately. Restarts are queued up until the end of the servers frame to ensure that they occur in the correct order (and that dependent resources can start and stop correctly). The resource being restarted will have an onResourceStop event triggered and the restarted instance will receive an onResourceStart event. Remember that the element and resource variables will be invalidated during the restart, though of course, the resources name will not.}}' ,
                 arguments={
                     "theResource": """the resource you want to restart. """,
                     "persistent": """Unused """,
@@ -2732,9 +2583,8 @@ the state can be one of:
                     "clientScripts": """Reload client scripts? """,
                     "clientFiles": """Reload files? """
                 },
-                result="""returns true if the resource was restarted, false if the resource wasnt running, or an invalid resource was passed. """,
-            ),
-            name='restartResource',
+                result='returns true if the resource was restarted, false if the resource wasnt running, or an invalid resource was passed.' ,
+            )
         )
         ],
         client=[
@@ -2795,15 +2645,14 @@ the state can be one of:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the value of any attribute in a resource info tag. """,
+                description='This function sets the value of any attribute in a resource info tag.' ,
                 arguments={
                     "theResource": """the resource we are setting info to. """,
                     "attribute": """the name of the attribute that is to be set. """,
                     "value": """the value of this attribute """
                 },
-                result="""returns true if the info was successfully set, false otherwise """,
-            ),
-            name='setResourceInfo',
+                result='returns true if the info was successfully set, false otherwise' ,
+            )
         )
         ],
         client=[
@@ -2934,8 +2783,7 @@ the state can be one of:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function starts a resource either persistently or as a dependency of the current resource. If you start the resource persistently, the resource will run until stopped either using stopResource or by the server admin. A resource started as a dependency will stop when your resource stops, if no other resources have it as a depdendency. This is the same effect as using an include in your meta.xml file.
-The function also allows you to specify a number of boolean options. These allow you to disable the loading of various aspects of the resource. This is generally useful for editors rather than for actual gamemodes. It could also be used as a way to preview a resource before enabling the scripting aspects, though this could produce unreliable results. There is no way for a resource to tell if it is being run with any of these booleans set. """,
+                description='This function starts a resource either persistently or as a dependency of the current resource. If you start the resource persistently, the resource will run until stopped either using stopResource or by the server admin. A resource started as a dependency will stop when your resource stops, if no other resources have it as a depdendency. This is the same effect as using an include in your meta.xml file.\nThe function also allows you to specify a number of boolean options. These allow you to disable the loading of various aspects of the resource. This is generally useful for editors rather than for actual gamemodes. It could also be used as a way to preview a resource before enabling the scripting aspects, though this could produce unreliable results. There is no way for a resource to tell if it is being run with any of these booleans set.' ,
                 arguments={
                     "resourceToStart": """The resource that should be started. """,
                     "persistent": """A boolean specifying if the resource should continue to run even after the current resource has been stopped or not. If this is true then the resource will run until another resource or user terminates it or the server shuts down. If this is false then resourceToStart will stop when thisResource stops. """,
@@ -2948,9 +2796,8 @@ The function also allows you to specify a number of boolean options. These allow
                     "loadClientScripts": """A boolean specifying if client scripts should be loaded and started alongside the resource. """,
                     "loadFiles": """A boolean specifying if client-side files should be loaded alongside the resource. """
                 },
-                result="""returns true if the resource has been started successfully, false otherwise. """,
-            ),
-            name='startResource',
+                result='returns true if the resource has been started successfully, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2991,13 +2838,12 @@ The function also allows you to specify a number of boolean options. These allow
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function stops a running resource.<br> """,
+                description='This function stops a running resource.<br>' ,
                 arguments={
                     "theResource": """the resource that should be stopped. """
                 },
-                result="""returns true if the resource was stopped, false if the stopping failed, or an invalid resource was passed. """,
-            ),
-            name='stopResource',
+                result='returns true if the resource was stopped, false if the stopping failed, or an invalid resource was passed.' ,
+            )
         )
         ],
         client=[
@@ -3068,16 +2914,15 @@ The function also allows you to specify a number of boolean options. These allow
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the access for one ACL request of the given resource. """,
+                description='This function changes the access for one ACL request of the given resource.' ,
                 arguments={
                     "theResource": """the resource to set the ACL request for. """,
                     "rightName": """a string with the name of the right to set the access for. This has to match an existing ACL request. """,
                     "access": """a boolean value setting the access. True is for allow, and false for deny. """,
                     "byWho": """a string value to identity who is changing the setting. """
                 },
-                result="""returns true if the setting was changed, or false if no change was required or there was a problem with the arguments. """,
-            ),
-            name='updateResourceACLRequest',
+                result='returns true if the setting was changed, or false if no change was required or there was a problem with the arguments.' ,
+            )
         )
         ],
         client=[

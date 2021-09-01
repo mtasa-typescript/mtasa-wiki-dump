@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -37,13 +37,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get alpha (transparency) from the clients cursor. """,
+                description='This function is used to get alpha (transparency) from the clients cursor.' ,
                 arguments={
                     
                 },
-                result="""returns a int, 0-255, where 255 is fully opaque and 0 is fully transparent. """,
-            ),
-            name='getCursorAlpha',
+                result='returns a int, 0-255, where 255 is fully opaque and 0 is fully transparent.' ,
+            )
         )
         ],
     ),
@@ -91,13 +90,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the current position of the mouse cursor. Note that for performance reasons, the world position returned is always 300 units away. If you want the exact world point (similar to onClientClick), use processLineOfSight between the camera position and the worldX/Y/Z result of this function. (See example below) """,
+                description='This function gets the current position of the mouse cursor. Note that for performance reasons, the world position returned is always 300 units away. If you want the exact world point (similar to onClientClick), use processLineOfSight between the camera position and the worldX/Y/Z result of this function. (See example below)' ,
                 arguments={
                     
                 },
-                result="""returns 5 values: cursorx, cursory, worldx, worldy, worldz. the first two values are the 2d relative screen coordinates of the cursor: cursorx goes from 0 (left side of the screen) to 1 (right side), cursory goes from 0 (top) to 1 (bottom). the 3 values that follow are the 3d world map coordinates that the cursor points at. if the cursor isnt showing, returns false as the first value. """,
-            ),
-            name='getCursorPosition',
+                result='returns 5 values: cursorx, cursory, worldx, worldy, worldz. the first two values are the 2d relative screen coordinates of the cursor: cursorx goes from 0 (left side of the screen) to 1 (right side), cursory goes from 0 (top) to 1 (bottom). the 3 values that follow are the 3d world map coordinates that the cursor points at. if the cursor isnt showing, returns false as the first value.' ,
+            )
         )
         ],
     ),
@@ -135,13 +133,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to determine whether or not a players cursor is showing. """,
+                description='This function is used to determine whether or not a players cursor is showing.' ,
                 arguments={
                     "thePlayer": """The player you want to get cursor state of. """
                 },
-                result="""returns true if the players cursor is showing, false if it isnt or if invalid parameters were passed. """,
-            ),
-            name='isCursorShowing',
+                result='returns true if the players cursor is showing, false if it isnt or if invalid parameters were passed.' ,
+            )
         )
         ],
         client=[
@@ -168,13 +165,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to determine whether or not a players cursor is showing. """,
+                description='This function is used to determine whether or not a players cursor is showing.' ,
                 arguments={
                     
                 },
-                result="""returns true if the players cursor is showing, false if it isnt. """,
-            ),
-            name='isCursorShowing',
+                result='returns true if the players cursor is showing, false if it isnt.' ,
+            )
         )
         ],
     ),
@@ -215,13 +211,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to change alpha (transparency) from the clients cursor. """,
+                description='This function is used to change alpha (transparency) from the clients cursor.' ,
                 arguments={
                     "alpha": """: The alpha value to set. Value can be 0-255, where 255 is fully opaque and 0 is fully transparent. """
                 },
-                result="""returns true if the new alpha value was set, or false otherwise. """,
-            ),
-            name='setCursorAlpha',
+                result='returns true if the new alpha value was set, or false otherwise.' ,
+            )
         )
         ],
     ),
@@ -272,14 +267,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the current position of the mouse cursor. """,
+                description='This function sets the current position of the mouse cursor.' ,
                 arguments={
                     "cursorX": """Position over the X axis """,
                     "cursorY": """Position over the Y axis """
                 },
-                result="""returns true if the position has been successfully set, false otherwise. """,
-            ),
-            name='setCursorPosition',
+                result='returns true if the position has been successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -337,15 +331,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to show or hide a players cursor. """,
+                description='This function is used to show or hide a players cursor.' ,
                 arguments={
                     "thePlayer": """The player you want to show or hide the cursor of. """,
                     "show": """A boolean value determining whether to show (true) or hide (false) the cursor. """,
                     "toggleControls": """A boolean value determining whether to disable controls whilst the cursor is showing.  true implies controls are disabled, false implies controls remain enabled. """
                 },
-                result=""" """,
-            ),
-            name='showCursor',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -391,14 +384,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to show or hide a players cursor. """,
+                description='This function is used to show or hide a players cursor.' ,
                 arguments={
                     "show": """A boolean value determining whether to show (true) or hide (false) the cursor. """,
                     "toggleControls": """A boolean value determining whether to disable controls whilst the cursor is showing.  true implies controls are disabled, false implies controls remain enabled. """
                 },
-                result=""" """,
-            ),
-            name='showCursor',
+                result='' ,
+            )
         )
         ],
     )

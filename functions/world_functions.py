@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -34,13 +34,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets whether the traffic lights are currently locked or not. If the lights are locked, it means they wont change unless you do setTrafficLightState. """,
+                description='Gets whether the traffic lights are currently locked or not. If the lights are locked, it means they wont change unless you do setTrafficLightState.' ,
                 arguments={
                     
                 },
-                result="""returns true the traffic lights are currently locked, false otherwise. """,
-            ),
-            name='areTrafficLightsLocked',
+                result='returns true the traffic lights are currently locked, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -67,13 +66,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets whether the traffic lights are currently locked or not. If the lights are locked, it means they wont change unless you do setTrafficLightState. """,
+                description='Gets whether the traffic lights are currently locked or not. If the lights are locked, it means they wont change unless you do setTrafficLightState.' ,
                 arguments={
                     
                 },
-                result="""returns true the traffic lights are currently locked, false otherwise. """,
-            ),
-            name='areTrafficLightsLocked',
+                result='returns true the traffic lights are currently locked, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -144,14 +142,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates a SWAT rope like that of the rope in single player used by SWAT Teams abseiling from the Police Maverick. """,
+                description='Creates a SWAT rope like that of the rope in single player used by SWAT Teams abseiling from the Police Maverick.' ,
                 arguments={
                     "fx, fy, fz": """the world coordinates where the effect originates. """,
                     "duration": """the amount in miliseconds the rope will be there before falling to the ground. """
                 },
-                result=""" """,
-            ),
-            name='createSWATRope',
+                result='' ,
+            )
         )
         ],
     ),
@@ -180,13 +177,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the maximum height at which aircraft can fly without their engines turning off. """,
+                description='This function gets the maximum height at which aircraft can fly without their engines turning off.' ,
                 arguments={
                     
                 },
-                result="""returns a float containing the max aircraft height. """,
-            ),
-            name='getAircraftMaxHeight',
+                result='returns a float containing the max aircraft height.' ,
+            )
         )
         ],
         client=[
@@ -213,13 +209,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the maximum height at which aircraft can fly without their engines turning off. """,
+                description='This function gets the maximum height at which aircraft can fly without their engines turning off.' ,
                 arguments={
                     
                 },
-                result="""returns a float containing the max aircraft height. """,
-            ),
-            name='getAircraftMaxHeight',
+                result='returns a float containing the max aircraft height.' ,
+            )
         )
         ],
     ),
@@ -248,13 +243,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the maximum velocity at which aircrafts could fly. Using this function server-side will return the server-side value, not necessarily the same that is set client-side. """,
+                description='This function returns the maximum velocity at which aircrafts could fly. Using this function server-side will return the server-side value, not necessarily the same that is set client-side.' ,
                 arguments={
                     
                 },
-                result="""returns a float being the max velocity that is currently set, depending on which side it is used. """,
-            ),
-            name='getAircraftMaxVelocity',
+                result='returns a float being the max velocity that is currently set, depending on which side it is used.' ,
+            )
         )
         ],
         client=[
@@ -281,13 +275,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the maximum velocity at which aircrafts could fly. Using this function server-side will return the server-side value, not necessarily the same that is set client-side. """,
+                description='This function returns the maximum velocity at which aircrafts could fly. Using this function server-side will return the server-side value, not necessarily the same that is set client-side.' ,
                 arguments={
                     
                 },
-                result="""returns a float being the max velocity that is currently set, depending on which side it is used. """,
-            ),
-            name='getAircraftMaxVelocity',
+                result='returns a float being the max velocity that is currently set, depending on which side it is used.' ,
+            )
         )
         ],
     ),
@@ -319,13 +312,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will tell you if the birds are enabled or disabled. """,
+                description='This function will tell you if the birds are enabled or disabled.' ,
                 arguments={
                     
                 },
-                result="""returns true if the birds are enabled or false if the birds are disabled. """,
-            ),
-            name='getBirdsEnabled',
+                result='returns true if the birds are enabled or false if the birds are disabled.' ,
+            )
         )
         ],
     ),
@@ -354,13 +346,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will tell you if clouds are enabled or disabled. """,
+                description='This function will tell you if clouds are enabled or disabled.' ,
                 arguments={
                     
                 },
-                result="""returns true if the clouds are enabled or false if clouds are disabled. """,
-            ),
-            name='getCloudsEnabled',
+                result='returns true if the clouds are enabled or false if clouds are disabled.' ,
+            )
         )
         ],
         client=[
@@ -387,13 +378,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will tell you if clouds are enabled or disabled. """,
+                description='This function will tell you if clouds are enabled or disabled.' ,
                 arguments={
                     
                 },
-                result="""returns true if the clouds are enabled or false if clouds are disabled. """,
-            ),
-            name='getCloudsEnabled',
+                result='returns true if the clouds are enabled or false if clouds are disabled.' ,
+            )
         )
         ],
     ),
@@ -422,13 +412,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will tell you what is the current render distance. """,
+                description='This function will tell you what is the current render distance.' ,
                 arguments={
                     
                 },
-                result="""returns a float with the current render distance, false if the operation could not be completed. """,
-            ),
-            name='getFarClipDistance',
+                result='returns a float with the current render distance, false if the operation could not be completed.' ,
+            )
         )
         ],
         client=[
@@ -455,13 +444,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will tell you what is the current render distance. """,
+                description='This function will tell you what is the current render distance.' ,
                 arguments={
                     
                 },
-                result="""returns a float with the current render distance, false if the operation could not be completed. """,
-            ),
-            name='getFarClipDistance',
+                result='returns a float with the current render distance, false if the operation could not be completed.' ,
+            )
         )
         ],
     ),
@@ -490,13 +478,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will tell you what is the current fog render distance. """,
+                description='This function will tell you what is the current fog render distance.' ,
                 arguments={
                     
                 },
-                result="""returns a float with the current fog render distance, false if the operation could not be completed. """,
-            ),
-            name='getFogDistance',
+                result='returns a float with the current fog render distance, false if the operation could not be completed.' ,
+            )
         )
         ],
         client=[
@@ -523,13 +510,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will tell you what is the current fog render distance. """,
+                description='This function will tell you what is the current fog render distance.' ,
                 arguments={
                     
                 },
-                result="""returns a float with the current fog render distance, false if the operation could not be completed. """,
-            ),
-            name='getFogDistance',
+                result='returns a float with the current fog render distance, false if the operation could not be completed.' ,
+            )
         )
         ],
     ),
@@ -558,13 +544,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the current game speed value. """,
+                description='This function gets the current game speed value.' ,
                 arguments={
                     
                 },
-                result="""returns a float representing the speed of the game. """,
-            ),
-            name='getGameSpeed',
+                result='returns a float representing the speed of the game.' ,
+            )
         )
         ],
         client=[
@@ -591,13 +576,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the current game speed value. """,
+                description='This function gets the current game speed value.' ,
                 arguments={
                     
                 },
-                result="""returns a float representing the speed of the game. """,
-            ),
-            name='getGameSpeed',
+                result='returns a float representing the speed of the game.' ,
+            )
         )
         ],
     ),
@@ -650,14 +634,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function outputs the bounding box of a garage. """,
+                description='This function outputs the bounding box of a garage.' ,
                 arguments={
                     "garageID": """The Garage|garage ID that represents the garage door that is being checked. """
                 },
-                result="""returns four floats indicating the bounding box of the garage.
-western x position, eastern x position, southern y position, northern y position,, false when invalid garageid was provided. """,
-            ),
-            name='getGarageBoundingBox',
+                result='returns four floats indicating the bounding box of the garage.\nwestern x position, eastern x position, southern y position, northern y position,, false when invalid garageid was provided.' ,
+            )
         )
         ],
     ),
@@ -706,13 +688,12 @@ western x position, eastern x position, southern y position, northern y position
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function outputs X, Y and Z position of given garage. """,
+                description='This function outputs X, Y and Z position of given garage.' ,
                 arguments={
                     "garageID": """The Garage|garage ID that represents the garage door that is being checked. """
                 },
-                result="""returns three floats indicating the position of the garage, x, y and z respectively, false when garageid was invalid. """,
-            ),
-            name='getGaragePosition',
+                result='returns three floats indicating the position of the garage, x, y and z respectively, false when garageid was invalid.' ,
+            )
         )
         ],
     ),
@@ -761,13 +742,12 @@ western x position, eastern x position, southern y position, northern y position
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function outputs the size of garage. """,
+                description='This function outputs the size of garage.' ,
                 arguments={
                     "garageID": """The Garage|garage ID that represents the garage door that is being checked. """
                 },
-                result="""returns three floats indicating the size of the garage, false if an invalid garageid has been provided """,
-            ),
-            name='getGarageSize',
+                result='returns three floats indicating the size of the garage, false if an invalid garageid has been provided' ,
+            )
         )
         ],
     ),
@@ -796,13 +776,12 @@ western x position, eastern x position, southern y position, northern y position
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current gravity level for the context in which it is called (server or client). """,
+                description='This function returns the current gravity level for the context in which it is called (server or client).' ,
                 arguments={
                     
                 },
-                result="""returns a float with the current server or client (depending on where you call the function) gravity level. """,
-            ),
-            name='getGravity',
+                result='returns a float with the current server or client (depending on where you call the function) gravity level.' ,
+            )
         )
         ],
         client=[
@@ -829,13 +808,12 @@ western x position, eastern x position, southern y position, northern y position
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current gravity level for the context in which it is called (server or client). """,
+                description='This function returns the current gravity level for the context in which it is called (server or client).' ,
                 arguments={
                     
                 },
-                result="""returns a float with the current server or client (depending on where you call the function) gravity level. """,
-            ),
-            name='getGravity',
+                result='returns a float with the current server or client (depending on where you call the function) gravity level.' ,
+            )
         )
         ],
     ),
@@ -896,16 +874,14 @@ western x position, eastern x position, southern y position, northern y position
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the Z level of the highest ground below a point.
-It is required that the point is near enough to the local player so that its within the area where collision data is loaded. If this is not the case, an incorrect position will be returned. """,
+                description='This function gets the Z level of the highest ground below a point.\nIt is required that the point is near enough to the local player so that its within the area where collision data is loaded. If this is not the case, an incorrect position will be returned.' ,
                 arguments={
                     "x": """A floating point number representing the X world coordinate of the point. """,
                     "y": """A floating point number representing the Y world coordinate of the point. """,
                     "z": """A floating point number representing the Z world coordinate of the point. """
                 },
-                result="""returns a float with the highest ground-level z coord if parameters are valid, 0 if the point you tried to test is outside the loaded world map, false otherwise. """,
-            ),
-            name='getGroundPosition',
+                result='returns a float with the highest ground-level z coord if parameters are valid, 0 if the point you tried to test is outside the loaded world map, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -966,14 +942,12 @@ It is required that the point is near enough to the local player so that its wit
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will return the current heat haze effect settings.
-Note: The server can only return the heat haze settings if it has actually been set by script. """,
+                description='This function will return the current heat haze effect settings.\nNote: The server can only return the heat haze settings if it has actually been set by script.' ,
                 arguments={
                     
                 },
-                result="""returns 9 values, which are the same used as arguments in setheathaze: """,
-            ),
-            name='getHeatHaze',
+                result='returns 9 values, which are the same used as arguments in setheathaze:' ,
+            )
         )
         ],
         client=[
@@ -1032,14 +1006,12 @@ Note: The server can only return the heat haze settings if it has actually been 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will return the current heat haze effect settings.
-Note: The server can only return the heat haze settings if it has actually been set by script. """,
+                description='This function will return the current heat haze effect settings.\nNote: The server can only return the heat haze settings if it has actually been set by script.' ,
                 arguments={
                     
                 },
-                result="""returns 9 values, which are the same used as arguments in setheathaze: """,
-            ),
-            name='getHeatHaze',
+                result='returns 9 values, which are the same used as arguments in setheathaze:' ,
+            )
         )
         ],
     ),
@@ -1080,13 +1052,12 @@ Note: The server can only return the heat haze settings if it has actually been 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will tell you if interior furniture are enabled or disabled in a specified room ID. """,
+                description='This function will tell you if interior furniture are enabled or disabled in a specified room ID.' ,
                 arguments={
                     
                 },
-                result="""returns true if interior furniture is enabled or false if interior furniture is disabled. """,
-            ),
-            name='getInteriorFurnitureEnabled',
+                result='returns true if interior furniture is enabled or false if interior furniture is disabled.' ,
+            )
         )
         ],
     ),
@@ -1118,13 +1089,12 @@ Note: The server can only return the heat haze settings if it has actually been 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks to see if the music played by default in clubs is disabled or not. """,
+                description='This function checks to see if the music played by default in clubs is disabled or not.' ,
                 arguments={
                     
                 },
-                result="""returns true if music is playing, returns false if music is not playing. """,
-            ),
-            name='getInteriorSoundsEnabled',
+                result='returns true if music is playing, returns false if music is not playing.' ,
+            )
         )
         ],
     ),
@@ -1153,13 +1123,12 @@ Note: The server can only return the heat haze settings if it has actually been 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the maximum height at which your jetpack can fly without failing to go higher. """,
+                description='This function gets the maximum height at which your jetpack can fly without failing to go higher.' ,
                 arguments={
                     
                 },
-                result="""returns a float containing the max jetpack height. """,
-            ),
-            name='getJetpackMaxHeight',
+                result='returns a float containing the max jetpack height.' ,
+            )
         )
         ],
         client=[
@@ -1186,13 +1155,12 @@ Note: The server can only return the heat haze settings if it has actually been 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the maximum height at which your jetpack can fly without failing to go higher. """,
+                description='This function gets the maximum height at which your jetpack can fly without failing to go higher.' ,
                 arguments={
                     
                 },
-                result="""returns a float containing the max jetpack height. """,
-            ),
-            name='getJetpackMaxHeight',
+                result='returns a float containing the max jetpack height.' ,
+            )
         )
         ],
     ),
@@ -1230,13 +1198,12 @@ Note: The server can only return the heat haze settings if it has actually been 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if a weapon is usable while on a Jetpack. """,
+                description='This function checks if a weapon is usable while on a Jetpack.' ,
                 arguments={
                     "weapon": """The weapon thats being checked if its usable on a Jetpack. """
                 },
-                result="""returns true if the weapon is enabled, else false if the weapon isnt or invalid arguments are passed. """,
-            ),
-            name='getJetpackWeaponEnabled',
+                result='returns true if the weapon is enabled, else false if the weapon isnt or invalid arguments are passed.' ,
+            )
         )
         ],
         client=[
@@ -1268,13 +1235,12 @@ Note: The server can only return the heat haze settings if it has actually been 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Tells you how long an ingame minute takes in real-world milliseconds. The default GTA value is 1000. """,
+                description='Tells you how long an ingame minute takes in real-world milliseconds. The default GTA value is 1000.' ,
                 arguments={
                     
                 },
-                result="""returns the number of real-world milliseconds that go in an ingame minute. """,
-            ),
-            name='getMinuteDuration',
+                result='returns the number of real-world milliseconds that go in an ingame minute.' ,
+            )
         )
         ],
         client=[
@@ -1301,13 +1267,12 @@ Note: The server can only return the heat haze settings if it has actually been 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Tells you how long an ingame minute takes in real-world milliseconds. The default GTA value is 1000. """,
+                description='Tells you how long an ingame minute takes in real-world milliseconds. The default GTA value is 1000.' ,
                 arguments={
                     
                 },
-                result="""returns the number of real-world milliseconds that go in an ingame minute. """,
-            ),
-            name='getMinuteDuration',
+                result='returns the number of real-world milliseconds that go in an ingame minute.' ,
+            )
         )
         ],
     ),
@@ -1336,13 +1301,12 @@ Note: The server can only return the heat haze settings if it has actually been 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the moon size. """,
+                description='This function returns the moon size.' ,
                 arguments={
                     
                 },
-                result="""returns a integer being the moon size that is currently set, depending on which side it is used. """,
-            ),
-            name='getMoonSize',
+                result='returns a integer being the moon size that is currently set, depending on which side it is used.' ,
+            )
         )
         ],
         client=[
@@ -1369,13 +1333,12 @@ Note: The server can only return the heat haze settings if it has actually been 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the moon size. """,
+                description='This function returns the moon size.' ,
                 arguments={
                     
                 },
-                result="""returns a integer being the moon size that is currently set, depending on which side it is used. """,
-            ),
-            name='getMoonSize',
+                result='returns a integer being the moon size that is currently set, depending on which side it is used.' ,
+            )
         )
         ],
     ),
@@ -1407,13 +1370,12 @@ Note: The server can only return the heat haze settings if it has actually been 
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     
                 },
-                result="""this function returns a float containing the actual near clip distance. """,
-            ),
-            name='getNearClipDistance',
+                result='this function returns a float containing the actual near clip distance.' ,
+            )
         )
         ],
     ),
@@ -1442,13 +1404,12 @@ Note: The server can only return the heat haze settings if it has actually been 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get occlusions enabled state. """,
+                description='This function is used to get occlusions enabled state.' ,
                 arguments={
                     
                 },
-                result="""returns true if occlusions are enabled, or false otherwise. """,
-            ),
-            name='getOcclusionsEnabled',
+                result='returns true if occlusions are enabled, or false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1475,13 +1436,12 @@ Note: The server can only return the heat haze settings if it has actually been 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get occlusions enabled state. """,
+                description='This function is used to get occlusions enabled state.' ,
                 arguments={
                     
                 },
-                result="""returns true if occlusions are enabled, or false otherwise. """,
-            ),
-            name='getOcclusionsEnabled',
+                result='returns true if occlusions are enabled, or false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1513,13 +1473,12 @@ Note: The server can only return the heat haze settings if it has actually been 
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     
                 },
-                result="""this function returns a float containing the peds lod distance. """,
-            ),
-            name='getPedsLODDistance',
+                result='this function returns a float containing the peds lod distance.' ,
+            )
         )
         ],
     ),
@@ -1548,13 +1507,12 @@ Note: The server can only return the heat haze settings if it has actually been 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the current rain level. """,
+                description='This function is used to get the current rain level.' ,
                 arguments={
                     
                 },
-                result="""returns the rain level as a number. """,
-            ),
-            name='getRainLevel',
+                result='returns the rain level as a number.' ,
+            )
         )
         ],
         client=[
@@ -1581,13 +1539,12 @@ Note: The server can only return the heat haze settings if it has actually been 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the current rain level. """,
+                description='This function is used to get the current rain level.' ,
                 arguments={
                     
                 },
-                result="""returns the rain level as a number. """,
-            ),
-            name='getRainLevel',
+                result='returns the rain level as a number.' ,
+            )
         )
         ],
     ),
@@ -1648,16 +1605,14 @@ Note: The server can only return the heat haze settings if it has actually been 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the Z level of the lowest roof above a point.
-It is required that the point is near enough to the local player so that its within the area where collision data is loaded.}} """,
+                description='This function gets the Z level of the lowest roof above a point.\nIt is required that the point is near enough to the local player so that its within the area where collision data is loaded.}}' ,
                 arguments={
                     "x": """: A floating point number representing the X world coordinate of the point. """,
                     "y": """: A floating point number representing the Y world coordinate of the point. """,
                     "z": """: A floating point number representing the Z world coordinate of the point. """
                 },
-                result="""returns a float with the lowest roof-level z coord if parameters are valid, false if the point you tried to test is outside the loaded world map. """,
-            ),
-            name='getRoofPosition',
+                result='returns a float with the lowest roof-level z coord if parameters are valid, false if the point you tried to test is outside the loaded world map.' ,
+            )
         )
         ],
     ),
@@ -1746,7 +1701,7 @@ It is required that the point is near enough to the local player so that its wit
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the screen position of a point in the world. This is useful for attaching 2D gui elements to parts of the world (e.g. players) or detecting if a point is on the screen (though it does not check if it is actually visible, you should use processLineOfSight for that). """,
+                description='This function gets the screen position of a point in the world. This is useful for attaching 2D gui elements to parts of the world (e.g. players) or detecting if a point is on the screen (though it does not check if it is actually visible, you should use processLineOfSight for that).' ,
                 arguments={
                     "x": """A float value indicating the x position in the world. """,
                     "y": """A float value indicating the y position in the world. """,
@@ -1754,9 +1709,8 @@ It is required that the point is near enough to the local player so that its wit
                     "edgeTolerance": """A float value indicating the distance the position can be off screen before the function returns false. Note: its clamped down on both axies to the size of screen at the given axis*10 """,
                     "relative": """A boolean value that indicates if edgeTolerance is in pixels false, or relative to the screen size true. """
                 },
-                result="""returns two x, y floats indicating the screen position and float distance between screen and given position if successful, false otherwise. """,
-            ),
-            name='getScreenFromWorldPosition',
+                result='returns two x, y floats indicating the screen position and float distance between screen and given position if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -1805,14 +1759,12 @@ It is required that the point is near enough to the local player so that its wit
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will return the current sky color.
-Note: The server can only return the sky color if it has actually been set by script. """,
+                description='This function will return the current sky color.\nNote: The server can only return the sky color if it has actually been set by script.' ,
                 arguments={
                     
                 },
-                result="""returns 6 int|ints, of which the first 3 represent the skys top color, (in rgb) and the last 3 represent the bottom colors. """,
-            ),
-            name='getSkyGradient',
+                result='returns 6 int|ints, of which the first 3 represent the skys top color, (in rgb) and the last 3 represent the bottom colors.' ,
+            )
         )
         ],
         client=[
@@ -1859,14 +1811,12 @@ Note: The server can only return the sky color if it has actually been set by sc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will return the current sky color.
-Note: The server can only return the sky color if it has actually been set by script. """,
+                description='This function will return the current sky color.\nNote: The server can only return the sky color if it has actually been set by script.' ,
                 arguments={
                     
                 },
-                result="""returns 6 int|ints, of which the first 3 represent the skys top color, (in rgb) and the last 3 represent the bottom colors. """,
-            ),
-            name='getSkyGradient',
+                result='returns 6 int|ints, of which the first 3 represent the skys top color, (in rgb) and the last 3 represent the bottom colors.' ,
+            )
         )
         ],
     ),
@@ -1915,13 +1865,12 @@ Note: The server can only return the sky color if it has actually been set by sc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the color of the sun. """,
+                description='This function is used to get the color of the sun.' ,
                 arguments={
                     
                 },
-                result="""returns the color of the sun as six numbers, false if its default. """,
-            ),
-            name='getSunColor',
+                result='returns the color of the sun as six numbers, false if its default.' ,
+            )
         )
         ],
         client=[
@@ -1968,13 +1917,12 @@ Note: The server can only return the sky color if it has actually been set by sc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the color of the sun. """,
+                description='This function is used to get the color of the sun.' ,
                 arguments={
                     
                 },
-                result="""returns the color of the sun as six numbers, false if its default. """,
-            ),
-            name='getSunColor',
+                result='returns the color of the sun as six numbers, false if its default.' ,
+            )
         )
         ],
     ),
@@ -2003,13 +1951,12 @@ Note: The server can only return the sky color if it has actually been set by sc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the size of the sun. """,
+                description='This function is used to get the size of the sun.' ,
                 arguments={
                     
                 },
-                result="""returns the size of the sun as a number, false if the size of the sun is at its default. """,
-            ),
-            name='getSunSize',
+                result='returns the size of the sun as a number, false if the size of the sun is at its default.' ,
+            )
         )
         ],
         client=[
@@ -2036,13 +1983,12 @@ Note: The server can only return the sky color if it has actually been set by sc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the size of the sun. """,
+                description='This function is used to get the size of the sun.' ,
                 arguments={
                     
                 },
-                result="""returns the size of the sun as a number, false if the size of the sun is at its default. """,
-            ),
-            name='getSunSize',
+                result='returns the size of the sun as a number, false if the size of the sun is at its default.' ,
+            )
         )
         ],
     ),
@@ -2075,13 +2021,12 @@ Note: The server can only return the sky color if it has actually been set by sc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the current time in the game. If you want to get the real server time, use getRealTime. """,
+                description='This function is used to get the current time in the game. If you want to get the real server time, use getRealTime.' ,
                 arguments={
                     
                 },
-                result="""returns two ints that represent hours and minutes. """,
-            ),
-            name='getTime',
+                result='returns two ints that represent hours and minutes.' ,
+            )
         )
         ],
         client=[
@@ -2112,13 +2057,12 @@ Note: The server can only return the sky color if it has actually been set by sc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the current time in the game. If you want to get the real server time, use getRealTime. """,
+                description='This function is used to get the current time in the game. If you want to get the real server time, use getRealTime.' ,
                 arguments={
                     
                 },
-                result="""returns two ints that represent hours and minutes. """,
-            ),
-            name='getTime',
+                result='returns two ints that represent hours and minutes.' ,
+            )
         )
         ],
     ),
@@ -2147,13 +2091,12 @@ Note: The server can only return the sky color if it has actually been set by sc
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the current traffic light state. This state controls the traffic light colors. For instance, state 1 will cause the north and south traffic lights to be amber, and the ones left and east will turn red. """,
+                description='Gets the current traffic light state. This state controls the traffic light colors. For instance, state 1 will cause the north and south traffic lights to be amber, and the ones left and east will turn red.' ,
                 arguments={
                     
                 },
-                result="""returns the current traffic_light_states|state of the traffic lights. """,
-            ),
-            name='getTrafficLightState',
+                result='returns the current traffic_light_states|state of the traffic lights.' ,
+            )
         )
         ],
         client=[
@@ -2180,13 +2123,12 @@ Note: The server can only return the sky color if it has actually been set by sc
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the current traffic light state. This state controls the traffic light colors. For instance, state 1 will cause the north and south traffic lights to be amber, and the ones left and east will turn red. """,
+                description='Gets the current traffic light state. This state controls the traffic light colors. For instance, state 1 will cause the north and south traffic lights to be amber, and the ones left and east will turn red.' ,
                 arguments={
                     
                 },
-                result="""returns the current traffic_light_states|state of the traffic lights. """,
-            ),
-            name='getTrafficLightState',
+                result='returns the current traffic_light_states|state of the traffic lights.' ,
+            )
         )
         ],
     ),
@@ -2222,14 +2164,12 @@ Note: The server can only return the sky color if it has actually been set by sc
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the distance of vehicles LOD. """,
+                description='Returns the distance of vehicles LOD.' ,
                 arguments={
                     
                 },
-                result="""* float: general distance used for most vehicles
-* float: distance used for trains and planes """,
-            ),
-            name='getVehiclesLODDistance',
+                result='* float: general distance used for most vehicles\n* float: distance used for trains and planes' ,
+            )
         )
         ],
     ),
@@ -2262,13 +2202,12 @@ Note: The server can only return the sky color if it has actually been set by sc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current Weather ID. """,
+                description='This function returns the current Weather ID.' ,
                 arguments={
                     
                 },
-                result="""returns two integers indicating the weather type that is currently active. the first integer says what weather is currently considered to be active. the second integer is the weather id that is being blended into if any, otherwise it is nil. """,
-            ),
-            name='getWeather',
+                result='returns two integers indicating the weather type that is currently active. the first integer says what weather is currently considered to be active. the second integer is the weather id that is being blended into if any, otherwise it is nil.' ,
+            )
         )
         ],
         client=[
@@ -2299,13 +2238,12 @@ Note: The server can only return the sky color if it has actually been set by sc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current Weather ID. """,
+                description='This function returns the current Weather ID.' ,
                 arguments={
                     
                 },
-                result="""returns two integers indicating the weather type that is currently active. the first integer says what weather is currently considered to be active. the second integer is the weather id that is being blended into if any, otherwise it is nil. """,
-            ),
-            name='getWeather',
+                result='returns two integers indicating the weather type that is currently active. the first integer says what weather is currently considered to be active. the second integer is the weather id that is being blended into if any, otherwise it is nil.' ,
+            )
         )
         ],
     ),
@@ -2342,15 +2280,12 @@ Note: The server can only return the sky color if it has actually been set by sc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the wind velocity in San Andreas. """,
+                description='This function gets the wind velocity in San Andreas.' ,
                 arguments={
                     
                 },
-                result="""*velocityx: the velocity on the x-coordinate or false if the wind velocity is default.
-*velocityy: the velocity on the y-coordinate or nil if the wind velocity is default.
-*velocityz: the velocity on the z-coordinate or nil if the wind velocity is default. """,
-            ),
-            name='getWindVelocity',
+                result='*velocityx: the velocity on the x-coordinate or false if the wind velocity is default.\n*velocityy: the velocity on the y-coordinate or nil if the wind velocity is default.\n*velocityz: the velocity on the z-coordinate or nil if the wind velocity is default.' ,
+            )
         )
         ],
         client=[
@@ -2385,15 +2320,12 @@ Note: The server can only return the sky color if it has actually been set by sc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the wind velocity in San Andreas. """,
+                description='This function gets the wind velocity in San Andreas.' ,
                 arguments={
                     
                 },
-                result="""*velocityx: the velocity on the x-coordinate or false if the wind velocity is default.
-*velocityy: the velocity on the y-coordinate or nil if the wind velocity is default.
-*velocityz: the velocity on the z-coordinate or nil if the wind velocity is default. """,
-            ),
-            name='getWindVelocity',
+                result='*velocityx: the velocity on the x-coordinate or false if the wind velocity is default.\n*velocityy: the velocity on the y-coordinate or nil if the wind velocity is default.\n*velocityz: the velocity on the z-coordinate or nil if the wind velocity is default.' ,
+            )
         )
         ],
     ),
@@ -2462,17 +2394,14 @@ Note: The server can only return the sky color if it has actually been set by sc
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to retrieve the world position corresponding to a 2D position on the screen, at a certain depth.
-If you want to detect what element is at a particular point on the screen, use processLineOfSight between the camera position and the position returned from this function when passed a high depth value (100 or so, depending how far away you want to detect elements at).
-As expected, setting 0 as the distance will cause the point retrived to be within the camera itself. That means that drawing any 3D thing in that point would result in it not being visible. Depending on the camera near clip distance, however, the minimum distance to be able to view it can vary. """,
+                description='This function allows you to retrieve the world position corresponding to a 2D position on the screen, at a certain depth.\nIf you want to detect what element is at a particular point on the screen, use processLineOfSight between the camera position and the position returned from this function when passed a high depth value (100 or so, depending how far away you want to detect elements at).\nAs expected, setting 0 as the distance will cause the point retrived to be within the camera itself. That means that drawing any 3D thing in that point would result in it not being visible. Depending on the camera near clip distance, however, the minimum distance to be able to view it can vary.' ,
                 arguments={
                     "x": """A float value indicating the x position on the screen, in pixels. """,
                     "y": """A float value indicating the y position on the screen, in pixels. """,
                     "depth": """A float value indicating the distance from the camera of the point whose coordinates we are retrieving, in units. """
                 },
-                result="""returns three x, y, z floats indicating the world position if successful, false otherwise. """,
-            ),
-            name='getWorldFromScreenPosition',
+                result='returns three x, y, z floats indicating the world position if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2540,7 +2469,7 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to retrieve the zone name of a certain location. """,
+                description='This function allows you to retrieve the zone name of a certain location.' ,
                 arguments={
                     "x": """The X axis position """,
                     "y": """The Y axis position """,
@@ -2555,9 +2484,8 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
 ** Flint County
 ** Los Santos """
                 },
-                result="""returns the string of the zone name """,
-            ),
-            name='getZoneName',
+                result='returns the string of the zone name' ,
+            )
         )
         ],
         client=[
@@ -2623,7 +2551,7 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to retrieve the zone name of a certain location. """,
+                description='This function allows you to retrieve the zone name of a certain location.' ,
                 arguments={
                     "x": """The X axis position """,
                     "y": """The Y axis position """,
@@ -2638,9 +2566,8 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
 ** Flint County
 ** Los Santos """
                 },
-                result="""returns the string of the zone name """,
-            ),
-            name='getZoneName',
+                result='returns the string of the zone name' ,
+            )
         )
         ],
     ),
@@ -2681,13 +2608,12 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to check if some background sound effects are enabled. """,
+                description='This function allows you to check if some background sound effects are enabled.' ,
                 arguments={
                     "theType": """The type of ambient sound to test. Can be either gunfire or general. """
                 },
-                result="""returns true if the ambient sound is enabled, false if it is disabled or invalid values were passed. """,
-            ),
-            name='isAmbientSoundEnabled',
+                result='returns true if the ambient sound is enabled, false if it is disabled or invalid values were passed.' ,
+            )
         )
         ],
     ),
@@ -2725,13 +2651,12 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks whether or not a specific garage door is open. """,
+                description='This function checks whether or not a specific garage door is open.' ,
                 arguments={
                     "garageID": """The Garage|garage ID that represents the garage door that is being checked. """
                 },
-                result="""returns true if the garage is open, false if it is closed or an invalid garage id was given. """,
-            ),
-            name='isGarageOpen',
+                result='returns true if the garage is open, false if it is closed or an invalid garage id was given.' ,
+            )
         )
         ],
         client=[
@@ -2767,13 +2692,12 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks whether or not a specific garage door is open. """,
+                description='This function checks whether or not a specific garage door is open.' ,
                 arguments={
                     "garageID": """The Garage|garage ID that represents the garage door that is being checked. """
                 },
-                result="""returns true if the garage is open, false if it is closed or an invalid garage id was given. """,
-            ),
-            name='isGarageOpen',
+                result='returns true if the garage is open, false if it is closed or an invalid garage id was given.' ,
+            )
         )
         ],
     ),
@@ -2944,7 +2868,7 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if there are obstacles between two points of the game world, optionally ignoring certain kinds of elements. Use processLineOfSight if you want more information about what the ray hits. """,
+                description='This function checks if there are obstacles between two points of the game world, optionally ignoring certain kinds of elements. Use processLineOfSight if you want more information about what the ray hits.' ,
                 arguments={
                     "startX": """The first points world X coordinate. """,
                     "startY": """The first points world Y coordinate. """,
@@ -2961,9 +2885,8 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                     "ignoreSomeObjectsForCamera": """Allow the line of sight to pass through objects that have (K) property enabled in object.dat data file. (i.e. Most dynamic objects like boxes or barrels) """,
                     "ignoredElement": """Allow the line of sight to pass through a certain specified element. """
                 },
-                result="""returns true if the line between the specified points is clear, false if theres an obstacle or if invalid parameters are passed. """,
-            ),
-            name='isLineOfSightClear',
+                result='returns true if the line between the specified points is clear, false if theres an obstacle or if invalid parameters are passed.' ,
+            )
         )
         ],
     ),
@@ -3014,14 +2937,13 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "group": """An integer representing the World sound groups|world sound group """,
                     "index": """An integer representing an individual sound within the group """
                 },
-                result="""returns true if the world sounds are enabled, false if they are disabled or invalid values were passed. """,
-            ),
-            name='isWorldSoundEnabled',
+                result='returns true if the world sounds are enabled, false if they are disabled or invalid values were passed.' ,
+            )
         )
         ],
     ),
@@ -3062,13 +2984,12 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 ],
             ),
             docs=FunctionDoc(
-                description="""Checks if a special world property (cheat) is enabled or not. """,
+                description='Checks if a special world property (cheat) is enabled or not.' ,
                 arguments={
                     "propname": """the name of the property to retrieve. Possible values are listed on SetWorldSpecialPropertyEnabled. """
                 },
-                result="""returns true if the property is enabled, false if it is disabled or the specified property name is invalid. """,
-            ),
-            name='isWorldSpecialPropertyEnabled',
+                result='returns true if the property is enabled, false if it is disabled or the specified property name is invalid.' ,
+            )
         )
         ],
     ),
@@ -3341,9 +3262,7 @@ As expected, setting 0 as the distance will cause the point retrived to be withi
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function casts a ray between two points in the world, and tells you information about the point that was hit, if any. The two positions must be within the local players draw distance as the collision data is not loaded outside this area, and the call will just fail as if the ray didnt hit.
-This function is relatively expensive to call, so over use of this in scripts may have a detrimental effect on performance.
-This function is useful for checking for collisions and for editor-style scripts. If you wish to find what element is positioned at a particular point on the screen, use this function combined with getWorldFromScreenPosition. If you wish to just know if something is hit, and dont care about what or where was hit, use isLineOfSightClear. """,
+                description='This function casts a ray between two points in the world, and tells you information about the point that was hit, if any. The two positions must be within the local players draw distance as the collision data is not loaded outside this area, and the call will just fail as if the ray didnt hit.\nThis function is relatively expensive to call, so over use of this in scripts may have a detrimental effect on performance.\nThis function is useful for checking for collisions and for editor-style scripts. If you wish to find what element is positioned at a particular point on the screen, use this function combined with getWorldFromScreenPosition. If you wish to just know if something is hit, and dont care about what or where was hit, use isLineOfSightClear.' ,
                 arguments={
                     "startX": """The start x position """,
                     "startY": """The start y position """,
@@ -3363,22 +3282,8 @@ This function is useful for checking for collisions and for editor-style scripts
                     "includeWorldModelInformation": """Include the results of hitting a world model. """,
                     "bIncludeCarTyres": """Includes car tyre hits. """
                 },
-                result="""*hit: true if there is a collision, false otherwise
-the other values are only filled if there is a collision, they contain nil otherwise
-*hitx, hity, hitz: collision position
-*hitelement: the mta element hit if any, nil otherwise
-*normalx, normaly, normalz: the normal of the surface hit
-*material: an integer representing the material ids|gtasa material id of the surface hit when applicable (world, objects)
-*lighting: a float between 0 (fully dark) and 1 (bright) representing the amount of light that the hit building surface will transfer to peds or vehicles that are in contact with it. the value can be affected by the game time of day, usually with a lower (darker) value being returned during the night.
-*piece: an integer representing the part of the element hit if hitelement is a vehicle or a ped/player, 0 otherwise.
-**for a ped/player, piece represents the body part hit:
-**for vehicles, piece represents the vehicle part hit:
-*worldmodelid: if includeworldmodelinformation was set to true and a world model was hit, this will contain the model id.
-*worldmodelpositionx,y,z: if worldmodelid is set, this will contain the world model position.
-*worldmodelrotationx,y,z: if worldmodelid is set, this will contain the world model rotation.
-*worldlodmodelid: if worldmodelid is set, this will contain the lod model id if applicable. """,
-            ),
-            name='processLineOfSight',
+                result='*hit: true if there is a collision, false otherwise\nthe other values are only filled if there is a collision, they contain nil otherwise\n*hitx, hity, hitz: collision position\n*hitelement: the mta element hit if any, nil otherwise\n*normalx, normaly, normalz: the normal of the surface hit\n*material: an integer representing the material ids|gtasa material id of the surface hit when applicable (world, objects)\n*lighting: a float between 0 (fully dark) and 1 (bright) representing the amount of light that the hit building surface will transfer to peds or vehicles that are in contact with it. the value can be affected by the game time of day, usually with a lower (darker) value being returned during the night.\n*piece: an integer representing the part of the element hit if hitelement is a vehicle or a ped/player, 0 otherwise.\n**for a ped/player, piece represents the body part hit:\n**for vehicles, piece represents the vehicle part hit:\n*worldmodelid: if includeworldmodelinformation was set to true and a world model was hit, this will contain the model id.\n*worldmodelpositionx,y,z: if worldmodelid is set, this will contain the world model position.\n*worldmodelrotationx,y,z: if worldmodelid is set, this will contain the world model rotation.\n*worldlodmodelid: if worldmodelid is set, this will contain the lod model id if applicable.' ,
+            )
         )
         ],
     ),
@@ -3466,7 +3371,7 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to remove a world object. """,
+                description='This function is used to remove a world object.' ,
                 arguments={
                     "modelID": """A whole integer specifying the GTASA object model ID. """,
                     "radius": """A floating point number representing the radius that will be eliminated. """,
@@ -3475,9 +3380,8 @@ the other values are only filled if there is a collision, they contain nil other
                     "z": """A floating point number representing the Z coordinate on the map. """,
                     "interior": """The interior ID to apply the removal to. Some objects in interior 13 show in all interiors so if you want to remove everything in interior 0 also remove everything in interior 13. A value of -1 here will affect all interiors.}} """
                 },
-                result="""returns true if the object was removed, false if invalid arguments were passed. """,
-            ),
-            name='removeWorldModel',
+                result='returns true if the object was removed, false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -3563,7 +3467,7 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to remove a world object. """,
+                description='This function is used to remove a world object.' ,
                 arguments={
                     "modelID": """A whole integer specifying the GTASA object model ID. """,
                     "radius": """A floating point number representing the radius that will be eliminated. """,
@@ -3572,9 +3476,8 @@ the other values are only filled if there is a collision, they contain nil other
                     "z": """A floating point number representing the Z coordinate on the map. """,
                     "interior": """The interior ID to apply the removal to. Some objects in interior 13 show in all interiors so if you want to remove everything in interior 0 also remove everything in interior 13. A value of -1 here will affect all interiors.}} """
                 },
-                result="""returns true if the object was removed, false if invalid arguments were passed. """,
-            ),
-            name='removeWorldModel',
+                result='returns true if the object was removed, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -3606,13 +3509,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to reset the background sounds to the default setting. """,
+                description='This function is used to reset the background sounds to the default setting.' ,
                 arguments={
                     
                 },
-                result="""returns true if the ambient sounds were reset, false otherwise. """,
-            ),
-            name='resetAmbientSounds',
+                result='returns true if the ambient sounds were reset, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3644,13 +3546,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""Resets the motion blur level on the clients screen to default value (36). """,
+                description='Resets the motion blur level on the clients screen to default value (36).' ,
                 arguments={
                     
                 },
-                result="""returns true if the blur level was reset successfully. returns false otherwise. """,
-            ),
-            name='resetBlurLevel',
+                result='returns true if the blur level was reset successfully. returns false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3682,13 +3583,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     
                 },
-                result="""returns true if the color filtering was reset, false otherwise. """,
-            ),
-            name='resetColorFilter',
+                result='returns true if the color filtering was reset, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3717,13 +3617,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function resets the far clip distance to its default state. """,
+                description='This function resets the far clip distance to its default state.' ,
                 arguments={
                     
                 },
-                result="""returns true if operation was successful, false otherwise. """,
-            ),
-            name='resetFarClipDistance',
+                result='returns true if operation was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -3750,13 +3649,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function resets the far clip distance to its default state. """,
+                description='This function resets the far clip distance to its default state.' ,
                 arguments={
                     
                 },
-                result="""returns true if operation was successful, false otherwise. """,
-            ),
-            name='resetFarClipDistance',
+                result='returns true if operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3785,13 +3683,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function resets the fog render distance to its default state. """,
+                description='This function resets the fog render distance to its default state.' ,
                 arguments={
                     
                 },
-                result="""returns true if operation was successful, false otherwise. """,
-            ),
-            name='resetFogDistance',
+                result='returns true if operation was successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -3818,13 +3715,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function resets the fog render distance to its default state. """,
+                description='This function resets the fog render distance to its default state.' ,
                 arguments={
                     
                 },
-                result="""returns true if operation was successful, false otherwise. """,
-            ),
-            name='resetFogDistance',
+                result='returns true if operation was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3853,13 +3749,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function restores the default heat haze. """,
+                description='This function restores the default heat haze.' ,
                 arguments={
                     
                 },
-                result="""returns true if the heat haze was reset correctly, false otherwise. """,
-            ),
-            name='resetHeatHaze',
+                result='returns true if the heat haze was reset correctly, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -3886,13 +3781,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function restores the default heat haze. """,
+                description='This function restores the default heat haze.' ,
                 arguments={
                     
                 },
-                result="""returns true if the heat haze was reset correctly, false otherwise. """,
-            ),
-            name='resetHeatHaze',
+                result='returns true if the heat haze was reset correctly, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3921,13 +3815,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to reset the size of the moon to its normal size. """,
+                description='This function is used to reset the size of the moon to its normal size.' ,
                 arguments={
                     
                 },
-                result="""returns true if the size of the moon was reset, false otherwise. """,
-            ),
-            name='resetMoonSize',
+                result='returns true if the size of the moon was reset, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -3954,13 +3847,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to reset the size of the moon to its normal size. """,
+                description='This function is used to reset the size of the moon to its normal size.' ,
                 arguments={
                     
                 },
-                result="""returns true if the size of the moon was reset, false otherwise. """,
-            ),
-            name='resetMoonSize',
+                result='returns true if the size of the moon was reset, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3992,13 +3884,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function resets near clip distance set by setNearClipDistance. """,
+                description='This function resets near clip distance set by setNearClipDistance.' ,
                 arguments={
                     
                 },
-                result="""*boolean: always returns true """,
-            ),
-            name='resetNearClipDistance',
+                result='*boolean: always returns true' ,
+            )
         )
         ],
     ),
@@ -4030,13 +3921,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     
                 },
-                result="""returns true if the peds lod distance was reset, false otherwise. """,
-            ),
-            name='resetPedsLODDistance',
+                result='returns true if the peds lod distance was reset, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4065,13 +3955,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function resets the rain level of the current weather to its default. """,
+                description='This function resets the rain level of the current weather to its default.' ,
                 arguments={
                     
                 },
-                result="""returns true if the rain level was reset. """,
-            ),
-            name='resetRainLevel',
+                result='returns true if the rain level was reset.' ,
+            )
         )
         ],
         client=[
@@ -4098,13 +3987,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function resets the rain level of the current weather to its default. """,
+                description='This function resets the rain level of the current weather to its default.' ,
                 arguments={
                     
                 },
-                result="""returns true if the rain level was reset. """,
-            ),
-            name='resetRainLevel',
+                result='returns true if the rain level was reset.' ,
+            )
         )
         ],
     ),
@@ -4133,13 +4021,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows restoring of a changed sky gradient as a result of setSkyGradient. """,
+                description='This function allows restoring of a changed sky gradient as a result of setSkyGradient.' ,
                 arguments={
                     
                 },
-                result="""returns true if sky color was reset correctly, false otherwise. """,
-            ),
-            name='resetSkyGradient',
+                result='returns true if sky color was reset correctly, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -4166,13 +4053,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows restoring of a changed sky gradient as a result of setSkyGradient. """,
+                description='This function allows restoring of a changed sky gradient as a result of setSkyGradient.' ,
                 arguments={
                     
                 },
-                result="""returns true if sky color was reset correctly, false otherwise. """,
-            ),
-            name='resetSkyGradient',
+                result='returns true if sky color was reset correctly, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4201,13 +4087,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to reset the color of the sun to its normal color. """,
+                description='This function is used to reset the color of the sun to its normal color.' ,
                 arguments={
                     
                 },
-                result="""returns true if the color of the sun was reset, false otherwise. """,
-            ),
-            name='resetSunColor',
+                result='returns true if the color of the sun was reset, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -4234,13 +4119,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to reset the color of the sun to its normal color. """,
+                description='This function is used to reset the color of the sun to its normal color.' ,
                 arguments={
                     
                 },
-                result="""returns true if the color of the sun was reset, false otherwise. """,
-            ),
-            name='resetSunColor',
+                result='returns true if the color of the sun was reset, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4269,13 +4153,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to reset the size of the sun to its normal size. """,
+                description='This function is used to reset the size of the sun to its normal size.' ,
                 arguments={
                     
                 },
-                result="""returns true if the size of the sun was reset, false otherwise. """,
-            ),
-            name='resetSunSize',
+                result='returns true if the size of the sun was reset, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -4302,13 +4185,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to reset the size of the sun to its normal size. """,
+                description='This function is used to reset the size of the sun to its normal size.' ,
                 arguments={
                     
                 },
-                result="""returns true if the size of the sun was reset, false otherwise. """,
-            ),
-            name='resetSunSize',
+                result='returns true if the size of the sun was reset, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4340,13 +4222,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""Resets the distance of vehicles LOD to default. Default values depends on client setting. If client has enabled high detail vehicles in video options, value will be reset to (500, 500) - otherwise to (70, 150). You can check value of this option using dxGetStatus (SettingHighDetailVehicles). """,
+                description='Resets the distance of vehicles LOD to default. Default values depends on client setting. If client has enabled high detail vehicles in video options, value will be reset to (500, 500) - otherwise to (70, 150). You can check value of this option using dxGetStatus (SettingHighDetailVehicles).' ,
                 arguments={
                     
                 },
-                result="""returns true if the vehicles lod distance was reset, false otherwise. """,
-            ),
-            name='resetVehiclesLODDistance',
+                result='returns true if the vehicles lod distance was reset, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4375,13 +4256,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function resets the wind velocity in San Andreas to its default state. """,
+                description='This function resets the wind velocity in San Andreas to its default state.' ,
                 arguments={
                     
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='resetWindVelocity',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -4408,13 +4288,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function resets the wind velocity in San Andreas to its default state. """,
+                description='This function resets the wind velocity in San Andreas to its default state.' ,
                 arguments={
                     
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='resetWindVelocity',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4446,13 +4325,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to reset the world sounds to the default setting. """,
+                description='This function is used to reset the world sounds to the default setting.' ,
                 arguments={
                     
                 },
-                result="""returns true if the world sounds were reset, false otherwise. """,
-            ),
-            name='resetWorldSounds',
+                result='returns true if the world sounds were reset, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4481,13 +4359,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows restoring of all world objects,which were removed with RemoveWorldModel. """,
+                description='This function allows restoring of all world objects,which were removed with RemoveWorldModel.' ,
                 arguments={
                     
                 },
-                result="""returns true if the world objects were restored, false otherwise. """,
-            ),
-            name='restoreAllWorldModels',
+                result='returns true if the world objects were restored, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -4514,13 +4391,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows restoring of all world objects,which were removed with RemoveWorldModel. """,
+                description='This function allows restoring of all world objects,which were removed with RemoveWorldModel.' ,
                 arguments={
                     
                 },
-                result="""returns true if the world objects were restored, false otherwise. """,
-            ),
-            name='restoreAllWorldModels',
+                result='returns true if the world objects were restored, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4608,7 +4484,7 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows restoring of world object,which was removed with RemoveWorldModel. """,
+                description='This function allows restoring of world object,which was removed with RemoveWorldModel.' ,
                 arguments={
                     "modelID": """A whole integer specifying the GTASA object model ID. """,
                     "radius": """A floating point number representing the radius that will be eliminated. """,
@@ -4617,9 +4493,8 @@ the other values are only filled if there is a collision, they contain nil other
                     "z": """A floating point number representing the Z coordinate on the map. """,
                     "iInterior": """ """
                 },
-                result="""returns true if the world object was restored, false otherwise. """,
-            ),
-            name='restoreWorldModel',
+                result='returns true if the world object was restored, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -4705,7 +4580,7 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows restoring of world object,which was removed with RemoveWorldModel. """,
+                description='This function allows restoring of world object,which was removed with RemoveWorldModel.' ,
                 arguments={
                     "modelID": """A whole integer specifying the GTASA object model ID. """,
                     "radius": """A floating point number representing the radius that will be eliminated. """,
@@ -4714,9 +4589,8 @@ the other values are only filled if there is a collision, they contain nil other
                     "z": """A floating point number representing the Z coordinate on the map. """,
                     "iInterior": """ """
                 },
-                result="""returns true if the world object was restored, false otherwise. """,
-            ),
-            name='restoreWorldModel',
+                result='returns true if the world object was restored, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4754,13 +4628,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the maximum flying height of aircraft. """,
+                description='This function changes the maximum flying height of aircraft.' ,
                 arguments={
                     "Height": """The height you want aircraft to be able to go. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setAircraftMaxHeight',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -4796,13 +4669,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the maximum flying height of aircraft. """,
+                description='This function changes the maximum flying height of aircraft.' ,
                 arguments={
                     "Height": """The height you want aircraft to be able to go. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setAircraftMaxHeight',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4840,13 +4712,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the maximum velocity at which aircrafts could fly. Using this function server-side will overwrite the value that was previously set client-side. """,
+                description='This function sets the maximum velocity at which aircrafts could fly. Using this function server-side will overwrite the value that was previously set client-side.' ,
                 arguments={
                     "velocity": """The max velocity, can be 0 or any positive value. Default is 1.5. """
                 },
-                result="""returns true if the max velocity was set correctly, false otherwise. """,
-            ),
-            name='setAircraftMaxVelocity',
+                result='returns true if the max velocity was set correctly, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -4882,13 +4753,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the maximum velocity at which aircrafts could fly. Using this function server-side will overwrite the value that was previously set client-side. """,
+                description='This function sets the maximum velocity at which aircrafts could fly. Using this function server-side will overwrite the value that was previously set client-side.' ,
                 arguments={
                     "velocity": """The max velocity, can be 0 or any positive value. Default is 1.5. """
                 },
-                result="""returns true if the max velocity was set correctly, false otherwise. """,
-            ),
-            name='setAircraftMaxVelocity',
+                result='returns true if the max velocity was set correctly, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4939,14 +4809,13 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to disable some background sound effects. See also: setWorldSoundEnabled. """,
+                description='This function allows you to disable some background sound effects. See also: setWorldSoundEnabled.' ,
                 arguments={
                     "theType": """The type of ambient sound to toggle. Can be either gunfire or general. """,
                     "enable": """Set false to turn off, true to turn on """
                 },
-                result="""returns true if the ambient sound was set correctly, false if invalid values were passed. """,
-            ),
-            name='setAmbientSoundEnabled',
+                result='returns true if the ambient sound was set correctly, false if invalid values were passed.' ,
+            )
         )
         ],
     ),
@@ -4987,13 +4856,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to disable the flying birds. """,
+                description='This function allows you to disable the flying birds.' ,
                 arguments={
                     "enabled": """A boolean value determining if birds should be shown. Use true to show the birds and false to hide them. """
                 },
-                result="""returns true if the birds state was changed succesfully, false if an invalid argument was specified. """,
-            ),
-            name='setBirdsEnabled',
+                result='returns true if the birds state was changed succesfully, false if an invalid argument was specified.' ,
+            )
         )
         ],
     ),
@@ -5031,13 +4899,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will enable or disable clouds. This is useful for race maps which are placed high up as clouds can cause low FPS. """,
+                description='This function will enable or disable clouds. This is useful for race maps which are placed high up as clouds can cause low FPS.' ,
                 arguments={
                     "enabled": """A boolean value determining if clouds should be shown. Use true to show clouds and false to hide them. """
                 },
-                result="""returns true if the cloud state was changed succesfully, false if an invalid argument was specified. """,
-            ),
-            name='setCloudsEnabled',
+                result='returns true if the cloud state was changed succesfully, false if an invalid argument was specified.' ,
+            )
         )
         ],
         client=[
@@ -5073,13 +4940,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will enable or disable clouds. This is useful for race maps which are placed high up as clouds can cause low FPS. """,
+                description='This function will enable or disable clouds. This is useful for race maps which are placed high up as clouds can cause low FPS.' ,
                 arguments={
                     "enabled": """A boolean value determining if clouds should be shown. Use true to show clouds and false to hide them. """
                 },
-                result="""returns true if the cloud state was changed succesfully, false if an invalid argument was specified. """,
-            ),
-            name='setCloudsEnabled',
+                result='returns true if the cloud state was changed succesfully, false if an invalid argument was specified.' ,
+            )
         )
         ],
     ),
@@ -5190,7 +5056,7 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "aRed": """The amount of red (0-255). """,
                     "aGreen": """The amount of green (0-255). """,
@@ -5201,9 +5067,8 @@ the other values are only filled if there is a collision, they contain nil other
                     "bBlue": """The amount of blue (0-255). """,
                     "bAlpha": """The amount of alpha (0-255). """
                 },
-                result="""returns true if the color filter was set, false otherwise. """,
-            ),
-            name='setColorFilter',
+                result='returns true if the color filter was set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5241,13 +5106,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the distance of render. Areas beyond the specified distance will not be rendered. """,
+                description='This function is used to set the distance of render. Areas beyond the specified distance will not be rendered.' ,
                 arguments={
                     "distance": """A float specifying the distance of render. Setting this less than 5 will cause problems to the client. """
                 },
-                result="""returns true if the distance was set correctly, false if invalid arguments were passed. """,
-            ),
-            name='setFarClipDistance',
+                result='returns true if the distance was set correctly, false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -5283,13 +5147,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the distance of render. Areas beyond the specified distance will not be rendered. """,
+                description='This function is used to set the distance of render. Areas beyond the specified distance will not be rendered.' ,
                 arguments={
                     "distance": """A float specifying the distance of render. Setting this less than 5 will cause problems to the client. """
                 },
-                result="""returns true if the distance was set correctly, false if invalid arguments were passed. """,
-            ),
-            name='setFarClipDistance',
+                result='returns true if the distance was set correctly, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -5327,13 +5190,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the distance at which fog appears. Keep in mind that this function doesnt change the distance of render. """,
+                description='This function changes the distance at which fog appears. Keep in mind that this function doesnt change the distance of render.' ,
                 arguments={
                     "distance": """distance in GTA units at which fog will appear. Very short or negative distances will cause graphical bugs to the players. """
                 },
-                result="""returns true if the distance changed successfully, false if bad arguments were passed. """,
-            ),
-            name='setFogDistance',
+                result='returns true if the distance changed successfully, false if bad arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -5369,13 +5231,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the distance at which fog appears. Keep in mind that this function doesnt change the distance of render. """,
+                description='This function changes the distance at which fog appears. Keep in mind that this function doesnt change the distance of render.' ,
                 arguments={
                     "distance": """distance in GTA units at which fog will appear. Very short or negative distances will cause graphical bugs to the players. """
                 },
-                result="""returns true if the distance changed successfully, false if bad arguments were passed. """,
-            ),
-            name='setFogDistance',
+                result='returns true if the distance changed successfully, false if bad arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -5413,14 +5274,12 @@ the other values are only filled if there is a collision, they contain nil other
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the game speed to the given value. """,
+                description='This function sets the game speed to the given value.' ,
                 arguments={
                     "value": """: The float value of the game speed (Range 0 - 10) """
                 },
-                result="""returns true if the gamespeed was set successfully, false otherwise.
-the normal game speed is 1. """,
-            ),
-            name='setGameSpeed',
+                result='returns true if the gamespeed was set successfully, false otherwise.\nthe normal game speed is 1.' ,
+            )
         )
         ],
         client=[
@@ -5456,14 +5315,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the game speed to the given value. """,
+                description='This function sets the game speed to the given value.' ,
                 arguments={
                     "value": """: The float value of the game speed (Range 0 - 10) """
                 },
-                result="""returns true if the gamespeed was set successfully, false otherwise.
-the normal game speed is 1. """,
-            ),
-            name='setGameSpeed',
+                result='returns true if the gamespeed was set successfully, false otherwise.\nthe normal game speed is 1.' ,
+            )
         )
         ],
     ),
@@ -5511,14 +5368,13 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function opens or closes the specified garage door in the world. """,
+                description='This function opens or closes the specified garage door in the world.' ,
                 arguments={
                     "garageID": """The Garage|garage ID that represents the garage door being opened or closed. """,
                     "isOpen": """A boolean indicating whether or not to open the door. """
                 },
-                result="""returns true if successful, false if an invalid garage id was given. """,
-            ),
-            name='setGarageOpen',
+                result='returns true if successful, false if an invalid garage id was given.' ,
+            )
         )
         ],
         client=[
@@ -5564,14 +5420,13 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function opens or closes the specified garage door in the world. """,
+                description='This function opens or closes the specified garage door in the world.' ,
                 arguments={
                     "garageID": """The Garage|garage ID that represents the garage door being opened or closed. """,
                     "isOpen": """A boolean indicating whether or not to open the door. """
                 },
-                result="""returns true if successful, false if an invalid garage id was given. """,
-            ),
-            name='setGarageOpen',
+                result='returns true if successful, false if an invalid garage id was given.' ,
+            )
         )
         ],
     ),
@@ -5609,15 +5464,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the servers gravity level.
-*This will override setPedGravity applied to peds/players.
-*Setting the gravity level to different values on clients can cause animation bugs (players floating across ground because players see different fall animation.)}} """,
+                description='This function sets the servers gravity level.\n*This will override setPedGravity applied to peds/players.\n*Setting the gravity level to different values on clients can cause animation bugs (players floating across ground because players see different fall animation.)}}' ,
                 arguments={
                     "level": """: The level of gravity (default is 0.008). """
                 },
-                result="""returns true if gravity was changed, false otherwise. """,
-            ),
-            name='setGravity',
+                result='returns true if gravity was changed, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -5653,15 +5505,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the servers gravity level.
-*This will override setPedGravity applied to peds/players.
-*Setting the gravity level to different values on clients can cause animation bugs (players floating across ground because players see different fall animation.)}} """,
+                description='This function sets the servers gravity level.\n*This will override setPedGravity applied to peds/players.\n*Setting the gravity level to different values on clients can cause animation bugs (players floating across ground because players see different fall animation.)}}' ,
                 arguments={
                     "level": """: The level of gravity (default is 0.008). """
                 },
-                result="""returns true if gravity was changed, false otherwise. """,
-            ),
-            name='setGravity',
+                result='returns true if gravity was changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5779,13 +5628,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the heat haze effect. """,
+                description='This function changes the heat haze effect.' ,
                 arguments={
                     
                 },
-                result="""returns true if the heat haze effect was set correctly, false if invalid values were passed. """,
-            ),
-            name='setHeatHaze',
+                result='returns true if the heat haze effect was set correctly, false if invalid values were passed.' ,
+            )
         )
         ],
         client=[
@@ -5901,13 +5749,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the heat haze effect. """,
+                description='This function changes the heat haze effect.' ,
                 arguments={
                     
                 },
-                result="""returns true if the heat haze effect was set correctly, false if invalid values were passed. """,
-            ),
-            name='setHeatHaze',
+                result='returns true if the heat haze effect was set correctly, false if invalid values were passed.' ,
+            )
         )
         ],
     ),
@@ -5958,7 +5805,7 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function toggles furniture generation in interiors with the specified room ID. """,
+                description='This function toggles furniture generation in interiors with the specified room ID.' ,
                 arguments={
                     "roomID": """The room type which you want disable or enable the furniture in: """,
                     "0": """: shop """,
@@ -5968,9 +5815,8 @@ the normal game speed is 1. """,
                     "4": """: kitchen """,
                     "enabled": """: A bool representing whether the interior furniture is enabled or disabled. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setInteriorFurnitureEnabled',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6008,13 +5854,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function disables or enables the ambient sounds played by GTA in most interiors, like restaurants, casinos, clubs, houses, etc. """,
+                description='This function disables or enables the ambient sounds played by GTA in most interiors, like restaurants, casinos, clubs, houses, etc.' ,
                 arguments={
                     
                 },
-                result="""if a boolean was passed to the function, it always succeeds and returns true. """,
-            ),
-            name='setInteriorSoundsEnabled',
+                result='if a boolean was passed to the function, it always succeeds and returns true.' ,
+            )
         )
         ],
         client=[
@@ -6050,13 +5895,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function disables or enables the ambient sounds played by GTA in most interiors, like restaurants, casinos, clubs, houses, etc. """,
+                description='This function disables or enables the ambient sounds played by GTA in most interiors, like restaurants, casinos, clubs, houses, etc.' ,
                 arguments={
                     
                 },
-                result="""if a boolean was passed to the function, it always succeeds and returns true. """,
-            ),
-            name='setInteriorSoundsEnabled',
+                result='if a boolean was passed to the function, it always succeeds and returns true.' ,
+            )
         )
         ],
     ),
@@ -6094,13 +5938,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the maximum flying height of jetpack. """,
+                description='This function changes the maximum flying height of jetpack.' ,
                 arguments={
                     "Height": """: The max height starting at approximately -20. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setJetpackMaxHeight',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6136,13 +5979,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the maximum flying height of jetpack. """,
+                description='This function changes the maximum flying height of jetpack.' ,
                 arguments={
                     "Height": """: The max height starting at approximately -20. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setJetpackMaxHeight',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6190,14 +6032,13 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets a weapon usable while using the Jetpack. """,
+                description='This function sets a weapon usable while using the Jetpack.' ,
                 arguments={
                     "weapon": """The weapon thats being set usable on a Jetpack. Names can be: (Case is ignored) """,
                     "enabled": """A bool representing whether the weapon is enabled or disabled. """
                 },
-                result="""returns true, else false if invalid arguments are passed. """,
-            ),
-            name='setJetpackWeaponEnabled',
+                result='returns true, else false if invalid arguments are passed.' ,
+            )
         )
         ],
         client=[
@@ -6238,13 +6079,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the real-world duration of an ingame minute. The GTA default is 1000. """,
+                description='Sets the real-world duration of an ingame minute. The GTA default is 1000.' ,
                 arguments={
                     "milliseconds": """: the new duration of an ingame minute, accepted values 0 - 2147483647. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setMinuteDuration',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6280,13 +6120,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the real-world duration of an ingame minute. The GTA default is 1000. """,
+                description='Sets the real-world duration of an ingame minute. The GTA default is 1000.' ,
                 arguments={
                     "milliseconds": """: the new duration of an ingame minute, accepted values 0 - 2147483647. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setMinuteDuration',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6324,13 +6163,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the moon size. Using this function server-side will overwrite the value that was previously set client-side. """,
+                description='This function sets the moon size. Using this function server-side will overwrite the value that was previously set client-side.' ,
                 arguments={
                     "size": """The size, can be 0 or any positive value. Default is 3. """
                 },
-                result="""returns true if the moon size was set correctly, false otherwise. """,
-            ),
-            name='setMoonSize',
+                result='returns true if the moon size was set correctly, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6366,13 +6204,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the moon size. Using this function server-side will overwrite the value that was previously set client-side. """,
+                description='This function sets the moon size. Using this function server-side will overwrite the value that was previously set client-side.' ,
                 arguments={
                     "size": """The size, can be 0 or any positive value. Default is 3. """
                 },
-                result="""returns true if the moon size was set correctly, false otherwise. """,
-            ),
-            name='setMoonSize',
+                result='returns true if the moon size was set correctly, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6413,13 +6250,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "distance": """the new near clip distance. It must be between 0.1 and 20 for the function to do any effect. Default value is 0.3. """
                 },
-                result="""this function returns true if the argument is valid. returns false otherwise. """,
-            ),
-            name='setNearClipDistance',
+                result='this function returns true if the argument is valid. returns false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6457,13 +6293,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to enable or disable occlusions. Occlusions are used by GTA to enhance performance by hiding objects that are (normally) obscured by certain large buildings. However when removeWorldModel is used they may also have the undesired effect of making parts of the map disappear. Disabling occlusions will fix that. """,
+                description='This function is used to enable or disable occlusions. Occlusions are used by GTA to enhance performance by hiding objects that are (normally) obscured by certain large buildings. However when removeWorldModel is used they may also have the undesired effect of making parts of the map disappear. Disabling occlusions will fix that.' ,
                 arguments={
                     "enabled": """A bool specifying if GTA occlusions should be enabled """
                 },
-                result="""returns true if the setting was set correctly, false if invalid arguments were passed. """,
-            ),
-            name='setOcclusionsEnabled',
+                result='returns true if the setting was set correctly, false if invalid arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -6499,13 +6334,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to enable or disable occlusions. Occlusions are used by GTA to enhance performance by hiding objects that are (normally) obscured by certain large buildings. However when removeWorldModel is used they may also have the undesired effect of making parts of the map disappear. Disabling occlusions will fix that. """,
+                description='This function is used to enable or disable occlusions. Occlusions are used by GTA to enhance performance by hiding objects that are (normally) obscured by certain large buildings. However when removeWorldModel is used they may also have the undesired effect of making parts of the map disappear. Disabling occlusions will fix that.' ,
                 arguments={
                     "enabled": """A bool specifying if GTA occlusions should be enabled """
                 },
-                result="""returns true if the setting was set correctly, false if invalid arguments were passed. """,
-            ),
-            name='setOcclusionsEnabled',
+                result='returns true if the setting was set correctly, false if invalid arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -6546,13 +6380,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "distance": """the new peds LOD distance. It must be between 0 and 500. (Default for high_detail_peds on is 500, when off, it is 60). """
                 },
-                result="""this function returns true if the argument is valid. returns false otherwise. """,
-            ),
-            name='setPedsLODDistance',
+                result='this function returns true if the argument is valid. returns false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6590,14 +6423,13 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the rain level to any weather available in GTA. Use resetRainLevel to undo the changes. """,
+                description='This function sets the rain level to any weather available in GTA. Use resetRainLevel to undo the changes.' ,
                 arguments={
                     "level": """A floating point number representing the rain level. 1 represents the maximum rain level usually available in GTA, but higher values are accepted. """,
                     "Note": """The level value is clamped between 0.0 and 10.0 to avoid gameplay issues. """
                 },
-                result="""returns true if the rain level was set, false otherwise. """,
-            ),
-            name='setRainLevel',
+                result='returns true if the rain level was set, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6633,14 +6465,13 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the rain level to any weather available in GTA. Use resetRainLevel to undo the changes. """,
+                description='This function sets the rain level to any weather available in GTA. Use resetRainLevel to undo the changes.' ,
                 arguments={
                     "level": """A floating point number representing the rain level. 1 represents the maximum rain level usually available in GTA, but higher values are accepted. """,
                     "Note": """The level value is clamped between 0.0 and 10.0 to avoid gameplay issues. """
                 },
-                result="""returns true if the rain level was set, false otherwise. """,
-            ),
-            name='setRainLevel',
+                result='returns true if the rain level was set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6728,7 +6559,7 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the sky color to a two-color gradient. """,
+                description='This function changes the sky color to a two-color gradient.' ,
                 arguments={
                     "topRed": """The red value of the upper part of the sky, from 0 to 255. """,
                     "topGreen": """The green value of the upper part of the sky, from 0 to 255. """,
@@ -6737,9 +6568,8 @@ the normal game speed is 1. """,
                     "bottomGreen": """The green value of the lower part of the sky, from 0 to 255. """,
                     "bottomBlue": """The blue value of the lower part of the sky, from 0 to 255. """
                 },
-                result="""returns true if sky color was set correctly, false if invalid values were passed. """,
-            ),
-            name='setSkyGradient',
+                result='returns true if sky color was set correctly, false if invalid values were passed.' ,
+            )
         )
         ],
         client=[
@@ -6825,7 +6655,7 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the sky color to a two-color gradient. """,
+                description='This function changes the sky color to a two-color gradient.' ,
                 arguments={
                     "topRed": """The red value of the upper part of the sky, from 0 to 255. """,
                     "topGreen": """The green value of the upper part of the sky, from 0 to 255. """,
@@ -6834,9 +6664,8 @@ the normal game speed is 1. """,
                     "bottomGreen": """The green value of the lower part of the sky, from 0 to 255. """,
                     "bottomBlue": """The blue value of the lower part of the sky, from 0 to 255. """
                 },
-                result="""returns true if sky color was set correctly, false if invalid values were passed. """,
-            ),
-            name='setSkyGradient',
+                result='returns true if sky color was set correctly, false if invalid values were passed.' ,
+            )
         )
         ],
     ),
@@ -6924,7 +6753,7 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the color of the sun. """,
+                description='This function is used to set the color of the sun.' ,
                 arguments={
                     "aRed": """The amount of red (0-255) you want the sun to be. """,
                     "aGreen": """The amount of green (0-255) you want the sun to be. """,
@@ -6933,9 +6762,8 @@ the normal game speed is 1. """,
                     "bGreen": """The amount of green (0-255) you want the sun to be. """,
                     "bBlue": """The amount of blue (0-255) you want the sun to be. """
                 },
-                result="""returns true if the color of the sun was set, false otherwise. """,
-            ),
-            name='setSunColor',
+                result='returns true if the color of the sun was set, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7021,7 +6849,7 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the color of the sun. """,
+                description='This function is used to set the color of the sun.' ,
                 arguments={
                     "aRed": """The amount of red (0-255) you want the sun to be. """,
                     "aGreen": """The amount of green (0-255) you want the sun to be. """,
@@ -7030,9 +6858,8 @@ the normal game speed is 1. """,
                     "bGreen": """The amount of green (0-255) you want the sun to be. """,
                     "bBlue": """The amount of blue (0-255) you want the sun to be. """
                 },
-                result="""returns true if the color of the sun was set, false otherwise. """,
-            ),
-            name='setSunColor',
+                result='returns true if the color of the sun was set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7070,13 +6897,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the size of the sun. """,
+                description='This function is used to set the size of the sun.' ,
                 arguments={
                     "Size": """The size you want the sun to be in the sky. """
                 },
-                result="""returns true if the size of the sun was set, false otherwise. """,
-            ),
-            name='setSunSize',
+                result='returns true if the size of the sun was set, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7112,13 +6938,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the size of the sun. """,
+                description='This function is used to set the size of the sun.' ,
                 arguments={
                     "Size": """The size you want the sun to be in the sky. """
                 },
-                result="""returns true if the size of the sun was set, false otherwise. """,
-            ),
-            name='setSunSize',
+                result='returns true if the size of the sun was set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7166,14 +6991,13 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the current GTA time to the given time. """,
+                description='This function sets the current GTA time to the given time.' ,
                 arguments={
                     "hour": """: The hour of the new time (range 0-23). """,
                     "minute": """: The minute of the new time (range 0-59). """
                 },
-                result="""returns true if the new time was successfully set, false otherwise. """,
-            ),
-            name='setTime',
+                result='returns true if the new time was successfully set, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7219,14 +7043,13 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the current GTA time to the given time. """,
+                description='This function sets the current GTA time to the given time.' ,
                 arguments={
                     "hour": """: The hour of the new time (range 0-23). """,
                     "minute": """: The minute of the new time (range 0-59). """
                 },
-                result="""returns true if the new time was successfully set, false otherwise. """,
-            ),
-            name='setTime',
+                result='returns true if the new time was successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7264,13 +7087,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Toggles whether you want the traffic lights to be locked. If the lights are locked, it means they wont change unless you do setTrafficLightState. """,
+                description='Toggles whether you want the traffic lights to be locked. If the lights are locked, it means they wont change unless you do setTrafficLightState.' ,
                 arguments={
                     "toggle": """: A bool indicating whether you want the traffic lights to change automatically, or not """
                 },
-                result="""returns true if the successful, false otherwise. """,
-            ),
-            name='setTrafficLightsLocked',
+                result='returns true if the successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7306,13 +7128,12 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Toggles whether you want the traffic lights to be locked. If the lights are locked, it means they wont change unless you do setTrafficLightState. """,
+                description='Toggles whether you want the traffic lights to be locked. If the lights are locked, it means they wont change unless you do setTrafficLightState.' ,
                 arguments={
                     "toggle": """: A bool indicating whether you want the traffic lights to change automatically, or not """
                 },
-                result="""returns true if the successful, false otherwise. """,
-            ),
-            name='setTrafficLightsLocked',
+                result='returns true if the successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7350,7 +7171,7 @@ the normal game speed is 1. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the current traffic light state. This state controls the traffic light colors. For instance, state 1 will cause the north and south traffic lights to be amber, and the ones left and east will turn red. """,
+                description='Sets the current traffic light state. This state controls the traffic light colors. For instance, state 1 will cause the north and south traffic lights to be amber, and the ones left and east will turn red.' ,
                 arguments={
                     "state": """: If an integer is provided, the Traffic_light_states|state you wish to use (possible values: 0-9). Else, one of the following strings: """,
                     "auto": """: Sets the traffic lights default behavior (switches the colors automatically). """,
@@ -7360,9 +7181,8 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     "yellow": """ """,
                     "red": """ """
                 },
-                result="""returns true if the state was successfully set, false otherwise. """,
-            ),
-            name='setTrafficLightState',
+                result='returns true if the state was successfully set, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -7398,7 +7218,7 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the current traffic light state. This state controls the traffic light colors. For instance, state 1 will cause the north and south traffic lights to be amber, and the ones left and east will turn red. """,
+                description='Sets the current traffic light state. This state controls the traffic light colors. For instance, state 1 will cause the north and south traffic lights to be amber, and the ones left and east will turn red.' ,
                 arguments={
                     "state": """: If an integer is provided, the Traffic_light_states|state you wish to use (possible values: 0-9). Else, one of the following strings: """,
                     "auto": """: Sets the traffic lights default behavior (switches the colors automatically). """,
@@ -7408,9 +7228,8 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     "yellow": """ """,
                     "red": """ """
                 },
-                result="""returns true if the state was successfully set, false otherwise. """,
-            ),
-            name='setTrafficLightState',
+                result='returns true if the state was successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -7461,14 +7280,13 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the distance of vehicles LOD. """,
+                description='Sets the distance of vehicles LOD.' ,
                 arguments={
                     "vehiclesDistance": """general distance used for most vehicles, this value is clamped to 0 – 500 """,
                     "trainsAndPlanesDistance": """distance used for trains and planes, this value is clamped to 0 – 500 """
                 },
-                result=""" """,
-            ),
-            name='setVehiclesLODDistance',
+                result='' ,
+            )
         )
         ],
     ),
@@ -7506,13 +7324,12 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the current weather to the given valid value. To change the weather gradually, see setWeatherBlended. """,
+                description='This function sets the current weather to the given valid value. To change the weather gradually, see setWeatherBlended.' ,
                 arguments={
                     "weatherID": """: The ID of new weather. Valid values are 0 to 255 inclusive. """
                 },
-                result="""returns true if the weather was set succesfully, false if an invalid weatherid was specified. """,
-            ),
-            name='setWeather',
+                result='returns true if the weather was set succesfully, false if an invalid weatherid was specified.' ,
+            )
         )
         ],
         client=[
@@ -7548,13 +7365,12 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the current weather to the given valid value. To change the weather gradually, see setWeatherBlended. """,
+                description='This function sets the current weather to the given valid value. To change the weather gradually, see setWeatherBlended.' ,
                 arguments={
                     "weatherID": """: The ID of new weather. Valid values are 0 to 255 inclusive. """
                 },
-                result="""returns true if the weather was set succesfully, false if an invalid weatherid was specified. """,
-            ),
-            name='setWeather',
+                result='returns true if the weather was set succesfully, false if an invalid weatherid was specified.' ,
+            )
         )
         ],
     ),
@@ -7592,13 +7408,12 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will change the current weather to another in a smooth manner, over the period of 1-2 in-game hours (unlike setWeather, which sets a new weather instantly). To ensure this transition performs as expected, you should not call this function until getWeather indicates that no transition is already being done. """,
+                description='This function will change the current weather to another in a smooth manner, over the period of 1-2 in-game hours (unlike setWeather, which sets a new weather instantly). To ensure this transition performs as expected, you should not call this function until getWeather indicates that no transition is already being done.' ,
                 arguments={
                     "weatherID": """The ID of the weather state you wish to set. Valid values are 0 to 255 inclusive. """
                 },
-                result="""returns true if successful, false if an invalid weatherid is passed. """,
-            ),
-            name='setWeatherBlended',
+                result='returns true if successful, false if an invalid weatherid is passed.' ,
+            )
         )
         ],
         client=[
@@ -7634,13 +7449,12 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will change the current weather to another in a smooth manner, over the period of 1-2 in-game hours (unlike setWeather, which sets a new weather instantly). To ensure this transition performs as expected, you should not call this function until getWeather indicates that no transition is already being done. """,
+                description='This function will change the current weather to another in a smooth manner, over the period of 1-2 in-game hours (unlike setWeather, which sets a new weather instantly). To ensure this transition performs as expected, you should not call this function until getWeather indicates that no transition is already being done.' ,
                 arguments={
                     "weatherID": """The ID of the weather state you wish to set. Valid values are 0 to 255 inclusive. """
                 },
-                result="""returns true if successful, false if an invalid weatherid is passed. """,
-            ),
-            name='setWeatherBlended',
+                result='returns true if successful, false if an invalid weatherid is passed.' ,
+            )
         )
         ],
     ),
@@ -7698,15 +7512,14 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the wind velocity. The wind shakes the vegetation and makes particles fly in a direction. The intensity and direction of the effect deppends of the wind velocity in each axis. """,
+                description='This function changes the wind velocity. The wind shakes the vegetation and makes particles fly in a direction. The intensity and direction of the effect deppends of the wind velocity in each axis.' ,
                 arguments={
                     "velocityX": """: The velocity of the wind along the x axis. """,
                     "velocityY": """: The velocity of the wind along the y axis. """,
                     "velocityZ": """: The velocity of the wind along the z axis. """
                 },
-                result="""returns true if successful, false if bad arguments were passed. """,
-            ),
-            name='setWindVelocity',
+                result='returns true if successful, false if bad arguments were passed.' ,
+            )
         )
         ],
         client=[
@@ -7762,15 +7575,14 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the wind velocity. The wind shakes the vegetation and makes particles fly in a direction. The intensity and direction of the effect deppends of the wind velocity in each axis. """,
+                description='This function changes the wind velocity. The wind shakes the vegetation and makes particles fly in a direction. The intensity and direction of the effect deppends of the wind velocity in each axis.' ,
                 arguments={
                     "velocityX": """: The velocity of the wind along the x axis. """,
                     "velocityY": """: The velocity of the wind along the y axis. """,
                     "velocityZ": """: The velocity of the wind along the z axis. """
                 },
-                result="""returns true if successful, false if bad arguments were passed. """,
-            ),
-            name='setWindVelocity',
+                result='returns true if successful, false if bad arguments were passed.' ,
+            )
         )
         ],
     ),
@@ -7841,19 +7653,15 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to disable world sounds. A world sound is a sound effect which has not been caused by playSound or playSound3D.
-*The values for group and index can be determined by using the client command Client_Commands#showsound|showsound in conjunction with setDevelopmentMode
-*This function does not affect sounds which are already playing, such as the wind sound that can only be stopped by entering an interior.
-* See also: setAmbientSoundEnabled}} """,
+                description='This function allows you to disable world sounds. A world sound is a sound effect which has not been caused by playSound or playSound3D.\n*The values for group and index can be determined by using the client command Client_Commands#showsound|showsound in conjunction with setDevelopmentMode\n*This function does not affect sounds which are already playing, such as the wind sound that can only be stopped by entering an interior.\n* See also: setAmbientSoundEnabled}}' ,
                 arguments={
                     "group": """An int|integer representing the World sound groups|world sound group """,
                     "enable": """Set to false to disable, true to enable """,
                     "index": """An int|integer representing an individual sound within the group """,
                     "immediate": """A boolean if set to true will cancel the sound if its already playing. This parameter only works for stopping the sound. """
                 },
-                result="""returns true if the world sound was correctly enabled/disabled, false if invalid values were passed. """,
-            ),
-            name='setWorldSoundEnabled',
+                result='returns true if the world sound was correctly enabled/disabled, false if invalid values were passed.' ,
+            )
         )
         ],
     ),
@@ -7904,7 +7712,7 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 ],
             ),
             docs=FunctionDoc(
-                description="""Enables or disables a special world property. """,
+                description='Enables or disables a special world property.' ,
                 arguments={
                     "propname": """the name of the property to set. Possible values are: """,
                     "hovercars": """- equivalent of the JBGVNB cheat, and allows cars to drive on water. """,
@@ -7917,9 +7725,8 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
 **{{New feature/item|3.0156|1.5.5|12286|'''underworldwarp''' - toggle warp of peds and vehicles when fall under map (default: true)}} """,
                     "enable": """whether or not to enable the property. """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setWorldSpecialPropertyEnabled',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -8022,14 +7829,13 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks to see if a line between two points collides with the water. This is similar to processLineOfSight, but only collides with water. Waves are not taken into account when testing the line. """,
+                description='This function checks to see if a line between two points collides with the water. This is similar to processLineOfSight, but only collides with water. Waves are not taken into account when testing the line.' ,
                 arguments={
                     "startX, startY, startZ": """the position of the starting point of the line. """,
                     "endX, endY, endZ": """the position of the end point of the line. """
                 },
-                result="""returns true and the position of the intersection point of the line and the water surface if there is a collision, or false if there is no collision. """,
-            ),
-            name='testLineAgainstWater',
+                result='returns true and the position of the intersection point of the line and the water surface if there is a collision, or false if there is no collision.' ,
+            )
         )
         ],
     )

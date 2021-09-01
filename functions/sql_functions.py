@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -83,7 +83,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function opens a connection to a database and returns an element that can be used with dbQuery. To disconnect use destroyElement. """,
+                description='This function opens a connection to a database and returns an element that can be used with dbQuery. To disconnect use destroyElement.' ,
                 arguments={
                     "databaseType": """The type of database. This can be either sqlite or mysql """,
                     "host": """: Host address e.g. host=127.0.0.1 """,
@@ -103,9 +103,8 @@ DUMP_PARTIAL = [
                     "multi_statements": """Enable multiple statements (separated by a semi-colon) in one query. Use dbPrepareString when building a multiple statement query to reduce SQL injection risks. """,
                     "queue": """Name of the queue to use. (Default value for SQLite is sqlite, for MySQL default is the host string from the host argument). Asynchronous database queries in the same queue are processed in order, one at a time. Any name can be used. """
                 },
-                result="""returns a database connection element unless there are problems, in which case it return false. """,
-            ),
-            name='dbConnect',
+                result='returns a database connection element unless there are problems, in which case it return false.' ,
+            )
         )
         ],
         client=[
@@ -176,16 +175,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function executes a database query using the supplied connection. No result is returned. """,
+                description='This function executes a database query using the supplied connection. No result is returned.' ,
                 arguments={
                     "databaseConnection": """A database connection element previously returned from dbConnect """,
                     "query": """An SQL query. Positions where parameter values will be inserted are marked with a ? """,
                     "paramX": """A variable number of parameters. These must be strings or numbers - it is important to make sure they are of the correct type. Also, the number of parameters passed must be equal to the number of ? characters in the query string.
 String parameters are automatically quoted and escaped as required. (If you do not want a string quoted, use '''??''') Make sure that numbers are in number format as a string number is treated differently. """
                 },
-                result="""returns true unless the connection is incorrect, in which case it returns false. """,
-            ),
-            name='dbExec',
+                result='returns true unless the connection is incorrect, in which case it returns false.' ,
+            )
         )
         ],
         client=[
@@ -226,13 +224,12 @@ String parameters are automatically quoted and escaped as required. (If you do n
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function frees a database query handle. dbFree only needs to be used if a result has not been obtained with dbPoll """,
+                description='This function frees a database query handle. dbFree only needs to be used if a result has not been obtained with dbPoll' ,
                 arguments={
                     "queryHandle": """A query handle previously returned from dbQuery """
                 },
-                result="""returns true if the handle was successfully freed, false otherwise. """,
-            ),
-            name='dbFree',
+                result='returns true if the handle was successfully freed, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -293,33 +290,15 @@ String parameters are automatically quoted and escaped as required. (If you do n
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks the progress of a database query. """,
+                description='This function checks the progress of a database query.' ,
                 arguments={
                     "queryHandle": """A query handle previously returned from dbQuery """,
                     "timeout": """How many milliseconds to wait for a result. Use 0 for an instant response (which may return nil). Use -1 to wait until a result is ready. Note: A wait here will freeze the entire server just like executeSQLQuery """,
                     "multipleResults": """Set to true to enable the return values from multiple queries
 |7972}} """
                 },
-                result="""*nil: returns nil if the query results are not yet ready. you should try again in a little while. (if you give up waiting for a result, be sure to call dbfree)
-*false: returns false if the query string contained an error, the connection has been lost or the query handle is incorrect. this automatically frees the query handle, so you do not have to call dbfree.
-** this also returns two extra values: (see the example on how the retrieve them)
-***int: error code
-***string error message
-*table: returns a table with the result of the query when the query has successfully completed. this automatically frees the query handle, so you do not have to call dbfree. if multipleresults is set to true, it will first return a table pertaining to one query, followed by the results for that query and so on for the next queries.
-** this also returns extra values (only when multipleresults is set to true):
-***int: number of affected rows
-***int: last insert id
-the table is of the format:
-<syntaxhighlight lang=lua>
-{
-{ colname1=value1, colname2=value2, ... },
-{ colname1=value3, colname2=value4, ... },
-...
-}
-</syntaxhighlight>
-a subsequent table represents the next row. """,
-            ),
-            name='dbPoll',
+                result='*nil: returns nil if the query results are not yet ready. you should try again in a little while. (if you give up waiting for a result, be sure to call dbfree)\n*false: returns false if the query string contained an error, the connection has been lost or the query handle is incorrect. this automatically frees the query handle, so you do not have to call dbfree.\n** this also returns two extra values: (see the example on how the retrieve them)\n***int: error code\n***string error message\n*table: returns a table with the result of the query when the query has successfully completed. this automatically frees the query handle, so you do not have to call dbfree. if multipleresults is set to true, it will first return a table pertaining to one query, followed by the results for that query and so on for the next queries.\n** this also returns extra values (only when multipleresults is set to true):\n***int: number of affected rows\n***int: last insert id\nthe table is of the format:\n<syntaxhighlight lang=lua>\n{\n{ colname1=value1, colname2=value2, ... },\n{ colname1=value3, colname2=value4, ... },\n...\n}\n</syntaxhighlight>\na subsequent table represents the next row.' ,
+            )
         )
         ],
         client=[
@@ -390,16 +369,15 @@ a subsequent table represents the next row. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function escapes arguments in the same way as dbQuery, except dbPrepareString returns the query string instead of processing the query. This allows you to safely build complex query strings from component parts and help prevent (one class of) SQL injection.}} """,
+                description='This function escapes arguments in the same way as dbQuery, except dbPrepareString returns the query string instead of processing the query. This allows you to safely build complex query strings from component parts and help prevent (one class of) SQL injection.}}' ,
                 arguments={
                     "databaseConnection": """A database connection element previously returned from dbConnect """,
                     "query": """An SQL query. Positions where parameter values will be inserted are marked with a ? """,
                     "paramX": """A variable number of parameters. These must be strings or numbers - it is important to make sure they are of the correct type. Also, the number of parameters passed must be equal to the number of ? characters in the query string.
 String parameters are automatically quoted and escaped as required. (If you do not want a string quoted, use '''??''') """
                 },
-                result="""returns a prepare sql query string, or false if an error occurred. """,
-            ),
-            name='dbPrepareString',
+                result='returns a prepare sql query string, or false if an error occurred.' ,
+            )
         )
         ],
         client=[
@@ -490,7 +468,7 @@ String parameters are automatically quoted and escaped as required. (If you do n
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function starts a database query using the supplied connection. Use the returned query handle with dbPoll to get the result, or dbFree if you dont want the result. """,
+                description='This function starts a database query using the supplied connection. Use the returned query handle with dbPoll to get the result, or dbFree if you dont want the result.' ,
                 arguments={
                     "databaseConnection": """A database connection element previously returned from dbConnect """,
                     "query": """An SQL query. Positions where parameter values will be inserted are marked with a ? """,
@@ -499,9 +477,8 @@ String parameters are automatically quoted and escaped as required. (If you do n
                     "paramX": """A variable number of parameters. These must be strings or numbers - it is important to make sure they are of the correct type. Also, the number of parameters passed must be equal to the number of ? characters in the query string.
 String parameters are automatically quoted and escaped as required. (If you do not want a string quoted, use '''??''') """
                 },
-                result="""returns a query handle unless the connection is incorrect, in which case it return false. """,
-            ),
-            name='dbQuery',
+                result='returns a query handle unless the connection is incorrect, in which case it return false.' ,
+            )
         )
         ],
         client=[
@@ -562,23 +539,14 @@ String parameters are automatically quoted and escaped as required. (If you do n
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function executes an arbitrary SQL query and returns the result rows if there are any. It allows parameter binding for security (SQL injection is rendered impossible). """,
+                description='This function executes an arbitrary SQL query and returns the result rows if there are any. It allows parameter binding for security (SQL injection is rendered impossible).' ,
                 arguments={
                     "query": """An SQL query. Positions where parameter values will be inserted are marked with a ?. """,
                     "paramX": """A variable number of parameters. These must be strings or numbers - it is important to make sure they are of the correct type. Also, the number of parameters passed must be equal to the number of ? characters in the query string.
 String parameters are automatically escaped by adding a backslash (\) before ' and \ characters. """
                 },
-                result="""returns a table with the result of the query if it was a select query, or false if otherwise. in case of a select query the result table may be empty (if there are no result rows). the table is of the form:
-<syntaxhighlight lang=lua>
-{
-{ colname1=value1, colname2=value2, ... },
-{ colname1=value3, colname2=value4, ... },
-...
-}
-</syntaxhighlight>
-a subsequent table represents the next row. """,
-            ),
-            name='executeSQLQuery',
+                result='returns a table with the result of the query if it was a select query, or false if otherwise. in case of a select query the result table may be empty (if there are no result rows). the table is of the form:\n<syntaxhighlight lang=lua>\n{\n{ colname1=value1, colname2=value2, ... },\n{ colname1=value3, colname2=value4, ... },\n...\n}\n</syntaxhighlight>\na subsequent table represents the next row.' ,
+            )
         )
         ],
         client=[

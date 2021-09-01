@@ -17,12 +17,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientElementColShapeHit',
             docs=FunctionDoc(
-                description="""This event is triggered when an element (like a player or vehicle) enters a collision shape. """,
+                description='This event is triggered when an element (like a player or vehicle) enters a collision shape.' ,
                 arguments={
                     "theShape": """the colshape that the element entered. """,
                     "matchingDimension": """true if the element is in the same dimension as the colshape, false otherwise. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -60,12 +60,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientElementColShapeLeave',
             docs=FunctionDoc(
-                description="""This event is triggered when an element (like a player or vehicle) leaves a collision shape. """,
+                description='This event is triggered when an element (like a player or vehicle) leaves a collision shape.' ,
                 arguments={
                     "theShape": """the colshape that the element left. """,
                     "matchingDimension": """true if the element is in the same dimension as the colshape, false otherwise. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -103,13 +103,13 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientElementDataChange',
             docs=FunctionDoc(
-                description="""This event is triggered after an elements element data|data entry is changed. Such changes can be made on the client or the server using setElementData. """,
+                description='This event is triggered after an elements element data|data entry is changed. Such changes can be made on the client or the server using setElementData.' ,
                 arguments={
                     "theKey": """: The name of the element data entry that has changed. """,
                     "oldValue": """: The old value of this entry before it changed. See element data for a list of possible datatypes. """,
                     "newValue": """: the new value of this entry after it changed. This will be equivalent to getElementData(source, theKey). """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -157,11 +157,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientElementDestroy',
             docs=FunctionDoc(
-                description="""This event is triggered when an element gets destroyed by destroyElement or when the creator resource is stopping. It is also triggered when a children element of this element is destroyed. It is not triggered on a player when they quit. """,
+                description='This event is triggered when an element gets destroyed by destroyElement or when the creator resource is stopping. It is also triggered when a children element of this element is destroyed. It is not triggered on a player when they quit.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -180,12 +180,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientElementDimensionChange',
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "oldDimension": """: an int representing the dimension the element was in before. """,
                     "newDimension": """: an int representing the dimension the element is in now. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -223,12 +223,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientElementInteriorChange',
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "oldInterior": """: an int representing the interior the element was in before. """,
                     "newInterior": """: an int representing the interior the element is in now. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -266,12 +266,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientElementModelChange',
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "oldModel": """an int representing the model of the element before the change occurred. """,
                     "newModel": """an int representing the new model of the element. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -309,11 +309,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientElementStreamIn',
             docs=FunctionDoc(
-                description="""This event is triggered whenever a physical element is streamed in. This is triggered for all elements that are streamable, such as players, peds, vehicles, objects and markers. When this event is triggered, that element is guaranteed to be physically created as a GTA object. """,
+                description='This event is triggered whenever a physical element is streamed in. This is triggered for all elements that are streamable, such as players, peds, vehicles, objects and markers. When this event is triggered, that element is guaranteed to be physically created as a GTA object.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -332,11 +332,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientElementStreamOut',
             docs=FunctionDoc(
-                description="""This event is triggered whenever a physical element is streamed out. This is triggered for all elements that are streamable, such as players, peds, vehicles, objects and markers when the local player is leaving the element. When this event is triggered, that element is no longer physical and is now virtualized by MTA. """,
+                description='This event is triggered whenever a physical element is streamed out. This is triggered for all elements that are streamable, such as players, peds, vehicles, objects and markers when the local player is leaving the element. When this event is triggered, that element is no longer physical and is now virtualized by MTA.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -352,7 +352,7 @@ DUMP_PARTIAL = [
             EventData(
             name='onElementClicked',
             docs=FunctionDoc(
-                description="""This event is triggered when an element is clicked on by the client. These events can only trigger when the client has its cursor enabled. It triggers for all three mousebuttons in both their up and down states. """,
+                description='This event is triggered when an element is clicked on by the client. These events can only trigger when the client has its cursor enabled. It triggers for all three mousebuttons in both their up and down states.' ,
                 arguments={
                     "mouseButton": """: a string representing the mouse button that was clicked. This might be left, middle or right. """,
                     "buttonState": """: a string representing what state the button clicked is in. This might be up or down. """,
@@ -361,7 +361,7 @@ DUMP_PARTIAL = [
                     "clickPosY": """: the Y position in the world the player clicked at. """,
                     "clickPosZ": """: the Z position in the world the player clicked at. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -439,12 +439,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onElementColShapeHit',
             docs=FunctionDoc(
-                description="""This event is triggered when an player or vehicle element collides with a colshape. """,
+                description='This event is triggered when an player or vehicle element collides with a colshape.' ,
                 arguments={
                     "theColShape": """: the colshape that this element collided with. """,
                     "matchingDimension": """: a boolean representing if the element and the colshape are in the same dimension. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -482,12 +482,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onElementColShapeLeave',
             docs=FunctionDoc(
-                description="""This event is triggered when an player or vehicle element leaves the area of a colshape. """,
+                description='This event is triggered when an player or vehicle element leaves the area of a colshape.' ,
                 arguments={
                     "theColShape": """: the colshape that this element left the area of. """,
                     "matchingDimension": """: a boolean representing if the element and the colshape are in the same dimension. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -525,7 +525,7 @@ DUMP_PARTIAL = [
             EventData(
             name='onElementDataChange',
             docs=FunctionDoc(
-                description="""This event is triggered after an elements element data|data entry is changed. Such changes can be made on the client or the server using setElementData. """,
+                description='This event is triggered after an elements element data|data entry is changed. Such changes can be made on the client or the server using setElementData.' ,
                 arguments={
                     "theKey": """: The name of the element data entry that has changed. """,
                     "oldValue": """: The old value of this entry before it changed. See element data for a list of possible datatypes. """,
@@ -534,7 +534,7 @@ DUMP_PARTIAL = [
                     "client": """: The event system#Event client|client global variable is set to the client that called setElementData, or nil if it was called on the server. """,
                     "sourceResource": """: The resource which changed the element data. (Only works in versions above 1.3.4-5937) """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -582,11 +582,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onElementDestroy',
             docs=FunctionDoc(
-                description="""This event is triggered when an element gets destroyed by destroyElement or when the creator resource is stopping. It is also triggered when a parent element of this element is destroyed. """,
+                description='This event is triggered when an element gets destroyed by destroyElement or when the creator resource is stopping. It is also triggered when a parent element of this element is destroyed.' ,
                 arguments={
                     
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -605,12 +605,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onElementDimensionChange',
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "oldDimension": """: an int representing the dimension the element was in before. """,
                     "newDimension": """: an int representing the dimension the element is in now. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -648,12 +648,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onElementInteriorChange',
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "oldInterior": """: an int representing the interior the element was in before. """,
                     "newInterior": """: an int representing the interior the element is in now. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -691,12 +691,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onElementModelChange',
             docs=FunctionDoc(
-                description="""This event is triggered when the model of an element is changed using setElementModel. """,
+                description='This event is triggered when the model of an element is changed using setElementModel.' ,
                 arguments={
                     "oldModel": """an int representing the model of the element before the change occurred. """,
                     "newModel": """an int representing the new model of the element. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -734,11 +734,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onElementStartSync',
             docs=FunctionDoc(
-                description="""This event is triggered when an element becomes synced by a player. """,
+                description='This event is triggered when an element becomes synced by a player.' ,
                 arguments={
                     "newSyncer": """: a player element representing the player who is now syncing the element. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -766,11 +766,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onElementStopSync',
             docs=FunctionDoc(
-                description="""This event is triggered when an element is no longer synced by a player. """,
+                description='This event is triggered when an element is no longer synced by a player.' ,
                 arguments={
                     "oldSyncer": """: a player element representing the last player who was syncing the element. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[

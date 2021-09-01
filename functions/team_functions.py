@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -43,13 +43,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is for returning the number of players in the specified team. """,
+                description='This function is for returning the number of players in the specified team.' ,
                 arguments={
                     "theTeam": """The team you wish to retrieve the player count of. """
                 },
-                result="""returns an integer containing the number of players in the team, false if it could not be retrieved. """,
-            ),
-            name='countPlayersInTeam',
+                result='returns an integer containing the number of players in the team, false if it could not be retrieved.' ,
+            )
         )
         ],
         client=[
@@ -85,13 +84,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is for returning the number of players in the specified team. """,
+                description='This function is for returning the number of players in the specified team.' ,
                 arguments={
                     "theTeam": """The team you wish to retrieve the player count of. """
                 },
-                result="""returns an integer containing the number of players in the team, false if it could not be retrieved. """,
-            ),
-            name='countPlayersInTeam',
+                result='returns an integer containing the number of players in the team, false if it could not be retrieved.' ,
+            )
         )
         ],
     ),
@@ -159,16 +157,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is for creating a new team, which can be used to group players. Players will not join the team until they are respawned. """,
+                description='This function is for creating a new team, which can be used to group players. Players will not join the team until they are respawned.' ,
                 arguments={
                     "teamName": """A string representing the teams name. """,
                     "colorR": """An integer representing the red color value. """,
                     "colorG": """An integer representing the green color value. """,
                     "colorB": """An integer representing the blue color value. """
                 },
-                result="""returns a team element if it was successfully created, false if invalid arguments are passed or a team with that name already exists. """,
-            ),
-            name='createTeam',
+                result='returns a team element if it was successfully created, false if invalid arguments are passed or a team with that name already exists.' ,
+            )
         )
         ],
         client=[
@@ -209,13 +206,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves all the players of the specified team. """,
+                description='This function retrieves all the players of the specified team.' ,
                 arguments={
                     "theTeam": """The team you wish to retrieve all the players from. """
                 },
-                result="""returns a table of all the players in the team, or an empty one if there are none else false if invalid arguments are passed. """,
-            ),
-            name='getPlayersInTeam',
+                result='returns a table of all the players in the team, or an empty one if there are none else false if invalid arguments are passed.' ,
+            )
         )
         ],
         client=[
@@ -251,13 +247,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves all the players of the specified team. """,
+                description='This function retrieves all the players of the specified team.' ,
                 arguments={
                     "theTeam": """The team you wish to retrieve all the players from. """
                 },
-                result="""returns a table of all the players in the team, or an empty one if there are none else false if invalid arguments are passed. """,
-            ),
-            name='getPlayersInTeam',
+                result='returns a table of all the players in the team, or an empty one if there are none else false if invalid arguments are passed.' ,
+            )
         )
         ],
     ),
@@ -295,13 +290,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the current team a player is on. """,
+                description='This function gets the current team a player is on.' ,
                 arguments={
                     "thePlayer": """: The player whose team you want to find out. """
                 },
-                result="""returns a team element representing the team the player is on, false if the player is not part of a team. """,
-            ),
-            name='getPlayerTeam',
+                result='returns a team element representing the team the player is on, false if the player is not part of a team.' ,
+            )
         )
         ],
         client=[
@@ -337,13 +331,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the current team a player is on. """,
+                description='This function gets the current team a player is on.' ,
                 arguments={
                     "thePlayer": """: The player whose team you want to find out. """
                 },
-                result="""returns a team element representing the team the player is on, false if the player is not part of a team. """,
-            ),
-            name='getPlayerTeam',
+                result='returns a team element representing the team the player is on, false if the player is not part of a team.' ,
+            )
         )
         ],
     ),
@@ -389,13 +382,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the color of a team. """,
+                description='This function retrieves the color of a team.' ,
                 arguments={
                     "theTeam": """The team you want to get the color of. """
                 },
-                result="""returns 3 integers representing the red, green, and blue color components of the team if its valid, false otherwise. """,
-            ),
-            name='getTeamColor',
+                result='returns 3 integers representing the red, green, and blue color components of the team if its valid, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -439,13 +431,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the color of a team. """,
+                description='This function retrieves the color of a team.' ,
                 arguments={
                     "theTeam": """The team you want to get the color of. """
                 },
-                result="""returns 3 integers representing the red, green, and blue color components of the team if its valid, false otherwise. """,
-            ),
-            name='getTeamColor',
+                result='returns 3 integers representing the red, green, and blue color components of the team if its valid, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -483,13 +474,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function tells you if friendly fire is turned on for the specified team. """,
+                description='This function tells you if friendly fire is turned on for the specified team.' ,
                 arguments={
                     "theTeam": """The team object that will be checked """
                 },
-                result="""returns true if friendly fire is on for the specified team, false if it is turned off or if invalid arguments are specified. """,
-            ),
-            name='getTeamFriendlyFire',
+                result='returns true if friendly fire is on for the specified team, false if it is turned off or if invalid arguments are specified.' ,
+            )
         )
         ],
         client=[
@@ -525,13 +515,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function tells you if friendly fire is turned on for the specified team. """,
+                description='This function tells you if friendly fire is turned on for the specified team.' ,
                 arguments={
                     "theTeam": """The team object that will be checked """
                 },
-                result="""returns true if friendly fire is on for the specified team, false if it is turned off or if invalid arguments are specified. """,
-            ),
-            name='getTeamFriendlyFire',
+                result='returns true if friendly fire is on for the specified team, false if it is turned off or if invalid arguments are specified.' ,
+            )
         )
         ],
     ),
@@ -569,13 +558,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function finds a team element using the provided team name. """,
+                description='This function finds a team element using the provided team name.' ,
                 arguments={
                     "teamName": """A string determining the name of the team you wish to find. """
                 },
-                result="""returns the team element if it was found, false otherwise. """,
-            ),
-            name='getTeamFromName',
+                result='returns the team element if it was found, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -611,13 +599,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function finds a team element using the provided team name. """,
+                description='This function finds a team element using the provided team name.' ,
                 arguments={
                     "teamName": """A string determining the name of the team you wish to find. """
                 },
-                result="""returns the team element if it was found, false otherwise. """,
-            ),
-            name='getTeamFromName',
+                result='returns the team element if it was found, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -655,13 +642,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the team name of a team object. """,
+                description='This function gets the team name of a team object.' ,
                 arguments={
                     "theTeam": """The team you want to retrieve the name of. """
                 },
-                result="""returns a string representing the teams name if the team object was valid, false otherwise. """,
-            ),
-            name='getTeamName',
+                result='returns a string representing the teams name if the team object was valid, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -697,13 +683,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the team name of a team object. """,
+                description='This function gets the team name of a team object.' ,
                 arguments={
                     "theTeam": """The team you want to retrieve the name of. """
                 },
-                result="""returns a string representing the teams name if the team object was valid, false otherwise. """,
-            ),
-            name='getTeamName',
+                result='returns a string representing the teams name if the team object was valid, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -751,14 +736,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function adds a player to an existing team. The player will automatically be removed from his current team if hes on one. """,
+                description='This function adds a player to an existing team. The player will automatically be removed from his current team if hes on one.' ,
                 arguments={
                     "thePlayer": """The player you wish to add to a team. """,
                     "theTeam": """The team you want to add the player to, or nil if you wish to unassign a player from his team. """
                 },
-                result="""returns true if the player was successfully added to the specified team or removed from his previous one, false otherwise. """,
-            ),
-            name='setPlayerTeam',
+                result='returns true if the player was successfully added to the specified team or removed from his previous one, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -829,16 +813,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is for setting the color of a specified team. This color is shown, for example, in the team players nametags. """,
+                description='This function is for setting the color of a specified team. This color is shown, for example, in the team players nametags.' ,
                 arguments={
                     "theTeam": """The team you want to change the color of. """,
                     "colorR": """An integer representing the red color value, from 0 to 255. """,
                     "colorG": """An integer representing the green color value, from 0 to 255. """,
                     "colorB": """An integer representing the blue color value, from 0 to 255. """
                 },
-                result="""returns true if the team is valid and the color is different, otherwise false. """,
-            ),
-            name='setTeamColor',
+                result='returns true if the team is valid and the color is different, otherwise false.' ,
+            )
         )
         ],
         client=[
@@ -889,14 +872,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the friendly fire value for the specified team. """,
+                description='This function sets the friendly fire value for the specified team.' ,
                 arguments={
                     "theTeam": """The  team that will have friendly fire set """,
                     "friendlyFire": """A boolean denoting whether the players from the same team can kill each other (true) or whether the players cant kill each other (false). """
                 },
-                result="""returns true if the friendly fire value is set for the specified team, false if the friendly fire value cant be set for the specified team or if invalid arguments are specified. """,
-            ),
-            name='setTeamFriendlyFire',
+                result='returns true if the friendly fire value is set for the specified team, false if the friendly fire value cant be set for the specified team or if invalid arguments are specified.' ,
+            )
         )
         ],
         client=[
@@ -947,14 +929,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set a teams name. """,
+                description='This function is used to set a teams name.' ,
                 arguments={
                     "theTeam": """The team you want to change the name of. """,
                     "newName": """A string representing the name you want the team to be called. """
                 },
-                result="""returns true if the team was valid and the name was changed, false otherwise. """,
-            ),
-            name='setTeamName',
+                result='returns true if the team was valid and the name was changed, false otherwise.' ,
+            )
         )
         ],
         client=[

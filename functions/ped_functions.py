@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -73,16 +73,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the current clothes on a ped. """,
+                description='This function is used to set the current clothes on a ped.' ,
                 arguments={
                     "thePed": """: The ped whose clothes you want to change. """,
                     "clothesTexture": """: A string determining the clothes texture that will be added. See the CJ Clothes|clothes catalog. """,
                     "clothesModel": """: A string determining the clothes model that will be added. See the CJ Clothes|clothes catalog. """,
                     "clothesType": """: A integer representing the clothes slot/type the clothes should be added to. See the CJ Clothes|clothes catalog. """
                 },
-                result="""this function returns true if the clothes were successfully added to the ped, false otherwise. """,
-            ),
-            name='addPedClothes',
+                result='this function returns true if the clothes were successfully added to the ped, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -148,16 +147,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to set the current clothes on a ped. """,
+                description='This function is used to set the current clothes on a ped.' ,
                 arguments={
                     "thePed": """: The ped whose clothes you want to change. """,
                     "clothesTexture": """: A string determining the clothes texture that will be added. See the CJ Clothes|clothes catalog. """,
                     "clothesModel": """: A string determining the clothes model that will be added. See the CJ Clothes|clothes catalog. """,
                     "clothesType": """: A integer representing the clothes slot/type the clothes should be added to. See the CJ Clothes|clothes catalog. """
                 },
-                result="""this function returns true if the clothes were successfully added to the ped, false otherwise. """,
-            ),
-            name='addPedClothes',
+                result='this function returns true if the clothes were successfully added to the ped, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -198,13 +196,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the given ped can fall off bikes. """,
+                description='This function checks if the given ped can fall off bikes.' ,
                 arguments={
                     "thePed": """the ped you want to check. """
                 },
-                result="""returns true if the ped can be knocked off bikes, false if he cannot or an invalid element was passed. """,
-            ),
-            name='canPedBeKnockedOffBike',
+                result='returns true if the ped can be knocked off bikes, false if he cannot or an invalid element was passed.' ,
+            )
         )
         ],
     ),
@@ -292,7 +289,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates a Ped in the GTA world. """,
+                description='Creates a Ped in the GTA world.' ,
                 arguments={
                     "modelid": """A whole integer specifying the Character_Skins|GTASA skin ID. """,
                     "x": """A floating point number representing the X coordinate on the map. """,
@@ -301,9 +298,8 @@ DUMP_PARTIAL = [
                     "rot": """A floating point number representing the rotation in degrees. """,
                     "synced": """A boolean value representing whether or not the ped will be synced. Disabling the sync might be useful for frozen or static peds to increase the server performance. """
                 },
-                result=""" """,
-            ),
-            name='createPed',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -379,7 +375,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Creates a Ped in the GTA world. """,
+                description='Creates a Ped in the GTA world.' ,
                 arguments={
                     "modelid": """A whole integer specifying the Character_Skins|GTASA skin ID. """,
                     "x": """A floating point number representing the X coordinate on the map. """,
@@ -387,9 +383,8 @@ DUMP_PARTIAL = [
                     "z": """A floating point number representing the Z coordinate on the map. """,
                     "rot": """A floating point number representing the rotation in degrees. """
                 },
-                result=""" """,
-            ),
-            name='createPed',
+                result='' ,
+            )
         )
         ],
     ),
@@ -437,14 +432,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns an integer that contains the ammo in a specified peds weapon. See weapon|Weapon Info """,
+                description='This function returns an integer that contains the ammo in a specified peds weapon. See weapon|Weapon Info' ,
                 arguments={
                     "thePed": """The ped whose ammo you want to check. """,
                     "weaponSlot": """an integer representing the weapon slot (set to the peds currently selected slot if not specified). """
                 },
-                result="""returns an int containing the amount of ammo in the specified peds currently selected or specified clip, or 0 if the ped specified is invalid. """,
-            ),
-            name='getPedAmmoInClip',
+                result='returns an int containing the amount of ammo in the specified peds currently selected or specified clip, or 0 if the ped specified is invalid.' ,
+            )
         )
         ],
         client=[
@@ -490,14 +484,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns an integer that contains the ammo in a specified peds weapon. See weapon|Weapon Info """,
+                description='This function returns an integer that contains the ammo in a specified peds weapon. See weapon|Weapon Info' ,
                 arguments={
                     "thePed": """The ped whose ammo you want to check. """,
                     "weaponSlot": """an integer representing the weapon slot (set to the peds currently selected slot if not specified). """
                 },
-                result="""returns an int containing the amount of ammo in the specified peds currently selected or specified clip, or 0 if the ped specified is invalid. """,
-            ),
-            name='getPedAmmoInClip',
+                result='returns an int containing the amount of ammo in the specified peds currently selected or specified clip, or 0 if the ped specified is invalid.' ,
+            )
         )
         ],
     ),
@@ -558,15 +551,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function retrieves the analog control state of a ped, as set by setPedAnalogControlState. """,
+                description='This function retrieves the analog control state of a ped, as set by setPedAnalogControlState.' ,
                 arguments={
                     "thePed": """The ped you wish to retrieve the control state of. """,
                     "controlName": """The control. See control names for a list of possible controls. """,
                     "rawValue": """A bool indicating if it should return the raw player input value (will always return script value for non-player peds). """
                 },
-                result="""returns a float between 0 (full release) and 1 (full push) indicating the amount the control is pushed. """,
-            ),
-            name='getPedAnalogControlState',
+                result='returns a float between 0 (full release) and 1 (full push) indicating the amount the control is pushed.' ,
+            )
         )
         ],
     ),
@@ -611,13 +603,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the animation of a player or ped that was set using setPedAnimation. """,
+                description='Gets the animation of a player or ped that was set using setPedAnimation.' ,
                 arguments={
                     "thePed": """the player or ped you want to get the animations|animation of. """
                 },
-                result="""<syntaxhighlight lang=lua>string anim, string block, int time, bool loop, bool updateposition, bool interruptable, bool freezelastframe, int blendtime, bool restoretaskonanimend</syntaxhighlight> """,
-            ),
-            name='getPedAnimation',
+                result='<syntaxhighlight lang=lua>string anim, string block, int time, bool loop, bool updateposition, bool interruptable, bool freezelastframe, int blendtime, bool restoretaskonanimend</syntaxhighlight>' ,
+            )
         )
         ],
     ),
@@ -655,13 +646,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current armor of the specified ped. """,
+                description='This function returns the current armor of the specified ped.' ,
                 arguments={
                     "thePed": """The ped whose armor you want to check """
                 },
-                result="""a float with the armor, false if an invalid ped was given. """,
-            ),
-            name='getPedArmor',
+                result='a float with the armor, false if an invalid ped was given.' ,
+            )
         )
         ],
         client=[
@@ -697,13 +687,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current armor of the specified ped. """,
+                description='This function returns the current armor of the specified ped.' ,
                 arguments={
                     "thePed": """The ped whose armor you want to check """
                 },
-                result="""a float with the armor, false if an invalid ped was given. """,
-            ),
-            name='getPedArmor',
+                result='a float with the armor, false if an invalid ped was given.' ,
+            )
         )
         ],
     ),
@@ -762,7 +751,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the 3D world coordinates of a specific bone of a given ped. """,
+                description='Returns the 3D world coordinates of a specific bone of a given ped.' ,
                 arguments={
                     "thePed": """the ped you want to inspect. """,
                     "bone": """the number of the bone to get the position of.
@@ -797,9 +786,8 @@ DUMP_PARTIAL = [
                     "54": """BONE_RIGHTFOOT
 </div> """
                 },
-                result="""returns the x, y, z world position of the bone. """,
-            ),
-            name='getPedBonePosition',
+                result='returns the x, y, z world position of the bone.' ,
+            )
         )
         ],
     ),
@@ -840,13 +828,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the current camera rotation of a ped. """,
+                description='This function gets the current camera rotation of a ped.' ,
                 arguments={
                     "thePed": """the ped to retrieve the camera rotation of. """
                 },
-                result="""returns the camera rotation of the ped in degrees if successful. returns false if an invalid element was passed. """,
-            ),
-            name='getPedCameraRotation',
+                result='returns the camera rotation of the ped in degrees if successful. returns false if an invalid element was passed.' ,
+            )
         )
         ],
     ),
@@ -898,14 +885,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the current clothes texture and model of a certain type on a ped. """,
+                description='This function is used to get the current clothes texture and model of a certain type on a ped.' ,
                 arguments={
                     "thePed": """The ped whose clothes you want to retrieve. """,
                     "clothesType": """The type/slot of clothing you want to get. """
                 },
-                result="""this function returns 2 string|strings, the clothes texture and model. the first return value will be false if this players clothes type is empty or an invalid player was specified. """,
-            ),
-            name='getPedClothes',
+                result='this function returns 2 string|strings, the clothes texture and model. the first return value will be false if this players clothes type is empty or an invalid player was specified.' ,
+            )
         )
         ],
         client=[
@@ -955,14 +941,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the current clothes texture and model of a certain type on a ped. """,
+                description='This function is used to get the current clothes texture and model of a certain type on a ped.' ,
                 arguments={
                     "thePed": """The ped whose clothes you want to retrieve. """,
                     "clothesType": """The type/slot of clothing you want to get. """
                 },
-                result="""this function returns 2 string|strings, the clothes texture and model. the first return value will be false if this players clothes type is empty or an invalid player was specified. """,
-            ),
-            name='getPedClothes',
+                result='this function returns 2 string|strings, the clothes texture and model. the first return value will be false if this players clothes type is empty or an invalid player was specified.' ,
+            )
         )
         ],
     ),
@@ -1000,13 +985,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function detects the element a ped is standing on. This can be a vehicle or an object. """,
+                description='This function detects the element a ped is standing on. This can be a vehicle or an object.' ,
                 arguments={
                     "thePed": """The ped of which you want to get the element he is standing on. """
                 },
-                result="""returns an object or a vehicle if the ped is standing on one, false if he is touching none or an invalid element was passed. """,
-            ),
-            name='getPedContactElement',
+                result='returns an object or a vehicle if the ped is standing on one, false if he is touching none or an invalid element was passed.' ,
+            )
         )
         ],
         client=[
@@ -1042,13 +1026,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function detects the element a ped is standing on. This can be a vehicle or an object. """,
+                description='This function detects the element a ped is standing on. This can be a vehicle or an object.' ,
                 arguments={
                     "thePed": """The ped of which you want to get the element he is standing on. """
                 },
-                result="""returns an object or a vehicle if the ped is standing on one, false if he is touching none or an invalid element was passed. """,
-            ),
-            name='getPedContactElement',
+                result='returns an object or a vehicle if the ped is standing on one, false if he is touching none or an invalid element was passed.' ,
+            )
         )
         ],
     ),
@@ -1099,14 +1082,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Checks whether a ped or the localplayer has a certain control pressed. """,
+                description='Checks whether a ped or the localplayer has a certain control pressed.' ,
                 arguments={
                     "thePed": """the ped you want to check. """,
                     "control": """the control to get the status of. See control names for a list of valid names. """
                 },
-                result="""returns true if the ped is pressing the specified control, false if not or an invalid argument was passed. """,
-            ),
-            name='getPedControlState',
+                result='returns true if the ped is pressing the specified control, false if not or an invalid argument was passed.' ,
+            )
         )
         ],
     ),
@@ -1144,13 +1126,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Retrieves the fighting style a player/ped is currently using. """,
+                description='Retrieves the fighting style a player/ped is currently using.' ,
                 arguments={
                     "thePed": """the ped whose current fighting style ID you wish to retrieve. """
                 },
-                result="""returns the peds current fighting style as an integer id, false if it fails to retrieve a value. """,
-            ),
-            name='getPedFightingStyle',
+                result='returns the peds current fighting style as an integer id, false if it fails to retrieve a value.' ,
+            )
         )
         ],
         client=[
@@ -1186,13 +1167,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""Retrieves the fighting style a player/ped is currently using. """,
+                description='Retrieves the fighting style a player/ped is currently using.' ,
                 arguments={
                     "thePed": """the ped whose current fighting style ID you wish to retrieve. """
                 },
-                result="""returns the peds current fighting style as an integer id, false if it fails to retrieve a value. """,
-            ),
-            name='getPedFightingStyle',
+                result='returns the peds current fighting style as an integer id, false if it fails to retrieve a value.' ,
+            )
         )
         ],
     ),
@@ -1230,13 +1210,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current gravity for the specified ped. The default gravity is 0.008. """,
+                description='This function returns the current gravity for the specified ped. The default gravity is 0.008.' ,
                 arguments={
                     "thePed": """The ped whose gravity you want to check. """
                 },
-                result="""returns a float indicating the peds gravity, or false if the ped is invalid. default value is 0.008. """,
-            ),
-            name='getPedGravity',
+                result='returns a float indicating the peds gravity, or false if the ped is invalid. default value is 0.008.' ,
+            )
         )
         ],
         client=[
@@ -1280,13 +1259,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current move state for the specified ped. """,
+                description='This function returns the current move state for the specified ped.' ,
                 arguments={
                     "thePed": """The ped whose move state you want to know """
                 },
-                result="""returns a string indicating the peds move state, or false if the ped is not streamed in, the movement type is unknown, the ped is in a vehicle or the ped is invalid. """,
-            ),
-            name='getPedMoveState',
+                result='returns a string indicating the peds move state, or false if the ped is not streamed in, the movement type is unknown, the ped is in a vehicle or the ped is invalid.' ,
+            )
         )
         ],
     ),
@@ -1324,13 +1302,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the vehicle that the ped is currently in or is trying to enter, if any. """,
+                description='This function gets the vehicle that the ped is currently in or is trying to enter, if any.' ,
                 arguments={
                     "thePed": """: The ped whose vehicle youre looking up. """
                 },
-                result="""returns the vehicle that the specified ped is in, or false if the ped is not in a vehicle or is an invalid ped. """,
-            ),
-            name='getPedOccupiedVehicle',
+                result='returns the vehicle that the specified ped is in, or false if the ped is not in a vehicle or is an invalid ped.' ,
+            )
         )
         ],
         client=[
@@ -1366,13 +1343,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the vehicle that the ped is currently in or is trying to enter, if any. """,
+                description='This function gets the vehicle that the ped is currently in or is trying to enter, if any.' ,
                 arguments={
                     "thePed": """: The ped whose vehicle youre looking up. """
                 },
-                result="""returns the vehicle that the specified ped is in, or false if the ped is not in a vehicle or is an invalid ped. """,
-            ),
-            name='getPedOccupiedVehicle',
+                result='returns the vehicle that the specified ped is in, or false if the ped is not in a vehicle or is an invalid ped.' ,
+            )
         )
         ],
     ),
@@ -1410,18 +1386,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the seat that a specific ped is sitting in in a vehicle. """,
+                description='This function gets the seat that a specific ped is sitting in in a vehicle.' ,
                 arguments={
                     "thePed": """: The ped whose vehicle seat youre looking up. """
                 },
-                result="""* returns an integer containing the number of the seat that the ped is currently in:
-** 0: front-left
-** 1: front-right
-** 2: rear-left
-** 3: rear-right
-returns false if the ped is on foot, or the ped doesnt exist. """,
-            ),
-            name='getPedOccupiedVehicleSeat',
+                result='* returns an integer containing the number of the seat that the ped is currently in:\n** 0: front-left\n** 1: front-right\n** 2: rear-left\n** 3: rear-right\nreturns false if the ped is on foot, or the ped doesnt exist.' ,
+            )
         )
         ],
         client=[
@@ -1457,18 +1427,12 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets the seat that a specific ped is sitting in in a vehicle. """,
+                description='This function gets the seat that a specific ped is sitting in in a vehicle.' ,
                 arguments={
                     "thePed": """: The ped whose vehicle seat youre looking up. """
                 },
-                result="""* returns an integer containing the number of the seat that the ped is currently in:
-** 0: front-left
-** 1: front-right
-** 2: rear-left
-** 3: rear-right
-returns false if the ped is on foot, or the ped doesnt exist. """,
-            ),
-            name='getPedOccupiedVehicleSeat',
+                result='* returns an integer containing the number of the seat that the ped is currently in:\n** 0: front-left\n** 1: front-right\n** 2: rear-left\n** 3: rear-right\nreturns false if the ped is on foot, or the ped doesnt exist.' ,
+            )
         )
         ],
     ),
@@ -1509,13 +1473,12 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the current oxygen level of the specified ped. """,
+                description='This function returns the current oxygen level of the specified ped.' ,
                 arguments={
                     "thePed": """The ped whose oxygen level you want to check """
                 },
-                result="""a float with the oxygen level, false if an invalid ped was given. """,
-            ),
-            name='getPedOxygenLevel',
+                result='a float with the oxygen level, false if an invalid ped was given.' ,
+            )
         )
         ],
     ),
@@ -1556,13 +1519,12 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the name of a specified peds current simplest task.<br> """,
+                description='This function is used to get the name of a specified peds current simplest task.<br>' ,
                 arguments={
                     "thePed": """: The ped whose task you want to retrieve. """
                 },
-                result="""returns a string representing the name of the peds simplest, active task. """,
-            ),
-            name='getPedSimplestTask',
+                result='returns a string representing the name of the peds simplest, active task.' ,
+            )
         )
         ],
     ),
@@ -1610,14 +1572,13 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the value of the specified statistic of a specific ped. """,
+                description='This function returns the value of the specified statistic of a specific ped.' ,
                 arguments={
                     "thePed": """: The ped whose stat you want to retrieve. """,
                     "stat": """: A whole number determining the stat ID. """
                 },
-                result="""returns the value of the requested statistic. """,
-            ),
-            name='getPedStat',
+                result='returns the value of the requested statistic.' ,
+            )
         )
         ],
         client=[
@@ -1663,14 +1624,13 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns the value of the specified statistic of a specific ped. """,
+                description='This function returns the value of the specified statistic of a specific ped.' ,
                 arguments={
                     "thePed": """: The ped whose stat you want to retrieve. """,
                     "stat": """: A whole number determining the stat ID. """
                 },
-                result="""returns the value of the requested statistic. """,
-            ),
-            name='getPedStat',
+                result='returns the value of the requested statistic.' ,
+            )
         )
         ],
     ),
@@ -1708,18 +1668,12 @@ returns false if the ped is on foot, or the ped doesnt exist. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the element a ped is currently targeting. """,
+                description='This function is used to get the element a ped is currently targeting.' ,
                 arguments={
                     "thePed": """The ped whose target you want to retrieve. """
                 },
-                result="""returns the element thats being targeted, or false if there isnt one.
-this is only effective on physical gta elements, namely:
-* players
-* peds
-* vehicles
-* objects """,
-            ),
-            name='getPedTarget',
+                result='returns the element thats being targeted, or false if there isnt one.\nthis is only effective on physical gta elements, namely:\n* players\n* peds\n* vehicles\n* objects' ,
+            )
         )
         ],
         client=[
@@ -1755,18 +1709,12 @@ this is only effective on physical gta elements, namely:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get the element a ped is currently targeting. """,
+                description='This function is used to get the element a ped is currently targeting.' ,
                 arguments={
                     "thePed": """The ped whose target you want to retrieve. """
                 },
-                result="""returns the element thats being targeted, or false if there isnt one.
-this is only effective on physical gta elements, namely:
-* players
-* peds
-* vehicles
-* objects """,
-            ),
-            name='getPedTarget',
+                result='returns the element thats being targeted, or false if there isnt one.\nthis is only effective on physical gta elements, namely:\n* players\n* peds\n* vehicles\n* objects' ,
+            )
         )
         ],
     ),
@@ -1815,13 +1763,12 @@ this is only effective on physical gta elements, namely:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows retrieval of where a peds target is blocked. It will only be blocked if there is an obstacle within a peds target range. """,
+                description='This function allows retrieval of where a peds target is blocked. It will only be blocked if there is an obstacle within a peds target range.' ,
                 arguments={
                     "targetingPed": """This is the ped whose target collision you wish to retrieve """
                 },
-                result="""returns three floats, x,y,z, representing the position where the peds target collides, or false if it was unsuccessful. """,
-            ),
-            name='getPedTargetCollision',
+                result='returns three floats, x,y,z, representing the position where the peds target collides, or false if it was unsuccessful.' ,
+            )
         )
         ],
     ),
@@ -1870,13 +1817,12 @@ this is only effective on physical gta elements, namely:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows retrieval of the position where a peds target range ends, when he is aiming with a weapon. """,
+                description='This function allows retrieval of the position where a peds target range ends, when he is aiming with a weapon.' ,
                 arguments={
                     "targetingPed": """the ped who is targeting whose target end you wish to retrieve """
                 },
-                result="""returns three floats, x,y,z, representing the position where the peds target ends according to his range, or false if it was unsuccessful. """,
-            ),
-            name='getPedTargetEnd',
+                result='returns three floats, x,y,z, representing the position where the peds target ends according to his range, or false if it was unsuccessful.' ,
+            )
         )
         ],
     ),
@@ -1925,13 +1871,12 @@ this is only effective on physical gta elements, namely:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows retrieval of the position a peds target range begins, when he is aiming with a weapon. """,
+                description='This function allows retrieval of the position a peds target range begins, when he is aiming with a weapon.' ,
                 arguments={
                     "targetingPed": """The ped whose target start you wish to retrieve """
                 },
-                result="""returns three floats, x,y,z, representing the position where the peds target starts, or false if it was unsuccessful. """,
-            ),
-            name='getPedTargetStart',
+                result='returns three floats, x,y,z, representing the position where the peds target starts, or false if it was unsuccessful.' ,
+            )
         )
         ],
     ),
@@ -2004,8 +1949,7 @@ this is only effective on physical gta elements, namely:
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to get any simple or complex task of a certain type for a ped.
-It can provide feedback on all tasks relating to a ped. For example, while jumping, getPedSimplestTask will return TASK_SIMPLE_IN_AIR. If you wanted to know specifically if the player has jumped, you would use this function. If you did you will discover that while jumping Primary task 3 is TASK_COMPLEX_JUMP. """,
+                description='This function is used to get any simple or complex task of a certain type for a ped.\nIt can provide feedback on all tasks relating to a ped. For example, while jumping, getPedSimplestTask will return TASK_SIMPLE_IN_AIR. If you wanted to know specifically if the player has jumped, you would use this function. If you did you will discover that while jumping Primary task 3 is TASK_COMPLEX_JUMP.' ,
                 arguments={
                     "thePed": """: The ped whose task you want to retrieve. """,
                     "priority": """: A string determining which set of tasks you want to retrieve it from. This must be either primary or secondary. """,
@@ -2019,11 +1963,8 @@ It can provide feedback on all tasks relating to a ped. For example, while jumpi
                     "SECONDARY TASKS": """ """,
                     "5": """TASK_SECONDARY_IK """
                 },
-                result="""returns the name of the most complex task. see list of player tasks for valid strings. returns false if invalid arguments are specified or if there is no task of the type specified.
-<br>
-returns between 1 and 4 strings. the first string contains the name of the most complex task, with simpler sub-tasks being named in the following strings. see list of player tasks for valid strings. returns false if invalid arguments are specified or if there is no task of the type specified. """,
-            ),
-            name='getPedTask',
+                result='returns the name of the most complex task. see list of player tasks for valid strings. returns false if invalid arguments are specified or if there is no task of the type specified.\n<br>\nreturns between 1 and 4 strings. the first string contains the name of the most complex task, with simpler sub-tasks being named in the following strings. see list of player tasks for valid strings. returns false if invalid arguments are specified or if there is no task of the type specified.' ,
+            )
         )
         ],
     ),
@@ -2071,14 +2012,13 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns an integer that contains the total ammo in a specified peds weapon. See weapon|Weapon Info """,
+                description='This function returns an integer that contains the total ammo in a specified peds weapon. See weapon|Weapon Info' ,
                 arguments={
                     "thePed": """: The ped whose ammo you want to check. """,
                     "weaponSlot": """: an integer representing the weapon slot (set to the peds current slot if not given) """
                 },
-                result="""returns an int containing the total amount of ammo for the specified peds weapon, or 0 if the ped specified is invalid. """,
-            ),
-            name='getPedTotalAmmo',
+                result='returns an int containing the total amount of ammo for the specified peds weapon, or 0 if the ped specified is invalid.' ,
+            )
         )
         ],
         client=[
@@ -2124,14 +2064,13 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns an integer that contains the total ammo in a specified peds weapon. See weapon|Weapon Info """,
+                description='This function returns an integer that contains the total ammo in a specified peds weapon. See weapon|Weapon Info' ,
                 arguments={
                     "thePed": """: The ped whose ammo you want to check. """,
                     "weaponSlot": """: an integer representing the weapon slot (set to the peds current slot if not given) """
                 },
-                result="""returns an int containing the total amount of ammo for the specified peds weapon, or 0 if the ped specified is invalid. """,
-            ),
-            name='getPedTotalAmmo',
+                result='returns an int containing the total amount of ammo for the specified peds weapon, or 0 if the ped specified is invalid.' ,
+            )
         )
         ],
     ),
@@ -2176,13 +2115,12 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the current voice of a ped. """,
+                description='Gets the current voice of a ped.' ,
                 arguments={
                     "thePed": """the ped to get the voice of. """
                 },
-                result="""if successul, returns the current voice type name and the voice name of the ped (see ped voices for possible names). returns false in case of failure. """,
-            ),
-            name='getPedVoice',
+                result='if successul, returns the current voice type name and the voice name of the ped (see ped voices for possible names). returns false in case of failure.' ,
+            )
         )
         ],
     ),
@@ -2220,13 +2158,12 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "thePed": """the ped whose walking style to retrieve. """
                 },
-                result="""returns the walking style id if successful, false otherwise. the possible walking styles are as follows: """,
-            ),
-            name='getPedWalkingStyle',
+                result='returns the walking style id if successful, false otherwise. the possible walking styles are as follows:' ,
+            )
         )
         ],
         client=[
@@ -2262,13 +2199,12 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "thePed": """the ped whose walking style to retrieve. """
                 },
-                result="""returns the walking style id if successful, false otherwise. the possible walking styles are as follows: """,
-            ),
-            name='getPedWalkingStyle',
+                result='returns the walking style id if successful, false otherwise. the possible walking styles are as follows:' ,
+            )
         )
         ],
     ),
@@ -2316,15 +2252,13 @@ returns between 1 and 4 strings. the first string contains the name of the most 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function tells you which weapon type is in a certain weapon|weapon slot of a ped. """,
+                description='This function tells you which weapon type is in a certain weapon|weapon slot of a ped.' ,
                 arguments={
                     "thePed": """: the ped you want to get the weapon type from. """,
                     "weaponSlot": """: an integer representing the weapon|weapon slot (set to the peds current slot if not given). """
                 },
-                result="""returns an int indicating the type of the weapon the ped has in the specified slot. if the slot is empty, it returns 0.
-it should be noted that if a ped runs out of ammo for a weapon, it will still return the id of that weapon in the slot (even if it appears as if the ped does not have a weapon at all), though getpedtotalammo will return 0.  therefore, getpedtotalammo should be used in conjunction with getpedweapon in order to check if a ped has a weapon. """,
-            ),
-            name='getPedWeapon',
+                result='returns an int indicating the type of the weapon the ped has in the specified slot. if the slot is empty, it returns 0.\nit should be noted that if a ped runs out of ammo for a weapon, it will still return the id of that weapon in the slot (even if it appears as if the ped does not have a weapon at all), though getpedtotalammo will return 0.  therefore, getpedtotalammo should be used in conjunction with getpedweapon in order to check if a ped has a weapon.' ,
+            )
         )
         ],
         client=[
@@ -2370,15 +2304,13 @@ it should be noted that if a ped runs out of ammo for a weapon, it will still re
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function tells you which weapon type is in a certain weapon|weapon slot of a ped. """,
+                description='This function tells you which weapon type is in a certain weapon|weapon slot of a ped.' ,
                 arguments={
                     "thePed": """: the ped you want to get the weapon type from. """,
                     "weaponSlot": """: an integer representing the weapon|weapon slot (set to the peds current slot if not given). """
                 },
-                result="""returns an int indicating the type of the weapon the ped has in the specified slot. if the slot is empty, it returns 0.
-it should be noted that if a ped runs out of ammo for a weapon, it will still return the id of that weapon in the slot (even if it appears as if the ped does not have a weapon at all), though getpedtotalammo will return 0.  therefore, getpedtotalammo should be used in conjunction with getpedweapon in order to check if a ped has a weapon. """,
-            ),
-            name='getPedWeapon',
+                result='returns an int indicating the type of the weapon the ped has in the specified slot. if the slot is empty, it returns 0.\nit should be noted that if a ped runs out of ammo for a weapon, it will still return the id of that weapon in the slot (even if it appears as if the ped does not have a weapon at all), though getpedtotalammo will return 0.  therefore, getpedtotalammo should be used in conjunction with getpedweapon in order to check if a ped has a weapon.' ,
+            )
         )
         ],
     ),
@@ -2427,14 +2359,12 @@ it should be noted that if a ped runs out of ammo for a weapon, it will still re
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns the world position of the muzzle of the weapon that a ped is currently carrying. The weapon muzzle is the end of the gun barrel where the bullets/rockets/... come out.
-The position may not be accurate if the ped is off screen. """,
+                description='Returns the world position of the muzzle of the weapon that a ped is currently carrying. The weapon muzzle is the end of the gun barrel where the bullets/rockets/... come out.\nThe position may not be accurate if the ped is off screen.' ,
                 arguments={
                     "thePed": """the ped whose weapon muzzle position to retrieve. """
                 },
-                result="""if successful, returns the x/y/z coordinates of the weapon muzzle. returns false otherwise. """,
-            ),
-            name='getPedWeaponMuzzlePosition',
+                result='if successful, returns the x/y/z coordinates of the weapon muzzle. returns false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2472,13 +2402,12 @@ The position may not be accurate if the ped is off screen. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets a peds selected weapon slot. """,
+                description='This function gets a peds selected weapon slot.' ,
                 arguments={
                     "thePed": """the ped to get the current weapon slot of. """
                 },
-                result="""returns the selected weapon slot id on success, false otherwise. """,
-            ),
-            name='getPedWeaponSlot',
+                result='returns the selected weapon slot id on success, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2514,13 +2443,12 @@ The position may not be accurate if the ped is off screen. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gets a peds selected weapon slot. """,
+                description='This function gets a peds selected weapon slot.' ,
                 arguments={
                     "thePed": """the ped to get the current weapon slot of. """
                 },
-                result="""returns the selected weapon slot id on success, false otherwise. """,
-            ),
-            name='getPedWeaponSlot',
+                result='returns the selected weapon slot id on success, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2549,13 +2477,12 @@ The position may not be accurate if the ped is off screen. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns all valid ped models. """,
+                description='This function returns all valid ped models.' ,
                 arguments={
                     
                 },
-                result="""returns a table with all valid ped models. """,
-            ),
-            name='getValidPedModels',
+                result='returns a table with all valid ped models.' ,
+            )
         )
         ],
         client=[
@@ -2582,13 +2509,12 @@ The position may not be accurate if the ped is off screen. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function returns all valid ped models. """,
+                description='This function returns all valid ped models.' ,
                 arguments={
                     
                 },
-                result="""returns a table with all valid ped models. """,
-            ),
-            name='getValidPedModels',
+                result='returns a table with all valid ped models.' ,
+            )
         )
         ],
     ),
@@ -2659,21 +2585,15 @@ The position may not be accurate if the ped is off screen. """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function gives the specified weapon to the specified ped. This function cant be used on players, use giveWeapon for that.
-This function is mainly useful for client side created peds however you can use it on a server side ped, though note that the weapon wouldnt be synced between clients unless your script gives the weapon to the ped on every client.
-There is an optional argument to specify ammunition and whether to set as the current weapon. If you dont specify an ammo value it will give 30 ammo by default and for a melee weapon you can specify just 1 or above.
-*When setting ammo for Weapon|weapons in slot 0,1,10,11 or 12 the maximum ammo is 1
-*When setting ammo for Weapon|weapons in slot 3,4,5 the ammo is added
-*When setting ammo for Weapon|weapons in slot 2,6,7,8,9 and the slot weapon is changing, the ammo is replaced """,
+                description='This function gives the specified weapon to the specified ped. This function cant be used on players, use giveWeapon for that.\nThis function is mainly useful for client side created peds however you can use it on a server side ped, though note that the weapon wouldnt be synced between clients unless your script gives the weapon to the ped on every client.\nThere is an optional argument to specify ammunition and whether to set as the current weapon. If you dont specify an ammo value it will give 30 ammo by default and for a melee weapon you can specify just 1 or above.\n*When setting ammo for Weapon|weapons in slot 0,1,10,11 or 12 the maximum ammo is 1\n*When setting ammo for Weapon|weapons in slot 3,4,5 the ammo is added\n*When setting ammo for Weapon|weapons in slot 2,6,7,8,9 and the slot weapon is changing, the ammo is replaced' ,
                 arguments={
                     "thePed": """A ped element. """,
                     "weapon": """A whole number integer that refers to a Weapon ID. Click Weapon|here for a list of possible weapon IDs. """,
                     "ammo": """A whole number integer serving as the ammo amount for the given weapon. For weapons that do not require ammo, such as melee, this should be at least 1. """,
                     "setAsCurrent": """A boolean value determining whether or not the weapon will be set as the peds currently selected weapon. """
                 },
-                result="""returns true if weapon was successfully given to the ped, false otherwise. """,
-            ),
-            name='givePedWeapon',
+                result='returns true if weapon was successfully given to the ped, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2714,13 +2634,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "thePed": """the player or ped whose bleeding effect state you want to get. """
                 },
-                result="""returns true if the player or ped is bleeding, false otherwise. """,
-            ),
-            name='isPedBleeding',
+                result='returns true if the player or ped is bleeding, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2758,13 +2677,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the specified ped is choking (coughing) or not. This happens as a result of weapons that produce smoke - smoke grenades, fire extinguisher and the spray can. """,
+                description='This function checks if the specified ped is choking (coughing) or not. This happens as a result of weapons that produce smoke - smoke grenades, fire extinguisher and the spray can.' ,
                 arguments={
                     "thePed": """: The ped you wish to check """
                 },
-                result="""returns true if the ped is choking, false otherwise. """,
-            ),
-            name='isPedChoking',
+                result='returns true if the ped is choking, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2800,13 +2718,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the specified ped is choking (coughing) or not. This happens as a result of weapons that produce smoke - smoke grenades, fire extinguisher and the spray can. """,
+                description='This function checks if the specified ped is choking (coughing) or not. This happens as a result of weapons that produce smoke - smoke grenades, fire extinguisher and the spray can.' ,
                 arguments={
                     "thePed": """: The ped you wish to check """
                 },
-                result="""returns true if the ped is choking, false otherwise. """,
-            ),
-            name='isPedChoking',
+                result='returns true if the ped is choking, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2844,13 +2761,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the specified ped is dead or not. """,
+                description='This function checks if the specified ped is dead or not.' ,
                 arguments={
                     "thePed": """: the ped you want to check up on. """
                 },
-                result="""returns true if the ped is dead, false otherwise. """,
-            ),
-            name='isPedDead',
+                result='returns true if the ped is dead, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2886,13 +2802,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the specified ped is dead or not. """,
+                description='This function checks if the specified ped is dead or not.' ,
                 arguments={
                     "thePed": """: the ped you want to check up on. """
                 },
-                result="""returns true if the ped is dead, false otherwise. """,
-            ),
-            name='isPedDead',
+                result='returns true if the ped is dead, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -2930,13 +2845,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the ped is in the driveby state. """,
+                description='This function checks if the ped is in the driveby state.' ,
                 arguments={
                     "thePed": """The ped element whose state is to be checked. """
                 },
-                result="""returns true if the driveby state is enabled, false otherwise. """,
-            ),
-            name='isPedDoingGangDriveby',
+                result='returns true if the driveby state is enabled, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -2972,13 +2886,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the ped is in the driveby state. """,
+                description='This function checks if the ped is in the driveby state.' ,
                 arguments={
                     "thePed": """The ped element whose state is to be checked. """
                 },
-                result="""returns true if the driveby state is enabled, false otherwise. """,
-            ),
-            name='isPedDoingGangDriveby',
+                result='returns true if the driveby state is enabled, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3029,14 +2942,13 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the specified ped is carrying out a certain List of player tasks|task. """,
+                description='This function checks if the specified ped is carrying out a certain List of player tasks|task.' ,
                 arguments={
                     "thePed": """: The ped you want to check. """,
                     "taskName": """: A string containing the name of the List of player tasks|task youre checking for. """
                 },
-                result="""returns true if the player is currently doing the task, false otherwise. """,
-            ),
-            name='isPedDoingTask',
+                result='returns true if the player is currently doing the task, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3074,13 +2986,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the specified ped is ducked (crouched) or not. """,
+                description='This function checks if the specified ped is ducked (crouched) or not.' ,
                 arguments={
                     "thePed": """: The ped to check. """
                 },
-                result="""returns true if the ped is ducked, false otherwise. """,
-            ),
-            name='isPedDucked',
+                result='returns true if the ped is ducked, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -3116,13 +3027,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the specified ped is ducked (crouched) or not. """,
+                description='This function checks if the specified ped is ducked (crouched) or not.' ,
                 arguments={
                     "thePed": """: The ped to check. """
                 },
-                result="""returns true if the ped is ducked, false otherwise. """,
-            ),
-            name='isPedDucked',
+                result='returns true if the ped is ducked, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3163,13 +3073,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if player feets are bleeding. """,
+                description='This function checks if player feets are bleeding.' ,
                 arguments={
                     "thePlayer": """The player to give bloody foot prints to. """
                 },
-                result="""returns true if feets are bleeding, false otherwise """,
-            ),
-            name='isPedFootBloodEnabled',
+                result='returns true if feets are bleeding, false otherwise' ,
+            )
         )
         ],
     ),
@@ -3207,13 +3116,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""With this function, you can check if a ped has a head or not. """,
+                description='With this function, you can check if a ped has a head or not.' ,
                 arguments={
                     "thePed": """: The ped to check. """
                 },
-                result="""returns true if the ped is headless, false otherwise. """,
-            ),
-            name='isPedHeadless',
+                result='returns true if the ped is headless, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -3249,13 +3157,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""With this function, you can check if a ped has a head or not. """,
+                description='With this function, you can check if a ped has a head or not.' ,
                 arguments={
                     "thePed": """: The ped to check. """
                 },
-                result="""returns true if the ped is headless, false otherwise. """,
-            ),
-            name='isPedHeadless',
+                result='returns true if the ped is headless, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3293,13 +3200,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""Checks whether or not a given ped is currently in a vehicle. """,
+                description='Checks whether or not a given ped is currently in a vehicle.' ,
                 arguments={
                     "thePed": """the ped you want to check. """
                 },
-                result="""returns true if the ped is in a vehicle, false if he is on foot or an invalid element was passed. """,
-            ),
-            name='isPedInVehicle',
+                result='returns true if the ped is in a vehicle, false if he is on foot or an invalid element was passed.' ,
+            )
         )
         ],
         client=[
@@ -3335,13 +3241,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""Checks whether or not a given ped is currently in a vehicle. """,
+                description='Checks whether or not a given ped is currently in a vehicle.' ,
                 arguments={
                     "thePed": """the ped you want to check. """
                 },
-                result="""returns true if the ped is in a vehicle, false if he is on foot or an invalid element was passed. """,
-            ),
-            name='isPedInVehicle',
+                result='returns true if the ped is in a vehicle, false if he is on foot or an invalid element was passed.' ,
+            )
         )
         ],
     ),
@@ -3379,13 +3284,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the specified ped is on fire or not. """,
+                description='This function checks if the specified ped is on fire or not.' ,
                 arguments={
                     "thePed": """: The ped to check. """
                 },
-                result="""returns true if the ped is on fire, false otherwise. """,
-            ),
-            name='isPedOnFire',
+                result='returns true if the ped is on fire, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -3421,13 +3325,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks if the specified ped is on fire or not. """,
+                description='This function checks if the specified ped is on fire or not.' ,
                 arguments={
                     "thePed": """: The ped to check. """
                 },
-                result="""returns true if the ped is on fire, false otherwise. """,
-            ),
-            name='isPedOnFire',
+                result='returns true if the ped is on fire, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3465,13 +3368,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to determine whether or not a ped is on the ground. This is for on-foot usage only. """,
+                description='This function is used to determine whether or not a ped is on the ground. This is for on-foot usage only.' ,
                 arguments={
                     "thePed": """The ped you are checking. """
                 },
-                result="""returns true if the ped is on foot and on the ground, false otherwise, even if he is in a car that stands still or on object outside world map. """,
-            ),
-            name='isPedOnGround',
+                result='returns true if the ped is on foot and on the ground, false otherwise, even if he is in a car that stands still or on object outside world map.' ,
+            )
         )
         ],
         client=[
@@ -3507,13 +3409,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to determine whether or not a ped is on the ground. This is for on-foot usage only. """,
+                description='This function is used to determine whether or not a ped is on the ground. This is for on-foot usage only.' ,
                 arguments={
                     "thePed": """The ped you are checking. """
                 },
-                result="""returns true if the ped is on foot and on the ground, false otherwise, even if he is in a car that stands still or on object outside world map. """,
-            ),
-            name='isPedOnGround',
+                result='returns true if the ped is on foot and on the ground, false otherwise, even if he is in a car that stands still or on object outside world map.' ,
+            )
         )
         ],
     ),
@@ -3554,13 +3455,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to determine whether or not a ped is currently reloading their weapon. Useful to stop certain quick reload exploits.}} """,
+                description='This function is used to determine whether or not a ped is currently reloading their weapon. Useful to stop certain quick reload exploits.}}' ,
                 arguments={
                     "thePed": """The ped you are checking. """
                 },
-                result="""returns true if the ped is currently reloading a weapon, false otherwise. """,
-            ),
-            name='isPedReloadingWeapon',
+                result='returns true if the ped is currently reloading a weapon, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -3592,13 +3492,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function checks whether health target markers are drawn as set by setPedTargetingMarkerEnabled or not. """,
+                description='This function checks whether health target markers are drawn as set by setPedTargetingMarkerEnabled or not.' ,
                 arguments={
                     
                 },
-                result="""returns true if the health target markers are enabled, false if not. """,
-            ),
-            name='isPedTargetingMarkerEnabled',
+                result='returns true if the health target markers are enabled, false if not.' ,
+            )
         )
         ],
     ),
@@ -3636,13 +3535,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "thePed": """the ped you want to check """
                 },
-                result="""returns true if the ped is carrying a jetpack, false if he is not or an invalid element was passed. """,
-            ),
-            name='isPedWearingJetpack',
+                result='returns true if the ped is carrying a jetpack, false if he is not or an invalid element was passed.' ,
+            )
         )
         ],
         client=[
@@ -3678,13 +3576,12 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "thePed": """the ped you want to check """
                 },
-                result="""returns true if the ped is carrying a jetpack, false if he is not or an invalid element was passed. """,
-            ),
-            name='isPedWearingJetpack',
+                result='returns true if the ped is carrying a jetpack, false if he is not or an invalid element was passed.' ,
+            )
         )
         ],
     ),
@@ -3762,8 +3659,7 @@ There is an optional argument to specify ammunition and whether to set as the cu
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function kills the specified ped.
-From v1.5.3 onwards this function is now available client side. Only works on client side peds. """,
+                description='This function kills the specified ped.\nFrom v1.5.3 onwards this function is now available client side. Only works on client side peds.' ,
                 arguments={
                     "thePed": """The ped to kill """,
                     "theKiller": """The ped responsible for the kill """,
@@ -3771,9 +3667,8 @@ From v1.5.3 onwards this function is now available client side. Only works on cl
                     "bodyPart": """The ID of the body part that should appear to have been hit by the weapon (doesnt affect how they die) """,
                     "stealth": """Boolean value, representing whether or not this a stealth kill """
                 },
-                result="""returns true if the ped was killed, false if the ped specified could not be killed or is invalid. """,
-            ),
-            name='killPed',
+                result='returns true if the ped was killed, false if the ped specified could not be killed or is invalid.' ,
+            )
         )
         ],
         client=[
@@ -3849,8 +3744,7 @@ From v1.5.3 onwards this function is now available client side. Only works on cl
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function kills the specified ped.
-From v1.5.3 onwards this function is now available client side. Only works on client side peds. """,
+                description='This function kills the specified ped.\nFrom v1.5.3 onwards this function is now available client side. Only works on client side peds.' ,
                 arguments={
                     "thePed": """The ped to kill """,
                     "theKiller": """The ped responsible for the kill """,
@@ -3858,9 +3752,8 @@ From v1.5.3 onwards this function is now available client side. Only works on cl
                     "bodyPart": """The ID of the body part that should appear to have been hit by the weapon (doesnt affect how they die) """,
                     "stealth": """Boolean value, representing whether or not this a stealth kill """
                 },
-                result="""returns true if the ped was killed, false if the ped specified could not be killed or is invalid. """,
-            ),
-            name='killPed',
+                result='returns true if the ped was killed, false if the ped specified could not be killed or is invalid.' ,
+            )
         )
         ],
     ),
@@ -3898,20 +3791,12 @@ From v1.5.3 onwards this function is now available client side. Only works on cl
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function makes a pedestrian reload their weapon. """,
+                description='This function makes a pedestrian reload their weapon.' ,
                 arguments={
                     "thePed": """The ped who will reload their weapon. """
                 },
-                result="""returns true if the pedestrian was made to reload, or false if invalid arguments were passed or that pedestrian has a weapon which cannot be reloaded.
-note: this will fail but return true if
-1) the ped is crouched and moving
-2) the ped is using a weapon without clip ammo (or minigun/flamethrower/fire
-extinguisher)
-3) the ped is using his weapon (shooting/aiming)
-4) the ped moved while crouching recently
-due to these circumstances causing problems with this function """,
-            ),
-            name='reloadPedWeapon',
+                result='returns true if the pedestrian was made to reload, or false if invalid arguments were passed or that pedestrian has a weapon which cannot be reloaded.\nnote: this will fail but return true if\n1) the ped is crouched and moving\n2) the ped is using a weapon without clip ammo (or minigun/flamethrower/fire\nextinguisher)\n3) the ped is using his weapon (shooting/aiming)\n4) the ped moved while crouching recently\ndue to these circumstances causing problems with this function' ,
+            )
         )
         ],
         client=[
@@ -3982,16 +3867,15 @@ due to these circumstances causing problems with this function """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to remove the current clothes of a certain type on a ped. It will remove them if the clothesTexture and clothesModel arent specified, or if they match the current clothes on that slot. """,
+                description='This function is used to remove the current clothes of a certain type on a ped. It will remove them if the clothesTexture and clothesModel arent specified, or if they match the current clothes on that slot.' ,
                 arguments={
                     "thePed": """: The ped you want to remove clothes from. """,
                     "clothesType": """: the clothes slot/type to remove. See the CJ Clothes|clothes catalog. """,
                     "clothesTexture": """: (Server only) A string determining the clothes texture that will be removed. See the CJ Clothes|clothes catalog. """,
                     "clothesModel": """: (Server only) A string determining the clothes model that will be removed. See the CJ Clothes|clothes catalog. """
                 },
-                result="""this function returns true if the clothes were successfully removed from the ped, false otherwise. """,
-            ),
-            name='removePedClothes',
+                result='this function returns true if the clothes were successfully removed from the ped, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -4057,16 +3941,15 @@ due to these circumstances causing problems with this function """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to remove the current clothes of a certain type on a ped. It will remove them if the clothesTexture and clothesModel arent specified, or if they match the current clothes on that slot. """,
+                description='This function is used to remove the current clothes of a certain type on a ped. It will remove them if the clothesTexture and clothesModel arent specified, or if they match the current clothes on that slot.' ,
                 arguments={
                     "thePed": """: The ped you want to remove clothes from. """,
                     "clothesType": """: the clothes slot/type to remove. See the CJ Clothes|clothes catalog. """,
                     "clothesTexture": """: (Server only) A string determining the clothes texture that will be removed. See the CJ Clothes|clothes catalog. """,
                     "clothesModel": """: (Server only) A string determining the clothes model that will be removed. See the CJ Clothes|clothes catalog. """
                 },
-                result="""this function returns true if the clothes were successfully removed from the ped, false otherwise. """,
-            ),
-            name='removePedClothes',
+                result='this function returns true if the clothes were successfully removed from the ped, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4104,14 +3987,12 @@ due to these circumstances causing problems with this function """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes a ped from a vehicle immediately. This works for drivers and passengers. Note that this removes the ped from the vehicle and puts him in the exact position where the command was initiated.
-Available client side from 1.3.1 (It will only work with client side vehicles and peds) """,
+                description='This function removes a ped from a vehicle immediately. This works for drivers and passengers. Note that this removes the ped from the vehicle and puts him in the exact position where the command was initiated.\nAvailable client side from 1.3.1 (It will only work with client side vehicles and peds)' ,
                 arguments={
                     "thePed": """The ped you wish to remove from a vehicle """
                 },
-                result="""returns true if the operation was successful, false if the specified ped is not valid or if it isnt in a vehicle. """,
-            ),
-            name='removePedFromVehicle',
+                result='returns true if the operation was successful, false if the specified ped is not valid or if it isnt in a vehicle.' ,
+            )
         )
         ],
         client=[
@@ -4147,14 +4028,12 @@ Available client side from 1.3.1 (It will only work with client side vehicles an
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes a ped from a vehicle immediately. This works for drivers and passengers. Note that this removes the ped from the vehicle and puts him in the exact position where the command was initiated.
-Available client side from 1.3.1 (It will only work with client side vehicles and peds) """,
+                description='This function removes a ped from a vehicle immediately. This works for drivers and passengers. Note that this removes the ped from the vehicle and puts him in the exact position where the command was initiated.\nAvailable client side from 1.3.1 (It will only work with client side vehicles and peds)' ,
                 arguments={
                     "thePed": """The ped you wish to remove from a vehicle """
                 },
-                result="""returns true if the operation was successful, false if the specified ped is not valid or if it isnt in a vehicle. """,
-            ),
-            name='removePedFromVehicle',
+                result='returns true if the operation was successful, false if the specified ped is not valid or if it isnt in a vehicle.' ,
+            )
         )
         ],
     ),
@@ -4215,8 +4094,7 @@ Available client side from 1.3.1 (It will only work with client side vehicles an
                 ],
             ),
             docs=FunctionDoc(
-                description="""This sets the analog control state of a control for the local player.
-To change the analog controls for a ped, please use setPedAnalogControlState. """,
+                description='This sets the analog control state of a control for the local player.\nTo change the analog controls for a ped, please use setPedAnalogControlState.' ,
                 arguments={
                     "control": """The control that you want to set the state of. See control names for a list of possible controls. """,
                     "state": """A float between 0 and 1 indicating the amount the control is pressed. If no value is provided, the analog control is removed.
@@ -4224,9 +4102,8 @@ To change the analog controls for a ped, please use setPedAnalogControlState. ""
 *'''forceOverrideNextFrame: ''' A [[bool]] indicating if the player input should force fully overriden for the next frame.
 }}</noinclude> """
                 },
-                result="""returns true if the control state was successfully set, false otherwise. """,
-            ),
-            name='setAnalogControlState',
+                result='returns true if the control state was successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4297,17 +4174,15 @@ To change the analog controls for a ped, please use setPedAnalogControlState. ""
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to set a peds aim target to a specific point. If a ped is within a certain range defined by getPedTargetStart and getPedTargetEnd he will be targeted and shot.
-Note: If you wish to make a ped shoot you must use this in conjunction with an equipped weapon and setPedControlState. """,
+                description='This function allows you to set a peds aim target to a specific point. If a ped is within a certain range defined by getPedTargetStart and getPedTargetEnd he will be targeted and shot.\nNote: If you wish to make a ped shoot you must use this in conjunction with an equipped weapon and setPedControlState.' ,
                 arguments={
                     "thePed": """The ped whose target you want to set. Only peds and remote players will work; this function has no effect on the local player. """,
                     "x": """The x coordinate of the aim target point. """,
                     "y": """The y coordinate of the aim target point. """,
                     "z": """The z coordinate of the aim target point. """
                 },
-                result="""returns true if the function was successful, false otherwise. """,
-            ),
-            name='setPedAimTarget',
+                result='returns true if the function was successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4368,16 +4243,14 @@ Note: If you wish to make a ped shoot you must use this in conjunction with an e
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets an analog state of a specified peds control, as if they pressed or released it.
-This function only works on peds, to change the analog control state for a player, please use setAnalogControlState. """,
+                description='Sets an analog state of a specified peds control, as if they pressed or released it.\nThis function only works on peds, to change the analog control state for a player, please use setAnalogControlState.' ,
                 arguments={
                     "thePed": """The ped you wish to set the control state of. """,
                     "control": """The control that you want to set the state of. See control names for a list of possible controls. """,
                     "state": """A float between 0 and 1 indicating the amount the control is pressed. """
                 },
-                result="""returns true if the control state was successfully set, false otherwise. """,
-            ),
-            name='setPedAnalogControlState',
+                result='returns true if the control state was successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4505,7 +4378,7 @@ This function only works on peds, to change the analog control state for a playe
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the current Animations|animation of a player or ped. Not specifying the type of animation will automatically cancel the current one. """,
+                description='Sets the current Animations|animation of a player or ped. Not specifying the type of animation will automatically cancel the current one.' ,
                 arguments={
                     "thePed": """the player or ped you want to apply an Animations|animation to. """,
                     "block": """the Animations|animation blocks name. """,
@@ -4519,9 +4392,8 @@ This function only works on peds, to change the analog control state for a playe
                     "retainPedState": """will restore the task which was playing before calling this function. Useful for restoring the crouch task after animation ends. This may be extended in the future to support other states/tasks.
 |16632}} """
                 },
-                result="""returns true if succesful, false otherwise. """,
-            ),
-            name='setPedAnimation',
+                result='returns true if succesful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -4647,7 +4519,7 @@ This function only works on peds, to change the analog control state for a playe
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the current Animations|animation of a player or ped. Not specifying the type of animation will automatically cancel the current one. """,
+                description='Sets the current Animations|animation of a player or ped. Not specifying the type of animation will automatically cancel the current one.' ,
                 arguments={
                     "thePed": """the player or ped you want to apply an Animations|animation to. """,
                     "block": """the Animations|animation blocks name. """,
@@ -4661,9 +4533,8 @@ This function only works on peds, to change the analog control state for a playe
                     "retainPedState": """will restore the task which was playing before calling this function. Useful for restoring the crouch task after animation ends. This may be extended in the future to support other states/tasks.
 |16632}} """
                 },
-                result="""returns true if succesful, false otherwise. """,
-            ),
-            name='setPedAnimation',
+                result='returns true if succesful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4721,15 +4592,14 @@ This function only works on peds, to change the analog control state for a playe
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the current animation progress of a player or ped. """,
+                description='Sets the current animation progress of a player or ped.' ,
                 arguments={
                     "thePed": """the player or ped you want to change animation progress. """,
                     "anim": """the animation name currently applied to ped, if not supplied, the animation will stop """,
                     "progress": """current animation progress you want to apply, value from 0.0 to 1.0, if not supplied will default to 0.0 """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setPedAnimationProgress',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -4785,15 +4655,14 @@ This function only works on peds, to change the analog control state for a playe
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the current animation progress of a player or ped. """,
+                description='Sets the current animation progress of a player or ped.' ,
                 arguments={
                     "thePed": """the player or ped you want to change animation progress. """,
                     "anim": """the animation name currently applied to ped, if not supplied, the animation will stop """,
                     "progress": """current animation progress you want to apply, value from 0.0 to 1.0, if not supplied will default to 0.0 """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setPedAnimationProgress',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4851,15 +4720,14 @@ This function only works on peds, to change the analog control state for a playe
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the speed of a currently running animation for a particular player or ped. """,
+                description='Sets the speed of a currently running animation for a particular player or ped.' ,
                 arguments={
                     "thePed": """the player or ped you want to change animation speed of. """,
                     "anim": """the animation name it will affect. """,
                     "speed": """a float containing the speed between 0.0–1.0 you want to apply to the animation. This limitation may be adjusted in the future, so do not provide speeds outside this boundary. {{New feature/item|3.0158|1.5.7|20395|The limit is now 0.0 to 10.0.}} {{Warning|Setting speed higher than 1 can cause issues with some animations.}} """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setPedAnimationSpeed',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -4915,15 +4783,14 @@ This function only works on peds, to change the analog control state for a playe
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the speed of a currently running animation for a particular player or ped. """,
+                description='Sets the speed of a currently running animation for a particular player or ped.' ,
                 arguments={
                     "thePed": """the player or ped you want to change animation speed of. """,
                     "anim": """the animation name it will affect. """,
                     "speed": """a float containing the speed between 0.0–1.0 you want to apply to the animation. This limitation may be adjusted in the future, so do not provide speeds outside this boundary. {{New feature/item|3.0158|1.5.7|20395|The limit is now 0.0 to 10.0.}} {{Warning|Setting speed higher than 1 can cause issues with some animations.}} """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setPedAnimationSpeed',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -4971,14 +4838,13 @@ This function only works on peds, to change the analog control state for a playe
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to set the armor value of a ped. """,
+                description='This function allows you to set the armor value of a ped.' ,
                 arguments={
                     "thePed": """: the ped whose armor you want to modify. """,
                     "armor": """: the amount of armor you want to set on the ped. Valid values are from 0 to 100. """
                 },
-                result="""returns true if the armor was changed succesfully. returns false if an invalid ped was specified, or the armor value specified is out of acceptable range. """,
-            ),
-            name='setPedArmor',
+                result='returns true if the armor was changed succesfully. returns false if an invalid ped was specified, or the armor value specified is out of acceptable range.' ,
+            )
         )
         ],
         client=[
@@ -5024,14 +4890,13 @@ This function only works on peds, to change the analog control state for a playe
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to set the armor value of a ped. """,
+                description='This function allows you to set the armor value of a ped.' ,
                 arguments={
                     "thePed": """: the ped whose armor you want to modify. """,
                     "armor": """: the amount of armor you want to set on the ped. Valid values are from 0 to 100. """
                 },
-                result="""returns true if the armor was changed succesfully. returns false if an invalid ped was specified, or the armor value specified is out of acceptable range. """,
-            ),
-            name='setPedArmor',
+                result='returns true if the armor was changed succesfully. returns false if an invalid ped was specified, or the armor value specified is out of acceptable range.' ,
+            )
         )
         ],
     ),
@@ -5082,14 +4947,13 @@ This function only works on peds, to change the analog control state for a playe
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "thePed": """the player or ped whose bleeding effect you want to set of. """,
                     "bleeding": """boolean specifying whether the player or ped is bleeding or not. """
                 },
-                result="""returns true if the bleeding state was successfully set, error is raised otherwise. """,
-            ),
-            name='setPedBleeding',
+                result='returns true if the bleeding state was successfully set, error is raised otherwise.' ,
+            )
         )
         ],
     ),
@@ -5140,14 +5004,13 @@ This function only works on peds, to change the analog control state for a playe
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the camera rotation of a ped, e.g. where its camera will look at. Dont confuse this with getCameraMatrix, because that function is designed for fixed (scripted) camera moves. """,
+                description='This function sets the camera rotation of a ped, e.g. where its camera will look at. Dont confuse this with getCameraMatrix, because that function is designed for fixed (scripted) camera moves.' ,
                 arguments={
                     "thePed": """The ped whose camera rotation is to be changed. """,
                     "cameraRotation": """The new direction that the ped will walk if you set their forwards control state. If the ped is the local player, it will also change where his camera is looking at if it isnt fixed (i.e. camera target is the local player). """
                 },
-                result="""returns true if the camera rotation was changed, false otherwise. """,
-            ),
-            name='setPedCameraRotation',
+                result='returns true if the camera rotation was changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5198,14 +5061,13 @@ This function only works on peds, to change the analog control state for a playe
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function controls if a ped can fall of his bike by accident - namely by banging into a wall. """,
+                description='This function controls if a ped can fall of his bike by accident - namely by banging into a wall.' ,
                 arguments={
                     "thePed": """the ped whose knockoffstatus is being changed """,
                     "canBeKnockedOffBike": """true or false """
                 },
-                result=""" """,
-            ),
-            name='setPedCanBeKnockedOffBike',
+                result='' ,
+            )
         )
         ],
     ),
@@ -5253,14 +5115,13 @@ This function only works on peds, to change the analog control state for a playe
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to force the ped to do the choking (coughing) animation until he respawns or toggled off using this function. The animation can not be cancelled by a player its applied to, and he will not loose health. """,
+                description='This function can be used to force the ped to do the choking (coughing) animation until he respawns or toggled off using this function. The animation can not be cancelled by a player its applied to, and he will not loose health.' ,
                 arguments={
                     "thePed": """The ped whose choking status to toggle """,
                     "choking": """true to make the ped choke, false to no longer force his choking animation """
                 },
-                result="""returns true if successful, false otherwise (e.g. player handle is invalid) """,
-            ),
-            name='setPedChoking',
+                result='returns true if successful, false otherwise (e.g. player handle is invalid)' ,
+            )
         )
         ],
         client=[
@@ -5324,15 +5185,14 @@ This function only works on peds, to change the analog control state for a playe
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function makes a ped or player press or release a certain control. """,
+                description='This function makes a ped or player press or release a certain control.' ,
                 arguments={
                     "thePed": """the ped you want to press or release a control. """,
                     "control": """the name of the control of which to change the state. See control names for a list of valid names. """,
                     "state": """the new control state. true means pressed, false is released. """
                 },
-                result="""returns true if successful, false if otherwise. """,
-            ),
-            name='setPedControlState',
+                result='returns true if successful, false if otherwise.' ,
+            )
         )
         ],
     ),
@@ -5380,14 +5240,13 @@ This function only works on peds, to change the analog control state for a playe
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the driveby state of a ped. """,
+                description='This function sets the driveby state of a ped.' ,
                 arguments={
                     "thePed": """The ped element whose state is to be changed. """,
                     "state": """A boolean value representing the drive-by state, true meaning enabled and false disabled. """
                 },
-                result="""returns true if the driveby state could be changed, false otherwise. """,
-            ),
-            name='setPedDoingGangDriveby',
+                result='returns true if the driveby state could be changed, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -5433,14 +5292,13 @@ This function only works on peds, to change the analog control state for a playe
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the driveby state of a ped. """,
+                description='This function sets the driveby state of a ped.' ,
                 arguments={
                     "thePed": """The ped element whose state is to be changed. """,
                     "state": """A boolean value representing the drive-by state, true meaning enabled and false disabled. """
                 },
-                result="""returns true if the driveby state could be changed, false otherwise. """,
-            ),
-            name='setPedDoingGangDriveby',
+                result='returns true if the driveby state could be changed, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5501,19 +5359,7 @@ This function only works on peds, to change the analog control state for a playe
                 ],
             ),
             docs=FunctionDoc(
-                description="""* If forced to enter as a passenger, it doesnt work if all passenger seats are occupied.
-* If forced to enter as a driver, the ped can take off the vehicles current driver.
-** If the drivers door is blocked by something, the ped can use the oposite front door to reach the drivers seat, taking off the passenger which is using the oposite front seat.
-* If the vehicle is not specified:
-** The ped will search a vehicles door within 20 m that can be used to enter the vehicle.
-** If the vehicle have a driver, the limit becomes 10 m.
-* If the vehicle is specified:
-** The ped will search the vehicle within 50 m that can be entered. The doors arent taken into account. It means that it doesnt work if the vehicles door is in range but the vehicle itself is not.
-** If the vehicle have a driver, the limit becomes 10 m.
-* The limit becomes 50 m after the ped found the vehicle and started to run toward it.
-* The ped stops the animation if the distance from vehicle reaches 50 m while the ped is running towards it.
-* The ped reserves the seat he is trying to use. It means nobody can use the respective seat while the ped is running toward it.
-** Exception: If the ped is forced to enter as a passenger and is going to use the front door, the ped can wait if someone is using it to go the driver seat. """,
+                description='* If forced to enter as a passenger, it doesnt work if all passenger seats are occupied.\n* If forced to enter as a driver, the ped can take off the vehicles current driver.\n** If the drivers door is blocked by something, the ped can use the oposite front door to reach the drivers seat, taking off the passenger which is using the oposite front seat.\n* If the vehicle is not specified:\n** The ped will search a vehicles door within 20 m that can be used to enter the vehicle.\n** If the vehicle have a driver, the limit becomes 10 m.\n* If the vehicle is specified:\n** The ped will search the vehicle within 50 m that can be entered. The doors arent taken into account. It means that it doesnt work if the vehicles door is in range but the vehicle itself is not.\n** If the vehicle have a driver, the limit becomes 10 m.\n* The limit becomes 50 m after the ped found the vehicle and started to run toward it.\n* The ped stops the animation if the distance from vehicle reaches 50 m while the ped is running towards it.\n* The ped reserves the seat he is trying to use. It means nobody can use the respective seat while the ped is running toward it.\n** Exception: If the ped is forced to enter as a passenger and is going to use the front door, the ped can wait if someone is using it to go the driver seat.' ,
                 arguments={
                     "thePed": """The player or ped to enter the vehicle.
 **''Note: The player must be the local player.''
@@ -5521,19 +5367,8 @@ This function only works on peds, to change the analog control state for a playe
                     "vehicle": """The vehicle to enter. If no vehicle is set, the ped will enter the nearest vehicle within 20 m. """,
                     "passenger": """If set to true, the ped will enter as passenger in the nearest available seat, otherwise he will enter as driver. """
                 },
-                result="""returns true if the function was successful, false otherwise.
-when this function returns true, the client will ask server for permission to enter a vehicle. actually entering can still fail in the following cases
-*the function is used on a ped, but another client is not on version 1.5.8 r20740 or newer.
-*another player or ped is already entering, exiting or jacking the same vehicle and seat.
-*movement input or damage can interrupt the task. use getpedtask to monitor what the ped is doing.
-this function returns false in the following cases
-*invalid arguments were parsed.
-*the function is used on a ped, but the server is not on version 1.5.8 r20740 or newer.
-*time passed since last enter/exit for this ped is less than 1500 ms.
-*onclientvehiclestartenter was cancelled by a script.
-*the ped has an active task_primary task. use getpedtask to monitor what the ped is doing. """,
-            ),
-            name='setPedEnterVehicle',
+                result='returns true if the function was successful, false otherwise.\nwhen this function returns true, the client will ask server for permission to enter a vehicle. actually entering can still fail in the following cases\n*the function is used on a ped, but another client is not on version 1.5.8 r20740 or newer.\n*another player or ped is already entering, exiting or jacking the same vehicle and seat.\n*movement input or damage can interrupt the task. use getpedtask to monitor what the ped is doing.\nthis function returns false in the following cases\n*invalid arguments were parsed.\n*the function is used on a ped, but the server is not on version 1.5.8 r20740 or newer.\n*time passed since last enter/exit for this ped is less than 1500 ms.\n*onclientvehiclestartenter was cancelled by a script.\n*the ped has an active task_primary task. use getpedtask to monitor what the ped is doing.' ,
+            )
         )
         ],
     ),
@@ -5574,20 +5409,12 @@ this function returns false in the following cases
                 ],
             ),
             docs=FunctionDoc(
-                description=""" """,
+                description='' ,
                 arguments={
                     "thePed": """The player or ped to exit the vehicle. """
                 },
-                result="""returns true if the function was successful, false otherwise.
-when this function returns true, the client will ask server for permission to exit a vehicle. exiting can still fail in the following cases
-*the function is used on a ped, but another client is not on version 1.5.8 r20740 or newer.
-this function returns false in the following cases
-*invalid arguments were parsed.
-*the function is used on a ped but the server is not on version 1.5.8 r20740 or newer.
-*time passed since last enter/exit for this ped is less than 1500 ms.
-*the ped is getting jacked. """,
-            ),
-            name='setPedExitVehicle',
+                result='returns true if the function was successful, false otherwise.\nwhen this function returns true, the client will ask server for permission to exit a vehicle. exiting can still fail in the following cases\n*the function is used on a ped, but another client is not on version 1.5.8 r20740 or newer.\nthis function returns false in the following cases\n*invalid arguments were parsed.\n*the function is used on a ped but the server is not on version 1.5.8 r20740 or newer.\n*time passed since last enter/exit for this ped is less than 1500 ms.\n*the ped is getting jacked.' ,
+            )
         )
         ],
     ),
@@ -5635,14 +5462,13 @@ this function returns false in the following cases
                 ],
             ),
             docs=FunctionDoc(
-                description="""Changes a peds fighting style. Most styles only change the special attack which is done using the Aim and Enter keys. """,
+                description='Changes a peds fighting style. Most styles only change the special attack which is done using the Aim and Enter keys.' ,
                 arguments={
                     "thePed": """The ped whose fighting style to change. """,
                     "style": """The fighting style ID to apply. """
                 },
-                result="""returns true in case of success, false otherwise. """,
-            ),
-            name='setPedFightingStyle',
+                result='returns true in case of success, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -5688,14 +5514,13 @@ this function returns false in the following cases
                 ],
             ),
             docs=FunctionDoc(
-                description="""Changes a peds fighting style. Most styles only change the special attack which is done using the Aim and Enter keys. """,
+                description='Changes a peds fighting style. Most styles only change the special attack which is done using the Aim and Enter keys.' ,
                 arguments={
                     "thePed": """The ped whose fighting style to change. """,
                     "style": """The fighting style ID to apply. """
                 },
-                result="""returns true in case of success, false otherwise. """,
-            ),
-            name='setPedFightingStyle',
+                result='returns true in case of success, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -5746,14 +5571,13 @@ this function returns false in the following cases
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function makes a ped|peds footprints bloody. """,
+                description='This function makes a ped|peds footprints bloody.' ,
                 arguments={
                     "thePlayer": """the ped to give bloody footprints to. """,
                     "enabled": """boolean specifying whether or not to have bloody feet. """
                 },
-                result="""returns true if changing the peds bloody feet status worked. """,
-            ),
-            name='setPedFootBloodEnabled',
+                result='returns true if changing the peds bloody feet status worked.' ,
+            )
         )
         ],
     ),
@@ -5801,14 +5625,13 @@ this function returns false in the following cases
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function sets the gravity level of a ped. """,
+                description='This function sets the gravity level of a ped.' ,
                 arguments={
                     "thePed": """: The ped whose gravity to change. """,
                     "level": """: The level of gravity (default is 0.008). """
                 },
-                result="""returns true if the gravity was successfully set, false otherwise """,
-            ),
-            name='setPedGravity',
+                result='returns true if the gravity was successfully set, false otherwise' ,
+            )
         )
         ],
         client=[
@@ -5859,14 +5682,13 @@ this function returns false in the following cases
                 ],
             ),
             docs=FunctionDoc(
-                description="""With this function, you can set if a ped has a head or not. """,
+                description='With this function, you can set if a ped has a head or not.' ,
                 arguments={
                     "thePed": """: The ped to check. """,
                     "headState": """: head state, use true if you want the ped be headless, use false to give back the head. """
                 },
-                result="""returns true if successful, false otherwise """,
-            ),
-            name='setPedHeadless',
+                result='returns true if successful, false otherwise' ,
+            )
         )
         ],
         client=[
@@ -5912,14 +5734,13 @@ this function returns false in the following cases
                 ],
             ),
             docs=FunctionDoc(
-                description="""With this function, you can set if a ped has a head or not. """,
+                description='With this function, you can set if a ped has a head or not.' ,
                 arguments={
                     "thePed": """: The ped to check. """,
                     "headState": """: head state, use true if you want the ped be headless, use false to give back the head. """
                 },
-                result="""returns true if successful, false otherwise """,
-            ),
-            name='setPedHeadless',
+                result='returns true if successful, false otherwise' ,
+            )
         )
         ],
     ),
@@ -6020,7 +5841,7 @@ this function returns false in the following cases
                 ],
             ),
             docs=FunctionDoc(
-                description="""Makes a ped turn his head and look at a specific world position or element. """,
+                description='Makes a ped turn his head and look at a specific world position or element.' ,
                 arguments={
                     "thePed": """the ped to change the lookat of. """,
                     "x": """the x coordinate of the world position to look at. """,
@@ -6030,9 +5851,8 @@ this function returns false in the following cases
                     "blend": """the time, in milliseconds, during which the look will blend. """,
                     "target": """if this argument is specified, the position arguments will be mean offsets relative to the target and the peds gaze will follow the specified element instead. Can be a player, a vehicle, another ped etc. """
                 },
-                result=""" """,
-            ),
-            name='setPedLookAt',
+                result='' ,
+            )
         )
         ],
     ),
@@ -6080,14 +5900,13 @@ this function returns false in the following cases
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to set a ped on fire or extinguish a fire on it. """,
+                description='This function can be used to set a ped on fire or extinguish a fire on it.' ,
                 arguments={
                     "thePed": """The ped that we want to set/unset """,
                     "isOnFire": """true to set the ped on fire, false to extinguish any fire on him """
                 },
-                result="""returns true if successful, false otherwise """,
-            ),
-            name='setPedOnFire',
+                result='returns true if successful, false otherwise' ,
+            )
         )
         ],
         client=[
@@ -6133,14 +5952,13 @@ this function returns false in the following cases
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to set a ped on fire or extinguish a fire on it. """,
+                description='This function can be used to set a ped on fire or extinguish a fire on it.' ,
                 arguments={
                     "thePed": """The ped that we want to set/unset """,
                     "isOnFire": """true to set the ped on fire, false to extinguish any fire on him """
                 },
-                result="""returns true if successful, false otherwise """,
-            ),
-            name='setPedOnFire',
+                result='returns true if successful, false otherwise' ,
+            )
         )
         ],
     ),
@@ -6191,14 +6009,13 @@ this function returns false in the following cases
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allows you to set the oxygen level of a ped. """,
+                description='This function allows you to set the oxygen level of a ped.' ,
                 arguments={
                     "thePed": """: the ped whose oxygen level you want to modify. """,
                     "oxygen": """: the amount of oxygen you want to set on the ped. Native values are from 0 to 1000. Each of the stamina (22) and underwater stamina (225) Template:Stats|stat maximum adds a bonus of 1500. So the maximum oxygen level is 4000. """
                 },
-                result="""returns true if the oxygen level was changed succesfully. returns false if an invalid ped and/or oxygen level was specified. """,
-            ),
-            name='setPedOxygenLevel',
+                result='returns true if the oxygen level was changed succesfully. returns false if an invalid ped and/or oxygen level was specified.' ,
+            )
         )
         ],
     ),
@@ -6256,17 +6073,14 @@ this function returns false in the following cases
                 ],
             ),
             docs=FunctionDoc(
-                description="""*Things like infinite run, fire proof CJ, 150 armor have special activation flags. They need a way to be triggered on/off.
-This function allows you to set the value of a specific statistic for a ped. Visual stats (FAT and BODY_MUSCLE) can only be used on the CJ skin, they have no effect on other skins.
-When this function is used client side, it can only be used on client side created peds. """,
+                description='*Things like infinite run, fire proof CJ, 150 armor have special activation flags. They need a way to be triggered on/off.\nThis function allows you to set the value of a specific statistic for a ped. Visual stats (FAT and BODY_MUSCLE) can only be used on the CJ skin, they have no effect on other skins.\nWhen this function is used client side, it can only be used on client side created peds.' ,
                 arguments={
                     "thePed": """: the ped whose statistic you want to modify. """,
                     "stat": """: the stat ID. """,
                     "value": """: the new value of the stat. It must be between 0 and 1000. """
                 },
-                result="""returns true if the statistic was changed succesfully. returns false if an invalid player is specified, if the stat-id/value is out of acceptable range or if the fat or body_muscle stats are used on non-cj players. """,
-            ),
-            name='setPedStat',
+                result='returns true if the statistic was changed succesfully. returns false if an invalid player is specified, if the stat-id/value is out of acceptable range or if the fat or body_muscle stats are used on non-cj players.' ,
+            )
         )
         ],
         client=[
@@ -6322,17 +6136,14 @@ When this function is used client side, it can only be used on client side creat
                 ],
             ),
             docs=FunctionDoc(
-                description="""*Things like infinite run, fire proof CJ, 150 armor have special activation flags. They need a way to be triggered on/off.
-This function allows you to set the value of a specific statistic for a ped. Visual stats (FAT and BODY_MUSCLE) can only be used on the CJ skin, they have no effect on other skins.
-When this function is used client side, it can only be used on client side created peds. """,
+                description='*Things like infinite run, fire proof CJ, 150 armor have special activation flags. They need a way to be triggered on/off.\nThis function allows you to set the value of a specific statistic for a ped. Visual stats (FAT and BODY_MUSCLE) can only be used on the CJ skin, they have no effect on other skins.\nWhen this function is used client side, it can only be used on client side created peds.' ,
                 arguments={
                     "thePed": """: the ped whose statistic you want to modify. """,
                     "stat": """: the stat ID. """,
                     "value": """: the new value of the stat. It must be between 0 and 1000. """
                 },
-                result="""returns true if the statistic was changed succesfully. returns false if an invalid player is specified, if the stat-id/value is out of acceptable range or if the fat or body_muscle stats are used on non-cj players. """,
-            ),
-            name='setPedStat',
+                result='returns true if the statistic was changed succesfully. returns false if an invalid player is specified, if the stat-id/value is out of acceptable range or if the fat or body_muscle stats are used on non-cj players.' ,
+            )
         )
         ],
     ),
@@ -6373,13 +6184,12 @@ When this function is used client side, it can only be used on client side creat
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to toggle the health target marker on top of all pedestrians. """,
+                description='This function is used to toggle the health target marker on top of all pedestrians.' ,
                 arguments={
                     "enabled": """A boolean denoting whether we want to enable (true) or disable (false) the markers. """
                 },
-                result="""returns true if the markers were enabled, false if werent or if invalid arguments are passed. """,
-            ),
-            name='setPedTargetingMarkerEnabled',
+                result='returns true if the markers were enabled, false if werent or if invalid arguments are passed.' ,
+            )
         )
         ],
     ),
@@ -6440,15 +6250,14 @@ When this function is used client side, it can only be used on client side creat
                 ],
             ),
             docs=FunctionDoc(
-                description="""Changes the voice of a ped. """,
+                description='Changes the voice of a ped.' ,
                 arguments={
                     "thePed": """the ped whose voice to change. """,
                     "voiceType": """the voice type. See ped voices for possible types. """,
                     "voiceName": """the voice name within the specified type. See ped voices for possible voices. """
                 },
-                result="""returns true when the voice was successfully set, false otherwise. """,
-            ),
-            name='setPedVoice',
+                result='returns true when the voice was successfully set, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6496,15 +6305,14 @@ When this function is used client side, it can only be used on client side creat
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the walking style of a ped. A walking style consists of a set of animations that are used for walking, running etc. """,
+                description='Sets the walking style of a ped. A walking style consists of a set of animations that are used for walking, running etc.' ,
                 arguments={
                     "thePed": """the ped whose walking style to change. """,
                     "style": """the walking style to set.
 The possible walking styles are: """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setPedWalkingStyle',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6550,15 +6358,14 @@ The possible walking styles are: """
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets the walking style of a ped. A walking style consists of a set of animations that are used for walking, running etc. """,
+                description='Sets the walking style of a ped. A walking style consists of a set of animations that are used for walking, running etc.' ,
                 arguments={
                     "thePed": """the ped whose walking style to change. """,
                     "style": """the walking style to set.
 The possible walking styles are: """
                 },
-                result="""returns true if successful, false otherwise. """,
-            ),
-            name='setPedWalkingStyle',
+                result='returns true if successful, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6606,14 +6413,13 @@ The possible walking styles are: """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the selected weapon slot of a ped. """,
+                description='This function changes the selected weapon slot of a ped.' ,
                 arguments={
                     "thePed": """the ped whose weapon slot you want to set. In a clientside script, this cannot be used on remote players. """,
                     "weaponSlot": """the weapon slot to set. """
                 },
-                result="""returns true if successful in setting the peds equipped weapon slot, false otherwise. """,
-            ),
-            name='setPedWeaponSlot',
+                result='returns true if successful in setting the peds equipped weapon slot, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6659,14 +6465,13 @@ The possible walking styles are: """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function changes the selected weapon slot of a ped. """,
+                description='This function changes the selected weapon slot of a ped.' ,
                 arguments={
                     "thePed": """the ped whose weapon slot you want to set. In a clientside script, this cannot be used on remote players. """,
                     "weaponSlot": """the weapon slot to set. """
                 },
-                result="""returns true if successful in setting the peds equipped weapon slot, false otherwise. """,
-            ),
-            name='setPedWeaponSlot',
+                result='returns true if successful in setting the peds equipped weapon slot, false otherwise.' ,
+            )
         )
         ],
     ),
@@ -6714,15 +6519,13 @@ The possible walking styles are: """
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to give or take a jetpack from a ped, it wont work if the ped is in a vehicle.
-As such, you should either expect it to fail sometimes, or repeatedly try to give a jetpack every second or so until isPedWearingJetpack returns true. Alternatively, you can force the ped into a safe position (e.g. standing on the ground) before giving the jetpack, or use a pickup to handle it.}} """,
+                description='This function is used to give or take a jetpack from a ped, it wont work if the ped is in a vehicle.\nAs such, you should either expect it to fail sometimes, or repeatedly try to give a jetpack every second or so until isPedWearingJetpack returns true. Alternatively, you can force the ped into a safe position (e.g. standing on the ground) before giving the jetpack, or use a pickup to handle it.}}' ,
                 arguments={
                     "thePed": """The ped you want to give a jetpack to. """,
                     "state": """A boolean representing whether to give or take the jetpack. """
                 },
-                result="""returns true if a jetpack was successfully set for the ped, false if setting it failed. """,
-            ),
-            name='setPedWearingJetpack',
+                result='returns true if a jetpack was successfully set for the ped, false if setting it failed.' ,
+            )
         )
         ],
         client=[
@@ -6783,8 +6586,7 @@ As such, you should either expect it to fail sometimes, or repeatedly try to giv
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to warp or force a ped into a vehicle.  There are no animations involved when this happens.
-Available client side from 1.3.1 (It will only work with client side vehicles and peds) """,
+                description='This function is used to warp or force a ped into a vehicle.  There are no animations involved when this happens.\nAvailable client side from 1.3.1 (It will only work with client side vehicles and peds)' ,
                 arguments={
                     "thePed": """The ped which you wish to force inside the vehicle """,
                     "theVehicle": """The vehicle you wish to force the ped into """,
@@ -6794,9 +6596,8 @@ Available client side from 1.3.1 (It will only work with client side vehicles an
                     "2": """Rear-left """,
                     "3": """Rear-right """
                 },
-                result="""returns true if the operation is successful, false otherwise. """,
-            ),
-            name='warpPedIntoVehicle',
+                result='returns true if the operation is successful, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -6852,8 +6653,7 @@ Available client side from 1.3.1 (It will only work with client side vehicles an
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to warp or force a ped into a vehicle.  There are no animations involved when this happens.
-Available client side from 1.3.1 (It will only work with client side vehicles and peds) """,
+                description='This function is used to warp or force a ped into a vehicle.  There are no animations involved when this happens.\nAvailable client side from 1.3.1 (It will only work with client side vehicles and peds)' ,
                 arguments={
                     "thePed": """The ped which you wish to force inside the vehicle """,
                     "theVehicle": """The vehicle you wish to force the ped into """,
@@ -6863,9 +6663,8 @@ Available client side from 1.3.1 (It will only work with client side vehicles an
                     "2": """Rear-left """,
                     "3": """Rear-right """
                 },
-                result="""returns true if the operation is successful, false otherwise. """,
-            ),
-            name='warpPedIntoVehicle',
+                result='returns true if the operation is successful, false otherwise.' ,
+            )
         )
         ],
     )

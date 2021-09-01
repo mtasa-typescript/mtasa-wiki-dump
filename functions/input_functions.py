@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-    
+     
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -73,20 +73,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will attach a scripting function (handler) to a console command, so that whenever a player or administrator uses the command the function is called.
-Multiple command handlers can be attached to a single command, and they will be called in the order that the handlers were attached. Equally, multiple commands can be handled by a single function, and the commandName parameter used to decide the course of action.
-For users, a command is in the format:
-commandName argument1 argument2
-This can be triggered from the players console or directly from the chat box by prefixing the message with a forward slash (/). For server side handlers, the server admin is also able to trigger these directly from the servers console in the same way as they are triggered from a players console. """,
+                description='This function will attach a scripting function (handler) to a console command, so that whenever a player or administrator uses the command the function is called.\nMultiple command handlers can be attached to a single command, and they will be called in the order that the handlers were attached. Equally, multiple commands can be handled by a single function, and the commandName parameter used to decide the course of action.\nFor users, a command is in the format:\ncommandName argument1 argument2\nThis can be triggered from the players console or directly from the chat box by prefixing the message with a forward slash (/). For server side handlers, the server admin is also able to trigger these directly from the servers console in the same way as they are triggered from a players console.' ,
                 arguments={
                     "commandName": """This is the name of the command you wish to attach a handler to. This is what must be typed into the console to trigger the function. """,
                     "handlerFunction": """This is the function that you want the command to trigger, which has to be defined before you add the handler. This function can take two parameters, playerSource and commandName, followed by as many parameters as you expect after your command (see below). These are all optional. """,
                     "restricted": """Specify whether or not this command should be restricted by default. Use this on commands that should be inaccessible to everyone as default except special users specified in the ACL (Access Control List). This is to make sure admin commands such as ie. punish wont be available to everyone if a server administrator forgets masking it in ACL. Make sure to add the command to your ACL under the proper group for it to be usefull (i.e <right name=command.killEveryone access=true></right>). This argument defaults to false if nothing is specified. """,
                     "caseSensitive": """Specifies if the command handler will ignore the case for this command name. """
                 },
-                result=""" """,
-            ),
-            name='addCommandHandler',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -142,19 +137,14 @@ This can be triggered from the players console or directly from the chat box by 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will attach a scripting function (handler) to a console command, so that whenever a player or administrator uses the command the function is called.
-Multiple command handlers can be attached to a single command, and they will be called in the order that the handlers were attached. Equally, multiple commands can be handled by a single function, and the commandName parameter used to decide the course of action.
-For users, a command is in the format:
-commandName argument1 argument2
-This can be triggered from the players console or directly from the chat box by prefixing the message with a forward slash (/). For server side handlers, the server admin is also able to trigger these directly from the servers console in the same way as they are triggered from a players console. """,
+                description='This function will attach a scripting function (handler) to a console command, so that whenever a player or administrator uses the command the function is called.\nMultiple command handlers can be attached to a single command, and they will be called in the order that the handlers were attached. Equally, multiple commands can be handled by a single function, and the commandName parameter used to decide the course of action.\nFor users, a command is in the format:\ncommandName argument1 argument2\nThis can be triggered from the players console or directly from the chat box by prefixing the message with a forward slash (/). For server side handlers, the server admin is also able to trigger these directly from the servers console in the same way as they are triggered from a players console.' ,
                 arguments={
                     "commandName": """This is the name of the command you wish to attach a handler to. This is what must be typed into the console to trigger the function. """,
                     "handlerFunction": """This is the function that you want the command to trigger, which has to be defined before you add the handler. This function can take commandName parameter, followed by as many parameters as you expect after your command (see below). These are all optional. """,
                     "caseSensitive": """Specifies if the command handler will ignore the case for this command name. """
                 },
-                result=""" """,
-            ),
-            name='addCommandHandler',
+                result='' ,
+            )
         )
         ],
     ),
@@ -232,7 +222,7 @@ This can be triggered from the players console or directly from the chat box by 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Binds a players key to a handler function or command, which will be called when the key is pressed. """,
+                description='Binds a players key to a handler function or command, which will be called when the key is pressed.' ,
                 arguments={
                     "thePlayer": """The player you wish to bind the key of. """,
                     "key": """The key that was pressed """,
@@ -246,9 +236,8 @@ This can be triggered from the players console or directly from the chat box by 
                     "keyPresser": """The player who pressed the key """,
                     "arguments": """The optional arguments you specified when calling bindKey (see below). """
                 },
-                result=""" """,
-            ),
-            name='bindKey',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -314,7 +303,7 @@ This can be triggered from the players console or directly from the chat box by 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Binds a players key to a handler function or command, which will be called when the key is pressed. """,
+                description='Binds a players key to a handler function or command, which will be called when the key is pressed.' ,
                 arguments={
                     "key": """The key that was pressed """,
                     "keyState": """The state of the key that was pressed, down if it was pressed, up if it was released. """,
@@ -326,9 +315,8 @@ This can be triggered from the players console or directly from the chat box by 
 :The values passed to this function are: """,
                     "arguments": """The optional arguments you specified when calling bindKey (see below). """
                 },
-                result=""" """,
-            ),
-            name='bindKey',
+                result='' ,
+            )
         )
         ],
     ),
@@ -386,15 +374,14 @@ This can be triggered from the players console or directly from the chat box by 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will call all the attached functions of an existing console command, for a specified player. """,
+                description='This function will call all the attached functions of an existing console command, for a specified player.' ,
                 arguments={
                     "commandName": """The name of the command you wish to execute. This is what must be typed into the console to trigger the function. """,
                     "thePlayer": """The player that will be presented as executer of the command to the handler function(s) of the command. """,
                     "args": """Additional parameters that will be passed to the handler function(s) of the command that is called, separated by spaces. """
                 },
-                result=""" """,
-            ),
-            name='executeCommandHandler',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -440,14 +427,13 @@ This can be triggered from the players console or directly from the chat box by 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will call all the attached functions of an existing console command, for a specified player. """,
+                description='This function will call all the attached functions of an existing console command, for a specified player.' ,
                 arguments={
                     "commandName": """The name of the command you wish to execute. This is what must be typed into the console to trigger the function. """,
                     "args": """Additional parameters that will be passed to the handler function(s) of the command that is called, separated by spaces. """
                 },
-                result=""" """,
-            ),
-            name='executeCommandHandler',
+                result='' ,
+            )
         )
         ],
     ),
@@ -498,15 +484,13 @@ This can be triggered from the players console or directly from the chat box by 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This retrieves the analog control state of a control.  This is useful for detecting sensitive controls, such as those used on a joypad.
-To get the analog control state for a ped, please use getPedAnalogControlState. """,
+                description='This retrieves the analog control state of a control.  This is useful for detecting sensitive controls, such as those used on a joypad.\nTo get the analog control state for a ped, please use getPedAnalogControlState.' ,
                 arguments={
                     "control": """The control that you want to get the state of. See control names for a list of possible controls. """,
                     "rawValue": """A bool indicating if it should return the raw player input value. """
                 },
-                result="""returns a float between 0 and 1 indicating the amount the control is pressed. """,
-            ),
-            name='getAnalogControlState',
+                result='returns a float between 0 and 1 indicating the amount the control is pressed.' ,
+            )
         )
         ],
     ),
@@ -547,13 +531,12 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Returns a list of key names that are bound to the specified game Control names|control or console command. """,
+                description='Returns a list of key names that are bound to the specified game Control names|control or console command.' ,
                 arguments={
                     "command/control": """the name of a game control or a console command. See the control names page for valid controls. """
                 },
-                result="""if one or more keys are bound to the specified control or console command, a table is returned indexed by the names of the keys and containing key states as values. if no keys are bound or an invalid name was passed, returns false. """,
-            ),
-            name='getBoundKeys',
+                result='if one or more keys are bound to the specified control or console command, a table is returned indexed by the names of the keys and containing key states as values. if no keys are bound or an invalid name was passed, returns false.' ,
+            )
         )
         ],
     ),
@@ -591,13 +574,12 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to retrieve a list of all the registered command handlers of a given resource (or of all resources). """,
+                description='This function is used to retrieve a list of all the registered command handlers of a given resource (or of all resources).' ,
                 arguments={
                     "theResource": """The resource from which you wish to retrieve all command handlers. Or leave it empty to retrieve command handlers of all resources. """
                 },
-                result="""returns a table containing all the commands of the given resource or a table with subtables containing the command and theresource pointer ( { command, theresource } ). see examples below if you dont understand it. """,
-            ),
-            name='getCommandHandlers',
+                result='returns a table containing all the commands of the given resource or a table with subtables containing the command and theresource pointer ( { command, theresource } ). see examples below if you dont understand it.' ,
+            )
         )
         ],
         client=[
@@ -633,13 +615,12 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function is used to retrieve a list of all the registered command handlers of a given resource (or of all resources). """,
+                description='This function is used to retrieve a list of all the registered command handlers of a given resource (or of all resources).' ,
                 arguments={
                     "theResource": """The resource from which you wish to retrieve all command handlers. Or leave it empty to retrieve command handlers of all resources. """
                 },
-                result="""returns a table containing all the commands of the given resource or a table with subtables containing the command and theresource pointer ( { command, theresource } ). see examples below if you dont understand it. """,
-            ),
-            name='getCommandHandlers',
+                result='returns a table containing all the commands of the given resource or a table with subtables containing the command and theresource pointer ( { command, theresource } ). see examples below if you dont understand it.' ,
+            )
         )
         ],
     ),
@@ -690,7 +671,7 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the commands bound to a key. """,
+                description='Gets the commands bound to a key.' ,
                 arguments={
                     "theKey": """See key names for a list of possible keys """,
                     "keyState": """A string that has one of the following values: """,
@@ -698,9 +679,8 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
                     "down": """If the bound key should trigger the function when the key is pressed """,
                     "both": """If the bound key should trigger the function when the key is pressed or released """
                 },
-                result="""returns a table of the commands bound on that key. """,
-            ),
-            name='getCommandsBoundToKey',
+                result='returns a table of the commands bound on that key.' ,
+            )
         )
         ],
     ),
@@ -748,8 +728,7 @@ To get the analog control state for a ped, please use getPedAnalogControlState. 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function will check if a player is pressing a particular control. Controls are those that affect GTA. If you wish to get the state of another key, use bindKey and a command function.
-Note: Not all control states are sent to the server at all times, as such their state may be given incorrectly. As a rule, keys that move or affect the player or their vehicle are most likely to be accurate. For increased accuracy (and also increased bandwidth usage) use bindKey instead to bind a GTA control name to a function. """,
+                description='This function will check if a player is pressing a particular control. Controls are those that affect GTA. If you wish to get the state of another key, use bindKey and a command function.\nNote: Not all control states are sent to the server at all times, as such their state may be given incorrectly. As a rule, keys that move or affect the player or their vehicle are most likely to be accurate. For increased accuracy (and also increased bandwidth usage) use bindKey instead to bind a GTA control name to a function.' ,
                 arguments={
                     "thePlayer": """The player you wish to get the control state of. Do not use this parameter when scripting for client. """,
                     "controlName": """The control that you want to get the state of. See control names for a list of possible controls.
@@ -774,9 +753,8 @@ Note: Not all control states are sent to the server at all times, as such their 
 *vehicle_mouse_look
 *special_control_* """
                 },
-                result="""returns the state of the control, false if the control doesnt exist or if the player is dead. """,
-            ),
-            name='getControlState',
+                result='returns the state of the control, false if the control doesnt exist or if the player is dead.' ,
+            )
         )
         ],
         client=[
@@ -837,7 +815,7 @@ Note: Not all control states are sent to the server at all times, as such their 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the functions bound to a key. To bind a function to a key use the bindKey function """,
+                description='Gets the functions bound to a key. To bind a function to a key use the bindKey function' ,
                 arguments={
                     "thePlayer": """The player to get the functions from a key. """,
                     "theKey": """The key you wish to check the functions from. """,
@@ -846,9 +824,8 @@ Note: Not all control states are sent to the server at all times, as such their 
                     "down": """If the bound key should trigger the function when the key is pressed """,
                     "both": """If the bound key should trigger the function when the key is pressed or released """
                 },
-                result=""" """,
-            ),
-            name='getFunctionsBoundToKey',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -894,7 +871,7 @@ Note: Not all control states are sent to the server at all times, as such their 
                 ],
             ),
             docs=FunctionDoc(
-                description="""Gets the functions bound to a key. To bind a function to a key use the bindKey function """,
+                description='Gets the functions bound to a key. To bind a function to a key use the bindKey function' ,
                 arguments={
                     "theKey": """The key you wish to check the functions from. """,
                     "keyState": """A string that has one of the following values: """,
@@ -902,9 +879,8 @@ Note: Not all control states are sent to the server at all times, as such their 
                     "down": """If the bound key should trigger the function when the key is pressed """,
                     "both": """If the bound key should trigger the function when the key is pressed or released """
                 },
-                result=""" """,
-            ),
-            name='getFunctionsBoundToKey',
+                result='' ,
+            )
         )
         ],
     ),
@@ -945,13 +921,12 @@ Note: Not all control states are sent to the server at all times, as such their 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function allow you get first key bound to command. """,
+                description='This function allow you get first key bound to command.' ,
                 arguments={
                     "command": """command what you need check. """
                 },
-                result="""returns a string of first key binded to current command. """,
-            ),
-            name='getKeyBoundToCommand',
+                result='returns a string of first key binded to current command.' ,
+            )
         )
         ],
     ),
@@ -999,14 +974,13 @@ Note: Not all control states are sent to the server at all times, as such their 
                 ],
             ),
             docs=FunctionDoc(
-                description="""getKeyBoundToFunction allows retrieval of the first key bound to a function. """,
+                description='getKeyBoundToFunction allows retrieval of the first key bound to a function.' ,
                 arguments={
                     "thePlayer": """The player you are checking the function bound to a key """,
                     "theFunction": """The function in which you would like to check the bound key """
                 },
-                result="""returns a string of the first key the function was bound to. """,
-            ),
-            name='getKeyBoundToFunction',
+                result='returns a string of the first key the function was bound to.' ,
+            )
         )
         ],
         client=[
@@ -1042,13 +1016,12 @@ Note: Not all control states are sent to the server at all times, as such their 
                 ],
             ),
             docs=FunctionDoc(
-                description="""getKeyBoundToFunction allows retrieval of the first key bound to a function. """,
+                description='getKeyBoundToFunction allows retrieval of the first key bound to a function.' ,
                 arguments={
                     "theFunction": """The function in which you would like to check the bound key """
                 },
-                result="""returns a string of the first key the function was bound to. """,
-            ),
-            name='getKeyBoundToFunction',
+                result='returns a string of the first key the function was bound to.' ,
+            )
         )
         ],
     ),
@@ -1089,14 +1062,12 @@ Note: Not all control states are sent to the server at all times, as such their 
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function determines if a certain key is pressed or not.
-Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
+                description='This function determines if a certain key is pressed or not.\nNote: ralt may trigger both ralt and lctrl, this is due to AltGr' ,
                 arguments={
                     "keyName": """The name of the key youre checking state of. See Key names. """
                 },
-                result="""returns true if the specified key is pressed, false if it isnt or if an invalid key name is passed. """,
-            ),
-            name='getKeyState',
+                result='returns true if the specified key is pressed, false if it isnt or if an invalid key name is passed.' ,
+            )
         )
         ],
     ),
@@ -1144,14 +1115,13 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Checks whether a GTA control is enabled or disabled for a certain player. """,
+                description='Checks whether a GTA control is enabled or disabled for a certain player.' ,
                 arguments={
                     "thePlayer": """The player you wish the control status of. """,
                     "control": """The control you wish to check. See control names for a list of possible controls. """
                 },
-                result=""" """,
-            ),
-            name='isControlEnabled',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -1187,13 +1157,12 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Checks whether a GTA control is enabled or disabled for a certain player. """,
+                description='Checks whether a GTA control is enabled or disabled for a certain player.' ,
                 arguments={
                     "control": """The control you wish to check. See control names for a list of possible controls. """
                 },
-                result=""" """,
-            ),
-            name='isControlEnabled',
+                result='' ,
+            )
         )
         ],
     ),
@@ -1261,7 +1230,7 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function can be used to find out if a key has already been bound. If you do not specify a keyState or handler, any instances of key being bound will cause isKeyBound to return true. """,
+                description='This function can be used to find out if a key has already been bound. If you do not specify a keyState or handler, any instances of key being bound will cause isKeyBound to return true.' ,
                 arguments={
                     "thePlayer": """The player youre checking. """,
                     "key": """The key youre checking. See Key names for a list of valid key names. """,
@@ -1270,9 +1239,8 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                     "down": """when the key is pressed """,
                     "handler": """The function youre checking against """
                 },
-                result="""returns true if the key is bound, false otherwise. """,
-            ),
-            name='isKeyBound',
+                result='returns true if the key is bound, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1323,14 +1291,13 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes a command handler, that is one that has been added using addCommandHandler. This function can only remove command handlers that were added by the resource that it is called in. """,
+                description='This function removes a command handler, that is one that has been added using addCommandHandler. This function can only remove command handlers that were added by the resource that it is called in.' ,
                 arguments={
                     "commandName": """the name of the command you wish to remove. """,
                     "handler": """the specific handler function to remove. If not specified, all handler functions for the command (from the calling resource) will be removed. This argument is only available in the server. """
                 },
-                result="""returns true if the command handler was removed successfully, false if the command doesnt exist. """,
-            ),
-            name='removeCommandHandler',
+                result='returns true if the command handler was removed successfully, false if the command doesnt exist.' ,
+            )
         )
         ],
         client=[
@@ -1376,14 +1343,13 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""This function removes a command handler, that is one that has been added using addCommandHandler. This function can only remove command handlers that were added by the resource that it is called in. """,
+                description='This function removes a command handler, that is one that has been added using addCommandHandler. This function can only remove command handlers that were added by the resource that it is called in.' ,
                 arguments={
                     "commandName": """the name of the command you wish to remove. """,
                     "handler": """the specific handler function to remove. If not specified, all handler functions for the command (from the calling resource) will be removed. This argument is only available in the server. """
                 },
-                result="""returns true if the command handler was removed successfully, false if the command doesnt exist. """,
-            ),
-            name='removeCommandHandler',
+                result='returns true if the command handler was removed successfully, false if the command doesnt exist.' ,
+            )
         )
         ],
     ),
@@ -1441,15 +1407,14 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Sets a state of a specified players control, as if they pressed or released it. """,
+                description='Sets a state of a specified players control, as if they pressed or released it.' ,
                 arguments={
                     "thePlayer": """The player you wish to set the control state of. """,
                     "control": """The control that you want to set the state of. See control names for a list of possible controls. """,
                     "state": """A boolean value representing whether or not the key will be set to pressed or not. """
                 },
-                result="""returns true if the control state was successfully set, false otherwise. """,
-            ),
-            name='setControlState',
+                result='returns true if the control state was successfully set, false otherwise.' ,
+            )
         )
         ],
         client=[
@@ -1520,16 +1485,15 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Enables or disables the use of all GTA controls for a specified player. """,
+                description='Enables or disables the use of all GTA controls for a specified player.' ,
                 arguments={
                     "thePlayer": """The player you wish to toggle the control ability of. """,
                     "enabled": """A boolean value representing whether or not the controls will be usable. """,
                     "gtaControls": """A boolean deciding whether the enabled parameter will affect GTAs internal controls. """,
                     "mtaControls": """A boolean deciding whether the enabled parameter will affect MTAs own controls., e.g. chatbox. """
                 },
-                result=""" """,
-            ),
-            name='toggleAllControls',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -1585,15 +1549,14 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Enables or disables the use of all GTA controls for a specified player. """,
+                description='Enables or disables the use of all GTA controls for a specified player.' ,
                 arguments={
                     "enabled": """A boolean value representing whether or not the controls will be usable. """,
                     "gtaControls": """A boolean deciding whether the enabled parameter will affect GTAs internal controls. """,
                     "mtaControls": """A boolean deciding whether the enabled parameter will affect MTAs own controls., e.g. chatbox. """
                 },
-                result=""" """,
-            ),
-            name='toggleAllControls',
+                result='' ,
+            )
         )
         ],
     ),
@@ -1651,15 +1614,14 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Enables or disables the use of a GTA control for a specific player. """,
+                description='Enables or disables the use of a GTA control for a specific player.' ,
                 arguments={
                     "thePlayer": """The player you wish to toggle the control ability of. """,
                     "control": """The control that you want to toggle the ability of. See control names for a list of possible controls. """,
                     "enabled": """A boolean value representing whether or not the key will be usable or not. """
                 },
-                result=""" """,
-            ),
-            name='toggleControl',
+                result='' ,
+            )
         )
         ],
         client=[
@@ -1705,14 +1667,13 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Enables or disables the use of a GTA control for a specific player. """,
+                description='Enables or disables the use of a GTA control for a specific player.' ,
                 arguments={
                     "control": """The control that you want to toggle the ability of. See control names for a list of possible controls. """,
                     "enabled": """A boolean value representing whether or not the key will be usable or not. """
                 },
-                result=""" """,
-            ),
-            name='toggleControl',
+                result='' ,
+            )
         )
         ],
     ),
@@ -1780,7 +1741,7 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                 ],
             ),
             docs=FunctionDoc(
-                description="""Removes an existing key bind from the specified player. """,
+                description='Removes an existing key bind from the specified player.' ,
                 arguments={
                     "thePlayer": """The player you wish to unbind the key of. """,
                     "key": """The key you wish to unbind. See Key names for a list of valid key names. """,
@@ -1792,9 +1753,8 @@ Note: ralt may trigger both ralt and lctrl, this is due to AltGr """,
                     "handler": """(Syntax 2) The function you wish to unbind.
 Note: If you do not specify ''handler'', any instances of ''key'' being bound will be unbound, whatever function they are bound to. """
                 },
-                result="""returns true if the key was unbound, false if it was not previously bound or invalid arguments were passed to the function. """,
-            ),
-            name='unbindKey',
+                result='returns true if the key was unbound, false if it was not previously bound or invalid arguments were passed to the function.' ,
+            )
         )
         ],
         client=[
@@ -1850,7 +1810,7 @@ Note: If you do not specify ''handler'', any instances of ''key'' being bound wi
                 ],
             ),
             docs=FunctionDoc(
-                description="""Removes an existing key bind from the specified player. """,
+                description='Removes an existing key bind from the specified player.' ,
                 arguments={
                     "key": """The key you wish to unbind. See Key names for a list of valid key names. """,
                     "keyState": """is optional in Syntax 2. """,
@@ -1861,9 +1821,8 @@ Note: If you do not specify ''handler'', any instances of ''key'' being bound wi
                     "handler": """(Syntax 2) The function you wish to unbind.
 Note: If you do not specify ''handler'', any instances of ''key'' being bound will be unbound, whatever function they are bound to. """
                 },
-                result="""returns true if the key was unbound, false if it was not previously bound or invalid arguments were passed to the function. """,
-            ),
-            name='unbindKey',
+                result='returns true if the key was unbound, false if it was not previously bound or invalid arguments were passed to the function.' ,
+            )
         )
         ],
     )

@@ -14,11 +14,11 @@ DUMP_PARTIAL = [
             EventData(
             name='onBan',
             docs=FunctionDoc(
-                description="""This event is triggered when an IP address or serial is banned from the server. """,
+                description='This event is triggered when an IP address or serial is banned from the server.' ,
                 arguments={
                     "theBan": """: the ban which was added. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -46,12 +46,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onChatMessage',
             docs=FunctionDoc(
-                description="""This event is triggered when a player uses say, teamsay, me successfully. Or when any message is output to chat using outputChatBox on the server side. It can be used to get the resource responsible for specific outputChatBox call via the second parameter. """,
+                description='This event is triggered when a player uses say, teamsay, me successfully. Or when any message is output to chat using outputChatBox on the server side. It can be used to get the resource responsible for specific outputChatBox call via the second parameter.' ,
                 arguments={
                     "theMessage": """a string representing the text that was output to the chatbox. """,
                     "theElement": """a player element if chatbox output was done via say, teamsay or me. Resource if it was done via outputChatBox. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -89,8 +89,7 @@ DUMP_PARTIAL = [
             EventData(
             name='onDebugMessage',
             docs=FunctionDoc(
-                description="""This event is triggered when debug messages (for instance errors or warnings) appear in the server console.
-Note: To prevent infinite loops, debug messages that occur inside the function that handles this event wont trigger this event, so you wont be able to rely on debug info to fix faulty code that is inside this function. Since build https://buildinfo.mtasa.com/index.php?Revision=14683 r14683 debug messages from outputDebugString and iprint will show up. """,
+                description='This event is triggered when debug messages (for instance errors or warnings) appear in the server console.\nNote: To prevent infinite loops, debug messages that occur inside the function that handles this event wont trigger this event, so you wont be able to rely on debug info to fix faulty code that is inside this function. Since build https://buildinfo.mtasa.com/index.php?Revision=14683 r14683 debug messages from outputDebugString and iprint will show up.' ,
                 arguments={
                     "message": """: the message which was outputted in the server console, without details like file, line etc. """,
                     "level": """: the type of debug message which was outputted. """,
@@ -105,7 +104,7 @@ Note: To prevent infinite loops, debug messages that occur inside the function t
                     "g": """: an int representing the amount of green color (0-255). """,
                     "b": """: an int representing the amount of blue color (0-255). """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -163,13 +162,13 @@ Note: To prevent infinite loops, debug messages that occur inside the function t
             EventData(
             name='onSettingChange',
             docs=FunctionDoc(
-                description="""This event is triggered when resource setting has been changed. For instance, this event would trigger if you would edit the settings of the Race resource through the Admin panel. """,
+                description='This event is triggered when resource setting has been changed. For instance, this event would trigger if you would edit the settings of the Race resource through the Admin panel.' ,
                 arguments={
                     "setting": """: The setting which was changed. For instance: *race.ghostmode """,
                     "oldValue": """: The previous value. Please note that this value is in JSON. To get a normal Lua value, use fromJSON """,
                     "newValue": """: The new value. Also in JSON """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -217,13 +216,12 @@ Note: To prevent infinite loops, debug messages that occur inside the function t
             EventData(
             name='onUnban',
             docs=FunctionDoc(
-                description="""This event is triggered when a ban is removed from the server.
-if the ban was removed using function removeBan, and the responsibleElement was not specifying, the event will return nil. """,
+                description='This event is triggered when a ban is removed from the server.\nif the ban was removed using function removeBan, and the responsibleElement was not specifying, the event will return nil.' ,
                 arguments={
                     "theBan": """: the ban that will be removed. """,
                     "responsibleElement": """: the player who removed the ban, otherwise returns nil. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[

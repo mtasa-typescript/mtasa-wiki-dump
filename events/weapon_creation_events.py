@@ -17,7 +17,7 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientWeaponFire',
             docs=FunctionDoc(
-                description="""This event triggers when a Element/Weapon|custom weapon fires a shot. """,
+                description='This event triggers when a Element/Weapon|custom weapon fires a shot.' ,
                 arguments={
                     "hitElement": """the element that was hit """,
                     "posX": """the position it will hit """,
@@ -30,7 +30,7 @@ DUMP_PARTIAL = [
                     "lighting": """the lighting of the entity it hit ( see processLineOfSight ) """,
                     "pieceHit": """the piece of the entity it hit ( see processLineOfSight ) """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[

@@ -17,12 +17,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientMarkerHit',
             docs=FunctionDoc(
-                description="""This event is triggered when a player enters a marker created using createMarker. """,
+                description='This event is triggered when a player enters a marker created using createMarker.' ,
                 arguments={
                     "hitPlayer": """the player that hit the marker. """,
                     "matchingDimension": """true if the player is in the same dimension as the hit marker. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -60,12 +60,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientMarkerLeave',
             docs=FunctionDoc(
-                description="""This event is triggered when a player leaves the area of a marker created using createMarker. """,
+                description='This event is triggered when a player leaves the area of a marker created using createMarker.' ,
                 arguments={
                     "leftPlayer": """: the player that left the marker|markers area. """,
                     "matchingDimension": """: true if the player is in the same dimension as the marker. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -100,12 +100,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onMarkerHit',
             docs=FunctionDoc(
-                description="""This event is triggered when an element enters a marker created using createMarker. """,
+                description='This event is triggered when an element enters a marker created using createMarker.' ,
                 arguments={
                     "hitElement": """: the element that hit the marker. """,
                     "matchingDimension": """: a boolean representing whether the element is in the same dimension as the marker. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
@@ -143,12 +143,12 @@ DUMP_PARTIAL = [
             EventData(
             name='onMarkerLeave',
             docs=FunctionDoc(
-                description="""This event is triggered when an element leaves the area of a marker created using createMarker. """,
+                description='This event is triggered when an element leaves the area of a marker created using createMarker.' ,
                 arguments={
                     "leftElement": """: the element that left the marker|markers area. """,
                     "matchingDimension": """: a boolean representing whether the element is in the same dimension as the marker. """
                 },
-                result=""" """,
+                result='' ,
             ),
             arguments=FunctionArgumentValues(
                     arguments=[
