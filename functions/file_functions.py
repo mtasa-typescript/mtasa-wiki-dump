@@ -48,7 +48,8 @@ DUMP_PARTIAL = [
                     "theFile": """The file handle to close. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='fileClose',
         )
         ],
         client=[
@@ -89,7 +90,8 @@ DUMP_PARTIAL = [
                     "theFile": """The file handle to close. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='fileClose',
         )
         ],
     ),
@@ -154,7 +156,8 @@ DUMP_PARTIAL = [
                     "overwrite": """: If set to true it will overwrite a file that already exists at copyToFilePath. """
                 },
                 result='return true if the file was copied, else false if the filepath doesnt exist.' ,
-            )
+            ),
+            url='fileCopy',
         )
         ],
         client=[
@@ -217,7 +220,8 @@ DUMP_PARTIAL = [
                     "overwrite": """: If set to true it will overwrite a file that already exists at copyToFilePath. """
                 },
                 result='return true if the file was copied, else false if the filepath doesnt exist.' ,
-            )
+            ),
+            url='fileCopy',
         )
         ],
     ),
@@ -262,7 +266,8 @@ DUMP_PARTIAL = [
 :If the file is in the current resource, only the file path is necessary, e.g. ''fileCreate("myfile.txt")''. """
                 },
                 result='if successful, returns a file handle which can be used with other file functions (filewrite, fileclose...). returns false if an error occured.' ,
-            )
+            ),
+            url='fileCreate',
         )
         ],
         client=[
@@ -305,7 +310,8 @@ DUMP_PARTIAL = [
 :If the file is in the current resource, only the file path is necessary, e.g. ''fileCreate("myfile.txt")''. """
                 },
                 result='if successful, returns a file handle which can be used with other file functions (filewrite, fileclose...). returns false if an error occured.' ,
-            )
+            ),
+            url='fileCreate',
         )
         ],
     ),
@@ -350,7 +356,8 @@ DUMP_PARTIAL = [
 :If the file is in the current resource, only the file path is necessary, e.g. ''fileDelete("myFile.txt")''. """
                 },
                 result='returns true if successful, false otherwise (for example if there exists no file with the given name, or it does exist but is in use).' ,
-            )
+            ),
+            url='fileDelete',
         )
         ],
         client=[
@@ -393,7 +400,8 @@ DUMP_PARTIAL = [
 :If the file is in the current resource, only the file path is necessary, e.g. ''fileDelete("myFile.txt")''. """
                 },
                 result='returns true if successful, false otherwise (for example if there exists no file with the given name, or it does exist but is in use).' ,
-            )
+            ),
+            url='fileDelete',
         )
         ],
     ),
@@ -438,7 +446,8 @@ DUMP_PARTIAL = [
 :If the file, whose existence is going to be checked, is in the current resource, only the file path is necessary, e.g. ''fileExists("myfile.txt")''. Note that you must use forward slashes '/' for the folders, backslashes '\' will return false. """
                 },
                 result='returns true if the file exists, false otherwise.' ,
-            )
+            ),
+            url='fileExists',
         )
         ],
         client=[
@@ -481,7 +490,8 @@ DUMP_PARTIAL = [
 :If the file, whose existence is going to be checked, is in the current resource, only the file path is necessary, e.g. ''fileExists("myfile.txt")''. Note that you must use forward slashes '/' for the folders, backslashes '\' will return false. """
                 },
                 result='returns true if the file exists, false otherwise.' ,
-            )
+            ),
+            url='fileExists',
         )
         ],
     ),
@@ -524,7 +534,8 @@ DUMP_PARTIAL = [
                     "theFile": """The file handle of the file you wish to flush. """
                 },
                 result='returns true if succeeded, false in case of failure (e.g. the file handle is invalid).' ,
-            )
+            ),
+            url='fileFlush',
         )
         ],
         client=[
@@ -565,7 +576,8 @@ DUMP_PARTIAL = [
                     "theFile": """The file handle of the file you wish to flush. """
                 },
                 result='returns true if succeeded, false in case of failure (e.g. the file handle is invalid).' ,
-            )
+            ),
+            url='fileFlush',
         )
         ],
     ),
@@ -608,7 +620,8 @@ DUMP_PARTIAL = [
                     "theFile": """The file you want to get the path. """
                 },
                 result='returns a string representing the file path, false if invalid file was provided.' ,
-            )
+            ),
+            url='fileGetPath',
         )
         ],
         client=[
@@ -649,7 +662,8 @@ DUMP_PARTIAL = [
                     "theFile": """The file you want to get the path. """
                 },
                 result='returns a string representing the file path, false if invalid file was provided.' ,
-            )
+            ),
+            url='fileGetPath',
         )
         ],
     ),
@@ -692,7 +706,8 @@ DUMP_PARTIAL = [
                     "theFile": """the file handle you wish to get the position of. """
                 },
                 result='returns the file position if successful, or false if an error occured (e.g. an invalid handle was passed).' ,
-            )
+            ),
+            url='fileGetPos',
         )
         ],
         client=[
@@ -733,7 +748,8 @@ DUMP_PARTIAL = [
                     "theFile": """the file handle you wish to get the position of. """
                 },
                 result='returns the file position if successful, or false if an error occured (e.g. an invalid handle was passed).' ,
-            )
+            ),
+            url='fileGetPos',
         )
         ],
     ),
@@ -776,7 +792,8 @@ DUMP_PARTIAL = [
                     "theFile": """the file handle you wish to get the size of. """
                 },
                 result='returns the file size if successful, or false if an error occured (e.g. an invalid file handle was passed).' ,
-            )
+            ),
+            url='fileGetSize',
         )
         ],
         client=[
@@ -817,7 +834,8 @@ DUMP_PARTIAL = [
                     "theFile": """the file handle you wish to get the size of. """
                 },
                 result='returns the file size if successful, or false if an error occured (e.g. an invalid file handle was passed).' ,
-            )
+            ),
+            url='fileGetSize',
         )
         ],
     ),
@@ -860,7 +878,8 @@ DUMP_PARTIAL = [
                     "theFile": """A handle to the file you wish to check. """
                 },
                 result='returns true if the file position of the specified file is at the end of the file, false otherwise.' ,
-            )
+            ),
+            url='fileIsEOF',
         )
         ],
         client=[
@@ -901,7 +920,8 @@ DUMP_PARTIAL = [
                     "theFile": """A handle to the file you wish to check. """
                 },
                 result='returns true if the file position of the specified file is at the end of the file, false otherwise.' ,
-            )
+            ),
+            url='fileIsEOF',
         )
         ],
     ),
@@ -957,7 +977,8 @@ DUMP_PARTIAL = [
                     "readOnly": """By default, the file is opened with reading and writing access. You can specify true for this parameter if you only need reading access. """
                 },
                 result='if successful, returns a file handle for the file. otherwise returns false (f.e. if the file doesnt exist).' ,
-            )
+            ),
+            url='fileOpen',
         )
         ],
         client=[
@@ -1011,7 +1032,8 @@ DUMP_PARTIAL = [
                     "readOnly": """By default, the file is opened with reading and writing access. You can specify true for this parameter if you only need reading access. """
                 },
                 result='if successful, returns a file handle for the file. otherwise returns false (f.e. if the file doesnt exist).' ,
-            )
+            ),
+            url='fileOpen',
         )
         ],
     ),
@@ -1065,7 +1087,8 @@ DUMP_PARTIAL = [
                     "count": """The number of bytes you wish to read. """
                 },
                 result='returns the bytes that were read in a string. note that this string might not contain as many bytes as you specified if an error occured, i.e. end of file.' ,
-            )
+            ),
+            url='fileRead',
         )
         ],
         client=[
@@ -1117,7 +1140,8 @@ DUMP_PARTIAL = [
                     "count": """The number of bytes you wish to read. """
                 },
                 result='returns the bytes that were read in a string. note that this string might not contain as many bytes as you specified if an error occured, i.e. end of file.' ,
-            )
+            ),
+            url='fileRead',
         )
         ],
     ),
@@ -1171,7 +1195,8 @@ DUMP_PARTIAL = [
                     "newFilePath": """Destination filepath for the specified source file in the same format. """
                 },
                 result='if successful, returns true. otherwise returns false.' ,
-            )
+            ),
+            url='fileRename',
         )
         ],
         client=[
@@ -1223,7 +1248,8 @@ DUMP_PARTIAL = [
                     "newFilePath": """Destination filepath for the specified source file in the same format. """
                 },
                 result='if successful, returns true. otherwise returns false.' ,
-            )
+            ),
+            url='fileRename',
         )
         ],
     ),
@@ -1277,7 +1303,8 @@ DUMP_PARTIAL = [
                     "offset": """The new position. This is the number of bytes from the beginning of the file. If this value is larger than the file size, it is limited to 52,428,800 bytes (50 MB). """
                 },
                 result='returns where the offset was actually set at. i.e. if offset was past the end of the file, it will be set at the end of the file, and this position will be returned. returns false in case of failure (e.g. the specified file handle is invalid).' ,
-            )
+            ),
+            url='fileSetPos',
         )
         ],
         client=[
@@ -1329,7 +1356,8 @@ DUMP_PARTIAL = [
                     "offset": """The new position. This is the number of bytes from the beginning of the file. If this value is larger than the file size, it is limited to 52,428,800 bytes (50 MB). """
                 },
                 result='returns where the offset was actually set at. i.e. if offset was past the end of the file, it will be set at the end of the file, and this position will be returned. returns false in case of failure (e.g. the specified file handle is invalid).' ,
-            )
+            ),
+            url='fileSetPos',
         )
         ],
     ),
@@ -1403,7 +1431,8 @@ DUMP_PARTIAL = [
                     "string1": """The string to write. """
                 },
                 result='returns the number of bytes successfully written to the file, returns false if invalid arguments were specified.' ,
-            )
+            ),
+            url='fileWrite',
         )
         ],
         client=[
@@ -1475,7 +1504,8 @@ DUMP_PARTIAL = [
                     "string1": """The string to write. """
                 },
                 result='returns the number of bytes successfully written to the file, returns false if invalid arguments were specified.' ,
-            )
+            ),
+            url='fileWrite',
         )
         ],
     )

@@ -173,7 +173,8 @@ DUMP_PARTIAL = [
                     "bShallow": """gives the water a shallow water effect. """
                 },
                 result='returns a water element if successful, false otherwise. the water element can be repositioned with setelementposition and destroyed with destroyelement.' ,
-            )
+            ),
+            url='createWater',
         )
         ],
         client=[
@@ -339,7 +340,8 @@ DUMP_PARTIAL = [
                     "bShallow": """gives the water a shallow water effect. """
                 },
                 result='returns a water element if successful, false otherwise. the water element can be repositioned with setelementposition and destroyed with destroyelement.' ,
-            )
+            ),
+            url='createWater',
         )
         ],
     ),
@@ -385,7 +387,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns 4 int|ints, indicating the color of the water. (rgba)' ,
-            )
+            ),
+            url='getWaterColor',
         )
         ],
         client=[
@@ -429,7 +432,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns 4 int|ints, indicating the color of the water. (rgba)' ,
-            )
+            ),
+            url='getWaterColor',
         )
         ],
     ),
@@ -510,7 +514,8 @@ DUMP_PARTIAL = [
                     "ignoreDistanceToWaterThreshold": """If set to false, this function returns false, if the difference between water level (without waves) and posZ is greater than 3.0 """
                 },
                 result='returns an integer of the water level if the localplayer/position is near the water (-3 to 20 on the z coordinate) else false if theres no water near the localplayer/position.' ,
-            )
+            ),
+            url='getWaterLevel',
         )
         ],
     ),
@@ -572,7 +577,8 @@ DUMP_PARTIAL = [
                     "vertexIndex": """the index of the vertex whose position to get. Values range from 1 to 4 for a water quad, or 1 to 3 for a triangle. """
                 },
                 result='returns the x, y and z coordinates of the specified vertex if successful, false otherwise.' ,
-            )
+            ),
+            url='getWaterVertexPosition',
         )
         ],
         client=[
@@ -632,7 +638,8 @@ DUMP_PARTIAL = [
                     "vertexIndex": """the index of the vertex whose position to get. Values range from 1 to 4 for a water quad, or 1 to 3 for a triangle. """
                 },
                 result='returns the x, y and z coordinates of the specified vertex if successful, false otherwise.' ,
-            )
+            ),
+            url='getWaterVertexPosition',
         )
         ],
     ),
@@ -666,7 +673,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the height as a float, false otherwise.' ,
-            )
+            ),
+            url='getWaveHeight',
         )
         ],
         client=[
@@ -698,7 +706,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the height as a float, false otherwise.' ,
-            )
+            ),
+            url='getWaveHeight',
         )
         ],
     ),
@@ -735,7 +744,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if water is drawn last in the rendering order, false otherwise.' ,
-            )
+            ),
+            url='isWaterDrawnLast',
         )
         ],
     ),
@@ -769,7 +779,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if water color was reset correctly, false otherwise.' ,
-            )
+            ),
+            url='resetWaterColor',
         )
         ],
         client=[
@@ -801,7 +812,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if water color was reset correctly, false otherwise.' ,
-            )
+            ),
+            url='resetWaterColor',
         )
         ],
     ),
@@ -835,7 +847,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if water level was reset correctly, false otherwise.' ,
-            )
+            ),
+            url='resetWaterLevel',
         )
         ],
         client=[
@@ -867,7 +880,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if water level was reset correctly, false otherwise.' ,
-            )
+            ),
+            url='resetWaterLevel',
         )
         ],
     ),
@@ -943,7 +957,8 @@ DUMP_PARTIAL = [
                     "alpha": """The alpha (visibility) value of the water, from 0 to 255. Defaults to 200 if not declared. """
                 },
                 result='returns true if water color was set correctly, false if invalid values were passed.' ,
-            )
+            ),
+            url='setWaterColor',
         )
         ],
         client=[
@@ -1017,7 +1032,8 @@ DUMP_PARTIAL = [
                     "alpha": """The alpha (visibility) value of the water, from 0 to 255. Defaults to 200 if not declared. """
                 },
                 result='returns true if water color was set correctly, false if invalid values were passed.' ,
-            )
+            ),
+            url='setWaterColor',
         )
         ],
     ),
@@ -1063,7 +1079,8 @@ DUMP_PARTIAL = [
                     "bEnabled": """: A boolean value determining whether water should be drawn last. """
                 },
                 result='returns true if the rendering order was changed successfully, false otherwise.' ,
-            )
+            ),
+            url='setWaterDrawnLast',
         )
         ],
     ),
@@ -1122,7 +1139,8 @@ DUMP_PARTIAL = [
                     "includeOutsideWorldSea": """a boolean indicating whether to also set the level of sea water outside the world area, ie. outside -3000, 3000. """
                 },
                 result='returns true if successful, false in case of failure.' ,
-            )
+            ),
+            url='setWaterLevel',
         )
         ],
         client=[
@@ -1179,7 +1197,8 @@ DUMP_PARTIAL = [
                     "includeOutsideWorldSea": """a boolean indicating whether to also set the level of sea water outside the world area, ie. outside -3000, 3000. """
                 },
                 result='returns true if successful, false in case of failure.' ,
-            )
+            ),
+            url='setWaterLevel',
         )
         ],
     ),
@@ -1266,7 +1285,8 @@ DUMP_PARTIAL = [
                     "z": """the Z coordinate to set for the vertex. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setWaterVertexPosition',
         )
         ],
         client=[
@@ -1351,7 +1371,8 @@ DUMP_PARTIAL = [
                     "z": """the Z coordinate to set for the vertex. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setWaterVertexPosition',
         )
         ],
     ),
@@ -1394,7 +1415,8 @@ DUMP_PARTIAL = [
                     "height": """A float between 0 and 100. """
                 },
                 result='returns a boolean value true or false that tells you if it was successful or not.' ,
-            )
+            ),
+            url='setWaveHeight',
         )
         ],
         client=[
@@ -1435,7 +1457,8 @@ DUMP_PARTIAL = [
                     "height": """A float between 0 and 100. """
                 },
                 result='returns a boolean value true or false that tells you if it was successful or not.' ,
-            )
+            ),
+            url='setWaveHeight',
         )
         ],
     )

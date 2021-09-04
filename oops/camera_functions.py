@@ -110,7 +110,8 @@ DUMP_PARTIAL = [
                     "blue": """The amount of blue in the color that the camera fades out to (0 - 255). Not required for fading in. """
                 },
                 result='' ,
-            )
+            ),
+            url='fadeCamera',
         ),
                 field=None,
                 is_static=False,
@@ -202,7 +203,8 @@ DUMP_PARTIAL = [
                     "blue": """The amount of blue in the color that the camera fades out to (0 - 255). Not required for fading in. """
                 },
                 result='' ,
-            )
+            ),
+            url='fadeCamera',
         ),
                 field=None,
                 is_static=True,
@@ -258,7 +260,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='*objects: if you want the camera to clip on objects.\n*vehicles: if you want the camera to clip on vehicles.' ,
-            )
+            ),
+            url='getCameraClip',
         ),
                 field=None,
                 is_static=True,
@@ -314,7 +317,8 @@ DUMP_PARTIAL = [
 ** "vehicle_max": the max the field of view can go to when the vehicle is moving at a high speed (must be higher than "vehicle") """
                 },
                 result='returns one float - the field of view angle' ,
-            )
+            ),
+            url='getCameraFieldOfView',
         ),
                 field=FunctionOOPField(
                                 name='fov',
@@ -366,7 +370,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='* string indicating the current camera goggle effect. their meanings can be seen below.' ,
-            )
+            ),
+            url='getCameraGoggleEffect',
         ),
                 field=FunctionOOPField(
                                 name='goggleEffect',
@@ -424,7 +429,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """: The player whose camera interior you want to get. """
                 },
                 result='' ,
-            )
+            ),
+            url='getCameraInterior',
         ),
                 field=FunctionOOPField(
                                 name='cameraInterior',
@@ -471,7 +477,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='getCameraInterior',
         ),
                 field=FunctionOOPField(
                                 name='interior',
@@ -557,7 +564,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player whose camera matrix is to be returned. """
                 },
                 result='' ,
-            )
+            ),
+            url='getCameraMatrix',
         ),
                 field=FunctionOOPField(
                                 name='cameraMatrix',
@@ -660,7 +668,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='getCameraMatrix',
         ),
                 field=FunctionOOPField(
                                 name='matrix',
@@ -754,7 +763,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player whose camera you wish to receive the target of. """
                 },
                 result='' ,
-            )
+            ),
+            url='getCameraTarget',
         ),
                 field=FunctionOOPField(
                                 name='cameraTarget',
@@ -813,7 +823,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='getCameraViewMode',
         ),
                 field=FunctionOOPField(
                                 name='viewMode',
@@ -889,7 +900,8 @@ DUMP_PARTIAL = [
                     "vehicles": """Sets if you want the camera to clip on vehicles. """
                 },
                 result='always returns true.' ,
-            )
+            ),
+            url='setCameraClip',
         ),
                 field=None,
                 is_static=True,
@@ -956,7 +968,8 @@ DUMP_PARTIAL = [
                     "fieldOfView": """The field of view angle, 0 to 179. """
                 },
                 result='returns true if the arguments are valid, false otherwise.' ,
-            )
+            ),
+            url='setCameraFieldOfView',
         ),
                 field=None,
                 is_static=True,
@@ -1020,7 +1033,8 @@ DUMP_PARTIAL = [
                     "noiseEnabled": """: whether or not there should be a fuzzy noise effect """
                 },
                 result='* true if the effect was set correctly.\n* false otherwise.' ,
-            )
+            ),
+            url='setCameraGoggleEffect',
         ),
                 field=FunctionOOPField(
                                 name='goggleEffect',
@@ -1089,7 +1103,8 @@ DUMP_PARTIAL = [
                     "interior": """the interior to place the camera in. """
                 },
                 result='' ,
-            )
+            ),
+            url='setCameraInterior',
         ),
                 field=FunctionOOPField(
                                 name='cameraInterior',
@@ -1145,7 +1160,8 @@ DUMP_PARTIAL = [
                     "interior": """the interior to place the camera in. """
                 },
                 result='' ,
-            )
+            ),
+            url='setCameraInterior',
         ),
                 field=FunctionOOPField(
                                 name='interior',
@@ -1292,7 +1308,8 @@ DUMP_PARTIAL = [
                     "fov": """the field of view angle, 0.01 to 180. The higher this value is, the more you will be able to see what is to your sides. """
                 },
                 result='' ,
-            )
+            ),
+            url='setCameraMatrix',
         ),
                 field=FunctionOOPField(
                                 name='cameraMatrix',
@@ -1426,7 +1443,8 @@ DUMP_PARTIAL = [
                     "fov": """the field of view angle, 0.01 to 180. The higher this value is, the more you will be able to see what is to your sides. """
                 },
                 result='' ,
-            )
+            ),
+            url='setCameraMatrix',
         ),
                 field=FunctionOOPField(
                                 name='matrix',
@@ -1503,7 +1521,8 @@ DUMP_PARTIAL = [
                     "target": """The player who you want the camera to follow. If none is specified, the camera will target the player. """
                 },
                 result='' ,
-            )
+            ),
+            url='setCameraTarget',
         ),
                 field=FunctionOOPField(
                                 name='cameraTarget',
@@ -1578,7 +1597,8 @@ DUMP_PARTIAL = [
                     "pedCameraMode": """: The view mode you wish to use when you are not inside vehicles. """
                 },
                 result='returns true if the view(s) were set correctly, false otherwise.' ,
-            )
+            ),
+            url='setCameraViewMode',
         ),
                 field=FunctionOOPField(
                                 name='viewMode',

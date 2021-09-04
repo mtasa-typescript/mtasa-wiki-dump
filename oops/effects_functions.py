@@ -146,7 +146,8 @@ DUMP_PARTIAL = [
                     "brightness": """the brightness. Ranges from 0 (almost black) to 1 (normal color). """
                 },
                 result='' ,
-            )
+            ),
+            url='fxAddBlood',
         ),
                 field=None,
                 is_static=True,
@@ -283,7 +284,8 @@ DUMP_PARTIAL = [
                     "smokeIntensity": """the amount/transparency of smoke, ranges from 0 to 1. """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='fxAddBulletImpact',
         ),
                 field=None,
                 is_static=True,
@@ -358,7 +360,8 @@ DUMP_PARTIAL = [
                     "posZ": """A float representing the z position of the splash """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='fxAddBulletSplash',
         ),
                 field=None,
                 is_static=True,
@@ -494,7 +497,8 @@ DUMP_PARTIAL = [
                     "count": """the number of chunks to create. """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='fxAddDebris',
         ),
                 field=None,
                 is_static=True,
@@ -569,7 +573,8 @@ DUMP_PARTIAL = [
                     "posZ": """A float representing the z position of the splash """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='fxAddFootSplash',
         ),
                 field=None,
                 is_static=True,
@@ -707,7 +712,8 @@ DUMP_PARTIAL = [
                     "count": """The density of the particle effect. """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='fxAddGlass',
         ),
                 field=None,
                 is_static=True,
@@ -822,7 +828,8 @@ DUMP_PARTIAL = [
                     "includeSparks": """A bool representing whether the particle effect will generate sparks. """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='fxAddGunshot',
         ),
                 field=None,
                 is_static=True,
@@ -926,7 +933,8 @@ DUMP_PARTIAL = [
                     "dirX, dirY, dirZ": """a vector indicating the movement direction of the effect. """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='fxAddPunchImpact',
         ),
                 field=None,
                 is_static=True,
@@ -1116,7 +1124,8 @@ DUMP_PARTIAL = [
                     "life": """the higher this value, the longer the sparks survive before they disappear. """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='fxAddSparks',
         ),
                 field=None,
                 is_static=True,
@@ -1220,7 +1229,8 @@ DUMP_PARTIAL = [
                     "dirX, dirY, dirZ": """a direction vector indicating where the tank fire is directed to. """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='fxAddTankFire',
         ),
                 field=None,
                 is_static=True,
@@ -1324,7 +1334,8 @@ DUMP_PARTIAL = [
                     "dirX, dirY, dirZ": """a vector indicating the movement direction of the effect. """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='fxAddTyreBurst',
         ),
                 field=None,
                 is_static=True,
@@ -1399,7 +1410,8 @@ DUMP_PARTIAL = [
                     "posZ": """A float representing the z position of the hydrant """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='fxAddWaterHydrant',
         ),
                 field=None,
                 is_static=True,
@@ -1474,7 +1486,8 @@ DUMP_PARTIAL = [
                     "posZ": """A float representing the z position of the splash """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='fxAddWaterSplash',
         ),
                 field=None,
                 is_static=True,
@@ -1600,7 +1613,8 @@ DUMP_PARTIAL = [
                     "brightness": """the brightness. Ranges from 0 (black) to 1 (normal color). """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='fxAddWood',
         ),
                 field=None,
                 is_static=True,
@@ -1653,7 +1667,8 @@ DUMP_PARTIAL = [
                     "theEffect": """The effect to get density of. """
                 },
                 result='' ,
-            )
+            ),
+            url='getEffectDensity',
         ),
                 field=FunctionOOPField(
                                 name='density',
@@ -1714,7 +1729,8 @@ DUMP_PARTIAL = [
                     "theEffect": """The effect to get the speed of. """
                 },
                 result='returns float containing the effects speed, false if invalid arguments were specified.' ,
-            )
+            ),
+            url='getEffectSpeed',
         ),
                 field=FunctionOOPField(
                                 name='speed',
@@ -1786,7 +1802,8 @@ DUMP_PARTIAL = [
                     "density": """The level of density (from 0 to 2). """
                 },
                 result='returns true if the density was succesfully changed, false otherwise.' ,
-            )
+            ),
+            url='setEffectDensity',
         ),
                 field=FunctionOOPField(
                                 name='density',
@@ -1858,7 +1875,8 @@ DUMP_PARTIAL = [
                     "speed": """The speed to set. """
                 },
                 result='returns true if the effect speed was succesfuly changed, false otherwise.' ,
-            )
+            ),
+            url='setEffectSpeed',
         ),
                 field=FunctionOOPField(
                                 name='speed',

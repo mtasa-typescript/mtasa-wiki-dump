@@ -39,7 +39,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true the traffic lights are currently locked, false otherwise.' ,
-            )
+            ),
+            url='areTrafficLightsLocked',
         )
         ],
         client=[
@@ -71,7 +72,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true the traffic lights are currently locked, false otherwise.' ,
-            )
+            ),
+            url='areTrafficLightsLocked',
         )
         ],
     ),
@@ -148,7 +150,8 @@ DUMP_PARTIAL = [
                     "duration": """the amount in miliseconds the rope will be there before falling to the ground. """
                 },
                 result='' ,
-            )
+            ),
+            url='createSWATRope',
         )
         ],
     ),
@@ -182,7 +185,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a float containing the max aircraft height.' ,
-            )
+            ),
+            url='getAircraftMaxHeight',
         )
         ],
         client=[
@@ -214,7 +218,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a float containing the max aircraft height.' ,
-            )
+            ),
+            url='getAircraftMaxHeight',
         )
         ],
     ),
@@ -248,7 +253,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a float being the max velocity that is currently set, depending on which side it is used.' ,
-            )
+            ),
+            url='getAircraftMaxVelocity',
         )
         ],
         client=[
@@ -280,7 +286,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a float being the max velocity that is currently set, depending on which side it is used.' ,
-            )
+            ),
+            url='getAircraftMaxVelocity',
         )
         ],
     ),
@@ -317,7 +324,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the birds are enabled or false if the birds are disabled.' ,
-            )
+            ),
+            url='getBirdsEnabled',
         )
         ],
     ),
@@ -351,7 +359,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the clouds are enabled or false if clouds are disabled.' ,
-            )
+            ),
+            url='getCloudsEnabled',
         )
         ],
         client=[
@@ -383,7 +392,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the clouds are enabled or false if clouds are disabled.' ,
-            )
+            ),
+            url='getCloudsEnabled',
         )
         ],
     ),
@@ -417,7 +427,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a float with the current render distance, false if the operation could not be completed.' ,
-            )
+            ),
+            url='getFarClipDistance',
         )
         ],
         client=[
@@ -449,7 +460,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a float with the current render distance, false if the operation could not be completed.' ,
-            )
+            ),
+            url='getFarClipDistance',
         )
         ],
     ),
@@ -483,7 +495,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a float with the current fog render distance, false if the operation could not be completed.' ,
-            )
+            ),
+            url='getFogDistance',
         )
         ],
         client=[
@@ -515,7 +528,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a float with the current fog render distance, false if the operation could not be completed.' ,
-            )
+            ),
+            url='getFogDistance',
         )
         ],
     ),
@@ -549,7 +563,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a float representing the speed of the game.' ,
-            )
+            ),
+            url='getGameSpeed',
         )
         ],
         client=[
@@ -581,7 +596,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a float representing the speed of the game.' ,
-            )
+            ),
+            url='getGameSpeed',
         )
         ],
     ),
@@ -639,7 +655,8 @@ DUMP_PARTIAL = [
                     "garageID": """The Garage|garage ID that represents the garage door that is being checked. """
                 },
                 result='returns four floats indicating the bounding box of the garage.\nwestern x position, eastern x position, southern y position, northern y position,, false when invalid garageid was provided.' ,
-            )
+            ),
+            url='getGarageBoundingBox',
         )
         ],
     ),
@@ -693,7 +710,8 @@ DUMP_PARTIAL = [
                     "garageID": """The Garage|garage ID that represents the garage door that is being checked. """
                 },
                 result='returns three floats indicating the position of the garage, x, y and z respectively, false when garageid was invalid.' ,
-            )
+            ),
+            url='getGaragePosition',
         )
         ],
     ),
@@ -747,7 +765,8 @@ DUMP_PARTIAL = [
                     "garageID": """The Garage|garage ID that represents the garage door that is being checked. """
                 },
                 result='returns three floats indicating the size of the garage, false if an invalid garageid has been provided' ,
-            )
+            ),
+            url='getGarageSize',
         )
         ],
     ),
@@ -781,7 +800,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a float with the current server or client (depending on where you call the function) gravity level.' ,
-            )
+            ),
+            url='getGravity',
         )
         ],
         client=[
@@ -813,7 +833,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a float with the current server or client (depending on where you call the function) gravity level.' ,
-            )
+            ),
+            url='getGravity',
         )
         ],
     ),
@@ -881,7 +902,8 @@ DUMP_PARTIAL = [
                     "z": """A floating point number representing the Z world coordinate of the point. """
                 },
                 result='returns a float with the highest ground-level z coord if parameters are valid, 0 if the point you tried to test is outside the loaded world map, false otherwise.' ,
-            )
+            ),
+            url='getGroundPosition',
         )
         ],
     ),
@@ -947,7 +969,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns 9 values, which are the same used as arguments in setheathaze:' ,
-            )
+            ),
+            url='getHeatHaze',
         )
         ],
         client=[
@@ -1011,7 +1034,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns 9 values, which are the same used as arguments in setheathaze:' ,
-            )
+            ),
+            url='getHeatHaze',
         )
         ],
     ),
@@ -1057,7 +1081,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if interior furniture is enabled or false if interior furniture is disabled.' ,
-            )
+            ),
+            url='getInteriorFurnitureEnabled',
         )
         ],
     ),
@@ -1094,7 +1119,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if music is playing, returns false if music is not playing.' ,
-            )
+            ),
+            url='getInteriorSoundsEnabled',
         )
         ],
     ),
@@ -1128,7 +1154,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a float containing the max jetpack height.' ,
-            )
+            ),
+            url='getJetpackMaxHeight',
         )
         ],
         client=[
@@ -1160,7 +1187,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a float containing the max jetpack height.' ,
-            )
+            ),
+            url='getJetpackMaxHeight',
         )
         ],
     ),
@@ -1203,7 +1231,8 @@ DUMP_PARTIAL = [
                     "weapon": """The weapon thats being checked if its usable on a Jetpack. """
                 },
                 result='returns true if the weapon is enabled, else false if the weapon isnt or invalid arguments are passed.' ,
-            )
+            ),
+            url='getJetpackWeaponEnabled',
         )
         ],
         client=[
@@ -1240,7 +1269,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the number of real-world milliseconds that go in an ingame minute.' ,
-            )
+            ),
+            url='getMinuteDuration',
         )
         ],
         client=[
@@ -1272,7 +1302,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the number of real-world milliseconds that go in an ingame minute.' ,
-            )
+            ),
+            url='getMinuteDuration',
         )
         ],
     ),
@@ -1306,7 +1337,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a integer being the moon size that is currently set, depending on which side it is used.' ,
-            )
+            ),
+            url='getMoonSize',
         )
         ],
         client=[
@@ -1338,7 +1370,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a integer being the moon size that is currently set, depending on which side it is used.' ,
-            )
+            ),
+            url='getMoonSize',
         )
         ],
     ),
@@ -1375,7 +1408,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='this function returns a float containing the actual near clip distance.' ,
-            )
+            ),
+            url='getNearClipDistance',
         )
         ],
     ),
@@ -1409,7 +1443,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if occlusions are enabled, or false otherwise.' ,
-            )
+            ),
+            url='getOcclusionsEnabled',
         )
         ],
         client=[
@@ -1441,7 +1476,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if occlusions are enabled, or false otherwise.' ,
-            )
+            ),
+            url='getOcclusionsEnabled',
         )
         ],
     ),
@@ -1478,7 +1514,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='this function returns a float containing the peds lod distance.' ,
-            )
+            ),
+            url='getPedsLODDistance',
         )
         ],
     ),
@@ -1512,7 +1549,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the rain level as a number.' ,
-            )
+            ),
+            url='getRainLevel',
         )
         ],
         client=[
@@ -1544,7 +1582,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the rain level as a number.' ,
-            )
+            ),
+            url='getRainLevel',
         )
         ],
     ),
@@ -1612,7 +1651,8 @@ DUMP_PARTIAL = [
                     "z": """: A floating point number representing the Z world coordinate of the point. """
                 },
                 result='returns a float with the lowest roof-level z coord if parameters are valid, false if the point you tried to test is outside the loaded world map.' ,
-            )
+            ),
+            url='getRoofPosition',
         )
         ],
     ),
@@ -1710,7 +1750,8 @@ DUMP_PARTIAL = [
                     "relative": """A boolean value that indicates if edgeTolerance is in pixels false, or relative to the screen size true. """
                 },
                 result='returns two x, y floats indicating the screen position and float distance between screen and given position if successful, false otherwise.' ,
-            )
+            ),
+            url='getScreenFromWorldPosition',
         )
         ],
     ),
@@ -1764,7 +1805,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns 6 int|ints, of which the first 3 represent the skys top color, (in rgb) and the last 3 represent the bottom colors.' ,
-            )
+            ),
+            url='getSkyGradient',
         )
         ],
         client=[
@@ -1816,7 +1858,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns 6 int|ints, of which the first 3 represent the skys top color, (in rgb) and the last 3 represent the bottom colors.' ,
-            )
+            ),
+            url='getSkyGradient',
         )
         ],
     ),
@@ -1870,7 +1913,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the color of the sun as six numbers, false if its default.' ,
-            )
+            ),
+            url='getSunColor',
         )
         ],
         client=[
@@ -1922,7 +1966,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the color of the sun as six numbers, false if its default.' ,
-            )
+            ),
+            url='getSunColor',
         )
         ],
     ),
@@ -1956,7 +2001,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the size of the sun as a number, false if the size of the sun is at its default.' ,
-            )
+            ),
+            url='getSunSize',
         )
         ],
         client=[
@@ -1988,7 +2034,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the size of the sun as a number, false if the size of the sun is at its default.' ,
-            )
+            ),
+            url='getSunSize',
         )
         ],
     ),
@@ -2026,7 +2073,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns two ints that represent hours and minutes.' ,
-            )
+            ),
+            url='getTime',
         )
         ],
         client=[
@@ -2062,7 +2110,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns two ints that represent hours and minutes.' ,
-            )
+            ),
+            url='getTime',
         )
         ],
     ),
@@ -2096,7 +2145,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the current traffic_light_states|state of the traffic lights.' ,
-            )
+            ),
+            url='getTrafficLightState',
         )
         ],
         client=[
@@ -2128,7 +2178,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the current traffic_light_states|state of the traffic lights.' ,
-            )
+            ),
+            url='getTrafficLightState',
         )
         ],
     ),
@@ -2169,7 +2220,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='* float: general distance used for most vehicles\n* float: distance used for trains and planes' ,
-            )
+            ),
+            url='getVehiclesLODDistance',
         )
         ],
     ),
@@ -2207,7 +2259,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns two integers indicating the weather type that is currently active. the first integer says what weather is currently considered to be active. the second integer is the weather id that is being blended into if any, otherwise it is nil.' ,
-            )
+            ),
+            url='getWeather',
         )
         ],
         client=[
@@ -2243,7 +2296,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns two integers indicating the weather type that is currently active. the first integer says what weather is currently considered to be active. the second integer is the weather id that is being blended into if any, otherwise it is nil.' ,
-            )
+            ),
+            url='getWeather',
         )
         ],
     ),
@@ -2285,7 +2339,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='*velocityx: the velocity on the x-coordinate or false if the wind velocity is default.\n*velocityy: the velocity on the y-coordinate or nil if the wind velocity is default.\n*velocityz: the velocity on the z-coordinate or nil if the wind velocity is default.' ,
-            )
+            ),
+            url='getWindVelocity',
         )
         ],
         client=[
@@ -2325,7 +2380,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='*velocityx: the velocity on the x-coordinate or false if the wind velocity is default.\n*velocityy: the velocity on the y-coordinate or nil if the wind velocity is default.\n*velocityz: the velocity on the z-coordinate or nil if the wind velocity is default.' ,
-            )
+            ),
+            url='getWindVelocity',
         )
         ],
     ),
@@ -2401,7 +2457,8 @@ DUMP_PARTIAL = [
                     "depth": """A float value indicating the distance from the camera of the point whose coordinates we are retrieving, in units. """
                 },
                 result='returns three x, y, z floats indicating the world position if successful, false otherwise.' ,
-            )
+            ),
+            url='getWorldFromScreenPosition',
         )
         ],
     ),
@@ -2485,7 +2542,8 @@ DUMP_PARTIAL = [
 ** Los Santos """
                 },
                 result='returns the string of the zone name' ,
-            )
+            ),
+            url='getZoneName',
         )
         ],
         client=[
@@ -2567,7 +2625,8 @@ DUMP_PARTIAL = [
 ** Los Santos """
                 },
                 result='returns the string of the zone name' ,
-            )
+            ),
+            url='getZoneName',
         )
         ],
     ),
@@ -2613,7 +2672,8 @@ DUMP_PARTIAL = [
                     "theType": """The type of ambient sound to test. Can be either gunfire or general. """
                 },
                 result='returns true if the ambient sound is enabled, false if it is disabled or invalid values were passed.' ,
-            )
+            ),
+            url='isAmbientSoundEnabled',
         )
         ],
     ),
@@ -2656,7 +2716,8 @@ DUMP_PARTIAL = [
                     "garageID": """The Garage|garage ID that represents the garage door that is being checked. """
                 },
                 result='returns true if the garage is open, false if it is closed or an invalid garage id was given.' ,
-            )
+            ),
+            url='isGarageOpen',
         )
         ],
         client=[
@@ -2697,7 +2758,8 @@ DUMP_PARTIAL = [
                     "garageID": """The Garage|garage ID that represents the garage door that is being checked. """
                 },
                 result='returns true if the garage is open, false if it is closed or an invalid garage id was given.' ,
-            )
+            ),
+            url='isGarageOpen',
         )
         ],
     ),
@@ -2886,7 +2948,8 @@ DUMP_PARTIAL = [
                     "ignoredElement": """Allow the line of sight to pass through a certain specified element. """
                 },
                 result='returns true if the line between the specified points is clear, false if theres an obstacle or if invalid parameters are passed.' ,
-            )
+            ),
+            url='isLineOfSightClear',
         )
         ],
     ),
@@ -2943,7 +3006,8 @@ DUMP_PARTIAL = [
                     "index": """An integer representing an individual sound within the group """
                 },
                 result='returns true if the world sounds are enabled, false if they are disabled or invalid values were passed.' ,
-            )
+            ),
+            url='isWorldSoundEnabled',
         )
         ],
     ),
@@ -2989,7 +3053,8 @@ DUMP_PARTIAL = [
                     "propname": """the name of the property to retrieve. Possible values are listed on SetWorldSpecialPropertyEnabled. """
                 },
                 result='returns true if the property is enabled, false if it is disabled or the specified property name is invalid.' ,
-            )
+            ),
+            url='isWorldSpecialPropertyEnabled',
         )
         ],
     ),
@@ -3283,7 +3348,8 @@ DUMP_PARTIAL = [
                     "bIncludeCarTyres": """Includes car tyre hits. """
                 },
                 result='*hit: true if there is a collision, false otherwise\nthe other values are only filled if there is a collision, they contain nil otherwise\n*hitx, hity, hitz: collision position\n*hitelement: the mta element hit if any, nil otherwise\n*normalx, normaly, normalz: the normal of the surface hit\n*material: an integer representing the material ids|gtasa material id of the surface hit when applicable (world, objects)\n*lighting: a float between 0 (fully dark) and 1 (bright) representing the amount of light that the hit building surface will transfer to peds or vehicles that are in contact with it. the value can be affected by the game time of day, usually with a lower (darker) value being returned during the night.\n*piece: an integer representing the part of the element hit if hitelement is a vehicle or a ped/player, 0 otherwise.\n**for a ped/player, piece represents the body part hit:\n**for vehicles, piece represents the vehicle part hit:\n*worldmodelid: if includeworldmodelinformation was set to true and a world model was hit, this will contain the model id.\n*worldmodelpositionx,y,z: if worldmodelid is set, this will contain the world model position.\n*worldmodelrotationx,y,z: if worldmodelid is set, this will contain the world model rotation.\n*worldlodmodelid: if worldmodelid is set, this will contain the lod model id if applicable.' ,
-            )
+            ),
+            url='processLineOfSight',
         )
         ],
     ),
@@ -3381,7 +3447,8 @@ DUMP_PARTIAL = [
                     "interior": """The interior ID to apply the removal to. Some objects in interior 13 show in all interiors so if you want to remove everything in interior 0 also remove everything in interior 13. A value of -1 here will affect all interiors.}} """
                 },
                 result='returns true if the object was removed, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='removeWorldModel',
         )
         ],
         client=[
@@ -3477,7 +3544,8 @@ DUMP_PARTIAL = [
                     "interior": """The interior ID to apply the removal to. Some objects in interior 13 show in all interiors so if you want to remove everything in interior 0 also remove everything in interior 13. A value of -1 here will affect all interiors.}} """
                 },
                 result='returns true if the object was removed, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='removeWorldModel',
         )
         ],
     ),
@@ -3514,7 +3582,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the ambient sounds were reset, false otherwise.' ,
-            )
+            ),
+            url='resetAmbientSounds',
         )
         ],
     ),
@@ -3551,7 +3620,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the blur level was reset successfully. returns false otherwise.' ,
-            )
+            ),
+            url='resetBlurLevel',
         )
         ],
     ),
@@ -3588,7 +3658,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the color filtering was reset, false otherwise.' ,
-            )
+            ),
+            url='resetColorFilter',
         )
         ],
     ),
@@ -3622,7 +3693,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if operation was successful, false otherwise.' ,
-            )
+            ),
+            url='resetFarClipDistance',
         )
         ],
         client=[
@@ -3654,7 +3726,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if operation was successful, false otherwise.' ,
-            )
+            ),
+            url='resetFarClipDistance',
         )
         ],
     ),
@@ -3688,7 +3761,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if operation was successful, false otherwise.' ,
-            )
+            ),
+            url='resetFogDistance',
         )
         ],
         client=[
@@ -3720,7 +3794,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if operation was successful, false otherwise.' ,
-            )
+            ),
+            url='resetFogDistance',
         )
         ],
     ),
@@ -3754,7 +3829,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the heat haze was reset correctly, false otherwise.' ,
-            )
+            ),
+            url='resetHeatHaze',
         )
         ],
         client=[
@@ -3786,7 +3862,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the heat haze was reset correctly, false otherwise.' ,
-            )
+            ),
+            url='resetHeatHaze',
         )
         ],
     ),
@@ -3820,7 +3897,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the size of the moon was reset, false otherwise.' ,
-            )
+            ),
+            url='resetMoonSize',
         )
         ],
         client=[
@@ -3852,7 +3930,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the size of the moon was reset, false otherwise.' ,
-            )
+            ),
+            url='resetMoonSize',
         )
         ],
     ),
@@ -3889,7 +3968,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='*boolean: always returns true' ,
-            )
+            ),
+            url='resetNearClipDistance',
         )
         ],
     ),
@@ -3926,7 +4006,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the peds lod distance was reset, false otherwise.' ,
-            )
+            ),
+            url='resetPedsLODDistance',
         )
         ],
     ),
@@ -3960,7 +4041,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the rain level was reset.' ,
-            )
+            ),
+            url='resetRainLevel',
         )
         ],
         client=[
@@ -3992,7 +4074,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the rain level was reset.' ,
-            )
+            ),
+            url='resetRainLevel',
         )
         ],
     ),
@@ -4026,7 +4109,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if sky color was reset correctly, false otherwise.' ,
-            )
+            ),
+            url='resetSkyGradient',
         )
         ],
         client=[
@@ -4058,7 +4142,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if sky color was reset correctly, false otherwise.' ,
-            )
+            ),
+            url='resetSkyGradient',
         )
         ],
     ),
@@ -4092,7 +4177,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the color of the sun was reset, false otherwise.' ,
-            )
+            ),
+            url='resetSunColor',
         )
         ],
         client=[
@@ -4124,7 +4210,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the color of the sun was reset, false otherwise.' ,
-            )
+            ),
+            url='resetSunColor',
         )
         ],
     ),
@@ -4158,7 +4245,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the size of the sun was reset, false otherwise.' ,
-            )
+            ),
+            url='resetSunSize',
         )
         ],
         client=[
@@ -4190,7 +4278,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the size of the sun was reset, false otherwise.' ,
-            )
+            ),
+            url='resetSunSize',
         )
         ],
     ),
@@ -4227,7 +4316,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the vehicles lod distance was reset, false otherwise.' ,
-            )
+            ),
+            url='resetVehiclesLODDistance',
         )
         ],
     ),
@@ -4261,7 +4351,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='resetWindVelocity',
         )
         ],
         client=[
@@ -4293,7 +4384,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='resetWindVelocity',
         )
         ],
     ),
@@ -4330,7 +4422,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the world sounds were reset, false otherwise.' ,
-            )
+            ),
+            url='resetWorldSounds',
         )
         ],
     ),
@@ -4364,7 +4457,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the world objects were restored, false otherwise.' ,
-            )
+            ),
+            url='restoreAllWorldModels',
         )
         ],
         client=[
@@ -4396,7 +4490,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the world objects were restored, false otherwise.' ,
-            )
+            ),
+            url='restoreAllWorldModels',
         )
         ],
     ),
@@ -4494,7 +4589,8 @@ DUMP_PARTIAL = [
                     "iInterior": """ """
                 },
                 result='returns true if the world object was restored, false otherwise.' ,
-            )
+            ),
+            url='restoreWorldModel',
         )
         ],
         client=[
@@ -4590,7 +4686,8 @@ DUMP_PARTIAL = [
                     "iInterior": """ """
                 },
                 result='returns true if the world object was restored, false otherwise.' ,
-            )
+            ),
+            url='restoreWorldModel',
         )
         ],
     ),
@@ -4633,7 +4730,8 @@ DUMP_PARTIAL = [
                     "Height": """The height you want aircraft to be able to go. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setAircraftMaxHeight',
         )
         ],
         client=[
@@ -4674,7 +4772,8 @@ DUMP_PARTIAL = [
                     "Height": """The height you want aircraft to be able to go. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setAircraftMaxHeight',
         )
         ],
     ),
@@ -4717,7 +4816,8 @@ DUMP_PARTIAL = [
                     "velocity": """The max velocity, can be 0 or any positive value. Default is 1.5. """
                 },
                 result='returns true if the max velocity was set correctly, false otherwise.' ,
-            )
+            ),
+            url='setAircraftMaxVelocity',
         )
         ],
         client=[
@@ -4758,7 +4858,8 @@ DUMP_PARTIAL = [
                     "velocity": """The max velocity, can be 0 or any positive value. Default is 1.5. """
                 },
                 result='returns true if the max velocity was set correctly, false otherwise.' ,
-            )
+            ),
+            url='setAircraftMaxVelocity',
         )
         ],
     ),
@@ -4815,7 +4916,8 @@ DUMP_PARTIAL = [
                     "enable": """Set false to turn off, true to turn on """
                 },
                 result='returns true if the ambient sound was set correctly, false if invalid values were passed.' ,
-            )
+            ),
+            url='setAmbientSoundEnabled',
         )
         ],
     ),
@@ -4861,7 +4963,8 @@ DUMP_PARTIAL = [
                     "enabled": """A boolean value determining if birds should be shown. Use true to show the birds and false to hide them. """
                 },
                 result='returns true if the birds state was changed succesfully, false if an invalid argument was specified.' ,
-            )
+            ),
+            url='setBirdsEnabled',
         )
         ],
     ),
@@ -4904,7 +5007,8 @@ DUMP_PARTIAL = [
                     "enabled": """A boolean value determining if clouds should be shown. Use true to show clouds and false to hide them. """
                 },
                 result='returns true if the cloud state was changed succesfully, false if an invalid argument was specified.' ,
-            )
+            ),
+            url='setCloudsEnabled',
         )
         ],
         client=[
@@ -4945,7 +5049,8 @@ DUMP_PARTIAL = [
                     "enabled": """A boolean value determining if clouds should be shown. Use true to show clouds and false to hide them. """
                 },
                 result='returns true if the cloud state was changed succesfully, false if an invalid argument was specified.' ,
-            )
+            ),
+            url='setCloudsEnabled',
         )
         ],
     ),
@@ -5068,7 +5173,8 @@ DUMP_PARTIAL = [
                     "bAlpha": """The amount of alpha (0-255). """
                 },
                 result='returns true if the color filter was set, false otherwise.' ,
-            )
+            ),
+            url='setColorFilter',
         )
         ],
     ),
@@ -5111,7 +5217,8 @@ DUMP_PARTIAL = [
                     "distance": """A float specifying the distance of render. Setting this less than 5 will cause problems to the client. """
                 },
                 result='returns true if the distance was set correctly, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setFarClipDistance',
         )
         ],
         client=[
@@ -5152,7 +5259,8 @@ DUMP_PARTIAL = [
                     "distance": """A float specifying the distance of render. Setting this less than 5 will cause problems to the client. """
                 },
                 result='returns true if the distance was set correctly, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setFarClipDistance',
         )
         ],
     ),
@@ -5195,7 +5303,8 @@ DUMP_PARTIAL = [
                     "distance": """distance in GTA units at which fog will appear. Very short or negative distances will cause graphical bugs to the players. """
                 },
                 result='returns true if the distance changed successfully, false if bad arguments were passed.' ,
-            )
+            ),
+            url='setFogDistance',
         )
         ],
         client=[
@@ -5236,7 +5345,8 @@ DUMP_PARTIAL = [
                     "distance": """distance in GTA units at which fog will appear. Very short or negative distances will cause graphical bugs to the players. """
                 },
                 result='returns true if the distance changed successfully, false if bad arguments were passed.' ,
-            )
+            ),
+            url='setFogDistance',
         )
         ],
     ),
@@ -5279,7 +5389,8 @@ DUMP_PARTIAL = [
                     "value": """: The float value of the game speed (Range 0 - 10) """
                 },
                 result='returns true if the gamespeed was set successfully, false otherwise.\nthe normal game speed is 1.' ,
-            )
+            ),
+            url='setGameSpeed',
         )
         ],
         client=[
@@ -5320,7 +5431,8 @@ DUMP_PARTIAL = [
                     "value": """: The float value of the game speed (Range 0 - 10) """
                 },
                 result='returns true if the gamespeed was set successfully, false otherwise.\nthe normal game speed is 1.' ,
-            )
+            ),
+            url='setGameSpeed',
         )
         ],
     ),
@@ -5374,7 +5486,8 @@ DUMP_PARTIAL = [
                     "isOpen": """A boolean indicating whether or not to open the door. """
                 },
                 result='returns true if successful, false if an invalid garage id was given.' ,
-            )
+            ),
+            url='setGarageOpen',
         )
         ],
         client=[
@@ -5426,7 +5539,8 @@ DUMP_PARTIAL = [
                     "isOpen": """A boolean indicating whether or not to open the door. """
                 },
                 result='returns true if successful, false if an invalid garage id was given.' ,
-            )
+            ),
+            url='setGarageOpen',
         )
         ],
     ),
@@ -5469,7 +5583,8 @@ DUMP_PARTIAL = [
                     "level": """: The level of gravity (default is 0.008). """
                 },
                 result='returns true if gravity was changed, false otherwise.' ,
-            )
+            ),
+            url='setGravity',
         )
         ],
         client=[
@@ -5510,7 +5625,8 @@ DUMP_PARTIAL = [
                     "level": """: The level of gravity (default is 0.008). """
                 },
                 result='returns true if gravity was changed, false otherwise.' ,
-            )
+            ),
+            url='setGravity',
         )
         ],
     ),
@@ -5633,7 +5749,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the heat haze effect was set correctly, false if invalid values were passed.' ,
-            )
+            ),
+            url='setHeatHaze',
         )
         ],
         client=[
@@ -5754,7 +5871,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the heat haze effect was set correctly, false if invalid values were passed.' ,
-            )
+            ),
+            url='setHeatHaze',
         )
         ],
     ),
@@ -5816,7 +5934,8 @@ DUMP_PARTIAL = [
                     "enabled": """: A bool representing whether the interior furniture is enabled or disabled. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setInteriorFurnitureEnabled',
         )
         ],
     ),
@@ -5859,7 +5978,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='if a boolean was passed to the function, it always succeeds and returns true.' ,
-            )
+            ),
+            url='setInteriorSoundsEnabled',
         )
         ],
         client=[
@@ -5900,7 +6020,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='if a boolean was passed to the function, it always succeeds and returns true.' ,
-            )
+            ),
+            url='setInteriorSoundsEnabled',
         )
         ],
     ),
@@ -5943,7 +6064,8 @@ DUMP_PARTIAL = [
                     "Height": """: The max height starting at approximately -20. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setJetpackMaxHeight',
         )
         ],
         client=[
@@ -5984,7 +6106,8 @@ DUMP_PARTIAL = [
                     "Height": """: The max height starting at approximately -20. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setJetpackMaxHeight',
         )
         ],
     ),
@@ -6038,7 +6161,8 @@ DUMP_PARTIAL = [
                     "enabled": """A bool representing whether the weapon is enabled or disabled. """
                 },
                 result='returns true, else false if invalid arguments are passed.' ,
-            )
+            ),
+            url='setJetpackWeaponEnabled',
         )
         ],
         client=[
@@ -6084,7 +6208,8 @@ DUMP_PARTIAL = [
                     "milliseconds": """: the new duration of an ingame minute, accepted values 0 - 2147483647. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setMinuteDuration',
         )
         ],
         client=[
@@ -6125,7 +6250,8 @@ DUMP_PARTIAL = [
                     "milliseconds": """: the new duration of an ingame minute, accepted values 0 - 2147483647. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setMinuteDuration',
         )
         ],
     ),
@@ -6168,7 +6294,8 @@ DUMP_PARTIAL = [
                     "size": """The size, can be 0 or any positive value. Default is 3. """
                 },
                 result='returns true if the moon size was set correctly, false otherwise.' ,
-            )
+            ),
+            url='setMoonSize',
         )
         ],
         client=[
@@ -6209,7 +6336,8 @@ DUMP_PARTIAL = [
                     "size": """The size, can be 0 or any positive value. Default is 3. """
                 },
                 result='returns true if the moon size was set correctly, false otherwise.' ,
-            )
+            ),
+            url='setMoonSize',
         )
         ],
     ),
@@ -6255,7 +6383,8 @@ DUMP_PARTIAL = [
                     "distance": """the new near clip distance. It must be between 0.1 and 20 for the function to do any effect. Default value is 0.3. """
                 },
                 result='this function returns true if the argument is valid. returns false otherwise.' ,
-            )
+            ),
+            url='setNearClipDistance',
         )
         ],
     ),
@@ -6298,7 +6427,8 @@ DUMP_PARTIAL = [
                     "enabled": """A bool specifying if GTA occlusions should be enabled """
                 },
                 result='returns true if the setting was set correctly, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setOcclusionsEnabled',
         )
         ],
         client=[
@@ -6339,7 +6469,8 @@ DUMP_PARTIAL = [
                     "enabled": """A bool specifying if GTA occlusions should be enabled """
                 },
                 result='returns true if the setting was set correctly, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setOcclusionsEnabled',
         )
         ],
     ),
@@ -6385,7 +6516,8 @@ DUMP_PARTIAL = [
                     "distance": """the new peds LOD distance. It must be between 0 and 500. (Default for high_detail_peds on is 500, when off, it is 60). """
                 },
                 result='this function returns true if the argument is valid. returns false otherwise.' ,
-            )
+            ),
+            url='setPedsLODDistance',
         )
         ],
     ),
@@ -6429,7 +6561,8 @@ DUMP_PARTIAL = [
                     "Note": """The level value is clamped between 0.0 and 10.0 to avoid gameplay issues. """
                 },
                 result='returns true if the rain level was set, false otherwise.' ,
-            )
+            ),
+            url='setRainLevel',
         )
         ],
         client=[
@@ -6471,7 +6604,8 @@ DUMP_PARTIAL = [
                     "Note": """The level value is clamped between 0.0 and 10.0 to avoid gameplay issues. """
                 },
                 result='returns true if the rain level was set, false otherwise.' ,
-            )
+            ),
+            url='setRainLevel',
         )
         ],
     ),
@@ -6569,7 +6703,8 @@ DUMP_PARTIAL = [
                     "bottomBlue": """The blue value of the lower part of the sky, from 0 to 255. """
                 },
                 result='returns true if sky color was set correctly, false if invalid values were passed.' ,
-            )
+            ),
+            url='setSkyGradient',
         )
         ],
         client=[
@@ -6665,7 +6800,8 @@ DUMP_PARTIAL = [
                     "bottomBlue": """The blue value of the lower part of the sky, from 0 to 255. """
                 },
                 result='returns true if sky color was set correctly, false if invalid values were passed.' ,
-            )
+            ),
+            url='setSkyGradient',
         )
         ],
     ),
@@ -6763,7 +6899,8 @@ DUMP_PARTIAL = [
                     "bBlue": """The amount of blue (0-255) you want the sun to be. """
                 },
                 result='returns true if the color of the sun was set, false otherwise.' ,
-            )
+            ),
+            url='setSunColor',
         )
         ],
         client=[
@@ -6859,7 +6996,8 @@ DUMP_PARTIAL = [
                     "bBlue": """The amount of blue (0-255) you want the sun to be. """
                 },
                 result='returns true if the color of the sun was set, false otherwise.' ,
-            )
+            ),
+            url='setSunColor',
         )
         ],
     ),
@@ -6902,7 +7040,8 @@ DUMP_PARTIAL = [
                     "Size": """The size you want the sun to be in the sky. """
                 },
                 result='returns true if the size of the sun was set, false otherwise.' ,
-            )
+            ),
+            url='setSunSize',
         )
         ],
         client=[
@@ -6943,7 +7082,8 @@ DUMP_PARTIAL = [
                     "Size": """The size you want the sun to be in the sky. """
                 },
                 result='returns true if the size of the sun was set, false otherwise.' ,
-            )
+            ),
+            url='setSunSize',
         )
         ],
     ),
@@ -6997,7 +7137,8 @@ DUMP_PARTIAL = [
                     "minute": """: The minute of the new time (range 0-59). """
                 },
                 result='returns true if the new time was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setTime',
         )
         ],
         client=[
@@ -7049,7 +7190,8 @@ DUMP_PARTIAL = [
                     "minute": """: The minute of the new time (range 0-59). """
                 },
                 result='returns true if the new time was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setTime',
         )
         ],
     ),
@@ -7092,7 +7234,8 @@ DUMP_PARTIAL = [
                     "toggle": """: A bool indicating whether you want the traffic lights to change automatically, or not """
                 },
                 result='returns true if the successful, false otherwise.' ,
-            )
+            ),
+            url='setTrafficLightsLocked',
         )
         ],
         client=[
@@ -7133,7 +7276,8 @@ DUMP_PARTIAL = [
                     "toggle": """: A bool indicating whether you want the traffic lights to change automatically, or not """
                 },
                 result='returns true if the successful, false otherwise.' ,
-            )
+            ),
+            url='setTrafficLightsLocked',
         )
         ],
     ),
@@ -7182,7 +7326,8 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     "red": """ """
                 },
                 result='returns true if the state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setTrafficLightState',
         )
         ],
         client=[
@@ -7229,7 +7374,8 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     "red": """ """
                 },
                 result='returns true if the state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setTrafficLightState',
         )
         ],
     ),
@@ -7286,7 +7432,8 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     "trainsAndPlanesDistance": """distance used for trains and planes, this value is clamped to 0 – 500 """
                 },
                 result='' ,
-            )
+            ),
+            url='setVehiclesLODDistance',
         )
         ],
     ),
@@ -7329,7 +7476,8 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     "weatherID": """: The ID of new weather. Valid values are 0 to 255 inclusive. """
                 },
                 result='returns true if the weather was set succesfully, false if an invalid weatherid was specified.' ,
-            )
+            ),
+            url='setWeather',
         )
         ],
         client=[
@@ -7370,7 +7518,8 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     "weatherID": """: The ID of new weather. Valid values are 0 to 255 inclusive. """
                 },
                 result='returns true if the weather was set succesfully, false if an invalid weatherid was specified.' ,
-            )
+            ),
+            url='setWeather',
         )
         ],
     ),
@@ -7413,7 +7562,8 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     "weatherID": """The ID of the weather state you wish to set. Valid values are 0 to 255 inclusive. """
                 },
                 result='returns true if successful, false if an invalid weatherid is passed.' ,
-            )
+            ),
+            url='setWeatherBlended',
         )
         ],
         client=[
@@ -7454,7 +7604,8 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     "weatherID": """The ID of the weather state you wish to set. Valid values are 0 to 255 inclusive. """
                 },
                 result='returns true if successful, false if an invalid weatherid is passed.' ,
-            )
+            ),
+            url='setWeatherBlended',
         )
         ],
     ),
@@ -7519,7 +7670,8 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     "velocityZ": """: The velocity of the wind along the z axis. """
                 },
                 result='returns true if successful, false if bad arguments were passed.' ,
-            )
+            ),
+            url='setWindVelocity',
         )
         ],
         client=[
@@ -7582,7 +7734,8 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     "velocityZ": """: The velocity of the wind along the z axis. """
                 },
                 result='returns true if successful, false if bad arguments were passed.' ,
-            )
+            ),
+            url='setWindVelocity',
         )
         ],
     ),
@@ -7661,7 +7814,8 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     "immediate": """A boolean if set to true will cancel the sound if its already playing. This parameter only works for stopping the sound. """
                 },
                 result='returns true if the world sound was correctly enabled/disabled, false if invalid values were passed.' ,
-            )
+            ),
+            url='setWorldSoundEnabled',
         )
         ],
     ),
@@ -7726,7 +7880,8 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     "enable": """whether or not to enable the property. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setWorldSpecialPropertyEnabled',
         )
         ],
     ),
@@ -7835,7 +7990,8 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     "endX, endY, endZ": """the position of the end point of the line. """
                 },
                 result='returns true and the position of the intersection point of the line and the water surface if there is a collision, or false if there is no collision.' ,
-            )
+            ),
+            url='testLineAgainstWater',
         )
         ],
     )

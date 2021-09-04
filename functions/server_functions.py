@@ -39,7 +39,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the maximum number of players allowed on the server.' ,
-            )
+            ),
+            url='getMaxPlayers',
         )
         ],
         client=[
@@ -76,7 +77,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='an integer corresponding to the servers http port.' ,
-            )
+            ),
+            url='getServerHttpPort',
         )
         ],
         client=[
@@ -113,7 +115,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='a string containing the servers name.' ,
-            )
+            ),
+            url='getServerName',
         )
         ],
         client=[
@@ -150,7 +153,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the current server password as a string if it has a password, if not it returns nil.' ,
-            )
+            ),
+            url='getServerPassword',
         )
         ],
         client=[
@@ -187,7 +191,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='an integer corresponding to the servers port.' ,
-            )
+            ),
+            url='getServerPort',
         )
         ],
         client=[
@@ -233,7 +238,8 @@ DUMP_PARTIAL = [
                     "glitchName": """the name of the property to set. Possible values are: """
                 },
                 result='returns true if if the glitch was enabled, or false if it is disabled.' ,
-            )
+            ),
+            url='isGlitchEnabled',
         )
         ],
         client=[
@@ -270,7 +276,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='on server this returns a boolean, whether the transfer box should be visible during downloads or not.\non client this returns a boolean, whether the transfer box should be visible or not at the time of invocation.' ,
-            )
+            ),
+            url='isTransferBoxVisible',
         )
         ],
         client=[
@@ -302,7 +309,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='on server this returns a boolean, whether the transfer box should be visible during downloads or not.\non client this returns a boolean, whether the transfer box should be visible or not at the time of invocation.' ,
-            )
+            ),
+            url='isTransferBoxVisible',
         )
         ],
     ),
@@ -356,7 +364,8 @@ DUMP_PARTIAL = [
                     "enable": """whether or not to enable the glitch. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setGlitchEnabled',
         )
         ],
         client=[
@@ -402,7 +411,8 @@ DUMP_PARTIAL = [
                     "slots": """Maximum number of player slots on the server. """
                 },
                 result='returns true if number of player slots was successfully changed, false or nil otherwise.' ,
-            )
+            ),
+            url='setMaxPlayers',
         )
         ],
         client=[
@@ -448,7 +458,8 @@ DUMP_PARTIAL = [
                     "thePassword": """The new server password you want. Pass nil or an empty string to remove the password. """
                 },
                 result='returns true if the password was successfully changed or removed, false or nil otherwise.' ,
-            )
+            ),
+            url='setServerPassword',
         )
         ],
         client=[
@@ -494,7 +505,8 @@ DUMP_PARTIAL = [
                     "visible": """The new visibility state. """
                 },
                 result='returns true if the visibility was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setTransferBoxVisible',
         )
         ],
         client=[
@@ -535,7 +547,8 @@ DUMP_PARTIAL = [
                     "visible": """The new visibility state. """
                 },
                 result='returns true if the visibility was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setTransferBoxVisible',
         )
         ],
     ),
@@ -580,7 +593,8 @@ DUMP_PARTIAL = [
 |20915}} """
                 },
                 result='returns false if it was not possible to shut down the server.' ,
-            )
+            ),
+            url='shutdown',
         )
         ],
         client=[

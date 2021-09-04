@@ -71,7 +71,8 @@ DUMP_PARTIAL = [
                     "text_scale": """- Returns text scale """
                 },
                 result='*4 numbers if the cvar contains color\n*2 numbers if chat_scale was entered\n*1 number if any other cvar was specified\n*a table of all cvar values, if cvar was not specified\n*false if an invalid cvar was specified' ,
-            )
+            ),
+            url='getChatboxLayout',
         )
         ],
     ),
@@ -117,7 +118,8 @@ DUMP_PARTIAL = [
                     "guiElement": """the GUI element that you want to defocus """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='guiBlur',
         )
         ],
     ),
@@ -163,7 +165,8 @@ DUMP_PARTIAL = [
                     "guiElement": """the GUI element that you want to move to the front. """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='guiBringToFront',
         )
         ],
     ),
@@ -209,7 +212,8 @@ DUMP_PARTIAL = [
                     "theCheckbox": """The checkbox you wish to retrieve the selection state of. """
                 },
                 result='returns true if the checkbox is selected, false if it is not.' ,
-            )
+            ),
+            url='guiCheckBoxGetSelected',
         )
         ],
     ),
@@ -266,7 +270,8 @@ DUMP_PARTIAL = [
                     "state": """The state of the checkbox, where true indicates selected, and false indicates unselected. """
                 },
                 result='returns true if the checkboxs selection state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='guiCheckBoxSetSelected',
         )
         ],
     ),
@@ -323,7 +328,8 @@ DUMP_PARTIAL = [
                     "value": """The text that the item will contain. """
                 },
                 result='returns the item id if it has been created, false otherwise.' ,
-            )
+            ),
+            url='guiComboBoxAddItem',
         )
         ],
     ),
@@ -369,7 +375,8 @@ DUMP_PARTIAL = [
                     "comboBox": """The combobox element to be cleared """
                 },
                 result='returns true if the combobox element is valid and has been cleared successfully, false otherwise.' ,
-            )
+            ),
+            url='guiComboBoxClear',
         )
         ],
     ),
@@ -415,7 +422,8 @@ DUMP_PARTIAL = [
                     "comboBox": """The combo box to get the number of items from. """
                 },
                 result='returns the number of items if the function is successful, false otherwise.' ,
-            )
+            ),
+            url='guiComboBoxGetItemCount',
         )
         ],
     ),
@@ -472,7 +480,8 @@ DUMP_PARTIAL = [
                     "itemId": """The index of the item """
                 },
                 result='returns the text of the item if the arguments are right, false otherwise.' ,
-            )
+            ),
+            url='guiComboBoxGetItemText',
         )
         ],
     ),
@@ -518,7 +527,8 @@ DUMP_PARTIAL = [
                     "comboBox": """the combobox you want to know the selected item index of """
                 },
                 result='returns the index of the selected item if the specified combobox is valid and has a selected item, -1 if no item is selected, nil otherwise.' ,
-            )
+            ),
+            url='guiComboBoxGetSelected',
         )
         ],
     ),
@@ -564,7 +574,8 @@ DUMP_PARTIAL = [
                     "comboBox": """The combo box to get the state. """
                 },
                 result='returns true if combobox is opened, false if combobox is closed, nil otherwise.' ,
-            )
+            ),
+            url='guiComboBoxIsOpen',
         )
         ],
     ),
@@ -621,7 +632,8 @@ DUMP_PARTIAL = [
                     "itemId": """The index of the item to remove """
                 },
                 result='returns true if the item was removes successfully, false otherwise.' ,
-            )
+            ),
+            url='guiComboBoxRemoveItem',
         )
         ],
     ),
@@ -689,7 +701,8 @@ DUMP_PARTIAL = [
                     "text": """The text you want to put in (does NOT accept numbers, use tostring() for that) """
                 },
                 result='returns true if the text was set successfully, false otherwise.' ,
-            )
+            ),
+            url='guiComboBoxSetItemText',
         )
         ],
     ),
@@ -746,7 +759,8 @@ DUMP_PARTIAL = [
                     "state": """The state of combobox. true, if the combobox is to be opened. false if the combobox is to be closed. """
                 },
                 result='returns true if is successful, false otherwise.' ,
-            )
+            ),
+            url='guiComboBoxSetOpen',
         )
         ],
     ),
@@ -803,7 +817,8 @@ DUMP_PARTIAL = [
                     "itemIndex": """the item you want to select (item 0 is the first item). If -1 is specified, then the combo box text is set to its caption. """
                 },
                 result='returns true if the selected item has been changed successfully, false otherwise.' ,
-            )
+            ),
+            url='guiComboBoxSetSelected',
         )
         ],
     ),
@@ -926,7 +941,8 @@ DUMP_PARTIAL = [
                     "parent": """This is the parent that the radio button is attached to. If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
                 result='returns a gui-browser element if it was created successfully, false otherwise. returns also false, if the user disabled remote pages and islocal was set to false.' ,
-            )
+            ),
+            url='guiCreateBrowser',
         )
         ],
     ),
@@ -1038,7 +1054,8 @@ DUMP_PARTIAL = [
                     "parent": """This is the parent that the gui button is attached to.  If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
                 result='returns an element of the created element/gui/button|button if it was successfully created, false otherwise.' ,
-            )
+            ),
+            url='guiCreateButton',
         )
         ],
     ),
@@ -1161,7 +1178,8 @@ DUMP_PARTIAL = [
                     "parent": """This is the parent that the checkbox is attached to. If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
                 result='returns element of the checkbox if it was created succesfully, false otherwise.' ,
-            )
+            ),
+            url='guiCreateCheckBox',
         )
         ],
     ),
@@ -1273,7 +1291,8 @@ DUMP_PARTIAL = [
                     "parent": """This is the parent that the GUI combobox is attached to.  If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
                 result='returns an element of the created combobox if it was successfully created, false otherwise.' ,
-            )
+            ),
+            url='guiCreateComboBox',
         )
         ],
     ),
@@ -1385,7 +1404,8 @@ DUMP_PARTIAL = [
                     "parent": """This is the parent that the GUI edit box is attached to.  If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
                 result='returns a gui-edit element of the created edit box if it was successfully created, false otherwise.' ,
-            )
+            ),
+            url='guiCreateEdit',
         )
         ],
     ),
@@ -1442,7 +1462,8 @@ DUMP_PARTIAL = [
                     "size": """size of the font """
                 },
                 result='returns a gui font element if successful, false if invalid arguments were passed to the function, or there is insufficient resources available.\nyou should always check to see if this function has returned false.' ,
-            )
+            ),
+            url='guiCreateFont',
         )
         ],
     ),
@@ -1543,7 +1564,8 @@ DUMP_PARTIAL = [
                     "parent": """This is the parent that the gui gridlist is attached to.  If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
                 result='returns an element of the created gridlist if it was successfully created, false otherwise.' ,
-            )
+            ),
+            url='guiCreateGridList',
         )
         ],
     ),
@@ -1655,7 +1677,8 @@ DUMP_PARTIAL = [
                     "parent": """This is the parent that the gui label is attached to.  If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
                 result='returns an gui_widgets|element of the created label if it was successfully created, false otherwise.' ,
-            )
+            ),
+            url='guiCreateLabel',
         )
         ],
     ),
@@ -1767,7 +1790,8 @@ DUMP_PARTIAL = [
                     "parent": """This is the parent that the GUI memo is attached to.  If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
                 result='returns a gui-memo element of the created memo if it was successfully created, false otherwise.' ,
-            )
+            ),
+            url='guiCreateMemo',
         )
         ],
     ),
@@ -1868,7 +1892,8 @@ DUMP_PARTIAL = [
                     "parent": """This is the parent that the progress bar is attached to. If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
                 result='returns element of the progress bar if it was created succesfully, false otherwise.' ,
-            )
+            ),
+            url='guiCreateProgressBar',
         )
         ],
     ),
@@ -1981,7 +2006,8 @@ DUMP_PARTIAL = [
 ''NOTE:'' All radio buttons become grouped together with their parent item.  Only ONE radio button per group/parent will be able to be selected at the same time. """
                 },
                 result='returns element of the radio button if it was created succesfully, false otherwise.' ,
-            )
+            ),
+            url='guiCreateRadioButton',
         )
         ],
     ),
@@ -2093,7 +2119,8 @@ DUMP_PARTIAL = [
                     "parent": """the gui-element this scrollbar is attached to. By default, it is nil, meaning the widget is attached to the background. """
                 },
                 result='returns a gui-scrollbar if it was created successfully, false otherwise.' ,
-            )
+            ),
+            url='guiCreateScrollBar',
         )
         ],
     ),
@@ -2194,7 +2221,8 @@ DUMP_PARTIAL = [
                     "parent": """the gui-element this scrollpane is attached to. By default, it is nil, meaning the widget is attached to the background. """
                 },
                 result='the gui-element if created, otherwise false.' ,
-            )
+            ),
+            url='guiCreateScrollPane',
         )
         ],
     ),
@@ -2306,7 +2334,8 @@ DUMP_PARTIAL = [
                     "parent": """This is the parent that the image is attached to. If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
                 result='returns element if image was created successfully, false otherwise.' ,
-            )
+            ),
+            url='guiCreateStaticImage',
         )
         ],
     ),
@@ -2363,7 +2392,8 @@ DUMP_PARTIAL = [
                     "parent": """The parent tab panel, as a tab panel element type """
                 },
                 result='returns a tab element if successful, false otherwise.' ,
-            )
+            ),
+            url='guiCreateTab',
         )
         ],
     ),
@@ -2464,7 +2494,8 @@ DUMP_PARTIAL = [
                     "parent": """This is the parent that the tab panel is attached to.  If the relative argument is true, sizes and positioning will be made relative to this parent. If the relative argument is false, positioning will be the number of offset pixels from the parents origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning. """
                 },
                 result='returns a gui tab panel element if successful, false otherwise.' ,
-            )
+            ),
+            url='guiCreateTabPanel',
         )
         ],
     ),
@@ -2565,7 +2596,8 @@ DUMP_PARTIAL = [
                     "relative": """This is whether sizes and positioning are relative.  If this is true, then all x,y,width,height floats must be between 0 and 1, representing sizes/positions as a fraction of the screen size. If false, then the size and co-ordinates are based on clients resolution, accessible using guiGetScreenSize. """
                 },
                 result='returns a gui window element if it was created successfully, false otherwise.' ,
-            )
+            ),
+            url='guiCreateWindow',
         )
         ],
     ),
@@ -2622,7 +2654,8 @@ DUMP_PARTIAL = [
                     "tabPanel": """This is the guiCreateTabPanel|tab panel parent that the tab is attached to. """
                 },
                 result='returns true the tab was successfully deleted, false otherwise.' ,
-            )
+            ),
+            url='guiDeleteTab',
         )
         ],
     ),
@@ -2668,7 +2701,8 @@ DUMP_PARTIAL = [
                     "theElement": """The edit box you want to get the caret position from """
                 },
                 result='returns the caret index on success, false otherwise.' ,
-            )
+            ),
+            url='guiEditGetCaretIndex',
         )
         ],
     ),
@@ -2714,7 +2748,8 @@ DUMP_PARTIAL = [
                     "guiEdit": """The edit box you want to get the maximum text length of. """
                 },
                 result='returns the maximum text length on success, false otherwise.' ,
-            )
+            ),
+            url='guiEditGetMaxLength',
         )
         ],
     ),
@@ -2760,7 +2795,8 @@ DUMP_PARTIAL = [
                     "guiEdit": """the edit box to check masked flag of. """
                 },
                 result='returns true if the edit box is masked, false if not, nil if an invalid edit box was provided.' ,
-            )
+            ),
+            url='guiEditIsMasked',
         )
         ],
     ),
@@ -2806,7 +2842,8 @@ DUMP_PARTIAL = [
                     "guiEdit": """The edit box to check read-only status of. """
                 },
                 result='returns true if the edit box is read-only, false if not, nil if an invalid edit box was provided.' ,
-            )
+            ),
+            url='guiEditIsReadOnly',
         )
         ],
     ),
@@ -2863,7 +2900,8 @@ DUMP_PARTIAL = [
                     "index": """An integer referring to the desired position within the box. """
                 },
                 result='returns true if the index was successfully set, false otherwise.' ,
-            )
+            ),
+            url='guiEditSetCaretIndex',
         )
         ],
     ),
@@ -2920,7 +2958,8 @@ DUMP_PARTIAL = [
                     "status": """A boolean value indicating whether masking is to be enabled or disabled. """
                 },
                 result='returns true if the function is successful, false otherwise.' ,
-            )
+            ),
+            url='guiEditSetMasked',
         )
         ],
     ),
@@ -2977,7 +3016,8 @@ DUMP_PARTIAL = [
                     "length": """An integer indicating the maximum number of characters that can be typed into the box. """
                 },
                 result='returns true if the max length was set successfully, false otherwise.' ,
-            )
+            ),
+            url='guiEditSetMaxLength',
         )
         ],
     ),
@@ -3034,7 +3074,8 @@ DUMP_PARTIAL = [
                     "status": """A boolean value indicating whether read-only is to be enabled or disabled. """
                 },
                 result='returns true if edit fields read-only status was changed successfully, false otherwise.' ,
-            )
+            ),
+            url='guiEditSetReadOnly',
         )
         ],
     ),
@@ -3080,7 +3121,8 @@ DUMP_PARTIAL = [
                     "guiElement": """the GUI element that you want to focus """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='guiFocus',
         )
         ],
     ),
@@ -3126,7 +3168,8 @@ DUMP_PARTIAL = [
                     "guiElement": """The gui element in which you want to retrieve the alpha of. """
                 },
                 result='this function returns a positive integer in between 0 and 1 of the gui elements current alpha, or false if it could not be retrieved.' ,
-            )
+            ),
+            url='guiGetAlpha',
         )
         ],
     ),
@@ -3172,7 +3215,8 @@ DUMP_PARTIAL = [
                     "theBrowser": """The gui-browser """
                 },
                 result='returns the element/browser|browser element if a correct element/gui-browser|gui-browser has been passed, false otherwise.' ,
-            )
+            ),
+            url='guiGetBrowser',
         )
         ],
     ),
@@ -3209,7 +3253,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a string containing the cursor type:\n* none            // cursor has no image\n* arrow           // default cursor\n* sizing_ns       // n-s (up-down) sizing cursor\n* sizing_ew       // e-w (left-right) sizing cursor\n* sizing_nwse     // nw-se diagonal sizing cursor\n* sizing_nesw     // ne-sw diagonal sizing cursor\n* sizing_eswe     // es-we horizontal sizing cursor\n* move            // move cursor\n* container_drag  // drag container cursor (note: not in use)\n* segment_moving  // segment moving cursor (note: not in use)\n* segment_sizing  // segment sizing cursor (note: not in use)' ,
-            )
+            ),
+            url='guiGetCursorType',
         )
         ],
     ),
@@ -3255,7 +3300,8 @@ DUMP_PARTIAL = [
                     "guiElement": """the GUI element to be checked. """
                 },
                 result='returns true if the element is enabled, false otherwise.' ,
-            )
+            ),
+            url='guiGetEnabled',
         )
         ],
     ),
@@ -3305,7 +3351,8 @@ DUMP_PARTIAL = [
                     "guiElement": """element you wish to get the font of. """
                 },
                 result='*string a string containing the name of the elements current font, or false if the gui element passed to the function is invalid.\n*element  the custom gui font that is used, or nil otherwise' ,
-            )
+            ),
+            url='guiGetFont',
         )
         ],
     ),
@@ -3342,7 +3389,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if input is focused on gui, false if its focused on the game.' ,
-            )
+            ),
+            url='guiGetInputEnabled',
         )
         ],
     ),
@@ -3379,7 +3427,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a string defining the current input mode, potential values are:\n* allow_binds: binds are enabled, hence using a key such as t in an editbox will still activate the chatbox\n* no_binds: binds are disabled, hence using a key such as t in an editbox will not activate the chatbox\n* no_binds_when_editing: binds are always enabled except when an editable editbox or memo has input focus' ,
-            )
+            ),
+            url='guiGetInputMode',
         )
         ],
     ),
@@ -3440,7 +3489,8 @@ DUMP_PARTIAL = [
                     "relative": """A boolean representing whether the position should be relative to the elements parent width, or the number of offset pixels from the parents origin. """
                 },
                 result='returns floats representing the x and y position of the element, or false if the position could not be retrieved.' ,
-            )
+            ),
+            url='guiGetPosition',
         )
         ],
     ),
@@ -3486,7 +3536,8 @@ DUMP_PARTIAL = [
                     "guiElement": """the GUI element you wish to get the properties of. """
                 },
                 result='if the function succeeds, the return value is a table. its keys are property names, the corresponding values are the values of the properties (both names and values are always strings). if the function fails, it returns false.' ,
-            )
+            ),
+            url='guiGetProperties',
         )
         ],
     ),
@@ -3543,7 +3594,8 @@ DUMP_PARTIAL = [
                     "property": """the name of of property you want the value of. """
                 },
                 result='if the function succeeds, it returns a string with the value of the property. if it fails, it returns false.' ,
-            )
+            ),
+            url='guiGetProperty',
         )
         ],
     ),
@@ -3584,7 +3636,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='this returns two floats representing the players screen resolution, width and height.' ,
-            )
+            ),
+            url='guiGetScreenSize',
         )
         ],
     ),
@@ -3630,7 +3683,8 @@ DUMP_PARTIAL = [
                     "tabPanel": """The Element/GUI/Tab panel|tab panel which current tab you want to retrieve. """
                 },
                 result='returns an element of the element/gui/tab|tab if a tab was selected or nil if no tab was selected. if passed arguments were invalid or something went wrong, the function will return false.' ,
-            )
+            ),
+            url='guiGetSelectedTab',
         )
         ],
     ),
@@ -3691,7 +3745,8 @@ DUMP_PARTIAL = [
                     "relative": """A boolean representing whether the size should be relative to the elements parent width, or an absolute size in pixels. """
                 },
                 result='returns the gui element size x and y if the function has been successful, false otherwise.' ,
-            )
+            ),
+            url='guiGetSize',
         )
         ],
     ),
@@ -3737,7 +3792,8 @@ DUMP_PARTIAL = [
                     "guiElement": """element you wish to get text of. """
                 },
                 result='returns a string containing the requested elements text, or false if the gui element passed to the function is invalid.' ,
-            )
+            ),
+            url='guiGetText',
         )
         ],
     ),
@@ -3783,7 +3839,8 @@ DUMP_PARTIAL = [
                     "guiElement": """the GUI element to be checked """
                 },
                 result='returns true if the element is visible, false otherwise.' ,
-            )
+            ),
+            url='guiGetVisible',
         )
         ],
     ),
@@ -3851,7 +3908,8 @@ DUMP_PARTIAL = [
                     "width": """Column width, relative to the grid list width """
                 },
                 result='returns the column id if it was created, false otherwise.' ,
-            )
+            ),
+            url='guiGridListAddColumn',
         )
         ],
     ),
@@ -3920,7 +3978,8 @@ DUMP_PARTIAL = [
                     "...": """Item text for any other columns """
                 },
                 result='returns the row id if it has been created, false otherwise.' ,
-            )
+            ),
+            url='guiGridListAddRow',
         )
         ],
     ),
@@ -3977,7 +4036,8 @@ DUMP_PARTIAL = [
                     "columnIndex": """The ID of the column you want to be auto-sized. """
                 },
                 result='returns true if the column was auto-sized, false otherwise.' ,
-            )
+            ),
+            url='guiGridListAutoSizeColumn',
         )
         ],
     ),
@@ -4023,7 +4083,8 @@ DUMP_PARTIAL = [
                     "gridList": """The grid list element to be cleared """
                 },
                 result='returns true if the grid list element is valid and has been cleared successfully, false otherwise.' ,
-            )
+            ),
+            url='guiGridListClear',
         )
         ],
     ),
@@ -4069,7 +4130,8 @@ DUMP_PARTIAL = [
                     "gridList": """The grid list you want to add a column to """
                 },
                 result='returns an integer with the amount of columns in the gridlist, false otherwise.' ,
-            )
+            ),
+            url='guiGridListGetColumnCount',
         )
         ],
     ),
@@ -4126,7 +4188,8 @@ DUMP_PARTIAL = [
                     "columnIndex": """: Column ID """
                 },
                 result='returns a string containing the column title, or false otherwise.' ,
-            )
+            ),
+            url='guiGridListGetColumnTitle',
         )
         ],
     ),
@@ -4194,7 +4257,8 @@ DUMP_PARTIAL = [
                     "relative": """A boolean defining whether width measurements will be relative to the Gridlist size, or absolute pixels. """
                 },
                 result='returns the width of the gridlist column, false if bad arguments were given.' ,
-            )
+            ),
+            url='guiGridListGetColumnWidth',
         )
         ],
     ),
@@ -4240,7 +4304,8 @@ DUMP_PARTIAL = [
                     "guiGridlist": """: The grid list you want to get the horizontal scroll position from """
                 },
                 result='returns a integer between 0 and 100 indicating the horizontal scroll position, or false otherwise.' ,
-            )
+            ),
+            url='guiGridListGetHorizontalScrollPosition',
         )
         ],
     ),
@@ -4320,7 +4385,8 @@ DUMP_PARTIAL = [
                     "columnIndex": """Column ID """
                 },
                 result='returns four int values, representing the amount of red, green, blue and alpha if successful. false otherwise.' ,
-            )
+            ),
+            url='guiGridListGetItemColor',
         )
         ],
     ),
@@ -4388,7 +4454,8 @@ DUMP_PARTIAL = [
                     "columnIndex": """the column index of the item """
                 },
                 result='returns the item data of the specified item if succesful, false if one of the arguments was invalid.' ,
-            )
+            ),
+            url='guiGridListGetItemData',
         )
         ],
     ),
@@ -4456,7 +4523,8 @@ DUMP_PARTIAL = [
                     "columnIndex": """column id of the item """
                 },
                 result='returns the text of the item if the arguments are right, false otherwise.' ,
-            )
+            ),
+            url='guiGridListGetItemText',
         )
         ],
     ),
@@ -4502,7 +4570,8 @@ DUMP_PARTIAL = [
                     "gridList": """The grid list to get the number of rows from. """
                 },
                 result='returns the number of rows if the function is successful, false otherwise.' ,
-            )
+            ),
+            url='guiGridListGetRowCount',
         )
         ],
     ),
@@ -4548,7 +4617,8 @@ DUMP_PARTIAL = [
                     "gridList": """The Element/GUI/Gridlist|grid list which amount of selected items you want to retrieve. """
                 },
                 result='returns an integer representing the amount of selected options if everything was successful or false if invalid arguments were passed.' ,
-            )
+            ),
+            url='guiGridListGetSelectedCount',
         )
         ],
     ),
@@ -4598,7 +4668,8 @@ DUMP_PARTIAL = [
                     "gridList": """the grid list you want to know the selected row index of """
                 },
                 result='returns the row and column indexes of the selected item if the specified grid list is valid and has a selected item, (-1, -1) if no item is selected, false otherwise.' ,
-            )
+            ),
+            url='guiGridListGetSelectedItem',
         )
         ],
     ),
@@ -4644,7 +4715,8 @@ DUMP_PARTIAL = [
                     "gridList": """The Element/GUI/Gridlist|grid list which selected items you want to retrieve. """
                 },
                 result='returns a table over the selected items in the element/gui/gridlist|grid list in this format:\n<syntaxhighlight lang=lua>\ntable = {\n1 = {\ncolumn, -- has the first selected items column id\nrow -- has the first selected items row id\n},\n2 = {\ncolumn,-- has the second selected items column id\nrow -- has the second selected items row id\n},\n...\n}\n</syntaxhighlight>\nif everything was successful or false if invalid arguments were passed.' ,
-            )
+            ),
+            url='guiGridListGetSelectedItems',
         )
         ],
     ),
@@ -4690,7 +4762,8 @@ DUMP_PARTIAL = [
                     "gridlist": """The gridlist you want to get the selection mode of. """
                 },
                 result='returns the id of the current gridlists selection mode.' ,
-            )
+            ),
+            url='guiGridListGetSelectionMode',
         )
         ],
     ),
@@ -4736,7 +4809,8 @@ DUMP_PARTIAL = [
                     "guiGridlist": """: The grid list you want to get the vertical scroll position from """
                 },
                 result='returns a integer between 0 and 100 indicating the vertical scroll position, or false otherwise.' ,
-            )
+            ),
+            url='guiGridListGetVerticalScrollPosition',
         )
         ],
     ),
@@ -4796,7 +4870,8 @@ DUMP_PARTIAL = [
                     "...": """Item text for any other columns """
                 },
                 result='returns true if the row was successfully added, false otherwise.' ,
-            )
+            ),
+            url='guiGridListInsertRowAfter',
         )
         ],
     ),
@@ -4842,7 +4917,8 @@ DUMP_PARTIAL = [
                     "guiGridlist": """The GUI gridlist you wish to check if sorting is enabled or not. """
                 },
                 result='returns true if sorting is enabled, false otherwise.' ,
-            )
+            ),
+            url='guiGridListIsSortingEnabled',
         )
         ],
     ),
@@ -4899,7 +4975,8 @@ DUMP_PARTIAL = [
                     "columnIndex": """Column ID """
                 },
                 result='returns true if the grid list column was successfully removed, false otherwise.' ,
-            )
+            ),
+            url='guiGridListRemoveColumn',
         )
         ],
     ),
@@ -4956,7 +5033,8 @@ DUMP_PARTIAL = [
                     "rowIndex": """The row ID which you want to remove """
                 },
                 result='returns true if the grid list row was successfully removed, false otherwise.' ,
-            )
+            ),
+            url='guiGridListRemoveRow',
         )
         ],
     ),
@@ -5024,7 +5102,8 @@ DUMP_PARTIAL = [
                     "title": """: The title of the column """
                 },
                 result='returns true if the new title was set, or false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetColumnTitle',
         )
         ],
     ),
@@ -5103,7 +5182,8 @@ DUMP_PARTIAL = [
                     "relative": """A boolean defining whether width measurements will be relative to the Gridlist size, or absolute pixels. """
                 },
                 result='returns true if the gridlist column width was successfully set, false if bad arguments were given.' ,
-            )
+            ),
+            url='guiGridListSetColumnWidth',
         )
         ],
     ),
@@ -5160,7 +5240,8 @@ DUMP_PARTIAL = [
                     "fPosition": """: A float representing the horizontal scroll position (0-100) """
                 },
                 result='returns true if the horizontal scroll position was set, or false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetHorizontalScrollPosition',
         )
         ],
     ),
@@ -5272,7 +5353,8 @@ DUMP_PARTIAL = [
                     "alpha": """The amount of alpha in the color (0-255). """
                 },
                 result='returns true if the item color was set successfully, false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetItemColor',
         )
         ],
     ),
@@ -5351,7 +5433,8 @@ DUMP_PARTIAL = [
                     "data": """The data you wish to set to the item. """
                 },
                 result='returns true if the data was set successfully, false otherwise' ,
-            )
+            ),
+            url='guiGridListSetItemData',
         )
         ],
     ),
@@ -5452,7 +5535,8 @@ DUMP_PARTIAL = [
                     "number": """Tells whether the text item is a number value or not (used for sorting) """
                 },
                 result='returns true if the item text was set successfully, false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetItemText',
         )
         ],
     ),
@@ -5520,7 +5604,8 @@ DUMP_PARTIAL = [
                     "verticalBar": """A bool where true forces the verical scrollbar on, and false returns them to default. """
                 },
                 result='returns true if the scrollbars were successfully set, false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetScrollBars',
         )
         ],
     ),
@@ -5599,7 +5684,8 @@ DUMP_PARTIAL = [
                     "bReset": """set to false for multiple selections """
                 },
                 result='returns true if the passed arguments are correct and the item has been selected, false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetSelectedItem',
         )
         ],
     ),
@@ -5666,7 +5752,8 @@ DUMP_PARTIAL = [
                     "9": """Nominated(First) multiple row selection """
                 },
                 result='returns true if the selection mode was successfully set, false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetSelectionMode',
         )
         ],
     ),
@@ -5723,7 +5810,8 @@ DUMP_PARTIAL = [
                     "enabled": """A boolean representing whether the sorting is enabled, or disabled. """
                 },
                 result='returns true if sorting was successfully toggled., false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetSortingEnabled',
         )
         ],
     ),
@@ -5780,7 +5868,8 @@ DUMP_PARTIAL = [
                     "fPosition": """: A float representing the vertical scroll position (0-100) """
                 },
                 result='returns true if the vertical scroll position was set, or false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetVerticalScrollPosition',
         )
         ],
     ),
@@ -5834,7 +5923,8 @@ DUMP_PARTIAL = [
                     "theLabel": """The label to get color. """
                 },
                 result='returns three int values, representing the amount of red, green, blue if successful. false otherwise.' ,
-            )
+            ),
+            url='guiLabelGetColor',
         )
         ],
     ),
@@ -5880,7 +5970,8 @@ DUMP_PARTIAL = [
                     "theLabel": """The text label to get the font height from. """
                 },
                 result='returns the absolute height of the font currently used in the text label if the function is successful, false otherwise.' ,
-            )
+            ),
+            url='guiLabelGetFontHeight',
         )
         ],
     ),
@@ -5926,7 +6017,8 @@ DUMP_PARTIAL = [
                     "theLabel": """The text label to get the text extent from. """
                 },
                 result='returns the absolute width of the current text inside the text label if the function is successful, false otherwise.' ,
-            )
+            ),
+            url='guiLabelGetTextExtent',
         )
         ],
     ),
@@ -6005,7 +6097,8 @@ DUMP_PARTIAL = [
                     "blue": """An integer specifying the amount of blue (0 to 255). """
                 },
                 result='returns true if the the color of the gui label was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='guiLabelSetColor',
         )
         ],
     ),
@@ -6076,7 +6169,8 @@ DUMP_PARTIAL = [
                     "wordwrap": """Whether or not to enable wordwrap for the gui-label. """
                 },
                 result='returns true on success, false otherwise.' ,
-            )
+            ),
+            url='guiLabelSetHorizontalAlign',
         )
         ],
     ),
@@ -6136,7 +6230,8 @@ DUMP_PARTIAL = [
 **"bottom" """
                 },
                 result='returns true on success, false otherwise.' ,
-            )
+            ),
+            url='guiLabelSetVerticalAlign',
         )
         ],
     ),
@@ -6182,7 +6277,8 @@ DUMP_PARTIAL = [
                     "theElement": """The memo box you want to get the caret position from """
                 },
                 result='returns the caret index on success, false otherwise.' ,
-            )
+            ),
+            url='guiMemoGetCaretIndex',
         )
         ],
     ),
@@ -6228,7 +6324,8 @@ DUMP_PARTIAL = [
                     "theMemo": """: the guiCreateMemo|memo you want to know the vertical scroll position of. """
                 },
                 result='returns a float ranging between 0 and 100, or false otherwise.' ,
-            )
+            ),
+            url='guiMemoGetVerticalScrollPosition',
         )
         ],
     ),
@@ -6274,7 +6371,8 @@ DUMP_PARTIAL = [
                     "theMemo": """The memo to check read-only status of. """
                 },
                 result='returns true if the memo is read only, false if the memo isnt read only, nil otherwise.' ,
-            )
+            ),
+            url='guiMemoIsReadOnly',
         )
         ],
     ),
@@ -6331,7 +6429,8 @@ DUMP_PARTIAL = [
                     "index": """An integer referring to the desired character position within the box. 0 would be before the first character in the box, 1 before the second, etc. """
                 },
                 result='returns true if the caret was successfully moved, false otherwise.' ,
-            )
+            ),
+            url='guiMemoSetCaretIndex',
         )
         ],
     ),
@@ -6388,7 +6487,8 @@ DUMP_PARTIAL = [
                     "status": """A boolean value indicating whether read-only is to be enabled or disabled. """
                 },
                 result='returns true if the status was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='guiMemoSetReadOnly',
         )
         ],
     ),
@@ -6445,7 +6545,8 @@ DUMP_PARTIAL = [
                     "position": """: a float ranging between 0 and 100. """
                 },
                 result='returns true if the position was set, false otherwise.' ,
-            )
+            ),
+            url='guiMemoSetVerticalScrollPosition',
         )
         ],
     ),
@@ -6491,7 +6592,8 @@ DUMP_PARTIAL = [
                     "guiElement": """the GUI element that you want to move to the back """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='guiMoveToBack',
         )
         ],
     ),
@@ -6537,7 +6639,8 @@ DUMP_PARTIAL = [
                     "theProgressbar": """: The progressbar you want to check. """
                 },
                 result='returns a float ranging between 0 and 100.' ,
-            )
+            ),
+            url='guiProgressBarGetProgress',
         )
         ],
     ),
@@ -6594,7 +6697,8 @@ DUMP_PARTIAL = [
                     "progress": """: a float ranging from 0 - 100 """
                 },
                 result='returns true if the progress was set, false otherwise.' ,
-            )
+            ),
+            url='guiProgressBarSetProgress',
         )
         ],
     ),
@@ -6640,7 +6744,8 @@ DUMP_PARTIAL = [
                     "guiRadioButton": """The radio button you wish to retrieve the selection state of. """
                 },
                 result='returns true if the radio button is selected, false if it is not.' ,
-            )
+            ),
+            url='guiRadioButtonGetSelected',
         )
         ],
     ),
@@ -6697,7 +6802,8 @@ DUMP_PARTIAL = [
                     "state": """The state of the radio button, where true indicates selected, and false indicates unselected. """
                 },
                 result='returns true if the radio buttons selection state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='guiRadioButtonSetSelected',
         )
         ],
     ),
@@ -6743,7 +6849,8 @@ DUMP_PARTIAL = [
                     "theScrollBar": """: The scrollbar you want to check. """
                 },
                 result='returns a float ranging between 0 and 100, representing the amount the scrollbar has been scrolled.' ,
-            )
+            ),
+            url='guiScrollBarGetScrollPosition',
         )
         ],
     ),
@@ -6800,7 +6907,8 @@ DUMP_PARTIAL = [
                     "amount": """: a float ranging from 0 - 100 representing the amount you wish to set the scroll bar. """
                 },
                 result='returns true if the scroll position was successfully set, false otherwise.' ,
-            )
+            ),
+            url='guiScrollBarSetScrollPosition',
         )
         ],
     ),
@@ -6846,7 +6954,8 @@ DUMP_PARTIAL = [
                     "horizontalScrollPane": """: The scroll pane you want to know the position of """
                 },
                 result='returns a float ranging between 0 and 100, or false otherwise.' ,
-            )
+            ),
+            url='guiScrollPaneGetHorizontalScrollPosition',
         )
         ],
     ),
@@ -6892,7 +7001,8 @@ DUMP_PARTIAL = [
                     "verticalScrollPane": """: The scroll pane you want to know the position of """
                 },
                 result='returns a float ranging between 0 and 100, or false otherwise.' ,
-            )
+            ),
+            url='guiScrollPaneGetVerticalScrollPosition',
         )
         ],
     ),
@@ -6949,7 +7059,8 @@ DUMP_PARTIAL = [
                     "position": """: a float ranging from 0 - 100 """
                 },
                 result='returns true if the position was set, false otherwise.' ,
-            )
+            ),
+            url='guiScrollPaneSetHorizontalScrollPosition',
         )
         ],
     ),
@@ -7017,7 +7128,8 @@ DUMP_PARTIAL = [
                     "vertical": """A bool where true forces the vertical scrollbar on, and false returns them to default. """
                 },
                 result='returns true if the call was successfully, false otherwise.' ,
-            )
+            ),
+            url='guiScrollPaneSetScrollBars',
         )
         ],
     ),
@@ -7074,7 +7186,8 @@ DUMP_PARTIAL = [
                     "position": """: a float ranging from 0 - 100 """
                 },
                 result='returns true if the position was set, false otherwise.' ,
-            )
+            ),
+            url='guiScrollPaneSetVerticalScrollPosition',
         )
         ],
     ),
@@ -7131,7 +7244,8 @@ DUMP_PARTIAL = [
                     "alpha": """The visibility/transparency of the GUI element. Ranges from 0 (fully transparent) to 1 (fully opaque). Default value is 0.80. """
                 },
                 result='returns true if the gui elements alpha was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='guiSetAlpha',
         )
         ],
     ),
@@ -7188,7 +7302,8 @@ DUMP_PARTIAL = [
                     "enabled": """the new state """
                 },
                 result='if the function succeeds it returns true, if it fails it returns false.' ,
-            )
+            ),
+            url='guiSetEnabled',
         )
         ],
     ),
@@ -7245,7 +7360,8 @@ DUMP_PARTIAL = [
                     "font": """Either a custom GUI font element or the name of a built-in GUI font. See Standard GUI Font Names """
                 },
                 result='returns true if the font has been successfully set on the gui element, false otherwise.' ,
-            )
+            ),
+            url='guiSetFont',
         )
         ],
     ),
@@ -7291,7 +7407,8 @@ DUMP_PARTIAL = [
                     "enabled": """true if input should go to GUI, false if it should go to the game. """
                 },
                 result='returns true if input mode could be changed, false if invalid parameters are passed.' ,
-            )
+            ),
+            url='guiSetInputEnabled',
         )
         ],
     ),
@@ -7340,7 +7457,8 @@ DUMP_PARTIAL = [
                     "no_binds_when_editing": """binds are always enabled except when an editable editbox or memo has input focus """
                 },
                 result='returns true if input mode could be changed, false if invalid parameters are passed.' ,
-            )
+            ),
+            url='guiSetInputMode',
         )
         ],
     ),
@@ -7419,7 +7537,8 @@ DUMP_PARTIAL = [
                     "relative": """Bool that indicates if the x/y positions are relative to the elements parent element. """
                 },
                 result='returns true if the position has been successfully set, false otherwise.' ,
-            )
+            ),
+            url='guiSetPosition',
         )
         ],
     ),
@@ -7487,7 +7606,8 @@ DUMP_PARTIAL = [
                     "value": """the new value for the property. """
                 },
                 result='if the function succeeds it returns true, if it fails it returns false.' ,
-            )
+            ),
+            url='guiSetProperty',
         )
         ],
     ),
@@ -7544,7 +7664,8 @@ DUMP_PARTIAL = [
                     "theTab": """The Element/GUI/Tab|tab which will be the new active tab. """
                 },
                 result='returns true if the selected tab was changed to a new one successfully, false otherwise.' ,
-            )
+            ),
+            url='guiSetSelectedTab',
         )
         ],
     ),
@@ -7623,7 +7744,8 @@ DUMP_PARTIAL = [
                     "relative": """This is whether sizes and positioning are relative.  If this is true, then all x,y,width,height floats must be between 0 and 1, representing sizes relative to the parent. """
                 },
                 result='returns true if the gui elements size was set successfully, false otherwise.' ,
-            )
+            ),
+            url='guiSetSize',
         )
         ],
     ),
@@ -7680,7 +7802,8 @@ DUMP_PARTIAL = [
                     "text": """The new text """
                 },
                 result='returns true if text has been successfully set on the gui element, false otherwise.' ,
-            )
+            ),
+            url='guiSetText',
         )
         ],
     ),
@@ -7737,7 +7860,8 @@ DUMP_PARTIAL = [
                     "state": """the new visibility state """
                 },
                 result='returns true if the elements visibility could be changed, false otherwise.' ,
-            )
+            ),
+            url='guiSetVisible',
         )
         ],
     ),
@@ -7787,7 +7911,8 @@ DUMP_PARTIAL = [
                     "theImage": """The static image element to get the original size of. """
                 },
                 result='returns two integers where first is the width and second the height of the image in pixels, false if the image element was invalid.' ,
-            )
+            ),
+            url='guiStaticImageGetNativeSize',
         )
         ],
     ),
@@ -7844,7 +7969,8 @@ DUMP_PARTIAL = [
                     "filename": """A string specifying the filepath of the image file being loaded in current resource. """
                 },
                 result='returns true if the the image in the static image element was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='guiStaticImageLoadImage',
         )
         ],
     ),
@@ -7890,7 +8016,8 @@ DUMP_PARTIAL = [
                     "guiWindow": """the window to check the movable flag of """
                 },
                 result='returns true if the window is movable, false if not, nil if an invalid window was provided.' ,
-            )
+            ),
+            url='guiWindowIsMovable',
         )
         ],
     ),
@@ -7936,7 +8063,8 @@ DUMP_PARTIAL = [
                     "guiWindow": """the window to check the sizable flag of """
                 },
                 result='returns true if the window is sizable, false if not, nil if an invalid window was provided.' ,
-            )
+            ),
+            url='guiWindowIsSizable',
         )
         ],
     ),
@@ -7993,7 +8121,8 @@ DUMP_PARTIAL = [
                     "status": """A boolean value indicating whether the window is movable or not. """
                 },
                 result='returns true if the function is successful, false otherwise.' ,
-            )
+            ),
+            url='guiWindowSetMovable',
         )
         ],
     ),
@@ -8050,7 +8179,8 @@ DUMP_PARTIAL = [
                     "status": """A boolean value indicating whether user resizing is to be enabled or disabled. """
                 },
                 result='returns true if the function is successful, false otherwise.' ,
-            )
+            ),
+            url='guiWindowSetSizable',
         )
         ],
     ),
@@ -8087,7 +8217,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the chatbox is receiving input, false if not active.' ,
-            )
+            ),
+            url='isChatBoxInputActive',
         )
         ],
     ),
@@ -8124,7 +8255,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the console is visible, false if not.' ,
-            )
+            ),
+            url='isConsoleActive',
         )
         ],
     ),
@@ -8161,7 +8293,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the debug view is visible, false if not.' ,
-            )
+            ),
+            url='isDebugViewActive',
         )
         ],
     ),
@@ -8198,7 +8331,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the mainmenu is visible, false if not.' ,
-            )
+            ),
+            url='isMainMenuActive',
         )
         ],
     ),
@@ -8235,7 +8369,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the focus is on the mta window, false if it isnt.' ,
-            )
+            ),
+            url='isMTAWindowActive',
         )
         ],
     ),
@@ -8272,7 +8407,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the file transfer box is visible, false if not.' ,
-            )
+            ),
+            url='isTransferBoxActive',
         )
         ],
     ),
@@ -8318,7 +8454,8 @@ DUMP_PARTIAL = [
                     "enabled": """true if debug window should be visible, false otherwise. """
                 },
                 result='returns true, false if invalid parameters are passed.' ,
-            )
+            ),
+            url='setDebugViewActive',
         )
         ],
     )

@@ -100,7 +100,8 @@ DUMP_PARTIAL = [
                     "exportedFunction": """The name of the function you want to call. Its not a string. """
                 },
                 result='returns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false.\nreturns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false.' ,
-            )
+            ),
+            url='call',
         ),
                 field=None,
                 is_static=False,
@@ -169,7 +170,8 @@ DUMP_PARTIAL = [
                     "exportedFunction": """The name of the function you want to call. Its not a string. """
                 },
                 result='returns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false.\nreturns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false.' ,
-            )
+            ),
+            url='call',
         ),
                 field=None,
                 is_static=False,
@@ -249,7 +251,8 @@ DUMP_PARTIAL = [
                     "organizationalDir": """: A string containing the path where the resource should be copied to (e.g. gamemodes/amx). """
                 },
                 result='returns the resource element of the copy. returns false if the arguments are incorrect.' ,
-            )
+            ),
+            url='copyResource',
         ),
                 field=None,
                 is_static=False,
@@ -317,7 +320,8 @@ DUMP_PARTIAL = [
                     "resourceName": """The name of resource to delete. """
                 },
                 result='returns true if the resource has been deleted successfully, false otherwise.' ,
-            )
+            ),
+            url='deleteResource',
         ),
                 field=None,
                 is_static=True,
@@ -394,7 +398,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource to get the ACL requests for. """
                 },
                 result='returns a table with the acl requests for the given resource, or false if the resource is not valid. a valid resource with no acl requests will return an empty table.' ,
-            )
+            ),
+            url='getResourceACLRequests',
         ),
                 field=FunctionOOPField(
                                 name='aclRequests',
@@ -463,7 +468,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource of which dynamic element root we want. """
                 },
                 result='returns an element of the resources dynamic element root if the resource specified was valid and active (currently running), false otherwise.' ,
-            )
+            ),
+            url='getResourceDynamicElementRoot',
         ),
                 field=FunctionOOPField(
                                 name='dynamicElementRoot',
@@ -519,7 +525,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource of which dynamic element root we want. """
                 },
                 result='returns an element of the resources dynamic element root if the resource specified was valid and active (currently running), false otherwise.' ,
-            )
+            ),
+            url='getResourceDynamicElementRoot',
         ),
                 field=FunctionOOPField(
                                 name='dynamicElementRoot',
@@ -577,7 +584,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource of which you want to know the call|exported functions. """
                 },
                 result='returns a table of function names if successful, false otherwise.' ,
-            )
+            ),
+            url='getResourceExportedFunctions',
         ),
                 field=FunctionOOPField(
                                 name='exportedFunctions',
@@ -633,7 +641,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource of which you want to know the call|exported functions. """
                 },
                 result='returns a table of function names if successful, false otherwise.' ,
-            )
+            ),
+            url='getResourceExportedFunctions',
         ),
                 field=FunctionOOPField(
                                 name='exportedFunctions',
@@ -691,7 +700,8 @@ DUMP_PARTIAL = [
                     "resourceName": """the name of the resource you wish to get. """
                 },
                 result='returns the resource with the specified name, or false if no resource of that name exists. note that clientside this will also return false for resources that are in the loaded state, since the client is unaware of resources that have not been started.' ,
-            )
+            ),
+            url='getResourceFromName',
         ),
                 field=None,
                 is_static=True,
@@ -739,7 +749,8 @@ DUMP_PARTIAL = [
                     "resourceName": """the name of the resource you wish to get. """
                 },
                 result='returns the resource with the specified name, or false if no resource of that name exists. note that clientside this will also return false for resources that are in the loaded state, since the client is unaware of resources that have not been started.' ,
-            )
+            ),
+            url='getResourceFromName',
         ),
                 field=None,
                 is_static=True,
@@ -808,7 +819,8 @@ DUMP_PARTIAL = [
                     "attribute": """the name of the attribute we want info about. """
                 },
                 result='returns a string with the attribute value if it exists, false otherwise.' ,
-            )
+            ),
+            url='getResourceInfo',
         ),
                 field=None,
                 is_static=False,
@@ -861,7 +873,8 @@ DUMP_PARTIAL = [
                     "theResource": """The resource of which youd like to check the last starting time. """
                 },
                 result='if successful, returns the unix timestamp when the resource was last started, or the string never if the resource has not been started yet, otherwise false. use in conjunction with getrealtime in order to retrieve detailed information.\nreturns a string with the time and date, or false if the resource does not exist.' ,
-            )
+            ),
+            url='getResourceLastStartTime',
         ),
                 field=FunctionOOPField(
                                 name='lastStartTime',
@@ -922,7 +935,8 @@ DUMP_PARTIAL = [
                     "theResource": """The resource you wish to check. """
                 },
                 result='if the resource failed to load, returns a string with the failure reason in it. if it loaded successfully, returns an empty string. returns false if the resource doesnt exist.' ,
-            )
+            ),
+            url='getResourceLoadFailureReason',
         ),
                 field=FunctionOOPField(
                                 name='loadFailureReason',
@@ -983,7 +997,8 @@ DUMP_PARTIAL = [
                     "res": """the resource you want to know the load time of. """
                 },
                 result='if successful, returns the unix timestamp when the resource was loaded, otherwise false. use in conjunction with getrealtime in order to retrieve detailed information.\nif successful, returns a string with the date and time that the resource was last loaded into memory (for example when the server started, or when the resource was changed and reloaded). returns false on failure.\nan example string is fri mar 28 13:51:04 2008.' ,
-            )
+            ),
+            url='getResourceLoadTime',
         ),
                 field=FunctionOOPField(
                                 name='loadTime',
@@ -1055,7 +1070,8 @@ DUMP_PARTIAL = [
                     "mapName": """name of the maps which root element we want to retrieve, file extension is required """
                 },
                 result='returns an the resources map root element if the map exists and resource specified was valid and active (currently running), false otherwise.' ,
-            )
+            ),
+            url='getResourceMapRootElement',
         ),
                 field=None,
                 is_static=False,
@@ -1108,7 +1124,8 @@ DUMP_PARTIAL = [
                     "res": """The resource you wish to get the name of. """
                 },
                 result='returns a string with the resource name in it, or false if the resource does not exist.' ,
-            )
+            ),
+            url='getResourceName',
         ),
                 field=FunctionOOPField(
                                 name='name',
@@ -1164,7 +1181,8 @@ DUMP_PARTIAL = [
                     "res": """The resource you wish to get the name of. """
                 },
                 result='returns a string with the resource name in it, or false if the resource does not exist.' ,
-            )
+            ),
+            url='getResourceName',
         ),
                 field=FunctionOOPField(
                                 name='name',
@@ -1222,7 +1240,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource of which you want to know the organizational path """
                 },
                 result='returns the organizational folder name of the resource. it returns empty string if the resource is on root resources folder. it returns false if the resource could not be found.' ,
-            )
+            ),
+            url='getResourceOrganizationalPath',
         ),
                 field=FunctionOOPField(
                                 name='organizationalPath',
@@ -1283,7 +1302,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource whose root element we are getting. If not specified, assumes the current resource. (the resource returned from getThisResource) """
                 },
                 result='returns an element representing the resources root, false if the specified resource doesnt exist.' ,
-            )
+            ),
+            url='getResourceRootElement',
         ),
                 field=FunctionOOPField(
                                 name='rootElement',
@@ -1339,7 +1359,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource whose root element we are getting. If not specified, assumes the current resource. (the resource returned from getThisResource) """
                 },
                 result='returns an element representing the resources root, false if the specified resource doesnt exist.' ,
-            )
+            ),
+            url='getResourceRootElement',
         ),
                 field=FunctionOOPField(
                                 name='rootElement',
@@ -1388,7 +1409,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a table of resources.' ,
-            )
+            ),
+            url='getResources',
         ),
                 field=None,
                 is_static=True,
@@ -1440,7 +1462,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the resource in which the current script is.' ,
-            )
+            ),
+            url='getThisResource',
         ),
                 field=None,
                 is_static=True,
@@ -1479,7 +1502,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the resource in which the current script is.' ,
-            )
+            ),
+            url='getThisResource',
         ),
                 field=None,
                 is_static=True,
@@ -1529,7 +1553,8 @@ DUMP_PARTIAL = [
                     "resource": """the resource to check """
                 },
                 result='returns true if a resource is archived, false if it is not archived, or nil if there is problem with resource.' ,
-            )
+            ),
+            url='isResourceArchived',
         ),
                 field=FunctionOOPField(
                                 name='archived',
@@ -1590,7 +1615,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource to check """
                 },
                 result='returns true if the resource is protected, false otherwise.' ,
-            )
+            ),
+            url='isResourceProtected',
         ),
                 field=FunctionOOPField(
                                 name='protected',
@@ -1670,7 +1696,8 @@ DUMP_PARTIAL = [
                     "fileName": """The filename what you want to delete. """
                 },
                 result='returns true if file was deleted, otherwise false if the resource is in use or the file doesnt exist.' ,
-            )
+            ),
+            url='removeResourceFile',
         ),
                 field=None,
                 is_static=False,
@@ -1745,7 +1772,8 @@ DUMP_PARTIAL = [
                     "organizationalPath": """If you want to store the new resource inside a category. """
                 },
                 result='returns true if the resource has been renamed successfully, false otherwise. this could fail if the resource name already is in use, if a directory already exists with the name youve specified (but this isnt a valid resource) or if the name you specify isnt valid. it could also fail if the disk was full or for other similar reasons. wont work on a started resource or if the resource is not loaded (not known by mta (use /refresh))' ,
-            )
+            ),
+            url='renameResource',
         ),
                 field=FunctionOOPField(
                                 name='name',
@@ -1894,7 +1922,8 @@ DUMP_PARTIAL = [
                     "clientFiles": """Reload files? """
                 },
                 result='returns true if the resource was restarted, false if the resource wasnt running, or an invalid resource was passed.' ,
-            )
+            ),
+            url='restartResource',
         ),
                 field=None,
                 is_static=False,
@@ -1969,7 +1998,8 @@ DUMP_PARTIAL = [
                     "value": """the value of this attribute """
                 },
                 result='returns true if the info was successfully set, false otherwise' ,
-            )
+            ),
+            url='setResourceInfo',
         ),
                 field=None,
                 is_static=False,
@@ -2121,7 +2151,8 @@ DUMP_PARTIAL = [
                     "loadFiles": """A boolean specifying if client-side files should be loaded alongside the resource. """
                 },
                 result='returns true if the resource has been started successfully, false otherwise.' ,
-            )
+            ),
+            url='startResource',
         ),
                 field=None,
                 is_static=False,
@@ -2174,7 +2205,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource that should be stopped. """
                 },
                 result='returns true if the resource was stopped, false if the stopping failed, or an invalid resource was passed.' ,
-            )
+            ),
+            url='stopResource',
         ),
                 field=None,
                 is_static=False,

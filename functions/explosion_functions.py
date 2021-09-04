@@ -92,7 +92,8 @@ DUMP_PARTIAL = [
                     "creator": """the explosions simulated creator, the player responsible for it. """
                 },
                 result='' ,
-            )
+            ),
+            url='createExplosion',
         )
         ],
         client=[
@@ -199,7 +200,8 @@ DUMP_PARTIAL = [
                     "damaging": """a boolean specifying whether the explosion should cause damage or not. """
                 },
                 result='' ,
-            )
+            ),
+            url='createExplosion',
         )
         ],
     )

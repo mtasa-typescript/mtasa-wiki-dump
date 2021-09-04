@@ -145,7 +145,8 @@ Other ID Object """,
                     "ammo": """: An integer representing the amount of ammo a pickup contains.  This is only valid when the pickup type is a weapon pickup. """
                 },
                 result='returns pickup element if the pickup was created succesfully, otherwise returns false.' ,
-            )
+            ),
+            url='createPickup',
         )
         ],
         client=[
@@ -283,7 +284,8 @@ Other ID Object """,
                     "ammo": """: An integer representing the amount of ammo a pickup contains.  This is only valid when the pickup type is a weapon pickup. """
                 },
                 result='returns pickup element if the pickup was created succesfully, otherwise returns false.' ,
-            )
+            ),
+            url='createPickup',
         )
         ],
     ),
@@ -326,7 +328,8 @@ Other ID Object """,
                     "thePickup": """The pickup in which you wish to retrieve the ammo of """
                 },
                 result='returns an integer of the amount of ammo in the pickup, false if the pickup element is invalid, 0 if its no weapon pickup.' ,
-            )
+            ),
+            url='getPickupAmmo',
         )
         ],
         client=[
@@ -367,7 +370,8 @@ Other ID Object """,
                     "thePickup": """The pickup in which you wish to retrieve the ammo of """
                 },
                 result='returns an integer of the amount of ammo in the pickup, false if the pickup element is invalid, 0 if its no weapon pickup.' ,
-            )
+            ),
+            url='getPickupAmmo',
         )
         ],
     ),
@@ -410,7 +414,8 @@ Other ID Object """,
                     "thePickup": """The pickup you wish to retrieve the amount from. """
                 },
                 result='returns an integer of the amount the pickup is set to, false if its invalid, 0 if its no health or amor pickup.' ,
-            )
+            ),
+            url='getPickupAmount',
         )
         ],
         client=[
@@ -451,7 +456,8 @@ Other ID Object """,
                     "thePickup": """The pickup you wish to retrieve the amount from. """
                 },
                 result='returns an integer of the amount the pickup is set to, false if its invalid, 0 if its no health or amor pickup.' ,
-            )
+            ),
+            url='getPickupAmount',
         )
         ],
     ),
@@ -494,7 +500,8 @@ Other ID Object """,
                     "thePickup": """the pickup you want the respawn time of """
                 },
                 result='returns the respawn time of the pickup if successful, false in case of failure.' ,
-            )
+            ),
+            url='getPickupRespawnInterval',
         )
         ],
         client=[
@@ -540,7 +547,8 @@ Other ID Object """,
                     "thePickup": """The pickup you wish to retrieve the type of. """
                 },
                 result='returns false if the pickup is invalid, or an integer of the type of the pickup, which include:\n*0: health pickup\n*1: armour pickup\n*2: weapon pickup\n*3: custom pickup' ,
-            )
+            ),
+            url='getPickupType',
         )
         ],
         client=[
@@ -581,7 +589,8 @@ Other ID Object """,
                     "thePickup": """The pickup you wish to retrieve the type of. """
                 },
                 result='returns false if the pickup is invalid, or an integer of the type of the pickup, which include:\n*0: health pickup\n*1: armour pickup\n*2: weapon pickup\n*3: custom pickup' ,
-            )
+            ),
+            url='getPickupType',
         )
         ],
     ),
@@ -624,7 +633,8 @@ Other ID Object """,
                     "thePickup": """The pickup of which you wish to retrieve the weapon """
                 },
                 result='returns the weapons|weapon id of the pickup, or false if the pickup is invalid.' ,
-            )
+            ),
+            url='getPickupWeapon',
         )
         ],
         client=[
@@ -665,7 +675,8 @@ Other ID Object """,
                     "thePickup": """The pickup of which you wish to retrieve the weapon """
                 },
                 result='returns the weapons|weapon id of the pickup, or false if the pickup is invalid.' ,
-            )
+            ),
+            url='getPickupWeapon',
         )
         ],
     ),
@@ -708,7 +719,8 @@ Other ID Object """,
                     "thePickup": """the pickup you want to check. """
                 },
                 result='returns true if the pickup is spawned, false if its not spawned or an invalid pickup was specified.' ,
-            )
+            ),
+            url='isPickupSpawned',
         )
         ],
         client=[
@@ -765,7 +777,8 @@ Other ID Object """,
                     "ms": """the new respawn time in ms """
                 },
                 result='returns true if the new respawn time was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setPickupRespawnInterval',
         )
         ],
         client=[
@@ -859,7 +872,8 @@ Other ID Object """,
                     "ammo": """: An integer representing the amount of ammo a pickup contains. This argument is only valid when the pickup type is a Weapon Pickup, and must be specified in that case. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setPickupType',
         )
         ],
         client=[
@@ -948,7 +962,8 @@ Other ID Object """,
                     "ammo": """: An integer representing the amount of ammo a pickup contains. This argument is only valid when the pickup type is a Weapon Pickup, and must be specified in that case. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setPickupType',
         )
         ],
     ),
@@ -1002,7 +1017,8 @@ Other ID Object """,
                     "thePlayer": """: The player to use the pickup. """
                 },
                 result='' ,
-            )
+            ),
+            url='usePickup',
         )
         ],
         client=[
@@ -1054,7 +1070,8 @@ Other ID Object """,
                     "thePlayer": """: The player to use the pickup. """
                 },
                 result='' ,
-            )
+            ),
+            url='usePickup',
         )
         ],
     )

@@ -84,7 +84,8 @@ DUMP_PARTIAL = [
                     "appendLayers": """allows two or more layered shaders to be applied in the same texture. You may want to modify the DepthBias in the technique pass to avoid Z-fighting artifacts when using this. """
                 },
                 result='returns true if the shader was successfully applied, false otherwise.' ,
-            )
+            ),
+            url='engineApplyShaderToWorldTexture',
         )
         ],
     ),
@@ -130,7 +131,8 @@ DUMP_PARTIAL = [
                     "modelID": """: the model ID you want to have un-assigned. """
                 },
                 result='returns true if the model was successfully freed, false otherwise.' ,
-            )
+            ),
+            url='engineFreeModel',
         )
         ],
     ),
@@ -176,7 +178,8 @@ DUMP_PARTIAL = [
                     "modelName": """The model name of the object """
                 },
                 result='returns an int with the id of the object model, false otherwise.' ,
-            )
+            ),
+            url='engineGetModelIDFromName',
         )
         ],
     ),
@@ -222,7 +225,8 @@ DUMP_PARTIAL = [
                     "model": """The model / object ID number you want to get the LOD distance of. """
                 },
                 result='returns a float representing the lod distance of the model, or false if the model argument is incorrect.' ,
-            )
+            ),
+            url='engineGetModelLODDistance',
         )
         ],
     ),
@@ -268,7 +272,8 @@ DUMP_PARTIAL = [
                     "modelID": """The model ID of the object """
                 },
                 result='returns a string with the name of the object model, false otherwise.' ,
-            )
+            ),
+            url='engineGetModelNameFromID',
         )
         ],
     ),
@@ -314,7 +319,8 @@ DUMP_PARTIAL = [
                     "modelID": """: the id of model which you wish to get physical properties group of. """
                 },
                 result='returns id of physical properties group that requested model uses, in range of 0-160, if the object doesnt have a group assigned, -1 is returned. if passed arguments were wrong, error is triggered.' ,
-            )
+            ),
+            url='engineGetModelPhysicalPropertiesGroup',
         )
         ],
     ),
@@ -360,7 +366,8 @@ DUMP_PARTIAL = [
                     "modelId": """You can either use the model id or the model name. """
                 },
                 result='returns a table if this function succeeds, false if it fails for some reason.' ,
-            )
+            ),
+            url='engineGetModelTextureNames',
         )
         ],
     ),
@@ -417,7 +424,8 @@ DUMP_PARTIAL = [
                     "textureNames": """: Only return textures with specified name(s). You can provide a single string or a table of strings. Wildcard matching e.g. ro?ds* can be used. """
                 },
                 result='returns a table of texture elements texturename, texture, false otherwise.' ,
-            )
+            ),
+            url='engineGetModelTextures',
         )
         ],
     ),
@@ -467,7 +475,8 @@ DUMP_PARTIAL = [
                     "modelID": """: ID of the model """
                 },
                 result='returns timeon, timeoff' ,
-            )
+            ),
+            url='engineGetModelVisibleTime',
         )
         ],
     ),
@@ -524,7 +533,8 @@ DUMP_PARTIAL = [
                     "objectgroup-modifiable": """: the property which you wish to get, as per table below. """
                 },
                 result='returns the value contained in given property if everything went well, error is raised otherwise.' ,
-            )
+            ),
+            url='engineGetObjectGroupPhysicalProperty',
         )
         ],
     ),
@@ -581,7 +591,8 @@ DUMP_PARTIAL = [
                     "property": """Property name """
                 },
                 result='returns the current property value. see the table below for possible values.' ,
-            )
+            ),
+            url='engineGetSurfaceProperties',
         )
         ],
     ),
@@ -638,7 +649,8 @@ DUMP_PARTIAL = [
                     "modelId": """Only include textures that are used by the model id (or model name) """
                 },
                 result='returns a table of texture names.' ,
-            )
+            ),
+            url='engineGetVisibleTextureNames',
         )
         ],
     ),
@@ -695,7 +707,8 @@ DUMP_PARTIAL = [
                     "model_id": """The model id to import the TXD into """
                 },
                 result='returns true if the function executed succesfully, false otherwise.' ,
-            )
+            ),
+            url='engineImportTXD',
         )
         ],
     ),
@@ -749,7 +762,8 @@ DUMP_PARTIAL = [
                     "col_file / raw_data": """The filepath to the COL file you want to load or whole data buffer of the COL file. """
                 },
                 result='returns a col if the file was loaded, false otherwise.' ,
-            )
+            ),
+            url='engineLoadCOL',
         )
         ],
     ),
@@ -803,7 +817,8 @@ DUMP_PARTIAL = [
                     "dff_file / raw_data": """The filepath to the DFF file you want to load or whole data buffer of the DFF file. """
                 },
                 result='returns a dff element if the dff file loaded, false otherwise.' ,
-            )
+            ),
+            url='engineLoadDFF',
         )
         ],
     ),
@@ -868,7 +883,8 @@ DUMP_PARTIAL = [
                     "custom_block_name": """the new block name for the IFP file. You cannot use the GTA default Animations|internal block names. You should namespace this name using a string like resource.blockname """
                 },
                 result='returns an ifp element if the ifp file loaded, false otherwise.' ,
-            )
+            ),
+            url='engineLoadIFP',
         )
         ],
     ),
@@ -933,7 +949,8 @@ DUMP_PARTIAL = [
                     "filteringEnabled": """Whether to enable texture filtering. """
                 },
                 result='returns a txd if the file was loaded, false otherwise.' ,
-            )
+            ),
+            url='engineLoadTXD',
         )
         ],
     ),
@@ -1001,7 +1018,8 @@ DUMP_PARTIAL = [
                     "targetElement": """The element to remove the shader from. It should be the same element as used with engineApplyShaderToWorldTexture when the shader was initially applied. """
                 },
                 result='returns true if the shader was successfully removed, false otherwise.' ,
-            )
+            ),
+            url='engineRemoveShaderFromWorldTexture',
         )
         ],
     ),
@@ -1091,7 +1109,8 @@ DUMP_PARTIAL = [
                     "CustomAnimName": """the custom animation name inside the loaded IFP file with CustomBlockName. """
                 },
                 result='returns true on success, false in case of failure.' ,
-            )
+            ),
+            url='engineReplaceAnimation',
         )
         ],
     ),
@@ -1148,7 +1167,8 @@ DUMP_PARTIAL = [
                     "modelID": """The model ID whose collision file you want to replace """
                 },
                 result='returns true if the collision was successfully replaced, false or nil if the collision could not be replaced for a reason.' ,
-            )
+            ),
+            url='engineReplaceCOL',
         )
         ],
     ),
@@ -1216,7 +1236,8 @@ DUMP_PARTIAL = [
                     "alphaTransparency": """Set to true if model uses semi-transparent textures, e.g. windows. This will ensure other objects behind the semi-transparent textures are rendered correctly. (Can slightly impact performance, so only set when required) """
                 },
                 result='returns true if the model was successfully replaced, false if it failed for some reason, ie. the dff or the model id is not valid.' ,
-            )
+            ),
+            url='engineReplaceModel',
         )
         ],
     ),
@@ -1273,7 +1294,8 @@ DUMP_PARTIAL = [
                     "parentID": """: The Vehicle IDs|vehicle ID of the vehicle being allocated. (By default this is: 1337 - objects, 400 - vehicles, 7 or PSYCHO for peds) """
                 },
                 result='do not rely on the model numbers returned being consistent across multiple clients or multiple runs of resources. there is no guarantee for the order of the numbers or that the same numbers will always correspond to the same element type. any patterns are coincidental' ,
-            )
+            ),
+            url='engineRequestModel',
         )
         ],
     ),
@@ -1319,7 +1341,8 @@ DUMP_PARTIAL = [
                     "model": """The model / object ID number you want to reset the LOD distance of. """
                 },
                 result='returns true if the lod distance was reset to default, or false if the model argument is incorrect, or the lod distance hasnt been changed.' ,
-            )
+            ),
+            url='engineResetModelLODDistance',
         )
         ],
     ),
@@ -1365,7 +1388,8 @@ DUMP_PARTIAL = [
                     "surfaceID": """Material IDs|Material ID from 0 to 178 """
                 },
                 result='returns true if the function executed succesfully, false otherwise.' ,
-            )
+            ),
+            url='engineResetSurfaceProperties',
         )
         ],
     ),
@@ -1433,7 +1457,8 @@ DUMP_PARTIAL = [
                     "InternalAnimName": """the Animations|internal animation name inside InternalBlockName. """
                 },
                 result='returns true on success, false in case of failure.' ,
-            )
+            ),
+            url='engineRestoreAnimation',
         )
         ],
     ),
@@ -1479,7 +1504,8 @@ DUMP_PARTIAL = [
                     "modelID": """The ID of the model to restore the model of """
                 },
                 result='returns true if this function succeeds, false or nil if it fails for some reason.' ,
-            )
+            ),
+            url='engineRestoreCOL',
         )
         ],
     ),
@@ -1525,7 +1551,8 @@ DUMP_PARTIAL = [
                     "modelID": """The model ID to restore the visuals of """
                 },
                 result='returns true if the model was successfully restored, false or nil if it failed for some reason.' ,
-            )
+            ),
+            url='engineRestoreModel',
         )
         ],
     ),
@@ -1571,7 +1598,8 @@ DUMP_PARTIAL = [
                     "modelID": """: the id of model which you wish to restore original physical properties group of. """
                 },
                 result='returns true if there were no issues, if passed arguments were invalid an error is raised.' ,
-            )
+            ),
+            url='engineRestoreModelPhysicalPropertiesGroup',
         )
         ],
     ),
@@ -1628,7 +1656,8 @@ DUMP_PARTIAL = [
                     "objectgroup-modifiable": """: the property which you wish to restore, as per table below. """
                 },
                 result='returns true if everything went well, error is raised otherwise.' ,
-            )
+            ),
+            url='engineRestoreObjectGroupPhysicalProperties',
         )
         ],
     ),
@@ -1665,7 +1694,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the world was restreamed successfully, false otherwise.' ,
-            )
+            ),
+            url='engineRestreamWorld',
         )
         ],
     ),
@@ -1722,7 +1752,8 @@ DUMP_PARTIAL = [
                     "force": """If set to true, ignores the clients preferences. """
                 },
                 result='returns true if the function executed successfully, false otherwise.' ,
-            )
+            ),
+            url='engineSetAsynchronousLoading',
         )
         ],
     ),
@@ -1779,7 +1810,8 @@ DUMP_PARTIAL = [
                     "distance": """New LOD distance value in San Andreas units. """
                 },
                 result='returns true if the function executed succesfully, false otherwise.' ,
-            )
+            ),
+            url='engineSetModelLODDistance',
         )
         ],
     ),
@@ -1836,7 +1868,8 @@ DUMP_PARTIAL = [
                     "groupID": """: the id of new physical properties group to be used by given model. """
                 },
                 result='returns true if there were no issues with group change, otherwise an error is raised' ,
-            )
+            ),
+            url='engineSetModelPhysicalPropertiesGroup',
         )
         ],
     ),
@@ -1904,7 +1937,8 @@ DUMP_PARTIAL = [
                     "timeOff": """: value between 0 and 24 that states when the model should disappear """
                 },
                 result='returns true if the change was successful, false otherwise.' ,
-            )
+            ),
+            url='engineSetModelVisibleTime',
         )
         ],
     ),
@@ -1972,7 +2006,8 @@ DUMP_PARTIAL = [
                     "newValue": """: new value of the property, with proper type as specified in table below """
                 },
                 result='returns true if everything went well, error is raised otherwise.' ,
-            )
+            ),
+            url='engineSetObjectGroupPhysicalProperty',
         )
         ],
     ),
@@ -2040,7 +2075,8 @@ DUMP_PARTIAL = [
                     "value": """New value from table below """
                 },
                 result='returns true if the function executed succesfully, false otherwise.' ,
-            )
+            ),
+            url='engineSetSurfaceProperties',
         )
         ],
     )

@@ -51,7 +51,8 @@ DUMP_PARTIAL = [
                     "webBrowser": """The browser you want to check for a previous page. """
                 },
                 result='returns true if the browser can navigate back, false otherwise.' ,
-            )
+            ),
+            url='canBrowserNavigateBack',
         )
         ],
     ),
@@ -97,7 +98,8 @@ DUMP_PARTIAL = [
                     "webBrowser": """The browser you want check for a next page. """
                 },
                 result='returns true if the browser can go to the next page, false otherwise.' ,
-            )
+            ),
+            url='canBrowserNavigateForward',
         )
         ],
     ),
@@ -176,7 +178,8 @@ DUMP_PARTIAL = [
                     "transparent": """true if you want the browser transparent, false for opaque. """
                 },
                 result='returns a texture of the browser if it was created successfully, false otherwise. returns also false, if the user disabled remote pages and islocal was set to false.' ,
-            )
+            ),
+            url='createBrowser',
         )
         ],
     ),
@@ -233,7 +236,8 @@ DUMP_PARTIAL = [
                     "jsCode": """The Javascript code string """
                 },
                 result='returns true if executing javascript is allowed in the current context, false otherwise.' ,
-            )
+            ),
+            url='executeBrowserJavascript',
         )
         ],
     ),
@@ -279,7 +283,8 @@ DUMP_PARTIAL = [
                     "webBrowser": """The web browser to be focused - if this is nil, it will unfocus all browsers. """
                 },
                 result='returns true if the browser was focused or if nil was passed, false if it failed to focus or the browser does not exist.' ,
-            )
+            ),
+            url='focusBrowser',
         )
         ],
     ),
@@ -337,7 +342,8 @@ DUMP_PARTIAL = [
                     "mobile": """Surfing the web as mobile """
                 },
                 result='returns the value if the property was successfully found, false otherwise.' ,
-            )
+            ),
+            url='getBrowserProperty',
         )
         ],
     ),
@@ -374,7 +380,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='a table having the following keys:\n* remoteenabled: true if remote websites are enabled, false otherwise\n* remotejavascript: true if javascript is enabled on remote websites, false otherwise\n* pluginsenabled: true if plugins such as flash, silverlight (but not java) are enabled, false otherwise. this setting is false by default.' ,
-            )
+            ),
+            url='getBrowserSettings',
         )
         ],
     ),
@@ -434,7 +441,8 @@ function ( string code )
 </syntaxhighlight> """
                 },
                 result='returns true if valid arguments have been passed, false otherwise.' ,
-            )
+            ),
+            url='getBrowserSource',
         )
         ],
     ),
@@ -480,7 +488,8 @@ function ( string code )
                     "webBrowser": """The browser """
                 },
                 result='returns the title as a string. returns false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getBrowserTitle',
         )
         ],
     ),
@@ -526,7 +535,8 @@ function ( string code )
                     "webBrowser": """The browser """
                 },
                 result='returns the web browser url.' ,
-            )
+            ),
+            url='getBrowserURL',
         )
         ],
     ),
@@ -583,7 +593,8 @@ function ( string code )
                     "mouseButton": """The mouse button (Possible values: left, middle, right) """
                 },
                 result='returns true if the click was successfully injected, false otherwise.' ,
-            )
+            ),
+            url='injectBrowserMouseDown',
         )
         ],
     ),
@@ -651,7 +662,8 @@ function ( string code )
                     "posY": """Absolute Y screen coordinate """
                 },
                 result='returns true if the movement was injected successfully, false otherwise.' ,
-            )
+            ),
+            url='injectBrowserMouseMove',
         )
         ],
     ),
@@ -708,7 +720,8 @@ function ( string code )
                     "mouseButton": """The mouse button (Possible values: left, middle, right) """
                 },
                 result='returns true if the click was successfully injected, false otherwise.' ,
-            )
+            ),
+            url='injectBrowserMouseUp',
         )
         ],
     ),
@@ -776,7 +789,8 @@ function ( string code )
                     "horizontalScroll": """: Amount of units you want the browser to scroll along the X-axe. """
                 },
                 result='returns true if the mouse action was successfully injected, false otherwise.' ,
-            )
+            ),
+            url='injectBrowserMouseWheel',
         )
         ],
     ),
@@ -833,7 +847,8 @@ function ( string code )
                     "isURL": """true if address should be parsed as URL, false otherwise. """
                 },
                 result='returns false if the url is able to be loaded, true if it is blocked and nil if an invalid domain/url was passed.' ,
-            )
+            ),
+            url='isBrowserDomainBlocked',
         )
         ],
     ),
@@ -879,7 +894,8 @@ function ( string code )
                     "webBrowser": """The browser """
                 },
                 result='returns true if the browser is focused, false otherwise and nil if invalid arguments were passed.' ,
-            )
+            ),
+            url='isBrowserFocused',
         )
         ],
     ),
@@ -925,7 +941,8 @@ function ( string code )
                     "webBrowser": """The browser """
                 },
                 result='returns true if the browser is loading a website, false otherwise and nil if invalid arguments were passed.' ,
-            )
+            ),
+            url='isBrowserLoading',
         )
         ],
     ),
@@ -1004,7 +1021,8 @@ function ( string code )
                     "urlEncoded": """If set to true, it will be available f.e. in PHPs $_POST variable (the content type is: application/x-www-form-urlencoded) """
                 },
                 result='returns true if the url was successfully loaded.' ,
-            )
+            ),
+            url='loadBrowserURL',
         )
         ],
     ),
@@ -1050,7 +1068,8 @@ function ( string code )
                     "webBrowser": """The browser that you want return to the previous page. """
                 },
                 result='returns true if the browser has returned to the previous page, false otherwise.' ,
-            )
+            ),
+            url='navigateBrowserBack',
         )
         ],
     ),
@@ -1096,7 +1115,8 @@ function ( string code )
                     "webBrowser": """The browser that you want to take to the next page. """
                 },
                 result='returns true if the browser has gone to the next page, false otherwise.' ,
-            )
+            ),
+            url='navigateBrowserForward',
         )
         ],
     ),
@@ -1142,7 +1162,8 @@ function ( string code )
                     "webBrowser": """The browser that you want to reload. """
                 },
                 result='returns true if the browser has reloaded, false otherwise.' ,
-            )
+            ),
+            url='reloadBrowserPage',
         )
         ],
     ),
@@ -1212,7 +1233,8 @@ Syntax:
 <syntaxhighlight lang="lua">function(bool wasAccepted, table new_domains)</syntaxhighlight> """
                 },
                 result='returns true, if the string was successfully read, false otherwise.' ,
-            )
+            ),
+            url='requestBrowserDomains',
         )
         ],
     ),
@@ -1280,7 +1302,8 @@ Syntax:
                     "height": """The new height of the browser. """
                 },
                 result='returns true if the browser is resized successfully, false if theres something wrong.' ,
-            )
+            ),
+            url='resizeBrowser',
         )
         ],
     ),
@@ -1348,7 +1371,8 @@ Syntax:
                     "handler": """The function to call if the webBrowser attempts to open the ajax endpoint. If this parameter is nil or omitted, the ajax handler for the url will be deleted. """
                 },
                 result='' ,
-            )
+            ),
+            url='setBrowserAjaxHandler',
         )
         ],
     ),
@@ -1417,7 +1441,8 @@ Syntax:
                     "value": """A value indicating whether to enable (1) the property or not (0) """
                 },
                 result='returns true if the property was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setBrowserProperty',
         )
         ],
     ),
@@ -1474,7 +1499,8 @@ Syntax:
                     "paused": """true to pause rendering, false to continue """
                 },
                 result='returns true if the state was successfully changed' ,
-            )
+            ),
+            url='setBrowserRenderingPaused',
         )
         ],
     ),
@@ -1531,7 +1557,8 @@ Syntax:
                     "webBrowser": """A browser element """
                 },
                 result='' ,
-            )
+            ),
+            url='setBrowserVolume',
         )
         ],
     ),
@@ -1588,7 +1615,8 @@ Syntax:
                     "visible": """true to show the tools, false to hide """
                 },
                 result='returns true if the visibility was successfully toggled, false if an error occurred' ,
-            )
+            ),
+            url='toggleBrowserDevTools',
         )
         ],
     )

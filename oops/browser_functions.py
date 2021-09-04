@@ -100,7 +100,8 @@ DUMP_PARTIAL = [
                     "jsCode": """The Javascript code string """
                 },
                 result='returns true if executing javascript is allowed in the current context, false otherwise.' ,
-            )
+            ),
+            url='executeBrowserJavascript',
         ),
                 field=None,
                 is_static=False,
@@ -153,7 +154,8 @@ DUMP_PARTIAL = [
                     "webBrowser": """The web browser to be focused - if this is nil, it will unfocus all browsers. """
                 },
                 result='returns true if the browser was focused or if nil was passed, false if it failed to focus or the browser does not exist.' ,
-            )
+            ),
+            url='focusBrowser',
         ),
                 field=None,
                 is_static=False,
@@ -218,7 +220,8 @@ DUMP_PARTIAL = [
                     "mobile": """Surfing the web as mobile """
                 },
                 result='returns the value if the property was successfully found, false otherwise.' ,
-            )
+            ),
+            url='getBrowserProperty',
         ),
                 field=None,
                 is_static=False,
@@ -262,7 +265,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='a table having the following keys:\n* remoteenabled: true if remote websites are enabled, false otherwise\n* remotejavascript: true if javascript is enabled on remote websites, false otherwise\n* pluginsenabled: true if plugins such as flash, silverlight (but not java) are enabled, false otherwise. this setting is false by default.' ,
-            )
+            ),
+            url='getBrowserSettings',
         ),
                 field=None,
                 is_static=True,
@@ -329,7 +333,8 @@ function ( string code )
 </syntaxhighlight> """
                 },
                 result='returns true if valid arguments have been passed, false otherwise.' ,
-            )
+            ),
+            url='getBrowserSource',
         ),
                 field=None,
                 is_static=False,
@@ -382,7 +387,8 @@ function ( string code )
                     "webBrowser": """The browser """
                 },
                 result='returns the title as a string. returns false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getBrowserTitle',
         ),
                 field=FunctionOOPField(
                                 name='title',
@@ -443,7 +449,8 @@ function ( string code )
                     "webBrowser": """The browser """
                 },
                 result='returns the web browser url.' ,
-            )
+            ),
+            url='getBrowserURL',
         ),
                 field=FunctionOOPField(
                                 name='url',
@@ -515,7 +522,8 @@ function ( string code )
                     "mouseButton": """The mouse button (Possible values: left, middle, right) """
                 },
                 result='returns true if the click was successfully injected, false otherwise.' ,
-            )
+            ),
+            url='injectBrowserMouseDown',
         ),
                 field=None,
                 is_static=False,
@@ -590,7 +598,8 @@ function ( string code )
                     "posY": """Absolute Y screen coordinate """
                 },
                 result='returns true if the movement was injected successfully, false otherwise.' ,
-            )
+            ),
+            url='injectBrowserMouseMove',
         ),
                 field=None,
                 is_static=False,
@@ -654,7 +663,8 @@ function ( string code )
                     "mouseButton": """The mouse button (Possible values: left, middle, right) """
                 },
                 result='returns true if the click was successfully injected, false otherwise.' ,
-            )
+            ),
+            url='injectBrowserMouseUp',
         ),
                 field=None,
                 is_static=False,
@@ -729,7 +739,8 @@ function ( string code )
                     "horizontalScroll": """: Amount of units you want the browser to scroll along the X-axe. """
                 },
                 result='returns true if the mouse action was successfully injected, false otherwise.' ,
-            )
+            ),
+            url='injectBrowserMouseWheel',
         ),
                 field=None,
                 is_static=False,
@@ -793,7 +804,8 @@ function ( string code )
                     "isURL": """true if address should be parsed as URL, false otherwise. """
                 },
                 result='returns false if the url is able to be loaded, true if it is blocked and nil if an invalid domain/url was passed.' ,
-            )
+            ),
+            url='isBrowserDomainBlocked',
         ),
                 field=None,
                 is_static=True,
@@ -846,7 +858,8 @@ function ( string code )
                     "webBrowser": """The browser """
                 },
                 result='returns true if the browser is focused, false otherwise and nil if invalid arguments were passed.' ,
-            )
+            ),
+            url='isBrowserFocused',
         ),
                 field=None,
                 is_static=False,
@@ -899,7 +912,8 @@ function ( string code )
                     "webBrowser": """The browser """
                 },
                 result='returns true if the browser is loading a website, false otherwise and nil if invalid arguments were passed.' ,
-            )
+            ),
+            url='isBrowserLoading',
         ),
                 field=FunctionOOPField(
                                 name='loading',
@@ -993,7 +1007,8 @@ function ( string code )
                     "urlEncoded": """If set to true, it will be available f.e. in PHPs $_POST variable (the content type is: application/x-www-form-urlencoded) """
                 },
                 result='returns true if the url was successfully loaded.' ,
-            )
+            ),
+            url='loadBrowserURL',
         ),
                 field=FunctionOOPField(
                                 name='url',
@@ -1102,7 +1117,8 @@ Syntax:
 <syntaxhighlight lang="lua">function(bool wasAccepted, table new_domains)</syntaxhighlight> """
                 },
                 result='returns true, if the string was successfully read, false otherwise.' ,
-            )
+            ),
+            url='requestBrowserDomains',
         ),
                 field=None,
                 is_static=True,
@@ -1185,7 +1201,8 @@ Syntax:
                     "handler": """The function to call if the webBrowser attempts to open the ajax endpoint. If this parameter is nil or omitted, the ajax handler for the url will be deleted. """
                 },
                 result='' ,
-            )
+            ),
+            url='setBrowserAjaxHandler',
         ),
                 field=None,
                 is_static=False,
@@ -1261,7 +1278,8 @@ Syntax:
                     "value": """A value indicating whether to enable (1) the property or not (0) """
                 },
                 result='returns true if the property was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setBrowserProperty',
         ),
                 field=None,
                 is_static=False,
@@ -1325,7 +1343,8 @@ Syntax:
                     "paused": """true to pause rendering, false to continue """
                 },
                 result='returns true if the state was successfully changed' ,
-            )
+            ),
+            url='setBrowserRenderingPaused',
         ),
                 field=FunctionOOPField(
                                 name='renderingPaused',
@@ -1397,7 +1416,8 @@ Syntax:
                     "webBrowser": """A browser element """
                 },
                 result='' ,
-            )
+            ),
+            url='setBrowserVolume',
         ),
                 field=FunctionOOPField(
                                 name='volume',
@@ -1469,7 +1489,8 @@ Syntax:
                     "visible": """true to show the tools, false to hide """
                 },
                 result='returns true if the visibility was successfully toggled, false if an error occurred' ,
-            )
+            ),
+            url='toggleBrowserDevTools',
         ),
                 field=FunctionOOPField(
                                 name='devTools',

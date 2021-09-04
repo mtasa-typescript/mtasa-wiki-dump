@@ -42,7 +42,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a int, 0-255, where 255 is fully opaque and 0 is fully transparent.' ,
-            )
+            ),
+            url='getCursorAlpha',
         )
         ],
     ),
@@ -95,7 +96,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns 5 values: cursorx, cursory, worldx, worldy, worldz. the first two values are the 2d relative screen coordinates of the cursor: cursorx goes from 0 (left side of the screen) to 1 (right side), cursory goes from 0 (top) to 1 (bottom). the 3 values that follow are the 3d world map coordinates that the cursor points at. if the cursor isnt showing, returns false as the first value.' ,
-            )
+            ),
+            url='getCursorPosition',
         )
         ],
     ),
@@ -138,7 +140,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player you want to get cursor state of. """
                 },
                 result='returns true if the players cursor is showing, false if it isnt or if invalid parameters were passed.' ,
-            )
+            ),
+            url='isCursorShowing',
         )
         ],
         client=[
@@ -170,7 +173,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the players cursor is showing, false if it isnt.' ,
-            )
+            ),
+            url='isCursorShowing',
         )
         ],
     ),
@@ -216,7 +220,8 @@ DUMP_PARTIAL = [
                     "alpha": """: The alpha value to set. Value can be 0-255, where 255 is fully opaque and 0 is fully transparent. """
                 },
                 result='returns true if the new alpha value was set, or false otherwise.' ,
-            )
+            ),
+            url='setCursorAlpha',
         )
         ],
     ),
@@ -273,7 +278,8 @@ DUMP_PARTIAL = [
                     "cursorY": """Position over the Y axis """
                 },
                 result='returns true if the position has been successfully set, false otherwise.' ,
-            )
+            ),
+            url='setCursorPosition',
         )
         ],
     ),
@@ -338,7 +344,8 @@ DUMP_PARTIAL = [
                     "toggleControls": """A boolean value determining whether to disable controls whilst the cursor is showing.  true implies controls are disabled, false implies controls remain enabled. """
                 },
                 result='' ,
-            )
+            ),
+            url='showCursor',
         )
         ],
         client=[
@@ -390,7 +397,8 @@ DUMP_PARTIAL = [
                     "toggleControls": """A boolean value determining whether to disable controls whilst the cursor is showing.  true implies controls are disabled, false implies controls remain enabled. """
                 },
                 result='' ,
-            )
+            ),
+            url='showCursor',
         )
         ],
     )

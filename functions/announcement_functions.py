@@ -39,7 +39,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the gametype as a string. if no gametype is set it returns nil.' ,
-            )
+            ),
+            url='getGameType',
         )
         ],
         client=[
@@ -76,7 +77,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the mapname as a string. if no mapname is set it returns nil.' ,
-            )
+            ),
+            url='getMapName',
         )
         ],
         client=[
@@ -122,7 +124,8 @@ DUMP_PARTIAL = [
                     "key": """The name of the rule """
                 },
                 result='returns a string containing the value set for the specified key, false if invalid arguments were specified.' ,
-            )
+            ),
+            url='getRuleValue',
         )
         ],
         client=[
@@ -168,7 +171,8 @@ DUMP_PARTIAL = [
                     "key": """The name of the rule you wish to remove """
                 },
                 result='returns true if the rule value was removed, false if it failed.' ,
-            )
+            ),
+            url='removeRuleValue',
         )
         ],
         client=[
@@ -214,7 +218,8 @@ DUMP_PARTIAL = [
                     "gameType": """A string containing a name for the game mode, or false to clear it. """
                 },
                 result='returns true if the game type was set, false if an invalid argument was passed to the function.' ,
-            )
+            ),
+            url='setGameType',
         )
         ],
         client=[
@@ -260,7 +265,8 @@ DUMP_PARTIAL = [
                     "mapName": """The name you wish the server browser to show. """
                 },
                 result='returns true if map name was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setMapName',
         )
         ],
         client=[
@@ -317,7 +323,8 @@ DUMP_PARTIAL = [
                     "value": """The value you wish to set for the rule """
                 },
                 result='returns true if the rule value was set, false if invalid arguments were specified.' ,
-            )
+            ),
+            url='setRuleValue',
         )
         ],
         client=[

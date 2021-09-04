@@ -73,7 +73,8 @@ DUMP_PARTIAL = [
                     "quality": """The quality of the returned pixels if the new format is jpeg """
                 },
                 result='returns a copy of the pixels in the new format, or false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='dxConvertPixels',
         )
         ],
     ),
@@ -159,7 +160,8 @@ DUMP_PARTIAL = [
 ** "cleartype_natural" """
                 },
                 result='returns a dx font element if successful, false if invalid arguments were passed to the function, or there is insufficient resources available.\nyou should always check to see if this function has returned false.' ,
-            )
+            ),
+            url='dxCreateFont',
         )
         ],
     ),
@@ -227,7 +229,8 @@ DUMP_PARTIAL = [
                     "withAlpha": """The render target will be created with an alpha channel. false will turn images alpha channels to black color """
                 },
                 result='returns a texture element if successful, false if the system is unable to create a render target.\nyou should always check to see if this function has returned false.' ,
-            )
+            ),
+            url='dxCreateRenderTarget',
         )
         ],
     ),
@@ -284,7 +287,8 @@ DUMP_PARTIAL = [
                     "height": """The height of the texture  in pixels. """
                 },
                 result='returns a texture element if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='dxCreateScreenSource',
         )
         ],
     ),
@@ -382,7 +386,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='dxCreateShader',
         )
         ],
     ),
@@ -486,7 +491,8 @@ or """,
                     "depth": """Desired number of slices when creating a volume texture """
                 },
                 result='returns a texture if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='dxCreateTexture',
         )
         ],
     ),
@@ -631,7 +637,8 @@ or """,
                     "postGUI": """: A bool representing whether the circle should be drawn on top of or behind any ingame GUI (rendered by CEGUI). """
                 },
                 result='returns true if the creation of the 2d circle was successful, false otherwise.' ,
-            )
+            ),
+            url='dxDrawCircle',
         )
         ],
     ),
@@ -776,7 +783,8 @@ or """,
                     "postGUI": """A bool representing whether the image should be drawn on top of or behind any ingame GUI (rendered by CEGUI). """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='dxDrawImage',
         )
         ],
     ),
@@ -965,7 +973,8 @@ or """,
                     "postgui": """A bool representing whether the image should be drawn on top of or behind any ingame GUI (rendered by CEGUI). """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='dxDrawImageSection',
         )
         ],
     ),
@@ -1078,7 +1087,8 @@ or """,
 Returns a true if the operation was successful, false otherwise. """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='dxDrawLine',
         )
         ],
     ),
@@ -1213,7 +1223,8 @@ Returns a true if the operation was successful, false otherwise. """
 Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='dxDrawLine3D',
         )
         ],
     ),
@@ -1399,7 +1410,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
 Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='dxDrawMaterialLine3D',
         )
         ],
     ),
@@ -1488,7 +1500,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     "vertices": """Tables representing each primitive vertice, required amount of them is determined by primitive type. """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='dxDrawMaterialPrimitive',
         )
         ],
     ),
@@ -1577,7 +1590,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     "vertices": """Tables representing each primitive vertice, required amount of them is determined by primitive type. """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='dxDrawMaterialPrimitive3D',
         )
         ],
     ),
@@ -1806,7 +1820,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
 Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='dxDrawMaterialSectionLine3D',
         )
         ],
     ),
@@ -1884,7 +1899,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     "vertices": """Tables representing each primitive vertice, required amount of them is determined by primitive type. """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='dxDrawPrimitive',
         )
         ],
     ),
@@ -1996,7 +2012,8 @@ The vertex should be passed like this:
 Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='dxDrawPrimitive3D',
         )
         ],
     ),
@@ -2108,7 +2125,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     "subPixelPositioning": """A bool representing whether the rectangle can be positioned sub-pixel-ly. """
                 },
                 result='returns true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='dxDrawRectangle',
         )
         ],
     ),
@@ -2351,7 +2369,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     "fRotationCenterY": """Rotation Origin Y """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='dxDrawText',
         )
         ],
     ),
@@ -2461,7 +2480,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     "iterations": """Number 1, 2, 3 or 4. 1 mean low density, 4 mean high. """
                 },
                 result='returns a true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='dxDrawWiredSphere',
         )
         ],
     ),
@@ -2498,7 +2518,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     
                 },
                 result='returns the current blend mode, which can be one of:\n*blend\n*add\n*modulate_add\n*overwrite' ,
-            )
+            ),
+            url='dxGetBlendMode',
         )
         ],
     ),
@@ -2555,7 +2576,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     "font": """Either a custom DX font element or the name of a built-in dx font: """
                 },
                 result='returns an integer of the height of the text.' ,
-            )
+            ),
+            url='dxGetFontHeight',
         )
         ],
     ),
@@ -2609,7 +2631,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     "material": """The material element whose size is to be gotten """
                 },
                 result='returns two ints representing the width and height in pixels of the material, or false if an invalid parameter was passed to the function.\nif the material is a volume texture, this function will return three ints representing the width, height and depth.' ,
-            )
+            ),
+            url='dxGetMaterialSize',
         )
         ],
     ),
@@ -2689,7 +2712,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     "y": """The Y coordinate for the pixel """
                 },
                 result='returns 4 ints representing the rgba color value of the pixel if succesful, or false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='dxGetPixelColor',
         )
         ],
     ),
@@ -2735,7 +2759,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     "pixels": """The pixels to get the format of """
                 },
                 result='returns the format of the pixels if successful (plain or png or jpeg), false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='dxGetPixelsFormat',
         )
         ],
     ),
@@ -2785,7 +2810,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     "pixels": """The pixels to get the dimensions of """
                 },
                 result='returns width and height of the pixels if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='dxGetPixelsSize',
         )
         ],
     ),
@@ -2822,7 +2848,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
                     
                 },
                 result='returns a table with the following entries:\n*testmode: the current dx test mode. see dxsettestmode.\n*videocardname: the name of the graphics card.\n*videocardram: the installed memory in mb of the graphics card.\n*videocardpsversion: the maximum pixel shader version of the graphics card.\n*videocardmaxanisotropy: the maximum anisotropic filtering available. (0-4 which respectively mean: off,2x,4x,8x,16x)\n*videocardnumrendertargets: the maximum number of simultaneous render targets a shader can use.\n*videomemoryfreeformta: the amount of memory in mb available for mta to use. when this gets to zero, guicreatefont, dxcreatefont and dxcreaterendertarget will fail.\n*videomemoryusedbyfonts: the amount of graphic memory in mb used by custom fonts.\n*videomemoryusedbytextures: the amount of graphic memory in mb used by textures.\n*videomemoryusedbyrendertargets: the amount of graphic memory in mb used by render targets.\n*settingwindowed: the windowed setting. (true/false)\n*settingfullscreenstyle: display style when in full screen mode. (0-2 which respectively mean: standard, borderless window, borderless keep res)\n*settingfxquality: the fx quality. (0-3)\n*settingdrawdistance: the draw distance setting. (0-100)\n*settingvolumetricshadows: the volumetric shadows setting. (true/false)\n*settingstreamingvideomemoryforgta: the usable graphics memory setting. (64-256)\n*settinganisotropicfiltering: the anisotropic filtering setting. (0-4 which respectively mean: off,2x,4x,8x,16x)\n*settingantialiasing: the anti-aliasing setting. (0-3 which respectively mean: off,1x,2x,3x)\n*settingheathaze: the heat haze setting. (true/false)\n*settinggrasseffect: the grass effect setting. (true/false)\n*setting32bitcolor: the color depth of the screen. (false is 16bit, true is 32bit)\n*settinghudmatchaspectratio: the hud match aspect ratio setting. (true/false)\n*settingaspectratio: the aspect ratio setting. (auto, 4:3, 16:10, 16:9)\n*settingfov: the fov setting.\n*settinghighdetailvehicles: high detail vehicles setting. (true/false)\n*settinghighdetailpeds: high detail peds setting. (true/false)\n*allowscreenupload: the allows screen uploads setting. (true/false)\n*depthbufferformat: the format of the shader readable depth buffer, or unknown if not available.\n*totalphysicalmemory: the amount of total physical memory in mb.\n*usingdepthbuffer: true if the depth buffer is used, false otherwise.' ,
-            )
+            ),
+            url='dxGetStatus',
         )
         ],
     ),
@@ -2939,7 +2966,8 @@ Returns a ''true'' if the operation was successful, ''false'' otherwise. """
 Returns two floats representing the width and height of the text in pixels. """
                 },
                 result='returns two floats representing the width and height of the text in pixels.' ,
-            )
+            ),
+            url='dxGetTextSize',
         )
         ],
     ),
@@ -3041,7 +3069,8 @@ By default the pixels from the whole texture is returned. To get only a portion 
                     "height": """Rectangle height """
                 },
                 result='returns a plain format pixels string if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='dxGetTexturePixels',
         )
         ],
     ),
@@ -3121,7 +3150,8 @@ By default the pixels from the whole texture is returned. To get only a portion 
 Returns the float of the width of the text (in pixels). """
                 },
                 result='returns the float of the width of the text (in pixels).' ,
-            )
+            ),
+            url='dxGetTextWidth',
         )
         ],
     ),
@@ -3162,7 +3192,8 @@ Returns the float of the width of the text (in pixels). """
                     
                 },
                 result='*boolean: returns true when enabled by dxsetaspectratioadjustmentenabled, false otherwise.\n*float: aspect ratio set by dxsetaspectratioadjustmentenabled' ,
-            )
+            ),
+            url='dxIsAspectRatioAdjustmentEnabled',
         )
         ],
     ),
@@ -3219,7 +3250,8 @@ Returns the float of the width of the text (in pixels). """
                     "sourceRatio": """This should be set to the aspect ratio the dxDraws were originally designed in. """
                 },
                 result='returns true when it was changed successfully, or false otherwise.' ,
-            )
+            ),
+            url='dxSetAspectRatioAdjustmentEnabled',
         )
         ],
     ),
@@ -3269,7 +3301,8 @@ Returns the float of the width of the text (in pixels). """
                     "overwrite": """The source textures are overwritten. This can be useful for clearing render targets. """
                 },
                 result='returns true if successful, or false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='dxSetBlendMode',
         )
         ],
     ),
@@ -3381,7 +3414,8 @@ Returns the float of the width of the text (in pixels). """
                     "a": """The alpha channel for the color (0-255) """
                 },
                 result='returns true if successful, or false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='dxSetPixelColor',
         )
         ],
     ),
@@ -3438,7 +3472,8 @@ Returns the float of the width of the text (in pixels). """
                     "clear": """If set to true, the render target will also be cleared. """
                 },
                 result='returns true if the render target was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='dxSetRenderTarget',
         )
         ],
     ),
@@ -3506,7 +3541,8 @@ Returns the float of the width of the text (in pixels). """
                     "tessellationY": """The number of sub-division points along the Y axis. Range is 1 to 500. """
                 },
                 result='returns true if the shader elements tessellation was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='dxSetShaderTessellation',
         )
         ],
     ),
@@ -3663,7 +3699,8 @@ Returns the float of the width of the text (in pixels). """
 To convert screen relative units into screen pixel coordinates, ''multiply'' by the screen size. Conversely, to convert screen pixel coordinates to screen relative units, '''''divide''''' by the screen size. """
                 },
                 result='returns true if the shader elements transform was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='dxSetShaderTransform',
         )
         ],
     ),
@@ -3731,7 +3768,8 @@ To convert screen relative units into screen pixel coordinates, ''multiply'' by 
                     "value": """The value to set, which can be a texture, a bool, a number or a list of numbers(max 16 floats(numbers)) """
                 },
                 result='returns true if the shader elements parameter was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='dxSetShaderValue',
         )
         ],
     ),
@@ -3781,7 +3819,8 @@ To convert screen relative units into screen pixel coordinates, ''multiply'' by 
                     "no_shader": """Simulate shaders failing validation. """
                 },
                 result='returns true if the test mode was successfully set, false otherwise.' ,
-            )
+            ),
+            url='dxSetTestMode',
         )
         ],
     ),
@@ -3849,7 +3888,8 @@ To convert screen relative units into screen pixel coordinates, ''multiply'' by 
                     "border-color": """If textureEdge is set to border, you are able to define a border color here """
                 },
                 result='' ,
-            )
+            ),
+            url='dxSetTextureEdge',
         )
         ],
     ),
@@ -3962,7 +4002,8 @@ By default the pixels are set starting at the top left corner of the texture. To
                     "height": """Rectangle height """
                 },
                 result='returns a string if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='dxSetTexturePixels',
         )
         ],
     ),
@@ -4019,7 +4060,8 @@ By default the pixels are set starting at the top left corner of the texture. To
                     "resampleNow": """A bool to indicate if the screen should be captured immediately. The default is false which means the screen from the end of the previous frame is used (better for performance and consistency). Use true for layering fullscreen effects. """
                 },
                 result='returns true if the screen was successfully captured, false otherwise.' ,
-            )
+            ),
+            url='dxUpdateScreenSource',
         )
         ],
     )

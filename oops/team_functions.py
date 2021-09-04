@@ -55,7 +55,8 @@ DUMP_PARTIAL = [
                     "theTeam": """The team you wish to retrieve the player count of. """
                 },
                 result='returns an integer containing the number of players in the team, false if it could not be retrieved.' ,
-            )
+            ),
+            url='countPlayersInTeam',
         ),
                 field=FunctionOOPField(
                                 name='playerCount',
@@ -111,7 +112,8 @@ DUMP_PARTIAL = [
                     "theTeam": """The team you wish to retrieve the player count of. """
                 },
                 result='returns an integer containing the number of players in the team, false if it could not be retrieved.' ,
-            )
+            ),
+            url='countPlayersInTeam',
         ),
                 field=FunctionOOPField(
                                 name='playerCount',
@@ -202,7 +204,8 @@ DUMP_PARTIAL = [
                     "colorB": """An integer representing the blue color value. """
                 },
                 result='returns a team element if it was successfully created, false if invalid arguments are passed or a team with that name already exists.' ,
-            )
+            ),
+            url='createTeam',
         ),
                 field=None,
                 is_static=True,
@@ -255,7 +258,8 @@ DUMP_PARTIAL = [
                     "theTeam": """The team you wish to retrieve all the players from. """
                 },
                 result='returns a table of all the players in the team, or an empty one if there are none else false if invalid arguments are passed.' ,
-            )
+            ),
+            url='getPlayersInTeam',
         ),
                 field=FunctionOOPField(
                                 name='players',
@@ -311,7 +315,8 @@ DUMP_PARTIAL = [
                     "theTeam": """The team you wish to retrieve all the players from. """
                 },
                 result='returns a table of all the players in the team, or an empty one if there are none else false if invalid arguments are passed.' ,
-            )
+            ),
+            url='getPlayersInTeam',
         ),
                 field=FunctionOOPField(
                                 name='players',
@@ -369,7 +374,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """: The player whose team you want to find out. """
                 },
                 result='returns a team element representing the team the player is on, false if the player is not part of a team.' ,
-            )
+            ),
+            url='getPlayerTeam',
         ),
                 field=FunctionOOPField(
                                 name='team',
@@ -425,7 +431,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """: The player whose team you want to find out. """
                 },
                 result='returns a team element representing the team the player is on, false if the player is not part of a team.' ,
-            )
+            ),
+            url='getPlayerTeam',
         ),
                 field=FunctionOOPField(
                                 name='team',
@@ -491,7 +498,8 @@ DUMP_PARTIAL = [
                     "theTeam": """The team you want to get the color of. """
                 },
                 result='returns 3 integers representing the red, green, and blue color components of the team if its valid, false otherwise.' ,
-            )
+            ),
+            url='getTeamColor',
         ),
                 field=None,
                 is_static=False,
@@ -547,7 +555,8 @@ DUMP_PARTIAL = [
                     "theTeam": """The team you want to get the color of. """
                 },
                 result='returns 3 integers representing the red, green, and blue color components of the team if its valid, false otherwise.' ,
-            )
+            ),
+            url='getTeamColor',
         ),
                 field=None,
                 is_static=False,
@@ -597,7 +606,8 @@ DUMP_PARTIAL = [
                     "theTeam": """The team object that will be checked """
                 },
                 result='returns true if friendly fire is on for the specified team, false if it is turned off or if invalid arguments are specified.' ,
-            )
+            ),
+            url='getTeamFriendlyFire',
         ),
                 field=FunctionOOPField(
                                 name='friendlyFire',
@@ -653,7 +663,8 @@ DUMP_PARTIAL = [
                     "theTeam": """The team object that will be checked """
                 },
                 result='returns true if friendly fire is on for the specified team, false if it is turned off or if invalid arguments are specified.' ,
-            )
+            ),
+            url='getTeamFriendlyFire',
         ),
                 field=FunctionOOPField(
                                 name='friendlyFire',
@@ -711,7 +722,8 @@ DUMP_PARTIAL = [
                     "teamName": """A string determining the name of the team you wish to find. """
                 },
                 result='returns the team element if it was found, false otherwise.' ,
-            )
+            ),
+            url='getTeamFromName',
         ),
                 field=None,
                 is_static=True,
@@ -759,7 +771,8 @@ DUMP_PARTIAL = [
                     "teamName": """A string determining the name of the team you wish to find. """
                 },
                 result='returns the team element if it was found, false otherwise.' ,
-            )
+            ),
+            url='getTeamFromName',
         ),
                 field=None,
                 is_static=True,
@@ -809,7 +822,8 @@ DUMP_PARTIAL = [
                     "theTeam": """The team you want to retrieve the name of. """
                 },
                 result='returns a string representing the teams name if the team object was valid, false otherwise.' ,
-            )
+            ),
+            url='getTeamName',
         ),
                 field=FunctionOOPField(
                                 name='name',
@@ -865,7 +879,8 @@ DUMP_PARTIAL = [
                     "theTeam": """The team you want to retrieve the name of. """
                 },
                 result='returns a string representing the teams name if the team object was valid, false otherwise.' ,
-            )
+            ),
+            url='getTeamName',
         ),
                 field=FunctionOOPField(
                                 name='name',
@@ -934,7 +949,8 @@ DUMP_PARTIAL = [
                     "theTeam": """The team you want to add the player to, or nil if you wish to unassign a player from his team. """
                 },
                 result='returns true if the player was successfully added to the specified team or removed from his previous one, false otherwise.' ,
-            )
+            ),
+            url='setPlayerTeam',
         ),
                 field=FunctionOOPField(
                                 name='team',
@@ -1028,7 +1044,8 @@ DUMP_PARTIAL = [
                     "colorB": """An integer representing the blue color value, from 0 to 255. """
                 },
                 result='returns true if the team is valid and the color is different, otherwise false.' ,
-            )
+            ),
+            url='setTeamColor',
         ),
                 field=None,
                 is_static=False,
@@ -1092,7 +1109,8 @@ DUMP_PARTIAL = [
                     "friendlyFire": """A boolean denoting whether the players from the same team can kill each other (true) or whether the players cant kill each other (false). """
                 },
                 result='returns true if the friendly fire value is set for the specified team, false if the friendly fire value cant be set for the specified team or if invalid arguments are specified.' ,
-            )
+            ),
+            url='setTeamFriendlyFire',
         ),
                 field=FunctionOOPField(
                                 name='friendlyFire',
@@ -1164,7 +1182,8 @@ DUMP_PARTIAL = [
                     "newName": """A string representing the name you want the team to be called. """
                 },
                 result='returns true if the team was valid and the name was changed, false otherwise.' ,
-            )
+            ),
+            url='setTeamName',
         ),
                 field=FunctionOOPField(
                                 name='name',

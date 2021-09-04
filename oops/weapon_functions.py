@@ -118,7 +118,8 @@ DUMP_PARTIAL = [
 The following properties are get only: """
                 },
                 result='on success:\nint: the weapon property\non failure:\nbool: false if the passed arguments were invalid' ,
-            )
+            ),
+            url='getWeaponProperty',
         ),
                 field=None,
                 is_static=False,
@@ -197,7 +198,8 @@ The following properties are get only: """
 The following properties are get only: """
                 },
                 result='on success:\nint: the weapon property\non failure:\nbool: false if the passed arguments were invalid' ,
-            )
+            ),
+            url='getWeaponProperty',
         ),
                 field=None,
                 is_static=False,
@@ -288,7 +290,8 @@ The following properties are get only: """
                     "theValue": """The value to set the property to. """
                 },
                 result='returns true if the property was set.' ,
-            )
+            ),
+            url='setWeaponProperty',
         ),
                 field=None,
                 is_static=False,

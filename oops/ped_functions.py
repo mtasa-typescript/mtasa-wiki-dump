@@ -88,7 +88,8 @@ DUMP_PARTIAL = [
                     "clothesType": """: A integer representing the clothes slot/type the clothes should be added to. See the CJ Clothes|clothes catalog. """
                 },
                 result='this function returns true if the clothes were successfully added to the ped, false otherwise.' ,
-            )
+            ),
+            url='addPedClothes',
         ),
                 field=None,
                 is_static=False,
@@ -169,7 +170,8 @@ DUMP_PARTIAL = [
                     "clothesType": """: A integer representing the clothes slot/type the clothes should be added to. See the CJ Clothes|clothes catalog. """
                 },
                 result='this function returns true if the clothes were successfully added to the ped, false otherwise.' ,
-            )
+            ),
+            url='addPedClothes',
         ),
                 field=None,
                 is_static=False,
@@ -222,7 +224,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped you want to check. """
                 },
                 result='returns true if the ped can be knocked off bikes, false if he cannot or an invalid element was passed.' ,
-            )
+            ),
+            url='canPedBeKnockedOffBike',
         ),
                 field=None,
                 is_static=False,
@@ -291,7 +294,8 @@ DUMP_PARTIAL = [
                     "weaponSlot": """an integer representing the weapon slot (set to the peds currently selected slot if not specified). """
                 },
                 result='returns an int containing the amount of ammo in the specified peds currently selected or specified clip, or 0 if the ped specified is invalid.' ,
-            )
+            ),
+            url='getPedAmmoInClip',
         ),
                 field=FunctionOOPField(
                                 name='ammoInClip',
@@ -358,7 +362,8 @@ DUMP_PARTIAL = [
                     "weaponSlot": """an integer representing the weapon slot (set to the peds currently selected slot if not specified). """
                 },
                 result='returns an int containing the amount of ammo in the specified peds currently selected or specified clip, or 0 if the ped specified is invalid.' ,
-            )
+            ),
+            url='getPedAmmoInClip',
         ),
                 field=FunctionOOPField(
                                 name='ammoInClip',
@@ -431,7 +436,8 @@ DUMP_PARTIAL = [
                     "thePed": """the player or ped you want to get the animations|animation of. """
                 },
                 result='<syntaxhighlight lang=lua>string anim, string block, int time, bool loop, bool updateposition, bool interruptable, bool freezelastframe, int blendtime, bool restoretaskonanimend</syntaxhighlight>' ,
-            )
+            ),
+            url='getPedAnimation',
         ),
                 field=None,
                 is_static=False,
@@ -481,7 +487,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped whose armor you want to check """
                 },
                 result='a float with the armor, false if an invalid ped was given.' ,
-            )
+            ),
+            url='getPedArmor',
         ),
                 field=FunctionOOPField(
                                 name='armor',
@@ -537,7 +544,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped whose armor you want to check """
                 },
                 result='a float with the armor, false if an invalid ped was given.' ,
-            )
+            ),
+            url='getPedArmor',
         ),
                 field=FunctionOOPField(
                                 name='armor',
@@ -647,7 +655,8 @@ DUMP_PARTIAL = [
 </div> """
                 },
                 result='returns the x, y, z world position of the bone.' ,
-            )
+            ),
+            url='getPedBonePosition',
         ),
                 field=None,
                 is_static=False,
@@ -700,7 +709,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped to retrieve the camera rotation of. """
                 },
                 result='returns the camera rotation of the ped in degrees if successful. returns false if an invalid element was passed.' ,
-            )
+            ),
+            url='getPedCameraRotation',
         ),
                 field=FunctionOOPField(
                                 name='cameraRotation',
@@ -773,7 +783,8 @@ DUMP_PARTIAL = [
                     "clothesType": """The type/slot of clothing you want to get. """
                 },
                 result='this function returns 2 string|strings, the clothes texture and model. the first return value will be false if this players clothes type is empty or an invalid player was specified.' ,
-            )
+            ),
+            url='getPedClothes',
         ),
                 field=None,
                 is_static=False,
@@ -836,7 +847,8 @@ DUMP_PARTIAL = [
                     "clothesType": """The type/slot of clothing you want to get. """
                 },
                 result='this function returns 2 string|strings, the clothes texture and model. the first return value will be false if this players clothes type is empty or an invalid player was specified.' ,
-            )
+            ),
+            url='getPedClothes',
         ),
                 field=None,
                 is_static=False,
@@ -886,7 +898,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped of which you want to get the element he is standing on. """
                 },
                 result='returns an object or a vehicle if the ped is standing on one, false if he is touching none or an invalid element was passed.' ,
-            )
+            ),
+            url='getPedContactElement',
         ),
                 field=FunctionOOPField(
                                 name='contactElement',
@@ -942,7 +955,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped of which you want to get the element he is standing on. """
                 },
                 result='returns an object or a vehicle if the ped is standing on one, false if he is touching none or an invalid element was passed.' ,
-            )
+            ),
+            url='getPedContactElement',
         ),
                 field=FunctionOOPField(
                                 name='contactElement',
@@ -1014,7 +1028,8 @@ DUMP_PARTIAL = [
                     "control": """the control to get the status of. See control names for a list of valid names. """
                 },
                 result='returns true if the ped is pressing the specified control, false if not or an invalid argument was passed.' ,
-            )
+            ),
+            url='getPedControlState',
         ),
                 field=None,
                 is_static=False,
@@ -1064,7 +1079,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped whose current fighting style ID you wish to retrieve. """
                 },
                 result='returns the peds current fighting style as an integer id, false if it fails to retrieve a value.' ,
-            )
+            ),
+            url='getPedFightingStyle',
         ),
                 field=FunctionOOPField(
                                 name='fightingStyle',
@@ -1120,7 +1136,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped whose current fighting style ID you wish to retrieve. """
                 },
                 result='returns the peds current fighting style as an integer id, false if it fails to retrieve a value.' ,
-            )
+            ),
+            url='getPedFightingStyle',
         ),
                 field=FunctionOOPField(
                                 name='fightingStyle',
@@ -1178,7 +1195,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped whose gravity you want to check. """
                 },
                 result='returns a float indicating the peds gravity, or false if the ped is invalid. default value is 0.008.' ,
-            )
+            ),
+            url='getPedGravity',
         ),
                 field=FunctionOOPField(
                                 name='gravity',
@@ -1247,7 +1265,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped whose vehicle youre looking up. """
                 },
                 result='returns the vehicle that the specified ped is in, or false if the ped is not in a vehicle or is an invalid ped.' ,
-            )
+            ),
+            url='getPedOccupiedVehicle',
         ),
                 field=FunctionOOPField(
                                 name='vehicle',
@@ -1303,7 +1322,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped whose vehicle youre looking up. """
                 },
                 result='returns the vehicle that the specified ped is in, or false if the ped is not in a vehicle or is an invalid ped.' ,
-            )
+            ),
+            url='getPedOccupiedVehicle',
         ),
                 field=FunctionOOPField(
                                 name='vehicle',
@@ -1361,7 +1381,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped whose vehicle seat youre looking up. """
                 },
                 result='* returns an integer containing the number of the seat that the ped is currently in:\n** 0: front-left\n** 1: front-right\n** 2: rear-left\n** 3: rear-right\nreturns false if the ped is on foot, or the ped doesnt exist.' ,
-            )
+            ),
+            url='getPedOccupiedVehicleSeat',
         ),
                 field=FunctionOOPField(
                                 name='vehicleSeat',
@@ -1417,7 +1438,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped whose vehicle seat youre looking up. """
                 },
                 result='* returns an integer containing the number of the seat that the ped is currently in:\n** 0: front-left\n** 1: front-right\n** 2: rear-left\n** 3: rear-right\nreturns false if the ped is on foot, or the ped doesnt exist.' ,
-            )
+            ),
+            url='getPedOccupiedVehicleSeat',
         ),
                 field=FunctionOOPField(
                                 name='vehicleSeat',
@@ -1478,7 +1500,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped whose oxygen level you want to check """
                 },
                 result='a float with the oxygen level, false if an invalid ped was given.' ,
-            )
+            ),
+            url='getPedOxygenLevel',
         ),
                 field=FunctionOOPField(
                                 name='oxygenLevel',
@@ -1555,7 +1578,8 @@ DUMP_PARTIAL = [
                     "stat": """: A whole number determining the stat ID. """
                 },
                 result='returns the value of the requested statistic.' ,
-            )
+            ),
+            url='getPedStat',
         ),
                 field=None,
                 is_static=False,
@@ -1614,7 +1638,8 @@ DUMP_PARTIAL = [
                     "stat": """: A whole number determining the stat ID. """
                 },
                 result='returns the value of the requested statistic.' ,
-            )
+            ),
+            url='getPedStat',
         ),
                 field=None,
                 is_static=False,
@@ -1664,7 +1689,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped whose target you want to retrieve. """
                 },
                 result='returns the element thats being targeted, or false if there isnt one.\nthis is only effective on physical gta elements, namely:\n* players\n* peds\n* vehicles\n* objects' ,
-            )
+            ),
+            url='getPedTarget',
         ),
                 field=None,
                 is_static=False,
@@ -1712,7 +1738,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped whose target you want to retrieve. """
                 },
                 result='returns the element thats being targeted, or false if there isnt one.\nthis is only effective on physical gta elements, namely:\n* players\n* peds\n* vehicles\n* objects' ,
-            )
+            ),
+            url='getPedTarget',
         ),
                 field=None,
                 is_static=False,
@@ -1781,7 +1808,8 @@ DUMP_PARTIAL = [
                     "targetingPed": """the ped who is targeting whose target end you wish to retrieve """
                 },
                 result='returns three floats, x,y,z, representing the position where the peds target ends according to his range, or false if it was unsuccessful.' ,
-            )
+            ),
+            url='getPedTargetEnd',
         ),
                 field=None,
                 is_static=False,
@@ -1884,7 +1912,8 @@ DUMP_PARTIAL = [
                     "5": """TASK_SECONDARY_IK """
                 },
                 result='returns the name of the most complex task. see list of player tasks for valid strings. returns false if invalid arguments are specified or if there is no task of the type specified.\n<br>\nreturns between 1 and 4 strings. the first string contains the name of the most complex task, with simpler sub-tasks being named in the following strings. see list of player tasks for valid strings. returns false if invalid arguments are specified or if there is no task of the type specified.' ,
-            )
+            ),
+            url='getPedTask',
         ),
                 field=None,
                 is_static=False,
@@ -1945,7 +1974,8 @@ DUMP_PARTIAL = [
                     "weaponSlot": """: an integer representing the weapon slot (set to the peds current slot if not given) """
                 },
                 result='returns an int containing the total amount of ammo for the specified peds weapon, or 0 if the ped specified is invalid.' ,
-            )
+            ),
+            url='getPedTotalAmmo',
         ),
                 field=None,
                 is_static=False,
@@ -2004,7 +2034,8 @@ DUMP_PARTIAL = [
                     "weaponSlot": """: an integer representing the weapon slot (set to the peds current slot if not given) """
                 },
                 result='returns an int containing the total amount of ammo for the specified peds weapon, or 0 if the ped specified is invalid.' ,
-            )
+            ),
+            url='getPedTotalAmmo',
         ),
                 field=None,
                 is_static=False,
@@ -2062,7 +2093,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped whose walking style to retrieve. """
                 },
                 result='returns the walking style id if successful, false otherwise. the possible walking styles are as follows:' ,
-            )
+            ),
+            url='getPedWalkingStyle',
         ),
                 field=FunctionOOPField(
                                 name='walkingStyle',
@@ -2118,7 +2150,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped whose walking style to retrieve. """
                 },
                 result='returns the walking style id if successful, false otherwise. the possible walking styles are as follows:' ,
-            )
+            ),
+            url='getPedWalkingStyle',
         ),
                 field=FunctionOOPField(
                                 name='walkingStyle',
@@ -2187,7 +2220,8 @@ DUMP_PARTIAL = [
                     "weaponSlot": """: an integer representing the weapon|weapon slot (set to the peds current slot if not given). """
                 },
                 result='returns an int indicating the type of the weapon the ped has in the specified slot. if the slot is empty, it returns 0.\nit should be noted that if a ped runs out of ammo for a weapon, it will still return the id of that weapon in the slot (even if it appears as if the ped does not have a weapon at all), though getpedtotalammo will return 0.  therefore, getpedtotalammo should be used in conjunction with getpedweapon in order to check if a ped has a weapon.' ,
-            )
+            ),
+            url='getPedWeapon',
         ),
                 field=None,
                 is_static=False,
@@ -2246,7 +2280,8 @@ DUMP_PARTIAL = [
                     "weaponSlot": """: an integer representing the weapon|weapon slot (set to the peds current slot if not given). """
                 },
                 result='returns an int indicating the type of the weapon the ped has in the specified slot. if the slot is empty, it returns 0.\nit should be noted that if a ped runs out of ammo for a weapon, it will still return the id of that weapon in the slot (even if it appears as if the ped does not have a weapon at all), though getpedtotalammo will return 0.  therefore, getpedtotalammo should be used in conjunction with getpedweapon in order to check if a ped has a weapon.' ,
-            )
+            ),
+            url='getPedWeapon',
         ),
                 field=None,
                 is_static=False,
@@ -2304,7 +2339,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped to get the current weapon slot of. """
                 },
                 result='returns the selected weapon slot id on success, false otherwise.' ,
-            )
+            ),
+            url='getPedWeaponSlot',
         ),
                 field=FunctionOOPField(
                                 name='weaponSlot',
@@ -2360,7 +2396,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped to get the current weapon slot of. """
                 },
                 result='returns the selected weapon slot id on success, false otherwise.' ,
-            )
+            ),
+            url='getPedWeaponSlot',
         ),
                 field=FunctionOOPField(
                                 name='weaponSlot',
@@ -2437,7 +2474,8 @@ DUMP_PARTIAL = [
                     "thePed": """the player or ped whose bleeding effect state you want to get. """
                 },
                 result='returns true if the player or ped is bleeding, false otherwise.' ,
-            )
+            ),
+            url='isPedBleeding',
         ),
                 field=FunctionOOPField(
                                 name='bleeding',
@@ -2495,7 +2533,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped you wish to check """
                 },
                 result='returns true if the ped is choking, false otherwise.' ,
-            )
+            ),
+            url='isPedChoking',
         ),
                 field=FunctionOOPField(
                                 name='choking',
@@ -2551,7 +2590,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped you wish to check """
                 },
                 result='returns true if the ped is choking, false otherwise.' ,
-            )
+            ),
+            url='isPedChoking',
         ),
                 field=FunctionOOPField(
                                 name='choking',
@@ -2609,7 +2649,8 @@ DUMP_PARTIAL = [
                     "thePed": """: the ped you want to check up on. """
                 },
                 result='returns true if the ped is dead, false otherwise.' ,
-            )
+            ),
+            url='isPedDead',
         ),
                 field=FunctionOOPField(
                                 name='dead',
@@ -2665,7 +2706,8 @@ DUMP_PARTIAL = [
                     "thePed": """: the ped you want to check up on. """
                 },
                 result='returns true if the ped is dead, false otherwise.' ,
-            )
+            ),
+            url='isPedDead',
         ),
                 field=FunctionOOPField(
                                 name='dead',
@@ -2723,7 +2765,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped element whose state is to be checked. """
                 },
                 result='returns true if the driveby state is enabled, false otherwise.' ,
-            )
+            ),
+            url='isPedDoingGangDriveby',
         ),
                 field=FunctionOOPField(
                                 name='doingGangDriveby',
@@ -2779,7 +2822,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped element whose state is to be checked. """
                 },
                 result='returns true if the driveby state is enabled, false otherwise.' ,
-            )
+            ),
+            url='isPedDoingGangDriveby',
         ),
                 field=FunctionOOPField(
                                 name='doingGangDriveby',
@@ -2845,7 +2889,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped to check. """
                 },
                 result='returns true if the ped is ducked, false otherwise.' ,
-            )
+            ),
+            url='isPedDucked',
         ),
                 field=FunctionOOPField(
                                 name='ducked',
@@ -2901,7 +2946,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped to check. """
                 },
                 result='returns true if the ped is ducked, false otherwise.' ,
-            )
+            ),
+            url='isPedDucked',
         ),
                 field=FunctionOOPField(
                                 name='ducked',
@@ -2975,7 +3021,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped you want to check. """
                 },
                 result='returns true if the ped is in a vehicle, false if he is on foot or an invalid element was passed.' ,
-            )
+            ),
+            url='isPedInVehicle',
         ),
                 field=FunctionOOPField(
                                 name='inVehicle',
@@ -3031,7 +3078,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped you want to check. """
                 },
                 result='returns true if the ped is in a vehicle, false if he is on foot or an invalid element was passed.' ,
-            )
+            ),
+            url='isPedInVehicle',
         ),
                 field=FunctionOOPField(
                                 name='inVehicle',
@@ -3089,7 +3137,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped to check. """
                 },
                 result='returns true if the ped is on fire, false otherwise.' ,
-            )
+            ),
+            url='isPedOnFire',
         ),
                 field=FunctionOOPField(
                                 name='onFire',
@@ -3145,7 +3194,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped to check. """
                 },
                 result='returns true if the ped is on fire, false otherwise.' ,
-            )
+            ),
+            url='isPedOnFire',
         ),
                 field=FunctionOOPField(
                                 name='onFire',
@@ -3203,7 +3253,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped you are checking. """
                 },
                 result='returns true if the ped is on foot and on the ground, false otherwise, even if he is in a car that stands still or on object outside world map.' ,
-            )
+            ),
+            url='isPedOnGround',
         ),
                 field=FunctionOOPField(
                                 name='onGround',
@@ -3259,7 +3310,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped you are checking. """
                 },
                 result='returns true if the ped is on foot and on the ground, false otherwise, even if he is in a car that stands still or on object outside world map.' ,
-            )
+            ),
+            url='isPedOnGround',
         ),
                 field=FunctionOOPField(
                                 name='onGround',
@@ -3320,7 +3372,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped you are checking. """
                 },
                 result='returns true if the ped is currently reloading a weapon, false otherwise.' ,
-            )
+            ),
+            url='isPedReloadingWeapon',
         ),
                 field=FunctionOOPField(
                                 name='reloadingWeapon',
@@ -3386,7 +3439,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped you want to check """
                 },
                 result='returns true if the ped is carrying a jetpack, false if he is not or an invalid element was passed.' ,
-            )
+            ),
+            url='isPedWearingJetpack',
         ),
                 field=FunctionOOPField(
                                 name='jetpack',
@@ -3442,7 +3496,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped you want to check """
                 },
                 result='returns true if the ped is carrying a jetpack, false if he is not or an invalid element was passed.' ,
-            )
+            ),
+            url='isPedWearingJetpack',
         ),
                 field=FunctionOOPField(
                                 name='jetpack',
@@ -3544,7 +3599,8 @@ DUMP_PARTIAL = [
                     "stealth": """Boolean value, representing whether or not this a stealth kill """
                 },
                 result='returns true if the ped was killed, false if the ped specified could not be killed or is invalid.' ,
-            )
+            ),
+            url='killPed',
         ),
                 field=None,
                 is_static=False,
@@ -3636,7 +3692,8 @@ DUMP_PARTIAL = [
                     "stealth": """Boolean value, representing whether or not this a stealth kill """
                 },
                 result='returns true if the ped was killed, false if the ped specified could not be killed or is invalid.' ,
-            )
+            ),
+            url='killPed',
         ),
                 field=None,
                 is_static=False,
@@ -3686,7 +3743,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped who will reload their weapon. """
                 },
                 result='returns true if the pedestrian was made to reload, or false if invalid arguments were passed or that pedestrian has a weapon which cannot be reloaded.\nnote: this will fail but return true if\n1) the ped is crouched and moving\n2) the ped is using a weapon without clip ammo (or minigun/flamethrower/fire\nextinguisher)\n3) the ped is using his weapon (shooting/aiming)\n4) the ped moved while crouching recently\ndue to these circumstances causing problems with this function' ,
-            )
+            ),
+            url='reloadPedWeapon',
         ),
                 field=None,
                 is_static=False,
@@ -3772,7 +3830,8 @@ DUMP_PARTIAL = [
                     "clothesModel": """: (Server only) A string determining the clothes model that will be removed. See the CJ Clothes|clothes catalog. """
                 },
                 result='this function returns true if the clothes were successfully removed from the ped, false otherwise.' ,
-            )
+            ),
+            url='removePedClothes',
         ),
                 field=None,
                 is_static=False,
@@ -3853,7 +3912,8 @@ DUMP_PARTIAL = [
                     "clothesModel": """: (Server only) A string determining the clothes model that will be removed. See the CJ Clothes|clothes catalog. """
                 },
                 result='this function returns true if the clothes were successfully removed from the ped, false otherwise.' ,
-            )
+            ),
+            url='removePedClothes',
         ),
                 field=None,
                 is_static=False,
@@ -3903,7 +3963,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped you wish to remove from a vehicle """
                 },
                 result='returns true if the operation was successful, false if the specified ped is not valid or if it isnt in a vehicle.' ,
-            )
+            ),
+            url='removePedFromVehicle',
         ),
                 field=FunctionOOPField(
                                 name='vehicle',
@@ -3959,7 +4020,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped you wish to remove from a vehicle """
                 },
                 result='returns true if the operation was successful, false if the specified ped is not valid or if it isnt in a vehicle.' ,
-            )
+            ),
+            url='removePedFromVehicle',
         ),
                 field=FunctionOOPField(
                                 name='vehicle',
@@ -4141,7 +4203,8 @@ DUMP_PARTIAL = [
 |16632}} """
                 },
                 result='returns true if succesful, false otherwise.' ,
-            )
+            ),
+            url='setPedAnimation',
         ),
                 field=None,
                 is_static=False,
@@ -4289,7 +4352,8 @@ DUMP_PARTIAL = [
 |16632}} """
                 },
                 result='returns true if succesful, false otherwise.' ,
-            )
+            ),
+            url='setPedAnimation',
         ),
                 field=None,
                 is_static=False,
@@ -4361,7 +4425,8 @@ DUMP_PARTIAL = [
                     "progress": """current animation progress you want to apply, value from 0.0 to 1.0, if not supplied will default to 0.0 """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setPedAnimationProgress',
         ),
                 field=None,
                 is_static=False,
@@ -4431,7 +4496,8 @@ DUMP_PARTIAL = [
                     "progress": """current animation progress you want to apply, value from 0.0 to 1.0, if not supplied will default to 0.0 """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setPedAnimationProgress',
         ),
                 field=None,
                 is_static=False,
@@ -4503,7 +4569,8 @@ DUMP_PARTIAL = [
                     "speed": """a float containing the speed between 0.0–1.0 you want to apply to the animation. This limitation may be adjusted in the future, so do not provide speeds outside this boundary. {{New feature/item|3.0158|1.5.7|20395|The limit is now 0.0 to 10.0.}} {{Warning|Setting speed higher than 1 can cause issues with some animations.}} """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setPedAnimationSpeed',
         ),
                 field=None,
                 is_static=False,
@@ -4573,7 +4640,8 @@ DUMP_PARTIAL = [
                     "speed": """a float containing the speed between 0.0–1.0 you want to apply to the animation. This limitation may be adjusted in the future, so do not provide speeds outside this boundary. {{New feature/item|3.0158|1.5.7|20395|The limit is now 0.0 to 10.0.}} {{Warning|Setting speed higher than 1 can cause issues with some animations.}} """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setPedAnimationSpeed',
         ),
                 field=None,
                 is_static=False,
@@ -4634,7 +4702,8 @@ DUMP_PARTIAL = [
                     "armor": """: the amount of armor you want to set on the ped. Valid values are from 0 to 100. """
                 },
                 result='returns true if the armor was changed succesfully. returns false if an invalid ped was specified, or the armor value specified is out of acceptable range.' ,
-            )
+            ),
+            url='setPedArmor',
         ),
                 field=FunctionOOPField(
                                 name='armor',
@@ -4701,7 +4770,8 @@ DUMP_PARTIAL = [
                     "armor": """: the amount of armor you want to set on the ped. Valid values are from 0 to 100. """
                 },
                 result='returns true if the armor was changed succesfully. returns false if an invalid ped was specified, or the armor value specified is out of acceptable range.' ,
-            )
+            ),
+            url='setPedArmor',
         ),
                 field=FunctionOOPField(
                                 name='armor',
@@ -4773,7 +4843,8 @@ DUMP_PARTIAL = [
                     "bleeding": """boolean specifying whether the player or ped is bleeding or not. """
                 },
                 result='returns true if the bleeding state was successfully set, error is raised otherwise.' ,
-            )
+            ),
+            url='setPedBleeding',
         ),
                 field=FunctionOOPField(
                                 name='bleeding',
@@ -4845,7 +4916,8 @@ DUMP_PARTIAL = [
                     "cameraRotation": """The new direction that the ped will walk if you set their forwards control state. If the ped is the local player, it will also change where his camera is looking at if it isnt fixed (i.e. camera target is the local player). """
                 },
                 result='returns true if the camera rotation was changed, false otherwise.' ,
-            )
+            ),
+            url='setPedCameraRotation',
         ),
                 field=FunctionOOPField(
                                 name='cameraRotation',
@@ -4917,7 +4989,8 @@ DUMP_PARTIAL = [
                     "canBeKnockedOffBike": """true or false """
                 },
                 result='' ,
-            )
+            ),
+            url='setPedCanBeKnockedOffBike',
         ),
                 field=None,
                 is_static=False,
@@ -4978,7 +5051,8 @@ DUMP_PARTIAL = [
                     "choking": """true to make the ped choke, false to no longer force his choking animation """
                 },
                 result='returns true if successful, false otherwise (e.g. player handle is invalid)' ,
-            )
+            ),
+            url='setPedChoking',
         ),
                 field=FunctionOOPField(
                                 name='choking',
@@ -5064,7 +5138,8 @@ DUMP_PARTIAL = [
                     "state": """the new control state. true means pressed, false is released. """
                 },
                 result='returns true if successful, false if otherwise.' ,
-            )
+            ),
+            url='setPedControlState',
         ),
                 field=None,
                 is_static=False,
@@ -5165,7 +5240,8 @@ DUMP_PARTIAL = [
                     "level": """: The level of gravity (default is 0.008). """
                 },
                 result='returns true if the gravity was successfully set, false otherwise' ,
-            )
+            ),
+            url='setPedGravity',
         ),
                 field=FunctionOOPField(
                                 name='gravity',
@@ -5237,7 +5313,8 @@ DUMP_PARTIAL = [
                     "headState": """: head state, use true if you want the ped be headless, use false to give back the head. """
                 },
                 result='returns true if successful, false otherwise' ,
-            )
+            ),
+            url='setPedHeadless',
         ),
                 field=FunctionOOPField(
                                 name='headless',
@@ -5304,7 +5381,8 @@ DUMP_PARTIAL = [
                     "headState": """: head state, use true if you want the ped be headless, use false to give back the head. """
                 },
                 result='returns true if successful, false otherwise' ,
-            )
+            ),
+            url='setPedHeadless',
         ),
                 field=FunctionOOPField(
                                 name='headless',
@@ -5381,7 +5459,8 @@ DUMP_PARTIAL = [
                     "isOnFire": """true to set the ped on fire, false to extinguish any fire on him """
                 },
                 result='returns true if successful, false otherwise' ,
-            )
+            ),
+            url='setPedOnFire',
         ),
                 field=FunctionOOPField(
                                 name='onFire',
@@ -5448,7 +5527,8 @@ DUMP_PARTIAL = [
                     "isOnFire": """true to set the ped on fire, false to extinguish any fire on him """
                 },
                 result='returns true if successful, false otherwise' ,
-            )
+            ),
+            url='setPedOnFire',
         ),
                 field=FunctionOOPField(
                                 name='onFire',
@@ -5520,7 +5600,8 @@ DUMP_PARTIAL = [
                     "oxygen": """: the amount of oxygen you want to set on the ped. Native values are from 0 to 1000. Each of the stamina (22) and underwater stamina (225) Template:Stats|stat maximum adds a bonus of 1500. So the maximum oxygen level is 4000. """
                 },
                 result='returns true if the oxygen level was changed succesfully. returns false if an invalid ped and/or oxygen level was specified.' ,
-            )
+            ),
+            url='setPedOxygenLevel',
         ),
                 field=FunctionOOPField(
                                 name='oxygenLevel',
@@ -5619,7 +5700,8 @@ DUMP_PARTIAL = [
                     "voiceName": """the voice name within the specified type. See ped voices for possible voices. """
                 },
                 result='returns true when the voice was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setPedVoice',
         ),
                 field=None,
                 is_static=False,
@@ -5681,7 +5763,8 @@ DUMP_PARTIAL = [
 The possible walking styles are: """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setPedWalkingStyle',
         ),
                 field=FunctionOOPField(
                                 name='walkingStyle',
@@ -5749,7 +5832,8 @@ The possible walking styles are: """
 The possible walking styles are: """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setPedWalkingStyle',
         ),
                 field=FunctionOOPField(
                                 name='walkingStyle',
@@ -5818,7 +5902,8 @@ The possible walking styles are: """
                     "weaponSlot": """the weapon slot to set. """
                 },
                 result='returns true if successful in setting the peds equipped weapon slot, false otherwise.' ,
-            )
+            ),
+            url='setPedWeaponSlot',
         ),
                 field=FunctionOOPField(
                                 name='weaponSlot',
@@ -5885,7 +5970,8 @@ The possible walking styles are: """
                     "weaponSlot": """the weapon slot to set. """
                 },
                 result='returns true if successful in setting the peds equipped weapon slot, false otherwise.' ,
-            )
+            ),
+            url='setPedWeaponSlot',
         ),
                 field=FunctionOOPField(
                                 name='weaponSlot',
@@ -5954,7 +6040,8 @@ The possible walking styles are: """
                     "state": """A boolean representing whether to give or take the jetpack. """
                 },
                 result='returns true if a jetpack was successfully set for the ped, false if setting it failed.' ,
-            )
+            ),
+            url='setPedWearingJetpack',
         ),
                 field=FunctionOOPField(
                                 name='jetpack',
@@ -6041,7 +6128,8 @@ The possible walking styles are: """
                     "3": """Rear-right """
                 },
                 result='returns true if the operation is successful, false otherwise.' ,
-            )
+            ),
+            url='warpPedIntoVehicle',
         ),
                 field=FunctionOOPField(
                                 name='vehicle',
@@ -6123,7 +6211,8 @@ The possible walking styles are: """
                     "3": """Rear-right """
                 },
                 result='returns true if the operation is successful, false otherwise.' ,
-            )
+            ),
+            url='warpPedIntoVehicle',
         ),
                 field=FunctionOOPField(
                                 name='vehicle',

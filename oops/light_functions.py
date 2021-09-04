@@ -81,7 +81,8 @@ DUMP_PARTIAL = [
                     "theLight": """The Element/Light|light that you wish to retrieve the color of. """
                 },
                 result='returns three ints corresponding to the amount of red, green and blue (respectively) of the light, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getLightColor',
         ),
                 field=FunctionOOPField(
                                 name='color',
@@ -158,7 +159,8 @@ DUMP_PARTIAL = [
                     "theLight": """The Element/Light|light that you wish to retrieve the direction of. """
                 },
                 result='returns three ints corresponding to the x, y and z coordinates (respectively) of the light direction, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getLightDirection',
         ),
                 field=FunctionOOPField(
                                 name='direction',
@@ -227,7 +229,8 @@ DUMP_PARTIAL = [
                     "theLight": """The Element/Light|light that you wish to retrieve the radius of. """
                 },
                 result='returns a float containing the radius of the specified light, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getLightRadius',
         ),
                 field=FunctionOOPField(
                                 name='radius',
@@ -288,7 +291,8 @@ DUMP_PARTIAL = [
                     "theLight": """The Element/Light|light that you wish to retrieve the type of. """
                 },
                 result='returns an int containing the type of the specified light, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getLightType',
         ),
                 field=None,
                 is_static=False,
@@ -371,7 +375,8 @@ DUMP_PARTIAL = [
                     "theLight": """The Element/Light|light that you wish to set the color of. """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='setLightColor',
         ),
                 field=FunctionOOPField(
                                 name='color',
@@ -462,7 +467,8 @@ DUMP_PARTIAL = [
                     "theLight": """The Element/Light|light that you wish to set the direction of. """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='setLightDirection',
         ),
                 field=FunctionOOPField(
                                 name='direction',
@@ -533,7 +539,8 @@ DUMP_PARTIAL = [
                     "theLight": """The Element/Light|light that you wish to set the radius of. """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='setLightRadius',
         ),
                 field=FunctionOOPField(
                                 name='radius',

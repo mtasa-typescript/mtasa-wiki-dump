@@ -48,7 +48,8 @@ DUMP_PARTIAL = [
                     "theRequest": """: returned from FetchRemote|fetchRemote, CallRemote|callRemote or GetRemoteRequests|getRemoteRequests """
                 },
                 result='returns true on success, false when invalid request was provided' ,
-            )
+            ),
+            url='abortRemoteRequest',
         )
         ],
         client=[
@@ -89,7 +90,8 @@ DUMP_PARTIAL = [
                     "theRequest": """: returned from FetchRemote|fetchRemote, CallRemote|callRemote or GetRemoteRequests|getRemoteRequests """
                 },
                 result='returns true on success, false when invalid request was provided' ,
-            )
+            ),
+            url='abortRemoteRequest',
         )
         ],
     ),
@@ -145,7 +147,8 @@ DUMP_PARTIAL = [
                     "filetype": """a string indicating whether the file is serverside (server) or clientside (client). """
                 },
                 result='returns the new configs root xmlnode if the config was added successfully, false otherwise.' ,
-            )
+            ),
+            url='addResourceConfig',
         )
         ],
         client=[
@@ -204,7 +207,8 @@ DUMP_PARTIAL = [
                     "dimension": """the dimension in which the maps objects will be placed. """
                 },
                 result='returns the new maps root xmlnode if the map was added successfully, false otherwise.' ,
-            )
+            ),
+            url='addResourceMap',
         )
         ],
         client=[
@@ -271,7 +275,8 @@ DUMP_PARTIAL = [
                     "exportedFunction": """The name of the function you want to call. Its not a string. """
                 },
                 result='returns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false.\nreturns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false.' ,
-            )
+            ),
+            url='call',
         )
         ],
         client=[
@@ -333,7 +338,8 @@ DUMP_PARTIAL = [
                     "exportedFunction": """The name of the function you want to call. Its not a string. """
                 },
                 result='returns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false.\nreturns anything that the designated function has returned, if the function has no return, nil is returned. if the function does not exist, is not exported, or the call was not successful it will return false.' ,
-            )
+            ),
+            url='call',
         )
         ],
     ),
@@ -451,7 +457,8 @@ DUMP_PARTIAL = [
                     "arguments": """Any arguments you may want to pass to the function when it is called. Any number of arguments of can be specified, each being passed to the designated function. Most data types can be passed, including tables. The only values that cannot be passed are userdata values such as xmlnodes - elements and resources can be passed though may be misinterpreted on other game servers (or cause warnings). """
                 },
                 result='returns true if the function has been called, false otherwise.' ,
-            )
+            ),
+            url='callRemote',
         )
         ],
         client=[
@@ -519,7 +526,8 @@ DUMP_PARTIAL = [
                     "organizationalDir": """: A string containing the path where the resource should be copied to (e.g. gamemodes/amx). """
                 },
                 result='returns the resource element of the copy. returns false if the arguments are incorrect.' ,
-            )
+            ),
+            url='copyResource',
         )
         ],
         client=[
@@ -576,7 +584,8 @@ DUMP_PARTIAL = [
                     "organizationalDir": """: A string containing the path where the resource should be created (e.g. gamemodes/amx). """
                 },
                 result='returns the resource element of the new resource if successful, false otherwise. this could fail if the resource name already is in use, if a directory already exists with the name youve specified (but this isnt a valid resource) or if the name you specify isnt valid. it could also fail if the disk was full or for other similar reasons.' ,
-            )
+            ),
+            url='createResource',
         )
         ],
         client=[
@@ -622,7 +631,8 @@ DUMP_PARTIAL = [
                     "resourceName": """The name of resource to delete. """
                 },
                 result='returns true if the resource has been deleted successfully, false otherwise.' ,
-            )
+            ),
+            url='deleteResource',
         )
         ],
         client=[
@@ -756,7 +766,8 @@ DUMP_PARTIAL = [
                     "formFields": """A table containing form items to submit. (for POST method only)  e.g.{ name&#61;bob, email&#61;bob@example.com } """
                 },
                 result='returns a request value which can be used with getremoterequestinfo|getremoterequestinfo or abortremoterequest|abortremoterequest' ,
-            )
+            ),
+            url='fetchRemote',
         )
         ],
         client=[
@@ -885,7 +896,8 @@ DUMP_PARTIAL = [
                     "formFields": """A table containing form items to submit. (for POST method only)  e.g.{ name&#61;bob, email&#61;bob@example.com } """
                 },
                 result='returns a request value which can be used with getremoterequestinfo|getremoterequestinfo or abortremoterequest|abortremoterequest' ,
-            )
+            ),
+            url='fetchRemote',
         )
         ],
     ),
@@ -948,7 +960,8 @@ DUMP_PARTIAL = [
                     "theRequest": """: returned from FetchRemote|fetchRemote, CallRemote|callRemote or GetRemoteRequests|getRemoteRequests """
                 },
                 result='returns a table when valid, false otherwise\nthe table contains:\n*bytesreceived: a number specifying the amount of data received so far. zero means the download is queued\n*bytestotal: a number specifying the final download size. will be zero if the remote http server has not set the content-length header\n*currentattempt: a number specifying the current connection attempt\n*type: a string specifying either fetch or call\n*url: a string specifying the url\n*resource: the resource which started the request, or false if the resource has since been stopped/restarted\n*queue: a string specifying the queue name\n*method: a string specifying the http method. e.g. get or post\n*connectionattempts: a number specifying max number connection attempts as declared in the fetchremote call\n*connectiontimeout: a number specifying connection attempt timeout as declared in the fetchremote call\n*postdata: a string containing the request post data as declared in the fetchremote call\n*headers: a table containing the request http headers as declared in the fetchremote call' ,
-            )
+            ),
+            url='getRemoteRequestInfo',
         )
         ],
         client=[
@@ -1009,7 +1022,8 @@ DUMP_PARTIAL = [
                     "theRequest": """: returned from FetchRemote|fetchRemote, CallRemote|callRemote or GetRemoteRequests|getRemoteRequests """
                 },
                 result='returns a table when valid, false otherwise\nthe table contains:\n*bytesreceived: a number specifying the amount of data received so far. zero means the download is queued\n*bytestotal: a number specifying the final download size. will be zero if the remote http server has not set the content-length header\n*currentattempt: a number specifying the current connection attempt\n*type: a string specifying either fetch or call\n*url: a string specifying the url\n*resource: the resource which started the request, or false if the resource has since been stopped/restarted\n*queue: a string specifying the queue name\n*method: a string specifying the http method. e.g. get or post\n*connectionattempts: a number specifying max number connection attempts as declared in the fetchremote call\n*connectiontimeout: a number specifying connection attempt timeout as declared in the fetchremote call\n*postdata: a string containing the request post data as declared in the fetchremote call\n*headers: a table containing the request http headers as declared in the fetchremote call' ,
-            )
+            ),
+            url='getRemoteRequestInfo',
         )
         ],
     ),
@@ -1052,7 +1066,8 @@ DUMP_PARTIAL = [
                     "theResource": """: the resource to get all requests from """
                 },
                 result='returns a table with all requests, false if an invalid resource was provided' ,
-            )
+            ),
+            url='getRemoteRequests',
         )
         ],
         client=[
@@ -1093,7 +1108,8 @@ DUMP_PARTIAL = [
                     "theResource": """: the resource to get all requests from """
                 },
                 result='returns a table with all requests, false if an invalid resource was provided' ,
-            )
+            ),
+            url='getRemoteRequests',
         )
         ],
     ),
@@ -1136,7 +1152,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource to get the ACL requests for. """
                 },
                 result='returns a table with the acl requests for the given resource, or false if the resource is not valid. a valid resource with no acl requests will return an empty table.' ,
-            )
+            ),
+            url='getResourceACLRequests',
         )
         ],
         client=[
@@ -1184,7 +1201,8 @@ DUMP_PARTIAL = [
 :If the file is in the current resource, only the file path is necessary, e.g. ''getResourceConfig("settings.xml")''. """
                 },
                 result='returns the root node of the specified configuration file. if the file is corrupted, not defined in the meta file or doesnt exist, returns false.' ,
-            )
+            ),
+            url='getResourceConfig',
         )
         ],
         client=[
@@ -1227,7 +1245,8 @@ DUMP_PARTIAL = [
 :If the file is in the current resource, only the file path is necessary, e.g. ''getResourceConfig("settings.xml")''. """
                 },
                 result='returns the root node of the specified configuration file. if the file is corrupted, not defined in the meta file or doesnt exist, returns false.' ,
-            )
+            ),
+            url='getResourceConfig',
         )
         ],
     ),
@@ -1270,7 +1289,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource of which dynamic element root we want. """
                 },
                 result='returns an element of the resources dynamic element root if the resource specified was valid and active (currently running), false otherwise.' ,
-            )
+            ),
+            url='getResourceDynamicElementRoot',
         )
         ],
         client=[
@@ -1311,7 +1331,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource of which dynamic element root we want. """
                 },
                 result='returns an element of the resources dynamic element root if the resource specified was valid and active (currently running), false otherwise.' ,
-            )
+            ),
+            url='getResourceDynamicElementRoot',
         )
         ],
     ),
@@ -1354,7 +1375,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource of which you want to know the call|exported functions. """
                 },
                 result='returns a table of function names if successful, false otherwise.' ,
-            )
+            ),
+            url='getResourceExportedFunctions',
         )
         ],
         client=[
@@ -1395,7 +1417,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource of which you want to know the call|exported functions. """
                 },
                 result='returns a table of function names if successful, false otherwise.' ,
-            )
+            ),
+            url='getResourceExportedFunctions',
         )
         ],
     ),
@@ -1438,7 +1461,8 @@ DUMP_PARTIAL = [
                     "resourceName": """the name of the resource you wish to get. """
                 },
                 result='returns the resource with the specified name, or false if no resource of that name exists. note that clientside this will also return false for resources that are in the loaded state, since the client is unaware of resources that have not been started.' ,
-            )
+            ),
+            url='getResourceFromName',
         )
         ],
         client=[
@@ -1479,7 +1503,8 @@ DUMP_PARTIAL = [
                     "resourceName": """the name of the resource you wish to get. """
                 },
                 result='returns the resource with the specified name, or false if no resource of that name exists. note that clientside this will also return false for resources that are in the loaded state, since the client is unaware of resources that have not been started.' ,
-            )
+            ),
+            url='getResourceFromName',
         )
         ],
     ),
@@ -1525,7 +1550,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource whose GUI element we are getting. If not specified, assumes the current resource. """
                 },
                 result='returns the root gui element that contains all the other gui elements.' ,
-            )
+            ),
+            url='getResourceGUIElement',
         )
         ],
     ),
@@ -1579,7 +1605,8 @@ DUMP_PARTIAL = [
                     "attribute": """the name of the attribute we want info about. """
                 },
                 result='returns a string with the attribute value if it exists, false otherwise.' ,
-            )
+            ),
+            url='getResourceInfo',
         )
         ],
         client=[
@@ -1625,7 +1652,8 @@ DUMP_PARTIAL = [
                     "theResource": """The resource of which youd like to check the last starting time. """
                 },
                 result='if successful, returns the unix timestamp when the resource was last started, or the string never if the resource has not been started yet, otherwise false. use in conjunction with getrealtime in order to retrieve detailed information.\nreturns a string with the time and date, or false if the resource does not exist.' ,
-            )
+            ),
+            url='getResourceLastStartTime',
         )
         ],
         client=[
@@ -1671,7 +1699,8 @@ DUMP_PARTIAL = [
                     "theResource": """The resource you wish to check. """
                 },
                 result='if the resource failed to load, returns a string with the failure reason in it. if it loaded successfully, returns an empty string. returns false if the resource doesnt exist.' ,
-            )
+            ),
+            url='getResourceLoadFailureReason',
         )
         ],
         client=[
@@ -1717,7 +1746,8 @@ DUMP_PARTIAL = [
                     "res": """the resource you want to know the load time of. """
                 },
                 result='if successful, returns the unix timestamp when the resource was loaded, otherwise false. use in conjunction with getrealtime in order to retrieve detailed information.\nif successful, returns a string with the date and time that the resource was last loaded into memory (for example when the server started, or when the resource was changed and reloaded). returns false on failure.\nan example string is fri mar 28 13:51:04 2008.' ,
-            )
+            ),
+            url='getResourceLoadTime',
         )
         ],
         client=[
@@ -1774,7 +1804,8 @@ DUMP_PARTIAL = [
                     "mapName": """name of the maps which root element we want to retrieve, file extension is required """
                 },
                 result='returns an the resources map root element if the map exists and resource specified was valid and active (currently running), false otherwise.' ,
-            )
+            ),
+            url='getResourceMapRootElement',
         )
         ],
         client=[
@@ -1820,7 +1851,8 @@ DUMP_PARTIAL = [
                     "res": """The resource you wish to get the name of. """
                 },
                 result='returns a string with the resource name in it, or false if the resource does not exist.' ,
-            )
+            ),
+            url='getResourceName',
         )
         ],
         client=[
@@ -1861,7 +1893,8 @@ DUMP_PARTIAL = [
                     "res": """The resource you wish to get the name of. """
                 },
                 result='returns a string with the resource name in it, or false if the resource does not exist.' ,
-            )
+            ),
+            url='getResourceName',
         )
         ],
     ),
@@ -1904,7 +1937,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource of which you want to know the organizational path """
                 },
                 result='returns the organizational folder name of the resource. it returns empty string if the resource is on root resources folder. it returns false if the resource could not be found.' ,
-            )
+            ),
+            url='getResourceOrganizationalPath',
         )
         ],
         client=[
@@ -1950,7 +1984,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource whose root element we are getting. If not specified, assumes the current resource. (the resource returned from getThisResource) """
                 },
                 result='returns an element representing the resources root, false if the specified resource doesnt exist.' ,
-            )
+            ),
+            url='getResourceRootElement',
         )
         ],
         client=[
@@ -1991,7 +2026,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource whose root element we are getting. If not specified, assumes the current resource. (the resource returned from getThisResource) """
                 },
                 result='returns an element representing the resources root, false if the specified resource doesnt exist.' ,
-            )
+            ),
+            url='getResourceRootElement',
         )
         ],
     ),
@@ -2025,7 +2061,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a table of resources.' ,
-            )
+            ),
+            url='getResources',
         )
         ],
         client=[
@@ -2071,7 +2108,8 @@ DUMP_PARTIAL = [
                     "theResource": """The resource you wish to get the state of. """
                 },
                 result='if successful returns a string with the resource state in it, false otherwise.\nthe state can be one of:\n*loaded\n*running\n*starting\n*stopping\n*failed to load - use getresourceloadfailurereason to find out why it failed.' ,
-            )
+            ),
+            url='getResourceState',
         )
         ],
         client=[
@@ -2112,7 +2150,8 @@ DUMP_PARTIAL = [
                     "theResource": """The resource you wish to get the state of. """
                 },
                 result='if successful returns a string with the resource state in it, false otherwise.\nthe state can be one of:\n*loaded\n*running\n*starting\n*stopping\n*failed to load - use getresourceloadfailurereason to find out why it failed.' ,
-            )
+            ),
+            url='getResourceState',
         )
         ],
     ),
@@ -2146,7 +2185,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the resource in which the current script is.' ,
-            )
+            ),
+            url='getThisResource',
         )
         ],
         client=[
@@ -2178,7 +2218,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the resource in which the current script is.' ,
-            )
+            ),
+            url='getThisResource',
         )
         ],
     ),
@@ -2221,7 +2262,8 @@ DUMP_PARTIAL = [
                     "resource": """the resource to check """
                 },
                 result='returns true if a resource is archived, false if it is not archived, or nil if there is problem with resource.' ,
-            )
+            ),
+            url='isResourceArchived',
         )
         ],
         client=[
@@ -2267,7 +2309,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource to check """
                 },
                 result='returns true if the resource is protected, false otherwise.' ,
-            )
+            ),
+            url='isResourceProtected',
         )
         ],
         client=[
@@ -2325,7 +2368,8 @@ DUMP_PARTIAL = [
 '''Note:''' Checking for changes in all resources can result in lag for a short period of time. It should generally be avoided to set refreshAll to ''true''. """
                 },
                 result='returns true if refresh was successful, false otherwise.' ,
-            )
+            ),
+            url='refreshResources',
         )
         ],
         client=[
@@ -2382,7 +2426,8 @@ DUMP_PARTIAL = [
                     "fileName": """The filename what you want to delete. """
                 },
                 result='returns true if file was deleted, otherwise false if the resource is in use or the file doesnt exist.' ,
-            )
+            ),
+            url='removeResourceFile',
         )
         ],
         client=[
@@ -2450,7 +2495,8 @@ DUMP_PARTIAL = [
                     "organizationalPath": """If you want to store the new resource inside a category. """
                 },
                 result='returns true if the resource has been renamed successfully, false otherwise. this could fail if the resource name already is in use, if a directory already exists with the name youve specified (but this isnt a valid resource) or if the name you specify isnt valid. it could also fail if the disk was full or for other similar reasons. wont work on a started resource or if the resource is not loaded (not known by mta (use /refresh))' ,
-            )
+            ),
+            url='renameResource',
         )
         ],
         client=[
@@ -2584,7 +2630,8 @@ DUMP_PARTIAL = [
                     "clientFiles": """Reload files? """
                 },
                 result='returns true if the resource was restarted, false if the resource wasnt running, or an invalid resource was passed.' ,
-            )
+            ),
+            url='restartResource',
         )
         ],
         client=[
@@ -2652,7 +2699,8 @@ DUMP_PARTIAL = [
                     "value": """the value of this attribute """
                 },
                 result='returns true if the info was successfully set, false otherwise' ,
-            )
+            ),
+            url='setResourceInfo',
         )
         ],
         client=[
@@ -2797,7 +2845,8 @@ DUMP_PARTIAL = [
                     "loadFiles": """A boolean specifying if client-side files should be loaded alongside the resource. """
                 },
                 result='returns true if the resource has been started successfully, false otherwise.' ,
-            )
+            ),
+            url='startResource',
         )
         ],
         client=[
@@ -2843,7 +2892,8 @@ DUMP_PARTIAL = [
                     "theResource": """the resource that should be stopped. """
                 },
                 result='returns true if the resource was stopped, false if the stopping failed, or an invalid resource was passed.' ,
-            )
+            ),
+            url='stopResource',
         )
         ],
         client=[
@@ -2922,7 +2972,8 @@ DUMP_PARTIAL = [
                     "byWho": """a string value to identity who is changing the setting. """
                 },
                 result='returns true if the setting was changed, or false if no change was required or there was a problem with the arguments.' ,
-            )
+            ),
+            url='updateResourceACLRequest',
         )
         ],
         client=[

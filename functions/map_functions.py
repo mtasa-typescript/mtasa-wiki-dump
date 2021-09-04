@@ -59,7 +59,8 @@ DUMP_PARTIAL = [
                     "parent": """The node you wish to be the parent of the new map data. """
                 },
                 result='returns an element object that corresponds to the root of the new data added, i.e. an element that represents the node xmlnode passed to the function. returns false if the arguments are invalid.' ,
-            )
+            ),
+            url='loadMapData',
         )
         ],
         client=[
@@ -105,7 +106,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The specific player you wish to restore the state of.  Not specifying this will result in all players map info being reset. """
                 },
                 result='returns true if the map info was reset successfully, otherwise false.' ,
-            )
+            ),
+            url='resetMapInfo',
         )
         ],
         client=[
@@ -173,7 +175,8 @@ DUMP_PARTIAL = [
                     "childrenOnly": """: Defines if you want to only save children of the specified element. """
                 },
                 result='' ,
-            )
+            ),
+            url='saveMapData',
         )
         ],
         client=[

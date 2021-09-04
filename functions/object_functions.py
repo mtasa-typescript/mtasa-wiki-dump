@@ -51,7 +51,8 @@ DUMP_PARTIAL = [
                     "theObject": """an object element """
                 },
                 result='* true if the object was successfully broken.\n* false if the object is not breakable, or a wrong object was given.' ,
-            )
+            ),
+            url='breakObject',
         )
         ],
     ),
@@ -171,7 +172,8 @@ DUMP_PARTIAL = [
                     "isLowLOD": """A bool value specifying if the object will be low LOD. A low LOD object has no collision and a longer draw distance. """
                 },
                 result='* returns the object element if the creation was successful, false otherwise.' ,
-            )
+            ),
+            url='createObject',
         )
         ],
         client=[
@@ -289,7 +291,8 @@ DUMP_PARTIAL = [
                     "isLowLOD": """A bool value specifying if the object will be low LOD. A low LOD object has no collision and a longer draw distance. """
                 },
                 result='* returns the object element if the creation was successful, false otherwise.' ,
-            )
+            ),
+            url='createObject',
         )
         ],
     ),
@@ -335,7 +338,8 @@ DUMP_PARTIAL = [
                     "theObject": """the object whose mass you want to get. """
                 },
                 result='* a float representing the mass of the object.\n* false if invalid arguments were passed.\n* -1 if object was never streamed in.' ,
-            )
+            ),
+            url='getObjectMass',
         )
         ],
     ),
@@ -395,7 +399,8 @@ DUMP_PARTIAL = [
 </div> """
                 },
                 result='on success: table for all, 3 float|floats for center_of_mass or float for other properties\non failure: false' ,
-            )
+            ),
+            url='getObjectProperty',
         )
         ],
     ),
@@ -446,7 +451,8 @@ DUMP_PARTIAL = [
                     "theObject": """: the object you wish to return the scale of. """
                 },
                 result='* three float values indicating the scale of the object on the x, y, and z axis if successful, false otherwise.' ,
-            )
+            ),
+            url='getObjectScale',
         )
         ],
         client=[
@@ -495,7 +501,8 @@ DUMP_PARTIAL = [
                     "theObject": """: the object you wish to return the scale of. """
                 },
                 result='* three float values indicating the scale of the object on the x, y, and z axis if successful, false otherwise.' ,
-            )
+            ),
+            url='getObjectScale',
         )
         ],
     ),
@@ -549,7 +556,8 @@ DUMP_PARTIAL = [
                     "theObject / modelId": """The object / model ID thats being checked. """
                 },
                 result='* true if the object is breakable.\n* false if the object is not breakable.' ,
-            )
+            ),
+            url='isObjectBreakable',
         )
         ],
     ),
@@ -595,7 +603,8 @@ DUMP_PARTIAL = [
                     "theObject": """The object """
                 },
                 result='* true if the object is moving.\n* false if the object is not moving.' ,
-            )
+            ),
+            url='isObjectMoving',
         )
         ],
     ),
@@ -759,7 +768,8 @@ DUMP_PARTIAL = [
                     "fEasingOvershoot": """the overshoot of the Easing|easing function (only some easing functions use this parameter) """
                 },
                 result='* true if the function moved the object succesfully.\n* false otherwise.' ,
-            )
+            ),
+            url='moveObject',
         )
         ],
         client=[
@@ -921,7 +931,8 @@ DUMP_PARTIAL = [
                     "fEasingOvershoot": """the overshoot of the Easing|easing function (only some easing functions use this parameter) """
                 },
                 result='* true if the function moved the object succesfully.\n* false otherwise.' ,
-            )
+            ),
+            url='moveObject',
         )
         ],
     ),
@@ -967,7 +978,8 @@ DUMP_PARTIAL = [
                     "theObject": """an object element """
                 },
                 result='* true if the object was sucessfully respawned.\n* false if the object is not breakable, or a wrong object was given.' ,
-            )
+            ),
+            url='respawnObject',
         )
         ],
     ),
@@ -1024,7 +1036,8 @@ DUMP_PARTIAL = [
                     "breakable": """a boolean whether the object is breakable (true) or unbreakable (false). """
                 },
                 result='* true if the object is now breakable.\n* false if it cant or if invalid arguments are passed.' ,
-            )
+            ),
+            url='setObjectBreakable',
         )
         ],
     ),
@@ -1081,7 +1094,8 @@ DUMP_PARTIAL = [
                     "mass": """the new mass. """
                 },
                 result='* true if the new mass value has been.\n* false otherwise.' ,
-            )
+            ),
+            url='setObjectMass',
         )
         ],
     ),
@@ -1149,7 +1163,8 @@ DUMP_PARTIAL = [
                     "value": """: the new value for the property. """
                 },
                 result='returns true if the property was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setObjectProperty',
         )
         ],
     ),
@@ -1225,7 +1240,8 @@ DUMP_PARTIAL = [
                     "scaleZ": """: a float containing the new scale on the Z axis """
                 },
                 result='* true if the scale was set properly.\n* false otherwise.' ,
-            )
+            ),
+            url='setObjectScale',
         )
         ],
         client=[
@@ -1299,7 +1315,8 @@ DUMP_PARTIAL = [
                     "scaleZ": """: a float containing the new scale on the Z axis """
                 },
                 result='* true if the scale was set properly.\n* false otherwise.' ,
-            )
+            ),
+            url='setObjectScale',
         )
         ],
     ),
@@ -1342,7 +1359,8 @@ DUMP_PARTIAL = [
                     "theobject": """the object whose movement you wish to stop """
                 },
                 result='* true if successful.\n* false otherwise.' ,
-            )
+            ),
+            url='stopObject',
         )
         ],
         client=[
@@ -1383,7 +1401,8 @@ DUMP_PARTIAL = [
                     "theobject": """the object whose movement you wish to stop """
                 },
                 result='* true if successful.\n* false otherwise.' ,
-            )
+            ),
+            url='stopObject',
         )
         ],
     ),
@@ -1440,7 +1459,8 @@ DUMP_PARTIAL = [
                     "respawn": """: a bool denoting whether we want to enable (true) or disable (false) respawning """
                 },
                 result='* true when the it was changed successfully.\n* false otherwise.' ,
-            )
+            ),
+            url='toggleObjectRespawn',
         )
         ],
     )

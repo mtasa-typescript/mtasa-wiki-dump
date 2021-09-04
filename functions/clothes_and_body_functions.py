@@ -48,7 +48,8 @@ DUMP_PARTIAL = [
                     "bodyPartID": """: An integer representing the body part ID you wish to retrieve the name of. """
                 },
                 result='this function returns a string containing the body part name if the id is valid, false otherwise.' ,
-            )
+            ),
+            url='getBodyPartName',
         )
         ],
         client=[
@@ -89,7 +90,8 @@ DUMP_PARTIAL = [
                     "bodyPartID": """: An integer representing the body part ID you wish to retrieve the name of. """
                 },
                 result='this function returns a string containing the body part name if the id is valid, false otherwise.' ,
-            )
+            ),
+            url='getBodyPartName',
         )
         ],
     ),
@@ -147,7 +149,8 @@ DUMP_PARTIAL = [
                     "clothesIndex": """: An integer representing the index (0 based) set of clothes in the list you wish to retrieve. Each type has a different number of valid indexes. """
                 },
                 result='this function returns 2 strings, a texture and model respectively, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='getClothesByTypeIndex',
         )
         ],
         client=[
@@ -203,7 +206,8 @@ DUMP_PARTIAL = [
                     "clothesIndex": """: An integer representing the index (0 based) set of clothes in the list you wish to retrieve. Each type has a different number of valid indexes. """
                 },
                 result='this function returns 2 strings, a texture and model respectively, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='getClothesByTypeIndex',
         )
         ],
     ),
@@ -246,7 +250,8 @@ DUMP_PARTIAL = [
                     "clothesType": """: An integer determining the type of clothes you want to get the clothes of. """
                 },
                 result='this function returns a string (the name of the clothes type) if found, false otherwise.' ,
-            )
+            ),
+            url='getClothesTypeName',
         )
         ],
         client=[
@@ -287,7 +292,8 @@ DUMP_PARTIAL = [
                     "clothesType": """: An integer determining the type of clothes you want to get the clothes of. """
                 },
                 result='this function returns a string (the name of the clothes type) if found, false otherwise.' ,
-            )
+            ),
+            url='getClothesTypeName',
         )
         ],
     ),
@@ -345,7 +351,8 @@ DUMP_PARTIAL = [
                     "clothesModel": """: A string determining the corresponding clothes model that you wish to retrieve the type and index from. See the CJ Clothes|clothes catalog. """
                 },
                 result='this function returns two integers, type and index respectively, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='getTypeIndexFromClothes',
         )
         ],
         client=[
@@ -401,7 +408,8 @@ DUMP_PARTIAL = [
                     "clothesModel": """: A string determining the corresponding clothes model that you wish to retrieve the type and index from. See the CJ Clothes|clothes catalog. """
                 },
                 result='this function returns two integers, type and index respectively, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='getTypeIndexFromClothes',
         )
         ],
     )

@@ -147,7 +147,8 @@ DUMP_PARTIAL = [
                     "visibleTo": """: This defines which elements can see the marker. Defaults to visible to everyone. See visibility. """
                 },
                 result='' ,
-            )
+            ),
+            url='createMarker',
         )
         ],
         client=[
@@ -276,7 +277,8 @@ DUMP_PARTIAL = [
                     "a": """: An integer number representing the amount of alpha to use in the colouring of the marker (0 - 255 where 0 is transparent and 255 is opaque). """
                 },
                 result='' ,
-            )
+            ),
+            url='createMarker',
         )
         ],
     ),
@@ -331,7 +333,8 @@ DUMP_PARTIAL = [
                     "theMarker": """: The marker that you wish to retrieve the color of. """
                 },
                 result='returns four ints corresponding to the amount of red, green, blue and alpha (respectively) of the marker, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getMarkerColor',
         )
         ],
         client=[
@@ -384,7 +387,8 @@ DUMP_PARTIAL = [
                     "theMarker": """: The marker that you wish to retrieve the color of. """
                 },
                 result='returns four ints corresponding to the amount of red, green, blue and alpha (respectively) of the marker, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getMarkerColor',
         )
         ],
     ),
@@ -418,7 +422,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the number of markers that currently exist.' ,
-            )
+            ),
+            url='getMarkerCount',
         )
         ],
         client=[
@@ -450,7 +455,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the number of markers that currently exist.' ,
-            )
+            ),
+            url='getMarkerCount',
         )
         ],
     ),
@@ -493,7 +499,8 @@ DUMP_PARTIAL = [
                     "theMarker": """: A marker element referencing the specified marker. """
                 },
                 result='returns false if the marker passed is invalid or a string containing one of the following:\n* none: no icon\n* arrow: arrow icon\n* finish: finish (end-race) icon' ,
-            )
+            ),
+            url='getMarkerIcon',
         )
         ],
         client=[
@@ -534,7 +541,8 @@ DUMP_PARTIAL = [
                     "theMarker": """: A marker element referencing the specified marker. """
                 },
                 result='returns false if the marker passed is invalid or a string containing one of the following:\n* none: no icon\n* arrow: arrow icon\n* finish: finish (end-race) icon' ,
-            )
+            ),
+            url='getMarkerIcon',
         )
         ],
     ),
@@ -577,7 +585,8 @@ DUMP_PARTIAL = [
                     "myMarker": """: The marker that you wish to retrieve the size of. """
                 },
                 result='returns a float containing the size of the specified marker.' ,
-            )
+            ),
+            url='getMarkerSize',
         )
         ],
         client=[
@@ -618,7 +627,8 @@ DUMP_PARTIAL = [
                     "myMarker": """: The marker that you wish to retrieve the size of. """
                 },
                 result='returns a float containing the size of the specified marker.' ,
-            )
+            ),
+            url='getMarkerSize',
         )
         ],
     ),
@@ -669,7 +679,8 @@ DUMP_PARTIAL = [
                     "theMarker": """The marker you wish to retrieve the target position of. """
                 },
                 result='returns three floats if a target is set, or false in the first variable and nil in the two others if the marker is invalid or no target is set.' ,
-            )
+            ),
+            url='getMarkerTarget',
         )
         ],
         client=[
@@ -718,7 +729,8 @@ DUMP_PARTIAL = [
                     "theMarker": """The marker you wish to retrieve the target position of. """
                 },
                 result='returns three floats if a target is set, or false in the first variable and nil in the two others if the marker is invalid or no target is set.' ,
-            )
+            ),
+            url='getMarkerTarget',
         )
         ],
     ),
@@ -761,7 +773,8 @@ DUMP_PARTIAL = [
                     "theMarker": """: A marker element referencing the specified marker. """
                 },
                 result='* returns one of the following strings:\nif an invalid marker is specified, false is returned.' ,
-            )
+            ),
+            url='getMarkerType',
         )
         ],
         client=[
@@ -802,7 +815,8 @@ DUMP_PARTIAL = [
                     "theMarker": """: A marker element referencing the specified marker. """
                 },
                 result='* returns one of the following strings:\nif an invalid marker is specified, false is returned.' ,
-            )
+            ),
+            url='getMarkerType',
         )
         ],
     ),
@@ -889,7 +903,8 @@ DUMP_PARTIAL = [
                     "a": """The amount of alpha in the final color (0 to 255). """
                 },
                 result='' ,
-            )
+            ),
+            url='setMarkerColor',
         )
         ],
         client=[
@@ -974,7 +989,8 @@ DUMP_PARTIAL = [
                     "a": """The amount of alpha in the final color (0 to 255). """
                 },
                 result='' ,
-            )
+            ),
+            url='setMarkerColor',
         )
         ],
     ),
@@ -1031,7 +1047,8 @@ DUMP_PARTIAL = [
                     "finish": """: Finish icon (at end of race) """
                 },
                 result='' ,
-            )
+            ),
+            url='setMarkerIcon',
         )
         ],
         client=[
@@ -1086,7 +1103,8 @@ DUMP_PARTIAL = [
                     "finish": """: Finish icon (at end of race) """
                 },
                 result='' ,
-            )
+            ),
+            url='setMarkerIcon',
         )
         ],
     ),
@@ -1140,7 +1158,8 @@ DUMP_PARTIAL = [
                     "size": """A float representing new size of the marker. """
                 },
                 result='returns true if successful, false if failed.' ,
-            )
+            ),
+            url='setMarkerSize',
         )
         ],
         client=[
@@ -1192,7 +1211,8 @@ DUMP_PARTIAL = [
                     "size": """A float representing new size of the marker. """
                 },
                 result='returns true if successful, false if failed.' ,
-            )
+            ),
+            url='setMarkerSize',
         )
         ],
     ),
@@ -1268,7 +1288,8 @@ DUMP_PARTIAL = [
                     "z": """The z axis of the coordinate to target the marker at """
                 },
                 result='returns true if target was set, false otherwise.' ,
-            )
+            ),
+            url='setMarkerTarget',
         )
         ],
         client=[
@@ -1342,7 +1363,8 @@ DUMP_PARTIAL = [
                     "z": """The z axis of the coordinate to target the marker at """
                 },
                 result='returns true if target was set, false otherwise.' ,
-            )
+            ),
+            url='setMarkerTarget',
         )
         ],
     ),
@@ -1396,7 +1418,8 @@ DUMP_PARTIAL = [
                     "markerType": """: A string denoting the marker type. Valid values are: """
                 },
                 result='returns true if the marker type was changed, false if it wasnt or marker values were invalid.' ,
-            )
+            ),
+            url='setMarkerType',
         )
         ],
         client=[
@@ -1448,7 +1471,8 @@ DUMP_PARTIAL = [
                     "markerType": """: A string denoting the marker type. Valid values are: """
                 },
                 result='returns true if the marker type was changed, false if it wasnt or marker values were invalid.' ,
-            )
+            ),
+            url='setMarkerType',
         )
         ],
     )

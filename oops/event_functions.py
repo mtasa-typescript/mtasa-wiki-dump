@@ -157,7 +157,8 @@ DUMP_PARTIAL = [
                     "arguments...": """A list of arguments to trigger with the event. You can pass any lua data type (except functions). You can also pass elements. """
                 },
                 result='returns true if the event trigger has been sent, false if invalid arguments were specified.' ,
-            )
+            ),
+            url='triggerClientEvent',
         ),
                 field=None,
                 is_static=False,

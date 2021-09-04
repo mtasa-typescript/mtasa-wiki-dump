@@ -103,7 +103,8 @@ DUMP_PARTIAL = [
 String parameters are automatically quoted and escaped as required. (If you do not want a string quoted, use '''??''') Make sure that numbers are in number format as a string number is treated differently. """
                 },
                 result='returns true unless the connection is incorrect, in which case it returns false.' ,
-            )
+            ),
+            url='dbExec',
         ),
                 field=None,
                 is_static=False,
@@ -156,7 +157,8 @@ String parameters are automatically quoted and escaped as required. (If you do n
                     "queryHandle": """A query handle previously returned from dbQuery """
                 },
                 result='returns true if the handle was successfully freed, false otherwise.' ,
-            )
+            ),
+            url='dbFree',
         ),
                 field=None,
                 is_static=False,
@@ -232,7 +234,8 @@ String parameters are automatically quoted and escaped as required. (If you do n
 |7972}} """
                 },
                 result='*nil: returns nil if the query results are not yet ready. you should try again in a little while. (if you give up waiting for a result, be sure to call dbfree)\n*false: returns false if the query string contained an error, the connection has been lost or the query handle is incorrect. this automatically frees the query handle, so you do not have to call dbfree.\n** this also returns two extra values: (see the example on how the retrieve them)\n***int: error code\n***string error message\n*table: returns a table with the result of the query when the query has successfully completed. this automatically frees the query handle, so you do not have to call dbfree. if multipleresults is set to true, it will first return a table pertaining to one query, followed by the results for that query and so on for the next queries.\n** this also returns extra values (only when multipleresults is set to true):\n***int: number of affected rows\n***int: last insert id\nthe table is of the format:\n<syntaxhighlight lang=lua>\n{\n{ colname1=value1, colname2=value2, ... },\n{ colname1=value3, colname2=value4, ... },\n...\n}\n</syntaxhighlight>\na subsequent table represents the next row.' ,
-            )
+            ),
+            url='dbPoll',
         ),
                 field=None,
                 is_static=False,
@@ -318,7 +321,8 @@ String parameters are automatically quoted and escaped as required. (If you do n
 String parameters are automatically quoted and escaped as required. (If you do not want a string quoted, use '''??''') """
                 },
                 result='returns a prepare sql query string, or false if an error occurred.' ,
-            )
+            ),
+            url='dbPrepareString',
         ),
                 field=None,
                 is_static=False,
@@ -426,7 +430,8 @@ String parameters are automatically quoted and escaped as required. (If you do n
 String parameters are automatically quoted and escaped as required. (If you do not want a string quoted, use '''??''') """
                 },
                 result='returns a query handle unless the connection is incorrect, in which case it return false.' ,
-            )
+            ),
+            url='dbQuery',
         ),
                 field=None,
                 is_static=False,

@@ -78,7 +78,8 @@ DUMP_PARTIAL = [
 ** addDebugHook and removeDebugHook will only be hooked if they are specified in the name list """
                 },
                 result='returns true if the hook was successfully added, or false otherwise.' ,
-            )
+            ),
+            url='addDebugHook',
         )
         ],
         client=[
@@ -149,7 +150,8 @@ DUMP_PARTIAL = [
 ** addDebugHook and removeDebugHook will only be hooked if they are specified in the name list """
                 },
                 result='returns true if the hook was successfully added, or false otherwise.' ,
-            )
+            ),
+            url='addDebugHook',
         )
         ],
     ),
@@ -192,7 +194,8 @@ DUMP_PARTIAL = [
                     "data": """The block of data you want to decrypt """
                 },
                 result='returns the decrypted data from https://en.wikipedia.org/wiki/base64 base64 representation of the encrypted block if the decryption process was successfully completed, false otherwise.' ,
-            )
+            ),
+            url='base64Decode',
         )
         ],
         client=[
@@ -233,7 +236,8 @@ DUMP_PARTIAL = [
                     "data": """The block of data you want to decrypt """
                 },
                 result='returns the decrypted data from https://en.wikipedia.org/wiki/base64 base64 representation of the encrypted block if the decryption process was successfully completed, false otherwise.' ,
-            )
+            ),
+            url='base64Decode',
         )
         ],
     ),
@@ -276,7 +280,8 @@ DUMP_PARTIAL = [
                     "data": """The block of data you want to encode """
                 },
                 result='returns the https://en.wikipedia.org/wiki/base64 base64 representation of the encoded data if the encoding process was successfully completed, false otherwise.' ,
-            )
+            ),
+            url='base64Encode',
         )
         ],
         client=[
@@ -317,7 +322,8 @@ DUMP_PARTIAL = [
                     "data": """The block of data you want to encode """
                 },
                 result='returns the https://en.wikipedia.org/wiki/base64 base64 representation of the encoded data if the encoding process was successfully completed, false otherwise.' ,
-            )
+            ),
+            url='base64Encode',
         )
         ],
     ),
@@ -370,7 +376,8 @@ DUMP_PARTIAL = [
                     "varN": """The value you want to perform an AND-conjunction on """
                 },
                 result='returns the conjuncted value.' ,
-            )
+            ),
+            url='bitAnd',
         )
         ],
         client=[
@@ -421,7 +428,8 @@ DUMP_PARTIAL = [
                     "varN": """The value you want to perform an AND-conjunction on """
                 },
                 result='returns the conjuncted value.' ,
-            )
+            ),
+            url='bitAnd',
         )
         ],
     ),
@@ -475,7 +483,8 @@ DUMP_PARTIAL = [
                     "n": """The amount of positions to shift the value by. """
                 },
                 result='returns the arithmetic shifted value as integer.' ,
-            )
+            ),
+            url='bitArShift',
         )
         ],
         client=[
@@ -527,7 +536,8 @@ DUMP_PARTIAL = [
                     "n": """The amount of positions to shift the value by. """
                 },
                 result='returns the arithmetic shifted value as integer.' ,
-            )
+            ),
+            url='bitArShift',
         )
         ],
     ),
@@ -592,7 +602,8 @@ DUMP_PARTIAL = [
                     "width": """Number of bits to extract """
                 },
                 result='returns the extracted value/bit sequence.' ,
-            )
+            ),
+            url='bitExtract',
         )
         ],
         client=[
@@ -655,7 +666,8 @@ DUMP_PARTIAL = [
                     "width": """Number of bits to extract """
                 },
                 result='returns the extracted value/bit sequence.' ,
-            )
+            ),
+            url='bitExtract',
         )
         ],
     ),
@@ -709,7 +721,8 @@ DUMP_PARTIAL = [
                     "n": """The amount of positions to rotate the value by. """
                 },
                 result='returns the circular left-rotated value as integer.' ,
-            )
+            ),
+            url='bitLRotate',
         )
         ],
         client=[
@@ -761,7 +774,8 @@ DUMP_PARTIAL = [
                     "n": """The amount of positions to rotate the value by. """
                 },
                 result='returns the circular left-rotated value as integer.' ,
-            )
+            ),
+            url='bitLRotate',
         )
         ],
     ),
@@ -815,7 +829,8 @@ DUMP_PARTIAL = [
                     "n": """The amount of positions to shift the value by. """
                 },
                 result='returns the logical left shifted value as integer.' ,
-            )
+            ),
+            url='bitLShift',
         )
         ],
         client=[
@@ -867,7 +882,8 @@ DUMP_PARTIAL = [
                     "n": """The amount of positions to shift the value by. """
                 },
                 result='returns the logical left shifted value as integer.' ,
-            )
+            ),
+            url='bitLShift',
         )
         ],
     ),
@@ -910,7 +926,8 @@ DUMP_PARTIAL = [
                     "var": """The value you want to perform a bitwise NOT on """
                 },
                 result='returns the value on which the operation has been performed.' ,
-            )
+            ),
+            url='bitNot',
         )
         ],
         client=[
@@ -951,7 +968,8 @@ DUMP_PARTIAL = [
                     "var": """The value you want to perform a bitwise NOT on """
                 },
                 result='returns the value on which the operation has been performed.' ,
-            )
+            ),
+            url='bitNot',
         )
         ],
     ),
@@ -1004,7 +1022,8 @@ DUMP_PARTIAL = [
                     "varN": """The value you want to perform an OR-conjunction on """
                 },
                 result='returns the conjuncted value.' ,
-            )
+            ),
+            url='bitOr',
         )
         ],
         client=[
@@ -1055,7 +1074,8 @@ DUMP_PARTIAL = [
                     "varN": """The value you want to perform an OR-conjunction on """
                 },
                 result='returns the conjuncted value.' ,
-            )
+            ),
+            url='bitOr',
         )
         ],
     ),
@@ -1131,7 +1151,8 @@ DUMP_PARTIAL = [
                     "width": """Number of bits to extract """
                 },
                 result='returns the replaced value/bit sequence.' ,
-            )
+            ),
+            url='bitReplace',
         )
         ],
         client=[
@@ -1205,7 +1226,8 @@ DUMP_PARTIAL = [
                     "width": """Number of bits to extract """
                 },
                 result='returns the replaced value/bit sequence.' ,
-            )
+            ),
+            url='bitReplace',
         )
         ],
     ),
@@ -1259,7 +1281,8 @@ DUMP_PARTIAL = [
                     "n": """The amount of positions to rotate the value by. """
                 },
                 result='returns the circular right-rotated value as integer.' ,
-            )
+            ),
+            url='bitRRotate',
         )
         ],
         client=[
@@ -1311,7 +1334,8 @@ DUMP_PARTIAL = [
                     "n": """The amount of positions to rotate the value by. """
                 },
                 result='returns the circular right-rotated value as integer.' ,
-            )
+            ),
+            url='bitRRotate',
         )
         ],
     ),
@@ -1365,7 +1389,8 @@ DUMP_PARTIAL = [
                     "n": """The amount of positions to shift the value by. """
                 },
                 result='returns the logical right shifted value as integer.' ,
-            )
+            ),
+            url='bitRShift',
         )
         ],
         client=[
@@ -1417,7 +1442,8 @@ DUMP_PARTIAL = [
                     "n": """The amount of positions to shift the value by. """
                 },
                 result='returns the logical right shifted value as integer.' ,
-            )
+            ),
+            url='bitRShift',
         )
         ],
     ),
@@ -1470,7 +1496,8 @@ DUMP_PARTIAL = [
                     "varN": """The value you want to perform the operation on (see above) """
                 },
                 result='returns true if the conjuncted value is not zero, false otherwise. if a bad argument was passed to bittest, youll get nil.' ,
-            )
+            ),
+            url='bitTest',
         )
         ],
         client=[
@@ -1521,7 +1548,8 @@ DUMP_PARTIAL = [
                     "varN": """The value you want to perform the operation on (see above) """
                 },
                 result='returns true if the conjuncted value is not zero, false otherwise. if a bad argument was passed to bittest, youll get nil.' ,
-            )
+            ),
+            url='bitTest',
         )
         ],
     ),
@@ -1574,7 +1602,8 @@ DUMP_PARTIAL = [
                     "varN": """The value you want to perform a XOR-conjunction on """
                 },
                 result='returns the conjuncted value.' ,
-            )
+            ),
+            url='bitXor',
         )
         ],
         client=[
@@ -1625,7 +1654,8 @@ DUMP_PARTIAL = [
                     "varN": """The value you want to perform a XOR-conjunction on """
                 },
                 result='returns the conjuncted value.' ,
-            )
+            ),
+            url='bitXor',
         )
         ],
     ),
@@ -1693,7 +1723,8 @@ DUMP_PARTIAL = [
                     "useSound": """A boolean value indicating whether or not to play a sound when receiving the notification. """
                 },
                 result='returns true if the notification is correctly created, false otherwise.' ,
-            )
+            ),
+            url='createTrayNotification',
         )
         ],
     ),
@@ -1736,7 +1767,8 @@ DUMP_PARTIAL = [
                     "sleep": """: An integer value in milliseconds. """
                 },
                 result='returns true if the development mode is enabled and arguments are correct, false otherwise.' ,
-            )
+            ),
+            url='debugSleep',
         )
         ],
         client=[
@@ -1777,7 +1809,8 @@ DUMP_PARTIAL = [
                     "sleep": """: An integer value in milliseconds. """
                 },
                 result='returns true if the development mode is enabled and arguments are correct, false otherwise.' ,
-            )
+            ),
+            url='debugSleep',
         )
         ],
     ),
@@ -1854,7 +1887,8 @@ DUMP_PARTIAL = [
 |20394}} """
                 },
                 result='returns the decoded string if successful, false otherwise. if a callback was provided, the decoded string is argument to the callback.' ,
-            )
+            ),
+            url='decodeString',
         )
         ],
         client=[
@@ -1929,7 +1963,8 @@ DUMP_PARTIAL = [
 |20394}} """
                 },
                 result='returns the decoded string if successful, false otherwise. if a callback was provided, the decoded string is argument to the callback.' ,
-            )
+            ),
+            url='decodeString',
         )
         ],
     ),
@@ -1972,7 +2007,8 @@ DUMP_PARTIAL = [
                     "reference": """The valid reference, which you want to dereference """
                 },
                 result='returns mixed if the reference were valid. returns false if the reference were invalid.' ,
-            )
+            ),
+            url='deref',
         )
         ],
         client=[
@@ -2013,7 +2049,8 @@ DUMP_PARTIAL = [
                     "reference": """The valid reference, which you want to dereference """
                 },
                 result='returns mixed if the reference were valid. returns false if the reference were invalid.' ,
-            )
+            ),
+            url='deref',
         )
         ],
     ),
@@ -2059,7 +2096,8 @@ DUMP_PARTIAL = [
                     "fileName": """: A string referencing the name of the file to download """
                 },
                 result='returns true if file download has been queued, false otherwise.' ,
-            )
+            ),
+            url='downloadFile',
         )
         ],
     ),
@@ -2136,7 +2174,8 @@ DUMP_PARTIAL = [
 |20394}} """
                 },
                 result='* tea\n** encodedstring: the encoded string if successful, false otherwise. if a callback was provided, true is returned immediately, and the encoded string is passed as an argument to the callback.\n* aes128\n** encodedstring: the encoded string if successful, false otherwise. if a callback was provided, true is returned immediately, and the encoded string is passed as an argument to the callback.\n** iv (https://en.wikipedia.org/wiki/initialization_vector initialization vector): this is a string generated by the encryption algorithm that is needed to decrypt the message by decodestring. if a callback was provided, true is returned immediately, and the iv is passed as an argument to the callback.\n|20898}}' ,
-            )
+            ),
+            url='encodeString',
         )
         ],
         client=[
@@ -2211,7 +2250,8 @@ DUMP_PARTIAL = [
 |20394}} """
                 },
                 result='* tea\n** encodedstring: the encoded string if successful, false otherwise. if a callback was provided, true is returned immediately, and the encoded string is passed as an argument to the callback.\n* aes128\n** encodedstring: the encoded string if successful, false otherwise. if a callback was provided, true is returned immediately, and the encoded string is passed as an argument to the callback.\n** iv (https://en.wikipedia.org/wiki/initialization_vector initialization vector): this is a string generated by the encryption algorithm that is needed to decrypt the message by decodestring. if a callback was provided, true is returned immediately, and the iv is passed as an argument to the callback.\n|20898}}' ,
-            )
+            ),
+            url='encodeString',
         )
         ],
     ),
@@ -2254,7 +2294,8 @@ DUMP_PARTIAL = [
                     "json": """A JSON formatted string """
                 },
                 result='returns variables read from the json string.\nnote: indices of a json object such as 1: cat are being returned as string, not as integer.' ,
-            )
+            ),
+            url='fromJSON',
         )
         ],
         client=[
@@ -2295,7 +2336,8 @@ DUMP_PARTIAL = [
                     "json": """A JSON formatted string """
                 },
                 result='returns variables read from the json string.\nnote: indices of a json object such as 1: cat are being returned as string, not as integer.' ,
-            )
+            ),
+            url='fromJSON',
         )
         ],
     ),
@@ -2360,7 +2402,8 @@ DUMP_PARTIAL = [
 All colors used must begin with a # sign. """
                 },
                 result='returns four integers in rgba format, with a maximum value of 255 for each.  each stands for red, green, blue, and alpha.  alpha decides transparancy where 255 is opaque and 0 is transparent.  false is returned if the string passed is invalid (for example, is missing the preceeding # sign).' ,
-            )
+            ),
+            url='getColorFromString',
         )
         ],
         client=[
@@ -2423,7 +2466,8 @@ All colors used must begin with a # sign. """
 All colors used must begin with a # sign. """
                 },
                 result='returns four integers in rgba format, with a maximum value of 255 for each.  each stands for red, green, blue, and alpha.  alpha decides transparancy where 255 is opaque and 0 is transparent.  false is returned if the string passed is invalid (for example, is missing the preceeding # sign).' ,
-            )
+            ),
+            url='getColorFromString',
         )
         ],
     ),
@@ -2457,7 +2501,8 @@ All colors used must begin with a # sign. """
                     
                 },
                 result='returns true if the development mode is on, false if off.' ,
-            )
+            ),
+            url='getDevelopmentMode',
         )
         ],
         client=[
@@ -2489,7 +2534,8 @@ All colors used must begin with a # sign. """
                     
                 },
                 result='returns true if the development mode is on, false if off.' ,
-            )
+            ),
+            url='getDevelopmentMode',
         )
         ],
     ),
@@ -2565,7 +2611,8 @@ All colors used must begin with a # sign. """
                     "y2": """: The Y position of the second point """
                 },
                 result='returns a float containing the 2d distance between the two points. returns false if invalid parameters are passed.' ,
-            )
+            ),
+            url='getDistanceBetweenPoints2D',
         )
         ],
         client=[
@@ -2639,7 +2686,8 @@ All colors used must begin with a # sign. """
                     "y2": """: The Y position of the second point """
                 },
                 result='returns a float containing the 2d distance between the two points. returns false if invalid parameters are passed.' ,
-            )
+            ),
+            url='getDistanceBetweenPoints2D',
         )
         ],
     ),
@@ -2737,7 +2785,8 @@ All colors used must begin with a # sign. """
                     "z2": """: The Z position of the second point """
                 },
                 result='returns a float containing the distance between the two points as a float. returns false if an argument passed was invalid.' ,
-            )
+            ),
+            url='getDistanceBetweenPoints3D',
         )
         ],
         client=[
@@ -2833,7 +2882,8 @@ All colors used must begin with a # sign. """
                     "z2": """: The Z position of the second point """
                 },
                 result='returns a float containing the distance between the two points as a float. returns false if an argument passed was invalid.' ,
-            )
+            ),
+            url='getDistanceBetweenPoints3D',
         )
         ],
     ),
@@ -2920,7 +2970,8 @@ All colors used must begin with a # sign. """
                     "fEasingOvershoot": """the overshoot of the Easing|easing function (only some easing functions use this parameter) """
                 },
                 result='returns fanimationtime  the animation time given by the easing function (can be < 0 or > 1 since some easing|easing functions have overshoot or bounce/spring effects, false otherwise (error in parameters).' ,
-            )
+            ),
+            url='getEasingValue',
         )
         ],
         client=[
@@ -3005,7 +3056,8 @@ All colors used must begin with a # sign. """
                     "fEasingOvershoot": """the overshoot of the Easing|easing function (only some easing functions use this parameter) """
                 },
                 result='returns fanimationtime  the animation time given by the easing function (can be < 0 or > 1 since some easing|easing functions have overshoot or bounce/spring effects, false otherwise (error in parameters).' ,
-            )
+            ),
+            url='getEasingValue',
         )
         ],
     ),
@@ -3039,7 +3091,8 @@ All colors used must begin with a # sign. """
                     
                 },
                 result='returns an integer between 25 and 100 of the maximum fps that players can run their game at.' ,
-            )
+            ),
+            url='getFPSLimit',
         )
         ],
         client=[
@@ -3071,7 +3124,8 @@ All colors used must begin with a # sign. """
                     
                 },
                 result='returns an integer between 25 and 100 of the maximum fps that players can run their game at.' ,
-            )
+            ),
+            url='getFPSLimit',
         )
         ],
     ),
@@ -3108,7 +3162,8 @@ All colors used must begin with a # sign. """
                     
                 },
                 result='returns a table with keyboard layout properties:\n{| class=wikitable style=cellpadding: 10px;\n|-\n! property || values and description\n|-\n| <code>readinglayout</code> ||\n{| class=prettytable\n|-\n| <code>ltr</code> || left to right (english)\n|-\n| <code>rtl</code> || right to left (arabic, hebrew)\n|-\n| <code>ttb-rtl-ltr</code> || either read vertically from top to bottom with columns going from right to left, or read in horizontal rows from left to right, as for the japanese (japan) locale.\n|-\n| <code>ttb-ltr</code> || read vertically from top to bottom with columns going from left to right, as for the mongolian (mongolian) locale.\n|}\n|}' ,
-            )
+            ),
+            url='getKeyboardLayout',
         )
         ],
     ),
@@ -3145,7 +3200,8 @@ All colors used must begin with a # sign. """
                     
                 },
                 result='returns a table with the following entries:\n*code : the language code (eg. en_us for english (united states) or ar for arabic).\n*name : the name of the language (eg. english (united states) or arabic).' ,
-            )
+            ),
+            url='getLocalization',
         )
         ],
     ),
@@ -3188,7 +3244,8 @@ All colors used must begin with a # sign. """
                     
                 },
                 result='' ,
-            )
+            ),
+            url='getNetworkStats',
         )
         ],
         client=[
@@ -3220,7 +3277,8 @@ All colors used must begin with a # sign. """
                     
                 },
                 result='' ,
-            )
+            ),
+            url='getNetworkStats',
         )
         ],
     ),
@@ -3254,7 +3312,8 @@ All colors used must begin with a # sign. """
                     
                 },
                 result='returns a table with two fields: in and out. each of these contain a table with two fields: bits and count. each of these contain a table with 256 numeric fields ranging from 0 to 255, containing the appropriate network usage data for such packet id.' ,
-            )
+            ),
+            url='getNetworkUsageData',
         )
         ],
         client=[
@@ -3286,7 +3345,8 @@ All colors used must begin with a # sign. """
                     
                 },
                 result='returns a table with two fields: in and out. each of these contain a table with two fields: bits and count. each of these contain a table with 256 numeric fields ranging from 0 to 255, containing the appropriate network usage data for such packet id.' ,
-            )
+            ),
+            url='getNetworkUsageData',
         )
         ],
     ),
@@ -3355,7 +3415,8 @@ All colors used must begin with a # sign. """
                     "filter": """Case-sensitive filter used to select returned rows. Only name column is filtered. """
                 },
                 result='returns two tables. first contains column names. the second contains result rows. each row is table of cells.' ,
-            )
+            ),
+            url='getPerformanceStats',
         )
         ],
         client=[
@@ -3422,7 +3483,8 @@ All colors used must begin with a # sign. """
                     "filter": """Case-sensitive filter used to select returned rows. Only name column is filtered. """
                 },
                 result='returns two tables. first contains column names. the second contains result rows. each row is table of cells.' ,
-            )
+            ),
+            url='getPerformanceStats',
         )
         ],
     ),
@@ -3476,7 +3538,8 @@ All colors used must begin with a # sign. """
                     "localTime": """Set to true to adjust for the locally set timezone. """
                 },
                 result='returns a table of substrings with different time format or false if the seconds argument is out of range.\n{| border=2 cellpadding=2 cellspacing=0 style=margin: 1em 1em 1em 0; background: #f9f9f9; border: 1px #aaa solid; border-collapse: collapse; font-size: 95%;\n|member\n|meaning\n|range\n|-\n|second\n|seconds after the minute\n|0-61*\n|-\n|minute\n|minutes after the hour\n|0-59\n|-\n|hour\n|hours since midnight\n|0-23\n|-\n|monthday\n|day of the month\n|1-31\n|-\n|month\n|months since january\n|0-11\n|-\n|year\n|years since 1900\n|-\n|weekday\n|days since sunday\n|0-6\n|-\n|yearday\n|days since january 1\n|0-365\n|-\n|isdst\n|daylight saving time flag\n|-\n|timestamp\n|seconds since 1970 (ignoring set timezone)\n|\n|}\n* second is generally 0-59. extra range to accommodate for leap seconds in certain systems.' ,
-            )
+            ),
+            url='getRealTime',
         )
         ],
         client=[
@@ -3528,7 +3591,8 @@ All colors used must begin with a # sign. """
                     "localTime": """Set to true to adjust for the locally set timezone. """
                 },
                 result='returns a table of substrings with different time format or false if the seconds argument is out of range.\n{| border=2 cellpadding=2 cellspacing=0 style=margin: 1em 1em 1em 0; background: #f9f9f9; border: 1px #aaa solid; border-collapse: collapse; font-size: 95%;\n|member\n|meaning\n|range\n|-\n|second\n|seconds after the minute\n|0-61*\n|-\n|minute\n|minutes after the hour\n|0-59\n|-\n|hour\n|hours since midnight\n|0-23\n|-\n|monthday\n|day of the month\n|1-31\n|-\n|month\n|months since january\n|0-11\n|-\n|year\n|years since 1900\n|-\n|weekday\n|days since sunday\n|0-6\n|-\n|yearday\n|days since january 1\n|0-365\n|-\n|isdst\n|daylight saving time flag\n|-\n|timestamp\n|seconds since 1970 (ignoring set timezone)\n|\n|}\n* second is generally 0-59. extra range to accommodate for leap seconds in certain systems.' ,
-            )
+            ),
+            url='getRealTime',
         )
         ],
     ),
@@ -3571,7 +3635,8 @@ All colors used must begin with a # sign. """
                     "name": """The name of the setting (setting names can be found Server_mtaserver.conf|here) """
                 },
                 result='returns a string containing the current value for the named setting, or false if the setting does not exist.<br>\nif the setting name is serverip, may return the string auto on local servers.' ,
-            )
+            ),
+            url='getServerConfigSetting',
         )
         ],
         client=[
@@ -3608,7 +3673,8 @@ All colors used must begin with a # sign. """
                     
                 },
                 result='returns an integer containing the number of milliseconds since the system the server is running on started. this has the potential to wrap-around.' ,
-            )
+            ),
+            url='getTickCount',
         )
         ],
         client=[
@@ -3640,7 +3706,8 @@ All colors used must begin with a # sign. """
                     
                 },
                 result='returns an integer containing the number of milliseconds since the system the server is running on started. this has the potential to wrap-around.' ,
-            )
+            ),
+            url='getTickCount',
         )
         ],
     ),
@@ -3691,7 +3758,8 @@ All colors used must begin with a # sign. """
                     "theTimer": """A timer element. """
                 },
                 result='* integer one represents the time left in miliseconds (1000th of a second) of the current time left in the loop.\n* integer two represents the amount of times the timer has left to execute.\n* integer three represents the time interval of timer.\n* returns false if the timer doesnt exist or stopped running. also, debugscript will say bad argument @ gettimerdetails. to prevent this, you can check if the timer exists with istimer().' ,
-            )
+            ),
+            url='getTimerDetails',
         )
         ],
         client=[
@@ -3740,7 +3808,8 @@ All colors used must begin with a # sign. """
                     "theTimer": """A timer element. """
                 },
                 result='* integer one represents the time left in miliseconds (1000th of a second) of the current time left in the loop.\n* integer two represents the amount of times the timer has left to execute.\n* integer three represents the time interval of timer.\n* returns false if the timer doesnt exist or stopped running. also, debugscript will say bad argument @ gettimerdetails. to prevent this, you can check if the timer exists with istimer().' ,
-            )
+            ),
+            url='getTimerDetails',
         )
         ],
     ),
@@ -3783,7 +3852,8 @@ All colors used must begin with a # sign. """
                     "theTime": """The maximum time left (in milliseconds) on the timers you wish to retrieve. """
                 },
                 result='returns a table of all the active timers.' ,
-            )
+            ),
+            url='getTimers',
         )
         ],
         client=[
@@ -3824,7 +3894,8 @@ All colors used must begin with a # sign. """
                     "theTime": """The maximum time left (in milliseconds) on the timers you wish to retrieve. """
                 },
                 result='returns a table of all the active timers.' ,
-            )
+            ),
+            url='getTimers',
         )
         ],
     ),
@@ -3889,7 +3960,8 @@ All colors used must begin with a # sign. """
                     "separatingCharacter": """the ASCII|ASCII number representing the character you want to use to separate the tokens. You can easily retrieve this by running string.byte on a string containing the separating character. """
                 },
                 result='returns a string containing the token if it exists, false otherwise.' ,
-            )
+            ),
+            url='gettok',
         )
         ],
         client=[
@@ -3952,7 +4024,8 @@ All colors used must begin with a # sign. """
                     "separatingCharacter": """the ASCII|ASCII number representing the character you want to use to separate the tokens. You can easily retrieve this by running string.byte on a string containing the separating character. """
                 },
                 result='returns a string containing the token if it exists, false otherwise.' ,
-            )
+            ),
+            url='gettok',
         )
         ],
     ),
@@ -4014,7 +4087,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "weapon": """: a Weapon|custom weapon. """
                 },
                 result='returns a string containing the specified userdatas type, or false plus an error message if the given value is not userdata.' ,
-            )
+            ),
+            url='getUserdataType',
         )
         ],
         client=[
@@ -4074,7 +4148,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "weapon": """: a Weapon|custom weapon. """
                 },
                 result='returns a string containing the specified userdatas type, or false plus an error message if the given value is not userdata.' ,
-            )
+            ),
+            url='getUserdataType',
         )
         ],
     ),
@@ -4108,7 +4183,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     
                 },
                 result='returns a table with version information. specifically these keys are present in the table:\n*number: the mta server or client version (depending where the function was called) in pure numerical form, e.g. 256\n*mta: the mta server or client version (depending where the function was called) in textual form, e.g. 1.0\n*name: the full mta product name, either mta:sa server or mta:sa client.\n*netcode: the netcode version number.\n*os: returns the operating system on which the server or client is running\n*type: the type of build.  can be:\n**nightly rx - a nightly development build.  x represents the nightly build revision.\n**custom - a build compiled manually\n**release - a build that is publicly released (provisional).\n*tag: the build tag (from 1.0.3 onwards). contains infomation about the underlying version used. i.e. the final version of 1.0.3 has the build tag of 1.0.3 rc-9. (this can be confirmed by using the console command ver.)\n*sortable: a 15 character sortable version string (from 1.0.4 onwards). format of the string is described in getplayerversion.' ,
-            )
+            ),
+            url='getVersion',
         )
         ],
         client=[
@@ -4140,7 +4216,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     
                 },
                 result='returns a table with version information. specifically these keys are present in the table:\n*number: the mta server or client version (depending where the function was called) in pure numerical form, e.g. 256\n*mta: the mta server or client version (depending where the function was called) in textual form, e.g. 1.0\n*name: the full mta product name, either mta:sa server or mta:sa client.\n*netcode: the netcode version number.\n*os: returns the operating system on which the server or client is running\n*type: the type of build.  can be:\n**nightly rx - a nightly development build.  x represents the nightly build revision.\n**custom - a build compiled manually\n**release - a build that is publicly released (provisional).\n*tag: the build tag (from 1.0.3 onwards). contains infomation about the underlying version used. i.e. the final version of 1.0.3 has the build tag of 1.0.3 rc-9. (this can be confirmed by using the console command ver.)\n*sortable: a 15 character sortable version string (from 1.0.4 onwards). format of the string is described in getplayerversion.' ,
-            )
+            ),
+            url='getVersion',
         )
         ],
     ),
@@ -4194,7 +4271,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "dataToHash": """: A string of the data to hash. """
                 },
                 result='returns the hash of the data, false if an invalid argument was used.' ,
-            )
+            ),
+            url='hash',
         )
         ],
         client=[
@@ -4246,7 +4324,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "dataToHash": """: A string of the data to hash. """
                 },
                 result='returns the hash of the data, false if an invalid argument was used.' ,
-            )
+            ),
+            url='hash',
         )
         ],
     ),
@@ -4300,7 +4379,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "options": """A table of options. It is not mandatory, but when it is provided, it must be a table. For a list of options, see the https://github.com/kikito/inspect.lua#options Inspects GitHub page. """
                 },
                 result='always returns a string. the contents can change if we update the inspect library, so it is not expected to be consistent across lua versions.' ,
-            )
+            ),
+            url='inspect',
         )
         ],
         client=[
@@ -4352,7 +4432,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "options": """A table of options. It is not mandatory, but when it is provided, it must be a table. For a list of options, see the https://github.com/kikito/inspect.lua#options Inspects GitHub page. """
                 },
                 result='always returns a string. the contents can change if we update the inspect library, so it is not expected to be consistent across lua versions.' ,
-            )
+            ),
+            url='inspect',
         )
         ],
     ),
@@ -4509,7 +4590,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "fEasingOvershoot": """the overshoot of the Easing|easing function (only some easing functions use this parameter) """
                 },
                 result='returns x, y, z the interpolated 3d vector/value if successful, false otherwise (error in parameters).\nas mentioned before, interpolatebetween can be used on 2d vectors or scalars in which case only some (x, y or just x) of the returned values are to be used (cf. alpha interpolation in marker example or size interpolation in window example).' ,
-            )
+            ),
+            url='interpolateBetween',
         )
         ],
         client=[
@@ -4664,7 +4746,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "fEasingOvershoot": """the overshoot of the Easing|easing function (only some easing functions use this parameter) """
                 },
                 result='returns x, y, z the interpolated 3d vector/value if successful, false otherwise (error in parameters).\nas mentioned before, interpolatebetween can be used on 2d vectors or scalars in which case only some (x, y or just x) of the returned values are to be used (cf. alpha interpolation in marker example or size interpolation in window example).' ,
-            )
+            ),
+            url='interpolateBetween',
         )
         ],
     ),
@@ -4728,7 +4811,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "var2+": """Another variable to be output.  An unlimited number of arguments can be supplied """
                 },
                 result='always returns nil.' ,
-            )
+            ),
+            url='iprint',
         )
         ],
         client=[
@@ -4790,7 +4874,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "var2+": """Another variable to be output.  An unlimited number of arguments can be supplied """
                 },
                 result='always returns nil.' ,
-            )
+            ),
+            url='iprint',
         )
         ],
     ),
@@ -4824,7 +4909,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     
                 },
                 result='returns true or false if oop is enabled or not. returns nil if an error arised.' ,
-            )
+            ),
+            url='isOOPEnabled',
         )
         ],
         client=[
@@ -4856,7 +4942,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     
                 },
                 result='returns true or false if oop is enabled or not. returns nil if an error arised.' ,
-            )
+            ),
+            url='isOOPEnabled',
         )
         ],
     ),
@@ -4899,7 +4986,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "theTimer": """: The variable that we want to check. """
                 },
                 result='returns true if the passed value is a timer, false otherwise.' ,
-            )
+            ),
+            url='isTimer',
         )
         ],
         client=[
@@ -4940,7 +5028,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "theTimer": """: The variable that we want to check. """
                 },
                 result='returns true if the passed value is a timer, false otherwise.' ,
-            )
+            ),
+            url='isTimer',
         )
         ],
     ),
@@ -4977,7 +5066,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     
                 },
                 result='returns true if the tray notifications are enabled in the settings, false otherwise.' ,
-            )
+            ),
+            url='isTrayNotificationEnabled',
         )
         ],
     ),
@@ -5020,7 +5110,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "theTimer": """The timer you wish to halt. """
                 },
                 result='returns true if the timer was successfully killed, false if no such timer existed.' ,
-            )
+            ),
+            url='killTimer',
         )
         ],
         client=[
@@ -5061,7 +5152,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "theTimer": """The timer you wish to halt. """
                 },
                 result='returns true if the timer was successfully killed, false if no such timer existed.' ,
-            )
+            ),
+            url='killTimer',
         )
         ],
     ),
@@ -5104,7 +5196,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "str": """the string to hash. """
                 },
                 result='returns the md5 hash of the input string if successful, false otherwise.' ,
-            )
+            ),
+            url='md5',
         )
         ],
         client=[
@@ -5145,7 +5238,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "str": """the string to hash. """
                 },
                 result='returns the md5 hash of the input string if successful, false otherwise.' ,
-            )
+            ),
+            url='md5',
         )
         ],
     ),
@@ -5222,7 +5316,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "callback": """providing a callback will run this function asynchronously, the arguments to the callback are the same as the returned values below. """
                 },
                 result='returns the hash as a string if hashing was successful, false otherwise. if a callback was provided, the aforementioned values are arguments to the callback, and this function will always return true.' ,
-            )
+            ),
+            url='passwordHash',
         )
         ],
         client=[
@@ -5297,7 +5392,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "callback": """providing a callback will run this function asynchronously, the arguments to the callback are the same as the returned values below. """
                 },
                 result='returns the hash as a string if hashing was successful, false otherwise. if a callback was provided, the aforementioned values are arguments to the callback, and this function will always return true.' ,
-            )
+            ),
+            url='passwordHash',
         )
         ],
     ),
@@ -5375,7 +5471,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
 |11281}} """
                 },
                 result='returns true if the password matches the hash. returns false if the password does not match, or if an unknown hash was passed. if a callback was provided, the aforementioned values are arguments to the callback, and this function will always return true.' ,
-            )
+            ),
+            url='passwordVerify',
         )
         ],
         client=[
@@ -5451,7 +5548,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
 |11281}} """
                 },
                 result='returns true if the password matches the hash. returns false if the password does not match, or if an unknown hash was passed. if a callback was provided, the aforementioned values are arguments to the callback, and this function will always return true.' ,
-            )
+            ),
+            url='passwordVerify',
         )
         ],
     ),
@@ -5516,7 +5614,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "flags": """Conjuncted value that contains flags ( 1 - ignorecase, 2 - multiline, 4 - dotall, 8 - extended, 16 - unicode ) or ( i - Ignore case, m - Multiline, d - Dotall, e - Extended, u - Unicode ) """
                 },
                 result='returns true if the pattern was found in the input string, false otherwise.' ,
-            )
+            ),
+            url='pregFind',
         )
         ],
         client=[
@@ -5579,7 +5678,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "flags": """Conjuncted value that contains flags ( 1 - ignorecase, 2 - multiline, 4 - dotall, 8 - extended, 16 - unicode ) or ( i - Ignore case, m - Multiline, d - Dotall, e - Extended, u - Unicode ) """
                 },
                 result='returns true if the pattern was found in the input string, false otherwise.' ,
-            )
+            ),
+            url='pregFind',
         )
         ],
     ),
@@ -5655,7 +5755,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "maxResults": """Maximum number of results to return """
                 },
                 result='returns a table if one or more match is found, false otherwise.' ,
-            )
+            ),
+            url='pregMatch',
         )
         ],
         client=[
@@ -5729,7 +5830,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "maxResults": """Maximum number of results to return """
                 },
                 result='returns a table if one or more match is found, false otherwise.' ,
-            )
+            ),
+            url='pregMatch',
         )
         ],
     ),
@@ -5805,7 +5907,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "flags": """Conjuncted value that contains flags ( 1 - ignorecase, 2 - multiline, 4 - dotall, 8 - extended, 16 - unicode ) or ( i - Ignore case, m - Multiline, d - Dotall, e - Extended, u - Unicode ) """
                 },
                 result='returns the replaced string, or bool false otherwise.' ,
-            )
+            ),
+            url='pregReplace',
         )
         ],
         client=[
@@ -5879,7 +5982,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "flags": """Conjuncted value that contains flags ( 1 - ignorecase, 2 - multiline, 4 - dotall, 8 - extended, 16 - unicode ) or ( i - Ignore case, m - Multiline, d - Dotall, e - Extended, u - Unicode ) """
                 },
                 result='returns the replaced string, or bool false otherwise.' ,
-            )
+            ),
+            url='pregReplace',
         )
         ],
     ),
@@ -5922,7 +6026,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "objectToReference": """The Lua element, which you want to reference """
                 },
                 result='returns an int if the reference were successfully created. returns false if the parameter were invalid.' ,
-            )
+            ),
+            url='ref',
         )
         ],
         client=[
@@ -5963,7 +6068,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "objectToReference": """The Lua element, which you want to reference """
                 },
                 result='returns an int if the reference were successfully created. returns false if the parameter were invalid.' ,
-            )
+            ),
+            url='ref',
         )
         ],
     ),
@@ -6021,7 +6127,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "callbackFunction": """The callback function to remove """
                 },
                 result='returns true if the hook was successfully removed, or false otherwise.' ,
-            )
+            ),
+            url='removeDebugHook',
         )
         ],
         client=[
@@ -6077,7 +6184,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "callbackFunction": """The callback function to remove """
                 },
                 result='returns true if the hook was successfully removed, or false otherwise.' ,
-            )
+            ),
+            url='removeDebugHook',
         )
         ],
     ),
@@ -6120,7 +6228,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "theTimer": """The timer whose elapsed time you wish to reset. """
                 },
                 result='returns true if the timer was successfully reset, false otherwise.' ,
-            )
+            ),
+            url='resetTimer',
         )
         ],
         client=[
@@ -6161,7 +6270,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "theTimer": """The timer whose elapsed time you wish to reset. """
                 },
                 result='returns true if the timer was successfully reset, false otherwise.' ,
-            )
+            ),
+            url='resetTimer',
         )
         ],
     ),
@@ -6207,7 +6317,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "theText": """The new text to be in the players clipboard when the player pastes with CTRL + V. """
                 },
                 result='returns true if the text in the clip board was set correctly.' ,
-            )
+            ),
+            url='setClipboard',
         )
         ],
     ),
@@ -6261,7 +6372,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "enableWeb": """: A boolean to indicate whether browser debug messages will be filtered (false) or not (true) """
                 },
                 result='returns true if the mode was set correctly, false otherwise.' ,
-            )
+            ),
+            url='setDevelopmentMode',
         )
         ],
         client=[
@@ -6313,7 +6425,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "enableWeb": """: A boolean to indicate whether browser debug messages will be filtered (false) or not (true) """
                 },
                 result='returns true if the mode was set correctly, false otherwise.' ,
-            )
+            ),
+            url='setDevelopmentMode',
         )
         ],
     ),
@@ -6356,7 +6469,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "fpsLimit": """An integer value representing the maximum FPS. This value may be between 25 and 100 FPS. You can also pass 0 or false, in which case the FPS limit will be the one set in the client settings (by default, 100 FPS and the client fps limit should also be manually changed via fps_limit=0 in console or MTA San Andreas 1.5\MTA\config\coreconfig.xml). """
                 },
                 result='returns true if successful, or false if it was not possible to set the limit or an invalid value was passed.' ,
-            )
+            ),
+            url='setFPSLimit',
         )
         ],
         client=[
@@ -6397,7 +6511,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "fpsLimit": """An integer value representing the maximum FPS. This value may be between 25 and 100 FPS. You can also pass 0 or false, in which case the FPS limit will be the one set in the client settings (by default, 100 FPS and the client fps limit should also be manually changed via fps_limit=0 in console or MTA San Andreas 1.5\MTA\config\coreconfig.xml). """
                 },
                 result='returns true if successful, or false if it was not possible to set the limit or an invalid value was passed.' ,
-            )
+            ),
+            url='setFPSLimit',
         )
         ],
     ),
@@ -6476,7 +6591,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "bSave": """Set to true to make the setting permanent, or false for use only until the next server restart. """
                 },
                 result='returns true if the setting was successfully set, or false otherwise.' ,
-            )
+            ),
+            url='setServerConfigSetting',
         )
         ],
         client=[
@@ -6555,7 +6671,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "arguments": """Any arguments you wish to pass to the function can be listed after the timesToExecute argument. Note that any tables you want to pass will get cloned, whereas metatables and functions/function references in that passed table will get lost. Also changes you make in the original table before the function gets called wont get transferred. """
                 },
                 result='returns a timer pointer if the timer was set successfully, false if the arguments are invalid or the timer could not be set.' ,
-            )
+            ),
+            url='setTimer',
         )
         ],
         client=[
@@ -6629,7 +6746,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "arguments": """Any arguments you wish to pass to the function can be listed after the timesToExecute argument. Note that any tables you want to pass will get cloned, whereas metatables and functions/function references in that passed table will get lost. Also changes you make in the original table before the function gets called wont get transferred. """
                 },
                 result='returns a timer pointer if the timer was set successfully, false if the arguments are invalid or the timer could not be set.' ,
-            )
+            ),
+            url='setTimer',
         )
         ],
     ),
@@ -6686,7 +6804,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "count": """the number of times the window should flash, defaults to 10 times """
                 },
                 result='returns false if:\n* the window is already in focus\n* the client has disabled this feature\nreturns true otherwise' ,
-            )
+            ),
+            url='setWindowFlashing',
         )
         ],
     ),
@@ -6729,7 +6848,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "str": """the string to hash. """
                 },
                 result='returns the sha256 hash of the input string if successful, false otherwise.' ,
-            )
+            ),
+            url='sha256',
         )
         ],
         client=[
@@ -6770,7 +6890,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "str": """the string to hash. """
                 },
                 result='returns the sha256 hash of the input string if successful, false otherwise.' ,
-            )
+            ),
+            url='sha256',
         )
         ],
     ),
@@ -6824,7 +6945,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "separatingChar": """A string of the character you want to split, or the ASCII|ASCII number representing the character you want to use to split. """
                 },
                 result='returns a table of substrings split from the original string if successful, false otherwise.' ,
-            )
+            ),
+            url='split',
         )
         ],
         client=[
@@ -6876,7 +6998,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "separatingChar": """A string of the character you want to split, or the ASCII|ASCII number representing the character you want to use to split. """
                 },
                 result='returns a table of substrings split from the original string if successful, false otherwise.' ,
-            )
+            ),
+            url='split',
         )
         ],
     ),
@@ -6930,7 +7053,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "key": """The key that should be used for decryption (Only first 16 characters are used) """
                 },
                 result='returns string containing the decrypted data if the decryption process was successfully completed, false otherwise.' ,
-            )
+            ),
+            url='teaDecode',
         )
         ],
         client=[
@@ -6982,7 +7106,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "key": """The key that should be used for decryption (Only first 16 characters are used) """
                 },
                 result='returns string containing the decrypted data if the decryption process was successfully completed, false otherwise.' ,
-            )
+            ),
+            url='teaDecode',
         )
         ],
     ),
@@ -7036,7 +7161,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "key": """The key that should be used for encryption (Only first 16 characters are used) """
                 },
                 result='returns the https://en.wikipedia.org/wiki/base64 base64 representation of the encrypted string if the encryption process was successfully completed, false otherwise.' ,
-            )
+            ),
+            url='teaEncode',
         )
         ],
         client=[
@@ -7088,7 +7214,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "key": """The key that should be used for encryption (Only first 16 characters are used) """
                 },
                 result='returns the https://en.wikipedia.org/wiki/base64 base64 representation of the encrypted string if the encryption process was successfully completed, false otherwise.' ,
-            )
+            ),
+            url='teaEncode',
         )
         ],
     ),
@@ -7164,7 +7291,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "alpha": """The amount of http://en.wikipedia.org/wiki/RGBA_color_space alpha in the color (0-255). """
                 },
                 result='returns a single value representing the color.' ,
-            )
+            ),
+            url='tocolor',
         )
         ],
         client=[
@@ -7238,7 +7366,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "alpha": """The amount of http://en.wikipedia.org/wiki/RGBA_color_space alpha in the color (0-255). """
                 },
                 result='returns a single value representing the color.' ,
-            )
+            ),
+            url='tocolor',
         )
         ],
     ),
@@ -7305,7 +7434,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
 ** tabs """
                 },
                 result='returns a json formatted string.' ,
-            )
+            ),
+            url='toJSON',
         )
         ],
         client=[
@@ -7370,7 +7500,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
 ** tabs """
                 },
                 result='returns a json formatted string.' ,
-            )
+            ),
+            url='toJSON',
         )
         ],
     ),
@@ -7413,7 +7544,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "characterCode": """The UTF code, to get the string of. """
                 },
                 result='returns a string if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='utfChar',
         )
         ],
         client=[
@@ -7454,7 +7586,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "characterCode": """The UTF code, to get the string of. """
                 },
                 result='returns a string if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='utfChar',
         )
         ],
     ),
@@ -7497,7 +7630,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "theString": """The string to get the UTF code of. """
                 },
                 result='returns an int if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='utfCode',
         )
         ],
         client=[
@@ -7538,7 +7672,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "theString": """The string to get the UTF code of. """
                 },
                 result='returns an int if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='utfCode',
         )
         ],
     ),
@@ -7581,7 +7716,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "theString": """The string to get the length of. """
                 },
                 result='returns an int if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='utfLen',
         )
         ],
         client=[
@@ -7622,7 +7758,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "theString": """The string to get the length of. """
                 },
                 result='returns an int if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='utfLen',
         )
         ],
     ),
@@ -7676,7 +7813,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "position": """An int with the specified charachter position. """
                 },
                 result='returns an int if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='utfSeek',
         )
         ],
         client=[
@@ -7728,7 +7866,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "position": """An int with the specified charachter position. """
                 },
                 result='returns an int if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='utfSeek',
         )
         ],
     ),
@@ -7793,7 +7932,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "End": """An int with the end position. """
                 },
                 result='returns a string if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='utfSub',
         )
         ],
         client=[
@@ -7856,7 +7996,8 @@ Source code commit: https://github.com/multitheftauto/mtasa-blue/commit/df8576fc
                     "End": """An int with the end position. """
                 },
                 result='returns a string if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='utfSub',
         )
         ],
     )

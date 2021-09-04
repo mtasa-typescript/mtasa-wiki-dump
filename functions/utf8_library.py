@@ -70,7 +70,8 @@ DUMP_PARTIAL = [
                     "j": """An integer representing the ending position. """
                 },
                 result='returns a sequence of integer values from the original string if successful, nil otherwise.' ,
-            )
+            ),
+            url='utf8.byte',
         )
         ],
         client=[
@@ -133,7 +134,8 @@ DUMP_PARTIAL = [
                     "j": """An integer representing the ending position. """
                 },
                 result='returns a sequence of integer values from the original string if successful, nil otherwise.' ,
-            )
+            ),
+            url='utf8.byte',
         )
         ],
     ),
@@ -176,7 +178,8 @@ DUMP_PARTIAL = [
                     "codepoints": """An variable argument sequence of code points representing the desired unicode characters. """
                 },
                 result='returns a string representation of the codepoints passed.' ,
-            )
+            ),
+            url='utf8.char',
         )
         ],
         client=[
@@ -217,7 +220,8 @@ DUMP_PARTIAL = [
                     "codepoints": """An variable argument sequence of code points representing the desired unicode characters. """
                 },
                 result='returns a string representation of the codepoints passed.' ,
-            )
+            ),
+            url='utf8.char',
         )
         ],
     ),
@@ -286,7 +290,8 @@ DUMP_PARTIAL = [
                     "offset": """An integer representing the offset to charpos. """
                 },
                 result='returns the integer position as in a byte string and the integer codepoint at this position, nil otherwise.' ,
-            )
+            ),
+            url='utf8.charpos',
         )
         ],
         client=[
@@ -353,7 +358,8 @@ DUMP_PARTIAL = [
                     "offset": """An integer representing the offset to charpos. """
                 },
                 result='returns the integer position as in a byte string and the integer codepoint at this position, nil otherwise.' ,
-            )
+            ),
+            url='utf8.charpos',
         )
         ],
     ),
@@ -396,7 +402,8 @@ DUMP_PARTIAL = [
                     "input": """A string character sequence """
                 },
                 result='returns a string containing the escaped utf-8 characters from the original string.' ,
-            )
+            ),
+            url='utf8.escape',
         )
         ],
         client=[
@@ -437,7 +444,8 @@ DUMP_PARTIAL = [
                     "input": """A string character sequence """
                 },
                 result='returns a string containing the escaped utf-8 characters from the original string.' ,
-            )
+            ),
+            url='utf8.escape',
         )
         ],
     ),
@@ -517,7 +525,8 @@ DUMP_PARTIAL = [
                     "plain": """A boolean, if pattern matching should be turned off """
                 },
                 result='returns two number values for the beginning and ending position of the matched string, nil otherwise.' ,
-            )
+            ),
+            url='utf8.find',
         )
         ],
         client=[
@@ -595,7 +604,8 @@ DUMP_PARTIAL = [
                     "plain": """A boolean, if pattern matching should be turned off """
                 },
                 result='returns two number values for the beginning and ending position of the matched string, nil otherwise.' ,
-            )
+            ),
+            url='utf8.find',
         )
         ],
     ),
@@ -638,7 +648,8 @@ DUMP_PARTIAL = [
                     "input": """A string character sequence OR an integer value """
                 },
                 result='returns a string in lowercase or returns an integer (see description).' ,
-            )
+            ),
+            url='utf8.fold',
         )
         ],
         client=[
@@ -679,7 +690,8 @@ DUMP_PARTIAL = [
                     "input": """A string character sequence OR an integer value """
                 },
                 result='returns a string in lowercase or returns an integer (see description).' ,
-            )
+            ),
+            url='utf8.fold',
         )
         ],
     ),
@@ -733,7 +745,8 @@ DUMP_PARTIAL = [
                     "pattern": """A string match http://lua-users.org/wiki/PatternsTutorial pattern """
                 },
                 result='returns an function for iterations on the input string by using the passed pattern string.' ,
-            )
+            ),
+            url='utf8.gmatch',
         )
         ],
         client=[
@@ -785,7 +798,8 @@ DUMP_PARTIAL = [
                     "pattern": """A string match http://lua-users.org/wiki/PatternsTutorial pattern """
                 },
                 result='returns an function for iterations on the input string by using the passed pattern string.' ,
-            )
+            ),
+            url='utf8.gmatch',
         )
         ],
     ),
@@ -861,7 +875,8 @@ DUMP_PARTIAL = [
                     "match_limit": """An integer to limit the number of substitutions made """
                 },
                 result='returns a pair of values, the modified string and the integer number of substitutions made.' ,
-            )
+            ),
+            url='utf8.gsub',
         )
         ],
         client=[
@@ -935,7 +950,8 @@ DUMP_PARTIAL = [
                     "match_limit": """An integer to limit the number of substitutions made """
                 },
                 result='returns a pair of values, the modified string and the integer number of substitutions made.' ,
-            )
+            ),
+            url='utf8.gsub',
         )
         ],
     ),
@@ -1000,7 +1016,8 @@ DUMP_PARTIAL = [
                     "insert_pos": """An integer representing the position, where the substring will be inserted at. """
                 },
                 result='returns a string with the inserted substring value.' ,
-            )
+            ),
+            url='utf8.insert',
         )
         ],
         client=[
@@ -1063,7 +1080,8 @@ DUMP_PARTIAL = [
                     "insert_pos": """An integer representing the position, where the substring will be inserted at. """
                 },
                 result='returns a string with the inserted substring value.' ,
-            )
+            ),
+            url='utf8.insert',
         )
         ],
     ),
@@ -1128,7 +1146,8 @@ DUMP_PARTIAL = [
                     "j": """An integer representing the ending position for measuring the length of the section (may be negative). """
                 },
                 result='returns the length of the string as an integer.' ,
-            )
+            ),
+            url='utf8.len',
         )
         ],
         client=[
@@ -1191,7 +1210,8 @@ DUMP_PARTIAL = [
                     "j": """An integer representing the ending position for measuring the length of the section (may be negative). """
                 },
                 result='returns the length of the string as an integer.' ,
-            )
+            ),
+            url='utf8.len',
         )
         ],
     ),
@@ -1256,7 +1276,8 @@ DUMP_PARTIAL = [
                     "index": """An integer representing the beginning position for the pattern matching """
                 },
                 result='returns a sequence of string matches from the input string, nil otherwise.' ,
-            )
+            ),
+            url='utf8.match',
         )
         ],
         client=[
@@ -1319,7 +1340,8 @@ DUMP_PARTIAL = [
                     "index": """An integer representing the beginning position for the pattern matching """
                 },
                 result='returns a sequence of string matches from the input string, nil otherwise.' ,
-            )
+            ),
+            url='utf8.match',
         )
         ],
     ),
@@ -1373,7 +1395,8 @@ DUMP_PARTIAL = [
                     "b": """A string character sequence """
                 },
                 result='returns an integer, which indicates the difference, see the table below for further information.' ,
-            )
+            ),
+            url='utf8.ncasecmp',
         )
         ],
         client=[
@@ -1425,7 +1448,8 @@ DUMP_PARTIAL = [
                     "b": """A string character sequence """
                 },
                 result='returns an integer, which indicates the difference, see the table below for further information.' ,
-            )
+            ),
+            url='utf8.ncasecmp',
         )
         ],
     ),
@@ -1494,7 +1518,8 @@ DUMP_PARTIAL = [
                     "offset": """An integer representing the offset to charpos. """
                 },
                 result='returns the integer position in bytes and the integer codepoint at this position, nil otherwise.' ,
-            )
+            ),
+            url='utf8.next',
         )
         ],
         client=[
@@ -1561,7 +1586,8 @@ DUMP_PARTIAL = [
                     "offset": """An integer representing the offset to charpos. """
                 },
                 result='returns the integer position in bytes and the integer codepoint at this position, nil otherwise.' ,
-            )
+            ),
+            url='utf8.next',
         )
         ],
     ),
@@ -1626,7 +1652,8 @@ DUMP_PARTIAL = [
                     "stop": """An integer representing the ending position. """
                 },
                 result='returns the string with the removed substring from the range.' ,
-            )
+            ),
+            url='utf8.remove',
         )
         ],
         client=[
@@ -1689,7 +1716,8 @@ DUMP_PARTIAL = [
                     "stop": """An integer representing the ending position. """
                 },
                 result='returns the string with the removed substring from the range.' ,
-            )
+            ),
+            url='utf8.remove',
         )
         ],
     ),
@@ -1732,7 +1760,8 @@ DUMP_PARTIAL = [
                     "input": """A string character sequence """
                 },
                 result='returns a string containing the reversed original utf-8 string.' ,
-            )
+            ),
+            url='utf8.reverse',
         )
         ],
         client=[
@@ -1773,7 +1802,8 @@ DUMP_PARTIAL = [
                     "input": """A string character sequence """
                 },
                 result='returns a string containing the reversed original utf-8 string.' ,
-            )
+            ),
+            url='utf8.reverse',
         )
         ],
     ),
@@ -1838,7 +1868,8 @@ DUMP_PARTIAL = [
                     "j": """An integer representing the ending position (may be negative). """
                 },
                 result='returns a string substring of the original string, containing the selected range from the original string.' ,
-            )
+            ),
+            url='utf8.sub',
         )
         ],
         client=[
@@ -1901,7 +1932,8 @@ DUMP_PARTIAL = [
                     "j": """An integer representing the ending position (may be negative). """
                 },
                 result='returns a string substring of the original string, containing the selected range from the original string.' ,
-            )
+            ),
+            url='utf8.sub',
         )
         ],
     ),
@@ -1944,7 +1976,8 @@ DUMP_PARTIAL = [
                     "input": """A string character sequence OR an integer value """
                 },
                 result='returns a string in uppercase or returns an integer (see description).' ,
-            )
+            ),
+            url='utf8.title',
         )
         ],
         client=[
@@ -1985,7 +2018,8 @@ DUMP_PARTIAL = [
                     "input": """A string character sequence OR an integer value """
                 },
                 result='returns a string in uppercase or returns an integer (see description).' ,
-            )
+            ),
+            url='utf8.title',
         )
         ],
     ),
@@ -2050,7 +2084,8 @@ DUMP_PARTIAL = [
                     "default_width": """An integer, if given, is used as width for unprintable characters. """
                 },
                 result='returns the integer width of the input string or the width of the codepoint integer.' ,
-            )
+            ),
+            url='utf8.width',
         )
         ],
         client=[
@@ -2113,7 +2148,8 @@ DUMP_PARTIAL = [
                     "default_width": """An integer, if given, is used as width for unprintable characters. """
                 },
                 result='returns the integer width of the input string or the width of the codepoint integer.' ,
-            )
+            ),
+            url='utf8.width',
         )
         ],
     ),
@@ -2196,7 +2232,8 @@ DUMP_PARTIAL = [
                     "default_width": """An integer, if given, is used as width for unprintable characters. """
                 },
                 result='returns the given location, the offset in utf-8 encoding (if cursor is in the middle of the wide char - offset will be 2) and the width of the character, otherwise only the location as integer will be returned.' ,
-            )
+            ),
+            url='utf8.widthindex',
         )
         ],
         client=[
@@ -2277,7 +2314,8 @@ DUMP_PARTIAL = [
                     "default_width": """An integer, if given, is used as width for unprintable characters. """
                 },
                 result='returns the given location, the offset in utf-8 encoding (if cursor is in the middle of the wide char - offset will be 2) and the width of the character, otherwise only the location as integer will be returned.' ,
-            )
+            ),
+            url='utf8.widthindex',
         )
         ],
     )

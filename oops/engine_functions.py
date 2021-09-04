@@ -91,7 +91,8 @@ DUMP_PARTIAL = [
                     "appendLayers": """allows two or more layered shaders to be applied in the same texture. You may want to modify the DepthBias in the technique pass to avoid Z-fighting artifacts when using this. """
                 },
                 result='returns true if the shader was successfully applied, false otherwise.' ,
-            )
+            ),
+            url='engineApplyShaderToWorldTexture',
         ),
                 field=None,
                 is_static=False,
@@ -152,7 +153,8 @@ DUMP_PARTIAL = [
                     "modelName": """The model name of the object """
                 },
                 result='returns an int with the id of the object model, false otherwise.' ,
-            )
+            ),
+            url='engineGetModelIDFromName',
         ),
                 field=None,
                 is_static=True,
@@ -205,7 +207,8 @@ DUMP_PARTIAL = [
                     "model": """The model / object ID number you want to get the LOD distance of. """
                 },
                 result='returns a float representing the lod distance of the model, or false if the model argument is incorrect.' ,
-            )
+            ),
+            url='engineGetModelLODDistance',
         ),
                 field=None,
                 is_static=True,
@@ -258,7 +261,8 @@ DUMP_PARTIAL = [
                     "modelID": """The model ID of the object """
                 },
                 result='returns a string with the name of the object model, false otherwise.' ,
-            )
+            ),
+            url='engineGetModelNameFromID',
         ),
                 field=None,
                 is_static=True,
@@ -319,7 +323,8 @@ DUMP_PARTIAL = [
                     "modelId": """You can either use the model id or the model name. """
                 },
                 result='returns a table if this function succeeds, false if it fails for some reason.' ,
-            )
+            ),
+            url='engineGetModelTextureNames',
         ),
                 field=None,
                 is_static=True,
@@ -415,7 +420,8 @@ DUMP_PARTIAL = [
                     "modelId": """Only include textures that are used by the model id (or model name) """
                 },
                 result='returns a table of texture names.' ,
-            )
+            ),
+            url='engineGetVisibleTextureNames',
         ),
                 field=None,
                 is_static=True,
@@ -479,7 +485,8 @@ DUMP_PARTIAL = [
                     "model_id": """The model id to import the TXD into """
                 },
                 result='returns true if the function executed succesfully, false otherwise.' ,
-            )
+            ),
+            url='engineImportTXD',
         ),
                 field=None,
                 is_static=False,
@@ -607,7 +614,8 @@ DUMP_PARTIAL = [
                     "targetElement": """The element to remove the shader from. It should be the same element as used with engineApplyShaderToWorldTexture when the shader was initially applied. """
                 },
                 result='returns true if the shader was successfully removed, false otherwise.' ,
-            )
+            ),
+            url='engineRemoveShaderFromWorldTexture',
         ),
                 field=None,
                 is_static=False,
@@ -679,7 +687,8 @@ DUMP_PARTIAL = [
                     "modelID": """The model ID whose collision file you want to replace """
                 },
                 result='returns true if the collision was successfully replaced, false or nil if the collision could not be replaced for a reason.' ,
-            )
+            ),
+            url='engineReplaceCOL',
         ),
                 field=None,
                 is_static=False,
@@ -754,7 +763,8 @@ DUMP_PARTIAL = [
                     "alphaTransparency": """Set to true if model uses semi-transparent textures, e.g. windows. This will ensure other objects behind the semi-transparent textures are rendered correctly. (Can slightly impact performance, so only set when required) """
                 },
                 result='returns true if the model was successfully replaced, false if it failed for some reason, ie. the dff or the model id is not valid.' ,
-            )
+            ),
+            url='engineReplaceModel',
         ),
                 field=None,
                 is_static=False,
@@ -815,7 +825,8 @@ DUMP_PARTIAL = [
                     "model": """The model / object ID number you want to reset the LOD distance of. """
                 },
                 result='returns true if the lod distance was reset to default, or false if the model argument is incorrect, or the lod distance hasnt been changed.' ,
-            )
+            ),
+            url='engineResetModelLODDistance',
         ),
                 field=None,
                 is_static=True,
@@ -884,7 +895,8 @@ DUMP_PARTIAL = [
                     "modelID": """The ID of the model to restore the model of """
                 },
                 result='returns true if this function succeeds, false or nil if it fails for some reason.' ,
-            )
+            ),
+            url='engineRestoreCOL',
         ),
                 field=None,
                 is_static=True,
@@ -937,7 +949,8 @@ DUMP_PARTIAL = [
                     "modelID": """The model ID to restore the visuals of """
                 },
                 result='returns true if the model was successfully restored, false or nil if it failed for some reason.' ,
-            )
+            ),
+            url='engineRestoreModel',
         ),
                 field=None,
                 is_static=True,
@@ -1025,7 +1038,8 @@ DUMP_PARTIAL = [
                     "force": """If set to true, ignores the clients preferences. """
                 },
                 result='returns true if the function executed successfully, false otherwise.' ,
-            )
+            ),
+            url='engineSetAsynchronousLoading',
         ),
                 field=None,
                 is_static=True,
@@ -1089,7 +1103,8 @@ DUMP_PARTIAL = [
                     "distance": """New LOD distance value in San Andreas units. """
                 },
                 result='returns true if the function executed succesfully, false otherwise.' ,
-            )
+            ),
+            url='engineSetModelLODDistance',
         ),
                 field=None,
                 is_static=True,

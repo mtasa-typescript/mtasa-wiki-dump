@@ -106,7 +106,8 @@ DUMP_PARTIAL = [
                     "seconds": """The amount of seconds the player will be banned from the server for. This can be 0 for an infinite amount of time. """
                 },
                 result='returns the new ban if the ip/username/serial was banned successfully, false if invalid arguments are specified.' ,
-            )
+            ),
+            url='addBan',
         )
         ],
         client=[
@@ -218,7 +219,8 @@ DUMP_PARTIAL = [
                     "seconds": """The amount of seconds the player will be banned from the server for. This can be 0 for an infinite amount of time. """
                 },
                 result='returns a ban object if banned successfully, or false if unsuccessful.' ,
-            )
+            ),
+            url='banPlayer',
         )
         ],
         client=[
@@ -264,7 +266,8 @@ DUMP_PARTIAL = [
                     "theBan": """The ban you want to return the admin of. """
                 },
                 result='returns a string of the admin if everything was successful, false if invalid arguments are specified if there was no admin specified for the ban.' ,
-            )
+            ),
+            url='getBanAdmin',
         )
         ],
         client=[
@@ -310,7 +313,8 @@ DUMP_PARTIAL = [
                     "theBan": """The ban in which you want to return the IP of. """
                 },
                 result='returns a string of the ip if everything was successful, false if invalid arguments are specified if there was no ip specified for the ban.' ,
-            )
+            ),
+            url='getBanIP',
         )
         ],
         client=[
@@ -356,7 +360,8 @@ DUMP_PARTIAL = [
                     "theBan": """The ban element which nickname you want to return. """
                 },
                 result='returns a string of the nickname if everything was successfull, false if invalid arguments are specified if there was no nickname specified for the ban element.' ,
-            )
+            ),
+            url='getBanNick',
         )
         ],
         client=[
@@ -402,7 +407,8 @@ DUMP_PARTIAL = [
                     "theBan": """The ban in which you want to return the reason of. """
                 },
                 result='returns a string of the reason if everything was successful, false if invalid arguments are specified if there was no reason specified for the ban.' ,
-            )
+            ),
+            url='getBanReason',
         )
         ],
         client=[
@@ -439,7 +445,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a table containing all the bans.' ,
-            )
+            ),
+            url='getBans',
         )
         ],
         client=[
@@ -485,7 +492,8 @@ DUMP_PARTIAL = [
                     "theBan": """The ban you want to retrieve the serial of. """
                 },
                 result='returns a string of the serial if everything was successful, false if invalid arguments are specified or if there was no serial specified for the ban.' ,
-            )
+            ),
+            url='getBanSerial',
         )
         ],
         client=[
@@ -531,7 +539,8 @@ DUMP_PARTIAL = [
                     "theBan": """The ban of which you wish to retrieve the time of. """
                 },
                 result='* returns an integer of the banning time in the format of seconds from the year 1970.  use in conjunction with getrealtime in order to retrieve detailed information.\n* returns false if invalid arguments were specified or if there was no banning time specified for the ban.' ,
-            )
+            ),
+            url='getBanTime',
         )
         ],
         client=[
@@ -577,7 +586,8 @@ DUMP_PARTIAL = [
                     "theBan": """The ban in which you wish to retrieve the username of. """
                 },
                 result='returns a string of the username if everything was successful, false if invalid arguments are specified if there was no username specified for the ban.' ,
-            )
+            ),
+            url='getBanUsername',
         )
         ],
         client=[
@@ -623,7 +633,8 @@ DUMP_PARTIAL = [
                     "theBan": """The ban in which you wish to retrieve the unban time of. """
                 },
                 result='* returns an integer of the unbanning time in the format of seconds from the year 1970.  use in conjunction with getrealtime in order to retrieve detailed information.\n* returns false if invalid arguments are specified or if there was no unbanning time specified for the ban.' ,
-            )
+            ),
+            url='getUnbanTime',
         )
         ],
         client=[
@@ -669,7 +680,8 @@ DUMP_PARTIAL = [
                     "theBan": """The value to check """
                 },
                 result='returns true if the value is a ban, false otherwise.' ,
-            )
+            ),
+            url='isBan',
         )
         ],
         client=[
@@ -737,7 +749,8 @@ DUMP_PARTIAL = [
                     "reason": """The reason for the kick. (Maximum 64 characters before 1.5.8, Maximum 128 characters after 1.5.8) """
                 },
                 result='returns true if the player was kicked succesfully, false if invalid arguments are specified.' ,
-            )
+            ),
+            url='kickPlayer',
         )
         ],
         client=[
@@ -774,7 +787,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the ban list was reloaded successfully, false otherwise.' ,
-            )
+            ),
+            url='reloadBans',
         )
         ],
         client=[
@@ -831,7 +845,8 @@ DUMP_PARTIAL = [
                     "responsibleElement": """The element that is responsible for removing the ban element. This can be a player or the root (getRootElement()). """
                 },
                 result='returns true if the ban was removed succesfully, false if invalid arguments are specified.' ,
-            )
+            ),
+            url='removeBan',
         )
         ],
         client=[
@@ -888,7 +903,8 @@ DUMP_PARTIAL = [
                     "theAdmin": """The new admin. """
                 },
                 result='returns true if changed, false otherwise.' ,
-            )
+            ),
+            url='setBanAdmin',
         )
         ],
         client=[
@@ -945,7 +961,8 @@ DUMP_PARTIAL = [
                     "theNick": """A string representing the nick you want to set the ban to. """
                 },
                 result='returns true if changed, false otherwise.' ,
-            )
+            ),
+            url='setBanNick',
         )
         ],
         client=[
@@ -1002,7 +1019,8 @@ DUMP_PARTIAL = [
                     "theReason": """the new reason (max 60 characters). """
                 },
                 result='returns true if the new reason was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setBanReason',
         )
         ],
         client=[
@@ -1059,7 +1077,8 @@ DUMP_PARTIAL = [
                     "theTime": """the new unban time """
                 },
                 result='returns true if changed successfully, false otherwise.' ,
-            )
+            ),
+            url='setUnbanTime',
         )
         ],
         client=[

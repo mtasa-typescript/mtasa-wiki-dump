@@ -48,7 +48,8 @@ DUMP_PARTIAL = [
                     "clearFor": """The player whose chat is to be cleared. By default, this is set to the root element, which will affect all players. """
                 },
                 result='returns true if the players chat was cleared successfully, false otherwise.' ,
-            )
+            ),
+            url='clearChatBox',
         )
         ],
         client=[
@@ -80,7 +81,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the players chat was cleared successfully, false otherwise.' ,
-            )
+            ),
+            url='clearChatBox',
         )
         ],
     ),
@@ -117,7 +119,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='always returns true.' ,
-            )
+            ),
+            url='clearDebugBox',
         )
         ],
     ),
@@ -154,7 +157,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the chat is visible, false otherwise.' ,
-            )
+            ),
+            url='isChatVisible',
         )
         ],
     ),
@@ -253,7 +257,8 @@ DUMP_PARTIAL = [
 Note: The #RRGGBB format must contain capital letters a-f is not acceptable but A-F is. Default RGB values in this format are: '#E7D9B0'. """
                 },
                 result='' ,
-            )
+            ),
+            url='outputChatBox',
         )
         ],
         client=[
@@ -339,7 +344,8 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
 Note: The #RRGGBB format must contain capital letters a-f is not acceptable but A-F is. Default RGB values in this format are: '#E7D9B0'. """
                 },
                 result='' ,
-            )
+            ),
+            url='outputChatBox',
         )
         ],
     ),
@@ -393,7 +399,8 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                     "visibleTo": """This specifies who the chat is visible to. Any players in this element will see the chat message. See visibility. """
                 },
                 result='' ,
-            )
+            ),
+            url='outputConsole',
         )
         ],
         client=[
@@ -434,7 +441,8 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                     "text": """The text string that you wish to send to the console window """
                 },
                 result='' ,
-            )
+            ),
+            url='outputConsole',
         )
         ],
     ),
@@ -526,7 +534,8 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                     "blue": """The amount of blue in the color of the text. Default value is 255. """
                 },
                 result='returns true if the debug message was successfully output, false if invalid arguments are specified.' ,
-            )
+            ),
+            url='outputDebugString',
         )
         ],
         client=[
@@ -616,7 +625,8 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                     "blue": """The amount of blue in the color of the text. Default value is 255. """
                 },
                 result='returns true if the debug message was successfully output, false if invalid arguments are specified.' ,
-            )
+            ),
+            url='outputDebugString',
         )
         ],
     ),
@@ -659,7 +669,8 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                     "text": """The text to be output to the log. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='outputServerLog',
         )
         ],
         client=[
@@ -727,7 +738,8 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                     "inputBlocked": """A boolean value determining whether chat input is blocked/hidden, regardless of chat visibility. If unset, this will keep the default behaviour prior to r20898 (true when chat is hidden, false when chat is visible). """
                 },
                 result='returns true if the players chat was shown or hidden successfully, false otherwise.' ,
-            )
+            ),
+            url='showChat',
         )
         ],
         client=[
@@ -779,7 +791,8 @@ Note: The #RRGGBB format must contain capital letters a-f is not acceptable but 
                     "inputBlocked": """A boolean value determining whether chat input is blocked/hidden, regardless of chat visibility. If unset, this will keep the default behaviour prior to r20898 (true when chat is hidden, false when chat is visible). """
                 },
                 result='returns true if the players chat was shown or hidden successfully, false otherwise.' ,
-            )
+            ),
+            url='showChat',
         )
         ],
     )

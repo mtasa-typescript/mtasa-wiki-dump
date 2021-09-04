@@ -89,7 +89,8 @@ DUMP_PARTIAL = [
                     "theMarker": """: The marker that you wish to retrieve the color of. """
                 },
                 result='returns four ints corresponding to the amount of red, green, blue and alpha (respectively) of the marker, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getMarkerColor',
         ),
                 field=None,
                 is_static=False,
@@ -149,7 +150,8 @@ DUMP_PARTIAL = [
                     "theMarker": """: The marker that you wish to retrieve the color of. """
                 },
                 result='returns four ints corresponding to the amount of red, green, blue and alpha (respectively) of the marker, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getMarkerColor',
         ),
                 field=None,
                 is_static=False,
@@ -207,7 +209,8 @@ DUMP_PARTIAL = [
                     "theMarker": """: A marker element referencing the specified marker. """
                 },
                 result='returns false if the marker passed is invalid or a string containing one of the following:\n* none: no icon\n* arrow: arrow icon\n* finish: finish (end-race) icon' ,
-            )
+            ),
+            url='getMarkerIcon',
         ),
                 field=FunctionOOPField(
                                 name='icon',
@@ -263,7 +266,8 @@ DUMP_PARTIAL = [
                     "theMarker": """: A marker element referencing the specified marker. """
                 },
                 result='returns false if the marker passed is invalid or a string containing one of the following:\n* none: no icon\n* arrow: arrow icon\n* finish: finish (end-race) icon' ,
-            )
+            ),
+            url='getMarkerIcon',
         ),
                 field=FunctionOOPField(
                                 name='icon',
@@ -321,7 +325,8 @@ DUMP_PARTIAL = [
                     "myMarker": """: The marker that you wish to retrieve the size of. """
                 },
                 result='returns a float containing the size of the specified marker.' ,
-            )
+            ),
+            url='getMarkerSize',
         ),
                 field=FunctionOOPField(
                                 name='size',
@@ -377,7 +382,8 @@ DUMP_PARTIAL = [
                     "myMarker": """: The marker that you wish to retrieve the size of. """
                 },
                 result='returns a float containing the size of the specified marker.' ,
-            )
+            ),
+            url='getMarkerSize',
         ),
                 field=FunctionOOPField(
                                 name='size',
@@ -443,7 +449,8 @@ DUMP_PARTIAL = [
                     "theMarker": """The marker you wish to retrieve the target position of. """
                 },
                 result='returns three floats if a target is set, or false in the first variable and nil in the two others if the marker is invalid or no target is set.' ,
-            )
+            ),
+            url='getMarkerTarget',
         ),
                 field=FunctionOOPField(
                                 name='target',
@@ -515,7 +522,8 @@ DUMP_PARTIAL = [
                     "theMarker": """The marker you wish to retrieve the target position of. """
                 },
                 result='returns three floats if a target is set, or false in the first variable and nil in the two others if the marker is invalid or no target is set.' ,
-            )
+            ),
+            url='getMarkerTarget',
         ),
                 field=FunctionOOPField(
                                 name='target',
@@ -581,7 +589,8 @@ DUMP_PARTIAL = [
                     "theMarker": """: A marker element referencing the specified marker. """
                 },
                 result='* returns one of the following strings:\nif an invalid marker is specified, false is returned.' ,
-            )
+            ),
+            url='getMarkerType',
         ),
                 field=FunctionOOPField(
                                 name='markerType',
@@ -637,7 +646,8 @@ DUMP_PARTIAL = [
                     "theMarker": """: A marker element referencing the specified marker. """
                 },
                 result='* returns one of the following strings:\nif an invalid marker is specified, false is returned.' ,
-            )
+            ),
+            url='getMarkerType',
         ),
                 field=FunctionOOPField(
                                 name='markerType',
@@ -739,7 +749,8 @@ DUMP_PARTIAL = [
                     "a": """The amount of alpha in the final color (0 to 255). """
                 },
                 result='' ,
-            )
+            ),
+            url='setMarkerColor',
         ),
                 field=None,
                 is_static=False,
@@ -831,7 +842,8 @@ DUMP_PARTIAL = [
                     "a": """The amount of alpha in the final color (0 to 255). """
                 },
                 result='' ,
-            )
+            ),
+            url='setMarkerColor',
         ),
                 field=None,
                 is_static=False,
@@ -895,7 +907,8 @@ DUMP_PARTIAL = [
                     "finish": """: Finish icon (at end of race) """
                 },
                 result='' ,
-            )
+            ),
+            url='setMarkerIcon',
         ),
                 field=FunctionOOPField(
                                 name='icon',
@@ -965,7 +978,8 @@ DUMP_PARTIAL = [
                     "finish": """: Finish icon (at end of race) """
                 },
                 result='' ,
-            )
+            ),
+            url='setMarkerIcon',
         ),
                 field=FunctionOOPField(
                                 name='icon',
@@ -1034,7 +1048,8 @@ DUMP_PARTIAL = [
                     "size": """A float representing new size of the marker. """
                 },
                 result='returns true if successful, false if failed.' ,
-            )
+            ),
+            url='setMarkerSize',
         ),
                 field=FunctionOOPField(
                                 name='size',
@@ -1101,7 +1116,8 @@ DUMP_PARTIAL = [
                     "size": """A float representing new size of the marker. """
                 },
                 result='returns true if successful, false if failed.' ,
-            )
+            ),
+            url='setMarkerSize',
         ),
                 field=FunctionOOPField(
                                 name='size',
@@ -1192,7 +1208,8 @@ DUMP_PARTIAL = [
                     "z": """The z axis of the coordinate to target the marker at """
                 },
                 result='returns true if target was set, false otherwise.' ,
-            )
+            ),
+            url='setMarkerTarget',
         ),
                 field=FunctionOOPField(
                                 name='target',
@@ -1281,7 +1298,8 @@ DUMP_PARTIAL = [
                     "z": """The z axis of the coordinate to target the marker at """
                 },
                 result='returns true if target was set, false otherwise.' ,
-            )
+            ),
+            url='setMarkerTarget',
         ),
                 field=FunctionOOPField(
                                 name='target',
@@ -1350,7 +1368,8 @@ DUMP_PARTIAL = [
                     "markerType": """: A string denoting the marker type. Valid values are: """
                 },
                 result='returns true if the marker type was changed, false if it wasnt or marker values were invalid.' ,
-            )
+            ),
+            url='setMarkerType',
         ),
                 field=FunctionOOPField(
                                 name='markerType',
@@ -1417,7 +1436,8 @@ DUMP_PARTIAL = [
                     "markerType": """: A string denoting the marker type. Valid values are: """
                 },
                 result='returns true if the marker type was changed, false if it wasnt or marker values were invalid.' ,
-            )
+            ),
+            url='setMarkerType',
         ),
                 field=FunctionOOPField(
                                 name='markerType',

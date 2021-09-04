@@ -272,7 +272,8 @@ DUMP_PARTIAL = [
                     "font": """Either a custom DX font element or the name of a built-in dx font: """
                 },
                 result='returns an integer of the height of the text.' ,
-            )
+            ),
+            url='dxGetFontHeight',
         ),
                 field=None,
                 is_static=False,
@@ -333,7 +334,8 @@ DUMP_PARTIAL = [
                     "material": """The material element whose size is to be gotten """
                 },
                 result='returns two ints representing the width and height in pixels of the material, or false if an invalid parameter was passed to the function.\nif the material is a volume texture, this function will return three ints representing the width, height and depth.' ,
-            )
+            ),
+            url='dxGetMaterialSize',
         ),
                 field=None,
                 is_static=False,
@@ -489,7 +491,8 @@ DUMP_PARTIAL = [
 Returns two floats representing the width and height of the text in pixels. """
                 },
                 result='returns two floats representing the width and height of the text in pixels.' ,
-            )
+            ),
+            url='dxGetTextSize',
         ),
                 field=None,
                 is_static=False,
@@ -598,7 +601,8 @@ By default the pixels from the whole texture is returned. To get only a portion 
                     "height": """Rectangle height """
                 },
                 result='returns a plain format pixels string if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='dxGetTexturePixels',
         ),
                 field=None,
                 is_static=False,
@@ -685,7 +689,8 @@ By default the pixels from the whole texture is returned. To get only a portion 
 Returns the float of the width of the text (in pixels). """
                 },
                 result='returns the float of the width of the text (in pixels).' ,
-            )
+            ),
+            url='dxGetTextWidth',
         ),
                 field=None,
                 is_static=False,
@@ -781,7 +786,8 @@ Returns the float of the width of the text (in pixels). """
                     "clear": """If set to true, the render target will also be cleared. """
                 },
                 result='returns true if the render target was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='dxSetRenderTarget',
         ),
                 field=None,
                 is_static=False,
@@ -856,7 +862,8 @@ Returns the float of the width of the text (in pixels). """
                     "tessellationY": """The number of sub-division points along the Y axis. Range is 1 to 500. """
                 },
                 result='returns true if the shader elements tessellation was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='dxSetShaderTessellation',
         ),
                 field=None,
                 is_static=False,
@@ -1020,7 +1027,8 @@ Returns the float of the width of the text (in pixels). """
 To convert screen relative units into screen pixel coordinates, ''multiply'' by the screen size. Conversely, to convert screen pixel coordinates to screen relative units, '''''divide''''' by the screen size. """
                 },
                 result='returns true if the shader elements transform was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='dxSetShaderTransform',
         ),
                 field=None,
                 is_static=False,
@@ -1095,7 +1103,8 @@ To convert screen relative units into screen pixel coordinates, ''multiply'' by 
                     "value": """The value to set, which can be a texture, a bool, a number or a list of numbers(max 16 floats(numbers)) """
                 },
                 result='returns true if the shader elements parameter was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='dxSetShaderValue',
         ),
                 field=None,
                 is_static=False,
@@ -1178,7 +1187,8 @@ To convert screen relative units into screen pixel coordinates, ''multiply'' by 
                     "border-color": """If textureEdge is set to border, you are able to define a border color here """
                 },
                 result='' ,
-            )
+            ),
+            url='dxSetTextureEdge',
         ),
                 field=None,
                 is_static=False,
@@ -1298,7 +1308,8 @@ By default the pixels are set starting at the top left corner of the texture. To
                     "height": """Rectangle height """
                 },
                 result='returns a string if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='dxSetTexturePixels',
         ),
                 field=None,
                 is_static=False,
@@ -1362,7 +1373,8 @@ By default the pixels are set starting at the top left corner of the texture. To
                     "resampleNow": """A bool to indicate if the screen should be captured immediately. The default is false which means the screen from the end of the previous frame is used (better for performance and consistency). Use true for layering fullscreen effects. """
                 },
                 result='returns true if the screen was successfully captured, false otherwise.' ,
-            )
+            ),
+            url='dxUpdateScreenSource',
         ),
                 field=None,
                 is_static=False,

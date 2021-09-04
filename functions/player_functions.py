@@ -59,7 +59,8 @@ DUMP_PARTIAL = [
                     "forceOn": """: A boolean value representing whether or not the players radar map will be forced on """
                 },
                 result='' ,
-            )
+            ),
+            url='forcePlayerMap',
         )
         ],
         client=[
@@ -100,7 +101,8 @@ DUMP_PARTIAL = [
                     "forceOn": """: A boolean value representing whether or not the players radar map will be forced on """
                 },
                 result='' ,
-            )
+            ),
+            url='forcePlayerMap',
         )
         ],
     ),
@@ -134,7 +136,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a table of all the alive players.' ,
-            )
+            ),
+            url='getAlivePlayers',
         )
         ],
         client=[
@@ -171,7 +174,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a table of all the dead players.' ,
-            )
+            ),
+            url='getDeadPlayers',
         )
         ],
         client=[
@@ -211,7 +215,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the local player element.' ,
-            )
+            ),
+            url='getLocalPlayer',
         )
         ],
     ),
@@ -254,7 +259,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player whose anti-cheat info you want to check. """
                 },
                 result='returns a table with the following entries:\n* detectedac: a string containing a comma separated list of anti-cheat_guide|anti-cheat codes the player has triggered.\n*d3d9size: a number representing the file size of any custom d3d9.dll the player may have installed.\n*d3d9md5: a string containing the md5 of any custom d3d9.dll the player may have installed.\n*d3d9sha256: a string containing the sha256 of any custom d3d9.dll the player may have installed.' ,
-            )
+            ),
+            url='getPlayerACInfo',
         )
         ],
         client=[
@@ -311,7 +317,8 @@ DUMP_PARTIAL = [
                     "key": """The name of the key. """
                 },
                 result='this function returns a string containing the requested value if a valid key was specified or false otherwise.' ,
-            )
+            ),
+            url='getPlayerAnnounceValue',
         )
         ],
         client=[
@@ -357,7 +364,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player whose blur level you want to check. """
                 },
                 result='returns the players blur level if successful, false if an invalid player was given.' ,
-            )
+            ),
+            url='getPlayerBlurLevel',
         )
         ],
         client=[
@@ -389,7 +397,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the local blur level.' ,
-            )
+            ),
+            url='getPlayerBlurLevel',
         )
         ],
     ),
@@ -423,7 +432,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the number of players connected to the server as an int.' ,
-            )
+            ),
+            url='getPlayerCount',
         )
         ],
         client=[
@@ -469,7 +479,8 @@ DUMP_PARTIAL = [
                     "playerName": """: A string containing the name of the player you want to reference """
                 },
                 result='returns a player element for the player with the nickname provided. if there is no player with that name, false is returned.' ,
-            )
+            ),
+            url='getPlayerFromName',
         )
         ],
         client=[
@@ -510,7 +521,8 @@ DUMP_PARTIAL = [
                     "playerName": """: A string containing the name of the player you want to reference """
                 },
                 result='returns a player element for the player with the nickname provided. if there is no player with that name, false is returned.' ,
-            )
+            ),
+            url='getPlayerFromName',
         )
         ],
     ),
@@ -553,7 +565,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """: The player you wish to get the idle time of. """
                 },
                 result='returns the amount of time in milliseconds that a player has been idle, false otherwise.' ,
-            )
+            ),
+            url='getPlayerIdleTime',
         )
         ],
         client=[
@@ -599,7 +612,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player element you want to get the IP of. """
                 },
                 result='returns a string containing the requested playerss ip, or false if the player passed to the function is invalid.' ,
-            )
+            ),
+            url='getPlayerIP',
         )
         ],
         client=[
@@ -651,7 +665,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='* if the players map is showing, it returns four integers: minx, miny, maxx, maxy.  these are absolute position coordinates of where the players map is drawn on the screen.\n** minx, miny represent the world coordinates -3000, 3000 (upper-left corner of the world map).\n** maxx, maxy represent the world coordinates 3000, -3000 (lower-right corner of the world map).\n** negative values may be returned if these coordinates are off screen.\n* if the map is not showing, a false boolean value is returned.' ,
-            )
+            ),
+            url='getPlayerMapBoundingBox',
         )
         ],
     ),
@@ -694,7 +709,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player you wish the retrieve the amount of money from. """
                 },
                 result='returns an integer with the amount of money the specified player has, false if the player is invalid.' ,
-            )
+            ),
+            url='getPlayerMoney',
         )
         ],
         client=[
@@ -726,7 +742,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns an integer with the amount of money the local player has.' ,
-            )
+            ),
+            url='getPlayerMoney',
         )
         ],
     ),
@@ -769,7 +786,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """the player you want to get the name of """
                 },
                 result='returns a string containing the requested players name, or false if the player passed to the function is invalid.' ,
-            )
+            ),
+            url='getPlayerName',
         )
         ],
         client=[
@@ -810,7 +828,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """the player you want to get the name of """
                 },
                 result='returns a string containing the requested players name, or false if the player passed to the function is invalid.' ,
-            )
+            ),
+            url='getPlayerName',
         )
         ],
     ),
@@ -861,7 +880,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player whose name tag RGB color values you wish to retrieve. """
                 },
                 result='returns red, green and blue values if an existent player was specified, false otherwise.' ,
-            )
+            ),
+            url='getPlayerNametagColor',
         )
         ],
         client=[
@@ -910,7 +930,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player whose name tag RGB color values you wish to retrieve. """
                 },
                 result='returns red, green and blue values if an existent player was specified, false otherwise.' ,
-            )
+            ),
+            url='getPlayerNametagColor',
         )
         ],
     ),
@@ -953,7 +974,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The person whose name tag you want to retrieve """
                 },
                 result='returns a string with the nametag text, false if the player is invalid.' ,
-            )
+            ),
+            url='getPlayerNametagText',
         )
         ],
         client=[
@@ -994,7 +1016,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The person whose name tag you want to retrieve """
                 },
                 result='returns a string with the nametag text, false if the player is invalid.' ,
-            )
+            ),
+            url='getPlayerNametagText',
         )
         ],
     ),
@@ -1037,7 +1060,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """: The player whose ping you want to determine. """
                 },
                 result='returns the ping as an int, or false if the player is invalid.' ,
-            )
+            ),
+            url='getPlayerPing',
         )
         ],
         client=[
@@ -1078,7 +1102,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """: The player whose ping you want to determine. """
                 },
                 result='returns the ping as an int, or false if the player is invalid.' ,
-            )
+            ),
+            url='getPlayerPing',
         )
         ],
     ),
@@ -1121,7 +1146,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The person whose debug script level you want """
                 },
                 result='returns an int with the player debug script level, false if the player is invalid.' ,
-            )
+            ),
+            url='getPlayerScriptDebugLevel',
         )
         ],
         client=[
@@ -1167,7 +1193,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """A player object referencing the specified player. """
                 },
                 result='returns the serial as a string if it was found, false otherwise.' ,
-            )
+            ),
+            url='getPlayerSerial',
         )
         ],
         client=[
@@ -1213,7 +1240,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player whose client version you wish to get. """
                 },
                 result='returns a string containing the client version, or false if the player is invalid.' ,
-            )
+            ),
+            url='getPlayerVersion',
         )
         ],
         client=[
@@ -1259,7 +1287,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player whose wanted level you wish to get """
                 },
                 result='' ,
-            )
+            ),
+            url='getPlayerWantedLevel',
         )
         ],
         client=[
@@ -1291,7 +1320,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='getPlayerWantedLevel',
         )
         ],
     ),
@@ -1325,7 +1355,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a random player, false if the server is empty.' ,
-            )
+            ),
+            url='getRandomPlayer',
         )
         ],
         client=[
@@ -1382,7 +1413,8 @@ DUMP_PARTIAL = [
                     "amount": """a positive integer number specifying the amount of money to give to the player. """
                 },
                 result='' ,
-            )
+            ),
+            url='givePlayerMoney',
         )
         ],
         client=[
@@ -1423,7 +1455,8 @@ DUMP_PARTIAL = [
                     "amount": """a positive integer number specifying the amount of money to give to the player. """
                 },
                 result='' ,
-            )
+            ),
+            url='givePlayerMoney',
         )
         ],
     ),
@@ -1482,7 +1515,8 @@ DUMP_PARTIAL = [
                     "crosshair": """The weapon crosshair and sniper scope """
                 },
                 result='returns true if the component is visable, false if not.' ,
-            )
+            ),
+            url='isPlayerHudComponentVisible',
         )
         ],
     ),
@@ -1525,7 +1559,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """A player object referencing the specified player """
                 },
                 result='returns true if the players radar map is forced on, false otherwise.' ,
-            )
+            ),
+            url='isPlayerMapForced',
         )
         ],
         client=[
@@ -1557,7 +1592,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the local players radar map is forced on, false otherwise.' ,
-            )
+            ),
+            url='isPlayerMapForced',
         )
         ],
     ),
@@ -1594,7 +1630,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the player has the map visible, false otherwise.' ,
-            )
+            ),
+            url='isPlayerMapVisible',
         )
         ],
     ),
@@ -1637,7 +1674,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player you are checking. """
                 },
                 result='returns true if the player is muted and false otherwise.' ,
-            )
+            ),
+            url='isPlayerMuted',
         )
         ],
         client=[
@@ -1683,7 +1721,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player whose current name tag condition you want to check """
                 },
                 result='returns true if the players name tag is being shown, false otherwise.' ,
-            )
+            ),
+            url='isPlayerNametagShowing',
         )
         ],
         client=[
@@ -1724,7 +1763,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player whose current name tag condition you want to check """
                 },
                 result='returns true if the players name tag is being shown, false otherwise.' ,
-            )
+            ),
+            url='isPlayerNametagShowing',
         )
         ],
     ),
@@ -1758,7 +1798,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the voice is enabled on the server, false otherwise.' ,
-            )
+            ),
+            url='isVoiceEnabled',
         )
         ],
         client=[
@@ -1790,7 +1831,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the voice is enabled on the server, false otherwise.' ,
-            )
+            ),
+            url='isVoiceEnabled',
         )
         ],
     ),
@@ -1866,7 +1908,8 @@ DUMP_PARTIAL = [
                     "serverPassword": """The password for the server if its protected """
                 },
                 result='returns true if the player was redirected successfully, false if bad arguments were passed.' ,
-            )
+            ),
+            url='redirectPlayer',
         )
         ],
         client=[
@@ -1912,7 +1955,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """: A player object referencing the specified player """
                 },
                 result='returns true if the ac info will be resent, false otherwise.' ,
-            )
+            ),
+            url='resendPlayerACInfo',
         )
         ],
         client=[
@@ -1958,7 +2002,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """: A player object referencing the specified player """
                 },
                 result='returns true if the mod info will be resent, false otherwise.' ,
-            )
+            ),
+            url='resendPlayerModInfo',
         )
         ],
         client=[
@@ -2026,7 +2071,8 @@ DUMP_PARTIAL = [
                     "value": """The value you wish to store. """
                 },
                 result='returns true if the value was set succesfully, false otherwise.' ,
-            )
+            ),
+            url='setPlayerAnnounceValue',
         )
         ],
         client=[
@@ -2083,7 +2129,8 @@ DUMP_PARTIAL = [
                     "level": """The level to set the blur to (default: 36) """
                 },
                 result='' ,
-            )
+            ),
+            url='setPlayerBlurLevel',
         )
         ],
         client=[
@@ -2124,7 +2171,8 @@ DUMP_PARTIAL = [
                     "level": """The level to set the blur to (default: 36) """
                 },
                 result='' ,
-            )
+            ),
+            url='setPlayerBlurLevel',
         )
         ],
     ),
@@ -2203,7 +2251,8 @@ DUMP_PARTIAL = [
                     "show": """Specify if the component should be shown (true) or hidden (false) """
                 },
                 result='' ,
-            )
+            ),
+            url='setPlayerHudComponentVisible',
         )
         ],
         client=[
@@ -2269,7 +2318,8 @@ DUMP_PARTIAL = [
                     "show": """Specify if the component should be shown (true) or hidden (false) """
                 },
                 result='' ,
-            )
+            ),
+            url='setPlayerHudComponentVisible',
         )
         ],
     ),
@@ -2334,7 +2384,8 @@ DUMP_PARTIAL = [
                     "instant": """If set to true money will be set instantly without counting up/down like in singleplayer.}} """
                 },
                 result='' ,
-            )
+            ),
+            url='setPlayerMoney',
         )
         ],
         client=[
@@ -2386,7 +2437,8 @@ DUMP_PARTIAL = [
                     "instant": """If set to true money will be set instantly without counting up/down like in singleplayer.}} """
                 },
                 result='' ,
-            )
+            ),
+            url='setPlayerMoney',
         )
         ],
     ),
@@ -2440,7 +2492,8 @@ DUMP_PARTIAL = [
                     "state": """Use true to mute and false to unmute the player. """
                 },
                 result='returns true if the player was successfully muted or unmuted, false otherwise.' ,
-            )
+            ),
+            url='setPlayerMuted',
         )
         ],
         client=[
@@ -2497,7 +2550,8 @@ DUMP_PARTIAL = [
                     "newName": """the new name to set for the player. """
                 },
                 result='returns true if the player name was changed succesfully, false if invalid arguments are specified.' ,
-            )
+            ),
+            url='setPlayerName',
         )
         ],
         client=[
@@ -2577,7 +2631,8 @@ DUMP_PARTIAL = [
                     "false": """If false is specified instead of the colors, the nametag color will reset to defaulting to your team color. """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='setPlayerNametagColor',
         )
         ],
         client=[
@@ -2652,7 +2707,8 @@ DUMP_PARTIAL = [
                     "false": """If false is specified instead of the colors, the nametag color will reset to defaulting to your team color. """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='setPlayerNametagColor',
         )
         ],
     ),
@@ -2706,7 +2762,8 @@ DUMP_PARTIAL = [
                     "showing": """Use true or false to show/hide the tag """
                 },
                 result='returns true if successful, false otherwise' ,
-            )
+            ),
+            url='setPlayerNametagShowing',
         )
         ],
         client=[
@@ -2758,7 +2815,8 @@ DUMP_PARTIAL = [
                     "showing": """Use true or false to show/hide the tag """
                 },
                 result='returns true if successful, false otherwise' ,
-            )
+            ),
+            url='setPlayerNametagShowing',
         )
         ],
     ),
@@ -2812,7 +2870,8 @@ DUMP_PARTIAL = [
                     "text": """The new nickname text that will be displayed """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setPlayerNametagText',
         )
         ],
         client=[
@@ -2864,7 +2923,8 @@ DUMP_PARTIAL = [
                     "text": """The new nickname text that will be displayed """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setPlayerNametagText',
         )
         ],
     ),
@@ -2918,7 +2978,8 @@ DUMP_PARTIAL = [
                     "level": """0: close debug console, 1: only errors, 2: errors and warnings, 3: errors, warnings and info messages """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setPlayerScriptDebugLevel',
         )
         ],
         client=[
@@ -2975,7 +3036,8 @@ DUMP_PARTIAL = [
                     "broadcastTo": """Element or table of elements who should hear the voice from this player """
                 },
                 result='returns true if the value was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setPlayerVoiceBroadcastTo',
         )
         ],
         client=[
@@ -3032,7 +3094,8 @@ DUMP_PARTIAL = [
                     "ignoreFrom": """Element or table of elements which the player should not hear voices from. Use nil if no one should be ignored. """
                 },
                 result='returns true if the value was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setPlayerVoiceIgnoreFrom',
         )
         ],
         client=[
@@ -3089,7 +3152,8 @@ DUMP_PARTIAL = [
                     "stars": """An integer from 0 to 6 representing the wanted level """
                 },
                 result='returns true if the wanted level was set successfully, false if any of the arguments were invalid.' ,
-            )
+            ),
+            url='setPlayerWantedLevel',
         )
         ],
         client=[
@@ -3223,7 +3287,8 @@ DUMP_PARTIAL = [
                     "theTeam": """the team the player will join. """
                 },
                 result='returns true if the player was spawned successfully, false otherwise.' ,
-            )
+            ),
+            url='spawnPlayer',
         )
         ],
         client=[
@@ -3280,7 +3345,8 @@ DUMP_PARTIAL = [
                     "amount": """an integer number specifying the amount of money to take from the player. """
                 },
                 result='' ,
-            )
+            ),
+            url='takePlayerMoney',
         )
         ],
         client=[
@@ -3321,7 +3387,8 @@ DUMP_PARTIAL = [
                     "amount": """an integer number specifying the amount of money to take from the player. """
                 },
                 result='' ,
-            )
+            ),
+            url='takePlayerMoney',
         )
         ],
     ),
@@ -3430,7 +3497,8 @@ DUMP_PARTIAL = [
 *'''maxPacketSize: ''' The maximum size of one packet. """
                 },
                 result='returns true if the function was successfully, false if invalid arguments are specified.' ,
-            )
+            ),
+            url='takePlayerScreenShot',
         )
         ],
         client=[

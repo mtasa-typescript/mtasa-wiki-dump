@@ -81,7 +81,8 @@ DUMP_PARTIAL = [
                     "caseSensitive": """Specifies if the command handler will ignore the case for this command name. """
                 },
                 result='' ,
-            )
+            ),
+            url='addCommandHandler',
         )
         ],
         client=[
@@ -144,7 +145,8 @@ DUMP_PARTIAL = [
                     "caseSensitive": """Specifies if the command handler will ignore the case for this command name. """
                 },
                 result='' ,
-            )
+            ),
+            url='addCommandHandler',
         )
         ],
     ),
@@ -237,7 +239,8 @@ DUMP_PARTIAL = [
                     "arguments": """The optional arguments you specified when calling bindKey (see below). """
                 },
                 result='' ,
-            )
+            ),
+            url='bindKey',
         )
         ],
         client=[
@@ -316,7 +319,8 @@ DUMP_PARTIAL = [
                     "arguments": """The optional arguments you specified when calling bindKey (see below). """
                 },
                 result='' ,
-            )
+            ),
+            url='bindKey',
         )
         ],
     ),
@@ -381,7 +385,8 @@ DUMP_PARTIAL = [
                     "args": """Additional parameters that will be passed to the handler function(s) of the command that is called, separated by spaces. """
                 },
                 result='' ,
-            )
+            ),
+            url='executeCommandHandler',
         )
         ],
         client=[
@@ -433,7 +438,8 @@ DUMP_PARTIAL = [
                     "args": """Additional parameters that will be passed to the handler function(s) of the command that is called, separated by spaces. """
                 },
                 result='' ,
-            )
+            ),
+            url='executeCommandHandler',
         )
         ],
     ),
@@ -490,7 +496,8 @@ DUMP_PARTIAL = [
                     "rawValue": """A bool indicating if it should return the raw player input value. """
                 },
                 result='returns a float between 0 and 1 indicating the amount the control is pressed.' ,
-            )
+            ),
+            url='getAnalogControlState',
         )
         ],
     ),
@@ -536,7 +543,8 @@ DUMP_PARTIAL = [
                     "command/control": """the name of a game control or a console command. See the control names page for valid controls. """
                 },
                 result='if one or more keys are bound to the specified control or console command, a table is returned indexed by the names of the keys and containing key states as values. if no keys are bound or an invalid name was passed, returns false.' ,
-            )
+            ),
+            url='getBoundKeys',
         )
         ],
     ),
@@ -579,7 +587,8 @@ DUMP_PARTIAL = [
                     "theResource": """The resource from which you wish to retrieve all command handlers. Or leave it empty to retrieve command handlers of all resources. """
                 },
                 result='returns a table containing all the commands of the given resource or a table with subtables containing the command and theresource pointer ( { command, theresource } ). see examples below if you dont understand it.' ,
-            )
+            ),
+            url='getCommandHandlers',
         )
         ],
         client=[
@@ -620,7 +629,8 @@ DUMP_PARTIAL = [
                     "theResource": """The resource from which you wish to retrieve all command handlers. Or leave it empty to retrieve command handlers of all resources. """
                 },
                 result='returns a table containing all the commands of the given resource or a table with subtables containing the command and theresource pointer ( { command, theresource } ). see examples below if you dont understand it.' ,
-            )
+            ),
+            url='getCommandHandlers',
         )
         ],
     ),
@@ -680,7 +690,8 @@ DUMP_PARTIAL = [
                     "both": """If the bound key should trigger the function when the key is pressed or released """
                 },
                 result='returns a table of the commands bound on that key.' ,
-            )
+            ),
+            url='getCommandsBoundToKey',
         )
         ],
     ),
@@ -754,7 +765,8 @@ DUMP_PARTIAL = [
 *special_control_* """
                 },
                 result='returns the state of the control, false if the control doesnt exist or if the player is dead.' ,
-            )
+            ),
+            url='getControlState',
         )
         ],
         client=[
@@ -825,7 +837,8 @@ DUMP_PARTIAL = [
                     "both": """If the bound key should trigger the function when the key is pressed or released """
                 },
                 result='' ,
-            )
+            ),
+            url='getFunctionsBoundToKey',
         )
         ],
         client=[
@@ -880,7 +893,8 @@ DUMP_PARTIAL = [
                     "both": """If the bound key should trigger the function when the key is pressed or released """
                 },
                 result='' ,
-            )
+            ),
+            url='getFunctionsBoundToKey',
         )
         ],
     ),
@@ -926,7 +940,8 @@ DUMP_PARTIAL = [
                     "command": """command what you need check. """
                 },
                 result='returns a string of first key binded to current command.' ,
-            )
+            ),
+            url='getKeyBoundToCommand',
         )
         ],
     ),
@@ -980,7 +995,8 @@ DUMP_PARTIAL = [
                     "theFunction": """The function in which you would like to check the bound key """
                 },
                 result='returns a string of the first key the function was bound to.' ,
-            )
+            ),
+            url='getKeyBoundToFunction',
         )
         ],
         client=[
@@ -1021,7 +1037,8 @@ DUMP_PARTIAL = [
                     "theFunction": """The function in which you would like to check the bound key """
                 },
                 result='returns a string of the first key the function was bound to.' ,
-            )
+            ),
+            url='getKeyBoundToFunction',
         )
         ],
     ),
@@ -1067,7 +1084,8 @@ DUMP_PARTIAL = [
                     "keyName": """The name of the key youre checking state of. See Key names. """
                 },
                 result='returns true if the specified key is pressed, false if it isnt or if an invalid key name is passed.' ,
-            )
+            ),
+            url='getKeyState',
         )
         ],
     ),
@@ -1121,7 +1139,8 @@ DUMP_PARTIAL = [
                     "control": """The control you wish to check. See control names for a list of possible controls. """
                 },
                 result='' ,
-            )
+            ),
+            url='isControlEnabled',
         )
         ],
         client=[
@@ -1162,7 +1181,8 @@ DUMP_PARTIAL = [
                     "control": """The control you wish to check. See control names for a list of possible controls. """
                 },
                 result='' ,
-            )
+            ),
+            url='isControlEnabled',
         )
         ],
     ),
@@ -1240,7 +1260,8 @@ DUMP_PARTIAL = [
                     "handler": """The function youre checking against """
                 },
                 result='returns true if the key is bound, false otherwise.' ,
-            )
+            ),
+            url='isKeyBound',
         )
         ],
         client=[
@@ -1297,7 +1318,8 @@ DUMP_PARTIAL = [
                     "handler": """the specific handler function to remove. If not specified, all handler functions for the command (from the calling resource) will be removed. This argument is only available in the server. """
                 },
                 result='returns true if the command handler was removed successfully, false if the command doesnt exist.' ,
-            )
+            ),
+            url='removeCommandHandler',
         )
         ],
         client=[
@@ -1349,7 +1371,8 @@ DUMP_PARTIAL = [
                     "handler": """the specific handler function to remove. If not specified, all handler functions for the command (from the calling resource) will be removed. This argument is only available in the server. """
                 },
                 result='returns true if the command handler was removed successfully, false if the command doesnt exist.' ,
-            )
+            ),
+            url='removeCommandHandler',
         )
         ],
     ),
@@ -1414,7 +1437,8 @@ DUMP_PARTIAL = [
                     "state": """A boolean value representing whether or not the key will be set to pressed or not. """
                 },
                 result='returns true if the control state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setControlState',
         )
         ],
         client=[
@@ -1493,7 +1517,8 @@ DUMP_PARTIAL = [
                     "mtaControls": """A boolean deciding whether the enabled parameter will affect MTAs own controls., e.g. chatbox. """
                 },
                 result='' ,
-            )
+            ),
+            url='toggleAllControls',
         )
         ],
         client=[
@@ -1556,7 +1581,8 @@ DUMP_PARTIAL = [
                     "mtaControls": """A boolean deciding whether the enabled parameter will affect MTAs own controls., e.g. chatbox. """
                 },
                 result='' ,
-            )
+            ),
+            url='toggleAllControls',
         )
         ],
     ),
@@ -1621,7 +1647,8 @@ DUMP_PARTIAL = [
                     "enabled": """A boolean value representing whether or not the key will be usable or not. """
                 },
                 result='' ,
-            )
+            ),
+            url='toggleControl',
         )
         ],
         client=[
@@ -1673,7 +1700,8 @@ DUMP_PARTIAL = [
                     "enabled": """A boolean value representing whether or not the key will be usable or not. """
                 },
                 result='' ,
-            )
+            ),
+            url='toggleControl',
         )
         ],
     ),
@@ -1754,7 +1782,8 @@ DUMP_PARTIAL = [
 Note: If you do not specify ''handler'', any instances of ''key'' being bound will be unbound, whatever function they are bound to. """
                 },
                 result='returns true if the key was unbound, false if it was not previously bound or invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='unbindKey',
         )
         ],
         client=[
@@ -1822,7 +1851,8 @@ Note: If you do not specify ''handler'', any instances of ''key'' being bound wi
 Note: If you do not specify ''handler'', any instances of ''key'' being bound will be unbound, whatever function they are bound to. """
                 },
                 result='returns true if the key was unbound, false if it was not previously bound or invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='unbindKey',
         )
         ],
     )

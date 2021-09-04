@@ -188,7 +188,8 @@ DUMP_PARTIAL = [
                     "model": """: Integer representing the projectiles model, uses default model for weaponType if not specified. """
                 },
                 result='returns a projectile element if projectile creation was successful. returns false if unable to create a projectile (wrong weapon id or projectiles limit was reached).' ,
-            )
+            ),
+            url='createProjectile',
         )
         ],
     ),
@@ -231,7 +232,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='detonateSatchels',
         )
         ],
         client=[
@@ -263,7 +265,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='detonateSatchels',
         )
         ],
     ),
@@ -309,7 +312,8 @@ DUMP_PARTIAL = [
                     "projectile": """: the projectile to get the timer of. """
                 },
                 result='returns the the time in milliseconds to detonation which depending on the projectile type will do different things:\n* grenades will explode when it hits 0\n* teargas may be a duration timer\n* both types of rockets will explode when it hits 0\n* satchels restarts so i do not think it does anything' ,
-            )
+            ),
+            url='getProjectileCounter',
         )
         ],
     ),
@@ -355,7 +359,8 @@ DUMP_PARTIAL = [
                     "theProjectile": """The projectiles| projectile element which creator you want to retrieve. """
                 },
                 result='returns the element which created the projectile if successful, false otherwise.' ,
-            )
+            ),
+            url='getProjectileCreator',
         )
         ],
     ),
@@ -401,7 +406,8 @@ DUMP_PARTIAL = [
                     "theProjectile": """The projectiles| projectile element which force you want to retrieve. """
                 },
                 result='returns a float if successful, false otherwise.' ,
-            )
+            ),
+            url='getProjectileForce',
         )
         ],
     ),
@@ -447,7 +453,8 @@ DUMP_PARTIAL = [
                     "theProjectile": """The projectiles| projectile element which target you want to retrieve. """
                 },
                 result='returns the element which is the projectiles target if the projectile is valid and can have a target (like a heat-seeking rocket), false otherwise.' ,
-            )
+            ),
+            url='getProjectileTarget',
         )
         ],
     ),
@@ -493,7 +500,8 @@ DUMP_PARTIAL = [
                     "theProjectile": """The Element/Projectile|projectile element which type you want to retrieve. """
                 },
                 result='returns an integer over the type of the projectile or false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getProjectileType',
         )
         ],
     ),
@@ -550,7 +558,8 @@ DUMP_PARTIAL = [
                     "timeToDetonate": """The time in milliseconds to detonation. """
                 },
                 result='returns true on success, false otherwise.' ,
-            )
+            ),
+            url='setProjectileCounter',
         )
         ],
     )

@@ -85,7 +85,8 @@ DUMP_PARTIAL = [
                     "theACL": """The ACL to destroy """
                 },
                 result='returns true if successfully destroyed and false if it could not be deleted (ie. its not valid).' ,
-            )
+            ),
+            url='aclDestroy',
         ),
                 field=None,
                 is_static=False,
@@ -138,7 +139,8 @@ DUMP_PARTIAL = [
                     "aclGroup": """The aclgroup element to destroy """
                 },
                 result='returns true if the acl group was successfully deleted, false if it could not be deleted for some reason (ie. invalid argument).' ,
-            )
+            ),
+            url='aclDestroyGroup',
         ),
                 field=None,
                 is_static=False,
@@ -191,7 +193,8 @@ DUMP_PARTIAL = [
                     "aclName": """The name to get the ACL belonging to """
                 },
                 result='returns the acl with that name if it could be retrieved, false/nil if the acl does not exist or it fails for some other reason.' ,
-            )
+            ),
+            url='aclGet',
         ),
                 field=None,
                 is_static=True,
@@ -244,7 +247,8 @@ DUMP_PARTIAL = [
                     "groupName": """The name to get the ACL group from """
                 },
                 result='returns the acl group if it could be found. returns false/nil if it did not exist or failed for some reason.' ,
-            )
+            ),
+            url='aclGetGroup',
         ),
                 field=None,
                 is_static=True,
@@ -297,7 +301,8 @@ DUMP_PARTIAL = [
                     "theACL": """The ACL to get the name of """
                 },
                 result='returns the name of the given acl as a string if successful. returns false/nil if unsuccessful, ie the acl is invalid.' ,
-            )
+            ),
+            url='aclGetName',
         ),
                 field=FunctionOOPField(
                                 name='name',
@@ -369,7 +374,8 @@ DUMP_PARTIAL = [
                     "rightName": """The right name to return the access value of. """
                 },
                 result='returns true or false if the acl gives access or not to the given function. returns nil if it failed for some reason, e.g. an invalid acl was specified or the right specified does not exist in the acl.' ,
-            )
+            ),
+            url='aclGetRight',
         ),
                 field=None,
                 is_static=False,
@@ -433,7 +439,8 @@ DUMP_PARTIAL = [
                     "theACL": """The ACL to add to the group """
                 },
                 result='returns true if the acl could be successfully added to the acl group, false/nil if either of the elements are invalid, the acl is already in that group or if something else goes wrong.' ,
-            )
+            ),
+            url='aclGroupAddACL',
         ),
                 field=None,
                 is_static=False,
@@ -497,7 +504,8 @@ DUMP_PARTIAL = [
                     "theObjectName": """The object string to add to the given ACL. """
                 },
                 result='returns true if the object was successfully added to the acl, false if it already existed in the list.' ,
-            )
+            ),
+            url='aclGroupAddObject',
         ),
                 field=None,
                 is_static=False,
@@ -550,7 +558,8 @@ DUMP_PARTIAL = [
                     "aclGroup": """The ACL group to get the name of """
                 },
                 result='returns the name of the given acl group as a string if successful, otherwise false or nil if the aclgroup is invalid or it fails for some other reason.' ,
-            )
+            ),
+            url='aclGroupGetName',
         ),
                 field=FunctionOOPField(
                                 name='name',
@@ -602,7 +611,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a table of all the acl groups if successful, returns an empty table if no acl groups exist. false/nil can be returned if this function fails for some other reason.' ,
-            )
+            ),
+            url='aclGroupList',
         ),
                 field=None,
                 is_static=True,
@@ -655,7 +665,8 @@ DUMP_PARTIAL = [
                     "theGroup": """The ACL group to get the ACL elements from """
                 },
                 result='returns a table of the acl elements in the given acl group. this table might be empty. returns false or nil if thegroup is invalid or it fails for some other reason.' ,
-            )
+            ),
+            url='aclGroupListACL',
         ),
                 field=FunctionOOPField(
                                 name='aclList',
@@ -716,7 +727,8 @@ DUMP_PARTIAL = [
                     "theGroup": """The ACL group to get the objects from """
                 },
                 result='returns a table of strings in the given acl group. this table might be empty. returns false or nil if thegroup is invalid or it fails for some other reason.' ,
-            )
+            ),
+            url='aclGroupListObjects',
         ),
                 field=FunctionOOPField(
                                 name='objects',
@@ -788,7 +800,8 @@ DUMP_PARTIAL = [
                     "theACL": """The ACL to remove from the given group """
                 },
                 result='returns true if the acl was successfully removed from the acl group, false/nil if it could not be removed for some reason, ie. either of the elements were invalid.' ,
-            )
+            ),
+            url='aclGroupRemoveACL',
         ),
                 field=None,
                 is_static=False,
@@ -852,7 +865,8 @@ DUMP_PARTIAL = [
                     "theObjectString": """The object to remove from the ACL group """
                 },
                 result='returns true if the object existed in the acl and could be remoevd, false if it could not be removed for some reason, ie. it did not exist in the given acl group.' ,
-            )
+            ),
+            url='aclGroupRemoveObject',
         ),
                 field=None,
                 is_static=False,
@@ -896,7 +910,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a table of all the acls. this table can be empty if no acls exist. it can also return false/nil if it failed for some reason.' ,
-            )
+            ),
+            url='aclList',
         ),
                 field=None,
                 is_static=True,
@@ -960,7 +975,8 @@ DUMP_PARTIAL = [
                     "allowedType": """The allowed right type. Possible values are general, function, resource and command """
                 },
                 result='returns a table over the rights as strings in the given acl. this table might be empty. returns false or nil if theacl is invalid or it fails for some other reason.' ,
-            )
+            ),
+            url='aclListRights',
         ),
                 field=None,
                 is_static=False,
@@ -1004,7 +1020,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the xml was successfully reloaded from the file, false or nil if the xml was invalid, didnt exist or could not be loaded for some other reason.' ,
-            )
+            ),
+            url='aclReload',
         ),
                 field=None,
                 is_static=True,
@@ -1068,7 +1085,8 @@ DUMP_PARTIAL = [
                     "rightName": """The ACL name to remove from the right from """
                 },
                 result='returns true if the given right was successfully removed from the given acl, false or nil if it could not be removed for some reason, ie. it didnt exist in the acl.' ,
-            )
+            ),
+            url='aclRemoveRight',
         ),
                 field=None,
                 is_static=False,
@@ -1112,7 +1130,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the acl was successfully changed, false or nil if it could not be saved for some reason, ie. file in use.' ,
-            )
+            ),
+            url='aclSave',
         ),
                 field=None,
                 is_static=True,
@@ -1187,7 +1206,8 @@ DUMP_PARTIAL = [
                     "hasAccess": """Whether the access should be set to true or false """
                 },
                 result='returns true if the access was successfully changed, false or nil if it failed for some reason, ie. invalid acl or the rightname is invalid.' ,
-            )
+            ),
+            url='aclSetRight',
         ),
                 field=None,
                 is_static=False,
@@ -1262,7 +1282,8 @@ DUMP_PARTIAL = [
                     "defaultPermission": """The default permission if none is specified in either of the groups the given object is a member of. If this is left to true, the given object will have permissions to perform the action unless the opposite is explicitly specified in the ACL. If false, the action will be denied by default unless explicitly approved by the Access Control List. """
                 },
                 result='returns true if the given object has permission to perform the given action, false otherwise. returns nil if the function failed because of bad arguments.' ,
-            )
+            ),
+            url='hasObjectPermissionTo',
         ),
                 field=None,
                 is_static=True,
@@ -1294,7 +1315,7 @@ DUMP_PARTIAL = [
                     arguments=[
                         [
                             FunctionArgument(
-                                name='theObject',
+                                name='theObjectName',
                                 argument_type=FunctionType(
                                     names=['string'],
                                     is_optional=False,
@@ -1322,11 +1343,12 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='This function is used to determine if an object is in a group.' ,
                 arguments={
-                    "theObject": """the name of the object to check. Examples: resource.ctf, user.Jim. """,
+                    "theObjectName": """the name of the object to check. Examples: resource.ctf, user.Jim. """,
                     "theGroup": """the ACL group pointer of the group from which the object should be found. """
                 },
                 result='returns true if the object is in the specified group, false otherwise.' ,
-            )
+            ),
+            url='isObjectInACLGroup',
         ),
                 field=None,
                 is_static=False,

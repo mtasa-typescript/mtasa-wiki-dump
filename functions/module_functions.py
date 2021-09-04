@@ -39,7 +39,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a table of all the currently loaded modules. if no modules are loaded, the table will be empty.' ,
-            )
+            ),
+            url='getLoadedModules',
         )
         ],
         client=[
@@ -85,7 +86,8 @@ DUMP_PARTIAL = [
                     "moduleName": """A string containing the module you wish to get information of e.g. hashing.dll """
                 },
                 result='returns a table containing information about module. these keys are present in the table:\n*version: module version in format x.xx\n*name: module name\n*author: module author\nif invalid name for module is passed, it will return false.' ,
-            )
+            ),
+            url='getModuleInfo',
         )
         ],
         client=[

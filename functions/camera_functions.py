@@ -103,7 +103,8 @@ DUMP_PARTIAL = [
                     "blue": """The amount of blue in the color that the camera fades out to (0 - 255). Not required for fading in. """
                 },
                 result='' ,
-            )
+            ),
+            url='fadeCamera',
         )
         ],
         client=[
@@ -188,7 +189,8 @@ DUMP_PARTIAL = [
                     "blue": """The amount of blue in the color that the camera fades out to (0 - 255). Not required for fading in. """
                 },
                 result='' ,
-            )
+            ),
+            url='fadeCamera',
         )
         ],
     ),
@@ -225,7 +227,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns an element that corresponds to the game camera' ,
-            )
+            ),
+            url='getCamera',
         )
         ],
     ),
@@ -266,7 +269,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='*objects: if you want the camera to clip on objects.\n*vehicles: if you want the camera to clip on vehicles.' ,
-            )
+            ),
+            url='getCameraClip',
         )
         ],
     ),
@@ -315,7 +319,8 @@ DUMP_PARTIAL = [
 ** "vehicle_max": the max the field of view can go to when the vehicle is moving at a high speed (must be higher than "vehicle") """
                 },
                 result='returns one float - the field of view angle' ,
-            )
+            ),
+            url='getCameraFieldOfView',
         )
         ],
     ),
@@ -352,7 +357,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='* string indicating the current camera goggle effect. their meanings can be seen below.' ,
-            )
+            ),
+            url='getCameraGoggleEffect',
         )
         ],
     ),
@@ -395,7 +401,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """: The player whose camera interior you want to get. """
                 },
                 result='' ,
-            )
+            ),
+            url='getCameraInterior',
         )
         ],
         client=[
@@ -427,7 +434,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='getCameraInterior',
         )
         ],
     ),
@@ -498,7 +506,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player whose camera matrix is to be returned. """
                 },
                 result='' ,
-            )
+            ),
+            url='getCameraMatrix',
         )
         ],
         client=[
@@ -558,7 +567,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='getCameraMatrix',
         )
         ],
     ),
@@ -595,7 +605,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns an integer representing the camera shake level, from 0 (no shaking effect) to 255 (maximum shaking effect). by default, the camera has no shaking effect.' ,
-            )
+            ),
+            url='getCameraShakeLevel',
         )
         ],
     ),
@@ -638,7 +649,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player whose camera you wish to receive the target of. """
                 },
                 result='' ,
-            )
+            ),
+            url='getCameraTarget',
         )
         ],
         client=[
@@ -670,7 +682,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='getCameraTarget',
         )
         ],
     ),
@@ -711,7 +724,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='getCameraViewMode',
         )
         ],
     ),
@@ -768,7 +782,8 @@ DUMP_PARTIAL = [
                     "vehicles": """Sets if you want the camera to clip on vehicles. """
                 },
                 result='always returns true.' ,
-            )
+            ),
+            url='setCameraClip',
         )
         ],
     ),
@@ -828,7 +843,8 @@ DUMP_PARTIAL = [
                     "fieldOfView": """The field of view angle, 0 to 179. """
                 },
                 result='returns true if the arguments are valid, false otherwise.' ,
-            )
+            ),
+            url='setCameraFieldOfView',
         )
         ],
     ),
@@ -885,7 +901,8 @@ DUMP_PARTIAL = [
                     "noiseEnabled": """: whether or not there should be a fuzzy noise effect """
                 },
                 result='* true if the effect was set correctly.\n* false otherwise.' ,
-            )
+            ),
+            url='setCameraGoggleEffect',
         )
         ],
     ),
@@ -939,7 +956,8 @@ DUMP_PARTIAL = [
                     "interior": """the interior to place the camera in. """
                 },
                 result='' ,
-            )
+            ),
+            url='setCameraInterior',
         )
         ],
         client=[
@@ -980,7 +998,8 @@ DUMP_PARTIAL = [
                     "interior": """the interior to place the camera in. """
                 },
                 result='' ,
-            )
+            ),
+            url='setCameraInterior',
         )
         ],
     ),
@@ -1112,7 +1131,8 @@ DUMP_PARTIAL = [
                     "fov": """the field of view angle, 0.01 to 180. The higher this value is, the more you will be able to see what is to your sides. """
                 },
                 result='' ,
-            )
+            ),
+            url='setCameraMatrix',
         )
         ],
         client=[
@@ -1231,7 +1251,8 @@ DUMP_PARTIAL = [
                     "fov": """the field of view angle, 0.01 to 180. The higher this value is, the more you will be able to see what is to your sides. """
                 },
                 result='' ,
-            )
+            ),
+            url='setCameraMatrix',
         )
         ],
     ),
@@ -1277,7 +1298,8 @@ DUMP_PARTIAL = [
                     "shakeLevel": """: an integer between 0 and 255, which represents the camera shake intensity level. """
                 },
                 result='returns true if the camera shake level was changed, false if the required argument is incorrect or missing.' ,
-            )
+            ),
+            url='setCameraShakeLevel',
         )
         ],
     ),
@@ -1331,7 +1353,8 @@ DUMP_PARTIAL = [
                     "target": """The player who you want the camera to follow. If none is specified, the camera will target the player. """
                 },
                 result='' ,
-            )
+            ),
+            url='setCameraTarget',
         )
         ],
         client=[
@@ -1372,7 +1395,8 @@ DUMP_PARTIAL = [
                     "target": """The player who you want the local camera to follow. """
                 },
                 result='' ,
-            )
+            ),
+            url='setCameraTarget',
         )
         ],
     ),
@@ -1429,7 +1453,8 @@ DUMP_PARTIAL = [
                     "pedCameraMode": """: The view mode you wish to use when you are not inside vehicles. """
                 },
                 result='returns true if the view(s) were set correctly, false otherwise.' ,
-            )
+            ),
+            url='setCameraViewMode',
         )
         ],
     )

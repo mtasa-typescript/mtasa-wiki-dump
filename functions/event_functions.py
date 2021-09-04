@@ -59,7 +59,8 @@ DUMP_PARTIAL = [
                     "allowRemoteTrigger": """A boolean specifying whether this event can be called remotely using triggerClientEvent / triggerServerEvent or not. """
                 },
                 result='returns true if the event was added successfully, false if the event was already added.' ,
-            )
+            ),
+            url='addEvent',
         )
         ],
         client=[
@@ -111,7 +112,8 @@ DUMP_PARTIAL = [
                     "allowRemoteTrigger": """A boolean specifying whether this event can be called remotely using triggerClientEvent / triggerServerEvent or not. """
                 },
                 result='returns true if the event was added successfully, false if the event was already added.' ,
-            )
+            ),
+            url='addEvent',
         )
         ],
     ),
@@ -201,7 +203,8 @@ DUMP_PARTIAL = [
                     "low": """''It is also possible to add finer priority control by appending a positive or negative number to the priority string. For example (in priority order for reference): "high+4" "high" "high-1" "normal-6" "normal-7" "low+1" "low" "low-1"'' """
                 },
                 result='returns true if the event handler was attached successfully. returns false if the specified event could not be found or any parameters were invalid.' ,
-            )
+            ),
+            url='addEventHandler',
         )
         ],
         client=[
@@ -289,7 +292,8 @@ DUMP_PARTIAL = [
                     "low": """''It is also possible to add finer priority control by appending a positive or negative number to the priority string. For example (in priority order for reference): "high+4" "high" "high-1" "normal-6" "normal-7" "low+1" "low" "low-1"'' """
                 },
                 result='returns true if the event handler was attached successfully. returns false if the specified event could not be found or any parameters were invalid.' ,
-            )
+            ),
+            url='addEventHandler',
         )
         ],
     ),
@@ -342,7 +346,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='cancelEvent',
         )
         ],
         client=[
@@ -374,7 +379,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='cancelEvent',
         )
         ],
     ),
@@ -428,7 +434,8 @@ DUMP_PARTIAL = [
                     "handle": """A handle previous got from getLatentEventHandles. """
                 },
                 result='' ,
-            )
+            ),
+            url='cancelLatentEvent',
         )
         ],
         client=[
@@ -469,7 +476,8 @@ DUMP_PARTIAL = [
                     "handle": """A handle previous got from getLatentEventHandles. """
                 },
                 result='' ,
-            )
+            ),
+            url='cancelLatentEvent',
         )
         ],
     ),
@@ -503,7 +511,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the reason that was given with cancelevent' ,
-            )
+            ),
+            url='getCancelReason',
         )
         ],
         client=[
@@ -560,7 +569,8 @@ DUMP_PARTIAL = [
                     "attachedTo": """The element attached to. """
                 },
                 result='returns table with attached functions, empty table otherwise.' ,
-            )
+            ),
+            url='getEventHandlers',
         )
         ],
         client=[
@@ -612,7 +622,8 @@ DUMP_PARTIAL = [
                     "attachedTo": """The element attached to. """
                 },
                 result='returns table with attached functions, empty table otherwise.' ,
-            )
+            ),
+            url='getEventHandlers',
         )
         ],
     ),
@@ -655,7 +666,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player who is receiving the events. """
                 },
                 result='' ,
-            )
+            ),
+            url='getLatentEventHandles',
         )
         ],
         client=[
@@ -687,7 +699,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='getLatentEventHandles',
         )
         ],
     ),
@@ -741,7 +754,8 @@ DUMP_PARTIAL = [
                     "handle": """A handle previous got from getLatentEventHandles. """
                 },
                 result='' ,
-            )
+            ),
+            url='getLatentEventStatus',
         )
         ],
         client=[
@@ -782,7 +796,8 @@ DUMP_PARTIAL = [
                     "handle": """A handle previous got from getLatentEventHandles. """
                 },
                 result='' ,
-            )
+            ),
+            url='getLatentEventStatus',
         )
         ],
     ),
@@ -847,7 +862,8 @@ DUMP_PARTIAL = [
                     "functionVar": """The handler function that was attached. """
                 },
                 result='returns true if the event handler was removed successfully. returns false if the specified event handler could not be found or invalid parameters were passed.' ,
-            )
+            ),
+            url='removeEventHandler',
         )
         ],
         client=[
@@ -910,7 +926,8 @@ DUMP_PARTIAL = [
                     "functionVar": """The handler function that was attached. """
                 },
                 result='returns true if the event handler was removed successfully. returns false if the specified event handler could not be found or invalid parameters were passed.' ,
-            )
+            ),
+            url='removeEventHandler',
         )
         ],
     ),
@@ -983,7 +1000,8 @@ DUMP_PARTIAL = [
                     "arguments...": """A list of arguments to trigger with the event. You can pass any lua data type (except functions). You can also pass elements. """
                 },
                 result='returns true if the event trigger has been sent, false if invalid arguments were specified.' ,
-            )
+            ),
+            url='triggerClientEvent',
         )
         ],
         client=[
@@ -1052,7 +1070,8 @@ DUMP_PARTIAL = [
                     "NOTE": """This function can have more than one of these arguments specified, once for each argument the event handler is expecting. """
                 },
                 result='* returns nil if the arguments are invalid or the event could not be found.\n* returns true if the event was triggered successfully, and was not cancelled using cancelevent.\n* returns false if the event was triggered successfully, and was cancelled using cancelevent.' ,
-            )
+            ),
+            url='triggerEvent',
         )
         ],
         client=[
@@ -1116,7 +1135,8 @@ DUMP_PARTIAL = [
                     "NOTE": """This function can have more than one of these arguments specified, once for each argument the event handler is expecting. """
                 },
                 result='* returns nil if the arguments are invalid or the event could not be found.\n* returns true if the event was triggered successfully, and was not cancelled using cancelevent.\n* returns false if the event was triggered successfully, and was cancelled using cancelevent.' ,
-            )
+            ),
+            url='triggerEvent',
         )
         ],
     ),
@@ -1211,7 +1231,8 @@ DUMP_PARTIAL = [
                     "arguments...": """A list of arguments to trigger with the event. You can pass any Lua data type (except functions). You can also pass elements. The total amount of data should not exceed 100MB. """
                 },
                 result='returns true if the event trigger has been sent, false if invalid arguments were specified.' ,
-            )
+            ),
+            url='triggerLatentClientEvent',
         )
         ],
         client=[
@@ -1301,7 +1322,8 @@ DUMP_PARTIAL = [
                     "arguments...": """A list of arguments to trigger with the event. You can pass any Lua data type (except functions). You can also pass elements. The total amount of data should not exceed 100MB. """
                 },
                 result='returns true if the event trigger has been sent, false if invalid arguments were specified.' ,
-            )
+            ),
+            url='triggerLatentServerEvent',
         )
         ],
     ),
@@ -1366,7 +1388,8 @@ DUMP_PARTIAL = [
                     "arguments...": """A list of arguments to trigger with the event. You can pass any lua data type (except functions). You can also pass elements. """
                 },
                 result='returns true if the event trigger has been sent, false if invalid arguments were specified or a client side element was a parameter.' ,
-            )
+            ),
+            url='triggerServerEvent',
         )
         ],
     ),
@@ -1400,7 +1423,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the event was cancelled, false if it wasnt or doesnt exist.' ,
-            )
+            ),
+            url='wasEventCancelled',
         )
         ],
         client=[
@@ -1432,7 +1456,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the event was cancelled, false if it wasnt or doesnt exist.' ,
-            )
+            ),
+            url='wasEventCancelled',
         )
         ],
     )

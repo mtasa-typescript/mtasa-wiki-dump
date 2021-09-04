@@ -42,7 +42,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the id of the radio channel.' ,
-            )
+            ),
+            url='getRadioChannel',
         )
         ],
     ),
@@ -88,7 +89,8 @@ DUMP_PARTIAL = [
                     "id": """The ID of the radio station you want to get the name of. It is a number from 0 to 12. """
                 },
                 result='returns a string containing the station name if successful, false otherwise.' ,
-            )
+            ),
+            url='getRadioChannelName',
         )
         ],
     ),
@@ -134,7 +136,8 @@ DUMP_PARTIAL = [
                     "audioContainer": """The container name. Possible values are: feet, genrl, pain_a, script, spc_ea, spc_fa, spc_ga, spc_na, spc_pa """
                 },
                 result='returns true if the sound container is available, false otherwise.' ,
-            )
+            ),
+            url='getSFXStatus',
         )
         ],
     ),
@@ -180,7 +183,8 @@ DUMP_PARTIAL = [
                     "sound": """a sound element that is created using playSound or playSound3D """
                 },
                 result='returns the beats per minute of the given sound.' ,
-            )
+            ),
+            url='getSoundBPM',
         )
         ],
     ),
@@ -226,7 +230,8 @@ DUMP_PARTIAL = [
                     "theSound": """the sound element which buffer length you want to get. """
                 },
                 result='* a float value indicating the buffer playback length of the sound in seconds.\n* false if the sound is not a stream.\n* nil if the sound is invalid.' ,
-            )
+            ),
+            url='getSoundBufferLength',
         )
         ],
     ),
@@ -283,7 +288,8 @@ DUMP_PARTIAL = [
                     "effectName": """: the name of the effect whose parameters you want to retrieve. """
                 },
                 result='returns a table with the parameter names as the keys, and their values. if the specified effect name is not valid, an error is raised.' ,
-            )
+            ),
+            url='getSoundEffectParameters',
         )
         ],
     ),
@@ -329,7 +335,8 @@ DUMP_PARTIAL = [
                     "sound": """a sound element. """
                 },
                 result='returns a table with the effect names as the keys, and their states as the values if successful. otherwise, it returns false.\nsound effect names:' ,
-            )
+            ),
+            url='getSoundEffects',
         )
         ],
     ),
@@ -397,7 +404,8 @@ DUMP_PARTIAL = [
                     "iBands": """post processing option allows you to split the samples into the desired amount of bands or bars so if you only need 5 bars this saves a lot of cpu power compared to trying to do it in Lua. """
                 },
                 result='returns a table of isamples/2 (or ibands if ibands is used) floats representing the current audio frame.\nreturns false if the sound is not playing yet or hasnt buffered in the\ncase of streams.' ,
-            )
+            ),
+            url='getSoundFFTData',
         )
         ],
     ),
@@ -443,7 +451,8 @@ DUMP_PARTIAL = [
                     "theSound": """the sound element which length you want to return. """
                 },
                 result='returns an float value indicating the playback length of the sound element in seconds.' ,
-            )
+            ),
+            url='getSoundLength',
         )
         ],
     ),
@@ -493,7 +502,8 @@ DUMP_PARTIAL = [
                     "theSound": """the sound element which level data you want to return. """
                 },
                 result='returns a two integers in range from 0 to 32768.' ,
-            )
+            ),
+            url='getSoundLevelData',
         )
         ],
     ),
@@ -539,7 +549,8 @@ DUMP_PARTIAL = [
                     "sound": """a sound element. """
                 },
                 result='returns an integer of the max distance, false if invalid arguments where passed.' ,
-            )
+            ),
+            url='getSoundMaxDistance',
         )
         ],
     ),
@@ -596,7 +607,8 @@ DUMP_PARTIAL = [
                     "format": """a filter string to get a specific meta tag. """
                 },
                 result='returns a table, but only a string if format is given, with all data available (keys are listed below) for the sound if successful, false otherwise. if any data is unavailable then the associated key is not written to the table.' ,
-            )
+            ),
+            url='getSoundMetaTags',
         )
         ],
     ),
@@ -642,7 +654,8 @@ DUMP_PARTIAL = [
                     "sound": """a sound element. """
                 },
                 result='returns an integer of the minimum distance, false if invalid arguements where passed.' ,
-            )
+            ),
+            url='getSoundMinDistance',
         )
         ],
     ),
@@ -688,7 +701,8 @@ DUMP_PARTIAL = [
                     "theSound": """the sound element which pan you want to get. """
                 },
                 result='returns float value with range from -1.0 (left) to 1.0 (right), false otherwise.' ,
-            )
+            ),
+            url='getSoundPan',
         )
         ],
     ),
@@ -734,7 +748,8 @@ DUMP_PARTIAL = [
                     "theSound": """The sound element which seek position you want to return. """
                 },
                 result='returns a float value indicating the seek position of the sound element in seconds.' ,
-            )
+            ),
+            url='getSoundPosition',
         )
         ],
     ),
@@ -792,7 +807,8 @@ DUMP_PARTIAL = [
                     "sound": """a sound element that is created using playSound or playSound3D """
                 },
                 result='this function returns 3 float|floats and a boolean value:\nthe first float is the sounds http://en.wikipedia.org/wiki/sampling_rate sample rate, the second one the sounds http://en.wikipedia.org/wiki/tempo tempo, and the third one the http://en.wikipedia.org/wiki/pitch_%28music%29 pitch of the sound. the boolean representing whether the sound is reversed or not.' ,
-            )
+            ),
+            url='getSoundProperties',
         )
         ],
     ),
@@ -838,7 +854,8 @@ DUMP_PARTIAL = [
                     "theSound": """the sound element which playback speed you want to return. """
                 },
                 result='returns an float value indicating the playback speed of the sound element. default sound playback speed is 1.0.' ,
-            )
+            ),
+            url='getSoundSpeed',
         )
         ],
     ),
@@ -884,7 +901,8 @@ DUMP_PARTIAL = [
                     "theSound": """the sound element which volume you want to return. """
                 },
                 result='returns a float representing the volume level of the sound element, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getSoundVolume',
         )
         ],
     ),
@@ -941,7 +959,8 @@ DUMP_PARTIAL = [
                     "iSamples": """allowed samples are 256, 512, 1024, 2048, 4096, 8192 and 16384. """
                 },
                 result='returns a table of isamples floats representing the current audio frame waveform.\nreturns false if the sound is not playing yet or hasnt buffered in the\ncase of streams.' ,
-            )
+            ),
+            url='getSoundWaveData',
         )
         ],
     ),
@@ -987,7 +1006,8 @@ DUMP_PARTIAL = [
                     "theSound": """The sound element which you want to get the loop state. """
                 },
                 result='returns true if the sound element is seted to loop, false otherwise.' ,
-            )
+            ),
+            url='isSoundLooped',
         )
         ],
     ),
@@ -1033,7 +1053,8 @@ DUMP_PARTIAL = [
                     "theSound": """A valid sound element. """
                 },
                 result='returns true if the sound is valid and it has panning enabled, false if it does not or is not valid.' ,
-            )
+            ),
+            url='isSoundPanningEnabled',
         )
         ],
     ),
@@ -1079,7 +1100,8 @@ DUMP_PARTIAL = [
                     "theSound": """the sound element which pause state you want to return. """
                 },
                 result='returns true if the sound element is paused, false if unpaused or invalid arguments were passed.' ,
-            )
+            ),
+            url='isSoundPaused',
         )
         ],
     ),
@@ -1158,7 +1180,8 @@ DUMP_PARTIAL = [
                     "looped": """A boolean representing whether the sound will be looped """
                 },
                 result='returns a sound element if the sound was successfully created, false otherwise.\n<syntaxhighlight lang=lua>\nelement playsfx ( string radio, string radiostation, int trackid , bool looped = false  )\n</syntaxhighlight>\n*radio: the string radio (used to differentiate to the first syntax)\n*radiostation: the radio station. possible values are adverts, ambience, police, playback fm, k-rose, k-dst, cutscene, beats, bounce fm, sf-ur, radio los santos, radio x, csr 103.9, k-jah west, master sounds 98.3, wctr.\n*trackid : the radio track id within the radio station audio file\n*looped: a boolean representing whether the sound will be looped\nreturns a sound element if the sound was successfully created, false otherwise.' ,
-            )
+            ),
+            url='playSFX',
         )
         ],
     ),
@@ -1270,7 +1293,8 @@ DUMP_PARTIAL = [
                     "looped": """A boolean representing whether the sound will be looped """
                 },
                 result='returns a sound element if the sound was successfully created, false otherwise.\n<syntaxhighlight lang=lua>\nelement playsfx3d( string radio, string radiostation, int trackid, float x, float y, float z , bool looped = false  )\n</syntaxhighlight>\n*radio: the string radio (used to differentiate to the first syntax)\n*radiostation: the radio station. possible values are adverts, ambience, police, playback fm, k-rose, k-dst, cutscene, beats, bounce fm, sf-ur, radio los santos, radio x, csr 103.9, k-jah west, master sounds 98.3, wctr.\n*trackid : the radio track id within the radio station audio file\n*x: a floating point number representing the x coordinate on the map.\n*y: a floating point number representing the y coordinate on the map.\n*z: a floating point number representing the z coordinate on the map.\n*looped: a boolean representing whether the sound will be looped\nreturns a sound element if the sound was successfully created, false otherwise.' ,
-            )
+            ),
+            url='playSFX3D',
         )
         ],
     ),
@@ -1339,7 +1363,8 @@ DUMP_PARTIAL = [
                     "throttled": """a boolean representing whether the sound will be throttled (i.e. given reduced download bandwidth). To throttle the sound, use true. Sounds will be throttled per default and only for URLs. """
                 },
                 result='returns a sound element if the sound was successfully created, false otherwise.' ,
-            )
+            ),
+            url='playSound',
         )
         ],
     ),
@@ -1432,7 +1457,8 @@ DUMP_PARTIAL = [
                     "throttled": """a boolean representing whether the sound will be throttled (i.e. given reduced download bandwidth). To throttle the sound, use true. """
                 },
                 result='returns a sound element if the sound was successfully created, false otherwise.' ,
-            )
+            ),
+            url='playSound3D',
         )
         ],
     ),
@@ -1486,7 +1512,8 @@ DUMP_PARTIAL = [
                     "sound": """a whole int specifying the sound id to play. Valid values are: """
                 },
                 result='' ,
-            )
+            ),
+            url='playSoundFrontEnd',
         )
         ],
         client=[
@@ -1527,7 +1554,8 @@ DUMP_PARTIAL = [
                     "sound": """a whole int specifying the sound id to play. Valid values are: """
                 },
                 result='' ,
-            )
+            ),
+            url='playSoundFrontEnd',
         )
         ],
     ),
@@ -1573,7 +1601,8 @@ DUMP_PARTIAL = [
                     "ID": """The ID of the radio station you want to play. """
                 },
                 result='returns true if channel was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setRadioChannel',
         )
         ],
     ),
@@ -1641,7 +1670,8 @@ DUMP_PARTIAL = [
                     "bEnable": """true if you want to enable the effect, false if you want to disable it. """
                 },
                 result='returns true if the effect was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setSoundEffectEnabled',
         )
         ],
     ),
@@ -1720,7 +1750,8 @@ DUMP_PARTIAL = [
                     "paramValue": """: the parameter #Effects Parameters|value. """
                 },
                 result='returns true if everything went well, error is raised otherwise.' ,
-            )
+            ),
+            url='setSoundEffectParameter',
         )
         ],
     ),
@@ -1777,7 +1808,8 @@ DUMP_PARTIAL = [
                     "bool": """A boolean representing whether the sound will be looped. """
                 },
                 result='returns true if the sound element loop was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='setSoundLooped',
         )
         ],
     ),
@@ -1834,7 +1866,8 @@ DUMP_PARTIAL = [
                     "distance": """the default value for this is 20 """
                 },
                 result='returns a true if the max distance was set, false otherwise.' ,
-            )
+            ),
+            url='setSoundMaxDistance',
         )
         ],
     ),
@@ -1891,7 +1924,8 @@ DUMP_PARTIAL = [
                     "distance": """an integer representing the distance the sound stops getting louder. the default value for this is 5 """
                 },
                 result='returns a true if the minimum distance was set, false otherwise.' ,
-            )
+            ),
+            url='setSoundMinDistance',
         )
         ],
     ),
@@ -1948,7 +1982,8 @@ DUMP_PARTIAL = [
                     "pan": """A float|floating point number representing the desired pan level. Range is from -1.0 (left) to 1.0 (right) """
                 },
                 result='returns true if the sound element pan was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='setSoundPan',
         )
         ],
     ),
@@ -2005,7 +2040,8 @@ DUMP_PARTIAL = [
                     "enable": """true to enable the panning, false otherwise. """
                 },
                 result='returns true if the sound is valid and good arguments were passed, false if not.\nif the sound is not 3d, this function will return true as well, but issoundpanningenabled will always return true after this (so it has no effect).' ,
-            )
+            ),
+            url='setSoundPanningEnabled',
         )
         ],
     ),
@@ -2062,7 +2098,8 @@ DUMP_PARTIAL = [
                     "paused": """a boolean value representing whether the sound should be paused or not. To pause the sound, use true. """
                 },
                 result='returns true if the sound element was successfully paused, false otherwise.' ,
-            )
+            ),
+            url='setSoundPaused',
         )
         ],
     ),
@@ -2119,7 +2156,8 @@ DUMP_PARTIAL = [
                     "pos": """a float value representing the new seek position of the sound element in seconds. """
                 },
                 result='returns true if the sound elements seek position was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='setSoundPosition',
         )
         ],
     ),
@@ -2209,7 +2247,8 @@ DUMP_PARTIAL = [
                     "bReverse": """a boolean representing whether the sound will be reversed or not. """
                 },
                 result='returns true if the properties sucessfully set, false otherwise.' ,
-            )
+            ),
+            url='setSoundProperties',
         )
         ],
     ),
@@ -2266,7 +2305,8 @@ DUMP_PARTIAL = [
                     "speed": """a floating point number representing the desired sound playback speed. """
                 },
                 result='returns true if the sound element playback speed was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='setSoundSpeed',
         )
         ],
     ),
@@ -2323,7 +2363,8 @@ DUMP_PARTIAL = [
                     "volume": """A floating point number representing the desired volume level. Range is from 0.0 to 1.0. This can go above 1.0 for amplification. """
                 },
                 result='returns true if the sound element volume was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='setSoundVolume',
         )
         ],
     ),
@@ -2369,7 +2410,8 @@ DUMP_PARTIAL = [
                     "theSound": """the sound element you want to stop playing. """
                 },
                 result='returns true if the sound was successfully stopped, false otherwise.' ,
-            )
+            ),
+            url='stopSound',
         )
         ],
     )

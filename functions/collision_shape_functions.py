@@ -82,7 +82,8 @@ DUMP_PARTIAL = [
 Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were passed. """
                 },
                 result='returns true if the polygon was changed, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='addColPolygonPoint',
         )
         ],
         client=[
@@ -157,7 +158,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
 Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were passed. """
                 },
                 result='returns true if the polygon was changed, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='addColPolygonPoint',
         )
         ],
     ),
@@ -222,7 +224,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "radius": """The radius of the collision circle. Can not be smaller than 0.1 """
                 },
                 result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='createColCircle',
         )
         ],
         client=[
@@ -285,7 +288,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "radius": """The radius of the collision circle. Can not be smaller than 0.1 """
                 },
                 result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='createColCircle',
         )
         ],
     ),
@@ -383,7 +387,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fHeight": """The collision cuboids height """
                 },
                 result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='createColCuboid',
         )
         ],
         client=[
@@ -479,7 +484,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fHeight": """The collision cuboids height """
                 },
                 result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='createColCuboid',
         )
         ],
     ),
@@ -600,7 +606,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "...": """From the 3rd position you can have as many points as you require to create the colshape. """
                 },
                 result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='createColPolygon',
         )
         ],
         client=[
@@ -719,7 +726,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "...": """From the 3rd position you can have as many points as you require to create the colshape. """
                 },
                 result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='createColPolygon',
         )
         ],
     ),
@@ -795,7 +803,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fHeight": """The collision rectangles height """
                 },
                 result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='createColRectangle',
         )
         ],
         client=[
@@ -869,7 +878,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fHeight": """The collision rectangles height """
                 },
                 result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='createColRectangle',
         )
         ],
     ),
@@ -945,7 +955,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fRadius": """The collision spheres radius """
                 },
                 result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='createColSphere',
         )
         ],
         client=[
@@ -1019,7 +1030,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fRadius": """The collision spheres radius """
                 },
                 result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='createColSphere',
         )
         ],
     ),
@@ -1106,7 +1118,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fHeight": """The collision tubes height """
                 },
                 result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='createColTube',
         )
         ],
         client=[
@@ -1191,7 +1204,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fHeight": """The collision tubes height """
                 },
                 result='returns a colshape element if successful, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='createColTube',
         )
         ],
     ),
@@ -1238,7 +1252,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "shape": """The colshape polygon """
                 },
                 result='returns two floats, indicating the floor and ceiling of the colshape height, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getColPolygonHeight',
         )
         ],
         client=[
@@ -1283,7 +1298,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "shape": """The colshape polygon """
                 },
                 result='returns two floats, indicating the floor and ceiling of the colshape height, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getColPolygonHeight',
         )
         ],
     ),
@@ -1341,7 +1357,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "index": """The index of the point you wish to retrieve. The points are indexed in order, with 1 being the first bound point. """
                 },
                 result='returns two floats, x and y, indicating the position of the point, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getColPolygonPointPosition',
         )
         ],
         client=[
@@ -1397,7 +1414,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "index": """The index of the point you wish to retrieve. The points are indexed in order, with 1 being the first bound point. """
                 },
                 result='returns two floats, x and y, indicating the position of the point, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getColPolygonPointPosition',
         )
         ],
     ),
@@ -1440,7 +1458,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "shape": """The colshape polygon you wish to get the points of. """
                 },
                 result='returns a table of coordinates, each coordinate being a table containing the x and y position of a bound point, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getColPolygonPoints',
         )
         ],
         client=[
@@ -1481,7 +1500,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "shape": """The colshape polygon you wish to get the points of. """
                 },
                 result='returns a table of coordinates, each coordinate being a table containing the x and y position of a bound point, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getColPolygonPoints',
         )
         ],
     ),
@@ -1524,7 +1544,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "shape": """The colshape you wish to get the radius of. """
                 },
                 result='returns a float containing the radius of the colshape, false if an invalid colshape was passed.' ,
-            )
+            ),
+            url='getColShapeRadius',
         )
         ],
         client=[
@@ -1565,7 +1586,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "shape": """The colshape you wish to get the radius of. """
                 },
                 result='returns a float containing the radius of the colshape, false if an invalid colshape was passed.' ,
-            )
+            ),
+            url='getColShapeRadius',
         )
         ],
     ),
@@ -1616,7 +1638,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "shape": """The colshape you wish to get the size of. """
                 },
                 result='returns up to 3 floats depending on the colshape type (see below), false if invalid arguments were passed.\n*cuboid: width, depth, height.\n*rectangle: width, height.\n*tube: height.' ,
-            )
+            ),
+            url='getColShapeSize',
         )
         ],
         client=[
@@ -1665,7 +1688,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "shape": """The colshape you wish to get the size of. """
                 },
                 result='returns up to 3 floats depending on the colshape type (see below), false if invalid arguments were passed.\n*cuboid: width, depth, height.\n*rectangle: width, height.\n*tube: height.' ,
-            )
+            ),
+            url='getColShapeSize',
         )
         ],
     ),
@@ -1708,7 +1732,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "shape": """The colshape you wish to get the type of. """
                 },
                 result='returns false if invalid arguments were passed, or an integer of the type of the colshape, which include:\n*0: circle\n*1: cuboid\n*2: sphere\n*3: rectangle\n*4: polygon\n*5: tube' ,
-            )
+            ),
+            url='getColShapeType',
         )
         ],
         client=[
@@ -1749,7 +1774,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "shape": """The colshape you wish to get the type of. """
                 },
                 result='returns false if invalid arguments were passed, or an integer of the type of the colshape, which include:\n*0: circle\n*1: cuboid\n*2: sphere\n*3: rectangle\n*4: polygon\n*5: tube' ,
-            )
+            ),
+            url='getColShapeType',
         )
         ],
     ),
@@ -1825,7 +1851,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "posZ": """The Z coordinate of the position youre checking. """
                 },
                 result='returns true if the position is inside the colshape, false if it isnt or if any parameters are invalid.' ,
-            )
+            ),
+            url='isInsideColShape',
         )
         ],
         client=[
@@ -1899,7 +1926,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "posZ": """The Z coordinate of the position youre checking. """
                 },
                 result='returns true if the position is inside the colshape, false if it isnt or if any parameters are invalid.' ,
-            )
+            ),
+            url='isInsideColShape',
         )
         ],
     ),
@@ -1953,7 +1981,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "index": """The index of the point you wish to remove. The points are indexed in order, with 1 being the first bound point. You cant remove the last 3 points. """
                 },
                 result='returns true if the polygon was changed, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='removeColPolygonPoint',
         )
         ],
         client=[
@@ -2005,7 +2034,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "index": """The index of the point you wish to remove. The points are indexed in order, with 1 being the first bound point. You cant remove the last 3 points. """
                 },
                 result='returns true if the polygon was changed, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='removeColPolygonPoint',
         )
         ],
     ),
@@ -2070,7 +2100,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "ceil": """The polygon ceiling (highest Z coordinate). Parse false to reset this value to infinitely tall. """
                 },
                 result='returns true if the polygon was changed, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setColPolygonHeight',
         )
         ],
         client=[
@@ -2133,7 +2164,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "ceil": """The polygon ceiling (highest Z coordinate). Parse false to reset this value to infinitely tall. """
                 },
                 result='returns true if the polygon was changed, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setColPolygonHeight',
         )
         ],
     ),
@@ -2209,7 +2241,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fY": """The new Y position of the bound point. """
                 },
                 result='returns true if the polygon was changed, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setColPolygonPointPosition',
         )
         ],
         client=[
@@ -2283,7 +2316,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "fY": """The new Y position of the bound point. """
                 },
                 result='returns true if the polygon was changed, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setColPolygonPointPosition',
         )
         ],
     ),
@@ -2337,7 +2371,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "radius": """The radius you want to set. """
                 },
                 result='returns true if the radius was changed, or false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setColShapeRadius',
         )
         ],
         client=[
@@ -2389,7 +2424,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "radius": """The radius you want to set. """
                 },
                 result='returns true if the radius was changed, or false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setColShapeRadius',
         )
         ],
     ),
@@ -2465,7 +2501,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "height": """The collision tubess height. """
                 },
                 result='returns true if the size was changed, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setColShapeSize',
         )
         ],
         client=[
@@ -2539,7 +2576,8 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
                     "height": """The collision tubess height. """
                 },
                 result='returns true if the size was changed, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setColShapeSize',
         )
         ],
     )

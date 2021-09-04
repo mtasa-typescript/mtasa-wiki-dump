@@ -77,7 +77,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player you wish to subscribe. """
                 },
                 result='returns true if the player was subscribed, false otherwise.' ,
-            )
+            ),
+            url='addElementDataSubscriber',
         ),
                 field=None,
                 is_static=False,
@@ -207,7 +208,8 @@ DUMP_PARTIAL = [
                     "zRotOffset": """The z rotation offset (default 0). """
                 },
                 result='returns true if the attaching process was successful, false otherwise.' ,
-            )
+            ),
+            url='attachElements',
         ),
                 field=None,
                 is_static=False,
@@ -332,7 +334,8 @@ DUMP_PARTIAL = [
                     "zRotOffset": """The z rotation offset (default 0). """
                 },
                 result='returns true if the attaching process was successful, false otherwise.' ,
-            )
+            ),
+            url='attachElements',
         ),
                 field=None,
                 is_static=False,
@@ -382,7 +385,8 @@ DUMP_PARTIAL = [
                     "theElement": """The element in which you wish to restore to its default visibility """
                 },
                 result='returns true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='clearElementVisibleTo',
         ),
                 field=None,
                 is_static=False,
@@ -480,7 +484,8 @@ DUMP_PARTIAL = [
 '''Note: if 'cloneChildren' is true, the position floats will be offsets from the cloned element's position.''' """
                 },
                 result='returns the handle of the new cloned element of the parent, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='cloneElement',
         ),
                 field=None,
                 is_static=False,
@@ -555,7 +560,8 @@ DUMP_PARTIAL = [
                     "elementToDestroy": """The element you wish to destroy. """
                 },
                 result='returns true if the element was destroyed successfully, false if either the element passed to it was invalid or it could not be destroyed for some other reason (for example, clientside destroyelement cant destroy serverside elements).' ,
-            )
+            ),
+            url='destroyElement',
         ),
                 field=None,
                 is_static=False,
@@ -603,7 +609,8 @@ DUMP_PARTIAL = [
                     "elementToDestroy": """The element you wish to destroy. """
                 },
                 result='returns true if the element was destroyed successfully, false if either the element passed to it was invalid or it could not be destroyed for some other reason (for example, clientside destroyelement cant destroy serverside elements).' ,
-            )
+            ),
+            url='destroyElement',
         ),
                 field=None,
                 is_static=False,
@@ -664,7 +671,8 @@ DUMP_PARTIAL = [
                     "theAttachToElement": """The element you wish to detach from, will detach from the attached element if this isnt specified. """
                 },
                 result='returns true if the detaching was successful, false otherwise.' ,
-            )
+            ),
+            url='detachElements',
         ),
                 field=None,
                 is_static=False,
@@ -723,7 +731,8 @@ DUMP_PARTIAL = [
                     "theAttachToElement": """The element you wish to detach from, will detach from the attached element if this isnt specified. """
                 },
                 result='returns true if the detaching was successful, false otherwise.' ,
-            )
+            ),
+            url='detachElements',
         ),
                 field=None,
                 is_static=False,
@@ -773,7 +782,8 @@ DUMP_PARTIAL = [
                     "theElement": """the element you want to get the element data of. """
                 },
                 result='if successful, returns a table with as keys the names of the element data and as values the corresponding element data values. returns false in case of failure.' ,
-            )
+            ),
+            url='getAllElementData',
         ),
                 field=None,
                 is_static=False,
@@ -826,7 +836,8 @@ DUMP_PARTIAL = [
                     "theElement": """: The element which you require the information from. """
                 },
                 result='returns a table of all the elements attached to the specified element.' ,
-            )
+            ),
+            url='getAttachedElements',
         ),
                 field=None,
                 is_static=False,
@@ -874,7 +885,8 @@ DUMP_PARTIAL = [
                     "theElement": """: The element which you require the information from. """
                 },
                 result='returns a table of all the elements attached to the specified element.' ,
-            )
+            ),
+            url='getAttachedElements',
         ),
                 field=None,
                 is_static=False,
@@ -924,7 +936,8 @@ DUMP_PARTIAL = [
                     "theElement": """The element whose alpha you want to retrieve. """
                 },
                 result='returns an integer (0-255; 0 = transparent) indicating the elements alpha, or false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getElementAlpha',
         ),
                 field=FunctionOOPField(
                                 name='alpha',
@@ -980,7 +993,8 @@ DUMP_PARTIAL = [
                     "theElement": """The element whose alpha you want to retrieve. """
                 },
                 result='returns an integer (0-255; 0 = transparent) indicating the elements alpha, or false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getElementAlpha',
         ),
                 field=FunctionOOPField(
                                 name='alpha',
@@ -1046,7 +1060,8 @@ DUMP_PARTIAL = [
                     "theElement": """The element to retrieve the angular velocity from. Can be either a player, ped, object, vehicle or a Element/Weapon|custom weapon. Server side supports only vehicles currently. """
                 },
                 result='returns three floats describing the x, y and z rotation' ,
-            )
+            ),
+            url='getElementAngularVelocity',
         ),
                 field=FunctionOOPField(
                                 name='angularVelocity',
@@ -1118,7 +1133,8 @@ DUMP_PARTIAL = [
                     "theElement": """The element to retrieve the angular velocity from. Can be either a player, ped, object, vehicle or a Element/Weapon|custom weapon. Server side supports only vehicles currently. """
                 },
                 result='returns three floats describing the x, y and z rotation' ,
-            )
+            ),
+            url='getElementAngularVelocity',
         ),
                 field=FunctionOOPField(
                                 name='angularVelocity',
@@ -1204,7 +1220,8 @@ DUMP_PARTIAL = [
                     "theElement": """The attached element. """
                 },
                 result='returns 6 float|floats, of which the first 3 indicate the position offset (x, y, z), and the last 3 indicate the rotation offset (x, y, z), if successful. false otherwise.' ,
-            )
+            ),
+            url='getElementAttachedOffsets',
         ),
                 field=None,
                 is_static=False,
@@ -1272,7 +1289,8 @@ DUMP_PARTIAL = [
                     "theElement": """The attached element. """
                 },
                 result='returns 6 float|floats, of which the first 3 indicate the position offset (x, y, z), and the last 3 indicate the rotation offset (x, y, z), if successful. false otherwise.' ,
-            )
+            ),
+            url='getElementAttachedOffsets',
         ),
                 field=None,
                 is_static=False,
@@ -1322,7 +1340,8 @@ DUMP_PARTIAL = [
                     "theElement": """The element you require the information for. """
                 },
                 result='returns the element that the chosen element is attached to, or false if the element isnt attached to another element.' ,
-            )
+            ),
+            url='getElementAttachedTo',
         ),
                 field=None,
                 is_static=False,
@@ -1370,7 +1389,8 @@ DUMP_PARTIAL = [
                     "theElement": """The element you require the information for. """
                 },
                 result='returns the element that the chosen element is attached to, or false if the element isnt attached to another element.' ,
-            )
+            ),
+            url='getElementAttachedTo',
         ),
                 field=None,
                 is_static=False,
@@ -1467,7 +1487,8 @@ DUMP_PARTIAL = [
                     "theElement": """the element whose bounding box we want to get. """
                 },
                 result='*returns min x, min y, min z, max x, max y, max z if the passed element is valid and streamed in, false otherwise.' ,
-            )
+            ),
+            url='getElementBoundingBox',
         ),
                 field=None,
                 is_static=False,
@@ -1528,7 +1549,8 @@ DUMP_PARTIAL = [
                     "index": """If there are two or more elements of the same ID it will return the element with the specified index starting at 0. """
                 },
                 result='returns the element with the given id, or false if no such element exists.' ,
-            )
+            ),
+            url='getElementByID',
         ),
                 field=None,
                 is_static=True,
@@ -1587,7 +1609,8 @@ DUMP_PARTIAL = [
                     "index": """If there are two or more elements of the same ID it will return the element with the specified index starting at 0. """
                 },
                 result='returns the element with the given id, or false if no such element exists.' ,
-            )
+            ),
+            url='getElementByID',
         ),
                 field=None,
                 is_static=True,
@@ -1648,7 +1671,8 @@ DUMP_PARTIAL = [
                     "index": """the elements index (0 for the first element, 1 for the second, etc). """
                 },
                 result='returns the requested element, or false if it doesnt exist.' ,
-            )
+            ),
+            url='getElementByIndex',
         ),
                 field=None,
                 is_static=True,
@@ -1712,7 +1736,8 @@ DUMP_PARTIAL = [
                     "index": """the elements index (0 for the first element, 1 for the second, etc). """
                 },
                 result='returns the requested element if it exists, or false if it doesnt.' ,
-            )
+            ),
+            url='getElementChild',
         ),
                 field=None,
                 is_static=False,
@@ -1771,7 +1796,8 @@ DUMP_PARTIAL = [
                     "index": """the elements index (0 for the first element, 1 for the second, etc). """
                 },
                 result='returns the requested element if it exists, or false if it doesnt.' ,
-            )
+            ),
+            url='getElementChild',
         ),
                 field=None,
                 is_static=False,
@@ -1847,7 +1873,8 @@ DUMP_PARTIAL = [
                     "console": """The server Console """
                 },
                 result='this function returns a table that contains a list of elements that the parent has. if the element has no children, it will return an empy table. it will return false if the parent element does not exist.' ,
-            )
+            ),
+            url='getElementChildren',
         ),
                 field=None,
                 is_static=False,
@@ -1921,7 +1948,8 @@ DUMP_PARTIAL = [
                     "console": """The server Console """
                 },
                 result='this function returns a table that contains a list of elements that the parent has. if the element has no children, it will return an empy table. it will return false if the parent element does not exist.' ,
-            )
+            ),
+            url='getElementChildren',
         ),
                 field=None,
                 is_static=False,
@@ -1971,7 +1999,8 @@ DUMP_PARTIAL = [
                     "parent": """the parent element """
                 },
                 result='returns an int with the number of child elements, or false if the parent element does not exist.' ,
-            )
+            ),
+            url='getElementChildrenCount',
         ),
                 field=None,
                 is_static=False,
@@ -2019,7 +2048,8 @@ DUMP_PARTIAL = [
                     "parent": """the parent element """
                 },
                 result='returns an int with the number of child elements, or false if the parent element does not exist.' ,
-            )
+            ),
+            url='getElementChildrenCount',
         ),
                 field=None,
                 is_static=False,
@@ -2069,7 +2099,8 @@ DUMP_PARTIAL = [
                     "theElement": """The element for which you want to check whether collisions are enabled """
                 },
                 result='returns true if the collisions are enabled, false otherwise.' ,
-            )
+            ),
+            url='getElementCollisionsEnabled',
         ),
                 field=FunctionOOPField(
                                 name='collisions',
@@ -2125,7 +2156,8 @@ DUMP_PARTIAL = [
                     "theElement": """The element for which you want to check whether collisions are enabled """
                 },
                 result='returns true if the collisions are enabled, false otherwise.' ,
-            )
+            ),
+            url='getElementCollisionsEnabled',
         ),
                 field=FunctionOOPField(
                                 name='collisions',
@@ -2183,7 +2215,8 @@ DUMP_PARTIAL = [
                     "theElement": """The element you want to get the colshape of """
                 },
                 result='returns colshape of the element, false if not or an invalid argument was passed to the function.' ,
-            )
+            ),
+            url='getElementColShape',
         ),
                 field=FunctionOOPField(
                                 name='colShape',
@@ -2239,7 +2272,8 @@ DUMP_PARTIAL = [
                     "theElement": """The element you want to get the colshape of """
                 },
                 result='returns colshape of the element, false if not or an invalid argument was passed to the function.' ,
-            )
+            ),
+            url='getElementColShape',
         ),
                 field=FunctionOOPField(
                                 name='colShape',
@@ -2319,7 +2353,8 @@ DUMP_PARTIAL = [
                     "inherit": """- toggles whether or not the function should go up the hierarchy to find the requested key in case the specified element doesnt have it. """
                 },
                 result='this function returns a variable containing the requested element data, or false if the element or the element data does not exist. when getting data corresponding to a xml attribute, this is always a string.' ,
-            )
+            ),
+            url='getElementData',
         ),
                 field=None,
                 is_static=False,
@@ -2389,7 +2424,8 @@ DUMP_PARTIAL = [
                     "inherit": """- toggles whether or not the function should go up the hierarchy to find the requested key in case the specified element doesnt have it. """
                 },
                 result='this function returns a variable containing the requested element data, or false if the element or the element data does not exist. when getting data corresponding to a xml attribute, this is always a string.' ,
-            )
+            ),
+            url='getElementData',
         ),
                 field=None,
                 is_static=False,
@@ -2439,7 +2475,8 @@ DUMP_PARTIAL = [
                     "theElement": """The element in which youd like to retrieve the dimension of. """
                 },
                 result='returns an integer for the dimension if theelement is valid, false otherwise.' ,
-            )
+            ),
+            url='getElementDimension',
         ),
                 field=FunctionOOPField(
                                 name='dimension',
@@ -2495,7 +2532,8 @@ DUMP_PARTIAL = [
                     "theElement": """The element in which youd like to retrieve the dimension of. """
                 },
                 result='returns an integer for the dimension if theelement is valid, false otherwise.' ,
-            )
+            ),
+            url='getElementDimension',
         ),
                 field=FunctionOOPField(
                                 name='dimension',
@@ -2556,7 +2594,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a float with the distance, or false if the element is invalid.' ,
-            )
+            ),
+            url='getElementDistanceFromCentreOfMassToBaseOfModel',
         ),
                 field=FunctionOOPField(
                                 name='distanceFromCentreOfMassToBaseOfModel',
@@ -2614,7 +2653,8 @@ DUMP_PARTIAL = [
                     "theElement": """The player or vehicle whose health you want to check. """
                 },
                 result='returns a float indicating the elements health, or false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getElementHealth',
         ),
                 field=FunctionOOPField(
                                 name='health',
@@ -2670,7 +2710,8 @@ DUMP_PARTIAL = [
                     "theElement": """The player or vehicle whose health you want to check. """
                 },
                 result='returns a float indicating the elements health, or false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getElementHealth',
         ),
                 field=FunctionOOPField(
                                 name='health',
@@ -2728,7 +2769,8 @@ DUMP_PARTIAL = [
                     "theElement": """the element from which to retrieve the ID. """
                 },
                 result='this returns a string containing the element id. it will return an empty string if it has no id. it will return false if the element is invalid.' ,
-            )
+            ),
+            url='getElementID',
         ),
                 field=FunctionOOPField(
                                 name='id',
@@ -2784,7 +2826,8 @@ DUMP_PARTIAL = [
                     "theElement": """the element from which to retrieve the ID. """
                 },
                 result='this returns a string containing the element id. it will return an empty string if it has no id. it will return false if the element is invalid.' ,
-            )
+            ),
+            url='getElementID',
         ),
                 field=FunctionOOPField(
                                 name='id',
@@ -2842,7 +2885,8 @@ DUMP_PARTIAL = [
                     "theElement": """The element of which youd like to retrieve the interior """
                 },
                 result='returns an int for the interior if theelement is valid, false otherwise.' ,
-            )
+            ),
+            url='getElementInterior',
         ),
                 field=FunctionOOPField(
                                 name='interior',
@@ -2898,7 +2942,8 @@ DUMP_PARTIAL = [
                     "theElement": """The element of which youd like to retrieve the interior """
                 },
                 result='returns an int for the interior if theelement is valid, false otherwise.' ,
-            )
+            ),
+            url='getElementInterior',
         ),
                 field=FunctionOOPField(
                                 name='interior',
@@ -2967,7 +3012,8 @@ DUMP_PARTIAL = [
                     "legacy": """Set to false to return correctly setup matrix (i.e. Last column in the first 3 rows set to zero). """
                 },
                 result='returns a multi-dimensional array (which can be transformed into a proper matrix class using matrix.create method) containing a 4x4 matrix. returns false if the element is not streamed in, and not a vehicle, ped or object.' ,
-            )
+            ),
+            url='getElementMatrix',
         ),
                 field=FunctionOOPField(
                                 name='matrix',
@@ -3034,7 +3080,8 @@ DUMP_PARTIAL = [
                     "legacy": """Set to false to return correctly setup matrix (i.e. Last column in the first 3 rows set to zero). """
                 },
                 result='returns a multi-dimensional array (which can be transformed into a proper matrix class using matrix.create method) containing a 4x4 matrix. returns false if the element is not streamed in, and not a vehicle, ped or object.' ,
-            )
+            ),
+            url='getElementMatrix',
         ),
                 field=FunctionOOPField(
                                 name='matrix',
@@ -3092,7 +3139,8 @@ DUMP_PARTIAL = [
                     "theElement": """the element to retrieve the model ID of. """
                 },
                 result='returns the model id if successful, false otherwise.\n* for players/peds: a gtasa player model (skin) id. see character skins.\n* for vehicles: the vehicle ids|vehicle id of the vehicle.\n* for objects: an int specifying the model id.' ,
-            )
+            ),
+            url='getElementModel',
         ),
                 field=FunctionOOPField(
                                 name='model',
@@ -3148,7 +3196,8 @@ DUMP_PARTIAL = [
                     "theElement": """the element to retrieve the model ID of. """
                 },
                 result='returns the model id if successful, false otherwise.\n* for players/peds: a gtasa player model (skin) id. see character skins.\n* for vehicles: the vehicle ids|vehicle id of the vehicle.\n* for objects: an int specifying the model id.' ,
-            )
+            ),
+            url='getElementModel',
         ),
                 field=FunctionOOPField(
                                 name='model',
@@ -3206,7 +3255,8 @@ DUMP_PARTIAL = [
                     "theElement": """The child of the parent element you want returned. """
                 },
                 result='this returns the parent as an element. it returns false if theelement is invalid, or is the root node.' ,
-            )
+            ),
+            url='getElementParent',
         ),
                 field=FunctionOOPField(
                                 name='parent',
@@ -3262,7 +3312,8 @@ DUMP_PARTIAL = [
                     "theElement": """The child of the parent element you want returned. """
                 },
                 result='this returns the parent as an element. it returns false if theelement is invalid, or is the root node.' ,
-            )
+            ),
+            url='getElementParent',
         ),
                 field=FunctionOOPField(
                                 name='parent',
@@ -3328,7 +3379,8 @@ DUMP_PARTIAL = [
                     "theElement": """The element which youd like to retrieve the location of """
                 },
                 result='returns three floats indicating the position of the element, x, y and z respectively.' ,
-            )
+            ),
+            url='getElementPosition',
         ),
                 field=FunctionOOPField(
                                 name='position',
@@ -3400,7 +3452,8 @@ DUMP_PARTIAL = [
                     "theElement": """The element which youd like to retrieve the location of """
                 },
                 result='returns three floats indicating the position of the element, x, y and z respectively.' ,
-            )
+            ),
+            url='getElementPosition',
         ),
                 field=FunctionOOPField(
                                 name='position',
@@ -3473,7 +3526,8 @@ DUMP_PARTIAL = [
                     "object|Objects": """. """
                 },
                 result='returns a float containing the radius if the element is valid, false otherwise.' ,
-            )
+            ),
+            url='getElementRadius',
         ),
                 field=FunctionOOPField(
                                 name='radius',
@@ -3555,7 +3609,8 @@ The default rotation order for peds/players is Z-Y-X (clientside) and -Z-Y-X (se
 Specifying a rotation order other than ''"default"'' allows the same angles to later be uniformly used on several elements without having to consider their type. """
                 },
                 result='* rx, ry, rz: 3 floats representing the euler rotation angles on the axis x, y and z (with the rotation order depending on the rotorder argument) if element exists and is a valid element, false if its invalid.' ,
-            )
+            ),
+            url='getElementRotation',
         ),
                 field=FunctionOOPField(
                                 name='rotation',
@@ -3643,7 +3698,8 @@ The default rotation order for peds/players is Z-Y-X (clientside) and -Z-Y-X (se
 Specifying a rotation order other than ''"default"'' allows the same angles to later be uniformly used on several elements without having to consider their type. """
                 },
                 result='* rx, ry, rz: 3 floats representing the euler rotation angles on the axis x, y and z (with the rotation order depending on the rotorder argument) if element exists and is a valid element, false if its invalid.' ,
-            )
+            ),
+            url='getElementRotation',
         ),
                 field=FunctionOOPField(
                                 name='rotation',
@@ -3735,7 +3791,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "remoteclient": """A remote client connected to the server """
                 },
                 result='returns a table containing all the elements inside the colshape, of the specified type. returns an empty table if there are no elements inside. returns false if the colshape is invalid.' ,
-            )
+            ),
+            url='getElementsWithinColShape',
         ),
                 field=FunctionOOPField(
                                 name='elementsWithin',
@@ -3809,7 +3866,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "remoteclient": """A remote client connected to the server """
                 },
                 result='returns a table containing all the elements inside the colshape, of the specified type. returns an empty table if there are no elements inside. returns false if the colshape is invalid.' ,
-            )
+            ),
+            url='getElementsWithinColShape',
         ),
                 field=FunctionOOPField(
                                 name='elementsWithin',
@@ -3939,7 +3997,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "dimension": """The dimension you want to limit the search to. If not specified, it can return elements in any dimension. """
                 },
                 result='returns a table containing all the elements of the specified type within range. returns an empty table if there are no elements within range. returns false if the arguments are invalid.' ,
-            )
+            ),
+            url='getElementsWithinRange',
         ),
                 field=None,
                 is_static=True,
@@ -4059,7 +4118,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "dimension": """The dimension you want to limit the search to. If not specified, it can return elements in any dimension. """
                 },
                 result='returns a table containing all the elements of the specified type within range. returns an empty table if there are no elements within range. returns false if the arguments are invalid.' ,
-            )
+            ),
+            url='getElementsWithinRange',
         ),
                 field=None,
                 is_static=True,
@@ -4109,7 +4169,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """: The element to get the syncer of. """
                 },
                 result='returns the element that is the syncer of theelement or false if the element does not have a syncer.' ,
-            )
+            ),
+            url='getElementSyncer',
         ),
                 field=FunctionOOPField(
                                 name='syncer',
@@ -4170,7 +4231,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """The element you wish to get the type of. """
                 },
                 result='returns a string containing the element type, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getElementType',
         ),
                 field=FunctionOOPField(
                                 name='type',
@@ -4226,7 +4288,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """The element you wish to get the type of. """
                 },
                 result='returns a string containing the element type, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='getElementType',
         ),
                 field=FunctionOOPField(
                                 name='type',
@@ -4292,7 +4355,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """: The element you wish to retrieve the velocity of. """
                 },
                 result='if succesful, returns three floats that represent the elements current velocity along the x, y, and z axis respectively. this function can fail if the element is a player in a car. use the vehicle element in this case. it will also fail if the element specified does not have a velocity, or does not exist. in case of failure, the first return value will be false.\nthe returned values are expressed in gta units per 1/50th of a secondhttp://forum.mtasa.com/viewtopic.php?f=91&t=31225. a gta unit is equal to one metrehttp://gta.wikia.com/unit#gta3.2c_gtavc_.26_gtasa.' ,
-            )
+            ),
+            url='getElementVelocity',
         ),
                 field=FunctionOOPField(
                                 name='velocity',
@@ -4364,7 +4428,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """: The element you wish to retrieve the velocity of. """
                 },
                 result='if succesful, returns three floats that represent the elements current velocity along the x, y, and z axis respectively. this function can fail if the element is a player in a car. use the vehicle element in this case. it will also fail if the element specified does not have a velocity, or does not exist. in case of failure, the first return value will be false.\nthe returned values are expressed in gta units per 1/50th of a secondhttp://forum.mtasa.com/viewtopic.php?f=91&t=31225. a gta unit is equal to one metrehttp://gta.wikia.com/unit#gta3.2c_gtavc_.26_gtasa.' ,
-            )
+            ),
+            url='getElementVelocity',
         ),
                 field=FunctionOOPField(
                                 name='velocity',
@@ -4441,7 +4506,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "citiesonly": """: An optional argument to choose if you want to return the city name (eg Las Venturas) """
                 },
                 result='returns the string of the elements zone name.' ,
-            )
+            ),
+            url='getElementZoneName',
         ),
                 field=None,
                 is_static=False,
@@ -4494,7 +4560,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """The element whose low LOD version we want to get. """
                 },
                 result='returns a low lod element if successful, false otherwise.' ,
-            )
+            ),
+            url='getLowLODElement',
         ),
                 field=FunctionOOPField(
                                 name='lowLOD',
@@ -4550,7 +4617,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """The element whose low LOD version we want to get. """
                 },
                 result='returns a low lod element if successful, false otherwise.' ,
-            )
+            ),
+            url='getLowLODElement',
         ),
                 field=FunctionOOPField(
                                 name='lowLOD',
@@ -4638,7 +4706,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "inherit": """- toggles whether or not the function should go up the hierarchy to find the requested key in case the specified element doesnt have it. """
                 },
                 result='this function returns true if the element contains element data for key, or false if the element doesnt exist or there is no data associated with the key.' ,
-            )
+            ),
+            url='hasElementData',
         ),
                 field=None,
                 is_static=False,
@@ -4708,7 +4777,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "inherit": """- toggles whether or not the function should go up the hierarchy to find the requested key in case the specified element doesnt have it. """
                 },
                 result='this function returns true if the element contains element data for key, or false if the element doesnt exist or there is no data associated with the key.' ,
-            )
+            ),
+            url='hasElementData',
         ),
                 field=None,
                 is_static=False,
@@ -4780,7 +4850,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "thePlayer": """The player you wish to check. """
                 },
                 result='returns true if the player is subscribed, false otherwise.' ,
-            )
+            ),
+            url='hasElementDataSubscriber',
         ),
                 field=None,
                 is_static=False,
@@ -4841,7 +4912,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """The element to check for attachment. """
                 },
                 result='returns true if the specified element is attached to another element, false if it is not attached or nil if an improper argument was passed.' ,
-            )
+            ),
+            url='isElementAttached',
         ),
                 field=FunctionOOPField(
                                 name='attached',
@@ -4897,7 +4969,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """The element to check for attachment. """
                 },
                 result='returns true if the specified element is attached to another element, false if it is not attached or nil if an improper argument was passed.' ,
-            )
+            ),
+            url='isElementAttached',
         ),
                 field=FunctionOOPField(
                                 name='attached',
@@ -4955,7 +5028,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """The element to check """
                 },
                 result='returns true if the propagation is enabled, false if disabled or invalid arguments have been passed.' ,
-            )
+            ),
+            url='isElementCallPropagationEnabled',
         ),
                 field=None,
                 is_static=False,
@@ -5003,7 +5077,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """The element to check """
                 },
                 result='returns true if the propagation is enabled, false if disabled or invalid arguments have been passed.' ,
-            )
+            ),
+            url='isElementCallPropagationEnabled',
         ),
                 field=None,
                 is_static=False,
@@ -5067,7 +5142,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "withElement": """The other element which colliding with the first entity you want to get """
                 },
                 result='returns true if the elements collide with eachother, false otherwise.' ,
-            )
+            ),
+            url='isElementCollidableWith',
         ),
                 field=None,
                 is_static=False,
@@ -5117,7 +5193,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """The element in which youd like to check the double-sidedness of. """
                 },
                 result='returns true if the theelement is double-sided, false otherwise.' ,
-            )
+            ),
+            url='isElementDoubleSided',
         ),
                 field=FunctionOOPField(
                                 name='doubleSided',
@@ -5173,7 +5250,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """The element in which youd like to check the double-sidedness of. """
                 },
                 result='returns true if the theelement is double-sided, false otherwise.' ,
-            )
+            ),
+            url='isElementDoubleSided',
         ),
                 field=FunctionOOPField(
                                 name='doubleSided',
@@ -5231,7 +5309,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """the element whose freeze status we want to check. """
                 },
                 result='*returns true if the element is frozen, false if it isnt or if invalid arguments were passed.' ,
-            )
+            ),
+            url='isElementFrozen',
         ),
                 field=FunctionOOPField(
                                 name='frozen',
@@ -5287,7 +5366,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """the element whose freeze status we want to check. """
                 },
                 result='*returns true if the element is frozen, false if it isnt or if invalid arguments were passed.' ,
-            )
+            ),
+            url='isElementFrozen',
         ),
                 field=FunctionOOPField(
                                 name='frozen',
@@ -5345,7 +5425,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """: The element to check. """
                 },
                 result='returns true if the passed element is in water, false if it isnt, or if the element is invalid.' ,
-            )
+            ),
+            url='isElementInWater',
         ),
                 field=FunctionOOPField(
                                 name='inWater',
@@ -5401,7 +5482,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """: The element to check. """
                 },
                 result='returns true if the passed element is in water, false if it isnt, or if the element is invalid.' ,
-            )
+            ),
+            url='isElementInWater',
         ),
                 field=FunctionOOPField(
                                 name='inWater',
@@ -5462,7 +5544,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """: The element that we want to check. """
                 },
                 result='returns true if the passed element is local, false if not or if invalid parameters are passed.' ,
-            )
+            ),
+            url='isElementLocal',
         ),
                 field=FunctionOOPField(
                                 name='localElement',
@@ -5520,7 +5603,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """The element whose low LOD status we want to get. """
                 },
                 result='returns true if the element is low lod, false otherwise.' ,
-            )
+            ),
+            url='isElementLowLOD',
         ),
                 field=None,
                 is_static=False,
@@ -5568,7 +5652,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """The element whose low LOD status we want to get. """
                 },
                 result='returns true if the element is low lod, false otherwise.' ,
-            )
+            ),
+            url='isElementLowLOD',
         ),
                 field=None,
                 is_static=False,
@@ -5621,7 +5706,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """The element of which you wish to check wether its being rendered on screen. """
                 },
                 result='returns true if element is on screen, false if not.' ,
-            )
+            ),
+            url='isElementOnScreen',
         ),
                 field=FunctionOOPField(
                                 name='onScreen',
@@ -5682,7 +5768,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """: The element to check the streamability of. """
                 },
                 result='returns true if the passed element is streamable like normal, false if this element must always be streamed in.' ,
-            )
+            ),
+            url='isElementStreamable',
         ),
                 field=FunctionOOPField(
                                 name='streamable',
@@ -5751,7 +5838,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """: The element to check. """
                 },
                 result='returns true if the passed element is synced by the local player, false otherwise.' ,
-            )
+            ),
+            url='isElementSyncer',
         ),
                 field=FunctionOOPField(
                                 name='syncedByLocalPlayer',
@@ -5820,7 +5908,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "visibleTo": """The player you want to check against """
                 },
                 result='returns true if element is visible to the specified player, false if not or an invalid argument was passed to the function.' ,
-            )
+            ),
+            url='isElementVisibleTo',
         ),
                 field=None,
                 is_static=False,
@@ -5876,7 +5965,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theElement": """the element to check its frozen waiting for custom map objects to load status. It can be a vehicle, ped or player. """
                 },
                 result='returns true if the specified element is frozen waiting for collisions of custom map objects to load. returns false if its not or if the specified element is invalid.' ,
-            )
+            ),
+            url='isElementWaitingForGroundToLoad',
         ),
                 field=FunctionOOPField(
                                 name='waitingForGroundToLoad',
@@ -5945,7 +6035,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theShape": """The colshape youre checking """
                 },
                 result='returns true if the element is within the colshape, false otherwise' ,
-            )
+            ),
+            url='isElementWithinColShape',
         ),
                 field=None,
                 is_static=False,
@@ -6004,7 +6095,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theShape": """The colshape youre checking """
                 },
                 result='returns true if the element is within the colshape, false otherwise' ,
-            )
+            ),
+            url='isElementWithinColShape',
         ),
                 field=None,
                 is_static=False,
@@ -6065,7 +6157,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theMarker": """The marker youre checking. """
                 },
                 result='returns true if the element is within the marker, false otherwise' ,
-            )
+            ),
+            url='isElementWithinMarker',
         ),
                 field=None,
                 is_static=False,
@@ -6124,7 +6217,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theMarker": """The marker youre checking. """
                 },
                 result='returns true if the element is within the marker, false otherwise' ,
-            )
+            ),
+            url='isElementWithinMarker',
         ),
                 field=None,
                 is_static=False,
@@ -6185,7 +6279,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "key": """The key string you wish to remove. """
                 },
                 result='returns true if the data was removed succesfully, false if the given key does not exist in the element or the element is invalid.' ,
-            )
+            ),
+            url='removeElementData',
         ),
                 field=None,
                 is_static=False,
@@ -6260,7 +6355,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "thePlayer": """The player you wish to unsubscribe. """
                 },
                 result='returns true if the player was unsubscribed, false otherwise.' ,
-            )
+            ),
+            url='removeElementDataSubscriber',
         ),
                 field=None,
                 is_static=False,
@@ -6325,7 +6421,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "Note": """Objects are fully transparent at 140. """
                 },
                 result='returns true or false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setElementAlpha',
         ),
                 field=FunctionOOPField(
                                 name='alpha',
@@ -6393,7 +6490,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "Note": """Objects are fully transparent at 140. """
                 },
                 result='returns true or false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setElementAlpha',
         ),
                 field=FunctionOOPField(
                                 name='alpha',
@@ -6484,7 +6582,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "rz": """velocity around the Z axis """
                 },
                 result='returns true if it was succesful, false otherwise.' ,
-            )
+            ),
+            url='setElementAngularVelocity',
         ),
                 field=FunctionOOPField(
                                 name='angularVelocity',
@@ -6573,7 +6672,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "rz": """velocity around the Z axis """
                 },
                 result='returns true if it was succesful, false otherwise.' ,
-            )
+            ),
+            url='setElementAngularVelocity',
         ),
                 field=FunctionOOPField(
                                 name='angularVelocity',
@@ -6697,7 +6797,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "zRotOffset": """The z rotation offset (default 0). """
                 },
                 result='returns true if the attaching process was successful, false otherwise.' ,
-            )
+            ),
+            url='setElementAttachedOffsets',
         ),
                 field=None,
                 is_static=False,
@@ -6811,7 +6912,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "zRotOffset": """The z rotation offset (default 0). """
                 },
                 result='returns true if the attaching process was successful, false otherwise.' ,
-            )
+            ),
+            url='setElementAttachedOffsets',
         ),
                 field=None,
                 is_static=False,
@@ -6896,7 +6998,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "enabled": """Whether propagation should be enabled or not """
                 },
                 result='returns true, if the propagation behaviour has been changed successfully, false otherwise.' ,
-            )
+            ),
+            url='setElementCallPropagationEnabled',
         ),
                 field=None,
                 is_static=False,
@@ -6955,7 +7058,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "enabled": """Whether propagation should be enabled or not """
                 },
                 result='returns true, if the propagation behaviour has been changed successfully, false otherwise.' ,
-            )
+            ),
+            url='setElementCallPropagationEnabled',
         ),
                 field=None,
                 is_static=False,
@@ -7030,7 +7134,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "enabled": """A boolean to indicate whether elements should be able to collide with eachother (true) or not (false) """
                 },
                 result='returns true if the collisions were set succesfully, false otherwise.' ,
-            )
+            ),
+            url='setElementCollidableWith',
         ),
                 field=None,
                 is_static=False,
@@ -7091,7 +7196,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "enabled": """A boolean to indicate whether collisions are enabled (true) or disabled (false) """
                 },
                 result='returns true if the collisions were set succesfully, false otherwise.' ,
-            )
+            ),
+            url='setElementCollisionsEnabled',
         ),
                 field=FunctionOOPField(
                                 name='collisions',
@@ -7158,7 +7264,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "enabled": """A boolean to indicate whether collisions are enabled (true) or disabled (false) """
                 },
                 result='returns true if the collisions were set succesfully, false otherwise.' ,
-            )
+            ),
+            url='setElementCollisionsEnabled',
         ),
                 field=FunctionOOPField(
                                 name='collisions',
@@ -7252,7 +7359,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "subscribe": """- Only synchronise to specific clients. See addElementDataSubscriber and removeElementDataSubscriber. """
                 },
                 result='' ,
-            )
+            ),
+            url='setElementData',
         ),
                 field=None,
                 is_static=False,
@@ -7333,7 +7441,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "synchronize": """Determines whether or not the data will be synchronized with the server. """
                 },
                 result='' ,
-            )
+            ),
+            url='setElementData',
         ),
                 field=None,
                 is_static=False,
@@ -7394,7 +7503,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "dimension": """An integer representing the dimension ID. {{New feature/item|3.0154|1.5.3|11199|You can also use -1 to make the element visible in all dimensions (only valid to objects).}} Valid values are 0 to 65535. """
                 },
                 result='returns true if theelement and dimension are valid, false otherwise.\nalso returns false if theelement is a player and its not alive.' ,
-            )
+            ),
+            url='setElementDimension',
         ),
                 field=FunctionOOPField(
                                 name='dimension',
@@ -7461,7 +7571,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "dimension": """An integer representing the dimension ID. {{New feature/item|3.0154|1.5.3|11199|You can also use -1 to make the element visible in all dimensions (only valid to objects).}} Valid values are 0 to 65535. """
                 },
                 result='returns true if theelement and dimension are valid, false otherwise.\nalso returns false if theelement is a player and its not alive.' ,
-            )
+            ),
+            url='setElementDimension',
         ),
                 field=FunctionOOPField(
                                 name='dimension',
@@ -7530,7 +7641,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "enable": """Set to true/false to enable/disable double-sidedness. """
                 },
                 result='returns true if theelement is valid, false otherwise.' ,
-            )
+            ),
+            url='setElementDoubleSided',
         ),
                 field=FunctionOOPField(
                                 name='doubleSided',
@@ -7597,7 +7709,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "enable": """Set to true/false to enable/disable double-sidedness. """
                 },
                 result='returns true if theelement is valid, false otherwise.' ,
-            )
+            ),
+            url='setElementDoubleSided',
         ),
                 field=FunctionOOPField(
                                 name='doubleSided',
@@ -7666,7 +7779,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "freezeStatus": """A boolean denoting whether we want to freeze (true) or unfreeze (false) it. """
                 },
                 result='returns true if the element was frozen, false if it wasnt or if invalid arguments are passed.' ,
-            )
+            ),
+            url='setElementFrozen',
         ),
                 field=FunctionOOPField(
                                 name='frozen',
@@ -7733,7 +7847,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "freezeStatus": """A boolean denoting whether we want to freeze (true) or unfreeze (false) it. """
                 },
                 result='returns true if the element was frozen, false if it wasnt or if invalid arguments are passed.' ,
-            )
+            ),
+            url='setElementFrozen',
         ),
                 field=FunctionOOPField(
                                 name='frozen',
@@ -7802,7 +7917,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "newHealth": """A float indicating the new health to set for the element. """
                 },
                 result='returns true if the new health was set successfully, or false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setElementHealth',
         ),
                 field=FunctionOOPField(
                                 name='health',
@@ -7869,7 +7985,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "newHealth": """A float indicating the new health to set for the element. """
                 },
                 result='returns true if the new health was set successfully, or false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setElementHealth',
         ),
                 field=FunctionOOPField(
                                 name='health',
@@ -7938,7 +8055,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "name": """The new ID for theElement. """
                 },
                 result='this returns true if successful. it will return false if theelement is invalid, or does not exist, or if name is invalid, or is not a string.' ,
-            )
+            ),
+            url='setElementID',
         ),
                 field=FunctionOOPField(
                                 name='id',
@@ -8005,7 +8123,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "name": """The new ID for theElement. """
                 },
                 result='this returns true if successful. it will return false if theelement is invalid, or does not exist, or if name is invalid, or is not a string.' ,
-            )
+            ),
+            url='setElementID',
         ),
                 field=FunctionOOPField(
                                 name='id',
@@ -8107,7 +8226,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "z": """A floating point number representing the Z coordinate on the map. """
                 },
                 result='returns true if theelement and interior are valid arguments, false otherwise.' ,
-            )
+            ),
+            url='setElementInterior',
         ),
                 field=FunctionOOPField(
                                 name='interior',
@@ -8207,7 +8327,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "z": """A floating point number representing the Z coordinate on the map. """
                 },
                 result='returns true if theelement and interior are valid arguments, false otherwise.' ,
-            )
+            ),
+            url='setElementInterior',
         ),
                 field=FunctionOOPField(
                                 name='interior',
@@ -8276,7 +8397,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theMatrix": """The matrix. """
                 },
                 result='returns true if the matrix was set succesfully, false otherwise.' ,
-            )
+            ),
+            url='setElementMatrix',
         ),
                 field=FunctionOOPField(
                                 name='matrix',
@@ -8343,7 +8465,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "theMatrix": """The matrix. """
                 },
                 result='returns true if the matrix was set succesfully, false otherwise.' ,
-            )
+            ),
+            url='setElementMatrix',
         ),
                 field=FunctionOOPField(
                                 name='matrix',
@@ -8415,7 +8538,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
 ** For objects/projectiles/weapons: An [[int]] specifying the model id. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setElementModel',
         ),
                 field=FunctionOOPField(
                                 name='model',
@@ -8485,7 +8609,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
 ** For objects/projectiles/weapons: An [[int]] specifying the model id. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setElementModel',
         ),
                 field=FunctionOOPField(
                                 name='model',
@@ -8554,7 +8679,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "parent": """The element you wish to be the parent of theElement. """
                 },
                 result='returns true if both elements are valid, false otherwise.' ,
-            )
+            ),
+            url='setElementParent',
         ),
                 field=FunctionOOPField(
                                 name='parent',
@@ -8621,7 +8747,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "parent": """The element you wish to be the parent of theElement. """
                 },
                 result='returns true if both elements are valid, false otherwise.' ,
-            )
+            ),
+            url='setElementParent',
         ),
                 field=FunctionOOPField(
                                 name='parent',
@@ -8723,7 +8850,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "warp": """teleports players, resetting any animations they were doing. Setting this to false preserves the current animation. """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='setElementPosition',
         ),
                 field=FunctionOOPField(
                                 name='position',
@@ -8823,7 +8951,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                     "warp": """teleports players, resetting any animations they were doing. Setting this to false preserves the current animation. """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='setElementPosition',
         ),
                 field=FunctionOOPField(
                                 name='position',
@@ -8941,7 +9070,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                     "conformPedRotation": """Relevant only for peds and will be ignored for other element types. A bool which should be set to true to ensure the ped rotation is correctly set in all circumstances. Failing to set this argument may result in the ped rotation being inverted whilst it is in the air and other inconsistencies. The default value of false is for backward compatibility with scripts which may depend upon the incorrect behaviour. """
                 },
                 result='returns true if the element rotation was successfully set and false otherwise.' ,
-            )
+            ),
+            url='setElementRotation',
         ),
                 field=FunctionOOPField(
                                 name='rotation',
@@ -9057,7 +9187,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                     "conformPedRotation": """Relevant only for peds and will be ignored for other element types. A bool which should be set to true to ensure the ped rotation is correctly set in all circumstances. Failing to set this argument may result in the ped rotation being inverted whilst it is in the air and other inconsistencies. The default value of false is for backward compatibility with scripts which may depend upon the incorrect behaviour. """
                 },
                 result='returns true if the element rotation was successfully set and false otherwise.' ,
-            )
+            ),
+            url='setElementRotation',
         ),
                 field=FunctionOOPField(
                                 name='rotation',
@@ -9129,7 +9260,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                     "streamable": """true if this element should stream in/out like normal, false if it should always be streamed in. """
                 },
                 result='returns whether the element could be set to be streamable.' ,
-            )
+            ),
+            url='setElementStreamable',
         ),
                 field=FunctionOOPField(
                                 name='streamable',
@@ -9198,7 +9330,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                     "thePlayer": """The player who should be the new syncer of the element. If set to false, this element will not have a syncer. If set to true, MTA will pick automatically the nearest or most relevant player to that element. """
                 },
                 result='returns true if the syncer was changed successfully, false if the element passed was not a ped or vehicle.' ,
-            )
+            ),
+            url='setElementSyncer',
         ),
                 field=FunctionOOPField(
                                 name='syncer',
@@ -9292,7 +9425,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                     "speedZ": """A floating point value determining the speed along the Z axis. """
                 },
                 result='returns true if the speed was set successfully, false if a bad element was specified or other bad arguments.' ,
-            )
+            ),
+            url='setElementVelocity',
         ),
                 field=FunctionOOPField(
                                 name='velocity',
@@ -9381,7 +9515,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                     "speedZ": """A floating point value determining the speed along the Z axis. """
                 },
                 result='returns true if the speed was set successfully, false if a bad element was specified or other bad arguments.' ,
-            )
+            ),
+            url='setElementVelocity',
         ),
                 field=FunctionOOPField(
                                 name='velocity',
@@ -9461,7 +9596,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                     "visible": """Whether you are making it visible or invisible to the player. """
                 },
                 result='returns true if the elements visibility was changed successfully, false otherwise, for example if you are trying to change the visibility of a vehicle, player or object.' ,
-            )
+            ),
+            url='setElementVisibleTo',
         ),
                 field=None,
                 is_static=False,
@@ -9525,7 +9661,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                     "lowLODElement": """A low LOD element to display when the first element is not fully visible. """
                 },
                 result='returns true if the assignment was successful, false otherwise.' ,
-            )
+            ),
+            url='setLowLODElement',
         ),
                 field=FunctionOOPField(
                                 name='lowLOD',
@@ -9592,7 +9729,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                     "lowLODElement": """A low LOD element to display when the first element is not fully visible. """
                 },
                 result='returns true if the assignment was successful, false otherwise.' ,
-            )
+            ),
+            url='setLowLODElement',
         ),
                 field=FunctionOOPField(
                                 name='lowLOD',

@@ -114,7 +114,8 @@ DUMP_PARTIAL = [
                     "silentFlag": """If you want the siren to be silent set this to true """
                 },
                 result='returns true if sirens were successfully added to the vehicle, false otherwise.' ,
-            )
+            ),
+            url='addVehicleSirens',
         )
         ],
         client=[
@@ -172,7 +173,8 @@ DUMP_PARTIAL = [
 '''Note:''' setCameraTarget will behave strangely if you use hydraulics (upgrade id: 1087) server sided and when your camera target is the player inside the vehicle with hydraulics and if the player is not you. """
                 },
                 result='returns true if the upgrade was successfully added to the vehicle, otherwise false.' ,
-            )
+            ),
+            url='addVehicleUpgrade',
         )
         ],
         client=[
@@ -225,7 +227,8 @@ DUMP_PARTIAL = [
 '''Note:''' setCameraTarget will behave strangely if you use hydraulics (upgrade id: 1087) server sided and when your camera target is the player inside the vehicle with hydraulics and if the player is not you. """
                 },
                 result='returns true if the upgrade was successfully added to the vehicle, otherwise false.' ,
-            )
+            ),
+            url='addVehicleUpgrade',
         )
         ],
     ),
@@ -271,7 +274,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """: the vehicle you wish to retrieve the lights state of. """
                 },
                 result='returns true if the lights are on, false otherwise.' ,
-            )
+            ),
+            url='areVehicleLightsOn',
         )
         ],
     ),
@@ -325,7 +329,8 @@ DUMP_PARTIAL = [
                     "theTrailer": """: the trailer you wish to be attached. """
                 },
                 result='returns true if the vehicles were successfully attached, false otherwise.' ,
-            )
+            ),
+            url='attachTrailerToVehicle',
         )
         ],
         client=[
@@ -377,7 +382,8 @@ DUMP_PARTIAL = [
                     "theTrailer": """: the trailer you wish to be attached. """
                 },
                 result='returns true if the vehicles were successfully attached, false otherwise.' ,
-            )
+            ),
+            url='attachTrailerToVehicle',
         )
         ],
     ),
@@ -431,7 +437,8 @@ DUMP_PARTIAL = [
                     "explode": """if this argument is true then the vehicle will explode, otherwise it will just be blown up silently. """
                 },
                 result='' ,
-            )
+            ),
+            url='blowVehicle',
         )
         ],
         client=[
@@ -472,7 +479,8 @@ DUMP_PARTIAL = [
                     "vehicleToBlow": """the vehicle that you wish to blow up. """
                 },
                 result='' ,
-            )
+            ),
+            url='blowVehicle',
         )
         ],
     ),
@@ -625,7 +633,8 @@ DUMP_PARTIAL = [
                     "variant2": """: An integer for the second vehicle variant. See vehicle variants. """
                 },
                 result='returns the vehicle element that was created. returns false if the arguments are incorrect, or if the vehicle limit of 65535 is exceeded.' ,
-            )
+            ),
+            url='createVehicle',
         )
         ],
         client=[
@@ -776,7 +785,8 @@ DUMP_PARTIAL = [
                     "variant2": """: An integer for the second vehicle variant. See vehicle variants. """
                 },
                 result='returns the vehicle element that was created. returns false if the arguments are incorrect, or if the vehicle limit of 65535 is exceeded.' ,
-            )
+            ),
+            url='createVehicle',
         )
         ],
     ),
@@ -830,7 +840,8 @@ DUMP_PARTIAL = [
                     "theTrailer": """: The trailer you wish to be detached. """
                 },
                 result='returns true if the vehicles were successfully detached, false otherwise.' ,
-            )
+            ),
+            url='detachTrailerFromVehicle',
         )
         ],
         client=[
@@ -882,7 +893,8 @@ DUMP_PARTIAL = [
                     "theTrailer": """: The trailer you wish to be detached. """
                 },
                 result='returns true if the vehicles were successfully detached, false otherwise.' ,
-            )
+            ),
+            url='detachTrailerFromVehicle',
         )
         ],
     ),
@@ -925,7 +937,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle you wish to fix """
                 },
                 result='returns true if the vehicle was fixed, false if thevehicle is invalid.' ,
-            )
+            ),
+            url='fixVehicle',
         )
         ],
         client=[
@@ -966,7 +979,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle you wish to fix """
                 },
                 result='returns true if the vehicle was fixed, false if thevehicle is invalid.' ,
-            )
+            ),
+            url='fixVehicle',
         )
         ],
     ),
@@ -1012,7 +1026,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """The vehicle that will be checked. """
                 },
                 result='returns true if the collisions are enabled for specified vehicle, false if the collisions arent enabled for the specified vehicle, if the vehicle is not a helicopter or if invalid arguments are specified.' ,
-            )
+            ),
+            url='getHeliBladeCollisionsEnabled',
         )
         ],
     ),
@@ -1058,7 +1073,8 @@ DUMP_PARTIAL = [
                     "heli": """the helicopter element to get the rotor speed of. """
                 },
                 result='returns the rotor speed if successful. this is 0 when the helicopter is parked, and about 0.2 when it is fully spun up. it can be negative if the rotor rotates counter-clockwise. returns false in case of failure (an invalid element or a vehicle element that is not a helicopter was passed).' ,
-            )
+            ),
+            url='getHelicopterRotorSpeed',
         )
         ],
     ),
@@ -1101,7 +1117,8 @@ DUMP_PARTIAL = [
                     "modelId": """the vehicle model you wish to get the handling data of. """
                 },
                 result='returns a table containing all the handling data, false if an invalid vehicle model is specified. here is a list of valid table properties and what they return:' ,
-            )
+            ),
+            url='getModelHandling',
         )
         ],
         client=[
@@ -1147,7 +1164,8 @@ DUMP_PARTIAL = [
                     "modelID": """The vehicle ID you wish to get the original handling from. """
                 },
                 result='returns a table containing all the handling data, false otherwise. here a list of valid table properties and what they return:' ,
-            )
+            ),
+            url='getOriginalHandling',
         )
         ],
         client=[
@@ -1188,7 +1206,8 @@ DUMP_PARTIAL = [
                     "modelID": """The vehicle ID you wish to get the original handling from. """
                 },
                 result='returns a table containing all the handling data, false otherwise. here a list of valid table properties and what they return:' ,
-            )
+            ),
+            url='getOriginalHandling',
         )
         ],
     ),
@@ -1231,7 +1250,8 @@ DUMP_PARTIAL = [
                     "train": """the train of which to get the driving direction. """
                 },
                 result='returns true if the train is driving clockwise on the train track, false if it is going counterclockwise or a failure occured.' ,
-            )
+            ),
+            url='getTrainDirection',
         )
         ],
         client=[
@@ -1272,7 +1292,8 @@ DUMP_PARTIAL = [
                     "train": """the train of which to get the driving direction. """
                 },
                 result='returns true if the train is driving clockwise on the train track, false if it is going counterclockwise or a failure occured.' ,
-            )
+            ),
+            url='getTrainDirection',
         )
         ],
     ),
@@ -1315,7 +1336,8 @@ DUMP_PARTIAL = [
                     "train": """the train to get the position of """
                 },
                 result='returns a float that represents how along the track it is, false if there is problem with train element.' ,
-            )
+            ),
+            url='getTrainPosition',
         )
         ],
         client=[
@@ -1356,7 +1378,8 @@ DUMP_PARTIAL = [
                     "train": """the train to get the position of """
                 },
                 result='returns a float that represents how along the track it is, false if there is problem with train element.' ,
-            )
+            ),
+            url='getTrainPosition',
         )
         ],
     ),
@@ -1399,7 +1422,8 @@ DUMP_PARTIAL = [
                     "train": """the train of which to retrieve the speed. """
                 },
                 result='returns the trains speed if successful, false otherwise.' ,
-            )
+            ),
+            url='getTrainSpeed',
         )
         ],
         client=[
@@ -1440,7 +1464,8 @@ DUMP_PARTIAL = [
                     "train": """the train of which to retrieve the speed. """
                 },
                 result='returns the trains speed if successful, false otherwise.' ,
-            )
+            ),
+            url='getTrainSpeed',
         )
         ],
     ),
@@ -1483,7 +1508,8 @@ DUMP_PARTIAL = [
                     "train": """the train of which to get the track. """
                 },
                 result='returns an integer (whole number) that represents the train track, false if there is problem with train element.' ,
-            )
+            ),
+            url='getTrainTrack',
         )
         ],
         client=[
@@ -1524,7 +1550,8 @@ DUMP_PARTIAL = [
                     "train": """the train of which to get the track. """
                 },
                 result='returns an integer (whole number) that represents the train track, false if there is problem with train element.' ,
-            )
+            ),
+            url='getTrainTrack',
         )
         ],
     ),
@@ -1570,7 +1597,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """The vehicle you want to get the adjustable property of. """
                 },
                 result='returns a value from 0 upwards representing adjustment. 0 is default position. maximum varies per vehicle, for example hydra horizontal flight is 5000, while dump truck tray max tilt is 2500. or returns false if the vehicle passed to the function is invalid.' ,
-            )
+            ),
+            url='getVehicleAdjustableProperty',
         )
         ],
     ),
@@ -1668,7 +1696,8 @@ DUMP_PARTIAL = [
                     "bRGB": """A boolean specifying whether to return RGB values. A setting of false will result in the function returning color ids instead. """
                 },
                 result='*returns 12 int|ints (if brgb is true) indicating the red, green and blue components of each of the 4 vehicle colors.\n*returns 4 int|ints (if brgb is false) indicating the color ids of each of the 4 vehicle colors.\n*returns false if the vehicle doesnt exist.\nvalid color ids if brgb is set to false:\n<br>' ,
-            )
+            ),
+            url='getVehicleColor',
         )
         ],
         client=[
@@ -1764,7 +1793,8 @@ DUMP_PARTIAL = [
                     "bRGB": """A boolean specifying whether to return RGB values. A setting of false will result in the function returning color ids instead. """
                 },
                 result='*returns 12 int|ints (if brgb is true) indicating the red, green and blue components of each of the 4 vehicle colors.\n*returns 4 int|ints (if brgb is false) indicating the color ids of each of the 4 vehicle colors.\n*returns false if the vehicle doesnt exist.\nvalid color ids if brgb is set to false:\n<br>' ,
-            )
+            ),
+            url='getVehicleColor',
         )
         ],
     ),
@@ -1818,7 +1848,8 @@ DUMP_PARTIAL = [
                     "slot": """the upgrade slot number for which youre getting the list (from 0 to 16). Compatible upgrades for all slots are listed if this is not specified. """
                 },
                 result='returns a table with all the compatible upgrades, or false if invalid arguments are passed.' ,
-            )
+            ),
+            url='getVehicleCompatibleUpgrades',
         )
         ],
         client=[
@@ -1870,7 +1901,8 @@ DUMP_PARTIAL = [
                     "slot": """the upgrade slot number for which youre getting the list (from 0 to 16). Compatible upgrades for all slots are listed if this is not specified. """
                 },
                 result='returns a table with all the compatible upgrades, or false if invalid arguments are passed.' ,
-            )
+            ),
+            url='getVehicleCompatibleUpgrades',
         )
         ],
     ),
@@ -1949,7 +1981,8 @@ DUMP_PARTIAL = [
                     "world": """The position is a world position. """
                 },
                 result='returns three floats indicating the position of the component, x, y and z respectively.' ,
-            )
+            ),
+            url='getVehicleComponentPosition',
         )
         ],
     ),
@@ -2028,7 +2061,8 @@ DUMP_PARTIAL = [
                     "world": """: The rotation is a world rotation, relative to the worlds coordinates axes. """
                 },
                 result='returns three floats indicating the rotation of the component, x, y and z respectively.' ,
-            )
+            ),
+            url='getVehicleComponentRotation',
         )
         ],
     ),
@@ -2074,7 +2108,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """The vehicle you wish to get the Vehicle_Components|components of. """
                 },
                 result='returns a table containing the name of the component as the key and visibility flag of that component as the value' ,
-            )
+            ),
+            url='getVehicleComponents',
         )
         ],
     ),
@@ -2153,7 +2188,8 @@ DUMP_PARTIAL = [
                     "world": """The scale is a world scale. """
                 },
                 result='returns three floats indicating the scale of the component, x, y and z respectively.' ,
-            )
+            ),
+            url='getVehicleComponentScale',
         )
         ],
     ),
@@ -2210,7 +2246,8 @@ DUMP_PARTIAL = [
                     "theComponent": """A Vehicle_Components|vehicle component (this is the frame name from the model file of the component you wish to modify) """
                 },
                 result='returns a bool indicating the visible state of the component.' ,
-            )
+            ),
+            url='getVehicleComponentVisible',
         )
         ],
     ),
@@ -2253,7 +2290,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle you want to get the controller of. """
                 },
                 result='returns a player object, if there isnt a driver, it will search the trailer chain for the front driver, false otherwise.' ,
-            )
+            ),
+            url='getVehicleController',
         )
         ],
         client=[
@@ -2294,7 +2332,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle you want to get the controller of. """
                 },
                 result='returns a player object, if there isnt a driver, it will search the trailer chain for the front driver, false otherwise.' ,
-            )
+            ),
+            url='getVehicleController',
         )
         ],
     ),
@@ -2340,7 +2379,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle to get the gear of """
                 },
                 result='returns the gear if successful, false otherwise.' ,
-            )
+            ),
+            url='getVehicleCurrentGear',
         )
         ],
     ),
@@ -2394,7 +2434,8 @@ DUMP_PARTIAL = [
                     "door": """A whole number, 0 (hood), 1 (trunk), 2 (front left), 3 (front right), 4 (rear left), 5 (rear right) """
                 },
                 result='returns a number between 0 and 1 that indicates how open the door is. 0 is closed, and 1 is fully open. returns false if invalid arguments are passed.' ,
-            )
+            ),
+            url='getVehicleDoorOpenRatio',
         )
         ],
         client=[
@@ -2446,7 +2487,8 @@ DUMP_PARTIAL = [
                     "door": """A whole number, 0 (hood), 1 (trunk), 2 (front left), 3 (front right), 4 (rear left), 5 (rear right) """
                 },
                 result='returns a number between 0 and 1 that indicates how open the door is. 0 is closed, and 1 is fully open. returns false if invalid arguments are passed.' ,
-            )
+            ),
+            url='getVehicleDoorOpenRatio',
         )
         ],
     ),
@@ -2506,7 +2548,8 @@ DUMP_PARTIAL = [
                     "5": """Rear right """
                 },
                 result='if successful, one of the following integers will be returned:\n* 0: shut, intact (also returned if the door does not exist)\n* 1: ajar, intact\n* 2: shut, damaged\n* 3: ajar, damaged\n* 4: missing' ,
-            )
+            ),
+            url='getVehicleDoorState',
         )
         ],
         client=[
@@ -2564,7 +2607,8 @@ DUMP_PARTIAL = [
                     "5": """Rear right """
                 },
                 result='if successful, one of the following integers will be returned:\n* 0: shut, intact (also returned if the door does not exist)\n* 1: ajar, intact\n* 2: shut, damaged\n* 3: ajar, damaged\n* 4: missing' ,
-            )
+            ),
+            url='getVehicleDoorState',
         )
         ],
     ),
@@ -2629,7 +2673,8 @@ DUMP_PARTIAL = [
                     "dummy": """The dummy whose position you want to get """
                 },
                 result='returns three floats indicating the position x, y and z of the vehicles dummy. it returns false otherwise.\nthis is a command to get the position of the players vehicle dummy position specified as an argument.\n<syntaxhighlight lang=lua>\nfunction getdummyposition(cmd, dummy)\nif (not dummy) then\nreturn false\nend\nlocal veh = getpedoccupiedvehicle(localplayer)\nif (not veh) then\noutputchatbox(you should be in a vehicle to use this command, 255, 25, 25)\nreturn false\nend\nlocal x, y, z = getvehicledummyposition(veh, dummy)\noutputchatbox(x: ..x.., y: ..y.., z: ..z, 0, 255, 0)\nend\naddcommandhandler(getdummy, getdummyposition)\n</syntaxhighlight>' ,
-            )
+            ),
+            url='getVehicleDummyPosition',
         )
         ],
     ),
@@ -2672,7 +2717,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """: the vehicle you wish to get the engine state of. """
                 },
                 result='returns true if the vehicles engine is started, false otherwise.' ,
-            )
+            ),
+            url='getVehicleEngineState',
         )
         ],
         client=[
@@ -2713,7 +2759,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """: the vehicle you wish to get the engine state of. """
                 },
                 result='returns true if the vehicles engine is started, false otherwise.' ,
-            )
+            ),
+            url='getVehicleEngineState',
         )
         ],
     ),
@@ -2767,7 +2814,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle to retrieve the gravity vector of. """
                 },
                 result='returns the x, y and z components of the gravity vector if successful, false otherwise.' ,
-            )
+            ),
+            url='getVehicleGravity',
         )
         ],
     ),
@@ -2810,7 +2858,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle you wish to get the handling data of. """
                 },
                 result='returns a table containing all the handling data, false otherwise. heres a list of valid table properties and what they return:' ,
-            )
+            ),
+            url='getVehicleHandling',
         )
         ],
         client=[
@@ -2851,7 +2900,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle you wish to get the handling data of. """
                 },
                 result='returns a table containing all the handling data, false otherwise. heres a list of valid table properties and what they return:' ,
-            )
+            ),
+            url='getVehicleHandling',
         )
         ],
     ),
@@ -2902,7 +2952,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """The vehicle that you wish to set the headlight color of. """
                 },
                 result='returns three integers for the red, green and blue of the headlight color for the specified vehicle, false if an invalid vehicle was specified.' ,
-            )
+            ),
+            url='getVehicleHeadLightColor',
         )
         ],
         client=[
@@ -2951,7 +3002,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """The vehicle that you wish to set the headlight color of. """
                 },
                 result='returns three integers for the red, green and blue of the headlight color for the specified vehicle, false if an invalid vehicle was specified.' ,
-            )
+            ),
+            url='getVehicleHeadLightColor',
         )
         ],
     ),
@@ -2994,7 +3046,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle of which you wish to check the landing gear state. """
                 },
                 result='returns true if landing gear is down, false if the landing gear is up.<br />\nreturns nil if the vehicle has no landing gear, or is invalid.' ,
-            )
+            ),
+            url='getVehicleLandingGearDown',
         )
         ],
         client=[
@@ -3035,7 +3088,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle of which you wish to check the landing gear state. """
                 },
                 result='returns true if landing gear is down, false if the landing gear is up.<br />\nreturns nil if the vehicle has no landing gear, or is invalid.' ,
-            )
+            ),
+            url='getVehicleLandingGearDown',
         )
         ],
     ),
@@ -3093,7 +3147,8 @@ DUMP_PARTIAL = [
                     "3": """Rear left """
                 },
                 result='returns 0 (working) or 1 (broken)' ,
-            )
+            ),
+            url='getVehicleLightState',
         )
         ],
         client=[
@@ -3149,7 +3204,8 @@ DUMP_PARTIAL = [
                     "3": """Rear left """
                 },
                 result='returns 0 (working) or 1 (broken)' ,
-            )
+            ),
+            url='getVehicleLightState',
         )
         ],
     ),
@@ -3202,7 +3258,8 @@ OR """,
                     "modelID": """the model id that you wish to know the maximum capacity of. """
                 },
                 result='returns an int indicating the maximum number of passengers that can enter a vehicle.' ,
-            )
+            ),
+            url='getVehicleMaxPassengers',
         )
         ],
         client=[
@@ -3253,7 +3310,8 @@ OR """,
                     "modelID": """the model id that you wish to know the maximum capacity of. """
                 },
                 result='returns an int indicating the maximum number of passengers that can enter a vehicle.' ,
-            )
+            ),
+            url='getVehicleMaxPassengers',
         )
         ],
     ),
@@ -3318,7 +3376,8 @@ OR """,
                     "dummy": """: The dummy whose position you want to get """
                 },
                 result='returns three floats indicating the default position x, y and z of the given dummy. it returns false otherwise.' ,
-            )
+            ),
+            url='getVehicleModelDummyDefaultPosition',
         )
         ],
     ),
@@ -3383,7 +3442,8 @@ OR """,
                     "dummy": """: The dummy whose position you want to get """
                 },
                 result='returns three floats indicating the position x, y and z of given dummy. it returns false otherwise.' ,
-            )
+            ),
+            url='getVehicleModelDummyPosition',
         )
         ],
     ),
@@ -3437,7 +3497,8 @@ OR """,
                     "modelID": """: The vehicle model ID. """
                 },
                 result='returns the position of the exhaust fumes if everything went fine or false otherwise.' ,
-            )
+            ),
+            url='getVehicleModelExhaustFumesPosition',
         )
         ],
     ),
@@ -3480,7 +3541,8 @@ OR """,
                     "name": """A string containing the name of the vehicle. """
                 },
                 result='returns an integer if the name exists, false otherwise.\nif you use this function on vehicles with shared names, such as police, it will return the earliest occurrence of that vehicles id.' ,
-            )
+            ),
+            url='getVehicleModelFromName',
         )
         ],
         client=[
@@ -3521,7 +3583,8 @@ OR """,
                     "name": """A string containing the name of the vehicle. """
                 },
                 result='returns an integer if the name exists, false otherwise.\nif you use this function on vehicles with shared names, such as police, it will return the earliest occurrence of that vehicles id.' ,
-            )
+            ),
+            url='getVehicleModelFromName',
         )
         ],
     ),
@@ -3582,7 +3645,8 @@ OR """,
 <syntaxhighlight lang="lua">{ front_axle = 0.8, rear_axle = 0.7 }</syntaxhighlight> """
                 },
                 result='returns a decimal number or a table, depending on the specified wheel group. if the specified vehicle model id or wheel group are not valid, an error is raised instead. the meaning of the wheel size values is documented in setvehiclemodelwheelsize.' ,
-            )
+            ),
+            url='getVehicleModelWheelSize',
         )
         ],
     ),
@@ -3625,7 +3689,8 @@ OR """,
                     "theVehicle": """the vehicle you want to get the name of. """
                 },
                 result='returns a string containing the requested vehicles name, or false if the vehicle passed to the function is invalid.' ,
-            )
+            ),
+            url='getVehicleName',
         )
         ],
         client=[
@@ -3666,7 +3731,8 @@ OR """,
                     "theVehicle": """the vehicle you want to get the name of. """
                 },
                 result='returns a string containing the requested vehicles name, or false if the vehicle passed to the function is invalid.' ,
-            )
+            ),
+            url='getVehicleName',
         )
         ],
     ),
@@ -3709,7 +3775,8 @@ OR """,
                     "model": """This is the vehicle model ID. See vehicle IDs to see what values will return names. """
                 },
                 result='returns the name of the vehicle if the model id was valid, false otherwise.' ,
-            )
+            ),
+            url='getVehicleNameFromModel',
         )
         ],
         client=[
@@ -3750,7 +3817,8 @@ OR """,
                     "model": """This is the vehicle model ID. See vehicle IDs to see what values will return names. """
                 },
                 result='returns the name of the vehicle if the model id was valid, false otherwise.' ,
-            )
+            ),
+            url='getVehicleNameFromModel',
         )
         ],
     ),
@@ -3796,7 +3864,8 @@ OR """,
                     "theVehicle": """The vehicle which you want to get a nitro count. """
                 },
                 result='returns an integer determining the amount of nitro counts of the vehicle, false if there is no nitro in the vehicle.' ,
-            )
+            ),
+            url='getVehicleNitroCount',
         )
         ],
     ),
@@ -3842,7 +3911,8 @@ OR """,
                     "theVehicle": """The vehicle, which you want to get a nitro level. """
                 },
                 result='returns a float determining the nitro level (ranges from 0.0001 to 1.0) of the vehicle, false if there is no nitro in the vehicle.' ,
-            )
+            ),
+            url='getVehicleNitroLevel',
         )
         ],
     ),
@@ -3896,7 +3966,8 @@ OR """,
                     "seat": """the seat where the player is sitting (0 for driver, 1+ for passengers). """
                 },
                 result='returns the player sitting in the vehicle, or false if the seat is unoccupied or doesnt exist.' ,
-            )
+            ),
+            url='getVehicleOccupant',
         )
         ],
         client=[
@@ -3948,7 +4019,8 @@ OR """,
                     "seat": """the seat where the player is sitting (0 for driver, 1+ for passengers). """
                 },
                 result='returns the player sitting in the vehicle, or false if the seat is unoccupied or doesnt exist.' ,
-            )
+            ),
+            url='getVehicleOccupant',
         )
         ],
     ),
@@ -3991,7 +4063,8 @@ OR """,
                     "theVehicle": """the vehicle of which you wish to retrieve the occupants. """
                 },
                 result='returns a table with seat id as an index and the occupant as an element like this: tableseat = occupant\nreturns false if an invalid vehicle was passed or if the vehicle has no seats (like a trailer)\n<div style=font-weight: bold;background:blue;color:white;padding:2px; padding-left:8px;>counting players in a vehicle</div>\n<div style=border: 2px solid blue;padding: 5px;>dont use an ipairs loop with the table returned by this function. it will skip the driver, as ipairs starts at 1 and the driver seat is id 0. and if theres an empty seat, ipairs will stop looping. you should use a pairs loop instead.\n<syntaxhighlight lang=lua>\nlocal counter = 0\nfor seat, player in pairs(getvehicleoccupants(pseudovehicle)) do\ncounter = counter + 1\nend\noutputdebugstring(players in your vehicle: .. counter)\n</syntaxhighlight>\n</div>' ,
-            )
+            ),
+            url='getVehicleOccupants',
         )
         ],
         client=[
@@ -4032,7 +4105,8 @@ OR """,
                     "theVehicle": """the vehicle of which you wish to retrieve the occupants. """
                 },
                 result='returns a table with seat id as an index and the occupant as an element like this: tableseat = occupant\nreturns false if an invalid vehicle was passed or if the vehicle has no seats (like a trailer)\n<div style=font-weight: bold;background:blue;color:white;padding:2px; padding-left:8px;>counting players in a vehicle</div>\n<div style=border: 2px solid blue;padding: 5px;>dont use an ipairs loop with the table returned by this function. it will skip the driver, as ipairs starts at 1 and the driver seat is id 0. and if theres an empty seat, ipairs will stop looping. you should use a pairs loop instead.\n<syntaxhighlight lang=lua>\nlocal counter = 0\nfor seat, player in pairs(getvehicleoccupants(pseudovehicle)) do\ncounter = counter + 1\nend\noutputdebugstring(players in your vehicle: .. counter)\n</syntaxhighlight>\n</div>' ,
-            )
+            ),
+            url='getVehicleOccupants',
         )
         ],
     ),
@@ -4075,7 +4149,8 @@ OR """,
                     "theVehicle": """: the vehicle you wish to retrieve the override lights setting of. """
                 },
                 result='returns an integer value: 0 (no override), 1 (force off) or 2 (force on).' ,
-            )
+            ),
+            url='getVehicleOverrideLights',
         )
         ],
         client=[
@@ -4116,7 +4191,8 @@ OR """,
                     "theVehicle": """: the vehicle you wish to retrieve the override lights setting of. """
                 },
                 result='returns an integer value: 0 (no override), 1 (force off) or 2 (force on).' ,
-            )
+            ),
+            url='getVehicleOverrideLights',
         )
         ],
     ),
@@ -4159,7 +4235,8 @@ OR """,
                     "theVehicle": """: the vehicle you wish to get the paintjob of. """
                 },
                 result='returns an integer representing the current paintjob on the vehicle. <br />\n* 0: the first paintjob\n* 1: the second paintjob\n* 2: the third paintjob\n* 3: default paintjob (no paintjob)' ,
-            )
+            ),
+            url='getVehiclePaintjob',
         )
         ],
         client=[
@@ -4200,7 +4277,8 @@ OR """,
                     "theVehicle": """: the vehicle you wish to get the paintjob of. """
                 },
                 result='returns an integer representing the current paintjob on the vehicle. <br />\n* 0: the first paintjob\n* 1: the second paintjob\n* 2: the third paintjob\n* 3: default paintjob (no paintjob)' ,
-            )
+            ),
+            url='getVehiclePaintjob',
         )
         ],
     ),
@@ -4261,7 +4339,8 @@ OR """,
                     "6": """Rear bumper """
                 },
                 result='returns an int indicating the state of the specified the panel. this is a value between 0 and 3, with 0 indicating the panel is undamaged and 3 indicating it is very damaged.' ,
-            )
+            ),
+            url='getVehiclePanelState',
         )
         ],
         client=[
@@ -4320,7 +4399,8 @@ OR """,
                     "6": """Rear bumper """
                 },
                 result='returns an int indicating the state of the specified the panel. this is a value between 0 and 3, with 0 indicating the panel is undamaged and 3 indicating it is very damaged.' ,
-            )
+            ),
+            url='getVehiclePanelState',
         )
         ],
     ),
@@ -4363,7 +4443,8 @@ OR """,
                     "theVehicle": """the vehicle that you wish to retrieve the plate text from. """
                 },
                 result='returns a string that corresponds to the plate on the text, false if a bad argument was passed or if it is not a vehicle. every vehicle (including planes, boats, etc.) has a numberplate, even if its not visible.' ,
-            )
+            ),
+            url='getVehiclePlateText',
         )
         ],
         client=[
@@ -4404,7 +4485,8 @@ OR """,
                     "theVehicle": """the vehicle that you wish to retrieve the plate text from. """
                 },
                 result='returns a string that corresponds to the plate on the text, false if a bad argument was passed or if it is not a vehicle. every vehicle (including planes, boats, etc.) has a numberplate, even if its not visible.' ,
-            )
+            ),
+            url='getVehiclePlateText',
         )
         ],
     ),
@@ -4455,7 +4537,8 @@ OR """,
                     "theVehicle": """The vehicle which youd like to retrieve the respawn coordinates of. """
                 },
                 result='returns three float|floats indicating the respawn coordinates of the vehicle, x, y and z respectively.' ,
-            )
+            ),
+            url='getVehicleRespawnPosition',
         )
         ],
         client=[
@@ -4509,7 +4592,8 @@ OR """,
                     "theVehicle": """The vehicle which youd like to retrieve the respawn rotation of. """
                 },
                 result='returns three float|floats indicating the respawn rotation of the vehicle, x, y and z respectively.' ,
-            )
+            ),
+            url='getVehicleRespawnRotation',
         )
         ],
         client=[
@@ -4555,7 +4639,8 @@ OR """,
                     "theVehicle": """The vehicle to get the siren parameters of """
                 },
                 result='returns a table with the siren count, siren type and a sub table for the four flags. false otherwise.\n<syntaxhighlight lang=lua>\nint   sirenparams.sirencount\nint   sirenparams.sirentype\ntable sirenparams.flags\nbool sirenparams.flags360\nbool sirenparams.flags.doloscheck\nbool sirenparams.flags.userandomiser\nbool sirenparams.flags.silent\n</syntaxhighlight>' ,
-            )
+            ),
+            url='getVehicleSirenParams',
         )
         ],
         client=[
@@ -4596,7 +4681,8 @@ OR """,
                     "theVehicle": """The vehicle to get the siren parameters of """
                 },
                 result='returns a table with the siren count, siren type and a sub table for the four flags. false otherwise.\n<syntaxhighlight lang=lua>\nint   sirenparams.sirencount\nint   sirenparams.sirentype\ntable sirenparams.flags\nbool sirenparams.flags360\nbool sirenparams.flags.doloscheck\nbool sirenparams.flags.userandomiser\nbool sirenparams.flags.silent\n</syntaxhighlight>' ,
-            )
+            ),
+            url='getVehicleSirenParams',
         )
         ],
     ),
@@ -4639,7 +4725,8 @@ OR """,
                     "theVehicle": """The vehicle to get siren information of. """
                 },
                 result='if the vehicle is invalid, it returns false. otherwise, returns a table with sub tables containing the properties of each siren point in the following manner:\n<syntaxhighlight lang=lua>\nfloat   sirendatasirenpoint.x\nfloat   sirendatasirenpoint.y\nfloat   sirendatasirenpoint.z\nint     sirendatasirenpoint.red\nint     sirendatasirenpoint.green\nint     sirendatasirenpoint.blue\nint     sirendatasirenpoint.alpha\nint     sirendatasirenpoint.min_alpha\n</syntaxhighlight>' ,
-            )
+            ),
+            url='getVehicleSirens',
         )
         ],
         client=[
@@ -4680,7 +4767,8 @@ OR """,
                     "theVehicle": """The vehicle to get siren information of. """
                 },
                 result='if the vehicle is invalid, it returns false. otherwise, returns a table with sub tables containing the properties of each siren point in the following manner:\n<syntaxhighlight lang=lua>\nfloat   sirendatasirenpoint.x\nfloat   sirendatasirenpoint.y\nfloat   sirendatasirenpoint.z\nint     sirendatasirenpoint.red\nint     sirendatasirenpoint.green\nint     sirendatasirenpoint.blue\nint     sirendatasirenpoint.alpha\nint     sirendatasirenpoint.min_alpha\n</syntaxhighlight>' ,
-            )
+            ),
+            url='getVehicleSirens',
         )
         ],
     ),
@@ -4723,7 +4811,8 @@ OR """,
                     "theVehicle": """The vehicle that will be checked. """
                 },
                 result='returns true if the sirens are turned on for the specified vehicle, false if the sirens are turned off for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified.' ,
-            )
+            ),
+            url='getVehicleSirensOn',
         )
         ],
         client=[
@@ -4764,7 +4853,8 @@ OR """,
                     "theVehicle": """The vehicle that will be checked. """
                 },
                 result='returns true if the sirens are turned on for the specified vehicle, false if the sirens are turned off for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified.' ,
-            )
+            ),
+            url='getVehicleSirensOn',
         )
         ],
     ),
@@ -4807,7 +4897,8 @@ OR """,
                     "model": """: The model of vehicles you want. """
                 },
                 result='returns a table of existing vehicles matching the specified model.' ,
-            )
+            ),
+            url='getVehiclesOfType',
         )
         ],
         client=[
@@ -4853,7 +4944,8 @@ OR """,
                     "theVehicle": """: The vehicle you wish to get the towed vehicle from. """
                 },
                 result='returns the vehicle that thevehicle is towing, false if it isnt towing a vehicle.' ,
-            )
+            ),
+            url='getVehicleTowedByVehicle',
         )
         ],
         client=[
@@ -4894,7 +4986,8 @@ OR """,
                     "theVehicle": """: The vehicle you wish to get the towed vehicle from. """
                 },
                 result='returns the vehicle that thevehicle is towing, false if it isnt towing a vehicle.' ,
-            )
+            ),
+            url='getVehicleTowedByVehicle',
         )
         ],
     ),
@@ -4937,7 +5030,8 @@ OR """,
                     "theVehicle": """: the vehicle being towed. """
                 },
                 result='* the vehicle that thevehicle is being towed by.\n* false if it isnt being towed.' ,
-            )
+            ),
+            url='getVehicleTowingVehicle',
         )
         ],
         client=[
@@ -4978,7 +5072,8 @@ OR """,
                     "theVehicle": """: the vehicle being towed. """
                 },
                 result='* the vehicle that thevehicle is being towed by.\n* false if it isnt being towed.' ,
-            )
+            ),
+            url='getVehicleTowingVehicle',
         )
         ],
     ),
@@ -5025,7 +5120,8 @@ OR """,
                     "turretVehicle": """: The vehicle whose turret position you want to retrieve. This should be a vehicle with a turret. """
                 },
                 result='returns two floats for the x (horizontal) and y (vertical) axis rotation respectively. these values are in radians. the function will return 0, 0 if the vehicle is not a vehicle with a turret.' ,
-            )
+            ),
+            url='getVehicleTurretPosition',
         )
         ],
         client=[
@@ -5070,7 +5166,8 @@ OR """,
                     "turretVehicle": """: The vehicle whose turret position you want to retrieve. This should be a vehicle with a turret. """
                 },
                 result='returns two floats for the x (horizontal) and y (vertical) axis rotation respectively. these values are in radians. the function will return 0, 0 if the vehicle is not a vehicle with a turret.' ,
-            )
+            ),
+            url='getVehicleTurretPosition',
         )
         ],
     ),
@@ -5115,7 +5212,8 @@ OR """,
                     "modelID": """A vehicle model ID """
                 },
                 result='returns a string with vehicle type or false if an invalid modelid has been supplied, or an empty string if the vehicle is blocked internally (some trailers).\npossible strings returned:' ,
-            )
+            ),
+            url='getVehicleType',
         )
         ],
         client=[
@@ -5158,7 +5256,8 @@ OR """,
                     "modelID": """A vehicle model ID """
                 },
                 result='returns a string with vehicle type or false if an invalid modelid has been supplied, or an empty string if the vehicle is blocked internally (some trailers).\npossible strings returned:' ,
-            )
+            ),
+            url='getVehicleType',
         )
         ],
     ),
@@ -5212,7 +5311,8 @@ OR """,
                     "slot": """: The slot id of the upgrade. (Upgrade list ordered by slot number) """
                 },
                 result='returns an integer with the upgrade on the slot if correct arguments were passed, false otherwise.' ,
-            )
+            ),
+            url='getVehicleUpgradeOnSlot',
         )
         ],
         client=[
@@ -5264,7 +5364,8 @@ OR """,
                     "slot": """: The slot id of the upgrade. (Upgrade list ordered by slot number) """
                 },
                 result='returns an integer with the upgrade on the slot if correct arguments were passed, false otherwise.' ,
-            )
+            ),
+            url='getVehicleUpgradeOnSlot',
         )
         ],
     ),
@@ -5307,7 +5408,8 @@ OR """,
                     "theVehicle": """The vehicle you wish to retrieve the upgrades of. """
                 },
                 result='returns a table of all the upgrades on each slot of a vehicle, which may be empty, or false if a valid vehicle is not passed.' ,
-            )
+            ),
+            url='getVehicleUpgrades',
         )
         ],
         client=[
@@ -5348,7 +5450,8 @@ OR """,
                     "theVehicle": """The vehicle you wish to retrieve the upgrades of. """
                 },
                 result='returns a table of all the upgrades on each slot of a vehicle, which may be empty, or false if a valid vehicle is not passed.' ,
-            )
+            ),
+            url='getVehicleUpgrades',
         )
         ],
     ),
@@ -5391,7 +5494,8 @@ OR """,
                     "slot/upgrade": """the slot ID or corresponding upgrade ID of which you want the name. """
                 },
                 result='returns a string with the slot name if a valid slot or upgrade id was given, false otherwise.' ,
-            )
+            ),
+            url='getVehicleUpgradeSlotName',
         )
         ],
         client=[
@@ -5432,7 +5536,8 @@ OR """,
                     "slot/upgrade": """the slot ID or corresponding upgrade ID of which you want the name. """
                 },
                 result='returns a string with the slot name if a valid slot or upgrade id was given, false otherwise.' ,
-            )
+            ),
+            url='getVehicleUpgradeSlotName',
         )
         ],
     ),
@@ -5479,7 +5584,8 @@ OR """,
                     "theVehicle": """A handle to the vehicle that you want to get the variant of. """
                 },
                 result='on success:\n* int: an integer for the first vehicle variant see vehicle variants\n* int: an integer for the second vehicle variant see vehicle variants\non failure:\n* bool: false because the specified vehicle didnt exist' ,
-            )
+            ),
+            url='getVehicleVariant',
         )
         ],
         client=[
@@ -5524,7 +5630,8 @@ OR """,
                     "theVehicle": """A handle to the vehicle that you want to get the variant of. """
                 },
                 result='on success:\n* int: an integer for the first vehicle variant see vehicle variants\n* int: an integer for the second vehicle variant see vehicle variants\non failure:\n* bool: false because the specified vehicle didnt exist' ,
-            )
+            ),
+            url='getVehicleVariant',
         )
         ],
     ),
@@ -5581,7 +5688,8 @@ OR """,
                     "wheel": """The wheel you want to check. (0: front left, 1: rear left, 2: front right, 3: rear right) """
                 },
                 result='returns a int indicating the wheel friction state. this value can be:\n* 0: normal friction\n* 1: slip with acceleration (only for driving wheels)\n* 2: slip without acceleration\n* 3: locked wheel (on brake or handbrake).' ,
-            )
+            ),
+            url='getVehicleWheelFrictionState',
         )
         ],
     ),
@@ -5627,7 +5735,8 @@ OR """,
                     "theVehicle": """: The vehicle to get its wheel scale of. """
                 },
                 result='returns the wheel scale of the specified vehicle as a decimal number, or an error if the vehicle is invalid. for more information about the returned number, see setvehiclewheelscale.' ,
-            )
+            ),
+            url='getVehicleWheelScale',
         )
         ],
     ),
@@ -5682,7 +5791,8 @@ OR """,
                     "theVehicle": """A handle to the vehicle that you wish to know the wheel states of. """
                 },
                 result='returns 4 ints indicating the states of the wheels (front left, rear left, front right, rear right). these values can be:\n* 0: inflated\n* 1: flat\n* 2: fallen off\n* 3: collisionless' ,
-            )
+            ),
+            url='getVehicleWheelStates',
         )
         ],
         client=[
@@ -5735,7 +5845,8 @@ OR """,
                     "theVehicle": """A handle to the vehicle that you wish to know the wheel states of. """
                 },
                 result='returns 4 ints indicating the states of the wheels (front left, rear left, front right, rear right). these values can be:\n* 0: inflated\n* 1: flat\n* 2: fallen off\n* 3: collisionless' ,
-            )
+            ),
+            url='getVehicleWheelStates',
         )
         ],
     ),
@@ -5781,7 +5892,8 @@ OR """,
                     "theTrain": """a Element/Vehicle|train to check if its a chain engine or not. """
                 },
                 result='* true if a element/vehicle|train was passed to the function and if its a chain engine.\n* false otherwise.' ,
-            )
+            ),
+            url='isTrainChainEngine',
         )
         ],
     ),
@@ -5824,7 +5936,8 @@ OR """,
                     "vehicleToCheck": """The vehicle you wish to check. """
                 },
                 result='returns true if the train is derailable, false otherwise.' ,
-            )
+            ),
+            url='isTrainDerailable',
         )
         ],
         client=[
@@ -5865,7 +5978,8 @@ OR """,
                     "vehicleToCheck": """The vehicle you wish to check. """
                 },
                 result='returns true if the train is derailable, false otherwise.' ,
-            )
+            ),
+            url='isTrainDerailable',
         )
         ],
     ),
@@ -5908,7 +6022,8 @@ OR """,
                     "vehicleToCheck": """the vehicle that you wish to check is derailed. """
                 },
                 result='returns true if the train is derailed, false if the train is still on the rails' ,
-            )
+            ),
+            url='isTrainDerailed',
         )
         ],
         client=[
@@ -5949,7 +6064,8 @@ OR """,
                     "vehicleToCheck": """the vehicle that you wish to check is derailed. """
                 },
                 result='returns true if the train is derailed, false if the train is still on the rails' ,
-            )
+            ),
+            url='isTrainDerailed',
         )
         ],
     ),
@@ -5992,7 +6108,8 @@ OR """,
                     "theVehicle": """The vehicle that you want to obtain the blown status of. """
                 },
                 result='returns true if the vehicle specified has blown up, false if it is still intact or the vehicle specified is invalid.' ,
-            )
+            ),
+            url='isVehicleBlown',
         )
         ],
         client=[
@@ -6033,7 +6150,8 @@ OR """,
                     "theVehicle": """The vehicle that you want to obtain the blown status of. """
                 },
                 result='returns true if the vehicle specified has blown up, false if it is still intact or the vehicle specified is invalid.' ,
-            )
+            ),
+            url='isVehicleBlown',
         )
         ],
     ),
@@ -6076,7 +6194,8 @@ OR """,
                     "theVehicle": """the vehicle whose invincibility status we want to check. """
                 },
                 result='returns true if the vehicle is damage proof, false if it isnt or if invalid arguments were passed.' ,
-            )
+            ),
+            url='isVehicleDamageProof',
         )
         ],
         client=[
@@ -6117,7 +6236,8 @@ OR """,
                     "theVehicle": """the vehicle whose invincibility status we want to check. """
                 },
                 result='returns true if the vehicle is damage proof, false if it isnt or if invalid arguments were passed.' ,
-            )
+            ),
+            url='isVehicleDamageProof',
         )
         ],
     ),
@@ -6160,7 +6280,8 @@ OR """,
                     "theVehicle": """The vehicle that you want to obtain the fuel tank status of. """
                 },
                 result='returns true if the specified vehicle is valid and its fuel tank is explodable, false otherwise.' ,
-            )
+            ),
+            url='isVehicleFuelTankExplodable',
         )
         ],
         client=[
@@ -6201,7 +6322,8 @@ OR """,
                     "theVehicle": """The vehicle that you want to obtain the fuel tank status of. """
                 },
                 result='returns true if the specified vehicle is valid and its fuel tank is explodable, false otherwise.' ,
-            )
+            ),
+            url='isVehicleFuelTankExplodable',
         )
         ],
     ),
@@ -6244,7 +6366,8 @@ OR """,
                     "theVehicle": """The vehicle that you want to obtain the locked status of. """
                 },
                 result='returns true if the vehicle specified is locked, false if is unlocked or the vehicle specified is invalid.' ,
-            )
+            ),
+            url='isVehicleLocked',
         )
         ],
         client=[
@@ -6285,7 +6408,8 @@ OR """,
                     "theVehicle": """The vehicle that you want to obtain the locked status of. """
                 },
                 result='returns true if the vehicle specified is locked, false if is unlocked or the vehicle specified is invalid.' ,
-            )
+            ),
+            url='isVehicleLocked',
         )
         ],
     ),
@@ -6331,7 +6455,8 @@ OR """,
                     "theVehicle": """The vehicle, which you want to check for an activation. """
                 },
                 result='returns true if the nitro is currently activated on the vehicle, false otherwise.' ,
-            )
+            ),
+            url='isVehicleNitroActivated',
         )
         ],
     ),
@@ -6377,7 +6502,8 @@ OR """,
                     "theVehicle": """The vehicle, which you want to check for recharging. """
                 },
                 result='returns true if the nitro is currently recharging on the vehicle, false otherwise.' ,
-            )
+            ),
+            url='isVehicleNitroRecharging',
         )
         ],
     ),
@@ -6420,7 +6546,8 @@ OR """,
                     "theVehicle": """The vehicle you wish to check. """
                 },
                 result='returns true if vehicle is on the ground, false if it is not.' ,
-            )
+            ),
+            url='isVehicleOnGround',
         )
         ],
         client=[
@@ -6461,7 +6588,8 @@ OR """,
                     "theVehicle": """The vehicle you wish to check. """
                 },
                 result='returns true if vehicle is on the ground, false if it is not.' ,
-            )
+            ),
+            url='isVehicleOnGround',
         )
         ],
     ),
@@ -6504,7 +6632,8 @@ OR """,
                     "taxi": """The vehicle element of the taxi that you wish to get the light state of. """
                 },
                 result='returns true if the light is on, false otherwise.' ,
-            )
+            ),
+            url='isVehicleTaxiLightOn',
         )
         ],
         client=[
@@ -6545,7 +6674,8 @@ OR """,
                     "taxi": """The vehicle element of the taxi that you wish to get the light state of. """
                 },
                 result='returns true if the light is on, false otherwise.' ,
-            )
+            ),
+            url='isVehicleTaxiLightOn',
         )
         ],
     ),
@@ -6606,7 +6736,8 @@ OR """,
 ** <code>"rear_right"</code> or 3 """
                 },
                 result='returns true if the vehicle wheel is on ground/collided, false otherwise.' ,
-            )
+            ),
+            url='isVehicleWheelOnGround',
         )
         ],
     ),
@@ -6670,7 +6801,8 @@ OR """,
                     "6": """windshield """
                 },
                 result='this function returns a boolean which represents window open state.' ,
-            )
+            ),
+            url='isVehicleWindowOpen',
         )
         ],
     ),
@@ -6713,7 +6845,8 @@ OR """,
                     "theVehicle": """The vehicle to remove the sirens of """
                 },
                 result='returns true if sirens were successfully removed from the vehicle, false otherwise.' ,
-            )
+            ),
+            url='removeVehicleSirens',
         )
         ],
         client=[
@@ -6770,7 +6903,8 @@ OR """,
                     "upgrade": """: The ID of the upgrade you wish to remove. """
                 },
                 result='returns true if the upgrade was successfully removed from the vehicle, otherwise false.' ,
-            )
+            ),
+            url='removeVehicleUpgrade',
         )
         ],
         client=[
@@ -6822,7 +6956,8 @@ OR """,
                     "upgrade": """: The ID of the upgrade you wish to remove. """
                 },
                 result='returns true if the upgrade was successfully removed from the vehicle, otherwise false.' ,
-            )
+            ),
+            url='removeVehicleUpgrade',
         )
         ],
     ),
@@ -6879,7 +7014,8 @@ OR """,
                     "theComponent": """A vehicle component (this is the frame name from the model file of the component you wish to modify) """
                 },
                 result='returns true if the position of the component was reset, false otherwise.' ,
-            )
+            ),
+            url='resetVehicleComponentPosition',
         )
         ],
     ),
@@ -6936,7 +7072,8 @@ OR """,
                     "theComponent": """A vehicle component (this is the frame name from the model file of the component you wish to modify) """
                 },
                 result='returns true if the rotation of the component was reset, false otherwise.' ,
-            )
+            ),
+            url='resetVehicleComponentRotation',
         )
         ],
     ),
@@ -6993,7 +7130,8 @@ OR """,
                     "theComponent": """A vehicle component (this is the frame name from the model file of the component you wish to modify) """
                 },
                 result='returns true if the scale of the component was reset, false otherwise.' ,
-            )
+            ),
+            url='resetVehicleComponentScale',
         )
         ],
     ),
@@ -7039,7 +7177,8 @@ OR """,
                     "theVehicle": """The vehicle to reset """
                 },
                 result='returns true for success, false otherwise.' ,
-            )
+            ),
+            url='resetVehicleDummyPositions',
         )
         ],
     ),
@@ -7082,7 +7221,8 @@ OR """,
                     "theVehicle": """The vehicle you wish to reset the explosion time from. """
                 },
                 result='returns true if the vehicle explosion time has been reset, false if it failed to reset the explosion time.' ,
-            )
+            ),
+            url='resetVehicleExplosionTime',
         )
         ],
         client=[
@@ -7128,7 +7268,8 @@ OR """,
                     "theVehicle": """The vehicle you wish to reset the idle time from. """
                 },
                 result='returns true if the vehicle idle time has been reset, false if it failed to reset the idle time.' ,
-            )
+            ),
+            url='resetVehicleIdleTime',
         )
         ],
         client=[
@@ -7174,7 +7315,8 @@ OR """,
                     "theVehicle": """The vehicle you wish to respawn """
                 },
                 result='returns true if the vehicle respawned successfully, false if the passed argument does not exist or is not a vehicle.' ,
-            )
+            ),
+            url='respawnVehicle',
         )
         ],
         client=[
@@ -7234,7 +7376,8 @@ OR """,
                     "collisions": """The state of the helicopter blades collisions. """
                 },
                 result='returns true if the collisions are set for the specified vehicle, false if the collisions cant be set for the specified vehicle, if the vehicle is not a helicopter or if invalid arguments are specified.' ,
-            )
+            ),
+            url='setHeliBladeCollisionsEnabled',
         )
         ],
     ),
@@ -7291,7 +7434,8 @@ OR """,
                     "speed": """the new rotor speed. Usual values are 0 if the helicopter stands still, or 0.2 if the rotor is fully spun up. Higher values than normal will not affect the helicopters handling. Negative values are allowed and will make the rotor spin in the opposite direction (pushing the helicopter down). """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setHelicopterRotorSpeed',
         )
         ],
     ),
@@ -7356,7 +7500,8 @@ OR """,
                     "value": """The value of the modelss handling property you wish to set, or nil if you want to reset the handling property to its default value. """
                 },
                 result='returns true if the handling was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setModelHandling',
         )
         ],
         client=[
@@ -7413,7 +7558,8 @@ OR """,
                     "derailable": """whether the train or tram is derailable. True as derailable, False as non-derailable. """
                 },
                 result='returns true if the state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setTrainDerailable',
         )
         ],
         client=[
@@ -7465,7 +7611,8 @@ OR """,
                     "derailable": """whether the train or tram is derailable. True as derailable, False as non-derailable. """
                 },
                 result='returns true if the state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setTrainDerailable',
         )
         ],
     ),
@@ -7519,7 +7666,8 @@ OR """,
                     "derailed": """whether the train is derailed. """
                 },
                 result='returns true if the state was successfully set' ,
-            )
+            ),
+            url='setTrainDerailed',
         )
         ],
         client=[
@@ -7571,7 +7719,8 @@ OR """,
                     "derailed": """whether the train is derailed. """
                 },
                 result='returns true if the state was successfully set' ,
-            )
+            ),
+            url='setTrainDerailed',
         )
         ],
     ),
@@ -7625,7 +7774,8 @@ OR """,
                     "clockwise": """if true, will make the train go clockwise. If false, makes it go counterclockwise. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setTrainDirection',
         )
         ],
         client=[
@@ -7677,7 +7827,8 @@ OR """,
                     "clockwise": """if true, will make the train go clockwise. If false, makes it go counterclockwise. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setTrainDirection',
         )
         ],
     ),
@@ -7731,7 +7882,8 @@ OR """,
                     "position": """the position along the track (0 - 18107 a complete way round) """
                 },
                 result='returns true if the train position was set, false otherwise.' ,
-            )
+            ),
+            url='setTrainPosition',
         )
         ],
         client=[
@@ -7783,7 +7935,8 @@ OR """,
                     "position": """the position along the track (0 - 18107 a complete way round) """
                 },
                 result='returns true if the train position was set, false otherwise.' ,
-            )
+            ),
+            url='setTrainPosition',
         )
         ],
     ),
@@ -7837,7 +7990,8 @@ OR """,
                     "speed": """the new on-track speed of the train. A positive value will make it go clockwise, a negative value counter clockwise. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setTrainSpeed',
         )
         ],
         client=[
@@ -7889,7 +8043,8 @@ OR """,
                     "speed": """the new on-track speed of the train. A positive value will make it go clockwise, a negative value counter clockwise. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setTrainSpeed',
         )
         ],
     ),
@@ -7943,7 +8098,8 @@ OR """,
                     "track": """the track where you want to set the train. It can be 0, 1, 2 or 3. """
                 },
                 result='returns true if the track was set to the train, false otherwise.' ,
-            )
+            ),
+            url='setTrainTrack',
         )
         ],
         client=[
@@ -7995,7 +8151,8 @@ OR """,
                     "track": """the track where you want to set the train. It can be 0, 1, 2 or 3. """
                 },
                 result='returns true if the track was set to the train, false otherwise.' ,
-            )
+            ),
+            url='setTrainTrack',
         )
         ],
     ),
@@ -8052,7 +8209,8 @@ OR """,
                     "value": """: A value from 0 between ?. (Set the adjustable value between 0 and N. 0 is the default value. It is possible to force the setting beyond default maximum, for example setting above 5000 on the dump truck (normal max 2500) will cause the tray to be fully vertical.) """
                 },
                 result='returns true if the adjustable property was set, false otherwise.' ,
-            )
+            ),
+            url='setVehicleAdjustableProperty',
         )
         ],
     ),
@@ -8215,7 +8373,8 @@ OR """,
                     
                 },
                 result='returns true if vehicles color was set, false if an invalid vehicle or invalid colors were specified.' ,
-            )
+            ),
+            url='setVehicleColor',
         )
         ],
         client=[
@@ -8376,7 +8535,8 @@ OR """,
                     
                 },
                 result='returns true if vehicles color was set, false if an invalid vehicle or invalid colors were specified.' ,
-            )
+            ),
+            url='setVehicleColor',
         )
         ],
     ),
@@ -8480,7 +8640,8 @@ OR """,
                     "world": """: The position is a world position, relative to the worlds center of coordinates. """
                 },
                 result='returns true if component position was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setVehicleComponentPosition',
         )
         ],
     ),
@@ -8584,7 +8745,8 @@ OR """,
                     "world": """: The rotation is a world rotation, relative to the worlds coordinates axes. """
                 },
                 result='returns true if the component rotation was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setVehicleComponentRotation',
         )
         ],
     ),
@@ -8688,7 +8850,8 @@ OR """,
                     "world": """: The scale is a world scale, relative to the worlds center of coordinates. """
                 },
                 result='returns true if component scale was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setVehicleComponentScale',
         )
         ],
     ),
@@ -8756,7 +8919,8 @@ OR """,
                     "visible": """a bool which determines if the component should be visible """
                 },
                 result='returns a bool indicating if the visiblity was changed successfully.' ,
-            )
+            ),
+            url='setVehicleComponentVisible',
         )
         ],
     ),
@@ -8810,7 +8974,8 @@ OR """,
                     "damageProof": """true is damage proof, false is damageable. """
                 },
                 result='returns true if the vehicle was set damage proof succesfully, false if the arguments are invalid or it failed.' ,
-            )
+            ),
+            url='setVehicleDamageProof',
         )
         ],
         client=[
@@ -8862,7 +9027,8 @@ OR """,
                     "damageProof": """true is damage proof, false is damageable. """
                 },
                 result='returns true if the vehicle was set damage proof succesfully, false if the arguments are invalid or it failed.' ,
-            )
+            ),
+            url='setVehicleDamageProof',
         )
         ],
     ),
@@ -8916,7 +9082,8 @@ OR """,
                     "dirtLevel": """The dirt level """
                 },
                 result='returns true if the dirt level was set on the vehicle, false if the dirt level was not set or if invalid arguments are specified.' ,
-            )
+            ),
+            url='setVehicleDirtLevel',
         )
         ],
         client=[
@@ -8968,7 +9135,8 @@ OR """,
                     "dirtLevel": """The dirt level """
                 },
                 result='returns true if the dirt level was set on the vehicle, false if the dirt level was not set or if invalid arguments are specified.' ,
-            )
+            ),
+            url='setVehicleDirtLevel',
         )
         ],
     ),
@@ -9044,7 +9212,8 @@ OR """,
                     "time": """The number of milliseconds the door should take to reach the value you have specified. A value of 0 will change the door open ratio instantly. """
                 },
                 result='returns true if the door open ratio was successfully set, false if invalid arguments are passed.' ,
-            )
+            ),
+            url='setVehicleDoorOpenRatio',
         )
         ],
         client=[
@@ -9118,7 +9287,8 @@ OR """,
                     "time": """The number of milliseconds the door should take to reach the value you have specified. A value of 0 will change the door open ratio instantly. """
                 },
                 result='returns true if the door open ratio was successfully set, false if invalid arguments are passed.' ,
-            )
+            ),
+            url='setVehicleDoorOpenRatio',
         )
         ],
     ),
@@ -9190,7 +9360,8 @@ OR """,
                     "spawnFlyingComponent": """A boolean, if set to true, spawns flying doors etc. if you remove a component with <nowiki>state == 4</nowiki>. """
                 },
                 result='returns true if the door state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setVehicleDoorState',
         )
         ],
         client=[
@@ -9260,7 +9431,8 @@ OR """,
                     "spawnFlyingComponent": """A boolean, if set to true, spawns flying doors etc. if you remove a component with <nowiki>state == 4</nowiki>. """
                 },
                 result='returns true if the door state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setVehicleDoorState',
         )
         ],
     ),
@@ -9314,7 +9486,8 @@ OR """,
                     "state": """A boolean denoting whether the vehicles doors are undamageable (true) or damageable (false). """
                 },
                 result='returns true if the damageability state was successfully changed, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setVehicleDoorsUndamageable',
         )
         ],
         client=[
@@ -9366,7 +9539,8 @@ OR """,
                     "state": """A boolean denoting whether the vehicles doors are undamageable (true) or damageable (false). """
                 },
                 result='returns true if the damageability state was successfully changed, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setVehicleDoorsUndamageable',
         )
         ],
     ),
@@ -9454,7 +9628,8 @@ OR """,
                     "x": """, y, z The new dummy position """
                 },
                 result='returns true for success, false otherwise.' ,
-            )
+            ),
+            url='setVehicleDummyPosition',
         )
         ],
     ),
@@ -9508,7 +9683,8 @@ OR """,
                     "engineState": """: A boolean value representing whether the engine will be turned on (true) or off (false). """
                 },
                 result='returns true if the vehicles engine state was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='setVehicleEngineState',
         )
         ],
         client=[
@@ -9560,7 +9736,8 @@ OR """,
                     "engineState": """: A boolean value representing whether the engine will be turned on (true) or off (false). """
                 },
                 result='returns true if the vehicles engine state was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='setVehicleEngineState',
         )
         ],
     ),
@@ -9614,7 +9791,8 @@ OR """,
                     "explodable": """: A boolean value representing whether or not the fuel tank will be explodable. """
                 },
                 result='returns true if the vehicles fuel tank explodable state was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='setVehicleFuelTankExplodable',
         )
         ],
         client=[
@@ -9666,7 +9844,8 @@ OR """,
                     "explodable": """: A boolean value representing whether or not the fuel tank will be explodable. """
                 },
                 result='returns true if the vehicles fuel tank explodable state was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='setVehicleFuelTankExplodable',
         )
         ],
     ),
@@ -9743,7 +9922,8 @@ OR """,
                     "x, y, z": """the components of the new gravity vector. If this vector has length 1, the strength of the gravity will be same as the global gravity for other entities. If it is 2, it will be twice as strong, etc. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setVehicleGravity',
         )
         ],
     ),
@@ -9808,7 +9988,8 @@ OR """,
                     "value": """The value of the property you wish to set the handling of the vehicle to. """
                 },
                 result='returns true if the handling was set successfully, false otherwise. see below a list of valid properties and their required values:' ,
-            )
+            ),
+            url='setVehicleHandling',
         )
         ],
         client=[
@@ -9871,7 +10052,8 @@ OR """,
                     "value": """The value of the property you wish to set the handling of the vehicle to. """
                 },
                 result='returns true if the handling was set successfully, false otherwise. see below a list of valid properties and their required values:' ,
-            )
+            ),
+            url='setVehicleHandling',
         )
         ],
     ),
@@ -9947,7 +10129,8 @@ OR """,
                     "blue": """An integer indicating the amount of blue for the vehicles headlights """
                 },
                 result='returns true if vehicles headlight color was set, false if an invalid vehicle or invalid color ranges were specified for red,green or blue.' ,
-            )
+            ),
+            url='setVehicleHeadLightColor',
         )
         ],
         client=[
@@ -10021,7 +10204,8 @@ OR """,
                     "blue": """An integer indicating the amount of blue for the vehicles headlights """
                 },
                 result='returns true if vehicles headlight color was set, false if an invalid vehicle or invalid color ranges were specified for red,green or blue.' ,
-            )
+            ),
+            url='setVehicleHeadLightColor',
         )
         ],
     ),
@@ -10075,7 +10259,8 @@ OR """,
                     "timeDelay": """: The number of milliseconds the vehicle will be allowed to remain unused until it respawns. """
                 },
                 result='returns true if the vehicle was found and edited.' ,
-            )
+            ),
+            url='setVehicleIdleRespawnDelay',
         )
         ],
         client=[
@@ -10132,7 +10317,8 @@ OR """,
                     "gearState": """A bool representing the state of the landing gear.  true represents a collapsed landing gear, while false represents a disabled landing gear. """
                 },
                 result='returns true if the landing gear was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setVehicleLandingGearDown',
         )
         ],
         client=[
@@ -10184,7 +10370,8 @@ OR """,
                     "gearState": """A bool representing the state of the landing gear.  true represents a collapsed landing gear, while false represents a disabled landing gear. """
                 },
                 result='returns true if the landing gear was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setVehicleLandingGearDown',
         )
         ],
     ),
@@ -10254,7 +10441,8 @@ OR """,
 Returns ''true'' if the light state was set successfully, ''false'' if invalid arguments were passed to the function. """
                 },
                 result='returns true if the light state was set successfully, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='setVehicleLightState',
         )
         ],
         client=[
@@ -10322,7 +10510,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
 Returns ''true'' if the light state was set successfully, ''false'' if invalid arguments were passed to the function. """
                 },
                 result='returns true if the light state was set successfully, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='setVehicleLightState',
         )
         ],
     ),
@@ -10376,7 +10565,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "locked": """Boolean for the status you wish to set. Set true to lock, false to unlock """
                 },
                 result='returns true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='setVehicleLocked',
         )
         ],
         client=[
@@ -10428,7 +10618,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "locked": """Boolean for the status you wish to set. Set true to lock, false to unlock """
                 },
                 result='returns true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='setVehicleLocked',
         )
         ],
     ),
@@ -10516,7 +10707,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "posX": """, posY, posZ: The desired position """
                 },
                 result='returns true if everything went fine, false otherwise.' ,
-            )
+            ),
+            url='setVehicleModelDummyPosition',
         )
         ],
     ),
@@ -10593,7 +10785,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "posX": """, posY, posZ: The desired position """
                 },
                 result='returns true if everything went fine, false otherwise.' ,
-            )
+            ),
+            url='setVehicleModelExhaustFumesPosition',
         )
         ],
     ),
@@ -10664,7 +10857,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "wheelSize": """: The wheel size value to set. Default GTA values for automobiles usually are around 0.7. It must be greater than 0. """
                 },
                 result='returns true if the size for the specified wheel group and vehicle model has been set successfully, or an error if some parameter is invalid.' ,
-            )
+            ),
+            url='setVehicleModelWheelSize',
         )
         ],
     ),
@@ -10721,7 +10915,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "state": """true if you want to activate the nitro, false if you want to disable it. """
                 },
                 result='returns true if the nitro activation state was modified successfully, false otherwise.' ,
-            )
+            ),
+            url='setVehicleNitroActivated',
         )
         ],
     ),
@@ -10778,7 +10973,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "count": """: how many times should the player be able to use the nitro of this vehicle (from 0-100 times; 0 means that it cant be used and 101 means that it can be used infinite times). """
                 },
                 result='returns true if the nitro count was set successfully to the vehicle, false otherwise.' ,
-            )
+            ),
+            url='setVehicleNitroCount',
         )
         ],
     ),
@@ -10835,7 +11031,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "level": """Nitro level you want to set (ranges from 0.0001 to 1.0). """
                 },
                 result='returns true if the nitro level was set successfully to the vehicle, false otherwise.' ,
-            )
+            ),
+            url='setVehicleNitroLevel',
         )
         ],
     ),
@@ -10892,7 +11089,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "2": """: Lights are forced on. """
                 },
                 result='returns true if the vehicles lights setting was changed. otherwise false.' ,
-            )
+            ),
+            url='setVehicleOverrideLights',
         )
         ],
         client=[
@@ -10947,7 +11145,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "2": """: Lights are forced on. """
                 },
                 result='returns true if the vehicles lights setting was changed. otherwise false.' ,
-            )
+            ),
+            url='setVehicleOverrideLights',
         )
         ],
     ),
@@ -11001,7 +11200,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "value": """: A whole number representing the new paintjob id. Ranges from 0 up to 3. """
                 },
                 result='returns true if the vehicles paintjob was changed. otherwise false.' ,
-            )
+            ),
+            url='setVehiclePaintjob',
         )
         ],
         client=[
@@ -11053,7 +11253,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "value": """: A whole number representing the new paintjob id. Ranges from 0 up to 3. """
                 },
                 result='returns true if the vehicles paintjob was changed. otherwise false.' ,
-            )
+            ),
+            url='setVehiclePaintjob',
         )
         ],
     ),
@@ -11128,7 +11329,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "state": """How damaged the part is on the scale of 0 to 3, with 0 being undamaged and 3 being very damaged. How this is manifested depends on the panel and the vehicle. """
                 },
                 result='returns true if the panel state has been updated, false otherwise' ,
-            )
+            ),
+            url='setVehiclePanelState',
         )
         ],
         client=[
@@ -11201,7 +11403,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "state": """How damaged the part is on the scale of 0 to 3, with 0 being undamaged and 3 being very damaged. How this is manifested depends on the panel and the vehicle. """
                 },
                 result='returns true if the panel state has been updated, false otherwise' ,
-            )
+            ),
+            url='setVehiclePanelState',
         )
         ],
     ),
@@ -11255,7 +11458,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "numberplate": """a string that will go on the number plate of the car (max 8 characters). """
                 },
                 result='returns true if the numberplate was changed successfully, or false if invalid arguments were passed' ,
-            )
+            ),
+            url='setVehiclePlateText',
         )
         ],
         client=[
@@ -11307,7 +11511,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "numberplate": """a string that will go on the number plate of the car (max 8 characters). """
                 },
                 result='returns true if the numberplate was changed successfully, or false if invalid arguments were passed' ,
-            )
+            ),
+            url='setVehiclePlateText',
         )
         ],
     ),
@@ -11361,7 +11566,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "timeDelay": """: The amount of milliseconds to delay. """
                 },
                 result='returns true if the vehicle was found and edited.' ,
-            )
+            ),
+            url='setVehicleRespawnDelay',
         )
         ],
         client=[
@@ -11473,7 +11679,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "rz": """: A floating point number representing the rotation about the Z axis in Degrees. """
                 },
                 result='returns true if the vehicle was found and edited, false otherwise.' ,
-            )
+            ),
+            url='setVehicleRespawnPosition',
         )
         ],
         client=[
@@ -11552,7 +11759,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "rz": """: A float representing the rotation about the Z axis in degrees. """
                 },
                 result='returns true if the vehicle respawn rotation was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setVehicleRespawnRotation',
         )
         ],
         client=[
@@ -11697,7 +11905,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "minAlpha": """The minimum alpha of the light during day time """
                 },
                 result='returns true if the siren point was successfully changed on the vehicle, false otherwise.' ,
-            )
+            ),
+            url='setVehicleSirens',
         )
         ],
         client=[
@@ -11837,7 +12046,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "minAlpha": """The minimum alpha of the light during day time """
                 },
                 result='returns true if the siren point was successfully changed on the vehicle, false otherwise.' ,
-            )
+            ),
+            url='setVehicleSirens',
         )
         ],
     ),
@@ -11891,7 +12101,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "sirensOn": """The state to set the sirens to """
                 },
                 result='returns true if the sirens are set for the specified vehicle, false if the sirens cant be set for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified.' ,
-            )
+            ),
+            url='setVehicleSirensOn',
         )
         ],
         client=[
@@ -11943,7 +12154,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "sirensOn": """The state to set the sirens to """
                 },
                 result='returns true if the sirens are set for the specified vehicle, false if the sirens cant be set for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified.' ,
-            )
+            ),
+            url='setVehicleSirensOn',
         )
         ],
     ),
@@ -11997,7 +12209,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "LightState": """whether the light is on. True for on, False for off. """
                 },
                 result='returns true if the state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setVehicleTaxiLightOn',
         )
         ],
         client=[
@@ -12049,7 +12262,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "LightState": """whether the light is on. True for on, False for off. """
                 },
                 result='returns true if the state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setVehicleTaxiLightOn',
         )
         ],
     ),
@@ -12114,7 +12328,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "positionY": """: The vertical position of the turret. In radians """
                 },
                 result='returns a true if a valid vehicle element and valid positions were passed, false otherwise.' ,
-            )
+            ),
+            url='setVehicleTurretPosition',
         )
         ],
         client=[
@@ -12177,7 +12392,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "positionY": """: The vertical position of the turret. In radians """
                 },
                 result='returns a true if a valid vehicle element and valid positions were passed, false otherwise.' ,
-            )
+            ),
+            url='setVehicleTurretPosition',
         )
         ],
     ),
@@ -12242,7 +12458,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "variant2": """: An integer for the second variant see Vehicle variants """
                 },
                 result='on success:\n* bool: returns true as the vehicle variants were successfully set.\non failure:\n* bool: false because the specified vehicle didnt exist or specified variants were invalid.' ,
-            )
+            ),
+            url='setVehicleVariant',
         )
         ],
         client=[
@@ -12305,7 +12522,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "variant2": """: An integer for the second variant see Vehicle variants """
                 },
                 result='on success:\n* bool: returns true as the vehicle variants were successfully set.\non failure:\n* bool: false because the specified vehicle didnt exist or specified variants were invalid.' ,
-            )
+            ),
+            url='setVehicleVariant',
         )
         ],
     ),
@@ -12362,7 +12580,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "wheelScale": """: The wheel scale value to set. """
                 },
                 result='returns true if the wheel scale has been set successfully, or an error if some parameter is invalid.' ,
-            )
+            ),
+            url='setVehicleWheelScale',
         )
         ],
     ),
@@ -12449,7 +12668,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "rearRight": """A whole number representing the wheel state (-1 for no change) """
                 },
                 result='returns a boolean value true or false that tells you if it was successful or not.' ,
-            )
+            ),
+            url='setVehicleWheelStates',
         )
         ],
         client=[
@@ -12534,7 +12754,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "rearRight": """A whole number representing the wheel state (-1 for no change) """
                 },
                 result='returns a boolean value true or false that tells you if it was successful or not.' ,
-            )
+            ),
+            url='setVehicleWheelStates',
         )
         ],
     ),
@@ -12609,7 +12830,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "open": """Boolean which represent window open state. """
                 },
                 result='* when the vehicle is not streamed in:\n** if the window id does lie within the acceptable list of values, it will return true\n** if the window id does not lie within the acceptable list of values, it will return false\n* when the vehicle is streamed in:\n** if the vehicle has the window, it will return true\n** if the vehicle does not have the window, it will return false' ,
-            )
+            ),
+            url='setVehicleWindowOpen',
         )
         ],
     ),
@@ -12718,7 +12940,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "rz": """The z rotation you wish to spawn the vehicle at """
                 },
                 result='returns true if the vehicle spawned successfully, false if the passed argument does not exist or is not a vehicle.' ,
-            )
+            ),
+            url='spawnVehicle',
         )
         ],
         client=[
@@ -12775,7 +12998,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "Respawn": """: A boolean determining if the vehicle will respawn or not. """
                 },
                 result='returns true if the vehicle was found and edited.' ,
-            )
+            ),
+            url='toggleVehicleRespawn',
         )
         ],
         client=[

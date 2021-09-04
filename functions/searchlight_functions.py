@@ -139,7 +139,8 @@ DUMP_PARTIAL = [
                     "renderSpot": """: if true, the searchlight will lighten the surface where it ends. """
                 },
                 result='if every argument is correct and the limit of 1000 searchlights has not been reached, this function returns a element/searchlight|searchlight element. otherwise, it returns false.' ,
-            )
+            ),
+            url='createSearchLight',
         )
         ],
     ),
@@ -193,7 +194,8 @@ DUMP_PARTIAL = [
                     "theSearchLight": """: the searchlight to get the position where the searchlights light cone ends. """
                 },
                 result='if the specified searchlight element is valid, this function will return three float, which are the three coordinates of searchlights end position. if not, it will return false plus an error message.' ,
-            )
+            ),
+            url='getSearchLightEndPosition',
         )
         ],
     ),
@@ -239,7 +241,8 @@ DUMP_PARTIAL = [
                     "theSearchLight": """: the searchlight to get the radius of the searchlights light cone in its end. """
                 },
                 result='if the specified searchlight element is valid, this function will return one float, which is the searchlights end radius. if not, it will return false plus an error message.' ,
-            )
+            ),
+            url='getSearchLightEndRadius',
         )
         ],
     ),
@@ -293,7 +296,8 @@ DUMP_PARTIAL = [
                     "theSearchLight": """: the searchlight to get the position where the searchlights light cone starts. """
                 },
                 result='if the specified searchlight element is valid, this function will return three float, which are the three coordinates of searchlights start position. if not, it will return false plus an error message.' ,
-            )
+            ),
+            url='getSearchLightStartPosition',
         )
         ],
     ),
@@ -339,7 +343,8 @@ DUMP_PARTIAL = [
                     "theSearchLight": """: the searchlight to get the radius of the searchlights light cone in its beginning. """
                 },
                 result='if the specified searchlight element is valid, this function will return one float, which is the searchlights start radius. if not, it will return false plus an error message.' ,
-            )
+            ),
+            url='getSearchLightStartRadius',
         )
         ],
     ),
@@ -418,7 +423,8 @@ DUMP_PARTIAL = [
                     "endZ": """: the Z coordinate where the searchlight light cone will end. """
                 },
                 result='if every argument is correct, this function returns true. if not, it will return false plus an error message.' ,
-            )
+            ),
+            url='setSearchLightEndPosition',
         )
         ],
     ),
@@ -475,7 +481,8 @@ DUMP_PARTIAL = [
                     "endRadius": """: the radius of the searchlights light cone in its end. """
                 },
                 result='if every argument is correct, this function returns true. if not, it will return false plus an error message.' ,
-            )
+            ),
+            url='setSearchLightEndRadius',
         )
         ],
     ),
@@ -554,7 +561,8 @@ DUMP_PARTIAL = [
                     "startZ": """: the Z coordinate where the searchlight light cone will start. """
                 },
                 result='if every argument is correct, this function returns true. if not, it will return false plus an error message.' ,
-            )
+            ),
+            url='setSearchLightStartPosition',
         )
         ],
     ),
@@ -611,7 +619,8 @@ DUMP_PARTIAL = [
                     "startRadius": """: the radius of the searchlights light cone in its beginning. """
                 },
                 result='if every argument is correct, this function returns true. if not, it will return false plus an error message.' ,
-            )
+            ),
+            url='setSearchLightStartRadius',
         )
         ],
     )

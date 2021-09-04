@@ -351,7 +351,8 @@ DUMP_PARTIAL = [
                     "theTimer": """A timer element. """
                 },
                 result='* integer one represents the time left in miliseconds (1000th of a second) of the current time left in the loop.\n* integer two represents the amount of times the timer has left to execute.\n* integer three represents the time interval of timer.\n* returns false if the timer doesnt exist or stopped running. also, debugscript will say bad argument @ gettimerdetails. to prevent this, you can check if the timer exists with istimer().' ,
-            )
+            ),
+            url='getTimerDetails',
         ),
                 field=None,
                 is_static=False,
@@ -407,7 +408,8 @@ DUMP_PARTIAL = [
                     "theTimer": """A timer element. """
                 },
                 result='* integer one represents the time left in miliseconds (1000th of a second) of the current time left in the loop.\n* integer two represents the amount of times the timer has left to execute.\n* integer three represents the time interval of timer.\n* returns false if the timer doesnt exist or stopped running. also, debugscript will say bad argument @ gettimerdetails. to prevent this, you can check if the timer exists with istimer().' ,
-            )
+            ),
+            url='getTimerDetails',
         ),
                 field=None,
                 is_static=False,
@@ -529,7 +531,8 @@ DUMP_PARTIAL = [
                     "theTimer": """: The variable that we want to check. """
                 },
                 result='returns true if the passed value is a timer, false otherwise.' ,
-            )
+            ),
+            url='isTimer',
         ),
                 field=FunctionOOPField(
                                 name='valid',
@@ -585,7 +588,8 @@ DUMP_PARTIAL = [
                     "theTimer": """: The variable that we want to check. """
                 },
                 result='returns true if the passed value is a timer, false otherwise.' ,
-            )
+            ),
+            url='isTimer',
         ),
                 field=FunctionOOPField(
                                 name='valid',
@@ -651,7 +655,8 @@ DUMP_PARTIAL = [
                     "theTimer": """The timer you wish to halt. """
                 },
                 result='returns true if the timer was successfully killed, false if no such timer existed.' ,
-            )
+            ),
+            url='killTimer',
         ),
                 field=None,
                 is_static=False,
@@ -699,7 +704,8 @@ DUMP_PARTIAL = [
                     "theTimer": """The timer you wish to halt. """
                 },
                 result='returns true if the timer was successfully killed, false if no such timer existed.' ,
-            )
+            ),
+            url='killTimer',
         ),
                 field=None,
                 is_static=False,
@@ -813,7 +819,8 @@ DUMP_PARTIAL = [
                     "theTimer": """The timer whose elapsed time you wish to reset. """
                 },
                 result='returns true if the timer was successfully reset, false otherwise.' ,
-            )
+            ),
+            url='resetTimer',
         ),
                 field=None,
                 is_static=False,
@@ -861,7 +868,8 @@ DUMP_PARTIAL = [
                     "theTimer": """The timer whose elapsed time you wish to reset. """
                 },
                 result='returns true if the timer was successfully reset, false otherwise.' ,
-            )
+            ),
+            url='resetTimer',
         ),
                 field=None,
                 is_static=False,

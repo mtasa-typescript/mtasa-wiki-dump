@@ -77,7 +77,8 @@ DUMP_PARTIAL = [
                     "allowCaseVariations": """Whether the username is case sensitive (if this is set to true, usernames Bob and bob will refer to different accounts) """
                 },
                 result='returns an account or false if the account already exists or an error occured.' ,
-            )
+            ),
+            url='addAccount',
         ),
                 field=None,
                 is_static=True,
@@ -141,7 +142,8 @@ DUMP_PARTIAL = [
                     "fromAccount": """The account you wish to copy the data from. """
                 },
                 result='returns a true if the accounts were valid, false otherwise.' ,
-            )
+            ),
+            url='copyAccountData',
         ),
                 field=None,
                 is_static=False,
@@ -228,7 +230,8 @@ DUMP_PARTIAL = [
                     "key": """The key under which the data is stored """
                 },
                 result='returns a string containing the stored data or false if no data was stored under that key.' ,
-            )
+            ),
+            url='getAccountData',
         ),
                 field=None,
                 is_static=False,
@@ -281,7 +284,8 @@ DUMP_PARTIAL = [
                     "theAccount": """The account you wish to get the ID of. """
                 },
                 result='returns a int containing the accounts id, false if the account does not exist or an invalid argument was passed to the function.' ,
-            )
+            ),
+            url='getAccountID',
         ),
                 field=FunctionOOPField(
                                 name='id',
@@ -342,7 +346,8 @@ DUMP_PARTIAL = [
                     "theAccount": """The account you wish to get the IP of. """
                 },
                 result='returns a string containing the accounts ip, false if the account does not exist or an invalid argument was passed to the function.' ,
-            )
+            ),
+            url='getAccountIP',
         ),
                 field=FunctionOOPField(
                                 name='ip',
@@ -403,7 +408,8 @@ DUMP_PARTIAL = [
                     "theAccount": """The account you wish to get the name of. """
                 },
                 result='returns a string containing the accounts name, false if the account does not exist or an invalid argument was passed to the function.' ,
-            )
+            ),
+            url='getAccountName',
         ),
                 field=FunctionOOPField(
                                 name='name',
@@ -464,7 +470,8 @@ DUMP_PARTIAL = [
                     "theAccount": """The account you wish to get the player of. """
                 },
                 result='returns a player element if the account is currently in use, false otherwise.' ,
-            )
+            ),
+            url='getAccountPlayer',
         ),
                 field=FunctionOOPField(
                                 name='player',
@@ -516,7 +523,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='a table over the accounts that exist in the server internal.db file. this table might be empty.' ,
-            )
+            ),
+            url='getAccounts',
         ),
                 field=None,
                 is_static=True,
@@ -580,7 +588,8 @@ DUMP_PARTIAL = [
                     "value": """The value the dataName should have """
                 },
                 result='returns table containing the accounts associated with specified value at dataname. returns false if invalid arguments were specified.' ,
-            )
+            ),
+            url='getAccountsByData',
         ),
                 field=None,
                 is_static=True,
@@ -633,7 +642,8 @@ DUMP_PARTIAL = [
                     "ip": """The IP to get accounts from """
                 },
                 result='returns table containing the accounts associated with specified ip-address. returns false if invalid arguments were specified.' ,
-            )
+            ),
+            url='getAccountsByIP',
         ),
                 field=None,
                 is_static=True,
@@ -686,7 +696,8 @@ DUMP_PARTIAL = [
                     "serial": """The serial to get accounts from """
                 },
                 result='returns table containing the accounts associated with specified serial. returns false if invalid arguments were specified.' ,
-            )
+            ),
+            url='getAccountsBySerial',
         ),
                 field=None,
                 is_static=True,
@@ -739,7 +750,8 @@ DUMP_PARTIAL = [
                     "theAccount": """The account to get serial from """
                 },
                 result='returns string containing the serial, the string is empty if the account was never used. returns false if invalid arguments were specified.' ,
-            )
+            ),
+            url='getAccountSerial',
         ),
                 field=FunctionOOPField(
                                 name='serial',
@@ -800,7 +812,8 @@ DUMP_PARTIAL = [
                     "theAccount": """The account you wish to retrieve all data from. """
                 },
                 result='a table containing all the user data. this table might be empty.' ,
-            )
+            ),
+            url='getAllAccountData',
         ),
                 field=FunctionOOPField(
                                 name='data',
@@ -861,7 +874,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player element you want to get the account of. """
                 },
                 result='returns the players account object, or false if the player passed to the function is invalid.' ,
-            )
+            ),
+            url='getPlayerAccount',
         ),
                 field=FunctionOOPField(
                                 name='account',
@@ -922,7 +936,8 @@ DUMP_PARTIAL = [
                     "theAccount": """The account you want to check to see if it is a guest account. """
                 },
                 result='returns true if the account is a guest account, false otherwise.' ,
-            )
+            ),
+            url='isGuestAccount',
         ),
                 field=FunctionOOPField(
                                 name='guest',
@@ -1005,7 +1020,8 @@ DUMP_PARTIAL = [
                     "thePassword": """The password needed to sign into this account """
                 },
                 result='returns true if the player was successfully logged into the given account. returns false or nil if the log in failed for some reason, ie. the player was already logged in to some account (use logout first), if the account was already in use or if it failed for some other reason.' ,
-            )
+            ),
+            url='logIn',
         ),
                 field=None,
                 is_static=False,
@@ -1058,7 +1074,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player to log out of his current account """
                 },
                 result='returns true if the player was successfully logged out, false or nil if it failed for some reason, ie. the player was never logged in.' ,
-            )
+            ),
+            url='logOut',
         ),
                 field=None,
                 is_static=False,
@@ -1111,7 +1128,8 @@ DUMP_PARTIAL = [
                     "theAccount": """The account you wish to remove """
                 },
                 result='returns true if account was successfully removed, false if the account does not exist.' ,
-            )
+            ),
+            url='removeAccount',
         ),
                 field=None,
                 is_static=False,
@@ -1186,7 +1204,8 @@ DUMP_PARTIAL = [
                     "value": """The value you wish to store. Set to false to remove the data. NOTE: you cannot store tables as values, but you can use toJSON strings. """
                 },
                 result='returns a true if the account data was set, false if an invalid argument was specified.' ,
-            )
+            ),
+            url='setAccountData',
         ),
                 field=None,
                 is_static=False,
@@ -1261,7 +1280,8 @@ DUMP_PARTIAL = [
                     "allowCaseVariations": """Whether the username is case sensitive (if this is set to true, usernames Bob and bob will refer to different accounts) """
                 },
                 result='returns a true if the account name was set, false if an invalid argument was specified.' ,
-            )
+            ),
+            url='setAccountName',
         ),
                 field=FunctionOOPField(
                                 name='name',
@@ -1333,7 +1353,8 @@ DUMP_PARTIAL = [
                     "password": """the password """
                 },
                 result='returns true if the password was set correctly, false otherwise.' ,
-            )
+            ),
+            url='setAccountPassword',
         ),
                 field=FunctionOOPField(
                                 name='password',

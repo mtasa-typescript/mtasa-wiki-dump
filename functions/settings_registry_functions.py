@@ -48,7 +48,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the value of the setting if a single setting was specified and found, or a table (in associative-array form) containing:\n*the list of global setting name/value pairs if . is passed as a setting name,\n*the list of resource settings if a resource name followed by a . is passed,\n*the list of the scripts resource settings if an empty string is passed.\nit returns false if the specified setting or settings group doesnt exist, or if the settings group you are trying to retrieve doesnt have any public or protected settings.' ,
-            )
+            ),
+            url='get',
         )
         ],
         client=[
@@ -105,7 +106,8 @@ DUMP_PARTIAL = [
                     "value": """The value to set the setting to. This can be any Lua data type, except for functions, most userdata (only resources cant be stored) and threads. """
                 },
                 result='returns true if the setting has been set, false if you do not have access to the setting or invalid arguments were passed.' ,
-            )
+            ),
+            url='set',
         )
         ],
         client=[

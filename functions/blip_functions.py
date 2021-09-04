@@ -158,7 +158,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='createBlip',
         )
         ],
         client=[
@@ -299,7 +300,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='createBlip',
         )
         ],
     ),
@@ -432,7 +434,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='createBlipAttachedTo',
         )
         ],
         client=[
@@ -553,7 +556,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='createBlipAttachedTo',
         )
         ],
     ),
@@ -608,7 +612,8 @@ DUMP_PARTIAL = [
                     "theBlip": """The blip whose color you wish to get. """
                 },
                 result='returns four integers in rgba format, with a maximum value of 255 for each. the values are, in order, red, green, blue, and alpha.  alpha decides the transparancy where 255 is opaque and 0 is fully transparent. false is returned if the blip is invalid.' ,
-            )
+            ),
+            url='getBlipColor',
         )
         ],
         client=[
@@ -661,7 +666,8 @@ DUMP_PARTIAL = [
                     "theBlip": """The blip whose color you wish to get. """
                 },
                 result='returns four integers in rgba format, with a maximum value of 255 for each. the values are, in order, red, green, blue, and alpha.  alpha decides the transparancy where 255 is opaque and 0 is fully transparent. false is returned if the blip is invalid.' ,
-            )
+            ),
+            url='getBlipColor',
         )
         ],
     ),
@@ -704,7 +710,8 @@ DUMP_PARTIAL = [
                     "theBlip": """: the blip were getting the icon number of. """
                 },
                 result='returns an int indicating which icon the blip has. valid values are listed on the radar blips page.' ,
-            )
+            ),
+            url='getBlipIcon',
         )
         ],
         client=[
@@ -745,7 +752,8 @@ DUMP_PARTIAL = [
                     "theBlip": """: the blip were getting the icon number of. """
                 },
                 result='returns an int indicating which icon the blip has. valid values are listed on the radar blips page.' ,
-            )
+            ),
+            url='getBlipIcon',
         )
         ],
     ),
@@ -788,7 +796,8 @@ DUMP_PARTIAL = [
                     "theBlip": """the blip to retrieve the Z ordering value of. """
                 },
                 result='returns the z ordering value of the blip if successful, false otherwise.' ,
-            )
+            ),
+            url='getBlipOrdering',
         )
         ],
         client=[
@@ -829,7 +838,8 @@ DUMP_PARTIAL = [
                     "theBlip": """the blip to retrieve the Z ordering value of. """
                 },
                 result='returns the z ordering value of the blip if successful, false otherwise.' ,
-            )
+            ),
+            url='getBlipOrdering',
         )
         ],
     ),
@@ -872,7 +882,8 @@ DUMP_PARTIAL = [
                     "theBlip": """The blip you wish to get the size of. """
                 },
                 result='returns an int indicating the size of the blip. the default value is 2. the maximum value is 25.' ,
-            )
+            ),
+            url='getBlipSize',
         )
         ],
         client=[
@@ -913,7 +924,8 @@ DUMP_PARTIAL = [
                     "theBlip": """The blip you wish to get the size of. """
                 },
                 result='returns an int indicating the size of the blip. the default value is 2. the maximum value is 25.' ,
-            )
+            ),
+            url='getBlipSize',
         )
         ],
     ),
@@ -956,7 +968,8 @@ DUMP_PARTIAL = [
                     "theBlip": """The blip whose visible distance you wish to get. """
                 },
                 result='returns one float with the blips visible distance, false if the blip is invalid.' ,
-            )
+            ),
+            url='getBlipVisibleDistance',
         )
         ],
         client=[
@@ -997,7 +1010,8 @@ DUMP_PARTIAL = [
                     "theBlip": """The blip whose visible distance you wish to get. """
                 },
                 result='returns one float with the blips visible distance, false if the blip is invalid.' ,
-            )
+            ),
+            url='getBlipVisibleDistance',
         )
         ],
     ),
@@ -1084,7 +1098,8 @@ DUMP_PARTIAL = [
                     "alpha": """The amount of alpha in the blips color (0 - 255).  Alpha decides transparancy where 255 is opaque and 0 is transparent. """
                 },
                 result='returns true if the blips color was set successfully. returns false if the blip passed to the function is invalid, or any of the colors are out of the valid range.' ,
-            )
+            ),
+            url='setBlipColor',
         )
         ],
         client=[
@@ -1169,7 +1184,8 @@ DUMP_PARTIAL = [
                     "alpha": """The amount of alpha in the blips color (0 - 255).  Alpha decides transparancy where 255 is opaque and 0 is transparent. """
                 },
                 result='returns true if the blips color was set successfully. returns false if the blip passed to the function is invalid, or any of the colors are out of the valid range.' ,
-            )
+            ),
+            url='setBlipColor',
         )
         ],
     ),
@@ -1223,7 +1239,8 @@ DUMP_PARTIAL = [
                     "icon": """A number indicating the icon you wish to change it do. Valid values are listed on the Radar Blips page. """
                 },
                 result='returns true if the icon was successfully set, false if the element passed was not a valid blip or the icon value was not a valid icon number.' ,
-            )
+            ),
+            url='setBlipIcon',
         )
         ],
         client=[
@@ -1275,7 +1292,8 @@ DUMP_PARTIAL = [
                     "icon": """A number indicating the icon you wish to change it do. Valid values are listed on the Radar Blips page. """
                 },
                 result='returns true if the icon was successfully set, false if the element passed was not a valid blip or the icon value was not a valid icon number.' ,
-            )
+            ),
+            url='setBlipIcon',
         )
         ],
     ),
@@ -1329,7 +1347,8 @@ DUMP_PARTIAL = [
                     "ordering": """the new Z ordering value. Blips with higher values will appear on top of blips with lower values. Possible range: -32767 to 32767. Default: 0. """
                 },
                 result='returns true if the blip ordering was changed successfully, false otherwise.' ,
-            )
+            ),
+            url='setBlipOrdering',
         )
         ],
         client=[
@@ -1381,7 +1400,8 @@ DUMP_PARTIAL = [
                     "ordering": """the new Z ordering value. Blips with higher values will appear on top of blips with lower values. Possible range: -32767 to 32767. Default: 0. """
                 },
                 result='returns true if the blip ordering was changed successfully, false otherwise.' ,
-            )
+            ),
+            url='setBlipOrdering',
         )
         ],
     ),
@@ -1435,7 +1455,8 @@ DUMP_PARTIAL = [
                     "iconSize": """The size you wish the icon to be. 2 is the default value. 25 is the maximum value. Value gets clamped between 0 and 25. """
                 },
                 result='returns an true if the blips size was set successfully. returns false if the element passed was not a blip or if the icon size passed was invalid.' ,
-            )
+            ),
+            url='setBlipSize',
         )
         ],
         client=[
@@ -1487,7 +1508,8 @@ DUMP_PARTIAL = [
                     "iconSize": """The size you wish the icon to be. 2 is the default value. 25 is the maximum value. Value gets clamped between 0 and 25. """
                 },
                 result='returns an true if the blips size was set successfully. returns false if the element passed was not a blip or if the icon size passed was invalid.' ,
-            )
+            ),
+            url='setBlipSize',
         )
         ],
     ),
@@ -1541,7 +1563,8 @@ DUMP_PARTIAL = [
                     "theDistance": """The distance you want the blip to be visible for. Value gets clamped between 0 and 65535. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setBlipVisibleDistance',
         )
         ],
         client=[
@@ -1593,7 +1616,8 @@ DUMP_PARTIAL = [
                     "theDistance": """The distance you want the blip to be visible for. Value gets clamped between 0 and 65535. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setBlipVisibleDistance',
         )
         ],
     )

@@ -80,7 +80,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns 4 int|ints, indicating the color of the water. (rgba)' ,
-            )
+            ),
+            url='getWaterColor',
         ),
                 field=None,
                 is_static=False,
@@ -131,7 +132,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns 4 int|ints, indicating the color of the water. (rgba)' ,
-            )
+            ),
+            url='getWaterColor',
         ),
                 field=None,
                 is_static=False,
@@ -208,7 +210,8 @@ DUMP_PARTIAL = [
                     "vertexIndex": """the index of the vertex whose position to get. Values range from 1 to 4 for a water quad, or 1 to 3 for a triangle. """
                 },
                 result='returns the x, y and z coordinates of the specified vertex if successful, false otherwise.' ,
-            )
+            ),
+            url='getWaterVertexPosition',
         ),
                 field=None,
                 is_static=False,
@@ -275,7 +278,8 @@ DUMP_PARTIAL = [
                     "vertexIndex": """the index of the vertex whose position to get. Values range from 1 to 4 for a water quad, or 1 to 3 for a triangle. """
                 },
                 result='returns the x, y and z coordinates of the specified vertex if successful, false otherwise.' ,
-            )
+            ),
+            url='getWaterVertexPosition',
         ),
                 field=None,
                 is_static=False,
@@ -316,7 +320,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the height as a float, false otherwise.' ,
-            )
+            ),
+            url='getWaveHeight',
         ),
                 field=None,
                 is_static=True,
@@ -355,7 +360,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns the height as a float, false otherwise.' ,
-            )
+            ),
+            url='getWaveHeight',
         ),
                 field=None,
                 is_static=True,
@@ -404,7 +410,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if water color was reset correctly, false otherwise.' ,
-            )
+            ),
+            url='resetWaterColor',
         ),
                 field=None,
                 is_static=True,
@@ -443,7 +450,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if water color was reset correctly, false otherwise.' ,
-            )
+            ),
+            url='resetWaterColor',
         ),
                 field=None,
                 is_static=True,
@@ -484,7 +492,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if water level was reset correctly, false otherwise.' ,
-            )
+            ),
+            url='resetWaterLevel',
         ),
                 field=None,
                 is_static=True,
@@ -523,7 +532,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if water level was reset correctly, false otherwise.' ,
-            )
+            ),
+            url='resetWaterLevel',
         ),
                 field=None,
                 is_static=True,
@@ -606,7 +616,8 @@ DUMP_PARTIAL = [
                     "alpha": """The alpha (visibility) value of the water, from 0 to 255. Defaults to 200 if not declared. """
                 },
                 result='returns true if water color was set correctly, false if invalid values were passed.' ,
-            )
+            ),
+            url='setWaterColor',
         ),
                 field=None,
                 is_static=False,
@@ -687,7 +698,8 @@ DUMP_PARTIAL = [
                     "alpha": """The alpha (visibility) value of the water, from 0 to 255. Defaults to 200 if not declared. """
                 },
                 result='returns true if water color was set correctly, false if invalid values were passed.' ,
-            )
+            ),
+            url='setWaterColor',
         ),
                 field=None,
                 is_static=False,
@@ -761,7 +773,8 @@ DUMP_PARTIAL = [
                     "includeOutsideWorldSea": """a boolean indicating whether to also set the level of sea water outside the world area, ie. outside -3000, 3000. """
                 },
                 result='returns true if successful, false in case of failure.' ,
-            )
+            ),
+            url='setWaterLevel',
         ),
                 field=FunctionOOPField(
                                 name='level',
@@ -833,7 +846,8 @@ DUMP_PARTIAL = [
                     "includeOutsideWorldSea": """a boolean indicating whether to also set the level of sea water outside the world area, ie. outside -3000, 3000. """
                 },
                 result='returns true if successful, false in case of failure.' ,
-            )
+            ),
+            url='setWaterLevel',
         ),
                 field=FunctionOOPField(
                                 name='level',
@@ -935,7 +949,8 @@ DUMP_PARTIAL = [
                     "z": """the Z coordinate to set for the vertex. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setWaterVertexPosition',
         ),
                 field=None,
                 is_static=False,
@@ -1027,7 +1042,8 @@ DUMP_PARTIAL = [
                     "z": """the Z coordinate to set for the vertex. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setWaterVertexPosition',
         ),
                 field=None,
                 is_static=False,
@@ -1077,7 +1093,8 @@ DUMP_PARTIAL = [
                     "height": """A float between 0 and 100. """
                 },
                 result='returns a boolean value true or false that tells you if it was successful or not.' ,
-            )
+            ),
+            url='setWaveHeight',
         ),
                 field=None,
                 is_static=True,
@@ -1125,7 +1142,8 @@ DUMP_PARTIAL = [
                     "height": """A float between 0 and 100. """
                 },
                 result='returns a boolean value true or false that tells you if it was successful or not.' ,
-            )
+            ),
+            url='setWaveHeight',
         ),
                 field=None,
                 is_static=True,

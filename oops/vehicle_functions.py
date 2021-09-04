@@ -121,7 +121,8 @@ DUMP_PARTIAL = [
                     "silentFlag": """If you want the siren to be silent set this to true """
                 },
                 result='returns true if sirens were successfully added to the vehicle, false otherwise.' ,
-            )
+            ),
+            url='addVehicleSirens',
         ),
                 field=None,
                 is_static=False,
@@ -186,7 +187,8 @@ DUMP_PARTIAL = [
 '''Note:''' setCameraTarget will behave strangely if you use hydraulics (upgrade id: 1087) server sided and when your camera target is the player inside the vehicle with hydraulics and if the player is not you. """
                 },
                 result='returns true if the upgrade was successfully added to the vehicle, otherwise false.' ,
-            )
+            ),
+            url='addVehicleUpgrade',
         ),
                 field=None,
                 is_static=False,
@@ -246,7 +248,8 @@ DUMP_PARTIAL = [
 '''Note:''' setCameraTarget will behave strangely if you use hydraulics (upgrade id: 1087) server sided and when your camera target is the player inside the vehicle with hydraulics and if the player is not you. """
                 },
                 result='returns true if the upgrade was successfully added to the vehicle, otherwise false.' ,
-            )
+            ),
+            url='addVehicleUpgrade',
         ),
                 field=None,
                 is_static=False,
@@ -299,7 +302,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """: the vehicle you wish to retrieve the lights state of. """
                 },
                 result='returns true if the lights are on, false otherwise.' ,
-            )
+            ),
+            url='areVehicleLightsOn',
         ),
                 field=FunctionOOPField(
                                 name='lightsOn',
@@ -368,7 +372,8 @@ DUMP_PARTIAL = [
                     "theTrailer": """: the trailer you wish to be attached. """
                 },
                 result='returns true if the vehicles were successfully attached, false otherwise.' ,
-            )
+            ),
+            url='attachTrailerToVehicle',
         ),
                 field=None,
                 is_static=False,
@@ -427,7 +432,8 @@ DUMP_PARTIAL = [
                     "theTrailer": """: the trailer you wish to be attached. """
                 },
                 result='returns true if the vehicles were successfully attached, false otherwise.' ,
-            )
+            ),
+            url='attachTrailerToVehicle',
         ),
                 field=None,
                 is_static=False,
@@ -488,7 +494,8 @@ DUMP_PARTIAL = [
                     "explode": """if this argument is true then the vehicle will explode, otherwise it will just be blown up silently. """
                 },
                 result='' ,
-            )
+            ),
+            url='blowVehicle',
         ),
                 field=FunctionOOPField(
                                 name='blown',
@@ -544,7 +551,8 @@ DUMP_PARTIAL = [
                     "vehicleToBlow": """the vehicle that you wish to blow up. """
                 },
                 result='' ,
-            )
+            ),
+            url='blowVehicle',
         ),
                 field=None,
                 is_static=False,
@@ -627,7 +635,8 @@ DUMP_PARTIAL = [
                     "theTrailer": """: The trailer you wish to be detached. """
                 },
                 result='returns true if the vehicles were successfully detached, false otherwise.' ,
-            )
+            ),
+            url='detachTrailerFromVehicle',
         ),
                 field=None,
                 is_static=False,
@@ -686,7 +695,8 @@ DUMP_PARTIAL = [
                     "theTrailer": """: The trailer you wish to be detached. """
                 },
                 result='returns true if the vehicles were successfully detached, false otherwise.' ,
-            )
+            ),
+            url='detachTrailerFromVehicle',
         ),
                 field=None,
                 is_static=False,
@@ -736,7 +746,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle you wish to fix """
                 },
                 result='returns true if the vehicle was fixed, false if thevehicle is invalid.' ,
-            )
+            ),
+            url='fixVehicle',
         ),
                 field=None,
                 is_static=False,
@@ -784,7 +795,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle you wish to fix """
                 },
                 result='returns true if the vehicle was fixed, false if thevehicle is invalid.' ,
-            )
+            ),
+            url='fixVehicle',
         ),
                 field=None,
                 is_static=False,
@@ -837,7 +849,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """The vehicle that will be checked. """
                 },
                 result='returns true if the collisions are enabled for specified vehicle, false if the collisions arent enabled for the specified vehicle, if the vehicle is not a helicopter or if invalid arguments are specified.' ,
-            )
+            ),
+            url='getHeliBladeCollisionsEnabled',
         ),
                 field=FunctionOOPField(
                                 name='heliBladeCollisionsEnabled',
@@ -898,7 +911,8 @@ DUMP_PARTIAL = [
                     "heli": """the helicopter element to get the rotor speed of. """
                 },
                 result='returns the rotor speed if successful. this is 0 when the helicopter is parked, and about 0.2 when it is fully spun up. it can be negative if the rotor rotates counter-clockwise. returns false in case of failure (an invalid element or a vehicle element that is not a helicopter was passed).' ,
-            )
+            ),
+            url='getHelicopterRotorSpeed',
         ),
                 field=FunctionOOPField(
                                 name='helicopterRotorSpeed',
@@ -972,7 +986,8 @@ DUMP_PARTIAL = [
                     "train": """the train of which to get the driving direction. """
                 },
                 result='returns true if the train is driving clockwise on the train track, false if it is going counterclockwise or a failure occured.' ,
-            )
+            ),
+            url='getTrainDirection',
         ),
                 field=FunctionOOPField(
                                 name='direction',
@@ -1028,7 +1043,8 @@ DUMP_PARTIAL = [
                     "train": """the train of which to get the driving direction. """
                 },
                 result='returns true if the train is driving clockwise on the train track, false if it is going counterclockwise or a failure occured.' ,
-            )
+            ),
+            url='getTrainDirection',
         ),
                 field=FunctionOOPField(
                                 name='direction',
@@ -1086,7 +1102,8 @@ DUMP_PARTIAL = [
                     "train": """the train to get the position of """
                 },
                 result='returns a float that represents how along the track it is, false if there is problem with train element.' ,
-            )
+            ),
+            url='getTrainPosition',
         ),
                 field=FunctionOOPField(
                                 name='trainPosition',
@@ -1142,7 +1159,8 @@ DUMP_PARTIAL = [
                     "train": """the train to get the position of """
                 },
                 result='returns a float that represents how along the track it is, false if there is problem with train element.' ,
-            )
+            ),
+            url='getTrainPosition',
         ),
                 field=FunctionOOPField(
                                 name='trainPosition',
@@ -1200,7 +1218,8 @@ DUMP_PARTIAL = [
                     "train": """the train of which to retrieve the speed. """
                 },
                 result='returns the trains speed if successful, false otherwise.' ,
-            )
+            ),
+            url='getTrainSpeed',
         ),
                 field=FunctionOOPField(
                                 name='trainSpeed',
@@ -1256,7 +1275,8 @@ DUMP_PARTIAL = [
                     "train": """the train of which to retrieve the speed. """
                 },
                 result='returns the trains speed if successful, false otherwise.' ,
-            )
+            ),
+            url='getTrainSpeed',
         ),
                 field=FunctionOOPField(
                                 name='trainSpeed',
@@ -1314,7 +1334,8 @@ DUMP_PARTIAL = [
                     "train": """the train of which to get the track. """
                 },
                 result='returns an integer (whole number) that represents the train track, false if there is problem with train element.' ,
-            )
+            ),
+            url='getTrainTrack',
         ),
                 field=FunctionOOPField(
                                 name='track',
@@ -1370,7 +1391,8 @@ DUMP_PARTIAL = [
                     "train": """the train of which to get the track. """
                 },
                 result='returns an integer (whole number) that represents the train track, false if there is problem with train element.' ,
-            )
+            ),
+            url='getTrainTrack',
         ),
                 field=FunctionOOPField(
                                 name='track',
@@ -1491,7 +1513,8 @@ DUMP_PARTIAL = [
                     "bRGB": """A boolean specifying whether to return RGB values. A setting of false will result in the function returning color ids instead. """
                 },
                 result='*returns 12 int|ints (if brgb is true) indicating the red, green and blue components of each of the 4 vehicle colors.\n*returns 4 int|ints (if brgb is false) indicating the color ids of each of the 4 vehicle colors.\n*returns false if the vehicle doesnt exist.\nvalid color ids if brgb is set to false:\n<br>' ,
-            )
+            ),
+            url='getVehicleColor',
         ),
                 field=None,
                 is_static=False,
@@ -1594,7 +1617,8 @@ DUMP_PARTIAL = [
                     "bRGB": """A boolean specifying whether to return RGB values. A setting of false will result in the function returning color ids instead. """
                 },
                 result='*returns 12 int|ints (if brgb is true) indicating the red, green and blue components of each of the 4 vehicle colors.\n*returns 4 int|ints (if brgb is false) indicating the color ids of each of the 4 vehicle colors.\n*returns false if the vehicle doesnt exist.\nvalid color ids if brgb is set to false:\n<br>' ,
-            )
+            ),
+            url='getVehicleColor',
         ),
                 field=None,
                 is_static=False,
@@ -1655,7 +1679,8 @@ DUMP_PARTIAL = [
                     "slot": """the upgrade slot number for which youre getting the list (from 0 to 16). Compatible upgrades for all slots are listed if this is not specified. """
                 },
                 result='returns a table with all the compatible upgrades, or false if invalid arguments are passed.' ,
-            )
+            ),
+            url='getVehicleCompatibleUpgrades',
         ),
                 field=FunctionOOPField(
                                 name='compatibleUpgrades',
@@ -1722,7 +1747,8 @@ DUMP_PARTIAL = [
                     "slot": """the upgrade slot number for which youre getting the list (from 0 to 16). Compatible upgrades for all slots are listed if this is not specified. """
                 },
                 result='returns a table with all the compatible upgrades, or false if invalid arguments are passed.' ,
-            )
+            ),
+            url='getVehicleCompatibleUpgrades',
         ),
                 field=FunctionOOPField(
                                 name='compatibleUpgrades',
@@ -1816,7 +1842,8 @@ DUMP_PARTIAL = [
                     "world": """The position is a world position. """
                 },
                 result='returns three floats indicating the position of the component, x, y and z respectively.' ,
-            )
+            ),
+            url='getVehicleComponentPosition',
         ),
                 field=None,
                 is_static=False,
@@ -1902,7 +1929,8 @@ DUMP_PARTIAL = [
                     "world": """: The rotation is a world rotation, relative to the worlds coordinates axes. """
                 },
                 result='returns three floats indicating the rotation of the component, x, y and z respectively.' ,
-            )
+            ),
+            url='getVehicleComponentRotation',
         ),
                 field=None,
                 is_static=False,
@@ -1955,7 +1983,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """The vehicle you wish to get the Vehicle_Components|components of. """
                 },
                 result='returns a table containing the name of the component as the key and visibility flag of that component as the value' ,
-            )
+            ),
+            url='getVehicleComponents',
         ),
                 field=FunctionOOPField(
                                 name='components',
@@ -2049,7 +2078,8 @@ DUMP_PARTIAL = [
                     "world": """The scale is a world scale. """
                 },
                 result='returns three floats indicating the scale of the component, x, y and z respectively.' ,
-            )
+            ),
+            url='getVehicleComponentScale',
         ),
                 field=None,
                 is_static=False,
@@ -2113,7 +2143,8 @@ DUMP_PARTIAL = [
                     "theComponent": """A Vehicle_Components|vehicle component (this is the frame name from the model file of the component you wish to modify) """
                 },
                 result='returns a bool indicating the visible state of the component.' ,
-            )
+            ),
+            url='getVehicleComponentVisible',
         ),
                 field=None,
                 is_static=False,
@@ -2163,7 +2194,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle you want to get the controller of. """
                 },
                 result='returns a player object, if there isnt a driver, it will search the trailer chain for the front driver, false otherwise.' ,
-            )
+            ),
+            url='getVehicleController',
         ),
                 field=FunctionOOPField(
                                 name='controller',
@@ -2219,7 +2251,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle you want to get the controller of. """
                 },
                 result='returns a player object, if there isnt a driver, it will search the trailer chain for the front driver, false otherwise.' ,
-            )
+            ),
+            url='getVehicleController',
         ),
                 field=FunctionOOPField(
                                 name='controller',
@@ -2296,7 +2329,8 @@ DUMP_PARTIAL = [
                     "door": """A whole number, 0 (hood), 1 (trunk), 2 (front left), 3 (front right), 4 (rear left), 5 (rear right) """
                 },
                 result='returns a number between 0 and 1 that indicates how open the door is. 0 is closed, and 1 is fully open. returns false if invalid arguments are passed.' ,
-            )
+            ),
+            url='getVehicleDoorOpenRatio',
         ),
                 field=None,
                 is_static=False,
@@ -2355,7 +2389,8 @@ DUMP_PARTIAL = [
                     "door": """A whole number, 0 (hood), 1 (trunk), 2 (front left), 3 (front right), 4 (rear left), 5 (rear right) """
                 },
                 result='returns a number between 0 and 1 that indicates how open the door is. 0 is closed, and 1 is fully open. returns false if invalid arguments are passed.' ,
-            )
+            ),
+            url='getVehicleDoorOpenRatio',
         ),
                 field=None,
                 is_static=False,
@@ -2422,7 +2457,8 @@ DUMP_PARTIAL = [
                     "5": """Rear right """
                 },
                 result='if successful, one of the following integers will be returned:\n* 0: shut, intact (also returned if the door does not exist)\n* 1: ajar, intact\n* 2: shut, damaged\n* 3: ajar, damaged\n* 4: missing' ,
-            )
+            ),
+            url='getVehicleDoorState',
         ),
                 field=None,
                 is_static=False,
@@ -2487,7 +2523,8 @@ DUMP_PARTIAL = [
                     "5": """Rear right """
                 },
                 result='if successful, one of the following integers will be returned:\n* 0: shut, intact (also returned if the door does not exist)\n* 1: ajar, intact\n* 2: shut, damaged\n* 3: ajar, damaged\n* 4: missing' ,
-            )
+            ),
+            url='getVehicleDoorState',
         ),
                 field=None,
                 is_static=False,
@@ -2559,7 +2596,8 @@ DUMP_PARTIAL = [
                     "dummy": """The dummy whose position you want to get """
                 },
                 result='returns three floats indicating the position x, y and z of the vehicles dummy. it returns false otherwise.\nthis is a command to get the position of the players vehicle dummy position specified as an argument.\n<syntaxhighlight lang=lua>\nfunction getdummyposition(cmd, dummy)\nif (not dummy) then\nreturn false\nend\nlocal veh = getpedoccupiedvehicle(localplayer)\nif (not veh) then\noutputchatbox(you should be in a vehicle to use this command, 255, 25, 25)\nreturn false\nend\nlocal x, y, z = getvehicledummyposition(veh, dummy)\noutputchatbox(x: ..x.., y: ..y.., z: ..z, 0, 255, 0)\nend\naddcommandhandler(getdummy, getdummyposition)\n</syntaxhighlight>' ,
-            )
+            ),
+            url='getVehicleDummyPosition',
         ),
                 field=None,
                 is_static=False,
@@ -2609,7 +2647,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """: the vehicle you wish to get the engine state of. """
                 },
                 result='returns true if the vehicles engine is started, false otherwise.' ,
-            )
+            ),
+            url='getVehicleEngineState',
         ),
                 field=FunctionOOPField(
                                 name='engineState',
@@ -2665,7 +2704,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """: the vehicle you wish to get the engine state of. """
                 },
                 result='returns true if the vehicles engine is started, false otherwise.' ,
-            )
+            ),
+            url='getVehicleEngineState',
         ),
                 field=FunctionOOPField(
                                 name='engineState',
@@ -2731,7 +2771,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle you wish to get the handling data of. """
                 },
                 result='returns a table containing all the handling data, false otherwise. heres a list of valid table properties and what they return:' ,
-            )
+            ),
+            url='getVehicleHandling',
         ),
                 field=FunctionOOPField(
                                 name='handling',
@@ -2787,7 +2828,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle you wish to get the handling data of. """
                 },
                 result='returns a table containing all the handling data, false otherwise. heres a list of valid table properties and what they return:' ,
-            )
+            ),
+            url='getVehicleHandling',
         ),
                 field=FunctionOOPField(
                                 name='handling',
@@ -2853,7 +2895,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """The vehicle that you wish to set the headlight color of. """
                 },
                 result='returns three integers for the red, green and blue of the headlight color for the specified vehicle, false if an invalid vehicle was specified.' ,
-            )
+            ),
+            url='getVehicleHeadLightColor',
         ),
                 field=None,
                 is_static=False,
@@ -2909,7 +2952,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """The vehicle that you wish to set the headlight color of. """
                 },
                 result='returns three integers for the red, green and blue of the headlight color for the specified vehicle, false if an invalid vehicle was specified.' ,
-            )
+            ),
+            url='getVehicleHeadLightColor',
         ),
                 field=None,
                 is_static=False,
@@ -2959,7 +3003,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle of which you wish to check the landing gear state. """
                 },
                 result='returns true if landing gear is down, false if the landing gear is up.<br />\nreturns nil if the vehicle has no landing gear, or is invalid.' ,
-            )
+            ),
+            url='getVehicleLandingGearDown',
         ),
                 field=FunctionOOPField(
                                 name='landingGearDown',
@@ -3015,7 +3060,8 @@ DUMP_PARTIAL = [
                     "theVehicle": """the vehicle of which you wish to check the landing gear state. """
                 },
                 result='returns true if landing gear is down, false if the landing gear is up.<br />\nreturns nil if the vehicle has no landing gear, or is invalid.' ,
-            )
+            ),
+            url='getVehicleLandingGearDown',
         ),
                 field=FunctionOOPField(
                                 name='landingGearDown',
@@ -3088,7 +3134,8 @@ DUMP_PARTIAL = [
                     "3": """Rear left """
                 },
                 result='returns 0 (working) or 1 (broken)' ,
-            )
+            ),
+            url='getVehicleLightState',
         ),
                 field=None,
                 is_static=False,
@@ -3151,7 +3198,8 @@ DUMP_PARTIAL = [
                     "3": """Rear left """
                 },
                 result='returns 0 (working) or 1 (broken)' ,
-            )
+            ),
+            url='getVehicleLightState',
         ),
                 field=None,
                 is_static=False,
@@ -3211,7 +3259,8 @@ OR """,
                     "modelID": """the model id that you wish to know the maximum capacity of. """
                 },
                 result='returns an int indicating the maximum number of passengers that can enter a vehicle.' ,
-            )
+            ),
+            url='getVehicleMaxPassengers',
         ),
                 field=FunctionOOPField(
                                 name='maxPassengers',
@@ -3277,7 +3326,8 @@ OR """,
                     "modelID": """the model id that you wish to know the maximum capacity of. """
                 },
                 result='returns an int indicating the maximum number of passengers that can enter a vehicle.' ,
-            )
+            ),
+            url='getVehicleMaxPassengers',
         ),
                 field=FunctionOOPField(
                                 name='maxPassengers',
@@ -3357,7 +3407,8 @@ OR """,
                     "dummy": """: The dummy whose position you want to get """
                 },
                 result='returns three floats indicating the default position x, y and z of the given dummy. it returns false otherwise.' ,
-            )
+            ),
+            url='getVehicleModelDummyDefaultPosition',
         ),
                 field=None,
                 is_static=True,
@@ -3429,7 +3480,8 @@ OR """,
                     "dummy": """: The dummy whose position you want to get """
                 },
                 result='returns three floats indicating the position x, y and z of given dummy. it returns false otherwise.' ,
-            )
+            ),
+            url='getVehicleModelDummyPosition',
         ),
                 field=None,
                 is_static=True,
@@ -3490,7 +3542,8 @@ OR """,
                     "modelID": """: The vehicle model ID. """
                 },
                 result='returns the position of the exhaust fumes if everything went fine or false otherwise.' ,
-            )
+            ),
+            url='getVehicleModelExhaustFumesPosition',
         ),
                 field=None,
                 is_static=True,
@@ -3540,7 +3593,8 @@ OR """,
                     "name": """A string containing the name of the vehicle. """
                 },
                 result='returns an integer if the name exists, false otherwise.\nif you use this function on vehicles with shared names, such as police, it will return the earliest occurrence of that vehicles id.' ,
-            )
+            ),
+            url='getVehicleModelFromName',
         ),
                 field=None,
                 is_static=True,
@@ -3588,7 +3642,8 @@ OR """,
                     "name": """A string containing the name of the vehicle. """
                 },
                 result='returns an integer if the name exists, false otherwise.\nif you use this function on vehicles with shared names, such as police, it will return the earliest occurrence of that vehicles id.' ,
-            )
+            ),
+            url='getVehicleModelFromName',
         ),
                 field=None,
                 is_static=True,
@@ -3656,7 +3711,8 @@ OR """,
 <syntaxhighlight lang="lua">{ front_axle = 0.8, rear_axle = 0.7 }</syntaxhighlight> """
                 },
                 result='returns a decimal number or a table, depending on the specified wheel group. if the specified vehicle model id or wheel group are not valid, an error is raised instead. the meaning of the wheel size values is documented in setvehiclemodelwheelsize.' ,
-            )
+            ),
+            url='getVehicleModelWheelSize',
         ),
                 field=None,
                 is_static=True,
@@ -3706,7 +3762,8 @@ OR """,
                     "theVehicle": """the vehicle you want to get the name of. """
                 },
                 result='returns a string containing the requested vehicles name, or false if the vehicle passed to the function is invalid.' ,
-            )
+            ),
+            url='getVehicleName',
         ),
                 field=FunctionOOPField(
                                 name='name',
@@ -3762,7 +3819,8 @@ OR """,
                     "theVehicle": """the vehicle you want to get the name of. """
                 },
                 result='returns a string containing the requested vehicles name, or false if the vehicle passed to the function is invalid.' ,
-            )
+            ),
+            url='getVehicleName',
         ),
                 field=FunctionOOPField(
                                 name='name',
@@ -3820,7 +3878,8 @@ OR """,
                     "model": """This is the vehicle model ID. See vehicle IDs to see what values will return names. """
                 },
                 result='returns the name of the vehicle if the model id was valid, false otherwise.' ,
-            )
+            ),
+            url='getVehicleNameFromModel',
         ),
                 field=None,
                 is_static=True,
@@ -3868,7 +3927,8 @@ OR """,
                     "model": """This is the vehicle model ID. See vehicle IDs to see what values will return names. """
                 },
                 result='returns the name of the vehicle if the model id was valid, false otherwise.' ,
-            )
+            ),
+            url='getVehicleNameFromModel',
         ),
                 field=None,
                 is_static=True,
@@ -3945,7 +4005,8 @@ OR """,
                     "seat": """the seat where the player is sitting (0 for driver, 1+ for passengers). """
                 },
                 result='returns the player sitting in the vehicle, or false if the seat is unoccupied or doesnt exist.' ,
-            )
+            ),
+            url='getVehicleOccupant',
         ),
                 field=None,
                 is_static=False,
@@ -4004,7 +4065,8 @@ OR """,
                     "seat": """the seat where the player is sitting (0 for driver, 1+ for passengers). """
                 },
                 result='returns the player sitting in the vehicle, or false if the seat is unoccupied or doesnt exist.' ,
-            )
+            ),
+            url='getVehicleOccupant',
         ),
                 field=None,
                 is_static=False,
@@ -4054,7 +4116,8 @@ OR """,
                     "theVehicle": """the vehicle of which you wish to retrieve the occupants. """
                 },
                 result='returns a table with seat id as an index and the occupant as an element like this: tableseat = occupant\nreturns false if an invalid vehicle was passed or if the vehicle has no seats (like a trailer)\n<div style=font-weight: bold;background:blue;color:white;padding:2px; padding-left:8px;>counting players in a vehicle</div>\n<div style=border: 2px solid blue;padding: 5px;>dont use an ipairs loop with the table returned by this function. it will skip the driver, as ipairs starts at 1 and the driver seat is id 0. and if theres an empty seat, ipairs will stop looping. you should use a pairs loop instead.\n<syntaxhighlight lang=lua>\nlocal counter = 0\nfor seat, player in pairs(getvehicleoccupants(pseudovehicle)) do\ncounter = counter + 1\nend\noutputdebugstring(players in your vehicle: .. counter)\n</syntaxhighlight>\n</div>' ,
-            )
+            ),
+            url='getVehicleOccupants',
         ),
                 field=FunctionOOPField(
                                 name='occupants',
@@ -4110,7 +4173,8 @@ OR """,
                     "theVehicle": """the vehicle of which you wish to retrieve the occupants. """
                 },
                 result='returns a table with seat id as an index and the occupant as an element like this: tableseat = occupant\nreturns false if an invalid vehicle was passed or if the vehicle has no seats (like a trailer)\n<div style=font-weight: bold;background:blue;color:white;padding:2px; padding-left:8px;>counting players in a vehicle</div>\n<div style=border: 2px solid blue;padding: 5px;>dont use an ipairs loop with the table returned by this function. it will skip the driver, as ipairs starts at 1 and the driver seat is id 0. and if theres an empty seat, ipairs will stop looping. you should use a pairs loop instead.\n<syntaxhighlight lang=lua>\nlocal counter = 0\nfor seat, player in pairs(getvehicleoccupants(pseudovehicle)) do\ncounter = counter + 1\nend\noutputdebugstring(players in your vehicle: .. counter)\n</syntaxhighlight>\n</div>' ,
-            )
+            ),
+            url='getVehicleOccupants',
         ),
                 field=FunctionOOPField(
                                 name='occupants',
@@ -4168,7 +4232,8 @@ OR """,
                     "theVehicle": """: the vehicle you wish to retrieve the override lights setting of. """
                 },
                 result='returns an integer value: 0 (no override), 1 (force off) or 2 (force on).' ,
-            )
+            ),
+            url='getVehicleOverrideLights',
         ),
                 field=FunctionOOPField(
                                 name='overrideLights',
@@ -4224,7 +4289,8 @@ OR """,
                     "theVehicle": """: the vehicle you wish to retrieve the override lights setting of. """
                 },
                 result='returns an integer value: 0 (no override), 1 (force off) or 2 (force on).' ,
-            )
+            ),
+            url='getVehicleOverrideLights',
         ),
                 field=FunctionOOPField(
                                 name='overrideLights',
@@ -4282,7 +4348,8 @@ OR """,
                     "theVehicle": """: the vehicle you wish to get the paintjob of. """
                 },
                 result='returns an integer representing the current paintjob on the vehicle. <br />\n* 0: the first paintjob\n* 1: the second paintjob\n* 2: the third paintjob\n* 3: default paintjob (no paintjob)' ,
-            )
+            ),
+            url='getVehiclePaintjob',
         ),
                 field=FunctionOOPField(
                                 name='paintjob',
@@ -4338,7 +4405,8 @@ OR """,
                     "theVehicle": """: the vehicle you wish to get the paintjob of. """
                 },
                 result='returns an integer representing the current paintjob on the vehicle. <br />\n* 0: the first paintjob\n* 1: the second paintjob\n* 2: the third paintjob\n* 3: default paintjob (no paintjob)' ,
-            )
+            ),
+            url='getVehiclePaintjob',
         ),
                 field=FunctionOOPField(
                                 name='paintjob',
@@ -4414,7 +4482,8 @@ OR """,
                     "6": """Rear bumper """
                 },
                 result='returns an int indicating the state of the specified the panel. this is a value between 0 and 3, with 0 indicating the panel is undamaged and 3 indicating it is very damaged.' ,
-            )
+            ),
+            url='getVehiclePanelState',
         ),
                 field=None,
                 is_static=False,
@@ -4480,7 +4549,8 @@ OR """,
                     "6": """Rear bumper """
                 },
                 result='returns an int indicating the state of the specified the panel. this is a value between 0 and 3, with 0 indicating the panel is undamaged and 3 indicating it is very damaged.' ,
-            )
+            ),
+            url='getVehiclePanelState',
         ),
                 field=None,
                 is_static=False,
@@ -4530,7 +4600,8 @@ OR """,
                     "theVehicle": """the vehicle that you wish to retrieve the plate text from. """
                 },
                 result='returns a string that corresponds to the plate on the text, false if a bad argument was passed or if it is not a vehicle. every vehicle (including planes, boats, etc.) has a numberplate, even if its not visible.' ,
-            )
+            ),
+            url='getVehiclePlateText',
         ),
                 field=FunctionOOPField(
                                 name='plateText',
@@ -4586,7 +4657,8 @@ OR """,
                     "theVehicle": """the vehicle that you wish to retrieve the plate text from. """
                 },
                 result='returns a string that corresponds to the plate on the text, false if a bad argument was passed or if it is not a vehicle. every vehicle (including planes, boats, etc.) has a numberplate, even if its not visible.' ,
-            )
+            ),
+            url='getVehiclePlateText',
         ),
                 field=FunctionOOPField(
                                 name='plateText',
@@ -4652,7 +4724,8 @@ OR """,
                     "theVehicle": """The vehicle which youd like to retrieve the respawn coordinates of. """
                 },
                 result='returns three float|floats indicating the respawn coordinates of the vehicle, x, y and z respectively.' ,
-            )
+            ),
+            url='getVehicleRespawnPosition',
         ),
                 field=FunctionOOPField(
                                 name='respawnPosition',
@@ -4729,7 +4802,8 @@ OR """,
                     "theVehicle": """The vehicle which youd like to retrieve the respawn rotation of. """
                 },
                 result='returns three float|floats indicating the respawn rotation of the vehicle, x, y and z respectively.' ,
-            )
+            ),
+            url='getVehicleRespawnRotation',
         ),
                 field=FunctionOOPField(
                                 name='respawnRotation',
@@ -4798,7 +4872,8 @@ OR """,
                     "theVehicle": """The vehicle to get the siren parameters of """
                 },
                 result='returns a table with the siren count, siren type and a sub table for the four flags. false otherwise.\n<syntaxhighlight lang=lua>\nint   sirenparams.sirencount\nint   sirenparams.sirentype\ntable sirenparams.flags\nbool sirenparams.flags360\nbool sirenparams.flags.doloscheck\nbool sirenparams.flags.userandomiser\nbool sirenparams.flags.silent\n</syntaxhighlight>' ,
-            )
+            ),
+            url='getVehicleSirenParams',
         ),
                 field=FunctionOOPField(
                                 name='sirenParams',
@@ -4854,7 +4929,8 @@ OR """,
                     "theVehicle": """The vehicle to get the siren parameters of """
                 },
                 result='returns a table with the siren count, siren type and a sub table for the four flags. false otherwise.\n<syntaxhighlight lang=lua>\nint   sirenparams.sirencount\nint   sirenparams.sirentype\ntable sirenparams.flags\nbool sirenparams.flags360\nbool sirenparams.flags.doloscheck\nbool sirenparams.flags.userandomiser\nbool sirenparams.flags.silent\n</syntaxhighlight>' ,
-            )
+            ),
+            url='getVehicleSirenParams',
         ),
                 field=FunctionOOPField(
                                 name='sirenParams',
@@ -4912,7 +4988,8 @@ OR """,
                     "theVehicle": """The vehicle to get siren information of. """
                 },
                 result='if the vehicle is invalid, it returns false. otherwise, returns a table with sub tables containing the properties of each siren point in the following manner:\n<syntaxhighlight lang=lua>\nfloat   sirendatasirenpoint.x\nfloat   sirendatasirenpoint.y\nfloat   sirendatasirenpoint.z\nint     sirendatasirenpoint.red\nint     sirendatasirenpoint.green\nint     sirendatasirenpoint.blue\nint     sirendatasirenpoint.alpha\nint     sirendatasirenpoint.min_alpha\n</syntaxhighlight>' ,
-            )
+            ),
+            url='getVehicleSirens',
         ),
                 field=FunctionOOPField(
                                 name='sirens',
@@ -4968,7 +5045,8 @@ OR """,
                     "theVehicle": """The vehicle to get siren information of. """
                 },
                 result='if the vehicle is invalid, it returns false. otherwise, returns a table with sub tables containing the properties of each siren point in the following manner:\n<syntaxhighlight lang=lua>\nfloat   sirendatasirenpoint.x\nfloat   sirendatasirenpoint.y\nfloat   sirendatasirenpoint.z\nint     sirendatasirenpoint.red\nint     sirendatasirenpoint.green\nint     sirendatasirenpoint.blue\nint     sirendatasirenpoint.alpha\nint     sirendatasirenpoint.min_alpha\n</syntaxhighlight>' ,
-            )
+            ),
+            url='getVehicleSirens',
         ),
                 field=FunctionOOPField(
                                 name='sirens',
@@ -5026,7 +5104,8 @@ OR """,
                     "theVehicle": """The vehicle that will be checked. """
                 },
                 result='returns true if the sirens are turned on for the specified vehicle, false if the sirens are turned off for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified.' ,
-            )
+            ),
+            url='getVehicleSirensOn',
         ),
                 field=FunctionOOPField(
                                 name='sirensOn',
@@ -5082,7 +5161,8 @@ OR """,
                     "theVehicle": """The vehicle that will be checked. """
                 },
                 result='returns true if the sirens are turned on for the specified vehicle, false if the sirens are turned off for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified.' ,
-            )
+            ),
+            url='getVehicleSirensOn',
         ),
                 field=FunctionOOPField(
                                 name='sirensOn',
@@ -5100,9 +5180,9 @@ OR """,
     CompoundOOPData(
         server=[
             FunctionOOP(
-                description=None,
+                description="""This function is a static function underneath the Vehicle class.""",
                 base_function_name="getVehiclesOfType",
-                class_name='vehicle',
+                class_name='Vehicle',
                 method=FunctionData(
             signature=FunctionSignature(
                 name='getAllOfType',
@@ -5140,10 +5220,11 @@ OR """,
                     "model": """: The model of vehicles you want. """
                 },
                 result='returns a table of existing vehicles matching the specified model.' ,
-            )
+            ),
+            url='getVehiclesOfType',
         ),
                 field=None,
-                is_static=False,
+                is_static=True,
             )
         ],
         client=[
@@ -5193,7 +5274,8 @@ OR """,
                     "theVehicle": """: The vehicle you wish to get the towed vehicle from. """
                 },
                 result='returns the vehicle that thevehicle is towing, false if it isnt towing a vehicle.' ,
-            )
+            ),
+            url='getVehicleTowedByVehicle',
         ),
                 field=FunctionOOPField(
                                 name='towedByVehicle',
@@ -5249,7 +5331,8 @@ OR """,
                     "theVehicle": """: The vehicle you wish to get the towed vehicle from. """
                 },
                 result='returns the vehicle that thevehicle is towing, false if it isnt towing a vehicle.' ,
-            )
+            ),
+            url='getVehicleTowedByVehicle',
         ),
                 field=FunctionOOPField(
                                 name='towedByVehicle',
@@ -5307,7 +5390,8 @@ OR """,
                     "theVehicle": """: the vehicle being towed. """
                 },
                 result='* the vehicle that thevehicle is being towed by.\n* false if it isnt being towed.' ,
-            )
+            ),
+            url='getVehicleTowingVehicle',
         ),
                 field=FunctionOOPField(
                                 name='towingVehicle',
@@ -5363,7 +5447,8 @@ OR """,
                     "theVehicle": """: the vehicle being towed. """
                 },
                 result='* the vehicle that thevehicle is being towed by.\n* false if it isnt being towed.' ,
-            )
+            ),
+            url='getVehicleTowingVehicle',
         ),
                 field=FunctionOOPField(
                                 name='towingVehicle',
@@ -5425,7 +5510,8 @@ OR """,
                     "turretVehicle": """: The vehicle whose turret position you want to retrieve. This should be a vehicle with a turret. """
                 },
                 result='returns two floats for the x (horizontal) and y (vertical) axis rotation respectively. these values are in radians. the function will return 0, 0 if the vehicle is not a vehicle with a turret.' ,
-            )
+            ),
+            url='getVehicleTurretPosition',
         ),
                 field=FunctionOOPField(
                                 name='turretPosition',
@@ -5489,7 +5575,8 @@ OR """,
                     "turretVehicle": """: The vehicle whose turret position you want to retrieve. This should be a vehicle with a turret. """
                 },
                 result='returns two floats for the x (horizontal) and y (vertical) axis rotation respectively. these values are in radians. the function will return 0, 0 if the vehicle is not a vehicle with a turret.' ,
-            )
+            ),
+            url='getVehicleTurretPosition',
         ),
                 field=FunctionOOPField(
                                 name='turretPosition',
@@ -5553,7 +5640,8 @@ OR """,
                     "modelID": """A vehicle model ID """
                 },
                 result='returns a string with vehicle type or false if an invalid modelid has been supplied, or an empty string if the vehicle is blocked internally (some trailers).\npossible strings returned:' ,
-            )
+            ),
+            url='getVehicleType',
         ),
                 field=FunctionOOPField(
                                 name='vehicleType',
@@ -5611,7 +5699,8 @@ OR """,
                     "modelID": """A vehicle model ID """
                 },
                 result='returns a string with vehicle type or false if an invalid modelid has been supplied, or an empty string if the vehicle is blocked internally (some trailers).\npossible strings returned:' ,
-            )
+            ),
+            url='getVehicleType',
         ),
                 field=FunctionOOPField(
                                 name='vehicleType',
@@ -5680,7 +5769,8 @@ OR """,
                     "slot": """: The slot id of the upgrade. (Upgrade list ordered by slot number) """
                 },
                 result='returns an integer with the upgrade on the slot if correct arguments were passed, false otherwise.' ,
-            )
+            ),
+            url='getVehicleUpgradeOnSlot',
         ),
                 field=None,
                 is_static=False,
@@ -5739,7 +5829,8 @@ OR """,
                     "slot": """: The slot id of the upgrade. (Upgrade list ordered by slot number) """
                 },
                 result='returns an integer with the upgrade on the slot if correct arguments were passed, false otherwise.' ,
-            )
+            ),
+            url='getVehicleUpgradeOnSlot',
         ),
                 field=None,
                 is_static=False,
@@ -5789,7 +5880,8 @@ OR """,
                     "theVehicle": """The vehicle you wish to retrieve the upgrades of. """
                 },
                 result='returns a table of all the upgrades on each slot of a vehicle, which may be empty, or false if a valid vehicle is not passed.' ,
-            )
+            ),
+            url='getVehicleUpgrades',
         ),
                 field=FunctionOOPField(
                                 name='upgrades',
@@ -5845,7 +5937,8 @@ OR """,
                     "theVehicle": """The vehicle you wish to retrieve the upgrades of. """
                 },
                 result='returns a table of all the upgrades on each slot of a vehicle, which may be empty, or false if a valid vehicle is not passed.' ,
-            )
+            ),
+            url='getVehicleUpgrades',
         ),
                 field=FunctionOOPField(
                                 name='upgrades',
@@ -5915,7 +6008,8 @@ OR """,
                     "theVehicle": """A handle to the vehicle that you want to get the variant of. """
                 },
                 result='on success:\n* int: an integer for the first vehicle variant see vehicle variants\n* int: an integer for the second vehicle variant see vehicle variants\non failure:\n* bool: false because the specified vehicle didnt exist' ,
-            )
+            ),
+            url='getVehicleVariant',
         ),
                 field=None,
                 is_static=False,
@@ -5967,7 +6061,8 @@ OR """,
                     "theVehicle": """A handle to the vehicle that you want to get the variant of. """
                 },
                 result='on success:\n* int: an integer for the first vehicle variant see vehicle variants\n* int: an integer for the second vehicle variant see vehicle variants\non failure:\n* bool: false because the specified vehicle didnt exist' ,
-            )
+            ),
+            url='getVehicleVariant',
         ),
                 field=None,
                 is_static=False,
@@ -6031,7 +6126,8 @@ OR """,
                     "wheel": """The wheel you want to check. (0: front left, 1: rear left, 2: front right, 3: rear right) """
                 },
                 result='returns a int indicating the wheel friction state. this value can be:\n* 0: normal friction\n* 1: slip with acceleration (only for driving wheels)\n* 2: slip without acceleration\n* 3: locked wheel (on brake or handbrake).' ,
-            )
+            ),
+            url='getVehicleWheelFrictionState',
         ),
                 field=None,
                 is_static=False,
@@ -6084,7 +6180,8 @@ OR """,
                     "theVehicle": """: The vehicle to get its wheel scale of. """
                 },
                 result='returns the wheel scale of the specified vehicle as a decimal number, or an error if the vehicle is invalid. for more information about the returned number, see setvehiclewheelscale.' ,
-            )
+            ),
+            url='getVehicleWheelScale',
         ),
                 field=FunctionOOPField(
                                 name='wheelScale',
@@ -6154,7 +6251,8 @@ OR """,
                     "theVehicle": """A handle to the vehicle that you wish to know the wheel states of. """
                 },
                 result='returns 4 ints indicating the states of the wheels (front left, rear left, front right, rear right). these values can be:\n* 0: inflated\n* 1: flat\n* 2: fallen off\n* 3: collisionless' ,
-            )
+            ),
+            url='getVehicleWheelStates',
         ),
                 field=None,
                 is_static=False,
@@ -6214,7 +6312,8 @@ OR """,
                     "theVehicle": """A handle to the vehicle that you wish to know the wheel states of. """
                 },
                 result='returns 4 ints indicating the states of the wheels (front left, rear left, front right, rear right). these values can be:\n* 0: inflated\n* 1: flat\n* 2: fallen off\n* 3: collisionless' ,
-            )
+            ),
+            url='getVehicleWheelStates',
         ),
                 field=None,
                 is_static=False,
@@ -6267,7 +6366,8 @@ OR """,
                     "theTrain": """a Element/Vehicle|train to check if its a chain engine or not. """
                 },
                 result='* true if a element/vehicle|train was passed to the function and if its a chain engine.\n* false otherwise.' ,
-            )
+            ),
+            url='isTrainChainEngine',
         ),
                 field=FunctionOOPField(
                                 name='chainEngine',
@@ -6325,7 +6425,8 @@ OR """,
                     "vehicleToCheck": """The vehicle you wish to check. """
                 },
                 result='returns true if the train is derailable, false otherwise.' ,
-            )
+            ),
+            url='isTrainDerailable',
         ),
                 field=FunctionOOPField(
                                 name='derailable',
@@ -6381,7 +6482,8 @@ OR """,
                     "vehicleToCheck": """The vehicle you wish to check. """
                 },
                 result='returns true if the train is derailable, false otherwise.' ,
-            )
+            ),
+            url='isTrainDerailable',
         ),
                 field=FunctionOOPField(
                                 name='derailable',
@@ -6439,7 +6541,8 @@ OR """,
                     "vehicleToCheck": """the vehicle that you wish to check is derailed. """
                 },
                 result='returns true if the train is derailed, false if the train is still on the rails' ,
-            )
+            ),
+            url='isTrainDerailed',
         ),
                 field=FunctionOOPField(
                                 name='derailed',
@@ -6495,7 +6598,8 @@ OR """,
                     "vehicleToCheck": """the vehicle that you wish to check is derailed. """
                 },
                 result='returns true if the train is derailed, false if the train is still on the rails' ,
-            )
+            ),
+            url='isTrainDerailed',
         ),
                 field=FunctionOOPField(
                                 name='derailed',
@@ -6553,7 +6657,8 @@ OR """,
                     "theVehicle": """The vehicle that you want to obtain the blown status of. """
                 },
                 result='returns true if the vehicle specified has blown up, false if it is still intact or the vehicle specified is invalid.' ,
-            )
+            ),
+            url='isVehicleBlown',
         ),
                 field=FunctionOOPField(
                                 name='blown',
@@ -6609,7 +6714,8 @@ OR """,
                     "theVehicle": """The vehicle that you want to obtain the blown status of. """
                 },
                 result='returns true if the vehicle specified has blown up, false if it is still intact or the vehicle specified is invalid.' ,
-            )
+            ),
+            url='isVehicleBlown',
         ),
                 field=FunctionOOPField(
                                 name='blown',
@@ -6667,7 +6773,8 @@ OR """,
                     "theVehicle": """the vehicle whose invincibility status we want to check. """
                 },
                 result='returns true if the vehicle is damage proof, false if it isnt or if invalid arguments were passed.' ,
-            )
+            ),
+            url='isVehicleDamageProof',
         ),
                 field=FunctionOOPField(
                                 name='damageProof',
@@ -6723,7 +6830,8 @@ OR """,
                     "theVehicle": """the vehicle whose invincibility status we want to check. """
                 },
                 result='returns true if the vehicle is damage proof, false if it isnt or if invalid arguments were passed.' ,
-            )
+            ),
+            url='isVehicleDamageProof',
         ),
                 field=FunctionOOPField(
                                 name='damageProof',
@@ -6789,7 +6897,8 @@ OR """,
                     "theVehicle": """The vehicle that you want to obtain the locked status of. """
                 },
                 result='returns true if the vehicle specified is locked, false if is unlocked or the vehicle specified is invalid.' ,
-            )
+            ),
+            url='isVehicleLocked',
         ),
                 field=FunctionOOPField(
                                 name='locked',
@@ -6845,7 +6954,8 @@ OR """,
                     "theVehicle": """The vehicle that you want to obtain the locked status of. """
                 },
                 result='returns true if the vehicle specified is locked, false if is unlocked or the vehicle specified is invalid.' ,
-            )
+            ),
+            url='isVehicleLocked',
         ),
                 field=FunctionOOPField(
                                 name='locked',
@@ -6919,7 +7029,8 @@ OR """,
                     "theVehicle": """The vehicle you wish to check. """
                 },
                 result='returns true if vehicle is on the ground, false if it is not.' ,
-            )
+            ),
+            url='isVehicleOnGround',
         ),
                 field=FunctionOOPField(
                                 name='onGround',
@@ -6975,7 +7086,8 @@ OR """,
                     "theVehicle": """The vehicle you wish to check. """
                 },
                 result='returns true if vehicle is on the ground, false if it is not.' ,
-            )
+            ),
+            url='isVehicleOnGround',
         ),
                 field=FunctionOOPField(
                                 name='onGround',
@@ -7033,7 +7145,8 @@ OR """,
                     "taxi": """The vehicle element of the taxi that you wish to get the light state of. """
                 },
                 result='returns true if the light is on, false otherwise.' ,
-            )
+            ),
+            url='isVehicleTaxiLightOn',
         ),
                 field=FunctionOOPField(
                                 name='taxiLightOn',
@@ -7089,7 +7202,8 @@ OR """,
                     "taxi": """The vehicle element of the taxi that you wish to get the light state of. """
                 },
                 result='returns true if the light is on, false otherwise.' ,
-            )
+            ),
+            url='isVehicleTaxiLightOn',
         ),
                 field=FunctionOOPField(
                                 name='taxiLightOn',
@@ -7165,7 +7279,8 @@ OR """,
 ** <code>"rear_right"</code> or 3 """
                 },
                 result='returns true if the vehicle wheel is on ground/collided, false otherwise.' ,
-            )
+            ),
+            url='isVehicleWheelOnGround',
         ),
                 field=None,
                 is_static=False,
@@ -7253,7 +7368,8 @@ OR """,
                     "theComponent": """A vehicle component (this is the frame name from the model file of the component you wish to modify) """
                 },
                 result='returns true if the position of the component was reset, false otherwise.' ,
-            )
+            ),
+            url='resetVehicleComponentPosition',
         ),
                 field=None,
                 is_static=False,
@@ -7317,7 +7433,8 @@ OR """,
                     "theComponent": """A vehicle component (this is the frame name from the model file of the component you wish to modify) """
                 },
                 result='returns true if the rotation of the component was reset, false otherwise.' ,
-            )
+            ),
+            url='resetVehicleComponentRotation',
         ),
                 field=None,
                 is_static=False,
@@ -7381,7 +7498,8 @@ OR """,
                     "theComponent": """A vehicle component (this is the frame name from the model file of the component you wish to modify) """
                 },
                 result='returns true if the scale of the component was reset, false otherwise.' ,
-            )
+            ),
+            url='resetVehicleComponentScale',
         ),
                 field=None,
                 is_static=False,
@@ -7434,7 +7552,8 @@ OR """,
                     "theVehicle": """The vehicle to reset """
                 },
                 result='returns true for success, false otherwise.' ,
-            )
+            ),
+            url='resetVehicleDummyPositions',
         ),
                 field=None,
                 is_static=False,
@@ -7500,7 +7619,8 @@ OR """,
                     "theVehicle": """The vehicle you wish to respawn """
                 },
                 result='returns true if the vehicle respawned successfully, false if the passed argument does not exist or is not a vehicle.' ,
-            )
+            ),
+            url='respawnVehicle',
         ),
                 field=None,
                 is_static=False,
@@ -7567,7 +7687,8 @@ OR """,
                     "collisions": """The state of the helicopter blades collisions. """
                 },
                 result='returns true if the collisions are set for the specified vehicle, false if the collisions cant be set for the specified vehicle, if the vehicle is not a helicopter or if invalid arguments are specified.' ,
-            )
+            ),
+            url='setHeliBladeCollisionsEnabled',
         ),
                 field=FunctionOOPField(
                                 name='heliBladeCollisionsEnabled',
@@ -7639,7 +7760,8 @@ OR """,
                     "speed": """the new rotor speed. Usual values are 0 if the helicopter stands still, or 0.2 if the rotor is fully spun up. Higher values than normal will not affect the helicopters handling. Negative values are allowed and will make the rotor spin in the opposite direction (pushing the helicopter down). """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setHelicopterRotorSpeed',
         ),
                 field=FunctionOOPField(
                                 name='helicopterRotorSpeed',
@@ -7716,7 +7838,8 @@ OR """,
                     "derailable": """whether the train or tram is derailable. True as derailable, False as non-derailable. """
                 },
                 result='returns true if the state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setTrainDerailable',
         ),
                 field=FunctionOOPField(
                                 name='derailable',
@@ -7783,7 +7906,8 @@ OR """,
                     "derailable": """whether the train or tram is derailable. True as derailable, False as non-derailable. """
                 },
                 result='returns true if the state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setTrainDerailable',
         ),
                 field=FunctionOOPField(
                                 name='derailable',
@@ -7852,7 +7976,8 @@ OR """,
                     "derailed": """whether the train is derailed. """
                 },
                 result='returns true if the state was successfully set' ,
-            )
+            ),
+            url='setTrainDerailed',
         ),
                 field=FunctionOOPField(
                                 name='derailed',
@@ -7919,7 +8044,8 @@ OR """,
                     "derailed": """whether the train is derailed. """
                 },
                 result='returns true if the state was successfully set' ,
-            )
+            ),
+            url='setTrainDerailed',
         ),
                 field=FunctionOOPField(
                                 name='derailed',
@@ -7988,7 +8114,8 @@ OR """,
                     "clockwise": """if true, will make the train go clockwise. If false, makes it go counterclockwise. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setTrainDirection',
         ),
                 field=FunctionOOPField(
                                 name='direction',
@@ -8055,7 +8182,8 @@ OR """,
                     "clockwise": """if true, will make the train go clockwise. If false, makes it go counterclockwise. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setTrainDirection',
         ),
                 field=FunctionOOPField(
                                 name='direction',
@@ -8124,7 +8252,8 @@ OR """,
                     "position": """the position along the track (0 - 18107 a complete way round) """
                 },
                 result='returns true if the train position was set, false otherwise.' ,
-            )
+            ),
+            url='setTrainPosition',
         ),
                 field=FunctionOOPField(
                                 name='trainPosition',
@@ -8191,7 +8320,8 @@ OR """,
                     "position": """the position along the track (0 - 18107 a complete way round) """
                 },
                 result='returns true if the train position was set, false otherwise.' ,
-            )
+            ),
+            url='setTrainPosition',
         ),
                 field=FunctionOOPField(
                                 name='trainPosition',
@@ -8260,7 +8390,8 @@ OR """,
                     "speed": """the new on-track speed of the train. A positive value will make it go clockwise, a negative value counter clockwise. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setTrainSpeed',
         ),
                 field=FunctionOOPField(
                                 name='trainSpeed',
@@ -8327,7 +8458,8 @@ OR """,
                     "speed": """the new on-track speed of the train. A positive value will make it go clockwise, a negative value counter clockwise. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setTrainSpeed',
         ),
                 field=FunctionOOPField(
                                 name='trainSpeed',
@@ -8396,7 +8528,8 @@ OR """,
                     "track": """the track where you want to set the train. It can be 0, 1, 2 or 3. """
                 },
                 result='returns true if the track was set to the train, false otherwise.' ,
-            )
+            ),
+            url='setTrainTrack',
         ),
                 field=FunctionOOPField(
                                 name='track',
@@ -8463,7 +8596,8 @@ OR """,
                     "track": """the track where you want to set the train. It can be 0, 1, 2 or 3. """
                 },
                 result='returns true if the track was set to the train, false otherwise.' ,
-            )
+            ),
+            url='setTrainTrack',
         ),
                 field=FunctionOOPField(
                                 name='track',
@@ -8649,7 +8783,8 @@ OR """,
                     
                 },
                 result='returns true if vehicles color was set, false if an invalid vehicle or invalid colors were specified.' ,
-            )
+            ),
+            url='setVehicleColor',
         ),
                 field=None,
                 is_static=False,
@@ -8817,7 +8952,8 @@ OR """,
                     
                 },
                 result='returns true if vehicles color was set, false if an invalid vehicle or invalid colors were specified.' ,
-            )
+            ),
+            url='setVehicleColor',
         ),
                 field=None,
                 is_static=False,
@@ -8928,7 +9064,8 @@ OR """,
                     "world": """: The position is a world position, relative to the worlds center of coordinates. """
                 },
                 result='returns true if component position was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setVehicleComponentPosition',
         ),
                 field=None,
                 is_static=False,
@@ -9039,7 +9176,8 @@ OR """,
                     "world": """: The rotation is a world rotation, relative to the worlds coordinates axes. """
                 },
                 result='returns true if the component rotation was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setVehicleComponentRotation',
         ),
                 field=None,
                 is_static=False,
@@ -9150,7 +9288,8 @@ OR """,
                     "world": """: The scale is a world scale, relative to the worlds center of coordinates. """
                 },
                 result='returns true if component scale was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setVehicleComponentScale',
         ),
                 field=None,
                 is_static=False,
@@ -9225,7 +9364,8 @@ OR """,
                     "visible": """a bool which determines if the component should be visible """
                 },
                 result='returns a bool indicating if the visiblity was changed successfully.' ,
-            )
+            ),
+            url='setVehicleComponentVisible',
         ),
                 field=None,
                 is_static=False,
@@ -9286,7 +9426,8 @@ OR """,
                     "damageProof": """true is damage proof, false is damageable. """
                 },
                 result='returns true if the vehicle was set damage proof succesfully, false if the arguments are invalid or it failed.' ,
-            )
+            ),
+            url='setVehicleDamageProof',
         ),
                 field=FunctionOOPField(
                                 name='damageProof',
@@ -9353,7 +9494,8 @@ OR """,
                     "damageProof": """true is damage proof, false is damageable. """
                 },
                 result='returns true if the vehicle was set damage proof succesfully, false if the arguments are invalid or it failed.' ,
-            )
+            ),
+            url='setVehicleDamageProof',
         ),
                 field=FunctionOOPField(
                                 name='damageProof',
@@ -9452,7 +9594,8 @@ OR """,
                     "time": """The number of milliseconds the door should take to reach the value you have specified. A value of 0 will change the door open ratio instantly. """
                 },
                 result='returns true if the door open ratio was successfully set, false if invalid arguments are passed.' ,
-            )
+            ),
+            url='setVehicleDoorOpenRatio',
         ),
                 field=None,
                 is_static=False,
@@ -9533,7 +9676,8 @@ OR """,
                     "time": """The number of milliseconds the door should take to reach the value you have specified. A value of 0 will change the door open ratio instantly. """
                 },
                 result='returns true if the door open ratio was successfully set, false if invalid arguments are passed.' ,
-            )
+            ),
+            url='setVehicleDoorOpenRatio',
         ),
                 field=None,
                 is_static=False,
@@ -9612,7 +9756,8 @@ OR """,
                     "spawnFlyingComponent": """A boolean, if set to true, spawns flying doors etc. if you remove a component with <nowiki>state == 4</nowiki>. """
                 },
                 result='returns true if the door state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setVehicleDoorState',
         ),
                 field=None,
                 is_static=False,
@@ -9689,7 +9834,8 @@ OR """,
                     "spawnFlyingComponent": """A boolean, if set to true, spawns flying doors etc. if you remove a component with <nowiki>state == 4</nowiki>. """
                 },
                 result='returns true if the door state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setVehicleDoorState',
         ),
                 field=None,
                 is_static=False,
@@ -9750,7 +9896,8 @@ OR """,
                     "state": """A boolean denoting whether the vehicles doors are undamageable (true) or damageable (false). """
                 },
                 result='returns true if the damageability state was successfully changed, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setVehicleDoorsUndamageable',
         ),
                 field=FunctionOOPField(
                                 name='doorsUndamageable',
@@ -9817,7 +9964,8 @@ OR """,
                     "state": """A boolean denoting whether the vehicles doors are undamageable (true) or damageable (false). """
                 },
                 result='returns true if the damageability state was successfully changed, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='setVehicleDoorsUndamageable',
         ),
                 field=FunctionOOPField(
                                 name='doorsUndamageable',
@@ -9920,7 +10068,8 @@ OR """,
                     "x": """, y, z The new dummy position """
                 },
                 result='returns true for success, false otherwise.' ,
-            )
+            ),
+            url='setVehicleDummyPosition',
         ),
                 field=None,
                 is_static=False,
@@ -9981,7 +10130,8 @@ OR """,
                     "engineState": """: A boolean value representing whether the engine will be turned on (true) or off (false). """
                 },
                 result='returns true if the vehicles engine state was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='setVehicleEngineState',
         ),
                 field=FunctionOOPField(
                                 name='engineState',
@@ -10048,7 +10198,8 @@ OR """,
                     "engineState": """: A boolean value representing whether the engine will be turned on (true) or off (false). """
                 },
                 result='returns true if the vehicles engine state was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='setVehicleEngineState',
         ),
                 field=FunctionOOPField(
                                 name='engineState',
@@ -10117,7 +10268,8 @@ OR """,
                     "explodable": """: A boolean value representing whether or not the fuel tank will be explodable. """
                 },
                 result='returns true if the vehicles fuel tank explodable state was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='setVehicleFuelTankExplodable',
         ),
                 field=None,
                 is_static=False,
@@ -10176,7 +10328,8 @@ OR """,
                     "explodable": """: A boolean value representing whether or not the fuel tank will be explodable. """
                 },
                 result='returns true if the vehicles fuel tank explodable state was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='setVehicleFuelTankExplodable',
         ),
                 field=None,
                 is_static=False,
@@ -10275,7 +10428,8 @@ OR """,
                     "blue": """An integer indicating the amount of blue for the vehicles headlights """
                 },
                 result='returns true if vehicles headlight color was set, false if an invalid vehicle or invalid color ranges were specified for red,green or blue.' ,
-            )
+            ),
+            url='setVehicleHeadLightColor',
         ),
                 field=None,
                 is_static=False,
@@ -10356,7 +10510,8 @@ OR """,
                     "blue": """An integer indicating the amount of blue for the vehicles headlights """
                 },
                 result='returns true if vehicles headlight color was set, false if an invalid vehicle or invalid color ranges were specified for red,green or blue.' ,
-            )
+            ),
+            url='setVehicleHeadLightColor',
         ),
                 field=None,
                 is_static=False,
@@ -10417,7 +10572,8 @@ OR """,
                     "timeDelay": """: The number of milliseconds the vehicle will be allowed to remain unused until it respawns. """
                 },
                 result='returns true if the vehicle was found and edited.' ,
-            )
+            ),
+            url='setVehicleIdleRespawnDelay',
         ),
                 field=FunctionOOPField(
                                 name='idleRespawnDelay',
@@ -10513,7 +10669,8 @@ OR """,
 Returns ''true'' if the light state was set successfully, ''false'' if invalid arguments were passed to the function. """
                 },
                 result='returns true if the light state was set successfully, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='setVehicleLightState',
         ),
                 field=None,
                 is_static=False,
@@ -10588,7 +10745,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
 Returns ''true'' if the light state was set successfully, ''false'' if invalid arguments were passed to the function. """
                 },
                 result='returns true if the light state was set successfully, false if invalid arguments were passed to the function.' ,
-            )
+            ),
+            url='setVehicleLightState',
         ),
                 field=None,
                 is_static=False,
@@ -10649,7 +10807,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "locked": """Boolean for the status you wish to set. Set true to lock, false to unlock """
                 },
                 result='returns true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='setVehicleLocked',
         ),
                 field=FunctionOOPField(
                                 name='locked',
@@ -10716,7 +10875,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "locked": """Boolean for the status you wish to set. Set true to lock, false to unlock """
                 },
                 result='returns true if the operation was successful, false otherwise.' ,
-            )
+            ),
+            url='setVehicleLocked',
         ),
                 field=FunctionOOPField(
                                 name='locked',
@@ -10819,7 +10979,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "posX": """, posY, posZ: The desired position """
                 },
                 result='returns true if everything went fine, false otherwise.' ,
-            )
+            ),
+            url='setVehicleModelDummyPosition',
         ),
                 field=None,
                 is_static=True,
@@ -10903,7 +11064,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "posX": """, posY, posZ: The desired position """
                 },
                 result='returns true if everything went fine, false otherwise.' ,
-            )
+            ),
+            url='setVehicleModelExhaustFumesPosition',
         ),
                 field=None,
                 is_static=True,
@@ -10981,7 +11143,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "wheelSize": """: The wheel size value to set. Default GTA values for automobiles usually are around 0.7. It must be greater than 0. """
                 },
                 result='returns true if the size for the specified wheel group and vehicle model has been set successfully, or an error if some parameter is invalid.' ,
-            )
+            ),
+            url='setVehicleModelWheelSize',
         ),
                 field=None,
                 is_static=True,
@@ -11069,7 +11232,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "2": """: Lights are forced on. """
                 },
                 result='returns true if the vehicles lights setting was changed. otherwise false.' ,
-            )
+            ),
+            url='setVehicleOverrideLights',
         ),
                 field=FunctionOOPField(
                                 name='overrideLights',
@@ -11139,7 +11303,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "2": """: Lights are forced on. """
                 },
                 result='returns true if the vehicles lights setting was changed. otherwise false.' ,
-            )
+            ),
+            url='setVehicleOverrideLights',
         ),
                 field=FunctionOOPField(
                                 name='overrideLights',
@@ -11237,7 +11402,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "state": """How damaged the part is on the scale of 0 to 3, with 0 being undamaged and 3 being very damaged. How this is manifested depends on the panel and the vehicle. """
                 },
                 result='returns true if the panel state has been updated, false otherwise' ,
-            )
+            ),
+            url='setVehiclePanelState',
         ),
                 field=None,
                 is_static=False,
@@ -11317,7 +11483,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "state": """How damaged the part is on the scale of 0 to 3, with 0 being undamaged and 3 being very damaged. How this is manifested depends on the panel and the vehicle. """
                 },
                 result='returns true if the panel state has been updated, false otherwise' ,
-            )
+            ),
+            url='setVehiclePanelState',
         ),
                 field=None,
                 is_static=False,
@@ -11378,7 +11545,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "numberplate": """a string that will go on the number plate of the car (max 8 characters). """
                 },
                 result='returns true if the numberplate was changed successfully, or false if invalid arguments were passed' ,
-            )
+            ),
+            url='setVehiclePlateText',
         ),
                 field=FunctionOOPField(
                                 name='plateText',
@@ -11445,7 +11613,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "numberplate": """a string that will go on the number plate of the car (max 8 characters). """
                 },
                 result='returns true if the numberplate was changed successfully, or false if invalid arguments were passed' ,
-            )
+            ),
+            url='setVehiclePlateText',
         ),
                 field=FunctionOOPField(
                                 name='plateText',
@@ -11514,7 +11683,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "timeDelay": """: The amount of milliseconds to delay. """
                 },
                 result='returns true if the vehicle was found and edited.' ,
-            )
+            ),
+            url='setVehicleRespawnDelay',
         ),
                 field=FunctionOOPField(
                                 name='respawnDelay',
@@ -11641,7 +11811,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "rz": """: A floating point number representing the rotation about the Z axis in Degrees. """
                 },
                 result='returns true if the vehicle was found and edited, false otherwise.' ,
-            )
+            ),
+            url='setVehicleRespawnPosition',
         ),
                 field=FunctionOOPField(
                                 name='respawnPosition',
@@ -11735,7 +11906,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "rz": """: A float representing the rotation about the Z axis in degrees. """
                 },
                 result='returns true if the vehicle respawn rotation was set successfully, false otherwise.' ,
-            )
+            ),
+            url='setVehicleRespawnRotation',
         ),
                 field=FunctionOOPField(
                                 name='respawnRotation',
@@ -11895,7 +12067,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "minAlpha": """The minimum alpha of the light during day time """
                 },
                 result='returns true if the siren point was successfully changed on the vehicle, false otherwise.' ,
-            )
+            ),
+            url='setVehicleSirens',
         ),
                 field=None,
                 is_static=False,
@@ -12042,7 +12215,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "minAlpha": """The minimum alpha of the light during day time """
                 },
                 result='returns true if the siren point was successfully changed on the vehicle, false otherwise.' ,
-            )
+            ),
+            url='setVehicleSirens',
         ),
                 field=None,
                 is_static=False,
@@ -12103,7 +12277,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "sirensOn": """The state to set the sirens to """
                 },
                 result='returns true if the sirens are set for the specified vehicle, false if the sirens cant be set for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified.' ,
-            )
+            ),
+            url='setVehicleSirensOn',
         ),
                 field=FunctionOOPField(
                                 name='sirensOn',
@@ -12170,7 +12345,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "sirensOn": """The state to set the sirens to """
                 },
                 result='returns true if the sirens are set for the specified vehicle, false if the sirens cant be set for the specified vehicle, if the vehicle doesnt have sirens or if invalid arguments are specified.' ,
-            )
+            ),
+            url='setVehicleSirensOn',
         ),
                 field=FunctionOOPField(
                                 name='sirensOn',
@@ -12239,7 +12415,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "LightState": """whether the light is on. True for on, False for off. """
                 },
                 result='returns true if the state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setVehicleTaxiLightOn',
         ),
                 field=FunctionOOPField(
                                 name='taxiLightOn',
@@ -12306,7 +12483,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "LightState": """whether the light is on. True for on, False for off. """
                 },
                 result='returns true if the state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setVehicleTaxiLightOn',
         ),
                 field=FunctionOOPField(
                                 name='taxiLightOn',
@@ -12386,7 +12564,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "positionY": """: The vertical position of the turret. In radians """
                 },
                 result='returns a true if a valid vehicle element and valid positions were passed, false otherwise.' ,
-            )
+            ),
+            url='setVehicleTurretPosition',
         ),
                 field=FunctionOOPField(
                                 name='turretPosition',
@@ -12464,7 +12643,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "positionY": """: The vertical position of the turret. In radians """
                 },
                 result='returns a true if a valid vehicle element and valid positions were passed, false otherwise.' ,
-            )
+            ),
+            url='setVehicleTurretPosition',
         ),
                 field=FunctionOOPField(
                                 name='turretPosition',
@@ -12544,7 +12724,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "variant2": """: An integer for the second variant see Vehicle variants """
                 },
                 result='on success:\n* bool: returns true as the vehicle variants were successfully set.\non failure:\n* bool: false because the specified vehicle didnt exist or specified variants were invalid.' ,
-            )
+            ),
+            url='setVehicleVariant',
         ),
                 field=None,
                 is_static=False,
@@ -12614,7 +12795,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "variant2": """: An integer for the second variant see Vehicle variants """
                 },
                 result='on success:\n* bool: returns true as the vehicle variants were successfully set.\non failure:\n* bool: false because the specified vehicle didnt exist or specified variants were invalid.' ,
-            )
+            ),
+            url='setVehicleVariant',
         ),
                 field=None,
                 is_static=False,
@@ -12678,7 +12860,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "wheelScale": """: The wheel scale value to set. """
                 },
                 result='returns true if the wheel scale has been set successfully, or an error if some parameter is invalid.' ,
-            )
+            ),
+            url='setVehicleWheelScale',
         ),
                 field=FunctionOOPField(
                                 name='wheelScale',
@@ -12780,7 +12963,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "rearRight": """A whole number representing the wheel state (-1 for no change) """
                 },
                 result='returns a boolean value true or false that tells you if it was successful or not.' ,
-            )
+            ),
+            url='setVehicleWheelStates',
         ),
                 field=None,
                 is_static=False,
@@ -12872,7 +13056,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "rearRight": """A whole number representing the wheel state (-1 for no change) """
                 },
                 result='returns a boolean value true or false that tells you if it was successful or not.' ,
-            )
+            ),
+            url='setVehicleWheelStates',
         ),
                 field=None,
                 is_static=False,
@@ -12996,7 +13181,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "rz": """The z rotation you wish to spawn the vehicle at """
                 },
                 result='returns true if the vehicle spawned successfully, false if the passed argument does not exist or is not a vehicle.' ,
-            )
+            ),
+            url='spawnVehicle',
         ),
                 field=None,
                 is_static=False,
@@ -13060,7 +13246,8 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                     "Respawn": """: A boolean determining if the vehicle will respawn or not. """
                 },
                 result='returns true if the vehicle was found and edited.' ,
-            )
+            ),
+            url='toggleVehicleRespawn',
         ),
                 field=None,
                 is_static=False,

@@ -39,7 +39,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='' ,
-            )
+            ),
+            url='textCreateDisplay',
         )
         ],
         client=[
@@ -206,7 +207,8 @@ DUMP_PARTIAL = [
                     "shadowAlpha": """: A value between 0 and 255 indicating how dark the drop shadow should be. """
                 },
                 result='returns a textitem object.' ,
-            )
+            ),
+            url='textCreateTextItem',
         )
         ],
         client=[
@@ -252,7 +254,8 @@ DUMP_PARTIAL = [
                     "display": """This is the textdisplay that you wish to have destroyed. """
                 },
                 result='' ,
-            )
+            ),
+            url='textDestroyDisplay',
         )
         ],
         client=[
@@ -298,7 +301,8 @@ DUMP_PARTIAL = [
                     "theTextitem": """The text item you wish to destroy. """
                 },
                 result='' ,
-            )
+            ),
+            url='textDestroyTextItem',
         )
         ],
         client=[
@@ -355,7 +359,8 @@ DUMP_PARTIAL = [
                     "playerToAdd": """: The player that should observe the textdisplay. """
                 },
                 result='' ,
-            )
+            ),
+            url='textDisplayAddObserver',
         )
         ],
         client=[
@@ -412,7 +417,8 @@ DUMP_PARTIAL = [
                     "itemToAdd": """: The textitem to add to the display. """
                 },
                 result='' ,
-            )
+            ),
+            url='textDisplayAddText',
         )
         ],
         client=[
@@ -458,7 +464,8 @@ DUMP_PARTIAL = [
                     "theDisplay": """: The textdisplay of which observers you want to get. """
                 },
                 result='returns a table of players that are observers of the display or false if invalid textdisplay is passed.' ,
-            )
+            ),
+            url='textDisplayGetObservers',
         )
         ],
         client=[
@@ -515,7 +522,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """: The player. """
                 },
                 result='return true if textdisplay is showing, or false if not.' ,
-            )
+            ),
+            url='textDisplayIsObserver',
         )
         ],
         client=[
@@ -572,7 +580,8 @@ DUMP_PARTIAL = [
                     "playerToRemove": """: The player that should be removed from the textdisplay. """
                 },
                 result='' ,
-            )
+            ),
+            url='textDisplayRemoveObserver',
         )
         ],
         client=[
@@ -629,7 +638,8 @@ DUMP_PARTIAL = [
                     "itemToRemove": """: The textitem to remove from the display. """
                 },
                 result='' ,
-            )
+            ),
+            url='textDisplayRemoveText',
         )
         ],
         client=[
@@ -687,7 +697,8 @@ DUMP_PARTIAL = [
                     "theTextItem": """The text item you wish to retrieve the color of. """
                 },
                 result='returns four integers in rgba format, with a maximum value of 255 for each. the values are, in order, red, green, blue, and alpha. alpha decides transparency where 255 is opaque and 0 is transparent. false is returned if the text item is invalid.' ,
-            )
+            ),
+            url='textItemGetColor',
         )
         ],
         client=[
@@ -737,7 +748,8 @@ DUMP_PARTIAL = [
                     "theTextItem": """The textitem you wish to retrieve the position of """
                 },
                 result='returns two floats of the x and y position on the screen, where the maximum value is 1.0.' ,
-            )
+            ),
+            url='textItemGetPosition',
         )
         ],
         client=[
@@ -783,7 +795,8 @@ DUMP_PARTIAL = [
                     "textitemToCheck": """The text item you wish to retrieve the priority of. """
                 },
                 result='returns a integer of the priority of a text item, 0 = low, 1 = medium, 2 = high.' ,
-            )
+            ),
+            url='textItemGetPriority',
         )
         ],
         client=[
@@ -829,7 +842,8 @@ DUMP_PARTIAL = [
                     "theTextitem": """The text item you wish to retrieve the scale of """
                 },
                 result='returns a floating point of the scale of the text. 1.0 is around 12pt.' ,
-            )
+            ),
+            url='textItemGetScale',
         )
         ],
         client=[
@@ -875,7 +889,8 @@ DUMP_PARTIAL = [
                     "theTextitem": """A valid textitem. """
                 },
                 result='returns a string containing the text if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='textItemGetText',
         )
         ],
         client=[
@@ -965,7 +980,8 @@ DUMP_PARTIAL = [
                     "alpha": """The amount of alpha in the text items color (0 - 255). Alpha decides transparency where 255 is opaque and 0 is transparent. """
                 },
                 result='returns true if the color was successfully set, false otherwise.' ,
-            )
+            ),
+            url='textItemSetColor',
         )
         ],
         client=[
@@ -1033,7 +1049,8 @@ DUMP_PARTIAL = [
                     "y": """A floating point number between 0.0 and 1.0 indicating how far down the screen the text should be shown, as a percentage of the height, from the top. """
                 },
                 result='returns true if the position was successfully set, false otherwise.' ,
-            )
+            ),
+            url='textItemSetPosition',
         )
         ],
         client=[
@@ -1090,7 +1107,8 @@ DUMP_PARTIAL = [
                     "priority": """The priority you wish to set to the item, which can be high, medium, or low respective of their priority. """
                 },
                 result='' ,
-            )
+            ),
+            url='textItemSetPriority',
         )
         ],
         client=[
@@ -1147,7 +1165,8 @@ DUMP_PARTIAL = [
                     "scale": """A floating point value indicating the scale of the text you wish to set to. 1.0 is around 12pt. """
                 },
                 result='returns true if the scale was successfully set, false otherwise.' ,
-            )
+            ),
+            url='textItemSetScale',
         )
         ],
         client=[
@@ -1204,7 +1223,8 @@ DUMP_PARTIAL = [
                     "text": """The new text for the text item """
                 },
                 result='' ,
-            )
+            ),
+            url='textItemSetText',
         )
         ],
         client=[

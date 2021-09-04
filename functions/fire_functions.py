@@ -82,7 +82,8 @@ DUMP_PARTIAL = [
                     "size": """a float value indicating the size of the initial patch of fire. It will also make the fire to stay alive more or less time. """
                 },
                 result='returns true if successful, false if bad arguments were passed or the limit of active fires was reached. there can be a maximum of 60 active fires.' ,
-            )
+            ),
+            url='createFire',
         )
         ],
     ),
@@ -159,7 +160,8 @@ DUMP_PARTIAL = [
                     "radius": """a float value indicating the radius in which to extinguish fire. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='extinguishFire',
         )
         ],
     )

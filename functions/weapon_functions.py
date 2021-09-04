@@ -79,7 +79,8 @@ DUMP_PARTIAL = [
 The following properties are get only: """
                 },
                 result='on success:\nint: the weapon property\non failure:\nbool: false if the passed arguments were invalid' ,
-            )
+            ),
+            url='getOriginalWeaponProperty',
         )
         ],
         client=[
@@ -151,7 +152,8 @@ The following properties are get only: """
 The following properties are get only: """
                 },
                 result='on success:\nint: the weapon property\non failure:\nbool: false if the passed arguments were invalid' ,
-            )
+            ),
+            url='getOriginalWeaponProperty',
         )
         ],
     ),
@@ -194,7 +196,8 @@ The following properties are get only: """
                     "weaponid": """Weapon to find the weapon slot of. """
                 },
                 result='returns an integer representing the given weapon ids associated weapon slot, false if the id was invalid.' ,
-            )
+            ),
+            url='getSlotFromWeapon',
         )
         ],
         client=[
@@ -235,7 +238,8 @@ The following properties are get only: """
                     "weaponid": """Weapon to find the weapon slot of. """
                 },
                 result='returns an integer representing the given weapon ids associated weapon slot, false if the id was invalid.' ,
-            )
+            ),
+            url='getSlotFromWeapon',
         )
         ],
     ),
@@ -278,7 +282,8 @@ The following properties are get only: """
                     "name": """A string containing the name of the weapon. Names can be: (Case is ignored) """
                 },
                 result='returns an int if the name matches that of a weapon, false otherwise.' ,
-            )
+            ),
+            url='getWeaponIDFromName',
         )
         ],
         client=[
@@ -319,7 +324,8 @@ The following properties are get only: """
                     "name": """A string containing the name of the weapon. Names can be: (Case is ignored) """
                 },
                 result='returns an int if the name matches that of a weapon, false otherwise.' ,
-            )
+            ),
+            url='getWeaponIDFromName',
         )
         ],
     ),
@@ -362,7 +368,8 @@ The following properties are get only: """
                     "id": """The ID you wish to retrieve the name of """
                 },
                 result='returns a string of the name of the weapon or death type, false otherwise. names will be like these: (ignoring case)' ,
-            )
+            ),
+            url='getWeaponNameFromID',
         )
         ],
         client=[
@@ -403,7 +410,8 @@ The following properties are get only: """
                     "id": """The ID you wish to retrieve the name of """
                 },
                 result='returns a string of the name of the weapon or death type, false otherwise. names will be like these: (ignoring case)' ,
-            )
+            ),
+            url='getWeaponNameFromID',
         )
         ],
     ),
@@ -477,7 +485,8 @@ The following properties are get only: """
 The following properties are get only: """
                 },
                 result='on success:\nint: the weapon property\non failure:\nbool: false if the passed arguments were invalid' ,
-            )
+            ),
+            url='getWeaponProperty',
         )
         ],
         client=[
@@ -549,7 +558,8 @@ The following properties are get only: """
 The following properties are get only: """
                 },
                 result='on success:\nint: the weapon property\non failure:\nbool: false if the passed arguments were invalid' ,
-            )
+            ),
+            url='getWeaponProperty',
         )
         ],
     ),
@@ -625,7 +635,8 @@ The following properties are get only: """
                     "setAsCurrent": """A boolean value determining whether or not the weapon will be set as the players current. """
                 },
                 result='returns true if weapon was successfully acquired, false otherwise.' ,
-            )
+            ),
+            url='giveWeapon',
         )
         ],
         client=[
@@ -704,7 +715,8 @@ The following properties are get only: """
                     "ammoInClip": """The amount of ammo to set in the players clip.  This will be taken from the main ammo.  If left unspecified or set to 0, the current clip will remain. """
                 },
                 result='returns a boolean value true or false that tells you if it was successful or not.' ,
-            )
+            ),
+            url='setWeaponAmmo',
         )
         ],
         client=[
@@ -778,7 +790,8 @@ The following properties are get only: """
                     "ammoInClip": """The amount of ammo to set in the players clip.  This will be taken from the main ammo.  If left unspecified or set to 0, the current clip will remain. """
                 },
                 result='returns a boolean value true or false that tells you if it was successful or not.' ,
-            )
+            ),
+            url='setWeaponAmmo',
         )
         ],
     ),
@@ -862,7 +875,8 @@ The following properties are get only: """
                     "theValue": """The value to set the property to. """
                 },
                 result='on success:\nbool: returns true if the weapon property was successfully set\non failure:\nbool: returns false if the weapon property was unable to be set' ,
-            )
+            ),
+            url='setWeaponProperty',
         )
         ],
         client=[
@@ -925,7 +939,8 @@ The following properties are get only: """
                     "theValue": """The value to set the property to. """
                 },
                 result='returns true if the property was set.' ,
-            )
+            ),
+            url='setWeaponProperty',
         )
         ],
     ),
@@ -968,7 +983,8 @@ The following properties are get only: """
                     "thePed": """: A ped element referencing the specified ped """
                 },
                 result='returns true if the function succeeded, false otherwise.' ,
-            )
+            ),
+            url='takeAllWeapons',
         )
         ],
         client=[
@@ -1036,7 +1052,8 @@ The following properties are get only: """
                     "ammo": """: If used, this amount of ammo will be taken instead and the weapon will not be removed. """
                 },
                 result='returns a true if the weapon/ammo was removed successfully, false otherwise.' ,
-            )
+            ),
+            url='takeWeapon',
         )
         ],
         client=[

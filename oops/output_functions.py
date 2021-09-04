@@ -135,7 +135,8 @@ DUMP_PARTIAL = [
 Note: The #RRGGBB format must contain capital letters a-f is not acceptable but A-F is. Default RGB values in this format are: '#E7D9B0'. """
                 },
                 result='' ,
-            )
+            ),
+            url='outputChatBox',
         ),
                 field=None,
                 is_static=False,

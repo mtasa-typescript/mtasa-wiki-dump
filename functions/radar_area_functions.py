@@ -136,7 +136,8 @@ DUMP_PARTIAL = [
                     "visibleTo": """An element that you wish to restrict the visibility of the radar area to. (Server function only) """
                 },
                 result='' ,
-            )
+            ),
+            url='createRadarArea',
         )
         ],
         client=[
@@ -265,7 +266,8 @@ DUMP_PARTIAL = [
                     "visibleTo": """An element that you wish to restrict the visibility of the radar area to. (Server function only) """
                 },
                 result='' ,
-            )
+            ),
+            url='createRadarArea',
         )
         ],
     ),
@@ -320,7 +322,8 @@ DUMP_PARTIAL = [
                     "theRadararea": """The radararea|radar area you wish to retrieve the colour of. """
                 },
                 result='returns four integers in rgba format (red, green, blue, alpha), with a maximum value of 255 for each.  alpha decides transparency where 255 is opaque and 0 is transparent.  returns false if the radararea is invalid.' ,
-            )
+            ),
+            url='getRadarAreaColor',
         )
         ],
         client=[
@@ -373,7 +376,8 @@ DUMP_PARTIAL = [
                     "theRadararea": """The radararea|radar area you wish to retrieve the colour of. """
                 },
                 result='returns four integers in rgba format (red, green, blue, alpha), with a maximum value of 255 for each.  alpha decides transparency where 255 is opaque and 0 is transparent.  returns false if the radararea is invalid.' ,
-            )
+            ),
+            url='getRadarAreaColor',
         )
         ],
     ),
@@ -420,7 +424,8 @@ DUMP_PARTIAL = [
                     "theRadararea": """The radararea|radar area element whose size you wish to get. """
                 },
                 result='returns two floats indicating the x and y length of the radar area respectively, false if the radar area is invalid.' ,
-            )
+            ),
+            url='getRadarAreaSize',
         )
         ],
         client=[
@@ -465,7 +470,8 @@ DUMP_PARTIAL = [
                     "theRadararea": """The radararea|radar area element whose size you wish to get. """
                 },
                 result='returns two floats indicating the x and y length of the radar area respectively, false if the radar area is invalid.' ,
-            )
+            ),
+            url='getRadarAreaSize',
         )
         ],
     ),
@@ -530,7 +536,8 @@ DUMP_PARTIAL = [
                     "posY": """The Y coordinate of the position youre checking. """
                 },
                 result='returns true if the position is inside the radar area, false if it isnt or if any parameters are invalid.' ,
-            )
+            ),
+            url='isInsideRadarArea',
         )
         ],
         client=[
@@ -593,7 +600,8 @@ DUMP_PARTIAL = [
                     "posY": """The Y coordinate of the position youre checking. """
                 },
                 result='returns true if the position is inside the radar area, false if it isnt or if any parameters are invalid.' ,
-            )
+            ),
+            url='isInsideRadarArea',
         )
         ],
     ),
@@ -636,7 +644,8 @@ DUMP_PARTIAL = [
                     "theRadararea": """The radar area you wish to check the state of flashing """
                 },
                 result='returns true if the radar area is flashing, false if it is not or if it doesnt exist.' ,
-            )
+            ),
+            url='isRadarAreaFlashing',
         )
         ],
         client=[
@@ -677,7 +686,8 @@ DUMP_PARTIAL = [
                     "theRadararea": """The radar area you wish to check the state of flashing """
                 },
                 result='returns true if the radar area is flashing, false if it is not or if it doesnt exist.' ,
-            )
+            ),
+            url='isRadarAreaFlashing',
         )
         ],
     ),
@@ -764,7 +774,8 @@ DUMP_PARTIAL = [
                     "a": """an integer representing the colors alpha (0 for transparent, 255 for opaque) """
                 },
                 result='returns true if the color was set successfully, false if the radar area doesnt exist or the color arguments are improper.' ,
-            )
+            ),
+            url='setRadarAreaColor',
         )
         ],
         client=[
@@ -849,7 +860,8 @@ DUMP_PARTIAL = [
                     "a": """an integer representing the colors alpha (0 for transparent, 255 for opaque) """
                 },
                 result='returns true if the color was set successfully, false if the radar area doesnt exist or the color arguments are improper.' ,
-            )
+            ),
+            url='setRadarAreaColor',
         )
         ],
     ),
@@ -903,7 +915,8 @@ DUMP_PARTIAL = [
                     "flash": """a bool indicating whether the radar area should flash (true to flash, false to not flash). """
                 },
                 result='returns true if the new flash state was successfully set, false if the radar area doesnt exist or invalid arguments were passed.' ,
-            )
+            ),
+            url='setRadarAreaFlashing',
         )
         ],
         client=[
@@ -955,7 +968,8 @@ DUMP_PARTIAL = [
                     "flash": """a bool indicating whether the radar area should flash (true to flash, false to not flash). """
                 },
                 result='returns true if the new flash state was successfully set, false if the radar area doesnt exist or invalid arguments were passed.' ,
-            )
+            ),
+            url='setRadarAreaFlashing',
         )
         ],
     ),
@@ -1020,7 +1034,8 @@ DUMP_PARTIAL = [
                     "y": """the y length of the radar area. """
                 },
                 result='returns true if the size was set successfully, false if invalid arguments are passed.' ,
-            )
+            ),
+            url='setRadarAreaSize',
         )
         ],
         client=[
@@ -1083,7 +1098,8 @@ DUMP_PARTIAL = [
                     "y": """the y length of the radar area. """
                 },
                 result='returns true if the size was set successfully, false if invalid arguments are passed.' ,
-            )
+            ),
+            url='setRadarAreaSize',
         )
         ],
     )

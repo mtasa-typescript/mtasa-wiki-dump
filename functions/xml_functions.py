@@ -61,7 +61,8 @@ DUMP_PARTIAL = [
 :If the file is to be in the current resource, only the file path is necessary, e.g. ''xmlCopyFile(myNode, "newfile.xml")''. """
                 },
                 result='returns the xmlnode of the copy if the node was successfully copied, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='xmlCopyFile',
         )
         ],
         client=[
@@ -115,7 +116,8 @@ DUMP_PARTIAL = [
 :If the file is to be in the current resource, only the file path is necessary, e.g. ''xmlCopyFile(myNode, "newfile.xml")''. """
                 },
                 result='returns the xmlnode of the copy if the node was successfully copied, false if invalid arguments were passed.' ,
-            )
+            ),
+            url='xmlCopyFile',
         )
         ],
     ),
@@ -169,7 +171,8 @@ DUMP_PARTIAL = [
                     "tagName": """the type of the child node that will be created. """
                 },
                 result='returns the created xmlnode if successful, false otherwise.' ,
-            )
+            ),
+            url='xmlCreateChild',
         )
         ],
         client=[
@@ -221,7 +224,8 @@ DUMP_PARTIAL = [
                     "tagName": """the type of the child node that will be created. """
                 },
                 result='returns the created xmlnode if successful, false otherwise.' ,
-            )
+            ),
+            url='xmlCreateChild',
         )
         ],
     ),
@@ -278,7 +282,8 @@ DUMP_PARTIAL = [
                     "rootNodeName": """the name of the root node in the XML document. """
                 },
                 result='returns the root xmlnode object of the new xml file if successful, or false otherwise.' ,
-            )
+            ),
+            url='xmlCreateFile',
         )
         ],
         client=[
@@ -333,7 +338,8 @@ DUMP_PARTIAL = [
                     "rootNodeName": """the name of the root node in the XML document. """
                 },
                 result='returns the root xmlnode object of the new xml file if successful, or false otherwise.' ,
-            )
+            ),
+            url='xmlCreateFile',
         )
         ],
     ),
@@ -376,7 +382,8 @@ DUMP_PARTIAL = [
                     "theXMLNode": """The xml node you want to destroy. """
                 },
                 result='returns true if the xml node was successfully destroyed, false otherwise.' ,
-            )
+            ),
+            url='xmlDestroyNode',
         )
         ],
         client=[
@@ -417,7 +424,8 @@ DUMP_PARTIAL = [
                     "theXMLNode": """The xml node you want to destroy. """
                 },
                 result='returns true if the xml node was successfully destroyed, false otherwise.' ,
-            )
+            ),
+            url='xmlDestroyNode',
         )
         ],
     ),
@@ -482,7 +490,8 @@ DUMP_PARTIAL = [
                     "index": """: This is the 0-based index of the node you wish to find. For example, to find the 5th subnode with a particular name, you would use 4 as the index value. To find the first occurence, use 0. """
                 },
                 result='returns an xmlnode if the node was found, false otherwise.' ,
-            )
+            ),
+            url='xmlFindChild',
         )
         ],
         client=[
@@ -545,7 +554,8 @@ DUMP_PARTIAL = [
                     "index": """: This is the 0-based index of the node you wish to find. For example, to find the 5th subnode with a particular name, you would use 4 as the index value. To find the first occurence, use 0. """
                 },
                 result='returns an xmlnode if the node was found, false otherwise.' ,
-            )
+            ),
+            url='xmlFindChild',
         )
         ],
     ),
@@ -601,7 +611,8 @@ DUMP_PARTIAL = [
                     "readOnly": """By default, the XML file is opened with reading and writing access. You can specify true for this parameter if you only need reading access. """
                 },
                 result='returns the root xmlnode object of an xml file if successful, or false otherwise.\nprint error if something wrong with xml.\n|7485}}' ,
-            )
+            ),
+            url='xmlLoadFile',
         )
         ],
         client=[
@@ -655,7 +666,8 @@ DUMP_PARTIAL = [
                     "readOnly": """By default, the XML file is opened with reading and writing access. You can specify true for this parameter if you only need reading access. """
                 },
                 result='returns the root xmlnode object of an xml file if successful, or false otherwise.\nprint error if something wrong with xml.\n|7485}}' ,
-            )
+            ),
+            url='xmlLoadFile',
         )
         ],
     ),
@@ -698,7 +710,8 @@ DUMP_PARTIAL = [
                     "xmlString": """A string containing XML data """
                 },
                 result='returns the root xmlnode object of an xml string if successful, or false otherwise (invalid xml string).' ,
-            )
+            ),
+            url='xmlLoadString',
         )
         ],
         client=[
@@ -739,7 +752,8 @@ DUMP_PARTIAL = [
                     "xmlString": """A string containing XML data """
                 },
                 result='returns the root xmlnode object of an xml string if successful, or false otherwise (invalid xml string).' ,
-            )
+            ),
+            url='xmlLoadString',
         )
         ],
     ),
@@ -793,7 +807,8 @@ DUMP_PARTIAL = [
                     "name": """The name of the attribute. """
                 },
                 result='returns the attribute in string form or false, if the attribute is not defined.' ,
-            )
+            ),
+            url='xmlNodeGetAttribute',
         )
         ],
         client=[
@@ -845,7 +860,8 @@ DUMP_PARTIAL = [
                     "name": """The name of the attribute. """
                 },
                 result='returns the attribute in string form or false, if the attribute is not defined.' ,
-            )
+            ),
+            url='xmlNodeGetAttribute',
         )
         ],
     ),
@@ -888,7 +904,8 @@ DUMP_PARTIAL = [
                     "node": """the XML node to get the attributes of. """
                 },
                 result='if successful, returns a table with as keys the names of the attributes and as values the corresponding attribute values. if the node has no attributes, returns an empty table. in case of failure, returns false.' ,
-            )
+            ),
+            url='xmlNodeGetAttributes',
         )
         ],
         client=[
@@ -929,7 +946,8 @@ DUMP_PARTIAL = [
                     "node": """the XML node to get the attributes of. """
                 },
                 result='if successful, returns a table with as keys the names of the attributes and as values the corresponding attribute values. if the node has no attributes, returns an empty table. in case of failure, returns false.' ,
-            )
+            ),
+            url='xmlNodeGetAttributes',
         )
         ],
     ),
@@ -983,7 +1001,8 @@ DUMP_PARTIAL = [
                     "index": """If you only want to retrieve one particular child node, specify its (0-based) index here. For example if you only want the first node, specify 0; the fifth node has index 4, etc. """
                 },
                 result='if index isnt specified, returns a table containing all child nodes. if index is specified, returns the corresponding child node if it exists. if no nodes are found, it returns an empty table. returns false in case of failure.' ,
-            )
+            ),
+            url='xmlNodeGetChildren',
         )
         ],
         client=[
@@ -1035,7 +1054,8 @@ DUMP_PARTIAL = [
                     "index": """If you only want to retrieve one particular child node, specify its (0-based) index here. For example if you only want the first node, specify 0; the fifth node has index 4, etc. """
                 },
                 result='if index isnt specified, returns a table containing all child nodes. if index is specified, returns the corresponding child node if it exists. if no nodes are found, it returns an empty table. returns false in case of failure.' ,
-            )
+            ),
+            url='xmlNodeGetChildren',
         )
         ],
     ),
@@ -1078,7 +1098,8 @@ DUMP_PARTIAL = [
                     "node": """the node to get the tag name of. """
                 },
                 result='returns the tag name of the node if successful, false otherwise.' ,
-            )
+            ),
+            url='xmlNodeGetName',
         )
         ],
         client=[
@@ -1119,7 +1140,8 @@ DUMP_PARTIAL = [
                     "node": """the node to get the tag name of. """
                 },
                 result='returns the tag name of the node if successful, false otherwise.' ,
-            )
+            ),
+            url='xmlNodeGetName',
         )
         ],
     ),
@@ -1162,7 +1184,8 @@ DUMP_PARTIAL = [
                     "node": """the node of which you want to know the parent. """
                 },
                 result='returns the parent node of the specified node if successful. returns false if the specified node is the root node or an invalid node was passed.' ,
-            )
+            ),
+            url='xmlNodeGetParent',
         )
         ],
         client=[
@@ -1203,7 +1226,8 @@ DUMP_PARTIAL = [
                     "node": """the node of which you want to know the parent. """
                 },
                 result='returns the parent node of the specified node if successful. returns false if the specified node is the root node or an invalid node was passed.' ,
-            )
+            ),
+            url='xmlNodeGetParent',
         )
         ],
     ),
@@ -1246,7 +1270,8 @@ DUMP_PARTIAL = [
                     "theXMLNode": """The xml node of which you need to know the value. """
                 },
                 result='returns the value of the node as a string if it was received successfully, false otherwise.' ,
-            )
+            ),
+            url='xmlNodeGetValue',
         )
         ],
         client=[
@@ -1287,7 +1312,8 @@ DUMP_PARTIAL = [
                     "theXMLNode": """The xml node of which you need to know the value. """
                 },
                 result='returns the value of the node as a string if it was received successfully, false otherwise.' ,
-            )
+            ),
+            url='xmlNodeGetValue',
         )
         ],
     ),
@@ -1352,7 +1378,8 @@ DUMP_PARTIAL = [
                     "value": """The value which you wish to change the attribute to. (Note: nil will delete the attribute) """
                 },
                 result='returns true if the attribute was set successfully, false if the node and/or attribute do not exist, or if theyre faulty.' ,
-            )
+            ),
+            url='xmlNodeSetAttribute',
         )
         ],
         client=[
@@ -1415,7 +1442,8 @@ DUMP_PARTIAL = [
                     "value": """The value which you wish to change the attribute to. (Note: nil will delete the attribute) """
                 },
                 result='returns true if the attribute was set successfully, false if the node and/or attribute do not exist, or if theyre faulty.' ,
-            )
+            ),
+            url='xmlNodeSetAttribute',
         )
         ],
     ),
@@ -1469,7 +1497,8 @@ DUMP_PARTIAL = [
                     "name": """the new tag name to set. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='xmlNodeSetName',
         )
         ],
         client=[
@@ -1521,7 +1550,8 @@ DUMP_PARTIAL = [
                     "name": """the new tag name to set. """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='xmlNodeSetName',
         )
         ],
     ),
@@ -1586,7 +1616,8 @@ DUMP_PARTIAL = [
                     "setCDATA": """A boolean indicating if you want the value to be enclosed inside CDATA tags. """
                 },
                 result='returns true if value was successfully set, false otherwise.' ,
-            )
+            ),
+            url='xmlNodeSetValue',
         )
         ],
         client=[
@@ -1649,7 +1680,8 @@ DUMP_PARTIAL = [
                     "setCDATA": """A boolean indicating if you want the value to be enclosed inside CDATA tags. """
                 },
                 result='returns true if value was successfully set, false otherwise.' ,
-            )
+            ),
+            url='xmlNodeSetValue',
         )
         ],
     ),
@@ -1692,7 +1724,8 @@ DUMP_PARTIAL = [
                     "rootNode": """the root xmlnode of the loaded XML file. """
                 },
                 result='returns true if save was successful, false if the xml file does not exist.' ,
-            )
+            ),
+            url='xmlSaveFile',
         )
         ],
         client=[
@@ -1733,7 +1766,8 @@ DUMP_PARTIAL = [
                     "rootNode": """the root xmlnode of the loaded XML file. """
                 },
                 result='returns true if save was successful, false if the xml file does not exist.' ,
-            )
+            ),
+            url='xmlSaveFile',
         )
         ],
     ),
@@ -1776,7 +1810,8 @@ DUMP_PARTIAL = [
                     "node": """root of the XML document to unload """
                 },
                 result='returns true if the document was unloaded successfully, false otherwise.' ,
-            )
+            ),
+            url='xmlUnloadFile',
         )
         ],
         client=[
@@ -1817,7 +1852,8 @@ DUMP_PARTIAL = [
                     "node": """root of the XML document to unload """
                 },
                 result='returns true if the document was unloaded successfully, false otherwise.' ,
-            )
+            ),
+            url='xmlUnloadFile',
         )
         ],
     )

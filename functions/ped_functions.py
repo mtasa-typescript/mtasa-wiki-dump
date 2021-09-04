@@ -81,7 +81,8 @@ DUMP_PARTIAL = [
                     "clothesType": """: A integer representing the clothes slot/type the clothes should be added to. See the CJ Clothes|clothes catalog. """
                 },
                 result='this function returns true if the clothes were successfully added to the ped, false otherwise.' ,
-            )
+            ),
+            url='addPedClothes',
         )
         ],
         client=[
@@ -155,7 +156,8 @@ DUMP_PARTIAL = [
                     "clothesType": """: A integer representing the clothes slot/type the clothes should be added to. See the CJ Clothes|clothes catalog. """
                 },
                 result='this function returns true if the clothes were successfully added to the ped, false otherwise.' ,
-            )
+            ),
+            url='addPedClothes',
         )
         ],
     ),
@@ -201,7 +203,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped you want to check. """
                 },
                 result='returns true if the ped can be knocked off bikes, false if he cannot or an invalid element was passed.' ,
-            )
+            ),
+            url='canPedBeKnockedOffBike',
         )
         ],
     ),
@@ -299,7 +302,8 @@ DUMP_PARTIAL = [
                     "synced": """A boolean value representing whether or not the ped will be synced. Disabling the sync might be useful for frozen or static peds to increase the server performance. """
                 },
                 result='' ,
-            )
+            ),
+            url='createPed',
         )
         ],
         client=[
@@ -384,7 +388,8 @@ DUMP_PARTIAL = [
                     "rot": """A floating point number representing the rotation in degrees. """
                 },
                 result='' ,
-            )
+            ),
+            url='createPed',
         )
         ],
     ),
@@ -438,7 +443,8 @@ DUMP_PARTIAL = [
                     "weaponSlot": """an integer representing the weapon slot (set to the peds currently selected slot if not specified). """
                 },
                 result='returns an int containing the amount of ammo in the specified peds currently selected or specified clip, or 0 if the ped specified is invalid.' ,
-            )
+            ),
+            url='getPedAmmoInClip',
         )
         ],
         client=[
@@ -490,7 +496,8 @@ DUMP_PARTIAL = [
                     "weaponSlot": """an integer representing the weapon slot (set to the peds currently selected slot if not specified). """
                 },
                 result='returns an int containing the amount of ammo in the specified peds currently selected or specified clip, or 0 if the ped specified is invalid.' ,
-            )
+            ),
+            url='getPedAmmoInClip',
         )
         ],
     ),
@@ -558,7 +565,8 @@ DUMP_PARTIAL = [
                     "rawValue": """A bool indicating if it should return the raw player input value (will always return script value for non-player peds). """
                 },
                 result='returns a float between 0 (full release) and 1 (full push) indicating the amount the control is pushed.' ,
-            )
+            ),
+            url='getPedAnalogControlState',
         )
         ],
     ),
@@ -608,7 +616,8 @@ DUMP_PARTIAL = [
                     "thePed": """the player or ped you want to get the animations|animation of. """
                 },
                 result='<syntaxhighlight lang=lua>string anim, string block, int time, bool loop, bool updateposition, bool interruptable, bool freezelastframe, int blendtime, bool restoretaskonanimend</syntaxhighlight>' ,
-            )
+            ),
+            url='getPedAnimation',
         )
         ],
     ),
@@ -651,7 +660,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped whose armor you want to check """
                 },
                 result='a float with the armor, false if an invalid ped was given.' ,
-            )
+            ),
+            url='getPedArmor',
         )
         ],
         client=[
@@ -692,7 +702,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped whose armor you want to check """
                 },
                 result='a float with the armor, false if an invalid ped was given.' ,
-            )
+            ),
+            url='getPedArmor',
         )
         ],
     ),
@@ -787,7 +798,8 @@ DUMP_PARTIAL = [
 </div> """
                 },
                 result='returns the x, y, z world position of the bone.' ,
-            )
+            ),
+            url='getPedBonePosition',
         )
         ],
     ),
@@ -833,7 +845,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped to retrieve the camera rotation of. """
                 },
                 result='returns the camera rotation of the ped in degrees if successful. returns false if an invalid element was passed.' ,
-            )
+            ),
+            url='getPedCameraRotation',
         )
         ],
     ),
@@ -891,7 +904,8 @@ DUMP_PARTIAL = [
                     "clothesType": """The type/slot of clothing you want to get. """
                 },
                 result='this function returns 2 string|strings, the clothes texture and model. the first return value will be false if this players clothes type is empty or an invalid player was specified.' ,
-            )
+            ),
+            url='getPedClothes',
         )
         ],
         client=[
@@ -947,7 +961,8 @@ DUMP_PARTIAL = [
                     "clothesType": """The type/slot of clothing you want to get. """
                 },
                 result='this function returns 2 string|strings, the clothes texture and model. the first return value will be false if this players clothes type is empty or an invalid player was specified.' ,
-            )
+            ),
+            url='getPedClothes',
         )
         ],
     ),
@@ -990,7 +1005,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped of which you want to get the element he is standing on. """
                 },
                 result='returns an object or a vehicle if the ped is standing on one, false if he is touching none or an invalid element was passed.' ,
-            )
+            ),
+            url='getPedContactElement',
         )
         ],
         client=[
@@ -1031,7 +1047,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped of which you want to get the element he is standing on. """
                 },
                 result='returns an object or a vehicle if the ped is standing on one, false if he is touching none or an invalid element was passed.' ,
-            )
+            ),
+            url='getPedContactElement',
         )
         ],
     ),
@@ -1088,7 +1105,8 @@ DUMP_PARTIAL = [
                     "control": """the control to get the status of. See control names for a list of valid names. """
                 },
                 result='returns true if the ped is pressing the specified control, false if not or an invalid argument was passed.' ,
-            )
+            ),
+            url='getPedControlState',
         )
         ],
     ),
@@ -1131,7 +1149,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped whose current fighting style ID you wish to retrieve. """
                 },
                 result='returns the peds current fighting style as an integer id, false if it fails to retrieve a value.' ,
-            )
+            ),
+            url='getPedFightingStyle',
         )
         ],
         client=[
@@ -1172,7 +1191,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped whose current fighting style ID you wish to retrieve. """
                 },
                 result='returns the peds current fighting style as an integer id, false if it fails to retrieve a value.' ,
-            )
+            ),
+            url='getPedFightingStyle',
         )
         ],
     ),
@@ -1215,7 +1235,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped whose gravity you want to check. """
                 },
                 result='returns a float indicating the peds gravity, or false if the ped is invalid. default value is 0.008.' ,
-            )
+            ),
+            url='getPedGravity',
         )
         ],
         client=[
@@ -1264,7 +1285,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped whose move state you want to know """
                 },
                 result='returns a string indicating the peds move state, or false if the ped is not streamed in, the movement type is unknown, the ped is in a vehicle or the ped is invalid.' ,
-            )
+            ),
+            url='getPedMoveState',
         )
         ],
     ),
@@ -1307,7 +1329,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped whose vehicle youre looking up. """
                 },
                 result='returns the vehicle that the specified ped is in, or false if the ped is not in a vehicle or is an invalid ped.' ,
-            )
+            ),
+            url='getPedOccupiedVehicle',
         )
         ],
         client=[
@@ -1348,7 +1371,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped whose vehicle youre looking up. """
                 },
                 result='returns the vehicle that the specified ped is in, or false if the ped is not in a vehicle or is an invalid ped.' ,
-            )
+            ),
+            url='getPedOccupiedVehicle',
         )
         ],
     ),
@@ -1391,7 +1415,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped whose vehicle seat youre looking up. """
                 },
                 result='* returns an integer containing the number of the seat that the ped is currently in:\n** 0: front-left\n** 1: front-right\n** 2: rear-left\n** 3: rear-right\nreturns false if the ped is on foot, or the ped doesnt exist.' ,
-            )
+            ),
+            url='getPedOccupiedVehicleSeat',
         )
         ],
         client=[
@@ -1432,7 +1457,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped whose vehicle seat youre looking up. """
                 },
                 result='* returns an integer containing the number of the seat that the ped is currently in:\n** 0: front-left\n** 1: front-right\n** 2: rear-left\n** 3: rear-right\nreturns false if the ped is on foot, or the ped doesnt exist.' ,
-            )
+            ),
+            url='getPedOccupiedVehicleSeat',
         )
         ],
     ),
@@ -1478,7 +1504,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped whose oxygen level you want to check """
                 },
                 result='a float with the oxygen level, false if an invalid ped was given.' ,
-            )
+            ),
+            url='getPedOxygenLevel',
         )
         ],
     ),
@@ -1524,7 +1551,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped whose task you want to retrieve. """
                 },
                 result='returns a string representing the name of the peds simplest, active task.' ,
-            )
+            ),
+            url='getPedSimplestTask',
         )
         ],
     ),
@@ -1578,7 +1606,8 @@ DUMP_PARTIAL = [
                     "stat": """: A whole number determining the stat ID. """
                 },
                 result='returns the value of the requested statistic.' ,
-            )
+            ),
+            url='getPedStat',
         )
         ],
         client=[
@@ -1630,7 +1659,8 @@ DUMP_PARTIAL = [
                     "stat": """: A whole number determining the stat ID. """
                 },
                 result='returns the value of the requested statistic.' ,
-            )
+            ),
+            url='getPedStat',
         )
         ],
     ),
@@ -1673,7 +1703,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped whose target you want to retrieve. """
                 },
                 result='returns the element thats being targeted, or false if there isnt one.\nthis is only effective on physical gta elements, namely:\n* players\n* peds\n* vehicles\n* objects' ,
-            )
+            ),
+            url='getPedTarget',
         )
         ],
         client=[
@@ -1714,7 +1745,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped whose target you want to retrieve. """
                 },
                 result='returns the element thats being targeted, or false if there isnt one.\nthis is only effective on physical gta elements, namely:\n* players\n* peds\n* vehicles\n* objects' ,
-            )
+            ),
+            url='getPedTarget',
         )
         ],
     ),
@@ -1768,7 +1800,8 @@ DUMP_PARTIAL = [
                     "targetingPed": """This is the ped whose target collision you wish to retrieve """
                 },
                 result='returns three floats, x,y,z, representing the position where the peds target collides, or false if it was unsuccessful.' ,
-            )
+            ),
+            url='getPedTargetCollision',
         )
         ],
     ),
@@ -1822,7 +1855,8 @@ DUMP_PARTIAL = [
                     "targetingPed": """the ped who is targeting whose target end you wish to retrieve """
                 },
                 result='returns three floats, x,y,z, representing the position where the peds target ends according to his range, or false if it was unsuccessful.' ,
-            )
+            ),
+            url='getPedTargetEnd',
         )
         ],
     ),
@@ -1876,7 +1910,8 @@ DUMP_PARTIAL = [
                     "targetingPed": """The ped whose target start you wish to retrieve """
                 },
                 result='returns three floats, x,y,z, representing the position where the peds target starts, or false if it was unsuccessful.' ,
-            )
+            ),
+            url='getPedTargetStart',
         )
         ],
     ),
@@ -1964,7 +1999,8 @@ DUMP_PARTIAL = [
                     "5": """TASK_SECONDARY_IK """
                 },
                 result='returns the name of the most complex task. see list of player tasks for valid strings. returns false if invalid arguments are specified or if there is no task of the type specified.\n<br>\nreturns between 1 and 4 strings. the first string contains the name of the most complex task, with simpler sub-tasks being named in the following strings. see list of player tasks for valid strings. returns false if invalid arguments are specified or if there is no task of the type specified.' ,
-            )
+            ),
+            url='getPedTask',
         )
         ],
     ),
@@ -2018,7 +2054,8 @@ DUMP_PARTIAL = [
                     "weaponSlot": """: an integer representing the weapon slot (set to the peds current slot if not given) """
                 },
                 result='returns an int containing the total amount of ammo for the specified peds weapon, or 0 if the ped specified is invalid.' ,
-            )
+            ),
+            url='getPedTotalAmmo',
         )
         ],
         client=[
@@ -2070,7 +2107,8 @@ DUMP_PARTIAL = [
                     "weaponSlot": """: an integer representing the weapon slot (set to the peds current slot if not given) """
                 },
                 result='returns an int containing the total amount of ammo for the specified peds weapon, or 0 if the ped specified is invalid.' ,
-            )
+            ),
+            url='getPedTotalAmmo',
         )
         ],
     ),
@@ -2120,7 +2158,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped to get the voice of. """
                 },
                 result='if successul, returns the current voice type name and the voice name of the ped (see ped voices for possible names). returns false in case of failure.' ,
-            )
+            ),
+            url='getPedVoice',
         )
         ],
     ),
@@ -2163,7 +2202,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped whose walking style to retrieve. """
                 },
                 result='returns the walking style id if successful, false otherwise. the possible walking styles are as follows:' ,
-            )
+            ),
+            url='getPedWalkingStyle',
         )
         ],
         client=[
@@ -2204,7 +2244,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped whose walking style to retrieve. """
                 },
                 result='returns the walking style id if successful, false otherwise. the possible walking styles are as follows:' ,
-            )
+            ),
+            url='getPedWalkingStyle',
         )
         ],
     ),
@@ -2258,7 +2299,8 @@ DUMP_PARTIAL = [
                     "weaponSlot": """: an integer representing the weapon|weapon slot (set to the peds current slot if not given). """
                 },
                 result='returns an int indicating the type of the weapon the ped has in the specified slot. if the slot is empty, it returns 0.\nit should be noted that if a ped runs out of ammo for a weapon, it will still return the id of that weapon in the slot (even if it appears as if the ped does not have a weapon at all), though getpedtotalammo will return 0.  therefore, getpedtotalammo should be used in conjunction with getpedweapon in order to check if a ped has a weapon.' ,
-            )
+            ),
+            url='getPedWeapon',
         )
         ],
         client=[
@@ -2310,7 +2352,8 @@ DUMP_PARTIAL = [
                     "weaponSlot": """: an integer representing the weapon|weapon slot (set to the peds current slot if not given). """
                 },
                 result='returns an int indicating the type of the weapon the ped has in the specified slot. if the slot is empty, it returns 0.\nit should be noted that if a ped runs out of ammo for a weapon, it will still return the id of that weapon in the slot (even if it appears as if the ped does not have a weapon at all), though getpedtotalammo will return 0.  therefore, getpedtotalammo should be used in conjunction with getpedweapon in order to check if a ped has a weapon.' ,
-            )
+            ),
+            url='getPedWeapon',
         )
         ],
     ),
@@ -2364,7 +2407,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped whose weapon muzzle position to retrieve. """
                 },
                 result='if successful, returns the x/y/z coordinates of the weapon muzzle. returns false otherwise.' ,
-            )
+            ),
+            url='getPedWeaponMuzzlePosition',
         )
         ],
     ),
@@ -2407,7 +2451,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped to get the current weapon slot of. """
                 },
                 result='returns the selected weapon slot id on success, false otherwise.' ,
-            )
+            ),
+            url='getPedWeaponSlot',
         )
         ],
         client=[
@@ -2448,7 +2493,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped to get the current weapon slot of. """
                 },
                 result='returns the selected weapon slot id on success, false otherwise.' ,
-            )
+            ),
+            url='getPedWeaponSlot',
         )
         ],
     ),
@@ -2482,7 +2528,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a table with all valid ped models.' ,
-            )
+            ),
+            url='getValidPedModels',
         )
         ],
         client=[
@@ -2514,7 +2561,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a table with all valid ped models.' ,
-            )
+            ),
+            url='getValidPedModels',
         )
         ],
     ),
@@ -2593,7 +2641,8 @@ DUMP_PARTIAL = [
                     "setAsCurrent": """A boolean value determining whether or not the weapon will be set as the peds currently selected weapon. """
                 },
                 result='returns true if weapon was successfully given to the ped, false otherwise.' ,
-            )
+            ),
+            url='givePedWeapon',
         )
         ],
     ),
@@ -2639,7 +2688,8 @@ DUMP_PARTIAL = [
                     "thePed": """the player or ped whose bleeding effect state you want to get. """
                 },
                 result='returns true if the player or ped is bleeding, false otherwise.' ,
-            )
+            ),
+            url='isPedBleeding',
         )
         ],
     ),
@@ -2682,7 +2732,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped you wish to check """
                 },
                 result='returns true if the ped is choking, false otherwise.' ,
-            )
+            ),
+            url='isPedChoking',
         )
         ],
         client=[
@@ -2723,7 +2774,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped you wish to check """
                 },
                 result='returns true if the ped is choking, false otherwise.' ,
-            )
+            ),
+            url='isPedChoking',
         )
         ],
     ),
@@ -2766,7 +2818,8 @@ DUMP_PARTIAL = [
                     "thePed": """: the ped you want to check up on. """
                 },
                 result='returns true if the ped is dead, false otherwise.' ,
-            )
+            ),
+            url='isPedDead',
         )
         ],
         client=[
@@ -2807,7 +2860,8 @@ DUMP_PARTIAL = [
                     "thePed": """: the ped you want to check up on. """
                 },
                 result='returns true if the ped is dead, false otherwise.' ,
-            )
+            ),
+            url='isPedDead',
         )
         ],
     ),
@@ -2850,7 +2904,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped element whose state is to be checked. """
                 },
                 result='returns true if the driveby state is enabled, false otherwise.' ,
-            )
+            ),
+            url='isPedDoingGangDriveby',
         )
         ],
         client=[
@@ -2891,7 +2946,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped element whose state is to be checked. """
                 },
                 result='returns true if the driveby state is enabled, false otherwise.' ,
-            )
+            ),
+            url='isPedDoingGangDriveby',
         )
         ],
     ),
@@ -2948,7 +3004,8 @@ DUMP_PARTIAL = [
                     "taskName": """: A string containing the name of the List of player tasks|task youre checking for. """
                 },
                 result='returns true if the player is currently doing the task, false otherwise.' ,
-            )
+            ),
+            url='isPedDoingTask',
         )
         ],
     ),
@@ -2991,7 +3048,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped to check. """
                 },
                 result='returns true if the ped is ducked, false otherwise.' ,
-            )
+            ),
+            url='isPedDucked',
         )
         ],
         client=[
@@ -3032,7 +3090,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped to check. """
                 },
                 result='returns true if the ped is ducked, false otherwise.' ,
-            )
+            ),
+            url='isPedDucked',
         )
         ],
     ),
@@ -3078,7 +3137,8 @@ DUMP_PARTIAL = [
                     "thePlayer": """The player to give bloody foot prints to. """
                 },
                 result='returns true if feets are bleeding, false otherwise' ,
-            )
+            ),
+            url='isPedFootBloodEnabled',
         )
         ],
     ),
@@ -3121,7 +3181,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped to check. """
                 },
                 result='returns true if the ped is headless, false otherwise.' ,
-            )
+            ),
+            url='isPedHeadless',
         )
         ],
         client=[
@@ -3162,7 +3223,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped to check. """
                 },
                 result='returns true if the ped is headless, false otherwise.' ,
-            )
+            ),
+            url='isPedHeadless',
         )
         ],
     ),
@@ -3205,7 +3267,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped you want to check. """
                 },
                 result='returns true if the ped is in a vehicle, false if he is on foot or an invalid element was passed.' ,
-            )
+            ),
+            url='isPedInVehicle',
         )
         ],
         client=[
@@ -3246,7 +3309,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped you want to check. """
                 },
                 result='returns true if the ped is in a vehicle, false if he is on foot or an invalid element was passed.' ,
-            )
+            ),
+            url='isPedInVehicle',
         )
         ],
     ),
@@ -3289,7 +3353,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped to check. """
                 },
                 result='returns true if the ped is on fire, false otherwise.' ,
-            )
+            ),
+            url='isPedOnFire',
         )
         ],
         client=[
@@ -3330,7 +3395,8 @@ DUMP_PARTIAL = [
                     "thePed": """: The ped to check. """
                 },
                 result='returns true if the ped is on fire, false otherwise.' ,
-            )
+            ),
+            url='isPedOnFire',
         )
         ],
     ),
@@ -3373,7 +3439,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped you are checking. """
                 },
                 result='returns true if the ped is on foot and on the ground, false otherwise, even if he is in a car that stands still or on object outside world map.' ,
-            )
+            ),
+            url='isPedOnGround',
         )
         ],
         client=[
@@ -3414,7 +3481,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped you are checking. """
                 },
                 result='returns true if the ped is on foot and on the ground, false otherwise, even if he is in a car that stands still or on object outside world map.' ,
-            )
+            ),
+            url='isPedOnGround',
         )
         ],
     ),
@@ -3460,7 +3528,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped you are checking. """
                 },
                 result='returns true if the ped is currently reloading a weapon, false otherwise.' ,
-            )
+            ),
+            url='isPedReloadingWeapon',
         )
         ],
     ),
@@ -3497,7 +3566,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the health target markers are enabled, false if not.' ,
-            )
+            ),
+            url='isPedTargetingMarkerEnabled',
         )
         ],
     ),
@@ -3540,7 +3610,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped you want to check """
                 },
                 result='returns true if the ped is carrying a jetpack, false if he is not or an invalid element was passed.' ,
-            )
+            ),
+            url='isPedWearingJetpack',
         )
         ],
         client=[
@@ -3581,7 +3652,8 @@ DUMP_PARTIAL = [
                     "thePed": """the ped you want to check """
                 },
                 result='returns true if the ped is carrying a jetpack, false if he is not or an invalid element was passed.' ,
-            )
+            ),
+            url='isPedWearingJetpack',
         )
         ],
     ),
@@ -3668,7 +3740,8 @@ DUMP_PARTIAL = [
                     "stealth": """Boolean value, representing whether or not this a stealth kill """
                 },
                 result='returns true if the ped was killed, false if the ped specified could not be killed or is invalid.' ,
-            )
+            ),
+            url='killPed',
         )
         ],
         client=[
@@ -3753,7 +3826,8 @@ DUMP_PARTIAL = [
                     "stealth": """Boolean value, representing whether or not this a stealth kill """
                 },
                 result='returns true if the ped was killed, false if the ped specified could not be killed or is invalid.' ,
-            )
+            ),
+            url='killPed',
         )
         ],
     ),
@@ -3796,7 +3870,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped who will reload their weapon. """
                 },
                 result='returns true if the pedestrian was made to reload, or false if invalid arguments were passed or that pedestrian has a weapon which cannot be reloaded.\nnote: this will fail but return true if\n1) the ped is crouched and moving\n2) the ped is using a weapon without clip ammo (or minigun/flamethrower/fire\nextinguisher)\n3) the ped is using his weapon (shooting/aiming)\n4) the ped moved while crouching recently\ndue to these circumstances causing problems with this function' ,
-            )
+            ),
+            url='reloadPedWeapon',
         )
         ],
         client=[
@@ -3875,7 +3950,8 @@ DUMP_PARTIAL = [
                     "clothesModel": """: (Server only) A string determining the clothes model that will be removed. See the CJ Clothes|clothes catalog. """
                 },
                 result='this function returns true if the clothes were successfully removed from the ped, false otherwise.' ,
-            )
+            ),
+            url='removePedClothes',
         )
         ],
         client=[
@@ -3949,7 +4025,8 @@ DUMP_PARTIAL = [
                     "clothesModel": """: (Server only) A string determining the clothes model that will be removed. See the CJ Clothes|clothes catalog. """
                 },
                 result='this function returns true if the clothes were successfully removed from the ped, false otherwise.' ,
-            )
+            ),
+            url='removePedClothes',
         )
         ],
     ),
@@ -3992,7 +4069,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped you wish to remove from a vehicle """
                 },
                 result='returns true if the operation was successful, false if the specified ped is not valid or if it isnt in a vehicle.' ,
-            )
+            ),
+            url='removePedFromVehicle',
         )
         ],
         client=[
@@ -4033,7 +4111,8 @@ DUMP_PARTIAL = [
                     "thePed": """The ped you wish to remove from a vehicle """
                 },
                 result='returns true if the operation was successful, false if the specified ped is not valid or if it isnt in a vehicle.' ,
-            )
+            ),
+            url='removePedFromVehicle',
         )
         ],
     ),
@@ -4103,7 +4182,8 @@ DUMP_PARTIAL = [
 }}</noinclude> """
                 },
                 result='returns true if the control state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setAnalogControlState',
         )
         ],
     ),
@@ -4182,7 +4262,8 @@ DUMP_PARTIAL = [
                     "z": """The z coordinate of the aim target point. """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='setPedAimTarget',
         )
         ],
     ),
@@ -4250,7 +4331,8 @@ DUMP_PARTIAL = [
                     "state": """A float between 0 and 1 indicating the amount the control is pressed. """
                 },
                 result='returns true if the control state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setPedAnalogControlState',
         )
         ],
     ),
@@ -4393,7 +4475,8 @@ DUMP_PARTIAL = [
 |16632}} """
                 },
                 result='returns true if succesful, false otherwise.' ,
-            )
+            ),
+            url='setPedAnimation',
         )
         ],
         client=[
@@ -4534,7 +4617,8 @@ DUMP_PARTIAL = [
 |16632}} """
                 },
                 result='returns true if succesful, false otherwise.' ,
-            )
+            ),
+            url='setPedAnimation',
         )
         ],
     ),
@@ -4599,7 +4683,8 @@ DUMP_PARTIAL = [
                     "progress": """current animation progress you want to apply, value from 0.0 to 1.0, if not supplied will default to 0.0 """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setPedAnimationProgress',
         )
         ],
         client=[
@@ -4662,7 +4747,8 @@ DUMP_PARTIAL = [
                     "progress": """current animation progress you want to apply, value from 0.0 to 1.0, if not supplied will default to 0.0 """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setPedAnimationProgress',
         )
         ],
     ),
@@ -4727,7 +4813,8 @@ DUMP_PARTIAL = [
                     "speed": """a float containing the speed between 0.0–1.0 you want to apply to the animation. This limitation may be adjusted in the future, so do not provide speeds outside this boundary. {{New feature/item|3.0158|1.5.7|20395|The limit is now 0.0 to 10.0.}} {{Warning|Setting speed higher than 1 can cause issues with some animations.}} """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setPedAnimationSpeed',
         )
         ],
         client=[
@@ -4790,7 +4877,8 @@ DUMP_PARTIAL = [
                     "speed": """a float containing the speed between 0.0–1.0 you want to apply to the animation. This limitation may be adjusted in the future, so do not provide speeds outside this boundary. {{New feature/item|3.0158|1.5.7|20395|The limit is now 0.0 to 10.0.}} {{Warning|Setting speed higher than 1 can cause issues with some animations.}} """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setPedAnimationSpeed',
         )
         ],
     ),
@@ -4844,7 +4932,8 @@ DUMP_PARTIAL = [
                     "armor": """: the amount of armor you want to set on the ped. Valid values are from 0 to 100. """
                 },
                 result='returns true if the armor was changed succesfully. returns false if an invalid ped was specified, or the armor value specified is out of acceptable range.' ,
-            )
+            ),
+            url='setPedArmor',
         )
         ],
         client=[
@@ -4896,7 +4985,8 @@ DUMP_PARTIAL = [
                     "armor": """: the amount of armor you want to set on the ped. Valid values are from 0 to 100. """
                 },
                 result='returns true if the armor was changed succesfully. returns false if an invalid ped was specified, or the armor value specified is out of acceptable range.' ,
-            )
+            ),
+            url='setPedArmor',
         )
         ],
     ),
@@ -4953,7 +5043,8 @@ DUMP_PARTIAL = [
                     "bleeding": """boolean specifying whether the player or ped is bleeding or not. """
                 },
                 result='returns true if the bleeding state was successfully set, error is raised otherwise.' ,
-            )
+            ),
+            url='setPedBleeding',
         )
         ],
     ),
@@ -5010,7 +5101,8 @@ DUMP_PARTIAL = [
                     "cameraRotation": """The new direction that the ped will walk if you set their forwards control state. If the ped is the local player, it will also change where his camera is looking at if it isnt fixed (i.e. camera target is the local player). """
                 },
                 result='returns true if the camera rotation was changed, false otherwise.' ,
-            )
+            ),
+            url='setPedCameraRotation',
         )
         ],
     ),
@@ -5067,7 +5159,8 @@ DUMP_PARTIAL = [
                     "canBeKnockedOffBike": """true or false """
                 },
                 result='' ,
-            )
+            ),
+            url='setPedCanBeKnockedOffBike',
         )
         ],
     ),
@@ -5121,7 +5214,8 @@ DUMP_PARTIAL = [
                     "choking": """true to make the ped choke, false to no longer force his choking animation """
                 },
                 result='returns true if successful, false otherwise (e.g. player handle is invalid)' ,
-            )
+            ),
+            url='setPedChoking',
         )
         ],
         client=[
@@ -5192,7 +5286,8 @@ DUMP_PARTIAL = [
                     "state": """the new control state. true means pressed, false is released. """
                 },
                 result='returns true if successful, false if otherwise.' ,
-            )
+            ),
+            url='setPedControlState',
         )
         ],
     ),
@@ -5246,7 +5341,8 @@ DUMP_PARTIAL = [
                     "state": """A boolean value representing the drive-by state, true meaning enabled and false disabled. """
                 },
                 result='returns true if the driveby state could be changed, false otherwise.' ,
-            )
+            ),
+            url='setPedDoingGangDriveby',
         )
         ],
         client=[
@@ -5298,7 +5394,8 @@ DUMP_PARTIAL = [
                     "state": """A boolean value representing the drive-by state, true meaning enabled and false disabled. """
                 },
                 result='returns true if the driveby state could be changed, false otherwise.' ,
-            )
+            ),
+            url='setPedDoingGangDriveby',
         )
         ],
     ),
@@ -5368,7 +5465,8 @@ DUMP_PARTIAL = [
                     "passenger": """If set to true, the ped will enter as passenger in the nearest available seat, otherwise he will enter as driver. """
                 },
                 result='returns true if the function was successful, false otherwise.\nwhen this function returns true, the client will ask server for permission to enter a vehicle. actually entering can still fail in the following cases\n*the function is used on a ped, but another client is not on version 1.5.8 r20740 or newer.\n*another player or ped is already entering, exiting or jacking the same vehicle and seat.\n*movement input or damage can interrupt the task. use getpedtask to monitor what the ped is doing.\nthis function returns false in the following cases\n*invalid arguments were parsed.\n*the function is used on a ped, but the server is not on version 1.5.8 r20740 or newer.\n*time passed since last enter/exit for this ped is less than 1500 ms.\n*onclientvehiclestartenter was cancelled by a script.\n*the ped has an active task_primary task. use getpedtask to monitor what the ped is doing.' ,
-            )
+            ),
+            url='setPedEnterVehicle',
         )
         ],
     ),
@@ -5414,7 +5512,8 @@ DUMP_PARTIAL = [
                     "thePed": """The player or ped to exit the vehicle. """
                 },
                 result='returns true if the function was successful, false otherwise.\nwhen this function returns true, the client will ask server for permission to exit a vehicle. exiting can still fail in the following cases\n*the function is used on a ped, but another client is not on version 1.5.8 r20740 or newer.\nthis function returns false in the following cases\n*invalid arguments were parsed.\n*the function is used on a ped but the server is not on version 1.5.8 r20740 or newer.\n*time passed since last enter/exit for this ped is less than 1500 ms.\n*the ped is getting jacked.' ,
-            )
+            ),
+            url='setPedExitVehicle',
         )
         ],
     ),
@@ -5468,7 +5567,8 @@ DUMP_PARTIAL = [
                     "style": """The fighting style ID to apply. """
                 },
                 result='returns true in case of success, false otherwise.' ,
-            )
+            ),
+            url='setPedFightingStyle',
         )
         ],
         client=[
@@ -5520,7 +5620,8 @@ DUMP_PARTIAL = [
                     "style": """The fighting style ID to apply. """
                 },
                 result='returns true in case of success, false otherwise.' ,
-            )
+            ),
+            url='setPedFightingStyle',
         )
         ],
     ),
@@ -5577,7 +5678,8 @@ DUMP_PARTIAL = [
                     "enabled": """boolean specifying whether or not to have bloody feet. """
                 },
                 result='returns true if changing the peds bloody feet status worked.' ,
-            )
+            ),
+            url='setPedFootBloodEnabled',
         )
         ],
     ),
@@ -5631,7 +5733,8 @@ DUMP_PARTIAL = [
                     "level": """: The level of gravity (default is 0.008). """
                 },
                 result='returns true if the gravity was successfully set, false otherwise' ,
-            )
+            ),
+            url='setPedGravity',
         )
         ],
         client=[
@@ -5688,7 +5791,8 @@ DUMP_PARTIAL = [
                     "headState": """: head state, use true if you want the ped be headless, use false to give back the head. """
                 },
                 result='returns true if successful, false otherwise' ,
-            )
+            ),
+            url='setPedHeadless',
         )
         ],
         client=[
@@ -5740,7 +5844,8 @@ DUMP_PARTIAL = [
                     "headState": """: head state, use true if you want the ped be headless, use false to give back the head. """
                 },
                 result='returns true if successful, false otherwise' ,
-            )
+            ),
+            url='setPedHeadless',
         )
         ],
     ),
@@ -5852,7 +5957,8 @@ DUMP_PARTIAL = [
                     "target": """if this argument is specified, the position arguments will be mean offsets relative to the target and the peds gaze will follow the specified element instead. Can be a player, a vehicle, another ped etc. """
                 },
                 result='' ,
-            )
+            ),
+            url='setPedLookAt',
         )
         ],
     ),
@@ -5906,7 +6012,8 @@ DUMP_PARTIAL = [
                     "isOnFire": """true to set the ped on fire, false to extinguish any fire on him """
                 },
                 result='returns true if successful, false otherwise' ,
-            )
+            ),
+            url='setPedOnFire',
         )
         ],
         client=[
@@ -5958,7 +6065,8 @@ DUMP_PARTIAL = [
                     "isOnFire": """true to set the ped on fire, false to extinguish any fire on him """
                 },
                 result='returns true if successful, false otherwise' ,
-            )
+            ),
+            url='setPedOnFire',
         )
         ],
     ),
@@ -6015,7 +6123,8 @@ DUMP_PARTIAL = [
                     "oxygen": """: the amount of oxygen you want to set on the ped. Native values are from 0 to 1000. Each of the stamina (22) and underwater stamina (225) Template:Stats|stat maximum adds a bonus of 1500. So the maximum oxygen level is 4000. """
                 },
                 result='returns true if the oxygen level was changed succesfully. returns false if an invalid ped and/or oxygen level was specified.' ,
-            )
+            ),
+            url='setPedOxygenLevel',
         )
         ],
     ),
@@ -6080,7 +6189,8 @@ DUMP_PARTIAL = [
                     "value": """: the new value of the stat. It must be between 0 and 1000. """
                 },
                 result='returns true if the statistic was changed succesfully. returns false if an invalid player is specified, if the stat-id/value is out of acceptable range or if the fat or body_muscle stats are used on non-cj players.' ,
-            )
+            ),
+            url='setPedStat',
         )
         ],
         client=[
@@ -6143,7 +6253,8 @@ DUMP_PARTIAL = [
                     "value": """: the new value of the stat. It must be between 0 and 1000. """
                 },
                 result='returns true if the statistic was changed succesfully. returns false if an invalid player is specified, if the stat-id/value is out of acceptable range or if the fat or body_muscle stats are used on non-cj players.' ,
-            )
+            ),
+            url='setPedStat',
         )
         ],
     ),
@@ -6189,7 +6300,8 @@ DUMP_PARTIAL = [
                     "enabled": """A boolean denoting whether we want to enable (true) or disable (false) the markers. """
                 },
                 result='returns true if the markers were enabled, false if werent or if invalid arguments are passed.' ,
-            )
+            ),
+            url='setPedTargetingMarkerEnabled',
         )
         ],
     ),
@@ -6257,7 +6369,8 @@ DUMP_PARTIAL = [
                     "voiceName": """the voice name within the specified type. See ped voices for possible voices. """
                 },
                 result='returns true when the voice was successfully set, false otherwise.' ,
-            )
+            ),
+            url='setPedVoice',
         )
         ],
     ),
@@ -6312,7 +6425,8 @@ DUMP_PARTIAL = [
 The possible walking styles are: """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setPedWalkingStyle',
         )
         ],
         client=[
@@ -6365,7 +6479,8 @@ The possible walking styles are: """
 The possible walking styles are: """
                 },
                 result='returns true if successful, false otherwise.' ,
-            )
+            ),
+            url='setPedWalkingStyle',
         )
         ],
     ),
@@ -6419,7 +6534,8 @@ The possible walking styles are: """
                     "weaponSlot": """the weapon slot to set. """
                 },
                 result='returns true if successful in setting the peds equipped weapon slot, false otherwise.' ,
-            )
+            ),
+            url='setPedWeaponSlot',
         )
         ],
         client=[
@@ -6471,7 +6587,8 @@ The possible walking styles are: """
                     "weaponSlot": """the weapon slot to set. """
                 },
                 result='returns true if successful in setting the peds equipped weapon slot, false otherwise.' ,
-            )
+            ),
+            url='setPedWeaponSlot',
         )
         ],
     ),
@@ -6525,7 +6642,8 @@ The possible walking styles are: """
                     "state": """A boolean representing whether to give or take the jetpack. """
                 },
                 result='returns true if a jetpack was successfully set for the ped, false if setting it failed.' ,
-            )
+            ),
+            url='setPedWearingJetpack',
         )
         ],
         client=[
@@ -6597,7 +6715,8 @@ The possible walking styles are: """
                     "3": """Rear-right """
                 },
                 result='returns true if the operation is successful, false otherwise.' ,
-            )
+            ),
+            url='warpPedIntoVehicle',
         )
         ],
         client=[
@@ -6664,7 +6783,8 @@ The possible walking styles are: """
                     "3": """Rear-right """
                 },
                 result='returns true if the operation is successful, false otherwise.' ,
-            )
+            ),
+            url='warpPedIntoVehicle',
         )
         ],
     )

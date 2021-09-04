@@ -66,7 +66,8 @@ DUMP_PARTIAL = [
                     "guiElement": """the GUI element that you want to defocus """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='guiBlur',
         ),
                 field=None,
                 is_static=False,
@@ -119,7 +120,8 @@ DUMP_PARTIAL = [
                     "guiElement": """the GUI element that you want to move to the front. """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='guiBringToFront',
         ),
                 field=None,
                 is_static=False,
@@ -172,7 +174,8 @@ DUMP_PARTIAL = [
                     "theCheckbox": """The checkbox you wish to retrieve the selection state of. """
                 },
                 result='returns true if the checkbox is selected, false if it is not.' ,
-            )
+            ),
+            url='guiCheckBoxGetSelected',
         ),
                 field=FunctionOOPField(
                                 name='selected',
@@ -244,7 +247,8 @@ DUMP_PARTIAL = [
                     "state": """The state of the checkbox, where true indicates selected, and false indicates unselected. """
                 },
                 result='returns true if the checkboxs selection state was successfully set, false otherwise.' ,
-            )
+            ),
+            url='guiCheckBoxSetSelected',
         ),
                 field=FunctionOOPField(
                                 name='selected',
@@ -316,7 +320,8 @@ DUMP_PARTIAL = [
                     "value": """The text that the item will contain. """
                 },
                 result='returns the item id if it has been created, false otherwise.' ,
-            )
+            ),
+            url='guiComboBoxAddItem',
         ),
                 field=None,
                 is_static=False,
@@ -369,7 +374,8 @@ DUMP_PARTIAL = [
                     "comboBox": """The combobox element to be cleared """
                 },
                 result='returns true if the combobox element is valid and has been cleared successfully, false otherwise.' ,
-            )
+            ),
+            url='guiComboBoxClear',
         ),
                 field=None,
                 is_static=False,
@@ -441,7 +447,8 @@ DUMP_PARTIAL = [
                     "itemId": """The index of the item """
                 },
                 result='returns the text of the item if the arguments are right, false otherwise.' ,
-            )
+            ),
+            url='guiComboBoxGetItemText',
         ),
                 field=None,
                 is_static=False,
@@ -494,7 +501,8 @@ DUMP_PARTIAL = [
                     "comboBox": """the combobox you want to know the selected item index of """
                 },
                 result='returns the index of the selected item if the specified combobox is valid and has a selected item, -1 if no item is selected, nil otherwise.' ,
-            )
+            ),
+            url='guiComboBoxGetSelected',
         ),
                 field=FunctionOOPField(
                                 name='selected',
@@ -555,7 +563,8 @@ DUMP_PARTIAL = [
                     "comboBox": """The combo box to get the state. """
                 },
                 result='returns true if combobox is opened, false if combobox is closed, nil otherwise.' ,
-            )
+            ),
+            url='guiComboBoxIsOpen',
         ),
                 field=FunctionOOPField(
                                 name='open',
@@ -627,7 +636,8 @@ DUMP_PARTIAL = [
                     "itemId": """The index of the item to remove """
                 },
                 result='returns true if the item was removes successfully, false otherwise.' ,
-            )
+            ),
+            url='guiComboBoxRemoveItem',
         ),
                 field=None,
                 is_static=False,
@@ -702,7 +712,8 @@ DUMP_PARTIAL = [
                     "text": """The text you want to put in (does NOT accept numbers, use tostring() for that) """
                 },
                 result='returns true if the text was set successfully, false otherwise.' ,
-            )
+            ),
+            url='guiComboBoxSetItemText',
         ),
                 field=None,
                 is_static=False,
@@ -766,7 +777,8 @@ DUMP_PARTIAL = [
                     "state": """The state of combobox. true, if the combobox is to be opened. false if the combobox is to be closed. """
                 },
                 result='returns true if is successful, false otherwise.' ,
-            )
+            ),
+            url='guiComboBoxSetOpen',
         ),
                 field=FunctionOOPField(
                                 name='open',
@@ -838,7 +850,8 @@ DUMP_PARTIAL = [
                     "itemIndex": """the item you want to select (item 0 is the first item). If -1 is specified, then the combo box text is set to its caption. """
                 },
                 result='returns true if the selected item has been changed successfully, false otherwise.' ,
-            )
+            ),
+            url='guiComboBoxSetSelected',
         ),
                 field=FunctionOOPField(
                                 name='selected',
@@ -1137,7 +1150,8 @@ DUMP_PARTIAL = [
                     "tabPanel": """This is the guiCreateTabPanel|tab panel parent that the tab is attached to. """
                 },
                 result='returns true the tab was successfully deleted, false otherwise.' ,
-            )
+            ),
+            url='guiDeleteTab',
         ),
                 field=None,
                 is_static=False,
@@ -1190,7 +1204,8 @@ DUMP_PARTIAL = [
                     "theElement": """The edit box you want to get the caret position from """
                 },
                 result='returns the caret index on success, false otherwise.' ,
-            )
+            ),
+            url='guiEditGetCaretIndex',
         ),
                 field=FunctionOOPField(
                                 name='caretIndex',
@@ -1251,7 +1266,8 @@ DUMP_PARTIAL = [
                     "guiEdit": """The edit box you want to get the maximum text length of. """
                 },
                 result='returns the maximum text length on success, false otherwise.' ,
-            )
+            ),
+            url='guiEditGetMaxLength',
         ),
                 field=FunctionOOPField(
                                 name='maxLength',
@@ -1369,7 +1385,8 @@ DUMP_PARTIAL = [
                     "index": """An integer referring to the desired position within the box. """
                 },
                 result='returns true if the index was successfully set, false otherwise.' ,
-            )
+            ),
+            url='guiEditSetCaretIndex',
         ),
                 field=FunctionOOPField(
                                 name='caretIndex',
@@ -1441,7 +1458,8 @@ DUMP_PARTIAL = [
                     "status": """A boolean value indicating whether masking is to be enabled or disabled. """
                 },
                 result='returns true if the function is successful, false otherwise.' ,
-            )
+            ),
+            url='guiEditSetMasked',
         ),
                 field=FunctionOOPField(
                                 name='masked',
@@ -1513,7 +1531,8 @@ DUMP_PARTIAL = [
                     "length": """An integer indicating the maximum number of characters that can be typed into the box. """
                 },
                 result='returns true if the max length was set successfully, false otherwise.' ,
-            )
+            ),
+            url='guiEditSetMaxLength',
         ),
                 field=FunctionOOPField(
                                 name='maxLength',
@@ -1585,7 +1604,8 @@ DUMP_PARTIAL = [
                     "status": """A boolean value indicating whether read-only is to be enabled or disabled. """
                 },
                 result='returns true if edit fields read-only status was changed successfully, false otherwise.' ,
-            )
+            ),
+            url='guiEditSetReadOnly',
         ),
                 field=FunctionOOPField(
                                 name='readOnly',
@@ -1646,7 +1666,8 @@ DUMP_PARTIAL = [
                     "guiElement": """the GUI element that you want to focus """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='guiFocus',
         ),
                 field=None,
                 is_static=False,
@@ -1699,7 +1720,8 @@ DUMP_PARTIAL = [
                     "guiElement": """The gui element in which you want to retrieve the alpha of. """
                 },
                 result='this function returns a positive integer in between 0 and 1 of the gui elements current alpha, or false if it could not be retrieved.' ,
-            )
+            ),
+            url='guiGetAlpha',
         ),
                 field=FunctionOOPField(
                                 name='alpha',
@@ -1760,7 +1782,8 @@ DUMP_PARTIAL = [
                     "theBrowser": """The gui-browser """
                 },
                 result='returns the element/browser|browser element if a correct element/gui-browser|gui-browser has been passed, false otherwise.' ,
-            )
+            ),
+            url='guiGetBrowser',
         ),
                 field=FunctionOOPField(
                                 name='browser',
@@ -1812,7 +1835,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a string containing the cursor type:\n* none            // cursor has no image\n* arrow           // default cursor\n* sizing_ns       // n-s (up-down) sizing cursor\n* sizing_ew       // e-w (left-right) sizing cursor\n* sizing_nwse     // nw-se diagonal sizing cursor\n* sizing_nesw     // ne-sw diagonal sizing cursor\n* sizing_eswe     // es-we horizontal sizing cursor\n* move            // move cursor\n* container_drag  // drag container cursor (note: not in use)\n* segment_moving  // segment moving cursor (note: not in use)\n* segment_sizing  // segment sizing cursor (note: not in use)' ,
-            )
+            ),
+            url='guiGetCursorType',
         ),
                 field=FunctionOOPField(
                                 name='cursorType',
@@ -1873,7 +1897,8 @@ DUMP_PARTIAL = [
                     "guiElement": """the GUI element to be checked. """
                 },
                 result='returns true if the element is enabled, false otherwise.' ,
-            )
+            ),
+            url='guiGetEnabled',
         ),
                 field=FunctionOOPField(
                                 name='enabled',
@@ -1938,7 +1963,8 @@ DUMP_PARTIAL = [
                     "guiElement": """element you wish to get the font of. """
                 },
                 result='*string a string containing the name of the elements current font, or false if the gui element passed to the function is invalid.\n*element  the custom gui font that is used, or nil otherwise' ,
-            )
+            ),
+            url='guiGetFont',
         ),
                 field=FunctionOOPField(
                                 name='font',
@@ -1994,7 +2020,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if input is focused on gui, false if its focused on the game.' ,
-            )
+            ),
+            url='guiGetInputEnabled',
         ),
                 field=FunctionOOPField(
                                 name='inputEnabled',
@@ -2046,7 +2073,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns a string defining the current input mode, potential values are:\n* allow_binds: binds are enabled, hence using a key such as t in an editbox will still activate the chatbox\n* no_binds: binds are disabled, hence using a key such as t in an editbox will not activate the chatbox\n* no_binds_when_editing: binds are always enabled except when an editable editbox or memo has input focus' ,
-            )
+            ),
+            url='guiGetInputMode',
         ),
                 field=FunctionOOPField(
                                 name='inputMode',
@@ -2122,7 +2150,8 @@ DUMP_PARTIAL = [
                     "relative": """A boolean representing whether the position should be relative to the elements parent width, or the number of offset pixels from the parents origin. """
                 },
                 result='returns floats representing the x and y position of the element, or false if the position could not be retrieved.' ,
-            )
+            ),
+            url='guiGetPosition',
         ),
                 field=FunctionOOPField(
                                 name='position',
@@ -2187,7 +2216,8 @@ DUMP_PARTIAL = [
                     "guiElement": """the GUI element you wish to get the properties of. """
                 },
                 result='if the function succeeds, the return value is a table. its keys are property names, the corresponding values are the values of the properties (both names and values are always strings). if the function fails, it returns false.' ,
-            )
+            ),
+            url='guiGetProperties',
         ),
                 field=FunctionOOPField(
                                 name='properties',
@@ -2259,7 +2289,8 @@ DUMP_PARTIAL = [
                     "property": """the name of of property you want the value of. """
                 },
                 result='if the function succeeds, it returns a string with the value of the property. if it fails, it returns false.' ,
-            )
+            ),
+            url='guiGetProperty',
         ),
                 field=None,
                 is_static=False,
@@ -2307,7 +2338,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='this returns two floats representing the players screen resolution, width and height.' ,
-            )
+            ),
+            url='guiGetScreenSize',
         ),
                 field=None,
                 is_static=True,
@@ -2360,7 +2392,8 @@ DUMP_PARTIAL = [
                     "tabPanel": """The Element/GUI/Tab panel|tab panel which current tab you want to retrieve. """
                 },
                 result='returns an element of the element/gui/tab|tab if a tab was selected or nil if no tab was selected. if passed arguments were invalid or something went wrong, the function will return false.' ,
-            )
+            ),
+            url='guiGetSelectedTab',
         ),
                 field=FunctionOOPField(
                                 name='selectedTab',
@@ -2436,7 +2469,8 @@ DUMP_PARTIAL = [
                     "relative": """A boolean representing whether the size should be relative to the elements parent width, or an absolute size in pixels. """
                 },
                 result='returns the gui element size x and y if the function has been successful, false otherwise.' ,
-            )
+            ),
+            url='guiGetSize',
         ),
                 field=None,
                 is_static=False,
@@ -2489,7 +2523,8 @@ DUMP_PARTIAL = [
                     "guiElement": """element you wish to get text of. """
                 },
                 result='returns a string containing the requested elements text, or false if the gui element passed to the function is invalid.' ,
-            )
+            ),
+            url='guiGetText',
         ),
                 field=FunctionOOPField(
                                 name='text',
@@ -2550,7 +2585,8 @@ DUMP_PARTIAL = [
                     "guiElement": """the GUI element to be checked """
                 },
                 result='returns true if the element is visible, false otherwise.' ,
-            )
+            ),
+            url='guiGetVisible',
         ),
                 field=FunctionOOPField(
                                 name='visible',
@@ -2633,7 +2669,8 @@ DUMP_PARTIAL = [
                     "width": """Column width, relative to the grid list width """
                 },
                 result='returns the column id if it was created, false otherwise.' ,
-            )
+            ),
+            url='guiGridListAddColumn',
         ),
                 field=None,
                 is_static=False,
@@ -2709,7 +2746,8 @@ DUMP_PARTIAL = [
                     "...": """Item text for any other columns """
                 },
                 result='returns the row id if it has been created, false otherwise.' ,
-            )
+            ),
+            url='guiGridListAddRow',
         ),
                 field=None,
                 is_static=False,
@@ -2773,7 +2811,8 @@ DUMP_PARTIAL = [
                     "columnIndex": """The ID of the column you want to be auto-sized. """
                 },
                 result='returns true if the column was auto-sized, false otherwise.' ,
-            )
+            ),
+            url='guiGridListAutoSizeColumn',
         ),
                 field=None,
                 is_static=False,
@@ -2826,7 +2865,8 @@ DUMP_PARTIAL = [
                     "gridList": """The grid list element to be cleared """
                 },
                 result='returns true if the grid list element is valid and has been cleared successfully, false otherwise.' ,
-            )
+            ),
+            url='guiGridListClear',
         ),
                 field=None,
                 is_static=False,
@@ -2879,7 +2919,8 @@ DUMP_PARTIAL = [
                     "gridList": """The grid list you want to add a column to """
                 },
                 result='returns an integer with the amount of columns in the gridlist, false otherwise.' ,
-            )
+            ),
+            url='guiGridListGetColumnCount',
         ),
                 field=FunctionOOPField(
                                 name='columnCount',
@@ -2951,7 +2992,8 @@ DUMP_PARTIAL = [
                     "columnIndex": """: Column ID """
                 },
                 result='returns a string containing the column title, or false otherwise.' ,
-            )
+            ),
+            url='guiGridListGetColumnTitle',
         ),
                 field=None,
                 is_static=False,
@@ -3026,7 +3068,8 @@ DUMP_PARTIAL = [
                     "relative": """A boolean defining whether width measurements will be relative to the Gridlist size, or absolute pixels. """
                 },
                 result='returns the width of the gridlist column, false if bad arguments were given.' ,
-            )
+            ),
+            url='guiGridListGetColumnWidth',
         ),
                 field=None,
                 is_static=False,
@@ -3079,7 +3122,8 @@ DUMP_PARTIAL = [
                     "guiGridlist": """: The grid list you want to get the horizontal scroll position from """
                 },
                 result='returns a integer between 0 and 100 indicating the horizontal scroll position, or false otherwise.' ,
-            )
+            ),
+            url='guiGridListGetHorizontalScrollPosition',
         ),
                 field=FunctionOOPField(
                                 name='horizontalScrollPosition',
@@ -3174,7 +3218,8 @@ DUMP_PARTIAL = [
                     "columnIndex": """Column ID """
                 },
                 result='returns four int values, representing the amount of red, green, blue and alpha if successful. false otherwise.' ,
-            )
+            ),
+            url='guiGridListGetItemColor',
         ),
                 field=None,
                 is_static=False,
@@ -3249,7 +3294,8 @@ DUMP_PARTIAL = [
                     "columnIndex": """the column index of the item """
                 },
                 result='returns the item data of the specified item if succesful, false if one of the arguments was invalid.' ,
-            )
+            ),
+            url='guiGridListGetItemData',
         ),
                 field=None,
                 is_static=False,
@@ -3324,7 +3370,8 @@ DUMP_PARTIAL = [
                     "columnIndex": """column id of the item """
                 },
                 result='returns the text of the item if the arguments are right, false otherwise.' ,
-            )
+            ),
+            url='guiGridListGetItemText',
         ),
                 field=None,
                 is_static=False,
@@ -3377,7 +3424,8 @@ DUMP_PARTIAL = [
                     "gridList": """The grid list to get the number of rows from. """
                 },
                 result='returns the number of rows if the function is successful, false otherwise.' ,
-            )
+            ),
+            url='guiGridListGetRowCount',
         ),
                 field=FunctionOOPField(
                                 name='rowCount',
@@ -3438,7 +3486,8 @@ DUMP_PARTIAL = [
                     "gridList": """The Element/GUI/Gridlist|grid list which amount of selected items you want to retrieve. """
                 },
                 result='returns an integer representing the amount of selected options if everything was successful or false if invalid arguments were passed.' ,
-            )
+            ),
+            url='guiGridListGetSelectedCount',
         ),
                 field=FunctionOOPField(
                                 name='selectedCount',
@@ -3503,7 +3552,8 @@ DUMP_PARTIAL = [
                     "gridList": """the grid list you want to know the selected row index of """
                 },
                 result='returns the row and column indexes of the selected item if the specified grid list is valid and has a selected item, (-1, -1) if no item is selected, false otherwise.' ,
-            )
+            ),
+            url='guiGridListGetSelectedItem',
         ),
                 field=None,
                 is_static=False,
@@ -3556,7 +3606,8 @@ DUMP_PARTIAL = [
                     "gridList": """The Element/GUI/Gridlist|grid list which selected items you want to retrieve. """
                 },
                 result='returns a table over the selected items in the element/gui/gridlist|grid list in this format:\n<syntaxhighlight lang=lua>\ntable = {\n1 = {\ncolumn, -- has the first selected items column id\nrow -- has the first selected items row id\n},\n2 = {\ncolumn,-- has the second selected items column id\nrow -- has the second selected items row id\n},\n...\n}\n</syntaxhighlight>\nif everything was successful or false if invalid arguments were passed.' ,
-            )
+            ),
+            url='guiGridListGetSelectedItems',
         ),
                 field=FunctionOOPField(
                                 name='selectedItems',
@@ -3617,7 +3668,8 @@ DUMP_PARTIAL = [
                     "gridlist": """The gridlist you want to get the selection mode of. """
                 },
                 result='returns the id of the current gridlists selection mode.' ,
-            )
+            ),
+            url='guiGridListGetSelectionMode',
         ),
                 field=FunctionOOPField(
                                 name='selectionMode',
@@ -3678,7 +3730,8 @@ DUMP_PARTIAL = [
                     "guiGridlist": """: The grid list you want to get the vertical scroll position from """
                 },
                 result='returns a integer between 0 and 100 indicating the vertical scroll position, or false otherwise.' ,
-            )
+            ),
+            url='guiGridListGetVerticalScrollPosition',
         ),
                 field=FunctionOOPField(
                                 name='verticalScrollPosition',
@@ -3753,7 +3806,8 @@ DUMP_PARTIAL = [
                     "...": """Item text for any other columns """
                 },
                 result='returns true if the row was successfully added, false otherwise.' ,
-            )
+            ),
+            url='guiGridListInsertRowAfter',
         ),
                 field=None,
                 is_static=False,
@@ -3806,7 +3860,8 @@ DUMP_PARTIAL = [
                     "guiGridlist": """The GUI gridlist you wish to check if sorting is enabled or not. """
                 },
                 result='returns true if sorting is enabled, false otherwise.' ,
-            )
+            ),
+            url='guiGridListIsSortingEnabled',
         ),
                 field=FunctionOOPField(
                                 name='sortingEnabled',
@@ -3878,7 +3933,8 @@ DUMP_PARTIAL = [
                     "columnIndex": """Column ID """
                 },
                 result='returns true if the grid list column was successfully removed, false otherwise.' ,
-            )
+            ),
+            url='guiGridListRemoveColumn',
         ),
                 field=None,
                 is_static=False,
@@ -3942,7 +3998,8 @@ DUMP_PARTIAL = [
                     "rowIndex": """The row ID which you want to remove """
                 },
                 result='returns true if the grid list row was successfully removed, false otherwise.' ,
-            )
+            ),
+            url='guiGridListRemoveRow',
         ),
                 field=None,
                 is_static=False,
@@ -4017,7 +4074,8 @@ DUMP_PARTIAL = [
                     "title": """: The title of the column """
                 },
                 result='returns true if the new title was set, or false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetColumnTitle',
         ),
                 field=None,
                 is_static=False,
@@ -4103,7 +4161,8 @@ DUMP_PARTIAL = [
                     "relative": """A boolean defining whether width measurements will be relative to the Gridlist size, or absolute pixels. """
                 },
                 result='returns true if the gridlist column width was successfully set, false if bad arguments were given.' ,
-            )
+            ),
+            url='guiGridListSetColumnWidth',
         ),
                 field=None,
                 is_static=False,
@@ -4167,7 +4226,8 @@ DUMP_PARTIAL = [
                     "fPosition": """: A float representing the horizontal scroll position (0-100) """
                 },
                 result='returns true if the horizontal scroll position was set, or false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetHorizontalScrollPosition',
         ),
                 field=FunctionOOPField(
                                 name='horizontalScrollPosition',
@@ -4294,7 +4354,8 @@ DUMP_PARTIAL = [
                     "alpha": """The amount of alpha in the color (0-255). """
                 },
                 result='returns true if the item color was set successfully, false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetItemColor',
         ),
                 field=None,
                 is_static=False,
@@ -4380,7 +4441,8 @@ DUMP_PARTIAL = [
                     "data": """The data you wish to set to the item. """
                 },
                 result='returns true if the data was set successfully, false otherwise' ,
-            )
+            ),
+            url='guiGridListSetItemData',
         ),
                 field=None,
                 is_static=False,
@@ -4488,7 +4550,8 @@ DUMP_PARTIAL = [
                     "number": """Tells whether the text item is a number value or not (used for sorting) """
                 },
                 result='returns true if the item text was set successfully, false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetItemText',
         ),
                 field=None,
                 is_static=False,
@@ -4563,7 +4626,8 @@ DUMP_PARTIAL = [
                     "verticalBar": """A bool where true forces the verical scrollbar on, and false returns them to default. """
                 },
                 result='returns true if the scrollbars were successfully set, false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetScrollBars',
         ),
                 field=None,
                 is_static=False,
@@ -4649,7 +4713,8 @@ DUMP_PARTIAL = [
                     "bReset": """set to false for multiple selections """
                 },
                 result='returns true if the passed arguments are correct and the item has been selected, false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetSelectedItem',
         ),
                 field=None,
                 is_static=False,
@@ -4723,7 +4788,8 @@ DUMP_PARTIAL = [
                     "9": """Nominated(First) multiple row selection """
                 },
                 result='returns true if the selection mode was successfully set, false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetSelectionMode',
         ),
                 field=FunctionOOPField(
                                 name='selectionMode',
@@ -4795,7 +4861,8 @@ DUMP_PARTIAL = [
                     "enabled": """A boolean representing whether the sorting is enabled, or disabled. """
                 },
                 result='returns true if sorting was successfully toggled., false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetSortingEnabled',
         ),
                 field=FunctionOOPField(
                                 name='sortingEnabled',
@@ -4867,7 +4934,8 @@ DUMP_PARTIAL = [
                     "fPosition": """: A float representing the vertical scroll position (0-100) """
                 },
                 result='returns true if the vertical scroll position was set, or false otherwise.' ,
-            )
+            ),
+            url='guiGridListSetVerticalScrollPosition',
         ),
                 field=FunctionOOPField(
                                 name='verticalScrollPosition',
@@ -4936,7 +5004,8 @@ DUMP_PARTIAL = [
                     "theLabel": """The label to get color. """
                 },
                 result='returns three int values, representing the amount of red, green, blue if successful. false otherwise.' ,
-            )
+            ),
+            url='guiLabelGetColor',
         ),
                 field=None,
                 is_static=False,
@@ -4989,7 +5058,8 @@ DUMP_PARTIAL = [
                     "theLabel": """The text label to get the font height from. """
                 },
                 result='returns the absolute height of the font currently used in the text label if the function is successful, false otherwise.' ,
-            )
+            ),
+            url='guiLabelGetFontHeight',
         ),
                 field=FunctionOOPField(
                                 name='fontHeight',
@@ -5050,7 +5120,8 @@ DUMP_PARTIAL = [
                     "theLabel": """The text label to get the text extent from. """
                 },
                 result='returns the absolute width of the current text inside the text label if the function is successful, false otherwise.' ,
-            )
+            ),
+            url='guiLabelGetTextExtent',
         ),
                 field=FunctionOOPField(
                                 name='textExtent',
@@ -5144,7 +5215,8 @@ DUMP_PARTIAL = [
                     "blue": """An integer specifying the amount of blue (0 to 255). """
                 },
                 result='returns true if the the color of the gui label was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='guiLabelSetColor',
         ),
                 field=None,
                 is_static=False,
@@ -5222,7 +5294,8 @@ DUMP_PARTIAL = [
                     "wordwrap": """Whether or not to enable wordwrap for the gui-label. """
                 },
                 result='returns true on success, false otherwise.' ,
-            )
+            ),
+            url='guiLabelSetHorizontalAlign',
         ),
                 field=FunctionOOPField(
                                 name='horizontalAlign',
@@ -5297,7 +5370,8 @@ DUMP_PARTIAL = [
 **"bottom" """
                 },
                 result='returns true on success, false otherwise.' ,
-            )
+            ),
+            url='guiLabelSetVerticalAlign',
         ),
                 field=FunctionOOPField(
                                 name='verticalAlign',
@@ -5358,7 +5432,8 @@ DUMP_PARTIAL = [
                     "theElement": """The memo box you want to get the caret position from """
                 },
                 result='returns the caret index on success, false otherwise.' ,
-            )
+            ),
+            url='guiMemoGetCaretIndex',
         ),
                 field=FunctionOOPField(
                                 name='caretIndex',
@@ -5419,7 +5494,8 @@ DUMP_PARTIAL = [
                     "theMemo": """: the guiCreateMemo|memo you want to know the vertical scroll position of. """
                 },
                 result='returns a float ranging between 0 and 100, or false otherwise.' ,
-            )
+            ),
+            url='guiMemoGetVerticalScrollPosition',
         ),
                 field=FunctionOOPField(
                                 name='verticalScrollPosition',
@@ -5480,7 +5556,8 @@ DUMP_PARTIAL = [
                     "theMemo": """The memo to check read-only status of. """
                 },
                 result='returns true if the memo is read only, false if the memo isnt read only, nil otherwise.' ,
-            )
+            ),
+            url='guiMemoIsReadOnly',
         ),
                 field=FunctionOOPField(
                                 name='readOnly',
@@ -5552,7 +5629,8 @@ DUMP_PARTIAL = [
                     "index": """An integer referring to the desired character position within the box. 0 would be before the first character in the box, 1 before the second, etc. """
                 },
                 result='returns true if the caret was successfully moved, false otherwise.' ,
-            )
+            ),
+            url='guiMemoSetCaretIndex',
         ),
                 field=FunctionOOPField(
                                 name='caretIndex',
@@ -5624,7 +5702,8 @@ DUMP_PARTIAL = [
                     "status": """A boolean value indicating whether read-only is to be enabled or disabled. """
                 },
                 result='returns true if the status was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='guiMemoSetReadOnly',
         ),
                 field=FunctionOOPField(
                                 name='readOnly',
@@ -5696,7 +5775,8 @@ DUMP_PARTIAL = [
                     "position": """: a float ranging between 0 and 100. """
                 },
                 result='returns true if the position was set, false otherwise.' ,
-            )
+            ),
+            url='guiMemoSetVerticalScrollPosition',
         ),
                 field=FunctionOOPField(
                                 name='verticalScrollPosition',
@@ -5757,7 +5837,8 @@ DUMP_PARTIAL = [
                     "guiElement": """the GUI element that you want to move to the back """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
-            )
+            ),
+            url='guiMoveToBack',
         ),
                 field=None,
                 is_static=False,
@@ -5909,7 +5990,8 @@ DUMP_PARTIAL = [
                     "alpha": """The visibility/transparency of the GUI element. Ranges from 0 (fully transparent) to 1 (fully opaque). Default value is 0.80. """
                 },
                 result='returns true if the gui elements alpha was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='guiSetAlpha',
         ),
                 field=FunctionOOPField(
                                 name='alpha',
@@ -5981,7 +6063,8 @@ DUMP_PARTIAL = [
                     "enabled": """the new state """
                 },
                 result='if the function succeeds it returns true, if it fails it returns false.' ,
-            )
+            ),
+            url='guiSetEnabled',
         ),
                 field=FunctionOOPField(
                                 name='enabled',
@@ -6053,7 +6136,8 @@ DUMP_PARTIAL = [
                     "font": """Either a custom GUI font element or the name of a built-in GUI font. See Standard GUI Font Names """
                 },
                 result='returns true if the font has been successfully set on the gui element, false otherwise.' ,
-            )
+            ),
+            url='guiSetFont',
         ),
                 field=FunctionOOPField(
                                 name='font',
@@ -6114,7 +6198,8 @@ DUMP_PARTIAL = [
                     "enabled": """true if input should go to GUI, false if it should go to the game. """
                 },
                 result='returns true if input mode could be changed, false if invalid parameters are passed.' ,
-            )
+            ),
+            url='guiSetInputEnabled',
         ),
                 field=FunctionOOPField(
                                 name='inputEnabled',
@@ -6178,7 +6263,8 @@ DUMP_PARTIAL = [
                     "no_binds_when_editing": """binds are always enabled except when an editable editbox or memo has input focus """
                 },
                 result='returns true if input mode could be changed, false if invalid parameters are passed.' ,
-            )
+            ),
+            url='guiSetInputMode',
         ),
                 field=FunctionOOPField(
                                 name='inputMode',
@@ -6272,7 +6358,8 @@ DUMP_PARTIAL = [
                     "relative": """Bool that indicates if the x/y positions are relative to the elements parent element. """
                 },
                 result='returns true if the position has been successfully set, false otherwise.' ,
-            )
+            ),
+            url='guiSetPosition',
         ),
                 field=FunctionOOPField(
                                 name='position',
@@ -6355,7 +6442,8 @@ DUMP_PARTIAL = [
                     "value": """the new value for the property. """
                 },
                 result='if the function succeeds it returns true, if it fails it returns false.' ,
-            )
+            ),
+            url='guiSetProperty',
         ),
                 field=None,
                 is_static=False,
@@ -6449,7 +6537,8 @@ DUMP_PARTIAL = [
                     "relative": """This is whether sizes and positioning are relative.  If this is true, then all x,y,width,height floats must be between 0 and 1, representing sizes relative to the parent. """
                 },
                 result='returns true if the gui elements size was set successfully, false otherwise.' ,
-            )
+            ),
+            url='guiSetSize',
         ),
                 field=None,
                 is_static=False,
@@ -6513,7 +6602,8 @@ DUMP_PARTIAL = [
                     "text": """The new text """
                 },
                 result='returns true if text has been successfully set on the gui element, false otherwise.' ,
-            )
+            ),
+            url='guiSetText',
         ),
                 field=FunctionOOPField(
                                 name='text',
@@ -6585,7 +6675,8 @@ DUMP_PARTIAL = [
                     "state": """the new visibility state """
                 },
                 result='returns true if the elements visibility could be changed, false otherwise.' ,
-            )
+            ),
+            url='guiSetVisible',
         ),
                 field=FunctionOOPField(
                                 name='visible',
@@ -6665,7 +6756,8 @@ DUMP_PARTIAL = [
                     "filename": """A string specifying the filepath of the image file being loaded in current resource. """
                 },
                 result='returns true if the the image in the static image element was successfully changed, false otherwise.' ,
-            )
+            ),
+            url='guiStaticImageLoadImage',
         ),
                 field=FunctionOOPField(
                                 name='image',
@@ -6783,7 +6875,8 @@ DUMP_PARTIAL = [
                     "status": """A boolean value indicating whether the window is movable or not. """
                 },
                 result='returns true if the function is successful, false otherwise.' ,
-            )
+            ),
+            url='guiWindowSetMovable',
         ),
                 field=FunctionOOPField(
                                 name='movable',
@@ -6855,7 +6948,8 @@ DUMP_PARTIAL = [
                     "status": """A boolean value indicating whether user resizing is to be enabled or disabled. """
                 },
                 result='returns true if the function is successful, false otherwise.' ,
-            )
+            ),
+            url='guiWindowSetSizable',
         ),
                 field=FunctionOOPField(
                                 name='sizable',
@@ -6907,7 +7001,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the chatbox is receiving input, false if not active.' ,
-            )
+            ),
+            url='isChatBoxInputActive',
         ),
                 field=FunctionOOPField(
                                 name='chatBoxInputActive',
@@ -6959,7 +7054,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the console is visible, false if not.' ,
-            )
+            ),
+            url='isConsoleActive',
         ),
                 field=FunctionOOPField(
                                 name='consoleActive',
@@ -7011,7 +7107,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the debug view is visible, false if not.' ,
-            )
+            ),
+            url='isDebugViewActive',
         ),
                 field=FunctionOOPField(
                                 name='debugViewActive',
@@ -7063,7 +7160,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the mainmenu is visible, false if not.' ,
-            )
+            ),
+            url='isMainMenuActive',
         ),
                 field=FunctionOOPField(
                                 name='mainMenuActive',
@@ -7115,7 +7213,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the focus is on the mta window, false if it isnt.' ,
-            )
+            ),
+            url='isMTAWindowActive',
         ),
                 field=None,
                 is_static=True,
@@ -7159,7 +7258,8 @@ DUMP_PARTIAL = [
                     
                 },
                 result='returns true if the file transfer box is visible, false if not.' ,
-            )
+            ),
+            url='isTransferBoxActive',
         ),
                 field=None,
                 is_static=True,
@@ -7212,7 +7312,8 @@ DUMP_PARTIAL = [
                     "enabled": """true if debug window should be visible, false otherwise. """
                 },
                 result='returns true, false if invalid parameters are passed.' ,
-            )
+            ),
+            url='setDebugViewActive',
         ),
                 field=FunctionOOPField(
                                 name='debugViewActive',

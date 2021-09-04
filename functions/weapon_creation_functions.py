@@ -84,7 +84,8 @@ DUMP_PARTIAL = [
                     "z": """The z position to create the weapon. """
                 },
                 result='returns a element/weapon|custom weapon element, which represents a weapon floating at that position.' ,
-            )
+            ),
+            url='createWeapon',
         )
         ],
     ),
@@ -130,7 +131,8 @@ DUMP_PARTIAL = [
                     "theWeapon": """The weapon to be fired. """
                 },
                 result='returns true if the shot weapon is valid and therefore the shot was fired, false otherwise.' ,
-            )
+            ),
+            url='fireWeapon',
         )
         ],
     ),
@@ -176,7 +178,8 @@ DUMP_PARTIAL = [
                     "theWeapon": """: The weapon to get the ammo of. """
                 },
                 result='returns an int|integer containing how many ammo left has the weapon. returns false if an error occured.' ,
-            )
+            ),
+            url='getWeaponAmmo',
         )
         ],
     ),
@@ -222,7 +225,8 @@ DUMP_PARTIAL = [
                     "theWeapon": """the weapon to get the clip ammo of. """
                 },
                 result='returns the amount of ammo in the element/weapon|custom weapons clip, false if an error occured.' ,
-            )
+            ),
+            url='getWeaponClipAmmo',
         )
         ],
     ),
@@ -268,7 +272,8 @@ DUMP_PARTIAL = [
                     "theWeapon": """The weapon to modify the firing rate of. """
                 },
                 result='returns an integer with the firing rate of the custom weapon, false otherwise.' ,
-            )
+            ),
+            url='getWeaponFiringRate',
         )
         ],
     ),
@@ -338,7 +343,8 @@ DUMP_PARTIAL = [
                     "shoot_if_blocked": """: if enabled, the weapon still fires its target even if its blocked by something. """
                 },
                 result='returns the true or false on success (flags flag returns 8 values) if the flag is enabled or not. returns false if the weapon element isnt valid or an error occured.' ,
-            )
+            ),
+            url='getWeaponFlags',
         )
         ],
     ),
@@ -384,7 +390,8 @@ DUMP_PARTIAL = [
                     "theWeapon": """The weapon to get the owner of. """
                 },
                 result='this function was intended to return the player which owns the element/weapon|custom weapon, and false if an error occured. however, at the moment it always returns false.' ,
-            )
+            ),
+            url='getWeaponOwner',
         )
         ],
     ),
@@ -430,7 +437,8 @@ DUMP_PARTIAL = [
                     "theWeapon": """the Element/Weapon|weapon to get the state of. """
                 },
                 result='* a string if the element/weapon|weapon is valid, indicating the weapon state, which can be:\n** reloading: the weapon is reloading.\n** firing: the weapon is constantly shooting (unless any shooting blocking flags are set) according to its assigned firing rate.\n** ready: the weapon is idle.\n* false if an error occured or the element/weapon|weapon is invalid.' ,
-            )
+            ),
+            url='getWeaponState',
         )
         ],
     ),
@@ -476,7 +484,8 @@ DUMP_PARTIAL = [
                     "theWeapon": """The weapon to get the target of. """
                 },
                 result='* returns the target of the element/weapon|custom weapon, which can be:\n**nil if the weapon is in rotation based targeting.\n**3 float|floats if the weapon is firing at a fixed point.\n**an element if the weapon is firing an entity.\n* returns false if the weapon element is not valid.' ,
-            )
+            ),
+            url='getWeaponTarget',
         )
         ],
     ),
@@ -522,7 +531,8 @@ DUMP_PARTIAL = [
                     "theWeapon": """the weapon to reset the firing rate of. """
                 },
                 result='returns true on success, false otherwise.' ,
-            )
+            ),
+            url='resetWeaponFiringRate',
         )
         ],
     ),
@@ -579,7 +589,8 @@ DUMP_PARTIAL = [
                     "clipAmmo": """The amount of ammo in the clip. """
                 },
                 result='this function returns true if the arguments are valid and the weapon clip ammo could be changed; false otherwise.' ,
-            )
+            ),
+            url='setWeaponClipAmmo',
         )
         ],
     ),
@@ -636,7 +647,8 @@ DUMP_PARTIAL = [
                     "firingRate": """The weapon firing rate. It seems to be a kind of frecuency value, so the lower the quicker the Element/Weapon|custom weapon will shoot. """
                 },
                 result='returns true on success, false otherwise.' ,
-            )
+            ),
+            url='setWeaponFiringRate',
         )
         ],
     ),
@@ -717,7 +729,8 @@ DUMP_PARTIAL = [
                     "enable": """: whether to enable or disable the specified flag. """
                 },
                 result='returns true if all arguments are valid and the flags where changed; false otherwise.' ,
-            )
+            ),
+            url='setWeaponFlags',
         )
         ],
     ),
@@ -777,7 +790,8 @@ DUMP_PARTIAL = [
                     "ready": """: makes the weapon stop reloading or firing. """
                 },
                 result='returns true on success, false otherwise.' ,
-            )
+            ),
+            url='setWeaponState',
         )
         ],
     ),
@@ -880,7 +894,8 @@ DUMP_PARTIAL = [
                     "targetZ": """The target Z. """
                 },
                 result='returns true on success, false otherwise.\nreturns true on success, false otherwise.\nreturns true on success, false otherwise.' ,
-            )
+            ),
+            url='setWeaponTarget',
         )
         ],
     )
