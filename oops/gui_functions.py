@@ -10,7 +10,7 @@ from to_python.core.types import FunctionType, \
     CompoundOOPData, \
     FunctionData, \
     CompoundFunctionData
-    
+
 DUMP_PARTIAL = [
     CompoundOOPData(
         server=[
@@ -1014,7 +1014,14 @@ DUMP_PARTIAL = [
             
         ],
         client=[
-            
+            FunctionOOP(
+                description=None,
+                base_function_name="guiCreateRadioButton",
+                class_name='Element/GUI/Radio button|GuiRadioButton',
+                method=None,
+                field=None,
+                is_static=True,
+            )
         ],
     ),
     CompoundOOPData(
@@ -5866,7 +5873,61 @@ DUMP_PARTIAL = [
             
         ],
         client=[
-            
+            FunctionOOP(
+                description=None,
+                base_function_name="guiRadioButtonGetSelected",
+                class_name='Element/GUI/Radio button|GuiRadioButton',
+                method=FunctionData(
+            signature=FunctionSignature(
+                name='getSelected',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='guiRadioButton',
+                                argument_type=FunctionType(
+                                    names=['element'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='This function gets a radio buttons selection state.' ,
+                arguments={
+                    "guiRadioButton": """The radio button you wish to retrieve the selection state of. """
+                },
+                result='returns true if the radio button is selected, false if it is not.' ,
+            ),
+            url='guiRadioButtonGetSelected',
+        ),
+                field=FunctionOOPField(
+                                name='selected',
+                                types=[
+                                    FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                                ],
+                            ),
+                is_static=False,
+            )
         ],
     ),
     CompoundOOPData(
@@ -5874,7 +5935,72 @@ DUMP_PARTIAL = [
             
         ],
         client=[
-            
+            FunctionOOP(
+                description=None,
+                base_function_name="guiRadioButtonSetSelected",
+                class_name='Element/GUI/Radio button|GuiRadioButton',
+                method=FunctionData(
+            signature=FunctionSignature(
+                name='setSelected',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='guiRadioButton',
+                                argument_type=FunctionType(
+                                    names=['element'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='state',
+                                argument_type=FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='This function selects or unselects a radio button.' ,
+                arguments={
+                    "guiRadioButton": """The GUI radio button in which you wish to change the selection state of """,
+                    "state": """The state of the radio button, where true indicates selected, and false indicates unselected. """
+                },
+                result='returns true if the radio buttons selection state was successfully set, false otherwise.' ,
+            ),
+            url='guiRadioButtonSetSelected',
+        ),
+                field=FunctionOOPField(
+                                name='selected',
+                                types=[
+                                    FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                                ],
+                            ),
+                is_static=False,
+            )
         ],
     ),
     CompoundOOPData(

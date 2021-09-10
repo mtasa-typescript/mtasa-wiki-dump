@@ -10,7 +10,7 @@ from to_python.core.types import FunctionType, \
     CompoundOOPData, \
     FunctionData, \
     CompoundFunctionData
-    
+
 DUMP_PARTIAL = [
     CompoundOOPData(
         server=[

@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     EventData, \
     CompoundEventData
-    
+
 DUMP_PARTIAL = [
     CompoundEventData(
         server=[

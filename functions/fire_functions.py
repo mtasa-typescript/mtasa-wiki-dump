@@ -7,7 +7,7 @@ from to_python.core.types import FunctionType, \
     FunctionDoc, \
     FunctionData, \
     CompoundFunctionData
-     
+
 DUMP_PARTIAL = [
     CompoundFunctionData(
         server=[
@@ -79,7 +79,7 @@ DUMP_PARTIAL = [
                 description='Creates a patch of fire that will spread a bit and die out after a while. Because its a client side only function, other players wont see it, so custom events or custom objects will be needed to make a fire visible to some players.' ,
                 arguments={
                     "x, y, z": """the coordinates when the initial patch of fire will be created. """,
-                    "size": """a float value indicating the size of the initial patch of fire. It will also make the fire to stay alive more or less time. """
+                    "size": """a float value indicating the size of the initial patch of fire, this value also affects the duration of how long the fire remains. """
                 },
                 result='returns true if successful, false if bad arguments were passed or the limit of active fires was reached. there can be a maximum of 60 active fires.' ,
             ),
