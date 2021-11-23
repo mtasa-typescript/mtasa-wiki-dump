@@ -1323,7 +1323,7 @@ DUMP_PARTIAL = [
                         ],
                         [
                             FunctionArgument(
-                                name='bone',
+                                name='boneId',
                                 argument_type=FunctionType(
                                     names=['int'],
                                     is_optional=False,
@@ -1339,10 +1339,10 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='* Element/Player|Player\n* Element/Ped|Ped' ,
+                description='' ,
                 arguments={
                     "theElement": """the element to get the bone matrix on. """,
-                    "bone": """the ID of the bone to get the matrix of. See Bone IDs """
+                    "boneId": """the ID of the bone to get the matrix of. See Bone IDs. """
                 },
                 result='returns a multi-dimensional array (which can be transformed into a proper matrix class using matrix.create method) containing a 4x4 matrix. returns false if invalid arguments were passed.' ,
             ),
@@ -1389,7 +1389,7 @@ DUMP_PARTIAL = [
                         ],
                         [
                             FunctionArgument(
-                                name='bone',
+                                name='boneId',
                                 argument_type=FunctionType(
                                     names=['int'],
                                     is_optional=False,
@@ -1405,12 +1405,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='* Element/Player|Player\n* Element/Ped|Ped' ,
+                description='' ,
                 arguments={
                     "theElement": """the element to get the bone position on. """,
-                    "bone": """the ID of the bone to get the position of. See Bone IDs """
+                    "boneId": """the ID of the bone to get the position of. See Bone IDs. """
                 },
-                result='returns the x, y, z world position of the bone.' ,
+                result='returns 3 float|floats, representing the x, y, z world position of the bone.' ,
             ),
             url='getElementBonePosition',
         )
@@ -1455,7 +1455,7 @@ DUMP_PARTIAL = [
                         ],
                         [
                             FunctionArgument(
-                                name='bone',
+                                name='boneId',
                                 argument_type=FunctionType(
                                     names=['int'],
                                     is_optional=False,
@@ -1471,12 +1471,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='* Element/Player|Player\n* Element/Ped|Ped' ,
+                description='' ,
                 arguments={
                     "theElement": """the element to get the bone rotation on. """,
-                    "bone": """the ID of the bone to get the rotation of. See Bone IDs """
+                    "boneId": """the ID of the bone to get the rotation of. See Bone IDs. """
                 },
-                result='returns the yaw, pitch, roll rotation values.' ,
+                result='returns 3 float|floats, representing the yaw, pitch, roll rotation values.' ,
             ),
             url='getElementBoneRotation',
         )
@@ -3467,7 +3467,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description='This function is used to retrieve a list of all elements in a colshape, of the specified type.\n* For legacy reasons, a colshape created on the client does not collide with elements already existing at that location until they first move\n* This function doesnt verify whether elements are in the same dimension and interior, additional checks could be implemented manually if they are needed' ,
+                description='This function is used to retrieve a list of all elements in a colshape, of the specified type.\n* For legacy reasons, a colshape created on the client does not collide with elements already existing at that location until they first move.\n* This function doesnt verify whether elements are in the same dimension and interior, additional checks could be implemented manually if they are needed.' ,
                 arguments={
                     "theShape": """The colshape you want to get the elements from. """,
                     "elemType": """The type of element you want a list of. This can be any element type, the common ones being: """,
@@ -3527,7 +3527,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description='This function is used to retrieve a list of all elements in a colshape, of the specified type.\n* For legacy reasons, a colshape created on the client does not collide with elements already existing at that location until they first move\n* This function doesnt verify whether elements are in the same dimension and interior, additional checks could be implemented manually if they are needed' ,
+                description='This function is used to retrieve a list of all elements in a colshape, of the specified type.\n* For legacy reasons, a colshape created on the client does not collide with elements already existing at that location until they first move.\n* This function doesnt verify whether elements are in the same dimension and interior, additional checks could be implemented manually if they are needed.' ,
                 arguments={
                     "theShape": """The colshape you want to get the elements from. """,
                     "elemType": """The type of element you want a list of. This can be any element type, the common ones being: """,
@@ -3639,19 +3639,19 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description='* This function checks if elements are in a box, not in a sphere.\n* Z argument isnt in use currently, but make your scripts like it is for future compatibility reasons.\n* This function doesnt work with elements which is created by createElement.}}' ,
+                description='This function is used to retrieve a list of all elements of specified type within a range of 3D coordinates.\n* This function checks if elements are in a box, not in a sphere.\n* Z argument isnt in use currently, but make your scripts like it is for future compatibility reasons.\n* This function doesnt work with elements which is created by createElement.}}' ,
                 arguments={
-                    "x": """the x coordinate at which to retrieve elements """,
-                    "y": """the y coordinate at which to retrieve elements """,
-                    "z": """the z coordinate at which to retrieve elements """,
-                    "range": """the range at the coordinates in which to retrieve elements """,
+                    "x": """the x coordinate at which to retrieve elements. """,
+                    "y": """the y coordinate at which to retrieve elements. """,
+                    "z": """the z coordinate at which to retrieve elements. """,
+                    "range": """the range at the coordinates in which to retrieve elements. """,
                     "elemType": """The type of element you want a list of. This can be any element type, such as: """,
-                    "player": """A player connected to the server """,
-                    "ped": """A ped """,
-                    "vehicle": """A vehicle """,
-                    "object": """An object """,
-                    "pickup": """A pickup """,
-                    "marker": """A marker """,
+                    "player": """A player connected to the server. """,
+                    "ped": """A ped. """,
+                    "vehicle": """A vehicle. """,
+                    "object": """An object. """,
+                    "pickup": """A pickup. """,
+                    "marker": """A marker. """,
                     "interior": """The interior you want to limit the search to. If not specified, it can return elements in any interior. """,
                     "dimension": """The dimension you want to limit the search to. If not specified, it can return elements in any dimension. """
                 },
@@ -3753,19 +3753,19 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description='* This function checks if elements are in a box, not in a sphere.\n* Z argument isnt in use currently, but make your scripts like it is for future compatibility reasons.\n* This function doesnt work with elements which is created by createElement.}}' ,
+                description='This function is used to retrieve a list of all elements of specified type within a range of 3D coordinates.\n* This function checks if elements are in a box, not in a sphere.\n* Z argument isnt in use currently, but make your scripts like it is for future compatibility reasons.\n* This function doesnt work with elements which is created by createElement.}}' ,
                 arguments={
-                    "x": """the x coordinate at which to retrieve elements """,
-                    "y": """the y coordinate at which to retrieve elements """,
-                    "z": """the z coordinate at which to retrieve elements """,
-                    "range": """the range at the coordinates in which to retrieve elements """,
+                    "x": """the x coordinate at which to retrieve elements. """,
+                    "y": """the y coordinate at which to retrieve elements. """,
+                    "z": """the z coordinate at which to retrieve elements. """,
+                    "range": """the range at the coordinates in which to retrieve elements. """,
                     "elemType": """The type of element you want a list of. This can be any element type, such as: """,
-                    "player": """A player connected to the server """,
-                    "ped": """A ped """,
-                    "vehicle": """A vehicle """,
-                    "object": """An object """,
-                    "pickup": """A pickup """,
-                    "marker": """A marker """,
+                    "player": """A player connected to the server. """,
+                    "ped": """A ped. """,
+                    "vehicle": """A vehicle. """,
+                    "object": """An object. """,
+                    "pickup": """A pickup. """,
+                    "marker": """A marker. """,
                     "interior": """The interior you want to limit the search to. If not specified, it can return elements in any interior. """,
                     "dimension": """The dimension you want to limit the search to. If not specified, it can return elements in any dimension. """
                 },
@@ -6275,7 +6275,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                         ],
                         [
                             FunctionArgument(
-                                name='bone',
+                                name='boneId',
                                 argument_type=FunctionType(
                                     names=['int'],
                                     is_optional=False,
@@ -6301,11 +6301,16 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description='* Element/Player|Player\n* Element/Ped|Ped' ,
+                description='' ,
                 arguments={
                     "theElement": """the element to set the bone matrix on. """,
-                    "bone": """the ID of the bone. See Bone IDs """,
-                    "matrix": """the MTA matrix to set. """
+                    "boneID": """the ID of the bone. See Bone IDs. """,
+                    "X": """The X coordinate of the matrix. """,
+                    "Y": """The Y coordinate of the matrix. """,
+                    "Z": """The Z coordinate of the matrix. """,
+                    "rotationX": """The X rotation of the matrix. """,
+                    "rotationY": """The Y rotation of the matrix. """,
+                    "rotationZ": """The Z rotation of the matrix. """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
             ),
@@ -6344,7 +6349,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                         ],
                         [
                             FunctionArgument(
-                                name='bone',
+                                name='boneId',
                                 argument_type=FunctionType(
                                     names=['int'],
                                     is_optional=False,
@@ -6390,13 +6395,13 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description='* Element/Player|Player\n* Element/Ped|Ped' ,
+                description='' ,
                 arguments={
-                    "theElement": """the element to set the bone position on. """,
-                    "bone": """the ID of the bone to set the position of. See Bone IDs """,
-                    "x": """The x coordinate of the destination. """,
-                    "y": """The y coordinate of the destination. """,
-                    "z": """The z coordinate of the destination. """
+                    "theElement": """the Element|element to set the bone position on. """,
+                    "boneId": """the ID of the bone to set the position of. See Bone IDs. """,
+                    "x": """The X coordinate of the destination. """,
+                    "y": """The Y coordinate of the destination. """,
+                    "z": """The Z coordinate of the destination. """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
             ),
@@ -6435,7 +6440,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                         ],
                         [
                             FunctionArgument(
-                                name='bone',
+                                name='boneId',
                                 argument_type=FunctionType(
                                     names=['int'],
                                     is_optional=False,
@@ -6481,15 +6486,15 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description='* Element/Player|Player\n* Element/Ped|Ped' ,
+                description='' ,
                 arguments={
-                    "theElement": """the element to set the bone rotation on. """,
-                    "bone": """the ID of the bone to set the rotation of. See Bone IDs """,
-                    "yaw": """the yaw rotation value. """,
-                    "pitch": """the pitch rotation value. """,
-                    "roll": """the roll rotation value. """
+                    "theElement": """The element to set the bone rotation on. """,
+                    "boneId": """The ID of the bone to set the rotation of. See Bone IDs. """,
+                    "yaw": """The yaw rotation value. """,
+                    "pitch": """The pitch rotation value. """,
+                    "roll": """The roll rotation value. """
                 },
-                result='returns true if the function was successful, false otherwise.\nnote: updateelementrphanim must be called after this function to apply bone rotation.' ,
+                result='returns true if the function was successful, false otherwise.' ,
             ),
             url='setElementBoneRotation',
         )
@@ -8841,9 +8846,9 @@ Specifying a rotation order other than ''"default"'' allows the same angles to b
                 ],
             ),
             docs=FunctionDoc(
-                description='* Element/Player|Player\n* Element/Ped|Ped\nThis function must be called after setElementBoneRotation for changes to take effect. It should only be called once per frame, after you are done rotating bones on that element, as it is quite heavy.' ,
+                description='' ,
                 arguments={
-                    "theElement": """the element to update. """
+                    "theElement": """the element to update the bone animations. """
                 },
                 result='returns true if successful, false otherwise.' ,
             ),

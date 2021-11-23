@@ -23,9 +23,7 @@ DUMP_PARTIAL = [
                     "r": """The amount of red in the color of the text. """,
                     "g": """The amount of green in the color of the text. """,
                     "b": """The amount of blue in the color of the text. """,
-                    "messageType": """The type of message as a number.
-|20912}}
-This function is used to change the loop option of the [[sound]] [[element]]. """
+                    "messageType": """The type of message as a number. """
                 },
                 result='' ,
             ),
@@ -550,8 +548,8 @@ This function is used to change the loop option of the [[sound]] [[element]]. ""
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "downloadedSizeTotal": """total progress in bytes """,
-                    "downloadTotalBytes": """download total size in bytes """
+                    "downloadedSizeTotal": """The total progress in bytes. """,
+                    "downloadTotalBytes": """The total size of the download in bytes. """
                 },
                 result='' ,
             ),
@@ -593,7 +591,7 @@ This function is used to change the loop option of the [[sound]] [[element]]. ""
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "isVisible": """boolean, whether the transfer box is visible now """
+                    "isVisible": """A boolean, indicating the new visibility status of the transfer box. """
                 },
                 result='' ,
             ),

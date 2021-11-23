@@ -36,6 +36,7 @@ from to_python.dump.functions.searchlight_functions import DUMP_PARTIAL as DP_F_
 from to_python.dump.functions.server_functions import DUMP_PARTIAL as DP_F_SERVER_FUNCTIONS
 from to_python.dump.functions.settings_registry_functions import DUMP_PARTIAL as DP_F_SETTINGS_REGISTRY_FUNCTIONS
 from to_python.dump.functions.sql_functions import DUMP_PARTIAL as DP_F_SQL_FUNCTIONS
+from to_python.dump.functions.svg_functions import DUMP_PARTIAL as DP_F_SVG_FUNCTIONS
 from to_python.dump.functions.team_functions import DUMP_PARTIAL as DP_F_TEAM_FUNCTIONS
 from to_python.dump.functions.text_functions import DUMP_PARTIAL as DP_F_TEXT_FUNCTIONS
 from to_python.dump.functions.utf8_library import DUMP_PARTIAL as DP_F_UTF8_LIBRARY
@@ -85,6 +86,7 @@ DUMP_FUNCTIONS = [
     *DP_F_SERVER_FUNCTIONS,
     *DP_F_SETTINGS_REGISTRY_FUNCTIONS,
     *DP_F_SQL_FUNCTIONS,
+    *DP_F_SVG_FUNCTIONS,
     *DP_F_TEAM_FUNCTIONS,
     *DP_F_TEXT_FUNCTIONS,
     *DP_F_UTF8_LIBRARY,
@@ -135,6 +137,7 @@ from to_python.dump.oops.searchlight_functions import DUMP_PARTIAL as DP_O_SEARC
 from to_python.dump.oops.server_functions import DUMP_PARTIAL as DP_O_SERVER_FUNCTIONS
 from to_python.dump.oops.settings_registry_functions import DUMP_PARTIAL as DP_O_SETTINGS_REGISTRY_FUNCTIONS
 from to_python.dump.oops.sql_functions import DUMP_PARTIAL as DP_O_SQL_FUNCTIONS
+from to_python.dump.oops.svg_functions import DUMP_PARTIAL as DP_O_SVG_FUNCTIONS
 from to_python.dump.oops.team_functions import DUMP_PARTIAL as DP_O_TEAM_FUNCTIONS
 from to_python.dump.oops.text_functions import DUMP_PARTIAL as DP_O_TEXT_FUNCTIONS
 from to_python.dump.oops.utf8_library import DUMP_PARTIAL as DP_O_UTF8_LIBRARY
@@ -184,6 +187,7 @@ DUMP_OOPS = [
     *DP_O_SERVER_FUNCTIONS,
     *DP_O_SETTINGS_REGISTRY_FUNCTIONS,
     *DP_O_SQL_FUNCTIONS,
+    *DP_O_SVG_FUNCTIONS,
     *DP_O_TEAM_FUNCTIONS,
     *DP_O_TEXT_FUNCTIONS,
     *DP_O_UTF8_LIBRARY,

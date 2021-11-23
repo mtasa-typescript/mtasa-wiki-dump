@@ -454,7 +454,7 @@ DUMP_PARTIAL = [
                     arguments=[
                         [
                             FunctionArgument(
-                                name='modelID',
+                                name='modelId',
                                 argument_type=FunctionType(
                                     names=['int'],
                                     is_optional=False,
@@ -472,9 +472,9 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "modelID": """: ID of the model """
+                    "modelId": """: The ID of the model. """
                 },
-                result='returns timeon, timeoff' ,
+                result='returns 2 integers, indicating timeon and timeoff.' ,
             ),
             url='engineGetModelVisibleTime',
         )
@@ -1288,12 +1288,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='*before release 1.5.8-20716 this must be ped.' ,
+                description='*Before release 1.5.8 r20716 this must be ped.' ,
                 arguments={
                     "elementType": """: ped, vehicle and object. """,
-                    "parentID": """: The Vehicle IDs|vehicle ID of the vehicle being allocated. (By default this is: 1337 - objects, 400 - vehicles, 7 or PSYCHO for peds) """
+                    "parentID": """: The model ID of the model being allocated. (By default this is: 1337 - objects, 400 - vehicles, 7 - peds) """
                 },
-                result='do not rely on the model numbers returned being consistent across multiple clients or multiple runs of resources. there is no guarantee for the order of the numbers or that the same numbers will always correspond to the same element type. any patterns are coincidental' ,
+                result='do not rely on the model numbers returned being consistent across multiple clients or multiple runs of resources. there is no guarantee for the order of the numbers or that the same numbers will always correspond to the same element type. any patterns are coincidental.' ,
             ),
             url='engineRequestModel',
         )
@@ -1932,9 +1932,9 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "modelID": """: ID of the model """,
-                    "timeOn": """: value between 0 and 24 that states when the model should appear """,
-                    "timeOff": """: value between 0 and 24 that states when the model should disappear """
+                    "modelID": """: The ID of the model. """,
+                    "timeOn": """: Value between 0 and 24 that states when the model should appear. """,
+                    "timeOff": """: Value between 0 and 24 that states when the model should disappear. """
                 },
                 result='returns true if the change was successful, false otherwise.' ,
             ),
@@ -2077,6 +2077,91 @@ DUMP_PARTIAL = [
                 result='returns true if the function executed succesfully, false otherwise.' ,
             ),
             url='engineSetSurfaceProperties',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
+                name='engineStreamingFreeUpMemory',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='bytes',
+                                argument_type=FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='' ,
+                arguments={
+                    "bytes": """The amount of RAM to be freed up in bytes. """
+                },
+                result='* returns true if the function has succeeded, false otherwise.' ,
+            ),
+            url='engineStreamingFreeUpMemory',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
+                name='engineStreamingGetUsedMemory',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='' ,
+                arguments={
+                    
+                },
+                result='* returns a int containing the amount of memory in bytes.' ,
+            ),
+            url='engineStreamingGetUsedMemory',
         )
         ],
     )

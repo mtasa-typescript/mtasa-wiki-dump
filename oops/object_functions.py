@@ -203,8 +203,8 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "theObject": """: the object you wish to get a property of. """,
-                    "property": """: the property you want to get the value of:
+                    "theObject": """the object you wish to get a property of. """,
+                    "property": """the property you want to get the value of:
 <div style="padding-left:20px">
 * "all" - ''table'' with values of all properties below (OOP method: ''getProperties'')
 </div> """
@@ -479,9 +479,9 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "theObject": """The object """
+                    "theObject": """The object element. """
                 },
-                result='* true if the object is moving.\n* false if the object is not moving.' ,
+                result='* returns true if the object is moving, false otherwise.' ,
             ),
             url='isObjectMoving',
         ),
@@ -1103,9 +1103,9 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "theObject": """: the object you wish to change a property of. """,
-                    "property": """: the property you want to set the value of: """,
-                    "value": """: the new value for the property. """
+                    "theObject": """the object you wish to change a property of. """,
+                    "property": """the property you want to set the value of: """,
+                    "value": """the new value for the property. """
                 },
                 result='returns true if the property was set successfully, false otherwise.' ,
             ),

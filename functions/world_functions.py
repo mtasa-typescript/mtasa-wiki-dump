@@ -1644,11 +1644,11 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='This function gets the Z level of the lowest roof above a point.\nIt is required that the point is near enough to the local player so that its within the area where collision data is loaded.}}' ,
+                description='' ,
                 arguments={
-                    "x": """: A floating point number representing the X world coordinate of the point. """,
-                    "y": """: A floating point number representing the Y world coordinate of the point. """,
-                    "z": """: A floating point number representing the Z world coordinate of the point. """
+                    "x": """: A float representing the X world coordinate of the point. """,
+                    "y": """: A float representing the Y world coordinate of the point. """,
+                    "z": """: A float representing the Z world coordinate of the point. """
                 },
                 result='returns a float with the lowest roof-level z coord if parameters are valid, false if the point you tried to test is outside the loaded world map.' ,
             ),
@@ -3619,7 +3619,7 @@ DUMP_PARTIAL = [
                 arguments={
                     
                 },
-                result='returns true if the blur level was reset successfully. returns false otherwise.' ,
+                result='returns true if the blur level was reset successfully, false otherwise.' ,
             ),
             url='resetBlurLevel',
         )
@@ -7806,10 +7806,10 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 ],
             ),
             docs=FunctionDoc(
-                description='This function allows you to disable world sounds. A world sound is a sound effect which has not been caused by playSound or playSound3D.\n*The values for group and index can be determined by using the client command Client_Commands#showsound|showsound in conjunction with setDevelopmentMode\n*This function does not affect sounds which are already playing, such as the wind sound that can only be stopped by entering an interior.\n* See also: setAmbientSoundEnabled}}' ,
+                description='This function allows you to disable world sounds. A world sound is a sound effect which has not been caused by playSound or playSound3D.\n*The values for group and index can be determined by using the client command Client_Commands#showsound|showsound in conjunction with setDevelopmentMode.\n*This function does not affect sounds which are already playing, such as the wind sound that can only be stopped by entering an interior.\n* See also: setAmbientSoundEnabled.}}' ,
                 arguments={
-                    "group": """An int|integer representing the World sound groups|world sound group """,
-                    "enable": """Set to false to disable, true to enable """,
+                    "group": """An int|integer representing the World sound groups|world sound group. """,
+                    "enable": """Set to false to disable, true to enable. """,
                     "index": """An int|integer representing an individual sound within the group """,
                     "immediate": """A boolean if set to true will cancel the sound if its already playing. This parameter only works for stopping the sound. """
                 },

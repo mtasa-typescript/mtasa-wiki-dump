@@ -1471,92 +1471,6 @@ DUMP_PARTIAL = [
     ),
     CompoundFunctionData(
         server=[
-            FunctionData(
-            signature=FunctionSignature(
-                name='getTrainTrack',
-                return_types=FunctionReturnTypes(
-                    return_types=[
-                        FunctionType(
-                                    names=['int'],
-                                    is_optional=False,
-                                )
-                    ],
-                    variable_length=False,
-                ),
-                arguments=FunctionArgumentValues(
-                    arguments=[
-                        [
-                            FunctionArgument(
-                                name='train',
-                                argument_type=FunctionType(
-                                    names=['vehicle'],
-                                    is_optional=False,
-                                ),
-                                default_value=None,
-                            )
-                        ]
-                    ],
-                    variable_length=False,
-                ),
-                generic_types=[
-                    
-                ],
-            ),
-            docs=FunctionDoc(
-                description='Gets the track of a train' ,
-                arguments={
-                    "train": """the train of which to get the track. """
-                },
-                result='returns an integer (whole number) that represents the train track, false if there is problem with train element.' ,
-            ),
-            url='getTrainTrack',
-        )
-        ],
-        client=[
-            FunctionData(
-            signature=FunctionSignature(
-                name='getTrainTrack',
-                return_types=FunctionReturnTypes(
-                    return_types=[
-                        FunctionType(
-                                    names=['int'],
-                                    is_optional=False,
-                                )
-                    ],
-                    variable_length=False,
-                ),
-                arguments=FunctionArgumentValues(
-                    arguments=[
-                        [
-                            FunctionArgument(
-                                name='train',
-                                argument_type=FunctionType(
-                                    names=['vehicle'],
-                                    is_optional=False,
-                                ),
-                                default_value=None,
-                            )
-                        ]
-                    ],
-                    variable_length=False,
-                ),
-                generic_types=[
-                    
-                ],
-            ),
-            docs=FunctionDoc(
-                description='Gets the track of a train' ,
-                arguments={
-                    "train": """the train of which to get the track. """
-                },
-                result='returns an integer (whole number) that represents the train track, false if there is problem with train element.' ,
-            ),
-            url='getTrainTrack',
-        )
-        ],
-    ),
-    CompoundFunctionData(
-        server=[
             
         ],
         client=[
@@ -2667,12 +2581,12 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='This function returns the position of the dummy for the given vehicle.}}' ,
+                description='' ,
                 arguments={
-                    "theVehicle": """The vehicle you want to get the dummy positions from """,
-                    "dummy": """The dummy whose position you want to get """
+                    "theVehicle": """The vehicle you want to get the dummy positions from. """,
+                    "dummy": """The dummy whose position you want to get. """
                 },
-                result='returns three floats indicating the position x, y and z of the vehicles dummy. it returns false otherwise.\nthis is a command to get the position of the players vehicle dummy position specified as an argument.\n<syntaxhighlight lang=lua>\nfunction getdummyposition(cmd, dummy)\nif (not dummy) then\nreturn false\nend\nlocal veh = getpedoccupiedvehicle(localplayer)\nif (not veh) then\noutputchatbox(you should be in a vehicle to use this command, 255, 25, 25)\nreturn false\nend\nlocal x, y, z = getvehicledummyposition(veh, dummy)\noutputchatbox(x: ..x.., y: ..y.., z: ..z, 0, 255, 0)\nend\naddcommandhandler(getdummy, getdummyposition)\n</syntaxhighlight>' ,
+                result='returns 3 float|floats indicating the position x, y and z of the vehicles dummy. it returns false otherwise.' ,
             ),
             url='getVehicleDummyPosition',
         )
@@ -3344,7 +3258,7 @@ OR """,
                     arguments=[
                         [
                             FunctionArgument(
-                                name='modelID',
+                                name='modelId',
                                 argument_type=FunctionType(
                                     names=['int'],
                                     is_optional=False,
@@ -3370,12 +3284,12 @@ OR """,
                 ],
             ),
             docs=FunctionDoc(
-                description='This function gets the default position of the dummies contained in a vehicle model.' ,
+                description='' ,
                 arguments={
-                    "modelID": """: The model ID which you want to apply the change to """,
-                    "dummy": """: The dummy whose position you want to get """
+                    "modelId": """: The model ID which you want to apply the change to. """,
+                    "dummy": """: The dummy whose position you want to get. """
                 },
-                result='returns three floats indicating the default position x, y and z of the given dummy. it returns false otherwise.' ,
+                result='returns 3 float|floats indicating the default position x, y and z of the given dummy. it returns false otherwise.' ,
             ),
             url='getVehicleModelDummyDefaultPosition',
         )
@@ -5579,11 +5493,11 @@ OR """,
                 ],
             ),
             docs=FunctionDoc(
-                description='This function gets the variant of a specified vehicle. In GTA SA some vehicles are different for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default GTA SA variant list see: Vehicle variants' ,
+                description='This function gets the variant of a specified vehicle. In GTA: San Andreas some vehicles are different; for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default variant list see: Vehicle variants.' ,
                 arguments={
-                    "theVehicle": """A handle to the vehicle that you want to get the variant of. """
+                    "theVehicle": """The vehicle that you want to get the variant of. """
                 },
-                result='on success:\n* int: an integer for the first vehicle variant see vehicle variants\n* int: an integer for the second vehicle variant see vehicle variants\non failure:\n* bool: false because the specified vehicle didnt exist' ,
+                result='returns 2 int containing the vehicle variants, false otherwise (the specified vehicle doesnt exist).' ,
             ),
             url='getVehicleVariant',
         )
@@ -5625,11 +5539,11 @@ OR """,
                 ],
             ),
             docs=FunctionDoc(
-                description='This function gets the variant of a specified vehicle. In GTA SA some vehicles are different for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default GTA SA variant list see: Vehicle variants' ,
+                description='This function gets the variant of a specified vehicle. In GTA: San Andreas some vehicles are different; for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default variant list see: Vehicle variants.' ,
                 arguments={
-                    "theVehicle": """A handle to the vehicle that you want to get the variant of. """
+                    "theVehicle": """The vehicle that you want to get the variant of. """
                 },
-                result='on success:\n* int: an integer for the first vehicle variant see vehicle variants\n* int: an integer for the second vehicle variant see vehicle variants\non failure:\n* bool: false because the specified vehicle didnt exist' ,
+                result='returns 2 int containing the vehicle variants, false otherwise (the specified vehicle doesnt exist).' ,
             ),
             url='getVehicleVariant',
         )
@@ -7172,11 +7086,11 @@ OR """,
                 ],
             ),
             docs=FunctionDoc(
-                description='This function resets the vehicle dependent dummy positions to the vehicles current model dummy positions.}}' ,
+                description='' ,
                 arguments={
-                    "theVehicle": """The vehicle to reset """
+                    "theVehicle": """The vehicle to reset the dummy positions. """
                 },
-                result='returns true for success, false otherwise.' ,
+                result='returns true if the dummy positions have been reset, false otherwise.' ,
             ),
             url='resetVehicleDummyPositions',
         )
@@ -8045,114 +7959,6 @@ OR """,
                 result='returns true if successful, false otherwise.' ,
             ),
             url='setTrainSpeed',
-        )
-        ],
-    ),
-    CompoundFunctionData(
-        server=[
-            FunctionData(
-            signature=FunctionSignature(
-                name='setTrainTrack',
-                return_types=FunctionReturnTypes(
-                    return_types=[
-                        FunctionType(
-                                    names=['bool'],
-                                    is_optional=False,
-                                )
-                    ],
-                    variable_length=False,
-                ),
-                arguments=FunctionArgumentValues(
-                    arguments=[
-                        [
-                            FunctionArgument(
-                                name='train',
-                                argument_type=FunctionType(
-                                    names=['vehicle'],
-                                    is_optional=False,
-                                ),
-                                default_value=None,
-                            )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='track',
-                                argument_type=FunctionType(
-                                    names=['int'],
-                                    is_optional=False,
-                                ),
-                                default_value=None,
-                            )
-                        ]
-                    ],
-                    variable_length=False,
-                ),
-                generic_types=[
-                    
-                ],
-            ),
-            docs=FunctionDoc(
-                description='Sets the track of a train' ,
-                arguments={
-                    "train": """the train of which to set the track """,
-                    "track": """the track where you want to set the train. It can be 0, 1, 2 or 3. """
-                },
-                result='returns true if the track was set to the train, false otherwise.' ,
-            ),
-            url='setTrainTrack',
-        )
-        ],
-        client=[
-            FunctionData(
-            signature=FunctionSignature(
-                name='setTrainTrack',
-                return_types=FunctionReturnTypes(
-                    return_types=[
-                        FunctionType(
-                                    names=['bool'],
-                                    is_optional=False,
-                                )
-                    ],
-                    variable_length=False,
-                ),
-                arguments=FunctionArgumentValues(
-                    arguments=[
-                        [
-                            FunctionArgument(
-                                name='train',
-                                argument_type=FunctionType(
-                                    names=['vehicle'],
-                                    is_optional=False,
-                                ),
-                                default_value=None,
-                            )
-                        ],
-                        [
-                            FunctionArgument(
-                                name='track',
-                                argument_type=FunctionType(
-                                    names=['int'],
-                                    is_optional=False,
-                                ),
-                                default_value=None,
-                            )
-                        ]
-                    ],
-                    variable_length=False,
-                ),
-                generic_types=[
-                    
-                ],
-            ),
-            docs=FunctionDoc(
-                description='Sets the track of a train' ,
-                arguments={
-                    "train": """the train of which to set the track """,
-                    "track": """the track where you want to set the train. It can be 0, 1, 2 or 3. """
-                },
-                result='returns true if the track was set to the train, false otherwise.' ,
-            ),
-            url='setTrainTrack',
         )
         ],
     ),
@@ -9621,13 +9427,13 @@ OR """,
                 ],
             ),
             docs=FunctionDoc(
-                description='This function sets the position of the dummy for the given vehicle.}}' ,
+                description='' ,
                 arguments={
-                    "theVehicle": """The vehicle you want to set the dummy position for """,
-                    "dummy": """The dummy whose position you want to set """,
-                    "x": """, y, z The new dummy position """
+                    "theVehicle": """The vehicle you want to set the dummy position for. """,
+                    "dummy": """The dummy whose position you want to set. """,
+                    "x": """, y, z The new dummy position. """
                 },
-                result='returns true for success, false otherwise.' ,
+                result='returns true if the dummy position has been successfully set, false otherwise.' ,
             ),
             url='setVehicleDummyPosition',
         )
@@ -9984,7 +9790,8 @@ OR """,
                 description='This function is used to change the handling data of a vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to set the handling of. """,
-                    "property": """The property you wish to set the handling of the vehicle to. """,
+                    "property": """The property you wish to set the handling of the vehicle to.
+Additionally, helicopters are not affected by custom handling. The vehicle-on-wheels handling does not affect planes when they are on the ground either.}} """,
                     "value": """The value of the property you wish to set the handling of the vehicle to. """
                 },
                 result='returns true if the handling was set successfully, false otherwise. see below a list of valid properties and their required values:' ,
@@ -10048,7 +9855,8 @@ OR """,
                 description='This function is used to change the handling data of a vehicle.' ,
                 arguments={
                     "theVehicle": """The vehicle you wish to set the handling of. """,
-                    "property": """The property you wish to set the handling of the vehicle to. """,
+                    "property": """The property you wish to set the handling of the vehicle to.
+Additionally, helicopters are not affected by custom handling. The vehicle-on-wheels handling does not affect planes when they are on the ground either.}} """,
                     "value": """The value of the property you wish to set the handling of the vehicle to. """
                 },
                 result='returns true if the handling was set successfully, false otherwise. see below a list of valid properties and their required values:' ,
@@ -12451,13 +12259,13 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 ],
             ),
             docs=FunctionDoc(
-                description='This function sets the variant of a specified vehicle. In GTA SA some vehicles are different for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default GTA SA variant list see: Vehicle variants' ,
+                description='This function sets the variant of a specified vehicle. In GTA: San Andreas some vehicles are different; for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default variant list see: Vehicle variants.' ,
                 arguments={
-                    "theVehicle": """A handle to the vehicle that you want to get the variant of. """,
-                    "variant1": """: An integer for the first variant see Vehicle variants """,
-                    "variant2": """: An integer for the second variant see Vehicle variants """
+                    "theVehicle": """The vehicle that you want to set the variant. """,
+                    "variant1": """: An integer for the first variant. See Vehicle variants. """,
+                    "variant2": """: An integer for the second variant. See Vehicle variants. """
                 },
-                result='on success:\n* bool: returns true as the vehicle variants were successfully set.\non failure:\n* bool: false because the specified vehicle didnt exist or specified variants were invalid.' ,
+                result='returns true if the vehicle variants were successfully set, false otherwise (the specified vehicle doesnt exist or the specified variants are invalid).' ,
             ),
             url='setVehicleVariant',
         )
@@ -12515,13 +12323,13 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 ],
             ),
             docs=FunctionDoc(
-                description='This function sets the variant of a specified vehicle. In GTA SA some vehicles are different for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default GTA SA variant list see: Vehicle variants' ,
+                description='This function sets the variant of a specified vehicle. In GTA: San Andreas some vehicles are different; for example the labelling on trucks or the contents of a pick-up truck and the varying types of a motor bike. For the default variant list see: Vehicle variants.' ,
                 arguments={
-                    "theVehicle": """A handle to the vehicle that you want to get the variant of. """,
-                    "variant1": """: An integer for the first variant see Vehicle variants """,
-                    "variant2": """: An integer for the second variant see Vehicle variants """
+                    "theVehicle": """The vehicle that you want to set the variant. """,
+                    "variant1": """: An integer for the first variant. See Vehicle variants. """,
+                    "variant2": """: An integer for the second variant. See Vehicle variants. """
                 },
-                result='on success:\n* bool: returns true as the vehicle variants were successfully set.\non failure:\n* bool: false because the specified vehicle didnt exist or specified variants were invalid.' ,
+                result='returns true if the vehicle variants were successfully set, false otherwise (the specified vehicle doesnt exist or the specified variants are invalid).' ,
             ),
             url='setVehicleVariant',
         )

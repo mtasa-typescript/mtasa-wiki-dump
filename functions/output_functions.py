@@ -131,6 +131,44 @@ DUMP_PARTIAL = [
         client=[
             FunctionData(
             signature=FunctionSignature(
+                name='isChatInputBlocked',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='' ,
+                arguments={
+                    
+                },
+                result='returns true if the chat input is blocked, false otherwise.' ,
+            ),
+            url='isChatInputBlocked',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
                 name='isChatVisible',
                 return_types=FunctionReturnTypes(
                     return_types=[

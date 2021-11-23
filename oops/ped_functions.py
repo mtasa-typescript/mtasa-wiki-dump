@@ -2471,7 +2471,7 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "thePed": """the player or ped whose bleeding effect state you want to get. """
+                    "thePed": """The player or ped whose bleeding effect state you want to get. """
                 },
                 result='returns true if the player or ped is bleeding, false otherwise.' ,
             ),
@@ -4839,10 +4839,10 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "thePed": """the player or ped whose bleeding effect you want to set of. """,
-                    "bleeding": """boolean specifying whether the player or ped is bleeding or not. """
+                    "thePed": """The player or ped whose bleeding effect you want to set of. """,
+                    "bleeding": """Boolean specifying whether the player or ped is bleeding or not. """
                 },
-                result='returns true if the bleeding state was successfully set, error is raised otherwise.' ,
+                result='returns true if the bleeding state was successfully set, false otherwise.' ,
             ),
             url='setPedBleeding',
         ),

@@ -180,8 +180,8 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "theVehicle": """the vehicle that the ped entered """,
-                    "seat": """the seat that the ped now is on. Drivers seat = 0, higher numbers are passenger seats. """
+                    "theVehicle": """The vehicle that the ped entered. """,
+                    "seat": """The seat that the ped now is on. Drivers seat = 0, higher numbers are passenger seats. """
                 },
                 result='' ,
             ),
@@ -223,8 +223,8 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "theVehicle": """the vehicle that the ped exited. """,
-                    "seat": """the number of the seat that the ped was sitting on. """
+                    "theVehicle": """The vehicle that the ped exited. """,
+                    "seat": """The number of the seat that the ped was sitting on. """
                 },
                 result='' ,
             ),
@@ -466,9 +466,9 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "theVehicle": """: a vehicle element representing the vehicle that was entered. """,
-                    "seat": """: an int representing the seat in which the ped is entering. """,
-                    "jacked": """: a player or ped element representing who has been jacked. """
+                    "theVehicle": """: A vehicle element representing the vehicle that was entered. """,
+                    "seat": """: An int representing the seat in which the ped is entering. """,
+                    "jacked": """: A player or ped element representing who has been jacked. """
                 },
                 result='' ,
             ),
@@ -520,10 +520,10 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "theVehicle": """: a vehicle element representing the vehicle in which the ped exited from. """,
-                    "seat": """: an int representing the seat in which the ped was before exiting. """,
-                    "jacker": """: a player or ped element representing who jacked the driver. """,
-                    "forcedByScript": """a boolean representing whether the exit was forced using removePedFromVehicle or by the ped. """
+                    "theVehicle": """: A vehicle element representing the vehicle in which the ped exited from. """,
+                    "seat": """: An int representing the seat in which the ped was before exiting. """,
+                    "jacker": """: A player or ped element representing who jacked the driver. """,
+                    "forcedByScript": """A boolean representing whether the exit was forced using removePedFromVehicle or by the ped. """
                 },
                 result='' ,
             ),

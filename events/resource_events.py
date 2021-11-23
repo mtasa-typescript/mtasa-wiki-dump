@@ -19,10 +19,10 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "fileResource": """resource the file belongs to """,
-                    "fileName": """relative resource file path """,
-                    "fileSize": """size of the file in bytes """,
-                    "state": """possible values: <code>queued</code> or <code>finished</code> or <code>failed</code> """
+                    "fileResource": """Resource the file belongs to. """,
+                    "fileName": """Relative resource file path. """,
+                    "fileSize": """Size of the file in bytes. """,
+                    "state": """Possible values: <code>queued</code> or <code>finished</code> or <code>failed</code>. """
                 },
                 result='' ,
             ),
@@ -141,13 +141,45 @@ DUMP_PARTIAL = [
     CompoundEventData(
         server=[
             EventData(
+            name='onPlayerResourceStart',
+            docs=FunctionDoc(
+                description='' ,
+                arguments={
+                    "loadedResource": """: The resource that was loaded on the client. """
+                },
+                result='' ,
+            ),
+            arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='loadedResource',
+                                argument_type=FunctionType(
+                                    names=['resource'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+        )
+        ],
+        client=[
+            
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            EventData(
             name='onResourceLoadStateChange',
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "changedResource": """: the resource that was either loaded, reloaded or is unloading. """,
-                    "oldState": """: the state the resource was in before it changed. """,
-                    "newState": """: the state the resource has changed to. """
+                    "changedResource": """: The resource that was either loaded, reloaded or is unloading. """,
+                    "oldState": """: The state the resource was in before it changed. """,
+                    "newState": """: The state the resource has changed to. """
                 },
                 result='' ,
             ),

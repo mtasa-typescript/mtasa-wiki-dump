@@ -134,26 +134,26 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
-        url="/wiki/PlaySFX",
-        name="playSFX",
-        category="Audio functions",
-        type=ListType.CLIENT,
-    ),
-    PageUrl(
         url="/wiki/PlaySFX3D",
         name="playSFX3D",
         category="Audio functions",
         type=ListType.CLIENT,
     ),
     PageUrl(
-        url="/wiki/PlaySound",
-        name="playSound",
+        url="/wiki/PlaySFX",
+        name="playSFX",
         category="Audio functions",
         type=ListType.CLIENT,
     ),
     PageUrl(
         url="/wiki/PlaySound3D",
         name="playSound3D",
+        category="Audio functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/PlaySound",
+        name="playSound",
         category="Audio functions",
         type=ListType.CLIENT,
     ),
@@ -340,6 +340,12 @@ URL_LIST = [
     PageUrl(
         url="/wiki/IsBrowserLoading",
         name="isBrowserLoading",
+        category="Browser functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/IsBrowserRenderingPaused",
+        name="isBrowserRenderingPaused",
         category="Browser functions",
         type=ListType.CLIENT,
     ),
@@ -1022,8 +1028,8 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
-        url="/wiki/EngineGetObjectGroupPhysicalProperty",
-        name="engineGetObjectGroupPhysicalProperty",
+        url="/wiki/EngineGetModelTextureNames",
+        name="engineGetModelTextureNames",
         category="Engine functions",
         type=ListType.CLIENT,
     ),
@@ -1034,14 +1040,14 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
-        url="/wiki/EngineGetModelTextureNames",
-        name="engineGetModelTextureNames",
+        url="/wiki/EngineGetModelVisibleTime",
+        name="engineGetModelVisibleTime",
         category="Engine functions",
         type=ListType.CLIENT,
     ),
     PageUrl(
-        url="/wiki/EngineGetModelVisibleTime",
-        name="engineGetModelVisibleTime",
+        url="/wiki/EngineGetObjectGroupPhysicalProperty",
+        name="engineGetObjectGroupPhysicalProperty",
         category="Engine functions",
         type=ListType.CLIENT,
     ),
@@ -1094,18 +1100,6 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
-        url="/wiki/EngineResetModelLODDistance",
-        name="engineResetModelLODDistance",
-        category="Engine functions",
-        type=ListType.CLIENT,
-    ),
-    PageUrl(
-        url="/wiki/EngineResetSurfaceProperties",
-        name="engineResetSurfaceProperties",
-        category="Engine functions",
-        type=ListType.CLIENT,
-    ),
-    PageUrl(
         url="/wiki/EngineReplaceAnimation",
         name="engineReplaceAnimation",
         category="Engine functions",
@@ -1126,6 +1120,18 @@ URL_LIST = [
     PageUrl(
         url="/wiki/EngineRequestModel",
         name="engineRequestModel",
+        category="Engine functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/EngineResetModelLODDistance",
+        name="engineResetModelLODDistance",
+        category="Engine functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/EngineResetSurfaceProperties",
+        name="engineResetSurfaceProperties",
         category="Engine functions",
         type=ListType.CLIENT,
     ),
@@ -1198,6 +1204,18 @@ URL_LIST = [
     PageUrl(
         url="/wiki/EngineSetSurfaceProperties",
         name="engineSetSurfaceProperties",
+        category="Engine functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/EngineStreamingFreeUpMemory",
+        name="engineStreamingFreeUpMemory",
+        category="Engine functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/EngineStreamingGetUsedMemory",
+        name="engineStreamingGetUsedMemory",
         category="Engine functions",
         type=ListType.CLIENT,
     ),
@@ -2138,8 +2156,20 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
+        url="/wiki/GetObjectProperty",
+        name="getObjectProperty",
+        category="Object functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
         url="/wiki/IsObjectBreakable",
         name="isObjectBreakable",
+        category="Object functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/IsObjectMoving",
+        name="isObjectMoving",
         category="Object functions",
         type=ListType.CLIENT,
     ),
@@ -2162,32 +2192,26 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
-        url="/wiki/ToggleObjectRespawn",
-        name="toggleObjectRespawn",
-        category="Object functions",
-        type=ListType.CLIENT,
-    ),
-    PageUrl(
-        url="/wiki/GetObjectProperty",
-        name="getObjectProperty",
-        category="Object functions",
-        type=ListType.CLIENT,
-    ),
-    PageUrl(
         url="/wiki/SetObjectProperty",
         name="setObjectProperty",
         category="Object functions",
         type=ListType.CLIENT,
     ),
     PageUrl(
-        url="/wiki/IsObjectMoving",
-        name="isObjectMoving",
+        url="/wiki/ToggleObjectRespawn",
+        name="toggleObjectRespawn",
         category="Object functions",
         type=ListType.CLIENT,
     ),
     PageUrl(
         url="/wiki/ClearDebugBox",
         name="clearDebugBox",
+        category="Output functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/IsChatInputBlocked",
+        name="isChatInputBlocked",
         category="Output functions",
         type=ListType.CLIENT,
     ),
@@ -2306,6 +2330,12 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
+        url="/wiki/IsPedFootBloodEnabled",
+        name="isPedFootBloodEnabled",
+        category="Ped functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
         url="/wiki/IsPedReloadingWeapon",
         name="isPedReloadingWeapon",
         category="Ped functions",
@@ -2378,12 +2408,6 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
-        url="/wiki/IsPedFootBloodEnabled",
-        name="isPedFootBloodEnabled",
-        category="Ped functions",
-        type=ListType.CLIENT,
-    ),
-    PageUrl(
         url="/wiki/SetPedLookAt",
         name="setPedLookAt",
         category="Ped functions",
@@ -2416,6 +2440,12 @@ URL_LIST = [
     PageUrl(
         url="/wiki/GetPlayerMapBoundingBox",
         name="getPlayerMapBoundingBox",
+        category="Player functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/GetPlayerMapOpacity",
+        name="getPlayerMapOpacity",
         category="Player functions",
         type=ListType.CLIENT,
     ),
@@ -2534,6 +2564,18 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
+        url="/wiki/SvgGetDocumentXML",
+        name="svgGetDocumentXML",
+        category="SVG functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/SvgGetSize",
+        name="svgGetSize",
+        category="SVG functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
         url="/wiki/CreateTrayNotification",
         name="createTrayNotification",
         category="Utility functions",
@@ -2558,6 +2600,18 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
+        url="/wiki/IsShowCollisionsEnabled",
+        name="isShowCollisionsEnabled",
+        category="Utility functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/IsShowSoundEnabled",
+        name="isShowSoundEnabled",
+        category="Utility functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
         url="/wiki/IsTrayNotificationEnabled",
         name="isTrayNotificationEnabled",
         category="Utility functions",
@@ -2572,6 +2626,18 @@ URL_LIST = [
     PageUrl(
         url="/wiki/SetWindowFlashing",
         name="setWindowFlashing",
+        category="Utility functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/ShowCol",
+        name="showCol",
+        category="Utility functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/ShowSound",
+        name="showSound",
         category="Utility functions",
         type=ListType.CLIENT,
     ),
@@ -2594,12 +2660,6 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
-        url="/wiki/GetTrainTrack",
-        name="getTrainTrack",
-        category="Vehicle functions",
-        type=ListType.CLIENT,
-    ),
-    PageUrl(
         url="/wiki/GetVehicleAdjustableProperty",
         name="getVehicleAdjustableProperty",
         category="Vehicle functions",
@@ -2618,6 +2678,12 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
+        url="/wiki/GetVehicleComponents",
+        name="getVehicleComponents",
+        category="Vehicle functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
         url="/wiki/GetVehicleComponentScale",
         name="getVehicleComponentScale",
         category="Vehicle functions",
@@ -2626,12 +2692,6 @@ URL_LIST = [
     PageUrl(
         url="/wiki/GetVehicleComponentVisible",
         name="getVehicleComponentVisible",
-        category="Vehicle functions",
-        type=ListType.CLIENT,
-    ),
-    PageUrl(
-        url="/wiki/GetVehicleComponents",
-        name="getVehicleComponents",
         category="Vehicle functions",
         type=ListType.CLIENT,
     ),
@@ -2654,14 +2714,14 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
-        url="/wiki/GetVehicleModelDummyPosition",
-        name="getVehicleModelDummyPosition",
+        url="/wiki/GetVehicleModelDummyDefaultPosition",
+        name="getVehicleModelDummyDefaultPosition",
         category="Vehicle functions",
         type=ListType.CLIENT,
     ),
     PageUrl(
-        url="/wiki/GetVehicleModelDummyDefaultPosition",
-        name="getVehicleModelDummyDefaultPosition",
+        url="/wiki/GetVehicleModelDummyPosition",
+        name="getVehicleModelDummyPosition",
         category="Vehicle functions",
         type=ListType.CLIENT,
     ),
@@ -2768,12 +2828,6 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
-        url="/wiki/SetTrainTrack",
-        name="setTrainTrack",
-        category="Vehicle functions",
-        type=ListType.CLIENT,
-    ),
-    PageUrl(
         url="/wiki/SetVehicleAdjustableProperty",
         name="setVehicleAdjustableProperty",
         category="Vehicle functions",
@@ -2804,14 +2858,14 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
-        url="/wiki/SetVehicleDummyPosition",
-        name="setVehicleDummyPosition",
+        url="/wiki/SetVehicleDirtLevel",
+        name="setVehicleDirtLevel",
         category="Vehicle functions",
         type=ListType.CLIENT,
     ),
     PageUrl(
-        url="/wiki/SetVehicleDirtLevel",
-        name="setVehicleDirtLevel",
+        url="/wiki/SetVehicleDummyPosition",
+        name="setVehicleDummyPosition",
         category="Vehicle functions",
         type=ListType.CLIENT,
     ),
@@ -3038,26 +3092,8 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
-        url="/wiki/ResetNearClipDistance",
-        name="resetNearClipDistance",
-        category="World functions",
-        type=ListType.CLIENT,
-    ),
-    PageUrl(
         url="/wiki/GetPedsLODDistance",
         name="getPedsLODDistance",
-        category="World functions",
-        type=ListType.CLIENT,
-    ),
-    PageUrl(
-        url="/wiki/SetPedsLODDistance",
-        name="setPedsLODDistance",
-        category="World functions",
-        type=ListType.CLIENT,
-    ),
-    PageUrl(
-        url="/wiki/ResetPedsLODDistance",
-        name="resetPedsLODDistance",
         category="World functions",
         type=ListType.CLIENT,
     ),
@@ -3128,6 +3164,18 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
+        url="/wiki/ResetNearClipDistance",
+        name="resetNearClipDistance",
+        category="World functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/ResetPedsLODDistance",
+        name="resetPedsLODDistance",
+        category="World functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
         url="/wiki/ResetVehiclesLODDistance",
         name="resetVehiclesLODDistance",
         category="World functions",
@@ -3136,12 +3184,6 @@ URL_LIST = [
     PageUrl(
         url="/wiki/ResetWorldSounds",
         name="resetWorldSounds",
-        category="World functions",
-        type=ListType.CLIENT,
-    ),
-    PageUrl(
-        url="/wiki/ResetColorFilter",
-        name="resetColorFilter",
         category="World functions",
         type=ListType.CLIENT,
     ),
@@ -3182,6 +3224,12 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
+        url="/wiki/SetPedsLODDistance",
+        name="setPedsLODDistance",
+        category="World functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
         url="/wiki/SetVehiclesLODDistance",
         name="setVehiclesLODDistance",
         category="World functions",
@@ -3196,12 +3244,6 @@ URL_LIST = [
     PageUrl(
         url="/wiki/SetWorldSpecialPropertyEnabled",
         name="setWorldSpecialPropertyEnabled",
-        category="World functions",
-        type=ListType.CLIENT,
-    ),
-    PageUrl(
-        url="/wiki/SetColorFilter",
-        name="setColorFilter",
         category="World functions",
         type=ListType.CLIENT,
     ),
@@ -5492,6 +5534,12 @@ URL_LIST = [
         type=ListType.SERVER,
     ),
     PageUrl(
+        url="/wiki/AbortRemoteRequest",
+        name="abortRemoteRequest",
+        category="Resource functions",
+        type=ListType.SERVER,
+    ),
+    PageUrl(
         url="/wiki/AddResourceConfig",
         name="addResourceConfig",
         category="Resource functions",
@@ -5536,6 +5584,18 @@ URL_LIST = [
     PageUrl(
         url="/wiki/FetchRemote",
         name="fetchRemote",
+        category="Resource functions",
+        type=ListType.SERVER,
+    ),
+    PageUrl(
+        url="/wiki/GetRemoteRequestInfo",
+        name="getRemoteRequestInfo",
+        category="Resource functions",
+        type=ListType.SERVER,
+    ),
+    PageUrl(
+        url="/wiki/GetRemoteRequests",
+        name="getRemoteRequests",
         category="Resource functions",
         type=ListType.SERVER,
     ),
@@ -5618,14 +5678,14 @@ URL_LIST = [
         type=ListType.SERVER,
     ),
     PageUrl(
-        url="/wiki/GetResourceState",
-        name="getResourceState",
+        url="/wiki/GetResources",
+        name="getResources",
         category="Resource functions",
         type=ListType.SERVER,
     ),
     PageUrl(
-        url="/wiki/GetResources",
-        name="getResources",
+        url="/wiki/GetResourceState",
+        name="getResourceState",
         category="Resource functions",
         type=ListType.SERVER,
     ),
@@ -5696,24 +5756,6 @@ URL_LIST = [
         type=ListType.SERVER,
     ),
     PageUrl(
-        url="/wiki/GetRemoteRequests",
-        name="getRemoteRequests",
-        category="Resource functions",
-        type=ListType.SERVER,
-    ),
-    PageUrl(
-        url="/wiki/GetRemoteRequestInfo",
-        name="getRemoteRequestInfo",
-        category="Resource functions",
-        type=ListType.SERVER,
-    ),
-    PageUrl(
-        url="/wiki/AbortRemoteRequest",
-        name="abortRemoteRequest",
-        category="Resource functions",
-        type=ListType.SERVER,
-    ),
-    PageUrl(
         url="/wiki/GetMaxPlayers",
         name="getMaxPlayers",
         category="Server functions",
@@ -5746,6 +5788,12 @@ URL_LIST = [
     PageUrl(
         url="/wiki/IsGlitchEnabled",
         name="isGlitchEnabled",
+        category="Server functions",
+        type=ListType.SERVER,
+    ),
+    PageUrl(
+        url="/wiki/IsTransferBoxAlwaysVisible",
+        name="isTransferBoxAlwaysVisible",
         category="Server functions",
         type=ListType.SERVER,
     ),
@@ -6788,6 +6836,12 @@ URL_LIST = [
         type=ListType.SERVER,
     ),
     PageUrl(
+        url="/wiki/GetVehiclesOfType",
+        name="getVehiclesOfType",
+        category="Vehicle functions",
+        type=ListType.SERVER,
+    ),
+    PageUrl(
         url="/wiki/GetVehicleTowedByVehicle",
         name="getVehicleTowedByVehicle",
         category="Vehicle functions",
@@ -6818,14 +6872,14 @@ URL_LIST = [
         type=ListType.SERVER,
     ),
     PageUrl(
-        url="/wiki/GetVehicleUpgradeSlotName",
-        name="getVehicleUpgradeSlotName",
+        url="/wiki/GetVehicleUpgrades",
+        name="getVehicleUpgrades",
         category="Vehicle functions",
         type=ListType.SERVER,
     ),
     PageUrl(
-        url="/wiki/GetVehicleUpgrades",
-        name="getVehicleUpgrades",
+        url="/wiki/GetVehicleUpgradeSlotName",
+        name="getVehicleUpgradeSlotName",
         category="Vehicle functions",
         type=ListType.SERVER,
     ),
@@ -6838,12 +6892,6 @@ URL_LIST = [
     PageUrl(
         url="/wiki/GetVehicleWheelStates",
         name="getVehicleWheelStates",
-        category="Vehicle functions",
-        type=ListType.SERVER,
-    ),
-    PageUrl(
-        url="/wiki/GetVehiclesOfType",
-        name="getVehiclesOfType",
         category="Vehicle functions",
         type=ListType.SERVER,
     ),
@@ -7394,6 +7442,12 @@ URL_LIST = [
         type=ListType.SERVER,
     ),
     PageUrl(
+        url="/wiki/ResetColorFilter",
+        name="resetColorFilter",
+        category="World functions",
+        type=ListType.SERVER,
+    ),
+    PageUrl(
         url="/wiki/ResetFarClipDistance",
         name="resetFarClipDistance",
         category="World functions",
@@ -7468,6 +7522,12 @@ URL_LIST = [
     PageUrl(
         url="/wiki/SetCloudsEnabled",
         name="setCloudsEnabled",
+        category="World functions",
+        type=ListType.SERVER,
+    ),
+    PageUrl(
+        url="/wiki/SetColorFilter",
+        name="setColorFilter",
         category="World functions",
         type=ListType.SERVER,
     ),
@@ -8801,6 +8861,12 @@ URL_LIST_EVENT = [
         url="/wiki/OnPedWeaponSwitch",
         name="onPedWeaponSwitch",
         category="Ped events",
+        type=ListType.SERVER,
+    ),
+    PageUrl(
+        url="/wiki/OnPlayerResourceStart",
+        name="onPlayerResourceStart",
+        category="Resource events",
         type=ListType.SERVER,
     ),
     PageUrl(

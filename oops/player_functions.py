@@ -656,6 +656,51 @@ DUMP_PARTIAL = [
     ),
     CompoundOOPData(
         server=[
+            
+        ],
+        client=[
+            FunctionOOP(
+                description=None,
+                base_function_name="getPlayerMapOpacity",
+                class_name='player',
+                method=FunctionData(
+            signature=FunctionSignature(
+                name='getMapOpacity',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='' ,
+                arguments={
+                    
+                },
+                result='returns an integer with a value from 0 to 255, where 0 is fully transparent and 255 is fully opaque.' ,
+            ),
+            url='getPlayerMapOpacity',
+        ),
+                field=None,
+                is_static=True,
+            )
+        ],
+    ),
+    CompoundOOPData(
+        server=[
             FunctionOOP(
                 description=None,
                 base_function_name="getPlayerMoney",
@@ -1139,7 +1184,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='This function returns the ping of a specified player. The ping is the number of milliseconds that data takes to travel from the players client to the server or vice versa.' ,
+                description='This function returns the ping of a specified player. The ping is the number of milliseconds that data takes to travel from the players client to the server or vice versa. If a player is using a VPN their ping will still be returned correctly.' ,
                 arguments={
                     "thePlayer": """: The player whose ping you want to determine. """
                 },
@@ -1196,7 +1241,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='This function returns the ping of a specified player. The ping is the number of milliseconds that data takes to travel from the players client to the server or vice versa.' ,
+                description='This function returns the ping of a specified player. The ping is the number of milliseconds that data takes to travel from the players client to the server or vice versa. If a player is using a VPN their ping will still be returned correctly.' ,
                 arguments={
                     "thePlayer": """: The player whose ping you want to determine. """
                 },

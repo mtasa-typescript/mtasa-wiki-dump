@@ -1354,7 +1354,7 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
             docs=FunctionDoc(
                 description='By default, a colshape polygon is infinitely tall.}}' ,
                 arguments={
-                    "shape": """The colshape polygon """
+                    "shape": """The colshape polygon. """
                 },
                 result='returns two floats, indicating the floor and ceiling of the colshape height, false if invalid arguments were passed.' ,
             ),
@@ -1407,7 +1407,7 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
             docs=FunctionDoc(
                 description='By default, a colshape polygon is infinitely tall.}}' ,
                 arguments={
-                    "shape": """The colshape polygon """
+                    "shape": """The colshape polygon. """
                 },
                 result='returns two floats, indicating the floor and ceiling of the colshape height, false if invalid arguments were passed.' ,
             ),
@@ -2328,7 +2328,7 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
             docs=FunctionDoc(
                 description='By default, a colshape polygon is infinitely tall.}}' ,
                 arguments={
-                    "shape": """The colshape polygon """,
+                    "shape": """The colshape polygon. """,
                     "floor": """The polygon floor (lowest Z coordinate). Parse false to reset this value to 0. """,
                     "ceil": """The polygon ceiling (highest Z coordinate). Parse false to reset this value to infinitely tall. """
                 },
@@ -2399,7 +2399,7 @@ Returns ''true'' if the polygon was changed, ''false'' if invalid arguments were
             docs=FunctionDoc(
                 description='By default, a colshape polygon is infinitely tall.}}' ,
                 arguments={
-                    "shape": """The colshape polygon """,
+                    "shape": """The colshape polygon. """,
                     "floor": """The polygon floor (lowest Z coordinate). Parse false to reset this value to 0. """,
                     "ceil": """The polygon ceiling (highest Z coordinate). Parse false to reset this value to infinitely tall. """
                 },

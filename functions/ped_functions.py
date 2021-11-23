@@ -2685,7 +2685,7 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "thePed": """the player or ped whose bleeding effect state you want to get. """
+                    "thePed": """The player or ped whose bleeding effect state you want to get. """
                 },
                 result='returns true if the player or ped is bleeding, false otherwise.' ,
             ),
@@ -4173,13 +4173,11 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='This sets the analog control state of a control for the local player.\nTo change the analog controls for a ped, please use setPedAnalogControlState.' ,
+                description='This sets the analog control state of a control for the local player. To change the analog controls for a ped, please use setPedAnalogControlState.' ,
                 arguments={
                     "control": """The control that you want to set the state of. See control names for a list of possible controls. """,
                     "state": """A float between 0 and 1 indicating the amount the control is pressed. If no value is provided, the analog control is removed.
-<noinclude>{{New feature/item|3.0300|1.5.8|20756|
-*'''forceOverrideNextFrame: ''' A [[bool]] indicating if the player input should force fully overriden for the next frame.
-}}</noinclude> """
+*'''forceOverrideNextFrame: ''' A [[bool]] indicating if the player input should force fully overriden for the next frame. """
                 },
                 result='returns true if the control state was successfully set, false otherwise.' ,
             ),
@@ -5039,10 +5037,10 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "thePed": """the player or ped whose bleeding effect you want to set of. """,
-                    "bleeding": """boolean specifying whether the player or ped is bleeding or not. """
+                    "thePed": """The player or ped whose bleeding effect you want to set of. """,
+                    "bleeding": """Boolean specifying whether the player or ped is bleeding or not. """
                 },
-                result='returns true if the bleeding state was successfully set, error is raised otherwise.' ,
+                result='returns true if the bleeding state was successfully set, false otherwise.' ,
             ),
             url='setPedBleeding',
         )
@@ -5456,7 +5454,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='* If forced to enter as a passenger, it doesnt work if all passenger seats are occupied.\n* If forced to enter as a driver, the ped can take off the vehicles current driver.\n** If the drivers door is blocked by something, the ped can use the oposite front door to reach the drivers seat, taking off the passenger which is using the oposite front seat.\n* If the vehicle is not specified:\n** The ped will search a vehicles door within 20 m that can be used to enter the vehicle.\n** If the vehicle have a driver, the limit becomes 10 m.\n* If the vehicle is specified:\n** The ped will search the vehicle within 50 m that can be entered. The doors arent taken into account. It means that it doesnt work if the vehicles door is in range but the vehicle itself is not.\n** If the vehicle have a driver, the limit becomes 10 m.\n* The limit becomes 50 m after the ped found the vehicle and started to run toward it.\n* The ped stops the animation if the distance from vehicle reaches 50 m while the ped is running towards it.\n* The ped reserves the seat he is trying to use. It means nobody can use the respective seat while the ped is running toward it.\n** Exception: If the ped is forced to enter as a passenger and is going to use the front door, the ped can wait if someone is using it to go the driver seat.' ,
+                description='* If forced to enter as a passenger, it doesnt work if all passenger seats are occupied. Only the driver seat can be jacked.\n* If forced to enter as a driver, the ped can carjack the current driver.\n** If the drivers door is blocked by something, the ped can use the opposite front door to reach the drivers seat, jacking the passenger in the process.\n* If a vehicle is not specified:\n** The ped will search for a vehicle door within 20 m.\n** If the vehicle has a driver, the limit becomes 10 m.\n* If a vehicle is specified:\n** The vehicle has to be within 50 m. The doors arent taken into account. It means that it doesnt work if the vehicles door is in range but the vehicle itself is not.\n** If the vehicle has a driver, the limit becomes 10 m.\n* When entering, the ped will run toward a vehicle if it is less than 50 m away.\n* The ped reserves the seat he is trying to use. It means nobody can enter the respective seat while the ped is running toward it.\n** Exception: If the ped is forced to enter as a passenger and is going to use the front door, the ped can wait if someone is using it to go the driver seat.' ,
                 arguments={
                     "thePed": """The player or ped to enter the vehicle.
 **''Note: The player must be the local player.''
@@ -5464,7 +5462,7 @@ DUMP_PARTIAL = [
                     "vehicle": """The vehicle to enter. If no vehicle is set, the ped will enter the nearest vehicle within 20 m. """,
                     "passenger": """If set to true, the ped will enter as passenger in the nearest available seat, otherwise he will enter as driver. """
                 },
-                result='returns true if the function was successful, false otherwise.\nwhen this function returns true, the client will ask server for permission to enter a vehicle. actually entering can still fail in the following cases\n*the function is used on a ped, but another client is not on version 1.5.8 r20740 or newer.\n*another player or ped is already entering, exiting or jacking the same vehicle and seat.\n*movement input or damage can interrupt the task. use getpedtask to monitor what the ped is doing.\nthis function returns false in the following cases\n*invalid arguments were parsed.\n*the function is used on a ped, but the server is not on version 1.5.8 r20740 or newer.\n*time passed since last enter/exit for this ped is less than 1500 ms.\n*onclientvehiclestartenter was cancelled by a script.\n*the ped has an active task_primary task. use getpedtask to monitor what the ped is doing.' ,
+                result='returns true if the function was successful, false otherwise.\nwhen this function returns true, the client will ask server for permission to enter a vehicle. actually entering can still fail in the following cases\n*another player or ped is already entering, exiting or jacking the same vehicle and seat.\n*movement input or damage can interrupt the task. use getpedtask to monitor what the ped is doing.\nthis function returns false in the following cases\n*invalid arguments were parsed.\n*time passed since last enter/exit for this ped is less than 1500 ms.\n*onclientvehiclestartenter was cancelled by a script.\n*the ped has an active task_primary task. use getpedtask to monitor what the ped is doing.' ,
             ),
             url='setPedEnterVehicle',
         )
@@ -5511,7 +5509,7 @@ DUMP_PARTIAL = [
                 arguments={
                     "thePed": """The player or ped to exit the vehicle. """
                 },
-                result='returns true if the function was successful, false otherwise.\nwhen this function returns true, the client will ask server for permission to exit a vehicle. exiting can still fail in the following cases\n*the function is used on a ped, but another client is not on version 1.5.8 r20740 or newer.\nthis function returns false in the following cases\n*invalid arguments were parsed.\n*the function is used on a ped but the server is not on version 1.5.8 r20740 or newer.\n*time passed since last enter/exit for this ped is less than 1500 ms.\n*the ped is getting jacked.' ,
+                result='returns true if the function was successful, false otherwise.\nwhen this function returns true, the client will ask server for permission to exit a vehicle.\nthis function returns false in the following cases\n*invalid arguments were parsed.\n*time passed since last enter/exit for this ped is less than 1500 ms.\n*the ped is already being jacked.' ,
             ),
             url='setPedExitVehicle',
         )
@@ -6182,13 +6180,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='*Things like infinite run, fire proof CJ, 150 armor have special activation flags. They need a way to be triggered on/off.\nThis function allows you to set the value of a specific statistic for a ped. Visual stats (FAT and BODY_MUSCLE) can only be used on the CJ skin, they have no effect on other skins.\nWhen this function is used client side, it can only be used on client side created peds.' ,
+                description='*Things like infinite run, fire proof CJ, 150 armor have special activation flags. They need a way to be triggered on/off.\nThis function allows you to set the value of a specific statistic for a ped. Visual stats (FAT and BODY_MUSCLE) can only be used on the CJ skin, they have no effect on other skins. When this function is used client-side, it can only be used on client-side created peds.' ,
                 arguments={
                     "thePed": """: the ped whose statistic you want to modify. """,
                     "stat": """: the stat ID. """,
                     "value": """: the new value of the stat. It must be between 0 and 1000. """
                 },
-                result='returns true if the statistic was changed succesfully. returns false if an invalid player is specified, if the stat-id/value is out of acceptable range or if the fat or body_muscle stats are used on non-cj players.' ,
+                result='returns true if the statistic was changed succesfully. returns false if an invalid player is specified, if the stat id/value is out of acceptable range or if the fat or body_muscle stats are used on non-cj players.' ,
             ),
             url='setPedStat',
         )
@@ -6246,13 +6244,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='*Things like infinite run, fire proof CJ, 150 armor have special activation flags. They need a way to be triggered on/off.\nThis function allows you to set the value of a specific statistic for a ped. Visual stats (FAT and BODY_MUSCLE) can only be used on the CJ skin, they have no effect on other skins.\nWhen this function is used client side, it can only be used on client side created peds.' ,
+                description='*Things like infinite run, fire proof CJ, 150 armor have special activation flags. They need a way to be triggered on/off.\nThis function allows you to set the value of a specific statistic for a ped. Visual stats (FAT and BODY_MUSCLE) can only be used on the CJ skin, they have no effect on other skins. When this function is used client-side, it can only be used on client-side created peds.' ,
                 arguments={
                     "thePed": """: the ped whose statistic you want to modify. """,
                     "stat": """: the stat ID. """,
                     "value": """: the new value of the stat. It must be between 0 and 1000. """
                 },
-                result='returns true if the statistic was changed succesfully. returns false if an invalid player is specified, if the stat-id/value is out of acceptable range or if the fat or body_muscle stats are used on non-cj players.' ,
+                result='returns true if the statistic was changed succesfully. returns false if an invalid player is specified, if the stat id/value is out of acceptable range or if the fat or body_muscle stats are used on non-cj players.' ,
             ),
             url='setPedStat',
         )

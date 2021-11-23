@@ -953,6 +953,53 @@ function ( string code )
         client=[
             FunctionData(
             signature=FunctionSignature(
+                name='isBrowserRenderingPaused',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='webBrowser',
+                                argument_type=FunctionType(
+                                    names=['browser'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='' ,
+                arguments={
+                    "webBrowser": """The browser element to get the rendering state of. """
+                },
+                result='returns true if the browser rendering is paused, false otherwise.' ,
+            ),
+            url='isBrowserRenderingPaused',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
                 name='loadBrowserURL',
                 return_types=FunctionReturnTypes(
                     return_types=[

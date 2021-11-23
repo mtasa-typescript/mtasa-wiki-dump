@@ -637,9 +637,9 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='This function returns a table containing all accounts that were logged onto from specified IP-address.' ,
+                description='' ,
                 arguments={
-                    "ip": """The IP to get accounts from """
+                    "ip": """The IP to get accounts from. """
                 },
                 result='returns table containing the accounts associated with specified ip-address. returns false if invalid arguments were specified.' ,
             ),

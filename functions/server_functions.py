@@ -248,6 +248,44 @@ DUMP_PARTIAL = [
     ),
     CompoundFunctionData(
         server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
+                name='isTransferBoxAlwaysVisible',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='' ,
+                arguments={
+                    
+                },
+                result='returns a boolean, whether the transfer box should be always visible or not.' ,
+            ),
+            url='isTransferBoxAlwaysVisible',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
             FunctionData(
             signature=FunctionSignature(
                 name='isTransferBoxVisible',
@@ -502,7 +540,7 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "visible": """The new visibility state. """
+                    "visible": """The new transfer box visibility state. """
                 },
                 result='returns true if the visibility was set successfully, false otherwise.' ,
             ),
@@ -544,7 +582,7 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "visible": """The new visibility state. """
+                    "visible": """The new transfer box visibility state. """
                 },
                 result='returns true if the visibility was set successfully, false otherwise.' ,
             ),

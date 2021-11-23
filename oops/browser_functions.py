@@ -935,6 +935,68 @@ function ( string code )
         client=[
             FunctionOOP(
                 description=None,
+                base_function_name="isBrowserRenderingPaused",
+                class_name='browser',
+                method=FunctionData(
+            signature=FunctionSignature(
+                name='isRenderingPaused',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='webBrowser',
+                                argument_type=FunctionType(
+                                    names=['browser'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='' ,
+                arguments={
+                    "webBrowser": """The browser element to get the rendering state of. """
+                },
+                result='returns true if the browser rendering is paused, false otherwise.' ,
+            ),
+            url='isBrowserRenderingPaused',
+        ),
+                field=FunctionOOPField(
+                                name='renderingPaused',
+                                types=[
+                                    FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                                ],
+                            ),
+                is_static=False,
+            )
+        ],
+    ),
+    CompoundOOPData(
+        server=[
+            
+        ],
+        client=[
+            FunctionOOP(
+                description=None,
                 base_function_name="loadBrowserURL",
                 class_name='Element/Browser|browser',
                 method=FunctionData(

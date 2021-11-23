@@ -4519,8 +4519,8 @@ DUMP_PARTIAL = [
                 description='This function retrieves the text from a specific grid list item.' ,
                 arguments={
                     "gridList": """the gridlist containing the item youre interested in """,
-                    "rowIndex": """row id of the item """,
-                    "columnIndex": """column id of the item """
+                    "rowIndex": """row id of the item (first is 0) """,
+                    "columnIndex": """column id of the item (first is 0) """
                 },
                 result='returns the text of the item if the arguments are right, false otherwise.' ,
             ),

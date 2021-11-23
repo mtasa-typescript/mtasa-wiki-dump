@@ -205,10 +205,10 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "sound": """: the sound element. """,
-                    "effectName": """: the name of the effect whose parameters you want to retrieve. """
+                    "sound": """: The sound element to get the sound effect parameters of. """,
+                    "effectName": """: The name of the effect whose parameters you want to retrieve: """
                 },
-                result='returns a table with the parameter names as the keys, and their values. if the specified effect name is not valid, an error is raised.' ,
+                result='returns a table with the parameter names as the keys, and their values. if the specified effect name is not valid, false is returned.' ,
             ),
             url='getSoundEffectParameters',
         ),
@@ -1080,7 +1080,7 @@ DUMP_PARTIAL = [
                 arguments={
                     "theSound": """The sound element which you want to get the loop state. """
                 },
-                result='returns true if the sound element is seted to loop, false otherwise.' ,
+                result='returns true if the sound element is looped, false otherwise.' ,
             ),
             url='isSoundLooped',
         ),
@@ -1527,12 +1527,12 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "sound": """: the sound element. """,
-                    "effectName": """: the name of the effect whose parameter you want to change. """,
-                    "effectParam": """: the parameter #Effects Parameters|name. """,
-                    "paramValue": """: the parameter #Effects Parameters|value. """
+                    "sound": """: The sound element. """,
+                    "effectName": """: The name of the effect whose parameter you want to change: """,
+                    "effectParam": """: The parameter #Effects Parameters|name. """,
+                    "paramValue": """: The parameter #Effects Parameters|value. """
                 },
-                result='returns true if everything went well, error is raised otherwise.' ,
+                result='returns true if effect have been set successfully, false otherwise.' ,
             ),
             url='setSoundEffectParameter',
         ),
@@ -1597,7 +1597,7 @@ DUMP_PARTIAL = [
                     "theSound": """The sound element to set the loop. """,
                     "bool": """A boolean representing whether the sound will be looped. """
                 },
-                result='returns true if the sound element loop was successfully changed, false otherwise.' ,
+                result='returns true if the sound element loop state was successfully changed, false otherwise.' ,
             ),
             url='setSoundLooped',
         ),
@@ -1831,7 +1831,7 @@ DUMP_PARTIAL = [
         ],
         client=[
             FunctionOOP(
-                description="""The method name was incorrect (setPann'''n'''ingEnabled) before version '''1.5.8-9.20761.0'''.""",
+                description="""The method name was incorrect (setPann'''n'''ingEnabled) before version '''1.5.8 r20761'''.""",
                 base_function_name="setSoundPanningEnabled",
                 class_name='sound',
                 method=FunctionData(

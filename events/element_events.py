@@ -182,8 +182,8 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "oldDimension": """: an int representing the dimension the element was in before. """,
-                    "newDimension": """: an int representing the dimension the element is in now. """
+                    "oldDimension": """: An int representing the dimension the element was in before. """,
+                    "newDimension": """: An int representing the dimension the element is in now. """
                 },
                 result='' ,
             ),
@@ -225,8 +225,8 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "oldInterior": """: an int representing the interior the element was in before. """,
-                    "newInterior": """: an int representing the interior the element is in now. """
+                    "oldInterior": """: An int representing the interior the element was in before. """,
+                    "newInterior": """: An int representing the interior the element is in now. """
                 },
                 result='' ,
             ),
@@ -607,8 +607,8 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "oldDimension": """: an int representing the dimension the element was in before. """,
-                    "newDimension": """: an int representing the dimension the element is in now. """
+                    "oldDimension": """: An int representing the dimension the element was in before. """,
+                    "newDimension": """: An int representing the dimension the element is in now. """
                 },
                 result='' ,
             ),
