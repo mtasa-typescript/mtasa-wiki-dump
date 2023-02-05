@@ -781,7 +781,7 @@ Station ID's: """
             docs=FunctionDoc(
                 description='This event is triggered whenever a player, including those remote, dies.' ,
                 arguments={
-                    "killer": """: A player element representing the killer. """,
+                    "killer": """: A player, ped or vehicle element representing the killer. """,
                     "weapon": """: An int|integer representing the Weapons|killer weapon or the Damage Types|damage types. """,
                     "bodypart": """: An int|integer representing the bodypart the player was damaged. """,
                     "stealth": """: A boolean representing whether or not this was a stealth kill. """
@@ -1578,8 +1578,8 @@ Station ID's: """
             docs=FunctionDoc(
                 description='This event is triggered when a player logs into their account in-game.' ,
                 arguments={
-                    "thePreviousAccount": """: the account the player was logged into before. """,
-                    "theCurrentAccount": """: the account the player logged into just now. """
+                    "thePreviousAccount": """: The account the player was logged into before. """,
+                    "theCurrentAccount": """: The account the player logged into just now. """
                 },
                 result='' ,
             ),
@@ -2509,7 +2509,7 @@ Station ID's: """
                 description='This event is triggered when a player is killed or dies.' ,
                 arguments={
                     "totalAmmo": """: an int representing the total ammo the victim had when they died. """,
-                    "killer": """: an element representing the player, vehicle or object who was the killer. Deaths resulting from fall damage provide the vehicle or object landed on as the killer. If there was no killer this is false. """,
+                    "killer": """: an element representing the player, ped, vehicle or object who was the killer. Deaths resulting from fall damage provide the vehicle or object landed on as the killer. If there is no killer this is false. """,
                     "killerWeapon": """: an int representing the Weapons|killer weapon or the Damage Types|damage type. """,
                     "bodypart": """: an int representing the bodypart ID the victim was hit on when they died. """,
                     "stealth": """: a boolean value representing whether or not this was a stealth kill. """

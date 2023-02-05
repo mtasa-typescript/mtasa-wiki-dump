@@ -670,10 +670,118 @@ DUMP_PARTIAL = [
     ),
     CompoundOOPData(
         server=[
-            
+            FunctionOOP(
+                description=None,
+                base_function_name="fileGetPath",
+                class_name='file',
+                method=FunctionData(
+            signature=FunctionSignature(
+                name='getPath',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['string'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='theFile',
+                                argument_type=FunctionType(
+                                    names=['file'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='This function retrieves the path of the given file.' ,
+                arguments={
+                    "theFile": """The file you want to get the path. """
+                },
+                result='returns a string representing the file path, false if invalid file was provided.' ,
+            ),
+            url='fileGetPath',
+        ),
+                field=FunctionOOPField(
+                                name='path',
+                                types=[
+                                    FunctionType(
+                                    names=['string'],
+                                    is_optional=False,
+                                )
+                                ],
+                            ),
+                is_static=False,
+            )
         ],
         client=[
-            
+            FunctionOOP(
+                description=None,
+                base_function_name="fileGetPath",
+                class_name='file',
+                method=FunctionData(
+            signature=FunctionSignature(
+                name='getPath',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['string'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='theFile',
+                                argument_type=FunctionType(
+                                    names=['file'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='This function retrieves the path of the given file.' ,
+                arguments={
+                    "theFile": """The file you want to get the path. """
+                },
+                result='returns a string representing the file path, false if invalid file was provided.' ,
+            ),
+            url='fileGetPath',
+        ),
+                field=FunctionOOPField(
+                                name='path',
+                                types=[
+                                    FunctionType(
+                                    names=['string'],
+                                    is_optional=False,
+                                )
+                                ],
+                            ),
+                is_static=False,
+            )
         ],
     ),
     CompoundOOPData(

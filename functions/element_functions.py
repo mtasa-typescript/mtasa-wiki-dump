@@ -2742,6 +2742,53 @@ DUMP_PARTIAL = [
     ),
     CompoundFunctionData(
         server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
+                name='getElementLighting',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='theElement',
+                                argument_type=FunctionType(
+                                    names=['element'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='' ,
+                arguments={
+                    "theElement": """The element whose lighting you want to retrieve. """
+                },
+                result='returns a float (0.0-0.5; 0 = dark; 0.5 = light) indicating the elements lighting, or false if invalid arguments were passed. this function will fail if called right after element creation.' ,
+            ),
+            url='getElementLighting',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
             FunctionData(
             signature=FunctionSignature(
                 name='getElementMatrix',
@@ -3639,7 +3686,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description='This function is used to retrieve a list of all elements of specified type within a range of 3D coordinates.\n* This function checks if elements are in a box, not in a sphere.\n* Z argument isnt in use currently, but make your scripts like it is for future compatibility reasons.\n* This function doesnt work with elements which is created by createElement.}}' ,
+                description='This function is used to retrieve a list of all elements of specified type within a range of 3D coordinates.\n* Z argument isnt in use currently, but make your scripts like it is for future compatibility reasons.\n|21438}}\n* Z argument is now being taken into consideration when checking for elements.\n* This function checks if elements are in a box, not in a sphere.\n* This function doesnt work with elements which are created by createElement.' ,
                 arguments={
                     "x": """the x coordinate at which to retrieve elements. """,
                     "y": """the y coordinate at which to retrieve elements. """,
@@ -3753,7 +3800,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description='This function is used to retrieve a list of all elements of specified type within a range of 3D coordinates.\n* This function checks if elements are in a box, not in a sphere.\n* Z argument isnt in use currently, but make your scripts like it is for future compatibility reasons.\n* This function doesnt work with elements which is created by createElement.}}' ,
+                description='This function is used to retrieve a list of all elements of specified type within a range of 3D coordinates.\n* Z argument isnt in use currently, but make your scripts like it is for future compatibility reasons.\n|21438}}\n* Z argument is now being taken into consideration when checking for elements.\n* This function checks if elements are in a box, not in a sphere.\n* This function doesnt work with elements which are created by createElement.' ,
                 arguments={
                     "x": """the x coordinate at which to retrieve elements. """,
                     "y": """the y coordinate at which to retrieve elements. """,
@@ -4726,7 +4773,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description='This function can be used to check whether specified element is collidable with another element.<br>\nNote: You can only use this function with the element types listed below.\n*Player\n*Ped\n*Vehicle\n*Object' ,
+                description='This function can be used to check whether specified element is collidable with another element.<br>\nNote: You can only use this function with the element types listed below.\n*Player\n*Ped\n*Vehicle\n*Object\n* Element/Weapon|Weapon' ,
                 arguments={
                     "theElement": """The element which colliding you want to get """,
                     "withElement": """The other element which colliding with the first entity you want to get """
@@ -6304,13 +6351,8 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 description='' ,
                 arguments={
                     "theElement": """the element to set the bone matrix on. """,
-                    "boneID": """the ID of the bone. See Bone IDs. """,
-                    "X": """The X coordinate of the matrix. """,
-                    "Y": """The Y coordinate of the matrix. """,
-                    "Z": """The Z coordinate of the matrix. """,
-                    "rotationX": """The X rotation of the matrix. """,
-                    "rotationY": """The Y rotation of the matrix. """,
-                    "rotationZ": """The Z rotation of the matrix. """
+                    "boneId": """the ID of the bone. See Bone IDs. """,
+                    "matrix": """the MTA matrix to set. """
                 },
                 result='returns true if the function was successful, false otherwise.' ,
             ),
@@ -6349,7 +6391,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                         ],
                         [
                             FunctionArgument(
-                                name='boneId',
+                                name='bone',
                                 argument_type=FunctionType(
                                     names=['int'],
                                     is_optional=False,
@@ -6398,7 +6440,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 description='' ,
                 arguments={
                     "theElement": """the Element|element to set the bone position on. """,
-                    "boneId": """the ID of the bone to set the position of. See Bone IDs. """,
+                    "bone": """the ID of the bone to set the position of. See Bone IDs. """,
                     "x": """The X coordinate of the destination. """,
                     "y": """The Y coordinate of the destination. """,
                     "z": """The Z coordinate of the destination. """
@@ -6665,7 +6707,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description='This function can be used to set an element to collide with another element. An element with collisions disabled does not interact physically with the other element.<br>\nNote: You can only use this function with the element types listed below.\n*Player\n*Ped\n*Vehicle\n*Object' ,
+                description='This function can be used to set an element to collide with another element. An element with collisions disabled does not interact physically with the other element.<br>\nNote: You can only use this function with the element types listed below.\n*Player\n*Ped\n*Vehicle\n*Object\n* Element/Weapon|Weapon' ,
                 arguments={
                     "theElement": """The element which colliding you want to change """,
                     "withElement": """The other element you wish the first entity to collide with """,
@@ -6849,7 +6891,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description='This function stores element data under a certain key, attached to an element. Element data set using this is then synced with all clients and the server. The data can contain server created elements, but you should avoid passing data that is not able to be synced such as xmlnodes, acls, aclgroups etc.\nAs element data is synced to all clients, it can generate a lot of network traffic and be heavy on performance. Events are much more efficient for sending data from a client to the server only, or from the server to a specific client. <br/>\nUsage of element data should be disencouraged where your goal can be achieved with events like above, and table|tables for storing and retrieving data.\nNote this mode only works when setting element data serverside. Setting data clientside still sends the update to all clients if synchronize is set to true.' ,
+                description='This function stores element data under a certain key, attached to an element. Element data set using this is then synced with all clients and the server. The data can contain server-created elements, but you should avoid passing data that is not able to be synced such as xmlnodes, acls, aclgroups etc.\nAs element data is synced to all clients, it can generate a lot of network traffic and be heavy on performance. Events are much more efficient for sending data from a client to the server only, or from the server to a specific client. <br/>\nUsage of element data should be discouraged where your goal can be achieved with events like above, and table|tables for storing and retrieving data.\nNote this mode only works when setting element data serverside. Setting data clientside still sends the update to all clients if synchronize is set to true.' ,
                 arguments={
                     "theElement": """The element you wish to attach the data to. """,
                     "key": """The key you wish to store the data under. (Maximum 31 characters.) """,
@@ -6927,7 +6969,7 @@ Specifying a rotation order other than ''"default"'' allows the same angles to l
                 ],
             ),
             docs=FunctionDoc(
-                description='This function stores element data under a certain key, attached to an element. Element data set using this is then synced with all clients and the server. The data can contain server created elements, but you should avoid passing data that is not able to be synced such as xmlnodes, acls, aclgroups etc.\nAs element data is synced to all clients, it can generate a lot of network traffic and be heavy on performance. Events are much more efficient for sending data from a client to the server only, or from the server to a specific client. <br/>\nUsage of element data should be disencouraged where your goal can be achieved with events like above, and table|tables for storing and retrieving data.\nNote this mode only works when setting element data serverside. Setting data clientside still sends the update to all clients if synchronize is set to true.' ,
+                description='This function stores element data under a certain key, attached to an element. Element data set using this is then synced with all clients and the server. The data can contain server-created elements, but you should avoid passing data that is not able to be synced such as xmlnodes, acls, aclgroups etc.\nAs element data is synced to all clients, it can generate a lot of network traffic and be heavy on performance. Events are much more efficient for sending data from a client to the server only, or from the server to a specific client. <br/>\nUsage of element data should be discouraged where your goal can be achieved with events like above, and table|tables for storing and retrieving data.\nNote this mode only works when setting element data serverside. Setting data clientside still sends the update to all clients if synchronize is set to true.' ,
                 arguments={
                     "theElement": """The element you wish to attach the data to. """,
                     "key": """The key you wish to store the data under. (Maximum 31 characters.) """,

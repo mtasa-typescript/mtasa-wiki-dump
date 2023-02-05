@@ -46,10 +46,10 @@ DUMP_PARTIAL = [
             EventData(
             name='onChatMessage',
             docs=FunctionDoc(
-                description='This event is triggered when a player uses say, teamsay, me successfully. Or when any message is output to chat using outputChatBox on the server side. It can be used to get the resource responsible for specific outputChatBox call via the second parameter.' ,
+                description='This event is triggered when any message is output to chat using outputChatBox server-side (also when a player uses say, teamsay or me successfully).' ,
                 arguments={
-                    "theMessage": """a string representing the text that was output to the chatbox. """,
-                    "theElement": """a player element if chatbox output was done via say, teamsay or me. Resource if it was done via outputChatBox. """
+                    "theMessage": """A string representing the text that was output to the chatbox. """,
+                    "theElement": """A resource if it was done via outputChatBox or a player element if it was done via say, teamsay or me. """
                 },
                 result='' ,
             ),

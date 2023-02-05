@@ -244,6 +244,106 @@ DUMP_PARTIAL = [
         server=[
             FunctionOOP(
                 description=None,
+                base_function_name="doesPedHaveJetPack",
+                class_name='ped',
+                method=FunctionData(
+            signature=FunctionSignature(
+                name='doesHaveJetpack',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='thePed',
+                                argument_type=FunctionType(
+                                    names=['ped'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='Checks whether or not a ped currently has a jetpack.' ,
+                arguments={
+                    "thePed": """the ped you want to check """
+                },
+                result='returns true if the ped is carrying a jetpack, false if he is not or an invalid element was passed.' ,
+            ),
+            url='doesPedHaveJetPack',
+        ),
+                field=None,
+                is_static=False,
+            )
+        ],
+        client=[
+            FunctionOOP(
+                description=None,
+                base_function_name="doesPedHaveJetPack",
+                class_name='ped',
+                method=FunctionData(
+            signature=FunctionSignature(
+                name='doesHaveJetpack',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='thePed',
+                                argument_type=FunctionType(
+                                    names=['ped'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='Checks whether or not a ped currently has a jetpack.' ,
+                arguments={
+                    "thePed": """the ped you want to check """
+                },
+                result='returns true if the ped is carrying a jetpack, false if he is not or an invalid element was passed.' ,
+            ),
+            url='doesPedHaveJetPack',
+        ),
+                field=None,
+                is_static=False,
+            )
+        ],
+    ),
+    CompoundOOPData(
+        server=[
+            FunctionOOP(
+                description=None,
                 base_function_name="getPedAmmoInClip",
                 class_name='ped',
                 method=FunctionData(
@@ -435,7 +535,7 @@ DUMP_PARTIAL = [
                 arguments={
                     "thePed": """the player or ped you want to get the animations|animation of. """
                 },
-                result='<syntaxhighlight lang=lua>string anim, string block, int time, bool loop, bool updateposition, bool interruptable, bool freezelastframe, int blendtime, bool restoretaskonanimend</syntaxhighlight>' ,
+                result='<syntaxhighlight lang=lua>string block, string anim, int time, bool loop, bool updateposition, bool interruptable, bool freezelastframe, int blendtime, bool restoretaskonanimend</syntaxhighlight>' ,
             ),
             url='getPedAnimation',
         ),

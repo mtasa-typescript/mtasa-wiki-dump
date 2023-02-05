@@ -902,6 +902,12 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
+        url="/wiki/GetElementLighting",
+        name="getElementLighting",
+        category="Element functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
         url="/wiki/GetElementRadius",
         name="getElementRadius",
         category="Element functions",
@@ -1256,6 +1262,12 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
+        url="/wiki/GetChatboxCharacterLimit",
+        name="getChatboxCharacterLimit",
+        category="GUI functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
         url="/wiki/GuiCreateFont",
         name="guiCreateFont",
         category="GUI functions",
@@ -1450,6 +1462,12 @@ URL_LIST = [
     PageUrl(
         url="/wiki/IsTransferBoxActive",
         name="isTransferBoxActive",
+        category="GUI functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/SetChatboxCharacterLimit",
+        name="setChatboxCharacterLimit",
         category="GUI functions",
         type=ListType.CLIENT,
     ),
@@ -2096,6 +2114,12 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
+        url="/wiki/IsCapsLockEnabled",
+        name="isCapsLockEnabled",
+        category="Input functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
         url="/wiki/CreateLight",
         name="createLight",
         category="Light functions",
@@ -2141,6 +2165,18 @@ URL_LIST = [
         url="/wiki/SetLightRadius",
         name="setLightRadius",
         category="Light functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/IsCoronaReflectionEnabled",
+        name="isCoronaReflectionEnabled",
+        category="Marker functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/SetCoronaReflectionEnabled",
+        name="setCoronaReflectionEnabled",
+        category="Marker functions",
         type=ListType.CLIENT,
     ),
     PageUrl(
@@ -2224,6 +2260,12 @@ URL_LIST = [
     PageUrl(
         url="/wiki/CanPedBeKnockedOffBike",
         name="canPedBeKnockedOffBike",
+        category="Ped functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/DoesPedHaveJetPack",
+        name="doesPedHaveJetPack",
         category="Ped functions",
         type=ListType.CLIENT,
     ),
@@ -2564,6 +2606,12 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
+        url="/wiki/SvgCreate",
+        name="svgCreate",
+        category="SVG functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
         url="/wiki/SvgGetDocumentXML",
         name="svgGetDocumentXML",
         category="SVG functions",
@@ -2572,6 +2620,24 @@ URL_LIST = [
     PageUrl(
         url="/wiki/SvgGetSize",
         name="svgGetSize",
+        category="SVG functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/SvgSetDocumentXML",
+        name="svgSetDocumentXML",
+        category="SVG functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/SvgSetSize",
+        name="svgSetSize",
+        category="SVG functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/SvgSetUpdateCallback",
+        name="svgSetUpdateCallback",
         category="SVG functions",
         type=ListType.CLIENT,
     ),
@@ -3050,6 +3116,12 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
+        url="/wiki/GetCoronaReflectionsEnabled",
+        name="getCoronaReflectionsEnabled",
+        category="World functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
         url="/wiki/GetGarageBoundingBox",
         name="getGarageBoundingBox",
         category="World functions",
@@ -3164,6 +3236,12 @@ URL_LIST = [
         type=ListType.CLIENT,
     ),
     PageUrl(
+        url="/wiki/ResetCoronaReflectionsEnabled",
+        name="resetCoronaReflectionsEnabled",
+        category="World functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
         url="/wiki/ResetNearClipDistance",
         name="resetNearClipDistance",
         category="World functions",
@@ -3202,6 +3280,12 @@ URL_LIST = [
     PageUrl(
         url="/wiki/SetBirdsEnabled",
         name="setBirdsEnabled",
+        category="World functions",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/SetCoronaReflectionsEnabled",
+        name="setCoronaReflectionsEnabled",
         category="World functions",
         type=ListType.CLIENT,
     ),
@@ -6200,6 +6284,12 @@ URL_LIST = [
         type=ListType.SERVER,
     ),
     PageUrl(
+        url="/wiki/GenerateKeyPair",
+        name="generateKeyPair",
+        category="Utility functions",
+        type=ListType.SERVER,
+    ),
+    PageUrl(
         url="/wiki/GetColorFromString",
         name="getColorFromString",
         category="Utility functions",
@@ -6250,6 +6340,12 @@ URL_LIST = [
     PageUrl(
         url="/wiki/GetPerformanceStats",
         name="getPerformanceStats",
+        category="Utility functions",
+        type=ListType.SERVER,
+    ),
+    PageUrl(
+        url="/wiki/GetProcessMemoryStats",
+        name="getProcessMemoryStats",
         category="Utility functions",
         type=ListType.SERVER,
     ),
@@ -6854,6 +6950,12 @@ URL_LIST = [
         type=ListType.SERVER,
     ),
     PageUrl(
+        url="/wiki/GetVehicleTurnVelocity",
+        name="getVehicleTurnVelocity",
+        category="Vehicle functions",
+        type=ListType.SERVER,
+    ),
+    PageUrl(
         url="/wiki/GetVehicleTurretPosition",
         name="getVehicleTurretPosition",
         category="Vehicle functions",
@@ -7144,6 +7246,12 @@ URL_LIST = [
     PageUrl(
         url="/wiki/SetVehicleTaxiLightOn",
         name="setVehicleTaxiLightOn",
+        category="Vehicle functions",
+        type=ListType.SERVER,
+    ),
+    PageUrl(
+        url="/wiki/SetVehicleTurnVelocity",
+        name="setVehicleTurnVelocity",
         category="Vehicle functions",
         type=ListType.SERVER,
     ),
@@ -8458,6 +8566,12 @@ URL_LIST_EVENT = [
     PageUrl(
         url="/wiki/OnClientMinimize",
         name="onClientMinimize",
+        category="Other events",
+        type=ListType.CLIENT,
+    ),
+    PageUrl(
+        url="/wiki/OnClientMTAFocusChange",
+        name="onClientMTAFocusChange",
         category="Other events",
         type=ListType.CLIENT,
     ),

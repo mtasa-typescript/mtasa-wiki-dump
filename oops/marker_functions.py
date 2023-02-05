@@ -664,6 +664,125 @@ DUMP_PARTIAL = [
     ),
     CompoundOOPData(
         server=[
+            
+        ],
+        client=[
+            FunctionOOP(
+                description=None,
+                base_function_name="isCoronaReflectionEnabled",
+                class_name='Marker',
+                method=FunctionData(
+            signature=FunctionSignature(
+                name='isCoronaReflectionEnabled',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='theMarker',
+                                argument_type=FunctionType(
+                                    names=['marker'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='' ,
+                arguments={
+                    "theMarker": """marker """
+                },
+                result='* returns false is setmarkertype|marker type is not corona.\n* returns true if corona reflection is enabled, false otherwise.' ,
+            ),
+            url='isCoronaReflectionEnabled',
+        ),
+                field=None,
+                is_static=False,
+            )
+        ],
+    ),
+    CompoundOOPData(
+        server=[
+            
+        ],
+        client=[
+            FunctionOOP(
+                description=None,
+                base_function_name="setCoronaReflectionEnabled",
+                class_name='Marker',
+                method=FunctionData(
+            signature=FunctionSignature(
+                name='setCoronaReflectionEnabled',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='theMarker',
+                                argument_type=FunctionType(
+                                    names=['marker'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='enabled',
+                                argument_type=FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='' ,
+                arguments={
+                    "theMarker": """the corona marker that you wish set visibility of corona reflection """,
+                    "enabled": """whenever corona reflection should be visible """
+                },
+                result='returns true if setmarkertype|marker type is corona, false otherwise.' ,
+            ),
+            url='setCoronaReflectionEnabled',
+        ),
+                field=None,
+                is_static=False,
+            )
+        ],
+    ),
+    CompoundOOPData(
+        server=[
             FunctionOOP(
                 description=None,
                 base_function_name="setMarkerColor",

@@ -1355,10 +1355,9 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='Creates a sound element and plays it immediately after creation for the local player.<br />\n<br />\n*The only supported audio formats are MP3, WAV, OGG, RIFF, MOD, XM, IT, S3M and PLS (e.g. Webstream).\n*For performance reasons, when using playSound for effects that will be played lots (i.e. weapon fire), it is recommend that you convert your audio file to a one channel (mono) WAV with sample rate of 22050 Hz or less. Also consider adding a limit on how often the effect can be played e.g. once every 50ms.}}' ,
+                description='Creates a sound element and plays it immediately after creation for the local player.\n*The only supported audio formats are MP3, WAV, OGG, FLAC, RIFF, MOD, WEBM, XM, IT, S3M and PLS (e.g. Webstream).\n*For performance reasons, when using playSound for effects that will be played lots (i.e. weapon fire), it is recommend that you convert your audio file to a one channel (mono) WAV with sample rate of 22050 Hz or less. Also consider adding a limit on how often the effect can be played e.g. once every 50ms.}}' ,
                 arguments={
-                    "soundPath": """Can also be raw sound data.
-|20460}} """,
+                    "soundPath": """filepath, raw data or URL (http://, https:// or ftp://) of the sound file you want to play. (Note: Playing sound files from other resources requires the target resource to be in the running state) """,
                     "looped": """a boolean representing whether the sound will be looped. To loop the sound, use true. Loop is not available for streaming sounds, only for sound files. """,
                     "throttled": """a boolean representing whether the sound will be throttled (i.e. given reduced download bandwidth). To throttle the sound, use true. Sounds will be throttled per default and only for URLs. """
                 },
@@ -1445,10 +1444,9 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='Creates a sound element in the GTA world and plays it immediately after creation for the local player. setElementPosition can be used to move the sound element around after it has been created. Remember to use setElementDimension after creating the sound to play it outside of dimension 0.<br />\n<br />\n*The only supported audio formats are MP3, WAV, OGG, RIFF, MOD, XM, IT and S3M.\n*For performance reasons, when using playSound3D for effects that will be played lots (i.e. weapon fire), it is recommend that you convert your audio file to a one channel (mono) WAV with sample rate of 22050 Hz or less. Also consider adding a limit on how often the effect can be played e.g. once every 50ms.}}' ,
+                description='Creates a sound element in the GTA world and plays it immediately after creation for the local player. setElementPosition can be used to move the sound element around after it has been created. Remember to use setElementDimension after creating the sound to play it outside of dimension 0.\n*The only supported audio formats are MP3, WAV, OGG, RIFF, MOD, WEBM, XM, IT and S3M.\n*For performance reasons, when using playSound3D for effects that will be played lots (i.e. weapon fire), it is recommend that you convert your audio file to a one channel (mono) WAV with sample rate of 22050 Hz or less. Also consider adding a limit on how often the effect can be played e.g. once every 50ms.}}' ,
                 arguments={
-                    "soundPath": """Can also be raw sound data.
-|20460}} """,
+                    "soundPath": """raw data or filepath to the sound file you want to play. (Note: Playing sound files from other resources requires the target resource to be in the running state) """,
                     "soundURL": """the URL (http://, https:// or ftp://) of the sound file you want to play. (In this version the file does not have to be predefined in the meta.xml) """,
                     "x": """a floating point number representing the X coordinate on the map. """,
                     "y": """a floating point number representing the Y coordinate on the map. """,

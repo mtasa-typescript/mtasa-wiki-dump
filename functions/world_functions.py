@@ -399,6 +399,44 @@ DUMP_PARTIAL = [
     ),
     CompoundFunctionData(
         server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
+                name='getCoronaReflectionsEnabled',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='' ,
+                arguments={
+                    
+                },
+                result='one of the following integers will be returned:\n* 0: corona reflections are disabled\n* 1: corona reflections are enabled (are visible during rain)\n* 2: corona reflections are force enabled (are visible even if there is no rain)' ,
+            ),
+            url='getCoronaReflectionsEnabled',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
             FunctionData(
             signature=FunctionSignature(
                 name='getFarClipDistance',
@@ -2541,7 +2579,7 @@ DUMP_PARTIAL = [
 ** Flint County
 ** Los Santos """
                 },
-                result='returns the string of the zone name' ,
+                result='returns the string of the zone name.' ,
             ),
             url='getZoneName',
         )
@@ -2624,7 +2662,7 @@ DUMP_PARTIAL = [
 ** Flint County
 ** Los Santos """
                 },
-                result='returns the string of the zone name' ,
+                result='returns the string of the zone name.' ,
             ),
             url='getZoneName',
         )
@@ -3660,6 +3698,44 @@ DUMP_PARTIAL = [
                 result='returns true if the color filtering was reset, false otherwise.' ,
             ),
             url='resetColorFilter',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
+                name='resetCoronaReflectionsEnabled',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='' ,
+                arguments={
+                    
+                },
+                result='returns true.' ,
+            ),
+            url='resetCoronaReflectionsEnabled',
         )
         ],
     ),
@@ -5180,6 +5256,56 @@ DUMP_PARTIAL = [
     ),
     CompoundFunctionData(
         server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
+                name='setCoronaReflectionsEnabled',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='enabled',
+                                argument_type=FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='' ,
+                arguments={
+                    "enabled": """ """,
+                    "0": """: disabled """,
+                    "1": """: enabled (will be visible during rain) """,
+                    "2": """: force enabled (will be visible even if there is no rain) """
+                },
+                result='returns true if passed arguments are correct, false otherwise.' ,
+            ),
+            url='setCoronaReflectionsEnabled',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
             FunctionData(
             signature=FunctionSignature(
                 name='setFarClipDistance',
@@ -6513,7 +6639,7 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='' ,
                 arguments={
-                    "distance": """the new peds LOD distance. It must be between 0 and 500. (Default for high_detail_peds on is 500, when off, it is 60). """
+                    "distance": """the new peds LOD distance. This value is clamped to 0 – 500. (Default for high_detail_peds on is 500, when off, it is 60). """
                 },
                 result='this function returns true if the argument is valid. returns false otherwise.' ,
             ),
@@ -7431,7 +7557,7 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                     "vehiclesDistance": """general distance used for most vehicles, this value is clamped to 0 – 500 """,
                     "trainsAndPlanesDistance": """distance used for trains and planes, this value is clamped to 0 – 500 """
                 },
-                result='' ,
+                result='this function returns true if arguments are valid. returns false otherwise.' ,
             ),
             url='setVehiclesLODDistance',
         )
@@ -7869,14 +7995,16 @@ Alternatively, you can provide two string parameters ('''colorNS''' and '''color
                 description='Enables or disables a special world property.' ,
                 arguments={
                     "propname": """the name of the property to set. Possible values are: """,
-                    "hovercars": """- equivalent of the JBGVNB cheat, and allows cars to drive on water. """,
-                    "aircars": """- equivalent of the RIPAZHA cheat, and allows cars to fly. """,
-                    "extrabunny": """- equivalent of the CJPHONEHOME or JHJOECW cheat, and allows you to bunny hop on bicycles much higher. """,
-                    "extrajump": """- equivalent of the KANGAROO cheat, and allows you to jump on foot much higher. """,
+                    "hovercars": """- equivalent of the JBGVNB cheat, and allows cars to drive on water. (default: false) """,
+                    "aircars": """- equivalent of the RIPAZHA cheat, and allows cars to fly. (default: false) """,
+                    "extrabunny": """- equivalent of the CJPHONEHOME or JHJOECW cheat, and allows you to bunny hop on bicycles much higher. (default: false) """,
+                    "extrajump": """- equivalent of the KANGAROO cheat, and allows you to jump on foot much higher. (default: false) """,
                     "randomfoliage": """- toggle randomly generated foliage on the GTA:SA map (default: true) """,
                     "snipermoon": """- toggle the GTA:SA easter egg, which increases the size of the moon every time you shoot it with a sniper rifle (default: false) """,
                     "extraairresistance": """- toggle the vehicle speed limit on cross-country roads (default: true)
-**{{New feature/item|3.0156|1.5.5|12286|'''underworldwarp''' - toggle warp of peds and vehicles when fall under map (default: true)}} """,
+**{{New feature/item|3.0156|1.5.5|12286|'''underworldwarp''' - toggle warp of peds and vehicles when fall under map (default: true)}}
+**{{New feature/item|3.0160|1.5.9|21125|'''vehiclesunglare''' - toggle the vehicle sun glare effect (default: false) }}
+**{{New feature/item|3.0160|1.5.9|21313| '''coronaztest''' - disable big sun lensflare effect (default: true) }} """,
                     "enable": """whether or not to enable the property. """
                 },
                 result='returns true if successful, false otherwise.' ,

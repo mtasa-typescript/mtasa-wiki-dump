@@ -302,6 +302,22 @@ DUMP_PARTIAL = [
     ),
     CompoundOOPData(
         server=[
+            
+        ],
+        client=[
+            
+        ],
+    ),
+    CompoundOOPData(
+        server=[
+            
+        ],
+        client=[
+            
+        ],
+    ),
+    CompoundOOPData(
+        server=[
             FunctionOOP(
                 description=None,
                 base_function_name="getTimerDetails",

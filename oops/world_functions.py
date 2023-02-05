@@ -345,6 +345,14 @@ DUMP_PARTIAL = [
             
         ],
         client=[
+            
+        ],
+    ),
+    CompoundOOPData(
+        server=[
+            
+        ],
+        client=[
             FunctionOOP(
                 description=None,
                 base_function_name="isWorldSpecialPropertyEnabled",
@@ -353,6 +361,22 @@ DUMP_PARTIAL = [
                 field=None,
                 is_static=None,
             )
+        ],
+    ),
+    CompoundOOPData(
+        server=[
+            
+        ],
+        client=[
+            
+        ],
+    ),
+    CompoundOOPData(
+        server=[
+            
+        ],
+        client=[
+            
         ],
     ),
     CompoundOOPData(

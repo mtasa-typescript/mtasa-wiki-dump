@@ -266,7 +266,7 @@ DUMP_PARTIAL = [
             docs=FunctionDoc(
                 description='This event is triggered whenever a ped dies.' ,
                 arguments={
-                    "killer": """: A player element representing the killer. """,
+                    "killer": """: A player, ped or vehicle element representing the killer. """,
                     "weapon": """: An int|integer representing the Weapons|killer weapon or the Damage Types|damage types. """,
                     "bodypart": """: An int|integer representing the bodypart the player was damaged. """,
                     "loss": """: A float representing the percentage of health the ped lost in the final hit. Note: Only for client-side created peds.
@@ -586,7 +586,7 @@ DUMP_PARTIAL = [
                 description='This event is triggered when a ped is killed or dies. It is not triggered for players.' ,
                 arguments={
                     "totalAmmo": """: an int representing the total ammo the victim had when he died. """,
-                    "killer": """: an element representing the player or vehicle who was the killer.  If there was no killer this is false. """,
+                    "killer": """: an element representing the player, ped or vehicle who was the killer.  If there was no killer this is false. """,
                     "killerWeapon": """: an int representing the Weapons|killer weapon or the Damage Types|damage types. """,
                     "bodypart": """: an int representing the bodypart ID the victim was hit on when he died. """,
                     "stealth": """: a boolean representing whether or not this was a stealth kill. """

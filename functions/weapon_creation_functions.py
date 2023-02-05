@@ -863,7 +863,7 @@ DUMP_PARTIAL = [
                     "2": """BONE_PELVIS position. """,
                     "3": """BONE_SPINE1 position. """,
                     "255": """: center of the ped (position returned by getElementPosition). """,
-                    "Ped|Peds": """(players not included; see getPedBonePosition to know where is located each bone): """,
+                    "Ped|Peds": """(players not included; see getPedBonePosition to know where each bone is located): """,
                     "4": """BONE_UPPERTORSO position. """,
                     "5": """BONE_NECK position. """,
                     "6": """BONE_HEAD2 position. """,

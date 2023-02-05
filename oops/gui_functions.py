@@ -17,6 +17,59 @@ DUMP_PARTIAL = [
             
         ],
         client=[
+            FunctionOOP(
+                description=None,
+                base_function_name="getChatboxCharacterLimit",
+                class_name='GUI widgets|GuiElement',
+                method=FunctionData(
+            signature=FunctionSignature(
+                name='getChatboxCharacterLimit',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='Gets the current maximum amount of characters that can be input via chatbox' ,
+                arguments={
+                    
+                },
+                result='returns a number between 0-255, representing the chatbox input character limit' ,
+            ),
+            url='getChatboxCharacterLimit',
+        ),
+                field=FunctionOOPField(
+                                name='chatboxCharacterLimit',
+                                types=[
+                                    FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                )
+                                ],
+                            ),
+                is_static=True,
+            )
+        ],
+    ),
+    CompoundOOPData(
+        server=[
+            
+        ],
+        client=[
             
         ],
     ),
@@ -2925,7 +2978,7 @@ DUMP_PARTIAL = [
                 arguments={
                     "gridList": """The grid list you want to add a column to """
                 },
-                result='returns an integer with the amount of columns in the gridlist, false otherwise.' ,
+                result='returns an integer with the amount of columns in the gridlist, false otherwise.\n<syntaxhighlight lang=lua>\n-- create the grid list\nlocal list = guicreategridlist(0.80, 0.40, 0.15, 0.35, true)\n-- add three columns to the grid list\nguigridlistaddcolumn(list, column 1, 0.33)\nguigridlistaddcolumn(list, column 2, 0.33)\nguigridlistaddcolumn(list, column 3, 0.33)\n-- display the number of columns in the grid list in the debug or server console (/debugscript 3)\nprint(number of columns:  .. guigridlistgetcolumncount(list))\n</syntaxhighlight>' ,
             ),
             url='guiGridListGetColumnCount',
         ),
@@ -3812,7 +3865,7 @@ DUMP_PARTIAL = [
                     "itemText2": """The text for the second column item in the row.  Either a string or a number can be passed (use numbers for sorting purposes). """,
                     "...": """Item text for any other columns """
                 },
-                result='returns true if the row was successfully added, false otherwise.' ,
+                result='returns row id if the row was successfully added, false otherwise.' ,
             ),
             url='guiGridListInsertRowAfter',
         ),
@@ -7388,6 +7441,68 @@ DUMP_PARTIAL = [
             url='isTransferBoxActive',
         ),
                 field=None,
+                is_static=True,
+            )
+        ],
+    ),
+    CompoundOOPData(
+        server=[
+            
+        ],
+        client=[
+            FunctionOOP(
+                description=None,
+                base_function_name="setChatboxCharacterLimit",
+                class_name='GUI widgets|GuiElement',
+                method=FunctionData(
+            signature=FunctionSignature(
+                name='setChatboxCharacterLimit',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='charLimit',
+                                argument_type=FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='Sets the maximum amount of characters that can be input via chatbox' ,
+                arguments={
+                    "charLimit": """an integer between 0-255. Passing -1 will reset the character limit (96) """
+                },
+                result='returns true if the character limit was set, false otherwise' ,
+            ),
+            url='setChatboxCharacterLimit',
+        ),
+                field=FunctionOOPField(
+                                name='chatboxCharacterLimit',
+                                types=[
+                                    FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                                ],
+                            ),
                 is_static=True,
             )
         ],

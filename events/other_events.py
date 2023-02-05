@@ -391,6 +391,38 @@ DUMP_PARTIAL = [
         ],
         client=[
             EventData(
+            name='onClientMTAFocusChange',
+            docs=FunctionDoc(
+                description='' ,
+                arguments={
+                    "windowFocused": """A boolean, indicating whether the MTA window is focused or not. """
+                },
+                result='' ,
+            ),
+            arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='windowFocused',
+                                argument_type=FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+        )
+        ],
+    ),
+    CompoundEventData(
+        server=[
+            
+        ],
+        client=[
+            EventData(
             name='onClientPedsProcessed',
             docs=FunctionDoc(
                 description='' ,

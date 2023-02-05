@@ -309,7 +309,7 @@ DUMP_PARTIAL = [
             EventData(
             name='onClientElementStreamIn',
             docs=FunctionDoc(
-                description='This event is triggered whenever a physical element is streamed in. This is triggered for all elements that are streamable, such as players, peds, vehicles, objects and markers. When this event is triggered, that element is guaranteed to be physically created as a GTA object.' ,
+                description='This event is triggered whenever a physical element is streamed in. This is triggered for all elements that are streamable, such as players, peds, vehicles, objects and markers. When this event is triggered, that element is guaranteed to be physically created as a GTA object.\nBe aware that this event triggers for local player (as itself being the element that got streamed in) when said local player spawns, as this is the creation of entity local ped.' ,
                 arguments={
                     
                 },

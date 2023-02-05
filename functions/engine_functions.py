@@ -1229,7 +1229,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='This function replaces the given model ID with the model contained in a DFF file loaded by engineLoadDFF. This function supports vehicle|vehicles, object|objects, ped|peds and player|players but not CJ clothing and body parts.\nTo replace weapon models you must use their object IDs, not weapon IDs. There is a weapon model list available at weapons.\n* Default GTA map objects behave inconsistently when using this function on them. If you want to replace models in the original GTA map, use one of the EngineReplaceModel notes|methods shown here.}}' ,
+                description='This function replaces the given model ID with the model contained in a DFF file loaded by engineLoadDFF. This function supports vehicle|vehicles, object|objects, ped|peds and player|players but not CJ clothing and body parts.\nTo replace weapon models you must use their object IDs, not weapon IDs. There is a weapon model list available at weapons.\n* Please note the loading order that is used in the examples as other orders can cause collisions, textures or the DFF not to load due to technical limitations.\n* Default GTA map objects behave inconsistently when using this function on them. If you want to replace models in the original GTA map, use one of the EngineReplaceModel notes|methods shown here.\n* A raw data DFF element can only be used once, because the underlying memory for the model is released after replacement.\n* If the replacement model is broken and the original model is not loaded/streamed-in at the time of replacement, this function will succeed and you wont see any error message, neither when the model replacement fails once the original model starts to load/stream-in.}}' ,
                 arguments={
                     "theModel": """The model to replace the given model ID with """,
                     "modelID": """The model it to replace the model of """,
@@ -1288,10 +1288,10 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='*Before release 1.5.8 r20716 this must be ped.' ,
+                description='' ,
                 arguments={
-                    "elementType": """: ped, vehicle and object. """,
-                    "parentID": """: The model ID of the model being allocated. (By default this is: 1337 - objects, 400 - vehicles, 7 - peds) """
+                    "elementType": """: ped, vehicle or object. """,
+                    "parentID": """: The ID of the parent model (by default this is: 1337 - objects, 400 - vehicles, 7 - peds). """
                 },
                 result='do not rely on the model numbers returned being consistent across multiple clients or multiple runs of resources. there is no guarantee for the order of the numbers or that the same numbers will always correspond to the same element type. any patterns are coincidental.' ,
             ),

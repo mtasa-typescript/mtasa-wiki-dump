@@ -37,11 +37,11 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='This function is used to get alpha (transparency) from the clients cursor.' ,
+                description='This function is used to get the clients cursor alpha (transparency).' ,
                 arguments={
                     
                 },
-                result='returns a int, 0-255, where 255 is fully opaque and 0 is fully transparent.' ,
+                result='returns a int between 0 and 255, where 255 is fully opaque and 0 is fully transparent.' ,
             ),
             url='getCursorAlpha',
         )
@@ -95,7 +95,7 @@ DUMP_PARTIAL = [
                 arguments={
                     
                 },
-                result='returns 5 values: cursorx, cursory, worldx, worldy, worldz. the first two values are the 2d relative screen coordinates of the cursor: cursorx goes from 0 (left side of the screen) to 1 (right side), cursory goes from 0 (top) to 1 (bottom). the 3 values that follow are the 3d world map coordinates that the cursor points at. if the cursor isnt showing, returns false as the first value.' ,
+                result='returns 5 values: cursorx, cursory, worldx, worldy, worldz. the first two values are the 2d relative screen coordinates of the cursor. the 3 values that follow are the 3d world map coordinates that the cursor points at. if the cursor isnt showing, returns false as the first value.' ,
             ),
             url='getCursorPosition',
         )

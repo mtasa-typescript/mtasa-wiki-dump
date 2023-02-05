@@ -2156,7 +2156,53 @@ DUMP_PARTIAL = [
             
         ],
         client=[
-            
+            FunctionOOP(
+                description=None,
+                base_function_name="getVehicleCurrentGear",
+                class_name='vehicle',
+                method=FunctionData(
+            signature=FunctionSignature(
+                name='getGear',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='theVehicle',
+                                argument_type=FunctionType(
+                                    names=['vehicle'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='Gets the specified vehicles current gear.' ,
+                arguments={
+                    "theVehicle": """the vehicle to get the gear of """
+                },
+                result='returns the gear if successful, false otherwise.' ,
+            ),
+            url='getVehicleCurrentGear',
+        ),
+                field=None,
+                is_static=False,
+            )
         ],
     ),
     CompoundOOPData(
@@ -5351,6 +5397,154 @@ OR """,
         server=[
             FunctionOOP(
                 description=None,
+                base_function_name="getVehicleTurnVelocity",
+                class_name='vehicle',
+                method=FunctionData(
+            signature=FunctionSignature(
+                name='getTurnVelocity',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                    FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                    FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='theVehicle',
+                                argument_type=FunctionType(
+                                    names=['vehicle'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='This function is used to retrieve a vehicles turning velocity for each axis.' ,
+                arguments={
+                    "theVehicle": """The vehicle you wish to get the turning velocities of. """
+                },
+                result='returns 3 floats that represent the vehicles turning velocity on the x, y and z axis or false if wrong arguments were passed.' ,
+            ),
+            url='getVehicleTurnVelocity',
+        ),
+                field=FunctionOOPField(
+                                name='turnVelocity',
+                                types=[
+                                    FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                                    FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                                    FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                )
+                                ],
+                            ),
+                is_static=False,
+            )
+        ],
+        client=[
+            FunctionOOP(
+                description=None,
+                base_function_name="getVehicleTurnVelocity",
+                class_name='vehicle',
+                method=FunctionData(
+            signature=FunctionSignature(
+                name='getTurnVelocity',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                    FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                    FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='theVehicle',
+                                argument_type=FunctionType(
+                                    names=['vehicle'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='This function is used to retrieve a vehicles turning velocity for each axis.' ,
+                arguments={
+                    "theVehicle": """The vehicle you wish to get the turning velocities of. """
+                },
+                result='returns 3 floats that represent the vehicles turning velocity on the x, y and z axis or false if wrong arguments were passed.' ,
+            ),
+            url='getVehicleTurnVelocity',
+        ),
+                field=FunctionOOPField(
+                                name='turnVelocity',
+                                types=[
+                                    FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                                    FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                                    FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                )
+                                ],
+                            ),
+                is_static=False,
+            )
+        ],
+    ),
+    CompoundOOPData(
+        server=[
+            FunctionOOP(
+                description=None,
                 base_function_name="getVehicleTurretPosition",
                 class_name='vehicle',
                 method=FunctionData(
@@ -8524,7 +8718,7 @@ OR """,
                 ],
             ),
             docs=FunctionDoc(
-                description='This function will set the color of a vehicle using either a RGB format, or the Vehicle Colors|standard San Andreas color IDs. Vehicles can have up to 4 colors, most of the vehicles have 2 colors only.\n<syntaxhighlight lang=lua>\nbool setVehicleColor(vehicle veh, int r1, int g1, int b1, int r2, int g2, int b2, int r3, int g3, int b3, int r4, int g4, int b4)\n</syntaxhighlight>\n<syntaxhighlight lang=lua>\nbool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)\n</syntaxhighlight>\n*theVehicle: The vehicle that you wish to set the color of.\n* RGB format:\n** r1, g1, b1: Three integers indicating the red, green and blue components of the first (main) color for the vehicle\n* Palette format:\n** p1, p2, p3, p4: Exactly four integers indicating the Vehicle Colors|vehicle color IDs from the palette. <br> If a vehicle has fewer than four colours, you must still provide four colours, otherwise the RGB format will be used.\n*r2, g2, b2: Three integers indicating the red, green and blue components of the second color for the vehicle\n*r3, g3, b3: Three integers indicating the red, green and blue components of the third color for the vehicle\n*r4, g4, b4: Three integers indicating the red, green and blue components of the fourth color for the vehicle' ,
+                description='This function will set the color of a vehicle using either a RGB format, or the Vehicle Colors|standard San Andreas color IDs. Vehicles can have up to 3 colors, most of the vehicles have 2 colors only.\n<syntaxhighlight lang=lua>\nbool setVehicleColor(vehicle veh, int r1, int g1, int b1, int r2, int g2, int b2, int r3, int g3, int b3, int r4, int g4, int b4)\n</syntaxhighlight>\n<syntaxhighlight lang=lua>\nbool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)\n</syntaxhighlight>\n*theVehicle: The vehicle that you wish to set the color of.\n* RGB format:\n** r1, g1, b1: Three integers indicating the red, green and blue components of the first (main) color for the vehicle\n* Palette format:\n** p1, p2, p3, p4: Exactly four integers indicating the Vehicle Colors|vehicle color IDs from the palette. <br> If a vehicle has fewer than four colours, you must still provide four colours, otherwise the RGB format will be used.\n*r2, g2, b2: Three integers indicating the red, green and blue components of the second color for the vehicle\n*r3, g3, b3: Three integers indicating the red, green and blue components of the third color for the vehicle\n*r4, g4, b4: Three integers indicating the red, green and blue components of the fourth color for the vehicle' ,
                 arguments={
                     
                 },
@@ -8693,7 +8887,7 @@ OR """,
                 ],
             ),
             docs=FunctionDoc(
-                description='This function will set the color of a vehicle using either a RGB format, or the Vehicle Colors|standard San Andreas color IDs. Vehicles can have up to 4 colors, most of the vehicles have 2 colors only.\n<syntaxhighlight lang=lua>\nbool setVehicleColor(vehicle veh, int r1, int g1, int b1, int r2, int g2, int b2, int r3, int g3, int b3, int r4, int g4, int b4)\n</syntaxhighlight>\n<syntaxhighlight lang=lua>\nbool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)\n</syntaxhighlight>\n*theVehicle: The vehicle that you wish to set the color of.\n* RGB format:\n** r1, g1, b1: Three integers indicating the red, green and blue components of the first (main) color for the vehicle\n* Palette format:\n** p1, p2, p3, p4: Exactly four integers indicating the Vehicle Colors|vehicle color IDs from the palette. <br> If a vehicle has fewer than four colours, you must still provide four colours, otherwise the RGB format will be used.\n*r2, g2, b2: Three integers indicating the red, green and blue components of the second color for the vehicle\n*r3, g3, b3: Three integers indicating the red, green and blue components of the third color for the vehicle\n*r4, g4, b4: Three integers indicating the red, green and blue components of the fourth color for the vehicle' ,
+                description='This function will set the color of a vehicle using either a RGB format, or the Vehicle Colors|standard San Andreas color IDs. Vehicles can have up to 3 colors, most of the vehicles have 2 colors only.\n<syntaxhighlight lang=lua>\nbool setVehicleColor(vehicle veh, int r1, int g1, int b1, int r2, int g2, int b2, int r3, int g3, int b3, int r4, int g4, int b4)\n</syntaxhighlight>\n<syntaxhighlight lang=lua>\nbool setVehicleColor(vehicle veh, int p1, int p2, int p3, int p4)\n</syntaxhighlight>\n*theVehicle: The vehicle that you wish to set the color of.\n* RGB format:\n** r1, g1, b1: Three integers indicating the red, green and blue components of the first (main) color for the vehicle\n* Palette format:\n** p1, p2, p3, p4: Exactly four integers indicating the Vehicle Colors|vehicle color IDs from the palette. <br> If a vehicle has fewer than four colours, you must still provide four colours, otherwise the RGB format will be used.\n*r2, g2, b2: Three integers indicating the red, green and blue components of the second color for the vehicle\n*r3, g3, b3: Three integers indicating the red, green and blue components of the third color for the vehicle\n*r4, g4, b4: Three integers indicating the red, green and blue components of the fourth color for the vehicle' ,
                 arguments={
                     
                 },
@@ -11285,10 +11479,10 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 ],
             ),
             docs=FunctionDoc(
-                description='This function can be used to set the numberplate text of a car.\nIt now also changes the numberplate text of any vehicle that has visual numberplates.' ,
+                description='This function can be used to set the numberplate text of a vehicle.' ,
                 arguments={
                     "theVehicle": """the vehicle whose numberplate you want to change. """,
-                    "numberplate": """a string that will go on the number plate of the car (max 8 characters). """
+                    "numberplate": """a string that will go on the number plate of the vehicle (max 8 characters). """
                 },
                 result='returns true if the numberplate was changed successfully, or false if invalid arguments were passed' ,
             ),
@@ -11353,10 +11547,10 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
                 ],
             ),
             docs=FunctionDoc(
-                description='This function can be used to set the numberplate text of a car.\nIt now also changes the numberplate text of any vehicle that has visual numberplates.' ,
+                description='This function can be used to set the numberplate text of a vehicle.' ,
                 arguments={
                     "theVehicle": """the vehicle whose numberplate you want to change. """,
-                    "numberplate": """a string that will go on the number plate of the car (max 8 characters). """
+                    "numberplate": """a string that will go on the number plate of the vehicle (max 8 characters). """
                 },
                 result='returns true if the numberplate was changed successfully, or false if invalid arguments were passed' ,
             ),
@@ -12234,6 +12428,188 @@ Returns ''true'' if the light state was set successfully, ''false'' if invalid a
         ),
                 field=FunctionOOPField(
                                 name='taxiLightOn',
+                                types=[
+                                    FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                                ],
+                            ),
+                is_static=False,
+            )
+        ],
+    ),
+    CompoundOOPData(
+        server=[
+            FunctionOOP(
+                description=None,
+                base_function_name="setVehicleTurnVelocity",
+                class_name='vehicle',
+                method=FunctionData(
+            signature=FunctionSignature(
+                name='setTurnVelocity',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='theVehicle',
+                                argument_type=FunctionType(
+                                    names=['vehicle'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='rx',
+                                argument_type=FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='ry',
+                                argument_type=FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='rz',
+                                argument_type=FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='Sets the angular velocity of a vehicle. Basically applies a spin to it.' ,
+                arguments={
+                    "theVehicle": """The vehicle to apply the spin to. """,
+                    "rx": """velocity around the X axis """,
+                    "ry": """velocity around the Y axis """,
+                    "rz": """velocity around the Z axis """
+                },
+                result='returns true if it was succesful, false otherwise.' ,
+            ),
+            url='setVehicleTurnVelocity',
+        ),
+                field=FunctionOOPField(
+                                name='turnVelocity',
+                                types=[
+                                    FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                                ],
+                            ),
+                is_static=False,
+            )
+        ],
+        client=[
+            FunctionOOP(
+                description=None,
+                base_function_name="setVehicleTurnVelocity",
+                class_name='vehicle',
+                method=FunctionData(
+            signature=FunctionSignature(
+                name='setTurnVelocity',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='theVehicle',
+                                argument_type=FunctionType(
+                                    names=['vehicle'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='rx',
+                                argument_type=FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='ry',
+                                argument_type=FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='rz',
+                                argument_type=FunctionType(
+                                    names=['float'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='Sets the angular velocity of a vehicle. Basically applies a spin to it.' ,
+                arguments={
+                    "theVehicle": """The vehicle to apply the spin to. """,
+                    "rx": """velocity around the X axis """,
+                    "ry": """velocity around the Y axis """,
+                    "rz": """velocity around the Z axis """
+                },
+                result='returns true if it was succesful, false otherwise.' ,
+            ),
+            url='setVehicleTurnVelocity',
+        ),
+                field=FunctionOOPField(
+                                name='turnVelocity',
                                 types=[
                                     FunctionType(
                                     names=['bool'],

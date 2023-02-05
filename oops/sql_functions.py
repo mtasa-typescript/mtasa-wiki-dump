@@ -95,7 +95,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='This function executes a database query using the supplied connection. No result is returned.' ,
+                description='This function executes a database query using the supplied connection. No query result is returned.' ,
                 arguments={
                     "databaseConnection": """A database connection element previously returned from dbConnect """,
                     "query": """An SQL query. Positions where parameter values will be inserted are marked with a ? """,

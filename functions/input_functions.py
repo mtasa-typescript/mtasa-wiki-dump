@@ -1091,6 +1091,44 @@ DUMP_PARTIAL = [
     ),
     CompoundFunctionData(
         server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
+                name='isCapsLockEnabled',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='' ,
+                arguments={
+                    
+                },
+                result='returns true if caps lock is toggled (on), false otherwise.' ,
+            ),
+            url='isCapsLockEnabled',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
             FunctionData(
             signature=FunctionSignature(
                 name='isControlEnabled',

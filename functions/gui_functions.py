@@ -16,6 +16,44 @@ DUMP_PARTIAL = [
         client=[
             FunctionData(
             signature=FunctionSignature(
+                name='getChatboxCharacterLimit',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='Gets the current maximum amount of characters that can be input via chatbox' ,
+                arguments={
+                    
+                },
+                result='returns a number between 0-255, representing the chatbox input character limit' ,
+            ),
+            url='getChatboxCharacterLimit',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
                 name='getChatboxLayout',
                 return_types=FunctionReturnTypes(
                     return_types=[
@@ -68,7 +106,8 @@ DUMP_PARTIAL = [
                     "chat_line_life": """- Returns how long it takes for text to start fading out """,
                     "chat_line_fade_out": """- Returns how long takes for text to fade out """,
                     "chat_use_cegui": """- Returns whether CEGUI is used to render the chatbox """,
-                    "text_scale": """- Returns text scale """
+                    "text_scale": """- Returns text scale
+**{{Added feature/item|1.6.0|1.5.9|21160|'''chat_text_outline''' - Returns whether text black/white outline is used}} """
                 },
                 result='*4 numbers if the cvar contains color\n*2 numbers if chat_scale was entered\n*1 number if any other cvar was specified\n*a table of all cvar values, if cvar was not specified\n*false if an invalid cvar was specified' ,
             ),
@@ -929,7 +968,7 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='This function creates a new CEGUI web Element/Browser|browser element.\n<br>The difference between this, and createBrowser is that, this handles inputs internally, and it can be attached to GUI windows. So this one is more suitable for custom dx based interfaces.\nYou can learn more about the differences https://forum.mtasa.com/topic/80422-dx-browser-vs-gui-browser/?do=findComment&comment=737334 here.' ,
+                description='This function creates a new CEGUI web Element/Browser|browser element.\n<br>The difference between this and createBrowser is that this function handles inputs internally, and it can be attached to GUI windows. So the createBrowser function is more suitable for custom dx based interfaces, while this one is favorable for CEGUI all-in-all integration.\nYou can learn more about the differences https://forum.mtasa.com/topic/80422-dx-browser-vs-gui-browser/?do=findComment&comment=737334 here.' ,
                 arguments={
                     "x": """A float of the 2D x position of the browser on a players screen.  This is affected by the relative argument. """,
                     "y": """A float of the 2D y position of the browser on a players screen. This is affected by the relative argument. """,
@@ -4129,7 +4168,7 @@ DUMP_PARTIAL = [
                 arguments={
                     "gridList": """The grid list you want to add a column to """
                 },
-                result='returns an integer with the amount of columns in the gridlist, false otherwise.' ,
+                result='returns an integer with the amount of columns in the gridlist, false otherwise.\n<syntaxhighlight lang=lua>\n-- create the grid list\nlocal list = guicreategridlist(0.80, 0.40, 0.15, 0.35, true)\n-- add three columns to the grid list\nguigridlistaddcolumn(list, column 1, 0.33)\nguigridlistaddcolumn(list, column 2, 0.33)\nguigridlistaddcolumn(list, column 3, 0.33)\n-- display the number of columns in the grid list in the debug or server console (/debugscript 3)\nprint(number of columns:  .. guigridlistgetcolumncount(list))\n</syntaxhighlight>' ,
             ),
             url='guiGridListGetColumnCount',
         )
@@ -4869,7 +4908,7 @@ DUMP_PARTIAL = [
                     "itemText2": """The text for the second column item in the row.  Either a string or a number can be passed (use numbers for sorting purposes). """,
                     "...": """Item text for any other columns """
                 },
-                result='returns true if the row was successfully added, false otherwise.' ,
+                result='returns row id if the row was successfully added, false otherwise.' ,
             ),
             url='guiGridListInsertRowAfter',
         )
@@ -8409,6 +8448,53 @@ DUMP_PARTIAL = [
                 result='returns true if the file transfer box is visible, false if not.' ,
             ),
             url='isTransferBoxActive',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
+                name='setChatboxCharacterLimit',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='charLimit',
+                                argument_type=FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='Sets the maximum amount of characters that can be input via chatbox' ,
+                arguments={
+                    "charLimit": """an integer between 0-255. Passing -1 will reset the character limit (96) """
+                },
+                result='returns true if the character limit was set, false otherwise' ,
+            ),
+            url='setChatboxCharacterLimit',
         )
         ],
     ),

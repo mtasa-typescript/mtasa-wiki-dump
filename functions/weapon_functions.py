@@ -630,7 +630,7 @@ The following properties are get only: """
                 description='giveWeapon gives a specified weapon to a certain player or ped. There is an optional argument to specify ammunition. For example, a melee weapon doesnt need an ammo argument.\n*When setting ammo for Weapon|weapons in slot 0,1,10,11 or 12, the ammo max is 1\n*When setting ammo for Weapon|weapons in slot 3,4,5, the ammo is added\n*When setting ammo for Weapon|weapons in slot 2,6,7,8,9 and the slot weapon is changing, the ammo is replaced' ,
                 arguments={
                     "thePlayer": """A player or ped object referencing the specified player (or ped) """,
-                    "weapon": """A whole number integer that refers to a Weapon ID. Click Weapon|here for a list of possible weapon IDs. """,
+                    "weapon": """A whole number integer that refers to a Weapon ID. """,
                     "ammo": """A whole number integer serving as the ammo amount for the given weapon.  For weapons that do not require ammo, such as melee, this should be at least 1. """,
                     "setAsCurrent": """A boolean value determining whether or not the weapon will be set as the players current. """
                 },

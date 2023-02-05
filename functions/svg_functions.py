@@ -16,6 +16,83 @@ DUMP_PARTIAL = [
         client=[
             FunctionData(
             signature=FunctionSignature(
+                name='svgCreate',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['svg'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='width',
+                                argument_type=FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='height',
+                                argument_type=FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='pathOrRawData',
+                                argument_type=FunctionType(
+                                    names=['string'],
+                                    is_optional=True,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='didLoad',
+                                argument_type=FunctionType(
+                                    names=['bool'],
+                                    is_optional=True,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='<syntaxhighlight lang=lua>svg svgCreate ( int width, int height , string pathOrRawData, function callback ( bool didLoad )  )</syntaxhighlight>\n*width: Desired width, preferably power of two (16, 32, 64 etc.), maximum is 4096\n*height : Desired height, preferably power of two (16, 32, 64 etc.), maximum is 4096\n*pathOrRawData: A string representing the path to your SVG file, or the raw SVG data\n*callback: A callback function which is invoked upon SVG document and texture creation, useful for knowing when the svg is ready\n* Returns an svg if created successfully, false otherwise.' ,
+                arguments={
+                    
+                },
+                result='' ,
+            ),
+            url='svgCreate',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
                 name='svgGetDocumentXML',
                 return_types=FunctionReturnTypes(
                     return_types=[
@@ -104,6 +181,208 @@ DUMP_PARTIAL = [
                 result='* returns two ints, representing width and height' ,
             ),
             url='svgGetSize',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
+                name='svgSetDocumentXML',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='svgElement',
+                                argument_type=FunctionType(
+                                    names=['svg'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='xmlDocument',
+                                argument_type=FunctionType(
+                                    names=['xmlnode'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='didLoad',
+                                argument_type=FunctionType(
+                                    names=['bool'],
+                                    is_optional=True,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='<syntaxhighlight lang=lua>bool svgSetDocumentXML ( svg svgElement, xmlnode xmlDocument , function callback ( bool didLoad )  )</syntaxhighlight>\n*svgElement: The svg element you want to set the XML document of\n*xmlDocument: An xmlnode containing the data to be set on the SVG document\n*callback: A callback function which is invoked upon SVG document and texture creation, useful for knowing when the SVG element is ready\n* Returns true if successful, false otherwise' ,
+                arguments={
+                    
+                },
+                result='' ,
+            ),
+            url='svgSetDocumentXML',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
+                name='svgSetSize',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='svgElement',
+                                argument_type=FunctionType(
+                                    names=['svg'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='width',
+                                argument_type=FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='height',
+                                argument_type=FunctionType(
+                                    names=['int'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='didLoad',
+                                argument_type=FunctionType(
+                                    names=['bool'],
+                                    is_optional=True,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='<syntaxhighlight lang=lua>bool svgSetSize( svg svgElement, int width, int height , function callback ( bool didLoad )  )</syntaxhighlight>\n*svgElement: The svg element you want to set the size of.\n*width: Desired width, preferably power of two (16, 32, 64 etc.), maximum is 4096\n*height : Desired height, preferably power of two (16, 32, 64 etc.), maximum is 4096\n*callback: A callback function which is invoked upon SVG document and texture creation (after resizing), useful for knowing when the SVG element is ready\n* Returns true if successful, false otherwise' ,
+                arguments={
+                    
+                },
+                result='' ,
+            ),
+            url='svgSetSize',
+        )
+        ],
+    ),
+    CompoundFunctionData(
+        server=[
+            
+        ],
+        client=[
+            FunctionData(
+            signature=FunctionSignature(
+                name='svgSetUpdateCallback',
+                return_types=FunctionReturnTypes(
+                    return_types=[
+                        FunctionType(
+                                    names=['bool'],
+                                    is_optional=False,
+                                )
+                    ],
+                    variable_length=False,
+                ),
+                arguments=FunctionArgumentValues(
+                    arguments=[
+                        [
+                            FunctionArgument(
+                                name='svgElement',
+                                argument_type=FunctionType(
+                                    names=['svg'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ],
+                        [
+                            FunctionArgument(
+                                name='callback',
+                                argument_type=FunctionType(
+                                    names=['function', 'bool'],
+                                    is_optional=False,
+                                ),
+                                default_value=None,
+                            )
+                        ]
+                    ],
+                    variable_length=False,
+                ),
+                generic_types=[
+                    
+                ],
+            ),
+            docs=FunctionDoc(
+                description='' ,
+                arguments={
+                    "svgElement": """The svg you want to set the callback function of. """,
+                    "callback": """The callback function to store on the SVG. If false is provided, any existing callback function will be removed from the SVG. """
+                },
+                result='* returns true if successful, false otherwise' ,
+            ),
+            url='svgSetUpdateCallback',
         )
         ],
     )
