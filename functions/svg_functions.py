@@ -60,9 +60,9 @@ DUMP_PARTIAL = [
                         ],
                         [
                             FunctionArgument(
-                                name='didLoad',
+                                name='svg',
                                 argument_type=FunctionType(
-                                    names=['bool'],
+                                    names=['element'],
                                     is_optional=True,
                                 ),
                                 default_value=None,
@@ -76,11 +76,15 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='<syntaxhighlight lang=lua>svg svgCreate ( int width, int height , string pathOrRawData, function callback ( bool didLoad )  )</syntaxhighlight>\n*width: Desired width, preferably power of two (16, 32, 64 etc.), maximum is 4096\n*height : Desired height, preferably power of two (16, 32, 64 etc.), maximum is 4096\n*pathOrRawData: A string representing the path to your SVG file, or the raw SVG data\n*callback: A callback function which is invoked upon SVG document and texture creation, useful for knowing when the svg is ready\n* Returns an svg if created successfully, false otherwise.' ,
+                description='Creates an svg from size (blank document), filepath or raw data.' ,
                 arguments={
-                    
+                    "width": """Desired width, preferably power of two (16, 32, 64 etc.), maximum is 4096 """,
+                    "height": """Desired height, preferably power of two (16, 32, 64 etc.), maximum is 4096 """,
+                    "pathOrRawData": """A string representing the path to your SVG file, or the raw SVG data """,
+                    "callback": """A callback function which is stored on the SVG and fired every time the SVG texture is updated (for example, via svgSetDocumentXML).
+'''Note:''' See [[svgSetUpdateCallback]] for setting an svg's callback function after it has been created. """
                 },
-                result='' ,
+                result='* returns an svg if created successfully, false otherwise.' ,
             ),
             url='svgCreate',
         )
@@ -225,9 +229,9 @@ DUMP_PARTIAL = [
                         ],
                         [
                             FunctionArgument(
-                                name='didLoad',
+                                name='svg',
                                 argument_type=FunctionType(
-                                    names=['bool'],
+                                    names=['element'],
                                     is_optional=True,
                                 ),
                                 default_value=None,
@@ -241,11 +245,13 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='<syntaxhighlight lang=lua>bool svgSetDocumentXML ( svg svgElement, xmlnode xmlDocument , function callback ( bool didLoad )  )</syntaxhighlight>\n*svgElement: The svg element you want to set the XML document of\n*xmlDocument: An xmlnode containing the data to be set on the SVG document\n*callback: A callback function which is invoked upon SVG document and texture creation, useful for knowing when the SVG element is ready\n* Returns true if successful, false otherwise' ,
+                description='' ,
                 arguments={
-                    
+                    "svgElement": """The svg element you want to set the XML document of """,
+                    "xmlDocument": """An xmlnode containing the data to be set on the SVG document """,
+                    "callback": """A callback function which is stored on the SVG and fired every time the SVG texture is updated (for example, via svgSetSize). Note: if present, this will overwrite the current callback stored on the svg """
                 },
-                result='' ,
+                result='* returns true if successful, false otherwise' ,
             ),
             url='svgSetDocumentXML',
         )
@@ -302,9 +308,9 @@ DUMP_PARTIAL = [
                         ],
                         [
                             FunctionArgument(
-                                name='didLoad',
+                                name='svg',
                                 argument_type=FunctionType(
-                                    names=['bool'],
+                                    names=['element'],
                                     is_optional=True,
                                 ),
                                 default_value=None,
@@ -318,11 +324,14 @@ DUMP_PARTIAL = [
                 ],
             ),
             docs=FunctionDoc(
-                description='<syntaxhighlight lang=lua>bool svgSetSize( svg svgElement, int width, int height , function callback ( bool didLoad )  )</syntaxhighlight>\n*svgElement: The svg element you want to set the size of.\n*width: Desired width, preferably power of two (16, 32, 64 etc.), maximum is 4096\n*height : Desired height, preferably power of two (16, 32, 64 etc.), maximum is 4096\n*callback: A callback function which is invoked upon SVG document and texture creation (after resizing), useful for knowing when the SVG element is ready\n* Returns true if successful, false otherwise' ,
+                description='' ,
                 arguments={
-                    
+                    "svgElement": """The svg element you want to set the size of. """,
+                    "width": """Desired width, preferably power of two (16, 32, 64 etc.), maximum is 4096 """,
+                    "height": """Desired height, preferably power of two (16, 32, 64 etc.), maximum is 4096 """,
+                    "callback": """A callback function which is stored on the SVG and fired every time the SVG texture is updated (for example, via svgSetDocumentXML). Note: if present, this will overwrite the current callback stored on the svg """
                 },
-                result='' ,
+                result='* returns true if successful, false otherwise' ,
             ),
             url='svgSetSize',
         )
